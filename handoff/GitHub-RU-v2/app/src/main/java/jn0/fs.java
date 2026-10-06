@@ -4,13 +4,13 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class fs {
-    public String a;
-    public String b;
-    public yr c;
-    public ZonedDateTime d;
-    public ZonedDateTime e;
-    public String f;
-    public at0.a g;
+    public final String a;
+    public final String b;
+    public final yr c;
+    public final ZonedDateTime d;
+    public final ZonedDateTime e;
+    public final String f;
+    public final at0.a g;
 
     public fs(String str, String str2, yr yrVar, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, String str3, at0.a aVar) {
         this.a = str;

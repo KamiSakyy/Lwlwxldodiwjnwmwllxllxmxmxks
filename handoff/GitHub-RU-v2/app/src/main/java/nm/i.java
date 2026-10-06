@@ -14,10 +14,10 @@ import z01.u0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i {
     public static final a Companion = new a();
-    public k a;
-    public oa.g b;
-    public v c;
-    public qe.a d;
+    public final k a;
+    public final oa.g b;
+    public final v c;
+    public final qe.a d;
 
     public i(k kVar, oa.g gVar, v vVar, qe.a aVar) {
         k71.k.g(kVar, "schedulesStore");
@@ -175,5 +175,4 @@ public final class i {
         }
         return aVar;
     }
-    public Object j(Object) { return null; }
 }

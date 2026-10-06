@@ -13,10 +13,10 @@ import x.i;
 public final class ReleasesRoute implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public String f18933r;
+    public final String f18933r;
 
     /* renamed from: s, reason: collision with root package name */
-    public String f18934s;
+    public final String f18934s;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<ReleasesRoute> CREATOR = new a();
 

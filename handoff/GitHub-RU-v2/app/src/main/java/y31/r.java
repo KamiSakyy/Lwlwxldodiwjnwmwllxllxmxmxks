@@ -28,11 +28,11 @@ public final class r extends qShadow.n {
     public ColorStateList A;
     public int B;
     public ColorStateList C;
-    public y1 v;
-    public AccessibilityManager w;
-    public Rect x;
-    public int y;
-    public float z;
+    public final y1 v;
+    public final AccessibilityManager w;
+    public final Rect x;
+    public final int y;
+    public final float z;
 
     /* JADX WARN: Multi-variable type inference failed */
     public r(Context context, AttributeSet attributeSet) {
@@ -267,6 +267,4 @@ public final class r extends qShadow.n {
         setAdapter(new qShadow(this, getContext(), this.y, strArr));
     }
     public Object getText() { return null; }
-    public Object setHint(Object) { return null; }
-    public Object setKeyListener(Object) { return null; }
 }

@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qc0 {
-    public String a;
-    public String b;
-    public cu0.l c;
+    public final String a;
+    public final String b;
+    public final cu0.l c;
 
     public qc0(String str, String str2, cu0.l lVar) {
         this.a = str;

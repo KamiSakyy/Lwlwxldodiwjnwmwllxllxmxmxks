@@ -34,7 +34,7 @@ public final class g0 {
     public static final /* synthetic */ g0[] f18603z;
 
     /* renamed from: r, reason: collision with root package name */
-    public String f18604r;
+    public final String f18604r;
 
     public static final class a {
         public static g0 a(String str) {

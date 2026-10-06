@@ -30,11 +30,11 @@ import y71.y1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d0 extends l7.m0 implements jf.c {
     public static final /* synthetic */ r71.e[] m;
-    public ShortcutsOverviewFragment d;
-    public ShortcutsOverviewFragment e;
-    public x0 f;
-    public ShortcutsOverviewFragment g;
-    public Context h;
+    public final ShortcutsOverviewFragment d;
+    public final ShortcutsOverviewFragment e;
+    public final x0 f;
+    public final ShortcutsOverviewFragment g;
+    public final Context h;
     public final w61.p i = sy.w.t(new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j(19, this));
     public final y1 j = n1.c(Boolean.FALSE);
     public final c0 k = new c0(this);
@@ -280,7 +280,4 @@ public final class d0 extends l7.m0 implements jf.c {
     public Object n() { return null; }
     public Object r(Object p1, Object p2) { return null; }
     public Object s(Object p1, Object p2) { return null; }
-    public Object D(boolean) { return null; }
-    public Object o(int) { return null; }
-    public Object p(int, int) { return null; }
 }

@@ -9,14 +9,14 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public String a;
-    public String b;
-    public CheckStatusState c;
-    public CheckConclusionState d;
-    public String e;
-    public int f;
-    public Object g;
-    public String h;
+    public final String a;
+    public final String b;
+    public final CheckStatusState c;
+    public final CheckConclusionState d;
+    public final String e;
+    public final int f;
+    public final Object g;
+    public final String h;
 
     public a(String str, String str2, CheckStatusState checkStatusState, CheckConclusionState checkConclusionState, String str3, int i, List list, String str4) {
         k.g(str, "id");

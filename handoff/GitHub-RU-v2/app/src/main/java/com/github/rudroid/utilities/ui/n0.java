@@ -2,8 +2,8 @@ package com.github.rudroid.utilities.ui;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n0<T> implements g1<T> {
-    public Object a;
-    public fl.b b;
+    public final Object a;
+    public final fl.b b;
 
     public n0(fl.b bVar, Object obj) {
         k71.k.g(bVar, "executionError");

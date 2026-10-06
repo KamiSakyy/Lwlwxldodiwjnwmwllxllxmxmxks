@@ -2,16 +2,16 @@ package j00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public boolean a;
-    public boolean b;
-    public boolean c;
-    public boolean d;
-    public boolean e;
-    public boolean f;
-    public boolean g;
-    public boolean h;
-    public boolean i;
-    public Boolean j;
+    public final boolean a;
+    public final boolean b;
+    public final boolean c;
+    public final boolean d;
+    public final boolean e;
+    public final boolean f;
+    public final boolean g;
+    public final boolean h;
+    public final boolean i;
+    public final Boolean j;
 
     public h(boolean z, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, boolean z7, boolean z8, boolean z9, Boolean bool) {
         this.a = z;

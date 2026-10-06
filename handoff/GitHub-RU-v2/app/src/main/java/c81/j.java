@@ -5,7 +5,7 @@ import v71.b0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class j extends i {
-    public Runnable t;
+    public final Runnable t;
 
     public j(Runnable runnable, long j, boolean z) {
         super(z, j);

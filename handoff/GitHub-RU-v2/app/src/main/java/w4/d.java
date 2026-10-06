@@ -6,7 +6,7 @@ import android.os.LocaleList;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public LocaleList f33319a;
+    public final LocaleList f33319a;
 
     public d(LocaleList localeList) {
         this.f33319a = localeList;

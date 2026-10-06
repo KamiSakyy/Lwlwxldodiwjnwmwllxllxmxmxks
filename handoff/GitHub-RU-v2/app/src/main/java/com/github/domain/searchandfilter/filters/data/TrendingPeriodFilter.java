@@ -18,7 +18,7 @@ public final class TrendingPeriodFilter extends d {
     public static final w61.h[] w;
     public static final TrendingPeriod x;
     public static final j y;
-    public TrendingPeriod v;
+    public final TrendingPeriod v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<TrendingPeriodFilter> CREATOR = new o(25);
 

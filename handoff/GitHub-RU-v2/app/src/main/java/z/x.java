@@ -5,6 +5,4 @@ package z;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface x {
-    public Object e(boolean, Object, Object, Object, Object, Object, Object, int, int) { return null; }
-    public Object e(boolean, Object, Object, Object, Object, Object, Object, int, int) { return null; }
 }

@@ -4,11 +4,11 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class hg {
-    public wf a;
-    public yf b;
-    public aa1.b c;
-    public ZonedDateTime d;
-    public aa1.b e;
+    public final wf a;
+    public final yf b;
+    public final aa1.b c;
+    public final ZonedDateTime d;
+    public final aa1.b e;
 
     public hg(wf wfVar, yf yfVar, aa1.b bVar, ZonedDateTime zonedDateTime, aa1.b bVar2) {
         zf zfVar = ag.Companion;

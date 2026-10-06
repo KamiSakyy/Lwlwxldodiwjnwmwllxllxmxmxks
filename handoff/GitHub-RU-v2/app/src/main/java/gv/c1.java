@@ -2,8 +2,8 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c1 {
-    public String a;
-    public boolean b;
+    public final String a;
+    public final boolean b;
 
     public c1(String str, boolean z) {
         this.a = str;

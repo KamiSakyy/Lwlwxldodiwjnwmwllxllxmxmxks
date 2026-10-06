@@ -16,8 +16,8 @@ import u10.y90;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ma implements z01.p1, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
-    public com.github.service.wrapper.j s;
-    public v71.v t;
+    public final com.github.service.wrapper.j s;
+    public final v71.v t;
 
     public ma(com.github.service.wrapper.j jVar, v71.v vVar, int i) {
         this.r = i;

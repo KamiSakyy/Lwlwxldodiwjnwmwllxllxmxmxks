@@ -4,13 +4,13 @@ package com.github.rudroid.home;
 public final class q0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public fl.f f15013a;
+    public final fl.f f15013a;
 
     /* renamed from: b, reason: collision with root package name */
-    public com.google.common.collect.d f15014b;
+    public final com.google.common.collect.d f15014b;
 
     /* renamed from: c, reason: collision with root package name */
-    public com.github.rudroid.main.g f15015c;
+    public final com.github.rudroid.main.g f15015c;
 
     public q0(fl.f fVar, com.google.common.collect.d dVar, com.github.rudroid.main.g gVar) {
         this.f15013a = fVar;

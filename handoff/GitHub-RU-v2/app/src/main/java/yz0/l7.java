@@ -6,13 +6,13 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l7 extends s7 {
-    public String a;
-    public int b;
-    public String c;
-    public String d;
-    public ZonedDateTime e;
-    public IssueState f;
-    public CloseReason g;
+    public final String a;
+    public final int b;
+    public final String c;
+    public final String d;
+    public final ZonedDateTime e;
+    public final IssueState f;
+    public final CloseReason g;
 
     public l7(String str, int i, String str2, String str3, ZonedDateTime zonedDateTime, IssueState issueState, CloseReason closeReason) {
         k71.k.g(str, "actorDisplayName");

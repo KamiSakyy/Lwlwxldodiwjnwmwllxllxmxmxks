@@ -4,7 +4,7 @@ package w8;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public d9.i f33398a;
+    public final d9.i f33398a;
 
     public g(d9.i iVar) {
         k71.k.g(iVar, "id");

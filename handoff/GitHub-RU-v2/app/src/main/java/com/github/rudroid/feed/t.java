@@ -4,7 +4,7 @@ package com.github.rudroid.feed;
 public abstract class t {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f12706a;
+    public final String f12706a;
 
     public t(String str) {
         this.f12706a = str;

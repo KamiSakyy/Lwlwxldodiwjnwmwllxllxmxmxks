@@ -6,7 +6,7 @@ import android.view.View;
 public final class pc {
 
     /* renamed from: a, reason: collision with root package name */
-    public View f23561a;
+    public final View f23561a;
 
     public pc(View view) {
         this.f23561a = view;

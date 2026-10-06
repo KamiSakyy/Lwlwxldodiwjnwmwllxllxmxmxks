@@ -5,10 +5,10 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w {
-    public String a;
-    public int b;
-    public v c;
-    public List d;
+    public final String a;
+    public final int b;
+    public final v c;
+    public final List d;
 
     public w(String str, int i, v vVar, List list) {
         this.a = str;

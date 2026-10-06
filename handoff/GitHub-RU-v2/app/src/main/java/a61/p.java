@@ -5,8 +5,8 @@ import android.content.Context;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p {
-    public k41.g a;
-    public e61.g b;
+    public final k41.g a;
+    public final e61.g b;
 
     public p(k41.g gVar, e61.g gVar2, a71.h hVar, e1 e1Var) {
         k71.k.g(gVar, "firebaseApp");

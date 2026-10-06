@@ -2,12 +2,12 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b9 {
-    public String a;
-    public String b;
-    public int c;
-    public a9 d;
-    public y8 e;
-    public String f;
+    public final String a;
+    public final String b;
+    public final int c;
+    public final a9 d;
+    public final y8 e;
+    public final String f;
 
     public b9(String str, String str2, int i, a9 a9Var, y8 y8Var, String str3) {
         this.a = str;

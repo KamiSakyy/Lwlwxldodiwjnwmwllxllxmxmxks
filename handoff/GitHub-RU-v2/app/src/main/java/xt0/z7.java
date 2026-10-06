@@ -2,11 +2,11 @@ package xt0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z7 implements aa.h0 {
-    public String a;
-    public String b;
-    public boolean c;
-    public y7 d;
-    public s7 e;
+    public final String a;
+    public final String b;
+    public final boolean c;
+    public final y7 d;
+    public final s7 e;
 
     public z7(String str, String str2, boolean z, y7 y7Var, s7 s7Var) {
         this.a = str;

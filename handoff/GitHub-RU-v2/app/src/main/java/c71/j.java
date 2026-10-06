@@ -6,7 +6,7 @@ import k71.y;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class j extends c implements k71.h {
-    public int u;
+    public final int u;
 
     public j(int i, a71.c cVar) {
         super(cVar);
@@ -29,6 +29,6 @@ public abstract class j extends c implements k71.h {
         return a;
     }
     public Object c() { return null; }
-    public static Object g(Object p1, Object p2, Object p3) { return null; }
+    public Object g(Object p1, Object p2, Object p3) { return null; }
     public Object k(Object p1) { return null; }
 }

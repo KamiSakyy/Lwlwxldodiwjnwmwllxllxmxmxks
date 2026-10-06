@@ -273,6 +273,6 @@ public abstract class a0 {
         return ((t91.c) dVar).h(cVar) && !cVar.c(cVar.b.length);
     }
     public Object A3() { return null; }
-    public static Object D(Object p1, Object p2) { return null; }
-    public static Object z(Object p1, Object p2) { return null; }
+    public Object D(Object p1, Object p2) { return null; }
+    public Object z(Object p1, Object p2) { return null; }
 }

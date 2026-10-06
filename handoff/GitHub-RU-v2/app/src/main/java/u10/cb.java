@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class cb {
-    public db a;
-    public String b;
-    public String c;
+    public final db a;
+    public final String b;
+    public final String c;
 
     public cb(db dbVar, String str, String str2) {
         this.a = dbVar;

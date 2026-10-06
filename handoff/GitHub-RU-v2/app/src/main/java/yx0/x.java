@@ -4,9 +4,9 @@ import a0.s0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x {
-    public String a;
-    public String b;
-    public ay0.f c;
+    public final String a;
+    public final String b;
+    public final ay0.f c;
 
     public x(String str, String str2, ay0.f fVar) {
         this.a = str;

@@ -4,13 +4,13 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class du {
-    public String a;
-    public String b;
-    public wt c;
-    public ZonedDateTime d;
-    public ZonedDateTime e;
-    public String f;
-    public ju.a g;
+    public final String a;
+    public final String b;
+    public final wt c;
+    public final ZonedDateTime d;
+    public final ZonedDateTime e;
+    public final String f;
+    public final ju.a g;
 
     public du(String str, String str2, wt wtVar, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, String str3, ju.a aVar) {
         this.a = str;

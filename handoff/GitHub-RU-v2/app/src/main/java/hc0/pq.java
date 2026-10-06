@@ -9,7 +9,7 @@ public final class pq {
     public static final pq t;
     public static final pq u;
     public static final /* synthetic */ pq[] v;
-    public String r;
+    public final String r;
 
     static {
         pq pqVar = new pq("INTERNAL", 0, "INTERNAL");

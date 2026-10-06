@@ -8,16 +8,16 @@ import x01.i;
 public final class b implements d {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f32167a;
+    public final String f32167a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f32168b;
+    public final String f32168b;
 
     /* renamed from: c, reason: collision with root package name */
-    public i f32169c;
+    public final i f32169c;
 
     /* renamed from: d, reason: collision with root package name */
-    public mn.a f32170d;
+    public final mn.a f32170d;
 
     public b(String str, String str2, i iVar, mn.a aVar) {
         k.g(str, "id");

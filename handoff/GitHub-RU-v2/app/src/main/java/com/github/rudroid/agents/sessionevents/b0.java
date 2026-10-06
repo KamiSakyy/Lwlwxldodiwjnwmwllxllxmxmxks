@@ -11,19 +11,19 @@ public abstract class b0 {
     public static final class a extends b0 {
 
         /* renamed from: a, reason: collision with root package name */
-        public String f7356a;
+        public final String f7356a;
 
         /* renamed from: b, reason: collision with root package name */
-        public String f7357b;
+        public final String f7357b;
 
         /* renamed from: c, reason: collision with root package name */
-        public k91.a f7358c;
+        public final k91.a f7358c;
 
         /* renamed from: d, reason: collision with root package name */
-        public Instant f7359d;
+        public final Instant f7359d;
 
         /* renamed from: e, reason: collision with root package name */
-        public String f7360e;
+        public final String f7360e;
 
         public a(String str, String str2, k91.a aVar, Instant instant, String str3) {
             k71.k.g(str, "id");
@@ -71,19 +71,19 @@ public abstract class b0 {
     public static final class b extends b0 {
 
         /* renamed from: a, reason: collision with root package name */
-        public String f7361a;
+        public final String f7361a;
 
         /* renamed from: b, reason: collision with root package name */
-        public String f7362b;
+        public final String f7362b;
 
         /* renamed from: c, reason: collision with root package name */
-        public Integer f7363c;
+        public final Integer f7363c;
 
         /* renamed from: d, reason: collision with root package name */
-        public k91.a f7364d;
+        public final k91.a f7364d;
 
         /* renamed from: e, reason: collision with root package name */
-        public Instant f7365e;
+        public final Instant f7365e;
 
         public b(String str, String str2, Integer num, k91.a aVar, Instant instant) {
             k71.k.g(str, "id");
@@ -134,29 +134,29 @@ public abstract class b0 {
     public static final class c extends b0 {
 
         /* renamed from: a, reason: collision with root package name */
-        public String f7366a;
+        public final String f7366a;
 
         /* renamed from: b, reason: collision with root package name */
-        public ArrayList f7367b;
+        public final ArrayList f7367b;
 
         /* renamed from: c, reason: collision with root package name */
-        public int f7368c;
+        public final int f7368c;
 
         /* renamed from: d, reason: collision with root package name */
-        public int f7369d;
+        public final int f7369d;
 
         /* renamed from: e, reason: collision with root package name */
-        public int f7370e;
+        public final int f7370e;
 
         /* renamed from: f, reason: collision with root package name */
-        public ArrayList f7371f;
+        public final ArrayList f7371f;
 
         /* renamed from: g, reason: collision with root package name */
-        public boolean f7372g;
+        public final boolean f7372g;
 
         /* renamed from: h, reason: collision with root package name */
-        public boolean f7373h;
-        public Instant i;
+        public final boolean f7373h;
+        public final Instant i;
 
         public c(String str, ArrayList arrayList, int i, int i10, int i11, ArrayList arrayList2, boolean z10, boolean z11, Instant instant) {
             k71.k.g(str, "id");
@@ -208,16 +208,16 @@ public abstract class b0 {
     public static final class d extends b0 {
 
         /* renamed from: a, reason: collision with root package name */
-        public String f7374a;
+        public final String f7374a;
 
         /* renamed from: b, reason: collision with root package name */
-        public String f7375b;
+        public final String f7375b;
 
         /* renamed from: c, reason: collision with root package name */
-        public k91.a f7376c;
+        public final k91.a f7376c;
 
         /* renamed from: d, reason: collision with root package name */
-        public Instant f7377d;
+        public final Instant f7377d;
 
         public d(String str, String str2, k91.a aVar, Instant instant) {
             k71.k.g(str, "id");
@@ -283,16 +283,16 @@ public abstract class b0 {
         public static final class a extends g {
 
             /* renamed from: a, reason: collision with root package name */
-            public String f7424a;
+            public final String f7424a;
 
             /* renamed from: b, reason: collision with root package name */
-            public String f7425b;
+            public final String f7425b;
 
             /* renamed from: c, reason: collision with root package name */
-            public String f7426c;
+            public final String f7426c;
 
             /* renamed from: d, reason: collision with root package name */
-            public Instant f7427d;
+            public final Instant f7427d;
 
             public a(String str, String str2, String str3, Instant instant) {
                 k71.k.g(str, "id");
@@ -344,13 +344,13 @@ public abstract class b0 {
         public static final class b extends g {
 
             /* renamed from: a, reason: collision with root package name */
-            public String f7428a;
+            public final String f7428a;
 
             /* renamed from: b, reason: collision with root package name */
-            public String f7429b;
+            public final String f7429b;
 
             /* renamed from: c, reason: collision with root package name */
-            public Instant f7430c;
+            public final Instant f7430c;
 
             public b(String str, String str2, Instant instant) {
                 k71.k.g(str, "id");
@@ -397,19 +397,19 @@ public abstract class b0 {
         public static final class c extends g {
 
             /* renamed from: a, reason: collision with root package name */
-            public String f7431a;
+            public final String f7431a;
 
             /* renamed from: b, reason: collision with root package name */
-            public String f7432b;
+            public final String f7432b;
 
             /* renamed from: c, reason: collision with root package name */
-            public Long f7433c;
+            public final Long f7433c;
 
             /* renamed from: d, reason: collision with root package name */
-            public String f7434d;
+            public final String f7434d;
 
             /* renamed from: e, reason: collision with root package name */
-            public Instant f7435e;
+            public final Instant f7435e;
 
             public c(String str, String str2, Long l, String str3, Instant instant) {
                 k71.k.g(str, "id");
@@ -466,16 +466,16 @@ public abstract class b0 {
         public static final class d extends g {
 
             /* renamed from: a, reason: collision with root package name */
-            public String f7436a;
+            public final String f7436a;
 
             /* renamed from: b, reason: collision with root package name */
-            public String f7437b;
+            public final String f7437b;
 
             /* renamed from: c, reason: collision with root package name */
-            public String f7438c;
+            public final String f7438c;
 
             /* renamed from: d, reason: collision with root package name */
-            public Instant f7439d;
+            public final Instant f7439d;
 
             public d(String str, String str2, String str3, Instant instant) {
                 k71.k.g(str, "id");
@@ -527,16 +527,16 @@ public abstract class b0 {
         public static final class e extends g {
 
             /* renamed from: a, reason: collision with root package name */
-            public String f7440a;
+            public final String f7440a;
 
             /* renamed from: b, reason: collision with root package name */
-            public String f7441b;
+            public final String f7441b;
 
             /* renamed from: c, reason: collision with root package name */
-            public String f7442c;
+            public final String f7442c;
 
             /* renamed from: d, reason: collision with root package name */
-            public Instant f7443d;
+            public final Instant f7443d;
 
             public e(String str, String str2, String str3, Instant instant) {
                 k71.k.g(str, "id");
@@ -588,13 +588,13 @@ public abstract class b0 {
         public static final class f extends g {
 
             /* renamed from: a, reason: collision with root package name */
-            public String f7444a;
+            public final String f7444a;
 
             /* renamed from: b, reason: collision with root package name */
-            public String f7445b;
+            public final String f7445b;
 
             /* renamed from: c, reason: collision with root package name */
-            public Instant f7446c;
+            public final Instant f7446c;
 
             public f(String str, String str2, Instant instant) {
                 k71.k.g(str, "id");
@@ -642,13 +642,13 @@ public abstract class b0 {
         public static final class C0011g extends g {
 
             /* renamed from: a, reason: collision with root package name */
-            public String f7447a;
+            public final String f7447a;
 
             /* renamed from: b, reason: collision with root package name */
-            public String f7448b;
+            public final String f7448b;
 
             /* renamed from: c, reason: collision with root package name */
-            public Instant f7449c;
+            public final Instant f7449c;
 
             public C0011g(String str, String str2, Instant instant) {
                 k71.k.g(str, "id");
@@ -695,13 +695,13 @@ public abstract class b0 {
         public static final class h extends g {
 
             /* renamed from: a, reason: collision with root package name */
-            public String f7450a;
+            public final String f7450a;
 
             /* renamed from: b, reason: collision with root package name */
-            public String f7451b;
+            public final String f7451b;
 
             /* renamed from: c, reason: collision with root package name */
-            public Instant f7452c;
+            public final Instant f7452c;
 
             public h(String str, String str2, Instant instant) {
                 k71.k.g(str, "id");
@@ -748,13 +748,13 @@ public abstract class b0 {
         public static final class i extends g {
 
             /* renamed from: a, reason: collision with root package name */
-            public String f7453a;
+            public final String f7453a;
 
             /* renamed from: b, reason: collision with root package name */
-            public String f7454b;
+            public final String f7454b;
 
             /* renamed from: c, reason: collision with root package name */
-            public Instant f7455c;
+            public final Instant f7455c;
 
             public i(String str, String str2, Instant instant) {
                 k71.k.g(str, "id");
@@ -801,13 +801,13 @@ public abstract class b0 {
         public static final class j extends g {
 
             /* renamed from: a, reason: collision with root package name */
-            public String f7456a;
+            public final String f7456a;
 
             /* renamed from: b, reason: collision with root package name */
-            public String f7457b;
+            public final String f7457b;
 
             /* renamed from: c, reason: collision with root package name */
-            public Instant f7458c;
+            public final Instant f7458c;
 
             public j(String str, String str2, Instant instant) {
                 k71.k.g(str, "id");
@@ -854,16 +854,16 @@ public abstract class b0 {
         public static final class k extends g {
 
             /* renamed from: a, reason: collision with root package name */
-            public String f7459a;
+            public final String f7459a;
 
             /* renamed from: b, reason: collision with root package name */
-            public String f7460b;
+            public final String f7460b;
 
             /* renamed from: c, reason: collision with root package name */
-            public String f7461c;
+            public final String f7461c;
 
             /* renamed from: d, reason: collision with root package name */
-            public Instant f7462d;
+            public final Instant f7462d;
 
             public k(String str, String str2, String str3, Instant instant) {
                 k71.k.g(str, "id");
@@ -915,16 +915,16 @@ public abstract class b0 {
         public static final class l extends g {
 
             /* renamed from: a, reason: collision with root package name */
-            public String f7463a;
+            public final String f7463a;
 
             /* renamed from: b, reason: collision with root package name */
-            public String f7464b;
+            public final String f7464b;
 
             /* renamed from: c, reason: collision with root package name */
-            public k91.a f7465c;
+            public final k91.a f7465c;
 
             /* renamed from: d, reason: collision with root package name */
-            public Instant f7466d;
+            public final Instant f7466d;
 
             public l(String str, String str2, k91.a aVar, Instant instant) {
                 k71.k.g(str, "id");
@@ -976,28 +976,28 @@ public abstract class b0 {
     public static final class h extends b0 {
 
         /* renamed from: a, reason: collision with root package name */
-        public String f7467a;
+        public final String f7467a;
 
         /* renamed from: b, reason: collision with root package name */
-        public String f7468b;
+        public final String f7468b;
 
         /* renamed from: c, reason: collision with root package name */
-        public int f7469c;
+        public final int f7469c;
 
         /* renamed from: d, reason: collision with root package name */
-        public boolean f7470d;
+        public final boolean f7470d;
 
         /* renamed from: e, reason: collision with root package name */
-        public com.github.rudroid.agents.sessionevents.ui.t2 f7471e;
+        public final com.github.rudroid.agents.sessionevents.ui.t2 f7471e;
 
         /* renamed from: f, reason: collision with root package name */
-        public long f7472f;
+        public final long f7472f;
 
         /* renamed from: g, reason: collision with root package name */
-        public Long f7473g;
+        public final Long f7473g;
 
         /* renamed from: h, reason: collision with root package name */
-        public Instant f7474h;
+        public final Instant f7474h;
 
         public h(String str, String str2, int i, boolean z10, com.github.rudroid.agents.sessionevents.ui.t2 t2Var, long j10, Long l, Instant instant) {
             k71.k.g(str, "id");
@@ -1051,16 +1051,16 @@ public abstract class b0 {
     public static final class i extends b0 {
 
         /* renamed from: a, reason: collision with root package name */
-        public String f7475a;
+        public final String f7475a;
 
         /* renamed from: b, reason: collision with root package name */
-        public int f7476b;
+        public final int f7476b;
 
         /* renamed from: c, reason: collision with root package name */
-        public String f7477c;
+        public final String f7477c;
 
         /* renamed from: d, reason: collision with root package name */
-        public Instant f7478d;
+        public final Instant f7478d;
 
         public i(String str, int i, String str2, Instant instant) {
             k71.k.g(str, "id");
@@ -1105,16 +1105,16 @@ public abstract class b0 {
     public static final class j extends b0 {
 
         /* renamed from: a, reason: collision with root package name */
-        public String f7479a;
+        public final String f7479a;
 
         /* renamed from: b, reason: collision with root package name */
-        public String f7480b;
+        public final String f7480b;
 
         /* renamed from: c, reason: collision with root package name */
-        public k91.a f7481c;
+        public final k91.a f7481c;
 
         /* renamed from: d, reason: collision with root package name */
-        public Instant f7482d;
+        public final Instant f7482d;
 
         public j(String str, String str2, k91.a aVar, Instant instant) {
             k71.k.g(str, "id");
@@ -1159,32 +1159,32 @@ public abstract class b0 {
     public static final class k extends b0 {
 
         /* renamed from: a, reason: collision with root package name */
-        public String f7483a;
+        public final String f7483a;
 
         /* renamed from: b, reason: collision with root package name */
-        public String f7484b;
+        public final String f7484b;
 
         /* renamed from: c, reason: collision with root package name */
-        public String f7485c;
+        public final String f7485c;
 
         /* renamed from: d, reason: collision with root package name */
-        public int f7486d;
+        public final int f7486d;
 
         /* renamed from: e, reason: collision with root package name */
-        public w4 f7487e;
+        public final w4 f7487e;
 
         /* renamed from: f, reason: collision with root package name */
-        public t4 f7488f;
+        public final t4 f7488f;
 
         /* renamed from: g, reason: collision with root package name */
-        public String f7489g;
+        public final String f7489g;
 
         /* renamed from: h, reason: collision with root package name */
-        public Instant f7490h;
-        public String i;
+        public final Instant f7490h;
+        public final String i;
 
         /* renamed from: j, reason: collision with root package name */
-        public String f7491j;
+        public final String f7491j;
 
         public k(String str, String str2, String str3, int i, w4 w4Var, t4 t4Var, String str4, Instant instant, String str5, String str6) {
             k71.k.g(str, "id");
@@ -1245,22 +1245,22 @@ public abstract class b0 {
     public static final class l extends b0 {
 
         /* renamed from: a, reason: collision with root package name */
-        public String f7492a;
+        public final String f7492a;
 
         /* renamed from: b, reason: collision with root package name */
-        public boolean f7493b;
+        public final boolean f7493b;
 
         /* renamed from: c, reason: collision with root package name */
-        public boolean f7494c;
+        public final boolean f7494c;
 
         /* renamed from: d, reason: collision with root package name */
-        public String f7495d;
+        public final String f7495d;
 
         /* renamed from: e, reason: collision with root package name */
-        public k91.a f7496e;
+        public final k91.a f7496e;
 
         /* renamed from: f, reason: collision with root package name */
-        public Instant f7497f;
+        public final Instant f7497f;
 
         public l(String str, boolean z10, boolean z11, String str2, k91.a aVar, Instant instant) {
             k71.k.g(str, "id");
@@ -1312,29 +1312,29 @@ public abstract class b0 {
         public static final class b extends e {
 
             /* renamed from: a, reason: collision with root package name */
-            public String f7387a;
+            public final String f7387a;
 
             /* renamed from: b, reason: collision with root package name */
-            public String f7388b;
+            public final String f7388b;
 
             /* renamed from: c, reason: collision with root package name */
-            public String f7389c;
+            public final String f7389c;
 
             /* renamed from: d, reason: collision with root package name */
-            public List f7390d;
+            public final List f7390d;
 
             /* renamed from: e, reason: collision with root package name */
-            public Set f7391e;
+            public final Set f7391e;
 
             /* renamed from: f, reason: collision with root package name */
-            public k91.a f7392f;
+            public final k91.a f7392f;
 
             /* renamed from: g, reason: collision with root package name */
-            public Instant f7393g;
+            public final Instant f7393g;
 
             /* renamed from: h, reason: collision with root package name */
-            public boolean f7394h;
-            public String i;
+            public final boolean f7394h;
+            public final String i;
 
             public b(String str, String str2, String str3, List list, Set set, k91.a aVar, Instant instant, boolean z10, String str4) {
                 k71.k.g(str, "id");
@@ -1394,29 +1394,29 @@ public abstract class b0 {
         public static final class C0010e extends e {
 
             /* renamed from: a, reason: collision with root package name */
-            public String f7416a;
+            public final String f7416a;
 
             /* renamed from: b, reason: collision with root package name */
-            public String f7417b;
+            public final String f7417b;
 
             /* renamed from: c, reason: collision with root package name */
-            public String f7418c;
+            public final String f7418c;
 
             /* renamed from: d, reason: collision with root package name */
-            public List f7419d;
+            public final List f7419d;
 
             /* renamed from: e, reason: collision with root package name */
-            public k91.a f7420e;
+            public final k91.a f7420e;
 
             /* renamed from: f, reason: collision with root package name */
-            public Instant f7421f;
+            public final Instant f7421f;
 
             /* renamed from: g, reason: collision with root package name */
-            public boolean f7422g;
+            public final boolean f7422g;
 
             /* renamed from: h, reason: collision with root package name */
-            public int f7423h;
-            public String i;
+            public final int f7423h;
+            public final String i;
 
             public C0010e(String str, String str2, String str3, List list, k91.a aVar, Instant instant, boolean z10, int i, String str4) {
                 k71.k.g(str, "id");
@@ -1473,32 +1473,32 @@ public abstract class b0 {
         public static final class a extends e {
 
             /* renamed from: a, reason: collision with root package name */
-            public String f7378a;
+            public final String f7378a;
 
             /* renamed from: b, reason: collision with root package name */
-            public String f7379b;
+            public final String f7379b;
 
             /* renamed from: c, reason: collision with root package name */
-            public String f7380c;
+            public final String f7380c;
 
             /* renamed from: d, reason: collision with root package name */
-            public String f7381d;
+            public final String f7381d;
 
             /* renamed from: e, reason: collision with root package name */
-            public List f7382e;
+            public final List f7382e;
 
             /* renamed from: f, reason: collision with root package name */
-            public k91.a f7383f;
+            public final k91.a f7383f;
 
             /* renamed from: g, reason: collision with root package name */
-            public Instant f7384g;
+            public final Instant f7384g;
 
             /* renamed from: h, reason: collision with root package name */
-            public boolean f7385h;
-            public int i;
+            public final boolean f7385h;
+            public final int i;
 
             /* renamed from: j, reason: collision with root package name */
-            public String f7386j;
+            public final String f7386j;
 
             public a(String str, String str2, String str3, String str4, List list, k91.a aVar, Instant instant, boolean z10, int i, String str5) {
                 k71.k.g(str, "id");
@@ -1566,32 +1566,32 @@ public abstract class b0 {
         public static final class c extends e {
 
             /* renamed from: a, reason: collision with root package name */
-            public String f7395a;
+            public final String f7395a;
 
             /* renamed from: b, reason: collision with root package name */
-            public String f7396b;
+            public final String f7396b;
 
             /* renamed from: c, reason: collision with root package name */
-            public String f7397c;
+            public final String f7397c;
 
             /* renamed from: d, reason: collision with root package name */
-            public String f7398d;
+            public final String f7398d;
 
             /* renamed from: e, reason: collision with root package name */
-            public List f7399e;
+            public final List f7399e;
 
             /* renamed from: f, reason: collision with root package name */
-            public k91.a f7400f;
+            public final k91.a f7400f;
 
             /* renamed from: g, reason: collision with root package name */
-            public Instant f7401g;
+            public final Instant f7401g;
 
             /* renamed from: h, reason: collision with root package name */
-            public boolean f7402h;
-            public int i;
+            public final boolean f7402h;
+            public final int i;
 
             /* renamed from: j, reason: collision with root package name */
-            public String f7403j;
+            public final String f7403j;
 
             public c(String str, String str2, String str3, String str4, List list, k91.a aVar, Instant instant, boolean z10, int i, String str5) {
                 k71.k.g(str, "id");
@@ -1659,43 +1659,43 @@ public abstract class b0 {
         public static final class d extends e {
 
             /* renamed from: a, reason: collision with root package name */
-            public String f7404a;
+            public final String f7404a;
 
             /* renamed from: b, reason: collision with root package name */
-            public String f7405b;
+            public final String f7405b;
 
             /* renamed from: c, reason: collision with root package name */
-            public String f7406c;
+            public final String f7406c;
 
             /* renamed from: d, reason: collision with root package name */
-            public String f7407d;
+            public final String f7407d;
 
             /* renamed from: e, reason: collision with root package name */
-            public String f7408e;
+            public final String f7408e;
 
             /* renamed from: f, reason: collision with root package name */
-            public String f7409f;
+            public final String f7409f;
 
             /* renamed from: g, reason: collision with root package name */
-            public String f7410g;
+            public final String f7410g;
 
             /* renamed from: h, reason: collision with root package name */
-            public boolean f7411h;
-            public List i;
+            public final boolean f7411h;
+            public final List i;
 
             /* renamed from: j, reason: collision with root package name */
-            public k91.a f7412j;
+            public final k91.a f7412j;
 
             /* renamed from: k, reason: collision with root package name */
-            public Instant f7413k;
-            public boolean l;
-            public com.github.rudroid.fileschanged.ui.a0 m;
+            public final Instant f7413k;
+            public final boolean l;
+            public final com.github.rudroid.fileschanged.ui.a0 m;
 
             /* renamed from: n, reason: collision with root package name */
-            public int f7414n;
+            public final int f7414n;
 
             /* renamed from: o, reason: collision with root package name */
-            public String f7415o;
+            public final String f7415o;
 
             public d(String str, String str2, String str3, String str4, String str5, String str6, String str7, boolean z10, List list, k91.a aVar, Instant instant, boolean z11, com.github.rudroid.fileschanged.ui.a0 a0Var, int i, String str8) {
                 k71.k.g(str, "id");

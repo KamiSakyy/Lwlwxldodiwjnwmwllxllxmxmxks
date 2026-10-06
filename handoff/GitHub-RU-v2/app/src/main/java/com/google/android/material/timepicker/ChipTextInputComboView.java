@@ -17,8 +17,8 @@ import q.pShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 class ChipTextInputComboView extends FrameLayout implements Checkable {
-    public Chip r;
-    public EditText s;
+    public final Chip r;
+    public final EditText s;
 
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r5v3, types: [android.view.View, com.google.android.material.chip.Chip] */

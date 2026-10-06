@@ -11,7 +11,7 @@ public final class hn {
     public static final hn v;
     public static final /* synthetic */ hn[] w;
     public static final /* synthetic */ d71.b x;
-    public String r;
+    public final String r;
 
     static {
         hn hnVar = new hn("CLOSED", 0, "CLOSED");

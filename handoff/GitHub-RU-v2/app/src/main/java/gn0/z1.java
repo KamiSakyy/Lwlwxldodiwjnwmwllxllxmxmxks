@@ -11,7 +11,7 @@ public final class z1 {
     public static final z1 v;
     public static final z1 w;
     public static final /* synthetic */ z1[] x;
-    public String r;
+    public final String r;
 
     static {
         z1 z1Var = new z1("INDEFINITE", 0, "INDEFINITE");

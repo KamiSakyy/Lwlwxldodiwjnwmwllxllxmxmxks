@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g0 extends s1 {
-    public List a;
-    public String b;
+    public final List a;
+    public final String b;
 
     public g0(List list, String str) {
         this.a = list;

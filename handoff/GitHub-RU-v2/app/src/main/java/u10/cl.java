@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class cl {
-    public String a;
-    public String b;
-    public dl c;
+    public final String a;
+    public final String b;
+    public final dl c;
 
     public cl(String str, String str2, dl dlVar) {
         this.a = str;

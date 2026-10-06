@@ -4,10 +4,10 @@ package d;
 public final class a0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f20880a;
+    public final int f20880a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f20881b;
+    public final int f20881b;
 
     public a0(int i, int i10, j71.c cVar) {
         this.f20880a = i;

@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ta {
-    public String a;
-    public String b;
-    public gv.o c;
+    public final String a;
+    public final String b;
+    public final gv.o c;
 
     public ta(String str, String str2, gv.o oVar) {
         this.a = str;

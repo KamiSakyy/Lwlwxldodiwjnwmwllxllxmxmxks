@@ -24,13 +24,13 @@ import wm.b;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ShortcutConfigurationModel implements b {
     public static final h[] y;
-    public String r;
-    public List s;
-    public ShortcutColor t;
-    public ShortcutIcon u;
-    public a v;
-    public ShortcutType w;
-    public String x;
+    public final String r;
+    public final List s;
+    public final ShortcutColor t;
+    public final ShortcutIcon u;
+    public final a v;
+    public final ShortcutType w;
+    public final String x;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<ShortcutConfigurationModel> CREATOR = new c0(16);
 

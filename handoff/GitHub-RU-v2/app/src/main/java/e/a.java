@@ -7,10 +7,10 @@ import k71.k;
 public final class a extends g {
 
     /* renamed from: a, reason: collision with root package name */
-    public Object f21795a;
+    public final Object f21795a;
 
     /* renamed from: b, reason: collision with root package name */
-    public long f21796b;
+    public final long f21796b;
 
     public a(long j10, Object obj) {
         this.f21795a = obj;

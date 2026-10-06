@@ -4,12 +4,12 @@ import org.jsoup.helper.ValidationException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class q0 extends s0 {
-    public b1.m d;
+    public final b1.m d;
     public String e;
     public boolean f;
     public ca1.b g;
-    public b1.m h;
-    public b1.m i;
+    public final b1.m h;
+    public final b1.m i;
     public boolean j;
 
     public q0(int i, b bVar) {

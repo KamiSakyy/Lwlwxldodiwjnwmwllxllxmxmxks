@@ -4,7 +4,7 @@ package j0;
 public final class k implements n {
 
     /* renamed from: a, reason: collision with root package name */
-    public l f26278a;
+    public final l f26278a;
 
     public k(l lVar) {
         this.f26278a = lVar;

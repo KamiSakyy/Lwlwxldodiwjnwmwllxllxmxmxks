@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class lg implements aaShadow.v0 {
-    public pg a;
-    public String b;
-    public String c;
+    public final pg a;
+    public final String b;
+    public final String c;
 
     public lg(pg pgVar, String str, String str2) {
         this.a = pgVar;

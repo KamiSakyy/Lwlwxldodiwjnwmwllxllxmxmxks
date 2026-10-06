@@ -4,10 +4,10 @@ import gn0.yv;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f0 {
-    public String a;
-    public yv b;
-    public v c;
-    public String d;
+    public final String a;
+    public final yv b;
+    public final v c;
+    public final String d;
 
     public f0(String str, yv yvVar, v vVar, String str2) {
         this.a = str;

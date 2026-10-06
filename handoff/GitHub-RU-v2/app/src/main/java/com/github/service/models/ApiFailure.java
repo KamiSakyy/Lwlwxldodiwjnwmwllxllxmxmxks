@@ -13,13 +13,13 @@ import xz0.a;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ApiFailure extends GithubException {
     public static final a Companion = new a();
-    public ApiFailureType r;
-    public String s;
-    public String t;
-    public Integer u;
-    public List v;
-    public Map w;
-    public Throwable x;
+    public final ApiFailureType r;
+    public final String s;
+    public final String t;
+    public final Integer u;
+    public final List v;
+    public final Map w;
+    public final Throwable x;
 
     public /* synthetic */ ApiFailure(ApiFailureType apiFailureType, String str, String str2, Integer num, ArrayList arrayList, Map map, Throwable th, int i) {
         this(apiFailureType, str, (i & 4) != 0 ? null : str2, (i & 8) != 0 ? null : num, (i & 16) != 0 ? r.r : arrayList, (i & 32) != 0 ? s.r : map, (i & 64) != 0 ? null : th);

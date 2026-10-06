@@ -4,10 +4,10 @@ package p1;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public Object f30328a;
+    public final Object f30328a;
 
     /* renamed from: b, reason: collision with root package name */
-    public Object f30329b;
+    public final Object f30329b;
 
     public a(Object obj, Object obj2) {
         this.f30328a = obj;

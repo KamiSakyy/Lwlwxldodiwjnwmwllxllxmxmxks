@@ -2,8 +2,8 @@ package pt0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public String a;
-    public f b;
+    public final String a;
+    public final f b;
 
     public c(String str, f fVar) {
         k71.k.g(str, "__typename");

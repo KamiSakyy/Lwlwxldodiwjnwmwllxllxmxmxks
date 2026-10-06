@@ -6,11 +6,11 @@ import java.util.List;
 public final class h {
     public static final a Companion = new a();
     public static final h f = new h(x61.r.r, false, false, null, null);
-    public List a;
-    public boolean b;
-    public boolean c;
-    public g d;
-    public g e;
+    public final List a;
+    public final boolean b;
+    public final boolean c;
+    public final g d;
+    public final g e;
 
     public static final class a {
     }

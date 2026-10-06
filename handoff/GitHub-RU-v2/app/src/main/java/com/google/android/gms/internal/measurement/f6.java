@@ -2,10 +2,10 @@ package com.google.android.gms.internal.measurement;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f6 {
-    public s4 a;
-    public String b;
-    public Object[] c;
-    public int d;
+    public final s4 a;
+    public final String b;
+    public final Object[] c;
+    public final int d;
 
     public f6(s4 s4Var, String str, Object[] objArr) {
         this.a = s4Var;

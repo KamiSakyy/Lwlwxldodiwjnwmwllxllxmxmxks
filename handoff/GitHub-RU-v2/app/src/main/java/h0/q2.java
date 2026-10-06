@@ -4,7 +4,7 @@ package h0;
 public final class q2 implements p2.a {
 
     /* renamed from: r, reason: collision with root package name */
-    public c3 f25160r;
+    public final c3 f25160r;
 
     /* renamed from: s, reason: collision with root package name */
     public boolean f25161s;

@@ -27,7 +27,7 @@ import t61.d;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public class SkiaPooledImageRegionDecoder implements c {
-    public Bitmap.Config c;
+    public final Bitmap.Config c;
     public Context d;
     public Uri e;
     public x1 a = new x1(25);

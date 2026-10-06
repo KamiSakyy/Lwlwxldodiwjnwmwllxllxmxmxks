@@ -4,9 +4,9 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s0 {
-    public String a;
-    public Boolean b;
-    public String c;
+    public final String a;
+    public final Boolean b;
+    public final String c;
 
     public s0(Boolean bool, String str, String str2) {
         k71.k.g(str, "id");

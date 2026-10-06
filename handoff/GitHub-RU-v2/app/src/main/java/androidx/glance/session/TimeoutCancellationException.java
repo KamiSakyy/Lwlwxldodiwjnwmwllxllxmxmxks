@@ -7,10 +7,10 @@ import x.i;
 public final class TimeoutCancellationException extends CancellationException {
 
     /* renamed from: r, reason: collision with root package name */
-    public String f2817r;
+    public final String f2817r;
 
     /* renamed from: s, reason: collision with root package name */
-    public int f2818s;
+    public final int f2818s;
 
     public TimeoutCancellationException(String str, int i) {
         super(str);

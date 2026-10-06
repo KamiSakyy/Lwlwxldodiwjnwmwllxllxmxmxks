@@ -2,9 +2,9 @@ package an;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j {
-    public oa.g a;
-    public m b;
-    public cn.a c;
+    public final oa.g a;
+    public final m b;
+    public final cn.a c;
 
     public j(oa.g gVar, m mVar, cn.a aVar) {
         k71.k.g(gVar, "commentService");
@@ -15,5 +15,5 @@ public final class j {
         this.c = aVar;
     }
     public Object a() { return null; }
-    public static Object k0(Object p1, Object p2) { return null; }
+    public Object k0(Object p1, Object p2) { return null; }
 }

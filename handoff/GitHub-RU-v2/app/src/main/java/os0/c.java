@@ -8,12 +8,12 @@ import pz0.df;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public String a;
-    public String b;
-    public int c;
-    public String d;
-    public bf e;
-    public df f;
+    public final String a;
+    public final String b;
+    public final int c;
+    public final String d;
+    public final bf e;
+    public final df f;
 
     public c(int i, String str, String str2, String str3, bf bfVar, df dfVar) {
         this.a = str;

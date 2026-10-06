@@ -6,11 +6,11 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k extends d21.a {
     public static final Parcelable.Creator<k> CREATOR = new bm.o(28);
-    public int r;
-    public boolean s;
-    public boolean t;
-    public int u;
-    public int v;
+    public final int r;
+    public final boolean s;
+    public final boolean t;
+    public final int u;
+    public final int v;
 
     public k(int i, boolean z, boolean z2, int i2, int i3) {
         this.r = i;

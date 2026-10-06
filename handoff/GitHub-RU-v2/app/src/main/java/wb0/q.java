@@ -28,11 +28,11 @@ import x61.r;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q {
     public static final a Companion = new a();
-    public com.github.service.wrapper.b a;
-    public String b;
-    public jy.d c;
-    public jy.d d;
-    public jy.d e;
+    public final com.github.service.wrapper.b a;
+    public final String b;
+    public final jy.d c;
+    public final jy.d d;
+    public final jy.d e;
 
     public q(com.github.service.wrapper.b bVar, String str, jy.d dVar, jy.d dVar2, jy.d dVar3) {
         k71.k.g(bVar, "cachedClient");

@@ -8,12 +8,12 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public fm a;
-    public boolean b;
-    public String c;
-    public String d;
-    public int e;
-    public String f;
+    public final fm a;
+    public final boolean b;
+    public final String c;
+    public final String d;
+    public final int e;
+    public final String f;
 
     public c(int i, fm fmVar, String str, String str2, String str3, boolean z) {
         this.a = fmVar;

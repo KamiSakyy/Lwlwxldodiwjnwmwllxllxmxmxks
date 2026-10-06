@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l80 {
-    public String a;
-    public k80 b;
+    public final String a;
+    public final k80 b;
 
     public l80(String str, k80 k80Var) {
         this.a = str;

@@ -6,7 +6,7 @@ import androidx.viewpager2.widget.ViewPager2;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k implements d {
     public final /* synthetic */ int r;
-    public ViewGroup s;
+    public final ViewGroup s;
 
     public /* synthetic */ k(ViewGroup viewGroup, int i) {
         this.r = i;

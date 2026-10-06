@@ -4,7 +4,7 @@ import kotlinx.coroutines.TimeoutCancellationException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class v1 extends a81.q implements Runnable {
-    public long v;
+    public final long v;
 
     public v1(long j, c71.c cVar) {
         super(cVar, cVar.q());

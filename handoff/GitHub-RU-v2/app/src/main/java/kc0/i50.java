@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i50 {
-    public String a;
-    public h50 b;
+    public final String a;
+    public final h50 b;
 
     public i50(String str, h50 h50Var) {
         this.a = str;

@@ -17,8 +17,8 @@ import x.i;
 public final class b {
     public static final a Companion = new a();
     public static final Charset c = t71.a.a;
-    public String a;
-    public String b;
+    public final String a;
+    public final String b;
 
     public b(j jVar) {
         k.g(jVar, "user");

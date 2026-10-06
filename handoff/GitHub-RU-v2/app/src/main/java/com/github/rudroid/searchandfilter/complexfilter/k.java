@@ -18,16 +18,16 @@ import y71.y1;
 public abstract class k<T> extends k1 implements f0, x3 {
     public static final a Companion;
     public static final /* synthetic */ r71.e[] D;
-    public ArrayList A;
-    public r B;
-    public y1 C;
-    public com.github.rudroid.activities.util.a s;
-    public h0 t;
+    public final ArrayList A;
+    public final r B;
+    public final y1 C;
+    public final com.github.rudroid.activities.util.a s;
+    public final h0 t;
     public q1 u;
     public Object v;
-    public Object w;
-    public y1 x;
-    public androidx.lifecycle.h y;
+    public final Object w;
+    public final y1 x;
+    public final androidx.lifecycle.h y;
     public x01.i z;
 
     public static final class a {

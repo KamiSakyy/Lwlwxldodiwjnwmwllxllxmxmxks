@@ -6,9 +6,9 @@ import java.nio.charset.Charset;
 public final class q {
     public static final t71.n d = new t71.n("([a-zA-Z0-9-!#$%&'*+.^_`{|}~]+)/([a-zA-Z0-9-!#$%&'*+.^_`{|}~]+)");
     public static final t71.n e = new t71.n(";\\s*(?:([a-zA-Z0-9-!#$%&'*+.^_`{|}~]+)=(?:([a-zA-Z0-9-!#$%&'*+.^_`{|}~]+)|\"([^\"]*)\"))?");
-    public String a;
-    public String b;
-    public String[] c;
+    public final String a;
+    public final String b;
+    public final String[] c;
 
     public q(String str, String str2, String str3, String[] strArr) {
         k71.k.g(str, "mediaType");

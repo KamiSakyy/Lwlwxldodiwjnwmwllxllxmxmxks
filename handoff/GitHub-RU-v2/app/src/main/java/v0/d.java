@@ -6,13 +6,13 @@ import x.i;
 public final class d extends b {
 
     /* renamed from: b, reason: collision with root package name */
-    public String f32325b;
+    public final String f32325b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f32326c;
+    public final int f32326c;
 
     /* renamed from: d, reason: collision with root package name */
-    public j71.c f32327d;
+    public final j71.c f32327d;
 
     public d(Object obj, String str, int i, j71.c cVar) {
         super(obj);

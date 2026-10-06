@@ -17,8 +17,8 @@ public abstract class FilterBarFragmentBase extends BindingFragment implements c
     public com.github.rudroid.activities.util.c B0;
     public q1 D0;
     public q1 E0;
-    public y1 G0;
-    public y1 H0;
+    public final y1 G0;
+    public final y1 H0;
     public final int C0 = 2131558796;
     public final y1 F0 = n1.c(Boolean.FALSE);
 

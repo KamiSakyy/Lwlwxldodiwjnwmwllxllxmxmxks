@@ -12,9 +12,9 @@ import java.util.Calendar;
 public final class n extends BaseAdapter {
     public static final int u = t.c(null).getMaximum(4);
     public static final int v = (t.c(null).getMaximum(7) + t.c(null).getMaximum(5)) - 1;
-    public m r;
+    public final m r;
     public c s;
-    public b t;
+    public final b t;
 
     public n(m mVar, b bVar) {
         this.r = mVar;

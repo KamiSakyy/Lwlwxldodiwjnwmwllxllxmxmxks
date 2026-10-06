@@ -22,16 +22,16 @@ public final class n implements u4.a {
     public MenuItem.OnActionExpandListener B;
 
     /* renamed from: a, reason: collision with root package name */
-    public int f30275a;
+    public final int f30275a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f30276b;
+    public final int f30276b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f30277c;
+    public final int f30277c;
 
     /* renamed from: d, reason: collision with root package name */
-    public int f30278d;
+    public final int f30278d;
 
     /* renamed from: e, reason: collision with root package name */
     public CharSequence f30279e;
@@ -50,7 +50,7 @@ public final class n implements u4.a {
     public Drawable l;
 
     /* renamed from: n, reason: collision with root package name */
-    public l f30285n;
+    public final l f30285n;
 
     /* renamed from: o, reason: collision with root package name */
     public d0 f30286o;

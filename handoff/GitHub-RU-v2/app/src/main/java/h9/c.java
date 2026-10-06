@@ -4,7 +4,7 @@ package h9;
 public final class c extends e {
 
     /* renamed from: a, reason: collision with root package name */
-    public i2.b f25554a;
+    public final i2.b f25554a;
 
     public c(i2.b bVar) {
         this.f25554a = bVar;

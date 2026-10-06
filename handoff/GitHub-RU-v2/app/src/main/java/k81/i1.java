@@ -5,8 +5,8 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class i1 implements SerialDescriptor {
-    public String a;
-    public i81.f b;
+    public final String a;
+    public final i81.f b;
 
     public i1(String str, i81.f fVar) {
         k71.k.g(fVar, "kind");

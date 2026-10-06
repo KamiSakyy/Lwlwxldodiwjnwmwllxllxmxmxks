@@ -12,14 +12,14 @@ import java.util.Set;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l0 implements Parcelable {
     public static final l0 z;
-    public String r;
-    public int s;
-    public String t;
-    public ProjectViewLayoutType u;
-    public int v;
-    public Object w;
-    public Set x;
-    public Set y;
+    public final String r;
+    public final int s;
+    public final String t;
+    public final ProjectViewLayoutType u;
+    public final int v;
+    public final Object w;
+    public final Set x;
+    public final Set y;
     public static final k0 Companion = new k0();
     public static final Parcelable.Creator<l0> CREATOR = new c(22);
 

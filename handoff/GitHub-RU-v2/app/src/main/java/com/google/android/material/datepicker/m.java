@@ -16,12 +16,12 @@ import java.util.concurrent.atomic.AtomicReference;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m implements Comparable, Parcelable {
     public static final Parcelable.Creator<m> CREATOR = new c0(15);
-    public Calendar r;
-    public int s;
-    public int t;
-    public int u;
-    public int v;
-    public long w;
+    public final Calendar r;
+    public final int s;
+    public final int t;
+    public final int u;
+    public final int v;
+    public final long w;
     public String x;
 
     public m(Calendar calendar) {

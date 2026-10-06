@@ -2,7 +2,7 @@ package com.google.android.gms.internal.measurement;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w4 extends x4 {
-    public int u;
+    public final int u;
 
     public w4(int i, byte[] bArr) {
         super(bArr);

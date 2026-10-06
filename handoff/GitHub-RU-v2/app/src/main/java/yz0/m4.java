@@ -5,10 +5,10 @@ import com.github.service.models.response.CheckStatusState;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m4 extends o.b {
-    public String t;
-    public String u;
-    public CheckStatusState v;
-    public CheckConclusionState w;
+    public final String t;
+    public final String u;
+    public final CheckStatusState v;
+    public final CheckConclusionState w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public m4(String str, String str2, CheckStatusState checkStatusState, CheckConclusionState checkConclusionState) {

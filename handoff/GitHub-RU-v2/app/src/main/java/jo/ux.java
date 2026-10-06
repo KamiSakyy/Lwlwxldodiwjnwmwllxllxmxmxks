@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ux implements aaShadow.v0 {
-    public fy a;
-    public String b;
-    public String c;
+    public final fy a;
+    public final String b;
+    public final String c;
 
     public ux(fy fyVar, String str, String str2) {
         this.a = fyVar;

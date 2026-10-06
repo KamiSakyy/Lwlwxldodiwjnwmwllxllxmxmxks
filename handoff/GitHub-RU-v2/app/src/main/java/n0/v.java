@@ -8,10 +8,10 @@ import java.util.List;
 public final class v {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f29333a;
+    public final int f29333a;
 
     /* renamed from: b, reason: collision with root package name */
-    public List f29334b;
+    public final List f29334b;
 
     public v(int i, List list) {
         this.f29333a = i;

@@ -2,9 +2,9 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v4 {
-    public String a;
-    public String b;
-    public eq.g c;
+    public final String a;
+    public final String b;
+    public final eq.g c;
 
     public v4(String str, String str2, eq.g gVar) {
         this.a = str;

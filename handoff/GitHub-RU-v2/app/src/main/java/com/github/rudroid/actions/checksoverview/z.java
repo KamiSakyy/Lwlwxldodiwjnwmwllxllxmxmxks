@@ -4,10 +4,10 @@ package com.github.rudroid.actions.checksoverview;
 public final class z {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f4979a;
+    public final String f4979a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f4980b;
+    public final String f4980b;
 
     public z(String str, String str2) {
         k71.k.g(str, "commitId");

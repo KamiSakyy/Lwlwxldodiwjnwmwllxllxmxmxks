@@ -10,16 +10,16 @@ public final class n1 {
     public static final n1 f3642e = new n1(new long[0], new RemoteViews[0], false, 1);
 
     /* renamed from: a, reason: collision with root package name */
-    public long[] f3643a;
+    public final long[] f3643a;
 
     /* renamed from: b, reason: collision with root package name */
-    public RemoteViews[] f3644b;
+    public final RemoteViews[] f3644b;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean f3645c;
+    public final boolean f3645c;
 
     /* renamed from: d, reason: collision with root package name */
-    public int f3646d;
+    public final int f3646d;
 
     public n1(long[] jArr, RemoteViews[] remoteViewsArr, boolean z10, int i) {
         this.f3643a = jArr;

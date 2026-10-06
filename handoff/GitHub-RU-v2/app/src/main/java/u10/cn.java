@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class cn {
-    public String a;
-    public hn b;
-    public gn c;
+    public final String a;
+    public final hn b;
+    public final gn c;
 
     public cn(String str, hn hnVar, gn gnVar) {
         k71.k.g(str, "__typename");

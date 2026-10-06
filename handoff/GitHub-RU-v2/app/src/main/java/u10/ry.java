@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ry implements aaShadow.m0 {
-    public ty a;
+    public final ty a;
 
     public ry(ty tyVar) {
         this.a = tyVar;

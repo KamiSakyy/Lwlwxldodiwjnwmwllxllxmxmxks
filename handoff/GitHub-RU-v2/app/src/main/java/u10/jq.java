@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class jq {
-    public kq a;
-    public iq b;
+    public final kq a;
+    public final iq b;
 
     public jq(kq kqVar, iq iqVar) {
         this.a = kqVar;

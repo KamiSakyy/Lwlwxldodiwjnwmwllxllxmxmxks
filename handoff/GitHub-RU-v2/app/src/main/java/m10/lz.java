@@ -12,7 +12,7 @@ public final class lz {
     public static final lz w;
     public static final /* synthetic */ lz[] x;
     public static final /* synthetic */ d71.b y;
-    public String r;
+    public final String r;
 
     static {
         lz lzVar = new lz("APPROVE", 0, "APPROVE");

@@ -5,8 +5,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public b a;
-    public List b;
+    public final b a;
+    public final List b;
 
     public c(b bVar, List list) {
         this.a = bVar;

@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class hk implements aaShadow.m0 {
-    public ik a;
+    public final ik a;
 
     public hk(ik ikVar) {
         this.a = ikVar;

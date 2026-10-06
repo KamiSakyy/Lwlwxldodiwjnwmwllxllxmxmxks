@@ -8,13 +8,13 @@ import android.os.Parcel;
 public final class x {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f29482a;
+    public final String f29482a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f29483b;
+    public final int f29483b;
 
     /* renamed from: c, reason: collision with root package name */
-    public Notification f29484c;
+    public final Notification f29484c;
 
     public x(String str, int i, Notification notification) {
         this.f29482a = str;

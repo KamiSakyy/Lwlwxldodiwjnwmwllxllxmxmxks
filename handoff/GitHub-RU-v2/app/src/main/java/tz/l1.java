@@ -2,8 +2,8 @@ package tz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l1 {
-    public w1 a;
-    public r b;
+    public final w1 a;
+    public final r b;
 
     public l1(w1 w1Var, r rVar) {
         this.a = w1Var;

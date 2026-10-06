@@ -11,7 +11,7 @@ public final class b {
     public static final b t;
     public static final /* synthetic */ b[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         b bVar = new b("WEB", 0, "WEB");

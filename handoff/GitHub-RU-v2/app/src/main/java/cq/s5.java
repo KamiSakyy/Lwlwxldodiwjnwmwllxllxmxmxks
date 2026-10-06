@@ -2,13 +2,13 @@ package cq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s5 {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public r5 e;
-    public q5 f;
-    public eq.g g;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final r5 e;
+    public final q5 f;
+    public final eq.g g;
 
     public s5(String str, String str2, String str3, String str4, r5 r5Var, q5 q5Var, eq.g gVar) {
         k71.k.g(str, "__typename");

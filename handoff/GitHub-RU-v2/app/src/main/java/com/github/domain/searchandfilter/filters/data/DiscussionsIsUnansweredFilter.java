@@ -17,7 +17,7 @@ import z70.y1;
 @g81.e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class DiscussionsIsUnansweredFilter extends d {
-    public boolean v;
+    public final boolean v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<DiscussionsIsUnansweredFilter> CREATOR = new a21.g(21);
     public static final w61.h[] w = {w.s(w61.i.r, new c2(29)), null, null};

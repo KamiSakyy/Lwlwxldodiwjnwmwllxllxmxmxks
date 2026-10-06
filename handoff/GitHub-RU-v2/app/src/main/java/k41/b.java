@@ -1357,5 +1357,4 @@ public abstract class b {
 
 
     public static Object v;
-    public Object b(Object) { return null; }
 }

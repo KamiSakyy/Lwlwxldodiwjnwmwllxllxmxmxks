@@ -19,7 +19,7 @@ public final class RepositoryDiscussionsEntryPointRoute implements oc.e {
     public static final h[] f11579s = {w.s(i.r, new a(25))};
 
     /* renamed from: r, reason: collision with root package name */
-    public j f11580r;
+    public final j f11580r;
 
     public static final class Companion {
         public final KSerializer serializer() {

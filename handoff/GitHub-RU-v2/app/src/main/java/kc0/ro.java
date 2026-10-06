@@ -4,15 +4,15 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ro {
-    public String a;
-    public boolean b;
-    public po c;
-    public boolean d;
-    public boolean e;
-    public boolean f;
-    public List g;
-    public String h;
-    public yi0.a i;
+    public final String a;
+    public final boolean b;
+    public final po c;
+    public final boolean d;
+    public final boolean e;
+    public final boolean f;
+    public final List g;
+    public final String h;
+    public final yi0.a i;
 
     public ro(String str, boolean z, po poVar, boolean z2, boolean z3, boolean z4, List list, String str2, yi0.a aVar) {
         this.a = str;

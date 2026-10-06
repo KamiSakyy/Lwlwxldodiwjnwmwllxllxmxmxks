@@ -2,16 +2,16 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class jc0 {
-    public String a;
-    public String b;
-    public String c;
-    public pz0.gu d;
-    public ic0 e;
-    public boolean f;
-    public boolean g;
-    public ep0.i h;
-    public cs0.j i;
-    public yp0.c j;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final pz0.gu d;
+    public final ic0 e;
+    public final boolean f;
+    public final boolean g;
+    public final ep0.i h;
+    public final cs0.j i;
+    public final yp0.c j;
 
     public jc0(String str, String str2, String str3, pz0.gu guVar, ic0 ic0Var, boolean z, boolean z2, ep0.i iVar, cs0.j jVar, yp0.c cVar) {
         this.a = str;

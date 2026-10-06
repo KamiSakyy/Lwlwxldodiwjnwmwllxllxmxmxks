@@ -10,7 +10,7 @@ public final class d implements ListIterator, l71.a {
     public final /* synthetic */ int f27898r;
 
     /* renamed from: s, reason: collision with root package name */
-    public Object f27899s;
+    public final Object f27899s;
 
     /* renamed from: t, reason: collision with root package name */
     public int f27900t;

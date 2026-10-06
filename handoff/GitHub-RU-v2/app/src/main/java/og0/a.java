@@ -8,14 +8,14 @@ import se0.c;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements h0 {
-    public String a;
-    public String b;
-    public String c;
-    public c d;
-    public aj0.c e;
-    public yh0.a f;
-    public gf0.a g;
-    public qh0.a h;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final c d;
+    public final aj0.c e;
+    public final yh0.a f;
+    public final gf0.a g;
+    public final qh0.a h;
 
     public a(String str, String str2, String str3, c cVar, aj0.c cVar2, yh0.a aVar, gf0.a aVar2, qh0.a aVar3) {
         this.a = str;

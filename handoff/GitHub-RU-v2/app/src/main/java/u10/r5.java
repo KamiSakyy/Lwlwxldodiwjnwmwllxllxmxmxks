@@ -2,11 +2,11 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r5 {
-    public String a;
-    public String b;
-    public t5 c;
-    public u5 d;
-    public ja0.a e;
+    public final String a;
+    public final String b;
+    public final t5 c;
+    public final u5 d;
+    public final ja0.a e;
 
     public r5(String str, String str2, t5 t5Var, u5 u5Var, ja0.a aVar) {
         k71.k.g(str, "__typename");
@@ -44,5 +44,5 @@ public final class r5 {
         o.append(", nodeIdFragment=");
         return no.a.p(o, this.e, ")");
     }
-    public static Object iterator() { return null; }
+    public Object iterator() { return null; }
 }

@@ -2,8 +2,8 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s0 {
-    public String a;
-    public b1 b;
+    public final String a;
+    public final b1 b;
 
     public s0(String str, b1 b1Var) {
         k71.k.g(str, "__typename");

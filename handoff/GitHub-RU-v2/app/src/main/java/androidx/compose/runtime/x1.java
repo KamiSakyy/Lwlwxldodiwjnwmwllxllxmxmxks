@@ -7,7 +7,7 @@ public final class x1 implements f1, v71.z {
     public final /* synthetic */ f1 f1897r;
 
     /* renamed from: s, reason: collision with root package name */
-    public a71.h f1898s;
+    public final a71.h f1898s;
 
     public x1(f1 f1Var, a71.h hVar) {
         this.f1897r = f1Var;

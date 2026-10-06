@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
 public final class f implements Iterator, l71.a {
 
     /* renamed from: s, reason: collision with root package name */
-    public Iterator f31732s;
+    public final Iterator f31732s;
 
     /* renamed from: u, reason: collision with root package name */
     public Object f31734u;

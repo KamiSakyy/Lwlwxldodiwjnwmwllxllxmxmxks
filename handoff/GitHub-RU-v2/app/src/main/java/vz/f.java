@@ -2,8 +2,8 @@ package vz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f {
-    public String a;
-    public c b;
+    public final String a;
+    public final c b;
 
     public f(String str, c cVar) {
         this.a = str;

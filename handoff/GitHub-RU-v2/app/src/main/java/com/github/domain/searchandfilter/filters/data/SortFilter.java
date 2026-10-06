@@ -25,7 +25,7 @@ public final class SortFilter extends d {
     public static final w61.h[] w;
     public static final m0 x;
     public static final t y;
-    public m0 v;
+    public final m0 v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<SortFilter> CREATOR = new o(20);
 

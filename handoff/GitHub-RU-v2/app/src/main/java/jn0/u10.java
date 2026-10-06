@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u10 {
-    public t10 a;
-    public String b;
-    public String c;
+    public final t10 a;
+    public final String b;
+    public final String c;
 
     public u10(t10 t10Var, String str, String str2) {
         this.a = t10Var;

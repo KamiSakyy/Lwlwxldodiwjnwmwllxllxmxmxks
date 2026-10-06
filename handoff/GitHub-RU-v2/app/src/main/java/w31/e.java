@@ -28,5 +28,4 @@ public final class e implements z {
 
     public e(Object... a) {
     }
-    public Object b(Object) { return null; }
 }

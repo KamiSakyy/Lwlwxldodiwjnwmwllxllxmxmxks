@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qa {
-    public String a;
+    public final String a;
 
     public qa(String str) {
         this.a = str;

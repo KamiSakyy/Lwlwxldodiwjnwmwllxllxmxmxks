@@ -2,7 +2,7 @@ package xt0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g {
-    public String a;
+    public final String a;
 
     public g(String str) {
         this.a = str;

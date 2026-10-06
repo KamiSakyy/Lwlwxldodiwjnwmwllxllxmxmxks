@@ -12,8 +12,8 @@ import java.util.concurrent.TimeUnit;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g implements ScheduledExecutorService, AutoCloseable {
-    public ExecutorService r;
-    public ScheduledExecutorService s;
+    public final ExecutorService r;
+    public final ScheduledExecutorService s;
 
     public g(ExecutorService executorService, ScheduledExecutorService scheduledExecutorService) {
         this.r = executorService;

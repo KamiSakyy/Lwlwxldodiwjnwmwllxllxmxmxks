@@ -6,11 +6,11 @@ import m10.p00;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p implements aa.w0 {
     public static final d Companion = new d();
-    public String r;
-    public aa1.b s;
-    public aa1.b t;
-    public aa1.b u;
-    public aa1.b v;
+    public final String r;
+    public final aa1.b s;
+    public final aa1.b t;
+    public final aa1.b u;
+    public final aa1.b v;
 
     public p(String str, aa.u0 u0Var, aa.u0 u0Var2, int i) {
         int i2 = i & 4;

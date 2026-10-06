@@ -10,7 +10,7 @@ import x61.l;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a {
     public static final Set i = l.j0(new h0[]{j91.a.E, j91.a.q0, j91.a.F, j91.a.U, j91.a.l0, j91.a.e0, j91.a.m0, j91.a.n0, j91.a.p0});
-    public o91.b a;
+    public final o91.b a;
     public h0 b;
     public h0 c;
     public CharSequence d = "";

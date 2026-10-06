@@ -4,7 +4,7 @@ package o7;
 public final class f implements v7.c {
 
     /* renamed from: r, reason: collision with root package name */
-    public v7.c f30011r;
+    public final v7.c f30011r;
 
     public f(v7.c cVar) {
         this.f30011r = cVar;

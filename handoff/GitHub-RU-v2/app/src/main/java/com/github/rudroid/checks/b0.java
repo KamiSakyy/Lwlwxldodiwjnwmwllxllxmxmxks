@@ -18,16 +18,16 @@ public final class b0 extends k1 implements v3, com.github.rudroid.utilities.vie
     public final /* synthetic */ com.github.rudroid.utilities.viewmodel.c f8752s;
 
     /* renamed from: t, reason: collision with root package name */
-    public dj.b f8753t;
+    public final dj.b f8753t;
 
     /* renamed from: u, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f8754u;
+    public final com.github.rudroid.activities.util.c f8754u;
 
     /* renamed from: v, reason: collision with root package name */
-    public y1 f8755v;
+    public final y1 f8755v;
 
     /* renamed from: w, reason: collision with root package name */
-    public a0 f8756w;
+    public final a0 f8756w;
 
     /* renamed from: x, reason: collision with root package name */
     public x01.i f8757x;

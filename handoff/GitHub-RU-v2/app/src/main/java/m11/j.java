@@ -6,9 +6,9 @@ import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j {
-    public String a;
-    public byte[] b;
-    public j11.d c;
+    public final String a;
+    public final byte[] b;
+    public final j11.d c;
 
     public j(String str, byte[] bArr, j11.d dVar) {
         this.a = str;

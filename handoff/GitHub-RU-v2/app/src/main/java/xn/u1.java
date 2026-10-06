@@ -4,7 +4,7 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u1 extends w1Shadow {
-    public Object a;
+    public final Object a;
 
     public u1(List list) {
         this.a = list;

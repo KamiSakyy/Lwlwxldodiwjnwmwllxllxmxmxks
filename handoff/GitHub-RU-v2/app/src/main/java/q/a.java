@@ -10,7 +10,7 @@ import androidx.appcompat.widget.ActionBarContainer;
 public final class a extends Drawable {
 
     /* renamed from: a, reason: collision with root package name */
-    public ActionBarContainer f30539a;
+    public final ActionBarContainer f30539a;
 
     public a(ActionBarContainer actionBarContainer) {
         this.f30539a = actionBarContainer;

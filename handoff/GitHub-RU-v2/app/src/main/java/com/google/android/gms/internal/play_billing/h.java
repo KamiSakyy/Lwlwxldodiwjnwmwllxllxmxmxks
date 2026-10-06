@@ -35,7 +35,7 @@ public enum h {
     EF146(12);
 
     public static final a0 t;
-    public int r;
+    public final int r;
 
     static {
         androidx.compose.foundation.lazy.layout.o1 o1Var = new androidx.compose.foundation.lazy.layout.o1(2, (byte) 0);

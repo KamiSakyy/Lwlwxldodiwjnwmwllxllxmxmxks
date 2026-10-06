@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x60 {
-    public String a;
-    public boolean b;
-    public String c;
-    public dw.t5 d;
+    public final String a;
+    public final boolean b;
+    public final String c;
+    public final dw.t5 d;
 
     public x60(String str, boolean z, String str2, dw.t5 t5Var) {
         this.a = str;

@@ -7,13 +7,13 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k {
-    public String a;
-    public String b;
-    public boolean c;
-    public ev d;
-    public List e;
-    public j f;
-    public String g;
+    public final String a;
+    public final String b;
+    public final boolean c;
+    public final ev d;
+    public final List e;
+    public final j f;
+    public final String g;
 
     public k(String str, String str2, boolean z, ev evVar, List list, j jVar, String str3) {
         this.a = str;

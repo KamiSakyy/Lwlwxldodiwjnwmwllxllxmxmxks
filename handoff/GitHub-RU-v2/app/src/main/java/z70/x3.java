@@ -105,5 +105,4 @@ public final class x3 implements aa.i0, bm.k, com.google.android.gms.measurement
         k71.k.g(wVar, "customScalarAdapters");
     }
     public Object q = null;
-    public Object a(Object) { return null; }
 }

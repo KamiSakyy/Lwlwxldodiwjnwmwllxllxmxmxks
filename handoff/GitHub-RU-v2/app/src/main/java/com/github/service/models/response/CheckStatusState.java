@@ -10,7 +10,7 @@ public final class CheckStatusState {
     private static final /* synthetic */ d71.a $ENTRIES;
     private static final /* synthetic */ CheckStatusState[] $VALUES;
     public static final m Companion;
-    private String rawValue;
+    private final String rawValue;
     public static final CheckStatusState QUEUED = new CheckStatusState("QUEUED", 0, "QUEUED");
     public static final CheckStatusState IN_PROGRESS = new CheckStatusState("IN_PROGRESS", 1, "IN_PROGRESS");
     public static final CheckStatusState COMPLETED = new CheckStatusState("COMPLETED", 2, "COMPLETED");

@@ -5,8 +5,8 @@ import android.net.Uri;
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class b {
     public static final a Companion = new a();
-    public String a;
-    public int b;
+    public final String a;
+    public final int b;
 
     public static final class a {
     }
@@ -16,7 +16,7 @@ public abstract class b {
     }
 
     public static final class c extends b {
-        public Uri c;
+        public final Uri c;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public c(Uri uri) {

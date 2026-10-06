@@ -5,10 +5,10 @@ public abstract class za implements zh.b {
     public static final a Companion = new a();
 
     /* renamed from: r, reason: collision with root package name */
-    public int f12052r;
+    public final int f12052r;
 
     /* renamed from: s, reason: collision with root package name */
-    public String f12053s;
+    public final String f12053s;
 
     public static final class a {
     }

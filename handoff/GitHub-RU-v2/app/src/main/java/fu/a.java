@@ -9,12 +9,12 @@ import m10.gn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a implements h0 {
-    public String a;
-    public String b;
-    public String c;
-    public gn d;
-    public double e;
-    public ZonedDateTime f;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final gn d;
+    public final double e;
+    public final ZonedDateTime f;
 
     public a(String str, String str2, String str3, gn gnVar, double d, ZonedDateTime zonedDateTime) {
         this.a = str;

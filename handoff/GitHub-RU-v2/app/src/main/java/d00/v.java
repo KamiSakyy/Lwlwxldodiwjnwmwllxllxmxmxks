@@ -6,10 +6,10 @@ import cq.u2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v {
-    public String a;
-    public String b;
-    public t c;
-    public u2 d;
+    public final String a;
+    public final String b;
+    public final t c;
+    public final u2 d;
 
     public v(String str, String str2, t tVar, u2 u2Var) {
         k71.k.g(str, "__typename");

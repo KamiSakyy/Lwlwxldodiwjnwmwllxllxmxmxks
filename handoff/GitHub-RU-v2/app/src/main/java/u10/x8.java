@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x8 {
-    public String a;
-    public e30.a b;
+    public final String a;
+    public final e30.a b;
 
     public x8(String str, e30.a aVar) {
         k71.k.g(str, "__typename");

@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class dc implements aaShadow.v0 {
-    public fc a;
-    public String b;
-    public String c;
+    public final fc a;
+    public final String b;
+    public final String c;
 
     public dc(fc fcVar, String str, String str2) {
         this.a = fcVar;

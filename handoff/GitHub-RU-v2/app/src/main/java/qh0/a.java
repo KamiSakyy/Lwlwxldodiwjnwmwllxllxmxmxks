@@ -8,11 +8,11 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements h0 {
-    public String a;
-    public boolean b;
-    public String c;
-    public boolean d;
-    public bl0.a e;
+    public final String a;
+    public final boolean b;
+    public final String c;
+    public final boolean d;
+    public final bl0.a e;
 
     public a(String str, boolean z, String str2, boolean z2, bl0.a aVar) {
         k.g(str, "__typename");

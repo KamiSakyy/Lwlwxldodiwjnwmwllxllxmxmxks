@@ -19,11 +19,11 @@ import x61.x;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class d extends k81.b {
-    public k71.e a;
-    public List b;
-    public Object c;
-    public Map d;
-    public LinkedHashMap e;
+    public final k71.e a;
+    public final List b;
+    public final Object c;
+    public final Map d;
+    public final LinkedHashMap e;
 
     public d(String str, k71.e eVar, r71.b[] bVarArr, KSerializer[] kSerializerArr, Annotation[] annotationArr) {
         this.a = eVar;

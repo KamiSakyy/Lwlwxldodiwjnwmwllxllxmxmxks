@@ -6,13 +6,13 @@ import m10.b00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
-    public int a;
-    public String b;
-    public b00 c;
-    public l d;
-    public boolean e;
-    public boolean f;
-    public String g;
+    public final int a;
+    public final String b;
+    public final b00 c;
+    public final l d;
+    public final boolean e;
+    public final boolean f;
+    public final String g;
 
     public g(int i, String str, b00 b00Var, l lVar, boolean z, boolean z2, String str2) {
         this.a = i;

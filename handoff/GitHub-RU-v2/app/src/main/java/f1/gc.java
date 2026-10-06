@@ -4,10 +4,10 @@ package f1;
 public final class gc {
 
     /* renamed from: a, reason: collision with root package name */
-    public de.f f22892a;
+    public final de.f f22892a;
 
     /* renamed from: b, reason: collision with root package name */
-    public w3.z f22893b;
+    public final w3.z f22893b;
 
     public gc(de.f fVar, w3.z zVar) {
         this.f22892a = fVar;

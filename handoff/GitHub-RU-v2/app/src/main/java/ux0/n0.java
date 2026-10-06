@@ -2,9 +2,9 @@ package ux0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n0 {
-    public String a;
-    public String b;
-    public m0 c;
+    public final String a;
+    public final String b;
+    public final m0 c;
 
     public n0(String str, String str2, m0 m0Var) {
         k71.k.g(str, "__typename");

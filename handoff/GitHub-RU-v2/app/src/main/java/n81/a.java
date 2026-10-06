@@ -11,10 +11,10 @@ import java.util.Iterator;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a {
-    public String a;
-    public HashSet b;
-    public String c;
-    public Boolean d;
+    public final String a;
+    public final HashSet b;
+    public final String c;
+    public final Boolean d;
 
     public a(PackageInfo packageInfo, boolean z) {
         String str = packageInfo.packageName;

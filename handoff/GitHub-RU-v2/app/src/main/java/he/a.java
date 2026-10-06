@@ -4,13 +4,13 @@ package he;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public j71.a f25598a;
+    public final j71.a f25598a;
 
     /* renamed from: b, reason: collision with root package name */
-    public j71.a f25599b;
+    public final j71.a f25599b;
 
     /* renamed from: c, reason: collision with root package name */
-    public j71.a f25600c;
+    public final j71.a f25600c;
 
     public a(j71.a aVar, j71.a aVar2, j71.a aVar3) {
         k71.k.g(aVar, "onCommentClicked");

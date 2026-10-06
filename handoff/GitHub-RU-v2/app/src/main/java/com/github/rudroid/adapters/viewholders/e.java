@@ -6,7 +6,7 @@ import k5.f;
 public class e<T extends k5.f> extends l7.n1 {
 
     /* renamed from: u, reason: collision with root package name */
-    public k5.f f6016u;
+    public final k5.f f6016u;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public e(k5.f fVar) {

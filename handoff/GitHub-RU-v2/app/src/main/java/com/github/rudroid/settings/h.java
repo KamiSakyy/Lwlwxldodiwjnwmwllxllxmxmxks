@@ -5,8 +5,8 @@ import android.net.NetworkCapabilities;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h extends androidx.lifecycle.k1 {
-    public com.github.rudroid.o0 s;
-    public androidx.lifecycle.p0 t;
+    public final com.github.rudroid.o0 s;
+    public final androidx.lifecycle.p0 t;
 
     public h(com.github.rudroid.o0 o0Var) {
         k71.k.g(o0Var, "networkInformationProvider");

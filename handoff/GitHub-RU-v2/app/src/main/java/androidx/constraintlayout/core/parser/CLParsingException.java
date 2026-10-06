@@ -6,10 +6,10 @@ import c4.c;
 public class CLParsingException extends Exception {
 
     /* renamed from: r, reason: collision with root package name */
-    public String f2097r;
+    public final String f2097r;
 
     /* renamed from: s, reason: collision with root package name */
-    public String f2098s;
+    public final String f2098s;
 
     public CLParsingException(String str, c cVar) {
         super(str);

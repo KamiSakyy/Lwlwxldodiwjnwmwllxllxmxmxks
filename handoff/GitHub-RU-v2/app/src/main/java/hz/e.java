@@ -27,7 +27,7 @@ public final /* synthetic */ class e implements j71.a {
         this.r = i;
     }
 
-    public static final Object a() {
+    public final Object a() {
         switch (this.r) {
             case 0:
                 ChatMessageReferenceResponse$FileReferenceResponse.Companion companion = ChatMessageReferenceResponse$FileReferenceResponse.Companion;
@@ -117,5 +117,5 @@ public final /* synthetic */ class e implements j71.a {
         }
     }
     public Object a(Object p1) { return null; }
-    public static Object c(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object c(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

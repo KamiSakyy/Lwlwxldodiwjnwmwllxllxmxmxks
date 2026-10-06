@@ -4,13 +4,13 @@ package com.github.rudroid.copilot;
 public final class e5 {
 
     /* renamed from: a, reason: collision with root package name */
-    public xn.b1 f9542a;
+    public final xn.b1 f9542a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f9543b;
+    public final boolean f9543b;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean f9544c;
+    public final boolean f9544c;
 
     public e5(xn.b1 b1Var, boolean z10, boolean z11) {
         k71.k.g(b1Var, "aiModel");

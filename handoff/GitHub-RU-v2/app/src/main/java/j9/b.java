@@ -7,7 +7,7 @@ import t71.n;
 public final class b implements Closeable {
 
     /* renamed from: r, reason: collision with root package name */
-    public a f27303r;
+    public final a f27303r;
 
     /* renamed from: s, reason: collision with root package name */
     public boolean f27304s;

@@ -280,5 +280,5 @@ public final /* synthetic */ class y implements j71.c {
                 return new n3.b(arrayList4);
         }
     }
-    public static Object l(Object p1, Object p2) { return null; }
+    public Object l(Object p1, Object p2) { return null; }
 }

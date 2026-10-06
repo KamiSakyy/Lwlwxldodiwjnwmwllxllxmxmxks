@@ -13,7 +13,7 @@ public final class f {
     public static final float f31117d;
 
     /* renamed from: a, reason: collision with root package name */
-    public float f31118a;
+    public final float f31118a;
 
     static {
         a(0.0f);

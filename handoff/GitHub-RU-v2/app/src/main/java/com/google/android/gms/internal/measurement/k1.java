@@ -13,9 +13,9 @@ import java.util.concurrent.TimeUnit;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k1 {
     public static volatile k1 g;
-    public ExecutorService a;
-    public s21.a b;
-    public ArrayList c;
+    public final ExecutorService a;
+    public final s21.a b;
+    public final ArrayList c;
     public int d;
     public boolean e;
     public volatile l0 f;

@@ -2,8 +2,8 @@ package pi;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m {
-    public q71.g a;
-    public p b;
+    public final q71.g a;
+    public final p b;
 
     public m(q71.g gVar, p pVar) {
         k71.k.g(gVar, "range");

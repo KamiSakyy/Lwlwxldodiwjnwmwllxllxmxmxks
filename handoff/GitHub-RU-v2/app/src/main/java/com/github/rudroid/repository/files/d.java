@@ -9,16 +9,16 @@ public final class d extends androidx.lifecycle.k1 {
     public static final a Companion = new a();
 
     /* renamed from: s, reason: collision with root package name */
-    public y1 f19541s;
+    public final y1 f19541s;
 
     /* renamed from: t, reason: collision with root package name */
-    public y71.i1 f19542t;
+    public final y71.i1 f19542t;
 
     /* renamed from: u, reason: collision with root package name */
-    public y1 f19543u;
+    public final y1 f19543u;
 
     /* renamed from: v, reason: collision with root package name */
-    public y71.i1 f19544v;
+    public final y71.i1 f19544v;
 
     public static final class a {
     }

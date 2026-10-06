@@ -6,9 +6,9 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class s0Shadow {
     private static final p0 Companion = new p0();
     public static final q0 d = new q0(1, 1000);
-    public w a;
-    public z b;
-    public ConcurrentHashMap c;
+    public final w a;
+    public final z b;
+    public final ConcurrentHashMap c;
 
     public s0(w wVar, z zVar) {
         k71.k.g(wVar, "fetchTaskEventsPagedUseCase");

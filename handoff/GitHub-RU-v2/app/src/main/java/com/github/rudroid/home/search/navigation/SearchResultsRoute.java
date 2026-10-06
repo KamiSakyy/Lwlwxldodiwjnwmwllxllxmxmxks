@@ -16,13 +16,13 @@ import w61.i;
 public final class SearchResultsRoute implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public SearchViewModelType f15055r;
+    public final SearchViewModelType f15055r;
 
     /* renamed from: s, reason: collision with root package name */
-    public String f15056s;
+    public final String f15056s;
 
     /* renamed from: t, reason: collision with root package name */
-    public String f15057t;
+    public final String f15057t;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<SearchResultsRoute> CREATOR = new a();
 

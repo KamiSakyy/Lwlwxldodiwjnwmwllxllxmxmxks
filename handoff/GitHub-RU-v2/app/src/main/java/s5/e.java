@@ -6,7 +6,7 @@ import k71.k;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f31718a;
+    public final String f31718a;
 
     public e(String str) {
         k.g(str, "name");

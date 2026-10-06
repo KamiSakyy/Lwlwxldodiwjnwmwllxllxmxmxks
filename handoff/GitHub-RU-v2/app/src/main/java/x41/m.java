@@ -10,7 +10,7 @@ import java.util.Objects;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m implements d {
     public static final Charset t = Charset.forName("UTF-8");
-    public File r;
+    public final File r;
     public l s;
 
     public m(File file) {

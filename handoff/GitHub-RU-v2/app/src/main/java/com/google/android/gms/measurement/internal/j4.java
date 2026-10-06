@@ -4,10 +4,10 @@ import java.util.Map;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j4 {
-    public String a;
-    public Map b;
-    public a3 c;
-    public com.google.android.gms.internal.measurement.q3 d;
+    public final String a;
+    public final Map b;
+    public final a3 c;
+    public final com.google.android.gms.internal.measurement.q3 d;
 
     public j4(String str, Map map, a3 a3Var, com.google.android.gms.internal.measurement.q3 q3Var) {
         this.a = str;

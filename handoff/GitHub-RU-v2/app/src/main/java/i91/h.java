@@ -24,9 +24,9 @@ import x61.n;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class h extends o {
     public static final a0 v;
-    public ClassLoader s;
-    public o t;
-    public p u;
+    public final ClassLoader s;
+    public final o t;
+    public final p u;
 
     static {
         String str = a0.s;

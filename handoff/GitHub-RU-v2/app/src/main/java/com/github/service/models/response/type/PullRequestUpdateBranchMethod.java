@@ -14,7 +14,7 @@ public final class PullRequestUpdateBranchMethod {
     public static final PullRequestUpdateBranchMethod MERGE = new PullRequestUpdateBranchMethod("MERGE", 0, "MERGE");
     public static final PullRequestUpdateBranchMethod REBASE = new PullRequestUpdateBranchMethod("REBASE", 1, "REBASE");
     public static final PullRequestUpdateBranchMethod UNKNOWN__ = new PullRequestUpdateBranchMethod("UNKNOWN__", 2, "UNKNOWN__");
-    private String rawValue;
+    private final String rawValue;
 
     private static final /* synthetic */ PullRequestUpdateBranchMethod[] $values() {
         return new PullRequestUpdateBranchMethod[]{MERGE, REBASE, UNKNOWN__};

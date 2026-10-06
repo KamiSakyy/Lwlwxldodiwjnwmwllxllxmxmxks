@@ -26,16 +26,16 @@ public final class e extends Drawable implements Animatable {
     public static final int[] f3813z = {-16777216};
 
     /* renamed from: r, reason: collision with root package name */
-    public d f3814r;
+    public final d f3814r;
 
     /* renamed from: s, reason: collision with root package name */
     public float f3815s;
 
     /* renamed from: t, reason: collision with root package name */
-    public Resources f3816t;
+    public final Resources f3816t;
 
     /* renamed from: u, reason: collision with root package name */
-    public ValueAnimator f3817u;
+    public final ValueAnimator f3817u;
 
     /* renamed from: v, reason: collision with root package name */
     public float f3818v;

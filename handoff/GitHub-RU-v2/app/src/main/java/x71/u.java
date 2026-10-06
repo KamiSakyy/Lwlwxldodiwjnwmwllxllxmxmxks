@@ -4,7 +4,7 @@ import v71.a2;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class u implements a2 {
-    public v71.l r;
+    public final v71.l r;
 
     public u(v71.l lVar) {
         this.r = lVar;

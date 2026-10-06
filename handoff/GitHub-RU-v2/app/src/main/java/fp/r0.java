@@ -6,7 +6,7 @@ import m10.p00;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r0 implements aa.w0 {
     public static final n0 Companion = new n0();
-    public String r;
+    public final String r;
 
     public r0(String str) {
         this.r = str;

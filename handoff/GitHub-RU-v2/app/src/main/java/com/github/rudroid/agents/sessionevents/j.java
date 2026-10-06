@@ -24,7 +24,7 @@ public interface j {
     public static final class b implements j {
 
         /* renamed from: a, reason: collision with root package name */
-        public p4 f7656a;
+        public final p4 f7656a;
 
         public b(p4 p4Var) {
             this.f7656a = p4Var;

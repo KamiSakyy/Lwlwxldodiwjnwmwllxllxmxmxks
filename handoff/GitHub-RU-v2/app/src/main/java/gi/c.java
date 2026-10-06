@@ -15,8 +15,8 @@ import w61.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public f a;
-    public l0 b;
+    public final f a;
+    public final l0 b;
 
     public c(f fVar) {
         k.g(fVar, "dataStore");
@@ -42,5 +42,4 @@ public final class c {
         return n == b71.a.r ? n : a0.a;
     }
     public Object v(Object p1) { return null; }
-    public Object v(Object) { return null; }
 }

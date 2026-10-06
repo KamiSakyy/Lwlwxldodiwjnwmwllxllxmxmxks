@@ -9,7 +9,7 @@ public final class d {
     public char f31153a;
 
     /* renamed from: b, reason: collision with root package name */
-    public float[] f31154b;
+    public final float[] f31154b;
 
     public d(char c10, float[] fArr) {
         this.f31153a = c10;

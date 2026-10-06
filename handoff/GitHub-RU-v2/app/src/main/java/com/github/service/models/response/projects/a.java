@@ -12,9 +12,9 @@ import l01.e;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements d0, Parcelable {
     public static final a u;
-    public String r;
+    public final String r;
     public final ProjectFieldOption$Iteration s;
-    public String t;
+    public final String t;
     public static final e Companion = new e();
     public static final Parcelable.Creator<a> CREATOR = new c(1);
 
@@ -71,5 +71,5 @@ public final class a implements d0, Parcelable {
         this.s.writeToParcel(parcel, i);
         parcel.writeString(this.t);
     }
-    public static Object z(Object p1) { return null; }
+    public Object z(Object p1) { return null; }
 }

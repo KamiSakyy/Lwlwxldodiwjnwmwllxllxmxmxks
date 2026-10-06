@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class zb {
-    public String a;
-    public String b;
-    public ac c;
+    public final String a;
+    public final String b;
+    public final ac c;
 
     public zb(String str, String str2, ac acVar) {
         k71.k.g(str, "__typename");

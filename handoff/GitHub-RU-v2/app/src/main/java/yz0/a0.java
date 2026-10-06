@@ -6,7 +6,7 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a0 extends c0 {
     public static final Parcelable.Creator<a0> CREATOR = new h(7);
-    public String s;
+    public final String s;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public a0(String str) {

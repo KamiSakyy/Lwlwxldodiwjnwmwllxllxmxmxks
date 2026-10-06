@@ -14,9 +14,9 @@ import java.util.concurrent.TimeUnit;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class g extends Service {
-    public ExecutorService r;
+    public final ExecutorService r;
     public b0 s;
-    public Object t;
+    public final Object t;
     public int u;
     public int v;
 
@@ -89,6 +89,4 @@ public abstract class g extends Service {
     }
     public Object a(Object p1, Object p2, Object p3) { return null; }
     public Object b() { return null; }
-    public Object a(Object, Object, int) { return null; }
-    public Object a(Object, Object, int) { return null; }
 }

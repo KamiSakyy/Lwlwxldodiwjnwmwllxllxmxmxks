@@ -17,7 +17,7 @@ public final class ka {
     public static final ka x;
     public static final ka y;
     public static final ka z;
-    public String r;
+    public final String r;
 
     static {
         ka kaVar = new ka("ANNOUNCEMENTS", 0, "ANNOUNCEMENTS");

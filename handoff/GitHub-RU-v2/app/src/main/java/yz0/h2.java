@@ -6,8 +6,8 @@ import java.time.ZonedDateTime;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h2 {
     public final IssueOrPullRequest$ReviewerReviewState a;
-    public ZonedDateTime b;
-    public boolean c;
+    public final ZonedDateTime b;
+    public final boolean c;
 
     public h2(IssueOrPullRequest$ReviewerReviewState issueOrPullRequest$ReviewerReviewState, ZonedDateTime zonedDateTime, boolean z) {
         k71.k.g(issueOrPullRequest$ReviewerReviewState, "state");

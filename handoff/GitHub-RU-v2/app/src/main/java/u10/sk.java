@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class sk {
-    public String a;
-    public yk b;
-    public String c;
+    public final String a;
+    public final yk b;
+    public final String c;
 
     public sk(String str, yk ykVar, String str2) {
         this.a = str;

@@ -11,11 +11,11 @@ import com.github.rudroid.utilities.w0;
 public final class SelectableLanguageBottomSheet extends Hilt_SelectableLanguageBottomSheet {
     public static final a Companion;
     public static final /* synthetic */ r71.e[] d1;
-    public l1 Y0;
-    public com.github.rudroid.fragments.util.c Z0;
-    public w61.p a1;
-    public int b1;
-    public int c1;
+    public final l1 Y0;
+    public final com.github.rudroid.fragments.util.c Z0;
+    public final w61.p a1;
+    public final int b1;
+    public final int c1;
 
     public static final class a {
     }

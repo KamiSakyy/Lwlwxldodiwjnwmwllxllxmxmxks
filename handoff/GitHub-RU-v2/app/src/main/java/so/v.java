@@ -9,7 +9,7 @@ import m10.p00;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v implements w0 {
     public static final r Companion = new r();
-    public String r;
+    public final String r;
 
     public v(String str) {
         k71.k.g(str, "id");

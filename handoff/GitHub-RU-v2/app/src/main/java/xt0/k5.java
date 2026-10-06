@@ -2,7 +2,7 @@ package xt0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k5 {
-    public boolean a;
+    public final boolean a;
 
     public k5(boolean z) {
         this.a = z;

@@ -6,19 +6,19 @@ import a0.s0;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f4126a;
+    public final int f4126a;
 
     /* renamed from: b, reason: collision with root package name */
-    public float f4127b;
+    public final float f4127b;
 
     /* renamed from: c, reason: collision with root package name */
-    public float f4128c;
+    public final float f4128c;
 
     /* renamed from: d, reason: collision with root package name */
-    public float f4129d;
+    public final float f4129d;
 
     /* renamed from: e, reason: collision with root package name */
-    public long f4130e;
+    public final long f4130e;
 
     public b(float f6, float f10, float f11, int i, long j10) {
         this.f4126a = i;

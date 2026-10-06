@@ -4,10 +4,10 @@ import fw0.j2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p0 {
-    public String a;
-    public g b;
-    public String c;
-    public j2 d;
+    public final String a;
+    public final g b;
+    public final String c;
+    public final j2 d;
 
     public p0(String str, g gVar, String str2, j2 j2Var) {
         this.a = str;

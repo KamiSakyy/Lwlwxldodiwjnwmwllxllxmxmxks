@@ -10,7 +10,7 @@ import wf.h;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a extends g<m0> {
-    public List g;
+    public final List g;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -57,5 +57,4 @@ public final class a extends g<m0> {
     public final List getData() {
         return this.g;
     }
-    public Object D(boolean) { return null; }
 }

@@ -2,12 +2,12 @@ package com.github.rudroid.uitoolkit;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m0 extends i2.b {
-    public float A;
-    public long B;
-    public float w;
-    public long x;
-    public long y;
-    public long z;
+    public final float A;
+    public final long B;
+    public final float w;
+    public final long x;
+    public final long y;
+    public final long z;
 
     public m0(float f, long j, long j2, long j3, float f2, int i) {
         f2 = (i & 16) != 0 ? 2 : f2;

@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xt implements aaShadow.v0 {
-    public zt a;
+    public final zt a;
 
     public xt(zt ztVar) {
         this.a = ztVar;

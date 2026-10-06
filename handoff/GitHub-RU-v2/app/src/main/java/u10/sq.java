@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class sq {
-    public tq a;
+    public final tq a;
 
     public sq(tq tqVar) {
         this.a = tqVar;

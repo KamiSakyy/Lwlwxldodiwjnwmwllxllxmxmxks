@@ -14,8 +14,8 @@ import q81.q;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a extends m {
-    public q a;
-    public x3 b;
+    public final q a;
+    public final x3 b;
 
     public a(q qVar, x3 x3Var) {
         this.a = qVar;

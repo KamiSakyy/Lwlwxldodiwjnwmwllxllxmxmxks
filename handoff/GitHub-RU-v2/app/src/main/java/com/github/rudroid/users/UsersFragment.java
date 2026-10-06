@@ -26,9 +26,9 @@ import sy.y;
 public class UsersFragment extends Hilt_UsersFragment implements com.github.rudroid.fragments.util.f, z0, com.github.rudroid.interfaces.a {
     public com.github.rudroid.activities.util.c D0;
     public r E0;
-    public l1 F0;
+    public final l1 F0;
     public com.github.rudroid.utilities.e G0;
-    public p1 H0;
+    public final p1 H0;
 
     public static final class a implements j71.a {
         public final /* synthetic */ d r;

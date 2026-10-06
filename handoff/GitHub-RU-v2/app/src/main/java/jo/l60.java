@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l60 {
-    public String a;
-    public String b;
-    public sw.t c;
+    public final String a;
+    public final String b;
+    public final sw.t c;
 
     public l60(String str, String str2, sw.t tVar) {
         this.a = str;

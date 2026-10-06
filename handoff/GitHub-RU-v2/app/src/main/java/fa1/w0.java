@@ -5,8 +5,8 @@ import java.lang.reflect.WildcardType;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class w0 implements WildcardType {
-    public Type r;
-    public Type s;
+    public final Type r;
+    public final Type s;
 
     public w0(Type[] typeArr, Type[] typeArr2) {
         if (typeArr2.length > 1) {

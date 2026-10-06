@@ -6,9 +6,9 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c implements h0 {
-    public String a;
-    public b b;
-    public vx.a c;
+    public final String a;
+    public final b b;
+    public final vx.a c;
 
     public c(String str, b bVar, vx.a aVar) {
         k.g(str, "__typename");

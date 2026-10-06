@@ -2,10 +2,10 @@ package zx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k0 {
-    public a1 a;
-    public j0 b;
-    public String c;
-    public String d;
+    public final a1 a;
+    public final j0 b;
+    public final String c;
+    public final String d;
 
     public k0(a1 a1Var, j0 j0Var, String str, String str2) {
         this.a = a1Var;

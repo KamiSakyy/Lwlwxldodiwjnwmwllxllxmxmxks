@@ -7,14 +7,14 @@ import m10.b00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public String a;
-    public int b;
-    public String c;
-    public b00 d;
-    public g e;
-    public boolean f;
-    public boolean g;
-    public String h;
+    public final String a;
+    public final int b;
+    public final String c;
+    public final b00 d;
+    public final g e;
+    public final boolean f;
+    public final boolean g;
+    public final String h;
 
     public d(String str, int i, String str2, b00 b00Var, g gVar, boolean z, boolean z2, String str3) {
         this.a = str;

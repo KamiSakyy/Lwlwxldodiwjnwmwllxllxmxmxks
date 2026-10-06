@@ -9,7 +9,7 @@ public final class nq {
     public static final nq t;
     public static final /* synthetic */ nq[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         nq nqVar = new nq("ARCHIVED", 0, "ARCHIVED");

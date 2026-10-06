@@ -4,9 +4,9 @@ import pz0.p20;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j1 {
-    public String a;
-    public p20 b;
-    public String c;
+    public final String a;
+    public final p20 b;
+    public final String c;
 
     public j1(String str, p20 p20Var, String str2) {
         this.a = str;

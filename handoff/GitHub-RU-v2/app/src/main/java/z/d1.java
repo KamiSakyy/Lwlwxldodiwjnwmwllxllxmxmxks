@@ -4,7 +4,7 @@ package z;
 public final class d1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public j71.e f34355a;
+    public final j71.e f34355a;
 
     public d1(j71.e eVar) {
         this.f34355a = eVar;

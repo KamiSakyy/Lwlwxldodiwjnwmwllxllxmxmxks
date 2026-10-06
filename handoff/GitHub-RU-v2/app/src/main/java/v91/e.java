@@ -12,8 +12,8 @@ import t71.n;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class e extends u91.b {
-    public q1 e;
-    public n f;
+    public final q1 e;
+    public final n f;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public e(t91.d dVar, q1 q1Var, n nVar, s91.c cVar) {
@@ -83,5 +83,5 @@ public final class e extends u91.b {
     public final boolean f(s91.c cVar) {
         return true;
     }
-    public static Object z(Object p1, Object p2, Object p3) { return null; }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

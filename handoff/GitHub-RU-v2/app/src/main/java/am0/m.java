@@ -2,7 +2,7 @@ package am0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m {
-    public String a;
+    public final String a;
 
     public m(String str) {
         this.a = str;

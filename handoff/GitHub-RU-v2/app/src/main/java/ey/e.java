@@ -2,8 +2,8 @@ package ey;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public String a;
-    public f b;
+    public final String a;
+    public final f b;
 
     public e(String str, f fVar) {
         this.a = str;
@@ -30,5 +30,5 @@ public final class e {
     public final String toString() {
         return "OnPullRequest(id=" + this.a + ", pullRequestStatus=" + this.b + ")";
     }
-    public static Object z(Object p1, Object p2, Object p3) { return null; }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

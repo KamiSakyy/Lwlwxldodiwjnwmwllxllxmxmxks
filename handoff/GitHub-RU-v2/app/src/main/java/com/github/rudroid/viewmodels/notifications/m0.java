@@ -30,5 +30,5 @@ final class m0 extends c71.j implements j71.e {
         com.github.rudroid.utilities.w0.r(this.v.X, new com.github.rudroid.uitoolkit.listitems.z(this.w, 19));
         return w61.a0.a;
     }
-    public static Object m(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object m(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

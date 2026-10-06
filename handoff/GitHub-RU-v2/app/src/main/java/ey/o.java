@@ -2,8 +2,8 @@ package ey;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o {
-    public String a;
-    public q b;
+    public final String a;
+    public final q b;
 
     public o(String str, q qVar) {
         this.a = str;

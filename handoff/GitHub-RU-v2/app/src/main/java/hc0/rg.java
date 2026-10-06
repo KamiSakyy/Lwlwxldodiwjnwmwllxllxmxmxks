@@ -73,7 +73,7 @@ public final class rg {
     public static final rg y0;
     public static final rg z;
     public static final rg z0;
-    public String r;
+    public final String r;
 
     static {
         rg rgVar = new rg("CHECK_SUITE", 0, "CHECK_SUITE");

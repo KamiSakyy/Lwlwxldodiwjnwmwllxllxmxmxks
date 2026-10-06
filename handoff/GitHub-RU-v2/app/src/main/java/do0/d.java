@@ -12,10 +12,10 @@ import y71.n1;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d implements kn.a, yf0, mi0, yb0, y90 {
     public final /* synthetic */ int r;
-    public com.github.service.wrapper.j s;
-    public u t;
-    public com.github.rudroid.factories.actions.e u;
-    public v v;
+    public final com.github.service.wrapper.j s;
+    public final u t;
+    public final com.github.rudroid.factories.actions.e u;
+    public final v v;
 
     public d(com.github.service.wrapper.j jVar, u uVar, com.github.rudroid.factories.actions.e eVar, v vVar, int i) {
         this.r = i;

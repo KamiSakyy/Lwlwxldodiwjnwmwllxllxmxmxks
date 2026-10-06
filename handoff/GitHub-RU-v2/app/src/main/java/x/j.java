@@ -4,7 +4,7 @@ package x;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public long f33580a;
+    public final long f33580a;
 
     public static long a(int i, int i10) {
         return (i10 & 4294967295L) | (i << 32);

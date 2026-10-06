@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class xi {
-    public boolean a;
+    public final boolean a;
 
     public xi(boolean z) {
         this.a = z;

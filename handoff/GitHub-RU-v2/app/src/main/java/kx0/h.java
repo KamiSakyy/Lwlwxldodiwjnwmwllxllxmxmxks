@@ -62,23 +62,23 @@ import yz0.z4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h implements z2 {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public boolean f;
-    public int g;
-    public ZonedDateTime h;
-    public c5 i;
-    public boolean j;
-    public boolean k;
-    public i3 l;
-    public boolean m;
-    public SubscriptionState n;
-    public SubscriptionState o;
-    public o.b p;
-    public NotificationReasonState q;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final boolean f;
+    public final int g;
+    public final ZonedDateTime h;
+    public final c5 i;
+    public final boolean j;
+    public final boolean k;
+    public final i3 l;
+    public final boolean m;
+    public final SubscriptionState n;
+    public final SubscriptionState o;
+    public final o.b p;
+    public final NotificationReasonState q;
 
     /* JADX WARN: Removed duplicated region for block: B:131:0x00ef  */
     /* JADX WARN: Removed duplicated region for block: B:132:0x00e1  */

@@ -7,13 +7,13 @@ import java.util.Map;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public Bitmap f30446a;
+    public final Bitmap f30446a;
 
     /* renamed from: b, reason: collision with root package name */
-    public Map f30447b;
+    public final Map f30447b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f30448c;
+    public final int f30448c;
 
     public d(Bitmap bitmap, Map map, int i) {
         this.f30446a = bitmap;

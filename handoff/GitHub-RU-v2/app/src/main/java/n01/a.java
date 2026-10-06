@@ -7,16 +7,16 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public boolean a;
-    public boolean b;
-    public boolean c;
-    public boolean d;
-    public boolean e;
-    public boolean f;
-    public boolean g;
-    public boolean h;
-    public boolean i;
-    public Boolean j;
+    public final boolean a;
+    public final boolean b;
+    public final boolean c;
+    public final boolean d;
+    public final boolean e;
+    public final boolean f;
+    public final boolean g;
+    public final boolean h;
+    public final boolean i;
+    public final Boolean j;
 
     public /* synthetic */ a(boolean z, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, boolean z7, boolean z8, boolean z9, int i) {
         this((i & 1) != 0 ? false : z, z2, (i & 4) != 0 ? false : z3, (i & 8) != 0 ? false : z4, (i & 16) != 0 ? false : z5, (i & 32) != 0 ? false : z6, (i & 64) != 0 ? false : z7, (i & 128) != 0 ? false : z8, (i & 256) != 0 ? false : z9, (Boolean) null);

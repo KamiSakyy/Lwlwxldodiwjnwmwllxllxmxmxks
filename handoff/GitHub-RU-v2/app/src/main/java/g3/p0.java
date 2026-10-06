@@ -10,7 +10,7 @@ public final class p0 {
     public static final /* synthetic */ int f24683c = 0;
 
     /* renamed from: a, reason: collision with root package name */
-    public long f24684a;
+    public final long f24684a;
 
     public static boolean a(long j10, Object obj) {
         return (obj instanceof p0) && j10 == ((p0) obj).f24684a;

@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class fu implements aaShadow.v0 {
-    public hu a;
+    public final hu a;
 
     public fu(hu huVar) {
         this.a = huVar;

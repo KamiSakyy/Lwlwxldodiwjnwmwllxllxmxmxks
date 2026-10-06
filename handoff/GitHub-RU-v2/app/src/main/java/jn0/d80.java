@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d80 {
-    public a80 a;
-    public e80 b;
+    public final a80 a;
+    public final e80 b;
 
     public d80(a80 a80Var, e80 e80Var) {
         this.a = a80Var;

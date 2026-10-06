@@ -24,8 +24,8 @@ import x61.r;
 public final class RepositoriesFilter extends d {
     public static final w61.h[] x;
     public static final m90.c y;
-    public List v;
-    public i0 w;
+    public final List v;
+    public final i0 w;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<RepositoriesFilter> CREATOR = new o(12);
 

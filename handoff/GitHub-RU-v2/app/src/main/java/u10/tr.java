@@ -2,10 +2,10 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class tr {
-    public String a;
-    public String b;
-    public int c;
-    public xr d;
+    public final String a;
+    public final String b;
+    public final int c;
+    public final xr d;
 
     public tr(String str, String str2, int i, xr xrVar) {
         this.a = str;

@@ -7,13 +7,13 @@ import com.github.service.models.response.type.PullRequestUpdateBranchMethod;
 public final class b0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public boolean f28455a;
+    public final boolean f28455a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f28456b;
+    public final boolean f28456b;
 
     /* renamed from: c, reason: collision with root package name */
-    public PullRequestUpdateBranchMethod f28457c;
+    public final PullRequestUpdateBranchMethod f28457c;
 
     public b0(boolean z10, boolean z11, PullRequestUpdateBranchMethod pullRequestUpdateBranchMethod) {
         k71.k.g(pullRequestUpdateBranchMethod, "selectedUpdateBranchMethod");

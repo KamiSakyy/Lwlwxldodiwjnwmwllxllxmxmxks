@@ -2,10 +2,10 @@ package mo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u {
-    public b0 a;
-    public int b;
-    public String c;
-    public String d;
+    public final b0 a;
+    public final int b;
+    public final String c;
+    public final String d;
 
     public u(b0 b0Var, int i, String str, String str2) {
         this.a = b0Var;

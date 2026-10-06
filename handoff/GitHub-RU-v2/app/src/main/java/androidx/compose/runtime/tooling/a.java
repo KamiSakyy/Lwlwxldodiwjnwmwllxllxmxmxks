@@ -6,7 +6,7 @@ import java.util.List;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public List f1846a;
+    public final List f1846a;
 
     public a(List list) {
         this.f1846a = list;

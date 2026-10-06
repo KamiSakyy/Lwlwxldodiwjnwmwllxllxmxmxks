@@ -20,19 +20,4 @@ final class s<T> implements y71.j {
     public Object h(Object p1) { return null; }
     public Object n0(Object p1) { return null; }
     public Object q(Object p1) { return null; }
-    public Object S(int, boolean) { return null; }
-    public Object c0(int) { return null; }
-    public Object f(Object) { return null; }
-    public Object f(Object) { return null; }
-    public Object h(Object) { return null; }
-    public Object n0(Object) { return null; }
-    public Object n0(Object) { return null; }
-    public Object n0(Object) { return null; }
-    public Object n0(Object) { return null; }
-    public Object n0(Object) { return null; }
-    public Object n0(Object) { return null; }
-    public Object n0(Object) { return null; }
-    public Object n0(Object) { return null; }
-    public Object n0(Object) { return null; }
-    public Object q(boolean) { return null; }
 }

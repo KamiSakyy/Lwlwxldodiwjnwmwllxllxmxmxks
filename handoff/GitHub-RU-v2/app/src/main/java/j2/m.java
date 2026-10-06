@@ -4,10 +4,10 @@ package j2;
 public final class m extends b0 {
 
     /* renamed from: c, reason: collision with root package name */
-    public float f26902c;
+    public final float f26902c;
 
     /* renamed from: d, reason: collision with root package name */
-    public float f26903d;
+    public final float f26903d;
 
     public m(float f6, float f10) {
         super(3);

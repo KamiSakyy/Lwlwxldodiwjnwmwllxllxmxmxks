@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q1 {
-    public ArrayList a;
-    public int b;
-    public int c;
-    public int d;
+    public final ArrayList a;
+    public final int b;
+    public final int c;
+    public final int d;
 
     public q1(ArrayList arrayList, int i, int i2, int i3) {
         this.a = arrayList;

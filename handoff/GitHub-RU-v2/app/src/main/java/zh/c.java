@@ -12,8 +12,8 @@ import x61.l;
 public abstract class c implements zh.b, f {
     public static final a Companion = new a();
     public static final int t = l.r(new Integer[]{0, 1}).size();
-    public int r;
-    public String s;
+    public final int r;
+    public final String s;
 
     public static final class a {
         public static c a(a aVar, String str, String str2, boolean z, String str3, int i) {
@@ -34,8 +34,8 @@ public abstract class c implements zh.b, f {
     }
 
     public static final class b extends c implements me.b {
-        public String u;
-        public boolean v;
+        public final String u;
+        public final boolean v;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public b(String str, boolean z) {
@@ -81,15 +81,15 @@ public abstract class c implements zh.b, f {
 
     /* renamed from: zh.c$c, reason: collision with other inner class name */
     public static final class C0033c extends c implements g {
-        public String A;
-        public int B;
-        public String C;
-        public String u;
-        public String v;
-        public String w;
-        public boolean x;
-        public int y;
-        public String z;
+        public final String A;
+        public final int B;
+        public final String C;
+        public final String u;
+        public final String v;
+        public final String w;
+        public final boolean x;
+        public final int y;
+        public final String z;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public C0033c(String str, String str2, String str3, boolean z, int i, String str4, String str5, int i2) {

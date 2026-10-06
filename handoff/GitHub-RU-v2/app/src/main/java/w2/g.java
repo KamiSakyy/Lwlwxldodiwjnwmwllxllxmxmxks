@@ -7,7 +7,7 @@ import android.view.accessibility.AccessibilityManager;
 public final class g implements f {
 
     /* renamed from: a, reason: collision with root package name */
-    public AccessibilityManager f33012a;
+    public final AccessibilityManager f33012a;
 
     public g(Context context) {
         Object systemService = context.getSystemService("accessibility");

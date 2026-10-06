@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d40 {
-    public String a;
-    public e40 b;
-    public f40 c;
-    public vx.a d;
+    public final String a;
+    public final e40 b;
+    public final f40 c;
+    public final vx.a d;
 
     public d40(String str, e40 e40Var, f40 f40Var, vx.a aVar) {
         k71.k.g(str, "__typename");

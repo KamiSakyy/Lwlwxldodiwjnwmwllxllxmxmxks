@@ -10,7 +10,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ShortcutsOverviewActivity extends l0<ic.d0> implements com.github.rudroid.main.f {
     public static final a Companion = new a();
-    public int v0;
+    public final int v0;
     public KeyboardShortcutGroup w0;
 
     public static final class a {
@@ -46,5 +46,4 @@ public final class ShortcutsOverviewActivity extends l0<ic.d0> implements com.gi
         }
         list.add(keyboardShortcutGroup);
     }
-    public Object C(Object) { return null; }
 }

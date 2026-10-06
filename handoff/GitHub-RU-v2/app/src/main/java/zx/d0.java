@@ -7,8 +7,8 @@ import m10.vp;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d0 implements aa.n0 {
     public static final z Companion = new z();
-    public String r;
-    public ArrayList s;
+    public final String r;
+    public final ArrayList s;
 
     public d0(String str, ArrayList arrayList) {
         k71.k.g(str, "baseIssueOrPullRequestId");

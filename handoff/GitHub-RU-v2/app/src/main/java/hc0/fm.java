@@ -11,7 +11,7 @@ public final class fm {
     public static final fm v;
     public static final /* synthetic */ fm[] w;
     public static final /* synthetic */ d71.b x;
-    public String r;
+    public final String r;
 
     static {
         fm fmVar = new fm("CLOSED", 0, "CLOSED");

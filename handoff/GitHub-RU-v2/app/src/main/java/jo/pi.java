@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class pi {
-    public String a;
-    public e10.e b;
+    public final String a;
+    public final e10.e b;
 
     public pi(String str, e10.e eVar) {
         this.a = str;

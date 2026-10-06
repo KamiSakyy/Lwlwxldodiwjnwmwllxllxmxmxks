@@ -43,5 +43,4 @@ public final class d {
     public Object W(Object p1) { return null; }
     public Object a() { return null; }
     public Object c0() { return null; }
-    public Object W(float) { return null; }
 }

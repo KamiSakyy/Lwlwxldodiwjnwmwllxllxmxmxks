@@ -4,12 +4,12 @@ import java.util.concurrent.CancellationException;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k7 extends androidx.lifecycle.k1 implements x3 {
-    public zk.s0 s;
-    public zk.b0 t;
-    public com.github.rudroid.activities.util.c u;
-    public y71.y1 v;
+    public final zk.s0 s;
+    public final zk.b0 t;
+    public final com.github.rudroid.activities.util.c u;
+    public final y71.y1 v;
     public x01.i w;
-    public v71.q1 x;
+    public final v71.q1 x;
     public v71.q1 y;
 
     public static abstract class a {
@@ -20,8 +20,8 @@ public final class k7 extends androidx.lifecycle.k1 implements x3 {
         }
 
         public static final class b extends a {
-            public String a;
-            public String b;
+            public final String a;
+            public final String b;
 
             public b(String str, String str2) {
                 this.a = str;

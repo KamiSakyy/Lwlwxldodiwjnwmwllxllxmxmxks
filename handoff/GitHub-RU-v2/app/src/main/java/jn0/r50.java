@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r50 implements aaShadow.w0 {
     public static final o50 Companion = new o50();
-    public String r;
+    public final String r;
 
     public r50(String str) {
         k71.k.g(str, "issueId");

@@ -22,7 +22,7 @@ public final class IssueStatusFilter extends d {
     public static final w61.h[] w;
     public static final w x;
     public static final a3 y;
-    public w v;
+    public final w v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<IssueStatusFilter> CREATOR = new a21.g(24);
 

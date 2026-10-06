@@ -4,13 +4,13 @@ import hc0.fm;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k {
-    public String a;
-    public fm b;
-    public String c;
-    public int d;
-    public String e;
-    public u f;
-    public String g;
+    public final String a;
+    public final fm b;
+    public final String c;
+    public final int d;
+    public final String e;
+    public final u f;
+    public final String g;
 
     public k(String str, fm fmVar, String str2, int i, String str3, u uVar, String str4) {
         this.a = str;

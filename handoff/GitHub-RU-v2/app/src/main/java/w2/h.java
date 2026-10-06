@@ -8,7 +8,7 @@ import android.os.Build;
 public final class h implements c1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public i f33047a;
+    public final i f33047a;
 
     public h(i iVar) {
         this.f33047a = iVar;

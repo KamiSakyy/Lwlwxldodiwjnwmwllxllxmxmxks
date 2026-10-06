@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n0 implements aaShadow.n0 {
     public static final k0 Companion = new k0();
-    public String r;
-    public String s;
-    public String t;
+    public final String r;
+    public final String s;
+    public final String t;
 
     public n0(String str, String str2, String str3) {
         k71.k.g(str, "discussionId");

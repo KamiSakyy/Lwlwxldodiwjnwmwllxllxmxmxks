@@ -9,18 +9,18 @@ import pz0.wt;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c implements h0 {
-    public String a;
-    public String b;
-    public ZonedDateTime c;
-    public boolean d;
-    public String e;
-    public wt f;
-    public a g;
-    public ZonedDateTime h;
-    public b i;
-    public yp0.c j;
-    public gu0.c k;
-    public gt0.a l;
+    public final String a;
+    public final String b;
+    public final ZonedDateTime c;
+    public final boolean d;
+    public final String e;
+    public final wt f;
+    public final a g;
+    public final ZonedDateTime h;
+    public final b i;
+    public final yp0.c j;
+    public final gu0.c k;
+    public final gt0.a l;
 
     public c(String str, String str2, ZonedDateTime zonedDateTime, boolean z, String str3, wt wtVar, a aVar, ZonedDateTime zonedDateTime2, b bVar, yp0.c cVar, gu0.c cVar2, gt0.a aVar2) {
         this.a = str;

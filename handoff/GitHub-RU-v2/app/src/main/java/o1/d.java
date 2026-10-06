@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
 public abstract class d implements Iterator, l71.a {
 
     /* renamed from: r, reason: collision with root package name */
-    public n[] f29909r;
+    public final n[] f29909r;
 
     /* renamed from: s, reason: collision with root package name */
     public int f29910s;

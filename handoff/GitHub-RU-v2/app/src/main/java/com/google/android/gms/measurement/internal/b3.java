@@ -2,12 +2,12 @@ package com.google.android.gms.measurement.internal;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b3 {
-    public String a;
-    public String b;
-    public long c;
+    public final String a;
+    public final String b;
+    public final long c;
     public boolean d;
-    public boolean e;
-    public long f;
+    public final boolean e;
+    public final long f;
 
     public b3(String str, String str2, long j, boolean z, long j2) {
         this.a = str;

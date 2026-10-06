@@ -6,13 +6,13 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j implements aa.h0 {
-    public String a;
-    public boolean b;
-    public boolean c;
-    public boolean d;
-    public ZonedDateTime e;
-    public i9 f;
-    public String g;
+    public final String a;
+    public final boolean b;
+    public final boolean c;
+    public final boolean d;
+    public final ZonedDateTime e;
+    public final i9 f;
+    public final String g;
 
     public j(String str, boolean z, boolean z2, boolean z3, ZonedDateTime zonedDateTime, i9 i9Var, String str2) {
         this.a = str;

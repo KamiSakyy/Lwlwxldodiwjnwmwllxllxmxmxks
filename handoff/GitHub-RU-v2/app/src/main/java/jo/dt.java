@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class dt {
-    public ft a;
+    public final ft a;
 
     public dt(ft ftVar) {
         this.a = ftVar;

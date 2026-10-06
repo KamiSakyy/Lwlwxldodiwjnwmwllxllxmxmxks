@@ -9,7 +9,7 @@ public final class mi {
     public static final mi t;
     public static final /* synthetic */ mi[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         mi miVar = new mi("ARCHIVED", 0, "ARCHIVED");

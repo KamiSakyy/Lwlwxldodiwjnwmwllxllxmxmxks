@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z50 implements aaShadow.m0 {
-    public c60 a;
-    public a60 b;
+    public final c60 a;
+    public final a60 b;
 
     public z50(c60 c60Var, a60 a60Var) {
         this.a = c60Var;

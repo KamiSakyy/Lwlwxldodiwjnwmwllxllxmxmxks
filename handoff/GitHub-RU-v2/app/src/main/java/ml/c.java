@@ -2,8 +2,8 @@ package ml;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public d a;
-    public nl.l b;
+    public final d a;
+    public final nl.l b;
 
     public c(d dVar, nl.l lVar) {
         k71.k.g(dVar, "fetchHeadRefUseCase");

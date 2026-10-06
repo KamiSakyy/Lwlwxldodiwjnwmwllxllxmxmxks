@@ -7,7 +7,7 @@ import com.github.service.models.response.Language;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n extends com.github.rudroid.searchandfilter.complexfilter.b<Language> implements com.github.rudroid.searchandfilter.complexfilter.d0<a> {
     public static final /* synthetic */ int D = 0;
-    public am.b C;
+    public final am.b C;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public n(am.b bVar, com.github.rudroid.activities.util.c cVar, a1 a1Var) {

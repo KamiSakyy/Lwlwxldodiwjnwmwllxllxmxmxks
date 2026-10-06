@@ -4,10 +4,10 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l implements aa.v0 {
-    public n a;
-    public m b;
-    public String c;
-    public String d;
+    public final n a;
+    public final m b;
+    public final String c;
+    public final String d;
 
     public l(n nVar, m mVar, String str, String str2) {
         this.a = nVar;

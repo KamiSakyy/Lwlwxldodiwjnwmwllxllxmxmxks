@@ -4,8 +4,8 @@ import uu0.s4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l1 {
-    public String a;
-    public s4 b;
+    public final String a;
+    public final s4 b;
 
     public l1(String str, s4 s4Var) {
         this.a = str;

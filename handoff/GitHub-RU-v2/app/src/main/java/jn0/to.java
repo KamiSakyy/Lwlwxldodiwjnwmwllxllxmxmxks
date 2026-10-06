@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class to {
-    public uo a;
-    public List b;
+    public final uo a;
+    public final List b;
 
     public to(uo uoVar, List list) {
         this.a = uoVar;

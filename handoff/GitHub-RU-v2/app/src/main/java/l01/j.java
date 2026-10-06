@@ -9,8 +9,8 @@ import yz0.n2;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j implements d0, Parcelable {
     public static final Parcelable.Creator<j> CREATOR = new c(5);
-    public String r;
-    public Object s;
+    public final String r;
+    public final Object s;
 
     public j(String str, List list) {
         k71.k.g(str, "id");

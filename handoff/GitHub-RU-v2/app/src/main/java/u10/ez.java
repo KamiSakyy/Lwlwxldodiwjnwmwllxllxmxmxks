@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ez {
-    public String a;
-    public String b;
-    public k90.v c;
+    public final String a;
+    public final String b;
+    public final k90.v c;
 
     public ez(String str, String str2, k90.v vVar) {
         this.a = str;

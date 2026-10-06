@@ -7,7 +7,7 @@ import u31.f;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
     public static final c Companion = new c();
-    public w a;
+    public final w a;
     public final x1 c = new x1(16);
     public final rb0.b d = new rb0.b(8);
     public final f e = new f(8);

@@ -6,9 +6,9 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements v0 {
-    public c a;
-    public String b;
-    public String c;
+    public final c a;
+    public final String b;
+    public final String c;
 
     public b(c cVar, String str, String str2) {
         this.a = cVar;

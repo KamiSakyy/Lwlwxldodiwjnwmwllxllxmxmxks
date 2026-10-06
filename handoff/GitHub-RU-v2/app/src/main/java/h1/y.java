@@ -4,16 +4,16 @@ package h1;
 public final class y implements Comparable {
 
     /* renamed from: r, reason: collision with root package name */
-    public int f25446r;
+    public final int f25446r;
 
     /* renamed from: s, reason: collision with root package name */
-    public int f25447s;
+    public final int f25447s;
 
     /* renamed from: t, reason: collision with root package name */
-    public int f25448t;
+    public final int f25448t;
 
     /* renamed from: u, reason: collision with root package name */
-    public long f25449u;
+    public final long f25449u;
 
     public y(int i, int i10, int i11, long j10) {
         this.f25446r = i;

@@ -8,7 +8,7 @@ import java.util.HashMap;
 public final class v {
 
     /* renamed from: b, reason: collision with root package name */
-    public View f21661b;
+    public final View f21661b;
 
     /* renamed from: a, reason: collision with root package name */
     public final HashMap f21660a = new HashMap();

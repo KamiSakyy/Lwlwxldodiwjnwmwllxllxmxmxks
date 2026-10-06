@@ -2,11 +2,11 @@ package yz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r3 implements q3 {
-    public u3 a;
-    public String b;
+    public final u3 a;
+    public final String b;
     public int c;
     public boolean d;
-    public long e;
+    public final long e;
 
     public r3(u3 u3Var, String str, int i, boolean z) {
         k71.k.g(str, "subjectId");

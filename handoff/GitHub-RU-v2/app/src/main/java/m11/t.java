@@ -7,9 +7,9 @@ import z70.m3;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t implements o11.b {
     public final /* synthetic */ int a;
-    public v61.a b;
-    public v61.a c;
-    public o11.b d;
+    public final v61.a b;
+    public final v61.a c;
+    public final o11.b d;
 
     public /* synthetic */ t(v61.a aVar, v61.a aVar2, o11.b bVar, int i) {
         this.a = i;

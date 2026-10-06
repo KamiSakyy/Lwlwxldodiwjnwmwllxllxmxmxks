@@ -2,10 +2,10 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y4 {
-    public f6 a;
-    public u4 b;
-    public String c;
-    public String d;
+    public final f6 a;
+    public final u4 b;
+    public final String c;
+    public final String d;
 
     public y4(f6 f6Var, u4 u4Var, String str, String str2) {
         this.a = f6Var;

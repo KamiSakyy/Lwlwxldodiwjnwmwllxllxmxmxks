@@ -4,19 +4,19 @@ package w9;
 public final class i {
 
     /* renamed from: a, reason: collision with root package name */
-    public boolean f33460a;
+    public final boolean f33460a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f33461b;
+    public final boolean f33461b;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean f33462c;
+    public final boolean f33462c;
 
     /* renamed from: d, reason: collision with root package name */
-    public int f33463d;
+    public final int f33463d;
 
     /* renamed from: e, reason: collision with root package name */
-    public i9.l f33464e;
+    public final i9.l f33464e;
 
     public i() {
         i9.l lVar = i9.l.f26108r;

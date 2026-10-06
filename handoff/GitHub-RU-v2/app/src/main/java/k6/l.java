@@ -6,19 +6,19 @@ import androidx.glance.session.SessionWorker;
 public final class l implements f {
 
     /* renamed from: a, reason: collision with root package name */
-    public Class f27761a;
+    public final Class f27761a;
 
     /* renamed from: b, reason: collision with root package name */
-    public ie.d f27762b;
+    public final ie.d f27762b;
 
     /* renamed from: c, reason: collision with root package name */
-    public t f27763c;
+    public final t f27763c;
 
     /* renamed from: d, reason: collision with root package name */
-    public e81.c f27764d;
+    public final e81.c f27764d;
 
     /* renamed from: e, reason: collision with root package name */
-    public k f27765e;
+    public final k f27765e;
 
     public l() {
         ie.d dVar = new ie.d(25);

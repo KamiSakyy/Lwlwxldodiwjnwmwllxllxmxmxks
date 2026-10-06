@@ -6,7 +6,7 @@ import w61.a0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class q extends h {
-    public a B;
+    public final a B;
 
     public q(int i, a aVar) {
         super(i);

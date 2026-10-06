@@ -6,13 +6,13 @@ import java.util.Set;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public com.github.rudroid.utilities.ui.g1 f9402a;
+    public final com.github.rudroid.utilities.ui.g1 f9402a;
 
     /* renamed from: b, reason: collision with root package name */
-    public xn.b1 f9403b;
+    public final xn.b1 f9403b;
 
     /* renamed from: c, reason: collision with root package name */
-    public Set f9404c;
+    public final Set f9404c;
 
     public a(com.github.rudroid.utilities.ui.g1 g1Var, xn.b1 b1Var, Set set) {
         k71.k.g(set, "dismissedBanners");

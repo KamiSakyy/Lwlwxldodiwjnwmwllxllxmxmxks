@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qt {
-    public st a;
-    public List b;
+    public final st a;
+    public final List b;
 
     public qt(st stVar, List list) {
         this.a = stVar;

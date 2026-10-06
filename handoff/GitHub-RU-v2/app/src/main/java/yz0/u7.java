@@ -4,13 +4,13 @@ import com.github.service.models.response.type.DiffLineType;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u7 {
-    public String a;
-    public int b;
-    public DiffLineType c;
-    public int d;
-    public int e;
-    public String f;
-    public boolean g;
+    public final String a;
+    public final int b;
+    public final DiffLineType c;
+    public final int d;
+    public final int e;
+    public final String f;
+    public final boolean g;
 
     public u7(String str, int i, DiffLineType diffLineType, int i2, int i3, String str2, boolean z) {
         k71.k.g(diffLineType, "type");

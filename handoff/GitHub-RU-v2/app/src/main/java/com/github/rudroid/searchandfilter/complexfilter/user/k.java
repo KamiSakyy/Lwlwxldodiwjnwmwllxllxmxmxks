@@ -13,7 +13,7 @@ import l7.n1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k extends e0<j> {
     public static final a Companion = new a();
-    public SearchAndFilterBaseFragment f;
+    public final SearchAndFilterBaseFragment f;
 
     public static final class a {
     }

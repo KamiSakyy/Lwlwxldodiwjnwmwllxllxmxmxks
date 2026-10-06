@@ -5,17 +5,17 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o0 {
-    public int a;
-    public int b;
-    public p0 c;
-    public l0 d;
-    public List e;
-    public boolean f;
-    public boolean g;
-    public boolean h;
-    public pi i;
-    public String j;
-    public String k;
+    public final int a;
+    public final int b;
+    public final p0 c;
+    public final l0 d;
+    public final List e;
+    public final boolean f;
+    public final boolean g;
+    public final boolean h;
+    public final pi i;
+    public final String j;
+    public final String k;
 
     public o0(int i, int i2, p0 p0Var, l0 l0Var, List list, boolean z, boolean z2, boolean z3, pi piVar, String str, String str2) {
         this.a = i;

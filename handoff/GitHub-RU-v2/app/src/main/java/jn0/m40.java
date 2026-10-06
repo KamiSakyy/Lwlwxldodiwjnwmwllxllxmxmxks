@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m40 implements aaShadow.n0 {
     public static final i40 Companion = new i40();
-    public pz0.d20 r;
+    public final pz0.d20 r;
 
     public m40(pz0.d20 d20Var) {
         this.r = d20Var;

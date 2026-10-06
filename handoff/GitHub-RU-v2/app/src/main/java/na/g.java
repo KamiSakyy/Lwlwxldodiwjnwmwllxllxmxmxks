@@ -4,7 +4,7 @@ package na;
 public final class g implements d {
 
     /* renamed from: a, reason: collision with root package name */
-    public Exception f29676a;
+    public final Exception f29676a;
 
     public g(Exception exc) {
         this.f29676a = exc;

@@ -44,12 +44,11 @@ final class t extends c71.j implements j71.c {
         }
         return w61.a0.a;
     }
-    public static Object B(Object p1) { return null; }
-    public static Object E(Object p1, Object p2) { return null; }
-    public static Object I(Object p1, Object p2, Object p3) { return null; }
-    public static Object J(Object p1) { return null; }
-    public static Object L(Object p1) { return null; }
-    public static Object s(Object p1) { return null; }
-    public static Object w(Object p1, Object p2, Object p3) { return null; }
-    public Object r(Object, Object) { return null; }
+    public Object B(Object p1) { return null; }
+    public Object E(Object p1, Object p2) { return null; }
+    public Object I(Object p1, Object p2, Object p3) { return null; }
+    public Object J(Object p1) { return null; }
+    public Object L(Object p1) { return null; }
+    public Object s(Object p1) { return null; }
+    public Object w(Object p1, Object p2, Object p3) { return null; }
 }

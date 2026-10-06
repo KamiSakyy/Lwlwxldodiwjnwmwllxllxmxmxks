@@ -12,7 +12,7 @@ public final class pu {
     public static final pu w;
     public static final /* synthetic */ pu[] x;
     public static final /* synthetic */ d71.b y;
-    public String r;
+    public final String r;
 
     static {
         pu puVar = new pu("DISCUSSIONS", 0, "DISCUSSIONS");

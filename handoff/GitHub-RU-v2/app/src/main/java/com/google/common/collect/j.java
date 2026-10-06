@@ -5,9 +5,9 @@ import java.util.Map;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j extends f {
-    public transient m u;
-    public transient Object[] v;
-    public transient int w;
+    public final transient m u;
+    public final transient Object[] v;
+    public final transient int w;
 
     public j(m mVar, Object[] objArr, int i) {
         this.u = mVar;

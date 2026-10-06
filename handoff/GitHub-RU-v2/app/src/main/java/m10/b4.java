@@ -9,7 +9,7 @@ public final class b4 {
     public static final b4 t;
     public static final /* synthetic */ b4[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         b4 b4Var = new b4("COMPLETED", 0, "COMPLETED");

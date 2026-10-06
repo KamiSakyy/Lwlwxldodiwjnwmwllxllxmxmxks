@@ -25,13 +25,13 @@ import kotlin.NoWhenBranchMatchedException;
 public final class ShortcutViewFragment extends Hilt_ShortcutViewFragment<th> implements com.github.rudroid.fragments.util.f {
     public final int E0 = 2131559951;
     public com.github.rudroid.activities.util.c F0;
-    public l1 G0;
-    public l1 H0;
-    public l1 I0;
+    public final l1 G0;
+    public final l1 H0;
+    public final l1 I0;
     public SearchView J0;
     public Menu K0;
     public k.g L0;
-    public b M0;
+    public final b M0;
 
     public static final /* synthetic */ class a {
         public static final /* synthetic */ int[] a;
@@ -371,6 +371,4 @@ public final class ShortcutViewFragment extends Hilt_ShortcutViewFragment<th> im
 
     public Object L0;
     public Object x3() { return null; }
-    public Object C3(int) { return null; }
-    public Object E(Object, Object) { return null; }
 }

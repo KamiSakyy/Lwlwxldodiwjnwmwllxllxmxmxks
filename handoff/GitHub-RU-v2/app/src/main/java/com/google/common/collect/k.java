@@ -4,8 +4,8 @@ import com.google.android.gms.internal.play_billing.b0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k extends f {
-    public transient m u;
-    public transient l v;
+    public final transient m u;
+    public final transient l v;
 
     public k(m mVar, l lVar) {
         this.u = mVar;

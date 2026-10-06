@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p10 {
-    public String a;
-    public String b;
+    public final String a;
+    public final String b;
 
     public p10(String str, String str2) {
         this.a = str;

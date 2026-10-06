@@ -4,11 +4,11 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i90 {
-    public String a;
-    public boolean b;
-    public List c;
-    public f90 d;
-    public String e;
+    public final String a;
+    public final boolean b;
+    public final List c;
+    public final f90 d;
+    public final String e;
 
     public i90(String str, boolean z, List list, f90 f90Var, String str2) {
         this.a = str;

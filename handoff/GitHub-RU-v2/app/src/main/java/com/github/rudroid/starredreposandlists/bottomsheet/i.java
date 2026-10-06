@@ -8,7 +8,7 @@ public abstract class i {
     }
 
     public static final class b extends i {
-        public v a;
+        public final v a;
 
         public b(v vVar) {
             this.a = vVar;

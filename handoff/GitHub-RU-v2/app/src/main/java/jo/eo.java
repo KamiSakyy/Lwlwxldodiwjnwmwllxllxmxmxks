@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class eo {
-    public String a;
-    public ho b;
-    public vx.a c;
+    public final String a;
+    public final ho b;
+    public final vx.a c;
 
     public eo(String str, ho hoVar, vx.a aVar) {
         k71.k.g(str, "__typename");

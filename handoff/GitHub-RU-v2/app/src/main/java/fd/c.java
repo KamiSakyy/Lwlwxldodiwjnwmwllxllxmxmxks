@@ -7,10 +7,10 @@ import x.i;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f24400a;
+    public final String f24400a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f24401b;
+    public final String f24401b;
 
     public c(String str, String str2) {
         k.g(str, "shortcode");

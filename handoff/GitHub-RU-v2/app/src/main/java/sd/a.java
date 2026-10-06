@@ -11,7 +11,7 @@ import q4.l;
 public final class a extends TypefaceSpan {
 
     /* renamed from: r, reason: collision with root package name */
-    public int f31978r;
+    public final int f31978r;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public a(Context context) {

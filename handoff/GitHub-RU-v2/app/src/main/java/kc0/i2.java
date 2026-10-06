@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i2 implements aaShadow.n0 {
     public static final g2 Companion = new g2();
-    public String r;
+    public final String r;
 
     public i2(String str) {
         k71.k.g(str, "pull_id");

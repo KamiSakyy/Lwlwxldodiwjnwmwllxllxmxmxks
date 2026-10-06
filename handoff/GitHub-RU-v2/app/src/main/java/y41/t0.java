@@ -4,11 +4,11 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t0 extends x1 {
-    public String a;
-    public String b;
-    public List c;
-    public x1 d;
-    public int e;
+    public final String a;
+    public final String b;
+    public final List c;
+    public final x1 d;
+    public final int e;
 
     public t0(String str, String str2, List list, x1 x1Var, int i) {
         this.a = str;

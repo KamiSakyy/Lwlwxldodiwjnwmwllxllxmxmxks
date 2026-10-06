@@ -75,6 +75,4 @@ public final class t extends ConstraintLayout {
         throw null;
     }
     public Object setBackground(Object p1) { return null; }
-    public Object findViewById(int) { return null; }
-    public Object setPadding(int, int, int, int) { return null; }
 }

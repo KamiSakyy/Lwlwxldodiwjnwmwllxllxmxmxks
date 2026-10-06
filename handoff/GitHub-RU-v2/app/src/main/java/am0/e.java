@@ -2,12 +2,12 @@ package am0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
-    public String a;
-    public w b;
-    public q c;
-    public z d;
-    public x e;
-    public n f;
+    public final String a;
+    public final w b;
+    public final q c;
+    public final z d;
+    public final x e;
+    public final n f;
 
     public e(String str, w wVar, q qVar, z zVar, x xVar, n nVar) {
         k71.k.g(str, "__typename");

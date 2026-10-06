@@ -7,5 +7,4 @@ package f1;
 public class r7 {
     public r7() {
     }
-    public Object a(Object, Object, Object, boolean, boolean, Object, Object, Object, Object, Object, boolean, Object, Object, Object, boolean, int, int, Object, Object, Object, int, int, int, int) { return null; }
 }

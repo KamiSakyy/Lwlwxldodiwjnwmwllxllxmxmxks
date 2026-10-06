@@ -5,17 +5,17 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s0 {
-    public String a;
-    public String b;
+    public final String a;
+    public final String b;
     public boolean c;
-    public boolean d;
-    public boolean e;
-    public boolean f;
-    public boolean g;
-    public String h;
-    public PatchStatus i;
-    public ArrayList j;
-    public String k;
+    public final boolean d;
+    public final boolean e;
+    public final boolean f;
+    public final boolean g;
+    public final String h;
+    public final PatchStatus i;
+    public final ArrayList j;
+    public final String k;
 
     public s0(String str, String str2, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, String str3, PatchStatus patchStatus, ArrayList arrayList, String str4) {
         k71.k.g(patchStatus, "status");

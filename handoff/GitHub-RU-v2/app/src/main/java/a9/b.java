@@ -9,7 +9,7 @@ import y71.n1;
 public abstract class b implements d {
 
     /* renamed from: a, reason: collision with root package name */
-    public g f604a;
+    public final g f604a;
 
     public b(g gVar) {
         k.g(gVar, "tracker");

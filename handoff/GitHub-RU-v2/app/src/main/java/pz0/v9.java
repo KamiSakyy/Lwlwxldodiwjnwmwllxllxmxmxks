@@ -10,7 +10,7 @@ public final class v9 {
     public static final v9 u;
     public static final /* synthetic */ v9[] v;
     public static final /* synthetic */ d71.b w;
-    public String r;
+    public final String r;
 
     static {
         v9 v9Var = new v9("LEFT", 0, "LEFT");

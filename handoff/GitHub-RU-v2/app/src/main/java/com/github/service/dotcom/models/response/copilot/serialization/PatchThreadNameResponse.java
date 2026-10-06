@@ -8,7 +8,7 @@ import kotlinx.serialization.KSerializer;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class PatchThreadNameResponse {
     public static final Companion Companion = new Companion();
-    public String a;
+    public final String a;
 
     public static final class Companion {
         public final KSerializer serializer() {

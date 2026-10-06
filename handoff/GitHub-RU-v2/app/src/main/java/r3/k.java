@@ -4,7 +4,7 @@ package r3;
 public final class k {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f31128a;
+    public final int f31128a;
 
     public static String a(int i) {
         return i == 1 ? "Left" : i == 2 ? "Right" : i == 3 ? "Center" : i == 4 ? "Justify" : i == 5 ? "Start" : i == 6 ? "End" : i == 0 ? "Unspecified" : "Invalid";

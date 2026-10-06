@@ -5,12 +5,12 @@ import pz0.ko;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r4 implements aa.h0 {
-    public String a;
-    public Integer b;
-    public String c;
-    public ko d;
-    public ArrayList e;
-    public String f;
+    public final String a;
+    public final Integer b;
+    public final String c;
+    public final ko d;
+    public final ArrayList e;
+    public final String f;
 
     public r4(String str, Integer num, String str2, ko koVar, ArrayList arrayList, String str3) {
         this.a = str;

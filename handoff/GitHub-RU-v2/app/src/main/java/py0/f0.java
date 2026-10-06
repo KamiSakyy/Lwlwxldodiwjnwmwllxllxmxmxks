@@ -2,7 +2,7 @@ package py0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f0 {
-    public e0 a;
+    public final e0 a;
 
     public f0(e0 e0Var) {
         this.a = e0Var;

@@ -6,13 +6,13 @@ import a0.g2;
 public final class x0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public float f34496a;
+    public final float f34496a;
 
     /* renamed from: b, reason: collision with root package name */
-    public long f34497b;
+    public final long f34497b;
 
     /* renamed from: c, reason: collision with root package name */
-    public g2 f34498c;
+    public final g2 f34498c;
 
     public x0(float f6, long j10, g2 g2Var) {
         this.f34496a = f6;

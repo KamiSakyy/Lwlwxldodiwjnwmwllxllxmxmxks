@@ -4,13 +4,13 @@ package com.github.rudroid.copilot.inapppurchase;
 public final class l0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public k0 f9718a;
+    public final k0 f9718a;
 
     /* renamed from: b, reason: collision with root package name */
-    public j0 f9719b;
+    public final j0 f9719b;
 
     /* renamed from: c, reason: collision with root package name */
-    public i0 f9720c;
+    public final i0 f9720c;
 
     public l0(k0 k0Var, j0 j0Var, i0 i0Var) {
         this.f9718a = k0Var;

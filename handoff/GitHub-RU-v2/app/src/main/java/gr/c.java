@@ -8,13 +8,13 @@ import m10.b00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public b00 a;
-    public boolean b;
-    public String c;
-    public String d;
-    public int e;
-    public boolean f;
-    public String g;
+    public final b00 a;
+    public final boolean b;
+    public final String c;
+    public final String d;
+    public final int e;
+    public final boolean f;
+    public final String g;
 
     public c(int i, String str, String str2, String str3, b00 b00Var, boolean z, boolean z2) {
         this.a = b00Var;

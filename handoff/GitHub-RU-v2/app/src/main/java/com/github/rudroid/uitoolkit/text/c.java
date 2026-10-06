@@ -9,7 +9,4 @@ public final class c {
     }
     public Object a(Object p1) { return null; }
     public Object v(Object p1) { return null; }
-    public Object a(Object, Object) { return null; }
-    public Object a(int) { return null; }
-    public Object v(Object) { return null; }
 }

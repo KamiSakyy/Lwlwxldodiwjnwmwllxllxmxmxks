@@ -7,10 +7,10 @@ public abstract class u7 implements le.z {
     public static final a Companion = new a();
 
     /* renamed from: r, reason: collision with root package name */
-    public int f11853r;
+    public final int f11853r;
 
     /* renamed from: s, reason: collision with root package name */
-    public String f11854s;
+    public final String f11854s;
 
     public static final class a {
     }
@@ -18,10 +18,10 @@ public abstract class u7 implements le.z {
     public static final class b extends u7 {
 
         /* renamed from: t, reason: collision with root package name */
-        public String f11855t;
+        public final String f11855t;
 
         /* renamed from: u, reason: collision with root package name */
-        public String f11856u;
+        public final String f11856u;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public b(String str, String str2) {
@@ -55,7 +55,7 @@ public abstract class u7 implements le.z {
     public static final class c extends u7 {
 
         /* renamed from: t, reason: collision with root package name */
-        public Object f11857t;
+        public final Object f11857t;
 
         public c(List list) {
             super("labels", 4);
@@ -87,10 +87,10 @@ public abstract class u7 implements le.z {
     public static final class e extends u7 {
 
         /* renamed from: t, reason: collision with root package name */
-        public f f11859t;
+        public final f f11859t;
 
         /* renamed from: u, reason: collision with root package name */
-        public boolean f11860u;
+        public final boolean f11860u;
 
         public e(f fVar, boolean z10) {
             super(x.i.f(fVar.name(), "header"), 1);
@@ -132,7 +132,7 @@ public abstract class u7 implements le.z {
         public static final /* synthetic */ f[] f11863u;
 
         /* renamed from: r, reason: collision with root package name */
-        public int f11864r;
+        public final int f11864r;
 
         static {
             f fVar = new f(0, "CATEGORY", 2131954783);

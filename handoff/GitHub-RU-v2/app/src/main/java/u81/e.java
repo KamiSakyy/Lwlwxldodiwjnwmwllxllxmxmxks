@@ -7,8 +7,8 @@ import java.net.ProtocolException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class e extends h91.p {
-    public long s;
-    public boolean t;
+    public final long s;
+    public final boolean t;
     public boolean u;
     public long v;
     public boolean w;
@@ -85,5 +85,5 @@ public final class e extends h91.p {
             throw f;
         }
     }
-    public static Object z(Object p1, Object p2, Object p3) { return null; }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

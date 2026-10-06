@@ -9,17 +9,17 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public String a;
-    public String b;
-    public Integer c;
-    public ZonedDateTime d;
-    public boolean e;
-    public String f;
-    public d g;
-    public String h;
-    public String i;
-    public String j;
-    public String k;
+    public final String a;
+    public final String b;
+    public final Integer c;
+    public final ZonedDateTime d;
+    public final boolean e;
+    public final String f;
+    public final d g;
+    public final String h;
+    public final String i;
+    public final String j;
+    public final String k;
 
     public c(String str, String str2, Integer num, ZonedDateTime zonedDateTime, boolean z, String str3, d dVar, String str4, String str5, String str6, String str7) {
         this.a = str;

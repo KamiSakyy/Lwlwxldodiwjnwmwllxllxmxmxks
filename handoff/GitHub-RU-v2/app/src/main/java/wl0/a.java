@@ -14,15 +14,15 @@ import sy.q;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements yz0.l {
-    public String a;
-    public String b;
-    public String c;
-    public MergeCheckStatus d;
-    public String e;
-    public String f;
-    public String g;
-    public Boolean h;
-    public Integer i;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final MergeCheckStatus d;
+    public final String e;
+    public final String f;
+    public final String g;
+    public final Boolean h;
+    public final Integer i;
 
     public a(String str, String str2, String str3, MergeCheckStatus mergeCheckStatus, String str4, String str5, String str6, Boolean bool, Integer num) {
         k71.k.g(mergeCheckStatus, "status");
@@ -152,5 +152,5 @@ public final class a implements yz0.l {
         String str6 = (k4Var == null || (str = k4Var.a) == null) ? "" : str;
         String str7 = j5Var.e;
     }
-    public static Object G(Object p1) { return null; }
+    public Object G(Object p1) { return null; }
 }

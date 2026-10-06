@@ -4,7 +4,7 @@ package n4;
 public final class c0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public boolean f29429a;
+    public final boolean f29429a;
 
     public c0(boolean z10) {
         this.f29429a = z10;

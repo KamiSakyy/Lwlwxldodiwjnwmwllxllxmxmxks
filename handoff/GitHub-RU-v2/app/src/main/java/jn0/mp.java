@@ -2,11 +2,11 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class mp {
-    public int a;
-    public int b;
-    public kp c;
-    public String d;
-    public String e;
+    public final int a;
+    public final int b;
+    public final kp c;
+    public final String d;
+    public final String e;
 
     public mp(int i, int i2, kp kpVar, String str, String str2) {
         this.a = i;

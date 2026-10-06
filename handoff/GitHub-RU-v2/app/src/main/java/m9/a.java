@@ -6,16 +6,16 @@ import android.graphics.drawable.Drawable;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public Drawable f29083a;
+    public final Drawable f29083a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f29084b;
+    public final boolean f29084b;
 
     /* renamed from: c, reason: collision with root package name */
-    public i9.f f29085c;
+    public final i9.f f29085c;
 
     /* renamed from: d, reason: collision with root package name */
-    public String f29086d;
+    public final String f29086d;
 
     public a(Drawable drawable, boolean z10, i9.f fVar, String str) {
         this.f29083a = drawable;

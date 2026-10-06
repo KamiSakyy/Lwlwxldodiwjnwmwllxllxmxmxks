@@ -9,7 +9,7 @@ public final class c implements e {
     public static final ThreadLocal f32202b = new ThreadLocal();
 
     /* renamed from: a, reason: collision with root package name */
-    public TextPaint f32203a;
+    public final TextPaint f32203a;
 
     public c() {
         TextPaint textPaint = new TextPaint();

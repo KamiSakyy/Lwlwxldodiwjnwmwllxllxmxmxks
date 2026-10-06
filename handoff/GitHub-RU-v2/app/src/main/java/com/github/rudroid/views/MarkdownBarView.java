@@ -13,7 +13,7 @@ import q.j3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class MarkdownBarView extends HorizontalScrollView {
-    public dh r;
+    public final dh r;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public MarkdownBarView(Context context, AttributeSet attributeSet) {

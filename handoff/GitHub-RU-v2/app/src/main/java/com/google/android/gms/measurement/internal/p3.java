@@ -25,14 +25,14 @@ import java.util.concurrent.atomic.AtomicReference;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p3 extends e0 {
-    public ArrayList A;
-    public l3 B;
-    public o3 u;
+    public final ArrayList A;
+    public final l3 B;
+    public final o3 u;
     public f0 v;
     public volatile Boolean w;
-    public l3 x;
+    public final l3 x;
     public ScheduledExecutorService y;
-    public ba.c z;
+    public final ba.c z;
 
     public p3(o1 o1Var) {
         super(o1Var);

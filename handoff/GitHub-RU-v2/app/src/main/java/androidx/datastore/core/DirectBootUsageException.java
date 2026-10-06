@@ -7,7 +7,7 @@ import java.io.IOException;
 public final class DirectBootUsageException extends IOException {
 
     /* renamed from: r, reason: collision with root package name */
-    public String f2249r;
+    public final String f2249r;
 
     public DirectBootUsageException(FileNotFoundException fileNotFoundException) {
         super(fileNotFoundException);

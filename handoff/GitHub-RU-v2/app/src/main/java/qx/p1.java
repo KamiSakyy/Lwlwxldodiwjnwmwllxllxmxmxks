@@ -2,7 +2,7 @@ package qx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p1 {
-    public int a;
+    public final int a;
 
     public p1(int i) {
         this.a = i;

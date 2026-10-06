@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ge {
-    public ce a;
-    public be b;
+    public final ce a;
+    public final be b;
 
     public ge(ce ceVar, be beVar) {
         this.a = ceVar;

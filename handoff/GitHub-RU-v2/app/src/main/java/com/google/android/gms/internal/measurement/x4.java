@@ -8,7 +8,7 @@ import java.util.Locale;
 public class x4 implements Iterable, Serializable {
     public static final x4 t = new x4(n5.b);
     public int r = 0;
-    public byte[] s;
+    public final byte[] s;
 
     static {
         int i = u4.a;

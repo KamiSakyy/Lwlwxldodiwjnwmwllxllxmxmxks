@@ -5,10 +5,10 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v5 {
-    public xm a;
-    public ZonedDateTime b;
-    public String c;
-    public String d;
+    public final xm a;
+    public final ZonedDateTime b;
+    public final String c;
+    public final String d;
 
     public v5(xm xmVar, ZonedDateTime zonedDateTime, String str, String str2) {
         this.a = xmVar;

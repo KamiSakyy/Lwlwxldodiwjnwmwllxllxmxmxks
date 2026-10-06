@@ -5,10 +5,10 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ss implements aaShadow.w0 {
     public static final js Companion = new js();
-    public boolean r;
-    public boolean s;
-    public boolean t;
-    public boolean u;
+    public final boolean r;
+    public final boolean s;
+    public final boolean t;
+    public final boolean u;
 
     public ss(boolean z, boolean z2, boolean z3, boolean z4) {
         this.r = z;

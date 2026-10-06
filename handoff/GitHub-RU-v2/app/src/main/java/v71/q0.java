@@ -2,7 +2,7 @@ package v71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class q0 extends s0 {
-    public l t;
+    public final l t;
     public final /* synthetic */ u0 u;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

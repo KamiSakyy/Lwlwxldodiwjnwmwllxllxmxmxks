@@ -7,10 +7,10 @@ import android.os.IBinder;
 public final class y {
 
     /* renamed from: a, reason: collision with root package name */
-    public ComponentName f29485a;
+    public final ComponentName f29485a;
 
     /* renamed from: b, reason: collision with root package name */
-    public IBinder f29486b;
+    public final IBinder f29486b;
 
     public y(ComponentName componentName, IBinder iBinder) {
         this.f29485a = componentName;

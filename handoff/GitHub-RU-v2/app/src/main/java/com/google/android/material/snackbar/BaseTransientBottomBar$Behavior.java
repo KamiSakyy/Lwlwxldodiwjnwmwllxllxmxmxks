@@ -11,7 +11,7 @@ import w51.r;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public class BaseTransientBottomBar$Behavior extends SwipeDismissBehavior<View> {
-    public a i;
+    public final a i;
 
     public BaseTransientBottomBar$Behavior() {
         a aVar = new a(23, false);

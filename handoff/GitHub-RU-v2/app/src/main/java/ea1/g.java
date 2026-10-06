@@ -2,8 +2,8 @@ package ea1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class g extends n {
-    public String a;
-    public String b;
+    public final String a;
+    public final String b;
     public final /* synthetic */ int c;
 
     public g(int i, String str, String str2, boolean z) {

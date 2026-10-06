@@ -2,12 +2,12 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i7 {
-    public String a;
-    public String b;
-    public String c;
-    public int d;
-    public j7 e;
-    public uu0.j5 f;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final int d;
+    public final j7 e;
+    public final uu0.j5 f;
 
     public i7(String str, String str2, String str3, int i, j7 j7Var, uu0.j5 j5Var) {
         this.a = str;

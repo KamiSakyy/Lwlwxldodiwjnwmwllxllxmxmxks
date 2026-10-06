@@ -6,10 +6,10 @@ import java.util.concurrent.locks.ReentrantLock;
 public final class k {
 
     /* renamed from: b, reason: collision with root package name */
-    public long[] f29010b;
+    public final long[] f29010b;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean[] f29011c;
+    public final boolean[] f29011c;
 
     /* renamed from: d, reason: collision with root package name */
     public volatile boolean f29012d;

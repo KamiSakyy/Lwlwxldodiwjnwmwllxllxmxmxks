@@ -5,10 +5,10 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ro implements aaShadow.w0 {
     public static final ko Companion = new ko();
-    public String r;
-    public String s;
-    public String t;
-    public aa.u0 u;
+    public final String r;
+    public final String s;
+    public final String t;
+    public final aa.u0 u;
 
     public ro(String str, String str2, String str3, aa.u0 u0Var) {
         k71.k.g(str, "owner");

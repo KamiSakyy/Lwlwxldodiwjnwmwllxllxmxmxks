@@ -2,15 +2,15 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class dn {
-    public String a;
-    public String b;
-    public hc0.jl c;
-    public String d;
-    public c40.c e;
-    public i80.c f;
-    public aa0.c g;
-    public g70.a h;
-    public y60.a i;
+    public final String a;
+    public final String b;
+    public final hc0.jl c;
+    public final String d;
+    public final c40.c e;
+    public final i80.c f;
+    public final aa0.c g;
+    public final g70.a h;
+    public final y60.a i;
 
     public dn(String str, String str2, hc0.jl jlVar, String str3, c40.c cVar, i80.c cVar2, aa0.c cVar3, g70.a aVar, y60.a aVar2) {
         this.a = str;

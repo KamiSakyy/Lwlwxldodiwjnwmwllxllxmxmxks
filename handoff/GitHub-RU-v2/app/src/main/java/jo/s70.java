@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s70 {
-    public v70 a;
-    public String b;
+    public final v70 a;
+    public final String b;
 
     public s70(v70 v70Var, String str) {
         this.a = v70Var;

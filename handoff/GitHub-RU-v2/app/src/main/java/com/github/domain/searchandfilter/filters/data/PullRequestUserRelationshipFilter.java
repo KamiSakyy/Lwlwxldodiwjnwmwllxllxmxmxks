@@ -24,7 +24,7 @@ public final class PullRequestUserRelationshipFilter extends d {
     public static final w61.h[] w;
     public static final h0 x;
     public static final la0.d y;
-    public h0 v;
+    public final h0 v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<PullRequestUserRelationshipFilter> CREATOR = new o(11);
 

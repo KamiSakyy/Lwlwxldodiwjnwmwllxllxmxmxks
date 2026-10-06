@@ -6,10 +6,10 @@ import com.github.service.models.response.type.MinimizedStateReason;
 public final class x2 {
     public static final w2 Companion = new w2();
     public static final x2 e = new x2(false, false, false, null);
-    public boolean a;
-    public boolean b;
-    public boolean c;
-    public MinimizedStateReason d;
+    public final boolean a;
+    public final boolean b;
+    public final boolean c;
+    public final MinimizedStateReason d;
 
     public x2(boolean z, boolean z2, boolean z3, MinimizedStateReason minimizedStateReason) {
         this.a = z;

@@ -2,7 +2,7 @@ package gy0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g0 {
-    public a0 a;
+    public final a0 a;
 
     public g0(a0 a0Var) {
         this.a = a0Var;

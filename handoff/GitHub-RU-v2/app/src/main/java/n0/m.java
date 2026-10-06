@@ -5,5 +5,4 @@ package n0;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface m {
-    public Object d(Object) { return null; }
 }

@@ -4,15 +4,15 @@ import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s extends e0 {
-    public long a;
-    public Integer b;
-    public a0 c;
-    public long d;
-    public byte[] e;
-    public String f;
-    public long g;
-    public i0 h;
-    public b0 i;
+    public final long a;
+    public final Integer b;
+    public final a0 c;
+    public final long d;
+    public final byte[] e;
+    public final String f;
+    public final long g;
+    public final i0 h;
+    public final b0 i;
 
     public s(long j, Integer num, a0 a0Var, long j2, byte[] bArr, String str, long j3, i0 i0Var, b0 b0Var) {
         this.a = j;

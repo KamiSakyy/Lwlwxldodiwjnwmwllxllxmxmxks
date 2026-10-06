@@ -11,7 +11,7 @@ public final class cr {
     public static final cr v;
     public static final /* synthetic */ cr[] w;
     public static final /* synthetic */ d71.b x;
-    public String r;
+    public final String r;
 
     static {
         cr crVar = new cr("ASC", 0, "ASC");

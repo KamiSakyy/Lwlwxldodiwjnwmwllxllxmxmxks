@@ -6,10 +6,10 @@ import android.widget.RemoteViews;
 public final class o1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public RemoteViews f3653a;
+    public final RemoteViews f3653a;
 
     /* renamed from: b, reason: collision with root package name */
-    public c1 f3654b;
+    public final c1 f3654b;
 
     public o1(RemoteViews remoteViews, c1 c1Var) {
         this.f3653a = remoteViews;

@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class nc {
-    public String a;
-    public pc b;
-    public qc c;
+    public final String a;
+    public final pc b;
+    public final qc c;
 
     public nc(String str, pc pcVar, qc qcVar) {
         k71.k.g(str, "__typename");

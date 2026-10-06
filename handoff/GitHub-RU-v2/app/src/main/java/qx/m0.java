@@ -4,9 +4,9 @@ import cq.u2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m0 {
-    public String a;
-    public String b;
-    public u2 c;
+    public final String a;
+    public final String b;
+    public final u2 c;
 
     public m0(String str, String str2, u2 u2Var) {
         this.a = str;
@@ -35,10 +35,10 @@ public final class m0 {
         o.append(")");
         return o.toString();
     }
-    public static Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object a(Object p1, Object p2, Object p3) { return null; }
-    public static Object h(Object p1, Object p2, Object p3) { return null; }
-    public static Object o(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object z(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
+    public Object o(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object z(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

@@ -7,7 +7,7 @@ import android.widget.FrameLayout;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public class ClippableRoundedCornerLayout extends FrameLayout {
-    public float[] r;
+    public final float[] r;
 
     public ClippableRoundedCornerLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);

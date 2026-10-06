@@ -2,16 +2,16 @@ package ap0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o0 implements aa.h0 {
-    public String a;
-    public o b;
-    public y c;
-    public v0 d;
-    public g1 e;
-    public q1 f;
-    public a2 g;
-    public m2 h;
-    public j5 i;
-    public s5 j;
+    public final String a;
+    public final o b;
+    public final y c;
+    public final v0 d;
+    public final g1 e;
+    public final q1 f;
+    public final a2 g;
+    public final m2 h;
+    public final j5 i;
+    public final s5 j;
 
     public o0(String str, o oVar, y yVar, v0 v0Var, g1 g1Var, q1 q1Var, a2 a2Var, m2 m2Var, j5 j5Var, s5 s5Var) {
         k71.k.g(str, "__typename");

@@ -5,14 +5,14 @@ import gn0.hn;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o {
-    public String a;
-    public String b;
-    public boolean c;
-    public int d;
-    public hn e;
-    public i0 f;
-    public boolean g;
-    public String h;
+    public final String a;
+    public final String b;
+    public final boolean c;
+    public final int d;
+    public final hn e;
+    public final i0 f;
+    public final boolean g;
+    public final String h;
 
     public o(String str, String str2, boolean z, int i, hn hnVar, i0 i0Var, boolean z2, String str3) {
         this.a = str;

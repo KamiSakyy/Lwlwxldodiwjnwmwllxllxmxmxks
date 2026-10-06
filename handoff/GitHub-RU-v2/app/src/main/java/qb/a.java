@@ -7,7 +7,7 @@ import k71.k;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f31028a;
+    public final String f31028a;
 
     public static String a(String str) {
         return e.z("CommitOid(value=", str, ")");

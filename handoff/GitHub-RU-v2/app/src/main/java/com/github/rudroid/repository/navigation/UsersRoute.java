@@ -20,13 +20,13 @@ public final class UsersRoute {
     public static final h[] f20041d;
 
     /* renamed from: a, reason: collision with root package name */
-    public n f20042a;
+    public final n f20042a;
 
     /* renamed from: b, reason: collision with root package name */
-    public com.github.domain.users.a f20043b;
+    public final com.github.domain.users.a f20043b;
 
     /* renamed from: c, reason: collision with root package name */
-    public String f20044c;
+    public final String f20044c;
 
     public static final class Companion {
         public final KSerializer serializer() {

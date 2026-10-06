@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ac {
-    public String a;
-    public hc0.kv b;
+    public final String a;
+    public final hc0.kv b;
 
     public ac(String str, hc0.kv kvVar) {
         this.a = str;

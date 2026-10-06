@@ -6,9 +6,9 @@ import fw0.z0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d {
-    public String a;
-    public String b;
-    public z0 c;
+    public final String a;
+    public final String b;
+    public final z0 c;
 
     public d(String str, String str2, z0 z0Var) {
         this.a = str;

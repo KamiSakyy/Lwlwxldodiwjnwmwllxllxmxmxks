@@ -4,10 +4,10 @@ package com.github.rudroid.activities;
 public final class h0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f5819a;
+    public final String f5819a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f5820b;
+    public final boolean f5820b;
 
     public h0(String str, boolean z10) {
         k71.k.g(str, "message");

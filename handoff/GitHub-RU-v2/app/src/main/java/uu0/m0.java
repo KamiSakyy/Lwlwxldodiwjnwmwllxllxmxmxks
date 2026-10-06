@@ -27,11 +27,11 @@ public abstract class m0 implements aa.a {
         fVar.z0("id");
         aa.c.a.b(fVar, wVar, h0Var.a);
     }
-    public static Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object a(Object p1, Object p2, Object p3) { return null; }
-    public static Object h(Object p1, Object p2, Object p3) { return null; }
-    public static Object w(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object y(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object z(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
+    public Object w(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object y(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object z(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

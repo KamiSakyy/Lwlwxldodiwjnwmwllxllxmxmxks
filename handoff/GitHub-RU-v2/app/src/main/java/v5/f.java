@@ -11,10 +11,10 @@ import sy.p;
 public final class f extends p {
 
     /* renamed from: a, reason: collision with root package name */
-    public TextView f32728a;
+    public final TextView f32728a;
 
     /* renamed from: b, reason: collision with root package name */
-    public d f32729b;
+    public final d f32729b;
 
     /* renamed from: c, reason: collision with root package name */
     public boolean f32730c = true;

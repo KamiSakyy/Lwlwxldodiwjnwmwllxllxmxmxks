@@ -4,10 +4,10 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m0 {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
 
     public m0(String str, String str2, String str3, String str4) {
         this.a = str;
@@ -36,7 +36,7 @@ public final class m0 {
     public final String toString() {
         return x.i.k(a0.s0.o("ProjectViewGroup(groupedByFieldId=", this.a, ", fieldValue=", this.b, ", title="), this.c, ", viewGroupId=", this.d, ")");
     }
-    public static Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object a(Object p1, Object p2, Object p3) { return null; }
-    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

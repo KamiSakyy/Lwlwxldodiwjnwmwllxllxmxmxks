@@ -2,9 +2,9 @@ package fp;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u {
-    public String a;
-    public String b;
-    public hp.o c;
+    public final String a;
+    public final String b;
+    public final hp.o c;
 
     public u(String str, String str2, hp.o oVar) {
         this.a = str;

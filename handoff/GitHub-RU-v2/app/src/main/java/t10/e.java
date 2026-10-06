@@ -6,15 +6,15 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public int f;
-    public List g;
-    public boolean h;
-    public l i;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final int f;
+    public final List g;
+    public final boolean h;
+    public final l i;
 
     public e(String str, String str2, String str3, String str4, String str5, int i, List list, boolean z, l lVar) {
         this.a = str;
@@ -52,5 +52,5 @@ public final class e {
         o.append(")");
         return o.toString();
     }
-    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

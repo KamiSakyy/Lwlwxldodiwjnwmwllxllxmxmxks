@@ -5,10 +5,10 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u2 {
-    public PullRequestState a;
-    public v6 b;
-    public boolean c;
-    public ZonedDateTime d;
+    public final PullRequestState a;
+    public final v6 b;
+    public final boolean c;
+    public final ZonedDateTime d;
 
     public u2(PullRequestState pullRequestState, v6 v6Var, boolean z, ZonedDateTime zonedDateTime) {
         k71.k.g(pullRequestState, "state");

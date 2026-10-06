@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class yf {
-    public String a;
-    public gg b;
-    public bl0.a c;
+    public final String a;
+    public final gg b;
+    public final bl0.a c;
 
     public yf(String str, gg ggVar, bl0.a aVar) {
         k71.k.g(str, "__typename");

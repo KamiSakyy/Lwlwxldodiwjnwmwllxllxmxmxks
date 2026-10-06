@@ -2,11 +2,11 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class lb {
-    public String a;
-    public pz0.py b;
-    public kb c;
-    public boolean d;
-    public String e;
+    public final String a;
+    public final pz0.py b;
+    public final kb c;
+    public final boolean d;
+    public final String e;
 
     public lb(String str, pz0.py pyVar, kb kbVar, boolean z, String str2) {
         this.a = str;

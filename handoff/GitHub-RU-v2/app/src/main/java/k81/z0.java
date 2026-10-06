@@ -7,8 +7,8 @@ import kotlinx.serialization.encoding.Encoder;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class z0 implements KSerializer {
-    public KSerializer a;
-    public l1 b;
+    public final KSerializer a;
+    public final l1 b;
 
     public z0(KSerializer kSerializer) {
         k71.k.g(kSerializer, "serializer");

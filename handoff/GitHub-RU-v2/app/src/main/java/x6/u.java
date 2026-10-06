@@ -6,10 +6,10 @@ import android.os.Bundle;
 public final class u {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f33914a;
+    public final int f33914a;
 
     /* renamed from: b, reason: collision with root package name */
-    public Bundle f33915b;
+    public final Bundle f33915b;
 
     public u(int i, Bundle bundle) {
         this.f33914a = i;

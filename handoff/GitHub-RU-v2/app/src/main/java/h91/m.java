@@ -4,7 +4,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class m implements i0Shadow {
-    public v r;
+    public final v r;
     public long s;
     public boolean t;
 

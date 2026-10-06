@@ -6,17 +6,17 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y7 {
-    public String a;
-    public IssueOrPullRequestState b;
-    public Object c;
-    public Object d;
-    public Object e;
-    public v2 f;
-    public s g;
-    public com.github.service.models.response.a h;
-    public ArrayList i;
-    public boolean j;
-    public boolean k;
+    public final String a;
+    public final IssueOrPullRequestState b;
+    public final Object c;
+    public final Object d;
+    public final Object e;
+    public final v2 f;
+    public final s g;
+    public final com.github.service.models.response.a h;
+    public final ArrayList i;
+    public final boolean j;
+    public final boolean k;
 
     public y7(String str, IssueOrPullRequestState issueOrPullRequestState, List list, List list2, List list3, v2 v2Var, s sVar, com.github.service.models.response.a aVar, ArrayList arrayList, boolean z, boolean z2) {
         k71.k.g(issueOrPullRequestState, "state");

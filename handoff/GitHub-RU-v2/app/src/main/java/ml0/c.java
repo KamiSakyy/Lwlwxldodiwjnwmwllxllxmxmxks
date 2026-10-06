@@ -2,7 +2,7 @@ package ml0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public f a;
+    public final f a;
 
     public c(f fVar) {
         this.a = fVar;

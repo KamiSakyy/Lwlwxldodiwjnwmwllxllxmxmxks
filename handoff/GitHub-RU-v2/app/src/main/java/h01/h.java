@@ -8,21 +8,21 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h {
-    public MergeStateStatus a;
-    public List b;
-    public boolean c;
-    public PullRequestMergeMethod d;
-    public String e;
-    public List f;
-    public yz0.i g;
-    public boolean h;
-    public boolean i;
-    public boolean j;
-    public String k;
-    public String l;
-    public ZonedDateTime m;
-    public i01.b n;
-    public i01.a o;
+    public final MergeStateStatus a;
+    public final List b;
+    public final boolean c;
+    public final PullRequestMergeMethod d;
+    public final String e;
+    public final List f;
+    public final yz0.i g;
+    public final boolean h;
+    public final boolean i;
+    public final boolean j;
+    public final String k;
+    public final String l;
+    public final ZonedDateTime m;
+    public final i01.b n;
+    public final i01.a o;
 
     public h(MergeStateStatus mergeStateStatus, List list, boolean z, PullRequestMergeMethod pullRequestMergeMethod, String str, List list2, yz0.i iVar, boolean z2, boolean z3, boolean z4, String str2, String str3, ZonedDateTime zonedDateTime, i01.b bVar, i01.a aVar) {
         k71.k.g(mergeStateStatus, "mergeState");

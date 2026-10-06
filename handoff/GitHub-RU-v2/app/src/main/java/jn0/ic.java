@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ic implements aaShadow.v0 {
-    public lc a;
-    public mc b;
-    public String c;
-    public String d;
+    public final lc a;
+    public final mc b;
+    public final String c;
+    public final String d;
 
     public ic(lc lcVar, mc mcVar, String str, String str2) {
         this.a = lcVar;

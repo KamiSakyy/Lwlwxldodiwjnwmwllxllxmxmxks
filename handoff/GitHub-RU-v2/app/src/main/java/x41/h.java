@@ -21,7 +21,7 @@ import org.json.JSONObject;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h {
     public static final Charset b = Charset.forName("UTF-8");
-    public b51.d a;
+    public final b51.d a;
 
     public h(b51.d dVar) {
         this.a = dVar;

@@ -17,13 +17,13 @@ import com.google.android.material.textfield.TextInputLayout;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i extends m {
-    public int e;
-    public int f;
-    public TimeInterpolator g;
+    public final int e;
+    public final int f;
+    public final TimeInterpolator g;
     public AutoCompleteTextView h;
-    public a i;
-    public com.github.rudroid.createissue.propertybar.projects.b j;
-    public h k;
+    public final a i;
+    public final com.github.rudroid.createissue.propertybar.projects.b j;
+    public final h k;
     public boolean l;
     public boolean m;
     public boolean n;

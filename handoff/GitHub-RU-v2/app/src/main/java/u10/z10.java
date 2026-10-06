@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z10 {
-    public String a;
-    public String b;
-    public c30.h c;
+    public final String a;
+    public final String b;
+    public final c30.h c;
 
     public z10(String str, String str2, c30.h hVar) {
         k71.k.g(str2, "id");

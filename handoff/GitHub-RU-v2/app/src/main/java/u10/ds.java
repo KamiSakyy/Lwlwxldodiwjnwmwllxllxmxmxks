@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ds {
-    public String a;
-    public String b;
-    public es c;
+    public final String a;
+    public final String b;
+    public final es c;
 
     public ds(String str, String str2, es esVar) {
         k71.k.g(str, "__typename");

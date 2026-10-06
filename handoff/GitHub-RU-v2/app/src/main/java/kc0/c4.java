@@ -2,14 +2,14 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c4 {
-    public String a;
-    public gn0.l2 b;
-    public String c;
-    public String d;
-    public String e;
-    public int f;
-    public s3 g;
-    public boolean h;
+    public final String a;
+    public final gn0.l2 b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final int f;
+    public final s3 g;
+    public final boolean h;
 
     public c4(String str, gn0.l2 l2Var, String str2, String str3, String str4, int i, s3 s3Var, boolean z) {
         this.a = str;

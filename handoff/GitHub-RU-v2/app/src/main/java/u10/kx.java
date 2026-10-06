@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class kx {
-    public String a;
-    public lx b;
-    public ja0.a c;
+    public final String a;
+    public final lx b;
+    public final ja0.a c;
 
     public kx(String str, lx lxVar, ja0.a aVar) {
         k71.k.g(str, "__typename");

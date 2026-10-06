@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class kr implements aaShadow.w0 {
     public static final cr Companion = new cr();
-    public String r;
-    public pz0.cv s;
-    public aa.u0 t;
+    public final String r;
+    public final pz0.cv s;
+    public final aa.u0 t;
 
     public kr(String str, pz0.cv cvVar, aa.u0 u0Var) {
         k71.k.g(str, "id");

@@ -26,10 +26,10 @@ public class n1 {
     public static final /* synthetic */ n1[] f2344w;
 
     /* renamed from: r, reason: collision with root package name */
-    public o1 f2345r;
+    public final o1 f2345r;
 
     /* renamed from: s, reason: collision with root package name */
-    public int f2346s;
+    public final int f2346s;
 
     /* JADX INFO: Fake field, exist only in values array */
     n1 EF0;

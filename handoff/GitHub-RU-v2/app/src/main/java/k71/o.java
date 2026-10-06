@@ -2,7 +2,7 @@ package k71;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o implements d {
-    public Class a;
+    public final Class a;
 
     public o(Class cls) {
         k.g(cls, "jClass");

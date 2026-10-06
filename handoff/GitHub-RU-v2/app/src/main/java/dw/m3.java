@@ -2,24 +2,24 @@ package dw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m3 implements aa.h0 {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public boolean f;
-    public boolean g;
-    public j3 h;
-    public l3 i;
-    public boolean j;
-    public String k;
-    public boolean l;
-    public boolean m;
-    public boolean n;
-    public boolean o;
-    public k3 p;
-    public g3 q;
-    public o5 r;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final boolean f;
+    public final boolean g;
+    public final j3 h;
+    public final l3 i;
+    public final boolean j;
+    public final String k;
+    public final boolean l;
+    public final boolean m;
+    public final boolean n;
+    public final boolean o;
+    public final k3 p;
+    public final g3 q;
+    public final o5 r;
 
     public m3(String str, String str2, String str3, String str4, String str5, boolean z, boolean z2, j3 j3Var, l3 l3Var, boolean z3, String str6, boolean z4, boolean z5, boolean z6, boolean z7, k3 k3Var, g3 g3Var, o5 o5Var) {
         this.a = str;

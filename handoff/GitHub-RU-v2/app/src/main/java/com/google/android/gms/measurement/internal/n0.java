@@ -10,7 +10,7 @@ public final class n0 {
     public static final AtomicReference b = new AtomicReference();
     public static final AtomicReference c = new AtomicReference();
     public static final AtomicReference d = new AtomicReference();
-    public e1 a;
+    public final e1 a;
 
     public n0(e1 e1Var) {
         this.a = e1Var;

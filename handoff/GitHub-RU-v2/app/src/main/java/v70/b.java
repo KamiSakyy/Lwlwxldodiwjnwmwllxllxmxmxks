@@ -5,8 +5,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public boolean a;
-    public String b;
+    public final boolean a;
+    public final String b;
 
     public b(String str, boolean z) {
         this.a = z;

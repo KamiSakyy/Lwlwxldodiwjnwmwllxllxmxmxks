@@ -11,7 +11,7 @@ public final class dn {
     public static final dn v;
     public static final /* synthetic */ dn[] w;
     public static final /* synthetic */ d71.b x;
-    public String r;
+    public final String r;
 
     static {
         dn dnVar = new dn("FILE", 0, "FILE");

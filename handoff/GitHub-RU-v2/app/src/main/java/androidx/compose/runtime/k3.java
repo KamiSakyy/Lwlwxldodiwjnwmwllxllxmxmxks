@@ -4,7 +4,7 @@ package androidx.compose.runtime;
 public final class k3 implements m3 {
 
     /* renamed from: a, reason: collision with root package name */
-    public Object f1710a;
+    public final Object f1710a;
 
     public k3(Object obj) {
         this.f1710a = obj;

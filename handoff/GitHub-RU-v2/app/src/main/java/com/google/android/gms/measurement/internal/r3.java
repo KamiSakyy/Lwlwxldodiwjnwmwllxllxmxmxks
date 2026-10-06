@@ -10,13 +10,13 @@ import java.util.Locale;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r3 extends i4 {
-    public a1 A;
-    public a1 B;
-    public HashMap v;
-    public a1 w;
-    public a1 x;
-    public a1 y;
-    public a1 z;
+    public final a1 A;
+    public final a1 B;
+    public final HashMap v;
+    public final a1 w;
+    public final a1 x;
+    public final a1 y;
+    public final a1 z;
 
     public r3(o4 o4Var) {
         super(o4Var);

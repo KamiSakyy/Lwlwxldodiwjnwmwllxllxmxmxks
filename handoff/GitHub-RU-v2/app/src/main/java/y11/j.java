@@ -22,10 +22,10 @@ import w21.m;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j implements ServiceConnection {
     public int r = 0;
-    public Messenger s;
+    public final Messenger s;
     public t t;
-    public ArrayDeque u;
-    public SparseArray v;
+    public final ArrayDeque u;
+    public final SparseArray v;
     public final /* synthetic */ l w;
 
     public j(l lVar) {

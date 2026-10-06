@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class dj implements aaShadow.v0 {
-    public ej a;
-    public String b;
-    public String c;
+    public final ej a;
+    public final String b;
+    public final String c;
 
     public dj(ej ejVar, String str, String str2) {
         this.a = ejVar;

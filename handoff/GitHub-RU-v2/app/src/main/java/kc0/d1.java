@@ -2,19 +2,19 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d1 {
-    public String a;
-    public n1 b;
-    public gn0.dn c;
-    public Integer d;
-    public p1 e;
-    public String f;
-    public gn0.lm g;
-    public String h;
-    public String i;
-    public aj0.c j;
-    public se0.c k;
-    public sk0.c l;
-    public qh0.a m;
+    public final String a;
+    public final n1 b;
+    public final gn0.dn c;
+    public final Integer d;
+    public final p1 e;
+    public final String f;
+    public final gn0.lm g;
+    public final String h;
+    public final String i;
+    public final aj0.c j;
+    public final se0.c k;
+    public final sk0.c l;
+    public final qh0.a m;
 
     public d1(String str, n1 n1Var, gn0.dn dnVar, Integer num, p1 p1Var, String str2, gn0.lm lmVar, String str3, String str4, aj0.c cVar, se0.c cVar2, sk0.c cVar3, qh0.a aVar) {
         this.a = str;

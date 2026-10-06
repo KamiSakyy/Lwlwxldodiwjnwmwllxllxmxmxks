@@ -2,19 +2,19 @@ package wx0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i0 {
-    public String a;
-    public d1 b;
-    public h1 c;
-    public m1 d;
-    public e1 e;
-    public l1 f;
-    public f1 g;
-    public g1 h;
-    public n1 i;
-    public j1 j;
-    public i1 k;
-    public k1 l;
-    public kw0.a m;
+    public final String a;
+    public final d1 b;
+    public final h1 c;
+    public final m1 d;
+    public final e1 e;
+    public final l1 f;
+    public final f1 g;
+    public final g1 h;
+    public final n1 i;
+    public final j1 j;
+    public final i1 k;
+    public final k1 l;
+    public final kw0.a m;
 
     public i0(String str, d1 d1Var, h1 h1Var, m1 m1Var, e1 e1Var, l1 l1Var, f1 f1Var, g1 g1Var, n1 n1Var, j1 j1Var, i1 i1Var, k1 k1Var, kw0.a aVar) {
         k71.k.g(str, "__typename");

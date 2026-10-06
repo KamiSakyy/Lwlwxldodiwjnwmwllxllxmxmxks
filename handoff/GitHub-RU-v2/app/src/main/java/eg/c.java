@@ -11,16 +11,16 @@ import xn.e1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public g1 a;
-    public e1 b;
-    public List c;
-    public boolean d;
-    public boolean e;
-    public boolean f;
-    public String g;
-    public sz0.b h;
-    public a i;
-    public boolean j;
+    public final g1 a;
+    public final e1 b;
+    public final List c;
+    public final boolean d;
+    public final boolean e;
+    public final boolean f;
+    public final String g;
+    public final sz0.b h;
+    public final a i;
+    public final boolean j;
 
     public c(g1 g1Var, e1 e1Var, List list, boolean z, boolean z2, boolean z3, String str, sz0.b bVar, a aVar, boolean z4) {
         k.g(g1Var, "isSubscribingToCopilotFree");

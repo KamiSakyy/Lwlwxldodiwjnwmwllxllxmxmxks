@@ -4,7 +4,7 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class a implements f {
-    public g r;
+    public final g r;
 
     public a(g gVar) {
         k.g(gVar, "key");

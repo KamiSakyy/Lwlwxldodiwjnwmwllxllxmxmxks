@@ -9,14 +9,14 @@ import m10.o7;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y implements h0 {
-    public String a;
-    public String b;
-    public o7 c;
-    public ZonedDateTime d;
-    public ZonedDateTime e;
-    public ZonedDateTime f;
-    public x g;
-    public String h;
+    public final String a;
+    public final String b;
+    public final o7 c;
+    public final ZonedDateTime d;
+    public final ZonedDateTime e;
+    public final ZonedDateTime f;
+    public final x g;
+    public final String h;
 
     public y(String str, String str2, o7 o7Var, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, ZonedDateTime zonedDateTime3, x xVar, String str3) {
         this.a = str;

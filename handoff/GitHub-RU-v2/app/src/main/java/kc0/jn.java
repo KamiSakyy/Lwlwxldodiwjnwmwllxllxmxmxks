@@ -2,12 +2,12 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class jn {
-    public int a;
-    public String b;
-    public fn c;
-    public gn d;
-    public String e;
-    public String f;
+    public final int a;
+    public final String b;
+    public final fn c;
+    public final gn d;
+    public final String e;
+    public final String f;
 
     public jn(int i, String str, fn fnVar, gn gnVar, String str2, String str3) {
         this.a = i;

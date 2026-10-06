@@ -14,13 +14,13 @@ import kotlinx.serialization.KSerializer;
 public final class DraftIssueRoute implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public String f12102r;
+    public final String f12102r;
 
     /* renamed from: s, reason: collision with root package name */
-    public String f12103s;
+    public final String f12103s;
 
     /* renamed from: t, reason: collision with root package name */
-    public SerializableProjectV2FieldList f12104t;
+    public final SerializableProjectV2FieldList f12104t;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<DraftIssueRoute> CREATOR = new a();
 

@@ -9,18 +9,18 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c implements h0 {
-    public String a;
-    public String b;
-    public ZonedDateTime c;
-    public boolean d;
-    public String e;
-    public xm f;
-    public a g;
-    public ZonedDateTime h;
-    public b i;
-    public se0.c j;
-    public aj0.c k;
-    public yh0.a l;
+    public final String a;
+    public final String b;
+    public final ZonedDateTime c;
+    public final boolean d;
+    public final String e;
+    public final xm f;
+    public final a g;
+    public final ZonedDateTime h;
+    public final b i;
+    public final se0.c j;
+    public final aj0.c k;
+    public final yh0.a l;
 
     public c(String str, String str2, ZonedDateTime zonedDateTime, boolean z, String str3, xm xmVar, a aVar, ZonedDateTime zonedDateTime2, b bVar, se0.c cVar, aj0.c cVar2, yh0.a aVar2) {
         this.a = str;

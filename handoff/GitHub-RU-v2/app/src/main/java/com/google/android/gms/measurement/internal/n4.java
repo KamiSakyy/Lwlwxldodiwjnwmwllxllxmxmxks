@@ -2,7 +2,7 @@ package com.google.android.gms.measurement.internal;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n4 {
-    public o4 a;
+    public final o4 a;
     public int b = 1;
     public long c = a();
 

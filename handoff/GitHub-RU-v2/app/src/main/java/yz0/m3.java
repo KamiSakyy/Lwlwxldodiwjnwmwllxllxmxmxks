@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m3 {
-    public String a;
-    public ArrayList b;
-    public x01.i c;
+    public final String a;
+    public final ArrayList b;
+    public final x01.i c;
 
     public m3(String str, ArrayList arrayList, x01.i iVar) {
         this.a = str;

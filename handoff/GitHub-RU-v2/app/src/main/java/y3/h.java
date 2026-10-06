@@ -6,13 +6,13 @@ import androidx.compose.ui.layout.b0;
 public final class h implements b0 {
 
     /* renamed from: r, reason: collision with root package name */
-    public d f34208r;
+    public final d f34208r;
 
     /* renamed from: s, reason: collision with root package name */
-    public j71.c f34209s;
+    public final j71.c f34209s;
 
     /* renamed from: t, reason: collision with root package name */
-    public Object f34210t;
+    public final Object f34210t;
 
     public h(d dVar, j71.c cVar) {
         this.f34208r = dVar;

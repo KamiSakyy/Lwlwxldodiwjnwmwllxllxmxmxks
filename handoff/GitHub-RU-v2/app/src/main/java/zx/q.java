@@ -2,10 +2,10 @@ package zx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q implements aa.v0 {
-    public s a;
-    public r b;
-    public String c;
-    public String d;
+    public final s a;
+    public final r b;
+    public final String c;
+    public final String d;
 
     public q(s sVar, r rVar, String str, String str2) {
         this.a = sVar;

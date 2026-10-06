@@ -8,8 +8,8 @@ import com.github.rudroid.starredreposandlists.navigation.StarredReposAndListsEn
 public final class StarredRepositoriesAndListsActivity extends g<ic.d0> {
     public static final a Companion;
     public static final /* synthetic */ r71.e[] x0;
-    public int v0;
-    public com.github.rudroid.activities.util.g w0;
+    public final int v0;
+    public final com.github.rudroid.activities.util.g w0;
 
     public static final class a {
     }
@@ -42,5 +42,4 @@ public final class StarredRepositoriesAndListsActivity extends g<ic.d0> {
         mg.a.a(yVar);
         s4.g(yVar.h());
     }
-    public Object C(Object) { return null; }
 }

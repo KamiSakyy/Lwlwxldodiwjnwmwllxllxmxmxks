@@ -6,7 +6,7 @@ import android.os.Bundle;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public Bundle f3538a;
+    public final Bundle f3538a;
 
     public f(Bundle bundle) {
         this.f3538a = bundle;

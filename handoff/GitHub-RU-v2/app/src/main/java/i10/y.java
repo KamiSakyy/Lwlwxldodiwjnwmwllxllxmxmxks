@@ -4,7 +4,7 @@ import aa.m0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y implements m0 {
-    public z a;
+    public final z a;
 
     public y(z zVar) {
         this.a = zVar;

@@ -29,7 +29,6 @@ final class a extends c71.c {
         return this.B.c(this);
     }
 
-    public static Object M(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object M(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
     public Object a(Object p1) { return null; }
-    public Object a(Object) { return null; }
 }

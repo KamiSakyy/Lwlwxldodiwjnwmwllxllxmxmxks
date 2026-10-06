@@ -10,7 +10,7 @@ import xf.a;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e implements a.InterfaceC0031a {
-    public m a;
+    public final m a;
 
     public e(m mVar) {
         k.g(mVar, "userManager");

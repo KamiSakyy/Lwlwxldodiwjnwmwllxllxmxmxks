@@ -8,10 +8,10 @@ import x.i;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public f f3380a;
+    public final f f3380a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f3381b;
+    public final int f3381b;
 
     public a(f fVar, int i) {
         this.f3380a = fVar;

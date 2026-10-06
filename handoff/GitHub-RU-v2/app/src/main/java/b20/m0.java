@@ -2,9 +2,9 @@ package b20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m0 {
-    public String a;
-    public String b;
-    public String c;
+    public final String a;
+    public final String b;
+    public final String c;
 
     public m0(String str, String str2, String str3) {
         this.a = str;
@@ -30,6 +30,6 @@ public final class m0 {
     public final String toString() {
         return com.github.rudroid.copilot.h1.p(a0.s0.o("Workflow(name=", this.a, ", id=", this.b, ", __typename="), this.c, ")");
     }
-    public static Object a(Object p1, Object p2, Object p3) { return null; }
-    public static Object h(Object p1, Object p2, Object p3) { return null; }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
 }

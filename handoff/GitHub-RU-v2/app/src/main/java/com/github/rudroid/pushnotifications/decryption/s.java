@@ -14,25 +14,25 @@ public final class s {
     public static final s f18578h;
 
     /* renamed from: a, reason: collision with root package name */
-    public SecretKeySpec f18579a;
+    public final SecretKeySpec f18579a;
 
     /* renamed from: b, reason: collision with root package name */
-    public SecretKeySpec f18580b;
+    public final SecretKeySpec f18580b;
 
     /* renamed from: c, reason: collision with root package name */
-    public String f18581c;
+    public final String f18581c;
 
     /* renamed from: d, reason: collision with root package name */
-    public byte[] f18582d;
+    public final byte[] f18582d;
 
     /* renamed from: e, reason: collision with root package name */
-    public byte[] f18583e;
+    public final byte[] f18583e;
 
     /* renamed from: f, reason: collision with root package name */
-    public byte[] f18584f;
+    public final byte[] f18584f;
 
     /* renamed from: g, reason: collision with root package name */
-    public byte[] f18585g;
+    public final byte[] f18585g;
 
     public static final class a {
     }

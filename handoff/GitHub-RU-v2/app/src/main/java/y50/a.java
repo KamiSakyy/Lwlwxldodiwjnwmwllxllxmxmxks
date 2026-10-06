@@ -8,14 +8,14 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a implements h0 {
-    public String a;
-    public String b;
-    public String c;
-    public c d;
-    public i80.c e;
-    public g70.a f;
-    public q40.a g;
-    public y60.a h;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final c d;
+    public final i80.c e;
+    public final g70.a f;
+    public final q40.a g;
+    public final y60.a h;
 
     public a(String str, String str2, String str3, c cVar, i80.c cVar2, g70.a aVar, q40.a aVar2, y60.a aVar3) {
         this.a = str;

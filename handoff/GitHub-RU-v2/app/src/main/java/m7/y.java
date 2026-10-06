@@ -129,18 +129,18 @@ public interface y {
     default <T0> T0 O(Object... a) {
         return null;
     }
-    public static Object E(Object p1) { return null; }
-    public static Object J(Object p1) { return null; }
-    public static Object R(Object p1) { return null; }
-    public static Object T(Object p1, Object p2, Object p3) { return null; }
-    public static Object U(Object p1, Object p2, Object p3, Object p4) { return null; }
-    public static Object V(Object p1, Object p2, Object p3) { return null; }
-    public static Object Y(Object p1, Object p2, Object p3) { return null; }
-    public static int Z(Object p1, Object p2) { return null; }
-    public static Object a(Object p1, Object p2) { return null; }
-    public static Object a0(Object p1, Object p2) { return null; }
-    public static Object d(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
-    public static Object o(Object p1, Object p2) { return null; }
-    public static Object q(Object p1, Object p2) { return null; }
-    public static Object u(Object p1, Object p2) { return null; }
+    public Object E(Object p1) { return null; }
+    public Object J(Object p1) { return null; }
+    public Object R(Object p1) { return null; }
+    public Object T(Object p1, Object p2, Object p3) { return null; }
+    public Object U(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object V(Object p1, Object p2, Object p3) { return null; }
+    public Object Y(Object p1, Object p2, Object p3) { return null; }
+    public Object Z(Object p1, Object p2) { return null; }
+    public Object a(Object p1, Object p2) { return null; }
+    public Object a0(Object p1, Object p2) { return null; }
+    public Object d(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public Object o(Object p1, Object p2) { return null; }
+    public Object q(Object p1, Object p2) { return null; }
+    public Object u(Object p1, Object p2) { return null; }
 }

@@ -2,8 +2,8 @@ package uu0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g1 {
-    public String a;
-    public h1 b;
+    public final String a;
+    public final h1 b;
 
     public g1(String str, h1 h1Var) {
         this.a = str;

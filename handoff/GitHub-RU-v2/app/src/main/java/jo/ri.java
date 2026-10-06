@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ri {
-    public String a;
-    public String b;
-    public ct.u c;
+    public final String a;
+    public final String b;
+    public final ct.u c;
 
     public ri(String str, String str2, ct.u uVar) {
         this.a = str;

@@ -5,8 +5,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public String a;
-    public String b;
+    public final String a;
+    public final String b;
 
     public a(String str) {
         k.g(str, "queryString");
@@ -28,5 +28,5 @@ public final class a {
     public final String toString() {
         return e.z("AdvancedSearchParameters(queryString=", this.a, ")");
     }
-    public static Object h0(Object p1) { return null; }
+    public Object h0(Object p1) { return null; }
 }

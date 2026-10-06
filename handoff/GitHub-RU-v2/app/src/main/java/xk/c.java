@@ -11,8 +11,8 @@ import z01.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public e a;
-    public oa.g b;
+    public final e a;
+    public final oa.g b;
 
     public c(e eVar, oa.g gVar) {
         k71.k.g(eVar, "dashboardNavLinksStore");

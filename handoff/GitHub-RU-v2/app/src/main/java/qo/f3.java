@@ -6,9 +6,9 @@ import m10.p00;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f3 implements aa.w0 {
     public static final b3 Companion = new b3();
-    public String r;
-    public String s;
-    public aa1.b t;
+    public final String r;
+    public final String s;
+    public final aa1.b t;
 
     public f3(aa1.b bVar, String str, String str2) {
         k71.k.g(str, "repositoryOwner");

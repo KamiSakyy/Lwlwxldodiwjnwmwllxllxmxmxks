@@ -4,11 +4,11 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k80 {
-    public String a;
-    public ZonedDateTime b;
-    public g80 c;
-    public h80 d;
-    public String e;
+    public final String a;
+    public final ZonedDateTime b;
+    public final g80 c;
+    public final h80 d;
+    public final String e;
 
     public k80(String str, ZonedDateTime zonedDateTime, g80 g80Var, h80 h80Var, String str2) {
         this.a = str;

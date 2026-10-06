@@ -5,9 +5,9 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h implements v0 {
-    public i a;
-    public String b;
-    public String c;
+    public final i a;
+    public final String b;
+    public final String c;
 
     public h(i iVar, String str, String str2) {
         this.a = iVar;

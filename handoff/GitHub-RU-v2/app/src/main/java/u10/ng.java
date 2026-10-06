@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ng implements aaShadow.m0 {
-    public og a;
+    public final og a;
 
     public ng(og ogVar) {
         this.a = ogVar;

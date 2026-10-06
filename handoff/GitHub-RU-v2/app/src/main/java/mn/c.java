@@ -2,8 +2,8 @@ package mn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public a a;
-    public b b;
+    public final a a;
+    public final b b;
 
     public c(a aVar, b bVar) {
         this.a = aVar;

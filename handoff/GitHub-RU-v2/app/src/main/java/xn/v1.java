@@ -2,7 +2,7 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v1 extends w1Shadow {
-    public String a;
+    public final String a;
 
     public v1(String str) {
         k71.k.g(str, "value");

@@ -6,7 +6,7 @@ import java.util.WeakHashMap;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j {
-    public View a;
+    public final View a;
     public int b;
     public int c;
     public int d;

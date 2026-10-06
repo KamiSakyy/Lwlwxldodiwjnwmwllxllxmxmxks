@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class og0 {
-    public String a;
-    public yw.b b;
+    public final String a;
+    public final yw.b b;
 
     public og0(String str, yw.b bVar) {
         k71.k.g(str, "__typename");

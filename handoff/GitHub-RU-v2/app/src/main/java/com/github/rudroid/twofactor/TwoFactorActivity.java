@@ -14,7 +14,7 @@ import ic.n0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class TwoFactorActivity extends d<n0> {
     public static final a Companion = new a();
-    public int k0;
+    public final int k0;
     public com.github.rudroid.utilities.e l0;
 
     public static final class a {

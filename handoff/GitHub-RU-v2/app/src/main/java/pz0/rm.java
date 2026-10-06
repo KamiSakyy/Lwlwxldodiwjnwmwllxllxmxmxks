@@ -9,7 +9,7 @@ public final class rm {
     public static final rm t;
     public static final /* synthetic */ rm[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         rm rmVar = new rm("ADDED", 0, "ADDED");

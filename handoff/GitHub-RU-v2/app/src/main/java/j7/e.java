@@ -11,7 +11,4 @@ public abstract class e {
     public Object g(Object p1, Object p2) { return null; }
     public Object h(Object p1, Object p2) { return null; }
     public Object p(Object p1) { return null; }
-    public Object g(Object, Object) { return null; }
-    public Object h(int, Object) { return null; }
-    public Object h(int, Object) { return null; }
 }

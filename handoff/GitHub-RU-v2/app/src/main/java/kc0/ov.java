@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ov {
-    public kv a;
-    public nv b;
-    public String c;
-    public String d;
+    public final kv a;
+    public final nv b;
+    public final String c;
+    public final String d;
 
     public ov(kv kvVar, nv nvVar, String str, String str2) {
         this.a = kvVar;

@@ -5,19 +5,19 @@ public final class s4 {
     public static final a Companion = new a();
 
     /* renamed from: a, reason: collision with root package name */
-    public String f7821a;
+    public final String f7821a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f7822b;
+    public final String f7822b;
 
     /* renamed from: c, reason: collision with root package name */
-    public xn.i3 f7823c;
+    public final xn.i3 f7823c;
 
     /* renamed from: d, reason: collision with root package name */
-    public xn.i3 f7824d;
+    public final xn.i3 f7824d;
 
     /* renamed from: e, reason: collision with root package name */
-    public String f7825e;
+    public final String f7825e;
 
     public static final class a {
     }

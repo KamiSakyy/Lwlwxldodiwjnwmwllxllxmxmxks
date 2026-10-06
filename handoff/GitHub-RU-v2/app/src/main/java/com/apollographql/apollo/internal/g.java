@@ -10,13 +10,13 @@ import java.io.Closeable;
 public final class g implements Closeable {
 
     /* renamed from: r, reason: collision with root package name */
-    public j f4306r;
+    public final j f4306r;
 
     /* renamed from: s, reason: collision with root package name */
-    public k f4307s;
+    public final k f4307s;
 
     /* renamed from: t, reason: collision with root package name */
-    public k f4308t;
+    public final k f4308t;
 
     /* renamed from: u, reason: collision with root package name */
     public int f4309u;
@@ -31,7 +31,7 @@ public final class g implements Closeable {
     public f f4312x;
 
     /* renamed from: y, reason: collision with root package name */
-    public y f4313y;
+    public final y f4313y;
 
     public g(j jVar, String str) {
         this.f4306r = jVar;

@@ -6,7 +6,7 @@ import rm0.v4;
 /* loaded from: /home/user/work/p/classes5.dex */
 public class e extends z71.d {
     public final /* synthetic */ int u = 0;
-    public Object v;
+    public final Object v;
 
     public e(Iterable iterable, a71.h hVar, int i, x71.a aVar) {
         super(hVar, i, aVar);

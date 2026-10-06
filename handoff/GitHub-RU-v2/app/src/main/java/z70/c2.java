@@ -2,9 +2,9 @@ package z70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c2 {
-    public String a;
-    public k2 b;
-    public String c;
+    public final String a;
+    public final k2 b;
+    public final String c;
 
     public c2(String str, k2 k2Var, String str2) {
         this.a = str;

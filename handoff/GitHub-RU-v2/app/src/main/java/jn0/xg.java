@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xg {
-    public yg a;
+    public final yg a;
 
     public xg(yg ygVar) {
         this.a = ygVar;

@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m70 {
-    public String a;
-    public qx.c1 b;
-    public tu.s c;
+    public final String a;
+    public final qx.c1 b;
+    public final tu.s c;
 
     public m70(String str, qx.c1 c1Var, tu.s sVar) {
         k71.k.g(str, "__typename");

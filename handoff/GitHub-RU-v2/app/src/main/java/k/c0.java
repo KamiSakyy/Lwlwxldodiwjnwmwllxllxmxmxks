@@ -11,10 +11,10 @@ import jo.f4;
 public final class c0 implements View.OnClickListener {
 
     /* renamed from: r, reason: collision with root package name */
-    public View f27408r;
+    public final View f27408r;
 
     /* renamed from: s, reason: collision with root package name */
-    public String f27409s;
+    public final String f27409s;
 
     /* renamed from: t, reason: collision with root package name */
     public Method f27410t;

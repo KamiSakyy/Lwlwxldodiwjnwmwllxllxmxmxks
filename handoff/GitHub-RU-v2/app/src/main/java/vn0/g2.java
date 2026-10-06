@@ -5,12 +5,12 @@ import pz0.fa0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g2 {
-    public List a;
-    public String b;
-    public boolean c;
-    public fa0 d;
-    public String e;
-    public String f;
+    public final List a;
+    public final String b;
+    public final boolean c;
+    public final fa0 d;
+    public final String e;
+    public final String f;
 
     public g2(List list, String str, boolean z, fa0 fa0Var, String str2, String str3) {
         this.a = list;

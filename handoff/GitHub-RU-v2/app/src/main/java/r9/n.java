@@ -9,43 +9,43 @@ import java.util.Arrays;
 public final class n {
 
     /* renamed from: a, reason: collision with root package name */
-    public Context f31311a;
+    public final Context f31311a;
 
     /* renamed from: b, reason: collision with root package name */
-    public Bitmap.Config f31312b;
+    public final Bitmap.Config f31312b;
 
     /* renamed from: c, reason: collision with root package name */
-    public ColorSpace f31313c;
+    public final ColorSpace f31313c;
 
     /* renamed from: d, reason: collision with root package name */
-    public s9.h f31314d;
+    public final s9.h f31314d;
 
     /* renamed from: e, reason: collision with root package name */
-    public s9.g f31315e;
+    public final s9.g f31315e;
 
     /* renamed from: f, reason: collision with root package name */
-    public boolean f31316f;
+    public final boolean f31316f;
 
     /* renamed from: g, reason: collision with root package name */
-    public boolean f31317g;
+    public final boolean f31317g;
 
     /* renamed from: h, reason: collision with root package name */
-    public boolean f31318h;
-    public String i;
+    public final boolean f31318h;
+    public final String i;
 
     /* renamed from: j, reason: collision with root package name */
-    public q81.n f31319j;
+    public final q81.n f31319j;
 
     /* renamed from: k, reason: collision with root package name */
-    public r f31320k;
-    public o l;
-    public b m;
+    public final r f31320k;
+    public final o l;
+    public final b m;
 
     /* renamed from: n, reason: collision with root package name */
-    public b f31321n;
+    public final b f31321n;
 
     /* renamed from: o, reason: collision with root package name */
-    public b f31322o;
+    public final b f31322o;
 
     public n(Context context, Bitmap.Config config, ColorSpace colorSpace, s9.h hVar, s9.g gVar, boolean z10, boolean z11, boolean z12, String str, q81.n nVar, r rVar, o oVar, b bVar, b bVar2, b bVar3) {
         this.f31311a = context;

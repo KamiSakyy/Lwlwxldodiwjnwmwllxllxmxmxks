@@ -6,13 +6,13 @@ import pz0.gu;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
-    public int a;
-    public String b;
-    public gu c;
-    public k d;
-    public boolean e;
-    public boolean f;
-    public String g;
+    public final int a;
+    public final String b;
+    public final gu c;
+    public final k d;
+    public final boolean e;
+    public final boolean f;
+    public final String g;
 
     public f(int i, String str, gu guVar, k kVar, boolean z, boolean z2, String str2) {
         this.a = i;

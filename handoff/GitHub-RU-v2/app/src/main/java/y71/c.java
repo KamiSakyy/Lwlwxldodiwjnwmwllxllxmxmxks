@@ -2,7 +2,7 @@ package y71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class c extends e {
-    public c71.j w;
+    public final c71.j w;
 
     public c(j71.e eVar, a71.h hVar, int i, x71.a aVar) {
         super(eVar, hVar, i, aVar);

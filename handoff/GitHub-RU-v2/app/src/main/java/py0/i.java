@@ -2,8 +2,8 @@ package py0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i {
-    public String a;
-    public ry0.b b;
+    public final String a;
+    public final ry0.b b;
 
     public i(String str, ry0.b bVar) {
         this.a = str;

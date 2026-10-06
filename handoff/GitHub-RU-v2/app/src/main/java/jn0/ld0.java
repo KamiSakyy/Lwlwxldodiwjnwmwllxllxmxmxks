@@ -2,11 +2,11 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ld0 {
-    public String a;
-    public pz0.cu b;
-    public kd0 c;
-    public String d;
-    public xt0.k7 e;
+    public final String a;
+    public final pz0.cu b;
+    public final kd0 c;
+    public final String d;
+    public final xt0.k7 e;
 
     public ld0(String str, pz0.cu cuVar, kd0 kd0Var, String str2, xt0.k7 k7Var) {
         this.a = str;

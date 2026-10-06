@@ -2,9 +2,9 @@ package tz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public String a;
-    public String b;
-    public b5 c;
+    public final String a;
+    public final String b;
+    public final b5 c;
 
     public a(String str, String str2, b5 b5Var) {
         this.a = str;

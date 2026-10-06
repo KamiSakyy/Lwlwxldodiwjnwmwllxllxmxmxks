@@ -4,7 +4,7 @@ package k3;
 public final class a implements w {
 
     /* renamed from: r, reason: collision with root package name */
-    public int f27649r;
+    public final int f27649r;
 
     public a(int i) {
         this.f27649r = i;

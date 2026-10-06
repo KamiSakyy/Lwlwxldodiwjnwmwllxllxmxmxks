@@ -8,13 +8,13 @@ import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j<T, R> implements r<T>, com.github.rudroid.utilities.viewmodel.b {
-    public j71.g r;
-    public q0 s;
-    public q0 t;
-    public com.github.rudroid.activities.util.a u;
-    public com.github.rudroid.utilities.viewmodel.c v;
-    public y1 w;
-    public com.github.rudroid.support.u x;
+    public final j71.g r;
+    public final q0 s;
+    public final q0 t;
+    public final com.github.rudroid.activities.util.a u;
+    public final com.github.rudroid.utilities.viewmodel.c v;
+    public final y1 w;
+    public final com.github.rudroid.support.u x;
     public q1 y;
     public String z;
 

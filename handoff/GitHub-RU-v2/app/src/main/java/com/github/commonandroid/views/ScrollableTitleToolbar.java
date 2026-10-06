@@ -12,7 +12,7 @@ import w61.p;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ScrollableTitleToolbar extends Toolbar {
     public static final /* synthetic */ int p0 = 0;
-    public p o0;
+    public final p o0;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ScrollableTitleToolbar(Context context, AttributeSet attributeSet) {

@@ -2,9 +2,9 @@ package ox0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y {
-    public c0 a;
-    public String b;
-    public String c;
+    public final c0 a;
+    public final String b;
+    public final String c;
 
     public y(c0 c0Var, String str, String str2) {
         this.a = c0Var;

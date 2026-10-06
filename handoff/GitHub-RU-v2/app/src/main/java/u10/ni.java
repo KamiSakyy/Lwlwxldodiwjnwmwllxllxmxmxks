@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ni {
-    public oi a;
+    public final oi a;
 
     public ni(oi oiVar) {
         this.a = oiVar;

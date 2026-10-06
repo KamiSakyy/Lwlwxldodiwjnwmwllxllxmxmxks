@@ -11,7 +11,7 @@ import w61.i;
 public abstract class a implements Parcelable {
     public static final UserViewType$Companion Companion = new UserViewType$Companion();
     public static final Object s = w.s(i.r, new u5(20));
-    public int r;
+    public final int r;
 
     public a(int i) {
         this.r = i;

@@ -2,8 +2,8 @@ package yx0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n {
-    public String a;
-    public k b;
+    public final String a;
+    public final k b;
 
     public n(String str, k kVar) {
         this.a = str;

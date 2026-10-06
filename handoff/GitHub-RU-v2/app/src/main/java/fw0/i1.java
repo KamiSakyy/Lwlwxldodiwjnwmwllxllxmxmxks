@@ -2,10 +2,10 @@ package fw0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i1 {
-    public e1 a;
-    public r1 b;
-    public String c;
-    public String d;
+    public final e1 a;
+    public final r1 b;
+    public final String c;
+    public final String d;
 
     public i1(e1 e1Var, r1 r1Var, String str, String str2) {
         this.a = e1Var;

@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ec0 implements aaShadow.n0 {
     public static final rb0 Companion = new rb0();
-    public String r;
-    public pz0.js s;
+    public final String r;
+    public final pz0.js s;
 
     public ec0(String str, pz0.js jsVar) {
         this.r = str;

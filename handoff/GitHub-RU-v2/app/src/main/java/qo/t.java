@@ -6,11 +6,11 @@ import m10.t3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t {
-    public String a;
-    public ZonedDateTime b;
-    public b4 c;
-    public t3 d;
-    public String e;
+    public final String a;
+    public final ZonedDateTime b;
+    public final b4 c;
+    public final t3 d;
+    public final String e;
 
     public t(String str, ZonedDateTime zonedDateTime, b4 b4Var, t3 t3Var, String str2) {
         this.a = str;

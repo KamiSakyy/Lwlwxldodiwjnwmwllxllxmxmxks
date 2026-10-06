@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ye {
-    public String a;
-    public we b;
+    public final String a;
+    public final we b;
 
     public ye(String str, we weVar) {
         this.a = str;

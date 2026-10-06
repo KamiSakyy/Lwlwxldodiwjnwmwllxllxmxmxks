@@ -9,7 +9,7 @@ public final class g9 {
     public static final g9 t;
     public static final /* synthetic */ g9[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         g9 g9Var = new g9("ABANDONED", 0, "ABANDONED");

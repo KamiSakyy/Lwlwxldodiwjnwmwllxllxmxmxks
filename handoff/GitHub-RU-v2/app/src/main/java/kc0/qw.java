@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qw {
-    public sw a;
-    public List b;
+    public final sw a;
+    public final List b;
 
     public qw(sw swVar, List list) {
         this.a = swVar;

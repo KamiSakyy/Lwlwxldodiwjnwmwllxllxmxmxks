@@ -2,9 +2,9 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r8 {
-    public String a;
-    public q8 b;
-    public String c;
+    public final String a;
+    public final q8 b;
+    public final String c;
 
     public r8(String str, q8 q8Var, String str2) {
         this.a = str;

@@ -17,9 +17,9 @@ import w61.p;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class FilterSortBottomSheetDialog extends BaseBottomSheetDialog {
-    public com.github.rudroid.fragments.util.c V0;
-    public com.github.rudroid.fragments.util.c W0;
-    public p X0;
+    public final com.github.rudroid.fragments.util.c V0;
+    public final com.github.rudroid.fragments.util.c W0;
+    public final p X0;
     public static final /* synthetic */ r71.e[] Y0 = {new k71.p(FilterSortBottomSheetDialog.class, "filterString", "getFilterString()Ljava/lang/String;", 0), m0.q(x.a, FilterSortBottomSheetDialog.class, "isActivityHosted", "isActivityHosted()Z", 0)};
     public static final a Companion = new a();
 
@@ -172,5 +172,4 @@ public final class FilterSortBottomSheetDialog extends BaseBottomSheetDialog {
         return null;
     }
     public Object s4() { return null; }
-    public Object G4(Object) { return null; }
 }

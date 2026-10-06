@@ -18,11 +18,11 @@ public final class a extends c71.c {
         this.v |= Integer.MIN_VALUE;
         return this.w.c(null, this);
     }
-    public static Object L(Object p1) { return null; }
-    public static Object R(Object p1, Object p2) { return null; }
-    public static Object g0(Object p1) { return null; }
-    public static Object k(Object p1) { return null; }
-    public static Object l(Object p1) { return null; }
-    public static Object m(Object p1) { return null; }
-    public static Object o(Object p1, Object p2) { return null; }
+    public Object L(Object p1) { return null; }
+    public Object R(Object p1, Object p2) { return null; }
+    public Object g0(Object p1) { return null; }
+    public Object k(Object p1) { return null; }
+    public Object l(Object p1) { return null; }
+    public Object m(Object p1) { return null; }
+    public Object o(Object p1, Object p2) { return null; }
 }

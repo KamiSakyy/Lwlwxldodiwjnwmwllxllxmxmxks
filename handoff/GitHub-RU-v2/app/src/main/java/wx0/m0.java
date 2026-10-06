@@ -4,9 +4,9 @@ import pz0.ko;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m0 {
-    public String a;
-    public ko b;
-    public String c;
+    public final String a;
+    public final ko b;
+    public final String c;
 
     public m0(String str, ko koVar, String str2) {
         this.a = str;
@@ -37,10 +37,10 @@ public final class m0 {
         sb.append(", name=");
         return com.github.rudroid.copilot.h1.p(sb, this.c, ")");
     }
-    public static Object a(Object p1, Object p2, Object p3) { return null; }
-    public static Object h(Object p1, Object p2, Object p3) { return null; }
-    public static Object j(Object p1, Object p2, Object p3) { return null; }
-    public static Object w(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object z(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
+    public Object j(Object p1, Object p2, Object p3) { return null; }
+    public Object w(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object z(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

@@ -16,14 +16,14 @@ import x61.m;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
     public int a;
-    public Object b;
-    public Object c;
-    public Serializable d;
+    public final Object b;
+    public final Object c;
+    public final Serializable d;
     public Object e;
-    public Serializable f;
+    public final Serializable f;
     public Object g;
-    public Object h;
-    public Object i;
+    public final Object h;
+    public final Object i;
 
     public f(q1 q1Var, t91.c cVar) {
         k.g(cVar, "constraintsBase");

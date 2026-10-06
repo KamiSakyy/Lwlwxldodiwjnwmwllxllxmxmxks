@@ -2,8 +2,8 @@ package ey;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f {
-    public g a;
-    public h b;
+    public final g a;
+    public final h b;
 
     public f(g gVar, h hVar) {
         this.a = gVar;

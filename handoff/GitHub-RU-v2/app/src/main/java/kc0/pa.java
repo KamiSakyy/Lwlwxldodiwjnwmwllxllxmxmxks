@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class pa {
-    public na a;
+    public final na a;
 
     public pa(na naVar) {
         this.a = naVar;

@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class e {
-    public h91.h a;
+    public final h91.h a;
     public boolean c;
     public int g;
     public int h;

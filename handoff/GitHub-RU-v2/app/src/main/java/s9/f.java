@@ -11,7 +11,7 @@ import v71.l;
 public final class f implements i {
 
     /* renamed from: r, reason: collision with root package name */
-    public View f31773r;
+    public final View f31773r;
 
     public f(ImageView imageView) {
         this.f31773r = imageView;

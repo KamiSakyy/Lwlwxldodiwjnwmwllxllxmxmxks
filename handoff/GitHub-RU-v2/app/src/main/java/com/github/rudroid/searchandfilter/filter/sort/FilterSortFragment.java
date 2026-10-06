@@ -21,8 +21,8 @@ import wf.s;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class FilterSortFragment extends Hilt_FilterSortFragment<y2> implements s<m0> {
     public static final a Companion = new a();
-    public p F0;
-    public p H0;
+    public final p F0;
+    public final p H0;
     public final wf.a E0 = new wf.a(this);
     public final int G0 = 2131558797;
 

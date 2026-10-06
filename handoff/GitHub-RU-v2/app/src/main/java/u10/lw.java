@@ -5,12 +5,12 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class lw implements aaShadow.w0 {
     public static final iw Companion = new iw();
-    public String r;
-    public String s;
-    public boolean t;
-    public aa1.b u;
-    public String v;
-    public aa1.b w;
+    public final String r;
+    public final String s;
+    public final boolean t;
+    public final aa1.b u;
+    public final String v;
+    public final aa1.b w;
 
     public lw(String str, String str2, boolean z, aa1.b bVar, String str3) {
         k71.k.g(str, "owner");

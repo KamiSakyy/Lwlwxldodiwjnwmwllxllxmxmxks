@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class mu implements aaShadow.v0 {
-    public ou a;
+    public final ou a;
 
     public mu(ou ouVar) {
         this.a = ouVar;

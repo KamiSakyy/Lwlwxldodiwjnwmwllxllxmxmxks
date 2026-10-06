@@ -4,18 +4,18 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class as {
-    public String a;
-    public String b;
-    public String c;
-    public m10.xz d;
-    public boolean e;
-    public boolean f;
-    public boolean g;
-    public es h;
-    public boolean i;
-    public List j;
-    public qr k;
-    public nv.a l;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final m10.xz d;
+    public final boolean e;
+    public final boolean f;
+    public final boolean g;
+    public final es h;
+    public final boolean i;
+    public final List j;
+    public final qr k;
+    public final nv.a l;
 
     public as(String str, String str2, String str3, m10.xz xzVar, boolean z, boolean z2, boolean z3, es esVar, boolean z4, List list, qr qrVar, nv.a aVar) {
         this.a = str;

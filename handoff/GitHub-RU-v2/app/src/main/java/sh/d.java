@@ -7,8 +7,8 @@ import y71.w1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public class d<T> extends k1 {
-    public v s;
-    public w1 t;
+    public final v s;
+    public final w1 t;
 
     public d(v vVar) {
         this.s = vVar;

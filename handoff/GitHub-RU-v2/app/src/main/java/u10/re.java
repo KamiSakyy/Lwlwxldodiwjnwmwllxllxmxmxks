@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class re {
-    public String a;
+    public final String a;
 
     public re(String str) {
         this.a = str;

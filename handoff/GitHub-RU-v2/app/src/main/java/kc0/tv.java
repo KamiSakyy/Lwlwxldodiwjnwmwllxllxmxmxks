@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class tv implements aaShadow.v0 {
-    public xv a;
+    public final xv a;
 
     public tv(xv xvVar) {
         this.a = xvVar;

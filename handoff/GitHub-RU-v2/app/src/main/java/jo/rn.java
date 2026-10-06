@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rn {
-    public nnShadow a;
-    public tn b;
+    public final nnShadow a;
+    public final tn b;
 
     public rn(nnShadow nnVar, tn tnVar) {
         this.a = nnVar;

@@ -16,7 +16,7 @@ public final class q1 {
     public static final q1 t;
     public static final q1[] u;
     public static final /* synthetic */ q1[] v;
-    public int r;
+    public final int r;
 
     /* JADX INFO: Fake field, exist only in values array */
     q1 EF0;

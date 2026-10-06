@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class vc implements aaShadow.v0 {
-    public wc a;
+    public final wc a;
 
     public vc(wc wcVar) {
         this.a = wcVar;

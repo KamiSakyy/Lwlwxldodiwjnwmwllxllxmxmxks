@@ -4,8 +4,8 @@ import gn0.na;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o0 {
-    public na a;
-    public String b;
+    public final na a;
+    public final String b;
 
     public o0(na naVar, String str) {
         this.a = naVar;

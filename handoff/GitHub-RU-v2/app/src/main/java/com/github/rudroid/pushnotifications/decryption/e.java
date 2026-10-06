@@ -9,19 +9,19 @@ public final class e {
     public static final a Companion = new a();
 
     /* renamed from: a, reason: collision with root package name */
-    public String f18556a;
+    public final String f18556a;
 
     /* renamed from: b, reason: collision with root package name */
-    public byte[] f18557b;
+    public final byte[] f18557b;
 
     /* renamed from: c, reason: collision with root package name */
-    public byte[] f18558c;
+    public final byte[] f18558c;
 
     /* renamed from: d, reason: collision with root package name */
-    public byte[] f18559d;
+    public final byte[] f18559d;
 
     /* renamed from: e, reason: collision with root package name */
-    public byte[] f18560e;
+    public final byte[] f18560e;
 
     public static final class a {
         public static e a(String str) {

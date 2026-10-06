@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class gx {
-    public String a;
-    public bx b;
-    public ax c;
+    public final String a;
+    public final bx b;
+    public final ax c;
 
     public gx(String str, bx bxVar, ax axVar) {
         k71.k.g(str, "__typename");

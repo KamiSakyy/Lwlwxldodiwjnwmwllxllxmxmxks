@@ -12,7 +12,7 @@ import x61.t;
 public final class f extends s0 {
 
     /* renamed from: t, reason: collision with root package name */
-    public LinkedHashMap f26158t;
+    public final LinkedHashMap f26158t;
 
     public f() {
         super(5, false);

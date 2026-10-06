@@ -2,11 +2,11 @@ package v71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class s {
-    public Object a;
-    public j b;
-    public j71.f c;
-    public Object d;
-    public Throwable e;
+    public final Object a;
+    public final j b;
+    public final j71.f c;
+    public final Object d;
+    public final Throwable e;
 
     public s(Object obj, j jVar, j71.f fVar, Object obj2, Throwable th) {
         this.a = obj;

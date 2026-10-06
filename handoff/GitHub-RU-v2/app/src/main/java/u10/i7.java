@@ -2,10 +2,10 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i7 {
-    public String a;
-    public p7 b;
-    public n7 c;
-    public String d;
+    public final String a;
+    public final p7 b;
+    public final n7 c;
+    public final String d;
 
     public i7(String str, p7 p7Var, n7 n7Var, String str2) {
         this.a = str;

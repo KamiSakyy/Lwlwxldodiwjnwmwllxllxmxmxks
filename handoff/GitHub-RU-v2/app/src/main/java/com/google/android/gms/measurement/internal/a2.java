@@ -7,7 +7,7 @@ public enum a2 {
     AD_USER_DATA("ad_user_data"),
     AD_PERSONALIZATION("ad_personalization");
 
-    public String r;
+    public final String r;
 
     a2(String str) {
         this.r = str;

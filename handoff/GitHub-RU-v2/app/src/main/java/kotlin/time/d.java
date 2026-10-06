@@ -13,10 +13,10 @@ public final class d implements Comparable, Serializable {
     public static final d f27878u = new d(999999999, 31556889864403199L);
 
     /* renamed from: r, reason: collision with root package name */
-    public long f27879r;
+    public final long f27879r;
 
     /* renamed from: s, reason: collision with root package name */
-    public int f27880s;
+    public final int f27880s;
 
     public d(int i, long j10) {
         this.f27879r = j10;

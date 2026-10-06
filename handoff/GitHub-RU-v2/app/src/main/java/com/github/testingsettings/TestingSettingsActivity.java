@@ -73,6 +73,4 @@ public final class TestingSettingsActivity extends b {
     public static Object G(Object... a) {
         return null;
     }
-    public Object getColor(int) { return null; }
-    public Object getDrawable(int) { return null; }
 }

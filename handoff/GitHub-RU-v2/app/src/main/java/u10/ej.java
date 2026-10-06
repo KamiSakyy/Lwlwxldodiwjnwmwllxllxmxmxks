@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ej implements aaShadow.v0 {
-    public hj a;
+    public final hj a;
 
     public ej(hj hjVar) {
         this.a = hjVar;

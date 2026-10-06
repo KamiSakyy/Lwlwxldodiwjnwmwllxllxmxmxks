@@ -4,14 +4,14 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o implements aa.h0 {
-    public List a;
-    public List b;
-    public List c;
-    public boolean d;
-    public Boolean e;
-    public String f;
-    public String g;
-    public String h;
+    public final List a;
+    public final List b;
+    public final List c;
+    public final boolean d;
+    public final Boolean e;
+    public final String f;
+    public final String g;
+    public final String h;
 
     public o(List list, List list2, List list3, boolean z, Boolean bool, String str, String str2, String str3) {
         this.a = list;

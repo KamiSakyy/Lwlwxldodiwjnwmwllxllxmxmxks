@@ -10,7 +10,7 @@ import pz0.sk;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d implements n0 {
     public static final b Companion = new b();
-    public String r;
+    public final String r;
 
     public d(String str) {
         k71.k.g(str, "checkSuiteId");

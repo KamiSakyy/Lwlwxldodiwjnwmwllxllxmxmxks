@@ -11,10 +11,10 @@ import kotlinx.serialization.encoding.Encoder;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class f0 extends a {
-    public KSerializer a;
-    public KSerializer b;
+    public final KSerializer a;
+    public final KSerializer b;
     public final /* synthetic */ int c;
-    public e0 d;
+    public final e0 d;
 
     public f0(KSerializer kSerializer, KSerializer kSerializer2, byte b) {
         this.a = kSerializer;

@@ -4,7 +4,7 @@ import com.github.domain.database.GitHubDatabase;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f1 {
-    public pj.b a;
+    public final pj.b a;
 
     public f1(pj.b bVar) {
         k71.k.g(bVar, "chatThreadsStore");

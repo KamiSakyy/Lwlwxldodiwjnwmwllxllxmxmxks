@@ -6,13 +6,13 @@ import java.util.TreeMap;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f27241a;
+    public final String f27241a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f27242b;
+    public final String f27242b;
 
     /* renamed from: c, reason: collision with root package name */
-    public long f27243c;
+    public final long f27243c;
 
     /* renamed from: d, reason: collision with root package name */
     public long f27244d = 0;
@@ -21,14 +21,14 @@ public final class a {
     public int f27245e;
 
     /* renamed from: f, reason: collision with root package name */
-    public int f27246f;
+    public final int f27246f;
 
     /* renamed from: g, reason: collision with root package name */
-    public int f27247g;
+    public final int f27247g;
 
     /* renamed from: h, reason: collision with root package name */
     public int[] f27248h;
-    public TreeMap i;
+    public final TreeMap i;
 
     public a(String str, String str2, long j10, int i, int i10, int i11, int[] iArr, TreeMap treeMap) {
         this.f27241a = str;

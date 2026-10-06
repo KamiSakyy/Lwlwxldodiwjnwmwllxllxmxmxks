@@ -6,11 +6,11 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n extends h {
-    public ZonedDateTime a;
-    public boolean b;
-    public String c;
-    public s d;
-    public Object e;
+    public final ZonedDateTime a;
+    public final boolean b;
+    public final String c;
+    public final s d;
+    public final Object e;
 
     public n(ZonedDateTime zonedDateTime, boolean z, String str, s sVar, List list) {
         k71.k.g(zonedDateTime, "createdAt");

@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rf implements aaShadow.v0 {
-    public sf a;
+    public final sf a;
 
     public rf(sf sfVar) {
         this.a = sfVar;

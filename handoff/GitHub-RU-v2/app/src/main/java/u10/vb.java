@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class vb {
-    public sb a;
-    public wb b;
+    public final sb a;
+    public final wb b;
 
     public vb(sb sbVar, wb wbVar) {
         this.a = sbVar;

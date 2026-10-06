@@ -6,9 +6,9 @@ import ur0.k0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public String a;
-    public String b;
-    public k0 c;
+    public final String a;
+    public final String b;
+    public final k0 c;
 
     public b(String str, String str2, k0 k0Var) {
         this.a = str;

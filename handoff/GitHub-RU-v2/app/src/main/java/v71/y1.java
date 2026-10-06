@@ -3,7 +3,7 @@ package v71;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class y1 extends a81.q {
     private volatile boolean threadLocalIsSet;
-    public ThreadLocal v;
+    public final ThreadLocal v;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*

@@ -21,13 +21,13 @@ public final class g extends k1 implements com.github.rudroid.utilities.viewmode
     public final /* synthetic */ d.a f8835s;
 
     /* renamed from: t, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f8836t;
+    public final com.github.rudroid.activities.util.c f8836t;
 
     /* renamed from: u, reason: collision with root package name */
-    public yk.a f8837u;
+    public final yk.a f8837u;
 
     /* renamed from: v, reason: collision with root package name */
-    public String f8838v;
+    public final String f8838v;
 
     /* renamed from: w, reason: collision with root package name */
     public q1 f8839w;
@@ -36,10 +36,10 @@ public final class g extends k1 implements com.github.rudroid.utilities.viewmode
     public x01.i f8840x;
 
     /* renamed from: y, reason: collision with root package name */
-    public y1 f8841y;
+    public final y1 f8841y;
 
     /* renamed from: z, reason: collision with root package name */
-    public i1 f8842z;
+    public final i1 f8842z;
 
     public g(a1 a1Var, com.github.rudroid.activities.util.c cVar, yk.a aVar) {
         k71.k.g(a1Var, "savedStateHandle");

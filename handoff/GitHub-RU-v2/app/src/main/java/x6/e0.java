@@ -4,7 +4,7 @@ package x6;
 public final class e0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public c0 f33823a;
+    public final c0 f33823a;
 
     /* renamed from: b, reason: collision with root package name */
     public boolean f33824b;

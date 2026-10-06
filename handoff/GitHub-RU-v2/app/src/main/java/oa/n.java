@@ -7,7 +7,7 @@ import android.content.SharedPreferences;
 public final class n implements g {
 
     /* renamed from: a, reason: collision with root package name */
-    public Context f30131a;
+    public final Context f30131a;
 
     public n(Context context) {
         this.f30131a = context;

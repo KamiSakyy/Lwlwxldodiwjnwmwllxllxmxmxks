@@ -2,7 +2,7 @@ package l11;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o extends a0 {
-    public r a;
+    public final r a;
 
     public o(r rVar) {
         z zVar = z.r;

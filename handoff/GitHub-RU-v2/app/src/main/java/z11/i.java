@@ -9,7 +9,7 @@ import com.google.android.gms.internal.measurement.h0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i extends h0 {
-    public Context a;
+    public final Context a;
     public final /* synthetic */ e b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

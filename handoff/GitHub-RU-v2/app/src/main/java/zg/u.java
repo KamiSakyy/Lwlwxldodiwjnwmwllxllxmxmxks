@@ -4,9 +4,9 @@ import a0.s0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u {
-    public int a;
-    public int b;
-    public int c;
+    public final int a;
+    public final int b;
+    public final int c;
 
     public u(int i, int i2, int i3) {
         this.a = i;

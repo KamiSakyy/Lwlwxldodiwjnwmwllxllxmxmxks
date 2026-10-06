@@ -15,5 +15,4 @@ public final class a0 extends x implements c0 {
         public i() {
         }
     }
-    public Object a(Object) { return null; }
 }

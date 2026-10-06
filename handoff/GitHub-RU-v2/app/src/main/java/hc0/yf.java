@@ -8,7 +8,7 @@ public final class yf {
     public static final yf s;
     public static final /* synthetic */ yf[] t;
     public static final /* synthetic */ d71.b u;
-    public String r;
+    public final String r;
 
     static {
         yf yfVar = new yf("EXPLORE_BOTTOM_NAVIGATION", 0, "EXPLORE_BOTTOM_NAVIGATION");

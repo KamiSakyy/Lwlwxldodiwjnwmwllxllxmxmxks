@@ -9,7 +9,7 @@ public final class z7 {
     public static final z7 t;
     public static final /* synthetic */ z7[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         z7 z7Var = new z7("ERROR", 0, "ERROR");

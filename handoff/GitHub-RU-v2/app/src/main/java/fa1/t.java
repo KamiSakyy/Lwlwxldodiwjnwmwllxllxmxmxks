@@ -7,10 +7,10 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class t {
-    public Class a;
-    public Object b;
-    public Method c;
-    public List d;
+    public final Class a;
+    public final Object b;
+    public final Method c;
+    public final List d;
 
     public t(Class cls, Object obj, Method method, ArrayList arrayList) {
         this.a = cls;

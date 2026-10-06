@@ -4,8 +4,8 @@ import v71.z;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public d a;
-    public z b;
+    public final d a;
+    public final z b;
 
     public h(d dVar, z zVar) {
         k71.k.g(dVar, "store");

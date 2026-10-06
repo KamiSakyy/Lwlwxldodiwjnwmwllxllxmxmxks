@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h4 {
-    public y4 a;
-    public g4 b;
-    public String c;
-    public String d;
+    public final y4 a;
+    public final g4 b;
+    public final String c;
+    public final String d;
 
     public h4(y4 y4Var, g4 g4Var, String str, String str2) {
         this.a = y4Var;

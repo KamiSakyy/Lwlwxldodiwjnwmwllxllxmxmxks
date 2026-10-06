@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class xn {
-    public String a;
-    public String b;
-    public ArrayList c;
-    public m10.vy d;
+    public final String a;
+    public final String b;
+    public final ArrayList c;
+    public final m10.vy d;
 
     public xn(String str, String str2, ArrayList arrayList, m10.vy vyVar) {
         this.a = str;

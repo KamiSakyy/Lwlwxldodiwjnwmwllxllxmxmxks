@@ -689,7 +689,7 @@ public abstract class s {
     }
 
     public abstract String j();
-    public static Object A() { return null; }
+    public Object A() { return null; }
     public Object A(Object p1) { return null; }
     public Object C() { return null; }
     public Object N() { return null; }
@@ -698,7 +698,7 @@ public abstract class s {
     public Object a0() { return null; }
     public Object d0(Object p1) { return null; }
     public Object e0(Object p1) { return null; }
-    public static ArrayList h(Object p1) { return null; }
+    public Object h(Object p1) { return null; }
     public Object n0(Object p1) { return null; }
     public Object q(Object p1) { return null; }
     public Object q0() { return null; }
@@ -706,16 +706,4 @@ public abstract class s {
     public Object t() { return null; }
     public Object S = null;
     public Object a = null;
-    public Object d(int) { return null; }
-    public Object d0(int) { return null; }
-    public Object e0(int) { return null; }
-    public Object f(Object) { return null; }
-    public Object f(Object) { return null; }
-    public Object f(Object) { return null; }
-    public Object f(Object) { return null; }
-    public Object h(Object) { return null; }
-    public Object h(Object) { return null; }
-    public Object k(Object) { return null; }
-    public Object n0(Object) { return null; }
-    public Object q(boolean) { return null; }
 }

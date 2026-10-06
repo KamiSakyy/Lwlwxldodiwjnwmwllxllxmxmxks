@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h0 extends r1 {
-    public String a;
-    public byte[] b;
+    public final String a;
+    public final byte[] b;
 
     public h0(String str, byte[] bArr) {
         this.a = str;

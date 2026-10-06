@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class um {
-    public String a;
-    public tm b;
-    public String c;
+    public final String a;
+    public final tm b;
+    public final String c;
 
     public um(String str, tm tmVar, String str2) {
         this.a = str;

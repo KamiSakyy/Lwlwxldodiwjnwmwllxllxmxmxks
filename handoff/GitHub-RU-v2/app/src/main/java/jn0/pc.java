@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class pc implements aaShadow.m0 {
-    public qc a;
+    public final qc a;
 
     public pc(qc qcVar) {
         this.a = qcVar;

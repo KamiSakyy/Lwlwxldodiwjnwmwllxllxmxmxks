@@ -7,14 +7,14 @@ import m10.yi;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
-    public String a;
-    public String b;
-    public int c;
-    public String d;
-    public wi e;
-    public yi f;
-    public j g;
-    public e h;
+    public final String a;
+    public final String b;
+    public final int c;
+    public final String d;
+    public final wi e;
+    public final yi f;
+    public final j g;
+    public final e h;
 
     public g(String str, String str2, int i, String str3, wi wiVar, yi yiVar, j jVar, e eVar) {
         this.a = str;

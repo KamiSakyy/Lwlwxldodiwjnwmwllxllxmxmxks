@@ -9,7 +9,7 @@ public final class wm {
     public static final wm t;
     public static final /* synthetic */ wm[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         wm wmVar = new wm("BEHIND", 0, "BEHIND");

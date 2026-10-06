@@ -11,7 +11,7 @@ public final class CopilotCodeReviewFeedbackOption {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ CopilotCodeReviewFeedbackOption[] $VALUES;
     public static final b Companion;
-    private String rawValue;
+    private final String rawValue;
     public static final CopilotCodeReviewFeedbackOption INCORRECT = new CopilotCodeReviewFeedbackOption("INCORRECT", 0, "INCORRECT");
     public static final CopilotCodeReviewFeedbackOption INCORRECT_LINE = new CopilotCodeReviewFeedbackOption("INCORRECT_LINE", 1, "INCORRECT_LINE");
     public static final CopilotCodeReviewFeedbackOption OFFENSIVE_OR_DISCRIMINATORY = new CopilotCodeReviewFeedbackOption("OFFENSIVE_OR_DISCRIMINATORY", 2, "OFFENSIVE_OR_DISCRIMINATORY");

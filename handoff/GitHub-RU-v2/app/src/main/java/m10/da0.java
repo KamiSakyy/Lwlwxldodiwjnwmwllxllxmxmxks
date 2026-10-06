@@ -9,7 +9,7 @@ public final class da0 {
     public static final da0 t;
     public static final /* synthetic */ da0[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         da0 da0Var = new da0("ERROR", 0, "ERROR");

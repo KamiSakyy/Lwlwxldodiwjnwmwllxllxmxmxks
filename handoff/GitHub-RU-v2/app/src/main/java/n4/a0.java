@@ -27,10 +27,10 @@ import java.util.Objects;
 public final class a0 implements Handler.Callback, ServiceConnection {
 
     /* renamed from: r, reason: collision with root package name */
-    public Context f29412r;
+    public final Context f29412r;
 
     /* renamed from: s, reason: collision with root package name */
-    public Handler f29413s;
+    public final Handler f29413s;
 
     /* renamed from: t, reason: collision with root package name */
     public final HashMap f29414t = new HashMap();

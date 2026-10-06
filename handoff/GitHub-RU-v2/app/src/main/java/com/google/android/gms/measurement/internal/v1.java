@@ -19,7 +19,7 @@ import java.util.concurrent.TimeoutException;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v1 extends com.google.android.gms.internal.measurement.y implements f0 {
-    public o4 f;
+    public final o4 f;
     public Boolean g;
     public String h;
 

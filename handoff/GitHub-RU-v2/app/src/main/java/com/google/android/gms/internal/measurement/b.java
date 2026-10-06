@@ -6,8 +6,8 @@ import java.util.HashMap;
 public final class b {
     public static final com.google.common.collect.f d = com.google.common.collect.f.j(3, "_syn", "_err", "_el");
     public String a;
-    public long b;
-    public HashMap c;
+    public final long b;
+    public final HashMap c;
 
     public b(String str, long j, HashMap hashMap) {
         this.a = str;
@@ -88,8 +88,4 @@ public final class b {
     public Object h0 = null;
     public Object i0 = null;
     public Object z = null;
-    public Object e(Object) { return null; }
-    public Object i(Object) { return null; }
-    public Object o(Object) { return null; }
-    public Object p(Object) { return null; }
 }

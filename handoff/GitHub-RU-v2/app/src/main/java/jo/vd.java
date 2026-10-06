@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class vd {
-    public String a;
-    public String b;
-    public gv.b c;
+    public final String a;
+    public final String b;
+    public final gv.b c;
 
     public vd(String str, String str2, gv.b bVar) {
         this.a = str;

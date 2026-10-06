@@ -16,10 +16,10 @@ import t71.n;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b extends c0 implements g {
     public static final a Companion = new a();
-    public String r;
-    public oa.j s;
-    public String t;
-    public String u;
+    public final String r;
+    public final oa.j s;
+    public final String t;
+    public final String u;
 
     public b(String str, String str2, oa.j jVar, String str3) {
         k71.k.g(jVar, "user");

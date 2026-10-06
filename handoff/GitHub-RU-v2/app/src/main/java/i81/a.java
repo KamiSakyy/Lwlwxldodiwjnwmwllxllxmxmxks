@@ -9,13 +9,13 @@ import x61.r;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a {
-    public String a;
+    public final String a;
     public List b;
-    public ArrayList c;
-    public HashSet d;
-    public ArrayList e;
-    public ArrayList f;
-    public ArrayList g;
+    public final ArrayList c;
+    public final HashSet d;
+    public final ArrayList e;
+    public final ArrayList f;
+    public final ArrayList g;
 
     public a(String str) {
         k71.k.g(str, "serialName");

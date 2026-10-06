@@ -4,7 +4,7 @@ package q2;
 public final class a implements r {
 
     /* renamed from: b, reason: collision with root package name */
-    public int f30818b;
+    public final int f30818b;
 
     public a(int i) {
         this.f30818b = i;

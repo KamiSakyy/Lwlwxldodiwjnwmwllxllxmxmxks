@@ -4,8 +4,8 @@ import pz0.xl;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s0 {
-    public xl a;
-    public o0 b;
+    public final xl a;
+    public final o0 b;
 
     public s0(xl xlVar, o0 o0Var) {
         this.a = xlVar;

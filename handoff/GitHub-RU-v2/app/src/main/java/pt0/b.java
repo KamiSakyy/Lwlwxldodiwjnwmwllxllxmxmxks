@@ -2,8 +2,8 @@ package pt0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public String a;
-    public xt0.k b;
+    public final String a;
+    public final xt0.k b;
 
     public b(String str, xt0.k kVar) {
         this.a = str;

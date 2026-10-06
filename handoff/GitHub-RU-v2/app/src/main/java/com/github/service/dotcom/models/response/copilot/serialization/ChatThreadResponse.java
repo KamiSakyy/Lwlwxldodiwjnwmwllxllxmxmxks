@@ -17,11 +17,11 @@ public final class ChatThreadResponse {
     public static final Companion Companion = new Companion();
     public static final h[] f = {null, null, null, null, w.s(i.r, new k(2))};
     public static final ChatThreadResponse g = new ChatThreadResponse();
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public List e;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final List e;
 
     public static final class Companion {
         public final KSerializer serializer() {

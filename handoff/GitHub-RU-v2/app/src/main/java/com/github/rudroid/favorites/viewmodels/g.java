@@ -14,19 +14,19 @@ import zk.v1;
 public final class g extends k1 {
 
     /* renamed from: s, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f12365s;
+    public final com.github.rudroid.activities.util.c f12365s;
 
     /* renamed from: t, reason: collision with root package name */
-    public v1 f12366t;
+    public final v1 f12366t;
 
     /* renamed from: u, reason: collision with root package name */
-    public zk.e0 f12367u;
+    public final zk.e0 f12367u;
 
     /* renamed from: v, reason: collision with root package name */
-    public y1 f12368v;
+    public final y1 f12368v;
 
     /* renamed from: w, reason: collision with root package name */
-    public i1 f12369w;
+    public final i1 f12369w;
 
     public g(com.github.rudroid.activities.util.c cVar, v1 v1Var, zk.e0 e0Var) {
         k71.k.g(cVar, "accountHolder");

@@ -2,7 +2,7 @@ package y71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class g implements i {
-    public i r;
+    public final i r;
 
     public g(i iVar) {
         this.r = iVar;

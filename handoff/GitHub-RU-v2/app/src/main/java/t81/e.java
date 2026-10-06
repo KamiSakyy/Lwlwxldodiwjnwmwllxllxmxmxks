@@ -13,16 +13,16 @@ import r81.g;
 public final class e {
     public static final Logger k;
     public static final e l;
-    public s21.a a;
-    public Logger b;
+    public final s21.a a;
+    public final Logger b;
     public int c;
     public boolean d;
     public long e;
     public int f;
     public int g;
-    public ArrayList h;
-    public ArrayList i;
-    public d j;
+    public final ArrayList h;
+    public final ArrayList i;
+    public final d j;
 
     /* JADX WARN: Type inference failed for: r3v3, types: [r81.f] */
     static {

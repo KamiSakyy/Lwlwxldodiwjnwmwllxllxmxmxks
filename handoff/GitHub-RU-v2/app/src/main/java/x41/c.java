@@ -4,9 +4,9 @@ import java.util.Map;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public String a;
-    public long b;
-    public Map c;
+    public final String a;
+    public final long b;
+    public final Map c;
 
     public c(String str, long j, Map map) {
         k71.k.g(map, "additionalCustomKeys");

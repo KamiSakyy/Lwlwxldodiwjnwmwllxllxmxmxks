@@ -7,10 +7,10 @@ import android.view.animation.PathInterpolator;
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class a {
     public final PathInterpolator a = new PathInterpolator(0.1f, 0.1f, 0.0f, 1.0f);
-    public View b;
-    public int c;
-    public int d;
-    public int e;
+    public final View b;
+    public final int c;
+    public final int d;
+    public final int e;
     public d.a f;
 
     public a(View view) {

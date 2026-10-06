@@ -10,10 +10,10 @@ import y71.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v implements z01.i, mi0 {
-    public v71.v r;
-    public l81.n s;
-    public g61.a t;
-    public i u;
+    public final v71.v r;
+    public final l81.n s;
+    public final g61.a t;
+    public final i u;
 
     public v(q81.u uVar, v71.v vVar, com.github.service.wrapper.b bVar, oa.h hVar, oa.j jVar) {
         k71.k.g(uVar, "okHttpClient");

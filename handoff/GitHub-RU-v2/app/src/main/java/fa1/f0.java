@@ -9,10 +9,10 @@ import java.util.Map;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class f0 extends x0 {
     public final /* synthetic */ int d = 1;
-    public Method e;
-    public int f;
-    public n g;
-    public Object h;
+    public final Method e;
+    public final int f;
+    public final n g;
+    public final Object h;
 
     public f0(Method method, int i, n nVar, String str) {
         this.e = method;

@@ -5,7 +5,7 @@ import org.jsoup.helper.ValidationException;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class t0 implements AutoCloseable {
     public static final char[] s = {'*', '|', '_', '-'};
-    public a r;
+    public final a r;
 
     public t0(String str) {
         this.r = new a(str);

@@ -6,13 +6,13 @@ import java.util.Iterator;
 public final class g implements h {
 
     /* renamed from: a, reason: collision with root package name */
-    public h f31736a;
+    public final h f31736a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f31737b;
+    public final boolean f31737b;
 
     /* renamed from: c, reason: collision with root package name */
-    public j71.c f31738c;
+    public final j71.c f31738c;
 
     public g(h hVar, boolean z10, j71.c cVar) {
         this.f31736a = hVar;

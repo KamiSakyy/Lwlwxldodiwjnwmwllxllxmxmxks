@@ -4,9 +4,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class kb {
-    public int a;
-    public ib b;
-    public List c;
+    public final int a;
+    public final ib b;
+    public final List c;
 
     public kb(int i, ib ibVar, List list) {
         this.a = i;

@@ -2,12 +2,12 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class hq {
-    public String a;
-    public rq b;
-    public String c;
-    public String d;
-    public String e;
-    public qq f;
+    public final String a;
+    public final rq b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final qq f;
 
     public hq(String str, rq rqVar, String str2, String str3, String str4, qq qqVar) {
         this.a = str;

@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class cq implements aaShadow.m0 {
-    public dq a;
+    public final dq a;
 
     public cq(dq dqVar) {
         this.a = dqVar;

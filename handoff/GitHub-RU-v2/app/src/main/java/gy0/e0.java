@@ -2,9 +2,9 @@ package gy0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e0 {
-    public String a;
-    public b0 b;
-    public iy0.z c;
+    public final String a;
+    public final b0 b;
+    public final iy0.z c;
 
     public e0(String str, b0 b0Var, iy0.z zVar) {
         this.a = str;

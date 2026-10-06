@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l {
-    public h01.q a;
-    public Object b;
+    public final h01.q a;
+    public final Object b;
 
     public l(h01.q qVar, List list) {
         k71.k.g(qVar, "timeline");

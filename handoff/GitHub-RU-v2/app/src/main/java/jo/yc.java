@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class yc implements aaShadow.w0 {
     public static final uc Companion = new uc();
-    public String r;
+    public final String r;
 
     public yc(String str) {
         k71.k.g(str, "nodeId");

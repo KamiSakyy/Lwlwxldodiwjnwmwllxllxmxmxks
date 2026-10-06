@@ -14,14 +14,14 @@ import kotlinx.serialization.json.JsonNull;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class q extends i4 implements l81.i {
-    public l81.c b;
-    public u c;
-    public a7.q d;
-    public b21.l e;
+    public final l81.c b;
+    public final u c;
+    public final a7.q d;
+    public final b21.l e;
     public int f;
     public a81.t g;
-    public l81.h h;
-    public h i;
+    public final l81.h h;
+    public final h i;
 
     public q(l81.c cVar, u uVar, a7.q qVar, SerialDescriptor serialDescriptor, a81.t tVar) {
         k71.k.g(serialDescriptor, "descriptor");
@@ -664,10 +664,4 @@ public final class q extends i4 implements l81.i {
         k71.k.g(serialDescriptor, "descriptor");
         return s.a(serialDescriptor) ? new g(this.d, this.b) : this;
     }
-    public Object F(Object, boolean) { return null; }
-    public Object H(boolean) { return null; }
-    public Object I(int) { return null; }
-    public Object O(boolean) { return null; }
-    public Object g(Object, int) { return null; }
-    public Object k(char) { return null; }
 }

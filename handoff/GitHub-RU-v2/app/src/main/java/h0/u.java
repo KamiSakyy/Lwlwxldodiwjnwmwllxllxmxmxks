@@ -4,10 +4,10 @@ package h0;
 public final class u {
 
     /* renamed from: a, reason: collision with root package name */
-    public p0.f f25185a;
+    public final p0.f f25185a;
 
     /* renamed from: b, reason: collision with root package name */
-    public v71.l f25186b;
+    public final v71.l f25186b;
 
     public u(p0.f fVar, v71.l lVar) {
         this.f25185a = fVar;

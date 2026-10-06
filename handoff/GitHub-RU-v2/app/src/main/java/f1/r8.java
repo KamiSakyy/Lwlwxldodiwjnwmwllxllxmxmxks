@@ -7,5 +7,4 @@ package f1;
 public class r8 {
     public r8() {
     }
-    public Object b(Object, Object) { return null; }
 }

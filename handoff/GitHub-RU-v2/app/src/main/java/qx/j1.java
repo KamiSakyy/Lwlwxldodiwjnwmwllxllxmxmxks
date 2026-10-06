@@ -4,9 +4,9 @@ import m10.p80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j1 {
-    public String a;
-    public p80 b;
-    public String c;
+    public final String a;
+    public final p80 b;
+    public final String c;
 
     public j1(String str, p80 p80Var, String str2) {
         this.a = str;

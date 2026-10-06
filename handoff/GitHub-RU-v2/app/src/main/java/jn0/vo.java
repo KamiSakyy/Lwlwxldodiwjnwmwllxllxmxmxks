@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class vo {
-    public to a;
-    public String b;
-    public String c;
+    public final to a;
+    public final String b;
+    public final String c;
 
     public vo(to toVar, String str, String str2) {
         this.a = toVar;

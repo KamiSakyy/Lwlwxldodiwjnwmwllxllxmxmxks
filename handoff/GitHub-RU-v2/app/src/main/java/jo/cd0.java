@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class cd0 {
-    public String a;
-    public String b;
-    public gt.a c;
+    public final String a;
+    public final String b;
+    public final gt.a c;
 
     public cd0(String str, String str2, gt.a aVar) {
         this.a = str;

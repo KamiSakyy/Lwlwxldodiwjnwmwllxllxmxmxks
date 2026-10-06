@@ -14,7 +14,7 @@ public final class kw {
     public static final kw x;
     public static final kw y;
     public static final /* synthetic */ kw[] z;
-    public String r;
+    public final String r;
 
     static {
         kw kwVar = new kw("CUSTOM", 0, "CUSTOM");

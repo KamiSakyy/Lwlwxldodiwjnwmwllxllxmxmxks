@@ -15,33 +15,33 @@ import y71.y1;
 /* loaded from: /home/user/work/p/classes.dex */
 public final class q extends k1 implements com.github.rudroid.utilities.viewmodel.b {
     public static final a Companion = new a();
-    public y1 A;
-    public i1 B;
+    public final y1 A;
+    public final i1 B;
     public q1 C;
 
     /* renamed from: s, reason: collision with root package name */
     public final /* synthetic */ com.github.rudroid.utilities.viewmodel.c f10599s;
 
     /* renamed from: t, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f10600t;
+    public final com.github.rudroid.activities.util.c f10600t;
 
     /* renamed from: u, reason: collision with root package name */
-    public ml.j f10601u;
+    public final ml.j f10601u;
 
     /* renamed from: v, reason: collision with root package name */
-    public vl.c f10602v;
+    public final vl.c f10602v;
 
     /* renamed from: w, reason: collision with root package name */
-    public vl.b f10603w;
+    public final vl.b f10603w;
 
     /* renamed from: x, reason: collision with root package name */
-    public com.github.rudroid.createrepository.model.f f10604x;
+    public final com.github.rudroid.createrepository.model.f f10604x;
 
     /* renamed from: y, reason: collision with root package name */
-    public y1 f10605y;
+    public final y1 f10605y;
 
     /* renamed from: z, reason: collision with root package name */
-    public y1 f10606z;
+    public final y1 f10606z;
 
     public static final class a {
     }

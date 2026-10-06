@@ -7,19 +7,19 @@ import com.github.rudroid.utilities.ui.g1;
 public final class o4 extends androidx.lifecycle.a {
 
     /* renamed from: t, reason: collision with root package name */
-    public nj.y f9940t;
+    public final nj.y f9940t;
 
     /* renamed from: u, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f9941u;
+    public final com.github.rudroid.activities.util.c f9941u;
 
     /* renamed from: v, reason: collision with root package name */
-    public com.github.rudroid.copilot.threads.l f9942v;
+    public final com.github.rudroid.copilot.threads.l f9942v;
 
     /* renamed from: w, reason: collision with root package name */
-    public y71.y1 f9943w;
+    public final y71.y1 f9943w;
 
     /* renamed from: x, reason: collision with root package name */
-    public y71.i1 f9944x;
+    public final y71.i1 f9944x;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public o4(Application application, nj.y yVar, com.github.rudroid.activities.util.c cVar, com.github.rudroid.copilot.threads.l lVar) {

@@ -4,9 +4,9 @@ import a0.s0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public long a;
-    public long b;
-    public long c;
+    public final long a;
+    public final long b;
+    public final long c;
 
     public a(long j, long j2, long j3) {
         this.a = j;
@@ -46,8 +46,8 @@ public final class a {
 
     public a(Object... a) {
     }
-    public static Object G(Object p1) { return null; }
-    public static Object e(Object p1) { return null; }
+    public Object G(Object p1) { return null; }
+    public Object e(Object p1) { return null; }
     public static final Object c = null;
     public static final Object d = null;
 }

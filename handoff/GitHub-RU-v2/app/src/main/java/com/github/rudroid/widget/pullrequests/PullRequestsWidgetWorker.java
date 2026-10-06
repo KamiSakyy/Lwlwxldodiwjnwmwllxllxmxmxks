@@ -33,9 +33,9 @@ import zk.a1;
 public final class PullRequestsWidgetWorker extends CoroutineWorker {
     public static final a Companion = new a();
     public static final v8.f j;
-    public Context g;
-    public oa.m h;
-    public a1 i;
+    public final Context g;
+    public final oa.m h;
+    public final a1 i;
 
     public static final class a {
         public static void a(Context context) {

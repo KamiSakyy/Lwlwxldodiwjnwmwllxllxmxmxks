@@ -33,5 +33,4 @@ public final class c implements Iterator {
         }
         throw new NoSuchElementException();
     }
-    public Object b() { return null; }
 }

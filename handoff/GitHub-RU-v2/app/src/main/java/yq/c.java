@@ -4,9 +4,9 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public String a;
-    public h b;
-    public vx.a c;
+    public final String a;
+    public final h b;
+    public final vx.a c;
 
     public c(String str, h hVar, vx.a aVar) {
         k71.k.g(str, "__typename");

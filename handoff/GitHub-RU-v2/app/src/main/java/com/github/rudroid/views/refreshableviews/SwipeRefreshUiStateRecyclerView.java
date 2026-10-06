@@ -35,7 +35,7 @@ import xh.d;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SwipeRefreshUiStateRecyclerView extends d<bh> {
     public static final /* synthetic */ int o0 = 0;
-    public int k0;
+    public final int k0;
     public UiStateRecyclerView l0;
     public ScrollView m0;
     public NestedScrollView n0;

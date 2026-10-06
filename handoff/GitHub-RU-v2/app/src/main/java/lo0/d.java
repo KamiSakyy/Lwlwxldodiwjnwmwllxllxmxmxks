@@ -6,9 +6,9 @@ import wx0.u4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d {
-    public String a;
-    public String b;
-    public u4 c;
+    public final String a;
+    public final String b;
+    public final u4 c;
 
     public d(String str, String str2, u4 u4Var) {
         this.a = str;

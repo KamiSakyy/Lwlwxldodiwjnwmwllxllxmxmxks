@@ -6,8 +6,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s00 implements aaShadow.n0 {
     public static final o00 Companion = new o00();
-    public String r;
-    public ArrayList s;
+    public final String r;
+    public final ArrayList s;
 
     public s00(String str, ArrayList arrayList) {
         k71.k.g(str, "labelableId");

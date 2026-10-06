@@ -8,12 +8,12 @@ import m10.xc;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a implements h0 {
-    public xc a;
-    public String b;
-    public Integer c;
-    public Integer d;
-    public String e;
-    public boolean f;
+    public final xc a;
+    public final String b;
+    public final Integer c;
+    public final Integer d;
+    public final String e;
+    public final boolean f;
 
     public a(xc xcVar, String str, Integer num, Integer num2, String str2, boolean z) {
         this.a = xcVar;

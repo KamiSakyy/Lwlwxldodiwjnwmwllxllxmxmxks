@@ -7,7 +7,7 @@ import k71.k;
 public final class ApolloHttpException extends ApolloException {
 
     /* renamed from: r, reason: collision with root package name */
-    public int f4266r;
+    public final int f4266r;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ApolloHttpException(int i, String str, ArrayList arrayList) {

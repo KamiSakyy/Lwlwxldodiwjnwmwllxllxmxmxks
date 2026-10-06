@@ -2,10 +2,10 @@ package m10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y9 {
-    public aa1.b a;
-    public aa1.b b;
-    public aa1.b c;
-    public String d;
+    public final aa1.b a;
+    public final aa1.b b;
+    public final aa1.b c;
+    public final String d;
 
     public y9(aa.u0 u0Var, String str) {
         k71.k.g(str, "name");

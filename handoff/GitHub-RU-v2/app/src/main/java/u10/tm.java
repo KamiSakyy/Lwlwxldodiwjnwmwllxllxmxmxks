@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class tm {
-    public String a;
-    public qm b;
-    public String c;
+    public final String a;
+    public final qm b;
+    public final String c;
 
     public tm(String str, qm qmVar, String str2) {
         this.a = str;

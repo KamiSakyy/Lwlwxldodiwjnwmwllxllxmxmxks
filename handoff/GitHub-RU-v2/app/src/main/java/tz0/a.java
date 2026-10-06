@@ -2,8 +2,8 @@ package tz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public d a;
-    public int b;
+    public final d a;
+    public final int b;
 
     public a(d dVar, int i) {
         this.a = dVar;

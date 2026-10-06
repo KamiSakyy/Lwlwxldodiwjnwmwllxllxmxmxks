@@ -25,7 +25,7 @@ public abstract class a {
     public static final class b extends a {
 
         /* renamed from: a, reason: collision with root package name */
-        public int f14254a;
+        public final int f14254a;
 
         public b(int i) {
             this.f14254a = i;

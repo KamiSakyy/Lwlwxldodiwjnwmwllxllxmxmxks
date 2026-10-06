@@ -4,8 +4,8 @@ import gv.u;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public String a;
-    public u b;
+    public final String a;
+    public final u b;
 
     public b(String str, u uVar) {
         this.a = str;

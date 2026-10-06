@@ -2,7 +2,7 @@ package my0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l0 {
-    public boolean a;
+    public final boolean a;
 
     public l0(boolean z) {
         this.a = z;

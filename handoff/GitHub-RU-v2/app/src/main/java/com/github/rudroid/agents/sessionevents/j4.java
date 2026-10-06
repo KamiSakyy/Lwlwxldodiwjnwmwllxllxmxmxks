@@ -6,25 +6,25 @@ import java.util.ArrayList;
 public final class j4 {
 
     /* renamed from: a, reason: collision with root package name */
-    public ArrayList f7669a;
+    public final ArrayList f7669a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f7670b;
+    public final int f7670b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f7671c;
+    public final int f7671c;
 
     /* renamed from: d, reason: collision with root package name */
-    public int f7672d;
+    public final int f7672d;
 
     /* renamed from: e, reason: collision with root package name */
-    public ArrayList f7673e;
+    public final ArrayList f7673e;
 
     /* renamed from: f, reason: collision with root package name */
-    public boolean f7674f;
+    public final boolean f7674f;
 
     /* renamed from: g, reason: collision with root package name */
-    public boolean f7675g;
+    public final boolean f7675g;
 
     public j4(ArrayList arrayList, int i, int i10, int i11, ArrayList arrayList2, boolean z10, boolean z11) {
         this.f7669a = arrayList;

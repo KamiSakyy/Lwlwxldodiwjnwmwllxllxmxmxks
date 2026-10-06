@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c4 implements u0 {
-    public WeakReference r;
+    public final WeakReference r;
     public final b4 s = new b4(this);
 
     public c4(a4 a4Var) {

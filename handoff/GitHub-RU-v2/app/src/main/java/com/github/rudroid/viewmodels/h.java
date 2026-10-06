@@ -5,5 +5,4 @@ public final class h implements p61.d {
     public final Object get() {
         throw null;
     }
-    public Object a(Object) { return null; }
 }

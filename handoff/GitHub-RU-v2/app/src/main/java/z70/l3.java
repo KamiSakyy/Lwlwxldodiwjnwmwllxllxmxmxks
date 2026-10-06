@@ -4,9 +4,9 @@ import hc0.fm;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l3 implements aa.h0 {
-    public String a;
-    public fm b;
-    public String c;
+    public final String a;
+    public final fm b;
+    public final String c;
 
     public l3(String str, fm fmVar, String str2) {
         this.a = str;

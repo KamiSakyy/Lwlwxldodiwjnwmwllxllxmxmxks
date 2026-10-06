@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qp {
-    public String a;
-    public pp b;
-    public String c;
+    public final String a;
+    public final pp b;
+    public final String c;
 
     public qp(String str, pp ppVar, String str2) {
         this.a = str;

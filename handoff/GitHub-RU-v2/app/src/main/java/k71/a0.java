@@ -6,8 +6,8 @@ import v8.l0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a0 implements r71.f {
-    public e a;
-    public int b;
+    public final e a;
+    public final int b;
 
     public a0(e eVar, boolean z) {
         k.g(Collections.EMPTY_LIST, "arguments");

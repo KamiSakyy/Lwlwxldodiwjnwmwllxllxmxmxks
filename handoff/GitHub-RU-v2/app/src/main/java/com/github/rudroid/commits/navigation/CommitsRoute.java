@@ -20,7 +20,7 @@ public final class CommitsRoute implements c {
     public static final h[] f9213s = {w.s(i.r, new a(23))};
 
     /* renamed from: r, reason: collision with root package name */
-    public CommitsType f9214r;
+    public final CommitsType f9214r;
 
     public static final class Companion {
         public final KSerializer serializer() {

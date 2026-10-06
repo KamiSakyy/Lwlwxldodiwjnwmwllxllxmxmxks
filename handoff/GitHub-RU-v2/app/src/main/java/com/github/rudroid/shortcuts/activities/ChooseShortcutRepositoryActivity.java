@@ -7,7 +7,7 @@ import com.github.rudroid.shortcuts.navigation.ChooseShortcutRepositoryRoute;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ChooseShortcutRepositoryActivity extends f0<ic.d0> {
     public static final a Companion = new a();
-    public int v0;
+    public final int v0;
 
     public static final class a {
     }

@@ -13,7 +13,7 @@ import java.util.TreeMap;
 public final class u {
 
     /* renamed from: a, reason: collision with root package name */
-    public LinkedHashMap f682a;
+    public final LinkedHashMap f682a;
 
     public u(r9.o oVar) {
         this.f682a = x61.x.C(oVar.f31324r);

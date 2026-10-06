@@ -13,7 +13,7 @@ public final class j40 {
     public static final j40 x;
     public static final /* synthetic */ j40[] y;
     public static final /* synthetic */ d71.b z;
-    public String r;
+    public final String r;
 
     static {
         j40 j40Var = new j40("CREATED_AT", 0, "CREATED_AT");

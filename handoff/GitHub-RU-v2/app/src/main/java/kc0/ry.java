@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ry implements aaShadow.m0 {
-    public sy a;
+    public final sy a;
 
     public ry(sy syVar) {
         this.a = syVar;

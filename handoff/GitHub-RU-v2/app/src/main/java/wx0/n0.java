@@ -2,7 +2,7 @@ package wx0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n0 {
-    public String a;
+    public final String a;
 
     public n0(String str) {
         this.a = str;

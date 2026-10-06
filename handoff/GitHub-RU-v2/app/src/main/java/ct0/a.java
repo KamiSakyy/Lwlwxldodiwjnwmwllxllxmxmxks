@@ -8,11 +8,11 @@ import pz0.q7;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements h0 {
-    public q7 a;
-    public String b;
-    public LocalTime c;
-    public LocalTime d;
-    public String e;
+    public final q7 a;
+    public final String b;
+    public final LocalTime c;
+    public final LocalTime d;
+    public final String e;
 
     public a(q7 q7Var, String str, LocalTime localTime, LocalTime localTime2, String str2) {
         this.a = q7Var;

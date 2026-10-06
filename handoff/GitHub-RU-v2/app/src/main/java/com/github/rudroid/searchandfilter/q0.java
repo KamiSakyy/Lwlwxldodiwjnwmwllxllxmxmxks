@@ -5,12 +5,12 @@ import y71.y1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q0 extends androidx.lifecycle.k1 {
     public static final a Companion = new a();
-    public com.github.rudroid.activities.util.c s;
-    public dl.d t;
-    public String u;
-    public String v;
-    public y1 w;
-    public t0 x;
+    public final com.github.rudroid.activities.util.c s;
+    public final dl.d t;
+    public final String u;
+    public final String v;
+    public final y1 w;
+    public final t0 x;
 
     public static final class a {
     }

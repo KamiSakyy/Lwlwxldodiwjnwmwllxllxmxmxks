@@ -6,7 +6,7 @@ import yz0.s;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public a a;
+    public final a a;
 
     public b(a aVar) {
         k.g(aVar, "authorDataMapper");

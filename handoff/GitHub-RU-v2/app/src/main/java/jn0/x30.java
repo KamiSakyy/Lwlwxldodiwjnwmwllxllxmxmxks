@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x30 implements aaShadow.w0 {
     public static final r30 Companion = new r30();
-    public String r;
-    public aa1.b s;
+    public final String r;
+    public final aa1.b s;
 
     public x30(String str, aa1.b bVar) {
         this.r = str;

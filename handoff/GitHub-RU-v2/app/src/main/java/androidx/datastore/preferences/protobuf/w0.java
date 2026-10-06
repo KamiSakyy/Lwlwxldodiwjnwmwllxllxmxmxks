@@ -6,7 +6,7 @@ import java.util.Map;
 public final class w0 implements Map.Entry, Comparable {
 
     /* renamed from: r, reason: collision with root package name */
-    public Comparable f2391r;
+    public final Comparable f2391r;
 
     /* renamed from: s, reason: collision with root package name */
     public Object f2392s;

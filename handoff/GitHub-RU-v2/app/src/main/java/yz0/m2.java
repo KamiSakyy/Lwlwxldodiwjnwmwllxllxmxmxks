@@ -8,15 +8,15 @@ import com.github.service.models.response.type.IssueState;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m2 implements o2 {
     public static final Parcelable.Creator<m2> CREATOR = new h(23);
-    public IssueState r;
-    public CloseReason s;
-    public String t;
-    public String u;
-    public String v;
-    public int w;
-    public String x;
-    public String y;
-    public boolean z;
+    public final IssueState r;
+    public final CloseReason s;
+    public final String t;
+    public final String u;
+    public final String v;
+    public final int w;
+    public final String x;
+    public final String y;
+    public final boolean z;
 
     public m2(IssueState issueState, CloseReason closeReason, String str, String str2, String str3, int i, String str4, String str5, boolean z) {
         k71.k.g(issueState, "state");

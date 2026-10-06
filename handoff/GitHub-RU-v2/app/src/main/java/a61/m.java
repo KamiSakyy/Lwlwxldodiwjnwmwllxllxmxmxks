@@ -6,7 +6,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m implements d61.b {
     public final /* synthetic */ int a;
-    public v61.a b;
+    public final v61.a b;
 
     public /* synthetic */ m(v61.a aVar, int i) {
         this.a = i;

@@ -6,8 +6,8 @@ import m10.vp;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n implements aa.n0 {
     public static final k Companion = new k();
-    public String r;
-    public String s;
+    public final String r;
+    public final String s;
 
     public n(String str, String str2) {
         k71.k.g(str, "projectId");

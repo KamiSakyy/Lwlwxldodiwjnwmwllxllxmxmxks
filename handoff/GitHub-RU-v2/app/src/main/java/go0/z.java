@@ -18,18 +18,18 @@ import y71.n1;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z implements pn.a, yf0, yb0, mi0, y90 {
     public g91.f A;
-    public m1 B;
+    public final m1 B;
     public q1 C;
-    public rn.b D;
+    public final rn.b D;
     public final /* synthetic */ int r;
-    public com.github.service.wrapper.j s;
-    public q81.u t;
-    public v71.v u;
-    public v71.z v;
-    public sb.a w;
-    public com.github.rudroid.common.e x;
-    public e81.c y;
-    public LinkedHashMap z;
+    public final com.github.service.wrapper.j s;
+    public final q81.u t;
+    public final v71.v u;
+    public final v71.z v;
+    public final sb.a w;
+    public final com.github.rudroid.common.e x;
+    public final e81.c y;
+    public final LinkedHashMap z;
 
     public z(com.github.service.wrapper.j jVar, q81.u uVar, v71.v vVar, v71.z zVar, sb.a aVar, qe.a aVar2, int i) {
         this.r = i;

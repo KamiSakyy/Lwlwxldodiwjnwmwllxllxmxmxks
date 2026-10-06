@@ -5,9 +5,9 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i implements h0 {
-    public String a;
-    public g b;
-    public vx.a c;
+    public final String a;
+    public final g b;
+    public final vx.a c;
 
     public i(String str, g gVar, vx.a aVar) {
         k71.k.g(str, "__typename");

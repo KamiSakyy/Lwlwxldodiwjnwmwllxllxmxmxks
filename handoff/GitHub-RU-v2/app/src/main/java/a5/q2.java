@@ -8,7 +8,7 @@ import com.google.android.gms.internal.measurement.d5;
 public final class q2 extends d5 {
 
     /* renamed from: a, reason: collision with root package name */
-    public Window f475a;
+    public final Window f475a;
 
     public q2(Window window, y51.c cVar) {
         this.f475a = window;

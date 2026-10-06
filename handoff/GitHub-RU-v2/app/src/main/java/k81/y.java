@@ -4,8 +4,8 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class y extends e1 {
-    public i81.j l;
-    public w61.p m;
+    public final i81.j l;
+    public final w61.p m;
 
     public y(String str, int i) {
         super(str, null, i);

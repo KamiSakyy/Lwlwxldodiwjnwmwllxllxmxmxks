@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xf {
-    public ag a;
-    public List b;
+    public final ag a;
+    public final List b;
 
     public xf(ag agVar, List list) {
         this.a = agVar;

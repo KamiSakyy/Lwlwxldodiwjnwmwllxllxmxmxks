@@ -4,10 +4,10 @@ package com.github.rudroid.achievements.ui;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public float f4515a;
+    public final float f4515a;
 
     /* renamed from: b, reason: collision with root package name */
-    public float f4516b;
+    public final float f4516b;
 
     public j(float f6, float f10) {
         this.f4515a = f6;

@@ -19,7 +19,7 @@ import m7.y;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h {
     public static h c;
-    public Context a;
+    public final Context a;
     public volatile String b;
 
     public h(Context context) {
@@ -307,6 +307,4 @@ public final class h {
         }
         return b.a;
     }
-    public Object d(Object, Object) { return null; }
-    public Object d(Object, Object) { return null; }
 }

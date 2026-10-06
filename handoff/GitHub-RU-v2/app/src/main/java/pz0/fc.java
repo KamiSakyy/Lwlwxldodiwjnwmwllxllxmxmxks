@@ -2,7 +2,7 @@ package pz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class fc {
-    public String a;
+    public final String a;
 
     public fc(String str) {
         k71.k.g(str, "path");

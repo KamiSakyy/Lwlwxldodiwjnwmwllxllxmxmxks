@@ -6,10 +6,10 @@ import k71.k;
 public final class h {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f1853a;
+    public final int f1853a;
 
     /* renamed from: b, reason: collision with root package name */
-    public Integer f1854b;
+    public final Integer f1854b;
 
     public h(int i, Integer num) {
         this.f1853a = i;

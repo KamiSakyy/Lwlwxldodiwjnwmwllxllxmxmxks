@@ -2,7 +2,7 @@ package z70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public String a;
+    public final String a;
 
     public h(String str) {
         this.a = str;
@@ -22,5 +22,5 @@ public final class h {
     public final String toString() {
         return f1.e.z("OnMarkdownFileType(__typename=", this.a, ")");
     }
-    public static Object values() { return null; }
+    public Object values() { return null; }
 }

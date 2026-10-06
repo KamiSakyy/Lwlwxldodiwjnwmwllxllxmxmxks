@@ -4,12 +4,12 @@ import pz0.py;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o0 {
-    public String a;
-    public String b;
-    public l0 c;
-    public py d;
-    public boolean e;
-    public String f;
+    public final String a;
+    public final String b;
+    public final l0 c;
+    public final py d;
+    public final boolean e;
+    public final String f;
 
     public o0(String str, String str2, l0 l0Var, py pyVar, boolean z, String str3) {
         this.a = str;

@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fn {
-    public String a;
-    public String b;
-    public gn c;
+    public final String a;
+    public final String b;
+    public final gn c;
 
     public fn(String str, String str2, gn gnVar) {
         k71.k.g(str, "__typename");

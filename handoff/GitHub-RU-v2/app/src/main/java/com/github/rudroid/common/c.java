@@ -4,7 +4,7 @@ package com.github.rudroid.common;
 final class c implements i {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f9250a;
+    public final String f9250a;
 
     public c(String str) {
         this.f9250a = str;

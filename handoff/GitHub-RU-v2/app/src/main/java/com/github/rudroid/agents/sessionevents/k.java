@@ -6,13 +6,13 @@ public interface k {
     public static final class a implements k {
 
         /* renamed from: a, reason: collision with root package name */
-        public g f7676a;
+        public final g f7676a;
 
         /* renamed from: b, reason: collision with root package name */
-        public boolean f7677b;
+        public final boolean f7677b;
 
         /* renamed from: c, reason: collision with root package name */
-        public boolean f7678c;
+        public final boolean f7678c;
 
         public a(g gVar, boolean z10, boolean z11) {
             this.f7676a = gVar;

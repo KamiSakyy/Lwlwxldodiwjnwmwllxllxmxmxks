@@ -11,10 +11,10 @@ import yz0.k2;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a implements k2 {
     public static final Parcelable.Creator<a> CREATOR = new c0(27);
-    public String r;
-    public String s;
-    public String t;
-    public int u;
+    public final String r;
+    public final String s;
+    public final String t;
+    public final int u;
 
     public a(int i, String str, String str2, String str3) {
         k.g(str, "name");

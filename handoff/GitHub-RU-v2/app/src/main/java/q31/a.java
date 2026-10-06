@@ -39,5 +39,4 @@ public final class a extends z {
         }
     }
     public Object getContext() { return null; }
-    public Object setButtonTintList(Object) { return null; }
 }

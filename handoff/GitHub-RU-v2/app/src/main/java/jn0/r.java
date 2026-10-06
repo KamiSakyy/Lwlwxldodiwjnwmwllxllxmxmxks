@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r {
-    public String a;
-    public q b;
-    public String c;
+    public final String a;
+    public final q b;
+    public final String c;
 
     public r(String str, q qVar, String str2) {
         k71.k.g(str, "id");

@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ow {
-    public String a;
-    public String b;
+    public final String a;
+    public final String b;
 
     public ow(String str, String str2) {
         this.a = str;

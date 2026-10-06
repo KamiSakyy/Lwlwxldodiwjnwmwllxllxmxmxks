@@ -6,8 +6,8 @@ import pz0.su;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m0 implements aa.w0 {
     public static final y Companion = new y();
-    public String r;
-    public int s;
+    public final String r;
+    public final int s;
 
     public m0(String str, int i) {
         k71.k.g(str, "id");
@@ -69,7 +69,7 @@ public final class m0 implements aa.w0 {
     public final String toString() {
         return com.github.rudroid.m0.b(this.s, "RefreshStatusChecksQuery(id=", this.r, ", prNumber=", ")");
     }
-    public static Object a(Object p1, Object p2, Object p3) { return null; }
-    public static Object b(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object h(Object p1, Object p2, Object p3) { return null; }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object b(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
 }

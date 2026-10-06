@@ -11,7 +11,7 @@ public final class x1 implements Collection, l71.a {
     public final /* synthetic */ int f2085r = 0;
 
     /* renamed from: s, reason: collision with root package name */
-    public Object f2086s;
+    public final Object f2086s;
 
     public x1() {
         int i = x.n0.f33601a;

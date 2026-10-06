@@ -11,10 +11,10 @@ public final class a implements Parcelable {
     public static final Parcelable.Creator<a> CREATOR = new m(14);
 
     /* renamed from: r, reason: collision with root package name */
-    public int f24874r;
+    public final int f24874r;
 
     /* renamed from: s, reason: collision with root package name */
-    public Intent f24875s;
+    public final Intent f24875s;
 
     public a(Intent intent, int i) {
         this.f24874r = i;

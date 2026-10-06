@@ -11,12 +11,12 @@ import java.util.List;
 public final class r0 extends androidx.lifecycle.k1 implements a1, com.github.rudroid.utilities.viewmodel.d {
     public static final a Companion = new a();
     public final /* synthetic */ d.a s;
-    public l51.h t;
-    public rm.d u;
-    public sm.g v;
-    public com.github.rudroid.activities.util.c w;
-    public y71.y1 x;
-    public androidx.lifecycle.p0 y;
+    public final l51.h t;
+    public final rm.d u;
+    public final sm.g v;
+    public final com.github.rudroid.activities.util.c w;
+    public final y71.y1 x;
+    public final androidx.lifecycle.p0 y;
 
     public static final class a {
     }

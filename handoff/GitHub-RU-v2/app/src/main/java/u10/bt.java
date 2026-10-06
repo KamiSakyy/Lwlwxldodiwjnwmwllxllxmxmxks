@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class bt {
-    public ft a;
-    public String b;
+    public final ft a;
+    public final String b;
 
     public bt(ft ftVar, String str) {
         this.a = ftVar;

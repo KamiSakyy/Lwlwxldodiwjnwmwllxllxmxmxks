@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ek0 {
-    public dk0 a;
-    public List b;
+    public final dk0 a;
+    public final List b;
 
     public ek0(dk0 dk0Var, List list) {
         this.a = dk0Var;

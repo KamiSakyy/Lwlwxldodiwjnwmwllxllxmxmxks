@@ -2,9 +2,9 @@ package pz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a5Shadow {
-    public aa1.b a;
+    public final aa1.b a;
     public final aa1.b b = aa.t0.d;
-    public aa1.b c;
+    public final aa1.b c;
 
     public a5(aa.u0 u0Var, aa1.b bVar) {
         this.a = u0Var;

@@ -6,9 +6,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d implements f {
-    public String a;
-    public String b;
-    public Object c;
+    public final String a;
+    public final String b;
+    public final Object c;
 
     public d(String str, String str2, List list) {
         this.a = str;

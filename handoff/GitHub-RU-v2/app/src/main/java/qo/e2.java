@@ -2,9 +2,9 @@ package qo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e2 {
-    public String a;
-    public String b;
-    public vo.h2 c;
+    public final String a;
+    public final String b;
+    public final vo.h2 c;
 
     public e2(String str, String str2, vo.h2 h2Var) {
         this.a = str;

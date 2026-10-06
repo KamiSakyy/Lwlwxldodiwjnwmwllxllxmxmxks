@@ -4,14 +4,14 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h0 implements aa.h0 {
-    public String a;
-    public Integer b;
-    public w c;
-    public boolean d;
-    public e0 e;
-    public d0 f;
-    public boolean g;
-    public String h;
+    public final String a;
+    public final Integer b;
+    public final w c;
+    public final boolean d;
+    public final e0 e;
+    public final d0 f;
+    public final boolean g;
+    public final String h;
 
     public h0(String str, Integer num, w wVar, boolean z, e0 e0Var, d0 d0Var, boolean z2, String str2) {
         this.a = str;

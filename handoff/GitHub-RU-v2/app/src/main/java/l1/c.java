@@ -15,10 +15,10 @@ public final class c implements List, l71.c {
     public final /* synthetic */ int f27894r;
 
     /* renamed from: s, reason: collision with root package name */
-    public Object f27895s;
+    public final Object f27895s;
 
     /* renamed from: t, reason: collision with root package name */
-    public int f27896t;
+    public final int f27896t;
 
     /* renamed from: u, reason: collision with root package name */
     public int f27897u;
@@ -494,5 +494,4 @@ public final class c implements List, l71.c {
         }
     }
     public Object v(Object p1) { return null; }
-    public Object v(Object) { return null; }
 }

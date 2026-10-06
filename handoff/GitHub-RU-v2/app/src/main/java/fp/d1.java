@@ -2,8 +2,8 @@ package fp;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d1 {
-    public String a;
-    public hp.u b;
+    public final String a;
+    public final hp.u b;
 
     public d1(String str, hp.u uVar) {
         this.a = str;

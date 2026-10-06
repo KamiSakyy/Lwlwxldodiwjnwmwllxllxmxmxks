@@ -4,9 +4,9 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u {
-    public boolean a;
-    public boolean b;
-    public r c;
+    public final boolean a;
+    public final boolean b;
+    public final r c;
 
     public u(boolean z, boolean z2, r rVar) {
         this.a = z;

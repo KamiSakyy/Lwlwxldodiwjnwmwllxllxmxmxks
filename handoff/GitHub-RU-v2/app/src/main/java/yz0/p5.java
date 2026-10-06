@@ -5,15 +5,15 @@ import com.github.service.models.response.issueorpullrequest.CloseReason;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p5 extends k.w implements r5 {
-    public String c;
-    public String d;
-    public String e;
-    public String f;
-    public int g;
-    public IssueOrPullRequestState h;
-    public boolean i;
-    public boolean j;
-    public boolean k;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final String f;
+    public final int g;
+    public final IssueOrPullRequestState h;
+    public final boolean i;
+    public final boolean j;
+    public final boolean k;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public p5(String str, String str2, String str3, String str4, int i, IssueOrPullRequestState issueOrPullRequestState, boolean z, boolean z2, boolean z3, String str5) {

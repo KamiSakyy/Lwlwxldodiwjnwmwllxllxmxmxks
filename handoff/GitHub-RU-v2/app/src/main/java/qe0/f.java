@@ -6,13 +6,13 @@ import gn0.hn;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
-    public int a;
-    public String b;
-    public hn c;
-    public k d;
-    public boolean e;
-    public boolean f;
-    public String g;
+    public final int a;
+    public final String b;
+    public final hn c;
+    public final k d;
+    public final boolean e;
+    public final boolean f;
+    public final String g;
 
     public f(int i, String str, hn hnVar, k kVar, boolean z, boolean z2, String str2) {
         this.a = i;

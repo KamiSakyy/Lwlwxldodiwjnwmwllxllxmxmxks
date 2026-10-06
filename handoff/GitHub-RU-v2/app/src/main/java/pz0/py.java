@@ -9,7 +9,7 @@ public final class py {
     public static final py t;
     public static final /* synthetic */ py[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         py pyVar = new py("ADMIN", 0, "ADMIN");

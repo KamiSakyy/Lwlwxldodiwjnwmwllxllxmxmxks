@@ -6,11 +6,11 @@ import pz0.g9;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public String a;
-    public g9 b;
-    public String c;
-    public c d;
-    public String e;
+    public final String a;
+    public final g9 b;
+    public final String c;
+    public final c d;
+    public final String e;
 
     public b(String str, g9 g9Var, String str2, c cVar, String str3) {
         this.a = str;

@@ -24,25 +24,25 @@ public final class g extends k1 implements com.github.rudroid.utilities.viewmode
     public final /* synthetic */ com.github.rudroid.utilities.viewmodel.c f19129s;
 
     /* renamed from: t, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f19130t;
+    public final com.github.rudroid.activities.util.c f19130t;
 
     /* renamed from: u, reason: collision with root package name */
-    public ll.f f19131u;
+    public final ll.f f19131u;
 
     /* renamed from: v, reason: collision with root package name */
-    public String f19132v;
+    public final String f19132v;
 
     /* renamed from: w, reason: collision with root package name */
-    public y1 f19133w;
+    public final y1 f19133w;
 
     /* renamed from: x, reason: collision with root package name */
-    public y1 f19134x;
+    public final y1 f19134x;
 
     /* renamed from: y, reason: collision with root package name */
-    public y1 f19135y;
+    public final y1 f19135y;
 
     /* renamed from: z, reason: collision with root package name */
-    public i1 f19136z;
+    public final i1 f19136z;
 
     public static final class a {
     }

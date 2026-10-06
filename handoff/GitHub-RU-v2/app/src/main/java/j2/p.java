@@ -4,16 +4,16 @@ package j2;
 public final class p extends b0 {
 
     /* renamed from: c, reason: collision with root package name */
-    public float f26915c;
+    public final float f26915c;
 
     /* renamed from: d, reason: collision with root package name */
-    public float f26916d;
+    public final float f26916d;
 
     /* renamed from: e, reason: collision with root package name */
-    public float f26917e;
+    public final float f26917e;
 
     /* renamed from: f, reason: collision with root package name */
-    public float f26918f;
+    public final float f26918f;
 
     public p(float f6, float f10, float f11, float f12) {
         super(2);

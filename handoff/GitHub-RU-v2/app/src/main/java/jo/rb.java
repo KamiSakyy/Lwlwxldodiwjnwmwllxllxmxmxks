@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rb implements aaShadow.v0 {
-    public sb a;
-    public String b;
-    public String c;
+    public final sb a;
+    public final String b;
+    public final String c;
 
     public rb(sb sbVar, String str, String str2) {
         this.a = sbVar;

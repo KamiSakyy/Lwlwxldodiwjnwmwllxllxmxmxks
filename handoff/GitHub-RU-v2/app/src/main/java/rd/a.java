@@ -11,10 +11,10 @@ import k71.k;
 public final class a implements t9.b, Drawable.Callback {
 
     /* renamed from: r, reason: collision with root package name */
-    public WeakReference f31358r;
+    public final WeakReference f31358r;
 
     /* renamed from: s, reason: collision with root package name */
-    public WeakReference f31359s;
+    public final WeakReference f31359s;
 
     public a(TextView textView, LevelListDrawable levelListDrawable) {
         this.f31358r = new WeakReference(textView);

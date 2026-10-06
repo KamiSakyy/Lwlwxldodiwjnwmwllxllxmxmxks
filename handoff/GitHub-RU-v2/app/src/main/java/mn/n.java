@@ -7,11 +7,11 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n {
-    public String a;
-    public String b;
-    public ZonedDateTime c;
-    public int d;
-    public WorkflowState e;
+    public final String a;
+    public final String b;
+    public final ZonedDateTime c;
+    public final int d;
+    public final WorkflowState e;
 
     public n(String str, String str2, ZonedDateTime zonedDateTime, int i, WorkflowState workflowState) {
         k71.k.g(str, "id");

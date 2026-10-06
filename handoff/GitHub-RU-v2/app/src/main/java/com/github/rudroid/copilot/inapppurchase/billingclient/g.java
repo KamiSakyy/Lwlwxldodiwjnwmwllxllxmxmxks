@@ -12,10 +12,10 @@ import y71.y1;
 public final class g implements o {
 
     /* renamed from: a, reason: collision with root package name */
-    public y1 f9664a;
+    public final y1 f9664a;
 
     /* renamed from: b, reason: collision with root package name */
-    public i1 f9665b;
+    public final i1 f9665b;
 
     public g() {
         y1 c10 = n1.c(j.b.f9668a);

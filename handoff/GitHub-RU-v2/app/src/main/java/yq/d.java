@@ -2,10 +2,10 @@ package yq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public String a;
-    public f b;
-    public g c;
-    public vx.a d;
+    public final String a;
+    public final f b;
+    public final g c;
+    public final vx.a d;
 
     public d(String str, f fVar, g gVar, vx.a aVar) {
         k71.k.g(str, "__typename");

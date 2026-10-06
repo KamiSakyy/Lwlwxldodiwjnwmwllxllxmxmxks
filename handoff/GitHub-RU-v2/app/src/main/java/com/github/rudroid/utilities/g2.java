@@ -4,10 +4,10 @@ import java.util.LinkedHashMap;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g2<T> {
-    public androidx.lifecycle.a1 a;
-    public String b;
-    public j71.c c;
-    public j71.a d;
+    public final androidx.lifecycle.a1 a;
+    public final String b;
+    public final j71.c c;
+    public final j71.a d;
 
     public g2(androidx.lifecycle.a1 a1Var, String str, j71.c cVar, j71.a aVar) {
         k71.k.g(a1Var, "savedStateHandle");

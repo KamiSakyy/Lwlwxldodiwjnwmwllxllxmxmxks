@@ -6,7 +6,7 @@ import android.graphics.drawable.Drawable;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f1 {
     public static final a Companion = new a();
-    public sc.c1 a;
+    public final sc.c1 a;
 
     public static final class a {
     }

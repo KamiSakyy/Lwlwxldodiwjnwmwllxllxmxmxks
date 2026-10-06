@@ -28,19 +28,19 @@ public final class a {
     public static final long n = TimeUnit.DAYS.toMillis(366);
     public static volatile ScheduledExecutorService o = null;
     public static final Object p = new Object();
-    public Object a;
-    public PowerManager.WakeLock b;
+    public final Object a;
+    public final PowerManager.WakeLock b;
     public int c;
     public ScheduledFuture d;
     public long e;
-    public HashSet f;
+    public final HashSet f;
     public boolean g;
     public p21.a h;
-    public g21.a i;
-    public String j;
-    public HashMap k;
-    public AtomicInteger l;
-    public ScheduledExecutorService m;
+    public final g21.a i;
+    public final String j;
+    public final HashMap k;
+    public final AtomicInteger l;
+    public final ScheduledExecutorService m;
 
     public a(Context context) {
         boolean z;

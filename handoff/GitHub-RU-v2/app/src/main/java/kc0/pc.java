@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class pc {
-    public mc a;
-    public String b;
-    public String c;
+    public final mc a;
+    public final String b;
+    public final String c;
 
     public pc(mc mcVar, String str, String str2) {
         this.a = mcVar;

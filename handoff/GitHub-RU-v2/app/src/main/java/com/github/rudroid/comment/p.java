@@ -6,10 +6,10 @@ import yz0.x2;
 public final class p {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f8975a;
+    public final String f8975a;
 
     /* renamed from: b, reason: collision with root package name */
-    public x2 f8976b;
+    public final x2 f8976b;
 
     public p(String str, x2 x2Var) {
         k71.k.g(str, "subjectId");

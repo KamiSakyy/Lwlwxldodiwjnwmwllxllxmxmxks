@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x30 implements aaShadow.m0 {
-    public z30 a;
+    public final z30 a;
 
     public x30(z30 z30Var) {
         this.a = z30Var;

@@ -4,10 +4,10 @@ package d3;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f21417a;
+    public final int f21417a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f21418b;
+    public final int f21418b;
 
     public d(int i, int i10) {
         this.f21417a = i;

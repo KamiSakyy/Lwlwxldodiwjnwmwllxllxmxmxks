@@ -7,12 +7,12 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q extends a {
-    public ZonedDateTime a;
-    public boolean b;
-    public String c;
-    public com.github.service.models.response.a d;
-    public j e;
-    public Object f;
+    public final ZonedDateTime a;
+    public final boolean b;
+    public final String c;
+    public final com.github.service.models.response.a d;
+    public final j e;
+    public final Object f;
 
     public q(ZonedDateTime zonedDateTime, boolean z, String str, com.github.service.models.response.a aVar, j jVar, List list) {
         k71.k.g(zonedDateTime, "createdAt");

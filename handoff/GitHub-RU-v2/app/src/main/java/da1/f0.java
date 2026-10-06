@@ -4,9 +4,9 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class f0 implements Cloneable {
-    public b r;
-    public d0 s;
-    public e0 t;
+    public final b r;
+    public final d0 s;
+    public final e0 t;
     public i0 u;
 
     public f0(b bVar) {

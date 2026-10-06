@@ -2,7 +2,7 @@ package com.google.android.gms.internal.play_billing;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class s1 implements Cloneable {
-    public t1 r;
+    public final t1 r;
     public t1 s;
 
     public s1(t1 t1Var) {

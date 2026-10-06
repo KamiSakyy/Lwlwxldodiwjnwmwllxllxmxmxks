@@ -2,9 +2,9 @@ package rz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o1 {
-    public l1 a;
-    public String b;
-    public String c;
+    public final l1 a;
+    public final String b;
+    public final String c;
 
     public o1(l1 l1Var, String str, String str2) {
         this.a = l1Var;

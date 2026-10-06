@@ -8,8 +8,8 @@ import jn0.yf0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i2 implements z01.z, yf0 {
     public static final f2 Companion = new f2();
-    public com.github.service.wrapper.j r;
-    public v71.v s;
+    public final com.github.service.wrapper.j r;
+    public final v71.v s;
     public v71.d1 t;
 
     public i2(com.github.service.wrapper.j jVar, v71.v vVar) {

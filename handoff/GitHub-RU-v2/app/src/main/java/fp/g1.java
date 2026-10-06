@@ -2,9 +2,9 @@ package fp;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g1Shadow {
-    public boolean a;
-    public boolean b;
-    public String c;
+    public final boolean a;
+    public final boolean b;
+    public final String c;
 
     public g1(String str, boolean z, boolean z2) {
         this.a = z;

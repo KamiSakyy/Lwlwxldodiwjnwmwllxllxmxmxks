@@ -8,13 +8,13 @@ import java.time.ZonedDateTime;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r6 extends s7 {
     public final TimelineItem$LinkedItemConnectorType a;
-    public String b;
-    public int c;
-    public String d;
-    public String e;
-    public ZonedDateTime f;
-    public IssueState g;
-    public CloseReason h;
+    public final String b;
+    public final int c;
+    public final String d;
+    public final String e;
+    public final ZonedDateTime f;
+    public final IssueState g;
+    public final CloseReason h;
 
     public r6(TimelineItem$LinkedItemConnectorType timelineItem$LinkedItemConnectorType, String str, int i, String str2, String str3, ZonedDateTime zonedDateTime, IssueState issueState, CloseReason closeReason) {
         k71.k.g(timelineItem$LinkedItemConnectorType, "connectorType");

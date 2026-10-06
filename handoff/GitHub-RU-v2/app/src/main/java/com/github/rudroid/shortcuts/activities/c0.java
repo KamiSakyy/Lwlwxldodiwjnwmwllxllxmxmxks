@@ -4,5 +4,4 @@ package com.github.rudroid.shortcuts.activities;
 public interface c0 {
     void f0(ConfigureShortcutFragment configureShortcutFragment);
     public Object y(Object p1, Object p2) { return null; }
-    public Object y(Object, Object) { return null; }
 }

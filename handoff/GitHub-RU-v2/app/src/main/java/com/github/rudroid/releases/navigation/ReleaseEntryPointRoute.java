@@ -14,13 +14,13 @@ public final class ReleaseEntryPointRoute implements c {
     public static final Companion Companion = new Companion();
 
     /* renamed from: r, reason: collision with root package name */
-    public String f18927r;
+    public final String f18927r;
 
     /* renamed from: s, reason: collision with root package name */
-    public String f18928s;
+    public final String f18928s;
 
     /* renamed from: t, reason: collision with root package name */
-    public String f18929t;
+    public final String f18929t;
 
     public static final class Companion {
         public final KSerializer serializer() {

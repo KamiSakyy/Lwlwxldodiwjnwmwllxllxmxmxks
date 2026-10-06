@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fk {
-    public gk a;
+    public final gk a;
 
     public fk(gk gkVar) {
         this.a = gkVar;

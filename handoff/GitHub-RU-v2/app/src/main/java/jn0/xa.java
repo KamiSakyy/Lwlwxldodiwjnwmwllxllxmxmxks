@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xa {
-    public String a;
-    public bb b;
-    public String c;
+    public final String a;
+    public final bb b;
+    public final String c;
 
     public xa(String str, bb bbVar, String str2) {
         this.a = str;

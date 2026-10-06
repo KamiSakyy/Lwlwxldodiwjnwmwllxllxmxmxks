@@ -18,8 +18,8 @@ import jo.f4;
 public final class n {
 
     public static final class a {
-        public ViewGroup a;
-        public RecyclerView b;
+        public final ViewGroup a;
+        public final RecyclerView b;
 
         public a(ViewGroup viewGroup, RecyclerView recyclerView) {
             this.a = viewGroup;
@@ -47,8 +47,8 @@ public final class n {
     }
 
     public static final class b {
-        public int a;
-        public int b;
+        public final int a;
+        public final int b;
 
         public b(int i, int i2) {
             this.a = i;

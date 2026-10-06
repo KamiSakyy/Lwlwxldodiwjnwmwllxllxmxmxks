@@ -4,13 +4,13 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class gu {
-    public String a;
-    public String b;
-    public String c;
-    public ou d;
-    public String e;
-    public String f;
-    public ZonedDateTime g;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final ou d;
+    public final String e;
+    public final String f;
+    public final ZonedDateTime g;
 
     public gu(String str, String str2, String str3, ou ouVar, String str4, String str5, ZonedDateTime zonedDateTime) {
         this.a = str;

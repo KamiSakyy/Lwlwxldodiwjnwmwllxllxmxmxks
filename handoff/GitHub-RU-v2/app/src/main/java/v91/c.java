@@ -10,7 +10,7 @@ import sy.d0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class c extends u91.b {
-    public q1 e;
+    public final q1 e;
     public int f;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

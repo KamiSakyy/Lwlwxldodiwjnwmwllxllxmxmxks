@@ -6,8 +6,8 @@ import y71.n1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
     public static final b Companion = new b();
-    public n5.f a;
-    public oa.m b;
+    public final n5.f a;
+    public final oa.m b;
 
     public interface a {
         e b();

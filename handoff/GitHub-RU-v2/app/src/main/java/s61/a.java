@@ -8,9 +8,9 @@ import java.net.URLDecoder;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public Uri a;
-    public Bitmap b;
-    public Integer c;
+    public final Uri a;
+    public final Bitmap b;
+    public final Integer c;
     public boolean d;
 
     public a(Bitmap bitmap) {

@@ -4,8 +4,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public String a;
-    public cp0.c b;
+    public final String a;
+    public final cp0.c b;
 
     public a(String str, cp0.c cVar) {
         k.g(str, "__typename");

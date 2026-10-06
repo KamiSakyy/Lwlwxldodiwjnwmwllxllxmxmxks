@@ -2,7 +2,7 @@ package mn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d {
-    public u a;
+    public final u a;
 
     public d(u uVar) {
         this.a = uVar;

@@ -5,8 +5,8 @@ import com.github.service.models.response.type.ReactionContent;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r6 extends za<FetchUsersParams$FetchReacteesParams> {
-    public gn.h y;
-    public com.github.rudroid.activities.util.c z;
+    public final gn.h y;
+    public final com.github.rudroid.activities.util.c z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public r6(gn.h hVar, com.github.rudroid.activities.util.c cVar, androidx.lifecycle.a1 a1Var) {

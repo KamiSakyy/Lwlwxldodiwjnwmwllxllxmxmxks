@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k3 {
-    public List a;
-    public boolean b;
+    public final List a;
+    public final boolean b;
 
     public k3(List list, boolean z) {
         this.a = list;

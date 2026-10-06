@@ -7,10 +7,10 @@ import k71.k;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public List f24398a;
+    public final List f24398a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f24399b;
+    public final String f24399b;
 
     public b(List list, String str) {
         k.g(list, "suggestions");

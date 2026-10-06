@@ -13,9 +13,9 @@ import u10.y90;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class oa implements z01.q1, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
-    public com.github.service.wrapper.bShadow s;
-    public v71.v t;
-    public s01.p u;
+    public final com.github.service.wrapper.bShadow s;
+    public final v71.v t;
+    public final s01.p u;
 
     public oa(com.github.service.wrapper.j jVar, com.github.service.wrapper.bShadow bVar, v71.v vVar, int i) {
         this.r = i;

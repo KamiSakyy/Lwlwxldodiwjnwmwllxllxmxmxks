@@ -2,5 +2,5 @@ package gh;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public static Object c(Object p1, Object p2) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
 }

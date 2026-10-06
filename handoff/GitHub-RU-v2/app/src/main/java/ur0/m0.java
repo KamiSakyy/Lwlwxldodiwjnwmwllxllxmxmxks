@@ -7,7 +7,7 @@ public final class m0 implements aa.a {
     public static final m0 a = new m0();
     public static final List b = sy.d0.o(new String[]{"id", "login"});
 
-    public static final Object a(ea.e eVar, aa.w wVar) {
+    public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
         String str = null;
@@ -45,5 +45,5 @@ public final class m0 implements aa.a {
         fVar.z0("login");
         bVar.b(fVar, wVar, i0Var.b);
     }
-    public static Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

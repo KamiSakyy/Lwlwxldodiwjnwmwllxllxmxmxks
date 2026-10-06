@@ -6,11 +6,11 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public String a;
-    public j8 b;
-    public String c;
-    public b d;
-    public String e;
+    public final String a;
+    public final j8 b;
+    public final String c;
+    public final b d;
+    public final String e;
 
     public c(String str, j8 j8Var, String str2, b bVar, String str3) {
         this.a = str;

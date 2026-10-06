@@ -8,9 +8,9 @@ public final class c {
     public static final h91.k g;
     public static final h91.k h;
     public static final h91.k i;
-    public h91.k a;
-    public h91.k b;
-    public int c;
+    public final h91.k a;
+    public final h91.k b;
+    public final int c;
 
     static {
         h91.k kVar = h91.k.u;

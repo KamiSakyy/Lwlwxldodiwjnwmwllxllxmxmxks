@@ -2,11 +2,11 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class iy {
-    public int a;
-    public hy b;
-    public cy c;
-    public String d;
-    public String e;
+    public final int a;
+    public final hy b;
+    public final cy c;
+    public final String d;
+    public final String e;
 
     public iy(int i, hy hyVar, cy cyVar, String str, String str2) {
         this.a = i;

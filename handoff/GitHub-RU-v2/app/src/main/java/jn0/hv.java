@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class hv implements aaShadow.v0 {
-    public lv a;
-    public String b;
-    public String c;
+    public final lv a;
+    public final String b;
+    public final String c;
 
     public hv(lv lvVar, String str, String str2) {
         this.a = lvVar;

@@ -10,12 +10,12 @@ import org.json.JSONObject;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class i implements d {
-    public l1 a;
-    public String b;
-    public Uri c;
-    public String d;
-    public String e;
-    public LinkedHashMap f;
+    public final l1 a;
+    public final String b;
+    public final Uri c;
+    public final String d;
+    public final String e;
+    public final LinkedHashMap f;
 
     static {
         Collections.unmodifiableSet(new HashSet(Arrays.asList("id_token_hint", "post_logout_redirect_uri", "state", "ui_locales")));
@@ -50,8 +50,4 @@ public final class i implements d {
     public final String getState() {
         return this.d;
     }
-    public Object onCreate(Object) { return null; }
-    public Object onNewIntent(Object) { return null; }
-    public Object onResume() { return null; }
-    public Object onSaveInstanceState(Object) { return null; }
 }

@@ -4,11 +4,11 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class gk {
-    public String a;
-    public ZonedDateTime b;
-    public ck c;
-    public dk d;
-    public String e;
+    public final String a;
+    public final ZonedDateTime b;
+    public final ck c;
+    public final dk d;
+    public final String e;
 
     public gk(String str, ZonedDateTime zonedDateTime, ck ckVar, dk dkVar, String str2) {
         this.a = str;

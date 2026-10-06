@@ -4,10 +4,10 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q3 {
-    public String a;
-    public int b;
-    public p3 c;
-    public List d;
+    public final String a;
+    public final int b;
+    public final p3 c;
+    public final List d;
 
     public q3(String str, int i, p3 p3Var, List list) {
         this.a = str;

@@ -24,7 +24,7 @@ public final class DiscussionStatusFilter extends d {
     public static final w61.h[] w;
     public static final com.github.rudroid.common.h x;
     public static final w y;
-    public com.github.rudroid.common.h v;
+    public final com.github.rudroid.common.h v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<DiscussionStatusFilter> CREATOR = new a21.g(19);
 

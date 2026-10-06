@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ep {
-    public gp a;
+    public final gp a;
 
     public ep(gp gpVar) {
         this.a = gpVar;

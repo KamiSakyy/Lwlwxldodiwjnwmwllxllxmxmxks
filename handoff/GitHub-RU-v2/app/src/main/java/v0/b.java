@@ -4,7 +4,7 @@ package v0;
 public abstract class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public Object f32322a;
+    public final Object f32322a;
 
     public b(Object obj) {
         this.f32322a = obj;

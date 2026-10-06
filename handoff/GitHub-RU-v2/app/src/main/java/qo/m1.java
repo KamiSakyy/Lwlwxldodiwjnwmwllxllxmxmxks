@@ -2,12 +2,12 @@ package qo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m1 {
-    public String a;
-    public String b;
-    public j1 c;
-    public n1 d;
-    public h1 e;
-    public vo.v f;
+    public final String a;
+    public final String b;
+    public final j1 c;
+    public final n1 d;
+    public final h1 e;
+    public final vo.v f;
 
     public m1(String str, String str2, j1 j1Var, n1 n1Var, h1 h1Var, vo.v vVar) {
         this.a = str;

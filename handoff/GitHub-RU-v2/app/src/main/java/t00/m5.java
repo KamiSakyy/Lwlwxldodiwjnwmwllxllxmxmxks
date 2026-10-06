@@ -7,7 +7,7 @@ import jo.mi0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m5 implements z01.s0, mi0, yf0 {
     public final /* synthetic */ int r;
-    public s01.p s;
+    public final s01.p s;
 
     public m5(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, int i) {
         this.r = i;

@@ -13,8 +13,8 @@ import x61.r;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e implements n0 {
     public static final b Companion = new b();
-    public String r;
-    public u0 s;
+    public final String r;
+    public final u0 s;
 
     public e(u0 u0Var, String str) {
         this.r = str;
@@ -75,5 +75,5 @@ public final class e implements n0 {
     public final String toString() {
         return f4.k(this.s, "CloseDiscussionMutation(discussionId=", this.r, ", reason=", ")");
     }
-    public static Object z(Object p1, Object p2, Object p3) { return null; }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

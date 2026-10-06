@@ -11,7 +11,7 @@ public final class GlobalCodeSearchResultsRoute {
     public static final Companion Companion = new Companion();
 
     /* renamed from: a, reason: collision with root package name */
-    public String f15051a;
+    public final String f15051a;
 
     public static final class Companion {
         public final KSerializer serializer() {

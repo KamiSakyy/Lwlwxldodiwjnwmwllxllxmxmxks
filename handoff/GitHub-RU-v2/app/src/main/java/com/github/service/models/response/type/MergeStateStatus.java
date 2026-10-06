@@ -12,7 +12,7 @@ public final class MergeStateStatus {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ MergeStateStatus[] $VALUES;
     public static final f Companion;
-    private String rawValue;
+    private final String rawValue;
     public static final MergeStateStatus DIRTY = new MergeStateStatus("DIRTY", 0, "DIRTY");
     public static final MergeStateStatus UNKNOWN = new MergeStateStatus("UNKNOWN", 1, "UNKNOWN");
     public static final MergeStateStatus BLOCKED = new MergeStateStatus("BLOCKED", 2, "BLOCKED");

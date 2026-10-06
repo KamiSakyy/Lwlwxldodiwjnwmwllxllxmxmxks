@@ -11,10 +11,10 @@ import y71.y1;
 public final class a implements i, sb.a {
 
     /* renamed from: r, reason: collision with root package name */
-    public y1 f16785r;
+    public final y1 f16785r;
 
     /* renamed from: s, reason: collision with root package name */
-    public y1 f16786s;
+    public final y1 f16786s;
 
     public a() {
         y1 c10 = n1.c(a.EnumC0089a.f31788s);

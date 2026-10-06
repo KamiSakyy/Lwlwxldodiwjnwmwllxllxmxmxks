@@ -9,26 +9,26 @@ import m10.yi;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u implements aa.h0 {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public int e;
-    public ZonedDateTime f;
-    public Boolean g;
-    public o h;
-    public wi i;
-    public t j;
-    public ya0 k;
-    public String l;
-    public m m;
-    public n n;
-    public yi o;
-    public p p;
-    public s q;
-    public lt.j r;
-    public z6 s;
-    public c t;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final int e;
+    public final ZonedDateTime f;
+    public final Boolean g;
+    public final o h;
+    public final wi i;
+    public final t j;
+    public final ya0 k;
+    public final String l;
+    public final m m;
+    public final n n;
+    public final yi o;
+    public final p p;
+    public final s q;
+    public final lt.j r;
+    public final z6 s;
+    public final c t;
 
     public u(String str, String str2, String str3, String str4, int i, ZonedDateTime zonedDateTime, Boolean bool, o oVar, wi wiVar, t tVar, ya0 ya0Var, String str5, m mVar, n nVar, yi yiVar, p pVar, s sVar, lt.j jVar, z6 z6Var, c cVar) {
         this.a = str;

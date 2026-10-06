@@ -34,20 +34,20 @@ public final class d implements Handler.Callback {
     public static final Status G = new Status(4, "The user must be signed in to make this API call.", null, null);
     public static final Object H = new Object();
     public static d I;
-    public ConcurrentHashMap A;
-    public x.f B;
-    public x.f C;
-    public h0 D;
+    public final ConcurrentHashMap A;
+    public final x.f B;
+    public final x.f C;
+    public final h0 D;
     public volatile boolean E;
     public long r;
     public boolean s;
     public c21.l t;
     public e21.c u;
-    public Context v;
-    public z11.e w;
-    public b1.m x;
-    public AtomicInteger y;
-    public AtomicInteger z;
+    public final Context v;
+    public final z11.e w;
+    public final b1.m x;
+    public final AtomicInteger y;
+    public final AtomicInteger z;
 
     public d(Context context, Looper looper) {
         z11.e eVar = z11.e.d;

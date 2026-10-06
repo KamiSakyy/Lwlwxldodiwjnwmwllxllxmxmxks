@@ -52,5 +52,5 @@ public final /* synthetic */ class y implements j71.e {
         this.A = str2;
         this.v = i;
     }
-    public static Object a(Object p1, Object p2) { return null; }
+    public Object a(Object p1, Object p2) { return null; }
 }

@@ -4,9 +4,9 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l2 {
-    public boolean a;
-    public String b;
-    public boolean c;
+    public final boolean a;
+    public final String b;
+    public final boolean c;
 
     public l2(String str, boolean z, boolean z2) {
         this.a = z;

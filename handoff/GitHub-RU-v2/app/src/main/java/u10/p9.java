@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p9 {
-    public String a;
-    public m9 b;
-    public String c;
+    public final String a;
+    public final m9 b;
+    public final String c;
 
     public p9(String str, m9 m9Var, String str2) {
         this.a = str;

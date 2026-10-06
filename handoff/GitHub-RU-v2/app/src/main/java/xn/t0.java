@@ -6,13 +6,13 @@ import java.util.UUID;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t0 implements y {
-    public String a;
-    public String b;
-    public String c;
-    public ZonedDateTime d;
-    public List e;
-    public a0 f;
-    public List g;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final ZonedDateTime d;
+    public final List e;
+    public final a0 f;
+    public final List g;
 
     public t0(String str, String str2, String str3, ZonedDateTime zonedDateTime, List list, a0 a0Var, List list2) {
         k71.k.g(str, "id");

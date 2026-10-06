@@ -12,7 +12,7 @@ public final class rm {
     public static final rm w;
     public static final /* synthetic */ rm[] x;
     public static final /* synthetic */ d71.b y;
-    public String r;
+    public final String r;
 
     static {
         rm rmVar = new rm("APPROVE", 0, "APPROVE");

@@ -16,8 +16,8 @@ import z01.x;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public m a;
-    public x b;
+    public final m a;
+    public final x b;
 
     public e(m mVar, x xVar) {
         k.g(mVar, "userManager");

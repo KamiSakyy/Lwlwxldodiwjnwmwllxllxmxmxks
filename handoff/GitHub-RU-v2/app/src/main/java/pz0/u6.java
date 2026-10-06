@@ -2,10 +2,10 @@ package pz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u6 {
-    public aa1.b a;
-    public aa1.b b;
-    public aa1.b c;
-    public String d;
+    public final aa1.b a;
+    public final aa1.b b;
+    public final aa1.b c;
+    public final String d;
 
     public u6(aa.u0 u0Var, String str) {
         k71.k.g(str, "name");

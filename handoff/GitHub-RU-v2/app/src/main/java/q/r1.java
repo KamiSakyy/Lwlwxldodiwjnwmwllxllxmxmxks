@@ -9,16 +9,16 @@ import android.view.ViewConfiguration;
 public abstract class r1 implements View.OnTouchListener, View.OnAttachStateChangeListener {
 
     /* renamed from: r, reason: collision with root package name */
-    public float f30699r;
+    public final float f30699r;
 
     /* renamed from: s, reason: collision with root package name */
-    public int f30700s;
+    public final int f30700s;
 
     /* renamed from: t, reason: collision with root package name */
-    public int f30701t;
+    public final int f30701t;
 
     /* renamed from: u, reason: collision with root package name */
-    public View f30702u;
+    public final View f30702u;
 
     /* renamed from: v, reason: collision with root package name */
     public q1 f30703v;

@@ -2,9 +2,9 @@ package vo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a1 implements aa.h0 {
-    public String a;
-    public v0 b;
-    public String c;
+    public final String a;
+    public final v0 b;
+    public final String c;
 
     public a1(String str, v0 v0Var, String str2) {
         this.a = str;

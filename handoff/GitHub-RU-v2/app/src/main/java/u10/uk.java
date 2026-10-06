@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class uk implements aaShadow.v0 {
-    public wk a;
+    public final wk a;
 
     public uk(wk wkVar) {
         this.a = wkVar;

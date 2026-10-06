@@ -2,8 +2,8 @@ package com.google.android.gms.internal.play_billing;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j2 implements o2 {
-    public g1 a;
-    public r1 b;
+    public final g1 a;
+    public final r1 b;
 
     public j2(r1 r1Var, g1 g1Var) {
         r1 r1Var2 = p1.a;

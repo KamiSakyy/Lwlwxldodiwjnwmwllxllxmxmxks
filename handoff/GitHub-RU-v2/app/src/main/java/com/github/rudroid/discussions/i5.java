@@ -4,13 +4,13 @@ package com.github.rudroid.discussions;
 public final class i5 extends za {
 
     /* renamed from: t, reason: collision with root package name */
-    public String f11389t;
+    public final String f11389t;
 
     /* renamed from: u, reason: collision with root package name */
-    public String f11390u;
+    public final String f11390u;
 
     /* renamed from: v, reason: collision with root package name */
-    public boolean f11391v;
+    public final boolean f11391v;
 
     public i5(String str, String str2, boolean z10) {
         super("ITEM_TYPE_VIEW_ANSWER", 11);

@@ -12,13 +12,13 @@ public final class s {
     public static final s f20473d = new s(g1.a.c(g1.Companion), "", null);
 
     /* renamed from: a, reason: collision with root package name */
-    public g1 f20474a;
+    public final g1 f20474a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f20475b;
+    public final String f20475b;
 
     /* renamed from: c, reason: collision with root package name */
-    public SimpleRepository f20476c;
+    public final SimpleRepository f20476c;
 
     public static final class a {
     }

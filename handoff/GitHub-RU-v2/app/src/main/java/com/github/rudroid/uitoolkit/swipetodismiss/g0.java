@@ -6,8 +6,8 @@ import androidx.compose.runtime.l1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g0 {
     public static final a Companion = new a();
-    public s3.c a;
-    public n b;
+    public final s3.c a;
+    public final n b;
 
     public static final class a {
     }

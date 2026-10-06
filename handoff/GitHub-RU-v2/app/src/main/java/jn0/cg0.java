@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class cg0 implements aaShadow.w0 {
     public static final zf0 Companion = new zf0();
-    public String r;
-    public String s;
+    public final String r;
+    public final String s;
 
     public cg0(String str, String str2) {
         k71.k.g(str, "owner");

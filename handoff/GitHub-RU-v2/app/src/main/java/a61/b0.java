@@ -10,7 +10,7 @@ public enum b0 implements k51.f {
     EF2(2),
     s(3);
 
-    public int r;
+    public final int r;
 
     b0(int i) {
         this.r = i;

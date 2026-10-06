@@ -10,10 +10,10 @@ public abstract class h0 {
     public int f28139a;
 
     /* renamed from: b, reason: collision with root package name */
-    public Object f28140b;
+    public final Object f28140b;
 
     /* renamed from: c, reason: collision with root package name */
-    public Object f28141c;
+    public final Object f28141c;
 
     public h0(String str, int i, String str2) {
         this.f28139a = i;

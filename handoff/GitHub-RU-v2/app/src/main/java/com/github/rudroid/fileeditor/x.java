@@ -6,28 +6,28 @@ import com.github.rudroid.copilot.h1;
 public final class x {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f12991a;
+    public final String f12991a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f12992b;
+    public final boolean f12992b;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean f12993c;
+    public final boolean f12993c;
 
     /* renamed from: d, reason: collision with root package name */
-    public String f12994d;
+    public final String f12994d;
 
     /* renamed from: e, reason: collision with root package name */
-    public String f12995e;
+    public final String f12995e;
 
     /* renamed from: f, reason: collision with root package name */
-    public String f12996f;
+    public final String f12996f;
 
     /* renamed from: g, reason: collision with root package name */
-    public a f12997g;
+    public final a f12997g;
 
     /* renamed from: h, reason: collision with root package name */
-    public String f12998h;
+    public final String f12998h;
 
     public x(String str, boolean z10, boolean z11, String str2, String str3, String str4, a aVar, String str5) {
         k71.k.g(str, "text");

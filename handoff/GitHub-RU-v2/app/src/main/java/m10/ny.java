@@ -11,7 +11,7 @@ public final class ny {
     public static final ny v;
     public static final /* synthetic */ ny[] w;
     public static final /* synthetic */ d71.b x;
-    public String r;
+    public final String r;
 
     static {
         ny nyVar = new ny("DIRECT_MERGE", 0, "DIRECT_MERGE");

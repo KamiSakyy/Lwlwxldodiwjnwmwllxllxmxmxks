@@ -7,7 +7,7 @@ import androidx.lifecycle.k1;
 public final class b extends k1 {
 
     /* renamed from: s, reason: collision with root package name */
-    public a1 f525s;
+    public final a1 f525s;
 
     public b(a1 a1Var) {
         k71.k.g(a1Var, "handle");

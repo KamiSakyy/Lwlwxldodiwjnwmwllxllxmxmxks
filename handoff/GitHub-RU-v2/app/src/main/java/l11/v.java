@@ -2,8 +2,8 @@ package l11;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v extends i0 {
-    public h0 a;
-    public g0 b;
+    public final h0 a;
+    public final g0 b;
 
     public v(h0 h0Var, g0 g0Var) {
         this.a = h0Var;

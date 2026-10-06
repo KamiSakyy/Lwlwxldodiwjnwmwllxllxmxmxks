@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v7 {
-    public String a;
-    public r7 b;
-    public p7 c;
-    public String d;
+    public final String a;
+    public final r7 b;
+    public final p7 c;
+    public final String d;
 
     public v7(String str, r7 r7Var, p7 p7Var, String str2) {
         this.a = str;

@@ -4,9 +4,9 @@ import xt0.u1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s {
-    public String a;
-    public ur0.k0 b;
-    public u1 c;
+    public final String a;
+    public final ur0.k0 b;
+    public final u1 c;
 
     public s(String str, ur0.k0 k0Var, u1 u1Var) {
         k71.k.g(str, "__typename");

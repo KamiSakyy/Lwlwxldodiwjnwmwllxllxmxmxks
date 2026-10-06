@@ -5,7 +5,7 @@ import java.util.Iterator;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f8 implements y71.i {
     public final /* synthetic */ int r;
-    public Object s;
+    public final Object s;
 
     public /* synthetic */ f8(int i, Object obj) {
         this.r = i;

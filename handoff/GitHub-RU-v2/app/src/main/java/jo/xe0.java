@@ -2,16 +2,16 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class xe0 {
-    public String a;
-    public String b;
-    public String c;
-    public m10.b00 d;
-    public we0 e;
-    public boolean f;
-    public boolean g;
-    public gq.i h;
-    public lt.j i;
-    public ar.c j;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final m10.b00 d;
+    public final we0 e;
+    public final boolean f;
+    public final boolean g;
+    public final gq.i h;
+    public final lt.j i;
+    public final ar.c j;
 
     public xe0(String str, String str2, String str3, m10.b00 b00Var, we0 we0Var, boolean z, boolean z2, gq.i iVar, lt.j jVar, ar.c cVar) {
         this.a = str;

@@ -2,9 +2,9 @@ package fp;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b0 implements aa.v0 {
-    public e0 a;
-    public String b;
-    public String c;
+    public final e0 a;
+    public final String b;
+    public final String c;
 
     public b0(e0 e0Var, String str, String str2) {
         this.a = e0Var;

@@ -12,12 +12,12 @@ public final class u0 extends androidx.lifecycle.a implements com.github.rudroid
     public static final a Companion = new a();
     public c A;
     public c B;
-    public String C;
-    public String D;
-    public String E;
-    public w61.k F;
-    public Integer G;
-    public y1 H;
+    public final String C;
+    public final String D;
+    public final String E;
+    public final w61.k F;
+    public final Integer G;
+    public final y1 H;
     public boolean I;
     public String J;
 
@@ -25,22 +25,22 @@ public final class u0 extends androidx.lifecycle.a implements com.github.rudroid
     public final /* synthetic */ com.github.rudroid.viewmodels.c f19478t;
 
     /* renamed from: u, reason: collision with root package name */
-    public v71.v f19479u;
+    public final v71.v f19479u;
 
     /* renamed from: v, reason: collision with root package name */
-    public ql.b f19480v;
+    public final ql.b f19480v;
 
     /* renamed from: w, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f19481w;
+    public final com.github.rudroid.activities.util.c f19481w;
 
     /* renamed from: x, reason: collision with root package name */
-    public androidx.lifecycle.a1 f19482x;
+    public final androidx.lifecycle.a1 f19482x;
 
     /* renamed from: y, reason: collision with root package name */
-    public y1 f19483y;
+    public final y1 f19483y;
 
     /* renamed from: z, reason: collision with root package name */
-    public c1 f19484z;
+    public final c1 f19484z;
 
     public static final class a {
     }

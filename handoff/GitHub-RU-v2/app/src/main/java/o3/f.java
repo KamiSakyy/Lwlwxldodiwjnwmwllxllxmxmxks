@@ -9,7 +9,7 @@ import g3.o;
 public final class f extends ClickableSpan {
 
     /* renamed from: r, reason: collision with root package name */
-    public n f29984r;
+    public final n f29984r;
 
     public f(n nVar) {
         this.f29984r = nVar;

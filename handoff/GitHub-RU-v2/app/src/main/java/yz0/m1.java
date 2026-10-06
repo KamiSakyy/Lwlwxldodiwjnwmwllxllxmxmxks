@@ -2,9 +2,9 @@ package yz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m1 {
-    public String a;
-    public int b;
-    public int c;
+    public final String a;
+    public final int b;
+    public final int c;
 
     public m1(int i, String str, int i2) {
         this.a = str;

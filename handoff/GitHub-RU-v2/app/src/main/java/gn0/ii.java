@@ -25,7 +25,7 @@ public final class ii {
     public static final ii x;
     public static final ii y;
     public static final ii z;
-    public String r;
+    public final String r;
 
     static {
         ii iiVar = new ii("APPROVAL_REQUESTED", 0, "APPROVAL_REQUESTED");

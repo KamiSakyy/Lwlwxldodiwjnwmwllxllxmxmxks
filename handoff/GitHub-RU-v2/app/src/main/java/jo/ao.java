@@ -5,10 +5,10 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ao implements aaShadow.w0 {
     public static final vn Companion = new vn();
-    public String r;
-    public m10.ny s;
-    public m10.py t;
-    public boolean u;
+    public final String r;
+    public final m10.ny s;
+    public final m10.py t;
+    public final boolean u;
 
     public ao(String str, m10.ny nyVar, m10.py pyVar, boolean z) {
         k71.k.g(str, "id");

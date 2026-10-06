@@ -4,8 +4,8 @@ import java.util.concurrent.Executor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class o implements e {
-    public Executor r;
-    public e s;
+    public final Executor r;
+    public final e s;
 
     public o(Executor executor, e eVar) {
         this.r = executor;

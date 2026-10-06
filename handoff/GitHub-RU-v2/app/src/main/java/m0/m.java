@@ -8,5 +8,4 @@ public interface m {
     public Object a = null;
     public Object o = null;
     public Object p = null;
-    public Object c(int, int, int, int) { return null; }
 }

@@ -36,13 +36,13 @@ import yz0.j5;
 public final class IssueTemplatesActivity extends com.github.rudroid.templates.b<ic.u> implements x {
     public static final /* synthetic */ r71.e[] C0 = {new k71.p(IssueTemplatesActivity.class, "repoName", "getRepoName()Ljava/lang/String;", 0), m0.q(k71.x.a, IssueTemplatesActivity.class, "repoOwner", "getRepoOwner()Ljava/lang/String;", 0), new k71.p(IssueTemplatesActivity.class, "parentIssueId", "getParentIssueId()Ljava/lang/String;", 0), new k71.p(IssueTemplatesActivity.class, "navigationSource", "getNavigationSource()Lcom/github/service/models/response/type/MobileSubjectType;", 0)};
     public static final a Companion = new a();
-    public com.github.rudroid.activities.util.g A0;
-    public com.github.rudroid.activities.util.g B0;
-    public int v0;
+    public final com.github.rudroid.activities.util.g A0;
+    public final com.github.rudroid.activities.util.g B0;
+    public final int v0;
     public g w0;
-    public l1 x0;
-    public com.github.rudroid.activities.util.g y0;
-    public com.github.rudroid.activities.util.g z0;
+    public final l1 x0;
+    public final com.github.rudroid.activities.util.g y0;
+    public final com.github.rudroid.activities.util.g z0;
 
     public static final class a {
         public static Intent a(a aVar, Context context, String str, String str2, LinkedHashMap linkedHashMap, MobileSubjectType mobileSubjectType, int i) {
@@ -272,6 +272,4 @@ public final class IssueTemplatesActivity extends com.github.rudroid.templates.b
     }
     public Object getString(Object p1, Object p2, Object p3) { return null; }
     public Object y0() { return null; }
-    public Object M0(Object, Object) { return null; }
-    public Object u0(Object, Object) { return null; }
 }

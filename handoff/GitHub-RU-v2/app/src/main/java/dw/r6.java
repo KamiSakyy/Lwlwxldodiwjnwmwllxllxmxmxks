@@ -2,9 +2,9 @@ package dw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r6 implements aa.h0 {
-    public String a;
-    public q6 b;
-    public String c;
+    public final String a;
+    public final q6 b;
+    public final String c;
 
     public r6(String str, q6 q6Var, String str2) {
         this.a = str;

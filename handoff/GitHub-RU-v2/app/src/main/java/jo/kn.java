@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class kn {
-    public String a;
-    public String b;
-    public ln c;
+    public final String a;
+    public final String b;
+    public final ln c;
 
     public kn(String str, String str2, ln lnVar) {
         k71.k.g(str, "__typename");

@@ -9,38 +9,38 @@ import java.util.Objects;
 /* loaded from: /home/user/work/p/classes.dex */
 public final class b implements Parcelable {
     public static final Parcelable.Creator<b> CREATOR = new a21.g(3);
-    public int A;
-    public CharSequence B;
-    public ArrayList C;
-    public ArrayList D;
-    public boolean E;
+    public final int A;
+    public final CharSequence B;
+    public final ArrayList C;
+    public final ArrayList D;
+    public final boolean E;
 
     /* renamed from: r, reason: collision with root package name */
-    public int[] f2492r;
+    public final int[] f2492r;
 
     /* renamed from: s, reason: collision with root package name */
-    public ArrayList f2493s;
+    public final ArrayList f2493s;
 
     /* renamed from: t, reason: collision with root package name */
-    public int[] f2494t;
+    public final int[] f2494t;
 
     /* renamed from: u, reason: collision with root package name */
-    public int[] f2495u;
+    public final int[] f2495u;
 
     /* renamed from: v, reason: collision with root package name */
-    public int f2496v;
+    public final int f2496v;
 
     /* renamed from: w, reason: collision with root package name */
-    public String f2497w;
+    public final String f2497w;
 
     /* renamed from: x, reason: collision with root package name */
-    public int f2498x;
+    public final int f2498x;
 
     /* renamed from: y, reason: collision with root package name */
-    public int f2499y;
+    public final int f2499y;
 
     /* renamed from: z, reason: collision with root package name */
-    public CharSequence f2500z;
+    public final CharSequence f2500z;
 
     public b(a aVar) {
         int size = aVar.f2423c.size();

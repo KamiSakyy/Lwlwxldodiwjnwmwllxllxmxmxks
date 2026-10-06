@@ -2,11 +2,11 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t40 {
-    public String a;
-    public String b;
-    public String c;
-    public m40 d;
-    public s40 e;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final m40 d;
+    public final s40 e;
 
     public t40(String str, String str2, String str3, m40 m40Var, s40 s40Var) {
         this.a = str;

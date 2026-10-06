@@ -2,9 +2,9 @@ package ox0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t0 implements aa.v0 {
-    public z0 a;
-    public String b;
-    public String c;
+    public final z0 a;
+    public final String b;
+    public final String c;
 
     public t0(z0 z0Var, String str, String str2) {
         this.a = z0Var;

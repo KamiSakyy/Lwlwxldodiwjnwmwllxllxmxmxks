@@ -29,10 +29,10 @@ import u31.z;
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class d extends LinearLayout {
     public boolean A;
-    public ArrayList r;
-    public ArrayList s;
-    public x3 t;
-    public j1 u;
+    public final ArrayList r;
+    public final ArrayList s;
+    public final x3 t;
+    public final j1 u;
     public Integer[] v;
     public z w;
     public a0 x;

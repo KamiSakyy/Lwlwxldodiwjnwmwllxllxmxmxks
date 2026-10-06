@@ -8,7 +8,7 @@ import android.util.Log;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x extends c41.d {
     public e g;
-    public int h;
+    public final int h;
 
     public x(e eVar, int i) {
         super("com.google.android.gms.common.internal.IGmsCallbacks");

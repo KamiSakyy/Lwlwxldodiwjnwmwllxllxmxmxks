@@ -8,9 +8,9 @@ import kotlinx.serialization.KSerializer;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class CreateAgentTaskPullsResponse {
     public static final Companion Companion = new Companion();
-    public long a;
-    public int b;
-    public long c;
+    public final long a;
+    public final int b;
+    public final long c;
 
     public static final class Companion {
         public final KSerializer serializer() {

@@ -11,7 +11,7 @@ import x61.m;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class b extends s0 {
-    public x91.c t;
+    public final x91.c t;
     public int u;
 
     public b(e51.a aVar, x91.c cVar) {

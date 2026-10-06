@@ -4,7 +4,7 @@ package z5;
 public final class q {
 
     /* renamed from: a, reason: collision with root package name */
-    public n6.a f34588a;
+    public final n6.a f34588a;
 
     public q(n6.a aVar) {
         this.f34588a = aVar;

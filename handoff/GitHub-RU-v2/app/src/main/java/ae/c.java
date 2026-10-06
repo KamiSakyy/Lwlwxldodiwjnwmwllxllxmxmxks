@@ -7,21 +7,21 @@ import k71.k;
 public abstract class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public boolean f865a;
+    public final boolean f865a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f866b;
+    public final boolean f866b;
 
     /* renamed from: c, reason: collision with root package name */
-    public ae.a f867c;
+    public final ae.a f867c;
 
     public static final class a extends c {
 
         /* renamed from: d, reason: collision with root package name */
-        public PullRequestMergeMethod f868d;
+        public final PullRequestMergeMethod f868d;
 
         /* renamed from: e, reason: collision with root package name */
-        public boolean f869e;
+        public final boolean f869e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public a(PullRequestMergeMethod pullRequestMergeMethod, boolean z10) {
@@ -35,7 +35,7 @@ public abstract class c {
     public static final class b extends c {
 
         /* renamed from: d, reason: collision with root package name */
-        public boolean f870d;
+        public final boolean f870d;
 
         public b(boolean z10) {
             super(false, (ae.a) null, 4);
@@ -65,7 +65,7 @@ public abstract class c {
     public static final class d extends c {
 
         /* renamed from: d, reason: collision with root package name */
-        public PullRequestMergeMethod f872d;
+        public final PullRequestMergeMethod f872d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public d(PullRequestMergeMethod pullRequestMergeMethod, ae.a aVar) {
@@ -78,16 +78,16 @@ public abstract class c {
     public static final class e extends c {
 
         /* renamed from: d, reason: collision with root package name */
-        public boolean f873d;
+        public final boolean f873d;
 
         /* renamed from: e, reason: collision with root package name */
-        public int f874e;
+        public final int f874e;
 
         /* renamed from: f, reason: collision with root package name */
-        public ae.d f875f;
+        public final ae.d f875f;
 
         /* renamed from: g, reason: collision with root package name */
-        public Integer f876g;
+        public final Integer f876g;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public e(ae.a aVar, boolean z10, int i, ae.d dVar, String str, Integer num) {

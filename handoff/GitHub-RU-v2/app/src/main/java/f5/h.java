@@ -19,13 +19,13 @@ public final class h implements RemoteViewsService.RemoteViewsFactory {
     public static final d31.f f24354e = new d31.f(new long[0], new RemoteViews[0]);
 
     /* renamed from: a, reason: collision with root package name */
-    public RemoteViewsCompatService f24355a;
+    public final RemoteViewsCompatService f24355a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f24356b;
+    public final int f24356b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f24357c;
+    public final int f24357c;
 
     /* renamed from: d, reason: collision with root package name */
     public d31.f f24358d = f24354e;

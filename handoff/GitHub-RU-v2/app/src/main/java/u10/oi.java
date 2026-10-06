@@ -2,10 +2,10 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class oi {
-    public String a;
-    public hc0.fm b;
-    public boolean c;
-    public String d;
+    public final String a;
+    public final hc0.fm b;
+    public final boolean c;
+    public final String d;
 
     public oi(String str, hc0.fm fmVar, boolean z, String str2) {
         this.a = str;

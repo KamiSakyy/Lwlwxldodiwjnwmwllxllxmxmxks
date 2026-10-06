@@ -11,13 +11,13 @@ public final class r {
     public static final r f20371d = new r(g1.a.c(g1.Companion), "", null);
 
     /* renamed from: a, reason: collision with root package name */
-    public g1 f20372a;
+    public final g1 f20372a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f20373b;
+    public final String f20373b;
 
     /* renamed from: c, reason: collision with root package name */
-    public String f20374c;
+    public final String f20374c;
 
     public static final class a {
     }

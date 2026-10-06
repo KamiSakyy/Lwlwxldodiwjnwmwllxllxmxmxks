@@ -139,7 +139,7 @@ public final class m0 implements aa.a {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static final Object a(ea.e eVar, aa.w wVar) {
+    public final Object a(ea.e eVar, aa.w wVar) {
         Boolean bool;
         Object obj;
         k71.k.g(eVar, "reader");
@@ -252,11 +252,11 @@ public final class m0 implements aa.a {
         fVar.z0("__typename");
         bVar2.b(fVar, wVar, jVar.k);
     }
-    public static Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
     public Object a(Object p1, Object p2, Object p3) { return null; }
-    public static Object h(Object p1, Object p2, Object p3) { return null; }
-    public static Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object o(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object z(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
+    public Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object o(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object z(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

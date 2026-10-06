@@ -4,9 +4,9 @@ import dw.m3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r {
-    public String a;
-    public m3 b;
-    public dw.o c;
+    public final String a;
+    public final m3 b;
+    public final dw.o c;
 
     public r(String str, m3 m3Var, dw.o oVar) {
         k71.k.g(str, "__typename");

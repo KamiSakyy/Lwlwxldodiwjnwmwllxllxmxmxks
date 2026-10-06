@@ -2,24 +2,24 @@ package uu0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k3 implements aa.h0 {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public boolean f;
-    public boolean g;
-    public h3 h;
-    public j3 i;
-    public boolean j;
-    public String k;
-    public boolean l;
-    public boolean m;
-    public boolean n;
-    public boolean o;
-    public i3 p;
-    public e3 q;
-    public u4 r;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final boolean f;
+    public final boolean g;
+    public final h3 h;
+    public final j3 i;
+    public final boolean j;
+    public final String k;
+    public final boolean l;
+    public final boolean m;
+    public final boolean n;
+    public final boolean o;
+    public final i3 p;
+    public final e3 q;
+    public final u4 r;
 
     public k3(String str, String str2, String str3, String str4, String str5, boolean z, boolean z2, h3 h3Var, j3 j3Var, boolean z3, String str6, boolean z4, boolean z5, boolean z6, boolean z7, i3 i3Var, e3 e3Var, u4 u4Var) {
         this.a = str;

@@ -10,8 +10,8 @@ import pz0.su;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k implements w0 {
     public static final a Companion = new a();
-    public String r;
-    public int s;
+    public final String r;
+    public final int s;
 
     public k(String str, int i) {
         k71.k.g(str, "projectOwnerLogin");

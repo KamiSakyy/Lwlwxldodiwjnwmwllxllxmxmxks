@@ -25,7 +25,7 @@ public class o {
         return null;
     }
 
-    public static v a(Object... a) {
+    public static Object a(Object... a) {
         return null;
     }
 
@@ -42,6 +42,6 @@ public class o {
     public static Object u(Object... a) {
         return null;
     }
-    public static Object a(Object p1, Object p2) { return null; }
-    public static Object m(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public Object a(Object p1, Object p2) { return null; }
+    public Object m(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
 }

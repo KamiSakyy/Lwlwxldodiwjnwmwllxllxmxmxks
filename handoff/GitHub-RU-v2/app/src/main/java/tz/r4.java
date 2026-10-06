@@ -5,12 +5,12 @@ import m10.pt;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r4 implements aa.h0 {
-    public String a;
-    public Integer b;
-    public String c;
-    public pt d;
-    public ArrayList e;
-    public String f;
+    public final String a;
+    public final Integer b;
+    public final String c;
+    public final pt d;
+    public final ArrayList e;
+    public final String f;
 
     public r4(String str, Integer num, String str2, pt ptVar, ArrayList arrayList, String str3) {
         this.a = str;

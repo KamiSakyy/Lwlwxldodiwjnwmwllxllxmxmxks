@@ -2,7 +2,7 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s1 extends w1Shadow {
-    public int a;
+    public final int a;
 
     public s1(int i) {
         this.a = i;

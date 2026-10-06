@@ -49,7 +49,7 @@ public abstract class l0 {
     public static final d f33868q;
 
     /* renamed from: a, reason: collision with root package name */
-    public boolean f33869a;
+    public final boolean f33869a;
 
     static {
         boolean z10 = false;

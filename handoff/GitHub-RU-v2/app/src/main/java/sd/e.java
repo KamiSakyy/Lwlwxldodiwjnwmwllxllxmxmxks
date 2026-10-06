@@ -11,16 +11,16 @@ import k71.k;
 public final class e extends URLSpan {
 
     /* renamed from: r, reason: collision with root package name */
-    public b.a f31983r;
+    public final b.a f31983r;
 
     /* renamed from: s, reason: collision with root package name */
-    public boolean f31984s;
+    public final boolean f31984s;
 
     /* renamed from: t, reason: collision with root package name */
-    public int f31985t;
+    public final int f31985t;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f31986u;
+    public final int f31986u;
 
     public e(Context context, String str, b.a aVar, boolean z10) {
         super(str);

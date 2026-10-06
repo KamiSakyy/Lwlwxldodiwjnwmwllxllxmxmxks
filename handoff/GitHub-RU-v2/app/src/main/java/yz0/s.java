@@ -36,7 +36,7 @@ public interface s {
     boolean k();
     public Object A() { return null; }
     public Object C() { return null; }
-    public static Object F(Object p1) { return null; }
+    public Object F(Object p1) { return null; }
     public Object N() { return null; }
     public Object S(Object p1, Object p2) { return null; }
     public Object V() { return null; }
@@ -56,23 +56,4 @@ public interface s {
     public Object t() { return null; }
     public Object S = null;
     public Object a = null;
-    public Object S(int, boolean) { return null; }
-    public Object d(int) { return null; }
-    public Object d0(int) { return null; }
-    public Object e0(int) { return null; }
-    public Object f(Object) { return null; }
-    public Object f(Object) { return null; }
-    public Object f(Object) { return null; }
-    public Object f(Object) { return null; }
-    public Object f(Object) { return null; }
-    public Object f(Object) { return null; }
-    public Object f(Object) { return null; }
-    public Object f(Object) { return null; }
-    public Object f(Object) { return null; }
-    public Object f(Object) { return null; }
-    public Object g(boolean) { return null; }
-    public Object h(Object) { return null; }
-    public Object k(Object) { return null; }
-    public Object n0(Object) { return null; }
-    public Object q(boolean) { return null; }
 }

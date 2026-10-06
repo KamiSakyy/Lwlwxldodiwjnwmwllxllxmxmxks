@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class gv {
-    public String a;
-    public boolean b;
-    public dv c;
-    public String d;
+    public final String a;
+    public final boolean b;
+    public final dv c;
+    public final String d;
 
     public gv(String str, boolean z, dv dvVar, String str2) {
         this.a = str;

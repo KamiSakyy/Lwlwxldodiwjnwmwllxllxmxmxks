@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class kr implements aaShadow.m0 {
-    public nr a;
+    public final nr a;
 
     public kr(nr nrVar) {
         this.a = nrVar;

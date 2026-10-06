@@ -24,10 +24,10 @@ public final class StatusNotificationFilter extends a {
     public static final StatusNotificationFilter x;
     public static final StatusNotificationFilter y;
     public static final StatusNotificationFilter z;
-    public String s;
-    public String t;
-    public i u;
-    public int v;
+    public final String s;
+    public final String t;
+    public final i u;
+    public final int v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<StatusNotificationFilter> CREATOR = new f8.a(27);
     public static final h[] w = {null, null, w.s(w61.i.r, new u5(19)), null};

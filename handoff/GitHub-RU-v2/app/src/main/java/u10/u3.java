@@ -4,7 +4,7 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u3 {
-    public List a;
+    public final List a;
 
     public u3(List list) {
         this.a = list;

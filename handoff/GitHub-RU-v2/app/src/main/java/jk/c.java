@@ -6,9 +6,9 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public ArrayList a;
-    public x01.i b;
-    public String c;
+    public final ArrayList a;
+    public final x01.i b;
+    public final String c;
 
     public c(String str, ArrayList arrayList, x01.i iVar) {
         this.a = arrayList;

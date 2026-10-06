@@ -10,7 +10,7 @@ import sy.d0;
 public final class DiagnosticComposeException extends RuntimeException {
 
     /* renamed from: r, reason: collision with root package name */
-    public a f1845r;
+    public final a f1845r;
 
     public DiagnosticComposeException(a aVar) {
         this.f1845r = aVar;

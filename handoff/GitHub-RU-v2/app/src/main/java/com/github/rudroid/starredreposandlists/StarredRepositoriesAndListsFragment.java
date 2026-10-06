@@ -22,14 +22,14 @@ import java.util.Collection;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class StarredRepositoriesAndListsFragment extends Hilt_StarredRepositoriesAndListsFragment implements com.github.rudroid.interfaces.m0, com.github.rudroid.fragments.util.f, com.github.rudroid.interfaces.a {
     public com.github.rudroid.activities.util.c D0;
-    public l1 E0;
+    public final l1 E0;
     public com.github.rudroid.utilities.e F0;
-    public l1 G0;
-    public l1 H0;
-    public p1 I0;
+    public final l1 G0;
+    public final l1 H0;
+    public final p1 I0;
     public androidx.fragment.app.t J0;
     public com.github.rudroid.html.b K0;
-    public w61.p L0;
+    public final w61.p L0;
 
     public static final class a extends k71.l implements j71.a {
         public final /* synthetic */ Object t;

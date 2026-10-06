@@ -2,9 +2,9 @@ package xt0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l5 {
-    public Integer a;
-    public boolean b;
-    public boolean c;
+    public final Integer a;
+    public final boolean b;
+    public final boolean c;
 
     public l5(Integer num, boolean z, boolean z2) {
         this.a = num;

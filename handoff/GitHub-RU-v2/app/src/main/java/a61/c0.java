@@ -2,10 +2,10 @@ package a61;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c0 {
-    public String a;
-    public int b;
-    public int c;
-    public boolean d;
+    public final String a;
+    public final int b;
+    public final int c;
+    public final boolean d;
 
     public c0(String str, int i, int i2, boolean z) {
         this.a = str;

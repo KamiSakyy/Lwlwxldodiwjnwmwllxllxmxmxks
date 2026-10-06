@@ -12,7 +12,7 @@ public final class d {
     public static final d v;
     public static final d w;
     public static final /* synthetic */ d[] x;
-    public boolean r;
+    public final boolean r;
 
     static {
         d dVar = new d(0, "DISABLED", false);

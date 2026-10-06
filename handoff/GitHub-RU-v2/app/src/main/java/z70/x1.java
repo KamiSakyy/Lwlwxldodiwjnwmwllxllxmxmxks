@@ -2,9 +2,9 @@ package z70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x1 implements aa.h0 {
-    public String a;
-    public Integer b;
-    public String c;
+    public final String a;
+    public final Integer b;
+    public final String c;
 
     public x1(Integer num, String str, String str2) {
         this.a = str;

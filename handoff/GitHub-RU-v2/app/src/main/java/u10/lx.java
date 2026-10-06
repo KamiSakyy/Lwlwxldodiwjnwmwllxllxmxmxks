@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class lx {
-    public String a;
-    public String b;
-    public k70.q c;
+    public final String a;
+    public final String b;
+    public final k70.q c;
 
     public lx(String str, String str2, k70.q qVar) {
         this.a = str;

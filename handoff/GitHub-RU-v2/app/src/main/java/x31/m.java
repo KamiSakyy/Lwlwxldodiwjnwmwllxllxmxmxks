@@ -5,7 +5,7 @@ import java.lang.ref.WeakReference;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m extends j8.i {
-    public WeakReference a;
+    public final WeakReference a;
     public int c = 0;
     public int b = 0;
 

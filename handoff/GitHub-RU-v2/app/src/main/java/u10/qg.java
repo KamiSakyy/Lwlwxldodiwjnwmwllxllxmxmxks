@@ -2,10 +2,10 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qg {
-    public int a;
-    public rg b;
-    public String c;
-    public String d;
+    public final int a;
+    public final rg b;
+    public final String c;
+    public final String d;
 
     public qg(int i, rg rgVar, String str, String str2) {
         this.a = i;

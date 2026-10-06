@@ -12,13 +12,13 @@ public final class q {
     public static final q f20416d = new q(g1.a.c(g1.Companion), "", null);
 
     /* renamed from: a, reason: collision with root package name */
-    public g1 f20417a;
+    public final g1 f20417a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f20418b;
+    public final String f20418b;
 
     /* renamed from: c, reason: collision with root package name */
-    public LicenseTemplate f20419c;
+    public final LicenseTemplate f20419c;
 
     public static final class a {
     }

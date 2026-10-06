@@ -7,8 +7,8 @@ import java.util.Locale;
 public final class m1 extends d5 {
     public static final boolean e = v2.e;
     public c2 a;
-    public byte[] b;
-    public int c;
+    public final byte[] b;
+    public final int c;
     public int d;
 
     public m1(int i, byte[] bArr) {

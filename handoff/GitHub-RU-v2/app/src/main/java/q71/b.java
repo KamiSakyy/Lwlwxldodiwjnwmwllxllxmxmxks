@@ -8,10 +8,10 @@ import k71.k;
 public final class b implements Iterator, l71.a {
 
     /* renamed from: r, reason: collision with root package name */
-    public int f30990r;
+    public final int f30990r;
 
     /* renamed from: s, reason: collision with root package name */
-    public int f30991s;
+    public final int f30991s;
 
     /* renamed from: t, reason: collision with root package name */
     public boolean f30992t;

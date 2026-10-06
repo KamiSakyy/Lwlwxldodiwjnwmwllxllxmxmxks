@@ -11,23 +11,23 @@ import yz0.b8;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f {
-    public String a;
-    public int b;
-    public String c;
-    public String d;
-    public String e;
-    public ZonedDateTime f;
-    public ZonedDateTime g;
-    public ZonedDateTime h;
-    public DiscussionCategoryData i;
-    public lj.a j;
-    public Integer k;
-    public b l;
-    public String m;
-    public b8 n;
-    public Object o;
-    public boolean p;
-    public b01.f q;
+    public final String a;
+    public final int b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final ZonedDateTime f;
+    public final ZonedDateTime g;
+    public final ZonedDateTime h;
+    public final DiscussionCategoryData i;
+    public final lj.a j;
+    public final Integer k;
+    public final b l;
+    public final String m;
+    public final b8 n;
+    public final Object o;
+    public final boolean p;
+    public final b01.f q;
 
     public f(String str, int i, String str2, String str3, String str4, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, ZonedDateTime zonedDateTime3, DiscussionCategoryData discussionCategoryData, lj.a aVar, Integer num, b bVar, String str5, b8 b8Var, List list, boolean z, b01.f fVar) {
         this.a = str;

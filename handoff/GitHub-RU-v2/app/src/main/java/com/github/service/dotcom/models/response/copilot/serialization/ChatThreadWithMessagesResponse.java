@@ -14,8 +14,8 @@ import x61.r;
 public final class ChatThreadWithMessagesResponse {
     public static final Companion Companion = new Companion();
     public static final h[] c = {null, w.s(i.r, new k(3))};
-    public ChatThreadResponse a;
-    public List b;
+    public final ChatThreadResponse a;
+    public final List b;
 
     public static final class Companion {
         public final KSerializer serializer() {

@@ -18,7 +18,7 @@ public interface f {
     }
 
     public static final class b implements f {
-        public ProjectsMetaInfo r;
+        public final ProjectsMetaInfo r;
 
         public b(a1 a1Var) {
             k.g(a1Var, "savedStateHandle");

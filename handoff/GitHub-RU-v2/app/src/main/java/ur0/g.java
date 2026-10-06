@@ -5,8 +5,8 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g {
-    public int a;
-    public List b;
+    public final int a;
+    public final List b;
 
     public g(int i, List list) {
         this.a = i;

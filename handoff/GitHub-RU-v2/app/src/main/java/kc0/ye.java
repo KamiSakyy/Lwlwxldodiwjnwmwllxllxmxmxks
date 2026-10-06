@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ye {
-    public String a;
-    public String b;
-    public ze c;
+    public final String a;
+    public final String b;
+    public final ze c;
 
     public ye(String str, String str2, ze zeVar) {
         k71.k.g(str, "__typename");

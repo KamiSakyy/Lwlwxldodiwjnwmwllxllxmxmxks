@@ -14,7 +14,7 @@ import t71.p;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class TrailingMetadataPreference extends Preference {
     public static final /* synthetic */ r71.e[] g0;
-    public i f0;
+    public final i f0;
 
     static {
         r71.e mVar = new m(TrailingMetadataPreference.class, "metadata", "getMetadata()Ljava/lang/String;", 0);

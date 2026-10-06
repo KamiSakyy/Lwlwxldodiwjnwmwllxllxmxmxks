@@ -12,7 +12,7 @@ public final class i1 implements a1 {
     private volatile /* synthetic */ Object _exceptionsHolder$volatile;
     private volatile /* synthetic */ int _isCompleting$volatile = 0;
     private volatile /* synthetic */ Object _rootCause$volatile;
-    public l1 r;
+    public final l1 r;
 
     public i1(l1 l1Var, Throwable th) {
         this.r = l1Var;

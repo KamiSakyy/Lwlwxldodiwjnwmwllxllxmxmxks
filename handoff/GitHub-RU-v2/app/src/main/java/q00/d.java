@@ -4,7 +4,7 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public v01.d a;
+    public final v01.d a;
 
     public d(v01.d dVar) {
         k.g(dVar, "filterType");

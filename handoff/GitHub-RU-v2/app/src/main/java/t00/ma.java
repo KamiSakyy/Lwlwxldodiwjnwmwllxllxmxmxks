@@ -15,10 +15,10 @@ import jo.ze0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ma implements z01.o1, mi0, yf0 {
     public final /* synthetic */ int r;
-    public com.github.service.wrapper.j s;
-    public com.github.service.wrapper.b t;
-    public z01.p0 u;
-    public v71.v v;
+    public final com.github.service.wrapper.j s;
+    public final com.github.service.wrapper.b t;
+    public final z01.p0 u;
+    public final v71.v v;
 
     public ma(int i, com.github.service.wrapper.b bVar, com.github.service.wrapper.j jVar, v71.v vVar, z01.p0 p0Var) {
         this.r = i;

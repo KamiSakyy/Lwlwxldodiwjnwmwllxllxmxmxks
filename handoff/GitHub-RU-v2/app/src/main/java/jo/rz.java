@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rz {
-    public String a;
-    public boolean b;
-    public oz c;
-    public String d;
+    public final String a;
+    public final boolean b;
+    public final oz c;
+    public final String d;
 
     public rz(String str, boolean z, oz ozVar, String str2) {
         this.a = str;

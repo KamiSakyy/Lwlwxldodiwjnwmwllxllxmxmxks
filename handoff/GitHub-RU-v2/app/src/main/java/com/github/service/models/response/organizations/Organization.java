@@ -15,12 +15,12 @@ import q01.i;
 @e
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class Organization implements i, Parcelable {
-    public String r;
-    public String s;
-    public String t;
-    public String u;
-    public Avatar v;
-    public boolean w;
+    public final String r;
+    public final String s;
+    public final String t;
+    public final String u;
+    public final Avatar v;
+    public final boolean w;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<Organization> CREATOR = new m(25);
 

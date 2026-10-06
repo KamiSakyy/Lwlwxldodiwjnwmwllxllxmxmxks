@@ -4,22 +4,22 @@ package f1;
 public final class i1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public float f22969a;
+    public final float f22969a;
 
     /* renamed from: b, reason: collision with root package name */
-    public float f22970b;
+    public final float f22970b;
 
     /* renamed from: c, reason: collision with root package name */
-    public float f22971c;
+    public final float f22971c;
 
     /* renamed from: d, reason: collision with root package name */
-    public float f22972d;
+    public final float f22972d;
 
     /* renamed from: e, reason: collision with root package name */
-    public float f22973e;
+    public final float f22973e;
 
     /* renamed from: f, reason: collision with root package name */
-    public float f22974f;
+    public final float f22974f;
 
     public i1(float f6, float f10, float f11, float f12, float f13, float f14) {
         this.f22969a = f6;

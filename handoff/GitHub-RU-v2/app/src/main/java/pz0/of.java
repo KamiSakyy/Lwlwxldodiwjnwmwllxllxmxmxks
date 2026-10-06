@@ -9,7 +9,7 @@ public final class of {
     public static final of t;
     public static final /* synthetic */ of[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         of ofVar = new of("BLUE", 0, "BLUE");

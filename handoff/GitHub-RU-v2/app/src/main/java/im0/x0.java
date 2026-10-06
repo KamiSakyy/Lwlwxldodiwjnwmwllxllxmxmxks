@@ -2,7 +2,7 @@ package im0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x0 {
-    public boolean a;
+    public final boolean a;
 
     public x0(boolean z) {
         this.a = z;

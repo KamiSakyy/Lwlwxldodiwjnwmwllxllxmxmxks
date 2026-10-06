@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class wk implements aaShadow.m0 {
-    public xk a;
+    public final xk a;
 
     public wk(xk xkVar) {
         this.a = xkVar;

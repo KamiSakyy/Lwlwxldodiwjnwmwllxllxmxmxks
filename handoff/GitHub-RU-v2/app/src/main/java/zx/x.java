@@ -4,10 +4,10 @@ import dw.t4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x {
-    public String a;
-    public yw.b b;
-    public t4 c;
-    public dw.c d;
+    public final String a;
+    public final yw.b b;
+    public final t4 c;
+    public final dw.c d;
 
     public x(String str, yw.b bVar, t4 t4Var, dw.c cVar) {
         this.a = str;

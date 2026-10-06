@@ -7,12 +7,12 @@ import m10.p00;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x implements aa.w0 {
     public static final s Companion = new s();
-    public String r;
-    public String s;
-    public int t;
-    public aa.u0 u;
-    public aa1.b v;
-    public aa.u0 w;
+    public final String r;
+    public final String s;
+    public final int t;
+    public final aa.u0 u;
+    public final aa1.b v;
+    public final aa.u0 w;
 
     public x(String str, String str2, int i, aa.u0 u0Var, aa1.b bVar, aa.u0 u0Var2) {
         k71.k.g(str, "owner");

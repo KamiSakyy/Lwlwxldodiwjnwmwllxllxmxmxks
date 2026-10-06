@@ -6,10 +6,10 @@ import b21.v;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public f f30444a;
+    public final f f30444a;
 
     /* renamed from: b, reason: collision with root package name */
-    public v f30445b;
+    public final v f30445b;
 
     public c(f fVar, v vVar) {
         this.f30444a = fVar;

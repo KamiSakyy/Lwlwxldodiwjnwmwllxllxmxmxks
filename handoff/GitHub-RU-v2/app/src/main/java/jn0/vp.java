@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class vp implements aaShadow.v0 {
-    public aq a;
-    public String b;
-    public String c;
+    public final aq a;
+    public final String b;
+    public final String c;
 
     public vp(aq aqVar, String str, String str2) {
         this.a = aqVar;

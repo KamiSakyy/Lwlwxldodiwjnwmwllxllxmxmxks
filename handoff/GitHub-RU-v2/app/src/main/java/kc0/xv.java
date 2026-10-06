@@ -2,11 +2,11 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xv {
-    public int a;
-    public wv b;
-    public rv c;
-    public String d;
-    public String e;
+    public final int a;
+    public final wv b;
+    public final rv c;
+    public final String d;
+    public final String e;
 
     public xv(int i, wv wvVar, rv rvVar, String str, String str2) {
         this.a = i;

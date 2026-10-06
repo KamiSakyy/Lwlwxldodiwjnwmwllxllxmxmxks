@@ -9,7 +9,7 @@ public final class n30 {
     public static final n30 t;
     public static final /* synthetic */ n30[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         n30 n30Var = new n30("ERROR", 0, "ERROR");

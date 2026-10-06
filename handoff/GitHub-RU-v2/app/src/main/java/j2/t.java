@@ -4,7 +4,7 @@ package j2;
 public final class t extends b0 {
 
     /* renamed from: c, reason: collision with root package name */
-    public float f26948c;
+    public final float f26948c;
 
     public t(float f6) {
         super(3);

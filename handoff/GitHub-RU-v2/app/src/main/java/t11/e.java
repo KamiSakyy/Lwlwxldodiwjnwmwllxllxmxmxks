@@ -5,7 +5,7 @@ import android.content.Context;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements o11.b {
     public final /* synthetic */ int a;
-    public v61.a b;
+    public final v61.a b;
 
     public /* synthetic */ e(v61.a aVar, int i) {
         this.a = i;

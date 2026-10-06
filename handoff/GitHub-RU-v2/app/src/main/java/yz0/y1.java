@@ -9,28 +9,28 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y1 implements xz0.e {
-    public String a;
-    public String b;
-    public String c;
-    public boolean d;
-    public ZonedDateTime e;
-    public d3 f;
-    public boolean g;
-    public SubscriptionState h;
-    public SubscriptionState i;
-    public Object j;
-    public String k;
-    public int l;
-    public com.github.rudroid.common.b0 m;
-    public int n;
-    public IssueState o;
-    public int p;
-    public CloseReason q;
-    public IssueType r;
-    public h01.p s;
-    public String t;
-    public boolean u;
-    public z01.p v;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final boolean d;
+    public final ZonedDateTime e;
+    public final d3 f;
+    public final boolean g;
+    public final SubscriptionState h;
+    public final SubscriptionState i;
+    public final Object j;
+    public final String k;
+    public final int l;
+    public final com.github.rudroid.common.b0 m;
+    public final int n;
+    public final IssueState o;
+    public final int p;
+    public final CloseReason q;
+    public final IssueType r;
+    public final h01.p s;
+    public final String t;
+    public final boolean u;
+    public final z01.p v;
 
     public y1(String str, String str2, String str3, boolean z, ZonedDateTime zonedDateTime, d3 d3Var, boolean z2, SubscriptionState subscriptionState, SubscriptionState subscriptionState2, List list, String str4, int i, com.github.rudroid.common.b0 b0Var, int i2, IssueState issueState, int i3, CloseReason closeReason, IssueType issueType, h01.p pVar, String str5, boolean z3, z01.p pVar2) {
         k71.k.g(subscriptionState, "unsubscribeActionState");

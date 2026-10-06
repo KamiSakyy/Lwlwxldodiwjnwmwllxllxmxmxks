@@ -7,7 +7,7 @@ import v71.o1;
 public abstract class r extends c implements o1 {
     public static final /* synthetic */ AtomicIntegerFieldUpdater u = AtomicIntegerFieldUpdater.newUpdater(r.class, "cleanedAndPointers$volatile");
     private volatile /* synthetic */ int cleanedAndPointers$volatile;
-    public long t;
+    public final long t;
 
     public r(long j, r rVar, int i) {
         super(rVar);

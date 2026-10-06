@@ -9,21 +9,21 @@ public abstract class l0 {
     public static final b Companion = new b();
 
     /* renamed from: a, reason: collision with root package name */
-    public long f9202a;
+    public final long f9202a;
 
     public static final class a extends l0 {
 
         /* renamed from: b, reason: collision with root package name */
-        public j4 f9203b;
+        public final j4 f9203b;
 
         /* renamed from: c, reason: collision with root package name */
-        public boolean f9204c;
+        public final boolean f9204c;
 
         /* renamed from: d, reason: collision with root package name */
-        public int f9205d;
+        public final int f9205d;
 
         /* renamed from: e, reason: collision with root package name */
-        public int f9206e;
+        public final int f9206e;
 
         /* renamed from: com.github.rudroid.commits.l0$a$a, reason: collision with other inner class name */
         public static final /* synthetic */ class C0019a {

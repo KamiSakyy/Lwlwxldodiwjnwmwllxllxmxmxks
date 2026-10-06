@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i60 {
-    public o60 a;
-    public String b;
-    public String c;
+    public final o60 a;
+    public final String b;
+    public final String c;
 
     public i60(o60 o60Var, String str, String str2) {
         this.a = o60Var;

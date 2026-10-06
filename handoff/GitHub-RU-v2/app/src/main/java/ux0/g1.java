@@ -7,10 +7,10 @@ import pz0.sk;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g1 implements aa.n0 {
     public static final c1 Companion = new c1();
-    public String r;
-    public String s;
-    public String t;
-    public lo u;
+    public final String r;
+    public final String s;
+    public final String t;
+    public final lo u;
 
     public g1(String str, String str2, String str3, lo loVar) {
         k71.k.g(str, "projectId");

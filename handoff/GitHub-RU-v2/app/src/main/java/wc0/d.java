@@ -2,7 +2,7 @@ package wc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d {
-    public int a;
+    public final int a;
 
     public d(int i) {
         this.a = i;

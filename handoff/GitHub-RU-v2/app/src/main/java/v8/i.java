@@ -15,7 +15,7 @@ public final class i {
     public static final i f32789b;
 
     /* renamed from: a, reason: collision with root package name */
-    public HashMap f32790a;
+    public final HashMap f32790a;
 
     static {
         i iVar = new i(new LinkedHashMap());

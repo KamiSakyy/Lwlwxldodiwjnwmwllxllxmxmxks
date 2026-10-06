@@ -4,10 +4,10 @@ package aa;
 public final class k {
 
     /* renamed from: a, reason: collision with root package name */
-    public a81.t f658a;
+    public final a81.t f658a;
 
     /* renamed from: b, reason: collision with root package name */
-    public u0 f659b;
+    public final u0 f659b;
 
     public k(a81.t tVar, u0 u0Var) {
         this.f658a = tVar;

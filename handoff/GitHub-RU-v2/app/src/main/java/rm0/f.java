@@ -11,8 +11,8 @@ import u10.y90;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f implements z01.c, yb0, y90 {
     public final /* synthetic */ int r;
-    public com.github.service.wrapper.bShadow s;
-    public v71.v t;
+    public final com.github.service.wrapper.bShadow s;
+    public final v71.v t;
 
     public f(com.github.service.wrapper.bShadow bVar, v71.v vVar, int i) {
         this.r = i;

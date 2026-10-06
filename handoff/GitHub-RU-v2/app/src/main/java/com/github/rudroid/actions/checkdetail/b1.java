@@ -4,10 +4,10 @@ package com.github.rudroid.actions.checkdetail;
 public final class b1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f4652a;
+    public final String f4652a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f4653b;
+    public final String f4653b;
 
     public b1(String str, String str2) {
         k71.k.g(str, "checkRunId");

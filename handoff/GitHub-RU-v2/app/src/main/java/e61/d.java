@@ -6,8 +6,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d {
-    public a61.b a;
-    public a71.h b;
+    public final a61.b a;
+    public final a71.h b;
 
     public d(a61.b bVar, a71.h hVar) {
         k.g(bVar, "appInfo");

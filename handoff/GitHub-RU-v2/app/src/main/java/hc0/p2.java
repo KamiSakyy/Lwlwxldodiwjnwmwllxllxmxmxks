@@ -9,7 +9,7 @@ public final class p2 {
     public static final p2 t;
     public static final /* synthetic */ p2[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         p2 p2Var = new p2("COMPLETED", 0, "COMPLETED");

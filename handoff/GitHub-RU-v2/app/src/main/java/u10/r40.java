@@ -2,10 +2,10 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r40 {
-    public m40 a;
-    public s40 b;
-    public String c;
-    public String d;
+    public final m40 a;
+    public final s40 b;
+    public final String c;
+    public final String d;
 
     public r40(m40 m40Var, s40 s40Var, String str, String str2) {
         this.a = m40Var;

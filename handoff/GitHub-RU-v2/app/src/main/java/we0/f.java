@@ -2,8 +2,8 @@ package we0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
-    public String a;
-    public qf0.a b;
+    public final String a;
+    public final qf0.a b;
 
     public f(String str, qf0.a aVar) {
         this.a = str;

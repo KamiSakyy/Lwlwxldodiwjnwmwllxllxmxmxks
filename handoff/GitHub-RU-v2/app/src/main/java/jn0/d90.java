@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d90 {
-    public String a;
-    public Boolean b;
+    public final String a;
+    public final Boolean b;
 
     public d90(String str, Boolean bool) {
         this.a = str;

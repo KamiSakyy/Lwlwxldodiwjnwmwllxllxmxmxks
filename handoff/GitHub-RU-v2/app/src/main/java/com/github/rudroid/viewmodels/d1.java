@@ -52,5 +52,5 @@ final class d1 extends c71.j implements j71.e {
         }
         return a0Var;
     }
-    public v6 k(Object p1) { return null; }
+    public Object k(Object p1) { return null; }
 }

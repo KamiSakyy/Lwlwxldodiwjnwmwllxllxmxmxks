@@ -14,5 +14,4 @@ final class r implements j71.c {
         d3.z.g(c0Var, this.r);
         return w61.a0.a;
     }
-    public Object f(Object) { return null; }
 }

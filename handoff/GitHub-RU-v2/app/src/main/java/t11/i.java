@@ -14,11 +14,11 @@ import java.util.Objects;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i implements d, u11.b, c {
     public static final j11.c w = new j11.c("proto");
-    public k r;
-    public v11.a s;
-    public v11.a t;
-    public a u;
-    public v61.a v;
+    public final k r;
+    public final v11.a s;
+    public final v11.a t;
+    public final a u;
+    public final v61.a v;
 
     public i(v11.a aVar, v11.a aVar2, a aVar3, k kVar, v61.a aVar4) {
         this.r = kVar;

@@ -7,7 +7,7 @@ import java.lang.ref.WeakReference;
 public final class l1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public WeakReference f439a;
+    public final WeakReference f439a;
 
     public l1(View view) {
         this.f439a = new WeakReference(view);

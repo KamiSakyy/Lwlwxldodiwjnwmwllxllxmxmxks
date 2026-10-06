@@ -16,7 +16,7 @@ public final class i90 {
     public static final i90 x;
     public static final i90 y;
     public static final i90 z;
-    public String r;
+    public final String r;
 
     static {
         i90 i90Var = new i90("DISCUSSIONS", 0, "DISCUSSIONS");

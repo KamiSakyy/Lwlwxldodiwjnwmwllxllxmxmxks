@@ -6,7 +6,7 @@ import k71.y;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class i extends h implements k71.h {
-    public int s;
+    public final int s;
 
     public i(int i, a71.c cVar) {
         super(cVar);

@@ -32,8 +32,8 @@ import t.q;
 public final class c {
     public static final Pattern d = Pattern.compile("[0-9]+s");
     public static final Charset e = Charset.forName("UTF-8");
-    public Context a;
-    public p51.b b;
+    public final Context a;
+    public final p51.b b;
     public final d c = new d();
 
     public c(Context context, p51.b bVar) {

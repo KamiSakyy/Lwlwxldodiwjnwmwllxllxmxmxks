@@ -8,7 +8,7 @@ public final class e extends c {
     public static final d Companion = new d();
 
     /* renamed from: b, reason: collision with root package name */
-    public Context f30103b;
+    public final Context f30103b;
 
     public e(Context context) {
         this.f30103b = context;

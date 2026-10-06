@@ -8,8 +8,8 @@ import u10.y90;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class waShadow implements z01.g0, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
-    public v71.v s;
-    public y01.a t;
+    public final v71.v s;
+    public final y01.a t;
 
     public wa(int i, String str, q81.u uVar, v71.v vVar) {
         this.r = i;

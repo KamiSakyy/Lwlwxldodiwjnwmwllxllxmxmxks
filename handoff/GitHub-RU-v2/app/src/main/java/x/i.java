@@ -127,12 +127,11 @@ public abstract /* synthetic */ class i {
 
     public static Object e;
 
-    public static int e(Object... a) {
+    public static Object e(Object... a) {
         return null;
     }
-    public i a() { return null; }
+    public Object a() { return null; }
     public Object b(Object p1, Object p2) { return null; }
     public Object c() { return null; }
     public Object d() { return null; }
-    public Object b(int, Object) { return null; }
 }

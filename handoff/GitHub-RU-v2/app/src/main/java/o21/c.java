@@ -4,7 +4,7 @@ import com.google.android.gms.internal.measurement.z3;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c extends e {
-    public transient e t;
+    public final transient e t;
 
     public c(e eVar) {
         this.t = eVar;

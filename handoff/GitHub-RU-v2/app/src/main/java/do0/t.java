@@ -105,16 +105,16 @@ import y71.y;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t implements kn.b, yf0, mi0, yb0, y90 {
-    public s01.l A;
+    public final s01.l A;
     public final /* synthetic */ int r;
-    public com.github.service.wrapper.j s;
-    public com.github.service.wrapper.b t;
-    public v u;
-    public s01.p v;
-    public s01.l w;
-    public s01.l x;
-    public s01.p y;
-    public s01.p z;
+    public final com.github.service.wrapper.j s;
+    public final com.github.service.wrapper.b t;
+    public final v u;
+    public final s01.p v;
+    public final s01.l w;
+    public final s01.l x;
+    public final s01.p y;
+    public final s01.p z;
 
     public t(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v vVar, int i) {
         this.r = i;

@@ -2,11 +2,11 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class un {
-    public int a;
-    public int b;
-    public sn c;
-    public String d;
-    public String e;
+    public final int a;
+    public final int b;
+    public final sn c;
+    public final String d;
+    public final String e;
 
     public un(int i, int i2, sn snVar, String str, String str2) {
         this.a = i;

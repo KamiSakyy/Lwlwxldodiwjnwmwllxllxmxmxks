@@ -4,7 +4,7 @@ import a0.s0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
-    public int a;
+    public final int a;
 
     public g(int i) {
         this.a = i;

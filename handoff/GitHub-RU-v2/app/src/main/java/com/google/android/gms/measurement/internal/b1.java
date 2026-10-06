@@ -12,7 +12,7 @@ public final class b1 {
     public Object b;
     public Object c;
     public Object d;
-    public Object e;
+    public final Object e;
 
     public b1(s21.a aVar, v2.t tVar) {
         k71.k.g(aVar, "runnableScheduler");
@@ -125,5 +125,4 @@ public final class b1 {
 
     public b1(Object... a) {
     }
-    public Object f(Object, Object, Object) { return null; }
 }

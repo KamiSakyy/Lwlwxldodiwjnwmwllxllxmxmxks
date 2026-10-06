@@ -13,8 +13,8 @@ import x61.r;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p implements n0 {
     public static final i Companion = new i();
-    public String r;
-    public aa1.b s;
+    public final String r;
+    public final aa1.b s;
 
     public p(String str, aa1.b bVar) {
         this.r = str;

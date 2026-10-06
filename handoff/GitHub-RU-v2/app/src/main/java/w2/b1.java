@@ -6,7 +6,7 @@ import android.content.ClipData;
 public final class b1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public ClipData f32980a;
+    public final ClipData f32980a;
 
     public b1(ClipData clipData) {
         this.f32980a = clipData;

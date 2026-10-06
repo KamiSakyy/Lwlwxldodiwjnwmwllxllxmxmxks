@@ -5,10 +5,10 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class gr implements aaShadow.n0 {
     public static final dr Companion = new dr();
-    public String r;
-    public m10.c8 s;
-    public aa.u0 t;
-    public aa1.b u;
+    public final String r;
+    public final m10.c8 s;
+    public final aa.u0 t;
+    public final aa1.b u;
 
     public gr(String str, m10.c8 c8Var, aa.u0 u0Var, aa1.b bVar) {
         k71.k.g(str, "commentId");

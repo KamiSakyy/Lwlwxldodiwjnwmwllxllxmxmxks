@@ -2,9 +2,9 @@ package dw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k1 {
-    public String a;
-    public String b;
-    public i1 c;
+    public final String a;
+    public final String b;
+    public final i1 c;
 
     public k1(String str, String str2, i1 i1Var) {
         k71.k.g(str, "__typename");

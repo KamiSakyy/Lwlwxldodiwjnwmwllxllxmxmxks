@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x00 {
-    public int a;
-    public int b;
-    public int c;
-    public a10 d;
+    public final int a;
+    public final int b;
+    public final int c;
+    public final a10 d;
 
     public x00(int i, int i2, int i3, a10 a10Var) {
         this.a = i;

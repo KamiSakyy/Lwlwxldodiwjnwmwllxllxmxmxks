@@ -11,7 +11,7 @@ public final class o implements Iterable, l71.a {
     public static final o f31323s = new o(x61.s.r);
 
     /* renamed from: r, reason: collision with root package name */
-    public Map f31324r;
+    public final Map f31324r;
 
     public o(Map map) {
         this.f31324r = map;

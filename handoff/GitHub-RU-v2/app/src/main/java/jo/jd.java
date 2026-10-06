@@ -4,9 +4,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class jd {
-    public int a;
-    public hd b;
-    public List c;
+    public final int a;
+    public final hd b;
+    public final List c;
 
     public jd(int i, hd hdVar, List list) {
         this.a = i;

@@ -4,7 +4,7 @@ package r3;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f31112a;
+    public final int f31112a;
 
     public static String a(int i) {
         return i == 1 ? "Hyphens.None" : i == 2 ? "Hyphens.Auto" : i == 0 ? "Hyphens.Unspecified" : "Invalid";

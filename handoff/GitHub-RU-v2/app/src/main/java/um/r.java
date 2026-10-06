@@ -18,10 +18,10 @@ import z01.j1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r {
     public static final b Companion = new b();
-    public s a;
-    public oa.g b;
-    public vm.b c;
-    public com.github.rudroid.common.k d;
+    public final s a;
+    public final oa.g b;
+    public final vm.b c;
+    public final com.github.rudroid.common.k d;
 
     public r(s sVar, oa.g gVar, vm.b bVar, com.github.rudroid.common.k kVar) {
         k71.k.g(sVar, "shortcutsStore");

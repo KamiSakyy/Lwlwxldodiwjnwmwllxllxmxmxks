@@ -5,17 +5,17 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a1 implements aaShadow.n0 {
     public static final v0 Companion = new v0();
-    public aa1.b A;
-    public aa1.b B;
-    public String r;
-    public String s;
-    public int t;
-    public String u;
-    public aa1.b v;
-    public aa1.b w;
-    public aa1.b x;
-    public m10.xz y;
-    public aa1.b z;
+    public final aa1.b A;
+    public final aa1.b B;
+    public final String r;
+    public final String s;
+    public final int t;
+    public final String u;
+    public final aa1.b v;
+    public final aa1.b w;
+    public final aa1.b x;
+    public final m10.xz y;
+    public final aa1.b z;
 
     public a1(String str, String str2, int i, String str3, aa1.b bVar, aa1.b bVar2, aa1.b bVar3, m10.xz xzVar, aa1.b bVar4, aa1.b bVar5, aa1.b bVar6) {
         k71.k.g(bVar4, "linePositioning");

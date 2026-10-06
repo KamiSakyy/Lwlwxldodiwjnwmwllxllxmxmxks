@@ -10,19 +10,19 @@ public final class v extends androidx.lifecycle.k1 implements com.github.rudroid
     public final /* synthetic */ d.a f9000s;
 
     /* renamed from: t, reason: collision with root package name */
-    public el.b f9001t;
+    public final el.b f9001t;
 
     /* renamed from: u, reason: collision with root package name */
-    public el.c f9002u;
+    public final el.c f9002u;
 
     /* renamed from: v, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f9003v;
+    public final com.github.rudroid.activities.util.c f9003v;
 
     /* renamed from: w, reason: collision with root package name */
-    public y71.m1 f9004w;
+    public final y71.m1 f9004w;
 
     /* renamed from: x, reason: collision with root package name */
-    public y71.h1 f9005x;
+    public final y71.h1 f9005x;
 
     public v(el.b bVar, el.c cVar, com.github.rudroid.activities.util.c cVar2) {
         k71.k.g(bVar, "minimizeCommentUseCase");

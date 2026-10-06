@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f40 {
-    public String a;
-    public String b;
-    public gv.z2 c;
+    public final String a;
+    public final String b;
+    public final gv.z2 c;
 
     public f40(String str, String str2, gv.z2 z2Var) {
         this.a = str;

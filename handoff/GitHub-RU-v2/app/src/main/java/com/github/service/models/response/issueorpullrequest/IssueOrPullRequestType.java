@@ -14,7 +14,7 @@ public final class IssueOrPullRequestType {
     public static final IssueOrPullRequestType ISSUE = new IssueOrPullRequestType("ISSUE", 0, "Issue");
     public static final IssueOrPullRequestType PULL_REQUEST = new IssueOrPullRequestType("PULL_REQUEST", 1, "PullRequest");
     public static final IssueOrPullRequestType UNKNOWN__ = new IssueOrPullRequestType("UNKNOWN__", 2, "UNKNOWN__");
-    private String rawValue;
+    private final String rawValue;
 
     private static final /* synthetic */ IssueOrPullRequestType[] $values() {
         return new IssueOrPullRequestType[]{ISSUE, PULL_REQUEST, UNKNOWN__};

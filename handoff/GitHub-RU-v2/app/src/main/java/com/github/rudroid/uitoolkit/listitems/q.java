@@ -21,6 +21,6 @@ final class q implements j71.c {
         y3.e.d(cVar.d, dVar.e, 0.0f, 6);
         return w61.a0.a;
     }
-    public static Object a(Object p1, Object p2) { return null; }
-    public static Object b(Object p1, Object p2, Object p3) { return null; }
+    public Object a(Object p1, Object p2) { return null; }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

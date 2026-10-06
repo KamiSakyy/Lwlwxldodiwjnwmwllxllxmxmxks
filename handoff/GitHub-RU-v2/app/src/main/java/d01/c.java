@@ -12,19 +12,19 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c implements b {
-    public String a;
-    public com.github.service.models.response.a b;
-    public String c;
-    public int d;
-    public String e;
-    public String f;
-    public boolean g;
-    public int h;
-    public String i;
-    public int j;
-    public String k;
-    public Object l;
-    public RepositoryRecommendationReason m;
+    public final String a;
+    public final com.github.service.models.response.a b;
+    public final String c;
+    public final int d;
+    public final String e;
+    public final String f;
+    public final boolean g;
+    public final int h;
+    public final String i;
+    public final int j;
+    public final String k;
+    public final Object l;
+    public final RepositoryRecommendationReason m;
 
     public c(String str, com.github.service.models.response.a aVar, String str2, int i, String str3, String str4, boolean z, int i2, String str5, int i3, String str6, List list, RepositoryRecommendationReason repositoryRecommendationReason) {
         k.g(repositoryRecommendationReason, "reason");

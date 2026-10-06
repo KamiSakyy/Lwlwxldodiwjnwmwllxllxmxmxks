@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class nd {
-    public pd a;
+    public final pd a;
 
     public nd(pd pdVar) {
         this.a = pdVar;

@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xc {
-    public uc a;
-    public yc b;
+    public final uc a;
+    public final yc b;
 
     public xc(uc ucVar, yc ycVar) {
         this.a = ucVar;

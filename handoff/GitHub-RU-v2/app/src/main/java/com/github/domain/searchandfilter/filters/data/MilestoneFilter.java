@@ -28,7 +28,7 @@ import yz0.v2;
 public final class MilestoneFilter extends d {
     public static final w61.h[] w;
     public static final c30.d x;
-    public List v;
+    public final List v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<MilestoneFilter> CREATOR = new a21.g(29);
 

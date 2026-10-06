@@ -8,7 +8,7 @@ import y41.t1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a extends oa.c {
-    public Context b;
+    public final Context b;
 
     public a(Context context) {
         this.b = context;
@@ -26,5 +26,5 @@ public final class a extends oa.c {
         return (GitHubDatabase) w.b();
     }
 
-    public static Object u(Object p1) { return null; }
+    public Object u(Object p1) { return null; }
 }

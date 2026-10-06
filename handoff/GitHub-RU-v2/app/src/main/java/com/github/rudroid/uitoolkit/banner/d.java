@@ -18,5 +18,4 @@ final class d implements j71.c {
         y3.e.c(cVar.g, cVar.c.f, 0.0f, 0.0f, 6);
         return w61.a0.a;
     }
-    public Object s(Object, int) { return null; }
 }

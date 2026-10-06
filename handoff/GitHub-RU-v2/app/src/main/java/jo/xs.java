@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class xs {
-    public vs a;
-    public String b;
-    public String c;
+    public final vs a;
+    public final String b;
+    public final String c;
 
     public xs(vs vsVar, String str, String str2) {
         this.a = vsVar;

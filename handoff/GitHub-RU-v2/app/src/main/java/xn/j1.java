@@ -5,10 +5,10 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j1 extends sy.r {
-    public ArrayList a;
-    public Integer b;
-    public Integer c;
-    public Object d;
+    public final ArrayList a;
+    public final Integer b;
+    public final Integer c;
+    public final Object d;
 
     public j1(ArrayList arrayList, Integer num, Integer num2, List list) {
         this.a = arrayList;

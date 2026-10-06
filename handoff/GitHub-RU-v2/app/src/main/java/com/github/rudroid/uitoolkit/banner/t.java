@@ -24,8 +24,8 @@ final class t implements j71.c {
         m0.B((s3.f) null, "spread", cVar);
         return w61.a0.a;
     }
-    public static Object E(Object p1, Object p2) { return null; }
-    public static Object I(Object p1, Object p2, Object p3) { return null; }
-    public static Object d(Object p1, Object p2) { return null; }
-    public static Object w(Object p1, Object p2, Object p3) { return null; }
+    public Object E(Object p1, Object p2) { return null; }
+    public Object I(Object p1, Object p2, Object p3) { return null; }
+    public Object d(Object p1, Object p2) { return null; }
+    public Object w(Object p1, Object p2, Object p3) { return null; }
 }

@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d1 {
-    public c1 a;
-    public List b;
+    public final c1 a;
+    public final List b;
 
     public d1(c1 c1Var, List list) {
         this.a = c1Var;

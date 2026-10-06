@@ -2,11 +2,11 @@ package b20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
-    public String a;
-    public String b;
-    public h c;
-    public i d;
-    public g20.m1 e;
+    public final String a;
+    public final String b;
+    public final h c;
+    public final i d;
+    public final g20.m1 e;
 
     public g(String str, String str2, h hVar, i iVar, g20.m1 m1Var) {
         k71.k.g(str, "__typename");

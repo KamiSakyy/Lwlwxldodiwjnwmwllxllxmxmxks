@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ga {
-    public pz0.zs a;
+    public final pz0.zs a;
 
     public ga(pz0.zs zsVar) {
         this.a = zsVar;

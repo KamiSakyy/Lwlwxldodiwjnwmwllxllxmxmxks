@@ -4,9 +4,9 @@ import ri0.u1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o {
-    public String a;
-    public mg0.g0 b;
-    public u1 c;
+    public final String a;
+    public final mg0.g0 b;
+    public final u1 c;
 
     public o(String str, mg0.g0 g0Var, u1 u1Var) {
         k71.k.g(str, "__typename");

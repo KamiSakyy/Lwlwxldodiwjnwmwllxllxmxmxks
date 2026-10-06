@@ -4,19 +4,19 @@ package x6;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public l0 f33839a;
+    public final l0 f33839a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f33840b;
+    public final boolean f33840b;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean f33841c;
+    public final boolean f33841c;
 
     /* renamed from: d, reason: collision with root package name */
-    public boolean f33842d;
+    public final boolean f33842d;
 
     /* renamed from: e, reason: collision with root package name */
-    public Object f33843e;
+    public final Object f33843e;
 
     public j(l0 l0Var, boolean z10, Object obj, boolean z11, boolean z12) {
         if (!l0Var.f33869a && z10) {

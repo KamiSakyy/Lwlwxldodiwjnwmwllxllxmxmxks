@@ -9,7 +9,7 @@ import z01.g1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public oa.g a;
+    public final oa.g a;
 
     public c(oa.g gVar) {
         k.g(gVar, "service");

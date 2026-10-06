@@ -12,7 +12,7 @@ public final class we {
     public static final we w;
     public static final /* synthetic */ we[] x;
     public static final /* synthetic */ d71.b y;
-    public String r;
+    public final String r;
 
     static {
         we weVar = new we("DISMISSED", 0, "DISMISSED");

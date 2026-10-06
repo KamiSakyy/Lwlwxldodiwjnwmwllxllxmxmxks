@@ -6,7 +6,7 @@ import android.view.autofill.AutofillValue;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public AutofillValue f33706a;
+    public final AutofillValue f33706a;
 
     public f(AutofillValue autofillValue) {
         this.f33706a = autofillValue;

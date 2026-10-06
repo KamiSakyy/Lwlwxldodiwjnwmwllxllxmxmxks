@@ -10,5 +10,4 @@ final class m0 extends c71.j implements j71.f {
     public final Object v(Object obj) {
         throw null;
     }
-    public Object a() { return null; }
 }

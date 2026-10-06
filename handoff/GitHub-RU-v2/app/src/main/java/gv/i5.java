@@ -2,9 +2,9 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i5 {
-    public String a;
-    public String b;
-    public bu.g c;
+    public final String a;
+    public final String b;
+    public final bu.g c;
 
     public i5(String str, String str2, bu.g gVar) {
         this.a = str;

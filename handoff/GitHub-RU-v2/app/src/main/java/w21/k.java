@@ -5,9 +5,9 @@ import java.util.concurrent.Executor;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k implements n, e, d, b {
     public final /* synthetic */ int r;
-    public Executor s;
-    public a t;
-    public o u;
+    public final Executor s;
+    public final a t;
+    public final o u;
 
     public /* synthetic */ k(Executor executor, a aVar, o oVar, int i) {
         this.r = i;

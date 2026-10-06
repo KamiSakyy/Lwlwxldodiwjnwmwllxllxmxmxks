@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ad {
-    public String a;
-    public String b;
-    public w80.v3 c;
+    public final String a;
+    public final String b;
+    public final w80.v3 c;
 
     public ad(String str, String str2, w80.v3 v3Var) {
         this.a = str;

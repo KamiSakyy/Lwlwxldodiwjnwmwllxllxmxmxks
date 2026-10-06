@@ -2,7 +2,7 @@ package rz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f1 {
-    public e1 a;
+    public final e1 a;
 
     public f1(e1 e1Var) {
         this.a = e1Var;

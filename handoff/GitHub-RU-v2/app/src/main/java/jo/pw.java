@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class pw {
-    public ow a;
+    public final ow a;
 
     public pw(ow owVar) {
         this.a = owVar;

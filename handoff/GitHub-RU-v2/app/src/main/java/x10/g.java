@@ -2,9 +2,9 @@ package x10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
-    public String a;
-    public a b;
-    public String c;
+    public final String a;
+    public final a b;
+    public final String c;
 
     public g(String str, a aVar, String str2) {
         this.a = str;

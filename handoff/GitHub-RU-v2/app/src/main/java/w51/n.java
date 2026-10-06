@@ -13,7 +13,7 @@ import java.util.concurrent.Future;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n implements Closeable {
-    public URL r;
+    public final URL r;
     public volatile Future s;
     public w21.o t;
 

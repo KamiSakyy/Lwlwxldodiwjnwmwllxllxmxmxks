@@ -11,19 +11,19 @@ import okhttp3.internal.http2.StreamResetException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class w implements j0 {
-    public v A;
-    public v B;
+    public final v A;
+    public final v B;
     public a C;
     public IOException D;
-    public int r;
-    public o s;
-    public h0 t;
+    public final int r;
+    public final o s;
+    public final h0 t;
     public long u;
     public long v;
-    public ArrayDeque w;
+    public final ArrayDeque w;
     public boolean x;
-    public u y;
-    public t z;
+    public final u y;
+    public final t z;
 
     public w(int i, o oVar, boolean z, boolean z2, q81.n nVar) {
         k71.k.g(oVar, "connection");

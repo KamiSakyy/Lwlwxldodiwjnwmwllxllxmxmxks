@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class re0 {
-    public ne0 a;
-    public String b;
+    public final ne0 a;
+    public final String b;
 
     public re0(ne0 ne0Var, String str) {
         this.a = ne0Var;

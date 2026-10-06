@@ -2,8 +2,8 @@ package yz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q2 implements q3 {
-    public String a;
-    public long b;
+    public final String a;
+    public final long b;
 
     public q2(String str) {
         k71.k.g(str, "commentId");

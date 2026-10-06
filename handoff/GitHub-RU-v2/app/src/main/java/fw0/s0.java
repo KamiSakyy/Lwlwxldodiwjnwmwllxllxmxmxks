@@ -2,9 +2,9 @@ package fw0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s0 {
-    public String a;
-    public boolean b;
-    public c1 c;
+    public final String a;
+    public final boolean b;
+    public final c1 c;
 
     public s0(String str, boolean z, c1 c1Var) {
         this.a = str;

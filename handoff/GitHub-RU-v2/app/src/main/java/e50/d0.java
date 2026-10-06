@@ -2,9 +2,9 @@ package e50;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d0 {
-    public String a;
-    public g0 b;
-    public e30.a c;
+    public final String a;
+    public final g0 b;
+    public final e30.a c;
 
     public d0(String str, g0 g0Var, e30.a aVar) {
         k71.k.g(str, "__typename");

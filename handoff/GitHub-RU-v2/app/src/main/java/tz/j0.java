@@ -2,19 +2,19 @@ package tz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j0 {
-    public String a;
-    public e1 b;
-    public i1 c;
-    public n1 d;
-    public f1 e;
-    public m1 f;
-    public g1 g;
-    public h1 h;
-    public o1 i;
-    public k1 j;
-    public j1 k;
-    public l1 l;
-    public vx.a m;
+    public final String a;
+    public final e1 b;
+    public final i1 c;
+    public final n1 d;
+    public final f1 e;
+    public final m1 f;
+    public final g1 g;
+    public final h1 h;
+    public final o1 i;
+    public final k1 j;
+    public final j1 k;
+    public final l1 l;
+    public final vx.a m;
 
     public j0(String str, e1 e1Var, i1 i1Var, n1 n1Var, f1 f1Var, m1 m1Var, g1 g1Var, h1 h1Var, o1 o1Var, k1 k1Var, j1 j1Var, l1 l1Var, vx.a aVar) {
         k71.k.g(str, "__typename");

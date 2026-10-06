@@ -6,10 +6,10 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b implements h0 {
-    public ZonedDateTime a;
-    public a b;
-    public String c;
-    public String d;
+    public final ZonedDateTime a;
+    public final a b;
+    public final String c;
+    public final String d;
 
     public b(ZonedDateTime zonedDateTime, a aVar, String str, String str2) {
         this.a = zonedDateTime;

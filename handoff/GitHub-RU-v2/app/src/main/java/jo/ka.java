@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ka {
-    public String a;
-    public ja b;
-    public String c;
+    public final String a;
+    public final ja b;
+    public final String c;
 
     public ka(String str, ja jaVar, String str2) {
         this.a = str;

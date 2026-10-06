@@ -4,14 +4,14 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g4 {
-    public e1 a;
-    public boolean b;
-    public boolean c;
-    public boolean d;
-    public sz0.b e;
-    public List f;
-    public String g;
-    public f1 h;
+    public final e1 a;
+    public final boolean b;
+    public final boolean c;
+    public final boolean d;
+    public final sz0.b e;
+    public final List f;
+    public final String g;
+    public final f1 h;
 
     public g4(e1 e1Var, boolean z, boolean z2, boolean z3, sz0.b bVar, List list, String str, f1 f1Var) {
         k71.k.g(e1Var, "licenseType");

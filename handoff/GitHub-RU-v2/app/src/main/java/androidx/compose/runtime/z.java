@@ -4,7 +4,7 @@ package androidx.compose.runtime;
 public final class z implements androidx.compose.runtime.tooling.c {
 
     /* renamed from: r, reason: collision with root package name */
-    public w f1904r;
+    public final w f1904r;
 
     public z(w wVar) {
         this.f1904r = wVar;

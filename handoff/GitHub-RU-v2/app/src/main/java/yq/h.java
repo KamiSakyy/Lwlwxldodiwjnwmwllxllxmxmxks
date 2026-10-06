@@ -2,7 +2,7 @@ package yq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public m a;
+    public final m a;
 
     public h(m mVar) {
         this.a = mVar;

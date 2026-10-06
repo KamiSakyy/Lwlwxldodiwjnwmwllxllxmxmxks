@@ -10,10 +10,10 @@ import com.github.rudroid.utilities.w0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SelectableSpokenLanguageBottomSheet extends Hilt_SelectableSpokenLanguageBottomSheet {
     public static final a Companion = new a();
-    public l1 Y0;
-    public l1 Z0;
-    public int a1;
-    public int b1;
+    public final l1 Y0;
+    public final l1 Z0;
+    public final int a1;
+    public final int b1;
 
     public static final class a {
     }

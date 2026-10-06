@@ -11,7 +11,7 @@ public final class cu {
     public static final cu v;
     public static final /* synthetic */ cu[] w;
     public static final /* synthetic */ d71.b x;
-    public String r;
+    public final String r;
 
     static {
         cu cuVar = new cu("FILE", 0, "FILE");

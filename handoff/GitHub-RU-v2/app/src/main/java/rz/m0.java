@@ -2,7 +2,7 @@ package rz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m0 {
-    public o0 a;
+    public final o0 a;
 
     public m0(o0 o0Var) {
         this.a = o0Var;
@@ -22,6 +22,6 @@ public final class m0 {
     public final String toString() {
         return "OnProjectV2Owner(projectsV2=" + this.a + ")";
     }
-    public static Object b(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object h(Object p1, Object p2, Object p3) { return null; }
+    public Object b(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
 }

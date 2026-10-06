@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class bk {
-    public String a;
-    public zj b;
-    public String c;
+    public final String a;
+    public final zj b;
+    public final String c;
 
     public bk(String str, zj zjVar, String str2) {
         this.a = str;

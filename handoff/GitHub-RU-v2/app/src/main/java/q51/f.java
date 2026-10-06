@@ -2,7 +2,7 @@ package q51;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f implements h {
-    public w21.g a;
+    public final w21.g a;
 
     public f(w21.g gVar) {
         this.a = gVar;

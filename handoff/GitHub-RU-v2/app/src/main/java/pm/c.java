@@ -16,10 +16,10 @@ public final class c {
     public static final LocalTime f;
     public static final c g;
     public static final c h;
-    public List a;
-    public LocalTime b;
-    public LocalTime c;
-    public boolean d;
+    public final List a;
+    public final LocalTime b;
+    public final LocalTime c;
+    public final boolean d;
 
     static {
         LocalTime of = LocalTime.of(9, 0);

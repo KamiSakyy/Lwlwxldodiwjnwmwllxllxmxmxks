@@ -42,8 +42,8 @@ import y71.n1;
 public final class f implements a11.a, mi0 {
     public static final a Companion = new a();
     public static final List t = d0.o("Commit", "Gist", "DiscussionPost", "CheckSuite", "Issue", "PullRequest", "Release", "RepositoryInvitation", "RepositoryVulnerabilityAlert", "Discussion", "RepositoryDependabotAlertsThread", "SecurityAdvisory", "Actions::WorkflowRun");
-    public j r;
-    public v s;
+    public final j r;
+    public final v s;
 
     public f(j jVar, v vVar) {
         k.g(jVar, "client");

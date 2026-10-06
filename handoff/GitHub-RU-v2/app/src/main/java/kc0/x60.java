@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x60 {
-    public w60 a;
+    public final w60 a;
 
     public x60(w60 w60Var) {
         this.a = w60Var;

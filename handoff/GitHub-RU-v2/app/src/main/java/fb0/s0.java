@@ -2,9 +2,9 @@ package fb0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s0 {
-    public String a;
-    public v0 b;
-    public ja0.a c;
+    public final String a;
+    public final v0 b;
+    public final ja0.a c;
 
     public s0(String str, v0 v0Var, ja0.a aVar) {
         k71.k.g(str, "__typename");

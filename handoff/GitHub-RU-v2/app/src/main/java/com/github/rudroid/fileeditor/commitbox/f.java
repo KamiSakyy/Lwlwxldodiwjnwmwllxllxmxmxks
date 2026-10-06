@@ -6,7 +6,7 @@ import k71.k;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f12917a;
+    public final String f12917a;
 
     public final boolean equals(Object obj) {
         if (obj instanceof f) {

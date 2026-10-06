@@ -10,7 +10,7 @@ public final class f {
     public final /* synthetic */ int f30467a;
 
     /* renamed from: b, reason: collision with root package name */
-    public SharedPreferences f30468b;
+    public final SharedPreferences f30468b;
 
     /* renamed from: c, reason: collision with root package name */
     public boolean f30469c;

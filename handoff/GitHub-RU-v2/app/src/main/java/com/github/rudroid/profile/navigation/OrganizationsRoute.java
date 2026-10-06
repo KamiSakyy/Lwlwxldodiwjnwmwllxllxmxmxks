@@ -11,10 +11,10 @@ public final class OrganizationsRoute {
     public static final Companion Companion = new Companion();
 
     /* renamed from: a, reason: collision with root package name */
-    public String f17326a;
+    public final String f17326a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f17327b;
+    public final String f17327b;
 
     public static final class Companion {
         public final KSerializer serializer() {

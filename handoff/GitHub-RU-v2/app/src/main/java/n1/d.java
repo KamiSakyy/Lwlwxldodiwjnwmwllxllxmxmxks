@@ -9,7 +9,7 @@ public final class d extends a {
     public final /* synthetic */ int f29373t = 1;
 
     /* renamed from: u, reason: collision with root package name */
-    public Object f29374u;
+    public final Object f29374u;
 
     public d(Object[] objArr, int i, int i10) {
         super(i, i10);

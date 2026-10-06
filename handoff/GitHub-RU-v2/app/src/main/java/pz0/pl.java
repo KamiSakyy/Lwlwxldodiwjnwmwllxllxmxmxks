@@ -2,12 +2,12 @@ package pz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class pl {
-    public aa1.b a;
-    public aa1.b b;
-    public aa1.b c;
-    public aa1.b d;
-    public aa1.b e;
-    public aa1.b f;
+    public final aa1.b a;
+    public final aa1.b b;
+    public final aa1.b c;
+    public final aa1.b d;
+    public final aa1.b e;
+    public final aa1.b f;
 
     public pl(aa.u0 u0Var, aa.u0 u0Var2, aa1.b bVar) {
         aa.t0 t0Var = aa.t0.d;

@@ -7,13 +7,13 @@ import com.github.service.models.response.Avatar;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b2 implements f {
     public static final Parcelable.Creator<b2> CREATOR = new h(19);
-    public String r;
-    public Avatar s;
-    public String t;
-    public String u;
-    public boolean v;
-    public boolean w;
-    public boolean x;
+    public final String r;
+    public final Avatar s;
+    public final String t;
+    public final String u;
+    public final boolean v;
+    public final boolean w;
+    public final boolean x;
 
     public b2(String str, Avatar avatar, String str2, String str3, boolean z, boolean z2, boolean z3) {
         k71.k.g(str, "login");

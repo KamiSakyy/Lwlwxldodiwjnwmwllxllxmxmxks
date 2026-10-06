@@ -11,7 +11,7 @@ public final class b00 {
     public static final b00 v;
     public static final /* synthetic */ b00[] w;
     public static final /* synthetic */ d71.b x;
-    public String r;
+    public final String r;
 
     static {
         b00 b00Var = new b00("CLOSED", 0, "CLOSED");

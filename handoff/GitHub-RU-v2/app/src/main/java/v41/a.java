@@ -8,14 +8,14 @@ import l7.x1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public String a;
-    public String b;
-    public ArrayList c;
-    public String d;
-    public String e;
-    public String f;
-    public String g;
-    public x1 h;
+    public final String a;
+    public final String b;
+    public final ArrayList c;
+    public final String d;
+    public final String e;
+    public final String f;
+    public final String g;
+    public final x1 h;
 
     public a(String str, String str2, ArrayList arrayList, String str3, String str4, String str5, String str6, x1 x1Var) {
         this.a = str;

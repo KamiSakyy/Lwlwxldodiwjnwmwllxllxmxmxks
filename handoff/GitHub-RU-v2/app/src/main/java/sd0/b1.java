@@ -2,10 +2,10 @@ package sd0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b1 implements aa.h0 {
-    public String a;
-    public boolean b;
-    public a1 c;
-    public String d;
+    public final String a;
+    public final boolean b;
+    public final a1 c;
+    public final String d;
 
     public b1(String str, boolean z, a1 a1Var, String str2) {
         this.a = str;

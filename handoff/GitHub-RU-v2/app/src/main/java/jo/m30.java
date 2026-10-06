@@ -5,10 +5,10 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m30 implements aaShadow.w0 {
     public static final g30 Companion = new g30();
-    public String r;
-    public String s;
-    public aa.u0 t;
-    public aa1.b u;
+    public final String r;
+    public final String s;
+    public final aa.u0 t;
+    public final aa1.b u;
 
     public m30(aa.u0 u0Var, aa1.b bVar, String str, String str2) {
         k71.k.g(str, "owner");

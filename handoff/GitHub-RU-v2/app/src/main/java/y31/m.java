@@ -10,10 +10,10 @@ import com.google.android.material.textfield.TextInputLayout;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class m {
-    public TextInputLayout a;
-    public l b;
-    public Context c;
-    public CheckableImageButton d;
+    public final TextInputLayout a;
+    public final l b;
+    public final Context c;
+    public final CheckableImageButton d;
 
     public m(l lVar) {
         this.a = lVar.r;

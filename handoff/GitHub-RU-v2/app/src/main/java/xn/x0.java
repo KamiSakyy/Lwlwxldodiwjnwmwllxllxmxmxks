@@ -6,20 +6,20 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x0 {
     public static final w0 Companion = new w0();
-    public String a;
-    public String b;
-    public eShadow c;
-    public String d;
-    public String e;
-    public String f;
-    public long g;
-    public long h;
-    public long i;
-    public int j;
-    public ArrayList k;
-    public ArrayList l;
-    public List m;
-    public Boolean n;
+    public final String a;
+    public final String b;
+    public final eShadow c;
+    public final String d;
+    public final String e;
+    public final String f;
+    public final long g;
+    public final long h;
+    public final long i;
+    public final int j;
+    public final ArrayList k;
+    public final ArrayList l;
+    public final List m;
+    public final Boolean n;
 
     public x0(String str, String str2, eShadow eVar, String str3, String str4, String str5, long j, long j2, long j3, int i, ArrayList arrayList, ArrayList arrayList2, List list, Boolean bool) {
         k71.k.g(str, "id");

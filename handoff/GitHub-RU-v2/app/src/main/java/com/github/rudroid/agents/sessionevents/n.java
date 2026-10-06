@@ -4,10 +4,10 @@ package com.github.rudroid.agents.sessionevents;
 public final class n {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f7731a;
+    public final String f7731a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f7732b;
+    public final String f7732b;
 
     public n(String str, String str2) {
         this.f7731a = str;

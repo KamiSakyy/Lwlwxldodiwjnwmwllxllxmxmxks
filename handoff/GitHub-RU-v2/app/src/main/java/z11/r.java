@@ -3,8 +3,8 @@ package z11;
 /* loaded from: /home/user/work/p/classes4.dex */
 public class r {
     public static final r c = new r(true, null, null);
-    public boolean a;
-    public Throwable b;
+    public final boolean a;
+    public final Throwable b;
 
     public r(boolean z, String str, Exception exc) {
         this.a = z;

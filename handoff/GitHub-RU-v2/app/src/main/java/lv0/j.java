@@ -7,11 +7,11 @@ import pz0.df;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j {
-    public bf a;
-    public String b;
-    public String c;
-    public int d;
-    public df e;
+    public final bf a;
+    public final String b;
+    public final String c;
+    public final int d;
+    public final df e;
 
     public j(bf bfVar, String str, String str2, int i, df dfVar) {
         this.a = bfVar;

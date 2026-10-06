@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zh0 implements aaShadow.v0 {
-    public bi0 a;
-    public ai0 b;
-    public String c;
-    public String d;
+    public final bi0 a;
+    public final ai0 b;
+    public final String c;
+    public final String d;
 
     public zh0(bi0 bi0Var, ai0 ai0Var, String str, String str2) {
         this.a = bi0Var;

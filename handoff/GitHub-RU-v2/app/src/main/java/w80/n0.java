@@ -2,9 +2,9 @@ package w80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n0 {
-    public String a;
-    public String b;
-    public h0 c;
+    public final String a;
+    public final String b;
+    public final h0 c;
 
     public n0(String str, String str2, h0 h0Var) {
         this.a = str;

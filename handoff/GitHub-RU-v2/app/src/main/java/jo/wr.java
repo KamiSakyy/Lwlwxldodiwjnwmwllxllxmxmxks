@@ -2,15 +2,15 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class wr {
-    public String a;
-    public String b;
-    public m10.fz c;
-    public String d;
-    public ar.c e;
-    public pv.c f;
-    public mx.c g;
-    public pu.a h;
-    public ju.a i;
+    public final String a;
+    public final String b;
+    public final m10.fz c;
+    public final String d;
+    public final ar.c e;
+    public final pv.c f;
+    public final mx.c g;
+    public final pu.a h;
+    public final ju.a i;
 
     public wr(String str, String str2, m10.fz fzVar, String str3, ar.c cVar, pv.c cVar2, mx.c cVar3, pu.a aVar, ju.a aVar2) {
         this.a = str;

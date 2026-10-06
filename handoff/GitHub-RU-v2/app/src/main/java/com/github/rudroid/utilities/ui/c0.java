@@ -2,7 +2,7 @@ package com.github.rudroid.utilities.ui;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 final class c0<T> implements q0<T> {
-    public Object a;
+    public final Object a;
 
     public c0(Object obj) {
         this.a = obj;

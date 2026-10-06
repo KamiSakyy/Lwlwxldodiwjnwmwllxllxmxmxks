@@ -2,11 +2,11 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class nu {
-    public String a;
-    public iu b;
-    public ku c;
-    public lu d;
-    public String e;
+    public final String a;
+    public final iu b;
+    public final ku c;
+    public final lu d;
+    public final String e;
 
     public nu(String str, iu iuVar, ku kuVar, lu luVar, String str2) {
         this.a = str;

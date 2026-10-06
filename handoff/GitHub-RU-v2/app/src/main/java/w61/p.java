@@ -6,7 +6,7 @@ import java.io.Serializable;
 public final class p implements h, Serializable {
     public j71.a r;
     public volatile Object s;
-    public Object t;
+    public final Object t;
 
     public p(j71.a aVar) {
         k71.k.g(aVar, "initializer");

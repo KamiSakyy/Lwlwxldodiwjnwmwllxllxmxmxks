@@ -12,7 +12,7 @@ import sy.w;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class IssueTemplatesBottomSheet extends Hilt_IssueTemplatesBottomSheet {
     public static final a Companion = new a();
-    public l1 S0;
+    public final l1 S0;
 
     public static final class a {
         public static IssueTemplatesBottomSheet a(String str, String str2, String str3) {

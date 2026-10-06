@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class cr {
-    public br a;
-    public List b;
+    public final br a;
+    public final List b;
 
     public cr(br brVar, List list) {
         this.a = brVar;

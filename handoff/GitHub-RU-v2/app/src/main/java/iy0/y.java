@@ -4,8 +4,8 @@ import pz0.bs;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y {
-    public bs a;
-    public String b;
+    public final bs a;
+    public final String b;
 
     public y(bs bsVar, String str) {
         this.a = bsVar;

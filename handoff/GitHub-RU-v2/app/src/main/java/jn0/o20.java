@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o20 {
-    public l20 a;
-    public String b;
-    public String c;
+    public final l20 a;
+    public final String b;
+    public final String c;
 
     public o20(l20 l20Var, String str, String str2) {
         this.a = l20Var;

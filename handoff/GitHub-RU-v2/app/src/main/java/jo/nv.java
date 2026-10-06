@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class nv {
-    public ov a;
-    public mv b;
+    public final ov a;
+    public final mv b;
 
     public nv(ov ovVar, mv mvVar) {
         this.a = ovVar;

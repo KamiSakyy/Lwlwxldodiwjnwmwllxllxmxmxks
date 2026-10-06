@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class od {
-    public String a;
-    public int b;
-    public String c;
-    public uu0.k3 d;
+    public final String a;
+    public final int b;
+    public final String c;
+    public final uu0.k3 d;
 
     public od(String str, int i, String str2, uu0.k3 k3Var) {
         this.a = str;

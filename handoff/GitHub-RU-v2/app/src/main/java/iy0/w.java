@@ -4,8 +4,8 @@ import pz0.ko;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w implements aa.h0 {
-    public ko a;
-    public String b;
+    public final ko a;
+    public final String b;
 
     public w(ko koVar, String str) {
         this.a = koVar;

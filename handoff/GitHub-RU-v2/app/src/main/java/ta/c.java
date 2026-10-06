@@ -8,13 +8,13 @@ import x01.i;
 public final class c implements d {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f32171a;
+    public final String f32171a;
 
     /* renamed from: b, reason: collision with root package name */
-    public i f32172b;
+    public final i f32172b;
 
     /* renamed from: c, reason: collision with root package name */
-    public f f32173c;
+    public final f f32173c;
 
     public c(String str, i iVar, f fVar) {
         k.g(str, "id");

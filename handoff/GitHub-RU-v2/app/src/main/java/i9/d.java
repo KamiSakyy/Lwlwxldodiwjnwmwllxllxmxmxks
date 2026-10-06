@@ -7,16 +7,16 @@ import v71.b0;
 public final class d implements i {
 
     /* renamed from: a, reason: collision with root package name */
-    public y f26091a;
+    public final y f26091a;
 
     /* renamed from: b, reason: collision with root package name */
-    public r9.n f26092b;
+    public final r9.n f26092b;
 
     /* renamed from: c, reason: collision with root package name */
-    public e81.e f26093c;
+    public final e81.e f26093c;
 
     /* renamed from: d, reason: collision with root package name */
-    public l f26094d;
+    public final l f26094d;
 
     public d(y yVar, r9.n nVar, e81.i iVar, l lVar) {
         this.f26091a = yVar;

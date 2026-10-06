@@ -2,10 +2,10 @@ package xt;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public String a;
-    public g b;
-    public h c;
-    public gw.c d;
+    public final String a;
+    public final g b;
+    public final h c;
+    public final gw.c d;
 
     public b(String str, g gVar, h hVar, gw.c cVar) {
         k71.k.g(str, "__typename");

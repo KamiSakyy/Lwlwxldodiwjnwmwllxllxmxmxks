@@ -4,11 +4,11 @@ import m10.ih0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c2 implements aa.h0 {
-    public String a;
-    public String b;
-    public ih0 c;
-    public b2 d;
-    public String e;
+    public final String a;
+    public final String b;
+    public final ih0 c;
+    public final b2 d;
+    public final String e;
 
     public c2(String str, String str2, ih0 ih0Var, b2 b2Var, String str3) {
         this.a = str;

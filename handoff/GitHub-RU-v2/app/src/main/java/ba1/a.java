@@ -8,7 +8,7 @@ import org.jsoup.SerializationException;
 public final class a {
     public static final String[] c = {"input", "keygen", "object", "select", "textarea"};
     public final /* synthetic */ int a;
-    public Appendable b;
+    public final Appendable b;
 
     public /* synthetic */ a(Appendable appendable, int i) {
         this.a = i;

@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q80 {
-    public String a;
-    public String b;
-    public wi0.l c;
+    public final String a;
+    public final String b;
+    public final wi0.l c;
 
     public q80(String str, String str2, wi0.l lVar) {
         this.a = str;

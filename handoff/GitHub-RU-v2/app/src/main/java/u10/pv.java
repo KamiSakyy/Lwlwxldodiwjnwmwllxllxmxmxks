@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class pv implements aaShadow.v0 {
-    public qv a;
+    public final qv a;
 
     public pv(qv qvVar) {
         this.a = qvVar;

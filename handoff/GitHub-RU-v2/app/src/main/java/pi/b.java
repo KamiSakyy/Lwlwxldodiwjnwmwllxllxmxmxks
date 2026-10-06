@@ -2,7 +2,7 @@ package pi;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b implements e {
-    public d a;
+    public final d a;
 
     public b(d dVar) {
         this.a = dVar;

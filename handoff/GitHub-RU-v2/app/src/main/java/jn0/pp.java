@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class pp {
-    public String a;
-    public mp b;
-    public String c;
+    public final String a;
+    public final mp b;
+    public final String c;
 
     public pp(String str, mp mpVar, String str2) {
         this.a = str;

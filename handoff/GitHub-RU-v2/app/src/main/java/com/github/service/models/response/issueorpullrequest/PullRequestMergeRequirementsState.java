@@ -11,7 +11,7 @@ public final class PullRequestMergeRequirementsState {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ PullRequestMergeRequirementsState[] $VALUES;
     public static final m Companion;
-    private String rawValue;
+    private final String rawValue;
     public static final PullRequestMergeRequirementsState MERGEABLE = new PullRequestMergeRequirementsState("MERGEABLE", 0, "MERGEABLE");
     public static final PullRequestMergeRequirementsState UNMERGEABLE = new PullRequestMergeRequirementsState("UNMERGEABLE", 1, "UNMERGEABLE");
     public static final PullRequestMergeRequirementsState UNKNOWN = new PullRequestMergeRequirementsState("UNKNOWN", 2, "UNKNOWN");

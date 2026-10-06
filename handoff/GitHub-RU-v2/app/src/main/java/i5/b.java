@@ -8,7 +8,7 @@ import v1.p;
 public abstract class b implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public Parcelable f26019r;
+    public final Parcelable f26019r;
 
     /* renamed from: s, reason: collision with root package name */
     public static final a f26018s = new a();

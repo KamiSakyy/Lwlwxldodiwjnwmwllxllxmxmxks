@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class px {
-    public String a;
-    public String b;
-    public qx c;
+    public final String a;
+    public final String b;
+    public final qx c;
 
     public px(String str, String str2, qx qxVar) {
         k71.k.g(str, "__typename");

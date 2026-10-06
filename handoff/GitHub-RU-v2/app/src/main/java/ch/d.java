@@ -6,9 +6,9 @@ import g3.q0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public q0 a;
-    public long b;
-    public a.b c;
+    public final q0 a;
+    public final long b;
+    public final a.b c;
 
     public d(q0 q0Var, long j, a.b bVar) {
         this.a = q0Var;

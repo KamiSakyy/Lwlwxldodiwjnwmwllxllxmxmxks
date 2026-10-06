@@ -8,17 +8,17 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public int f;
-    public int g;
-    public Avatar h;
-    public boolean i;
-    public boolean j;
-    public boolean k;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final int f;
+    public final int g;
+    public final Avatar h;
+    public final boolean i;
+    public final boolean j;
+    public final boolean k;
 
     public s(String str, String str2, String str3, String str4, String str5, int i, int i2, Avatar avatar, boolean z, boolean z2, boolean z3) {
         this.a = str;

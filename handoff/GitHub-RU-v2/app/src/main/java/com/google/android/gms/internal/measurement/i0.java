@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicReference;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i0 extends y implements n0 {
-    public AtomicReference f;
+    public final AtomicReference f;
     public boolean g;
 
     public i0() {

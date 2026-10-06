@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q90 implements aaShadow.v0 {
-    public r90 a;
+    public final r90 a;
 
     public q90(r90 r90Var) {
         this.a = r90Var;

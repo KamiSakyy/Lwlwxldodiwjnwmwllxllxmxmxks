@@ -10,11 +10,11 @@ import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w extends k1 {
-    public tm.i s;
-    public com.github.rudroid.activities.util.c t;
-    public ShortcutViewRoute u;
-    public y1 v;
-    public i1 w;
+    public final tm.i s;
+    public final com.github.rudroid.activities.util.c t;
+    public final ShortcutViewRoute u;
+    public final y1 v;
+    public final i1 w;
 
     public w(a1 a1Var, tm.b bVar, tm.i iVar, com.github.rudroid.activities.util.c cVar) {
         k71.k.g(a1Var, "savedStateHandle");

@@ -5,5 +5,5 @@ package a5;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface u0 {
-    public static p2 a(Object p1) { return null; }
+    public Object a(Object p1) { return null; }
 }

@@ -16,9 +16,9 @@ import java.util.function.Function;
 public final class e4 {
     public static final ConcurrentHashMap i = new ConcurrentHashMap();
     public static final String[] j = {"key", "value"};
-    public ContentResolver a;
-    public Uri b;
-    public Runnable c;
+    public final ContentResolver a;
+    public final Uri b;
+    public final Runnable c;
     public volatile Map g;
     public a4 d = null;
     public volatile boolean e = true;

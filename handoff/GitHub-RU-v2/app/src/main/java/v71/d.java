@@ -2,7 +2,7 @@ package v71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class d implements j {
-    public c[] r;
+    public final c[] r;
 
     public d(c[] cVarArr) {
         this.r = cVarArr;

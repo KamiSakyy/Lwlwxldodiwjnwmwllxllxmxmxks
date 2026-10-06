@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j60 {
-    public r60 a;
-    public String b;
+    public final r60 a;
+    public final String b;
 
     public j60(r60 r60Var, String str) {
         this.a = r60Var;

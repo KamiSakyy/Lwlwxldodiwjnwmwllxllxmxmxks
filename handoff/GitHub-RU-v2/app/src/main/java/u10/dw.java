@@ -5,10 +5,10 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class dw implements aaShadow.w0 {
     public static final zv Companion = new zv();
-    public String r;
-    public String s;
-    public aa1.b t;
-    public aa1.b u;
+    public final String r;
+    public final String s;
+    public final aa1.b t;
+    public final aa1.b u;
 
     public dw(aa1.b bVar, aa1.b bVar2, String str, String str2) {
         k71.k.g(str, "owner");

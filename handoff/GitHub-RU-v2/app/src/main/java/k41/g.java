@@ -32,12 +32,12 @@ import z70.y1;
 public final class g {
     public static final Object k = new Object();
     public static final x.e l = new x.e(0);
-    public Context a;
-    public String b;
-    public i c;
-    public p41.f d;
-    public k g;
-    public p51.b h;
+    public final Context a;
+    public final String b;
+    public final i c;
+    public final p41.f d;
+    public final k g;
+    public final p51.b h;
     public final AtomicBoolean e = new AtomicBoolean(false);
     public final AtomicBoolean f = new AtomicBoolean();
     public final CopyOnWriteArrayList i = new CopyOnWriteArrayList();

@@ -2,9 +2,9 @@ package wx0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public boolean a;
-    public String b;
-    public boolean c;
+    public final boolean a;
+    public final String b;
+    public final boolean c;
 
     public b(String str, boolean z, boolean z2) {
         this.a = z;
@@ -32,6 +32,4 @@ public final class b {
     public final String toString() {
         return jo.f4.s(com.github.rudroid.copilot.h1.t("PageInfo(hasNextPage=", ", endCursor=", this.b, ", hasPreviousPage=", this.a), this.c, ")");
     }
-    public Object c(Object, Object) { return null; }
-    public Object e(Object, Object, Object) { return null; }
 }

@@ -4,9 +4,9 @@ import java.util.Objects;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z extends r {
-    public transient Object[] t;
-    public transient int u;
-    public transient int v;
+    public final transient Object[] t;
+    public final transient int u;
+    public final transient int v;
 
     public z(Object[] objArr, int i, int i2) {
         this.t = objArr;

@@ -7,7 +7,7 @@ import android.content.Context;
 public final class i implements d1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public ClipboardManager f33053a;
+    public final ClipboardManager f33053a;
 
     public i(Context context) {
         Object systemService = context.getSystemService("clipboard");

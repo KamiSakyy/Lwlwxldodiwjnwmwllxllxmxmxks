@@ -6,22 +6,22 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o2 implements aa.h0 {
-    public String a;
-    public String b;
-    public String c;
-    public boolean d;
-    public n2 e;
-    public String f;
-    public fq g;
-    public boolean h;
-    public boolean i;
-    public boolean j;
-    public String k;
-    public zk l;
-    public List m;
-    public boolean n;
-    public boolean o;
-    public m2 p;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final boolean d;
+    public final n2 e;
+    public final String f;
+    public final fq g;
+    public final boolean h;
+    public final boolean i;
+    public final boolean j;
+    public final String k;
+    public final zk l;
+    public final List m;
+    public final boolean n;
+    public final boolean o;
+    public final m2 p;
 
     public o2(String str, String str2, String str3, boolean z, n2 n2Var, String str4, fq fqVar, boolean z2, boolean z3, boolean z4, String str5, zk zkVar, List list, boolean z5, boolean z6, m2 m2Var) {
         this.a = str;

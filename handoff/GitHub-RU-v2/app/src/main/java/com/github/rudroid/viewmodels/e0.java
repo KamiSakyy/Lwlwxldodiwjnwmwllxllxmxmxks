@@ -4,12 +4,12 @@ import com.github.rudroid.issueorpullrequest.navigation.EditIssueOrPullTitleRout
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e0 extends androidx.lifecycle.k1 implements u0 {
-    public zk.p s;
-    public zk.q t;
-    public com.github.rudroid.activities.util.c u;
-    public String v;
-    public boolean w;
-    public String x;
+    public final zk.p s;
+    public final zk.q t;
+    public final com.github.rudroid.activities.util.c u;
+    public final String v;
+    public final boolean w;
+    public final String x;
 
     public e0(zk.p pVar, zk.q qVar, com.github.rudroid.activities.util.c cVar, androidx.lifecycle.a1 a1Var) {
         k71.k.g(pVar, "editIssueTitleUseCase");

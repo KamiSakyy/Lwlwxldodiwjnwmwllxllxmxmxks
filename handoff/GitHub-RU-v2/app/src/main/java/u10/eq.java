@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class eq implements aaShadow.n0 {
     public static final bq Companion = new bq();
-    public String r;
+    public final String r;
 
     public eq(String str) {
         this.r = str;

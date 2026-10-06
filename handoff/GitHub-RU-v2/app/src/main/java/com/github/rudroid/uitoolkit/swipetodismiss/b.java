@@ -6,5 +6,5 @@ import a0.f1;
 public final class b {
     public static final f1 a = new f1(7, (Object) null);
 
-    public static Object d(Object p1, Object p2) { return null; }
+    public Object d(Object p1, Object p2) { return null; }
 }

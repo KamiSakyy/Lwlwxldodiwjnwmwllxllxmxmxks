@@ -4,16 +4,16 @@ package v2;
 public final class m {
 
     /* renamed from: a, reason: collision with root package name */
-    public float f32551a;
+    public final float f32551a;
 
     /* renamed from: b, reason: collision with root package name */
-    public float f32552b;
+    public final float f32552b;
 
     /* renamed from: c, reason: collision with root package name */
-    public float f32553c;
+    public final float f32553c;
 
     /* renamed from: d, reason: collision with root package name */
-    public float f32554d;
+    public final float f32554d;
 
     public m(float f6, float f10, float f11, float f12) {
         this.f32551a = f6;

@@ -11,7 +11,7 @@ public final class r implements e0 {
     public static final b f24849b = new b();
 
     /* renamed from: a, reason: collision with root package name */
-    public m0 f24850a;
+    public final m0 f24850a;
 
     public r(m0 m0Var) {
         k71.k.g(m0Var, "value");

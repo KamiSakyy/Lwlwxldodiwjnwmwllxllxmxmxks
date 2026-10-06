@@ -15,13 +15,13 @@ import kotlinx.serialization.KSerializer;
 public final class PendingRepositoryInfo implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public String f19994r;
+    public final String f19994r;
 
     /* renamed from: s, reason: collision with root package name */
-    public String f19995s;
+    public final String f19995s;
 
     /* renamed from: t, reason: collision with root package name */
-    public boolean f19996t;
+    public final boolean f19996t;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<PendingRepositoryInfo> CREATOR = new a();
 

@@ -12,8 +12,8 @@ import sy.w;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class RepositoryAssigneesFragment extends Hilt_RepositoryAssigneesFragment<com.github.rudroid.searchandfilter.complexfilter.user.j> {
     public static final a Companion = new a();
-    public l1 H0;
-    public com.github.rudroid.searchandfilter.complexfilter.user.k I0;
+    public final l1 H0;
+    public final com.github.rudroid.searchandfilter.complexfilter.user.k I0;
 
     public static final class a {
     }

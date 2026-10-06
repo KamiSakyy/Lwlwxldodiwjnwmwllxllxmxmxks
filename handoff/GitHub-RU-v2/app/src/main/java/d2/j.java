@@ -6,7 +6,7 @@ import android.graphics.PathMeasure;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public PathMeasure f21352a;
+    public final PathMeasure f21352a;
 
     public j(PathMeasure pathMeasure) {
         this.f21352a = pathMeasure;

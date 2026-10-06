@@ -8,29 +8,29 @@ import m10.yi;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q implements aa.h0 {
-    public String a;
-    public String b;
-    public String c;
-    public int d;
-    public String e;
-    public boolean f;
-    public wi g;
-    public ZonedDateTime h;
-    public Integer i;
-    public yi j;
-    public int k;
-    public int l;
-    public boolean m;
-    public boolean n;
-    public boolean o;
-    public ZonedDateTime p;
-    public boolean q;
-    public boolean r;
-    public n s;
-    public p t;
-    public m u;
-    public z6 v;
-    public dw.s0 w;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final int d;
+    public final String e;
+    public final boolean f;
+    public final wi g;
+    public final ZonedDateTime h;
+    public final Integer i;
+    public final yi j;
+    public final int k;
+    public final int l;
+    public final boolean m;
+    public final boolean n;
+    public final boolean o;
+    public final ZonedDateTime p;
+    public final boolean q;
+    public final boolean r;
+    public final n s;
+    public final p t;
+    public final m u;
+    public final z6 v;
+    public final dw.s0 w;
 
     public q(String str, String str2, String str3, int i, String str4, boolean z, wi wiVar, ZonedDateTime zonedDateTime, Integer num, yi yiVar, int i2, int i3, boolean z2, boolean z3, boolean z4, ZonedDateTime zonedDateTime2, boolean z5, boolean z6, n nVar, p pVar, m mVar, z6 z6Var, dw.s0 s0Var) {
         this.a = str;

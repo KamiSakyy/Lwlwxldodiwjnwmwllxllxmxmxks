@@ -15,7 +15,7 @@ import java.util.List;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public AccessibilityNodeInfo f3484a;
+    public final AccessibilityNodeInfo f3484a;
 
     /* renamed from: b, reason: collision with root package name */
     public int f3485b = -1;

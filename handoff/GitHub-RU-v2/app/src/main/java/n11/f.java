@@ -10,8 +10,8 @@ import z70.m3;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f implements o11.b {
     public final /* synthetic */ int a;
-    public v61.a b;
-    public v61.a c;
+    public final v61.a b;
+    public final v61.a c;
 
     public /* synthetic */ f(v61.a aVar, v61.a aVar2, int i) {
         this.a = i;

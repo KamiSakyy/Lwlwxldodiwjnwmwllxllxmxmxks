@@ -98,5 +98,4 @@ public final class a implements Runnable {
     }
     public Object b() { return null; }
     public Object e(Object p1) { return null; }
-    public Object e(Object) { return null; }
 }

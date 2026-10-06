@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class se {
-    public String a;
-    public String b;
-    public le c;
+    public final String a;
+    public final String b;
+    public final le c;
 
     public se(String str, String str2, le leVar) {
         this.a = str;

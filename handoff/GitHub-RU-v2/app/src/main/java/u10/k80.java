@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k80 {
-    public hc0.wz a;
-    public boolean b;
+    public final hc0.wz a;
+    public final boolean b;
 
     public k80(hc0.wz wzVar, boolean z) {
         this.a = wzVar;

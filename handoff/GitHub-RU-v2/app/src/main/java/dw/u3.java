@@ -2,9 +2,9 @@ package dw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u3 {
-    public String a;
-    public v3 b;
-    public w3 c;
+    public final String a;
+    public final v3 b;
+    public final w3 c;
 
     public u3(String str, v3 v3Var, w3 w3Var) {
         k71.k.g(str, "__typename");

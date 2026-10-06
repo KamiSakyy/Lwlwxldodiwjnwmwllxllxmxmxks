@@ -13,33 +13,33 @@ import yz0.c2;
 /* loaded from: /home/user/work/p/classes.dex */
 public final class r0 extends k1 implements com.github.rudroid.utilities.viewmodel.b {
     public static final a Companion = new a();
-    public String A;
-    public y1 B;
-    public i1 C;
+    public final String A;
+    public final y1 B;
+    public final i1 C;
 
     /* renamed from: s, reason: collision with root package name */
     public final /* synthetic */ com.github.rudroid.utilities.viewmodel.c f15368s;
 
     /* renamed from: t, reason: collision with root package name */
-    public nl.f f15369t;
+    public final nl.f f15369t;
 
     /* renamed from: u, reason: collision with root package name */
-    public ml.k f15370u;
+    public final ml.k f15370u;
 
     /* renamed from: v, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f15371v;
+    public final com.github.rudroid.activities.util.c f15371v;
 
     /* renamed from: w, reason: collision with root package name */
-    public String f15372w;
+    public final String f15372w;
 
     /* renamed from: x, reason: collision with root package name */
-    public String f15373x;
+    public final String f15373x;
 
     /* renamed from: y, reason: collision with root package name */
-    public String f15374y;
+    public final String f15374y;
 
     /* renamed from: z, reason: collision with root package name */
-    public String f15375z;
+    public final String f15375z;
 
     public static final class a {
     }

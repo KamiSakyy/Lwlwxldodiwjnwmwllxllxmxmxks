@@ -17,8 +17,4 @@ public abstract class c<T extends k5.f> extends com.github.rudroid.activities.z1
     public Object n() { return null; }
     public Object onCreate(Object p1) { return null; }
     public Object v(Object p1) { return null; }
-    public Object a(Object, Object) { return null; }
-    public Object a(Object, Object) { return null; }
-    public Object v(Object) { return null; }
-    public Object y(int, Object) { return null; }
 }

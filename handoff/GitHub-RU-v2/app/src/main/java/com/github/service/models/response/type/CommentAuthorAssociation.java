@@ -10,7 +10,7 @@ public final class CommentAuthorAssociation {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ CommentAuthorAssociation[] $VALUES;
     public static final r01.a Companion;
-    private String rawValue;
+    private final String rawValue;
     public static final CommentAuthorAssociation MEMBER = new CommentAuthorAssociation("MEMBER", 0, "MEMBER");
     public static final CommentAuthorAssociation OWNER = new CommentAuthorAssociation("OWNER", 1, "OWNER");
     public static final CommentAuthorAssociation MANNEQUIN = new CommentAuthorAssociation("MANNEQUIN", 2, "MANNEQUIN");

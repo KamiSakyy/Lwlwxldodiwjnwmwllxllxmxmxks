@@ -14,7 +14,7 @@ public enum i {
     REMOTE_ENFORCED_DEFAULT('8'),
     FAILSAFE('9');
 
-    public char r;
+    public final char r;
 
     i(char c) {
         this.r = c;
@@ -23,5 +23,4 @@ public enum i {
     public Object b(Object p1) { return null; }
     public Object c(Object p1, Object p2) { return null; }
     public Object i(Object p1, Object p2, Object p3, Object p4) { return null; }
-    public Object i(Object, Object, Object, Object) { return null; }
 }

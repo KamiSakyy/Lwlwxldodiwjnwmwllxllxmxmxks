@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f80 {
-    public e80 a;
+    public final e80 a;
 
     public f80(e80 e80Var) {
         this.a = e80Var;

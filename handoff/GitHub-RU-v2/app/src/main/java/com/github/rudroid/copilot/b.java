@@ -6,13 +6,13 @@ import java.util.List;
 final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public com.github.rudroid.utilities.ui.g1 f9416a;
+    public final com.github.rudroid.utilities.ui.g1 f9416a;
 
     /* renamed from: b, reason: collision with root package name */
-    public List f9417b;
+    public final List f9417b;
 
     /* renamed from: c, reason: collision with root package name */
-    public List f9418c;
+    public final List f9418c;
 
     public b(com.github.rudroid.utilities.ui.g1 g1Var, List list, List list2) {
         k71.k.g(g1Var, "chatState");

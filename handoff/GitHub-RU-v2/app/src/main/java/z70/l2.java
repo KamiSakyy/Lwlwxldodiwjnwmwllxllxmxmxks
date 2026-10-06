@@ -7,27 +7,27 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l2 implements aa.h0 {
-    public String a;
-    public String b;
-    public boolean c;
-    public String d;
-    public String e;
-    public int f;
-    public ZonedDateTime g;
-    public e2 h;
-    public f2 i;
-    public Boolean j;
-    public Integer k;
-    public fm l;
-    public j2 m;
-    public String n;
-    public ev o;
-    public nl p;
-    public a2 q;
-    public d2 r;
-    public b2 s;
-    public c60.j t;
-    public s7 u;
+    public final String a;
+    public final String b;
+    public final boolean c;
+    public final String d;
+    public final String e;
+    public final int f;
+    public final ZonedDateTime g;
+    public final e2 h;
+    public final f2 i;
+    public final Boolean j;
+    public final Integer k;
+    public final fm l;
+    public final j2 m;
+    public final String n;
+    public final ev o;
+    public final nl p;
+    public final a2 q;
+    public final d2 r;
+    public final b2 s;
+    public final c60.j t;
+    public final s7 u;
 
     public l2(String str, String str2, boolean z, String str3, String str4, int i, ZonedDateTime zonedDateTime, e2 e2Var, f2 f2Var, Boolean bool, Integer num, fm fmVar, j2 j2Var, String str5, ev evVar, nl nlVar, a2 a2Var, d2 d2Var, b2 b2Var, c60.j jVar, s7 s7Var) {
         this.a = str;

@@ -4,7 +4,7 @@ package com.github.rudroid.fileschanged;
 final class a implements o5 {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f13071a;
+    public final String f13071a;
 
     public a(String str) {
         k71.k.g(str, "id");

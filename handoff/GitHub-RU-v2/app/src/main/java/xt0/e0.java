@@ -2,7 +2,7 @@ package xt0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e0 {
-    public int a;
+    public final int a;
 
     public e0(int i) {
         this.a = i;

@@ -7,7 +7,7 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class u0 extends n0 {
     public final /* synthetic */ int d;
-    public i81.g e;
+    public final i81.g e;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public u0(final KSerializer kSerializer, final KSerializer kSerializer2, int i) {

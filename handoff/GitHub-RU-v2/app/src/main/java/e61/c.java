@@ -14,11 +14,11 @@ import x61.x;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c implements j {
-    public q51.d a;
-    public a61.b b;
-    public d c;
-    public c61.a d;
-    public e81.c e;
+    public final q51.d a;
+    public final a61.b b;
+    public final d c;
+    public final c61.a d;
+    public final e81.c e;
 
     public c(a71.h hVar, q51.d dVar, a61.b bVar, d dVar2, c61.a aVar) {
         k.g(hVar, "backgroundDispatcher");

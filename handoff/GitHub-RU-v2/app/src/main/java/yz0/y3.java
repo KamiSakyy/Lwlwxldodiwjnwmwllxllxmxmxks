@@ -4,16 +4,16 @@ import com.github.service.models.response.RepoFileType;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y3 implements b4 {
-    public String a;
-    public int b;
-    public boolean c;
-    public boolean d;
-    public String e;
-    public String f;
-    public String g;
-    public String h;
-    public boolean i;
-    public String j;
+    public final String a;
+    public final int b;
+    public final boolean c;
+    public final boolean d;
+    public final String e;
+    public final String f;
+    public final String g;
+    public final String h;
+    public final boolean i;
+    public final String j;
     public final RepoFileType k = RepoFileType.PDF;
 
     public y3(String str, int i, boolean z, boolean z2, String str2, String str3, String str4, String str5, boolean z3, String str6) {

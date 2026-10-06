@@ -4,10 +4,10 @@ import com.github.service.models.response.Avatar;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r2 {
-    public String a;
-    public String b;
-    public Avatar c;
-    public boolean d;
+    public final String a;
+    public final String b;
+    public final Avatar c;
+    public final boolean d;
 
     public r2(String str, String str2, Avatar avatar, boolean z) {
         k71.k.g(str2, "login");

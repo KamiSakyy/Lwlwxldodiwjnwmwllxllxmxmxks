@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class bt {
-    public String a;
+    public final String a;
 
     public bt(String str) {
         this.a = str;

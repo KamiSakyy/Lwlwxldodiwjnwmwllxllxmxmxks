@@ -5,9 +5,9 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public boolean a;
-    public int b;
-    public boolean c;
+    public final boolean a;
+    public final int b;
+    public final boolean c;
 
     public a(int i, boolean z, boolean z2) {
         this.a = z;

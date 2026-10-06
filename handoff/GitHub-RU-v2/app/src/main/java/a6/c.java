@@ -6,7 +6,7 @@ import k71.k;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f520a;
+    public final String f520a;
 
     public c(String str) {
         this.f520a = str;

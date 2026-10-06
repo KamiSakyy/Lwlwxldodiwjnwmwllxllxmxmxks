@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class is implements aaShadow.v0 {
-    public ks a;
+    public final ks a;
 
     public is(ks ksVar) {
         this.a = ksVar;

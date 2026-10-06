@@ -6,9 +6,9 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public String a;
-    public String b;
-    public t70.a c;
+    public final String a;
+    public final String b;
+    public final t70.a c;
 
     public a(String str, String str2, t70.a aVar) {
         this.a = str;

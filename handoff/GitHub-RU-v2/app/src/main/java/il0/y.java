@@ -2,7 +2,7 @@ package il0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y {
-    public x a;
+    public final x a;
 
     public y(x xVar) {
         this.a = xVar;

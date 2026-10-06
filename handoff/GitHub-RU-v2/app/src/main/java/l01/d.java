@@ -9,9 +9,9 @@ import java.util.UUID;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d implements d0, Parcelable {
     public static final d u;
-    public String r;
-    public LocalDate s;
-    public String t;
+    public final String r;
+    public final LocalDate s;
+    public final String t;
     public static final b Companion = new b();
     public static final Parcelable.Creator<d> CREATOR = new c(0);
 

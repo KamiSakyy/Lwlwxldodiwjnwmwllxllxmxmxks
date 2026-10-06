@@ -9,29 +9,29 @@ import org.json.JSONObject;
 public final class l {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f34015a;
+    public final String f34015a;
 
     /* renamed from: b, reason: collision with root package name */
-    public JSONObject f34016b;
+    public final JSONObject f34016b;
 
     /* renamed from: c, reason: collision with root package name */
-    public String f34017c;
+    public final String f34017c;
 
     /* renamed from: d, reason: collision with root package name */
-    public String f34018d;
+    public final String f34018d;
 
     /* renamed from: e, reason: collision with root package name */
-    public String f34019e;
+    public final String f34019e;
 
     /* renamed from: f, reason: collision with root package name */
-    public String f34020f;
+    public final String f34020f;
 
     /* renamed from: g, reason: collision with root package name */
-    public String f34021g;
+    public final String f34021g;
 
     /* renamed from: h, reason: collision with root package name */
-    public ArrayList f34022h;
-    public ArrayList i;
+    public final ArrayList f34022h;
+    public final ArrayList i;
 
     public l(String str) {
         this.f34015a = str;

@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ha0 {
-    public String a;
-    public String b;
-    public cq.g1 c;
+    public final String a;
+    public final String b;
+    public final cq.g1 c;
 
     public ha0(String str, String str2, cq.g1 g1Var) {
         k71.k.g(str2, "id");

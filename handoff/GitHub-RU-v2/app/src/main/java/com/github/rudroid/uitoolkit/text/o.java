@@ -4,10 +4,10 @@ import com.google.android.gms.internal.measurement.z3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o implements l {
-    public Integer a;
-    public Integer b;
-    public w1.r c;
-    public w1.r d;
+    public final Integer a;
+    public final Integer b;
+    public final w1.r c;
+    public final w1.r d;
 
     public o(Integer num, Integer num2, w1.r rVar, w1.r rVar2) {
         this.a = num;

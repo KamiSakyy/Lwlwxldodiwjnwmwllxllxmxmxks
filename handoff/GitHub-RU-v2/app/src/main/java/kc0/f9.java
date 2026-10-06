@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f9 {
-    public String a;
-    public ud0.a b;
+    public final String a;
+    public final ud0.a b;
 
     public f9(String str, ud0.a aVar) {
         k71.k.g(str, "__typename");

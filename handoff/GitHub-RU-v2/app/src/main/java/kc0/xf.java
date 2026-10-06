@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xf {
-    public String a;
-    public fg b;
-    public bl0.a c;
+    public final String a;
+    public final fg b;
+    public final bl0.a c;
 
     public xf(String str, fg fgVar, bl0.a aVar) {
         k71.k.g(str, "__typename");

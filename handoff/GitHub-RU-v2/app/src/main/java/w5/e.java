@@ -4,10 +4,10 @@ package w5;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public long f33337a;
+    public final long f33337a;
 
     /* renamed from: b, reason: collision with root package name */
-    public long f33338b;
+    public final long f33338b;
 
     public e(long j10, long j11) {
         if (j11 == 0) {

@@ -9,20 +9,20 @@ import uf0.i1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i implements aa.h0 {
-    public String a;
-    public String b;
-    public String c;
-    public boolean d;
-    public boolean e;
-    public boolean f;
-    public boolean g;
-    public ZonedDateTime h;
-    public h i;
-    public se0.c j;
-    public yh0.a k;
-    public qh0.a l;
-    public i1 m;
-    public aj0.c n;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final boolean d;
+    public final boolean e;
+    public final boolean f;
+    public final boolean g;
+    public final ZonedDateTime h;
+    public final h i;
+    public final se0.c j;
+    public final yh0.a k;
+    public final qh0.a l;
+    public final i1 m;
+    public final aj0.c n;
 
     public i(String str, String str2, String str3, boolean z, boolean z2, boolean z3, boolean z4, ZonedDateTime zonedDateTime, h hVar, se0.c cVar, yh0.a aVar, qh0.a aVar2, i1 i1Var, aj0.c cVar2) {
         this.a = str;

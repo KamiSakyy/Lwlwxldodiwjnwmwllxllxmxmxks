@@ -9,7 +9,7 @@ import w80.t;
 public final class b {
     public volatile Object a;
     public volatile Object b;
-    public Object c;
+    public final Object c;
 
     public b(m mVar) {
         u41.b bVar = new u41.b();

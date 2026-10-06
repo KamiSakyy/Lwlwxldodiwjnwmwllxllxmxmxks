@@ -4,7 +4,7 @@ package androidx.compose.runtime;
 public final class p0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public b2 f1744a;
+    public final b2 f1744a;
 
     /* renamed from: b, reason: collision with root package name */
     public int f1745b;

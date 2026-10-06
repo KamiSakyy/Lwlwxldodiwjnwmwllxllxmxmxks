@@ -6,9 +6,9 @@ import com.github.service.models.response.discussions.PinnedDiscussionPatternSta
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n {
     public static final m Companion = new m();
-    public int a;
-    public int b;
-    public PinnedDiscussionPatternState c;
+    public final int a;
+    public final int b;
+    public final PinnedDiscussionPatternState c;
 
     public n(int i, int i2, PinnedDiscussionPatternState pinnedDiscussionPatternState) {
         k71.k.g(pinnedDiscussionPatternState, "pattern");

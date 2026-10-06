@@ -2,11 +2,11 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class jp {
-    public String a;
-    public ep b;
-    public gp c;
-    public hp d;
-    public String e;
+    public final String a;
+    public final ep b;
+    public final gp c;
+    public final hp d;
+    public final String e;
 
     public jp(String str, ep epVar, gp gpVar, hp hpVar, String str2) {
         this.a = str;

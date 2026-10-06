@@ -6,8 +6,8 @@ import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g0 extends n1 {
-    public pf u;
-    public com.github.rudroid.searchandfilter.complexfilter.s v;
+    public final pf u;
+    public final com.github.rudroid.searchandfilter.complexfilter.s v;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public g0(pf pfVar, SearchAndFilterBaseFragment searchAndFilterBaseFragment) {

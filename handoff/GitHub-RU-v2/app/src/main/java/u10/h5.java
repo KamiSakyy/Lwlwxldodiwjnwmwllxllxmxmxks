@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h5 {
-    public String a;
-    public String b;
-    public g40.b0 c;
+    public final String a;
+    public final String b;
+    public final g40.b0 c;
 
     public h5(String str, String str2, g40.b0 b0Var) {
         k71.k.g(str, "__typename");

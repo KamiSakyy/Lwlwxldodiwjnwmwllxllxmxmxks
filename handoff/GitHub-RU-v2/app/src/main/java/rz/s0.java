@@ -2,9 +2,9 @@ package rz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s0 implements aa.v0 {
-    public u0 a;
-    public String b;
-    public String c;
+    public final u0 a;
+    public final String b;
+    public final String c;
 
     public s0(u0 u0Var, String str, String str2) {
         this.a = u0Var;

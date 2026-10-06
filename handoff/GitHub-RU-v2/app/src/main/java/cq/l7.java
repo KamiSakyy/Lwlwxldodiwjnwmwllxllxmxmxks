@@ -2,13 +2,13 @@ package cq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l7 implements aa.h0 {
-    public String a;
-    public String b;
-    public int c;
-    public String d;
-    public j7 e;
-    public f7 f;
-    public String g;
+    public final String a;
+    public final String b;
+    public final int c;
+    public final String d;
+    public final j7 e;
+    public final f7 f;
+    public final String g;
 
     public l7(String str, String str2, int i, String str3, j7 j7Var, f7 f7Var, String str4) {
         this.a = str;

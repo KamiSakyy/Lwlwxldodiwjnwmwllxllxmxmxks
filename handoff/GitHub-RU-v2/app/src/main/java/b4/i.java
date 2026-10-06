@@ -6,16 +6,16 @@ import java.lang.reflect.Array;
 public final class i extends com.google.common.util.concurrent.a {
 
     /* renamed from: a, reason: collision with root package name */
-    public double[] f3430a;
+    public final double[] f3430a;
 
     /* renamed from: b, reason: collision with root package name */
-    public double[][] f3431b;
+    public final double[][] f3431b;
 
     /* renamed from: c, reason: collision with root package name */
-    public double[][] f3432c;
+    public final double[][] f3432c;
 
     /* renamed from: d, reason: collision with root package name */
-    public double[] f3433d;
+    public final double[] f3433d;
 
     public i(double[] dArr, double[][] dArr2) {
         int length = dArr.length;

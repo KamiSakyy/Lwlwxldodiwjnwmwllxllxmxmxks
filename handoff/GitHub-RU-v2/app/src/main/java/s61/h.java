@@ -5,9 +5,9 @@ import es.voghdev.pdfviewpager.library.subscaleview.SubsamplingScaleImageView;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h {
-    public float a;
-    public PointF b;
-    public PointF c;
+    public final float a;
+    public final PointF b;
+    public final PointF c;
     public long d;
     public int e;
     public int f;

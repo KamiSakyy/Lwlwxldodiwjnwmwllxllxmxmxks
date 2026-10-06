@@ -8,16 +8,16 @@ import v2.d1;
 public final class i {
 
     /* renamed from: a, reason: collision with root package name */
-    public t f4100a;
+    public final t f4100a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f4101b;
+    public final int f4101b;
 
     /* renamed from: c, reason: collision with root package name */
-    public k f4102c;
+    public final k f4102c;
 
     /* renamed from: d, reason: collision with root package name */
-    public d1 f4103d;
+    public final d1 f4103d;
 
     public i(t tVar, int i, k kVar, d1 d1Var) {
         this.f4100a = tVar;

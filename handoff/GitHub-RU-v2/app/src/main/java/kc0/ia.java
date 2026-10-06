@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ia {
-    public String a;
-    public ga b;
-    public String c;
+    public final String a;
+    public final ga b;
+    public final String c;
 
     public ia(String str, ga gaVar, String str2) {
         this.a = str;

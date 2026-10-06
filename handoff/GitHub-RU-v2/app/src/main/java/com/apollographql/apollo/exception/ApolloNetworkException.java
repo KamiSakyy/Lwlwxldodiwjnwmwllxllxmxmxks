@@ -4,7 +4,7 @@ package com.apollographql.apollo.exception;
 public final class ApolloNetworkException extends ApolloException {
 
     /* renamed from: r, reason: collision with root package name */
-    public Object f4267r;
+    public final Object f4267r;
 
     public ApolloNetworkException() {
         this((String) null, 3);

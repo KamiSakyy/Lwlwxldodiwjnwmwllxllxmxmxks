@@ -45,6 +45,5 @@ final class o implements v0 {
         int i0 = i2 - (x0Var.i0(f) * size2);
         return x0Var.h0(i0 >= 0 ? i0 : 0, i, x61.s.r, new e(arrayList, uVar, f, 1));
     }
-    public static Object m(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
-    public Object g(Object, int, long, Object) { return null; }
+    public Object m(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
 }

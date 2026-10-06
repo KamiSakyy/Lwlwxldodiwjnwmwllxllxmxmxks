@@ -9,19 +9,19 @@ import android.util.Xml;
 public final class v {
 
     /* renamed from: a, reason: collision with root package name */
-    public float f27200a;
+    public final float f27200a;
 
     /* renamed from: b, reason: collision with root package name */
-    public float f27201b;
+    public final float f27201b;
 
     /* renamed from: c, reason: collision with root package name */
-    public float f27202c;
+    public final float f27202c;
 
     /* renamed from: d, reason: collision with root package name */
-    public float f27203d;
+    public final float f27203d;
 
     /* renamed from: e, reason: collision with root package name */
-    public int f27204e;
+    public final int f27204e;
 
     public v(Context context, XmlResourceParser xmlResourceParser) {
         this.f27200a = Float.NaN;

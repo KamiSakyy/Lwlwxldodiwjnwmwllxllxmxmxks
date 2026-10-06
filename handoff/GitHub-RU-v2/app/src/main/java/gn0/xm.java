@@ -9,7 +9,7 @@ public final class xm {
     public static final xm t;
     public static final /* synthetic */ xm[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         xm xmVar = new xm("APPROVED", 0, "APPROVED");

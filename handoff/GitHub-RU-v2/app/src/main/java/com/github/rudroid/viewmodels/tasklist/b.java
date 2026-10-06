@@ -2,7 +2,7 @@ package com.github.rudroid.viewmodels.tasklist;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b<T> {
-    public Object a;
+    public final Object a;
 
     public b(Object obj, String str) {
         k71.k.g(str, "id");

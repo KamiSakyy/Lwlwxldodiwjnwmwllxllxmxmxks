@@ -8,7 +8,7 @@ import kotlinx.serialization.KSerializer;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class q implements m1, b1 {
     public final r r = new r();
-    public w61.e s;
+    public final w61.e s;
 
     public q(j71.c cVar) {
         this.s = cVar;

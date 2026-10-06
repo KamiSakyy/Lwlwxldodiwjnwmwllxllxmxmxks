@@ -4,8 +4,8 @@ import gn0.e10;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public e10 a;
-    public boolean b;
+    public final e10 a;
+    public final boolean b;
 
     public b(e10 e10Var, boolean z) {
         this.a = e10Var;
@@ -31,6 +31,4 @@ public final class b {
         return "NavLink(identifier=" + this.a + ", hidden=" + this.b + ")";
     }
     public Object b(Object p1, Object p2, Object p3) { return null; }
-    public Object c(Object, Object) { return null; }
-    public Object e(Object, Object, Object) { return null; }
 }

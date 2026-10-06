@@ -20,14 +20,14 @@ import jn0.yf0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l1 implements z01.n, yf0 {
     public static final o0 Companion = new o0();
-    public com.github.service.wrapper.j r;
-    public com.github.service.wrapper.b s;
-    public v71.v t;
-    public a00.b u;
-    public a00.b v;
-    public a00.b w;
-    public xy0.q x;
-    public a00.b y;
+    public final com.github.service.wrapper.j r;
+    public final com.github.service.wrapper.b s;
+    public final v71.v t;
+    public final a00.b u;
+    public final a00.b v;
+    public final a00.b w;
+    public final xy0.q x;
+    public final a00.b y;
 
     public l1(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, String str) {
         k71.k.g(jVar, "client");

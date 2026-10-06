@@ -11,18 +11,18 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c implements h0 {
-    public String a;
-    public String b;
-    public a c;
-    public b d;
-    public ZonedDateTime e;
-    public boolean f;
-    public String g;
-    public String h;
-    public ZonedDateTime i;
-    public boolean j;
-    public p5 k;
-    public mx.a l;
+    public final String a;
+    public final String b;
+    public final a c;
+    public final b d;
+    public final ZonedDateTime e;
+    public final boolean f;
+    public final String g;
+    public final String h;
+    public final ZonedDateTime i;
+    public final boolean j;
+    public final p5 k;
+    public final mx.a l;
 
     public c(String str, String str2, a aVar, b bVar, ZonedDateTime zonedDateTime, boolean z, String str3, String str4, ZonedDateTime zonedDateTime2, boolean z2, p5 p5Var, mx.a aVar2) {
         k.g(str, "__typename");

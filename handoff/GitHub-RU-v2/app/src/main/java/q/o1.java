@@ -20,7 +20,7 @@ public class o1 extends ListView {
     public androidx.fragment.app.o C;
 
     /* renamed from: r, reason: collision with root package name */
-    public Rect f30673r;
+    public final Rect f30673r;
 
     /* renamed from: s, reason: collision with root package name */
     public int f30674s;
@@ -44,7 +44,7 @@ public class o1 extends ListView {
     public boolean f30680y;
 
     /* renamed from: z, reason: collision with root package name */
-    public boolean f30681z;
+    public final boolean f30681z;
 
     public o1(Context context, boolean z10) {
         super(context, null, 2130969049);

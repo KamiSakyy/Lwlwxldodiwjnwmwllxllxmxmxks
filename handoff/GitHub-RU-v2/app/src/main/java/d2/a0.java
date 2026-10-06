@@ -10,7 +10,7 @@ public class a0 {
 
     public static d2.l0 b;
 
-    public static long c(Object... a) {
+    public static Object c(Object... a) {
         return null;
     }
 
@@ -19,13 +19,13 @@ public class a0 {
     public static Object e(Object... a) {
         return null;
     }
-    public static Object b(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static long d(Object p1) { return null; }
-    public static l g() { return null; }
-    public static Object h(Object p1, Object p2) { return null; }
-    public static Object j(Object p1) { return null; }
-    public static Object m(Object p1, Object p2) { return null; }
-    public static Object r(Object p1) { return null; }
-    public static Object t(Object p1, Object p2) { return null; }
-    public static Object y(Object p1) { return null; }
+    public Object b(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object d(Object p1) { return null; }
+    public Object g() { return null; }
+    public Object h(Object p1, Object p2) { return null; }
+    public Object j(Object p1) { return null; }
+    public Object m(Object p1, Object p2) { return null; }
+    public Object r(Object p1) { return null; }
+    public Object t(Object p1, Object p2) { return null; }
+    public Object y(Object p1) { return null; }
 }

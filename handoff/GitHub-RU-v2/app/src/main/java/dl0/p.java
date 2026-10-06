@@ -7,8 +7,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p implements aa.n0 {
     public static final l Companion = new l();
-    public String r;
-    public ArrayList s;
+    public final String r;
+    public final ArrayList s;
 
     public p(String str, ArrayList arrayList) {
         k71.k.g(str, "baseIssueOrPullRequestId");

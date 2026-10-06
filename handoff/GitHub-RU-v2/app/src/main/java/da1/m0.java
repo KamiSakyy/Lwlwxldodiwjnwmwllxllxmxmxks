@@ -2,10 +2,10 @@ package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class m0 extends s0 {
-    public b1.m d;
+    public final b1.m d;
     public String e;
-    public b1.m f;
-    public b1.m g;
+    public final b1.m f;
+    public final b1.m g;
     public boolean h;
 
     public m0() {

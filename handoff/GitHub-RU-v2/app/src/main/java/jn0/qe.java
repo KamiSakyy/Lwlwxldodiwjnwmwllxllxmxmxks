@@ -2,16 +2,16 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qe {
-    public String a;
-    public ap0.j b;
-    public ap0.t c;
-    public ap0.r0 d;
-    public ap0.b1 e;
-    public ap0.l1 f;
-    public ap0.v1 g;
-    public ap0.h2 h;
-    public ap0.f5 i;
-    public ap0.n5 j;
+    public final String a;
+    public final ap0.j b;
+    public final ap0.t c;
+    public final ap0.r0 d;
+    public final ap0.b1 e;
+    public final ap0.l1 f;
+    public final ap0.v1 g;
+    public final ap0.h2 h;
+    public final ap0.f5 i;
+    public final ap0.n5 j;
 
     public qe(String str, ap0.j jVar, ap0.t tVar, ap0.r0 r0Var, ap0.b1 b1Var, ap0.l1 l1Var, ap0.v1 v1Var, ap0.h2 h2Var, ap0.f5 f5Var, ap0.n5 n5Var) {
         k71.k.g(str, "__typename");

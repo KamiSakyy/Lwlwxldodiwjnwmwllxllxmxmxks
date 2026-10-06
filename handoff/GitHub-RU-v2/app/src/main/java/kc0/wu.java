@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class wu {
-    public String a;
-    public ru b;
-    public qu c;
+    public final String a;
+    public final ru b;
+    public final qu c;
 
     public wu(String str, ru ruVar, qu quVar) {
         k71.k.g(str, "__typename");

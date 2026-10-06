@@ -41,7 +41,7 @@ public final class ak {
     public static final ak x;
     public static final ak y;
     public static final ak z;
-    public String r;
+    public final String r;
 
     static {
         ak akVar = new ak("ASSIGNED", 0, "ASSIGNED");

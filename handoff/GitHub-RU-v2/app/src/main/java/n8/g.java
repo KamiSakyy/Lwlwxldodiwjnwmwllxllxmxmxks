@@ -13,16 +13,16 @@ import x61.r;
 public final class g extends k21.f {
 
     /* renamed from: c, reason: collision with root package name */
-    public Object f29658c;
+    public final Object f29658c;
 
     /* renamed from: d, reason: collision with root package name */
-    public String f29659d;
+    public final String f29659d;
 
     /* renamed from: e, reason: collision with root package name */
-    public i f29660e;
+    public final i f29660e;
 
     /* renamed from: f, reason: collision with root package name */
-    public WindowStrictModeException f29661f;
+    public final WindowStrictModeException f29661f;
 
     public g(Object obj, String str, a aVar, i iVar) {
         r rVar;

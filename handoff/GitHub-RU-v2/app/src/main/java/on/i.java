@@ -8,17 +8,17 @@ import yz0.d3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i {
-    public String a;
-    public String b;
-    public String c;
-    public int d;
-    public d3 e;
-    public String f;
-    public int g;
-    public int h;
-    public PullRequestState i;
-    public boolean j;
-    public boolean k;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final int d;
+    public final d3 e;
+    public final String f;
+    public final int g;
+    public final int h;
+    public final PullRequestState i;
+    public final boolean j;
+    public final boolean k;
 
     public i(String str, String str2, String str3, int i, d3 d3Var, String str4, int i2, int i3, PullRequestState pullRequestState, boolean z, boolean z2) {
         k71.k.g(pullRequestState, "state");

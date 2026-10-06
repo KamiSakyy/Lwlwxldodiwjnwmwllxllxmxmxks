@@ -11,11 +11,11 @@ import yz0.v2;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g implements v2 {
     public static final Parcelable.Creator<g> CREATOR = new a21.g(10);
-    public String r;
-    public String s;
-    public MilestoneState t;
-    public int u;
-    public ZonedDateTime v;
+    public final String r;
+    public final String s;
+    public final MilestoneState t;
+    public final int u;
+    public final ZonedDateTime v;
 
     public g(String str, String str2, MilestoneState milestoneState, int i, ZonedDateTime zonedDateTime) {
         k71.k.g(str, "id");

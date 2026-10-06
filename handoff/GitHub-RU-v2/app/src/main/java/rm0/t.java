@@ -13,7 +13,7 @@ public final class t extends c71.c {
     }
 
     @Override // c71.a
-    public static final Object v(Object obj) {
+    public final Object v(Object obj) {
         this.u = obj;
         this.v |= Integer.MIN_VALUE;
         return this.w.c((Object) null, this);

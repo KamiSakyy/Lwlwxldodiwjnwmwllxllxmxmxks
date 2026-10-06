@@ -8,8 +8,8 @@ import v8.l0;
 public final class b {
     public static final a Companion;
     public static final /* synthetic */ b[] t;
-    public String r;
-    public int s;
+    public final String r;
+    public final int s;
 
     static {
         b[] bVarArr = {new b(0, 6, "DAY", "d"), new b(1, 3, "WEEK", "w"), new b(2, 2, "MONTH", "m"), new b(3, 1, "YEAR", "y")};

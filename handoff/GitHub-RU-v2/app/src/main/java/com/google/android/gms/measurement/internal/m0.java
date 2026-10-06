@@ -11,7 +11,7 @@ import android.os.SystemClock;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m0 extends e0 {
     public static final String[] w = {"app_version", "ALTER TABLE messages ADD COLUMN app_version TEXT;", "app_version_int", "ALTER TABLE messages ADD COLUMN app_version_int INTEGER;"};
-    public n u;
+    public final n u;
     public boolean v;
 
     public m0(o1 o1Var) {

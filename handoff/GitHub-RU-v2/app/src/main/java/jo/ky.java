@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ky {
-    public String a;
-    public String b;
-    public ly c;
+    public final String a;
+    public final String b;
+    public final ly c;
 
     public ky(String str, String str2, ly lyVar) {
         k71.k.g(str, "__typename");

@@ -34,7 +34,6 @@ public abstract /* synthetic */ class j {
         }
         a = iArr;
     }
-    public static Object h0(Object p1, Object p2) { return null; }
+    public Object h0(Object p1, Object p2) { return null; }
     public static final Object a = null;
-    public Object j0(Object, Object) { return null; }
 }

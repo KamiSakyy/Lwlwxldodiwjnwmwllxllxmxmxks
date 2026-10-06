@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w3 implements aaShadow.v0 {
-    public a4 a;
-    public String b;
-    public String c;
+    public final a4 a;
+    public final String b;
+    public final String c;
 
     public w3(a4 a4Var, String str, String str2) {
         this.a = a4Var;

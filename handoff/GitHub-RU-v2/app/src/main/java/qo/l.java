@@ -4,11 +4,11 @@ import m10.n40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l {
-    public String a;
-    public String b;
-    public j c;
-    public n40 d;
-    public String e;
+    public final String a;
+    public final String b;
+    public final j c;
+    public final n40 d;
+    public final String e;
 
     public l(String str, String str2, j jVar, n40 n40Var, String str3) {
         this.a = str;

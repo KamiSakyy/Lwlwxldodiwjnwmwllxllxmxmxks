@@ -12,13 +12,13 @@ import m10.xo;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements n0 {
     public static final b Companion = new b();
-    public String r;
-    public xo s;
-    public String t;
-    public String u;
-    public String v;
-    public String w;
-    public boolean x;
+    public final String r;
+    public final xo s;
+    public final String t;
+    public final String u;
+    public final String v;
+    public final String w;
+    public final boolean x;
 
     public d(String str, xo xoVar, String str2, String str3, String str4, String str5, boolean z) {
         k71.k.g(str2, "verificationSignature");

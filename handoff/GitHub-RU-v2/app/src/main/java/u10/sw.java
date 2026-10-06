@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class sw implements aaShadow.m0 {
-    public tw a;
+    public final tw a;
 
     public sw(tw twVar) {
         this.a = twVar;

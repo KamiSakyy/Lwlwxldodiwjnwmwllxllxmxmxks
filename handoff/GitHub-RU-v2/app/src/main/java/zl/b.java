@@ -10,7 +10,7 @@ import xj.e;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public qj.a a;
+    public final qj.a a;
 
     public b(qj.a aVar) {
         k.g(aVar, "database");

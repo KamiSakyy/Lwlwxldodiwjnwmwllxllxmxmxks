@@ -14,7 +14,7 @@ public final class ia {
     public static final ia x;
     public static final ia y;
     public static final /* synthetic */ ia[] z;
-    public String r;
+    public final String r;
 
     static {
         ia iaVar = new ia("DISCUSSION", 0, "DISCUSSION");

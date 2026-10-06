@@ -4,7 +4,7 @@ import sun.misc.Unsafe;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class u2 {
-    public Unsafe a;
+    public final Unsafe a;
 
     public u2(Unsafe unsafe) {
         this.a = unsafe;

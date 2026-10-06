@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m {
-    public o a;
-    public List b;
+    public final o a;
+    public final List b;
 
     public m(o oVar, List list) {
         this.a = oVar;

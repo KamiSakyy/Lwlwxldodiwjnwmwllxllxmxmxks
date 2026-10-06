@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class pt implements aaShadow.v0 {
-    public ut a;
-    public String b;
-    public String c;
+    public final ut a;
+    public final String b;
+    public final String c;
 
     public pt(ut utVar, String str, String str2) {
         this.a = utVar;

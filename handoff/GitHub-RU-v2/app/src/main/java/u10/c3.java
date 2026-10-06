@@ -5,12 +5,12 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c3 implements aaShadow.n0 {
     public static final a3 Companion = new a3();
-    public String r;
-    public String s;
-    public String t;
-    public hc0.x1 u;
-    public boolean v;
-    public aa.u0 w;
+    public final String r;
+    public final String s;
+    public final String t;
+    public final hc0.x1 u;
+    public final boolean v;
+    public final aa.u0 w;
 
     public c3(String str, String str2, String str3, hc0.x1 x1Var, boolean z, aa.u0 u0Var) {
         this.r = str;

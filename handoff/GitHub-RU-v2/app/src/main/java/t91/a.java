@@ -4,9 +4,9 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a {
-    public int a;
-    public char b;
-    public int c;
+    public final int a;
+    public final char b;
+    public final int c;
 
     public a(char c, int i, int i2) {
         this.a = i;

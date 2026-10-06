@@ -2,9 +2,9 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l1 extends sy.r {
-    public Integer a;
-    public Integer b;
-    public Integer c;
+    public final Integer a;
+    public final Integer b;
+    public final Integer c;
 
     public l1(Integer num, Integer num2, Integer num3) {
         this.a = num;

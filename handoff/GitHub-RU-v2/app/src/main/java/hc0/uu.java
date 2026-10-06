@@ -9,7 +9,7 @@ public final class uu {
     public static final uu t;
     public static final /* synthetic */ uu[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         uu uuVar = new uu("ERROR", 0, "ERROR");

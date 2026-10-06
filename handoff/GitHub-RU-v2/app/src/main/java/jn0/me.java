@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class me implements aaShadow.v0 {
-    public se a;
-    public String b;
-    public String c;
+    public final se a;
+    public final String b;
+    public final String c;
 
     public me(se seVar, String str, String str2) {
         this.a = seVar;

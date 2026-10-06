@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r8 {
-    public String a;
-    public t8 b;
+    public final String a;
+    public final t8 b;
 
     public r8(String str, t8 t8Var) {
         this.a = str;

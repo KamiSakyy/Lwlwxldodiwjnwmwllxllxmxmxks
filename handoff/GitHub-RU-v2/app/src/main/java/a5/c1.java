@@ -13,15 +13,15 @@ public interface c1 {
     default <T0> T0 o(Object... a) {
         return null;
     }
-    public static Object d(Object p1, Object p2) { return null; }
-    public static Object e(Object p1) { return null; }
-    public static Object f(Object p1) { return null; }
-    public static Object g(Object p1) { return null; }
-    public static Object i(Object p1, Object p2) { return null; }
-    public static Object m(Object p1, Object p2) { return null; }
-    public static Object n(Object p1, Object p2, Object p3, Object p4) { return null; }
-    public static Object p(Object p1, Object p2) { return null; }
-    public static Object q(Object p1, Object p2) { return null; }
-    public static Object r(Object p1, Object p2) { return null; }
-    public static Object s(Object p1, Object p2) { return null; }
+    public Object d(Object p1, Object p2) { return null; }
+    public Object e(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object g(Object p1) { return null; }
+    public Object i(Object p1, Object p2) { return null; }
+    public Object m(Object p1, Object p2) { return null; }
+    public Object n(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object p(Object p1, Object p2) { return null; }
+    public Object q(Object p1, Object p2) { return null; }
+    public Object r(Object p1, Object p2) { return null; }
+    public Object s(Object p1, Object p2) { return null; }
 }

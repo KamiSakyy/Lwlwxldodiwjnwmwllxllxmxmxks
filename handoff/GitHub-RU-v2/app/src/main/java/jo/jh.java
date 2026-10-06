@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class jh {
-    public ph a;
-    public List b;
+    public final ph a;
+    public final List b;
 
     public jh(ph phVar, List list) {
         this.a = phVar;

@@ -8,12 +8,12 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a implements h0 {
-    public Integer a;
-    public Integer b;
-    public String c;
-    public String d;
-    public String e;
-    public String f;
+    public final Integer a;
+    public final Integer b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final String f;
 
     public a(Integer num, Integer num2, String str, String str2, String str3, String str4) {
         this.a = num;

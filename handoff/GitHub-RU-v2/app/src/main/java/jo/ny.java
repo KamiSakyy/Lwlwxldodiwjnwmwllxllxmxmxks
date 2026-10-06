@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ny {
-    public my a;
-    public List b;
+    public final my a;
+    public final List b;
 
     public ny(my myVar, List list) {
         this.a = myVar;

@@ -7,10 +7,10 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class y implements j0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public File f29630a;
+    public final File f29630a;
 
     /* renamed from: b, reason: collision with root package name */
-    public l0 f29631b;
+    public final l0 f29631b;
 
     /* renamed from: c, reason: collision with root package name */
     public final AtomicBoolean f29632c = new AtomicBoolean(false);
@@ -32,7 +32,7 @@ public class y implements j0 {
     public final void close() {
         this.f29632c.set(true);
     }
-    public static Object s(Object p1, Object p2) { return null; }
+    public Object s(Object p1, Object p2) { return null; }
     public Object a = null;
     public Object b = null;
 }

@@ -2,8 +2,8 @@ package uu0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t5 {
-    public String a;
-    public mw0.a b;
+    public final String a;
+    public final mw0.a b;
 
     public t5(String str, mw0.a aVar) {
         this.a = str;

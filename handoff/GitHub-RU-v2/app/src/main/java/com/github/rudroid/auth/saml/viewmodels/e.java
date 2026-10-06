@@ -17,16 +17,16 @@ import y71.y1;
 public final class e extends k1 {
 
     /* renamed from: s, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f8593s;
+    public final com.github.rudroid.activities.util.c f8593s;
 
     /* renamed from: t, reason: collision with root package name */
-    public xl.a f8594t;
+    public final xl.a f8594t;
 
     /* renamed from: u, reason: collision with root package name */
-    public y1 f8595u;
+    public final y1 f8595u;
 
     /* renamed from: v, reason: collision with root package name */
-    public i1 f8596v;
+    public final i1 f8596v;
 
     /* renamed from: w, reason: collision with root package name */
     public q1 f8597w;

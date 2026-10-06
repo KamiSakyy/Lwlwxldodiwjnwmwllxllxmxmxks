@@ -13,11 +13,11 @@ import xn.c4;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SteerCommand$PlanApprovalResponse implements c4 {
     public static final Companion Companion = new Companion();
-    public String a;
-    public boolean b;
-    public String c;
-    public Boolean d;
-    public String e;
+    public final String a;
+    public final boolean b;
+    public final String c;
+    public final Boolean d;
+    public final String e;
 
     public static final class Companion {
         public final KSerializer serializer() {

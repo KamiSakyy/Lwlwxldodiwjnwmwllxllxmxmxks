@@ -9,28 +9,28 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j3 implements xz0.e {
-    public String a;
-    public String b;
-    public String c;
-    public boolean d;
-    public ZonedDateTime e;
-    public d3 f;
-    public boolean g;
-    public SubscriptionState h;
-    public SubscriptionState i;
-    public Object j;
-    public String k;
-    public int l;
-    public com.github.rudroid.common.b0 m;
-    public int n;
-    public StatusState o;
-    public boolean p;
-    public PullRequestState q;
-    public ReviewDecision r;
-    public int s;
-    public boolean t;
-    public Integer u;
-    public m01.a v;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final boolean d;
+    public final ZonedDateTime e;
+    public final d3 f;
+    public final boolean g;
+    public final SubscriptionState h;
+    public final SubscriptionState i;
+    public final Object j;
+    public final String k;
+    public final int l;
+    public final com.github.rudroid.common.b0 m;
+    public final int n;
+    public final StatusState o;
+    public final boolean p;
+    public final PullRequestState q;
+    public final ReviewDecision r;
+    public final int s;
+    public final boolean t;
+    public final Integer u;
+    public final m01.a v;
 
     public j3(String str, String str2, String str3, boolean z, ZonedDateTime zonedDateTime, d3 d3Var, boolean z2, SubscriptionState subscriptionState, SubscriptionState subscriptionState2, List list, String str4, int i, com.github.rudroid.common.b0 b0Var, int i2, StatusState statusState, boolean z3, PullRequestState pullRequestState, ReviewDecision reviewDecision, int i3, boolean z4, Integer num, m01.a aVar) {
         k71.k.g(subscriptionState, "unsubscribeActionState");

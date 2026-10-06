@@ -5,9 +5,9 @@ import java.util.Objects;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class g1 implements Runnable {
-    public long r;
-    public long s;
-    public boolean t;
+    public final long r;
+    public final long s;
+    public final boolean t;
     public final /* synthetic */ k1 u;
 
     public g1(k1 k1Var, boolean z) {

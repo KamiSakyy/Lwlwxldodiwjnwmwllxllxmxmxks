@@ -2,8 +2,8 @@ package l81;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class o extends kotlinx.serialization.json.d {
-    public boolean r;
-    public String s;
+    public final boolean r;
+    public final String s;
 
     public o(Object obj, boolean z) {
         k71.k.g(obj, "body");

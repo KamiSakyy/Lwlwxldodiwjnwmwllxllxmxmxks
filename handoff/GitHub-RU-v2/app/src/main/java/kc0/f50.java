@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f50 implements aaShadow.m0 {
-    public i50 a;
-    public g50 b;
+    public final i50 a;
+    public final g50 b;
 
     public f50(i50 i50Var, g50 g50Var) {
         this.a = i50Var;

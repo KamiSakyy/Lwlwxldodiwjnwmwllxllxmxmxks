@@ -4,7 +4,7 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class r extends c implements r71.e {
-    public boolean x;
+    public final boolean x;
 
     public r(Object obj, Class cls, String str, String str2, int i) {
         super(obj, cls, str, str2, (i & 1) == 1);

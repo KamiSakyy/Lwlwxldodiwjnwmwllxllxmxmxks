@@ -15,9 +15,9 @@ import w61.i;
 public final class PullRequestWidgetData {
     public static final Companion Companion = new Companion();
     public static final h[] d;
-    public PullsWidgetFilter a;
-    public int b;
-    public List c;
+    public final PullsWidgetFilter a;
+    public final int b;
+    public final List c;
 
     public static final class Companion {
         public final KSerializer serializer() {

@@ -4,18 +4,18 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class aj0 {
-    public m10.m8 a;
-    public boolean b;
-    public boolean c;
-    public boolean d;
-    public boolean e;
-    public xi0 f;
-    public yi0 g;
-    public wi0 h;
-    public m10.q8 i;
-    public List j;
-    public String k;
-    public String l;
+    public final m10.m8 a;
+    public final boolean b;
+    public final boolean c;
+    public final boolean d;
+    public final boolean e;
+    public final xi0 f;
+    public final yi0 g;
+    public final wi0 h;
+    public final m10.q8 i;
+    public final List j;
+    public final String k;
+    public final String l;
 
     public aj0(m10.m8 m8Var, boolean z, boolean z2, boolean z3, boolean z4, xi0 xi0Var, yi0 yi0Var, wi0 wi0Var, m10.q8 q8Var, List list, String str, String str2) {
         this.a = m8Var;

@@ -4,8 +4,8 @@ import pz0.i90;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public i90 a;
-    public boolean b;
+    public final i90 a;
+    public final boolean b;
 
     public b(i90 i90Var, boolean z) {
         this.a = i90Var;
@@ -31,6 +31,4 @@ public final class b {
         return "NavLink(identifier=" + this.a + ", hidden=" + this.b + ")";
     }
     public Object b(Object p1, Object p2, Object p3) { return null; }
-    public Object c(Object, Object) { return null; }
-    public Object e(Object, Object, Object) { return null; }
 }

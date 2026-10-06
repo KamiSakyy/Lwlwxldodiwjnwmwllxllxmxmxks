@@ -15,5 +15,5 @@ public abstract class s {
         k71.k.g(serialDescriptor, "<this>");
         return serialDescriptor.h() && a.contains(serialDescriptor);
     }
-    public static Object n(Object p1) { return null; }
+    public Object n(Object p1) { return null; }
 }

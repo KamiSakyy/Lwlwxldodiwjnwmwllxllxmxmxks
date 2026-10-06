@@ -10,7 +10,7 @@ public final class i {
     public static final /* synthetic */ int f22145b = 0;
 
     /* renamed from: a, reason: collision with root package name */
-    public Object f22146a;
+    public final Object f22146a;
 
     static {
         k71.k.f(x.b("NetworkRequestCompat"), "tagWithPrefix(...)");

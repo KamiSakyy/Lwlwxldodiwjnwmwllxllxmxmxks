@@ -7,30 +7,30 @@ import m10.ya0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z2 implements aa.h0 {
-    public String a;
-    public String b;
-    public boolean c;
-    public String d;
-    public String e;
-    public int f;
-    public ZonedDateTime g;
-    public q2 h;
-    public r2 i;
-    public Boolean j;
-    public Integer k;
-    public b00 l;
-    public x2 m;
-    public String n;
-    public ya0 o;
-    public jz p;
-    public m2 q;
-    public p2 r;
-    public n2 s;
-    public boolean t;
-    public t2 u;
-    public s2 v;
-    public lt.j w;
-    public l8 x;
+    public final String a;
+    public final String b;
+    public final boolean c;
+    public final String d;
+    public final String e;
+    public final int f;
+    public final ZonedDateTime g;
+    public final q2 h;
+    public final r2 i;
+    public final Boolean j;
+    public final Integer k;
+    public final b00 l;
+    public final x2 m;
+    public final String n;
+    public final ya0 o;
+    public final jz p;
+    public final m2 q;
+    public final p2 r;
+    public final n2 s;
+    public final boolean t;
+    public final t2 u;
+    public final s2 v;
+    public final lt.j w;
+    public final l8 x;
 
     public z2(String str, String str2, boolean z, String str3, String str4, int i, ZonedDateTime zonedDateTime, q2 q2Var, r2 r2Var, Boolean bool, Integer num, b00 b00Var, x2 x2Var, String str5, ya0 ya0Var, jz jzVar, m2 m2Var, p2 p2Var, n2 n2Var, boolean z2, t2 t2Var, s2 s2Var, lt.j jVar, l8 l8Var) {
         this.a = str;

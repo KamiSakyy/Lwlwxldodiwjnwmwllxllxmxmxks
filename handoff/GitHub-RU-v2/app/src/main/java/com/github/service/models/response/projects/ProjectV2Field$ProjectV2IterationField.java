@@ -21,13 +21,13 @@ import w61.i;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ProjectV2Field$ProjectV2IterationField implements j0 {
     public static final h[] y;
-    public String r;
-    public int s;
-    public String t;
-    public ProjectFieldType u;
-    public List v;
-    public List w;
-    public int x;
+    public final String r;
+    public final int s;
+    public final String t;
+    public final ProjectFieldType u;
+    public final List v;
+    public final List w;
+    public final int x;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<ProjectV2Field$ProjectV2IterationField> CREATOR = new c(18);
 

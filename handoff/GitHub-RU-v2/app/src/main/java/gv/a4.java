@@ -4,10 +4,10 @@ import m10.jz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a4 implements aa.h0 {
-    public String a;
-    public jz b;
-    public Integer c;
-    public String d;
+    public final String a;
+    public final jz b;
+    public final Integer c;
+    public final String d;
 
     public a4(String str, jz jzVar, Integer num, String str2) {
         this.a = str;

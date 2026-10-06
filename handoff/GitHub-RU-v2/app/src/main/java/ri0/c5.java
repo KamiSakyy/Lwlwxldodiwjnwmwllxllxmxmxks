@@ -2,10 +2,10 @@ package ri0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c5 {
-    public p4 a;
-    public m5 b;
-    public String c;
-    public String d;
+    public final p4 a;
+    public final m5 b;
+    public final String c;
+    public final String d;
 
     public c5(p4 p4Var, m5 m5Var, String str, String str2) {
         this.a = p4Var;

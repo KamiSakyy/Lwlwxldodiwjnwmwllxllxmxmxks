@@ -7,7 +7,7 @@ import java.util.Map;
 public final class v0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public Map f25438a;
+    public final Map f25438a;
 
     public v0(Map map) {
         this.f25438a = map;

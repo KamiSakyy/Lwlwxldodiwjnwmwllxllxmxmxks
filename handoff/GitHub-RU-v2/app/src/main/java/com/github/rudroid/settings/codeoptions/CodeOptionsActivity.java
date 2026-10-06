@@ -9,7 +9,7 @@ import androidx.lifecycle.l1;
 public final class CodeOptionsActivity extends h0 {
     public static final a Companion = new a();
     public com.github.rudroid.html.a t0;
-    public l1 u0;
+    public final l1 u0;
 
     public static final class a {
         public static Intent a(Context context) {

@@ -4,8 +4,8 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public class i extends c implements h, r71.a, w61.e {
-    public int x;
-    public int y;
+    public final int x;
+    public final int y;
 
     public i(int i, Class cls, String str, String str2, int i2) {
         this(i, b.r, cls, str, str2, i2, 0);

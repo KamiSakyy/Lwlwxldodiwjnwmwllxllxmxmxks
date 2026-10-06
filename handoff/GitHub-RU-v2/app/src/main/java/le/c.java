@@ -10,15 +10,15 @@ public abstract class c {
     public static final d Companion = new d();
 
     /* renamed from: a, reason: collision with root package name */
-    public int f28458a;
+    public final int f28458a;
 
     /* renamed from: b, reason: collision with root package name */
-    public long f28459b;
+    public final long f28459b;
 
     public static final class a extends c {
 
         /* renamed from: c, reason: collision with root package name */
-        public com.github.service.models.response.a f28460c;
+        public final com.github.service.models.response.a f28460c;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public a(com.github.service.models.response.a aVar) {
@@ -46,7 +46,7 @@ public abstract class c {
     public static final class b extends c {
 
         /* renamed from: c, reason: collision with root package name */
-        public r0 f28461c;
+        public final r0 f28461c;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public b(r0 r0Var) {
@@ -75,10 +75,10 @@ public abstract class c {
     public static final class C0078c extends c {
 
         /* renamed from: c, reason: collision with root package name */
-        public String f28462c;
+        public final String f28462c;
 
         /* renamed from: d, reason: collision with root package name */
-        public String f28463d;
+        public final String f28463d;
 
         public C0078c(String str, String str2) {
             super(6, str2.hashCode());
@@ -112,13 +112,13 @@ public abstract class c {
     public static final class e extends c {
 
         /* renamed from: c, reason: collision with root package name */
-        public t0 f28464c;
+        public final t0 f28464c;
 
         /* renamed from: d, reason: collision with root package name */
-        public int f28465d;
+        public final int f28465d;
 
         /* renamed from: e, reason: collision with root package name */
-        public int f28466e;
+        public final int f28466e;
 
         public static final /* synthetic */ class a {
 
@@ -197,7 +197,7 @@ public abstract class c {
     public static final class f extends c {
 
         /* renamed from: c, reason: collision with root package name */
-        public String f28468c;
+        public final String f28468c;
 
         public f(String str) {
             super(5, str.hashCode());
@@ -223,7 +223,7 @@ public abstract class c {
     public static final class g extends c {
 
         /* renamed from: c, reason: collision with root package name */
-        public int f28469c;
+        public final int f28469c;
 
         public g(int i) {
             super(1, i);

@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class xw implements aaShadow.v0 {
-    public fx a;
-    public gx b;
+    public final fx a;
+    public final gx b;
 
     public xw(fx fxVar, gx gxVar) {
         this.a = fxVar;

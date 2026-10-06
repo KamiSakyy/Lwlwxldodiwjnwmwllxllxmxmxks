@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ce implements aaShadow.v0 {
-    public he a;
-    public String b;
-    public String c;
+    public final he a;
+    public final String b;
+    public final String c;
 
     public ce(he heVar, String str, String str2) {
         this.a = heVar;

@@ -19,14 +19,14 @@ public final class w extends k1 {
     public static final a Companion = new a();
     public f8 A;
     public q1 B;
-    public xm.a s;
-    public q t;
-    public com.github.rudroid.activities.util.c u;
-    public String v;
-    public String w;
+    public final xm.a s;
+    public final q t;
+    public final com.github.rudroid.activities.util.c u;
+    public final String v;
+    public final String w;
     public ArrayList x;
-    public y1 y;
-    public i1 z;
+    public final y1 y;
+    public final i1 z;
 
     public static final class a {
     }

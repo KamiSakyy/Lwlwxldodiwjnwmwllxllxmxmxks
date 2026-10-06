@@ -10,7 +10,7 @@ import m10.vp;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h0 implements n0 {
     public static final a0 Companion = new a0();
-    public lf0 r;
+    public final lf0 r;
 
     public h0(lf0 lf0Var) {
         this.r = lf0Var;

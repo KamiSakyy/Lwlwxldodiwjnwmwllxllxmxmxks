@@ -4,19 +4,19 @@ import gn0.lm;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s7 implements aa.h0 {
-    public String a;
-    public String b;
-    public Integer c;
-    public p7 d;
-    public r7 e;
-    public String f;
-    public lm g;
-    public String h;
-    public se0.c i;
-    public aj0.c j;
-    public sk0.c k;
-    public yh0.a l;
-    public qh0.a m;
+    public final String a;
+    public final String b;
+    public final Integer c;
+    public final p7 d;
+    public final r7 e;
+    public final String f;
+    public final lm g;
+    public final String h;
+    public final se0.c i;
+    public final aj0.c j;
+    public final sk0.c k;
+    public final yh0.a l;
+    public final qh0.a m;
 
     public s7(String str, String str2, Integer num, p7 p7Var, r7 r7Var, String str3, lm lmVar, String str4, se0.c cVar, aj0.c cVar2, sk0.c cVar3, yh0.a aVar, qh0.a aVar2) {
         this.a = str;

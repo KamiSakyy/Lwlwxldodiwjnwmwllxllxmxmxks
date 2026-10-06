@@ -4,10 +4,10 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public String a;
-    public b b;
-    public a c;
-    public ja0.a d;
+    public final String a;
+    public final b b;
+    public final a c;
+    public final ja0.a d;
 
     public c(String str, b bVar, a aVar, ja0.a aVar2) {
         k.g(str, "__typename");

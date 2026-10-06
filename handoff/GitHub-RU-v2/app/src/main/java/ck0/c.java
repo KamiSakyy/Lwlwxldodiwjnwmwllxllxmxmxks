@@ -2,11 +2,11 @@ package ck0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public String a;
-    public f b;
-    public e c;
-    public p d;
-    public g e;
+    public final String a;
+    public final f b;
+    public final e c;
+    public final p d;
+    public final g e;
 
     public c(String str, f fVar, e eVar, p pVar, g gVar) {
         k71.k.g(str, "__typename");

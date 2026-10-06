@@ -20,14 +20,14 @@ class ClockHandView extends View {
     public double B;
     public int C;
     public int D;
-    public ValueAnimator r;
+    public final ValueAnimator r;
     public boolean s;
-    public ArrayList t;
-    public int u;
-    public float v;
-    public Paint w;
-    public RectF x;
-    public int y;
+    public final ArrayList t;
+    public final int u;
+    public final float v;
+    public final Paint w;
+    public final RectF x;
+    public final int y;
     public float z;
 
     public ClockHandView(Context context, AttributeSet attributeSet) {

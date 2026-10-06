@@ -2,11 +2,11 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class bd {
-    public String a;
-    public int b;
-    public int c;
-    public String d;
-    public oj0.e2 e;
+    public final String a;
+    public final int b;
+    public final int c;
+    public final String d;
+    public final oj0.e2 e;
 
     public bd(String str, int i, int i2, String str2, oj0.e2 e2Var) {
         this.a = str;

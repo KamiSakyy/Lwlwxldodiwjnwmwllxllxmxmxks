@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class aq implements aaShadow.w0 {
     public static final vp Companion = new vp();
-    public String r;
-    public int s;
+    public final String r;
+    public final int s;
 
     public aq(String str, int i) {
         k71.k.g(str, "repositoryOwner");

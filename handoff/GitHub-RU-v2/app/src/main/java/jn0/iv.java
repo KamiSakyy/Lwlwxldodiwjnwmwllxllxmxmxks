@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class iv {
-    public String a;
-    public String b;
-    public int c;
-    public mv d;
+    public final String a;
+    public final String b;
+    public final int c;
+    public final mv d;
 
     public iv(String str, String str2, int i, mv mvVar) {
         this.a = str;

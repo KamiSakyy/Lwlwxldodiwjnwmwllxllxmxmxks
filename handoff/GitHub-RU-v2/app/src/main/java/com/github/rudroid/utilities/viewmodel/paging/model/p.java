@@ -11,8 +11,8 @@ import y71.w1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public class p<T> implements r<x<T>>, w<T> {
     public static final a Companion = new a();
-    public j r;
-    public com.github.rudroid.searchandfilter.complexfilter.i0 s;
+    public final j r;
+    public final com.github.rudroid.searchandfilter.complexfilter.i0 s;
 
     public static final class a {
     }

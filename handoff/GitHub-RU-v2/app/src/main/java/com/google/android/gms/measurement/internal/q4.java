@@ -6,13 +6,13 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q4 extends d21.a {
     public static final Parcelable.Creator<q4> CREATOR = new c21.c0(11);
-    public int r;
-    public String s;
-    public long t;
-    public Long u;
-    public String v;
-    public String w;
-    public Double x;
+    public final int r;
+    public final String s;
+    public final long t;
+    public final Long u;
+    public final String v;
+    public final String w;
+    public final Double x;
 
     public q4(int i, String str, long j, Long l, Float f, String str2, String str3, Double d) {
         this.r = i;

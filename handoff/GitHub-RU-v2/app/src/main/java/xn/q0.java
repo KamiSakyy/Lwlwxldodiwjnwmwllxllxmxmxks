@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q0 {
-    public e1 a;
-    public String b;
-    public ArrayList c;
+    public final e1 a;
+    public final String b;
+    public final ArrayList c;
 
     public q0(e1 e1Var, String str, ArrayList arrayList) {
         this.a = e1Var;

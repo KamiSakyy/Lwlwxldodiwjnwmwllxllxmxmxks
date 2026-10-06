@@ -2,9 +2,9 @@ package qx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l2 implements aa.h0 {
-    public k2 a;
-    public String b;
-    public String c;
+    public final k2 a;
+    public final String b;
+    public final String c;
 
     public l2(k2 k2Var, String str, String str2) {
         this.a = k2Var;

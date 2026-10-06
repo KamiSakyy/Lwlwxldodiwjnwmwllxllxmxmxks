@@ -4,8 +4,8 @@ import com.github.service.models.response.SimpleRepository;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r {
-    public SimpleRepository a;
-    public boolean b;
+    public final SimpleRepository a;
+    public final boolean b;
 
     public r(SimpleRepository simpleRepository, boolean z) {
         k71.k.g(simpleRepository, "repository");

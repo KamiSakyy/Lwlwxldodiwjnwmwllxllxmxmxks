@@ -17,18 +17,18 @@ import w61.i;
 public final class ChatAiModelResponse {
     public static final Companion Companion = new Companion();
     public static final h[] m = {null, null, null, null, w.s(i.r, new a(14)), null, null, null, null, null, null, null};
-    public String a;
-    public String b;
-    public String c;
-    public boolean d;
-    public gz.e e;
-    public AiModelCapabilitiesResponse f;
-    public AiModelSupportsResponse g;
-    public AiModelPolicyResponse h;
-    public AiModelBillingResponse i;
-    public boolean j;
-    public boolean k;
-    public boolean l;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final boolean d;
+    public final gz.e e;
+    public final AiModelCapabilitiesResponse f;
+    public final AiModelSupportsResponse g;
+    public final AiModelPolicyResponse h;
+    public final AiModelBillingResponse i;
+    public final boolean j;
+    public final boolean k;
+    public final boolean l;
 
     public static final class Companion {
         public final KSerializer serializer() {

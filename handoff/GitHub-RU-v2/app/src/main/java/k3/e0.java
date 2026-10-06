@@ -4,10 +4,10 @@ package k3;
 public final class e0 implements f0 {
 
     /* renamed from: r, reason: collision with root package name */
-    public Object f27670r;
+    public final Object f27670r;
 
     /* renamed from: s, reason: collision with root package name */
-    public boolean f27671s;
+    public final boolean f27671s;
 
     public e0(Object obj, boolean z10) {
         this.f27670r = obj;

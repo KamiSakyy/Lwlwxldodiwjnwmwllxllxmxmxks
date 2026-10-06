@@ -9,14 +9,14 @@ public final class a {
     public static final float[] j = {0.0f, 0.5f, 1.0f};
     public static final int[] k = new int[4];
     public static final float[] l = {0.0f, 0.0f, 0.5f, 1.0f};
-    public Paint a;
-    public Paint b;
-    public Paint c;
+    public final Paint a;
+    public final Paint b;
+    public final Paint c;
     public int d;
     public int e;
     public int f;
     public final Path g = new Path();
-    public Paint h;
+    public final Paint h;
 
     public a() {
         Paint paint = new Paint();

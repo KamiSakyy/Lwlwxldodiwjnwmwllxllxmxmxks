@@ -22,12 +22,12 @@ import zh.c;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public class i extends m0 implements l.a, GitHubWebView.e {
-    public j d;
-    public u0 e;
+    public final j d;
+    public final u0 e;
     public RecyclerView f;
-    public ArrayList g;
-    public m2 h;
-    public zh.a i;
+    public final ArrayList g;
+    public final m2 h;
+    public final zh.a i;
 
     public i(Context context, RepositoryDetailFragment repositoryDetailFragment, u0 u0Var, int i) {
         repositoryDetailFragment = (i & 2) != 0 ? null : repositoryDetailFragment;

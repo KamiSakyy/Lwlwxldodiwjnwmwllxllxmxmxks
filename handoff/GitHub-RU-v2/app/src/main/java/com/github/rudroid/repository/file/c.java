@@ -6,19 +6,19 @@ import yz0.b4;
 final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f19373a;
+    public final String f19373a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f19374b;
+    public final String f19374b;
 
     /* renamed from: c, reason: collision with root package name */
-    public String f19375c;
+    public final String f19375c;
 
     /* renamed from: d, reason: collision with root package name */
-    public String f19376d;
+    public final String f19376d;
 
     /* renamed from: e, reason: collision with root package name */
-    public b4 f19377e;
+    public final b4 f19377e;
 
     public c(String str, String str2, String str3, String str4, b4 b4Var) {
         k71.k.g(str, "owner");

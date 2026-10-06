@@ -4,9 +4,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t6 {
-    public String a;
-    public List b;
-    public boolean c;
+    public final String a;
+    public final List b;
+    public final boolean c;
 
     public t6(String str, List list, boolean z) {
         k71.k.g(list, "issues");

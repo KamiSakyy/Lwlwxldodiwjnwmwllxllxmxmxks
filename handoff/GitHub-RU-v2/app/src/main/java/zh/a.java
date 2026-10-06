@@ -9,7 +9,7 @@ import l7.a1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a implements a1 {
-    public int a;
+    public final int a;
     public float b;
     public float c;
 

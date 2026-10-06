@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ne {
-    public List a;
-    public pe b;
+    public final List a;
+    public final pe b;
 
     public ne(List list, pe peVar) {
         this.a = list;

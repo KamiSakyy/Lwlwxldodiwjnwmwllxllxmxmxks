@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c90 implements aaShadow.m0 {
-    public f90 a;
-    public d90 b;
+    public final f90 a;
+    public final d90 b;
 
     public c90(f90 f90Var, d90 d90Var) {
         this.a = f90Var;

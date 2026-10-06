@@ -2,11 +2,11 @@ package nj;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public xn.e1 a;
-    public Boolean b;
-    public Boolean c;
-    public Boolean d;
-    public xn.f1 e;
+    public final xn.e1 a;
+    public final Boolean b;
+    public final Boolean c;
+    public final Boolean d;
+    public final xn.f1 e;
 
     public d(xn.e1 e1Var, Boolean bool, Boolean bool2, Boolean bool3, xn.f1 f1Var) {
         this.a = e1Var;

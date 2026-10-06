@@ -25,9 +25,9 @@ import no.a;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public class CarouselLayoutManager extends w0 implements i1 {
-    public g0 p;
+    public final g0 p;
     public c q;
-    public View.OnLayoutChangeListener r;
+    public final View.OnLayoutChangeListener r;
 
     public CarouselLayoutManager() {
         g0 g0Var = new g0(1);

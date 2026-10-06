@@ -6,8 +6,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q9 extends h {
-    public boolean t;
-    public boolean u;
+    public final boolean t;
+    public final boolean u;
     public final /* synthetic */ j4 v;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

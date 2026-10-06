@@ -8,7 +8,7 @@ public enum r4 implements i5 {
     v(3),
     w(-1);
 
-    public int r;
+    public final int r;
 
     r4(int i) {
         this.r = i;

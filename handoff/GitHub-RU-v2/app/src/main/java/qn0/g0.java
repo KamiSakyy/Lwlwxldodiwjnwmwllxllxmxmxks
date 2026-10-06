@@ -6,10 +6,10 @@ import pz0.su;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g0 implements aa.w0 {
     public static final y Companion = new y();
-    public String r;
-    public int s;
-    public aa1.b t;
-    public aa1.b u;
+    public final String r;
+    public final int s;
+    public final aa1.b t;
+    public final aa1.b u;
 
     public g0(String str, int i) {
         k71.k.g(str, "id");

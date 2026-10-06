@@ -5,5 +5,5 @@ package n0;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface z {
-    public static Object i(Object p1, Object p2, Object p3) { return null; }
+    public Object i(Object p1, Object p2, Object p3) { return null; }
 }

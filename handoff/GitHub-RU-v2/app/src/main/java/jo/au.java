@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class au implements aaShadow.v0 {
-    public nu a;
-    public String b;
-    public String c;
+    public final nu a;
+    public final String b;
+    public final String c;
 
     public au(nu nuVar, String str, String str2) {
         this.a = nuVar;

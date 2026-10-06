@@ -6,9 +6,9 @@ import dw.t5;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r {
-    public String a;
-    public String b;
-    public t5 c;
+    public final String a;
+    public final String b;
+    public final t5 c;
 
     public r(String str, String str2, t5 t5Var) {
         this.a = str;

@@ -11,16 +11,16 @@ import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n0 extends androidx.lifecycle.a {
-    public y1 A;
-    public i1 B;
+    public final y1 A;
+    public final i1 B;
     public q1 C;
-    public e0 t;
-    public tm.d u;
-    public tm.g v;
-    public tm.c w;
-    public tm.k x;
-    public com.github.rudroid.activities.util.c y;
-    public y1 z;
+    public final e0 t;
+    public final tm.d u;
+    public final tm.g v;
+    public final tm.c w;
+    public final tm.k x;
+    public final com.github.rudroid.activities.util.c y;
+    public final y1 z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public n0(Application application, e0 e0Var, tm.d dVar, tm.g gVar, tm.c cVar, tm.k kVar, com.github.rudroid.activities.util.c cVar2) {

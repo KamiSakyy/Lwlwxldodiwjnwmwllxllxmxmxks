@@ -13,7 +13,7 @@ public final class MobileEventContext {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ MobileEventContext[] $VALUES;
     public static final k Companion;
-    private String rawValue;
+    private final String rawValue;
     public static final MobileEventContext SAVE = new MobileEventContext("SAVE", 0, "SAVE");
     public static final MobileEventContext UNSAVE = new MobileEventContext("UNSAVE", 1, "UNSAVE");
     public static final MobileEventContext DONE = new MobileEventContext("DONE", 2, "DONE");

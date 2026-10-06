@@ -15,13 +15,13 @@ import x.i;
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class DiscussionCategoryData implements Parcelable {
-    public String r;
-    public String s;
-    public String t;
-    public boolean u;
-    public boolean v;
-    public String w;
-    public String x;
+    public final String r;
+    public final String s;
+    public final String t;
+    public final boolean u;
+    public final boolean v;
+    public final String w;
+    public final String x;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<DiscussionCategoryData> CREATOR = new m(19);
 

@@ -6,12 +6,12 @@ import hc0.fm;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f {
-    public int a;
-    public String b;
-    public fm c;
-    public k d;
-    public boolean e;
-    public String f;
+    public final int a;
+    public final String b;
+    public final fm c;
+    public final k d;
+    public final boolean e;
+    public final String f;
 
     public f(int i, String str, fm fmVar, k kVar, boolean z, String str2) {
         this.a = i;

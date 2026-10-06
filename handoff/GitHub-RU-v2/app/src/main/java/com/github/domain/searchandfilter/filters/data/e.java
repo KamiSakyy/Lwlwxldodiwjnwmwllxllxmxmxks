@@ -20,7 +20,7 @@ import x61.r;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e extends d {
-    public List v;
+    public final List v;
     public static final q Companion = new q();
     public static final Parcelable.Creator<e> CREATOR = new o(9);
     public static final k50.c w = new k50.c(2);
@@ -94,5 +94,5 @@ public final class e extends d {
             parcel.writeParcelable((Parcelable) q.next(), i);
         }
     }
-    public static Object z(Object p1, Object p2, Object p3) { return null; }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

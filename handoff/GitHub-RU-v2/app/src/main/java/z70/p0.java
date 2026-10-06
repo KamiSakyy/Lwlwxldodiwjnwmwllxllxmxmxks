@@ -2,8 +2,8 @@ package z70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p0 {
-    public String a;
-    public h0 b;
+    public final String a;
+    public final h0 b;
 
     public p0(String str, h0 h0Var) {
         this.a = str;

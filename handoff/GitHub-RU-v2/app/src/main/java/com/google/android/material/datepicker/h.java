@@ -47,5 +47,4 @@ public final class h extends LinearLayoutManager {
         public RecyclerView() {
         }
     }
-    public Object G0(Object) { return null; }
 }

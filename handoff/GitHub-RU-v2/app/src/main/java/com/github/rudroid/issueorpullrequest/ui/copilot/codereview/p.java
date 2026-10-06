@@ -6,10 +6,10 @@ import com.github.service.models.response.copilot.CopilotCodeReviewFeedbackOptio
 public final class p {
 
     /* renamed from: a, reason: collision with root package name */
-    public CopilotCodeReviewFeedbackOption f16734a;
+    public final CopilotCodeReviewFeedbackOption f16734a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f16735b;
+    public final boolean f16735b;
 
     public p(CopilotCodeReviewFeedbackOption copilotCodeReviewFeedbackOption, boolean z10) {
         k71.k.g(copilotCodeReviewFeedbackOption, "option");

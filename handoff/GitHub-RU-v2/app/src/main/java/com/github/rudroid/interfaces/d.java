@@ -6,10 +6,10 @@ import com.github.rudroid.webview.viewholders.GitHubWebView;
 public final class d implements GitHubWebView.a {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f15140a;
+    public final String f15140a;
 
     /* renamed from: b, reason: collision with root package name */
-    public u0 f15141b;
+    public final u0 f15141b;
 
     public d(String str, u0 u0Var) {
         k71.k.g(str, "id");

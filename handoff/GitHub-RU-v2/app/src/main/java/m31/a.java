@@ -7,11 +7,11 @@ import com.google.android.gms.internal.measurement.b4;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
     public static final int f = (int) Math.round(5.1000000000000005d);
-    public boolean a;
-    public int b;
-    public int c;
-    public int d;
-    public float e;
+    public final boolean a;
+    public final int b;
+    public final int c;
+    public final int d;
+    public final float e;
 
     public a(Context context) {
         boolean d0 = b4.d0(2130969061, context, false);

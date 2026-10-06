@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qe {
-    public String a;
-    public ne b;
-    public String c;
+    public final String a;
+    public final ne b;
+    public final String c;
 
     public qe(String str, ne neVar, String str2) {
         this.a = str;

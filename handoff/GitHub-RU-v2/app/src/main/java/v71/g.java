@@ -4,8 +4,8 @@ import java.util.concurrent.locks.LockSupport;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class g extends a {
-    public Thread u;
-    public v0 v;
+    public final Thread u;
+    public final v0 v;
 
     public g(a71.h hVar, Thread thread, v0 v0Var) {
         super(hVar, true);

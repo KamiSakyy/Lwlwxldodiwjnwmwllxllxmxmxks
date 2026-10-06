@@ -18,7 +18,7 @@ public class g implements Iterable, Serializable {
     public int f2282r = 0;
 
     /* renamed from: s, reason: collision with root package name */
-    public byte[] f2283s;
+    public final byte[] f2283s;
 
     static {
         f2281u = c.a() ? new e(1) : new e(0);

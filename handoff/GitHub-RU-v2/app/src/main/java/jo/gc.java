@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class gc {
-    public ec a;
+    public final ec a;
 
     public gc(ec ecVar) {
         this.a = ecVar;

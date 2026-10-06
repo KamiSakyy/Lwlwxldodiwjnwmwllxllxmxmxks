@@ -7,7 +7,7 @@ public enum g3 {
     u(2),
     v(3);
 
-    public int r;
+    public final int r;
 
     g3(int i) {
         this.r = i;

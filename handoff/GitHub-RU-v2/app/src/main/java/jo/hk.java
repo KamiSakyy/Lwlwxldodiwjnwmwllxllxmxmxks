@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class hk {
-    public gk a;
+    public final gk a;
 
     public hk(gk gkVar) {
         this.a = gkVar;

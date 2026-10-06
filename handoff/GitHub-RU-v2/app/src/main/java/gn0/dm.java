@@ -7,7 +7,7 @@ public final class dm {
     public static final cm Companion;
     public static final dm s;
     public static final /* synthetic */ dm[] t;
-    public String r;
+    public final String r;
 
     static {
         dm dmVar = new dm("BASE_REF", 0, "BASE_REF");

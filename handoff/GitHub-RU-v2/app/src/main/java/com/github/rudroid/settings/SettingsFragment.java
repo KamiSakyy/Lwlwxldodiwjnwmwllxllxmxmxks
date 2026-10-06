@@ -33,8 +33,8 @@ public final class SettingsFragment extends Hilt_SettingsFragment implements com
     public com.github.rudroid.activities.util.c I0;
     public oa.m J0;
     public com.github.rudroid.utilities.e K0;
-    public androidx.lifecycle.l1 L0;
-    public androidx.lifecycle.l1 M0;
+    public final androidx.lifecycle.l1 L0;
+    public final androidx.lifecycle.l1 M0;
     public k.g N0;
     public d5 O0;
     public androidx.fragment.app.t P0;

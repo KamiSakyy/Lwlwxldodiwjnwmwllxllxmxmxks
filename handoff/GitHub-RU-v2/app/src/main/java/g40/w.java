@@ -4,9 +4,9 @@ import hc0.uu;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w {
-    public String a;
-    public uu b;
-    public String c;
+    public final String a;
+    public final uu b;
+    public final String c;
 
     public w(uu uuVar, String str, String str2) {
         this.a = str;

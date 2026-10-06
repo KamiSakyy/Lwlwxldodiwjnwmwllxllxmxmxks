@@ -13,16 +13,16 @@ import android.widget.PopupWindow;
 public class v {
 
     /* renamed from: a, reason: collision with root package name */
-    public Context f30309a;
+    public final Context f30309a;
 
     /* renamed from: b, reason: collision with root package name */
-    public l f30310b;
+    public final l f30310b;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean f30311c;
+    public final boolean f30311c;
 
     /* renamed from: d, reason: collision with root package name */
-    public int f30312d;
+    public final int f30312d;
 
     /* renamed from: e, reason: collision with root package name */
     public View f30313e;

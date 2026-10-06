@@ -2,7 +2,7 @@ package s20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f {
-    public String a;
+    public final String a;
 
     public f(String str) {
         k71.k.g(str, "parentCommentId");

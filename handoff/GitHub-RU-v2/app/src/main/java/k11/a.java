@@ -14,8 +14,8 @@ public final class a implements l {
     public static final Set d;
     public static final a e;
     public static final a f;
-    public String a;
-    public String b;
+    public final String a;
+    public final String b;
 
     static {
         String v = y9.a.v("hts/frbslgiggolai.o/0clgbthfra=snpoo", "tp:/ieaeogn.ogepscmvc/o/ac?omtjo_rt3");

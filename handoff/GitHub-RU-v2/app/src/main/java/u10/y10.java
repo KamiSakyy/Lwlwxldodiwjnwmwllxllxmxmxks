@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y10 {
-    public z10 a;
+    public final z10 a;
 
     public y10(z10 z10Var) {
         this.a = z10Var;

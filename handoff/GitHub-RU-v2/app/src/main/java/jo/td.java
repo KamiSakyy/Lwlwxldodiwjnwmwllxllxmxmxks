@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class td implements aaShadow.m0 {
-    public ud a;
+    public final ud a;
 
     public td(ud udVar) {
         this.a = udVar;

@@ -4,7 +4,7 @@ package u5;
 public final class m implements l {
 
     /* renamed from: r, reason: collision with root package name */
-    public int f32222r;
+    public final int f32222r;
 
     /* renamed from: s, reason: collision with root package name */
     public int f32223s = -1;

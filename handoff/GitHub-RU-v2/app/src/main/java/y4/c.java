@@ -11,16 +11,16 @@ import java.util.Objects;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public TextPaint f34262a;
+    public final TextPaint f34262a;
 
     /* renamed from: b, reason: collision with root package name */
-    public TextDirectionHeuristic f34263b;
+    public final TextDirectionHeuristic f34263b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f34264c;
+    public final int f34264c;
 
     /* renamed from: d, reason: collision with root package name */
-    public int f34265d;
+    public final int f34265d;
 
     public c(TextPaint textPaint, TextDirectionHeuristic textDirectionHeuristic, int i, int i10) {
         if (Build.VERSION.SDK_INT >= 29) {

@@ -15,10 +15,10 @@ public final class b implements Collection, l71.a {
     public static final b f29408t = new b(r.r);
 
     /* renamed from: r, reason: collision with root package name */
-    public List f29409r;
+    public final List f29409r;
 
     /* renamed from: s, reason: collision with root package name */
-    public int f29410s;
+    public final int f29410s;
 
     public b(List list) {
         this.f29409r = list;

@@ -4,7 +4,7 @@ package com.github.rudroid.copilot.preferences;
 public final class p {
 
     /* renamed from: a, reason: collision with root package name */
-    public gi.c f9970a;
+    public final gi.c f9970a;
 
     public p(gi.c cVar) {
         k71.k.g(cVar, "systemPreferences");

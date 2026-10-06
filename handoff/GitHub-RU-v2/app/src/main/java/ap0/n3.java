@@ -2,11 +2,11 @@ package ap0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n3 {
-    public String a;
-    public s3 b;
-    public r3 c;
-    public t3 d;
-    public u3 e;
+    public final String a;
+    public final s3 b;
+    public final r3 c;
+    public final t3 d;
+    public final u3 e;
 
     public n3(String str, s3 s3Var, r3 r3Var, t3 t3Var, u3 u3Var) {
         k71.k.g(str, "__typename");

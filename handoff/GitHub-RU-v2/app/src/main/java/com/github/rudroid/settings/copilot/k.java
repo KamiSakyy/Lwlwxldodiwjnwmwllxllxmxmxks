@@ -13,5 +13,4 @@ final /* synthetic */ class k extends k71.i implements j71.a {
         k71.k.m("copilotChatProPaywallLauncher");
         throw null;
     }
-    public Object a(Object) { return null; }
 }

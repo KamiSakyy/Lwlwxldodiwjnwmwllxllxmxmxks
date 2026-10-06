@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class th {
-    public String a;
-    public uh b;
-    public kw0.a c;
+    public final String a;
+    public final uh b;
+    public final kw0.a c;
 
     public th(String str, uh uhVar, kw0.a aVar) {
         k71.k.g(str, "__typename");

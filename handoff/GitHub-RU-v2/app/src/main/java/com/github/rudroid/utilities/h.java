@@ -47,6 +47,4 @@ public final class h {
         }
     }
     public Object c(Object p1, Object p2) { return null; }
-    public Object c(Object, Object) { return null; }
-    public Object c(Object, Object) { return null; }
 }

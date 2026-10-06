@@ -8,10 +8,10 @@ import w50.m;
 public final class c implements a {
 
     /* renamed from: a, reason: collision with root package name */
-    public float[] f32057a;
+    public final float[] f32057a;
 
     /* renamed from: b, reason: collision with root package name */
-    public float[] f32058b;
+    public final float[] f32058b;
 
     public c(float[] fArr, float[] fArr2) {
         if (fArr.length != fArr2.length || fArr.length == 0) {

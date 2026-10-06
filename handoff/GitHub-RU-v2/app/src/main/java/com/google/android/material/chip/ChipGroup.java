@@ -22,12 +22,12 @@ import o31.o;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public class ChipGroup extends f {
-    public k A;
+    public final k A;
     public int v;
     public int w;
     public j x;
-    public a y;
-    public int z;
+    public final a y;
+    public final int z;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*

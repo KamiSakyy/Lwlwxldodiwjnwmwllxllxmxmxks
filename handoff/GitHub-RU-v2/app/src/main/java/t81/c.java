@@ -11,11 +11,11 @@ import sy.y;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class c {
-    public e a;
-    public String b;
+    public final e a;
+    public final String b;
     public boolean c;
     public a d;
-    public ArrayList e;
+    public final ArrayList e;
     public boolean f;
 
     public c(e eVar, String str) {
@@ -143,5 +143,4 @@ public final class c {
         return this.b;
     }
     public Object t(Object p1) { return null; }
-    public Object t(int) { return null; }
 }

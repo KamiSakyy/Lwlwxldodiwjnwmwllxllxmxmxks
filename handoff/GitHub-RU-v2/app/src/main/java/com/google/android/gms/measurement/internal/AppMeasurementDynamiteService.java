@@ -24,7 +24,7 @@ import java.util.concurrent.atomic.AtomicReference;
 /* loaded from: /home/user/work/p/classes4.dex */
 public class AppMeasurementDynamiteService extends com.google.android.gms.internal.measurement.k0 {
     public o1 f;
-    public x.e g;
+    public final x.e g;
 
     public AppMeasurementDynamiteService() {
         super("com.google.android.gms.measurement.api.internal.IAppMeasurementDynamiteService");

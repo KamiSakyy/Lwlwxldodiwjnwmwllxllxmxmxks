@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h40 {
-    public String a;
-    public gn0.xd b;
-    public ah0.e c;
+    public final String a;
+    public final gn0.xd b;
+    public final ah0.e c;
 
     public h40(String str, gn0.xd xdVar, ah0.e eVar) {
         this.a = str;

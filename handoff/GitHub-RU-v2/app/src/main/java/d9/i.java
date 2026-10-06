@@ -4,10 +4,10 @@ package d9;
 public final class i {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f21696a;
+    public final String f21696a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f21697b;
+    public final int f21697b;
 
     public i(String str, int i) {
         k71.k.g(str, "workSpecId");

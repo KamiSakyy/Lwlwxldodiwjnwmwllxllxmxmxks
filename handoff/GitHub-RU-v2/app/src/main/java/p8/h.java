@@ -7,7 +7,7 @@ import x61.m;
 public final class h {
 
     /* renamed from: a, reason: collision with root package name */
-    public Object f30433a;
+    public final Object f30433a;
 
     public h(List list) {
         this.f30433a = list;

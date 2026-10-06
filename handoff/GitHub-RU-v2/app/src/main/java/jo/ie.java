@@ -5,11 +5,11 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ie implements aaShadow.w0 {
     public static final be Companion = new be();
-    public String r;
-    public String s;
-    public int t;
-    public String u;
-    public aa.u0 v;
+    public final String r;
+    public final String s;
+    public final int t;
+    public final String u;
+    public final aa.u0 v;
 
     public ie(String str, String str2, int i, String str3, aa.u0 u0Var) {
         k71.k.g(str, "repositoryOwner");

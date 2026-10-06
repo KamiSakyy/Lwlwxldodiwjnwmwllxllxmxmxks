@@ -11,7 +11,7 @@ public abstract class a {
     public static final class C0092a extends a {
 
         /* renamed from: a, reason: collision with root package name */
-        public Set f32279a;
+        public final Set f32279a;
 
         public C0092a(Set set) {
             k.g(set, "customSubscriptions");

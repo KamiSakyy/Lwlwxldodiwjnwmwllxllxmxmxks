@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class rn implements aaShadow.w0 {
     public static final on Companion = new on();
-    public aa.u0 r;
+    public final aa.u0 r;
 
     public rn(aa.u0 u0Var) {
         this.r = u0Var;

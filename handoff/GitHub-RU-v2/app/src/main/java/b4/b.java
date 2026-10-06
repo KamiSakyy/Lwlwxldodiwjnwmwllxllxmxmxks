@@ -6,10 +6,10 @@ import java.util.Arrays;
 public final class b extends com.google.common.util.concurrent.a {
 
     /* renamed from: a, reason: collision with root package name */
-    public double[] f3402a;
+    public final double[] f3402a;
 
     /* renamed from: b, reason: collision with root package name */
-    public a[] f3403b;
+    public final a[] f3403b;
 
     /* JADX WARN: Code restructure failed: missing block: B:92:0x0030, code lost:
     

@@ -18,7 +18,7 @@ import v71.q1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class TwoFactorDialog extends w2.a {
     public static final /* synthetic */ int B = 0;
-    public p1 A;
+    public final p1 A;
     public j71.a z;
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */

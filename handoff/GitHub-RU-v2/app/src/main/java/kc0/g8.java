@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g8 implements aaShadow.n0 {
     public static final d8 Companion = new d8();
-    public String r;
+    public final String r;
 
     public g8(String str) {
         k71.k.g(str, "commentId");

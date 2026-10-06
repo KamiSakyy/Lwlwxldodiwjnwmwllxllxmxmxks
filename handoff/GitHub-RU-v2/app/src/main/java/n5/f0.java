@@ -4,7 +4,7 @@ package n5;
 public final class f0 extends p0 {
 
     /* renamed from: b, reason: collision with root package name */
-    public Throwable f29522b;
+    public final Throwable f29522b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public f0(Throwable th) {

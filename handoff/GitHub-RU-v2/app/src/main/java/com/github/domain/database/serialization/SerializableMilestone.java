@@ -19,11 +19,11 @@ import yz0.v2;
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SerializableMilestone implements v2 {
-    public String r;
-    public String s;
-    public MilestoneState t;
-    public int u;
-    public String v;
+    public final String r;
+    public final String s;
+    public final MilestoneState t;
+    public final int u;
+    public final String v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<SerializableMilestone> CREATOR = new f8.a(16);
     public static final h[] w = {null, null, w.s(i.r, new u5(14)), null, null};

@@ -2,7 +2,7 @@ package w61;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r implements Comparable {
-    public byte r;
+    public final byte r;
 
     public static String a(byte b) {
         return String.valueOf(b & 255);

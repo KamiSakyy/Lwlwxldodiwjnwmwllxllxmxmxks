@@ -50,11 +50,11 @@ import z01.r1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w implements r1, mi0 {
-    public com.github.service.wrapper.j r;
-    public com.github.service.wrapper.b s;
-    public v71.v t;
-    public com.github.rudroid.common.k u;
-    public c0 v;
+    public final com.github.service.wrapper.j r;
+    public final com.github.service.wrapper.b s;
+    public final v71.v t;
+    public final com.github.rudroid.common.k u;
+    public final c0 v;
 
     public w(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, com.github.rudroid.common.k kVar) {
         k71.k.g(jVar, "client");

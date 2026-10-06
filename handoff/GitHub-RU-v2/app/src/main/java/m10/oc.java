@@ -9,7 +9,7 @@ public final class oc {
     public static final oc t;
     public static final /* synthetic */ oc[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         oc ocVar = new oc("ERROR", 0, "ERROR");

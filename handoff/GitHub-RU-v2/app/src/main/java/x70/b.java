@@ -4,7 +4,7 @@ import aa.v0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b implements v0 {
-    public e a;
+    public final e a;
 
     public b(e eVar) {
         this.a = eVar;

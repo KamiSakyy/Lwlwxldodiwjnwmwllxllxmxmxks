@@ -4,11 +4,11 @@ import hc0.w00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k2 {
-    public String a;
-    public String b;
-    public String c;
-    public w00 d;
-    public l2 e;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final w00 d;
+    public final l2 e;
 
     public k2(String str, String str2, String str3, w00 w00Var, l2 l2Var) {
         this.a = str;

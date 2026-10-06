@@ -16,7 +16,7 @@ public final class es {
     public static final es x;
     public static final es y;
     public static final es z;
-    public String r;
+    public final String r;
 
     static {
         es esVar = new es("BLUE", 0, "BLUE");

@@ -14,10 +14,10 @@ import x.i;
 public final class RepositoryProjectsRoute implements Parcelable, f {
 
     /* renamed from: r, reason: collision with root package name */
-    public String f17769r;
+    public final String f17769r;
 
     /* renamed from: s, reason: collision with root package name */
-    public String f17770s;
+    public final String f17770s;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<RepositoryProjectsRoute> CREATOR = new a();
 

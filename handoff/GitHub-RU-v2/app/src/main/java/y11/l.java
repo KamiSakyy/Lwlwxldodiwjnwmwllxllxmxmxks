@@ -23,7 +23,7 @@ import x9.z;
 public final class l {
     public static l e;
     public int a;
-    public Object b;
+    public final Object b;
     public Object c;
     public Object d;
 

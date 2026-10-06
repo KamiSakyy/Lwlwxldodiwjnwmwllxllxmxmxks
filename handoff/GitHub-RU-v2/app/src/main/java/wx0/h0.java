@@ -2,11 +2,11 @@ package wx0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h0 {
-    public String a;
-    public r1 b;
-    public q1 c;
-    public k0 d;
-    public j0 e;
+    public final String a;
+    public final r1 b;
+    public final q1 c;
+    public final k0 d;
+    public final j0 e;
 
     public h0(String str, r1 r1Var, q1 q1Var, k0 k0Var, j0 j0Var) {
         k71.k.g(str, "__typename");

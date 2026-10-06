@@ -5,11 +5,11 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class yd implements aaShadow.w0 {
     public static final sd Companion = new sd();
-    public String r;
-    public String s;
-    public int t;
-    public aa1.b u;
-    public aa1.b v;
+    public final String r;
+    public final String s;
+    public final int t;
+    public final aa1.b u;
+    public final aa1.b v;
 
     public yd(String str, String str2, int i, aa.u0 u0Var, int i2) {
         int i3 = i2 & 8;

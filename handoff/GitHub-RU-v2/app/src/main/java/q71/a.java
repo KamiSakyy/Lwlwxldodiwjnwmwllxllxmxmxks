@@ -6,10 +6,10 @@ import java.util.Iterator;
 public abstract class a implements Iterable, l71.a {
 
     /* renamed from: r, reason: collision with root package name */
-    public char f30987r;
+    public final char f30987r;
 
     /* renamed from: s, reason: collision with root package name */
-    public char f30988s;
+    public final char f30988s;
 
     /* renamed from: t, reason: collision with root package name */
     public final int f30989t = 1;

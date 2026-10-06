@@ -7,7 +7,7 @@ public final class i implements i51.f {
     public boolean a = false;
     public boolean b = false;
     public i51.b c;
-    public f d;
+    public final f d;
 
     public i(f fVar) {
         this.d = fVar;
@@ -35,6 +35,6 @@ public final class i implements i51.f {
 
     public i(Object... a) {
     }
-    public long b() { return null; }
+    public Object b() { return null; }
     public static final Object b = null;
 }

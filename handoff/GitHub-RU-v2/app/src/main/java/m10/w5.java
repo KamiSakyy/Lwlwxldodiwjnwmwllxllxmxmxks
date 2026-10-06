@@ -2,14 +2,14 @@ package m10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w5 {
-    public aa1.b a;
-    public String b;
-    public int c;
-    public String d;
-    public aa1.b e;
-    public String f;
-    public int g;
-    public String h;
+    public final aa1.b a;
+    public final String b;
+    public final int c;
+    public final String d;
+    public final aa1.b e;
+    public final String f;
+    public final int g;
+    public final String h;
 
     public w5(aa1.b bVar, String str, int i, String str2, aa1.b bVar2, String str3, int i2, String str4) {
         k71.k.g(str3, "startCommitOid");

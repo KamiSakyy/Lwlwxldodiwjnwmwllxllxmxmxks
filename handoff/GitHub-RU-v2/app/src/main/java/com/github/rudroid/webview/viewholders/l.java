@@ -13,9 +13,9 @@ import zh.c;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l extends com.github.rudroid.adapters.viewholders.e<k5.f> implements GitHubWebView.g, o3 {
     public static final /* synthetic */ r71.e[] y;
-    public u0 v;
-    public int w;
-    public m x;
+    public final u0 v;
+    public final int w;
+    public final m x;
 
     public interface a {
     }

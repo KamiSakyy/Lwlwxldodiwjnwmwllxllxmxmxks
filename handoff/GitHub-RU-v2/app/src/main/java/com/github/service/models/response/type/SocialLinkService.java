@@ -11,7 +11,7 @@ public final class SocialLinkService {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ SocialLinkService[] $VALUES;
     public static final w Companion;
-    private String rawValue;
+    private final String rawValue;
     public static final SocialLinkService BLUESKY = new SocialLinkService("BLUESKY", 0, "BLUESKY");
     public static final SocialLinkService FACEBOOK = new SocialLinkService("FACEBOOK", 1, "FACEBOOK");
     public static final SocialLinkService GENERIC = new SocialLinkService("GENERIC", 2, "GENERIC");

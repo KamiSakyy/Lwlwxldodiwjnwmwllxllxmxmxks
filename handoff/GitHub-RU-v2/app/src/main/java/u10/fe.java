@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fe {
-    public String a;
-    public String b;
-    public ge c;
+    public final String a;
+    public final String b;
+    public final ge c;
 
     public fe(String str, String str2, ge geVar) {
         k71.k.g(str, "__typename");

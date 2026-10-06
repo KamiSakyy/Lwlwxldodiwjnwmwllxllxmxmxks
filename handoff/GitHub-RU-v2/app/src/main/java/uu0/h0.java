@@ -2,7 +2,7 @@ package uu0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h0 {
-    public String a;
+    public final String a;
 
     public h0(String str) {
         this.a = str;

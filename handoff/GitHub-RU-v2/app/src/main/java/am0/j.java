@@ -5,12 +5,12 @@ import gn0.u9;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j {
-    public String a;
-    public String b;
-    public int c;
-    public u9 d;
-    public a e;
-    public k0 f;
+    public final String a;
+    public final String b;
+    public final int c;
+    public final u9 d;
+    public final a e;
+    public final k0 f;
 
     public j(String str, String str2, int i, u9 u9Var, a aVar, k0 k0Var) {
         this.a = str;

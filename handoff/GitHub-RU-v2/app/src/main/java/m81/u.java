@@ -12,8 +12,8 @@ public final class u {
     public static final u w;
     public static final /* synthetic */ u[] x;
     public static final /* synthetic */ d71.b y;
-    public char r;
-    public char s;
+    public final char r;
+    public final char s;
 
     static {
         u uVar = new u("OBJ", 0, '{', '}');

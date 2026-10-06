@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class aw {
-    public String a;
-    public zv b;
-    public yv c;
-    public String d;
+    public final String a;
+    public final zv b;
+    public final yv c;
+    public final String d;
 
     public aw(String str, zv zvVar, yv yvVar, String str2) {
         this.a = str;

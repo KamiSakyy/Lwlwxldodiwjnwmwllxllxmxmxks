@@ -2,8 +2,8 @@ package rc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v {
-    public String a;
-    public q b;
+    public final String a;
+    public final q b;
 
     public v(String str, q qVar) {
         this.a = str;

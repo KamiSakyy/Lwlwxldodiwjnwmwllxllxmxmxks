@@ -7,10 +7,10 @@ import yz0.t7;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public t7 a;
-    public boolean b;
-    public boolean c;
-    public boolean d;
+    public final t7 a;
+    public final boolean b;
+    public final boolean c;
+    public final boolean d;
 
     public e(t7 t7Var, boolean z, boolean z2, boolean z3) {
         this.a = t7Var;
@@ -42,5 +42,5 @@ public final class e {
         sb.append(", hasIssuesEnabled=");
         return m0.m(sb, this.c, ", isDiscussionsEnabled=", this.d, ")");
     }
-    public static Object g(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
 }

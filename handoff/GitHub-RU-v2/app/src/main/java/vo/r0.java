@@ -6,16 +6,16 @@ import m10.gh0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r0 implements aa.h0 {
-    public String a;
-    public Integer b;
-    public int c;
-    public ZonedDateTime d;
-    public ZonedDateTime e;
-    public String f;
-    public gh0 g;
-    public String h;
-    public q0 i;
-    public String j;
+    public final String a;
+    public final Integer b;
+    public final int c;
+    public final ZonedDateTime d;
+    public final ZonedDateTime e;
+    public final String f;
+    public final gh0 g;
+    public final String h;
+    public final q0 i;
+    public final String j;
 
     public r0(String str, Integer num, int i, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, String str2, gh0 gh0Var, String str3, q0 q0Var, String str4) {
         this.a = str;

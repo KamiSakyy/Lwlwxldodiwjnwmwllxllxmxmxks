@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a8 implements aaShadow.m0 {
-    public b8 a;
+    public final b8 a;
 
     public a8(b8 b8Var) {
         this.a = b8Var;

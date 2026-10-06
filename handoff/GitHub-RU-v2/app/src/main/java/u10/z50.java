@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z50 {
-    public v50 a;
-    public String b;
+    public final v50 a;
+    public final String b;
 
     public z50(v50 v50Var, String str) {
         this.a = v50Var;

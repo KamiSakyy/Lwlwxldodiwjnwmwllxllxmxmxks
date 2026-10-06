@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class m extends j {
-    public d0 A;
+    public final d0 A;
 
     static {
         String[] strArr = ba1.h.a;

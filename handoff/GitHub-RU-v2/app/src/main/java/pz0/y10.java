@@ -12,7 +12,7 @@ public final class y10 {
     public static final y10 w;
     public static final /* synthetic */ y10[] x;
     public static final /* synthetic */ d71.b y;
-    public String r;
+    public final String r;
 
     static {
         y10 y10Var = new y10("DISCUSSIONS", 0, "DISCUSSIONS");

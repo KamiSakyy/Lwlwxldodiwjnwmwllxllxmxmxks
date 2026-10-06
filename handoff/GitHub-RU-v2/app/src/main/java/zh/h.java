@@ -5,7 +5,7 @@ import org.json.JSONObject;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public Map a;
+    public final Map a;
 
     public interface a {
         public static final C0034a Companion = C0034a.a;

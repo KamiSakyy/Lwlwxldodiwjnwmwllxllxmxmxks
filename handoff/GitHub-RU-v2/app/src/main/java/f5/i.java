@@ -19,10 +19,10 @@ import java.util.ArrayList;
 public final class i implements ActionMode.Callback {
 
     /* renamed from: a, reason: collision with root package name */
-    public ActionMode.Callback f24359a;
+    public final ActionMode.Callback f24359a;
 
     /* renamed from: b, reason: collision with root package name */
-    public TextView f24360b;
+    public final TextView f24360b;
 
     /* renamed from: c, reason: collision with root package name */
     public Class f24361c;

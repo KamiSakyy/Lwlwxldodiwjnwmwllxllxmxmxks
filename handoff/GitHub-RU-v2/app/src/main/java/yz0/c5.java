@@ -5,10 +5,10 @@ import com.github.service.models.response.InteractionType;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c5 {
-    public InteractionType a;
-    public String b;
-    public Avatar c;
-    public String d;
+    public final InteractionType a;
+    public final String b;
+    public final Avatar c;
+    public final String d;
 
     public c5(InteractionType interactionType, String str, Avatar avatar, String str2, int i) {
         interactionType = (i & 1) != 0 ? null : interactionType;

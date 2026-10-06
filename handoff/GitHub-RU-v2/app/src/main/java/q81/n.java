@@ -7,7 +7,7 @@ import java.util.Iterator;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class n implements Iterable, l71.a {
     public static final n s = new n(new String[0]);
-    public String[] r;
+    public final String[] r;
 
     public n(String[] strArr) {
         k71.k.g(strArr, "namesAndValues");

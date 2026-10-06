@@ -12,7 +12,7 @@ public final class e {
     public static final long f30463d = TimeUnit.DAYS.toMillis(7);
 
     /* renamed from: a, reason: collision with root package name */
-    public SharedPreferences f30464a;
+    public final SharedPreferences f30464a;
 
     /* renamed from: b, reason: collision with root package name */
     public boolean f30465b;

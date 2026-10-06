@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class am {
-    public bm a;
-    public String b;
-    public String c;
+    public final bm a;
+    public final String b;
+    public final String c;
 
     public am(bm bmVar, String str, String str2) {
         this.a = bmVar;

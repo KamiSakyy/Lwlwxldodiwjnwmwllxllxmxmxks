@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class gd {
-    public String a;
-    public ed b;
+    public final String a;
+    public final ed b;
 
     public gd(String str, ed edVar) {
         this.a = str;

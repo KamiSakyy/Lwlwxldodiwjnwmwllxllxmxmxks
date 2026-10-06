@@ -14,8 +14,8 @@ import java.util.HashSet;
 public final class a {
     public boolean a;
     public boolean b;
-    public Object c;
-    public Serializable d;
+    public final Object c;
+    public final Serializable d;
     public Object e;
 
     public a() {

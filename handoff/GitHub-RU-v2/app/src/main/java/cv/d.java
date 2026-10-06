@@ -6,9 +6,9 @@ import dw.m3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public String a;
-    public String b;
-    public m3 c;
+    public final String a;
+    public final String b;
+    public final m3 c;
 
     public d(String str, String str2, m3 m3Var) {
         this.a = str;

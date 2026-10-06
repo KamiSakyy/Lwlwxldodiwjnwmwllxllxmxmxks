@@ -4,10 +4,10 @@ package w2;
 public final class w1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public s21.a f33204a;
+    public final s21.a f33204a;
 
     /* renamed from: b, reason: collision with root package name */
-    public s21.a f33205b;
+    public final s21.a f33205b;
 
     /* renamed from: c, reason: collision with root package name */
     public boolean f33206c;

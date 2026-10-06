@@ -2,10 +2,10 @@ package qx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o {
-    public String a;
-    public String b;
-    public String c;
-    public eq.g d;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final eq.g d;
 
     public o(String str, String str2, String str3, eq.g gVar) {
         this.a = str;

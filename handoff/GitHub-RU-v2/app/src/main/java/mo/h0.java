@@ -2,22 +2,22 @@ package mo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h0 implements aa.h0 {
-    public String a;
-    public d b;
-    public e c;
-    public f d;
-    public g e;
-    public h f;
-    public i g;
-    public k h;
-    public l i;
-    public m j;
-    public n k;
-    public o l;
-    public p m;
-    public q n;
-    public r o;
-    public vx.a p;
+    public final String a;
+    public final d b;
+    public final e c;
+    public final f d;
+    public final g e;
+    public final h f;
+    public final i g;
+    public final k h;
+    public final l i;
+    public final m j;
+    public final n k;
+    public final o l;
+    public final p m;
+    public final q n;
+    public final r o;
+    public final vx.a p;
 
     public h0(String str, d dVar, e eVar, f fVar, g gVar, h hVar, i iVar, k kVar, l lVar, m mVar, n nVar, o oVar, p pVar, q qVar, r rVar, vx.a aVar) {
         k71.k.g(str, "__typename");

@@ -2,11 +2,11 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ac0 {
-    public String a;
-    public String b;
-    public ms.i c;
-    public pv.c d;
-    public ms.o e;
+    public final String a;
+    public final String b;
+    public final ms.i c;
+    public final pv.c d;
+    public final ms.o e;
 
     public ac0(String str, String str2, ms.i iVar, pv.c cVar, ms.o oVar) {
         this.a = str;

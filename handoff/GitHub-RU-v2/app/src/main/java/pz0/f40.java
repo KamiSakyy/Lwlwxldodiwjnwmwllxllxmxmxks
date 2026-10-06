@@ -14,7 +14,7 @@ public final class f40 {
     public static final f40 x;
     public static final f40 y;
     public static final /* synthetic */ f40[] z;
-    public String r;
+    public final String r;
 
     static {
         f40 f40Var = new f40("CUSTOM", 0, "CUSTOM");

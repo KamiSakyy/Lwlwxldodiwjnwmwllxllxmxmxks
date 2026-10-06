@@ -20,12 +20,12 @@ import org.json.JSONObject;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a1 {
     public static final t0 Companion = new t0();
-    public q81.u a;
-    public v71.v b;
-    public oa.j c;
-    public oa.h d;
-    public qe.a e;
-    public q81.u f;
+    public final q81.u a;
+    public final v71.v b;
+    public final oa.j c;
+    public final oa.h d;
+    public final qe.a e;
+    public final q81.u f;
     public String g;
     public ZonedDateTime h;
 

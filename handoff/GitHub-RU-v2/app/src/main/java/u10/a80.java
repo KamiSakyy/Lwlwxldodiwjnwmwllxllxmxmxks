@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a80 {
-    public String a;
-    public m90.b b;
+    public final String a;
+    public final m90.b b;
 
     public a80(String str, m90.b bVar) {
         k71.k.g(str, "__typename");

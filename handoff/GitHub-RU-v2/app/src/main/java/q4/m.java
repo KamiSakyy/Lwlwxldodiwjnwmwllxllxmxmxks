@@ -7,32 +7,32 @@ public final class m {
     public static final m f30963k;
 
     /* renamed from: a, reason: collision with root package name */
-    public float f30964a;
+    public final float f30964a;
 
     /* renamed from: b, reason: collision with root package name */
-    public float f30965b;
+    public final float f30965b;
 
     /* renamed from: c, reason: collision with root package name */
-    public float f30966c;
+    public final float f30966c;
 
     /* renamed from: d, reason: collision with root package name */
-    public float f30967d;
+    public final float f30967d;
 
     /* renamed from: e, reason: collision with root package name */
-    public float f30968e;
+    public final float f30968e;
 
     /* renamed from: f, reason: collision with root package name */
-    public float f30969f;
+    public final float f30969f;
 
     /* renamed from: g, reason: collision with root package name */
-    public float[] f30970g;
+    public final float[] f30970g;
 
     /* renamed from: h, reason: collision with root package name */
-    public float f30971h;
-    public float i;
+    public final float f30971h;
+    public final float i;
 
     /* renamed from: j, reason: collision with root package name */
-    public float f30972j;
+    public final float f30972j;
 
     static {
         float[] fArr = b.f30936c;

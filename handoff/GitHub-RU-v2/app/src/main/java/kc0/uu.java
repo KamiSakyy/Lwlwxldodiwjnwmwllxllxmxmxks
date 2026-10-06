@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class uu {
-    public su a;
-    public List b;
+    public final su a;
+    public final List b;
 
     public uu(su suVar, List list) {
         this.a = suVar;

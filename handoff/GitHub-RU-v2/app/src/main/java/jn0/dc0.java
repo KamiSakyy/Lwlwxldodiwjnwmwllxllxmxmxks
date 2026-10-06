@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class dc0 {
-    public zb0 a;
-    public String b;
+    public final zb0 a;
+    public final String b;
 
     public dc0(zb0 zb0Var, String str) {
         this.a = zb0Var;

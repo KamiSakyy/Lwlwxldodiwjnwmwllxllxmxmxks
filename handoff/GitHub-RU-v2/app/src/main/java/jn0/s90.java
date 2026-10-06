@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s90 implements aaShadow.m0 {
-    public u90 a;
+    public final u90 a;
 
     public s90(u90 u90Var) {
         this.a = u90Var;

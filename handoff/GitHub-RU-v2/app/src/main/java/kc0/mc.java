@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class mc {
-    public oc a;
+    public final oc a;
 
     public mc(oc ocVar) {
         this.a = ocVar;

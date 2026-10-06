@@ -5,11 +5,11 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h implements a {
-    public int a;
-    public Integer b;
-    public Integer c;
-    public Integer d;
-    public j71.a e;
+    public final int a;
+    public final Integer b;
+    public final Integer c;
+    public final Integer d;
+    public final j71.a e;
 
     public h(int i, Integer num, Integer num2, Integer num3, j71.a aVar) {
         this.a = i;

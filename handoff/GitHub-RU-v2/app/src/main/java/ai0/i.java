@@ -4,7 +4,7 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i {
-    public h a;
+    public final h a;
 
     public i(h hVar) {
         this.a = hVar;

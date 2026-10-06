@@ -6,12 +6,12 @@ import a0.s0;
 public final class m {
     public static final l Companion = new l();
     public static final m g = new m(0, 0, 0, 0, 0, 0);
-    public int a;
-    public int b;
-    public int c;
-    public int d;
-    public int e;
-    public int f;
+    public final int a;
+    public final int b;
+    public final int c;
+    public final int d;
+    public final int e;
+    public final int f;
 
     public m(int i, int i2, int i3, int i4, int i5, int i6) {
         this.a = i;

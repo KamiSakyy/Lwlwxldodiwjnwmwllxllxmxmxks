@@ -5,13 +5,13 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o6 extends s7 {
-    public s a;
-    public List b;
-    public boolean c;
-    public x2 d;
-    public ZonedDateTime e;
-    public boolean f;
-    public boolean g;
+    public final s a;
+    public final List b;
+    public final boolean c;
+    public final x2 d;
+    public final ZonedDateTime e;
+    public final boolean f;
+    public final boolean g;
 
     public o6(s sVar, List list, boolean z, x2 x2Var, ZonedDateTime zonedDateTime, boolean z2, boolean z3) {
         k71.k.g(sVar, "comment");

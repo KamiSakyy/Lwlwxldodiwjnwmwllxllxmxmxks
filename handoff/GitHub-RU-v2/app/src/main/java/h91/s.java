@@ -9,10 +9,10 @@ import java.util.zip.Inflater;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class s implements k0 {
     public byte r;
-    public e0 s;
-    public Inflater t;
-    public t u;
-    public CRC32 v;
+    public final e0 s;
+    public final Inflater t;
+    public final t u;
+    public final CRC32 v;
 
     public s(j jVar) {
         k71.k.g(jVar, "source");

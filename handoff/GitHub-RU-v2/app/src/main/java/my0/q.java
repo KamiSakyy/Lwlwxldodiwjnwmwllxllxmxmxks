@@ -7,7 +7,7 @@ import pz0.sk;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q implements aa.n0 {
     public static final l Companion = new l();
-    public aa.u0 r;
+    public final aa.u0 r;
 
     public q(aa.u0 u0Var) {
         this.r = u0Var;

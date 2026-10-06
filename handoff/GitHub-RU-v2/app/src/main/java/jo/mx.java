@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class mx implements aaShadow.v0 {
-    public px a;
-    public String b;
-    public String c;
+    public final px a;
+    public final String b;
+    public final String c;
 
     public mx(px pxVar, String str, String str2) {
         this.a = pxVar;

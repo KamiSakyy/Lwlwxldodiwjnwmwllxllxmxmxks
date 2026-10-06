@@ -56,7 +56,7 @@ public abstract class i {
     public static final class d extends i {
 
         /* renamed from: a, reason: collision with root package name */
-        public int f29233a;
+        public final int f29233a;
 
         public d(int i) {
             this.f29233a = i;
@@ -87,7 +87,7 @@ public abstract class i {
     public static final class g extends i {
 
         /* renamed from: a, reason: collision with root package name */
-        public lg.b f29237a;
+        public final lg.b f29237a;
 
         public g(lg.b bVar) {
             this.f29237a = bVar;
@@ -112,10 +112,10 @@ public abstract class i {
     public static final class e extends i {
 
         /* renamed from: a, reason: collision with root package name */
-        public s2.a f29234a;
+        public final s2.a f29234a;
 
         /* renamed from: b, reason: collision with root package name */
-        public boolean f29235b;
+        public final boolean f29235b;
 
         public e(s2.a aVar) {
             this.f29234a = aVar;

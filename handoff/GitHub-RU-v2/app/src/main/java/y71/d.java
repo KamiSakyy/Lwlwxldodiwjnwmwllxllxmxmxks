@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class d extends z71.d {
     private volatile /* synthetic */ int consumed$volatile;
-    public x71.v u;
+    public final x71.v u;
 
     static {
         AtomicIntegerFieldUpdater.newUpdater(d.class, "consumed$volatile");

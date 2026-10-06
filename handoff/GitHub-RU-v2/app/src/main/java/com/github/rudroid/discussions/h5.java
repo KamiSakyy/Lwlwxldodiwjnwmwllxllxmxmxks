@@ -7,16 +7,16 @@ import java.util.List;
 public final class h5 extends za implements me.e, le.a {
 
     /* renamed from: t, reason: collision with root package name */
-    public ArrayList f11352t;
+    public final ArrayList f11352t;
 
     /* renamed from: u, reason: collision with root package name */
-    public boolean f11353u;
+    public final boolean f11353u;
 
     /* renamed from: v, reason: collision with root package name */
-    public boolean f11354v;
+    public final boolean f11354v;
 
     /* renamed from: w, reason: collision with root package name */
-    public String f11355w;
+    public final String f11355w;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public h5(ArrayList arrayList, boolean z10, String str, boolean z11, int i) {

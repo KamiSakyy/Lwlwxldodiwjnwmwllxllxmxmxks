@@ -4,7 +4,7 @@ import androidx.compose.runtime.f2;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class v1 implements r1 {
-    public long a;
+    public final long a;
 
     public v1(long j) {
         this.a = j;

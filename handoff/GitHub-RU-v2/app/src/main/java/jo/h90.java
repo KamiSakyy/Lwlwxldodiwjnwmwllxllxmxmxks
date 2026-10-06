@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h90 implements aaShadow.v0 {
-    public l90 a;
-    public String b;
-    public String c;
+    public final l90 a;
+    public final String b;
+    public final String c;
 
     public h90(l90 l90Var, String str, String str2) {
         this.a = l90Var;

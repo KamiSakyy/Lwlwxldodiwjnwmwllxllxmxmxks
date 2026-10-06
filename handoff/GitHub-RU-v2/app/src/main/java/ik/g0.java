@@ -2,8 +2,8 @@ package ik;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g0 {
-    public oa.g a;
-    public e51.a b;
+    public final oa.g a;
+    public final e51.a b;
 
     public g0(oa.g gVar, e51.a aVar) {
         k71.k.g(gVar, "discussionsService");

@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class gz {
-    public bz a;
-    public String b;
-    public String c;
+    public final bz a;
+    public final String b;
+    public final String c;
 
     public gz(bz bzVar, String str, String str2) {
         this.a = bzVar;

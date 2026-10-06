@@ -10,7 +10,7 @@ public enum c implements l51.c {
     /* JADX INFO: Fake field, exist only in values array */
     EF31(3);
 
-    public int r;
+    public final int r;
 
     c(int i) {
         this.r = i;

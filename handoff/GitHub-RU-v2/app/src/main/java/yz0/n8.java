@@ -4,9 +4,9 @@ import com.github.service.models.response.type.SocialLinkService;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n8 {
-    public String a;
-    public SocialLinkService b;
-    public String c;
+    public final String a;
+    public final SocialLinkService b;
+    public final String c;
 
     public n8(String str, SocialLinkService socialLinkService, String str2) {
         k71.k.g(socialLinkService, "service");

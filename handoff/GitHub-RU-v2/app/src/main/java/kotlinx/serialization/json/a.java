@@ -15,7 +15,7 @@ import x61.m;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a extends b implements List<b>, l71.a {
     public static final JsonArray$Companion Companion = new JsonArray$Companion();
-    public List r;
+    public final List r;
 
     public a(List list) {
         k.g(list, "content");

@@ -7,13 +7,13 @@ import wx0.x1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e1 implements aa.h0 {
-    public String a;
-    public String b;
-    public String c;
-    public ZonedDateTime d;
-    public boolean e;
-    public tq f;
-    public x1 g;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final ZonedDateTime d;
+    public final boolean e;
+    public final tq f;
+    public final x1 g;
 
     public e1(String str, String str2, String str3, ZonedDateTime zonedDateTime, boolean z, tq tqVar, x1 x1Var) {
         this.a = str;

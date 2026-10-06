@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class fb {
-    public String a;
-    public String b;
-    public gb c;
+    public final String a;
+    public final String b;
+    public final gb c;
 
     public fb(String str, String str2, gb gbVar) {
         k71.k.g(str, "__typename");

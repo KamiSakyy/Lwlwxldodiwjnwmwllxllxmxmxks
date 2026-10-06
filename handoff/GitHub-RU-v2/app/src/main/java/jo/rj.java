@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rj {
-    public String a;
-    public pj b;
-    public qj c;
-    public tj d;
+    public final String a;
+    public final pj b;
+    public final qj c;
+    public final tj d;
 
     public rj(String str, pj pjVar, qj qjVar, tj tjVar) {
         this.a = str;

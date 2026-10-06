@@ -10,7 +10,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements n0 {
     public static final a Companion = new a();
-    public d6 r;
+    public final d6 r;
 
     public e(d6 d6Var) {
         this.r = d6Var;
@@ -65,6 +65,6 @@ public final class e implements n0 {
         return "CreateNewListMutation(input=" + this.r + ")";
     }
 
-    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object z(Object p1, Object p2, Object p3) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

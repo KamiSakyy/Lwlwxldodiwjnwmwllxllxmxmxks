@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n3 implements y3 {
-    public long a;
-    public String b;
-    public String c;
-    public String d;
-    public ArrayList e;
+    public final long a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final ArrayList e;
 
     public n3(long j, String str, String str2, String str3, ArrayList arrayList) {
         k71.k.g(str, "eventType");

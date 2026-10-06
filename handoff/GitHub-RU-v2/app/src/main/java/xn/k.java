@@ -6,8 +6,8 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k implements Parcelable {
     public static final Parcelable.Creator<k> CREATOR = new l7.c0(20);
-    public l r;
-    public String s;
+    public final l r;
+    public final String s;
 
     public k(l lVar, String str) {
         k71.k.g(lVar, "state");

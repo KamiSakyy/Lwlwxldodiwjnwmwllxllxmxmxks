@@ -9,10 +9,10 @@ import w61.a0;
 public final class d implements InvocationHandler {
 
     /* renamed from: a, reason: collision with root package name */
-    public k71.e f29653a;
+    public final k71.e f29653a;
 
     /* renamed from: b, reason: collision with root package name */
-    public r8.b f29654b;
+    public final r8.b f29654b;
 
     public d(k71.e eVar, r8.b bVar) {
         this.f29653a = eVar;

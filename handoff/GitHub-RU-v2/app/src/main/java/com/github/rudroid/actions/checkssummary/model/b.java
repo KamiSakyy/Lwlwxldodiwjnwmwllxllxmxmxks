@@ -28,10 +28,10 @@ public final class b {
     public static final /* synthetic */ d71.b f5039v;
 
     /* renamed from: r, reason: collision with root package name */
-    public Set f5040r;
+    public final Set f5040r;
 
     /* renamed from: s, reason: collision with root package name */
-    public int f5041s;
+    public final int f5041s;
 
     public static final class a {
         public static b a(tz0.d dVar) {

@@ -10,7 +10,7 @@ import l7.n1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v extends m0 {
-    public MaterialCalendar d;
+    public final MaterialCalendar d;
 
     public v(MaterialCalendar materialCalendar) {
         this.d = materialCalendar;

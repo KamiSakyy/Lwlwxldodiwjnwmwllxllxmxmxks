@@ -9,7 +9,7 @@ public final class q8 {
     public static final q8 t;
     public static final /* synthetic */ q8[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         q8 q8Var = new q8("APPLE", 0, "APPLE");

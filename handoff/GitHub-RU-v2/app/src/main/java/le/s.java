@@ -30,49 +30,49 @@ public final class s implements me.d {
     public static final a Companion = new a();
 
     /* renamed from: a, reason: collision with root package name */
-    public String f28728a;
+    public final String f28728a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f28729b;
+    public final String f28729b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f28730c;
+    public final int f28730c;
 
     /* renamed from: d, reason: collision with root package name */
-    public boolean f28731d;
+    public final boolean f28731d;
 
     /* renamed from: e, reason: collision with root package name */
-    public boolean f28732e;
+    public final boolean f28732e;
 
     /* renamed from: f, reason: collision with root package name */
-    public boolean f28733f;
+    public final boolean f28733f;
 
     /* renamed from: g, reason: collision with root package name */
-    public ZonedDateTime f28734g;
+    public final ZonedDateTime f28734g;
 
     /* renamed from: h, reason: collision with root package name */
-    public i3 f28735h;
-    public c5 i;
+    public final i3 f28735h;
+    public final c5 i;
 
     /* renamed from: j, reason: collision with root package name */
-    public o.b f28736j;
+    public final o.b f28736j;
 
     /* renamed from: k, reason: collision with root package name */
-    public NotificationReasonState f28737k;
-    public String l;
-    public String m;
+    public final NotificationReasonState f28737k;
+    public final String l;
+    public final String m;
 
     /* renamed from: n, reason: collision with root package name */
-    public lg.b f28738n;
+    public final lg.b f28738n;
 
     /* renamed from: o, reason: collision with root package name */
-    public Integer f28739o;
+    public final Integer f28739o;
 
     /* renamed from: p, reason: collision with root package name */
-    public a0 f28740p;
+    public final a0 f28740p;
 
     /* renamed from: q, reason: collision with root package name */
-    public String f28741q;
+    public final String f28741q;
 
     public static final class a {
     }

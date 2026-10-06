@@ -6,7 +6,7 @@ import w8.s;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public long f4058a;
+    public final long f4058a;
 
     public static final long a(float f6, float f10) {
         return (Float.floatToRawIntBits(f10) & 4294967295L) | (Float.floatToRawIntBits(f6) << 32);

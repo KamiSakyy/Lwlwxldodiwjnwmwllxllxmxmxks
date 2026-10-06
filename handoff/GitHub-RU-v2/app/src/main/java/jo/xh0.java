@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class xh0 implements aaShadow.w0 {
     public static final rh0 Companion = new rh0();
-    public String r;
-    public aa.u0 s;
+    public final String r;
+    public final aa.u0 s;
 
     public xh0(aa.u0 u0Var, String str) {
         k71.k.g(str, "login");

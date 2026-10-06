@@ -9,6 +9,6 @@ public final class m0 implements p61.d {
     public final /* bridge */ /* synthetic */ Object get() {
         return Boolean.TRUE;
     }
-    public static Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object n(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object n(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

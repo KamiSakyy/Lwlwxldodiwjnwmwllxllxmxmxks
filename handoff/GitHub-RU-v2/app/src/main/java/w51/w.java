@@ -16,12 +16,12 @@ import java.util.concurrent.TimeoutException;
 public final class w {
     public static final long i = TimeUnit.HOURS.toSeconds(8);
     public static final /* synthetic */ int j = 0;
-    public Context a;
-    public j4.h b;
-    public androidx.lifecycle.b c;
-    public FirebaseMessaging d;
-    public ScheduledThreadPoolExecutor f;
-    public u h;
+    public final Context a;
+    public final j4.h b;
+    public final androidx.lifecycle.b c;
+    public final FirebaseMessaging d;
+    public final ScheduledThreadPoolExecutor f;
+    public final u h;
     public final x.e e = new x.e(0);
     public boolean g = false;
 

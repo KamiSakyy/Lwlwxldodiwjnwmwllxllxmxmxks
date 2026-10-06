@@ -2,7 +2,7 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w5 {
-    public boolean a;
+    public final boolean a;
 
     public w5(boolean z) {
         this.a = z;

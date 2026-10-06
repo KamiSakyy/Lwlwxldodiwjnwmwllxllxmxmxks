@@ -6,10 +6,10 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public boolean a;
-    public int b;
-    public boolean c;
-    public Long d;
+    public final boolean a;
+    public final int b;
+    public final boolean c;
+    public final Long d;
 
     public b(boolean z, int i, boolean z2, Long l) {
         this.a = z;

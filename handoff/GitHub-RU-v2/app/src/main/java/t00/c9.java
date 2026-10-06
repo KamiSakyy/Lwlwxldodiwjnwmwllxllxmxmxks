@@ -110,12 +110,12 @@ import yz0.t7;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c9 implements z01.g1, mi0, yf0 {
     public final /* synthetic */ int r;
-    public com.github.service.wrapper.j s;
-    public com.github.service.wrapper.b t;
-    public v71.v u;
-    public s01.p v;
-    public s01.p w;
-    public s01.p x;
+    public final com.github.service.wrapper.j s;
+    public final com.github.service.wrapper.b t;
+    public final v71.v u;
+    public final s01.p v;
+    public final s01.p w;
+    public final s01.p x;
 
     public c9(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, int i) {
         this.r = i;

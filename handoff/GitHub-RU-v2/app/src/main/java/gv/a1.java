@@ -2,8 +2,8 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a1 {
-    public String a;
-    public s0 b;
+    public final String a;
+    public final s0 b;
 
     public a1(String str, s0 s0Var) {
         this.a = str;

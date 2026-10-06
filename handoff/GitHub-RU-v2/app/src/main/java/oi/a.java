@@ -20,7 +20,7 @@ import x61.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a extends c {
-    public r[] b;
+    public final r[] b;
 
     public a() {
         super("\\u001b\\[(\\d+(?:;\\d+)*)?m");

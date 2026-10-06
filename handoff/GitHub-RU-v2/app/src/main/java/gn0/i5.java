@@ -2,11 +2,11 @@ package gn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i5 {
-    public l4 a;
-    public aa1.b b;
-    public String c;
-    public aa1.b d;
-    public k4 e;
+    public final l4 a;
+    public final aa1.b b;
+    public final String c;
+    public final aa1.b d;
+    public final k4 e;
 
     public i5(l4 l4Var, String str, aa.u0 u0Var, k4 k4Var) {
         k71.k.g(str, "expectedHeadOid");

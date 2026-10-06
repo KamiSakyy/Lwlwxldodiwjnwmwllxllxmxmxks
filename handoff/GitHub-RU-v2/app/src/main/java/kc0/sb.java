@@ -4,9 +4,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class sb {
-    public int a;
-    public qb b;
-    public List c;
+    public final int a;
+    public final qb b;
+    public final List c;
 
     public sb(int i, qb qbVar, List list) {
         this.a = i;

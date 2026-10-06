@@ -9,13 +9,13 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements h0 {
-    public String a;
-    public String b;
-    public a c;
-    public String d;
-    public c e;
-    public ZonedDateTime f;
-    public String g;
+    public final String a;
+    public final String b;
+    public final a c;
+    public final String d;
+    public final c e;
+    public final ZonedDateTime f;
+    public final String g;
 
     public d(String str, String str2, a aVar, String str3, c cVar, ZonedDateTime zonedDateTime, String str4) {
         this.a = str;

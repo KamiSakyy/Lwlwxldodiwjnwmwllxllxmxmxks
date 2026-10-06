@@ -2,24 +2,24 @@ package ox0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n0 {
-    public String a;
-    public i b;
-    public k c;
-    public z d;
-    public h e;
-    public b0 f;
-    public l g;
-    public p h;
-    public q i;
-    public u j;
-    public v k;
-    public s l;
-    public j m;
-    public t n;
-    public w o;
-    public m p;
-    public o q;
-    public kw0.a r;
+    public final String a;
+    public final i b;
+    public final k c;
+    public final z d;
+    public final h e;
+    public final b0 f;
+    public final l g;
+    public final p h;
+    public final q i;
+    public final u j;
+    public final v k;
+    public final s l;
+    public final j m;
+    public final t n;
+    public final w o;
+    public final m p;
+    public final o q;
+    public final kw0.a r;
 
     public n0(String str, i iVar, k kVar, z zVar, h hVar, b0 b0Var, l lVar, p pVar, q qVar, u uVar, v vVar, s sVar, j jVar, t tVar, w wVar, m mVar, o oVar, kw0.a aVar) {
         k71.k.g(str, "__typename");

@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ei {
-    public Boolean a;
+    public final Boolean a;
 
     public ei(Boolean bool) {
         this.a = bool;

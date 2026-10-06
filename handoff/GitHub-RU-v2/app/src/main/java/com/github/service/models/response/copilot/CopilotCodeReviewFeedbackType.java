@@ -13,7 +13,7 @@ public final class CopilotCodeReviewFeedbackType {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ CopilotCodeReviewFeedbackType[] $VALUES;
     public static final c Companion;
-    private String rawValue;
+    private final String rawValue;
     public static final CopilotCodeReviewFeedbackType POSITIVE = new CopilotCodeReviewFeedbackType("POSITIVE", 0, "POSITIVE");
     public static final CopilotCodeReviewFeedbackType NEGATIVE = new CopilotCodeReviewFeedbackType("NEGATIVE", 1, "NEGATIVE");
     public static final CopilotCodeReviewFeedbackType UNKNOWN__ = new CopilotCodeReviewFeedbackType("UNKNOWN__", 2, "UNKNOWN__");

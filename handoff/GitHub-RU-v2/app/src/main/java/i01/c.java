@@ -5,8 +5,8 @@ import yz0.j3;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public j3 a;
-    public int b;
+    public final j3 a;
+    public final int b;
 
     public c(j3 j3Var, int i) {
         this.a = j3Var;

@@ -13,8 +13,8 @@ import java.util.List;
 public final class ConfigureShortcutActivity extends h0<ic.d0> {
     public static final a Companion;
     public static final /* synthetic */ r71.e[] x0;
-    public int v0;
-    public com.github.rudroid.activities.util.g w0;
+    public final int v0;
+    public final com.github.rudroid.activities.util.g w0;
 
     public static final class a {
         public static void a(a aVar, Intent intent, wm.b bVar, boolean z, int i) {
@@ -63,5 +63,4 @@ public final class ConfigureShortcutActivity extends h0<ic.d0> {
         x6.y yVar = new x6.y(s4.b.s, (ConfigureShortcutRoute) this.w0.c(this, x0[0]), (k71.e) null);
         com.github.rudroid.m0.D(new z6.i(com.github.rudroid.m0.r(yVar.g, z6.e.class), k71.x.a(ConfigureShortcutRoute.class), ig.b.a, k71.x.a(ConfigureShortcutFragment.class)), yVar.j, yVar, s4);
     }
-    public Object C(Object) { return null; }
 }

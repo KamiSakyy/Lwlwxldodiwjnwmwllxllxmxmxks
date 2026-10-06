@@ -4,9 +4,9 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i {
-    public o a;
-    public int b;
-    public int c;
+    public final o a;
+    public final int b;
+    public final int c;
 
     public i(int i, int i2, Class cls) {
         this(o.a(cls), i, i2);

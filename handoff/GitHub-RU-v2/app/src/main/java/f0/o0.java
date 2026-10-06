@@ -7,5 +7,4 @@ package f0;
 public class o0 {
     public o0() {
     }
-    public Object s(Object, Object) { return null; }
 }

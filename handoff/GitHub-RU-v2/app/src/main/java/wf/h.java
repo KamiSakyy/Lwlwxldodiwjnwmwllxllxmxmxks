@@ -5,15 +5,15 @@ import com.github.rudroid.common.m0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class h<T> {
     public static final a Companion = new a();
-    public int a;
+    public final int a;
 
     public static final class a {
     }
 
     public static final class b<T> extends h<T> {
-        public Object b;
-        public int c;
-        public boolean d;
+        public final Object b;
+        public final int c;
+        public final boolean d;
 
         public b(Object obj, boolean z, int i) {
             super(0);

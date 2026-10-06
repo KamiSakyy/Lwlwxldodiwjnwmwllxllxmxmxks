@@ -4,10 +4,10 @@ package d3;
 public final class l {
 
     /* renamed from: a, reason: collision with root package name */
-    public j71.a f21433a;
+    public final j71.a f21433a;
 
     /* renamed from: b, reason: collision with root package name */
-    public j71.a f21434b;
+    public final j71.a f21434b;
 
     public l(j71.a aVar, j71.a aVar2) {
         this.f21433a = aVar;

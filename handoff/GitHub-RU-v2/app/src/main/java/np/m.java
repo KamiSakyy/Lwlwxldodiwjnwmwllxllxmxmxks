@@ -2,7 +2,7 @@ package np;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m {
-    public l a;
+    public final l a;
 
     public m(l lVar) {
         this.a = lVar;

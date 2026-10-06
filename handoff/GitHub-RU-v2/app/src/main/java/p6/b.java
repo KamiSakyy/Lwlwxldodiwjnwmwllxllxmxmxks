@@ -7,10 +7,10 @@ import x.i;
 public abstract class b implements Interpolator {
 
     /* renamed from: a, reason: collision with root package name */
-    public float[] f30407a;
+    public final float[] f30407a;
 
     /* renamed from: b, reason: collision with root package name */
-    public float f30408b;
+    public final float f30408b;
 
     public b(float[] fArr) {
         this.f30407a = fArr;

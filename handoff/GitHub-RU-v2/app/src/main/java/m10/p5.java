@@ -9,7 +9,7 @@ public final class p5 {
     public static final p5 t;
     public static final /* synthetic */ p5[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         p5 p5Var = new p5("COLLABORATOR", 0, "COLLABORATOR");

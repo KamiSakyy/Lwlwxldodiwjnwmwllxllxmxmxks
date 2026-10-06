@@ -4,10 +4,10 @@ package androidx.compose.runtime;
 public final class r0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public Integer f1767a;
+    public final Integer f1767a;
 
     /* renamed from: b, reason: collision with root package name */
-    public Object f1768b;
+    public final Object f1768b;
 
     public r0(Integer num, Object obj) {
         this.f1767a = num;
@@ -34,5 +34,5 @@ public final class r0 {
     public final String toString() {
         return "JoinedKey(left=" + this.f1767a + ", right=" + this.f1768b + ')';
     }
-    public static Object size() { return null; }
+    public Object size() { return null; }
 }

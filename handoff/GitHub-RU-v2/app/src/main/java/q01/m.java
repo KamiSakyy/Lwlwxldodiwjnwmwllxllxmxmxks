@@ -8,12 +8,12 @@ import com.github.service.models.response.shortcuts.ShortcutType;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m implements k {
-    public String a;
-    public String b;
-    public com.github.service.models.response.shortcuts.a c;
-    public ShortcutType d;
-    public ShortcutColor e;
-    public ShortcutIcon f;
+    public final String a;
+    public final String b;
+    public final com.github.service.models.response.shortcuts.a c;
+    public final ShortcutType d;
+    public final ShortcutColor e;
+    public final ShortcutIcon f;
 
     public m(String str, String str2, com.github.service.models.response.shortcuts.a aVar, ShortcutType shortcutType, ShortcutColor shortcutColor, ShortcutIcon shortcutIcon) {
         k71.k.g(str, "name");

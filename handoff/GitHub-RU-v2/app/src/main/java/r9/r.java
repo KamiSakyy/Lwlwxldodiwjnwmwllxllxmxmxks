@@ -9,7 +9,7 @@ public final class r {
     public static final r f31332b = new r(x61.s.r);
 
     /* renamed from: a, reason: collision with root package name */
-    public Map f31333a;
+    public final Map f31333a;
 
     public r(Map map) {
         this.f31333a = map;

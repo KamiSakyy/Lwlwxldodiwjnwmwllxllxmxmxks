@@ -234,5 +234,4 @@ public abstract class o {
         return 1;
     }
     public static final Object z = null;
-    public Object e(Object) { return null; }
 }

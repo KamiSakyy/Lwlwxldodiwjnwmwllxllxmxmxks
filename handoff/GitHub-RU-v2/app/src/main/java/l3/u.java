@@ -4,10 +4,10 @@ package l3;
 public final class u implements g {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f27974a;
+    public final int f27974a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f27975b;
+    public final int f27975b;
 
     public u(int i, int i10) {
         this.f27974a = i;

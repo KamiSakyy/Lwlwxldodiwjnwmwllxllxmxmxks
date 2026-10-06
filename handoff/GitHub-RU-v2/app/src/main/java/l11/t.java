@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t extends f0 {
-    public long a;
-    public long b;
-    public n c;
-    public Integer d;
-    public String e;
-    public ArrayList f;
+    public final long a;
+    public final long b;
+    public final n c;
+    public final Integer d;
+    public final String e;
+    public final ArrayList f;
 
     public t(long j, long j2, n nVar, Integer num, String str, ArrayList arrayList) {
         j0 j0Var = j0.r;

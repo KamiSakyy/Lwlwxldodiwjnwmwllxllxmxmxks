@@ -9,19 +9,19 @@ public final class t2 extends androidx.lifecycle.k1 {
     public v71.q1 A;
     public v71.q1 B;
     public v71.q1 C;
-    public androidx.lifecycle.p0 D;
-    public androidx.lifecycle.p0 E;
-    public androidx.lifecycle.p0 F;
-    public y71.y1 G;
-    public y71.i1 H;
-    public com.github.rudroid.notifications.domain.q s;
-    public mm.c t;
-    public mm.f u;
-    public nj.d0 v;
-    public com.github.rudroid.settings.copilot.m0 w;
-    public com.github.rudroid.copilot.preferences.p x;
-    public v71.z y;
-    public com.github.rudroid.activities.util.c z;
+    public final androidx.lifecycle.p0 D;
+    public final androidx.lifecycle.p0 E;
+    public final androidx.lifecycle.p0 F;
+    public final y71.y1 G;
+    public final y71.i1 H;
+    public final com.github.rudroid.notifications.domain.q s;
+    public final mm.c t;
+    public final mm.f u;
+    public final nj.d0 v;
+    public final com.github.rudroid.settings.copilot.m0 w;
+    public final com.github.rudroid.copilot.preferences.p x;
+    public final v71.z y;
+    public final com.github.rudroid.activities.util.c z;
 
     public static final class a {
     }

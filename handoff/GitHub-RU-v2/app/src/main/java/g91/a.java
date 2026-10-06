@@ -8,8 +8,8 @@ import java.util.zip.Deflater;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a implements Closeable {
     public final /* synthetic */ int r;
-    public boolean s;
-    public h91.h t;
+    public final boolean s;
+    public final h91.h t;
     public Object u;
     public Closeable v;
 

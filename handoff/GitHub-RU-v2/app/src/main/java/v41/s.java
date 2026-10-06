@@ -9,13 +9,13 @@ import android.util.Log;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s {
-    public SharedPreferences a;
-    public k41.g b;
-    public Object c;
+    public final SharedPreferences a;
+    public final k41.g b;
+    public final Object c;
     public w21.g d;
     public boolean e;
     public Boolean f;
-    public w21.g g;
+    public final w21.g g;
 
     /* JADX WARN: Removed duplicated region for block: B:17:0x006c  */
     /* JADX WARN: Removed duplicated region for block: B:18:0x006e  */

@@ -2,10 +2,10 @@ package i50;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t {
-    public String a;
-    public r b;
-    public s c;
-    public String d;
+    public final String a;
+    public final r b;
+    public final s c;
+    public final String d;
 
     public t(String str, r rVar, s sVar, String str2) {
         this.a = str;

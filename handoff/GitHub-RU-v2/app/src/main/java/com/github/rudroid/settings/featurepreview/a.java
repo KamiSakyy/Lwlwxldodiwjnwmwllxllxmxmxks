@@ -6,8 +6,8 @@ import oa.n;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public com.github.rudroid.activities.util.c a;
-    public n b;
+    public final com.github.rudroid.activities.util.c a;
+    public final n b;
 
     public a(com.github.rudroid.activities.util.c cVar, n nVar) {
         k.g(cVar, "accountHolder");

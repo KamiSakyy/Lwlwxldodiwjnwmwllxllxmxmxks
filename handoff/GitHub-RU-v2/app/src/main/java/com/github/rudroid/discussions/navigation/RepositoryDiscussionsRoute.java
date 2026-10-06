@@ -16,7 +16,7 @@ import w61.i;
 public final class RepositoryDiscussionsRoute implements Parcelable, oc.e {
 
     /* renamed from: r, reason: collision with root package name */
-    public j f11582r;
+    public final j f11582r;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<RepositoryDiscussionsRoute> CREATOR = new a();
 

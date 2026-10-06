@@ -8,7 +8,7 @@ public final class wj {
     public static final wj s;
     public static final wj t;
     public static final /* synthetic */ wj[] u;
-    public String r;
+    public final String r;
 
     static {
         wj wjVar = new wj("AUTH", 0, "AUTH");

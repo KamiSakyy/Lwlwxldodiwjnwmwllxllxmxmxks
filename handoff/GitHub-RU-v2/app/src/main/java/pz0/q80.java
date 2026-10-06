@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q80 {
     public final aa1.b a = aa.t0.d;
-    public String b;
-    public List c;
-    public aa1.b d;
+    public final String b;
+    public final List c;
+    public final aa1.b d;
 
     public q80(String str, List list, aa.u0 u0Var) {
         this.b = str;

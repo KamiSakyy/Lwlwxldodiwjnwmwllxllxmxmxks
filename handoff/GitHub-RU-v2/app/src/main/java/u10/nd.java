@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class nd {
-    public String a;
-    public String b;
-    public g40.l1 c;
+    public final String a;
+    public final String b;
+    public final g40.l1 c;
 
     public nd(String str, String str2, g40.l1 l1Var) {
         this.a = str;

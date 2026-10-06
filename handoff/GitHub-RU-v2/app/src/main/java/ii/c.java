@@ -8,9 +8,9 @@ import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c extends n1 {
-    public TextView u;
-    public TextView v;
-    public SwitchMaterial w;
+    public final TextView u;
+    public final TextView v;
+    public final SwitchMaterial w;
 
     public c(View view) {
         super(view);

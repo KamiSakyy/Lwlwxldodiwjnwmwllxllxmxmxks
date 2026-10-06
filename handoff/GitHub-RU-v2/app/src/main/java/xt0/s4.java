@@ -2,9 +2,9 @@ package xt0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s4 {
-    public String a;
-    public k5 b;
-    public String c;
+    public final String a;
+    public final k5 b;
+    public final String c;
 
     public s4(String str, k5 k5Var, String str2) {
         this.a = str;

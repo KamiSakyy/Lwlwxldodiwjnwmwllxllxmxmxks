@@ -9,35 +9,35 @@ public final class b1 {
     public static final a Companion = new a();
 
     /* renamed from: a, reason: collision with root package name */
-    public List f7498a;
+    public final List f7498a;
 
     /* renamed from: b, reason: collision with root package name */
-    public List f7499b;
+    public final List f7499b;
 
     /* renamed from: c, reason: collision with root package name */
-    public String f7500c;
+    public final String f7500c;
 
     /* renamed from: d, reason: collision with root package name */
-    public v f7501d;
+    public final v f7501d;
 
     /* renamed from: e, reason: collision with root package name */
-    public j f7502e;
+    public final j f7502e;
 
     /* renamed from: f, reason: collision with root package name */
-    public boolean f7503f;
+    public final boolean f7503f;
 
     /* renamed from: g, reason: collision with root package name */
-    public boolean f7504g;
+    public final boolean f7504g;
 
     /* renamed from: h, reason: collision with root package name */
-    public String f7505h;
-    public String i;
+    public final String f7505h;
+    public final String i;
 
     /* renamed from: j, reason: collision with root package name */
-    public k f7506j;
+    public final k f7506j;
 
     /* renamed from: k, reason: collision with root package name */
-    public r4 f7507k;
+    public final r4 f7507k;
 
     public static final class a {
         public static b1 a() {

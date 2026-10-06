@@ -6,7 +6,7 @@ import android.os.Parcelable;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a extends com.google.android.gms.internal.measurement.x implements c {
-    public static final int P(int i, String str, String str2, Bundle bundle) {
+    public final int P(int i, String str, String str2, Bundle bundle) {
         Parcel N = N();
         N.writeInt(i);
         N.writeString(str);
@@ -119,5 +119,4 @@ public final class a extends com.google.android.gms.internal.measurement.x imple
     }
     public Object P(Object p1, Object p2) { return null; }
     public Object accept(Object p1) { return null; }
-    public Object accept(Object) { return null; }
 }

@@ -10,7 +10,7 @@ public final class c {
     public static final c s;
     public static final /* synthetic */ c[] t;
     public static final /* synthetic */ d71.b u;
-    public int r;
+    public final int r;
 
     public static final class a {
     }

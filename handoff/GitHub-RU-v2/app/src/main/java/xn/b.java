@@ -2,11 +2,11 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public String a;
-    public Long b;
-    public String c;
-    public String d;
-    public String e;
+    public final String a;
+    public final Long b;
+    public final String c;
+    public final String d;
+    public final String e;
 
     public b(String str, Long l, String str2, String str3, String str4) {
         this.a = str;
@@ -49,5 +49,5 @@ public final class b {
         f1.e.x(sb, this.c, ", baseRef=", this.d, ", headRef=");
         return com.github.rudroid.copilot.h1.p(sb, this.e, ")");
     }
-    public static Object B(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public Object B(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
 }

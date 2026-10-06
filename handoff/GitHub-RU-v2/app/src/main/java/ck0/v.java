@@ -8,15 +8,15 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v implements aa.h0 {
-    public jt a;
-    public pt b;
-    public String c;
-    public String d;
-    public String e;
-    public u f;
-    public pu g;
-    public ArrayList h;
-    public String i;
+    public final jt a;
+    public final pt b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final u f;
+    public final pu g;
+    public final ArrayList h;
+    public final String i;
 
     public v(jt jtVar, pt ptVar, String str, String str2, String str3, u uVar, pu puVar, ArrayList arrayList, String str4) {
         this.a = jtVar;

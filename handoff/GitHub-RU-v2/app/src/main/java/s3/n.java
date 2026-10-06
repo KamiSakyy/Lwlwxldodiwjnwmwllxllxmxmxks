@@ -4,7 +4,7 @@ package s3;
 public final class n implements t3.a {
 
     /* renamed from: a, reason: collision with root package name */
-    public float f31707a;
+    public final float f31707a;
 
     public n(float f6) {
         this.f31707a = f6;

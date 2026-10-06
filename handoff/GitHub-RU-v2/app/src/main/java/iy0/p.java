@@ -9,28 +9,28 @@ import uu0.d6;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p implements aa.h0 {
-    public String a;
-    public String b;
-    public String c;
-    public int d;
-    public String e;
-    public boolean f;
-    public bf g;
-    public ZonedDateTime h;
-    public Integer i;
-    public df j;
-    public int k;
-    public int l;
-    public boolean m;
-    public boolean n;
-    public boolean o;
-    public ZonedDateTime p;
-    public boolean q;
-    public boolean r;
-    public m s;
-    public o t;
-    public d6 u;
-    public uu0.r0 v;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final int d;
+    public final String e;
+    public final boolean f;
+    public final bf g;
+    public final ZonedDateTime h;
+    public final Integer i;
+    public final df j;
+    public final int k;
+    public final int l;
+    public final boolean m;
+    public final boolean n;
+    public final boolean o;
+    public final ZonedDateTime p;
+    public final boolean q;
+    public final boolean r;
+    public final m s;
+    public final o t;
+    public final d6 u;
+    public final uu0.r0 v;
 
     public p(String str, String str2, String str3, int i, String str4, boolean z, bf bfVar, ZonedDateTime zonedDateTime, Integer num, df dfVar, int i2, int i3, boolean z2, boolean z3, boolean z4, ZonedDateTime zonedDateTime2, boolean z5, boolean z6, m mVar, o oVar, d6 d6Var, uu0.r0 r0Var) {
         this.a = str;

@@ -26,8 +26,8 @@ public final class ChooseShortcutRepositoryFragment extends Hilt_ChooseShortcutR
     public com.github.rudroid.activities.util.c F0;
     public final int G0 = 2131558783;
     public xa.a H0;
-    public l1 I0;
-    public a J0;
+    public final l1 I0;
+    public final a J0;
 
     public static final class a implements a5.t {
         public a() {

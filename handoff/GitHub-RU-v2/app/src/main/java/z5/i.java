@@ -43,5 +43,4 @@ public final class i implements h {
         return "EmittableImage(modifier=" + this.f34577a + ", provider=" + this.f34578b + ", colorFilterParams=" + this.f34579c + ", alpha=" + this.f34580d + ", contentScale=" + ((Object) i6.h.a(this.f34581e)) + ')';
     }
     public Object k(Object p1) { return null; }
-    public Object k(Object) { return null; }
 }

@@ -4,18 +4,18 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class hn {
-    public String a;
-    public String b;
-    public String c;
-    public hc0.bm d;
-    public boolean e;
-    public boolean f;
-    public boolean g;
-    public ln h;
-    public boolean i;
-    public List j;
-    public xm k;
-    public g80.a l;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final hc0.bm d;
+    public final boolean e;
+    public final boolean f;
+    public final boolean g;
+    public final ln h;
+    public final boolean i;
+    public final List j;
+    public final xm k;
+    public final g80.a l;
 
     public hn(String str, String str2, String str3, hc0.bm bmVar, boolean z, boolean z2, boolean z3, ln lnVar, boolean z4, List list, xm xmVar, g80.a aVar) {
         this.a = str;

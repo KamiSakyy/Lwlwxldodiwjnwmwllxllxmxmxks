@@ -10,22 +10,22 @@ import k71.k;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f30191a;
+    public final String f30191a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f30192b;
+    public final String f30192b;
 
     /* renamed from: c, reason: collision with root package name */
-    public String f30193c;
+    public final String f30193c;
 
     /* renamed from: d, reason: collision with root package name */
-    public String f30194d;
+    public final String f30194d;
 
     /* renamed from: e, reason: collision with root package name */
-    public String f30195e;
+    public final String f30195e;
 
     /* renamed from: f, reason: collision with root package name */
-    public boolean f30196f;
+    public final boolean f30196f;
 
     public a(String str, String str2, String str3, String str4, String str5, boolean z10) {
         this.f30191a = str;

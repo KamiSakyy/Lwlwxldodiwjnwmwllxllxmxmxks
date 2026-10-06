@@ -4,25 +4,25 @@ package e2;
 public final class r {
 
     /* renamed from: a, reason: collision with root package name */
-    public double f21912a;
+    public final double f21912a;
 
     /* renamed from: b, reason: collision with root package name */
-    public double f21913b;
+    public final double f21913b;
 
     /* renamed from: c, reason: collision with root package name */
-    public double f21914c;
+    public final double f21914c;
 
     /* renamed from: d, reason: collision with root package name */
-    public double f21915d;
+    public final double f21915d;
 
     /* renamed from: e, reason: collision with root package name */
-    public double f21916e;
+    public final double f21916e;
 
     /* renamed from: f, reason: collision with root package name */
-    public double f21917f;
+    public final double f21917f;
 
     /* renamed from: g, reason: collision with root package name */
-    public double f21918g;
+    public final double f21918g;
 
     public r(double d10, double d11, double d12, double d13, double d14, double d15, double d16) {
         this.f21912a = d10;

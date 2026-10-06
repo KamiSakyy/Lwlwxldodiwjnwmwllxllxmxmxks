@@ -2,9 +2,9 @@ package ea0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p {
-    public String a;
-    public s b;
-    public r c;
+    public final String a;
+    public final s b;
+    public final r c;
 
     public p(String str, s sVar, r rVar) {
         k71.k.g(str, "__typename");

@@ -7,13 +7,13 @@ import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s implements h0 {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public boolean f;
-    public eq.g g;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final boolean f;
+    public final eq.g g;
 
     public s(eq.g gVar, String str, String str2, String str3, String str4, String str5, boolean z) {
         this.a = str;
@@ -52,5 +52,5 @@ public final class s implements h0 {
         o.append(")");
         return o.toString();
     }
-    public static Object A(Object p1) { return null; }
+    public Object A(Object p1) { return null; }
 }

@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class dh {
-    public ah a;
-    public eh b;
+    public final ah a;
+    public final eh b;
 
     public dh(ah ahVar, eh ehVar) {
         this.a = ahVar;

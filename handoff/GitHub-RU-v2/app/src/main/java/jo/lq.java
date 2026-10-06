@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class lq {
-    public mq a;
-    public List b;
+    public final mq a;
+    public final List b;
 
     public lq(mq mqVar, List list) {
         this.a = mqVar;

@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p extends b0 {
-    public byte[] a;
-    public byte[] b;
+    public final byte[] a;
+    public final byte[] b;
 
     public p(byte[] bArr, byte[] bArr2) {
         this.a = bArr;

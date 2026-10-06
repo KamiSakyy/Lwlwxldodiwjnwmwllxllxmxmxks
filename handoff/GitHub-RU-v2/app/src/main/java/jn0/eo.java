@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class eo implements aaShadow.v0 {
-    public go a;
-    public String b;
-    public String c;
+    public final go a;
+    public final String b;
+    public final String c;
 
     public eo(go goVar, String str, String str2) {
         this.a = goVar;

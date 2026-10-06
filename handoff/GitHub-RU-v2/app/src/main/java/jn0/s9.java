@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s9 implements aaShadow.v0 {
-    public x9 a;
-    public String b;
-    public String c;
+    public final x9 a;
+    public final String b;
+    public final String c;
 
     public s9(x9 x9Var, String str, String str2) {
         this.a = x9Var;

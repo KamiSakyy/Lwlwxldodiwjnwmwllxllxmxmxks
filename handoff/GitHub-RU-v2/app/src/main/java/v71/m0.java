@@ -4,7 +4,7 @@ import java.util.concurrent.ScheduledFuture;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class m0 implements n0 {
-    public ScheduledFuture r;
+    public final ScheduledFuture r;
 
     public m0(ScheduledFuture scheduledFuture) {
         this.r = scheduledFuture;

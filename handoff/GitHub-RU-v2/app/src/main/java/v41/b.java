@@ -5,9 +5,9 @@ import y41.b0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public b0 a;
-    public String b;
-    public File c;
+    public final b0 a;
+    public final String b;
+    public final File c;
 
     public b(b0 b0Var, String str, File file) {
         this.a = b0Var;

@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class yg {
-    public String a;
-    public tg b;
-    public String c;
+    public final String a;
+    public final tg b;
+    public final String c;
 
     public yg(String str, tg tgVar, String str2) {
         this.a = str;

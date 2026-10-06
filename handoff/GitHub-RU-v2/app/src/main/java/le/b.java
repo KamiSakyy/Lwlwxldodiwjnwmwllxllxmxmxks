@@ -7,10 +7,10 @@ public abstract class b {
     public static final C0077b Companion = new C0077b();
 
     /* renamed from: a, reason: collision with root package name */
-    public int f28449a;
+    public final int f28449a;
 
     /* renamed from: b, reason: collision with root package name */
-    public long f28450b;
+    public final long f28450b;
 
     public interface a {
     }
@@ -22,7 +22,7 @@ public abstract class b {
     public static final class c extends b {
 
         /* renamed from: c, reason: collision with root package name */
-        public int f28451c;
+        public final int f28451c;
 
         public c() {
             super(4, Integer.hashCode(2131954848));
@@ -62,7 +62,7 @@ public abstract class b {
     public static final class e extends b {
 
         /* renamed from: c, reason: collision with root package name */
-        public int f28452c;
+        public final int f28452c;
 
         public e(int i) {
             super(3, Integer.hashCode(i));
@@ -88,7 +88,7 @@ public abstract class b {
     public static final class f extends b implements a {
 
         /* renamed from: c, reason: collision with root package name */
-        public yz0.f f28453c;
+        public final yz0.f f28453c;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public f(yz0.f fVar) {
@@ -116,7 +116,7 @@ public abstract class b {
     public static final class g extends b implements a {
 
         /* renamed from: c, reason: collision with root package name */
-        public yz0.f f28454c;
+        public final yz0.f f28454c;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public g(yz0.f fVar) {

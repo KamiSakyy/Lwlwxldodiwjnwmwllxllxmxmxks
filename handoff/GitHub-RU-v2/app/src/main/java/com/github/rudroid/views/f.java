@@ -10,9 +10,9 @@ import p.w;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f implements p.j, w {
     public b r;
-    public o.i s;
-    public p.l t;
-    public p.v u;
+    public final o.i s;
+    public final p.l t;
+    public final p.v u;
 
     public interface a {
     }

@@ -12,7 +12,7 @@ public final class zc {
     public static final zc w;
     public static final /* synthetic */ zc[] x;
     public static final /* synthetic */ d71.b y;
-    public String r;
+    public final String r;
 
     static {
         zc zcVar = new zc("COMPLETED", 0, "COMPLETED");

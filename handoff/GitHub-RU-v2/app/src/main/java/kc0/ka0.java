@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ka0 {
-    public gn0.e10 a;
-    public boolean b;
+    public final gn0.e10 a;
+    public final boolean b;
 
     public ka0(gn0.e10 e10Var, boolean z) {
         this.a = e10Var;

@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qz implements aaShadow.v0 {
-    public sz a;
-    public String b;
-    public String c;
+    public final sz a;
+    public final String b;
+    public final String c;
 
     public qz(sz szVar, String str, String str2) {
         this.a = szVar;

@@ -4,7 +4,7 @@ package s3;
 public final class f implements Comparable {
 
     /* renamed from: r, reason: collision with root package name */
-    public float f31694r;
+    public final float f31694r;
 
     public static int a(float f6, float f10) {
         if (Float.isNaN(f6) || Float.isNaN(f10)) {

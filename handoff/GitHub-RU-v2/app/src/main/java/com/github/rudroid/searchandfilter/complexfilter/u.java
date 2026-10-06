@@ -7,7 +7,7 @@ import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u<T> extends h0<T> {
-    public Object e;
+    public final Object e;
 
     public u(j71.e eVar, Object obj) {
         super(eVar);

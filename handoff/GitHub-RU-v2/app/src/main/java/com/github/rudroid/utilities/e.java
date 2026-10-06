@@ -2,8 +2,8 @@ package com.github.rudroid.utilities;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public kj.j a;
-    public v71.z b;
+    public final kj.j a;
+    public final v71.z b;
 
     public e(kj.j jVar, v71.z zVar) {
         k71.k.g(jVar, "analyticsUseCase");
@@ -16,5 +16,5 @@ public final class e {
         k71.k.g(jVar, "user");
         v71.b0.z(this.b, (a71.h) null, (v71.a0) null, new d(this, jVar, eVar, null), 3);
     }
-    public static Object c(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object c(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

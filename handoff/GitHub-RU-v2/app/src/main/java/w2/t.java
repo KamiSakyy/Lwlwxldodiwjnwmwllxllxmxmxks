@@ -16,7 +16,4 @@ public interface t {
     public Object M0 = null;
     public Object T0 = null;
     public Object f33178y = null;
-    public Object O(Object, int, Object, boolean) { return null; }
-    public Object l(Object) { return null; }
-    public Object setShowLayoutBounds(Object) { return null; }
 }

@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x40 {
-    public String a;
-    public boolean b;
-    public String c;
-    public uu0.z4 d;
+    public final String a;
+    public final boolean b;
+    public final String c;
+    public final uu0.z4 d;
 
     public x40(String str, boolean z, String str2, uu0.z4 z4Var) {
         this.a = str;

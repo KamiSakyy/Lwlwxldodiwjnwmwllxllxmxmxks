@@ -4,36 +4,36 @@ package com.github.rudroid.projects;
 public final class r1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f17796a;
+    public final String f17796a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f17797b;
+    public final boolean f17797b;
 
     /* renamed from: c, reason: collision with root package name */
-    public String f17798c;
+    public final String f17798c;
 
     /* renamed from: d, reason: collision with root package name */
-    public String f17799d;
+    public final String f17799d;
 
     /* renamed from: e, reason: collision with root package name */
-    public int f17800e;
+    public final int f17800e;
 
     /* renamed from: f, reason: collision with root package name */
-    public String f17801f;
+    public final String f17801f;
 
     /* renamed from: g, reason: collision with root package name */
-    public String f17802g;
+    public final String f17802g;
 
     /* renamed from: h, reason: collision with root package name */
-    public String f17803h;
-    public String i;
+    public final String f17803h;
+    public final String i;
 
     /* renamed from: j, reason: collision with root package name */
-    public boolean f17804j;
+    public final boolean f17804j;
 
     /* renamed from: k, reason: collision with root package name */
-    public String f17805k;
-    public boolean l;
+    public final String f17805k;
+    public final boolean l;
 
     public r1(String str, boolean z10, String str2, String str3, int i, String str4, String str5, String str6, String str7, boolean z11, String str8, boolean z12) {
         k71.k.g(str, "id");

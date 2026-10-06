@@ -6,7 +6,7 @@ import m10.p00;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m0 implements aa.w0 {
     public static final i0 Companion = new i0();
-    public String r;
+    public final String r;
 
     public m0(String str) {
         this.r = str;
@@ -60,5 +60,5 @@ public final class m0 implements aa.w0 {
     public final String toString() {
         return f1.e.z("ViewerAgentSessionQuery(id=", this.r, ")");
     }
-    public static Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

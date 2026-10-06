@@ -2,10 +2,10 @@ package ap0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d6 implements aa.h0 {
-    public String a;
-    public boolean b;
-    public c6 c;
-    public String d;
+    public final String a;
+    public final boolean b;
+    public final c6 c;
+    public final String d;
 
     public d6(String str, boolean z, c6 c6Var, String str2) {
         this.a = str;

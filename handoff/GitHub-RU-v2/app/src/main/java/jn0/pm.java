@@ -5,12 +5,12 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class pm implements aaShadow.n0 {
     public static final jm Companion = new jm();
-    public String r;
-    public pz0.zs s;
-    public aa1.b t;
-    public aa1.b u;
-    public aa1.b v;
-    public String w;
+    public final String r;
+    public final pz0.zs s;
+    public final aa1.b t;
+    public final aa1.b u;
+    public final aa1.b v;
+    public final String w;
 
     public pm(String str, pz0.zs zsVar, aa1.b bVar, aa1.b bVar2, aa1.b bVar3, String str2) {
         this.r = str;

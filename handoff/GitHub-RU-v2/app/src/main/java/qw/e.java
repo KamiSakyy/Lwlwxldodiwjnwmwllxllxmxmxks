@@ -6,9 +6,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public List a;
-    public String b;
-    public String c;
+    public final List a;
+    public final String b;
+    public final String c;
 
     public e(String str, String str2, List list) {
         this.a = list;
@@ -35,5 +35,5 @@ public final class e {
     public final String toString() {
         return h1.p(m0.n("Thread(diffLines=", ", id=", this.b, ", __typename=", this.a), this.c, ")");
     }
-    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

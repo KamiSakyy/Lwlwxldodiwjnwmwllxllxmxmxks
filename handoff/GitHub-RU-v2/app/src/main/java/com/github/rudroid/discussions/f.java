@@ -34,5 +34,4 @@ final class f extends c71.j implements j71.e {
         com.github.rudroid.utilities.w0.o(this.f11301v.f11152x, this.f11302w);
         return w61.a0.a;
     }
-    public Object name() { return null; }
 }

@@ -4,7 +4,7 @@ import java.util.concurrent.CompletableFuture;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class k extends CompletableFuture {
-    public z r;
+    public final z r;
 
     public k(z zVar) {
         this.r = zVar;

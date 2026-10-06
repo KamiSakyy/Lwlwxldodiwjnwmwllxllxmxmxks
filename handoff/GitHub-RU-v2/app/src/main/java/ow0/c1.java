@@ -2,7 +2,7 @@ package ow0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c1 {
-    public b1 a;
+    public final b1 a;
 
     public c1(b1 b1Var) {
         this.a = b1Var;

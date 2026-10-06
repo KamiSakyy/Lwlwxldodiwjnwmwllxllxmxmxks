@@ -8,8 +8,8 @@ import java.nio.charset.Charset;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class e0 implements j {
-    public k0 r;
-    public h s;
+    public final k0 r;
+    public final h s;
     public boolean t;
 
     public e0(k0 k0Var) {

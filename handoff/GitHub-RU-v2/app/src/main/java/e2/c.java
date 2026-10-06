@@ -4,13 +4,13 @@ package e2;
 public abstract class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f21849a;
+    public final String f21849a;
 
     /* renamed from: b, reason: collision with root package name */
-    public long f21850b;
+    public final long f21850b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f21851c;
+    public final int f21851c;
 
     public c(int i, long j10, String str) {
         this.f21849a = str;

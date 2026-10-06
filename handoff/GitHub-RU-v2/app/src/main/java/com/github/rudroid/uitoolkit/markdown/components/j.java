@@ -57,6 +57,6 @@ public final class j {
             t.d = new b0(rVar2, str, aVar, map2, i, i2, 20);
         }
     }
-    public static Object c(Object p1, Object p2, Object p3, Object p4) { return null; }
-    public static Object l0(Object p1) { return null; }
+    public Object c(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object l0(Object p1) { return null; }
 }

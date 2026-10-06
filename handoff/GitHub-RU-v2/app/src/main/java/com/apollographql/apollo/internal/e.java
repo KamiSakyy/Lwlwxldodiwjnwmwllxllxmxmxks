@@ -11,7 +11,7 @@ public final class e implements Closeable {
     public final /* synthetic */ int f4303r = 1;
 
     /* renamed from: s, reason: collision with root package name */
-    public Closeable f4304s;
+    public final Closeable f4304s;
 
     public e(j9.b bVar) {
         this.f4304s = bVar;

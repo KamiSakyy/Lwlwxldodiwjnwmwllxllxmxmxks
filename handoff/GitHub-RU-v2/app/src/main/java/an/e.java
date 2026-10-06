@@ -4,8 +4,8 @@ import ik.t0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public t0 a;
-    public m b;
+    public final t0 a;
+    public final m b;
 
     public e(t0 t0Var, m mVar) {
         k71.k.g(t0Var, "updateDiscussionCommentUseCase");

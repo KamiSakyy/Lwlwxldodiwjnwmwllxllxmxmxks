@@ -2,7 +2,7 @@ package vt0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d {
-    public String a;
+    public final String a;
 
     public d(String str) {
         this.a = str;

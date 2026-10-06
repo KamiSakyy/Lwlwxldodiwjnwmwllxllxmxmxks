@@ -4,13 +4,13 @@ package androidx.datastore.preferences.protobuf;
 public final class d0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public n1 f2269a;
+    public final n1 f2269a;
 
     /* renamed from: b, reason: collision with root package name */
-    public n1 f2270b;
+    public final n1 f2270b;
 
     /* renamed from: c, reason: collision with root package name */
-    public Object f2271c;
+    public final Object f2271c;
 
     public d0(n1 n1Var, n1 n1Var2, Object obj) {
         this.f2269a = n1Var;

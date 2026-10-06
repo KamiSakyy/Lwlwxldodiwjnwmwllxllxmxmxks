@@ -4,20 +4,20 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ko {
-    public String a;
-    public String b;
-    public gn0.xm c;
-    public String d;
-    public boolean e;
-    public ZonedDateTime f;
-    public no g;
-    public ao h;
-    public oo i;
-    public so j;
-    public se0.c k;
-    public aj0.c l;
-    public sk0.c m;
-    public yh0.a n;
+    public final String a;
+    public final String b;
+    public final gn0.xm c;
+    public final String d;
+    public final boolean e;
+    public final ZonedDateTime f;
+    public final no g;
+    public final ao h;
+    public final oo i;
+    public final so j;
+    public final se0.c k;
+    public final aj0.c l;
+    public final sk0.c m;
+    public final yh0.a n;
 
     public ko(String str, String str2, gn0.xm xmVar, String str3, boolean z, ZonedDateTime zonedDateTime, no noVar, ao aoVar, oo ooVar, so soVar, se0.c cVar, aj0.c cVar2, sk0.c cVar3, yh0.a aVar) {
         this.a = str;

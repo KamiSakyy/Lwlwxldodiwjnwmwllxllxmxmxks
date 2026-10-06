@@ -2,14 +2,14 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t5 {
-    public String a;
-    public m10.t3 b;
-    public String c;
-    public int d;
-    public String e;
-    public String f;
-    public y4 g;
-    public boolean h;
+    public final String a;
+    public final m10.t3 b;
+    public final String c;
+    public final int d;
+    public final String e;
+    public final String f;
+    public final y4 g;
+    public final boolean h;
 
     public t5(String str, m10.t3 t3Var, String str2, int i, String str3, String str4, y4 y4Var, boolean z) {
         this.a = str;

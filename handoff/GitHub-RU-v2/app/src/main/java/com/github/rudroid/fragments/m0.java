@@ -6,7 +6,4 @@ public interface m0 {
     public Object c0(Object p1) { return null; }
     public Object k0(Object p1) { return null; }
     public Object r0(Object p1, Object p2) { return null; }
-    public Object c0(Object) { return null; }
-    public Object k0(Object) { return null; }
-    public Object r0(Object, int) { return null; }
 }

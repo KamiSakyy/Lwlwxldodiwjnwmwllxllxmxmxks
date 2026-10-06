@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class nu implements aaShadow.v0 {
-    public wu a;
+    public final wu a;
 
     public nu(wu wuVar) {
         this.a = wuVar;

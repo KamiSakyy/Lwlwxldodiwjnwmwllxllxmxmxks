@@ -15,14 +15,14 @@ import x61.r;
 public final class ChatServerSentEventDataResponse$Complete extends c {
     public static final Companion Companion = new Companion();
     public static final h[] i;
-    public i a;
-    public String b;
-    public String c;
-    public String d;
-    public ChatMessageAnnotationsResponse e;
-    public String f;
-    public List g;
-    public hz.h h;
+    public final i a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final ChatMessageAnnotationsResponse e;
+    public final String f;
+    public final List g;
+    public final hz.h h;
 
     public static final class Companion {
         public final KSerializer serializer() {

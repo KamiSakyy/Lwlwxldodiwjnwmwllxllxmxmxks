@@ -5,8 +5,8 @@ import java.util.concurrent.Future;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r0 implements Runnable {
-    public u0 r;
-    public y11.l s;
+    public final u0 r;
+    public final y11.l s;
 
     public r0(u0 u0Var, y11.l lVar) {
         this.r = u0Var;

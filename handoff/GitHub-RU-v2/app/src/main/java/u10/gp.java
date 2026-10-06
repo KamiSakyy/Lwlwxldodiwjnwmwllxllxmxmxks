@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class gp {
-    public String a;
-    public op b;
-    public String c;
+    public final String a;
+    public final op b;
+    public final String c;
 
     public gp(String str, op opVar, String str2) {
         this.a = str;

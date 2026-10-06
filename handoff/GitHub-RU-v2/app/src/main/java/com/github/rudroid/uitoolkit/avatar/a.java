@@ -5,8 +5,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public String a;
-    public boolean b;
+    public final String a;
+    public final boolean b;
 
     public a(String str, boolean z) {
         this.a = str;
@@ -32,6 +32,6 @@ public final class a {
     public final String toString() {
         return h1.n("AsyncAvatar(url=", this.a, ", requiresAuthentication=", ")", this.b);
     }
-    public static Object c(Object p1, Object p2) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
     public Object ordinal() { return null; }
 }

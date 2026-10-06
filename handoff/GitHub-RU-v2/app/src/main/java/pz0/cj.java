@@ -9,7 +9,7 @@ public final class cj {
     public static final cj t;
     public static final /* synthetic */ cj[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         cj cjVar = new cj("CLOSED", 0, "CLOSED");

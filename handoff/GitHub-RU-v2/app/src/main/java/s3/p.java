@@ -4,7 +4,7 @@ package s3;
 public final class p {
 
     /* renamed from: a, reason: collision with root package name */
-    public long f31711a;
+    public final long f31711a;
 
     public static final boolean a(long j10, long j11) {
         return j10 == j11;

@@ -4,11 +4,11 @@ import com.github.service.models.response.GitObjectType;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r1 {
-    public GitObjectType a;
-    public String b;
-    public String c;
-    public String d;
-    public boolean e;
+    public final GitObjectType a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final boolean e;
 
     public r1(GitObjectType gitObjectType, String str, String str2, String str3, boolean z) {
         k71.k.g(gitObjectType, "gitObjectType");

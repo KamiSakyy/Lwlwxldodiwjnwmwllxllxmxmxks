@@ -2,7 +2,7 @@ package dw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g2 {
-    public int a;
+    public final int a;
 
     public g2(int i) {
         this.a = i;

@@ -6,7 +6,7 @@ import jo.f4;
 public final class g0 extends k0 {
 
     /* renamed from: s, reason: collision with root package name */
-    public Class f33831s;
+    public final Class f33831s;
 
     public g0(Class cls) {
         super(0, cls);

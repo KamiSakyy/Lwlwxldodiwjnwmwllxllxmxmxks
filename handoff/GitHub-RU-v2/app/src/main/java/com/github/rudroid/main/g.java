@@ -6,13 +6,13 @@ import jo.f4;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f16846a;
+    public final String f16846a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f16847b;
+    public final String f16847b;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean f16848c;
+    public final boolean f16848c;
 
     public g(String str, String str2, boolean z10) {
         k71.k.g(str2, "login");

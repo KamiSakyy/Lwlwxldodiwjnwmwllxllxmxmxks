@@ -4,7 +4,7 @@ import aa.v0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l implements v0 {
-    public String a;
+    public final String a;
 
     public l(String str) {
         this.a = str;

@@ -10,10 +10,10 @@ public final class o {
     public static final o f12153c = new o(g1.a.c(g1.Companion), i.f12142r);
 
     /* renamed from: a, reason: collision with root package name */
-    public g1 f12154a;
+    public final g1 f12154a;
 
     /* renamed from: b, reason: collision with root package name */
-    public i f12155b;
+    public final i f12155b;
 
     public static final class a {
     }

@@ -8,12 +8,12 @@ import java.util.concurrent.CancellationException;
 /* loaded from: /home/user/work/p/classes.dex */
 public final class c1 extends androidx.lifecycle.a implements com.github.rudroid.utilities.viewmodel.d {
     public static final a Companion = new a();
-    public String A;
-    public y71.y1 B;
-    public y71.i1 C;
-    public y71.y1 D;
-    public y71.i1 E;
-    public b1 F;
+    public final String A;
+    public final y71.y1 B;
+    public final y71.i1 C;
+    public final y71.y1 D;
+    public final y71.i1 E;
+    public final b1 F;
     public v71.q1 G;
     public v71.q1 H;
 
@@ -21,22 +21,22 @@ public final class c1 extends androidx.lifecycle.a implements com.github.rudroid
     public final /* synthetic */ d.a f17660t;
 
     /* renamed from: u, reason: collision with root package name */
-    public il.q f17661u;
+    public final il.q f17661u;
 
     /* renamed from: v, reason: collision with root package name */
-    public il.i f17662v;
+    public final il.i f17662v;
 
     /* renamed from: w, reason: collision with root package name */
-    public il.v f17663w;
+    public final il.v f17663w;
 
     /* renamed from: x, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f17664x;
+    public final com.github.rudroid.activities.util.c f17664x;
 
     /* renamed from: y, reason: collision with root package name */
-    public l0 f17665y;
+    public final l0 f17665y;
 
     /* renamed from: z, reason: collision with root package name */
-    public String f17666z;
+    public final String f17666z;
 
     public static final class a {
     }

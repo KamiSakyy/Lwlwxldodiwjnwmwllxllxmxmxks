@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qd {
-    public String a;
-    public ld b;
-    public String c;
+    public final String a;
+    public final ld b;
+    public final String c;
 
     public qd(String str, ld ldVar, String str2) {
         this.a = str;

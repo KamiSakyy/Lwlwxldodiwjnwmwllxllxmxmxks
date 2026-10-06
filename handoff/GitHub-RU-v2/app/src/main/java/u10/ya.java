@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ya {
-    public String a;
-    public e50.l0 b;
+    public final String a;
+    public final e50.l0 b;
 
     public ya(String str, e50.l0 l0Var) {
         this.a = str;

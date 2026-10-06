@@ -5,12 +5,12 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v4 implements aaShadow.n0 {
     public static final s4 Companion = new s4();
-    public String r;
-    public String s;
-    public String t;
-    public pz0.bz u;
-    public aa1.b v;
-    public boolean w;
+    public final String r;
+    public final String s;
+    public final String t;
+    public final pz0.bz u;
+    public final aa1.b v;
+    public final boolean w;
 
     public v4(String str, String str2, String str3, pz0.bz bzVar, aa1.b bVar, boolean z) {
         k71.k.g(str, "repositoryId");

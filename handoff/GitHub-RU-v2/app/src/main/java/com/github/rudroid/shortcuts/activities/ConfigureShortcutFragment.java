@@ -24,8 +24,8 @@ import java.util.ArrayList;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ConfigureShortcutFragment extends Hilt_ConfigureShortcutFragment implements com.github.rudroid.fragments.util.f {
     public com.github.rudroid.activities.util.c D0;
-    public l1 E0;
-    public l1 F0;
+    public final l1 E0;
+    public final l1 F0;
     public androidx.fragment.app.t G0;
 
     public static final class a extends k71.l implements j71.a {

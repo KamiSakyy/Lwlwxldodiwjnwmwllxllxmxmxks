@@ -14,10 +14,10 @@ import java.util.Objects;
 public final class j {
 
     /* renamed from: a, reason: collision with root package name */
-    public Context f422a;
+    public final Context f422a;
 
     /* renamed from: b, reason: collision with root package name */
-    public k f423b;
+    public final k f423b;
 
     /* renamed from: c, reason: collision with root package name */
     public VelocityTracker f424c;

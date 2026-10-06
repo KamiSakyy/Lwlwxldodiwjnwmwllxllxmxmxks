@@ -4,13 +4,13 @@ package d1;
 public final class w {
 
     /* renamed from: a, reason: collision with root package name */
-    public r3.j f21253a;
+    public final r3.j f21253a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f21254b;
+    public final int f21254b;
 
     /* renamed from: c, reason: collision with root package name */
-    public long f21255c;
+    public final long f21255c;
 
     public w(r3.j jVar, int i, long j10) {
         this.f21253a = jVar;

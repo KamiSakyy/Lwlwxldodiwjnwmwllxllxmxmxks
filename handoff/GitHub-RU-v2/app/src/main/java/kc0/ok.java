@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ok {
-    public String a;
-    public String b;
-    public pk c;
+    public final String a;
+    public final String b;
+    public final pk c;
 
     public ok(String str, String str2, pk pkVar) {
         k71.k.g(str, "__typename");

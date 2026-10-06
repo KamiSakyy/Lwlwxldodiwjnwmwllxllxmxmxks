@@ -7,8 +7,8 @@ import yz0.v2;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g implements d0, Parcelable {
     public static final Parcelable.Creator<g> CREATOR = new c(3);
-    public String r;
-    public v2 s;
+    public final String r;
+    public final v2 s;
 
     public g(String str, v2 v2Var) {
         k71.k.g(str, "id");

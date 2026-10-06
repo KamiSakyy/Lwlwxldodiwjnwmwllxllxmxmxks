@@ -8,7 +8,7 @@ public final class c3 {
     public static final c3 s;
     public static final /* synthetic */ c3[] t;
     public static final /* synthetic */ d71.b u;
-    public String r;
+    public final String r;
 
     static {
         c3 c3Var = new c3("RELOAD", 0, "RELOAD");

@@ -4,14 +4,14 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n0 implements aa.h0 {
-    public String a;
-    public String b;
-    public boolean c;
-    public String d;
-    public String e;
-    public ZonedDateTime f;
-    public m0 g;
-    public String h;
+    public final String a;
+    public final String b;
+    public final boolean c;
+    public final String d;
+    public final String e;
+    public final ZonedDateTime f;
+    public final m0 g;
+    public final String h;
 
     public n0(String str, String str2, boolean z, String str3, String str4, ZonedDateTime zonedDateTime, m0 m0Var, String str5) {
         this.a = str;

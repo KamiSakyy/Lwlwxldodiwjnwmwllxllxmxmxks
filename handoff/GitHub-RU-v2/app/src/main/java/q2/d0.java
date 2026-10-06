@@ -4,7 +4,7 @@ package q2;
 public final class d0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f30837a;
+    public final int f30837a;
 
     public static String a(int i) {
         return i != 1 ? i != 2 ? i != 3 ? i != 4 ? "Unknown" : "Eraser" : "Stylus" : "Mouse" : "Touch";

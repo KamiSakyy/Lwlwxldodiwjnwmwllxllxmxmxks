@@ -9,27 +9,27 @@ import com.github.commonandroid.featureflag.RuntimeFeatureFlag;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i1 extends androidx.lifecycle.a {
     public static final a Companion = new a();
-    public com.github.rudroid.fragments.onboarding.notifications.usecase.s A;
-    public com.github.rudroid.activities.util.c B;
+    public final com.github.rudroid.fragments.onboarding.notifications.usecase.s A;
+    public final com.github.rudroid.activities.util.c B;
     public v71.q1 C;
     public v71.q1 D;
-    public y71.y1 E;
-    public y71.i1 F;
-    public y71.y1 G;
-    public y71.i1 H;
-    public y71.y1 I;
-    public y71.i1 J;
+    public final y71.y1 E;
+    public final y71.i1 F;
+    public final y71.y1 G;
+    public final y71.i1 H;
+    public final y71.y1 I;
+    public final y71.i1 J;
     public boolean K;
     public boolean L;
     public boolean M;
-    public boolean N;
-    public l51.h t;
-    public l7.x1 u;
-    public sm.g v;
-    public l51.h w;
-    public rm.c x;
-    public sm.e y;
-    public com.github.rudroid.notifications.domain.q z;
+    public final boolean N;
+    public final l51.h t;
+    public final l7.x1 u;
+    public final sm.g v;
+    public final l51.h w;
+    public final rm.c x;
+    public final sm.e y;
+    public final com.github.rudroid.notifications.domain.q z;
 
     public static final class a {
     }

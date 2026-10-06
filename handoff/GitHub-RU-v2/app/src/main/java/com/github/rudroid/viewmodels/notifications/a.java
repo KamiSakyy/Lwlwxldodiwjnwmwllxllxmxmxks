@@ -4,9 +4,9 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 final class a {
-    public dd.a a;
-    public com.github.rudroid.utilities.ui.g1 b;
-    public boolean c;
+    public final dd.a a;
+    public final com.github.rudroid.utilities.ui.g1 b;
+    public final boolean c;
 
     public a(dd.a aVar, com.github.rudroid.utilities.ui.g1 g1Var, boolean z) {
         k71.k.g(aVar, "banner");

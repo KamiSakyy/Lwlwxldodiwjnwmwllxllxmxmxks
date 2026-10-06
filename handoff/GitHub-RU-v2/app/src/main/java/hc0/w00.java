@@ -9,7 +9,7 @@ public final class w00 {
     public static final w00 t;
     public static final /* synthetic */ w00[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         w00 w00Var = new w00("ACTIVE", 0, "ACTIVE");

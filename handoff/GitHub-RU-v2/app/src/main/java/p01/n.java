@@ -12,20 +12,20 @@ import yz0.n5;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n implements Parcelable {
     public static final Parcelable.Creator<n> CREATOR = new c0(5);
-    public boolean A;
-    public String B;
-    public String C;
-    public boolean D;
-    public String E;
-    public String r;
-    public com.github.service.models.response.a s;
-    public boolean t;
-    public String u;
-    public int v;
-    public String w;
-    public String x;
-    public int y;
-    public n5 z;
+    public final boolean A;
+    public final String B;
+    public final String C;
+    public final boolean D;
+    public final String E;
+    public final String r;
+    public final com.github.service.models.response.a s;
+    public final boolean t;
+    public final String u;
+    public final int v;
+    public final String w;
+    public final String x;
+    public final int y;
+    public final n5 z;
 
     public n(String str, com.github.service.models.response.a aVar, boolean z, String str2, int i, String str3, String str4, int i2, n5 n5Var, boolean z2, String str5, String str6, boolean z3, String str7) {
         k71.k.g(str, "id");

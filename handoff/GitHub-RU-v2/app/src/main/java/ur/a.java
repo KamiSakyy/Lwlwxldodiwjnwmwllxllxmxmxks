@@ -8,9 +8,9 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a implements h0 {
-    public String a;
-    public boolean b;
-    public vx.a c;
+    public final String a;
+    public final boolean b;
+    public final vx.a c;
 
     public a(String str, boolean z, vx.a aVar) {
         k.g(str, "__typename");

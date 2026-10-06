@@ -2,8 +2,8 @@ package wx0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g4 {
-    public String a;
-    public o4 b;
+    public final String a;
+    public final o4 b;
 
     public g4(String str, o4 o4Var) {
         this.a = str;

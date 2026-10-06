@@ -18,5 +18,4 @@ public abstract class f {
     public Object w = null;
     public Object x = null;
     public Object y = null;
-    public Object k(Object, int, int) { return null; }
 }

@@ -5,8 +5,8 @@ import java.util.Objects;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i {
-    public s a;
-    public h b;
+    public final s a;
+    public final h b;
 
     public i(s sVar, b51.d dVar) {
         this.a = sVar;

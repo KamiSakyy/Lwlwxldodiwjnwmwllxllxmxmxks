@@ -2,8 +2,8 @@ package mo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r {
-    public g0 a;
-    public String b;
+    public final g0 a;
+    public final String b;
 
     public r(g0 g0Var, String str) {
         this.a = g0Var;

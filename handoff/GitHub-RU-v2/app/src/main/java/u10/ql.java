@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ql {
-    public sl a;
-    public String b;
-    public String c;
+    public final sl a;
+    public final String b;
+    public final String c;
 
     public ql(sl slVar, String str, String str2) {
         this.a = slVar;

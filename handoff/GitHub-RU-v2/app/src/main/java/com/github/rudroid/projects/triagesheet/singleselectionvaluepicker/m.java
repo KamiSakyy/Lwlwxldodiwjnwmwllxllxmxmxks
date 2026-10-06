@@ -6,10 +6,10 @@ import androidx.lifecycle.k1;
 public final class m extends k1 {
 
     /* renamed from: s, reason: collision with root package name */
-    public x71.h f18152s;
+    public final x71.h f18152s;
 
     /* renamed from: t, reason: collision with root package name */
-    public y71.d f18153t;
+    public final y71.d f18153t;
 
     public m() {
         x71.h a10 = t.e.a(-2, 6, null);

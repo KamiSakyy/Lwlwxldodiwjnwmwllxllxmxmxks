@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class yx {
-    public String a;
-    public zx b;
-    public ja0.a c;
+    public final String a;
+    public final zx b;
+    public final ja0.a c;
 
     public yx(String str, zx zxVar, ja0.a aVar) {
         k71.k.g(str, "__typename");

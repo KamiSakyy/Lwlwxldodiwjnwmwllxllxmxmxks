@@ -9,7 +9,7 @@ import ic.qc;
 public final class w0 extends com.github.rudroid.adapters.viewholders.e<k5.f> implements o3 {
 
     /* renamed from: v, reason: collision with root package name */
-    public com.github.rudroid.interfaces.e f4896v;
+    public final com.github.rudroid.interfaces.e f4896v;
 
     public w0(qc qcVar, CheckLogFragment checkLogFragment) {
         super(qcVar);

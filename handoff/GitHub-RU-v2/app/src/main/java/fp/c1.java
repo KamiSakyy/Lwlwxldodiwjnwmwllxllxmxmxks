@@ -2,9 +2,9 @@ package fp;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c1 {
-    public String a;
-    public String b;
-    public zv.c c;
+    public final String a;
+    public final String b;
+    public final zv.c c;
 
     public c1(String str, String str2, zv.c cVar) {
         this.a = str;

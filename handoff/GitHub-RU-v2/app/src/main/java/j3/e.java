@@ -7,7 +7,7 @@ import android.text.style.MetricAffectingSpan;
 public final class e extends MetricAffectingSpan {
 
     /* renamed from: r, reason: collision with root package name */
-    public float f26976r;
+    public final float f26976r;
 
     public e(float f6) {
         this.f26976r = f6;

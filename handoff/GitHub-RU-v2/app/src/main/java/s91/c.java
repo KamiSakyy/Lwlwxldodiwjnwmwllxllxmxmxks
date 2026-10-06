@@ -7,10 +7,10 @@ import org.intellij.markdown.MarkdownParsingException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class c {
-    public int a;
-    public int b;
-    public int c;
-    public String d;
+    public final int a;
+    public final int b;
+    public final int c;
+    public final String d;
     public final /* synthetic */ l51.h e;
 
     public c(l51.h hVar, int i, int i2, int i3) {

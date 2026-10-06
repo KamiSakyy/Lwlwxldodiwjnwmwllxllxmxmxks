@@ -6,8 +6,8 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g implements Parcelable {
     public static final Parcelable.Creator<g> CREATOR = new l7.c0(18);
-    public boolean r;
-    public double s;
+    public final boolean r;
+    public final double s;
 
     public g(double d, boolean z) {
         this.r = z;

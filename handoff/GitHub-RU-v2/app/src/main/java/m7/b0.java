@@ -7,7 +7,7 @@ public final class b0 implements a71.f {
     public static final a0 f28958s = new a0();
 
     /* renamed from: r, reason: collision with root package name */
-    public a71.e f28959r;
+    public final a71.e f28959r;
 
     public b0(a71.e eVar) {
         this.f28959r = eVar;

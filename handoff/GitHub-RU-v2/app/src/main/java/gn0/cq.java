@@ -12,7 +12,7 @@ public final class cq {
     public static final cq w;
     public static final /* synthetic */ cq[] x;
     public static final /* synthetic */ d71.b y;
-    public String r;
+    public final String r;
 
     static {
         cq cqVar = new cq("DUPLICATE", 0, "DUPLICATE");

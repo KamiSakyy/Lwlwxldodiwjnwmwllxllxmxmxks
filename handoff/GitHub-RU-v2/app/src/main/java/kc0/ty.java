@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ty {
-    public String a;
-    public String b;
-    public ak0.f c;
+    public final String a;
+    public final String b;
+    public final ak0.f c;
 
     public ty(String str, String str2, ak0.f fVar) {
         this.a = str;

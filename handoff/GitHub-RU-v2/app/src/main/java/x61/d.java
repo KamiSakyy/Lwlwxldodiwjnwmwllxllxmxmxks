@@ -5,9 +5,9 @@ import java.util.RandomAccess;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d extends e implements RandomAccess {
-    public e r;
-    public int s;
-    public int t;
+    public final e r;
+    public final int s;
+    public final int t;
 
     public d(e eVar, int i, int i2) {
         this.r = eVar;

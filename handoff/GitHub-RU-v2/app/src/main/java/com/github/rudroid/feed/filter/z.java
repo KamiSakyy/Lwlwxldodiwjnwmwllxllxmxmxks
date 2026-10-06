@@ -14,32 +14,32 @@ import y71.y1;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class z extends k1 implements com.github.rudroid.utilities.viewmodel.g {
-    public q1 A;
+    public final q1 A;
     public q1 B;
 
     /* renamed from: s, reason: collision with root package name */
     public final /* synthetic */ g.a f12621s;
 
     /* renamed from: t, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f12622t;
+    public final com.github.rudroid.activities.util.c f12622t;
 
     /* renamed from: u, reason: collision with root package name */
-    public qk.b f12623u;
+    public final qk.b f12623u;
 
     /* renamed from: v, reason: collision with root package name */
-    public qk.h f12624v;
+    public final qk.h f12624v;
 
     /* renamed from: w, reason: collision with root package name */
-    public y1 f12625w;
+    public final y1 f12625w;
 
     /* renamed from: x, reason: collision with root package name */
-    public i1 f12626x;
+    public final i1 f12626x;
 
     /* renamed from: y, reason: collision with root package name */
-    public y1 f12627y;
+    public final y1 f12627y;
 
     /* renamed from: z, reason: collision with root package name */
-    public i1 f12628z;
+    public final i1 f12628z;
 
     public z(com.github.rudroid.activities.util.c cVar, qk.b bVar, qk.h hVar) {
         k71.k.g(cVar, "accountHolder");

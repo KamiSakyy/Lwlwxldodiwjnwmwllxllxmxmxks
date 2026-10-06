@@ -47,10 +47,10 @@ import zg.m;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c implements t, y90, mi0, yb0, yf0 {
     public final /* synthetic */ int r;
-    public j s;
-    public com.github.service.wrapper.b t;
-    public v u;
-    public p v;
+    public final j s;
+    public final com.github.service.wrapper.b t;
+    public final v u;
+    public final p v;
 
     public c(j jVar, com.github.service.wrapper.b bVar, v vVar, int i) {
         this.r = i;
@@ -230,5 +230,4 @@ public final class c implements t, y90, mi0, yb0, yf0 {
     }
     public Object j(Object p1) { return null; }
     public Object v(Object p1) { return null; }
-    public Object v(Object) { return null; }
 }

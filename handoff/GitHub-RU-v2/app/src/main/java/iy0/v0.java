@@ -5,15 +5,15 @@ import pz0.ds;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v0 implements aa.h0 {
-    public String a;
-    public Integer b;
-    public String c;
-    public ds d;
-    public int e;
-    public q0 f;
-    public u0 g;
-    public p0 h;
-    public String i;
+    public final String a;
+    public final Integer b;
+    public final String c;
+    public final ds d;
+    public final int e;
+    public final q0 f;
+    public final u0 g;
+    public final p0 h;
+    public final String i;
 
     public v0(String str, Integer num, String str2, ds dsVar, int i, q0 q0Var, u0 u0Var, p0 p0Var, String str3) {
         this.a = str;

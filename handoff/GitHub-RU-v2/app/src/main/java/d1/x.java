@@ -4,13 +4,13 @@ package d1;
 public final class x {
 
     /* renamed from: a, reason: collision with root package name */
-    public w f21263a;
+    public final w f21263a;
 
     /* renamed from: b, reason: collision with root package name */
-    public w f21264b;
+    public final w f21264b;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean f21265c;
+    public final boolean f21265c;
 
     public x(w wVar, w wVar2, boolean z10) {
         this.f21263a = wVar;

@@ -5,12 +5,12 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class xb implements aaShadow.n0 {
     public static final tb Companion = new tb();
-    public String r;
-    public aa1.b s;
-    public aa1.b t;
-    public aa1.b u;
-    public aa1.b v;
-    public aa1.b w;
+    public final String r;
+    public final aa1.b s;
+    public final aa1.b t;
+    public final aa1.b u;
+    public final aa1.b v;
+    public final aa1.b w;
 
     public xb(String str, aa1.b bVar, aa1.b bVar2, aa1.b bVar3, aa1.b bVar4, aa1.b bVar5) {
         this.r = str;

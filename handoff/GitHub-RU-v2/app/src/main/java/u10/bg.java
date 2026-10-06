@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class bg {
-    public yf a;
-    public cg b;
+    public final yf a;
+    public final cg b;
 
     public bg(yf yfVar, cg cgVar) {
         this.a = yfVar;

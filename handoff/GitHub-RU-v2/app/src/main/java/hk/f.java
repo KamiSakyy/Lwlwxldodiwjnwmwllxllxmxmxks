@@ -11,7 +11,7 @@ import z01.m;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f {
-    public g a;
+    public final g a;
 
     public f(g gVar) {
         k.g(gVar, "deploymentReviewService");

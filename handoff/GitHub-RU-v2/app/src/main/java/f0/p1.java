@@ -7,5 +7,5 @@ package f0;
 public class p1 {
     public p1() {
     }
-    public static Object a(Object p1) { return null; }
+    public Object a(Object p1) { return null; }
 }

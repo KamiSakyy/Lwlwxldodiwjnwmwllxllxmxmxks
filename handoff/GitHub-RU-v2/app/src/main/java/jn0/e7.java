@@ -5,10 +5,10 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e7 implements aaShadow.n0 {
     public static final a7 Companion = new a7();
-    public String r;
-    public String s;
-    public String t;
-    public String u;
+    public final String r;
+    public final String s;
+    public final String t;
+    public final String u;
 
     public e7(String str, String str2, String str3, String str4) {
         k71.k.g(str, "repositoryId");

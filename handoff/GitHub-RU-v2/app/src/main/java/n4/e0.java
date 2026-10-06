@@ -14,7 +14,7 @@ public final class e0 implements Iterable {
     public final ArrayList f29438r = new ArrayList();
 
     /* renamed from: s, reason: collision with root package name */
-    public Context f29439s;
+    public final Context f29439s;
 
     public e0(Context context) {
         this.f29439s = context;

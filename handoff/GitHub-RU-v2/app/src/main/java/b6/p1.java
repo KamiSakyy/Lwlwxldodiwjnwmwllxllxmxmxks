@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public final class p1 extends z5.j {
 
     /* renamed from: d, reason: collision with root package name */
-    public int f3659d;
+    public final int f3659d;
 
     /* renamed from: e, reason: collision with root package name */
     public z5.n f3660e;

@@ -14,5 +14,5 @@ public final class i0 extends d0 {
     public i0(Object p1, Object p2, Object p3) {
     }
     public Object a() { return null; }
-    public static Object values() { return null; }
+    public Object values() { return null; }
 }

@@ -5,11 +5,11 @@ import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j {
-    public i a;
-    public String b;
-    public boolean c;
-    public String d;
-    public String e;
+    public final i a;
+    public final String b;
+    public final boolean c;
+    public final String d;
+    public final String e;
 
     public j(i iVar, String str, boolean z, String str2, String str3) {
         this.a = iVar;

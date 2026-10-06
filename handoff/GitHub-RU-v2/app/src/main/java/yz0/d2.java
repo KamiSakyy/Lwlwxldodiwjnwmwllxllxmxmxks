@@ -5,10 +5,10 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d2 {
-    public String a;
-    public ArrayList b;
+    public final String a;
+    public final ArrayList b;
     public final IssueOrPullRequest$ReviewerReviewState c;
-    public boolean d;
+    public final boolean d;
 
     public d2(String str, ArrayList arrayList, IssueOrPullRequest$ReviewerReviewState issueOrPullRequest$ReviewerReviewState, boolean z) {
         k71.k.g(issueOrPullRequest$ReviewerReviewState, "latestReviewState");

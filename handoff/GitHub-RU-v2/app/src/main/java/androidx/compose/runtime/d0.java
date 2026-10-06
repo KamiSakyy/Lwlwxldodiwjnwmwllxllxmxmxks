@@ -7,7 +7,7 @@ public final class d0 extends y1 {
     public final /* synthetic */ int f1589b = 1;
 
     /* renamed from: c, reason: collision with root package name */
-    public Object f1590c;
+    public final Object f1590c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public d0(j71.a aVar) {

@@ -2,8 +2,8 @@ package sd0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y {
-    public u a;
-    public String b;
+    public final u a;
+    public final String b;
 
     public y(u uVar, String str) {
         this.a = uVar;

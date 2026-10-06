@@ -10,14 +10,14 @@ import com.github.service.models.response.type.IssueState;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j implements Parcelable {
     public static final Parcelable.Creator<j> CREATOR = new gn.m(17);
-    public String r;
-    public String s;
-    public String t;
-    public int u;
-    public CloseReason v;
-    public IssueState w;
-    public String x;
-    public String y;
+    public final String r;
+    public final String s;
+    public final String t;
+    public final int u;
+    public final CloseReason v;
+    public final IssueState w;
+    public final String x;
+    public final String y;
 
     public j(String str, String str2, String str3, int i, CloseReason closeReason, IssueState issueState, String str4, String str5) {
         k71.k.g(str, "id");

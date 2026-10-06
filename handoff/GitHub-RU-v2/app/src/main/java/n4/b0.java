@@ -16,10 +16,10 @@ public final class b0 {
     public static a0 f29420g;
 
     /* renamed from: a, reason: collision with root package name */
-    public Context f29421a;
+    public final Context f29421a;
 
     /* renamed from: b, reason: collision with root package name */
-    public NotificationManager f29422b;
+    public final NotificationManager f29422b;
 
     /* renamed from: c, reason: collision with root package name */
     public static final Object f29416c = new Object();

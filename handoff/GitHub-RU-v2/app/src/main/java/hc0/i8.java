@@ -10,7 +10,7 @@ public final class i8 {
     public static final i8 u;
     public static final /* synthetic */ i8[] v;
     public static final /* synthetic */ d71.b w;
-    public String r;
+    public final String r;
 
     static {
         i8 i8Var = new i8("LEFT", 0, "LEFT");

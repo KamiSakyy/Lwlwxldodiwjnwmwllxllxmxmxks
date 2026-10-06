@@ -12,7 +12,7 @@ public final class yo {
     public static final yo w;
     public static final /* synthetic */ yo[] x;
     public static final /* synthetic */ d71.b y;
-    public String r;
+    public final String r;
 
     static {
         yo yoVar = new yo("DUPLICATE", 0, "DUPLICATE");

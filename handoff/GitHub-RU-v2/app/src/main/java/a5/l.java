@@ -5,7 +5,7 @@ package a5;
  * Оригинал потерян при декомпиляции APK.
  */
 public class l {
-    public static Object l() {
+    public l() {
     }
 
     public static Object b(Object... a) {
@@ -27,14 +27,14 @@ public class l {
     public static Object d(Object... a) {
         return null;
     }
-    public static Object a(Object p1) { return null; }
-    public static Object c(Object p1) { return null; }
-    public static Object k(Object p1) { return null; }
+    public Object a(Object p1) { return null; }
+    public Object c(Object p1) { return null; }
+    public Object k(Object p1) { return null; }
     public Object l(Object p1) { return null; }
-    public static Object r(Object p1) { return null; }
-    public static Object s(Object p1) { return null; }
-    public static Object u(Object p1) { return null; }
-    public static Object v(Object p1) { return null; }
-    public static Object w(Object p1) { return null; }
-    public static Object x(Object p1) { return null; }
+    public Object r(Object p1) { return null; }
+    public Object s(Object p1) { return null; }
+    public Object u(Object p1) { return null; }
+    public Object v(Object p1) { return null; }
+    public Object w(Object p1) { return null; }
+    public Object x(Object p1) { return null; }
 }

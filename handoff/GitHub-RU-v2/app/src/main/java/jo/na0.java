@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class na0 {
-    public String a;
-    public String b;
-    public qa0 c;
-    public vx.a d;
+    public final String a;
+    public final String b;
+    public final qa0 c;
+    public final vx.a d;
 
     public na0(String str, String str2, qa0 qa0Var, vx.a aVar) {
         k71.k.g(str, "__typename");

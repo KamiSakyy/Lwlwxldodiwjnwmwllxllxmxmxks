@@ -14,11 +14,11 @@ import java.util.regex.Pattern;
 public final class v {
     public static final Pattern g = Pattern.compile("[^\\p{Alnum}]");
     public static final String h = Pattern.quote("/");
-    public a81.t a;
-    public Context b;
-    public String c;
-    public q51.d d;
-    public s e;
+    public final a81.t a;
+    public final Context b;
+    public final String c;
+    public final q51.d d;
+    public final s e;
     public c f;
 
     public v(Context context, String str, q51.d dVar, s sVar) {

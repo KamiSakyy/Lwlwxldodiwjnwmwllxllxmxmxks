@@ -9,7 +9,7 @@ public final class ox {
     public static final ox t;
     public static final /* synthetic */ ox[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         ox oxVar = new ox("BOARD_LAYOUT", 0, "BOARD_LAYOUT");

@@ -2,7 +2,7 @@ package yz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i1 implements l1 {
-    public String a;
+    public final String a;
 
     public i1(String str) {
         k71.k.g(str, "repoId");

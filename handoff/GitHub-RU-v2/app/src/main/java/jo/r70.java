@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r70 {
-    public String a;
-    public String b;
-    public dw.m3 c;
-    public dw.o d;
+    public final String a;
+    public final String b;
+    public final dw.m3 c;
+    public final dw.o d;
 
     public r70(String str, String str2, dw.m3 m3Var, dw.o oVar) {
         this.a = str;

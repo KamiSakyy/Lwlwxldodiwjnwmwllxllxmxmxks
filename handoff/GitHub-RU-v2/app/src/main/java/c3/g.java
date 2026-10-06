@@ -15,7 +15,7 @@ public final class g {
     public float f4098b;
 
     /* renamed from: c, reason: collision with root package name */
-    public Object f4099c;
+    public final Object f4099c;
 
     public g(int i, c cVar) {
         this.f4097a = i;

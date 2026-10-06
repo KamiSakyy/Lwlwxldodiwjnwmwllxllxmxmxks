@@ -4,14 +4,14 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c7 {
-    public String a;
-    public String b;
-    public boolean c;
-    public b7 d;
-    public boolean e;
-    public boolean f;
-    public List g;
-    public g80.a h;
+    public final String a;
+    public final String b;
+    public final boolean c;
+    public final b7 d;
+    public final boolean e;
+    public final boolean f;
+    public final List g;
+    public final g80.a h;
 
     public c7(String str, String str2, boolean z, b7 b7Var, boolean z2, boolean z3, List list, g80.a aVar) {
         this.a = str;

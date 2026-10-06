@@ -4,21 +4,21 @@ import pz0.kt;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k7 implements aa.h0 {
-    public String a;
-    public String b;
-    public Integer c;
-    public Integer d;
-    public Integer e;
-    public h7 f;
-    public j7 g;
-    public String h;
-    public kt i;
-    public String j;
-    public yp0.c k;
-    public gu0.c l;
-    public bw0.c m;
-    public gt0.a n;
-    public at0.a o;
+    public final String a;
+    public final String b;
+    public final Integer c;
+    public final Integer d;
+    public final Integer e;
+    public final h7 f;
+    public final j7 g;
+    public final String h;
+    public final kt i;
+    public final String j;
+    public final yp0.c k;
+    public final gu0.c l;
+    public final bw0.c m;
+    public final gt0.a n;
+    public final at0.a o;
 
     public k7(String str, String str2, Integer num, Integer num2, Integer num3, h7 h7Var, j7 j7Var, String str3, kt ktVar, String str4, yp0.c cVar, gu0.c cVar2, bw0.c cVar3, gt0.a aVar, at0.a aVar2) {
         this.a = str;

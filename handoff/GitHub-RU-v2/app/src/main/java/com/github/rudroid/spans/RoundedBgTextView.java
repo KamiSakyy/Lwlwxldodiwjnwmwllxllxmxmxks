@@ -18,9 +18,9 @@ import w61.p;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class RoundedBgTextView extends AppCompatTextView {
     public static final /* synthetic */ int B = 0;
-    public p A;
+    public final p A;
     public g[] y;
-    public p z;
+    public final p z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public RoundedBgTextView(Context context, AttributeSet attributeSet) {

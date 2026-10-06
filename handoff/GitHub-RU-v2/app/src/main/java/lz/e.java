@@ -7,22 +7,22 @@ import m10.uq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public String a;
-    public String b;
-    public String c;
-    public boolean d;
-    public int e;
-    public ZonedDateTime f;
-    public uq g;
-    public n0 h;
-    public String i;
-    public boolean j;
-    public boolean k;
-    public String l;
-    public a0 m;
-    public jq n;
-    public b0 o;
-    public String p;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final boolean d;
+    public final int e;
+    public final ZonedDateTime f;
+    public final uq g;
+    public final n0 h;
+    public final String i;
+    public final boolean j;
+    public final boolean k;
+    public final String l;
+    public final a0 m;
+    public final jq n;
+    public final b0 o;
+    public final String p;
 
     public e(String str, String str2, String str3, boolean z, int i, ZonedDateTime zonedDateTime, uq uqVar, n0 n0Var, String str4, boolean z2, boolean z3, String str5, a0 a0Var, jq jqVar, b0 b0Var, String str6) {
         this.a = str;

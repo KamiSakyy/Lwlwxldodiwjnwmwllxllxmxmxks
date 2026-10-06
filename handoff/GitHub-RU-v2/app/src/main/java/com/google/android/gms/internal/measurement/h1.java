@@ -5,7 +5,7 @@ import android.os.Parcel;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h1 extends y implements r0 {
-    public n41.b f;
+    public final n41.b f;
 
     public h1(n41.b bVar) {
         super("com.google.android.gms.measurement.api.internal.IEventHandlerProxy");

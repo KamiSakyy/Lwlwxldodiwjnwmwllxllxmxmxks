@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fr {
-    public cr a;
+    public final cr a;
 
     public fr(cr crVar) {
         this.a = crVar;

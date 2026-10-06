@@ -11,7 +11,7 @@ public final class ReactionContent {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ ReactionContent[] $VALUES;
     public static final t Companion;
-    private String rawValue;
+    private final String rawValue;
     public static final ReactionContent THUMBS_UP = new ReactionContent("THUMBS_UP", 0, "THUMBS_UP");
     public static final ReactionContent THUMBS_DOWN = new ReactionContent("THUMBS_DOWN", 1, "THUMBS_DOWN");
     public static final ReactionContent LAUGH = new ReactionContent("LAUGH", 2, "LAUGH");

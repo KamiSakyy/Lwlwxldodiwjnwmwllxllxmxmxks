@@ -6,13 +6,13 @@ import m10.yi;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w0 implements aa.h0 {
-    public String a;
-    public wi b;
-    public yi c;
-    public boolean d;
-    public v0 e;
-    public u0 f;
-    public String g;
+    public final String a;
+    public final wi b;
+    public final yi c;
+    public final boolean d;
+    public final v0 e;
+    public final u0 f;
+    public final String g;
 
     public w0(String str, wi wiVar, yi yiVar, boolean z, v0 v0Var, u0 u0Var, String str2) {
         this.a = str;

@@ -2,8 +2,8 @@ package zx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j1 {
-    public boolean a;
-    public String b;
+    public final boolean a;
+    public final String b;
 
     public j1(String str, boolean z) {
         this.a = z;

@@ -2,8 +2,8 @@ package is;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q {
-    public String a;
-    public wu.a b;
+    public final String a;
+    public final wu.a b;
 
     public q(String str, wu.a aVar) {
         this.a = str;

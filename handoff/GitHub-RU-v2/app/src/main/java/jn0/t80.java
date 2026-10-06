@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t80 {
-    public String a;
-    public r80 b;
+    public final String a;
+    public final r80 b;
 
     public t80(String str, r80 r80Var) {
         this.a = str;

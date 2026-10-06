@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w80 {
-    public e90 a;
-    public String b;
+    public final e90 a;
+    public final String b;
 
     public w80(e90 e90Var, String str) {
         this.a = e90Var;

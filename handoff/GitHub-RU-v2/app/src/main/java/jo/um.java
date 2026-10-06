@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class um {
-    public String a;
-    public zt.d b;
+    public final String a;
+    public final zt.d b;
 
     public um(String str, zt.d dVar) {
         this.a = str;

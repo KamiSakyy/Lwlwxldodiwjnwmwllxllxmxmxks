@@ -55,9 +55,9 @@ public final class y {
     public static v8.y r;
 
     public static Object s;
-    public static Object a(Object p1, Object p2) { return null; }
-    public static Object o(Object p1, Object p2) { return null; }
+    public Object a(Object p1, Object p2) { return null; }
+    public Object o(Object p1, Object p2) { return null; }
     public Object ordinal() { return null; }
-    public static Object t(Object p1, Object p2) { return null; }
+    public Object t(Object p1, Object p2) { return null; }
     public static final Object r = null;
 }

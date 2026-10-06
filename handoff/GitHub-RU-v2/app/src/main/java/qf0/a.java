@@ -8,12 +8,12 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements h0 {
-    public s8 a;
-    public String b;
-    public Integer c;
-    public Integer d;
-    public String e;
-    public boolean f;
+    public final s8 a;
+    public final String b;
+    public final Integer c;
+    public final Integer d;
+    public final String e;
+    public final boolean f;
 
     public a(s8 s8Var, String str, Integer num, Integer num2, String str2, boolean z) {
         this.a = s8Var;

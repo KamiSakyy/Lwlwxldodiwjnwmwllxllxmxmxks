@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rj0 {
-    public m10.ry a;
-    public ArrayList b;
-    public m10.ny c;
+    public final m10.ry a;
+    public final ArrayList b;
+    public final m10.ny c;
 
     public rj0(m10.ry ryVar, ArrayList arrayList, m10.ny nyVar) {
         this.a = ryVar;

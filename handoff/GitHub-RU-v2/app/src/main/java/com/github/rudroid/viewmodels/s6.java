@@ -4,8 +4,8 @@ import com.github.domain.users.FetchUsersParams$FetchReleaseMentionsParams;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s6 extends za<FetchUsersParams$FetchReleaseMentionsParams> {
-    public kl.c y;
-    public com.github.rudroid.activities.util.c z;
+    public final kl.c y;
+    public final com.github.rudroid.activities.util.c z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public s6(kl.c cVar, com.github.rudroid.activities.util.c cVar2, androidx.lifecycle.a1 a1Var) {

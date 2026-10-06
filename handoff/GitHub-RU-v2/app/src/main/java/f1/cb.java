@@ -4,13 +4,13 @@ package f1;
 public final class cb {
 
     /* renamed from: a, reason: collision with root package name */
-    public float f22631a;
+    public final float f22631a;
 
     /* renamed from: b, reason: collision with root package name */
-    public float f22632b;
+    public final float f22632b;
 
     /* renamed from: c, reason: collision with root package name */
-    public float f22633c;
+    public final float f22633c;
 
     public cb(float f6, float f10, float f11) {
         this.f22631a = f6;

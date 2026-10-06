@@ -11,7 +11,7 @@ import x61.r;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements w0 {
     public static final a Companion = new a();
-    public String r;
+    public final String r;
 
     public e(String str) {
         k71.k.g(str, "repositoryId");
@@ -36,7 +36,7 @@ public final class e implements w0 {
         return (obj instanceof e) && k71.k.b(this.r, ((e) obj).r);
     }
 
-    public static final p0 g() {
+    public final p0 g() {
         return aa.c.c(mm0.a.a, false);
     }
 
@@ -66,5 +66,5 @@ public final class e implements w0 {
     public final String toString() {
         return f1.e.z("RepositoryCreateIssueInformationQuery(repositoryId=", this.r, ")");
     }
-    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

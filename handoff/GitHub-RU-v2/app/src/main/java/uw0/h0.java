@@ -10,7 +10,7 @@ import pz0.sk;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h0 implements n0 {
     public static final a0 Companion = new a0();
-    public q80 r;
+    public final q80 r;
 
     public h0(q80 q80Var) {
         this.r = q80Var;

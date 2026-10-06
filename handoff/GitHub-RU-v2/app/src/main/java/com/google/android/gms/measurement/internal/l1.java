@@ -5,8 +5,8 @@ import java.util.concurrent.BlockingQueue;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l1 extends Thread {
-    public Object r;
-    public BlockingQueue s;
+    public final Object r;
+    public final BlockingQueue s;
     public boolean t = false;
     public final /* synthetic */ m1 u;
 

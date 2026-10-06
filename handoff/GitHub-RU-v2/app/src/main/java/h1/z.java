@@ -7,7 +7,7 @@ import java.util.Locale;
 public abstract class z {
 
     /* renamed from: a, reason: collision with root package name */
-    public Locale f25451a;
+    public final Locale f25451a;
 
     /* renamed from: b, reason: collision with root package name */
     public final LinkedHashMap f25452b = new LinkedHashMap();

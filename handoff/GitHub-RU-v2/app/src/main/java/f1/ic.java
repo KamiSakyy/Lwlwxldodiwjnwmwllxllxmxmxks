@@ -4,10 +4,10 @@ package f1;
 public final class ic {
 
     /* renamed from: a, reason: collision with root package name */
-    public boolean f23021a;
+    public final boolean f23021a;
 
     /* renamed from: b, reason: collision with root package name */
-    public f0.m1 f23022b;
+    public final f0.m1 f23022b;
 
     /* renamed from: c, reason: collision with root package name */
     public final a0.w0 f23023c = new a0.w0(Boolean.FALSE);

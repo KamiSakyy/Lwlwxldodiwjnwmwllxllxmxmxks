@@ -8,7 +8,7 @@ public final class a {
     public static final String c = a("hts/cahyiseot-agolai.o/1frlglgc/aclg", "tp:/rsltcrprsp.ogepscmv/ieo/eaybtho");
     public static final String d = a("AzSBpY4F0rHiHFdinTvM", "IayrSTFL9eJ69YeSUO2");
     public static final i e = new i(23);
-    public d a;
+    public final d a;
 
     public a(d dVar) {
         this.a = dVar;

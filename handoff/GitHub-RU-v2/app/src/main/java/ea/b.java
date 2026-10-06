@@ -19,10 +19,10 @@ public final class b implements e {
     public int C;
 
     /* renamed from: r, reason: collision with root package name */
-    public h91.j f22171r;
+    public final h91.j f22171r;
 
     /* renamed from: s, reason: collision with root package name */
-    public h91.h f22172s;
+    public final h91.h f22172s;
 
     /* renamed from: t, reason: collision with root package name */
     public int f22173t;

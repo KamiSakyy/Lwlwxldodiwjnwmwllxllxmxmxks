@@ -8,10 +8,10 @@ import javax.net.ssl.SSLSocket;
 /* loaded from: /home/user/work/p/classes5.dex */
 public class e implements n {
     public static final u31.f e = new u31.f(1);
-    public Class a;
-    public Method b;
-    public Method c;
-    public Method d;
+    public final Class a;
+    public final Method b;
+    public final Method c;
+    public final Method d;
 
     public e(Class cls) {
         this.a = cls;

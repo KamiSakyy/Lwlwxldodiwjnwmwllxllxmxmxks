@@ -2,10 +2,10 @@ package fp;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b1 implements aa.v0 {
-    public h1 a;
-    public j1 b;
-    public String c;
-    public String d;
+    public final h1 a;
+    public final j1 b;
+    public final String c;
+    public final String d;
 
     public b1(h1 h1Var, j1 j1Var, String str, String str2) {
         this.a = h1Var;

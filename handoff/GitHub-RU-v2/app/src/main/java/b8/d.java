@@ -11,13 +11,13 @@ public final class d {
     public final RectF f3793a = new RectF();
 
     /* renamed from: b, reason: collision with root package name */
-    public Paint f3794b;
+    public final Paint f3794b;
 
     /* renamed from: c, reason: collision with root package name */
-    public Paint f3795c;
+    public final Paint f3795c;
 
     /* renamed from: d, reason: collision with root package name */
-    public Paint f3796d;
+    public final Paint f3796d;
 
     /* renamed from: e, reason: collision with root package name */
     public float f3797e;

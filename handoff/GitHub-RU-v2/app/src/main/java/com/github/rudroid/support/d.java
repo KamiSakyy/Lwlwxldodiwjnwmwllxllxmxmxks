@@ -5,7 +5,7 @@ import ic.qe;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d extends com.github.rudroid.adapters.viewholders.e<k5.f> {
-    public a v;
+    public final a v;
 
     public interface a {
         void h0(Uri uri);

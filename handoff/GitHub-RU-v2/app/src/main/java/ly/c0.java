@@ -4,8 +4,8 @@ import dw.k7;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c0 {
-    public String a;
-    public k7 b;
+    public final String a;
+    public final k7 b;
 
     public c0(String str, k7 k7Var) {
         k71.k.g(str, "__typename");

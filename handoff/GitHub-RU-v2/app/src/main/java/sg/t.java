@@ -161,5 +161,4 @@ public final class t {
     public static final Object d = null;
     public static final Object j = null;
     public static final Object k = null;
-    public Object b(float, long) { return null; }
 }

@@ -17,9 +17,9 @@ import xn.z2;
 public final class SteerCommand$PermissionResponse implements c4 {
     public static final Companion Companion = new Companion();
     public static final h[] d = {null, null, w.s(i.r, new a(20))};
-    public String a;
-    public boolean b;
-    public z2 c;
+    public final String a;
+    public final boolean b;
+    public final z2 c;
 
     public static final class Companion {
         public final KSerializer serializer() {

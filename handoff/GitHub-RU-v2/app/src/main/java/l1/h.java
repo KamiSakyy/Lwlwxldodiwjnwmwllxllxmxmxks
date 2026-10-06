@@ -10,7 +10,7 @@ import x.i0;
 public final class h implements Set, l71.a {
 
     /* renamed from: r, reason: collision with root package name */
-    public i0 f27911r;
+    public final i0 f27911r;
 
     public h(i0 i0Var) {
         this.f27911r = i0Var;

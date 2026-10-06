@@ -9,7 +9,7 @@ import pz0.su;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o implements w0 {
     public static final l Companion = new l();
-    public String r;
+    public final String r;
 
     public o(String str) {
         this.r = str;

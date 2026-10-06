@@ -5,10 +5,10 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public String a;
-    public String b;
-    public e c;
-    public String d;
+    public final String a;
+    public final String b;
+    public final e c;
+    public final String d;
 
     public b(String str, String str2, e eVar, String str3) {
         this.a = str;

@@ -5,7 +5,7 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c implements v0 {
-    public f a;
+    public final f a;
 
     public c(f fVar) {
         this.a = fVar;

@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteStatement;
 public final class h extends g implements w7.d {
 
     /* renamed from: s, reason: collision with root package name */
-    public SQLiteStatement f3130s;
+    public final SQLiteStatement f3130s;
 
     public h(SQLiteStatement sQLiteStatement) {
         super(sQLiteStatement);

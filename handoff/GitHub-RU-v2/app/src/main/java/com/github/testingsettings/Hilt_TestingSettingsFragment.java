@@ -23,7 +23,7 @@ public abstract class Hilt_TestingSettingsFragment extends a0 implements b {
     public j t0;
     public boolean u0;
     public volatile f v0;
-    public Object w0;
+    public final Object w0;
     public boolean x0;
 
     public Hilt_TestingSettingsFragment() {

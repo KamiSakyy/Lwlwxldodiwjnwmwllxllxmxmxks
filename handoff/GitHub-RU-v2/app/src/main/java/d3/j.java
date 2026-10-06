@@ -7,13 +7,13 @@ public final class j {
     public static final j f21428d = new j(0.0f, new q71.d(0.0f, 0.0f), 0);
 
     /* renamed from: a, reason: collision with root package name */
-    public float f21429a;
+    public final float f21429a;
 
     /* renamed from: b, reason: collision with root package name */
-    public q71.d f21430b;
+    public final q71.d f21430b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f21431c;
+    public final int f21431c;
 
     public j(float f6, q71.d dVar, int i) {
         this.f21429a = f6;

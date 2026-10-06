@@ -7,25 +7,25 @@ import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j implements h0 {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public boolean f;
-    public e g;
-    public String h;
-    public String i;
-    public String j;
-    public boolean k;
-    public f l;
-    public h m;
-    public i n;
-    public String o;
-    public String p;
-    public g q;
-    public d r;
-    public eq.g s;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final boolean f;
+    public final e g;
+    public final String h;
+    public final String i;
+    public final String j;
+    public final boolean k;
+    public final f l;
+    public final h m;
+    public final i n;
+    public final String o;
+    public final String p;
+    public final g q;
+    public final d r;
+    public final eq.g s;
 
     public j(String str, String str2, String str3, String str4, String str5, boolean z, e eVar, String str6, String str7, String str8, boolean z2, f fVar, h hVar, i iVar, String str9, String str10, g gVar, d dVar, eq.g gVar2) {
         this.a = str;

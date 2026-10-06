@@ -70,5 +70,5 @@ public abstract /* synthetic */ class e {
         } catch (NoSuchFieldError unused12) {
         }
     }
-    public static Object t(Object p1) { return null; }
+    public Object t(Object p1) { return null; }
 }

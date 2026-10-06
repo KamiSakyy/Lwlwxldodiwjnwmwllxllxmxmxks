@@ -12,8 +12,8 @@ import sy.o;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class h extends i {
-    public Rect c;
-    public Rect d;
+    public final Rect c;
+    public final Rect d;
     public int e;
     public int f;
 

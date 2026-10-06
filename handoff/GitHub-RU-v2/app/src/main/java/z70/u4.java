@@ -2,9 +2,9 @@ package z70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u4 {
-    public String a;
-    public x4 b;
-    public w4 c;
+    public final String a;
+    public final x4 b;
+    public final w4 c;
 
     public u4(String str, x4 x4Var, w4 w4Var) {
         k71.k.g(str, "__typename");

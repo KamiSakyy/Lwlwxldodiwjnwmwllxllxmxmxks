@@ -2,10 +2,10 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a3 {
-    public e1 a;
-    public c3 b;
-    public String c;
-    public String d;
+    public final e1 a;
+    public final c3 b;
+    public final String c;
+    public final String d;
 
     public a3(e1 e1Var, c3 c3Var, String str, String str2) {
         this.a = e1Var;

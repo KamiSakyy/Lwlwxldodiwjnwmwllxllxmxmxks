@@ -5,18 +5,18 @@ import android.util.Log;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s0 extends w1 {
-    public q0 A;
-    public q0 B;
-    public q0 C;
-    public q0 D;
-    public q0 E;
-    public q0 F;
+    public final q0 A;
+    public final q0 B;
+    public final q0 C;
+    public final q0 D;
+    public final q0 E;
+    public final q0 F;
     public char u;
     public long v;
     public String w;
-    public q0 x;
-    public q0 y;
-    public q0 z;
+    public final q0 x;
+    public final q0 y;
+    public final q0 z;
 
     public s0(o1 o1Var) {
         super(o1Var);

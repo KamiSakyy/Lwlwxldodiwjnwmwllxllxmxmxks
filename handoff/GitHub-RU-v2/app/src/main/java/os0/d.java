@@ -8,13 +8,13 @@ import pz0.gu;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d {
-    public String a;
-    public String b;
-    public int c;
-    public String d;
-    public gu e;
-    public boolean f;
-    public boolean g;
+    public final String a;
+    public final String b;
+    public final int c;
+    public final String d;
+    public final gu e;
+    public final boolean f;
+    public final boolean g;
 
     public d(int i, String str, String str2, String str3, gu guVar, boolean z, boolean z2) {
         this.a = str;

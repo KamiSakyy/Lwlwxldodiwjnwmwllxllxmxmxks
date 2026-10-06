@@ -19,9 +19,9 @@ public final class SelectableMilestoneBottomSheet extends Hilt_SelectableMilesto
     public static final /* synthetic */ r71.e[] d1;
     public final com.github.rudroid.fragments.util.c Y0 = new com.github.rudroid.fragments.util.c("EXTRA_IS_ACTIVITY_HOSTED", new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.f(26));
     public final w61.p Z0 = w.t(new com.github.rudroid.searchandfilter.complexfilter.milestone.c(this, 0));
-    public l1 a1;
-    public int b1;
-    public int c1;
+    public final l1 a1;
+    public final int b1;
+    public final int c1;
 
     public static final class a {
     }

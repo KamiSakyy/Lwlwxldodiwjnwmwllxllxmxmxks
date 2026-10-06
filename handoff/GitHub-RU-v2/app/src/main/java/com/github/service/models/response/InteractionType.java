@@ -10,7 +10,7 @@ public final class InteractionType {
     private static final /* synthetic */ d71.a $ENTRIES;
     private static final /* synthetic */ InteractionType[] $VALUES;
     public static final x1 Companion;
-    private String rawValue;
+    private final String rawValue;
     public static final InteractionType AUTHORED = new InteractionType("AUTHORED", 0, "AUTHORED");
     public static final InteractionType REOPENED = new InteractionType("REOPENED", 1, "REOPENED");
     public static final InteractionType COMMENTED = new InteractionType("COMMENTED", 2, "COMMENTED");

@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class xn {
-    public co a;
-    public String b;
-    public String c;
+    public final co a;
+    public final String b;
+    public final String c;
 
     public xn(co coVar, String str, String str2) {
         this.a = coVar;

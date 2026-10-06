@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fc {
-    public String a;
-    public String b;
-    public gc c;
-    public ms.d0 d;
+    public final String a;
+    public final String b;
+    public final gc c;
+    public final ms.d0 d;
 
     public fc(String str, String str2, gc gcVar, ms.d0 d0Var) {
         k71.k.g(str, "__typename");

@@ -2,16 +2,16 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class id0 {
-    public String a;
-    public String b;
-    public String c;
-    public m10.wi d;
-    public String e;
-    public jd0 f;
-    public boolean g;
-    public gq.i h;
-    public lt.j i;
-    public ar.c j;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final m10.wi d;
+    public final String e;
+    public final jd0 f;
+    public final boolean g;
+    public final gq.i h;
+    public final lt.j i;
+    public final ar.c j;
 
     public id0(String str, String str2, String str3, m10.wi wiVar, String str4, jd0 jd0Var, boolean z, gq.i iVar, lt.j jVar, ar.c cVar) {
         this.a = str;

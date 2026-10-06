@@ -2,8 +2,8 @@ package zk;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o1 {
-    public a2 a;
-    public cn.a b;
+    public final a2 a;
+    public final cn.a b;
 
     public o1(a2 a2Var, cn.a aVar) {
         k71.k.g(a2Var, "updatePullRequestReviewersUseCase");

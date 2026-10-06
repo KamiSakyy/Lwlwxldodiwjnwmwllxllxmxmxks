@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d30 {
-    public boolean a;
-    public String b;
-    public boolean c;
+    public final boolean a;
+    public final String b;
+    public final boolean c;
 
     public d30(String str, boolean z, boolean z2) {
         this.a = z;

@@ -5,9 +5,9 @@ import dw.z6;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v0 {
-    public String a;
-    public String b;
-    public z6 c;
+    public final String a;
+    public final String b;
+    public final z6 c;
 
     public v0(String str, String str2, z6 z6Var) {
         this.a = str;

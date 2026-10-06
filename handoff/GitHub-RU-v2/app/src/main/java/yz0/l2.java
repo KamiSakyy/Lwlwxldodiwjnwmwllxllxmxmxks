@@ -6,7 +6,7 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l2 implements Parcelable {
     public static final Parcelable.Creator<l2> CREATOR = new h(22);
-    public String r;
+    public final String r;
 
     public l2(String str) {
         k71.k.g(str, "displayName");

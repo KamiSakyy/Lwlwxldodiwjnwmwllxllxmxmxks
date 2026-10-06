@@ -8,7 +8,7 @@ import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s extends e0<r> {
-    public SelectableRepositoryFragment f;
+    public final SelectableRepositoryFragment f;
 
     public s(SelectableRepositoryFragment selectableRepositoryFragment) {
         this.f = selectableRepositoryFragment;

@@ -4,20 +4,20 @@ import hc0.jl;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d7 implements aa.h0 {
-    public String a;
-    public String b;
-    public Integer c;
-    public Integer d;
-    public a7 e;
-    public c7 f;
-    public String g;
-    public jl h;
-    public String i;
-    public c40.c j;
-    public i80.c k;
-    public aa0.c l;
-    public g70.a m;
-    public y60.a n;
+    public final String a;
+    public final String b;
+    public final Integer c;
+    public final Integer d;
+    public final a7 e;
+    public final c7 f;
+    public final String g;
+    public final jl h;
+    public final String i;
+    public final c40.c j;
+    public final i80.c k;
+    public final aa0.c l;
+    public final g70.a m;
+    public final y60.a n;
 
     public d7(String str, String str2, Integer num, Integer num2, a7 a7Var, c7 c7Var, String str3, jl jlVar, String str4, c40.c cVar, i80.c cVar2, aa0.c cVar3, g70.a aVar, y60.a aVar2) {
         this.a = str;

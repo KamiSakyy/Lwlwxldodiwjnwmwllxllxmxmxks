@@ -7,8 +7,8 @@ import java.io.InputStream;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u0 extends q81.y {
-    public ContentResolver a;
-    public Uri b;
+    public final ContentResolver a;
+    public final Uri b;
 
     public u0(ContentResolver contentResolver, Uri uri) {
         k71.k.g(contentResolver, "contentResolver");

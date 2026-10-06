@@ -6,7 +6,7 @@ import android.app.Application;
 public abstract class a extends k1 {
 
     /* renamed from: s, reason: collision with root package name */
-    public Application f2819s;
+    public final Application f2819s;
 
     public a(Application application) {
         k71.k.g(application, "application");

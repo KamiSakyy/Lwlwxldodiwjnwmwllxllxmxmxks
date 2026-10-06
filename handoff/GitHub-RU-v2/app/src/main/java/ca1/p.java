@@ -5,12 +5,12 @@ import java.util.NoSuchElementException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class p implements Iterator {
-    public o r;
+    public final o r;
     public o s;
     public o t;
     public o u;
     public o v;
-    public Class w;
+    public final Class w;
 
     public p(o oVar, Class cls) {
         this.w = cls;

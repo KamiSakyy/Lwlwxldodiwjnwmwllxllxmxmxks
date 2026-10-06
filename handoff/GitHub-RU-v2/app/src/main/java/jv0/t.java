@@ -8,15 +8,15 @@ import pz0.y10;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t implements aa.h0 {
-    public s00 a;
-    public y00 b;
-    public String c;
-    public String d;
-    public String e;
-    public s f;
-    public y10 g;
-    public ArrayList h;
-    public String i;
+    public final s00 a;
+    public final y00 b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final s f;
+    public final y10 g;
+    public final ArrayList h;
+    public final String i;
 
     public t(s00 s00Var, y00 y00Var, String str, String str2, String str3, s sVar, y10 y10Var, ArrayList arrayList, String str4) {
         this.a = s00Var;

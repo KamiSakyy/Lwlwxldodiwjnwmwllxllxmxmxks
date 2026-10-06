@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ig {
-    public String a;
-    public String b;
-    public dw.k7 c;
+    public final String a;
+    public final String b;
+    public final dw.k7 c;
 
     public ig(String str, String str2, dw.k7 k7Var) {
         this.a = str;

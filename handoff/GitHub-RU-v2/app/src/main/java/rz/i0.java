@@ -4,8 +4,8 @@ import m10.mx;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i0 {
-    public mx a;
-    public String b;
+    public final mx a;
+    public final String b;
 
     public i0(mx mxVar, String str) {
         this.a = mxVar;

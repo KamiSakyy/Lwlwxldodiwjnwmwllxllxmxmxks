@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u80 {
-    public String a;
-    public w80 b;
-    public z80 c;
+    public final String a;
+    public final w80 b;
+    public final z80 c;
 
     public u80(String str, w80 w80Var, z80 z80Var) {
         k71.k.g(str, "__typename");

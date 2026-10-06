@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qx implements aaShadow.v0 {
-    public ux a;
+    public final ux a;
 
     public qx(ux uxVar) {
         this.a = uxVar;

@@ -17,5 +17,5 @@ final class a implements j71.a {
         this.r.k(this.s.c);
         return a0.a;
     }
-    public static Object c(Object p1, Object p2) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
 }

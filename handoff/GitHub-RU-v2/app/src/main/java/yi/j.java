@@ -7,12 +7,12 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j {
-    public int a;
-    public String b;
-    public List c;
-    public boolean d;
-    public boolean e;
-    public boolean f;
+    public final int a;
+    public final String b;
+    public final List c;
+    public final boolean d;
+    public final boolean e;
+    public final boolean f;
 
     public j(int i, String str, List list, boolean z, boolean z2, boolean z3) {
         this.a = i;

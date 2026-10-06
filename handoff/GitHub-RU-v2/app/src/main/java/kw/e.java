@@ -7,10 +7,10 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e implements h0 {
-    public String a;
-    public String b;
-    public boolean c;
-    public d d;
+    public final String a;
+    public final String b;
+    public final boolean c;
+    public final d d;
 
     public e(String str, String str2, boolean z, d dVar) {
         this.a = str;
@@ -44,5 +44,5 @@ public final class e implements h0 {
         o.append(")");
         return o.toString();
     }
-    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

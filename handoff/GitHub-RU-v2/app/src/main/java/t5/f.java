@@ -31,7 +31,7 @@ public final class f {
     public double i;
 
     /* renamed from: j, reason: collision with root package name */
-    public g0 f32098j;
+    public final g0 f32098j;
 
     public f() {
         this.f32090a = Math.sqrt(1500.0d);

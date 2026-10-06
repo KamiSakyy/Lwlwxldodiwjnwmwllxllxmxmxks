@@ -5,8 +5,8 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public String a;
-    public ArrayList b;
+    public final String a;
+    public final ArrayList b;
 
     public a(String str, ArrayList arrayList) {
         if (str == null) {

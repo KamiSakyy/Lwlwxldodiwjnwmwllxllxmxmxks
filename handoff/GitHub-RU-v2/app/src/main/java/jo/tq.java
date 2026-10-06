@@ -2,12 +2,12 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class tq {
-    public int a;
-    public String b;
-    public pq c;
-    public qq d;
-    public String e;
-    public String f;
+    public final int a;
+    public final String b;
+    public final pq c;
+    public final qq d;
+    public final String e;
+    public final String f;
 
     public tq(int i, String str, pq pqVar, qq qqVar, String str2, String str3) {
         this.a = i;

@@ -10,7 +10,7 @@ public final class WorkflowState {
     private static final /* synthetic */ d71.a $ENTRIES;
     private static final /* synthetic */ WorkflowState[] $VALUES;
     public static final s8 Companion;
-    private String rawValue;
+    private final String rawValue;
     public static final WorkflowState ACTIVE = new WorkflowState("ACTIVE", 0, "ACTIVE");
     public static final WorkflowState DELETED = new WorkflowState("DELETED", 1, "DELETED");
     public static final WorkflowState DISABLED_FORK = new WorkflowState("DISABLED_FORK", 2, "DISABLED_FORK");

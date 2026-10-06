@@ -2,8 +2,8 @@ package dw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y6 {
-    public int a;
-    public int b;
+    public final int a;
+    public final int b;
 
     public y6(int i, int i2) {
         this.a = i;

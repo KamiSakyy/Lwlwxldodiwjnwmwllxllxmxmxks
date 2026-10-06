@@ -2,10 +2,10 @@ package a61;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x implements d61.b {
-    public d61.c a;
-    public v61.a b;
-    public v61.a c;
-    public v61.a d;
+    public final d61.c a;
+    public final v61.a b;
+    public final v61.a c;
+    public final v61.a d;
 
     public x(d61.c cVar, v61.a aVar, v61.a aVar2, v61.a aVar3) {
         this.a = cVar;

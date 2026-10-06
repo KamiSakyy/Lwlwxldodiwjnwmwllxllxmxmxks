@@ -7,8 +7,8 @@ import android.os.Parcel;
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class x implements IInterface {
     public final /* synthetic */ int f;
-    public IBinder g;
-    public String h;
+    public final IBinder g;
+    public final String h;
 
     public /* synthetic */ x(IBinder iBinder, String str, int i) {
         this.f = i;

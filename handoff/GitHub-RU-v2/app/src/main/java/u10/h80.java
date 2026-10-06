@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h80 implements aaShadow.n0 {
     public static final d80 Companion = new d80();
-    public String r;
+    public final String r;
 
     public h80(String str) {
         k71.k.g(str, "timeZone");

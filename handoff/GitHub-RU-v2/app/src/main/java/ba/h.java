@@ -19,19 +19,19 @@ import x61.x;
 public final class h implements d {
 
     /* renamed from: r, reason: collision with root package name */
-    public Map f3872r;
+    public final Map f3872r;
 
     /* renamed from: s, reason: collision with root package name */
-    public k f3873s;
+    public final k f3873s;
 
     /* renamed from: t, reason: collision with root package name */
-    public String f3874t;
+    public final String f3874t;
 
     /* renamed from: u, reason: collision with root package name */
-    public String f3875u;
+    public final String f3875u;
 
     /* renamed from: v, reason: collision with root package name */
-    public p f3876v;
+    public final p f3876v;
 
     public h(Map map, k kVar) {
         k71.k.g(map, "uploads");

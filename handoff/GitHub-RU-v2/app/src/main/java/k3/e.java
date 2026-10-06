@@ -4,7 +4,7 @@ package k3;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public z f27669a;
+    public final z f27669a;
 
     public e(z zVar) {
         this.f27669a = zVar;

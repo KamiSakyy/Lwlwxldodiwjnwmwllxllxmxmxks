@@ -10,10 +10,10 @@ import android.view.View;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public ContextThemeWrapper f27412a;
+    public final ContextThemeWrapper f27412a;
 
     /* renamed from: b, reason: collision with root package name */
-    public LayoutInflater f27413b;
+    public final LayoutInflater f27413b;
 
     /* renamed from: c, reason: collision with root package name */
     public Drawable f27414c;

@@ -5,7 +5,7 @@ import java.util.concurrent.ScheduledFuture;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class i implements j {
     public final /* synthetic */ int r;
-    public Object s;
+    public final Object s;
 
     public /* synthetic */ i(int i, Object obj) {
         this.r = i;

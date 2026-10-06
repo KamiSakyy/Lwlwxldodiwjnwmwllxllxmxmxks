@@ -5,8 +5,8 @@ import android.os.Bundle;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class hShadow extends c41.d implements c41.i {
-    public t g;
-    public w21.g h;
+    public final t g;
+    public final w21.g h;
     public final /* synthetic */ k i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

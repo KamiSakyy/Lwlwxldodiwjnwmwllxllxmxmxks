@@ -5,11 +5,11 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class kd implements aaShadow.w0 {
     public static final ed Companion = new ed();
-    public String r;
-    public aa.u0 s;
-    public aa1.b t;
-    public aa1.b u;
-    public aa.u0 v;
+    public final String r;
+    public final aa.u0 s;
+    public final aa1.b t;
+    public final aa1.b u;
+    public final aa.u0 v;
 
     public kd(String str, aa.u0 u0Var, aa1.b bVar, aa1.b bVar2, aa.u0 u0Var2) {
         k71.k.g(str, "query");

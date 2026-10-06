@@ -6,8 +6,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f9 implements aaShadow.n0 {
     public static final c9 Companion = new c9();
-    public String r;
-    public ArrayList s;
+    public final String r;
+    public final ArrayList s;
 
     public f9(String str, ArrayList arrayList) {
         this.r = str;

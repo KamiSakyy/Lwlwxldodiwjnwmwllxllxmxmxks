@@ -4,8 +4,8 @@ import z01.r1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e0 implements oa.g {
-    public oa.g a;
-    public e b;
+    public final oa.g a;
+    public final e b;
 
     public e0(oa.g gVar, e eVar) {
         k71.k.g(gVar, "delegate");

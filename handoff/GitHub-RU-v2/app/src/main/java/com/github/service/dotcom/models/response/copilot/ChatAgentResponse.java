@@ -11,11 +11,11 @@ import no.a;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ChatAgentResponse {
     public static final Companion Companion = new Companion();
-    public long a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
+    public final long a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
 
     public static final class Companion {
         public final KSerializer serializer() {

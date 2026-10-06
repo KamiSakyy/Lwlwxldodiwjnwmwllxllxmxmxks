@@ -7,10 +7,10 @@ import oa.j;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public j a;
-    public StoredShortcutModel b;
-    public ArrayList c;
-    public float d;
+    public final j a;
+    public final StoredShortcutModel b;
+    public final ArrayList c;
+    public final float d;
 
     public h(j jVar, StoredShortcutModel storedShortcutModel, ArrayList arrayList, float f) {
         k.g(jVar, "user");

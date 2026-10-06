@@ -7,9 +7,9 @@ import pz0.ba;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t implements aa.i0 {
     public static final s Companion = new s();
-    public aa1.b r;
-    public aa1.b s;
-    public aa1.b t;
+    public final aa1.b r;
+    public final aa1.b s;
+    public final aa1.b t;
 
     public t(aa.u0 u0Var, aa.u0 u0Var2, int i) {
         int i2 = i & 1;

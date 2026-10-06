@@ -8,16 +8,16 @@ import java.util.Map;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t0 implements Parcelable {
     public static final Parcelable.Creator<t0> CREATOR = new c(24);
-    public boolean A;
-    public String r;
-    public String s;
-    public ZonedDateTime t;
-    public String u;
-    public boolean v;
-    public Object w;
-    public boolean x;
-    public int y;
-    public String z;
+    public final boolean A;
+    public final String r;
+    public final String s;
+    public final ZonedDateTime t;
+    public final String u;
+    public final boolean v;
+    public final Object w;
+    public final boolean x;
+    public final int y;
+    public final String z;
 
     public t0(String str, String str2, ZonedDateTime zonedDateTime, String str3, boolean z, Map map, boolean z2, int i, String str4, boolean z3) {
         k71.k.g(str, "id");

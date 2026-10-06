@@ -23,5 +23,4 @@ public interface m {
     }
     public Object e() { return null; }
     public Object j(Object p1) { return null; }
-    public Object h(Object) { return null; }
 }

@@ -19,28 +19,28 @@ public final class c extends k1 {
     public q1 B;
 
     /* renamed from: s, reason: collision with root package name */
-    public String f8620s;
+    public final String f8620s;
 
     /* renamed from: t, reason: collision with root package name */
-    public aj.a f8621t;
+    public final aj.a f8621t;
 
     /* renamed from: u, reason: collision with root package name */
-    public aj.d f8622u;
+    public final aj.d f8622u;
 
     /* renamed from: v, reason: collision with root package name */
-    public aj.e f8623v;
+    public final aj.e f8623v;
 
     /* renamed from: w, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f8624w;
+    public final com.github.rudroid.activities.util.c f8624w;
 
     /* renamed from: x, reason: collision with root package name */
-    public y1 f8625x;
+    public final y1 f8625x;
 
     /* renamed from: y, reason: collision with root package name */
-    public i1 f8626y;
+    public final i1 f8626y;
 
     /* renamed from: z, reason: collision with root package name */
-    public y1 f8627z;
+    public final y1 f8627z;
 
     public static final /* synthetic */ class a {
         static {

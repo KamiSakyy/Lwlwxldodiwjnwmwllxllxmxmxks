@@ -20,13 +20,13 @@ import zk.w1;
 /* loaded from: /home/user/work/p/classes.dex */
 public final class h extends k1 implements com.github.rudroid.utilities.viewmodel.b {
     public static final a Companion = new a();
-    public String A;
-    public String B;
-    public d C;
-    public y1 D;
-    public y1 E;
-    public y1 F;
-    public i1 G;
+    public final String A;
+    public final String B;
+    public final d C;
+    public final y1 D;
+    public final y1 E;
+    public final y1 F;
+    public final i1 G;
     public q1 H;
     public q1 I;
 
@@ -34,25 +34,25 @@ public final class h extends k1 implements com.github.rudroid.utilities.viewmode
     public final /* synthetic */ com.github.rudroid.utilities.viewmodel.c f19936s;
 
     /* renamed from: t, reason: collision with root package name */
-    public ul.b f19937t;
+    public final ul.b f19937t;
 
     /* renamed from: u, reason: collision with root package name */
-    public ul.a f19938u;
+    public final ul.a f19938u;
 
     /* renamed from: v, reason: collision with root package name */
-    public ul.c f19939v;
+    public final ul.c f19939v;
 
     /* renamed from: w, reason: collision with root package name */
-    public w1 f19940w;
+    public final w1 f19940w;
 
     /* renamed from: x, reason: collision with root package name */
-    public f f19941x;
+    public final f f19941x;
 
     /* renamed from: y, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f19942y;
+    public final com.github.rudroid.activities.util.c f19942y;
 
     /* renamed from: z, reason: collision with root package name */
-    public String f19943z;
+    public final String f19943z;
 
     public static final class a {
     }

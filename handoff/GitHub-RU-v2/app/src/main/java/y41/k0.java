@@ -2,12 +2,12 @@ package y41;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k0 extends u1 {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public String f;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final String f;
 
     public k0(String str, String str2, String str3, String str4, String str5, String str6) {
         this.a = str;

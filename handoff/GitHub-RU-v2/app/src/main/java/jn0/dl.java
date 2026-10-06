@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class dl implements aaShadow.n0 {
     public static final al Companion = new al();
-    public List r;
+    public final List r;
 
     public dl(List list) {
         k71.k.g(list, "ids");

@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u implements Iterator {
-    public Iterator r;
+    public final Iterator r;
 
     public u(v vVar) {
         this.r = vVar.r.keySet().iterator();
@@ -40,6 +40,4 @@ public final class u implements Iterator {
     public Object a(Object p1) { return null; }
     public Object b(Object p1, Object p2, Object p3, Object p4) { return null; }
     public Object c(Object p1) { return null; }
-    public Object a(boolean) { return null; }
-    public Object b(Object, int, Object, boolean) { return null; }
 }

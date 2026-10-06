@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class me {
-    public ne a;
+    public final ne a;
 
     public me(ne neVar) {
         this.a = neVar;

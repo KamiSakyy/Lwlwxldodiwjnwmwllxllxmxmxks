@@ -7,9 +7,9 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public e a;
-    public int b;
-    public List c;
+    public final e a;
+    public final int b;
+    public final List c;
 
     public a(e eVar, int i, List list) {
         this.a = eVar;

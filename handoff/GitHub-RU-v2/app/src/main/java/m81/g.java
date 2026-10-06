@@ -8,8 +8,8 @@ import w61.y;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class g extends i4 {
-    public a7.q b;
-    public b21.l c;
+    public final a7.q b;
+    public final b21.l c;
 
     public g(a7.q qVar, l81.c cVar) {
         k71.k.g(cVar, "json");

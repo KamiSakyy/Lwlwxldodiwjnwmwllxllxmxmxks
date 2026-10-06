@@ -28,7 +28,7 @@ public final class eh {
     public static final eh x;
     public static final eh y;
     public static final eh z;
-    public String r;
+    public final String r;
 
     static {
         eh ehVar = new eh("ASSIGNED", 0, "ASSIGNED");

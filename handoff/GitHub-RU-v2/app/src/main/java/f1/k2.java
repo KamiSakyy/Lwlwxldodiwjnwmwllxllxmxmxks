@@ -7,19 +7,19 @@ import java.util.Locale;
 public final class k2 {
 
     /* renamed from: a, reason: collision with root package name */
-    public q71.g f23116a;
+    public final q71.g f23116a;
 
     /* renamed from: b, reason: collision with root package name */
-    public n2 f23117b;
+    public final n2 f23117b;
 
     /* renamed from: c, reason: collision with root package name */
-    public h1.g0 f23118c;
+    public final h1.g0 f23118c;
 
     /* renamed from: d, reason: collision with root package name */
-    public String f23119d;
+    public final String f23119d;
 
     /* renamed from: e, reason: collision with root package name */
-    public String f23120e;
+    public final String f23120e;
 
     public k2(q71.g gVar, n2 n2Var, h1.g0 g0Var, t2 t2Var, String str, String str2, String str3) {
         this.f23116a = gVar;

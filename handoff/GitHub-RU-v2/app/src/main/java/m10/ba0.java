@@ -9,7 +9,7 @@ public final class ba0 {
     public static final ba0 t;
     public static final /* synthetic */ ba0[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         ba0 ba0Var = new ba0("FAILED", 0, "FAILED");

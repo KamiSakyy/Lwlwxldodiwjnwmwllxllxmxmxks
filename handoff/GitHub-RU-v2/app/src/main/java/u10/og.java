@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class og {
-    public String a;
-    public qg b;
+    public final String a;
+    public final qg b;
 
     public og(String str, qg qgVar) {
         this.a = str;

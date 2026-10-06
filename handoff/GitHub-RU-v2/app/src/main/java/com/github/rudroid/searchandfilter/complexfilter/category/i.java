@@ -10,10 +10,10 @@ import sy.y;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i extends com.github.rudroid.searchandfilter.complexfilter.b<DiscussionCategoryData> implements d0<com.github.rudroid.searchandfilter.complexfilter.category.a> {
     public static final a Companion = new a();
-    public ik.n C;
-    public v71.v D;
-    public String E;
-    public String F;
+    public final ik.n C;
+    public final v71.v D;
+    public final String E;
+    public final String F;
 
     public static final class a {
     }

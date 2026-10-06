@@ -5,8 +5,8 @@ import java.util.Iterator;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o implements n {
-    public String r;
-    public ArrayList s;
+    public final String r;
+    public final ArrayList s;
 
     public o(String str, ArrayList arrayList) {
         this.r = str;

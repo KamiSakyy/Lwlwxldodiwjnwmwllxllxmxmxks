@@ -16,13 +16,13 @@ import yz0.f;
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SerializableAssignee implements f {
-    public String r;
-    public Avatar s;
-    public String t;
-    public String u;
-    public boolean v;
-    public boolean w;
-    public boolean x;
+    public final String r;
+    public final Avatar s;
+    public final String t;
+    public final String u;
+    public final boolean v;
+    public final boolean w;
+    public final boolean x;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<SerializableAssignee> CREATOR = new f8.a(14);
 

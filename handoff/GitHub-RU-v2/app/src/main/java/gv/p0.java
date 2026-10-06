@@ -2,9 +2,9 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p0 {
-    public String a;
-    public String b;
-    public d1 c;
+    public final String a;
+    public final String b;
+    public final d1 c;
 
     public p0(String str, String str2, d1 d1Var) {
         this.a = str;

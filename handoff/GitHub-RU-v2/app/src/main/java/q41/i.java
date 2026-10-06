@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i extends x3.g implements ScheduledFuture {
-    public ScheduledFuture y;
+    public final ScheduledFuture y;
 
     public i(h hVar) {
         this.y = hVar.a(new kk.a(24, this));

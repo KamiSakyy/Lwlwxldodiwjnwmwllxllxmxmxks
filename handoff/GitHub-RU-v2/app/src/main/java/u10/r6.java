@@ -2,11 +2,11 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r6 {
-    public String a;
-    public s6 b;
-    public int c;
-    public String d;
-    public String e;
+    public final String a;
+    public final s6 b;
+    public final int c;
+    public final String d;
+    public final String e;
 
     public r6(String str, s6 s6Var, int i, String str2, String str3) {
         this.a = str;

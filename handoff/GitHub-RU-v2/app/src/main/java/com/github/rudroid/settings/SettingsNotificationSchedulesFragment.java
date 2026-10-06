@@ -18,8 +18,8 @@ import java.util.List;
 public final class SettingsNotificationSchedulesFragment extends Hilt_SettingsNotificationSchedulesFragment implements com.github.rudroid.fragments.util.f {
     public static final a Companion = new a();
     public com.github.rudroid.activities.util.c G0;
-    public androidx.lifecycle.l1 H0;
-    public androidx.lifecycle.l1 I0;
+    public final androidx.lifecycle.l1 H0;
+    public final androidx.lifecycle.l1 I0;
 
     public static final class a {
     }

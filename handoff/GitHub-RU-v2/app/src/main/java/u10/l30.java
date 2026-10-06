@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l30 implements aaShadow.n0 {
     public static final g30 Companion = new g30();
-    public String r;
-    public String s;
-    public hc0.ev t;
+    public final String r;
+    public final String s;
+    public final hc0.ev t;
 
     public l30(String str, String str2, hc0.ev evVar) {
         k71.k.g(str2, "notificationId");

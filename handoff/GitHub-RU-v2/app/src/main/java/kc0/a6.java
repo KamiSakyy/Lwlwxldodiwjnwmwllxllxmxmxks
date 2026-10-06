@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a6 {
-    public w5 a;
-    public String b;
+    public final w5 a;
+    public final String b;
 
     public a6(w5 w5Var, String str) {
         this.a = w5Var;

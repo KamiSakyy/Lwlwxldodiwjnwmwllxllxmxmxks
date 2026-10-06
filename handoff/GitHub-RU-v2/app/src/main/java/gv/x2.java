@@ -5,12 +5,12 @@ import m10.ya0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x2 {
-    public String a;
-    public String b;
-    public ya0 c;
-    public List d;
-    public w2 e;
-    public String f;
+    public final String a;
+    public final String b;
+    public final ya0 c;
+    public final List d;
+    public final w2 e;
+    public final String f;
 
     public x2(String str, String str2, ya0 ya0Var, List list, w2 w2Var, String str3) {
         this.a = str;

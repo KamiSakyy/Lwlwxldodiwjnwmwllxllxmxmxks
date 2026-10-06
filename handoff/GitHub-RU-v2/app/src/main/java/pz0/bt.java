@@ -7,7 +7,7 @@ public final class bt {
     public static final at Companion;
     public static final bt s;
     public static final /* synthetic */ bt[] t;
-    public String r;
+    public final String r;
 
     static {
         bt btVar = new bt("BASE_REF", 0, "BASE_REF");

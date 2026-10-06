@@ -17,9 +17,9 @@ import yz0.b2;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m implements yz0.e {
     public static final l Companion = new l();
-    public int a;
-    public ArrayList b;
-    public x01.i c;
+    public final int a;
+    public final ArrayList b;
+    public final x01.i c;
 
     public m(p2 p2Var, v2 v2Var, w2 w2Var, boolean z) {
         k71.k.g(p2Var, "data");

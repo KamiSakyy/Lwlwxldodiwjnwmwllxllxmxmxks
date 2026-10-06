@@ -6,21 +6,21 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x implements y {
-    public String a;
-    public String b;
-    public String c;
-    public ZonedDateTime d;
-    public List e;
-    public a0 f;
-    public List g;
-    public List h;
-    public List i;
-    public w j;
-    public r0 k;
-    public f0 l;
-    public boolean m;
-    public f3 n;
-    public boolean o;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final ZonedDateTime d;
+    public final List e;
+    public final a0 f;
+    public final List g;
+    public final List h;
+    public final List i;
+    public final w j;
+    public final r0 k;
+    public final f0 l;
+    public final boolean m;
+    public final f3 n;
+    public final boolean o;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*

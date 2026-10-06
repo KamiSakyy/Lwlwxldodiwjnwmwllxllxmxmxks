@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zn {
-    public bo a;
+    public final bo a;
 
     public zn(bo boVar) {
         this.a = boVar;

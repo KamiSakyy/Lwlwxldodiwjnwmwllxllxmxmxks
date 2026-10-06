@@ -2,9 +2,9 @@ package w80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q0 {
-    public String a;
-    public String b;
-    public g60.a c;
+    public final String a;
+    public final String b;
+    public final g60.a c;
 
     public q0(String str, String str2, g60.a aVar) {
         this.a = str;

@@ -7,8 +7,8 @@ import u10.y90;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a2 implements z01.z, y90 {
     public static final y1 Companion = new y1();
-    public com.github.service.wrapper.j r;
-    public v71.v s;
+    public final com.github.service.wrapper.j r;
+    public final v71.v s;
     public v71.d1 t;
 
     public a2(com.github.service.wrapper.j jVar, v71.v vVar) {

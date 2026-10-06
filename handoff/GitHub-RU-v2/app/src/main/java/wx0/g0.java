@@ -2,9 +2,9 @@ package wx0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g0 {
-    public String a;
-    public String b;
-    public xt0.u1 c;
+    public final String a;
+    public final String b;
+    public final xt0.u1 c;
 
     public g0(String str, String str2, xt0.u1 u1Var) {
         this.a = str;

@@ -2,8 +2,8 @@ package com.github.rudroid.viewmodels.issuesorpullrequests;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
-    public com.github.rudroid.utilities.ui.g1 a;
-    public c6 b;
+    public final com.github.rudroid.utilities.ui.g1 a;
+    public final c6 b;
 
     public g(com.github.rudroid.utilities.ui.u0 u0Var) {
         this.a = u0Var;

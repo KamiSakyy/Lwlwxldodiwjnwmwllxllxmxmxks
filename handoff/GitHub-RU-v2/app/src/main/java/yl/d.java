@@ -6,9 +6,9 @@ import v71.z;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public g a;
-    public zl.b b;
-    public z c;
+    public final g a;
+    public final zl.b b;
+    public final z c;
 
     public d(g gVar, zl.b bVar, z zVar) {
         k.g(gVar, "serializer");

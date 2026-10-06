@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h30 implements aaShadow.m0 {
-    public k30 a;
-    public i30 b;
+    public final k30 a;
+    public final i30 b;
 
     public h30(k30 k30Var, i30 i30Var) {
         this.a = k30Var;

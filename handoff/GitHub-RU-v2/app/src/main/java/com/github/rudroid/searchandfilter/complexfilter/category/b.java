@@ -12,8 +12,8 @@ import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b extends e0<a> {
-    public com.github.rudroid.searchandfilter.complexfilter.s f;
-    public com.github.rudroid.html.b g;
+    public final com.github.rudroid.searchandfilter.complexfilter.s f;
+    public final com.github.rudroid.html.b g;
 
     public b(com.github.rudroid.searchandfilter.complexfilter.s sVar, com.github.rudroid.html.b bVar) {
         k71.k.g(bVar, "htmlStyler");

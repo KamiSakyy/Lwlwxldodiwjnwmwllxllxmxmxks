@@ -4,9 +4,9 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p {
-    public String a;
-    public f0 b;
-    public String c;
+    public final String a;
+    public final f0 b;
+    public final String c;
 
     public p(String str, f0 f0Var, String str2) {
         this.a = str;

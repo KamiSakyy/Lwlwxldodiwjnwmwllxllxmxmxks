@@ -2,8 +2,8 @@ package ap0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x3 {
-    public String a;
-    public String b;
+    public final String a;
+    public final String b;
 
     public x3(String str, String str2) {
         this.a = str;

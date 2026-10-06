@@ -5,14 +5,14 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v2 implements aa.h0 {
-    public String a;
-    public String b;
-    public int c;
-    public c20 d;
-    public ZonedDateTime e;
-    public u2 f;
-    public n2 g;
-    public String h;
+    public final String a;
+    public final String b;
+    public final int c;
+    public final c20 d;
+    public final ZonedDateTime e;
+    public final u2 f;
+    public final n2 g;
+    public final String h;
 
     public v2(String str, String str2, int i, c20 c20Var, ZonedDateTime zonedDateTime, u2 u2Var, n2 n2Var, String str3) {
         this.a = str;

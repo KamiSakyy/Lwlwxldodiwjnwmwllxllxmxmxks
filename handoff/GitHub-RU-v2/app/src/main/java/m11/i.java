@@ -6,16 +6,16 @@ import java.util.Map;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i {
-    public String a;
-    public Integer b;
-    public m c;
-    public long d;
-    public long e;
-    public Map f;
-    public Integer g;
-    public String h;
-    public byte[] i;
-    public byte[] j;
+    public final String a;
+    public final Integer b;
+    public final m c;
+    public final long d;
+    public final long e;
+    public final Map f;
+    public final Integer g;
+    public final String h;
+    public final byte[] i;
+    public final byte[] j;
 
     public i(String str, Integer num, m mVar, long j, long j2, HashMap hashMap, Integer num2, String str2, byte[] bArr, byte[] bArr2) {
         this.a = str;

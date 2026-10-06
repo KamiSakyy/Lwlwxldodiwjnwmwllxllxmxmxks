@@ -24,10 +24,10 @@ import yz0.u3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class UsersActivity extends b<d0> {
-    public com.github.rudroid.activities.util.g v0;
-    public com.github.rudroid.activities.util.g w0;
-    public com.github.rudroid.activities.util.g x0;
-    public int y0;
+    public final com.github.rudroid.activities.util.g v0;
+    public final com.github.rudroid.activities.util.g w0;
+    public final com.github.rudroid.activities.util.g x0;
+    public final int y0;
     public static final /* synthetic */ r71.e[] z0 = {new k71.p(UsersActivity.class, "userParams", "getUserParams()Lcom/github/domain/users/FetchUsersParams;", 0), m0.q(x.a, UsersActivity.class, "userViewType", "getUserViewType()Lcom/github/domain/users/UserViewType;", 0), new k71.p(UsersActivity.class, "sourceEntity", "getSourceEntity()Ljava/lang/String;", 0)};
     public static final a Companion = new a();
 

@@ -7,8 +7,8 @@ import pz0.su;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a3 implements aa.w0 {
     public static final v2 Companion = new v2();
-    public String r;
-    public aa1.b s;
+    public final String r;
+    public final aa1.b s;
 
     public a3(String str) {
         k71.k.g(str, "workflowId");

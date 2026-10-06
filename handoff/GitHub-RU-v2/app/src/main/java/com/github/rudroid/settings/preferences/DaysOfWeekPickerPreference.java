@@ -25,7 +25,7 @@ import x61.m;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class DaysOfWeekPickerPreference extends Preference implements b.a, c.a {
     public static final a Companion = new a();
-    public p f0;
+    public final p f0;
     public j0 g0;
 
     public static final class a {

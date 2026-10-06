@@ -14,7 +14,7 @@ public final class i {
     public static final s5.e e = b91.g.u("firebase_sessions_restart_timeout");
     public static final s5.e f = b91.g.u("firebase_sessions_cache_duration");
     public static final s5.e g = b91.g.z("firebase_sessions_cache_updated_time");
-    public n5.f a;
+    public final n5.f a;
     public e b;
 
     public i(n5.f fVar) {

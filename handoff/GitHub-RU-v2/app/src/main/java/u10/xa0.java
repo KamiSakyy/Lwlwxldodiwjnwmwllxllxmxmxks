@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class xa0 {
-    public wa0 a;
-    public String b;
-    public String c;
+    public final wa0 a;
+    public final String b;
+    public final String c;
 
     public xa0(wa0 wa0Var, String str, String str2) {
         this.a = wa0Var;

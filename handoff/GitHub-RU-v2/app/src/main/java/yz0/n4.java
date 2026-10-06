@@ -2,9 +2,9 @@ package yz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n4 extends o.b {
-    public String t;
-    public String u;
-    public String v;
+    public final String t;
+    public final String u;
+    public final String v;
 
     public n4(String str, String str2, String str3) {
         super(str, true);

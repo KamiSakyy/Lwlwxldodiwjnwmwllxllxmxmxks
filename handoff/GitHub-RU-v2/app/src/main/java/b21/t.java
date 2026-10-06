@@ -10,9 +10,9 @@ import java.util.Map;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t extends o {
-    public h4 b;
-    public w21.g c;
-    public rb0.b d;
+    public final h4 b;
+    public final w21.g c;
+    public final rb0.b d;
 
     public t(h4 h4Var, w21.g gVar, rb0.b bVar) {
         super(2);

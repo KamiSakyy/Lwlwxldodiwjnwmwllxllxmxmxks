@@ -2,11 +2,11 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u implements aa.h0 {
-    public String a;
-    public q b;
-    public s c;
-    public r d;
-    public t e;
+    public final String a;
+    public final q b;
+    public final s c;
+    public final r d;
+    public final t e;
 
     public u(String str, q qVar, s sVar, r rVar, t tVar) {
         k71.k.g(str, "__typename");

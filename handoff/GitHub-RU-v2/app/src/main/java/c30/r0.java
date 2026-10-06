@@ -2,10 +2,10 @@ package c30;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r0 implements aa.h0 {
-    public String a;
-    public boolean b;
-    public q0 c;
-    public String d;
+    public final String a;
+    public final boolean b;
+    public final q0 c;
+    public final String d;
 
     public r0(String str, boolean z, q0 q0Var, String str2) {
         this.a = str;

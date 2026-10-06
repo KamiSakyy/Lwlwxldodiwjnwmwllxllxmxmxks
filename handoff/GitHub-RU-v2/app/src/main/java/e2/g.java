@@ -6,16 +6,16 @@ import d2.t;
 public class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public c f21877a;
+    public final c f21877a;
 
     /* renamed from: b, reason: collision with root package name */
-    public c f21878b;
+    public final c f21878b;
 
     /* renamed from: c, reason: collision with root package name */
-    public c f21879c;
+    public final c f21879c;
 
     /* renamed from: d, reason: collision with root package name */
-    public float[] f21880d;
+    public final float[] f21880d;
 
     public g(c cVar, c cVar2, c cVar3, float[] fArr) {
         this.f21877a = cVar;

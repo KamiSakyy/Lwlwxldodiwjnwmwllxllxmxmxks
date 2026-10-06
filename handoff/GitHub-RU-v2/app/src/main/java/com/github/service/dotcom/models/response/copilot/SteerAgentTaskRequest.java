@@ -17,13 +17,13 @@ import xn.c4;
 public final class SteerAgentTaskRequest {
     public static final Companion Companion = new Companion();
     public static final h[] h = {null, null, null, null, null, null, w.s(i.r, new a(19))};
-    public c4 a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public String f;
-    public List g;
+    public final c4 a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final String f;
+    public final List g;
 
     public static final class Companion {
         public final KSerializer serializer() {

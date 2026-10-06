@@ -9,12 +9,12 @@ import pz0.y80;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c implements h0 {
-    public String a;
-    public String b;
-    public a c;
-    public b d;
-    public y80 e;
-    public ZonedDateTime f;
+    public final String a;
+    public final String b;
+    public final a c;
+    public final b d;
+    public final y80 e;
+    public final ZonedDateTime f;
 
     public c(String str, String str2, a aVar, b bVar, y80 y80Var, ZonedDateTime zonedDateTime) {
         this.a = str;

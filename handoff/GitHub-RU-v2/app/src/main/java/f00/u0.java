@@ -4,8 +4,8 @@ import m10.cr;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u0 {
-    public cr a;
-    public q0 b;
+    public final cr a;
+    public final q0 b;
 
     public u0(cr crVar, q0 q0Var) {
         this.a = crVar;

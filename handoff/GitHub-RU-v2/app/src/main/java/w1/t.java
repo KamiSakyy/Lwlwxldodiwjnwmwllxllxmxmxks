@@ -6,10 +6,10 @@ import v71.d1;
 public final class t {
 
     /* renamed from: a, reason: collision with root package name */
-    public d1 f32956a;
+    public final d1 f32956a;
 
     /* renamed from: b, reason: collision with root package name */
-    public Object f32957b;
+    public final Object f32957b;
 
     public t(d1 d1Var, Object obj) {
         this.f32956a = d1Var;

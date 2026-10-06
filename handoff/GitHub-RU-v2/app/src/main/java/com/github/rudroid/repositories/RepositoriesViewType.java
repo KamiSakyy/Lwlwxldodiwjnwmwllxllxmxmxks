@@ -13,7 +13,7 @@ public abstract class RepositoriesViewType implements Parcelable {
     public static final Object f18965s = sy.w.s(w61.i.r, new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.f(13));
 
     /* renamed from: r, reason: collision with root package name */
-    public int f18966r;
+    public final int f18966r;
 
     public static final class Companion {
         /* JADX WARN: Type inference failed for: r0v0, types: [java.lang.Object, w61.h] */

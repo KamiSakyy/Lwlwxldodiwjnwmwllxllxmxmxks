@@ -11,8 +11,8 @@ import w61.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k {
-    public je.a a;
-    public kj.j b;
+    public final je.a a;
+    public final kj.j b;
 
     public static final /* synthetic */ class a {
         public static final /* synthetic */ int[] a;

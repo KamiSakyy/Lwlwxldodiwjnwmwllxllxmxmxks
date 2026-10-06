@@ -2,10 +2,10 @@ package qn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n2 {
-    public String a;
-    public String b;
-    public boolean c;
-    public vn0.h2 d;
+    public final String a;
+    public final String b;
+    public final boolean c;
+    public final vn0.h2 d;
 
     public n2(String str, String str2, boolean z, vn0.h2 h2Var) {
         this.a = str;

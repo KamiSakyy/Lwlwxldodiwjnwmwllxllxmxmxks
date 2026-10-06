@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class kc0 {
-    public fc0 a;
-    public jc0 b;
+    public final fc0 a;
+    public final jc0 b;
 
     public kc0(fc0 fc0Var, jc0 jc0Var) {
         this.a = fc0Var;

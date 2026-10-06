@@ -5,10 +5,10 @@ import pz0.sj;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r {
-    public int a;
-    public String b;
-    public boolean c;
-    public sj d;
+    public final int a;
+    public final String b;
+    public final boolean c;
+    public final sj d;
 
     public r(int i, String str, boolean z, sj sjVar) {
         this.a = i;

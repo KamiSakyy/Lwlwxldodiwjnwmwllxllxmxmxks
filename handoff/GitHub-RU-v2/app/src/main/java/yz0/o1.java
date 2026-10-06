@@ -5,22 +5,22 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o1 {
-    public List a;
-    public int b;
-    public String c;
-    public t7 d;
-    public String e;
-    public String f;
-    public String g;
-    public String h;
-    public String i;
-    public String j;
-    public String k;
-    public boolean l;
-    public int m;
-    public int n;
-    public String o;
-    public String p;
+    public final List a;
+    public final int b;
+    public final String c;
+    public final t7 d;
+    public final String e;
+    public final String f;
+    public final String g;
+    public final String h;
+    public final String i;
+    public final String j;
+    public final String k;
+    public final boolean l;
+    public final int m;
+    public final int n;
+    public final String o;
+    public final String p;
 
     public /* synthetic */ o1(ArrayList arrayList, int i, String str, t7 t7Var, String str2, String str3, String str4, String str5, String str6, String str7, String str8, boolean z, int i2, int i3) {
         this(arrayList, i, str, t7Var, str2, str3, str4, str5, str6, str7, str8, z, i2, i3, null, null);

@@ -6,19 +6,19 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public String f;
-    public List g;
-    public int h;
-    public List i;
-    public boolean j;
-    public String k;
-    public String l;
-    public l m;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final String f;
+    public final List g;
+    public final int h;
+    public final List i;
+    public final boolean j;
+    public final String k;
+    public final String l;
+    public final l m;
 
     public j(String str, String str2, String str3, String str4, String str5, String str6, List list, int i, List list2, boolean z, String str7, String str8, l lVar) {
         k71.k.g(str5, "shortDescriptionText");

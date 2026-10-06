@@ -8,9 +8,9 @@ import w61.a0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class d implements r {
-    public a71.h r;
-    public int s;
-    public x71.a t;
+    public final a71.h r;
+    public final int s;
+    public final x71.a t;
 
     public d(a71.h hVar, int i, x71.a aVar) {
         this.r = hVar;

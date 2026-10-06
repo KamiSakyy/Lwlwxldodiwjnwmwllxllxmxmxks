@@ -7,25 +7,25 @@ import java.util.List;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f33755a;
+    public final String f33755a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f33756b;
+    public final String f33756b;
 
     /* renamed from: c, reason: collision with root package name */
-    public String f33757c;
+    public final String f33757c;
 
     /* renamed from: d, reason: collision with root package name */
-    public List f33758d;
+    public final List f33758d;
 
     /* renamed from: e, reason: collision with root package name */
-    public String f33759e;
+    public final String f33759e;
 
     /* renamed from: f, reason: collision with root package name */
-    public String f33760f;
+    public final String f33760f;
 
     /* renamed from: g, reason: collision with root package name */
-    public String f33761g;
+    public final String f33761g;
 
     public c(String str, String str2, String str3, String str4, String str5, List list) {
         str.getClass();

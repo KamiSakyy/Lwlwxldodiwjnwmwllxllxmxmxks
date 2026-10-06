@@ -5,7 +5,7 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public String a;
+    public final String a;
 
     public a(String str) {
         this.a = str;

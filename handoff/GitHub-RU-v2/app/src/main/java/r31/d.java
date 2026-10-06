@@ -16,19 +16,19 @@ import q4.l;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d {
-    public ColorStateList a;
-    public String b;
-    public String c;
-    public int d;
-    public int e;
-    public float f;
-    public float g;
-    public float h;
-    public boolean i;
-    public float j;
-    public ColorStateList k;
+    public final ColorStateList a;
+    public final String b;
+    public final String c;
+    public final int d;
+    public final int e;
+    public final float f;
+    public final float g;
+    public final float h;
+    public final boolean i;
+    public final float j;
+    public final ColorStateList k;
     public float l;
-    public int m;
+    public final int m;
     public boolean n = false;
     public boolean o = false;
     public Typeface p;

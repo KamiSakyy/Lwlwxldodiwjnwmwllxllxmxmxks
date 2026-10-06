@@ -7,7 +7,7 @@ import k71.k;
 public class g implements w7.d {
 
     /* renamed from: r, reason: collision with root package name */
-    public SQLiteProgram f3129r;
+    public final SQLiteProgram f3129r;
 
     public g(SQLiteProgram sQLiteProgram) {
         k.g(sQLiteProgram, "delegate");

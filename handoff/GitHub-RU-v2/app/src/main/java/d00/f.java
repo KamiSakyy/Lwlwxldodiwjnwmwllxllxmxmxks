@@ -2,8 +2,8 @@ package d00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f {
-    public String a;
-    public f00.y b;
+    public final String a;
+    public final f00.y b;
 
     public f(String str, f00.y yVar) {
         k71.k.g(str, "__typename");

@@ -35,5 +35,5 @@ public interface m0 {
     default <T0> T0 q0(Object... a) {
         return null;
     }
-    public static Object h0(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object h0(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

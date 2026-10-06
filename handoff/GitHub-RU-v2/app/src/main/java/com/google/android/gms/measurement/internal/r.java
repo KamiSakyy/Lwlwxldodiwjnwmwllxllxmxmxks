@@ -31,7 +31,4 @@ public final class r extends w1 {
         B();
         return this.v;
     }
-    public Object a(float, float) { return null; }
-    public Object b(float) { return null; }
-    public Object p(float, float) { return null; }
 }

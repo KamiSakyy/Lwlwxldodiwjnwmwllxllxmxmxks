@@ -2,22 +2,22 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v70 {
-    public String a;
-    public String b;
-    public String c;
-    public gn0.hn d;
-    public gn0.gg e;
-    public x70 f;
-    public p70 g;
-    public String h;
-    public boolean i;
-    public t70 j;
-    public q70 k;
-    public s70 l;
-    public r70 m;
-    public boolean n;
-    public y70 o;
-    public ri0.b p;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final gn0.hn d;
+    public final gn0.gg e;
+    public final x70 f;
+    public final p70 g;
+    public final String h;
+    public final boolean i;
+    public final t70 j;
+    public final q70 k;
+    public final s70 l;
+    public final r70 m;
+    public final boolean n;
+    public final y70 o;
+    public final ri0.b p;
 
     public v70(String str, String str2, String str3, gn0.hn hnVar, gn0.gg ggVar, x70 x70Var, p70 p70Var, String str4, boolean z, t70 t70Var, q70 q70Var, s70 s70Var, r70 r70Var, boolean z2, y70 y70Var, ri0.b bVar) {
         this.a = str;

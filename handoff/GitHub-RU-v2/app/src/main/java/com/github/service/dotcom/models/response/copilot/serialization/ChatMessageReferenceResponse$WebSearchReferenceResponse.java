@@ -18,10 +18,10 @@ import x61.r;
 public final class ChatMessageReferenceResponse$WebSearchReferenceResponse extends a {
     public static final Companion Companion = new Companion();
     public static final h[] e;
-    public String a;
-    public String b;
-    public List c;
-    public f d;
+    public final String a;
+    public final String b;
+    public final List c;
+    public final f d;
 
     public static final class Companion {
         public final KSerializer serializer() {

@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i30 {
-    public String a;
-    public Boolean b;
+    public final String a;
+    public final Boolean b;
 
     public i30(String str, Boolean bool) {
         this.a = str;

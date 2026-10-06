@@ -26,20 +26,20 @@ public class ShapeableImageView extends v implements y {
     public j B;
     public n C;
     public float D;
-    public Path E;
-    public int F;
-    public int G;
-    public int H;
-    public int I;
-    public int J;
-    public int K;
+    public final Path E;
+    public final int F;
+    public final int G;
+    public final int H;
+    public final int I;
+    public final int J;
+    public final int K;
     public boolean L;
-    public p u;
-    public RectF v;
-    public RectF w;
-    public Paint x;
-    public Paint y;
-    public Path z;
+    public final p u;
+    public final RectF v;
+    public final RectF w;
+    public final Paint x;
+    public final Paint y;
+    public final Path z;
 
     /* JADX WARN: Multi-variable type inference failed */
     public ShapeableImageView(Context context, AttributeSet attributeSet) {

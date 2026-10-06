@@ -13,7 +13,7 @@ public final class b {
     public static final b f25575b;
 
     /* renamed from: a, reason: collision with root package name */
-    public String f25576a;
+    public final String f25576a;
 
     static {
         k.f(Pattern.compile("ApolloCacheReference\\{(.*)\\}"), "compile(...)");

@@ -11,9 +11,9 @@ public final class s extends y {
     public static final byte[] g;
     public static final byte[] h;
     public static final byte[] i;
-    public h91.k a;
-    public List b;
-    public q c;
+    public final h91.k a;
+    public final List b;
+    public final q c;
     public long d;
 
     static {

@@ -4,8 +4,8 @@ import xt0.j8;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j {
-    public String a;
-    public j8 b;
+    public final String a;
+    public final j8 b;
 
     public j(String str, j8 j8Var) {
         this.a = str;

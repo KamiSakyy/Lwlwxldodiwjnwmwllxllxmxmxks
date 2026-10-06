@@ -10,9 +10,9 @@ import java.util.concurrent.atomic.AtomicLong;
 public final class a implements ThreadFactory {
     public static final ThreadFactory e = Executors.defaultThreadFactory();
     public final AtomicLong a = new AtomicLong();
-    public String b;
-    public int c;
-    public StrictMode.ThreadPolicy d;
+    public final String b;
+    public final int c;
+    public final StrictMode.ThreadPolicy d;
 
     public a(String str, int i, StrictMode.ThreadPolicy threadPolicy) {
         this.b = str;

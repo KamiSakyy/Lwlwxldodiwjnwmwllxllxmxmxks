@@ -25,8 +25,8 @@ import q.w;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class AutoCompleteView extends LinearLayout {
     public static final a Companion = new a();
-    public c r;
-    public Space s;
+    public final c r;
+    public final Space s;
     public ViewGroup t;
     public ViewGroup u;
     public c.a v;
@@ -37,9 +37,9 @@ public final class AutoCompleteView extends LinearLayout {
 
     public static final class b implements Parcelable {
         public static final Parcelable.Creator<b> CREATOR = new a();
-        public String r;
-        public Integer s;
-        public Parcelable t;
+        public final String r;
+        public final Integer s;
+        public final Parcelable t;
 
         public static final class a implements Parcelable.Creator<b> {
             @Override // android.os.Parcelable.Creator

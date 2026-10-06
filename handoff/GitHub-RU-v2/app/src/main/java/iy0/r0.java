@@ -2,8 +2,8 @@ package iy0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r0 {
-    public String a;
-    public t0 b;
+    public final String a;
+    public final t0 b;
 
     public r0(String str, t0 t0Var) {
         k71.k.g(str, "__typename");

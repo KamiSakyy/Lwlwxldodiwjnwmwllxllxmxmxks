@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public oa.j a;
-    public List b;
+    public final oa.j a;
+    public final List b;
 
     public b(List list, oa.j jVar) {
         k71.k.g(list, "agentTasks");

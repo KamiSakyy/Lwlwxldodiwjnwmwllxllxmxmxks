@@ -8,7 +8,7 @@ import m7.y;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a extends d21.a {
     public static final Parcelable.Creator<a> CREATOR = new c(0);
-    public Intent r;
+    public final Intent r;
 
     public a(Intent intent) {
         this.r = intent;

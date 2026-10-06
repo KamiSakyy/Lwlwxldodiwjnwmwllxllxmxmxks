@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class oa {
-    public qa a;
-    public List b;
+    public final qa a;
+    public final List b;
 
     public oa(qa qaVar, List list) {
         this.a = qaVar;

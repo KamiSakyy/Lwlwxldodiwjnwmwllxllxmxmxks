@@ -11,9 +11,9 @@ import java.util.zip.Inflater;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class n0 extends o {
     public static final a0 v;
-    public a0 s;
-    public o t;
-    public LinkedHashMap u;
+    public final a0 s;
+    public final o t;
+    public final LinkedHashMap u;
 
     static {
         String str = a0.s;

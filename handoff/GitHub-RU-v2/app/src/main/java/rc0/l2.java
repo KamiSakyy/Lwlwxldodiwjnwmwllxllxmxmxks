@@ -2,9 +2,9 @@ package rc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l2 {
-    public String a;
-    public int b;
-    public wc0.i2 c;
+    public final String a;
+    public final int b;
+    public final wc0.i2 c;
 
     public l2(String str, int i, wc0.i2 i2Var) {
         this.a = str;

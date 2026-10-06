@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v60 {
-    public m60 a;
-    public t60 b;
+    public final m60 a;
+    public final t60 b;
 
     public v60(m60 m60Var, t60 t60Var) {
         this.a = m60Var;

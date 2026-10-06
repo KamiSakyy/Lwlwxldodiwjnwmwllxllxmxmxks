@@ -7,10 +7,10 @@ public final class h {
     public static final h f31777c;
 
     /* renamed from: a, reason: collision with root package name */
-    public k41.b f31778a;
+    public final k41.b f31778a;
 
     /* renamed from: b, reason: collision with root package name */
-    public k41.b f31779b;
+    public final k41.b f31779b;
 
     static {
         b bVar = b.f31766a;

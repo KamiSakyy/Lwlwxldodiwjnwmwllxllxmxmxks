@@ -6,8 +6,8 @@ import androidx.lifecycle.l1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class CreateNewListActivity extends b1 {
     public static final a Companion = new a();
-    public l1 t0;
-    public w61.p u0;
+    public final l1 t0;
+    public final w61.p u0;
 
     public static final class a {
     }

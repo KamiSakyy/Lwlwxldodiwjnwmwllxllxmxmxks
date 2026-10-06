@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class vf implements aaShadow.v0 {
-    public ArrayList a;
+    public final ArrayList a;
 
     public vf(ArrayList arrayList) {
         this.a = arrayList;

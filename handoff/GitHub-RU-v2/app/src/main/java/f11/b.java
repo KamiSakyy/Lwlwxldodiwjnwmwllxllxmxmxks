@@ -12,12 +12,12 @@ import x.i;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements Parcelable {
     public static final Parcelable.Creator<b> CREATOR = new c0(28);
-    public int r;
-    public String s;
-    public String t;
-    public String u;
-    public boolean v;
-    public MobileAuthRequestType w;
+    public final int r;
+    public final String s;
+    public final String t;
+    public final String u;
+    public final boolean v;
+    public final MobileAuthRequestType w;
 
     public b(int i, String str, String str2, String str3, boolean z, MobileAuthRequestType mobileAuthRequestType) {
         k.g(str, "payload");

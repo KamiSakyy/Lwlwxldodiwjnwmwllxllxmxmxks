@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class vw {
-    public String a;
-    public String b;
-    public ww c;
+    public final String a;
+    public final String b;
+    public final ww c;
 
     public vw(String str, String str2, ww wwVar) {
         k71.k.g(str, "__typename");

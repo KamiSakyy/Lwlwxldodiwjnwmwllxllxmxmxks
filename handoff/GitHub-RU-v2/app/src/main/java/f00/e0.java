@@ -4,9 +4,9 @@ import tz.b5;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e0 {
-    public String a;
-    public String b;
-    public b5 c;
+    public final String a;
+    public final String b;
+    public final b5 c;
 
     public e0(String str, String str2, b5 b5Var) {
         this.a = str;

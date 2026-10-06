@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q {
-    public String a;
-    public String b;
-    public k50.h c;
+    public final String a;
+    public final String b;
+    public final k50.h c;
 
     public q(String str, String str2, k50.h hVar) {
         k71.k.g(str, "__typename");

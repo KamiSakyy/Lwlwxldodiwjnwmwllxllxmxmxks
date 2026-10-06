@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class hb0 {
-    public String a;
-    public fb0 b;
+    public final String a;
+    public final fb0 b;
 
     public hb0(String str, fb0 fb0Var) {
         this.a = str;

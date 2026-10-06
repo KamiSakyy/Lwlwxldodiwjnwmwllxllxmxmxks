@@ -9,7 +9,7 @@ public final class si {
     public static final si t;
     public static final /* synthetic */ si[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         si siVar = new si("BEHIND", 0, "BEHIND");

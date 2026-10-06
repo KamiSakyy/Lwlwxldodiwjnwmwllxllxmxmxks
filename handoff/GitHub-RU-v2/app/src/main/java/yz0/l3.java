@@ -6,20 +6,20 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l3 {
-    public String a;
-    public ArrayList b;
-    public t7 c;
-    public String d;
-    public s e;
-    public ZonedDateTime f;
-    public ArrayList g;
-    public boolean h;
+    public final String a;
+    public final ArrayList b;
+    public final t7 c;
+    public final String d;
+    public final s e;
+    public final ZonedDateTime f;
+    public final ArrayList g;
+    public final boolean h;
     public final IssueOrPullRequest$ReviewerReviewState i;
-    public com.github.service.models.response.a j;
-    public boolean k;
-    public String l;
-    public boolean m;
-    public boolean n;
+    public final com.github.service.models.response.a j;
+    public final boolean k;
+    public final String l;
+    public final boolean m;
+    public final boolean n;
 
     public l3(String str, ArrayList arrayList, t7 t7Var, String str2, s sVar, ZonedDateTime zonedDateTime, ArrayList arrayList2, boolean z, IssueOrPullRequest$ReviewerReviewState issueOrPullRequest$ReviewerReviewState, com.github.service.models.response.a aVar, boolean z2, String str3, boolean z3, boolean z4) {
         k71.k.g(issueOrPullRequest$ReviewerReviewState, "state");

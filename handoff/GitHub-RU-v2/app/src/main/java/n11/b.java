@@ -5,10 +5,10 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b extends c {
-    public Context a;
-    public v11.a b;
-    public v11.a c;
-    public String d;
+    public final Context a;
+    public final v11.a b;
+    public final v11.a c;
+    public final String d;
 
     public b(Context context, v11.a aVar, v11.a aVar2, String str) {
         if (context == null) {

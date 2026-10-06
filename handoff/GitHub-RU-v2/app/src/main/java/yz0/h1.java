@@ -2,8 +2,8 @@ package yz0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h1 implements l1 {
-    public String a;
-    public String b;
+    public final String a;
+    public final String b;
 
     public h1(String str, String str2) {
         this.a = str;

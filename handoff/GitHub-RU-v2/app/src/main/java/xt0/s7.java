@@ -2,9 +2,9 @@ package xt0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s7 implements aa.h0 {
-    public String a;
-    public r7 b;
-    public String c;
+    public final String a;
+    public final r7 b;
+    public final String c;
 
     public s7(String str, r7 r7Var, String str2) {
         this.a = str;

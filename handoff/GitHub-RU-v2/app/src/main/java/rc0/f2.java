@@ -2,8 +2,8 @@ package rc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f2 {
-    public String a;
-    public wc0.i2 b;
+    public final String a;
+    public final wc0.i2 b;
 
     public f2(String str, wc0.i2 i2Var) {
         this.a = str;

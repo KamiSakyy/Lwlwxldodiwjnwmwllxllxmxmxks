@@ -10,7 +10,7 @@ import z01.b1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public g a;
+    public final g a;
 
     public e(g gVar) {
         k.g(gVar, "releaseService");

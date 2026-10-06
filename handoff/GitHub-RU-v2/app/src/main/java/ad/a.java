@@ -31,5 +31,5 @@ public interface a {
         public g() {
         }
     }
-    public static Object c(Object p1, Object p2) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
 }

@@ -12,8 +12,8 @@ import w51.r;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class d implements i0 {
-    public OutputStream r;
-    public i s;
+    public final OutputStream r;
+    public final i s;
     public final /* synthetic */ r t;
 
     public d(r rVar) {

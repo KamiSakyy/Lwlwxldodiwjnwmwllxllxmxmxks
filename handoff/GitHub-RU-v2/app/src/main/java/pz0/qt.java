@@ -12,7 +12,7 @@ public final class qt {
     public static final qt w;
     public static final /* synthetic */ qt[] x;
     public static final /* synthetic */ d71.b y;
-    public String r;
+    public final String r;
 
     static {
         qt qtVar = new qt("APPROVE", 0, "APPROVE");

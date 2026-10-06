@@ -10,7 +10,7 @@ public final class CheckConclusionState {
     private static final /* synthetic */ d71.a $ENTRIES;
     private static final /* synthetic */ CheckConclusionState[] $VALUES;
     public static final k Companion;
-    private String rawValue;
+    private final String rawValue;
     public static final CheckConclusionState ACTION_REQUIRED = new CheckConclusionState("ACTION_REQUIRED", 0, "ACTION_REQUIRED");
     public static final CheckConclusionState TIMED_OUT = new CheckConclusionState("TIMED_OUT", 1, "TIMED_OUT");
     public static final CheckConclusionState CANCELLED = new CheckConclusionState("CANCELLED", 2, "CANCELLED");

@@ -13,8 +13,8 @@ import l7.w0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b extends t0 {
-    public Paint a;
-    public List b;
+    public final Paint a;
+    public final List b;
 
     public b() {
         Paint paint = new Paint();

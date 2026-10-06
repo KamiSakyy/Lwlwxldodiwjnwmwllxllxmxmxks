@@ -2,9 +2,9 @@ package uu0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i4 {
-    public String a;
-    public String b;
-    public cp0.g c;
+    public final String a;
+    public final String b;
+    public final cp0.g c;
 
     public i4(String str, String str2, cp0.g gVar) {
         this.a = str;

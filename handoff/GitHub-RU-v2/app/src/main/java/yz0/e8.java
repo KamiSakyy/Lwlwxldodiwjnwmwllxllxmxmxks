@@ -6,10 +6,10 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e8 implements Parcelable {
     public static final Parcelable.Creator<e8> CREATOR = new e5(8);
-    public String r;
-    public String s;
-    public int t;
-    public String u;
+    public final String r;
+    public final String s;
+    public final int t;
+    public final String u;
 
     public e8(int i, String str, String str2, String str3) {
         k71.k.g(str, "id");

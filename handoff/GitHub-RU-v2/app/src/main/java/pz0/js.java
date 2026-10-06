@@ -9,7 +9,7 @@ public final class js {
     public static final js t;
     public static final js u;
     public static final /* synthetic */ js[] v;
-    public String r;
+    public final String r;
 
     static {
         js jsVar = new js("MERGE", 0, "MERGE");

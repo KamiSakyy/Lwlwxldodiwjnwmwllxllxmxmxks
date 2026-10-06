@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qd {
-    public List a;
-    public pd b;
+    public final List a;
+    public final pd b;
 
     public qd(List list, pd pdVar) {
         this.a = list;

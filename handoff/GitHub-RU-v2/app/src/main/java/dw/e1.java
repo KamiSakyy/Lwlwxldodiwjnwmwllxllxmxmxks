@@ -2,9 +2,9 @@ package dw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e1 implements aa.h0 {
-    public String a;
-    public d1 b;
-    public String c;
+    public final String a;
+    public final d1 b;
+    public final String c;
 
     public e1(String str, d1 d1Var, String str2) {
         this.a = str;

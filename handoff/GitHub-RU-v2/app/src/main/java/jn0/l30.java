@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l30 implements aaShadow.v0 {
-    public p30 a;
-    public String b;
-    public String c;
+    public final p30 a;
+    public final String b;
+    public final String c;
 
     public l30(p30 p30Var, String str, String str2) {
         this.a = p30Var;

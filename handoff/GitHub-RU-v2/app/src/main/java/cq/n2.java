@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n2 implements aa.h0 {
-    public String a;
-    public ArrayList b;
+    public final String a;
+    public final ArrayList b;
 
     public n2(String str, ArrayList arrayList) {
         this.a = str;

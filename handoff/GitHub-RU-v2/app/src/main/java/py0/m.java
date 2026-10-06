@@ -4,10 +4,10 @@ import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m {
-    public String a;
-    public boolean b;
-    public boolean c;
-    public String d;
+    public final String a;
+    public final boolean b;
+    public final boolean c;
+    public final String d;
 
     public m(String str, String str2, boolean z, boolean z2) {
         this.a = str;

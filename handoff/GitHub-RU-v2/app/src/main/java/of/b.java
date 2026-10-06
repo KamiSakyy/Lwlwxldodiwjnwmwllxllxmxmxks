@@ -7,13 +7,13 @@ import k71.k;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public a f30197a;
+    public final a f30197a;
 
     /* renamed from: b, reason: collision with root package name */
-    public g1 f30198b;
+    public final g1 f30198b;
 
     /* renamed from: c, reason: collision with root package name */
-    public g1 f30199c;
+    public final g1 f30199c;
 
     public b(a aVar, g1 g1Var, g1 g1Var2) {
         k.g(aVar, "forkRepositoryFormData");

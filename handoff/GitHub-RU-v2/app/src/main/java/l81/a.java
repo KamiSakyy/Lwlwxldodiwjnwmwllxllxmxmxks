@@ -28,5 +28,5 @@ public final class a {
     public static a[] values() {
         return (a[]) t.clone();
     }
-    public static Object c(Object p1, Object p2) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
 }

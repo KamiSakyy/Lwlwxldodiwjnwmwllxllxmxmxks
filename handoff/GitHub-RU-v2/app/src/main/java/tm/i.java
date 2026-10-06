@@ -5,7 +5,7 @@ import um.r;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i {
-    public r a;
+    public final r a;
 
     public i(r rVar) {
         k71.k.g(rVar, "repository");

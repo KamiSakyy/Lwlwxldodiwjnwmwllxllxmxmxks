@@ -20,9 +20,9 @@ public final class f implements i51.d {
     public static final i51.b h = new i51.b("value", f4.x(f4.w(e.class, new a(2))));
     public static final k51.a i = new k51.a(1);
     public OutputStream a;
-    public HashMap b;
-    public HashMap c;
-    public i51.c d;
+    public final HashMap b;
+    public final HashMap c;
+    public final i51.c d;
     public final i e = new i(this);
 
     public f(ByteArrayOutputStream byteArrayOutputStream, HashMap hashMap, HashMap hashMap2, i51.c cVar) {

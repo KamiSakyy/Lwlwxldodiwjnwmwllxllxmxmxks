@@ -9,7 +9,7 @@ public final class k extends View.BaseSavedState {
     public static final Parcelable.Creator<k> CREATOR = new a21.g(8);
 
     /* renamed from: r, reason: collision with root package name */
-    public boolean f3827r;
+    public final boolean f3827r;
 
     public k(Parcelable parcelable, boolean z10) {
         super(parcelable);

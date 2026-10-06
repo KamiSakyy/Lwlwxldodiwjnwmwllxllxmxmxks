@@ -8,8 +8,8 @@ import kc0.yb0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h3 implements z01.z, yb0 {
     public static final d3 Companion = new d3();
-    public com.github.service.wrapper.j r;
-    public v71.v s;
+    public final com.github.service.wrapper.j r;
+    public final v71.v s;
     public v71.d1Shadow t;
 
     public h3(com.github.service.wrapper.j jVar, v71.v vVar) {

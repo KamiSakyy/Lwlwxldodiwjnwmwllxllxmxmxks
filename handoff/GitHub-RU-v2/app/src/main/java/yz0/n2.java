@@ -7,16 +7,16 @@ import com.github.service.models.response.PullRequestState;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n2 implements o2 {
     public static final Parcelable.Creator<n2> CREATOR = new h(24);
-    public boolean A;
-    public PullRequestState r;
-    public boolean s;
-    public boolean t;
-    public String u;
-    public String v;
-    public String w;
-    public int x;
-    public String y;
-    public String z;
+    public final boolean A;
+    public final PullRequestState r;
+    public final boolean s;
+    public final boolean t;
+    public final String u;
+    public final String v;
+    public final String w;
+    public final int x;
+    public final String y;
+    public final String z;
 
     public n2(PullRequestState pullRequestState, boolean z, boolean z2, String str, String str2, String str3, int i, String str4, String str5, boolean z3) {
         k71.k.g(pullRequestState, "state");

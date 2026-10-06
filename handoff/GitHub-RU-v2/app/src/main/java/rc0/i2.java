@@ -2,7 +2,7 @@ package rc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i2 implements aa.v0 {
-    public j2 a;
+    public final j2 a;
 
     public i2(j2 j2Var) {
         this.a = j2Var;

@@ -7,16 +7,16 @@ import java.util.List;
 public final class x {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f8273a;
+    public final String f8273a;
 
     /* renamed from: b, reason: collision with root package name */
-    public b0.g f8274b;
+    public final b0.g f8274b;
 
     /* renamed from: c, reason: collision with root package name */
-    public b0.h f8275c;
+    public final b0.h f8275c;
 
     /* renamed from: d, reason: collision with root package name */
-    public List f8276d;
+    public final List f8276d;
 
     public x(String str, b0.g gVar, b0.h hVar, List list) {
         k71.k.g(str, "id");

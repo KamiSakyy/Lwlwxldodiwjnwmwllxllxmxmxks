@@ -4,7 +4,7 @@ package a0;
 public final class n2 {
 
     /* renamed from: a, reason: collision with root package name */
-    public f0 f169a;
+    public final f0 f169a;
 
     /* renamed from: b, reason: collision with root package name */
     public u f170b;
@@ -16,7 +16,7 @@ public final class n2 {
     public u f172d;
 
     /* renamed from: e, reason: collision with root package name */
-    public float f173e;
+    public final float f173e;
 
     public n2(f0 f0Var) {
         this.f169a = f0Var;

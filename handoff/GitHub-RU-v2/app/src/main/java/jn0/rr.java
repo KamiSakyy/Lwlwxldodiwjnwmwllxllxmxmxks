@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class rr implements aaShadow.v0 {
-    public wr a;
-    public String b;
-    public String c;
+    public final wr a;
+    public final String b;
+    public final String c;
 
     public rr(wr wrVar, String str, String str2) {
         this.a = wrVar;

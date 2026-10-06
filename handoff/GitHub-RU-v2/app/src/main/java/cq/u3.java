@@ -2,18 +2,18 @@ package cq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u3 implements aa.h0 {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public String f;
-    public t3 g;
-    public s3 h;
-    public boolean i;
-    public boolean j;
-    public boolean k;
-    public eq.g l;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final String f;
+    public final t3 g;
+    public final s3 h;
+    public final boolean i;
+    public final boolean j;
+    public final boolean k;
+    public final eq.g l;
 
     public u3(String str, String str2, String str3, String str4, String str5, String str6, t3 t3Var, s3 s3Var, boolean z, boolean z2, boolean z3, eq.g gVar) {
         this.a = str;

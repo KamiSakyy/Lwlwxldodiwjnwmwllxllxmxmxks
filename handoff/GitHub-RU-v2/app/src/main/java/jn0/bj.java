@@ -4,11 +4,11 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class bj {
-    public String a;
-    public ZonedDateTime b;
-    public xi c;
-    public yi d;
-    public String e;
+    public final String a;
+    public final ZonedDateTime b;
+    public final xi c;
+    public final yi d;
+    public final String e;
 
     public bj(String str, ZonedDateTime zonedDateTime, xi xiVar, yi yiVar, String str2) {
         this.a = str;

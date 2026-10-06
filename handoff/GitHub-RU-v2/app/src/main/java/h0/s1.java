@@ -4,7 +4,7 @@ package h0;
 public final class s1 extends u1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public q2.u f25177a;
+    public final q2.u f25177a;
 
     public s1(q2.u uVar) {
         this.f25177a = uVar;

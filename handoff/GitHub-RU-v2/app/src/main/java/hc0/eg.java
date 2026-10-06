@@ -28,7 +28,7 @@ public final class eg {
     public static final eg x;
     public static final eg y;
     public static final eg z;
-    public String r;
+    public final String r;
 
     static {
         eg egVar = new eg("ASSIGNED", 0, "ASSIGNED");

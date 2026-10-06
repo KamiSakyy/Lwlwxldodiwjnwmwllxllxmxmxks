@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class yg0 {
-    public m10.dg0 a;
-    public boolean b;
+    public final m10.dg0 a;
+    public final boolean b;
 
     public yg0(m10.dg0 dg0Var, boolean z) {
         this.a = dg0Var;

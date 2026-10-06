@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f extends a {
-    public float g;
-    public float h;
+    public final float g;
+    public final float h;
 
     public f(View view) {
         super(view);

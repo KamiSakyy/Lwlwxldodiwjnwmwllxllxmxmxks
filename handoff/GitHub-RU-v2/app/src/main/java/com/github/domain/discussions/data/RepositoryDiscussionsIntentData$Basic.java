@@ -13,8 +13,8 @@ import x.i;
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class RepositoryDiscussionsIntentData$Basic implements j {
-    public String r;
-    public String s;
+    public final String r;
+    public final String s;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<RepositoryDiscussionsIntentData$Basic> CREATOR = new m(20);
 

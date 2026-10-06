@@ -13,8 +13,8 @@ import kotlinx.serialization.json.JsonNull;
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class n0 implements KSerializer {
     public final /* synthetic */ int a = 1;
-    public Object b;
-    public Object c;
+    public final Object b;
+    public final Object c;
 
     public n0(KSerializer kSerializer, KSerializer kSerializer2) {
         this.b = kSerializer;

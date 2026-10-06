@@ -26,5 +26,4 @@ public final class c implements d {
         }
     }
     public Object v(Object p1) { return null; }
-    public Object v(Object) { return null; }
 }

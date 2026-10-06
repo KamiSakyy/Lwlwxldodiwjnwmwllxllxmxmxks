@@ -15,9 +15,9 @@ import z01.u0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public g a;
-    public oa.g b;
-    public v c;
+    public final g a;
+    public final oa.g b;
+    public final v c;
 
     public d(g gVar, oa.g gVar2, v vVar) {
         k.g(gVar, "mobilePushNotificationSettingsStore");

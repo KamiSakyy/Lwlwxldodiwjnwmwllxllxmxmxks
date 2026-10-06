@@ -4,10 +4,10 @@ import java.util.LinkedHashMap;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u0 {
-    public LinkedHashMap a;
-    public int b;
-    public boolean c;
-    public Integer d;
+    public final LinkedHashMap a;
+    public final int b;
+    public final boolean c;
+    public final Integer d;
 
     public u0(LinkedHashMap linkedHashMap, int i, boolean z, Integer num) {
         this.a = linkedHashMap;

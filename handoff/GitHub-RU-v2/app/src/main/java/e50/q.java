@@ -6,9 +6,9 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q implements aa.i0 {
-    public aa1.b r;
-    public aa1.b s;
-    public aa1.b t;
+    public final aa1.b r;
+    public final aa1.b s;
+    public final aa1.b t;
 
     public q(aa.u0 u0Var, aa.u0 u0Var2, int i) {
         int i2 = i & 1;

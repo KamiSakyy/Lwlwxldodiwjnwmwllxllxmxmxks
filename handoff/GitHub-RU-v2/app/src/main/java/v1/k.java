@@ -10,16 +10,16 @@ public final class k implements Iterable, l71.a {
     public static final k f32381v = new k(0, 0, 0, null);
 
     /* renamed from: r, reason: collision with root package name */
-    public long f32382r;
+    public final long f32382r;
 
     /* renamed from: s, reason: collision with root package name */
-    public long f32383s;
+    public final long f32383s;
 
     /* renamed from: t, reason: collision with root package name */
-    public long f32384t;
+    public final long f32384t;
 
     /* renamed from: u, reason: collision with root package name */
-    public long[] f32385u;
+    public final long[] f32385u;
 
     public k(long j10, long j11, long j12, long[] jArr) {
         this.f32382r = j10;

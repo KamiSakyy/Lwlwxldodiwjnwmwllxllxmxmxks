@@ -104,7 +104,7 @@ import w80.w3;
 public final class b implements Runnable {
     public final /* synthetic */ int r;
     public Object s;
-    public Object t;
+    public final Object t;
 
     public /* synthetic */ b(int i, Object obj, Object obj2) {
         this.r = i;

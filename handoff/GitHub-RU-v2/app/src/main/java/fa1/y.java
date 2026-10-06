@@ -2,8 +2,8 @@ package fa1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class y extends q81.c0 {
-    public q81.q s;
-    public long t;
+    public final q81.q s;
+    public final long t;
 
     public y(q81.q qVar, long j) {
         this.s = qVar;

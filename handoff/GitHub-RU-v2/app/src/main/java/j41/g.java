@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g implements d, Serializable {
-    public Object r;
+    public final Object r;
 
     public g(Object obj) {
         this.r = obj;

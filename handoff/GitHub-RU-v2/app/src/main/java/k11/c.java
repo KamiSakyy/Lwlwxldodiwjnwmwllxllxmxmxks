@@ -47,13 +47,13 @@ import n11.g;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c implements g {
-    public x3 a;
-    public ConnectivityManager b;
-    public Context c;
-    public URL d;
-    public v11.a e;
-    public v11.a f;
-    public int g;
+    public final x3 a;
+    public final ConnectivityManager b;
+    public final Context c;
+    public final URL d;
+    public final v11.a e;
+    public final v11.a f;
+    public final int g;
 
     public c(Context context, v11.a aVar, v11.a aVar2) {
         d dVar = new d();

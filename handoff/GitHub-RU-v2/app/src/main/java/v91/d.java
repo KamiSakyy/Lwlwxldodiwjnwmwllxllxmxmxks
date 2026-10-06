@@ -11,8 +11,8 @@ import t71.n;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class d extends u91.b {
-    public q1 e;
-    public n f;
+    public final q1 e;
+    public final n f;
     public int g;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -81,5 +81,4 @@ public final class d extends u91.b {
         return true;
     }
     public Object k(Object p1) { return null; }
-    public Object k(Object) { return null; }
 }

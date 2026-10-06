@@ -7,7 +7,7 @@ import r9.n;
 public final class a implements b {
 
     /* renamed from: a, reason: collision with root package name */
-    public boolean f29673a;
+    public final boolean f29673a;
 
     public a(boolean z10) {
         this.f29673a = z10;

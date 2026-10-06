@@ -12,7 +12,7 @@ public final class CodingAgentContentState {
     public static final w61.h[] f18510b = {sy.w.s(w61.i.r, new com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.f(8))};
 
     /* renamed from: a, reason: collision with root package name */
-    public SessionState f18511a;
+    public final SessionState f18511a;
 
     public static final class Companion {
         public final KSerializer serializer() {

@@ -9,7 +9,7 @@ import w61.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s {
-    public qj.a a;
+    public final qj.a a;
 
     public s(qj.a aVar) {
         k71.k.g(aVar, "cachedForUserDatabase");

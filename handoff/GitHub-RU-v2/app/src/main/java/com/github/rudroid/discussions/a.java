@@ -7,25 +7,25 @@ public final class a extends com.github.rudroid.comment.b {
     public static final C0026a Companion = new C0026a();
 
     /* renamed from: s, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f11147s;
+    public final com.github.rudroid.activities.util.c f11147s;
 
     /* renamed from: t, reason: collision with root package name */
-    public ik.b f11148t;
+    public final ik.b f11148t;
 
     /* renamed from: u, reason: collision with root package name */
-    public lk.a f11149u;
+    public final lk.a f11149u;
 
     /* renamed from: v, reason: collision with root package name */
-    public ik.t0 f11150v;
+    public final ik.t0 f11150v;
 
     /* renamed from: w, reason: collision with root package name */
-    public ik.p0 f11151w;
+    public final ik.p0 f11151w;
 
     /* renamed from: x, reason: collision with root package name */
-    public y71.y1 f11152x;
+    public final y71.y1 f11152x;
 
     /* renamed from: y, reason: collision with root package name */
-    public y71.i1 f11153y;
+    public final y71.i1 f11153y;
 
     /* renamed from: com.github.rudroid.discussions.a$a, reason: collision with other inner class name */
     public static final class C0026a {

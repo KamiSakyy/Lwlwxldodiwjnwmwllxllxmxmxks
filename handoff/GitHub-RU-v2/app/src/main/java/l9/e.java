@@ -6,13 +6,13 @@ import android.graphics.drawable.Drawable;
 public final class e extends f {
 
     /* renamed from: a, reason: collision with root package name */
-    public Drawable f28394a;
+    public final Drawable f28394a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f28395b;
+    public final boolean f28395b;
 
     /* renamed from: c, reason: collision with root package name */
-    public i9.f f28396c;
+    public final i9.f f28396c;
 
     public e(Drawable drawable, boolean z10, i9.f fVar) {
         this.f28394a = drawable;

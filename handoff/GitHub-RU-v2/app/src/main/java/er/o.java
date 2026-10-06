@@ -2,7 +2,7 @@ package er;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o {
-    public String a;
+    public final String a;
 
     public o(String str) {
         this.a = str;

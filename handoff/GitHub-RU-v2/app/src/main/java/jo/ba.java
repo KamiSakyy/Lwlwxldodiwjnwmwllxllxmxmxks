@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ba implements aaShadow.n0 {
     public static final y9 Companion = new y9();
-    public String r;
+    public final String r;
 
     public ba(String str) {
         k71.k.g(str, "deviceToken");

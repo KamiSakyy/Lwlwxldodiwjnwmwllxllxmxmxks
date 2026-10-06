@@ -6,23 +6,23 @@ import pz0.zs;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z3 implements aa.h0 {
-    public String a;
-    public String b;
-    public String c;
-    public boolean d;
-    public y3 e;
-    public String f;
-    public py g;
-    public boolean h;
-    public boolean i;
-    public boolean j;
-    public String k;
-    public zs l;
-    public List m;
-    public boolean n;
-    public boolean o;
-    public x3 p;
-    public w3 q;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final boolean d;
+    public final y3 e;
+    public final String f;
+    public final py g;
+    public final boolean h;
+    public final boolean i;
+    public final boolean j;
+    public final String k;
+    public final zs l;
+    public final List m;
+    public final boolean n;
+    public final boolean o;
+    public final x3 p;
+    public final w3 q;
 
     public z3(String str, String str2, String str3, boolean z, y3 y3Var, String str4, py pyVar, boolean z2, boolean z3, boolean z4, String str5, zs zsVar, List list, boolean z5, boolean z6, x3 x3Var, w3 w3Var) {
         this.a = str;

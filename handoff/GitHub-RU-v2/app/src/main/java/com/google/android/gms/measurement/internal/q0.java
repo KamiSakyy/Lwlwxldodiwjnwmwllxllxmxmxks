@@ -2,9 +2,9 @@ package com.google.android.gms.measurement.internal;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q0 {
-    public int a;
-    public boolean b;
-    public boolean c;
+    public final int a;
+    public final boolean b;
+    public final boolean c;
     public final /* synthetic */ s0 d;
 
     public q0(s0 s0Var, int i, boolean z, boolean z2) {

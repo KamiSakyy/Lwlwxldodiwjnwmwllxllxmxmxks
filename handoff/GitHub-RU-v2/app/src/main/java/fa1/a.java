@@ -8,7 +8,7 @@ import java.util.concurrent.RejectedExecutionException;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a implements Executor {
     public final /* synthetic */ int r;
-    public Handler s;
+    public final Handler s;
 
     public /* synthetic */ a(Handler handler, int i) {
         this.r = i;

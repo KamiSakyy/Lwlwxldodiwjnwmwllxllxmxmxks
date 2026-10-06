@@ -6,9 +6,9 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class l1 implements SerialDescriptor, l {
-    public SerialDescriptor a;
-    public String b;
-    public Set c;
+    public final SerialDescriptor a;
+    public final String b;
+    public final Set c;
 
     public l1(SerialDescriptor serialDescriptor) {
         k71.k.g(serialDescriptor, "original");

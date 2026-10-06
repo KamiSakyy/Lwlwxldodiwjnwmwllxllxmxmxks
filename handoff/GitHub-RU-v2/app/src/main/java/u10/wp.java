@@ -4,17 +4,17 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class wp {
-    public String a;
-    public String b;
-    public String c;
-    public rp d;
-    public boolean e;
-    public boolean f;
-    public boolean g;
-    public ZonedDateTime h;
-    public ZonedDateTime i;
-    public String j;
-    public String k;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final rp d;
+    public final boolean e;
+    public final boolean f;
+    public final boolean g;
+    public final ZonedDateTime h;
+    public final ZonedDateTime i;
+    public final String j;
+    public final String k;
 
     public wp(String str, String str2, String str3, rp rpVar, boolean z, boolean z2, boolean z3, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, String str4, String str5) {
         this.a = str;

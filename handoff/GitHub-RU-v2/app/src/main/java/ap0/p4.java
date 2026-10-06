@@ -2,13 +2,13 @@ package ap0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p4 implements aa.h0 {
-    public String a;
-    public String b;
-    public int c;
-    public String d;
-    public o4 e;
-    public uu0.u4 f;
-    public x4 g;
+    public final String a;
+    public final String b;
+    public final int c;
+    public final String d;
+    public final o4 e;
+    public final uu0.u4 f;
+    public final x4 g;
 
     public p4(String str, String str2, int i, String str3, o4 o4Var, uu0.u4 u4Var, x4 x4Var) {
         this.a = str;

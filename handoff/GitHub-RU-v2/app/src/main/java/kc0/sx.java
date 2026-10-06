@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class sx {
-    public ux a;
-    public List b;
+    public final ux a;
+    public final List b;
 
     public sx(ux uxVar, List list) {
         this.a = uxVar;

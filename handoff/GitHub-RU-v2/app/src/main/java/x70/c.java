@@ -2,8 +2,8 @@ package x70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public String a;
-    public d b;
+    public final String a;
+    public final d b;
 
     public c(String str, d dVar) {
         k71.k.g(str, "__typename");

@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xx {
-    public wx a;
-    public List b;
+    public final wx a;
+    public final List b;
 
     public xx(wx wxVar, List list) {
         this.a = wxVar;

@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q implements Iterable, n {
-    public String r;
+    public final String r;
 
     public q(String str) {
         if (str == null) {

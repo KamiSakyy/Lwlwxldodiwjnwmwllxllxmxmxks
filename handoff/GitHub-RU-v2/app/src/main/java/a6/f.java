@@ -6,7 +6,7 @@ import java.util.LinkedHashMap;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public LinkedHashMap f523a;
+    public final LinkedHashMap f523a;
 
     public f(LinkedHashMap linkedHashMap) {
         this.f523a = linkedHashMap;

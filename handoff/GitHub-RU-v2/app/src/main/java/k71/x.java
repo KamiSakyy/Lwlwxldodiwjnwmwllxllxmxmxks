@@ -39,5 +39,5 @@ public abstract class x {
     }
 
     public static Object a;
-    public static Object values() { return null; }
+    public Object values() { return null; }
 }

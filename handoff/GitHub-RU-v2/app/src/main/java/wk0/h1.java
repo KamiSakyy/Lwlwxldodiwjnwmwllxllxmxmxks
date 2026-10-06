@@ -2,8 +2,8 @@ package wk0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h1 {
-    public String a;
-    public ji0.f b;
+    public final String a;
+    public final ji0.f b;
 
     public h1(String str, ji0.f fVar) {
         this.a = str;

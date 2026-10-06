@@ -2,9 +2,9 @@ package xt0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f5 {
-    public String a;
-    public i5 b;
-    public h5 c;
+    public final String a;
+    public final i5 b;
+    public final h5 c;
 
     public f5(String str, i5 i5Var, h5 h5Var) {
         k71.k.g(str, "__typename");

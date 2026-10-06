@@ -5,8 +5,8 @@ import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements d {
-    public d a;
-    public float b;
+    public final d a;
+    public final float b;
 
     public b(float f, d dVar) {
         while (dVar instanceof b) {

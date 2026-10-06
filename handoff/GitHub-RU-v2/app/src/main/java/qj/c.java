@@ -9,7 +9,7 @@ import k71.k;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c extends p7.a {
     public final /* synthetic */ int c;
-    public Context d;
+    public final Context d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public c(Context context, int i) {

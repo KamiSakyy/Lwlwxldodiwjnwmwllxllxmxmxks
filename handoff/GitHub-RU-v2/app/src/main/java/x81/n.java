@@ -4,7 +4,7 @@ import java.io.IOException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class n implements j71.a {
-    public s r;
+    public final s r;
     public final /* synthetic */ o s;
 
     public n(o oVar, s sVar) {

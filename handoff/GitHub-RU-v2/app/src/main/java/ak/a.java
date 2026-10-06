@@ -20,7 +20,7 @@ public final class a {
     public static final a x;
     public static final a y;
     public static final a z;
-    public String r;
+    public final String r;
 
     static {
         a aVar = new a("SCHEDULED_NOTIFICATIONS", 0, "scheduledNotifications");

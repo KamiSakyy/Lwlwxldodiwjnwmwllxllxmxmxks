@@ -19,5 +19,4 @@ public final class b extends c71.c {
         return this.w.c(null, this);
     }
     public Object j(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8, Object p9, Object p10, Object p11, Object p12, Object p13, Object p14) { return null; }
-    public Object c(Object, Object, Object, Object, int, int, Object, Object, int, int) { return null; }
 }

@@ -10,7 +10,7 @@ public final class i {
     public static final long b = TimeUnit.HOURS.toSeconds(1);
     public static final Pattern c = Pattern.compile("\\AA[\\w-]{38}\\z");
     public static i d;
-    public a0 a;
+    public final a0 a;
 
     public i(a0 a0Var) {
         this.a = a0Var;

@@ -2,8 +2,8 @@ package ux0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v {
-    public String a;
-    public w b;
+    public final String a;
+    public final w b;
 
     public v(String str, w wVar) {
         this.a = str;

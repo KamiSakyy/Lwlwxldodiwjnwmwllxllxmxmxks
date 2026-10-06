@@ -4,17 +4,17 @@ import gn0.dn;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s {
-    public String a;
-    public dn b;
-    public String c;
-    public boolean d;
-    public boolean e;
-    public boolean f;
-    public boolean g;
-    public t h;
-    public boolean i;
-    public q j;
-    public yi0.a k;
+    public final String a;
+    public final dn b;
+    public final String c;
+    public final boolean d;
+    public final boolean e;
+    public final boolean f;
+    public final boolean g;
+    public final t h;
+    public final boolean i;
+    public final q j;
+    public final yi0.a k;
 
     public s(String str, dn dnVar, String str2, boolean z, boolean z2, boolean z3, boolean z4, t tVar, boolean z5, q qVar, yi0.a aVar) {
         this.a = str;

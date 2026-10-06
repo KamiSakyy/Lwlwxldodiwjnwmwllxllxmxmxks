@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class br implements aaShadow.m0 {
-    public dr a;
+    public final dr a;
 
     public br(dr drVar) {
         this.a = drVar;

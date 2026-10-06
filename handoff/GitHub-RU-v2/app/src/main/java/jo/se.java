@@ -2,11 +2,11 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class se {
-    public String a;
-    public int b;
-    public int c;
-    public String d;
-    public dw.m3 e;
+    public final String a;
+    public final int b;
+    public final int c;
+    public final String d;
+    public final dw.m3 e;
 
     public se(String str, int i, int i2, String str2, dw.m3 m3Var) {
         this.a = str;

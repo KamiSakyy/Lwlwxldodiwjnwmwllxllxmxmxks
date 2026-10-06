@@ -9,16 +9,16 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d {
-    public String a;
-    public String b;
-    public CheckStatusState c;
-    public String d;
-    public String e;
-    public com.github.service.models.response.a f;
-    public com.github.service.models.response.a g;
-    public f h;
-    public List i;
-    public List j;
+    public final String a;
+    public final String b;
+    public final CheckStatusState c;
+    public final String d;
+    public final String e;
+    public final com.github.service.models.response.a f;
+    public final com.github.service.models.response.a g;
+    public final f h;
+    public final List i;
+    public final List j;
 
     public d(String str, String str2, CheckStatusState checkStatusState, String str3, String str4, com.github.service.models.response.a aVar, com.github.service.models.response.a aVar2, f fVar, List list, List list2) {
         k.g(checkStatusState, "status");

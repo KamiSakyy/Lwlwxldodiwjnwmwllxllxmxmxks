@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j50 {
-    public m50 a;
-    public String b;
+    public final m50 a;
+    public final String b;
 
     public j50(m50 m50Var, String str) {
         this.a = m50Var;

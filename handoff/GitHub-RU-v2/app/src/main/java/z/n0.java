@@ -5,10 +5,10 @@ package z;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface n0 {
-    public static Object c(Object p1, Object p2) { return null; }
-    public static Object e(Object p1, Object p2) { return null; }
-    public static Object f(Object p1, Object p2) { return null; }
-    public static Object j(Object p1, Object p2) { return null; }
-    public static Object m() { return null; }
-    public static Object o() { return null; }
+    public Object c(Object p1, Object p2) { return null; }
+    public Object e(Object p1, Object p2) { return null; }
+    public Object f(Object p1, Object p2) { return null; }
+    public Object j(Object p1, Object p2) { return null; }
+    public Object m() { return null; }
+    public Object o() { return null; }
 }

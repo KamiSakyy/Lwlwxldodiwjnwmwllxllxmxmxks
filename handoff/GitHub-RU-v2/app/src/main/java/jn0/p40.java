@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p40 implements aaShadow.v0 {
-    public t40 a;
-    public String b;
-    public String c;
+    public final t40 a;
+    public final String b;
+    public final String c;
 
     public p40(t40 t40Var, String str, String str2) {
         this.a = t40Var;

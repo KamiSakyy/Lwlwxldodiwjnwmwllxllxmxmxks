@@ -10,7 +10,7 @@ import kotlinx.serialization.KSerializer;
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class UserOrOrgRepositoriesFilterPersistenceKey extends b {
-    public String t;
+    public final String t;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<UserOrOrgRepositoriesFilterPersistenceKey> CREATOR = new f8.a(18);
 

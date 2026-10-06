@@ -8,10 +8,10 @@ import v71.z;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
     public static final a Companion = new a();
-    public g a;
-    public z b;
-    public v c;
-    public qe.a d;
+    public final g a;
+    public final z b;
+    public final v c;
+    public final qe.a d;
 
     public b(g gVar, z zVar, v vVar, qe.a aVar) {
         k.g(gVar, "cacheDirFactory");

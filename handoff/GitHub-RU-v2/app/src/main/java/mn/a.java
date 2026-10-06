@@ -8,20 +8,20 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public k a;
-    public String b;
-    public String c;
-    public String d;
-    public CheckStatusState e;
-    public CheckConclusionState f;
-    public String g;
-    public String h;
-    public int i;
-    public String j;
-    public ZonedDateTime k;
-    public ZonedDateTime l;
-    public String m;
-    public Boolean n;
+    public final k a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final CheckStatusState e;
+    public final CheckConclusionState f;
+    public final String g;
+    public final String h;
+    public final int i;
+    public final String j;
+    public final ZonedDateTime k;
+    public final ZonedDateTime l;
+    public final String m;
+    public final Boolean n;
 
     public a(k kVar, String str, String str2, String str3, CheckStatusState checkStatusState, CheckConclusionState checkConclusionState, String str4, String str5, int i, String str6, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, String str7, Boolean bool) {
         k71.k.g(str, "id");

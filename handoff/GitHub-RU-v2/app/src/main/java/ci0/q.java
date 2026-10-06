@@ -7,13 +7,13 @@ import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q implements h0 {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public boolean f;
-    public ud0.c g;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final boolean f;
+    public final ud0.c g;
 
     public q(String str, String str2, String str3, String str4, String str5, boolean z, ud0.c cVar) {
         this.a = str;

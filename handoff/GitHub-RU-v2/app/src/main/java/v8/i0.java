@@ -4,10 +4,10 @@ package v8;
 public final class i0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public long f32791a;
+    public final long f32791a;
 
     /* renamed from: b, reason: collision with root package name */
-    public long f32792b;
+    public final long f32792b;
 
     public i0(long j10, long j11) {
         this.f32791a = j10;

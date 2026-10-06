@@ -109,5 +109,5 @@ public final class e extends t81.a {
         super(h1.p(new StringBuilder(), fVar.m, " writer"), true);
         this.f = fVar;
     }
-    public static Object g(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
 }

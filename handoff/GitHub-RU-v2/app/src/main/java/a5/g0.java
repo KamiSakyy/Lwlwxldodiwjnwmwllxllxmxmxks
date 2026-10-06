@@ -8,7 +8,7 @@ import android.view.inputmethod.InputMethodManager;
 public class g0 implements r9.e {
 
     /* renamed from: r, reason: collision with root package name */
-    public View f405r;
+    public final View f405r;
 
     @Override // r9.e
     public void a() {

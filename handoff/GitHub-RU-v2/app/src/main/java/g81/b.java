@@ -12,9 +12,9 @@ import x61.r;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class b extends k81.b {
-    public r71.b a;
-    public List b;
-    public Object c;
+    public final r71.b a;
+    public final List b;
+    public final Object c;
 
     public b(r71.b bVar) {
         k.g(bVar, "baseClass");

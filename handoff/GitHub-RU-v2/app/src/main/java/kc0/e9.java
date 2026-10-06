@@ -2,14 +2,14 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e9 {
-    public String a;
-    public String b;
-    public gn0.r2 c;
-    public h9 d;
-    public x8 e;
-    public j9 f;
-    public v8 g;
-    public z8 h;
+    public final String a;
+    public final String b;
+    public final gn0.r2 c;
+    public final h9 d;
+    public final x8 e;
+    public final j9 f;
+    public final v8 g;
+    public final z8 h;
 
     public e9(String str, String str2, gn0.r2 r2Var, h9 h9Var, x8 x8Var, j9 j9Var, v8 v8Var, z8 z8Var) {
         this.a = str;

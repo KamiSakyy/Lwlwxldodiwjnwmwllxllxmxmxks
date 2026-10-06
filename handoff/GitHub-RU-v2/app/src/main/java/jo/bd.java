@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class bd {
-    public cd a;
-    public String b;
-    public String c;
+    public final cd a;
+    public final String b;
+    public final String c;
 
     public bd(cd cdVar, String str, String str2) {
         this.a = cdVar;

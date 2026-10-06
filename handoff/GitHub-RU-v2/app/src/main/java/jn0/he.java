@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class he {
-    public String a;
-    public kr0.a b;
+    public final String a;
+    public final kr0.a b;
 
     public he(String str, kr0.a aVar) {
         this.a = str;

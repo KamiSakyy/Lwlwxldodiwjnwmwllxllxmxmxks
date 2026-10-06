@@ -12,11 +12,11 @@ import l7.c0;
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class AgentAssignment implements Parcelable {
-    public String r;
-    public String s;
-    public String t;
-    public String u;
-    public String v;
+    public final String r;
+    public final String s;
+    public final String t;
+    public final String u;
+    public final String v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<AgentAssignment> CREATOR = new c0(3);
 

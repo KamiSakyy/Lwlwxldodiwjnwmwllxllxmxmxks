@@ -7,10 +7,10 @@ public final class c extends f {
     public static final b Companion = new b();
 
     /* renamed from: c, reason: collision with root package name */
-    public int f31026c;
+    public final int f31026c;
 
     /* renamed from: d, reason: collision with root package name */
-    public int f31027d;
+    public final int f31027d;
 
     public c(int i, int i10) {
         this.f31026c = i;

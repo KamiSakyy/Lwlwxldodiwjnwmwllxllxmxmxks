@@ -12,6 +12,4 @@ public final class b implements i51.c {
         ((i51.d) obj2).a(b, ((x51.e) obj).a);
     }
     public Object B(Object p1, Object p2, Object p3) { return null; }
-    public Object B(Object, Object, Object) { return null; }
-    public Object a(Object) { return null; }
 }

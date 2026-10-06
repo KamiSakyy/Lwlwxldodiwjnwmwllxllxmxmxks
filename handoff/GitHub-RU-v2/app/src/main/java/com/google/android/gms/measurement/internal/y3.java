@@ -6,9 +6,9 @@ import android.os.Looper;
 public final class y3 extends e0 {
     public com.google.android.gms.internal.measurement.h0 u;
     public boolean v;
-    public x3 w;
-    public a0.o2 x;
-    public b1.m y;
+    public final x3 w;
+    public final a0.o2 x;
+    public final b1.m y;
 
     public y3(o1 o1Var) {
         super(o1Var);

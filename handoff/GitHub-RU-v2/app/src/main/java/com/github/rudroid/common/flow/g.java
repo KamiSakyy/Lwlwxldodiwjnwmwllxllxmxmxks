@@ -4,7 +4,7 @@ package com.github.rudroid.common.flow;
 final class g extends Throwable {
 
     /* renamed from: r, reason: collision with root package name */
-    public Object f9314r;
+    public final Object f9314r;
 
     public g(Object obj) {
         this.f9314r = obj;

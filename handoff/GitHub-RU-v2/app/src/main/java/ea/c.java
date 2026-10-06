@@ -4,7 +4,7 @@ package ea;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f22180a;
+    public final String f22180a;
 
     public c(String str) {
         k71.k.g(str, "value");

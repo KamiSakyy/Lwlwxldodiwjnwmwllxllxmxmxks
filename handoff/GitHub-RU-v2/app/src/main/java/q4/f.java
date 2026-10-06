@@ -4,22 +4,22 @@ package q4;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f30943a;
+    public final String f30943a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f30944b;
+    public final int f30944b;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean f30945c;
+    public final boolean f30945c;
 
     /* renamed from: d, reason: collision with root package name */
-    public String f30946d;
+    public final String f30946d;
 
     /* renamed from: e, reason: collision with root package name */
-    public int f30947e;
+    public final int f30947e;
 
     /* renamed from: f, reason: collision with root package name */
-    public int f30948f;
+    public final int f30948f;
 
     public f(int i, int i10, int i11, String str, String str2, boolean z10) {
         this.f30943a = str;

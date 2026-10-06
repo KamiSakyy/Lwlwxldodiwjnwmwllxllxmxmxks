@@ -7,7 +7,7 @@ import y71.i;
 public final class c implements n5.f {
 
     /* renamed from: a, reason: collision with root package name */
-    public n5.f f31716a;
+    public final n5.f f31716a;
 
     public c(n5.f fVar) {
         this.f31716a = fVar;

@@ -10,7 +10,7 @@ public final class v0 {
     public static final /* synthetic */ int f21395c = 0;
 
     /* renamed from: a, reason: collision with root package name */
-    public long f21396a;
+    public final long f21396a;
 
     public static final boolean a(long j10, long j11) {
         return j10 == j11;

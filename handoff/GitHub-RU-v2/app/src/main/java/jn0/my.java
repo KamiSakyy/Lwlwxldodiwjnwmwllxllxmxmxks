@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class my {
-    public String a;
-    public ky b;
-    public String c;
+    public final String a;
+    public final ky b;
+    public final String c;
 
     public my(String str, ky kyVar, String str2) {
         this.a = str;

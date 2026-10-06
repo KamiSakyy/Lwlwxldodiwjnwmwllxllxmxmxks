@@ -18,8 +18,8 @@ import yz0.j5;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g extends m0 {
-    public IssueTemplatesActivity d;
-    public ArrayList e;
+    public final IssueTemplatesActivity d;
+    public final ArrayList e;
 
     public g(IssueTemplatesActivity issueTemplatesActivity) {
         this.d = issueTemplatesActivity;
@@ -127,5 +127,4 @@ public final class g extends m0 {
         }
     }
     public Object n() { return null; }
-    public Object D(boolean) { return null; }
 }

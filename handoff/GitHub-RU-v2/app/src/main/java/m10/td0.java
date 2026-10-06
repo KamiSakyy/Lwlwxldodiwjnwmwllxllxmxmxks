@@ -2,15 +2,15 @@ package m10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class td0 {
-    public aa1.b a;
-    public aa1.b b;
-    public aa1.b c;
-    public aa1.b d;
-    public aa1.b e;
-    public aa1.b f;
-    public aa1.b g;
-    public aa1.b h;
-    public String i;
+    public final aa1.b a;
+    public final aa1.b b;
+    public final aa1.b c;
+    public final aa1.b d;
+    public final aa1.b e;
+    public final aa1.b f;
+    public final aa1.b g;
+    public final aa1.b h;
+    public final String i;
 
     public td0(aa.u0 u0Var, aa.u0 u0Var2, aa.u0 u0Var3, aa.u0 u0Var4, aa.u0 u0Var5, aa.u0 u0Var6, String str) {
         k71.k.g(str, "shortcutId");

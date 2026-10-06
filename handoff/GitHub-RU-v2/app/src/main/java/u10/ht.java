@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ht {
-    public String a;
-    public ct b;
-    public bt c;
+    public final String a;
+    public final ct b;
+    public final bt c;
 
     public ht(String str, ct ctVar, bt btVar) {
         k71.k.g(str, "__typename");

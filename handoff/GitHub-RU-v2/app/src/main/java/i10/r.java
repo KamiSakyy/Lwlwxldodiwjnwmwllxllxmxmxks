@@ -5,10 +5,10 @@ import m10.wn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r {
-    public int a;
-    public String b;
-    public boolean c;
-    public wn d;
+    public final int a;
+    public final String b;
+    public final boolean c;
+    public final wn d;
 
     public r(int i, String str, boolean z, wn wnVar) {
         this.a = i;

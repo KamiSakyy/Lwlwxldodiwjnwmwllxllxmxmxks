@@ -6,9 +6,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r2 implements aa.w0 {
     public static final n2 Companion = new n2();
-    public String r;
-    public String s;
-    public aa1.b t;
+    public final String r;
+    public final String s;
+    public final aa1.b t;
 
     public r2(aa1.b bVar, String str, String str2) {
         k71.k.g(str, "repositoryOwner");

@@ -18,7 +18,7 @@ import v71.b0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SupportBottomSheetDialog extends BaseBottomSheetDialog implements f3 {
-    public l1 V0;
+    public final l1 V0;
     public MenuItem W0;
     public ProgressActionView X0;
 
@@ -125,5 +125,4 @@ public final class SupportBottomSheetDialog extends BaseBottomSheetDialog implem
         return null;
     }
     public Object s4() { return null; }
-    public Object G4(Object) { return null; }
 }

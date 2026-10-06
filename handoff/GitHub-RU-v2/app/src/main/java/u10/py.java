@@ -6,8 +6,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class py implements aaShadow.n0 {
     public static final my Companion = new my();
-    public String r;
-    public ArrayList s;
+    public final String r;
+    public final ArrayList s;
 
     public py(String str, ArrayList arrayList) {
         k71.k.g(str, "assignableId");

@@ -18,7 +18,7 @@ import w61.i;
 public final class SerializableProjectV2FieldList implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public ArrayList f12106r;
+    public final ArrayList f12106r;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<SerializableProjectV2FieldList> CREATOR = new a();
 

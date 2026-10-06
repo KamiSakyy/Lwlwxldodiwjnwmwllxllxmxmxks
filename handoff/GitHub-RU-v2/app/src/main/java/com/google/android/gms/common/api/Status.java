@@ -15,10 +15,10 @@ import z11.b;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class Status extends a implements ReflectedParcelable {
     public static final Parcelable.Creator<Status> CREATOR = new g(1);
-    public int r;
-    public String s;
-    public PendingIntent t;
-    public b u;
+    public final int r;
+    public final String s;
+    public final PendingIntent t;
+    public final b u;
 
     public Status(int i, String str, PendingIntent pendingIntent, b bVar) {
         this.r = i;

@@ -6,12 +6,12 @@ import com.github.service.models.response.Avatar;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k {
-    public String a;
-    public int b;
-    public int c;
-    public Avatar d;
-    public String e;
-    public j f;
+    public final String a;
+    public final int b;
+    public final int c;
+    public final Avatar d;
+    public final String e;
+    public final j f;
 
     public k(String str, int i, int i2, Avatar avatar, String str2, j jVar) {
         this.a = str;

@@ -14,7 +14,7 @@ public final class c {
     public final HashMap f2832a = new HashMap();
 
     /* renamed from: b, reason: collision with root package name */
-    public HashMap f2833b;
+    public final HashMap f2833b;
 
     public c(HashMap hashMap) {
         this.f2833b = hashMap;
@@ -52,5 +52,4 @@ public final class c {
         }
     }
     public Object v(Object p1) { return null; }
-    public Object v(Object) { return null; }
 }

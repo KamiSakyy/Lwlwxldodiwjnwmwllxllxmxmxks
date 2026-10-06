@@ -6,8 +6,8 @@ import pz0.sk;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements aa.n0 {
     public static final b Companion = new b();
-    public String r;
-    public String s;
+    public final String r;
+    public final String s;
 
     public e(String str, String str2) {
         k71.k.g(str, "projectId");

@@ -2,12 +2,12 @@ package y41;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b1 extends e2 {
-    public Double a;
-    public int b;
-    public boolean c;
-    public int d;
-    public long e;
-    public long f;
+    public final Double a;
+    public final int b;
+    public final boolean c;
+    public final int d;
+    public final long e;
+    public final long f;
 
     public b1(Double d, int i, boolean z, int i2, long j, long j2) {
         this.a = d;

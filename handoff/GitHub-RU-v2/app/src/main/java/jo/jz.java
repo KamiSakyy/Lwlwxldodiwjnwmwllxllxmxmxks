@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class jz {
-    public String a;
-    public String b;
-    public dw.l1 c;
+    public final String a;
+    public final String b;
+    public final dw.l1 c;
 
     public jz(String str, String str2, dw.l1 l1Var) {
         this.a = str;

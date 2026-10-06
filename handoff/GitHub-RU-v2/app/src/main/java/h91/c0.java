@@ -7,7 +7,7 @@ import java.io.OutputStream;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class c0 extends OutputStream {
     public final /* synthetic */ int r = 0;
-    public Object s;
+    public final Object s;
 
     public c0(FileOutputStream fileOutputStream) {
         this.s = fileOutputStream;

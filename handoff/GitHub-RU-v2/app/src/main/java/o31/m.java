@@ -8,7 +8,7 @@ import java.lang.ref.WeakReference;
 public final class m {
     public float c;
     public float d;
-    public WeakReference f;
+    public final WeakReference f;
     public r31.d g;
     public final TextPaint a = new TextPaint(1);
     public final i31.b b = new i31.b(1, this);

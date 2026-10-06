@@ -5,5 +5,5 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes.dex */
 public interface l0 {
     List u(Integer num);
-    public Class x(Object p1) { return null; }
+    public Object x(Object p1) { return null; }
 }

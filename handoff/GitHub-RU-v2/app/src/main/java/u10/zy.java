@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zy implements aaShadow.n0 {
     public static final vy Companion = new vy();
-    public hc0.ot r;
+    public final hc0.ot r;
 
     public zy(hc0.ot otVar) {
         this.r = otVar;

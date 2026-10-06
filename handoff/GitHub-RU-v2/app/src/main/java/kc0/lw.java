@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class lw implements aaShadow.v0 {
-    public mw a;
+    public final mw a;
 
     public lw(mw mwVar) {
         this.a = mwVar;

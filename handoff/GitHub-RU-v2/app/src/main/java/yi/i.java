@@ -2,8 +2,8 @@ package yi;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i {
-    public int a;
-    public String b;
+    public final int a;
+    public final String b;
 
     public i(String str, int i) {
         this.a = i;

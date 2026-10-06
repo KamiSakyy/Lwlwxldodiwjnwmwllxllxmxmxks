@@ -4,7 +4,7 @@ package b2;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f3325a;
+    public final int f3325a;
 
     public static String a(int i) {
         return i == 1 ? "Next" : i == 2 ? "Previous" : i == 3 ? "Left" : i == 4 ? "Right" : i == 5 ? "Up" : i == 6 ? "Down" : i == 7 ? "Enter" : i == 8 ? "Exit" : "Invalid FocusDirection";

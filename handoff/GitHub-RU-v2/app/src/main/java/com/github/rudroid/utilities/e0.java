@@ -11,6 +11,4 @@ public final class e0<T> implements Comparator {
     public Object h(Object p1) { return null; }
     public Object s(Object p1, Object p2) { return null; }
     public Object v = null;
-    public Object h(Object) { return null; }
-    public Object s(Object, Object) { return null; }
 }

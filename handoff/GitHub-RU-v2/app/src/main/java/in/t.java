@@ -6,11 +6,11 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t {
-    public Uri a;
-    public String b;
-    public long c;
-    public String d;
-    public ContentResolver e;
+    public final Uri a;
+    public final String b;
+    public final long c;
+    public final String d;
+    public final ContentResolver e;
 
     public t(Uri uri, String str, long j, String str2, ContentResolver contentResolver) {
         k71.k.g(uri, "uri");

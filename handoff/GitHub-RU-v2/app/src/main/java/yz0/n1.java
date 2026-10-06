@@ -6,22 +6,22 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n1 {
-    public String a;
-    public String b;
-    public int c;
-    public int d;
-    public boolean e;
-    public List f;
-    public boolean g;
-    public boolean h;
-    public boolean i;
-    public PatchStatus j;
-    public boolean k;
-    public String l;
-    public Integer m;
-    public String n;
-    public RepoFileType o;
-    public List p;
+    public final String a;
+    public final String b;
+    public final int c;
+    public final int d;
+    public final boolean e;
+    public final List f;
+    public final boolean g;
+    public final boolean h;
+    public final boolean i;
+    public final PatchStatus j;
+    public final boolean k;
+    public final String l;
+    public final Integer m;
+    public final String n;
+    public final RepoFileType o;
+    public final List p;
 
     public n1(String str, String str2, int i, int i2, boolean z, List list, boolean z2, boolean z3, boolean z4, PatchStatus patchStatus, boolean z5, String str3, Integer num, String str4, RepoFileType repoFileType, List list2) {
         k71.k.g(patchStatus, "status");

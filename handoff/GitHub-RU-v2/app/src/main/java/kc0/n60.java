@@ -2,17 +2,17 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n60 {
-    public String a;
-    public String b;
-    public String c;
-    public gn0.xc d;
-    public String e;
-    public o60 f;
-    public r60 g;
-    public boolean h;
-    public yd0.i i;
-    public sg0.j j;
-    public se0.c k;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final gn0.xc d;
+    public final String e;
+    public final o60 f;
+    public final r60 g;
+    public final boolean h;
+    public final yd0.i i;
+    public final sg0.j j;
+    public final se0.c k;
 
     public n60(String str, String str2, String str3, gn0.xc xcVar, String str4, o60 o60Var, r60 r60Var, boolean z, yd0.i iVar, sg0.j jVar, se0.c cVar) {
         this.a = str;

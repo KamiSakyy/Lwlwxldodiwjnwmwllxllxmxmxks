@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class pf {
-    public String a;
-    public boolean b;
-    public boolean c;
+    public final String a;
+    public final boolean b;
+    public final boolean c;
 
     public pf(String str, boolean z, boolean z2) {
         this.a = str;

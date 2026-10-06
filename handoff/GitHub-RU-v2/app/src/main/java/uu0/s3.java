@@ -2,9 +2,9 @@ package uu0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s3 {
-    public String a;
-    public t3 b;
-    public u3 c;
+    public final String a;
+    public final t3 b;
+    public final u3 c;
 
     public s3(String str, t3 t3Var, u3 u3Var) {
         k71.k.g(str, "__typename");

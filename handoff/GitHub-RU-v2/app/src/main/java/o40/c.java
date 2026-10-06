@@ -6,13 +6,13 @@ import hc0.fm;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public String a;
-    public int b;
-    public String c;
-    public fm d;
-    public f e;
-    public boolean f;
-    public String g;
+    public final String a;
+    public final int b;
+    public final String c;
+    public final fm d;
+    public final f e;
+    public final boolean f;
+    public final String g;
 
     public c(String str, int i, String str2, fm fmVar, f fVar, boolean z, String str3) {
         this.a = str;

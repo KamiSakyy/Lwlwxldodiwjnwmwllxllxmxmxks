@@ -5,10 +5,10 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o implements h0 {
-    public n a;
-    public k b;
-    public String c;
-    public String d;
+    public final n a;
+    public final k b;
+    public final String c;
+    public final String d;
 
     public o(n nVar, k kVar, String str, String str2) {
         this.a = nVar;

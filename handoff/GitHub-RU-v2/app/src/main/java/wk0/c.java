@@ -2,9 +2,9 @@ package wk0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c implements aa.h0 {
-    public a a;
-    public String b;
-    public String c;
+    public final a a;
+    public final String b;
+    public final String c;
 
     public c(a aVar, String str, String str2) {
         this.a = aVar;

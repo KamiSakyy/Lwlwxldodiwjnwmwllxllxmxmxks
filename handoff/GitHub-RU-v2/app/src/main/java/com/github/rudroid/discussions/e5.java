@@ -4,10 +4,10 @@ package com.github.rudroid.discussions;
 public final class e5 extends za implements le.a {
 
     /* renamed from: t, reason: collision with root package name */
-    public int f11282t;
+    public final int f11282t;
 
     /* renamed from: u, reason: collision with root package name */
-    public String f11283u;
+    public final String f11283u;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public e5(String str, int i) {

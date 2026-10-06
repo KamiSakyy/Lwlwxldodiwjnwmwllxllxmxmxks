@@ -12,10 +12,10 @@ import v71.v;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public m f24378a;
+    public final m f24378a;
 
     /* renamed from: b, reason: collision with root package name */
-    public v f24379b;
+    public final v f24379b;
 
     /* renamed from: c, reason: collision with root package name */
     public final Handler f24380c = new Handler(Looper.getMainLooper());

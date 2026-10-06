@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class xq implements aaShadow.v0 {
-    public ar a;
-    public String b;
-    public String c;
+    public final ar a;
+    public final String b;
+    public final String c;
 
     public xq(ar arVar, String str, String str2) {
         this.a = arVar;

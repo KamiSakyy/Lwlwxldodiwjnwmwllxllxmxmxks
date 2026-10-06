@@ -5,7 +5,7 @@ import java.io.File;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l {
-    public Context a;
+    public final Context a;
 
     public l(Context context) {
         this.a = context;

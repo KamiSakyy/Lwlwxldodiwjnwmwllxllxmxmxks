@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r50 implements aaShadow.m0 {
-    public s50 a;
+    public final s50 a;
 
     public r50(s50 s50Var) {
         this.a = s50Var;

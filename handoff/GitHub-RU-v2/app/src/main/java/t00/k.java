@@ -13,10 +13,10 @@ import jo.mi0;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k implements z01.c, mi0, yf0 {
     public final /* synthetic */ int r;
-    public com.github.service.wrapper.b s;
-    public com.github.service.wrapper.j t;
-    public z01.p0 u;
-    public v71.v v;
+    public final com.github.service.wrapper.b s;
+    public final com.github.service.wrapper.j t;
+    public final z01.p0 u;
+    public final v71.v v;
 
     public k(int i, com.github.service.wrapper.b bVar, com.github.service.wrapper.j jVar, v71.v vVar, z01.p0 p0Var) {
         this.r = i;

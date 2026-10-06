@@ -10,7 +10,7 @@ public final class i implements e0 {
     public static final b f24824b = new b();
 
     /* renamed from: a, reason: collision with root package name */
-    public com.apollographql.apollo.interceptor.b f24825a;
+    public final com.apollographql.apollo.interceptor.b f24825a;
 
     public i(com.apollographql.apollo.interceptor.b bVar) {
         this.f24825a = bVar;

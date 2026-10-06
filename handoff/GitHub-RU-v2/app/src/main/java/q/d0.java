@@ -12,7 +12,7 @@ import android.util.AttributeSet;
 public final class d0 extends y {
 
     /* renamed from: e, reason: collision with root package name */
-    public c0 f30560e;
+    public final c0 f30560e;
 
     /* renamed from: f, reason: collision with root package name */
     public Drawable f30561f;

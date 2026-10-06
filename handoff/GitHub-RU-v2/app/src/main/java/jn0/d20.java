@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d20 {
-    public String a;
-    public e20 b;
-    public f20 c;
-    public kw0.a d;
+    public final String a;
+    public final e20 b;
+    public final f20 c;
+    public final kw0.a d;
 
     public d20(String str, e20 e20Var, f20 f20Var, kw0.a aVar) {
         k71.k.g(str, "__typename");

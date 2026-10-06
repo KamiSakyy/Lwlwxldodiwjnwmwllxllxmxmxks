@@ -10,11 +10,11 @@ import java.util.logging.Logger;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class x implements Closeable {
     public static final Logger w = Logger.getLogger(g.class.getName());
-    public h91.i r;
-    public h91.h s;
+    public final h91.i r;
+    public final h91.h s;
     public int t;
     public boolean u;
-    public e v;
+    public final e v;
 
     public x(d0 d0Var) {
         k71.k.g(d0Var, "sink");

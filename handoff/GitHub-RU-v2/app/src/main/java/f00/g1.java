@@ -6,13 +6,13 @@ import tz.x1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g1 implements aa.h0 {
-    public String a;
-    public String b;
-    public String c;
-    public ZonedDateTime d;
-    public boolean e;
-    public ew f;
-    public x1 g;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final ZonedDateTime d;
+    public final boolean e;
+    public final ew f;
+    public final x1 g;
 
     public g1(String str, String str2, String str3, ZonedDateTime zonedDateTime, boolean z, ew ewVar, x1 x1Var) {
         this.a = str;

@@ -7,13 +7,13 @@ import hc0.lc;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public String a;
-    public int b;
-    public String c;
-    public jc d;
-    public g e;
-    public lc f;
-    public String g;
+    public final String a;
+    public final int b;
+    public final String c;
+    public final jc d;
+    public final g e;
+    public final lc f;
+    public final String g;
 
     public b(String str, int i, String str2, jc jcVar, g gVar, lc lcVar, String str3) {
         this.a = str;

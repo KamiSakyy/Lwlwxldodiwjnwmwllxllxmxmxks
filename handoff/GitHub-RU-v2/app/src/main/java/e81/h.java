@@ -23,8 +23,8 @@ public class h {
     private volatile /* synthetic */ long deqIdx$volatile;
     private volatile /* synthetic */ long enqIdx$volatile;
     private volatile /* synthetic */ Object head$volatile;
-    public int r;
-    public com.github.rudroid.utilities.ui.emojipicker.d s;
+    public final int r;
+    public final com.github.rudroid.utilities.ui.emojipicker.d s;
     private volatile /* synthetic */ Object tail$volatile;
 
     public h(int i, int i2) {

@@ -12,10 +12,10 @@ public final class DiscussionCategoryChooserRoute {
     public static final Companion Companion = new Companion();
 
     /* renamed from: a, reason: collision with root package name */
-    public String f11560a;
+    public final String f11560a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f11561b;
+    public final String f11561b;
 
     public static final class Companion {
         public final KSerializer serializer() {

@@ -8,11 +8,11 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements h0 {
-    public t6 a;
-    public String b;
-    public LocalTime c;
-    public LocalTime d;
-    public String e;
+    public final t6 a;
+    public final String b;
+    public final LocalTime c;
+    public final LocalTime d;
+    public final String e;
 
     public a(t6 t6Var, String str, LocalTime localTime, LocalTime localTime2, String str2) {
         this.a = t6Var;

@@ -4,11 +4,11 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x2 {
-    public e1 a;
-    public String b;
-    public String c;
-    public String d;
-    public List e;
+    public final e1 a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final List e;
 
     public x2(e1 e1Var, String str, String str2, String str3, List list) {
         this.a = e1Var;

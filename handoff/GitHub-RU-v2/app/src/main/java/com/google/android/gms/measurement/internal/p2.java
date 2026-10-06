@@ -14,7 +14,7 @@ import java.util.Objects;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p2 implements Application.ActivityLifecycleCallbacks {
     public final /* synthetic */ int r;
-    public Object s;
+    public final Object s;
 
     public p2(t2 t2Var) {
         this.r = 0;

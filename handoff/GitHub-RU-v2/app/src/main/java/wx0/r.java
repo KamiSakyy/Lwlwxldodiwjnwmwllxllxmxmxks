@@ -2,9 +2,9 @@ package wx0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r {
-    public String a;
-    public u0 b;
-    public kw0.a c;
+    public final String a;
+    public final u0 b;
+    public final kw0.a c;
 
     public r(String str, u0 u0Var, kw0.a aVar) {
         k71.k.g(str, "__typename");

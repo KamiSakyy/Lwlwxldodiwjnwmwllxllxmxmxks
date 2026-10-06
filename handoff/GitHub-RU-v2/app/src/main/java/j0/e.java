@@ -4,7 +4,7 @@ package j0;
 public final class e implements h {
 
     /* renamed from: a, reason: collision with root package name */
-    public d f26275a;
+    public final d f26275a;
 
     public e(d dVar) {
         this.f26275a = dVar;

@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class in implements aaShadow.v0 {
-    public mn a;
+    public final mn a;
 
     public in(mn mnVar) {
         this.a = mnVar;

@@ -7,7 +7,7 @@ import android.util.Log;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b0 extends Binder {
-    public s21.a f;
+    public final s21.a f;
 
     public b0(s21.a aVar) {
         this.f = aVar;

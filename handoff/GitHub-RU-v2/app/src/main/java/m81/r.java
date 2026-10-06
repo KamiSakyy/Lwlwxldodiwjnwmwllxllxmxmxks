@@ -12,12 +12,12 @@ import kotlinx.serialization.encoding.Encoder;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class r extends d5 {
-    public n4 a;
-    public l81.c b;
-    public u c;
-    public r[] d;
-    public b21.l e;
-    public l81.h f;
+    public final n4 a;
+    public final l81.c b;
+    public final u c;
+    public final r[] d;
+    public final b21.l e;
+    public final l81.h f;
     public boolean g;
     public String h;
     public String i;

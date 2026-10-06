@@ -13,7 +13,7 @@ public abstract class c {
     public static final class b extends c {
 
         /* renamed from: a, reason: collision with root package name */
-        public j8 f17253a;
+        public final j8 f17253a;
 
         public b(j8 j8Var) {
             this.f17253a = j8Var;
@@ -39,7 +39,7 @@ public abstract class c {
     public static final class C0051c extends c {
 
         /* renamed from: a, reason: collision with root package name */
-        public l8 f17254a;
+        public final l8 f17254a;
 
         public C0051c(l8 l8Var) {
             this.f17254a = l8Var;

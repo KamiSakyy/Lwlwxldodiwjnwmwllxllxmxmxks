@@ -10,16 +10,16 @@ public final class m implements Executor {
     public final /* synthetic */ int f22148r;
 
     /* renamed from: s, reason: collision with root package name */
-    public Executor f22149s;
+    public final Executor f22149s;
 
     /* renamed from: t, reason: collision with root package name */
-    public ArrayDeque f22150t;
+    public final ArrayDeque f22150t;
 
     /* renamed from: u, reason: collision with root package name */
     public Runnable f22151u;
 
     /* renamed from: v, reason: collision with root package name */
-    public Object f22152v;
+    public final Object f22152v;
 
     public m(Executor executor, int i) {
         this.f22148r = i;
@@ -117,7 +117,4 @@ public final class m implements Executor {
         this.f22150t = new ArrayDeque();
         this.f22149s = mVar;
     }
-    public Object B(Object) { return null; }
-    public Object B(Object) { return null; }
-    public Object I() { return null; }
 }

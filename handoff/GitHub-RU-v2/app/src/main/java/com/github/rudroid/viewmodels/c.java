@@ -4,9 +4,9 @@ import android.app.Application;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c implements b {
-    public Application r;
-    public y71.y1 s;
-    public y71.y1 t;
+    public final Application r;
+    public final y71.y1 s;
+    public final y71.y1 t;
 
     public c(Application application) {
         this.r = application;
@@ -15,5 +15,4 @@ public final class c implements b {
         this.t = c;
     }
     public Object v(Object p1) { return null; }
-    public Object v(Object) { return null; }
 }

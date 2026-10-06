@@ -9,7 +9,7 @@ import y71.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public i a;
+    public final i a;
 
     public c(i iVar) {
         k.g(iVar, "repository");

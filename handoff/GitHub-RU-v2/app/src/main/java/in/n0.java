@@ -3,10 +3,10 @@ package in;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n0 {
     public static final k0 Companion = new k0();
-    public q81.u a;
-    public v71.v b;
-    public oa.j c;
-    public qe.a d;
+    public final q81.u a;
+    public final v71.v b;
+    public final oa.j c;
+    public final qe.a d;
 
     public n0(q81.u uVar, oa.j jVar, qe.a aVar) {
         c81.e eVar = v71.l0.a;

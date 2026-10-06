@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class vu {
-    public av a;
-    public List b;
+    public final av a;
+    public final List b;
 
     public vu(av avVar, List list) {
         this.a = avVar;

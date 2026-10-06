@@ -6,9 +6,9 @@ import java.util.regex.Pattern;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t {
     public static final Pattern d = Pattern.compile("[a-zA-Z0-9-_.~%]{1,900}");
-    public String a;
-    public String b;
-    public String c;
+    public final String a;
+    public final String b;
+    public final String c;
 
     public t(String str, String str2) {
         String substring = (str2 == null || !str2.startsWith("/topics/")) ? str2 : str2.substring(8);
@@ -35,8 +35,4 @@ public final class t {
     public Object g(Object p1, Object p2) { return null; }
     public Object i(Object p1, Object p2) { return null; }
     public Object k(Object p1, Object p2) { return null; }
-    public Object d(Object) { return null; }
-    public Object g(Object, long) { return null; }
-    public Object i(Object, long) { return null; }
-    public Object k(Object, int) { return null; }
 }

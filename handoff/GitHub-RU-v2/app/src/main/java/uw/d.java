@@ -11,18 +11,18 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements h0 {
-    public String a;
-    public String b;
-    public int c;
-    public ZonedDateTime d;
-    public boolean e;
-    public String f;
-    public v90 g;
-    public String h;
-    public String i;
-    public String j;
-    public c k;
-    public String l;
+    public final String a;
+    public final String b;
+    public final int c;
+    public final ZonedDateTime d;
+    public final boolean e;
+    public final String f;
+    public final v90 g;
+    public final String h;
+    public final String i;
+    public final String j;
+    public final c k;
+    public final String l;
 
     public d(String str, String str2, int i, ZonedDateTime zonedDateTime, boolean z, String str3, v90 v90Var, String str4, String str5, String str6, c cVar, String str7) {
         this.a = str;

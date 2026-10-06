@@ -10,8 +10,8 @@ import pz0.su;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w implements w0 {
     public static final s Companion = new s();
-    public String r;
-    public bt s;
+    public final String r;
+    public final bt s;
 
     public w(String str, bt btVar) {
         k71.k.g(str, "id");

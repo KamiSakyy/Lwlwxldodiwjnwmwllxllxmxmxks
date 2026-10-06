@@ -5,7 +5,7 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n1 {
-    public boolean a;
+    public final boolean a;
 
     public n1(boolean z) {
         String str = Build.VERSION.RELEASE;

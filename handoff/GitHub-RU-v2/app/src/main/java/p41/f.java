@@ -21,13 +21,13 @@ import z70.y1;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f implements b {
     public static final e h = new e(0);
-    public HashMap a;
-    public HashMap b;
-    public HashMap c;
-    public HashSet d;
-    public j e;
-    public AtomicReference f;
-    public y1 g;
+    public final HashMap a;
+    public final HashMap b;
+    public final HashMap c;
+    public final HashSet d;
+    public final j e;
+    public final AtomicReference f;
+    public final y1 g;
 
     public f(ArrayList arrayList, ArrayList arrayList2, y1 y1Var) {
         q41.k kVar = q41.k.r;

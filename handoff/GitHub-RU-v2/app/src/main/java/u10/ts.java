@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ts {
-    public vs a;
+    public final vs a;
 
     public ts(vs vsVar) {
         this.a = vsVar;

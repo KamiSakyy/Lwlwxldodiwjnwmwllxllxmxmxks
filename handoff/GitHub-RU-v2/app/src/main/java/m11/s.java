@@ -10,10 +10,10 @@ import java.util.concurrent.Executor;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s {
     public static volatile k e;
-    public v11.a a;
-    public v11.a b;
-    public r11.e c;
-    public d51.d d;
+    public final v11.a a;
+    public final v11.a b;
+    public final r11.e c;
+    public final d51.d d;
 
     public s(v11.a aVar, v11.a aVar2, r11.e eVar, d51.d dVar, w51.r rVar) {
         this.a = aVar;

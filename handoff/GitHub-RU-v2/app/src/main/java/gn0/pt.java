@@ -40,7 +40,7 @@ public final class pt {
     public static final pt x;
     public static final pt y;
     public static final pt z;
-    public String r;
+    public final String r;
 
     static {
         pt ptVar = new pt("ALERT", 0, "ALERT");

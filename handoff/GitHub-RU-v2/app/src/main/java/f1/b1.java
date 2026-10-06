@@ -6,13 +6,13 @@ import android.graphics.PathMeasure;
 public final class b1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public d2.i f22507a;
+    public final d2.i f22507a;
 
     /* renamed from: b, reason: collision with root package name */
-    public d2.j f22508b;
+    public final d2.j f22508b;
 
     /* renamed from: c, reason: collision with root package name */
-    public d2.i f22509c;
+    public final d2.i f22509c;
 
     public b1() {
         d2.i a10 = d2.k.a();

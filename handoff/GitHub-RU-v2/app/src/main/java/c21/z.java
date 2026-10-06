@@ -7,7 +7,7 @@ import android.os.RemoteException;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z extends p {
-    public IBinder g;
+    public final IBinder g;
     public final /* synthetic */ e h;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

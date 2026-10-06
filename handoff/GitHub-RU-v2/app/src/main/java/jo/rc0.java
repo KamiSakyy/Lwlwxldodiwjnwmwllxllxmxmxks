@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rc0 {
-    public String a;
-    public ss.a b;
+    public final String a;
+    public final ss.a b;
 
     public rc0(String str, ss.a aVar) {
         this.a = str;

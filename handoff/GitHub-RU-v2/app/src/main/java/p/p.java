@@ -8,7 +8,7 @@ import android.widget.FrameLayout;
 public final class p extends FrameLayout implements o.c {
 
     /* renamed from: r, reason: collision with root package name */
-    public CollapsibleActionView f30300r;
+    public final CollapsibleActionView f30300r;
 
     /* JADX WARN: Multi-variable type inference failed */
     public p(View view) {

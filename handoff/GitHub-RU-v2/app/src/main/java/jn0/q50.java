@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q50 {
-    public String a;
-    public String b;
-    public uu0.v5 c;
+    public final String a;
+    public final String b;
+    public final uu0.v5 c;
 
     public q50(String str, String str2, uu0.v5 v5Var) {
         k71.k.g(str, "__typename");

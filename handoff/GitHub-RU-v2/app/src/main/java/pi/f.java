@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f implements p {
-    public String a;
-    public Object b;
+    public final String a;
+    public final Object b;
 
     public f(String str, List list) {
         this.a = str;

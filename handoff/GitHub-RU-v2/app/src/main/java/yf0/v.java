@@ -6,17 +6,17 @@ import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v implements aa.h0 {
-    public String a;
-    public String b;
-    public boolean c;
-    public boolean d;
-    public boolean e;
-    public u f;
-    public String g;
-    public se0.c h;
-    public aj0.c i;
-    public yh0.a j;
-    public qh0.a k;
+    public final String a;
+    public final String b;
+    public final boolean c;
+    public final boolean d;
+    public final boolean e;
+    public final u f;
+    public final String g;
+    public final se0.c h;
+    public final aj0.c i;
+    public final yh0.a j;
+    public final qh0.a k;
 
     public v(String str, String str2, boolean z, boolean z2, boolean z3, u uVar, String str3, se0.c cVar, aj0.c cVar2, yh0.a aVar, qh0.a aVar2) {
         this.a = str;

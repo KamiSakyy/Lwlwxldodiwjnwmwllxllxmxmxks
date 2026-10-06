@@ -5,7 +5,7 @@ import java.util.Map;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 final class d0<T> implements y<T> {
-    public Map a;
+    public final Map a;
 
     public d0(Map map) {
         k71.k.g(map, "anchors");

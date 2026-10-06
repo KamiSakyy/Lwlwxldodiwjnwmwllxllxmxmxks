@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e80 {
-    public String a;
-    public d80 b;
-    public String c;
-    public lv.c d;
+    public final String a;
+    public final d80 b;
+    public final String c;
+    public final lv.c d;
 
     public e80(String str, d80 d80Var, String str2, lv.c cVar) {
         this.a = str;

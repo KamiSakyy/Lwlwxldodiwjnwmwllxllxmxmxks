@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class os {
-    public ks a;
+    public final ks a;
 
     public os(ks ksVar) {
         this.a = ksVar;

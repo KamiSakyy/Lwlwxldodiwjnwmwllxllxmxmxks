@@ -6,10 +6,10 @@ import k71.k;
 public final class h {
 
     /* renamed from: a, reason: collision with root package name */
-    public f f29231a;
+    public final f f29231a;
 
     /* renamed from: b, reason: collision with root package name */
-    public i f29232b;
+    public final i f29232b;
 
     public h(f fVar, i iVar) {
         this.f29231a = fVar;

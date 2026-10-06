@@ -7,8 +7,8 @@ import m10.p00;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i0 implements aa.w0 {
     public static final e0 Companion = new e0();
-    public String r;
-    public aa.u0 s;
+    public final String r;
+    public final aa.u0 s;
 
     public i0(aa.u0 u0Var, String str) {
         this.r = str;

@@ -865,5 +865,5 @@ public abstract class t {
     public Object g() { return null; }
     public Object k() { return null; }
     public Object l() { return null; }
-    public static Object x() { return null; }
+    public Object x() { return null; }
 }

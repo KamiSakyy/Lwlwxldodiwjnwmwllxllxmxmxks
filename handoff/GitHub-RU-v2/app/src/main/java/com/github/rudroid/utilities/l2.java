@@ -6,7 +6,7 @@ import android.text.style.ReplacementSpan;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l2 extends ReplacementSpan {
-    public int r;
+    public final int r;
 
     public l2(int i) {
         this.r = i;

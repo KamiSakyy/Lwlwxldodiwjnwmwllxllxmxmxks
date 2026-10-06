@@ -4,9 +4,9 @@ import pz0.n30;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h1 {
-    public n30 a;
-    public String b;
-    public String c;
+    public final n30 a;
+    public final String b;
+    public final String c;
 
     public h1(String str, String str2, n30 n30Var) {
         this.a = n30Var;

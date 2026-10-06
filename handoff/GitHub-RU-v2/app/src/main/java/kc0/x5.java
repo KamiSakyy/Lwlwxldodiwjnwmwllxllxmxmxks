@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x5 {
-    public String a;
-    public r5 b;
-    public String c;
+    public final String a;
+    public final r5 b;
+    public final String c;
 
     public x5(String str, r5 r5Var, String str2) {
         this.a = str;

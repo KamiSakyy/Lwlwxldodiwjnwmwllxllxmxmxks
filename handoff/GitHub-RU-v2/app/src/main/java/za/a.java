@@ -7,7 +7,7 @@ import q71.g;
 public final class a implements c {
 
     /* renamed from: a, reason: collision with root package name */
-    public InterfaceC0097a f34649a;
+    public final InterfaceC0097a f34649a;
 
     /* renamed from: b, reason: collision with root package name */
     public d f34650b = new d();

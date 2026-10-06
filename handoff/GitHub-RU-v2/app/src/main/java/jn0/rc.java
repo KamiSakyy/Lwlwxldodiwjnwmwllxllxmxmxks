@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class rc {
-    public String a;
-    public String b;
-    public xt0.m3 c;
-    public xt0.q3 d;
+    public final String a;
+    public final String b;
+    public final xt0.m3 c;
+    public final xt0.q3 d;
 
     public rc(String str, String str2, xt0.m3 m3Var, xt0.q3 q3Var) {
         this.a = str;

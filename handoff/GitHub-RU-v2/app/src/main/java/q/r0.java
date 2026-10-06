@@ -19,8 +19,8 @@ public abstract class r0 {
     public static boolean d(TextView textView, String str) {
         return textView.setFontVariationSettings(str);
     }
-    public static Object getHeight() { return null; }
-    public static Object getPaddingLeft() { return null; }
-    public static Object getPaddingRight() { return null; }
-    public static Object getWidth() { return null; }
+    public Object getHeight() { return null; }
+    public Object getPaddingLeft() { return null; }
+    public Object getPaddingRight() { return null; }
+    public Object getWidth() { return null; }
 }

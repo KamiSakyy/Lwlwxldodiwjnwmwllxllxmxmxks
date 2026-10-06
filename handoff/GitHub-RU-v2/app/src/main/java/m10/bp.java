@@ -73,7 +73,7 @@ public final class bp {
     public static final bp y0;
     public static final bp z;
     public static final bp z0;
-    public String r;
+    public final String r;
 
     static {
         bp bpVar = new bp("AGENT_INSTRUCTIONS_EMPTY", 0, "AGENT_INSTRUCTIONS_EMPTY");

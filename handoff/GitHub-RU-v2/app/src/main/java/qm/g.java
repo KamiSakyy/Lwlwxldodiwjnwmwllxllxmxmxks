@@ -13,7 +13,7 @@ import y71.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
-    public qj.a a;
+    public final qj.a a;
 
     public g(qj.a aVar) {
         k.g(aVar, "cachedForUserDatabase");

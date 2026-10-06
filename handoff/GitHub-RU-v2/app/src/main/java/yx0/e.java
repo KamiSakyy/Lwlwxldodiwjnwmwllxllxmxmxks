@@ -5,9 +5,9 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
-    public String a;
-    public String b;
-    public f c;
+    public final String a;
+    public final String b;
+    public final f c;
 
     public e(String str, String str2, f fVar) {
         k71.k.g(str, "__typename");
@@ -50,5 +50,5 @@ public final class e {
     public Object a(Object p1, Object p2, Object p3) { return null; }
     public Object k(Object p1, Object p2, Object p3) { return null; }
     public Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object z(Object p1, Object p2, Object p3) { return null; }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

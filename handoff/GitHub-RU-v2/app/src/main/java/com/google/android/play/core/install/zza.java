@@ -4,11 +4,11 @@ import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class zza {
-    public int a;
-    public long b;
-    public long c;
-    public int d;
-    public String e;
+    public final int a;
+    public final long b;
+    public final long c;
+    public final int d;
+    public final String e;
 
     public zza(int i, long j, long j2, int i2, String str) {
         this.a = i;

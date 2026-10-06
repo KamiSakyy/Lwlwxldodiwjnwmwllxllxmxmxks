@@ -4,8 +4,8 @@ import com.github.rudroid.settings.applock.t;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public n5.f a;
-    public t b;
+    public final n5.f a;
+    public final t b;
 
     public a(n5.f fVar, t tVar) {
         k71.k.g(fVar, "dataStore");

@@ -7,7 +7,7 @@ import android.os.Build;
 public final class d0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public Context f14203a;
+    public final Context f14203a;
 
     public d0(Context context) {
         this.f14203a = context;

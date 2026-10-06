@@ -5,7 +5,7 @@ import l7.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r extends n1 {
-    public lf u;
+    public final lf u;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public r(lf lfVar, SelectableLabelFragment selectableLabelFragment) {

@@ -4,10 +4,10 @@ package com.github.rudroid.common;
 public final class l0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f9345a;
+    public final String f9345a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f9346b;
+    public final String f9346b;
 
     public l0(String str, String str2) {
         k71.k.g(str, "message");

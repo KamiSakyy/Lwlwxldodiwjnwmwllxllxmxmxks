@@ -2,7 +2,7 @@ package l11;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r extends d0 {
-    public q a;
+    public final q a;
 
     public r(q qVar) {
         this.a = qVar;

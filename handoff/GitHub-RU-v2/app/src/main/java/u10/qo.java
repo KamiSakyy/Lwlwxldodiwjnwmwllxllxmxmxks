@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class qo {
-    public po a;
-    public String b;
-    public String c;
+    public final po a;
+    public final String b;
+    public final String c;
 
     public qo(po poVar, String str, String str2) {
         this.a = poVar;

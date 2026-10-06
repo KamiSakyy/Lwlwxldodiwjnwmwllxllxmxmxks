@@ -4,14 +4,14 @@ import java.util.Iterator;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z {
-    public oa.m a;
-    public en.c b;
-    public e0 c;
-    public k d;
-    public h0 e;
-    public com.github.rudroid.common.k f;
-    public v71.z g;
-    public e81.c h;
+    public final oa.m a;
+    public final en.c b;
+    public final e0 c;
+    public final k d;
+    public final h0 e;
+    public final com.github.rudroid.common.k f;
+    public final v71.z g;
+    public final e81.c h;
 
     public z(oa.m mVar, en.c cVar, e0 e0Var, k kVar, h0 h0Var, com.github.rudroid.common.k kVar2, v71.z zVar) {
         k71.k.g(mVar, "userManager");

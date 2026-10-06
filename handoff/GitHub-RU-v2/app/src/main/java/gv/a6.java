@@ -2,11 +2,11 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a6 {
-    public String a;
-    public String b;
-    public v5 c;
-    public s5 d;
-    public vx.a e;
+    public final String a;
+    public final String b;
+    public final v5 c;
+    public final s5 d;
+    public final vx.a e;
 
     public a6(String str, String str2, v5 v5Var, s5 s5Var, vx.a aVar) {
         k71.k.g(str, "__typename");

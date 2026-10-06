@@ -10,7 +10,7 @@ public final class ko {
     public static final ko u;
     public static final /* synthetic */ ko[] v;
     public static final /* synthetic */ d71.b w;
-    public String r;
+    public final String r;
 
     static {
         ko koVar = new ko("ASSIGNEES", 0, "ASSIGNEES");

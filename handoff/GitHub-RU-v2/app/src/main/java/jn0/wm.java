@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class wm {
-    public String a;
-    public sm b;
-    public String c;
+    public final String a;
+    public final sm b;
+    public final String c;
 
     public wm(String str, sm smVar, String str2) {
         this.a = str;

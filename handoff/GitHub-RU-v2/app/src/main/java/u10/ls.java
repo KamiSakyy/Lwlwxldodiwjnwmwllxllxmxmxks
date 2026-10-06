@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ls {
-    public ns a;
+    public final ns a;
 
     public ls(ns nsVar) {
         this.a = nsVar;

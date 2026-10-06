@@ -9,8 +9,8 @@ import m10.p00;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a0 implements w0 {
     public static final w Companion = new w();
-    public String r;
-    public String s;
+    public final String r;
+    public final String s;
 
     public a0(String str, String str2) {
         this.r = str;

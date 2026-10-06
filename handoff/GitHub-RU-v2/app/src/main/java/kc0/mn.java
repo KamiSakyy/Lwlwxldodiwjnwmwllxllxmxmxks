@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class mn {
-    public String a;
-    public ln b;
-    public String c;
+    public final String a;
+    public final ln b;
+    public final String c;
 
     public mn(String str, ln lnVar, String str2) {
         this.a = str;

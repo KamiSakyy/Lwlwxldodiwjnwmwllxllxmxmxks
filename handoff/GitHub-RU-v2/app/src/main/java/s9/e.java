@@ -4,7 +4,7 @@ package s9;
 public final class e implements i {
 
     /* renamed from: r, reason: collision with root package name */
-    public h f31772r;
+    public final h f31772r;
 
     public e(h hVar) {
         this.f31772r = hVar;

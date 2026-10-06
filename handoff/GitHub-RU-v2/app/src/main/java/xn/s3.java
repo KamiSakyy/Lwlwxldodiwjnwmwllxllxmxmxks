@@ -2,9 +2,9 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s3 implements y3 {
-    public long a;
-    public String b;
-    public String c;
+    public final long a;
+    public final String b;
+    public final String c;
 
     public s3(long j, String str, String str2) {
         k71.k.g(str, "eventType");

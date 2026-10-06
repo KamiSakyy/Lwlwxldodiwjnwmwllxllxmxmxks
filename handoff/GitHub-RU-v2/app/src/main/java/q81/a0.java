@@ -6,23 +6,23 @@ import java.io.Closeable;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a0 implements Closeable {
-    public a0 A;
-    public a0 B;
-    public long C;
-    public long D;
-    public t1 E;
-    public f0 F;
+    public final a0 A;
+    public final a0 B;
+    public final long C;
+    public final long D;
+    public final t1 E;
+    public final f0 F;
     public c G;
-    public boolean H;
-    public androidx.lifecycle.b r;
-    public v s;
-    public String t;
-    public int u;
-    public m v;
-    public n w;
-    public c0 x;
-    public j0 y;
-    public a0 z;
+    public final boolean H;
+    public final androidx.lifecycle.b r;
+    public final v s;
+    public final String t;
+    public final int u;
+    public final m v;
+    public final n w;
+    public final c0 x;
+    public final j0 y;
+    public final a0 z;
 
     public a0(androidx.lifecycle.b bVar, v vVar, String str, int i, m mVar, n nVar, c0 c0Var, j0 j0Var, a0 a0Var, a0 a0Var2, a0 a0Var3, long j, long j2, t1 t1Var, f0 f0Var) {
         k71.k.g(bVar, "request");

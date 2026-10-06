@@ -4,13 +4,13 @@ import com.github.service.models.response.discussions.type.DiscussionStateReason
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o4 extends o.b {
-    public String t;
-    public String u;
-    public boolean v;
-    public int w;
-    public String x;
-    public String y;
-    public DiscussionStateReason z;
+    public final String t;
+    public final String u;
+    public final boolean v;
+    public final int w;
+    public final String x;
+    public final String y;
+    public final DiscussionStateReason z;
 
     public o4(String str, String str2, boolean z, int i, String str3, String str4, DiscussionStateReason discussionStateReason) {
         super(str, true);

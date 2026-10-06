@@ -9,7 +9,7 @@ public final class dn {
     public static final dn t;
     public static final /* synthetic */ dn[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         dn dnVar = new dn("CHEVRON_UP", 0, "CHEVRON_UP");

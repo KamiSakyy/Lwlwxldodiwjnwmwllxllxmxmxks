@@ -9,10 +9,10 @@ import v71.b0;
 public final class r {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f30054a;
+    public final int f30054a;
 
     /* renamed from: b, reason: collision with root package name */
-    public j71.a f30055b;
+    public final j71.a f30055b;
 
     /* renamed from: c, reason: collision with root package name */
     public final ReentrantLock f30056c = new ReentrantLock();
@@ -24,13 +24,13 @@ public final class r {
     public boolean f30058e;
 
     /* renamed from: f, reason: collision with root package name */
-    public g[] f30059f;
+    public final g[] f30059f;
 
     /* renamed from: g, reason: collision with root package name */
-    public e81.i f30060g;
+    public final e81.i f30060g;
 
     /* renamed from: h, reason: collision with root package name */
-    public x61.k f30061h;
+    public final x61.k f30061h;
 
     public r(int i, j71.a aVar) {
         this.f30054a = i;

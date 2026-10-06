@@ -9,7 +9,7 @@ public final class ev {
     public static final ev t;
     public static final /* synthetic */ ev[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         ev evVar = new ev("FACEBOOK", 0, "FACEBOOK");

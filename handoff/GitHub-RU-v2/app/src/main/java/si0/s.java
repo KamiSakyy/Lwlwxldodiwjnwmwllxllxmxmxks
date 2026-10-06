@@ -60,5 +60,4 @@ public abstract class s {
         ll.Companion.getClass();
         a = x61.l.r(new aa.m[]{mVar6, mVar7, mVar8, new aa.m("reviews", q0Var3, "pendingReviews", rVar, x61.l.r(new aa.k[]{new aa.k(ll.y, new u0(1)), new aa.k(ll.z, new u0(d0.n("PENDING")))}), n2), new aa.m("__typename", l0.b(xVar2), (String) null, rVar, rVar, rVar)});
     }
-    public Object a() { return null; }
 }

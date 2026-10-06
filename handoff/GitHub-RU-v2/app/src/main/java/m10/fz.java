@@ -9,7 +9,7 @@ public final class fz {
     public static final fz t;
     public static final /* synthetic */ fz[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         fz fzVar = new fz("PENDING", 0, "PENDING");

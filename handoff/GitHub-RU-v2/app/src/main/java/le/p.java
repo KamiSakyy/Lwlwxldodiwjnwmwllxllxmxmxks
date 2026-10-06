@@ -7,10 +7,10 @@ public abstract class p {
     public static final a Companion = new a();
 
     /* renamed from: a, reason: collision with root package name */
-    public long f28713a;
+    public final long f28713a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f28714b;
+    public final int f28714b;
 
     public static final class a {
     }
@@ -18,7 +18,7 @@ public abstract class p {
     public static final class b extends p {
 
         /* renamed from: c, reason: collision with root package name */
-        public String f28715c;
+        public final String f28715c;
 
         public b(String str) {
             super(1, str.hashCode());
@@ -44,10 +44,10 @@ public abstract class p {
     public static final class c extends p {
 
         /* renamed from: c, reason: collision with root package name */
-        public k5 f28716c;
+        public final k5 f28716c;
 
         /* renamed from: d, reason: collision with root package name */
-        public String f28717d;
+        public final String f28717d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public c(k5 k5Var, String str) {

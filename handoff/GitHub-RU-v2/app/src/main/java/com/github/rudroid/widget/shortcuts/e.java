@@ -19,6 +19,6 @@ final class e extends c71.c {
         this.v.P(null, null, this);
         return b71.a.r;
     }
-    public static Object r(Object p1, Object p2, Object p3) { return null; }
+    public Object r(Object p1, Object p2, Object p3) { return null; }
     public Object t(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

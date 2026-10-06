@@ -11,8 +11,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r implements w0 {
     public static final n Companion = new n();
-    public String r;
-    public bl s;
+    public final String r;
+    public final bl s;
 
     public r(String str, bl blVar) {
         k71.k.g(str, "id");

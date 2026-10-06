@@ -8,13 +8,13 @@ import android.widget.EditText;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d extends m {
-    public int e;
-    public int f;
-    public TimeInterpolator g;
-    public TimeInterpolator h;
+    public final int e;
+    public final int f;
+    public final TimeInterpolator g;
+    public final TimeInterpolator h;
     public EditText i;
-    public a j;
-    public com.github.rudroid.createissue.propertybar.projects.b k;
+    public final a j;
+    public final com.github.rudroid.createissue.propertybar.projects.b k;
     public AnimatorSet l;
     public ValueAnimator m;
 

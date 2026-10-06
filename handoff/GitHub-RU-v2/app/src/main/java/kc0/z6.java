@@ -2,11 +2,11 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z6 {
-    public String a;
-    public a7 b;
-    public int c;
-    public String d;
-    public String e;
+    public final String a;
+    public final a7 b;
+    public final int c;
+    public final String d;
+    public final String e;
 
     public z6(String str, a7 a7Var, int i, String str2, String str3) {
         this.a = str;

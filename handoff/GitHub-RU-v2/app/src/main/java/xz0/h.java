@@ -11,10 +11,10 @@ import xn.i0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h implements Parcelable {
     public static final Parcelable.Creator<h> CREATOR = new i0(5);
-    public String r;
-    public String s;
-    public String t;
-    public String u;
+    public final String r;
+    public final String s;
+    public final String t;
+    public final String u;
 
     public h(String str, String str2, String str3, String str4) {
         k.g(str, "id");

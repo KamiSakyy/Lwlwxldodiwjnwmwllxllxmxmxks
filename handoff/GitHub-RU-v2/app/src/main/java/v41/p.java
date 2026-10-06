@@ -8,22 +8,22 @@ import java.util.concurrent.atomic.AtomicReference;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p {
-    public Context a;
-    public s b;
-    public v2.t c;
-    public long d;
+    public final Context a;
+    public final s b;
+    public final v2.t c;
+    public final long d;
     public v2.t e;
     public v2.t f;
     public boolean g;
     public l h;
-    public v i;
-    public b51.d j;
-    public r41.a k;
-    public r41.a l;
-    public i m;
-    public s41.b n;
-    public s21.a o;
-    public w41.c p;
+    public final v i;
+    public final b51.d j;
+    public final r41.a k;
+    public final r41.a l;
+    public final i m;
+    public final s41.b n;
+    public final s21.a o;
+    public final w41.c p;
 
     public p(k41.g gVar, v vVar, s41.b bVar, s sVar, r41.a aVar, r41.a aVar2, b51.d dVar, i iVar, s21.a aVar3, w41.c cVar) {
         this.b = sVar;

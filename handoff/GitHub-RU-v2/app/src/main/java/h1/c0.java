@@ -4,19 +4,19 @@ package h1;
 public final class c0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f25287a;
+    public final int f25287a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f25288b;
+    public final int f25288b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f25289c;
+    public final int f25289c;
 
     /* renamed from: d, reason: collision with root package name */
-    public int f25290d;
+    public final int f25290d;
 
     /* renamed from: e, reason: collision with root package name */
-    public long f25291e;
+    public final long f25291e;
 
     public c0(int i, int i10, int i11, int i12, long j10) {
         this.f25287a = i;

@@ -5,9 +5,9 @@ import org.json.JSONObject;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s {
-    public JSONObject a;
-    public x3 b;
-    public x3 c;
+    public final JSONObject a;
+    public final x3 b;
+    public final x3 c;
 
     public s(JSONObject jSONObject) {
         this.a = jSONObject;

@@ -5,10 +5,10 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public String a;
-    public f8 b;
-    public String c;
-    public String d;
+    public final String a;
+    public final f8 b;
+    public final String c;
+    public final String d;
 
     public b(String str, f8 f8Var, String str2, String str3) {
         this.a = str;

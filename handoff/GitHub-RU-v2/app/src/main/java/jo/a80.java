@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a80 implements aaShadow.w0 {
     public static final x70 Companion = new x70();
-    public String r;
+    public final String r;
 
     public a80(String str) {
         k71.k.g(str, "issueId");

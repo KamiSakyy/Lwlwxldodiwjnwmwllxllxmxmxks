@@ -12,7 +12,7 @@ import kotlinx.serialization.KSerializer;
 public final class HomePullRequestsRoute implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public SerializableFilterList f14998r;
+    public final SerializableFilterList f14998r;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<HomePullRequestsRoute> CREATOR = new a();
 

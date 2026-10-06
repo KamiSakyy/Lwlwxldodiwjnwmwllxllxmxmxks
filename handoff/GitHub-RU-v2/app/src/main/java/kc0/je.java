@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class je {
-    public String a;
-    public ee b;
-    public String c;
+    public final String a;
+    public final ee b;
+    public final String c;
 
     public je(String str, ee eeVar, String str2) {
         this.a = str;

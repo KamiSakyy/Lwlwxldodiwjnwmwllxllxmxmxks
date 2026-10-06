@@ -5,9 +5,9 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public String a;
-    public ProjectV2OrderField b;
-    public v01.a c;
+    public final String a;
+    public final ProjectV2OrderField b;
+    public final v01.a c;
 
     public c(String str, ProjectV2OrderField projectV2OrderField, v01.a aVar) {
         k.g(str, "query");

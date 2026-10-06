@@ -5,11 +5,11 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b6 extends s7 {
-    public com.github.service.models.response.a a;
-    public k.w b;
-    public ZonedDateTime c;
-    public CloseReason d;
-    public z01.p e;
+    public final com.github.service.models.response.a a;
+    public final k.w b;
+    public final ZonedDateTime c;
+    public final CloseReason d;
+    public final z01.p e;
 
     public b6(com.github.service.models.response.a aVar, k.w wVar, ZonedDateTime zonedDateTime, CloseReason closeReason, z01.p pVar) {
         k71.k.g(zonedDateTime, "createdAt");

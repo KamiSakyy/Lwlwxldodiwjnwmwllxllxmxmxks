@@ -2,9 +2,9 @@ package tz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l implements aa.h0 {
-    public k a;
-    public String b;
-    public String c;
+    public final k a;
+    public final String b;
+    public final String c;
 
     public l(k kVar, String str, String str2) {
         this.a = kVar;

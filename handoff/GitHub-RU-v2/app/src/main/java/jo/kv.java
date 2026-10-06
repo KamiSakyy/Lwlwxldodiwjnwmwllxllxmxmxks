@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class kv implements aaShadow.m0 {
-    public nv a;
+    public final nv a;
 
     public kv(nv nvVar) {
         this.a = nvVar;

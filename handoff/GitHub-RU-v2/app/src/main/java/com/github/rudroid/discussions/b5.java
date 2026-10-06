@@ -4,28 +4,28 @@ import com.github.domain.discussions.data.DiscussionCategoryData;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public final class b5 extends za {
-    public String A;
+    public final String A;
 
     /* renamed from: t, reason: collision with root package name */
-    public le.h f11193t;
+    public final le.h f11193t;
 
     /* renamed from: u, reason: collision with root package name */
-    public DiscussionCategoryData f11194u;
+    public final DiscussionCategoryData f11194u;
 
     /* renamed from: v, reason: collision with root package name */
-    public jk.b f11195v;
+    public final jk.b f11195v;
 
     /* renamed from: w, reason: collision with root package name */
-    public boolean f11196w;
+    public final boolean f11196w;
 
     /* renamed from: x, reason: collision with root package name */
-    public boolean f11197x;
+    public final boolean f11197x;
 
     /* renamed from: y, reason: collision with root package name */
-    public b01.f f11198y;
+    public final b01.f f11198y;
 
     /* renamed from: z, reason: collision with root package name */
-    public String f11199z;
+    public final String f11199z;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*

@@ -44,7 +44,7 @@ import x61.r;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements p {
     public final /* synthetic */ int a;
-    public Object b;
+    public final Object b;
 
     public /* synthetic */ d(int i, Object obj) {
         this.a = i;
@@ -414,5 +414,4 @@ public final class d implements p {
         k.g(cVar, "loopAction");
         this.b = new vz0.e("LoopWatcher_Network", TimeUnit.SECONDS.toMillis(20L), cVar);
     }
-    public Object l(Object) { return null; }
 }

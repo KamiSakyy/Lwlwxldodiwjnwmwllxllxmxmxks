@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d80 {
-    public String a;
-    public String b;
-    public gv.a4 c;
+    public final String a;
+    public final String b;
+    public final gv.a4 c;
 
     public d80(String str, String str2, gv.a4 a4Var) {
         this.a = str;

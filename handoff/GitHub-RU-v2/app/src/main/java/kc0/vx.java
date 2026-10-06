@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class vx {
-    public sx a;
-    public String b;
-    public String c;
+    public final sx a;
+    public final String b;
+    public final String c;
 
     public vx(sx sxVar, String str, String str2) {
         this.a = sxVar;

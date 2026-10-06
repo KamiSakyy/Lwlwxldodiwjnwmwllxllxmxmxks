@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class kl {
-    public String a;
-    public ll b;
-    public qh0.a c;
+    public final String a;
+    public final ll b;
+    public final qh0.a c;
 
     public kl(String str, ll llVar, qh0.a aVar) {
         k71.k.g(str, "__typename");

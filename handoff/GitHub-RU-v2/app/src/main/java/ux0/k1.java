@@ -6,7 +6,7 @@ import pz0.sk;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k1 implements aa.n0 {
     public static final h1 Companion = new h1();
-    public String r;
+    public final String r;
 
     public k1(String str) {
         k71.k.g(str, "projectId");

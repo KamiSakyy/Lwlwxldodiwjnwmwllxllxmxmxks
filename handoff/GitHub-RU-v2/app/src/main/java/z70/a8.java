@@ -2,11 +2,11 @@ package z70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a8 {
-    public String a;
-    public String b;
-    public String c;
-    public boolean d;
-    public String e;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final boolean d;
+    public final String e;
 
     public a8(String str, String str2, String str3, String str4, boolean z) {
         this.a = str;

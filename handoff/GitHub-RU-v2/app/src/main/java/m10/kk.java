@@ -9,7 +9,7 @@ public final class kk {
     public static final kk t;
     public static final /* synthetic */ kk[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         kk kkVar = new kk("OFF_TOPIC", 0, "OFF_TOPIC");

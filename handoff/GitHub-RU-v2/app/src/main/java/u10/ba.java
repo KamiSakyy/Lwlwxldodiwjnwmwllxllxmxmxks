@@ -5,10 +5,10 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ba implements aaShadow.w0 {
     public static final w9 Companion = new w9();
-    public String r;
-    public String s;
-    public int t;
-    public String u;
+    public final String r;
+    public final String s;
+    public final int t;
+    public final String u;
 
     public ba(int i, String str, String str2, String str3) {
         k71.k.g(str, "repositoryOwner");

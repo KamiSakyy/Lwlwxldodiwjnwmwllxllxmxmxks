@@ -2,11 +2,11 @@ package uu0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t3 {
-    public String a;
-    public String b;
-    public nv0.b c;
-    public l4 d;
-    public c e;
+    public final String a;
+    public final String b;
+    public final nv0.b c;
+    public final l4 d;
+    public final c e;
 
     public t3(String str, String str2, nv0.b bVar, l4 l4Var, c cVar) {
         this.a = str;

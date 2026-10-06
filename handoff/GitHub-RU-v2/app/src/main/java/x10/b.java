@@ -2,9 +2,9 @@ package x10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public int a;
-    public String b;
-    public String c;
+    public final int a;
+    public final String b;
+    public final String c;
 
     public b(String str, int i, String str2) {
         this.a = i;

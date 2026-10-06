@@ -4,7 +4,7 @@ package n4;
 public final class s {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f29476a;
+    public final int f29476a;
 
     /* renamed from: b, reason: collision with root package name */
     public int f29477b = 0;

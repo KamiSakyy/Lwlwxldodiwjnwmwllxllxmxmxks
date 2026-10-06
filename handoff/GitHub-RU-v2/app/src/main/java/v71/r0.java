@@ -2,7 +2,7 @@ package v71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class r0 extends s0 {
-    public Runnable t;
+    public final Runnable t;
 
     public r0(Runnable runnable, long j) {
         super(j);

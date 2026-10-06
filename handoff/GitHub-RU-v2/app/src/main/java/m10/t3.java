@@ -9,7 +9,7 @@ public final class t3 {
     public static final t3 t;
     public static final /* synthetic */ t3[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         t3 t3Var = new t3("ACTION_REQUIRED", 0, "ACTION_REQUIRED");

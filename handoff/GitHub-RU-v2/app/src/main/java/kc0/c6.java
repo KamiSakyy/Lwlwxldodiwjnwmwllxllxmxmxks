@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c6 {
-    public v5 a;
+    public final v5 a;
 
     public c6(v5 v5Var) {
         this.a = v5Var;

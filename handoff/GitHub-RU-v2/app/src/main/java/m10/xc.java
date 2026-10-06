@@ -12,7 +12,7 @@ public final class xc {
     public static final xc w;
     public static final /* synthetic */ xc[] x;
     public static final /* synthetic */ d71.b y;
-    public String r;
+    public final String r;
 
     static {
         xc xcVar = new xc("ADDITION", 0, "ADDITION");

@@ -10,7 +10,7 @@ public final class zc {
     public static final zc u;
     public static final /* synthetic */ zc[] v;
     public static final /* synthetic */ d71.b w;
-    public String r;
+    public final String r;
 
     static {
         zc zcVar = new zc("LEFT", 0, "LEFT");

@@ -5,9 +5,9 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g implements s01.m {
-    public String a;
-    public String b;
-    public int c;
+    public final String a;
+    public final String b;
+    public final int c;
 
     public g(String str, int i, String str2) {
         k71.k.g(str, "owner");

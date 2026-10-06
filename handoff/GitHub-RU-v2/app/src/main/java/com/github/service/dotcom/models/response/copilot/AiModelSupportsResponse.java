@@ -8,7 +8,7 @@ import kotlinx.serialization.KSerializer;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class AiModelSupportsResponse {
     public static final Companion Companion = new Companion();
-    public boolean a;
+    public final boolean a;
 
     public static final class Companion {
         public final KSerializer serializer() {

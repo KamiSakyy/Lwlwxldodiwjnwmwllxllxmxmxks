@@ -13,10 +13,10 @@ import kotlinx.serialization.KSerializer;
 public final class LineSelection implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public int f19431r;
+    public final int f19431r;
 
     /* renamed from: s, reason: collision with root package name */
-    public int f19432s;
+    public final int f19432s;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<LineSelection> CREATOR = new a();
 

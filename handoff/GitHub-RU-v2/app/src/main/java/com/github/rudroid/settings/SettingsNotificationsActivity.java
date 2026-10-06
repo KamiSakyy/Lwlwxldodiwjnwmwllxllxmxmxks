@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SettingsNotificationsActivity extends g<ic.j0> {
-    public int o0;
+    public final int o0;
 
     public SettingsNotificationsActivity() {
         this.n0 = false;

@@ -2,10 +2,10 @@ package b20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public String a;
-    public c b;
-    public m c;
-    public g20.s1 d;
+    public final String a;
+    public final c b;
+    public final m c;
+    public final g20.s1 d;
 
     public h(String str, c cVar, m mVar, g20.s1 s1Var) {
         this.a = str;

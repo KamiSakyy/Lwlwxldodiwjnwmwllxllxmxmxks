@@ -2,7 +2,7 @@ package v71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class p extends f1 implements o {
-    public j1 v;
+    public final j1 v;
 
     public p(j1 j1Var) {
         this.v = j1Var;

@@ -2,8 +2,8 @@ package q51;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements h {
-    public i a;
-    public w21.g b;
+    public final i a;
+    public final w21.g b;
 
     public e(i iVar, w21.g gVar) {
         this.a = iVar;

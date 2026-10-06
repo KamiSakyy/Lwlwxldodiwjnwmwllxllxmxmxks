@@ -3,7 +3,7 @@ package v71;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class o0 extends f1 {
     public final /* synthetic */ int v;
-    public Object w;
+    public final Object w;
 
     public /* synthetic */ o0(int i, Object obj) {
         this.v = i;

@@ -10,16 +10,16 @@ import x61.s;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
     public static final a Companion = new a();
-    public c a;
-    public String b;
-    public Integer c;
-    public Map d;
-    public j e;
-    public Throwable f;
-    public long g;
-    public String h;
-    public String i;
-    public String j;
+    public final c a;
+    public final String b;
+    public final Integer c;
+    public final Map d;
+    public final j e;
+    public final Throwable f;
+    public final long g;
+    public final String h;
+    public final String i;
+    public final String j;
 
     public b(c cVar, String str, Integer num, Map map, j jVar, Throwable th2, long j) {
         k.g(cVar, "failureType");

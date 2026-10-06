@@ -6,11 +6,11 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public long a;
-    public long b;
-    public long c;
-    public g d;
-    public d e;
+    public final long a;
+    public final long b;
+    public final long c;
+    public final g d;
+    public final d e;
 
     public e(long j, long j2, long j3, g gVar, d dVar) {
         this.a = j;

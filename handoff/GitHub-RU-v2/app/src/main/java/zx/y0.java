@@ -4,10 +4,10 @@ import m10.da0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y0 {
-    public String a;
-    public da0 b;
-    public o0 c;
-    public String d;
+    public final String a;
+    public final da0 b;
+    public final o0 c;
+    public final String d;
 
     public y0(String str, da0 da0Var, o0 o0Var, String str2) {
         this.a = str;

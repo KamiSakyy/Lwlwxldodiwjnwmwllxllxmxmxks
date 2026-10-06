@@ -3,7 +3,7 @@ package v71;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class y extends a71.a {
     public static final w t = new w();
-    public String s;
+    public final String s;
 
     public y() {
         super(t);

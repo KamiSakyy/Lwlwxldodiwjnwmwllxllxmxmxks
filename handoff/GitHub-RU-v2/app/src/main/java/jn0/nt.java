@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class nt implements aaShadow.m0 {
-    public qt a;
+    public final qt a;
 
     public nt(qt qtVar) {
         this.a = qtVar;

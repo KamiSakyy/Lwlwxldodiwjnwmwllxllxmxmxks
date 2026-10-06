@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class km implements aaShadow.m0 {
-    public mm a;
+    public final mm a;
 
     public km(mm mmVar) {
         this.a = mmVar;

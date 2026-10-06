@@ -4,10 +4,10 @@ package a0;
 public final class h1 implements i2 {
 
     /* renamed from: a, reason: collision with root package name */
-    public i2 f99a;
+    public final i2 f99a;
 
     /* renamed from: b, reason: collision with root package name */
-    public long f100b;
+    public final long f100b;
 
     public h1(i2 i2Var, long j10) {
         this.f99a = i2Var;

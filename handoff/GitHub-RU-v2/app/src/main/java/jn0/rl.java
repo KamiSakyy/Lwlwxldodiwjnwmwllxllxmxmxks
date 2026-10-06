@@ -2,11 +2,11 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class rl {
-    public String a;
-    public String b;
-    public tl c;
-    public ul d;
-    public sl e;
+    public final String a;
+    public final String b;
+    public final tl c;
+    public final ul d;
+    public final sl e;
 
     public rl(String str, String str2, tl tlVar, ul ulVar, sl slVar) {
         k71.k.g(str, "__typename");

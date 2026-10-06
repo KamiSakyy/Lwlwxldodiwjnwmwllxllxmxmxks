@@ -5,28 +5,28 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p0 implements aa.h0 {
-    public String a;
-    public String b;
-    public String c;
-    public ZonedDateTime d;
-    public ZonedDateTime e;
-    public ZonedDateTime f;
-    public int g;
-    public boolean h;
-    public boolean i;
-    public boolean j;
-    public z3 k;
-    public String l;
-    public o0 m;
-    public ZonedDateTime n;
-    public g0 o;
-    public i0 p;
-    public h0 q;
-    public j0 r;
-    public m0 s;
-    public sg0.j t;
-    public i1 u;
-    public k v;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final ZonedDateTime d;
+    public final ZonedDateTime e;
+    public final ZonedDateTime f;
+    public final int g;
+    public final boolean h;
+    public final boolean i;
+    public final boolean j;
+    public final z3 k;
+    public final String l;
+    public final o0 m;
+    public final ZonedDateTime n;
+    public final g0 o;
+    public final i0 p;
+    public final h0 q;
+    public final j0 r;
+    public final m0 s;
+    public final sg0.j t;
+    public final i1 u;
+    public final k v;
 
     public p0(String str, String str2, String str3, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, ZonedDateTime zonedDateTime3, int i, boolean z, boolean z2, boolean z3, z3 z3Var, String str4, o0 o0Var, ZonedDateTime zonedDateTime4, g0 g0Var, i0 i0Var, h0 h0Var, j0 j0Var, m0 m0Var, sg0.j jVar, i1 i1Var, k kVar) {
         this.a = str;

@@ -6,9 +6,9 @@ import android.widget.EditText;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s extends m {
-    public int e;
+    public final int e;
     public EditText f;
-    public a g;
+    public final a g;
 
     public s(l lVar, int i) {
         super(lVar);
@@ -73,5 +73,5 @@ public final class s extends m {
             editText.setTransformationMethod(PasswordTransformationMethod.getInstance());
         }
     }
-    public static Object o(Object p1, Object p2) { return null; }
+    public Object o(Object p1, Object p2) { return null; }
 }

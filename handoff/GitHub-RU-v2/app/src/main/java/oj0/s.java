@@ -2,10 +2,10 @@ package oj0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s implements aa.h0 {
-    public String a;
-    public String b;
-    public q c;
-    public yh0.a d;
+    public final String a;
+    public final String b;
+    public final q c;
+    public final yh0.a d;
 
     public s(String str, String str2, q qVar, yh0.a aVar) {
         this.a = str;

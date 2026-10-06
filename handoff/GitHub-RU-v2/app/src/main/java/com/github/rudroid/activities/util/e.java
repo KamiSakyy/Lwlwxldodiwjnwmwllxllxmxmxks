@@ -8,7 +8,7 @@ import com.github.rudroid.activities.s3;
 public abstract class e<I, O> extends y9.a {
 
     /* renamed from: e, reason: collision with root package name */
-    public c f5920e;
+    public final c f5920e;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public e(c cVar) {

@@ -10,7 +10,7 @@ import d2.t;
 public final class h extends RippleDrawable {
 
     /* renamed from: r, reason: collision with root package name */
-    public boolean f21838r;
+    public final boolean f21838r;
 
     /* renamed from: s, reason: collision with root package name */
     public t f21839s;

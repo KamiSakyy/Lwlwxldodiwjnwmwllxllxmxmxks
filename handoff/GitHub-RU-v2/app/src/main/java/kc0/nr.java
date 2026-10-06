@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class nr {
-    public or a;
-    public mr b;
+    public final or a;
+    public final mr b;
 
     public nr(or orVar, mr mrVar) {
         this.a = orVar;

@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o6 {
-    public String a;
-    public String b;
-    public uf0.p0 c;
+    public final String a;
+    public final String b;
+    public final uf0.p0 c;
 
     public o6(String str, String str2, uf0.p0 p0Var) {
         this.a = str;

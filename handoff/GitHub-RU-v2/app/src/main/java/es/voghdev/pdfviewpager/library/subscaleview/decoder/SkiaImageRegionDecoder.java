@@ -20,7 +20,7 @@ import t61.c;
 public class SkiaImageRegionDecoder implements c {
     public BitmapRegionDecoder a;
     public final ReentrantReadWriteLock b = new ReentrantReadWriteLock(true);
-    public Bitmap.Config c;
+    public final Bitmap.Config c;
 
     @Keep
     public SkiaImageRegionDecoder() {

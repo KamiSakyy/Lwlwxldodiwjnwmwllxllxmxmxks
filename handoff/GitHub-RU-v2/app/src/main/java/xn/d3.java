@@ -4,11 +4,11 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d3Shadow {
-    public int a;
-    public double b;
-    public int c;
-    public ZonedDateTime d;
-    public boolean e;
+    public final int a;
+    public final double b;
+    public final int c;
+    public final ZonedDateTime d;
+    public final boolean e;
 
     public d3(int i, double d, int i2, ZonedDateTime zonedDateTime, boolean z) {
         this.a = i;

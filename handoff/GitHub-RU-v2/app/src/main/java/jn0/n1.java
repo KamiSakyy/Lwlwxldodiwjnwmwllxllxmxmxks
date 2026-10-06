@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n1 {
-    public String a;
-    public String b;
+    public final String a;
+    public final String b;
 
     public n1(String str, String str2) {
         this.a = str;

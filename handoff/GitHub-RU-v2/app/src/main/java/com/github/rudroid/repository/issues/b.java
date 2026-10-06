@@ -7,13 +7,13 @@ import yz0.n5;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public boolean f19861a;
+    public final boolean f19861a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f19862b;
+    public final String f19862b;
 
     /* renamed from: c, reason: collision with root package name */
-    public n5 f19863c;
+    public final n5 f19863c;
 
     public b(boolean z10, String str, n5 n5Var) {
         k71.k.g(n5Var, "templateModel");

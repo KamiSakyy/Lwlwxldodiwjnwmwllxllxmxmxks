@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class at {
-    public ys a;
-    public String b;
-    public String c;
+    public final ys a;
+    public final String b;
+    public final String c;
 
     public at(ys ysVar, String str, String str2) {
         this.a = ysVar;

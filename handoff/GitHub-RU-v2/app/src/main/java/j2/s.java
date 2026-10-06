@@ -4,22 +4,22 @@ package j2;
 public final class s extends b0 {
 
     /* renamed from: c, reason: collision with root package name */
-    public float f26933c;
+    public final float f26933c;
 
     /* renamed from: d, reason: collision with root package name */
-    public float f26934d;
+    public final float f26934d;
 
     /* renamed from: e, reason: collision with root package name */
-    public float f26935e;
+    public final float f26935e;
 
     /* renamed from: f, reason: collision with root package name */
-    public float f26936f;
+    public final float f26936f;
 
     /* renamed from: g, reason: collision with root package name */
-    public float f26937g;
+    public final float f26937g;
 
     /* renamed from: h, reason: collision with root package name */
-    public float f26938h;
+    public final float f26938h;
 
     public s(float f6, float f10, float f11, float f12, float f13, float f14) {
         super(2);

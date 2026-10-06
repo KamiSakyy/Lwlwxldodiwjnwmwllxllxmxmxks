@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class he {
-    public boolean a;
-    public String b;
+    public final boolean a;
+    public final String b;
 
     public he(String str, boolean z) {
         this.a = z;

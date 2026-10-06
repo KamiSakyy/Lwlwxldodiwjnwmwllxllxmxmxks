@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z10 {
-    public String a;
-    public String b;
-    public hv0.f c;
+    public final String a;
+    public final String b;
+    public final hv0.f c;
 
     public z10(String str, String str2, hv0.f fVar) {
         this.a = str;

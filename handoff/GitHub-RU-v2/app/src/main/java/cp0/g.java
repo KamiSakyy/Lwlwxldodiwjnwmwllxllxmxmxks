@@ -7,9 +7,9 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g implements h0 {
-    public String a;
-    public String b;
-    public kw0.a c;
+    public final String a;
+    public final String b;
+    public final kw0.a c;
 
     public g(String str, String str2, kw0.a aVar) {
         k.g(str, "__typename");

@@ -6,8 +6,8 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m0 implements Parcelable {
     public static final Parcelable.Creator<m0> CREATOR = new i0(2);
-    public String r;
-    public String s;
+    public final String r;
+    public final String s;
 
     public m0(String str, String str2) {
         k71.k.g(str, "name");
@@ -46,14 +46,14 @@ public final class m0 implements Parcelable {
         parcel.writeString(this.r);
         parcel.writeString(this.s);
     }
-    public static Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
     public Object a(Object p1, Object p2, Object p3) { return null; }
-    public static Object e(Object p1, Object p2, Object p3) { return null; }
-    public static Object h(Object p1, Object p2, Object p3) { return null; }
-    public static Object i(Object p1, Object p2, Object p3) { return null; }
-    public static Object j(Object p1, Object p2, Object p3) { return null; }
-    public static Object k(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object m(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object e(Object p1, Object p2, Object p3) { return null; }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
+    public Object i(Object p1, Object p2, Object p3) { return null; }
+    public Object j(Object p1, Object p2, Object p3) { return null; }
+    public Object k(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object m(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
     public Object r(Object p1, Object p2) { return null; }
-    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

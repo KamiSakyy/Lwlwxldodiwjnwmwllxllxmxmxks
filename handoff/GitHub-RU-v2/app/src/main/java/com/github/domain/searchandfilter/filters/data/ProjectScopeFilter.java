@@ -23,7 +23,7 @@ public final class ProjectScopeFilter extends d {
     public static final w61.h[] w;
     public static final e0 x;
     public static final i50.c y;
-    public e0 v;
+    public final e0 v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<ProjectScopeFilter> CREATOR = new o(7);
 

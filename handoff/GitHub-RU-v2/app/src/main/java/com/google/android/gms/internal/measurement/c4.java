@@ -4,8 +4,8 @@ import android.content.Context;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c4 {
-    public Context a;
-    public j41.d b;
+    public final Context a;
+    public final j41.d b;
 
     public c4(Context context, j41.d dVar) {
         this.a = context;

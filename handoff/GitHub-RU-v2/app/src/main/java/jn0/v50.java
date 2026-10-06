@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v50 {
-    public String a;
-    public u50 b;
-    public String c;
-    public cu0.c d;
+    public final String a;
+    public final u50 b;
+    public final String c;
+    public final cu0.c d;
 
     public v50(String str, u50 u50Var, String str2, cu0.c cVar) {
         this.a = str;

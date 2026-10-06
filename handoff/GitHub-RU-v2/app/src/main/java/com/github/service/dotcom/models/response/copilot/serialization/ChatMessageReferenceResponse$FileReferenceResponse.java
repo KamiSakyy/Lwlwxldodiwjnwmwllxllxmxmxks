@@ -14,14 +14,14 @@ import w61.i;
 public final class ChatMessageReferenceResponse$FileReferenceResponse extends a {
     public static final Companion Companion = new Companion();
     public static final h[] i = {null, null, null, null, null, null, null, w.s(i.r, new hz.e(0))};
-    public int a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public String f;
-    public String g;
-    public f h;
+    public final int a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final String f;
+    public final String g;
+    public final f h;
 
     public static final class Companion {
         public final KSerializer serializer() {

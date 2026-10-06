@@ -6,5 +6,4 @@ public interface h {
 
     void s(e eVar, Throwable th);
     public Object V0(Object p1) { return null; }
-    public Object V0(boolean) { return null; }
 }

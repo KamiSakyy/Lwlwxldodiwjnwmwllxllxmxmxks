@@ -10,8 +10,8 @@ public final class a0 {
     public final e81.c b = e81.d.a();
 
     public static final class a {
-        public j1 a;
-        public d1 b;
+        public final j1 a;
+        public final d1 b;
 
         public a(j1 j1Var, d1 d1Var) {
             k71.k.g(j1Var, "priority");

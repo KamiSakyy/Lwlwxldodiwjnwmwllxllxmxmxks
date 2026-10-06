@@ -7,13 +7,13 @@ import y41.t1;
 public final class a extends x61.e {
 
     /* renamed from: r, reason: collision with root package name */
-    public n1.c f28909r;
+    public final n1.c f28909r;
 
     /* renamed from: s, reason: collision with root package name */
-    public int f28910s;
+    public final int f28910s;
 
     /* renamed from: t, reason: collision with root package name */
-    public int f28911t;
+    public final int f28911t;
 
     public a(n1.c cVar, int i, int i10) {
         this.f28909r = cVar;

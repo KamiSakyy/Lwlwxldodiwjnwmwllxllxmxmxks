@@ -2,9 +2,9 @@ package a81;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class v implements a71.f {
-    public Object r;
-    public ThreadLocal s;
-    public w t;
+    public final Object r;
+    public final ThreadLocal s;
+    public final w t;
 
     public v(Object obj, ThreadLocal threadLocal) {
         this.r = obj;

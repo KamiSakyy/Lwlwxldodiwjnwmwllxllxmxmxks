@@ -12,12 +12,12 @@ import x.i;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class CreateRepositoryInput {
     public static final Companion Companion = new Companion();
-    public String a;
-    public String b;
-    public boolean c;
-    public boolean d;
-    public String e;
-    public String f;
+    public final String a;
+    public final String b;
+    public final boolean c;
+    public final boolean d;
+    public final String e;
+    public final String f;
 
     public static final class Companion {
         public final KSerializer serializer() {

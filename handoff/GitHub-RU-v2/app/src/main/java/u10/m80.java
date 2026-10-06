@@ -6,8 +6,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m80 implements aaShadow.n0 {
     public static final i80 Companion = new i80();
-    public aa.u0 r;
-    public ArrayList s;
+    public final aa.u0 r;
+    public final ArrayList s;
 
     public m80(aa.u0 u0Var, ArrayList arrayList) {
         this.r = u0Var;

@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class tv implements aaShadow.n0 {
     public static final qv Companion = new qv();
-    public String r;
+    public final String r;
 
     public tv(String str) {
         k71.k.g(str, "id");

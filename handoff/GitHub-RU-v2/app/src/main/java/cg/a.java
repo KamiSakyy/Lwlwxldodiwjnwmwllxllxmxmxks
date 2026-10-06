@@ -7,10 +7,10 @@ import xn.e1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public l a;
-    public e1 b;
-    public boolean c;
-    public eg.a d;
+    public final l a;
+    public final e1 b;
+    public final boolean c;
+    public final eg.a d;
 
     public a(l lVar, e1 e1Var, boolean z, eg.a aVar) {
         this.a = lVar;

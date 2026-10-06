@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class l implements h, Serializable {
-    public int r;
+    public final int r;
 
     public l(int i) {
         this.r = i;

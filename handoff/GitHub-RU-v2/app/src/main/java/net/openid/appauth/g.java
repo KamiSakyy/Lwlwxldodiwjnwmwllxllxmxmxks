@@ -15,7 +15,7 @@ public final class g {
     public static final x1 d = new x1("end_session_endpoint", (Object) null);
     public static final x1 e = new x1("registration_endpoint", (Object) null);
     public static final List f;
-    public JSONObject a;
+    public final JSONObject a;
 
     static {
         Arrays.asList("authorization_code", "implicit");

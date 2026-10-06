@@ -11,7 +11,7 @@ import android.graphics.Shader;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r extends w {
-    public t c;
+    public final t c;
 
     public r(t tVar) {
         this.c = tVar;

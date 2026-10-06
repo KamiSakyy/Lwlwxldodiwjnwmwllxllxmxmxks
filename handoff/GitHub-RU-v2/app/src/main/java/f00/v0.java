@@ -2,8 +2,8 @@ package f00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v0 {
-    public String a;
-    public y b;
+    public final String a;
+    public final y b;
 
     public v0(String str, y yVar) {
         this.a = str;

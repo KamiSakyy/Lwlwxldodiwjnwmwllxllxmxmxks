@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class om {
-    public pm a;
-    public String b;
-    public String c;
+    public final pm a;
+    public final String b;
+    public final String c;
 
     public om(pm pmVar, String str, String str2) {
         this.a = pmVar;

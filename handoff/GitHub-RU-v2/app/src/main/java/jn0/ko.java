@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ko implements aaShadow.v0 {
-    public mo a;
-    public String b;
-    public String c;
+    public final mo a;
+    public final String b;
+    public final String c;
 
     public ko(mo moVar, String str, String str2) {
         this.a = moVar;

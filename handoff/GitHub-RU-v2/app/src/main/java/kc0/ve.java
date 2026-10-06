@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ve {
-    public bf a;
-    public List b;
+    public final bf a;
+    public final List b;
 
     public ve(bf bfVar, List list) {
         this.a = bfVar;

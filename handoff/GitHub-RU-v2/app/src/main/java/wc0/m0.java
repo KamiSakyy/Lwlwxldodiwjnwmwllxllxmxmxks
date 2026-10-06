@@ -69,5 +69,5 @@ public final class m0 implements aa.a {
         fVar.z0("__typename");
         bVar.b(fVar, wVar, rVar.e);
     }
-    public static Object h(Object p1, Object p2, Object p3) { return null; }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
 }

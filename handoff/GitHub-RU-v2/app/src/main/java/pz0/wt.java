@@ -9,7 +9,7 @@ public final class wt {
     public static final wt t;
     public static final /* synthetic */ wt[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         wt wtVar = new wt("APPROVED", 0, "APPROVED");

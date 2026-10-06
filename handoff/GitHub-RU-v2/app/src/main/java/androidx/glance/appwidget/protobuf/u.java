@@ -26,7 +26,7 @@ public final class u {
     public static final /* synthetic */ u[] f2797v;
 
     /* renamed from: r, reason: collision with root package name */
-    public int f2798r;
+    public final int f2798r;
 
     /* JADX INFO: Fake field, exist only in values array */
     u EF0;

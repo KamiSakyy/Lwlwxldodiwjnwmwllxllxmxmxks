@@ -14,7 +14,7 @@ public final class z5 {
     public static final z5 x;
     public static final z5 y;
     public static final /* synthetic */ z5[] z;
-    public String r;
+    public final String r;
 
     static {
         z5 z5Var = new z5("DISCUSSION", 0, "DISCUSSION");

@@ -9,11 +9,11 @@ import v1.p;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e extends i5.b {
     public static final Parcelable.Creator<e> CREATOR = new p(3);
-    public int t;
-    public int u;
-    public boolean v;
-    public boolean w;
-    public boolean x;
+    public final int t;
+    public final int u;
+    public final boolean v;
+    public final boolean w;
+    public final boolean x;
 
     public e(Parcel parcel, ClassLoader classLoader) {
         super(parcel, classLoader);

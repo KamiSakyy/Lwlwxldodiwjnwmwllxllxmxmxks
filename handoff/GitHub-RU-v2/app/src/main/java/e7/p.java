@@ -10,7 +10,7 @@ public final class p extends i {
     public static final Parcelable.Creator<p> CREATOR = new c0(23);
 
     /* renamed from: r, reason: collision with root package name */
-    public int f22010r;
+    public final int f22010r;
 
     public p(Parcel parcel) {
         super(parcel);

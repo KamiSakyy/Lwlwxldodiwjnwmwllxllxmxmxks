@@ -2,8 +2,8 @@ package z71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class y implements a71.c, c71.d {
-    public a71.c r;
-    public a71.h s;
+    public final a71.c r;
+    public final a71.h s;
 
     public y(a71.c cVar, a71.h hVar) {
         this.r = cVar;

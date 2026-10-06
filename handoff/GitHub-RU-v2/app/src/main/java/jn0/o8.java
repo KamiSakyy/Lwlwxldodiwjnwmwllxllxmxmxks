@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o8 {
-    public String a;
-    public k8 b;
+    public final String a;
+    public final k8 b;
 
     public o8(String str, k8 k8Var) {
         this.a = str;

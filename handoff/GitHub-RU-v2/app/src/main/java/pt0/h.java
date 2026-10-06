@@ -9,17 +9,17 @@ import pz0.rm;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h implements h0 {
-    public String a;
-    public int b;
-    public int c;
-    public e d;
-    public d e;
-    public List f;
-    public boolean g;
-    public boolean h;
-    public boolean i;
-    public rm j;
-    public String k;
+    public final String a;
+    public final int b;
+    public final int c;
+    public final e d;
+    public final d e;
+    public final List f;
+    public final boolean g;
+    public final boolean h;
+    public final boolean i;
+    public final rm j;
+    public final String k;
 
     public h(String str, int i, int i2, e eVar, d dVar, List list, boolean z, boolean z2, boolean z3, rm rmVar, String str2) {
         this.a = str;

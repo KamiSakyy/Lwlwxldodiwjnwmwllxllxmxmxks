@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class xm {
-    public rm a;
+    public final rm a;
 
     public xm(rm rmVar) {
         this.a = rmVar;

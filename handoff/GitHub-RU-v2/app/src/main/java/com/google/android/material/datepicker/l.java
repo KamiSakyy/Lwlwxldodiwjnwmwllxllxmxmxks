@@ -14,7 +14,7 @@ public final class l implements z {
     public int t;
     public int u;
     public int v;
-    public Object w;
+    public final Object w;
 
     public l(g3.g gVar, long j) {
         String str = gVar.s;

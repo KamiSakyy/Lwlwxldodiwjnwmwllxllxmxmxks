@@ -9,12 +9,12 @@ import m10.tf0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c implements h0 {
-    public String a;
-    public String b;
-    public a c;
-    public b d;
-    public tf0 e;
-    public ZonedDateTime f;
+    public final String a;
+    public final String b;
+    public final a c;
+    public final b d;
+    public final tf0 e;
+    public final ZonedDateTime f;
 
     public c(String str, String str2, a aVar, b bVar, tf0 tf0Var, ZonedDateTime zonedDateTime) {
         this.a = str;

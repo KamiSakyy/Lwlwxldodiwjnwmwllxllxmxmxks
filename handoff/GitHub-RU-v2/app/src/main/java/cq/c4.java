@@ -2,16 +2,16 @@ package cq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c4 implements aa.h0 {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public String f;
-    public z3 g;
-    public b4 h;
-    public y3 i;
-    public pv.c j;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final String f;
+    public final z3 g;
+    public final b4 h;
+    public final y3 i;
+    public final pv.c j;
 
     public c4(String str, String str2, String str3, String str4, String str5, String str6, z3 z3Var, b4 b4Var, y3 y3Var, pv.c cVar) {
         this.a = str;

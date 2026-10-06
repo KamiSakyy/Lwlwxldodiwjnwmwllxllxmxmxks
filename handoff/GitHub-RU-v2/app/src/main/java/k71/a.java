@@ -5,13 +5,13 @@ import java.io.Serializable;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public class a implements h, Serializable {
-    public Object r;
-    public Class s;
-    public String t;
-    public String u;
-    public boolean v;
-    public int w;
-    public int x;
+    public final Object r;
+    public final Class s;
+    public final String t;
+    public final String u;
+    public final boolean v;
+    public final int w;
+    public final int x;
 
     public a() {
         this(4, 4, w61.q.class, b.r, "<init>", "<init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V");

@@ -11,7 +11,7 @@ public final class ac0 {
     public static final ac0 v;
     public static final /* synthetic */ ac0[] w;
     public static final /* synthetic */ d71.b x;
-    public String r;
+    public final String r;
 
     static {
         ac0 ac0Var = new ac0("DAILY", 0, "DAILY");

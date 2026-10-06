@@ -6,9 +6,9 @@ import f00.x0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public String a;
-    public String b;
-    public x0 c;
+    public final String a;
+    public final String b;
+    public final x0 c;
 
     public e(String str, String str2, x0 x0Var) {
         this.a = str;
@@ -37,5 +37,5 @@ public final class e {
         o.append(")");
         return o.toString();
     }
-    public static Object z(Object p1, Object p2, Object p3) { return null; }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

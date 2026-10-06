@@ -9,7 +9,7 @@ import android.widget.EditText;
 public final class i implements TextWatcher {
 
     /* renamed from: r, reason: collision with root package name */
-    public EditText f32733r;
+    public final EditText f32733r;
 
     /* renamed from: s, reason: collision with root package name */
     public h f32734s;
@@ -85,8 +85,4 @@ public final class i implements TextWatcher {
         this.f32736u = i;
         this.f32737v = i11;
     }
-    public Object h(int, int, int, Object) { return null; }
-    public Object h(int, int, int, Object) { return null; }
-    public Object i(Object) { return null; }
-    public Object i(Object) { return null; }
 }

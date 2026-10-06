@@ -8,12 +8,12 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements h0 {
-    public a a;
-    public c b;
-    public int c;
-    public String d;
-    public String e;
-    public ArrayList f;
+    public final a a;
+    public final c b;
+    public final int c;
+    public final String d;
+    public final String e;
+    public final ArrayList f;
 
     public e(a aVar, c cVar, int i, String str, String str2, ArrayList arrayList) {
         this.a = aVar;

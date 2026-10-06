@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g30 implements aaShadow.w0 {
     public static final a30 Companion = new a30();
-    public aa1.b r;
-    public aa1.b s;
-    public aa1.b t;
+    public final aa1.b r;
+    public final aa1.b s;
+    public final aa1.b t;
 
     public g30(aa1.b bVar, aa1.b bVar2, int i) {
         int i2 = i & 2;

@@ -58,10 +58,10 @@ public final class c extends p {
     public boolean K;
     public CharSequence L;
     public CompoundButton.OnCheckedChangeListener M;
-    public f N;
-    public a O;
-    public LinkedHashSet v;
-    public LinkedHashSet w;
+    public final f N;
+    public final a O;
+    public final LinkedHashSet v;
+    public final LinkedHashSet w;
     public ColorStateList x;
     public boolean y;
     public boolean z;
@@ -517,6 +517,4 @@ public final class c extends p {
         a();
     }
 
-    public Object setSupportButtonTintList(Object) { return null; }
-    public Object setSupportButtonTintMode(Object) { return null; }
 }

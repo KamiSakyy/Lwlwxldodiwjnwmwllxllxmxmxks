@@ -2,7 +2,7 @@ package w80;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x0 {
-    public int a;
+    public final int a;
 
     public x0(int i) {
         this.a = i;

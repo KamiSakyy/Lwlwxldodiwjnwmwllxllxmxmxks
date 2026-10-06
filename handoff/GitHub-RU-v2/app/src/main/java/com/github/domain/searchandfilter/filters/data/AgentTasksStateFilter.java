@@ -19,8 +19,8 @@ public final class AgentTasksStateFilter extends d implements bm.a {
     public static final w61.h[] x;
     public static final cm.a y;
     public static final m z;
-    public cm.a v;
-    public List w;
+    public final cm.a v;
+    public final List w;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<AgentTasksStateFilter> CREATOR = new a21.g(13);
 

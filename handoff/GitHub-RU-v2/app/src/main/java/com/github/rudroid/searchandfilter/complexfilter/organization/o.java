@@ -13,8 +13,8 @@ import v71.v;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o extends com.github.rudroid.searchandfilter.complexfilter.b<Organization> implements d0<a> {
     public static final /* synthetic */ int E = 0;
-    public lm.d C;
-    public v D;
+    public final lm.d C;
+    public final v D;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public o(lm.d dVar, com.github.rudroid.activities.util.c cVar, a1 a1Var, v vVar) {

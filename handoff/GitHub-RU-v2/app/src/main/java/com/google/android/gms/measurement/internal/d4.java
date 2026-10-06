@@ -8,7 +8,7 @@ import android.content.Intent;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d4 extends i4 {
-    public AlarmManager v;
+    public final AlarmManager v;
     public w3 w;
     public Integer x;
 

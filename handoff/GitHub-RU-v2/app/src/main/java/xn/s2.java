@@ -5,14 +5,14 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s2 implements y {
-    public String a;
-    public String b;
-    public ZonedDateTime c;
-    public List d;
-    public a0 e;
-    public String f;
-    public double g;
-    public String h;
+    public final String a;
+    public final String b;
+    public final ZonedDateTime c;
+    public final List d;
+    public final a0 e;
+    public final String f;
+    public final double g;
+    public final String h;
 
     public s2(String str, double d) {
         ZonedDateTime now = ZonedDateTime.now();

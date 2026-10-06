@@ -4,9 +4,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b30 {
-    public int a;
-    public a30 b;
-    public List c;
+    public final int a;
+    public final a30 b;
+    public final List c;
 
     public b30(int i, a30 a30Var, List list) {
         this.a = i;

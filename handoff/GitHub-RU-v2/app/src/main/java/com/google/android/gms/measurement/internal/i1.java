@@ -17,17 +17,17 @@ import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i1 extends i4 implements g {
-    public x.e A;
-    public f1 B;
-    public y51.c C;
-    public x.e D;
-    public x.e E;
-    public x.e F;
-    public x.e v;
-    public x.e w;
-    public x.e x;
-    public x.e y;
-    public x.e z;
+    public final x.e A;
+    public final f1 B;
+    public final y51.c C;
+    public final x.e D;
+    public final x.e E;
+    public final x.e F;
+    public final x.e v;
+    public final x.e w;
+    public final x.e x;
+    public final x.e y;
+    public final x.e z;
 
     public i1(o4 o4Var) {
         super(o4Var);

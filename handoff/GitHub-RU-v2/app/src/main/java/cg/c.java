@@ -4,8 +4,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public a a;
-    public a b;
+    public final a a;
+    public final a b;
 
     public c(a aVar, a aVar2) {
         k.g(aVar, "currentLicenseSubscription");

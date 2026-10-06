@@ -4,7 +4,7 @@ package n6;
 public final class b extends g {
 
     /* renamed from: a, reason: collision with root package name */
-    public float f29638a;
+    public final float f29638a;
 
     public b(float f6) {
         this.f29638a = f6;

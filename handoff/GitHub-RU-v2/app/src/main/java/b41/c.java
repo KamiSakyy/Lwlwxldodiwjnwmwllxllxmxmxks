@@ -8,10 +8,10 @@ import java.util.HashSet;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public t a;
-    public IntentFilter b;
-    public Context c;
-    public HashSet d;
+    public final t a;
+    public final IntentFilter b;
+    public final Context c;
+    public final HashSet d;
     public b9.d e;
 
     public c(Context context) {

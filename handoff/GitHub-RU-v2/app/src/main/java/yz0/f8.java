@@ -5,9 +5,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f8 {
-    public boolean a;
-    public ArrayList b;
-    public Object c;
+    public final boolean a;
+    public final ArrayList b;
+    public final Object c;
 
     public f8(boolean z, ArrayList arrayList, List list) {
         this.a = z;

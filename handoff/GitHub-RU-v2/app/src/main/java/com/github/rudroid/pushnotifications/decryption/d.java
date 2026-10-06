@@ -7,19 +7,19 @@ import sy.w;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f18551a;
+    public final String f18551a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f18552b;
+    public final String f18552b;
 
     /* renamed from: c, reason: collision with root package name */
-    public w61.p f18553c;
+    public final w61.p f18553c;
 
     /* renamed from: d, reason: collision with root package name */
-    public w61.p f18554d;
+    public final w61.p f18554d;
 
     /* renamed from: e, reason: collision with root package name */
-    public w61.p f18555e;
+    public final w61.p f18555e;
 
     public d(String str, String str2) {
         this.f18551a = str;

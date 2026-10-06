@@ -4,11 +4,11 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ep {
-    public on a;
-    public qn b;
-    public aa1.b c;
-    public ZonedDateTime d;
-    public aa1.b e;
+    public final on a;
+    public final qn b;
+    public final aa1.b c;
+    public final ZonedDateTime d;
+    public final aa1.b e;
 
     public ep(on onVar, qn qnVar, aa1.b bVar, ZonedDateTime zonedDateTime, aa1.b bVar2) {
         rn rnVar = sn.Companion;

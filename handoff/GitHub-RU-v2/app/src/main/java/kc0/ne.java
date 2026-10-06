@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ne {
-    public String a;
-    public oe b;
-    public pe c;
+    public final String a;
+    public final oe b;
+    public final pe c;
 
     public ne(String str, oe oeVar, pe peVar) {
         k71.k.g(str, "__typename");

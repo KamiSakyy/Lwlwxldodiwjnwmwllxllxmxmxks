@@ -31,5 +31,5 @@ public abstract class l0 {
         vp.Companion.getClass();
         a = sy.d0.n(new aa.m("createRef", q0Var2, (String) null, rVar, no.a.s(vp.J, new aa.u0(x61.x.u(new w61.k[]{new w61.k("name", new aa.t("name")), new w61.k("oid", new aa.t("oid")), new w61.k("repositoryId", new aa.t("repositoryId"))}))), n2));
     }
-    public p a(Object p1) { return null; }
+    public Object a(Object p1) { return null; }
 }

@@ -18,7 +18,7 @@ import sy.w;
 public final class SettingsPrivacyAnalyticsFragment extends Hilt_SettingsPrivacyAnalyticsFragment implements com.github.rudroid.fragments.util.f {
     public static final a Companion = new a();
     public com.github.rudroid.activities.util.c G0;
-    public l1 H0;
+    public final l1 H0;
 
     public static final class a {
     }

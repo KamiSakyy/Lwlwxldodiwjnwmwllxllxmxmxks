@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rb0 {
-    public String a;
-    public Boolean b;
+    public final String a;
+    public final Boolean b;
 
     public rb0(String str, Boolean bool) {
         this.a = str;

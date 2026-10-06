@@ -9,7 +9,7 @@ public final class n40 {
     public static final n40 t;
     public static final /* synthetic */ n40[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         n40 n40Var = new n40("ADMIN", 0, "ADMIN");

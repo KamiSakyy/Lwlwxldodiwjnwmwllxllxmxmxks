@@ -9,14 +9,14 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
-    public String a;
-    public String b;
-    public ZonedDateTime c;
-    public String d;
-    public a e;
-    public i f;
-    public ArrayList g;
-    public String h;
+    public final String a;
+    public final String b;
+    public final ZonedDateTime c;
+    public final String d;
+    public final a e;
+    public final i f;
+    public final ArrayList g;
+    public final String h;
 
     public e(String str, String str2, ZonedDateTime zonedDateTime, String str3, a aVar, i iVar, ArrayList arrayList, String str4) {
         this.a = str;

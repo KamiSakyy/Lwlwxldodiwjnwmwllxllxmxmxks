@@ -9,7 +9,7 @@ public final class sj {
     public static final sj t;
     public static final /* synthetic */ sj[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         sj sjVar = new sj("DEVICE_VERIFICATION", 0, "DEVICE_VERIFICATION");

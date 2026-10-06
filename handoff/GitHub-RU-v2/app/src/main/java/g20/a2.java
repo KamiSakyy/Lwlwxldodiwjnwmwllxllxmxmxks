@@ -4,9 +4,9 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a2 {
-    public ZonedDateTime a;
-    public String b;
-    public String c;
+    public final ZonedDateTime a;
+    public final String b;
+    public final String c;
 
     public a2(String str, String str2, ZonedDateTime zonedDateTime) {
         this.a = zonedDateTime;

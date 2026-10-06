@@ -23,10 +23,10 @@ public final class b {
     public static PendingIntent i;
     public static final Pattern j = Pattern.compile("\\|ID\\|([^|]+)\\|:?+(.*)");
     public final q0 a = new q0(0);
-    public Context b;
-    public i1 c;
-    public ScheduledThreadPoolExecutor d;
-    public Messenger e;
+    public final Context b;
+    public final i1 c;
+    public final ScheduledThreadPoolExecutor d;
+    public final Messenger e;
     public Messenger f;
     public g g;
 

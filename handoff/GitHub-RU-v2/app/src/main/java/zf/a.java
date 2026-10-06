@@ -4,8 +4,8 @@ import yf.c;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public boolean a;
-    public c b;
+    public final boolean a;
+    public final c b;
 
     public a(boolean z, c cVar) {
         this.a = z;

@@ -4,9 +4,9 @@ import uu0.k3;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r {
-    public String a;
-    public k3 b;
-    public uu0.o c;
+    public final String a;
+    public final k3 b;
+    public final uu0.o c;
 
     public r(String str, k3 k3Var, uu0.o oVar) {
         k71.k.g(str, "__typename");

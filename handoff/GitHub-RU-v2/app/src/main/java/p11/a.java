@@ -7,10 +7,10 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
     public static final /* synthetic */ int e = 0;
-    public g a;
-    public List b;
-    public b c;
-    public String d;
+    public final g a;
+    public final List b;
+    public final b c;
+    public final String d;
 
     static {
         Collections.unmodifiableList(new ArrayList());

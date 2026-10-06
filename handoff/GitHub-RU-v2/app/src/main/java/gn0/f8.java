@@ -9,7 +9,7 @@ public final class f8 {
     public static final f8 t;
     public static final /* synthetic */ f8[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         f8 f8Var = new f8("ABANDONED", 0, "ABANDONED");

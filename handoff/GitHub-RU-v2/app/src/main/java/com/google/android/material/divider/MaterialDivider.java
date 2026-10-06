@@ -13,7 +13,7 @@ import u31.j;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public class MaterialDivider extends View {
-    public j r;
+    public final j r;
     public int s;
     public int t;
     public int u;

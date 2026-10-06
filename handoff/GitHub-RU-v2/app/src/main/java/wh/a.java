@@ -11,12 +11,12 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a extends n1 {
-    public String e;
-    public aj.a f;
-    public b g;
-    public d h;
-    public e i;
-    public c j;
+    public final String e;
+    public final aj.a f;
+    public final b g;
+    public final d h;
+    public final e i;
+    public final c j;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public a(Application application, String str, aj.a aVar, b bVar, d dVar, e eVar, c cVar) {

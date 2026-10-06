@@ -4,7 +4,7 @@ package com.github.rudroid.feed;
 public final class r1 extends t {
 
     /* renamed from: b, reason: collision with root package name */
-    public t10.h f12698b;
+    public final t10.h f12698b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public r1(t10.h hVar) {

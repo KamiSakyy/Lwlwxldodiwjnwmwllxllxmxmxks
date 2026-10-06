@@ -2,10 +2,10 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p1 extends sy.r {
-    public e4 a;
-    public Integer b;
-    public Integer c;
-    public String d;
+    public final e4 a;
+    public final Integer b;
+    public final Integer c;
+    public final String d;
 
     public p1(e4 e4Var, Integer num, Integer num2, String str) {
         this.a = e4Var;

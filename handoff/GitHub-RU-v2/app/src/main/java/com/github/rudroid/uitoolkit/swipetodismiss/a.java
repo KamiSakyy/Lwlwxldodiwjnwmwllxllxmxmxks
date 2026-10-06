@@ -9,7 +9,6 @@ public interface a {
 
     void a(float f, float f2);
     public Object W(Object p1) { return null; }
-    public static Object c(Object p1, Object p2) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
     public Object f(Object p1) { return null; }
-    public Object f(Object) { return null; }
 }

@@ -7,8 +7,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class l extends y {
     public static final q c;
-    public List a;
-    public List b;
+    public final List a;
+    public final List b;
 
     static {
         t71.n nVar = q.d;

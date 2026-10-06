@@ -8,5 +8,4 @@ public interface p {
     public Object b(Object p1) { return null; }
     public Object e(Object p1) { return null; }
     public Object f(Object p1) { return null; }
-    public Object e(float) { return null; }
 }

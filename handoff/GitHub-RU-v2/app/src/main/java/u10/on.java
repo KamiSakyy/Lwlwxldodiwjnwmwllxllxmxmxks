@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class on implements aaShadow.w0 {
     public static final ym Companion = new ym();
-    public String r;
-    public aa1.b s;
+    public final String r;
+    public final aa1.b s;
 
     public on(String str) {
         k71.k.g(str, "id");

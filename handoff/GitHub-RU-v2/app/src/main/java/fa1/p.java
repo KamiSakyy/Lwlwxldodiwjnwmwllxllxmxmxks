@@ -7,7 +7,7 @@ import java.util.concurrent.Executor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class p extends f {
-    public Executor a;
+    public final Executor a;
 
     public p(Executor executor) {
         this.a = executor;

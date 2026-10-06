@@ -13,7 +13,7 @@ import sy.w;
 @g81.e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class LanguageFilter extends d {
-    public Language v;
+    public final Language v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<LanguageFilter> CREATOR = new a21.g(28);
     public static final w61.h[] w = {w.s(w61.i.r, new bm.i(12)), null, null};

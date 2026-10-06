@@ -2,8 +2,8 @@ package com.github.rudroid.twofactor.missed;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m {
-    public Long a;
-    public boolean b;
+    public final Long a;
+    public final boolean b;
 
     public m(Long l, boolean z) {
         this.a = l;

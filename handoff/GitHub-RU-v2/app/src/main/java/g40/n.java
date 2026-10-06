@@ -2,8 +2,8 @@ package g40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n {
-    public String a;
-    public h b;
+    public final String a;
+    public final h b;
 
     public n(String str, h hVar) {
         this.a = str;

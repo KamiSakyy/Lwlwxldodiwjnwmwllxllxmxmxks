@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zd {
-    public String a;
-    public m10.gb0 b;
+    public final String a;
+    public final m10.gb0 b;
 
     public zd(String str, m10.gb0 gb0Var) {
         this.a = str;

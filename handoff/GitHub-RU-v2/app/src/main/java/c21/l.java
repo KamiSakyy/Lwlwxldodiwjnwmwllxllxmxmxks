@@ -7,7 +7,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l extends d21.a {
     public static final Parcelable.Creator<l> CREATOR = new bm.o(26);
-    public int r;
+    public final int r;
     public List s;
 
     public l(int i, List list) {

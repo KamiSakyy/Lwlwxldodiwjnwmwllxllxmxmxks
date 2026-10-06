@@ -9,7 +9,7 @@ import w61.a0;
 final class h implements j71.c {
 
     /* renamed from: r, reason: collision with root package name */
-    public vz0.e f8809r;
+    public final vz0.e f8809r;
 
     public h(String str, vz0.c cVar) {
         k.g(cVar, "loopAction");

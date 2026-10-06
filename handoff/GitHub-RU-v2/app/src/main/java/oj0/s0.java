@@ -2,9 +2,9 @@ package oj0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s0 {
-    public String a;
-    public String b;
-    public wg0.a c;
+    public final String a;
+    public final String b;
+    public final wg0.a c;
 
     public s0(String str, String str2, wg0.a aVar) {
         this.a = str;

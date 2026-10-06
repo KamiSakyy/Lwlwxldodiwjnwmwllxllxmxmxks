@@ -5,11 +5,11 @@ import m10.m8;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x2 implements aa.h0 {
-    public m8 a;
-    public String b;
-    public String c;
-    public String d;
-    public ArrayList e;
+    public final m8 a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final ArrayList e;
 
     public x2(m8 m8Var, String str, String str2, String str3, ArrayList arrayList) {
         this.a = m8Var;

@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class lf0 implements aaShadow.v0 {
-    public nf0 a;
-    public mf0 b;
-    public String c;
-    public String d;
+    public final nf0 a;
+    public final mf0 b;
+    public final String c;
+    public final String d;
 
     public lf0(nf0 nf0Var, mf0 mf0Var, String str, String str2) {
         this.a = nf0Var;

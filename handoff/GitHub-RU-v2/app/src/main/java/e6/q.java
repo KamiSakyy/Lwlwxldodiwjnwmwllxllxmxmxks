@@ -13,7 +13,7 @@ public enum q implements b0 {
 
 
     /* renamed from: r, reason: collision with root package name */
-    public int f21975r;
+    public final int f21975r;
 
     q(int i) {
         this.f21975r = i;

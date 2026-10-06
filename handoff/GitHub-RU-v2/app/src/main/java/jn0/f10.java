@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f10 implements aaShadow.w0 {
     public static final b10 Companion = new b10();
-    public String r;
-    public String s;
-    public aa1.b t;
+    public final String r;
+    public final String s;
+    public final aa1.b t;
 
     public f10(aa1.b bVar, String str, String str2) {
         k71.k.g(str, "owner");

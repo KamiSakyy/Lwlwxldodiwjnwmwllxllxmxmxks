@@ -7,5 +7,4 @@ package f1;
 public class nb {
     public nb() {
     }
-    public Object a(Object, Object, Object, boolean, boolean, Object, Object, Object, Object, Object, Object, Object, boolean, int, int, Object, Object, Object, int, int, int) { return null; }
 }

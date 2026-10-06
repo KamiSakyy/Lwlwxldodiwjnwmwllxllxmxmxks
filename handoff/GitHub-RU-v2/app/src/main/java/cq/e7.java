@@ -2,9 +2,9 @@ package cq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e7 {
-    public k7 a;
-    public String b;
-    public String c;
+    public final k7 a;
+    public final String b;
+    public final String c;
 
     public e7(k7 k7Var, String str, String str2) {
         this.a = k7Var;

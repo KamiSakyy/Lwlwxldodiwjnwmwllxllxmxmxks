@@ -6,10 +6,10 @@ import f00.m0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n {
-    public String a;
-    public String b;
-    public f00.g0 c;
-    public m0 d;
+    public final String a;
+    public final String b;
+    public final f00.g0 c;
+    public final m0 d;
 
     public n(String str, String str2, f00.g0 g0Var, m0 m0Var) {
         k71.k.g(str, "__typename");

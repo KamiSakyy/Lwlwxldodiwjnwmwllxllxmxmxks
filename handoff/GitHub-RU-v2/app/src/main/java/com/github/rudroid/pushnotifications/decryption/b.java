@@ -5,10 +5,10 @@ public final class b {
     public static final a Companion = new a();
 
     /* renamed from: a, reason: collision with root package name */
-    public String f18547a;
+    public final String f18547a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f18548b;
+    public final String f18548b;
 
     public static final class a {
     }

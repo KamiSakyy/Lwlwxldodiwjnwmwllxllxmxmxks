@@ -5,14 +5,14 @@ package t;
  * Оригинал потерян при декомпиляции APK.
  */
 public class q {
-    public static Object q() {
+    public q() {
     }
 
     public static Object t(Object... a) {
         return null;
     }
 
-    public static o j(Object... a) {
+    public static Object j(Object... a) {
         return null;
     }
 
@@ -21,9 +21,9 @@ public class q {
     }
 
     public static Object q;
-    public static Object d(Object p1, Object p2, Object p3) { return null; }
-    public static Object f(Object p1, Object p2) { return null; }
-    public static o k(Object p1) { return null; }
-    public e8 pShadow(Object p1) { return null; }
-    public Avatar q(Object p1) { return null; }
+    public Object d(Object p1, Object p2, Object p3) { return null; }
+    public Object f(Object p1, Object p2) { return null; }
+    public Object k(Object p1) { return null; }
+    public Object pShadow(Object p1) { return null; }
+    public Object q(Object p1) { return null; }
 }

@@ -9,9 +9,9 @@ public class m1 extends z71.a implements f1, i, z71.r {
     public long A;
     public int B;
     public int C;
-    public int v;
-    public int w;
-    public x71.a x;
+    public final int v;
+    public final int w;
+    public final x71.a x;
     public Object[] y;
     public long z;
 

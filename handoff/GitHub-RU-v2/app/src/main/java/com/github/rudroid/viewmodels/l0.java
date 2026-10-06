@@ -5,14 +5,14 @@ import com.github.rudroid.utilities.ui.g1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l0 extends androidx.lifecycle.k1 {
     public static final a Companion = new a();
-    public com.github.rudroid.activities.util.c s;
-    public ml.q t;
-    public String u;
-    public String v;
-    public String w;
-    public String x;
-    public y71.y1 y;
-    public y71.i1 z;
+    public final com.github.rudroid.activities.util.c s;
+    public final ml.q t;
+    public final String u;
+    public final String v;
+    public final String w;
+    public final String x;
+    public final y71.y1 y;
+    public final y71.i1 z;
 
     public static final class a {
     }
@@ -47,9 +47,9 @@ public final class l0 extends androidx.lifecycle.k1 {
     }
 
     public static final class b {
-        public String a;
-        public boolean b;
-        public boolean c;
+        public final String a;
+        public final boolean b;
+        public final boolean c;
 
         public b(String str, boolean z, boolean z2) {
             k71.k.g(str, "text");

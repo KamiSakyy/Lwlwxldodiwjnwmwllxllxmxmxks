@@ -4,11 +4,11 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n40 {
-    public String a;
-    public ZonedDateTime b;
-    public j40 c;
-    public k40 d;
-    public String e;
+    public final String a;
+    public final ZonedDateTime b;
+    public final j40 c;
+    public final k40 d;
+    public final String e;
 
     public n40(String str, ZonedDateTime zonedDateTime, j40 j40Var, k40 k40Var, String str2) {
         this.a = str;

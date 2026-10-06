@@ -4,8 +4,8 @@ import m10.pt;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y implements aa.h0 {
-    public pt a;
-    public String b;
+    public final pt a;
+    public final String b;
 
     public y(pt ptVar, String str) {
         this.a = ptVar;

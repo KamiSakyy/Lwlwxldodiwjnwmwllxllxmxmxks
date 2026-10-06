@@ -4,11 +4,11 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f4 {
-    public String a;
-    public String b;
-    public String c;
-    public Object d;
-    public boolean e;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final Object d;
+    public final boolean e;
 
     public f4(String str, String str2, String str3, List list, boolean z) {
         this.a = str;

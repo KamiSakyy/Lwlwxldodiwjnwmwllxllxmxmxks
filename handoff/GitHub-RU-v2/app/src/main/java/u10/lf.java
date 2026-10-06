@@ -5,12 +5,12 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class lf implements aaShadow.w0 {
     public static final te Companion = new te();
-    public String r;
-    public String s;
-    public String t;
-    public String u;
-    public String v;
-    public aa1.b w;
+    public final String r;
+    public final String s;
+    public final String t;
+    public final String u;
+    public final String v;
+    public final aa1.b w;
 
     public lf(String str, String str2, String str3, String str4, String str5) {
         k71.k.g(str, "issueQuery");

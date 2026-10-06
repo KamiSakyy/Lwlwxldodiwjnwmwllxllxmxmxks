@@ -6,16 +6,16 @@ import a0.s0;
 public final class z {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f27703a;
+    public final int f27703a;
 
     /* renamed from: b, reason: collision with root package name */
-    public s f27704b;
+    public final s f27704b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f27705c;
+    public final int f27705c;
 
     /* renamed from: d, reason: collision with root package name */
-    public r f27706d;
+    public final r f27706d;
 
     public z(int i, s sVar, int i10, r rVar) {
         this.f27703a = i;

@@ -12,16 +12,16 @@ public final class h implements Parcelable {
     public static final Parcelable.Creator<h> CREATOR = new m(15);
 
     /* renamed from: r, reason: collision with root package name */
-    public IntentSender f24888r;
+    public final IntentSender f24888r;
 
     /* renamed from: s, reason: collision with root package name */
-    public Intent f24889s;
+    public final Intent f24889s;
 
     /* renamed from: t, reason: collision with root package name */
-    public int f24890t;
+    public final int f24890t;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f24891u;
+    public final int f24891u;
 
     public h(IntentSender intentSender, Intent intent, int i, int i10) {
         k.g(intentSender, "intentSender");

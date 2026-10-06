@@ -2,8 +2,8 @@ package dw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p6 {
-    public String a;
-    public xx.a b;
+    public final String a;
+    public final xx.a b;
 
     public p6(String str, xx.a aVar) {
         this.a = str;

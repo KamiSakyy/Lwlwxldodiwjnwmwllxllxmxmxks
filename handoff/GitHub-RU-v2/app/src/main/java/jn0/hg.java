@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class hg {
-    public String a;
-    public String b;
-    public xt0.x0 c;
+    public final String a;
+    public final String b;
+    public final xt0.x0 c;
 
     public hg(String str, String str2, xt0.x0 x0Var) {
         this.a = str;

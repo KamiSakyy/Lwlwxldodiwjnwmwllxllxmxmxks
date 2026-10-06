@@ -6,10 +6,10 @@ import android.content.ComponentName;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public b.d f32176a;
+    public final b.d f32176a;
 
     /* renamed from: b, reason: collision with root package name */
-    public ComponentName f32177b;
+    public final ComponentName f32177b;
 
     public e(b.d dVar, ComponentName componentName) {
         this.f32176a = dVar;

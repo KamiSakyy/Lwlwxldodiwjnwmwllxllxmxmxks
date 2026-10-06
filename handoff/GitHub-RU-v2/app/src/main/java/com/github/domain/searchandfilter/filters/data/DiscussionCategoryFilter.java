@@ -21,7 +21,7 @@ import x61.r;
 public final class DiscussionCategoryFilter extends d {
     public static final w61.h[] w;
     public static final y60.b x;
-    public List v;
+    public final List v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<DiscussionCategoryFilter> CREATOR = new a21.g(18);
 

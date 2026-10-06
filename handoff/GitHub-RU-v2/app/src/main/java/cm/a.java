@@ -22,7 +22,7 @@ public final class a {
     public static final a x;
     public static final a y;
     public static final a z;
-    public List r;
+    public final List r;
 
     static {
         a aVar = new a(0, "ALL", r.r);

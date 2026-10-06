@@ -19,8 +19,8 @@ import java.util.Set;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d extends e implements a21.a {
-    public Set y;
-    public m z;
+    public final Set y;
+    public final m z;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*

@@ -2,9 +2,9 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w8 {
-    public String a;
-    public v8 b;
-    public String c;
+    public final String a;
+    public final v8 b;
+    public final String c;
 
     public w8(String str, v8 v8Var, String str2) {
         this.a = str;

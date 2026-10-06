@@ -59,10 +59,10 @@ import u10.zu;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y8 implements z01.g1, yb0, y90 {
     public final /* synthetic */ int r;
-    public com.github.service.wrapper.j s;
-    public com.github.service.wrapper.bShadow t;
-    public v71.v u;
-    public s01.p v;
+    public final com.github.service.wrapper.j s;
+    public final com.github.service.wrapper.bShadow t;
+    public final v71.v u;
+    public final s01.p v;
 
     public y8(com.github.service.wrapper.j jVar, com.github.service.wrapper.bShadow bVar, v71.v vVar, int i) {
         this.r = i;

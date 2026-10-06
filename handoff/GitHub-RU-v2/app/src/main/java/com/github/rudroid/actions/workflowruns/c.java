@@ -7,13 +7,13 @@ import jo.f4;
 public final class c {
 
     /* renamed from: a, reason: collision with root package name */
-    public mn.u f5325a;
+    public final mn.u f5325a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f5326b;
+    public final boolean f5326b;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean f5327c;
+    public final boolean f5327c;
 
     public c(mn.u uVar, boolean z10) {
         CheckStatusState checkStatusState = uVar.g.b;

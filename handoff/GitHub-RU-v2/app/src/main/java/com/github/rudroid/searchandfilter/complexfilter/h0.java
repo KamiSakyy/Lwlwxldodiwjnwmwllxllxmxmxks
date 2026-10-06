@@ -9,7 +9,7 @@ import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class h0<T> {
-    public j71.e a;
+    public final j71.e a;
     public final y1 b = n1.c((Object) null);
     public final LinkedHashSet c = new LinkedHashSet();
     public List d = x61.r.r;

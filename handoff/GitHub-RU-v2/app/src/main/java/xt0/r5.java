@@ -5,10 +5,10 @@ import pz0.wt;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r5 {
-    public wt a;
-    public ZonedDateTime b;
-    public String c;
-    public String d;
+    public final wt a;
+    public final ZonedDateTime b;
+    public final String c;
+    public final String d;
 
     public r5(wt wtVar, ZonedDateTime zonedDateTime, String str, String str2) {
         this.a = wtVar;

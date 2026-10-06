@@ -2,11 +2,11 @@ package m10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m0 {
-    public aa1.b a;
-    public String b;
-    public aa1.b c;
-    public aa1.b d;
-    public aa1.b e;
+    public final aa1.b a;
+    public final String b;
+    public final aa1.b c;
+    public final aa1.b d;
+    public final aa1.b e;
 
     public m0(aa.u0 u0Var, aa1.b bVar, String str) {
         k71.k.g(str, "issueId");
@@ -44,5 +44,5 @@ public final class m0 {
     }
 
     public Object e;
-    public static Object c(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object c(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

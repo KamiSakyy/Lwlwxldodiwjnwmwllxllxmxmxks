@@ -2,8 +2,8 @@ package tz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k1 {
-    public v1 a;
-    public z b;
+    public final v1 a;
+    public final z b;
 
     public k1(v1 v1Var, z zVar) {
         this.a = v1Var;

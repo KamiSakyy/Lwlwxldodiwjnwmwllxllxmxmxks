@@ -8,7 +8,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h4 extends d21.a {
     public static final Parcelable.Creator<h4> CREATOR = new c21.c0(10);
-    public List r;
+    public final List r;
 
     public h4(ArrayList arrayList) {
         this.r = arrayList;

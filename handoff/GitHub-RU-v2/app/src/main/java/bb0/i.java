@@ -12,9 +12,9 @@ import yz0.b3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i implements b3 {
-    public boolean a;
-    public boolean b;
-    public ArrayList c;
+    public final boolean a;
+    public final boolean b;
+    public final ArrayList c;
 
     public i(fb0.d dVar) {
         k71.k.g(dVar, "data");

@@ -5,13 +5,13 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j4 {
-    public String a;
-    public String b;
-    public ZonedDateTime c;
-    public String d;
-    public StatusState e;
-    public com.github.service.models.response.a f;
-    public com.github.service.models.response.a g;
+    public final String a;
+    public final String b;
+    public final ZonedDateTime c;
+    public final String d;
+    public final StatusState e;
+    public final com.github.service.models.response.a f;
+    public final com.github.service.models.response.a g;
 
     public j4(String str, String str2, ZonedDateTime zonedDateTime, String str3, StatusState statusState, com.github.service.models.response.a aVar, com.github.service.models.response.a aVar2) {
         k71.k.g(statusState, "checksState");

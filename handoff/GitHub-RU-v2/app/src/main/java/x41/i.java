@@ -5,8 +5,8 @@ import a0.s0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i {
     public static final i c = new i(0, 0);
-    public int a;
-    public int b;
+    public final int a;
+    public final int b;
 
     public i(int i, int i2) {
         this.a = i;

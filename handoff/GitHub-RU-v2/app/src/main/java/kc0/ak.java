@@ -2,11 +2,11 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ak {
-    public String a;
-    public String b;
-    public ck c;
-    public dk d;
-    public bk e;
+    public final String a;
+    public final String b;
+    public final ck c;
+    public final dk d;
+    public final bk e;
 
     public ak(String str, String str2, ck ckVar, dk dkVar, bk bkVar) {
         k71.k.g(str, "__typename");

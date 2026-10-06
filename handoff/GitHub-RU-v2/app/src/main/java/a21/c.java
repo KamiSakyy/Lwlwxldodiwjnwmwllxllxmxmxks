@@ -8,14 +8,14 @@ import com.google.android.gms.internal.measurement.h0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class c {
-    public Context a;
-    public String b;
-    public m c;
-    public c21.m d;
-    public b21.a e;
-    public int f;
-    public rb0.b g;
-    public b21.d h;
+    public final Context a;
+    public final String b;
+    public final m c;
+    public final c21.m d;
+    public final b21.a e;
+    public final int f;
+    public final rb0.b g;
+    public final b21.d h;
 
     public c(Context context, m mVar, c21.m mVar2, b bVar) {
         u.h(context, "Null context is not permitted.");

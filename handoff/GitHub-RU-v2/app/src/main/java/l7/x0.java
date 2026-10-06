@@ -12,7 +12,7 @@ public class x0 extends ViewGroup.MarginLayoutParams {
     public n1 f28350a;
 
     /* renamed from: b, reason: collision with root package name */
-    public Rect f28351b;
+    public final Rect f28351b;
 
     /* renamed from: c, reason: collision with root package name */
     public boolean f28352c;

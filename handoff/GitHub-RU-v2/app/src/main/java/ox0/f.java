@@ -6,22 +6,22 @@ import pz0.rl;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
-    public String a;
-    public String b;
-    public String c;
-    public boolean d;
-    public int e;
-    public ZonedDateTime f;
-    public rl g;
-    public o0 h;
-    public String i;
-    public boolean j;
-    public boolean k;
-    public String l;
-    public e m;
-    public gl n;
-    public n0 o;
-    public String p;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final boolean d;
+    public final int e;
+    public final ZonedDateTime f;
+    public final rl g;
+    public final o0 h;
+    public final String i;
+    public final boolean j;
+    public final boolean k;
+    public final String l;
+    public final e m;
+    public final gl n;
+    public final n0 o;
+    public final String p;
 
     public f(String str, String str2, String str3, boolean z, int i, ZonedDateTime zonedDateTime, rl rlVar, o0 o0Var, String str4, boolean z2, boolean z3, String str5, e eVar, gl glVar, n0 n0Var, String str6) {
         this.a = str;

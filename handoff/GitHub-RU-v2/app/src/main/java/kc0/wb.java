@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class wb {
-    public yb a;
+    public final yb a;
 
     public wb(yb ybVar) {
         this.a = ybVar;

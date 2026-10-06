@@ -7,9 +7,9 @@ import m10.p00;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g0 implements aa.w0 {
     public static final a0 Companion = new a0();
-    public String r;
-    public String s;
-    public aa.u0 t;
+    public final String r;
+    public final String s;
+    public final aa.u0 t;
 
     public g0(aa.u0 u0Var, String str, String str2) {
         k71.k.g(str, "repoOwner");

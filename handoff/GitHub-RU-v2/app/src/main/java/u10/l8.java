@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l8 {
-    public String a;
-    public k8 b;
-    public String c;
+    public final String a;
+    public final k8 b;
+    public final String c;
 
     public l8(String str, k8 k8Var, String str2) {
         this.a = str;

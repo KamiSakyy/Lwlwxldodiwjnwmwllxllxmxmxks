@@ -15,7 +15,7 @@ public final class a implements g, i, b {
     public boolean f32159r;
 
     /* renamed from: s, reason: collision with root package name */
-    public ImageView f32160s;
+    public final ImageView f32160s;
 
     public a(ImageView imageView) {
         this.f32160s = imageView;

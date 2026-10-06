@@ -6,8 +6,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements h, Serializable {
-    public h r;
-    public f s;
+    public final h r;
+    public final f s;
 
     public b(f fVar, h hVar) {
         k.g(hVar, "left");

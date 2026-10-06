@@ -9,7 +9,7 @@ public final class g7 {
     public static final g7 t;
     public static final /* synthetic */ g7[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         g7 g7Var = new g7("CHAT_THREAD", 0, "CHAT_THREAD");

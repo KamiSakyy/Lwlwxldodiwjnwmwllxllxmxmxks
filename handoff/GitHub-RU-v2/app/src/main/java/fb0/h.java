@@ -6,10 +6,10 @@ import hc0.p2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public String a;
-    public String b;
-    public j2 c;
-    public p2 d;
+    public final String a;
+    public final String b;
+    public final j2 c;
+    public final p2 d;
 
     public h(String str, String str2, j2 j2Var, p2 p2Var) {
         this.a = str;

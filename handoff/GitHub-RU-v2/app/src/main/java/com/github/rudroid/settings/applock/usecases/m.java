@@ -5,7 +5,7 @@ import w61.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m {
-    public n5.f a;
+    public final n5.f a;
 
     public m(n5.f fVar) {
         k71.k.g(fVar, "dataStore");

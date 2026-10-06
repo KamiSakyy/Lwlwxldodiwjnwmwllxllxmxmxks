@@ -6,20 +6,20 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j0 implements l0, Parcelable {
     public static final Parcelable.Creator<j0> CREATOR = new i0(0);
-    public o0 A;
-    public String B;
-    public String C;
-    public String D;
-    public boolean E;
-    public int r;
-    public String s;
-    public String t;
-    public n0 u;
-    public String v;
-    public String w;
-    public String x;
-    public String y;
-    public m0 z;
+    public final o0 A;
+    public final String B;
+    public final String C;
+    public final String D;
+    public final boolean E;
+    public final int r;
+    public final String s;
+    public final String t;
+    public final n0 u;
+    public final String v;
+    public final String w;
+    public final String x;
+    public final String y;
+    public final m0 z;
 
     public j0(int i, String str, String str2, n0 n0Var, String str3, String str4, String str5, String str6, m0 m0Var, o0 o0Var, String str7, String str8, String str9, boolean z) {
         k71.k.g(str, "name");

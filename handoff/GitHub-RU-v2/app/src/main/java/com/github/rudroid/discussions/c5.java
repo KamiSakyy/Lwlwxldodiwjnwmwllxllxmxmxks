@@ -4,13 +4,13 @@ package com.github.rudroid.discussions;
 public final class c5 extends za implements le.a {
 
     /* renamed from: t, reason: collision with root package name */
-    public int f11223t;
+    public final int f11223t;
 
     /* renamed from: u, reason: collision with root package name */
-    public String f11224u;
+    public final String f11224u;
 
     /* renamed from: v, reason: collision with root package name */
-    public boolean f11225v;
+    public final boolean f11225v;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public c5(int i, String str, boolean z10) {

@@ -6,7 +6,7 @@ import kotlin.NoWhenBranchMatchedException;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e extends x61.b {
-    public ArrayDeque t;
+    public final ArrayDeque t;
     public final /* synthetic */ g u;
 
     public e(g gVar) {

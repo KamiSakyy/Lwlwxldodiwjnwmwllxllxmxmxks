@@ -9,5 +9,4 @@ public final class c {
     public static final class b {
     }
     public Object v(Object p1) { return null; }
-    public Object v(Object) { return null; }
 }

@@ -6,8 +6,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h60 implements aaShadow.n0 {
     public static final d60 Companion = new d60();
-    public String r;
-    public ArrayList s;
+    public final String r;
+    public final ArrayList s;
 
     public h60(String str, ArrayList arrayList) {
         k71.k.g(str, "labelableId");

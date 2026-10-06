@@ -7,14 +7,14 @@ import pz0.wt;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l implements h0 {
-    public String a;
-    public String b;
-    public boolean c;
-    public g d;
-    public wt e;
-    public j f;
-    public String g;
-    public h h;
+    public final String a;
+    public final String b;
+    public final boolean c;
+    public final g d;
+    public final wt e;
+    public final j f;
+    public final String g;
+    public final h h;
 
     public l(String str, String str2, boolean z, g gVar, wt wtVar, j jVar, String str3, h hVar) {
         this.a = str;

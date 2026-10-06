@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class yi0 {
-    public String a;
-    public cq.o b;
+    public final String a;
+    public final cq.o b;
 
     public yi0(String str, cq.o oVar) {
         this.a = str;

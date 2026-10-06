@@ -2,9 +2,9 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x5 {
-    public Integer a;
-    public boolean b;
-    public boolean c;
+    public final Integer a;
+    public final boolean b;
+    public final boolean c;
 
     public x5(Integer num, boolean z, boolean z2) {
         this.a = num;

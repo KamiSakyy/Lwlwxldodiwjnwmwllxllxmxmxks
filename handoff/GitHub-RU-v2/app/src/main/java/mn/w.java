@@ -9,12 +9,12 @@ import java.util.List;
 public final class w {
     public static final v Companion = new v();
     public static final w g;
-    public String a;
-    public String b;
-    public WorkflowState c;
-    public Object d;
-    public x01.i e;
-    public boolean f;
+    public final String a;
+    public final String b;
+    public final WorkflowState c;
+    public final Object d;
+    public final x01.i e;
+    public final boolean f;
 
     static {
         WorkflowState workflowState = WorkflowState.UNKNOWN__;

@@ -10,8 +10,8 @@ import z01.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l0 {
-    public oa.g a;
-    public cn.a b;
+    public final oa.g a;
+    public final cn.a b;
 
     public l0(oa.g gVar, cn.a aVar) {
         k71.k.g(gVar, "service");

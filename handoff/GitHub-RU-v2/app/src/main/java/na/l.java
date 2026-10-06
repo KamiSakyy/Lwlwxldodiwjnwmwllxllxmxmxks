@@ -4,7 +4,7 @@ package na;
 public final class l implements a {
 
     /* renamed from: a, reason: collision with root package name */
-    public aa.d f29682a;
+    public final aa.d f29682a;
 
     public l(aa.d dVar) {
         k71.k.g(dVar, "request");

@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class lu implements aaShadow.w0 {
     public static final eu Companion = new eu();
-    public String r;
-    public aa.u0 s;
+    public final String r;
+    public final aa.u0 s;
 
     public lu(aa.u0 u0Var, String str) {
         k71.k.g(str, "id");

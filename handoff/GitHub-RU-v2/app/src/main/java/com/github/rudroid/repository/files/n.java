@@ -4,10 +4,10 @@ package com.github.rudroid.repository.files;
 public final class n {
 
     /* renamed from: a, reason: collision with root package name */
-    public boolean f19638a;
+    public final boolean f19638a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f19639b;
+    public final boolean f19639b;
 
     public n(boolean z10, boolean z11) {
         this.f19638a = z10;

@@ -6,7 +6,7 @@ import s3.f;
 public final class b implements a {
 
     /* renamed from: a, reason: collision with root package name */
-    public float f31062a;
+    public final float f31062a;
 
     public b(float f6) {
         this.f31062a = f6;

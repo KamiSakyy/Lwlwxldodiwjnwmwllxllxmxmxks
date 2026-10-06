@@ -10,7 +10,7 @@ public final class DeploymentStatusState {
     private static final /* synthetic */ d71.a $ENTRIES;
     private static final /* synthetic */ DeploymentStatusState[] $VALUES;
     public static final a1 Companion;
-    private String rawValue;
+    private final String rawValue;
     public static final DeploymentStatusState PENDING = new DeploymentStatusState("PENDING", 0, "PENDING");
     public static final DeploymentStatusState SUCCESS = new DeploymentStatusState("SUCCESS", 1, "SUCCESS");
     public static final DeploymentStatusState FAILURE = new DeploymentStatusState("FAILURE", 2, "FAILURE");

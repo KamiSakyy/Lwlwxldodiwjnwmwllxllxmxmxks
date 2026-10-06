@@ -215,6 +215,6 @@ public abstract class w extends v {
     public static final void z(String str) {
         throw new NumberFormatException(no.a.i('\'', "Invalid number format: '", str));
     }
-    public static Object c(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8, Object p9) { return null; }
+    public Object c(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8, Object p9) { return null; }
     public Object a = null;
 }

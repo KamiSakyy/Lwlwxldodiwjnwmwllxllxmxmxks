@@ -2,8 +2,8 @@ package m10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class jf {
-    public aa.u0 a;
-    public aa.u0 b;
+    public final aa.u0 a;
+    public final aa.u0 b;
 
     public jf(aa.u0 u0Var, aa.u0 u0Var2) {
         this.a = u0Var;

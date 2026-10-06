@@ -7,13 +7,13 @@ import com.github.service.models.response.CheckStatusState;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f {
-    public String a;
-    public String b;
-    public String c;
-    public CheckStatusState d;
-    public CheckConclusionState e;
-    public e f;
-    public String g;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final CheckStatusState d;
+    public final CheckConclusionState e;
+    public final e f;
+    public final String g;
 
     public f(String str, String str2, String str3, CheckStatusState checkStatusState, CheckConclusionState checkConclusionState, e eVar, String str4) {
         k71.k.g(str, "id");

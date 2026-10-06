@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class vf {
-    public String a;
-    public xf b;
-    public yf c;
+    public final String a;
+    public final xf b;
+    public final yf c;
 
     public vf(String str, xf xfVar, yf yfVar) {
         k71.k.g(str, "__typename");

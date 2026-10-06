@@ -15,13 +15,13 @@ import yf.c;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o extends k1 {
-    public com.github.rudroid.settings.applock.usecases.a s;
-    public com.github.rudroid.settings.applock.usecases.d t;
-    public com.github.rudroid.settings.applock.usecases.j u;
-    public i v;
-    public y1 w;
-    public i1 x;
-    public q1 y;
+    public final com.github.rudroid.settings.applock.usecases.a s;
+    public final com.github.rudroid.settings.applock.usecases.d t;
+    public final com.github.rudroid.settings.applock.usecases.j u;
+    public final i v;
+    public final y1 w;
+    public final i1 x;
+    public final q1 y;
 
     public o(com.github.rudroid.settings.applock.usecases.a aVar, com.github.rudroid.settings.applock.usecases.d dVar, com.github.rudroid.settings.applock.usecases.j jVar, i iVar) {
         k71.k.g(aVar, "observeAppLockPreferencesUseCase");

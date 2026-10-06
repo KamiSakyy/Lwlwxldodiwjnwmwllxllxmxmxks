@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ew {
-    public bw a;
-    public fw b;
+    public final bw a;
+    public final fw b;
 
     public ew(bw bwVar, fw fwVar) {
         this.a = bwVar;

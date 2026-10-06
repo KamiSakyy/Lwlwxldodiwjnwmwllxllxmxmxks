@@ -21,7 +21,7 @@ import java.util.Map;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t5 implements j41.d, x5 {
     public static final e5 s = new e5(3);
-    public Object r;
+    public final Object r;
 
     public /* synthetic */ t5(Object obj) {
         this.r = obj;

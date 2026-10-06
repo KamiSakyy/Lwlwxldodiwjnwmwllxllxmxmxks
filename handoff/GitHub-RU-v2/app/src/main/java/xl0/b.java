@@ -26,9 +26,9 @@ import x61.r;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements h01.c {
     public static final a Companion = new a();
-    public int a;
-    public List b;
-    public ChecksOverviewState c;
+    public final int a;
+    public final List b;
+    public final ChecksOverviewState c;
 
     /* JADX WARN: Code restructure failed: missing block: B:124:0x01e9, code lost:
     

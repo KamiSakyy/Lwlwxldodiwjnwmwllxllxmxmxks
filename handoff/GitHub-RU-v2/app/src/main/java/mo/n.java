@@ -2,10 +2,10 @@ package mo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n {
-    public d0 a;
-    public String b;
-    public String c;
-    public String d;
+    public final d0 a;
+    public final String b;
+    public final String c;
+    public final String d;
 
     public n(d0 d0Var, String str, String str2, String str3) {
         this.a = d0Var;

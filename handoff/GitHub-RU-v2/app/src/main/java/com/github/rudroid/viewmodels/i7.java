@@ -6,8 +6,8 @@ public interface i7 {
     public static final class a {
         public static final C0013a Companion = new C0013a();
         public static final a c = new a(null, false);
-        public boolean a;
-        public String b;
+        public final boolean a;
+        public final String b;
 
         /* renamed from: com.github.rudroid.viewmodels.i7$a$a, reason: collision with other inner class name */
         public static final class C0013a {

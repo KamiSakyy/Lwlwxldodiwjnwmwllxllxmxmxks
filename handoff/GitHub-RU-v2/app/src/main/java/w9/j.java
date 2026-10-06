@@ -4,7 +4,7 @@ package w9;
 public final class j implements h {
 
     /* renamed from: a, reason: collision with root package name */
-    public boolean f33465a;
+    public final boolean f33465a;
 
     public j(boolean z10) {
         this.f33465a = z10;

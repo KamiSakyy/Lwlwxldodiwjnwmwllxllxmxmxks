@@ -9,7 +9,7 @@ public final class kc {
     public static final kc t;
     public static final /* synthetic */ kc[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         kc kcVar = new kc("ABANDONED", 0, "ABANDONED");

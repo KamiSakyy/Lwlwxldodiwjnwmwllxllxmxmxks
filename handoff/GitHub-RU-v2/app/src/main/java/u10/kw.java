@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class kw {
-    public String a;
-    public String b;
-    public w80.c1 c;
+    public final String a;
+    public final String b;
+    public final w80.c1 c;
 
     public kw(String str, String str2, w80.c1 c1Var) {
         this.a = str;

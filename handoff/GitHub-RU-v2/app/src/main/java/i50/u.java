@@ -7,17 +7,17 @@ import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u implements h0 {
-    public String a;
-    public String b;
-    public boolean c;
-    public boolean d;
-    public boolean e;
-    public t f;
-    public String g;
-    public c40.c h;
-    public i80.c i;
-    public g70.a j;
-    public y60.a k;
+    public final String a;
+    public final String b;
+    public final boolean c;
+    public final boolean d;
+    public final boolean e;
+    public final t f;
+    public final String g;
+    public final c40.c h;
+    public final i80.c i;
+    public final g70.a j;
+    public final y60.a k;
 
     public u(String str, String str2, boolean z, boolean z2, boolean z3, t tVar, String str3, c40.c cVar, i80.c cVar2, g70.a aVar, y60.a aVar2) {
         this.a = str;

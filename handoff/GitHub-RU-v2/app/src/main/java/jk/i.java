@@ -7,12 +7,12 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i {
-    public String a;
-    public int b;
-    public lj.a c;
-    public String d;
-    public String e;
-    public n f;
+    public final String a;
+    public final int b;
+    public final lj.a c;
+    public final String d;
+    public final String e;
+    public final n f;
 
     public i(String str, int i, lj.a aVar, String str2, String str3, n nVar) {
         this.a = str;

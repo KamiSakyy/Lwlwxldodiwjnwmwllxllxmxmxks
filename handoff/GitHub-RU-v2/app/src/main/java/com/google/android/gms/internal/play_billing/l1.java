@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l1 extends k1 {
-    public byte[] t;
+    public final byte[] t;
 
     public l1(byte[] bArr) {
         bArr.getClass();

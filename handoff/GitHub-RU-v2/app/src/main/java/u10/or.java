@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class or implements aaShadow.v0 {
-    public pr a;
+    public final pr a;
 
     public or(pr prVar) {
         this.a = prVar;

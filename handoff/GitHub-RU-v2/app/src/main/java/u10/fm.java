@@ -2,12 +2,12 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fm {
-    public int a;
-    public String b;
-    public bm c;
-    public cm d;
-    public String e;
-    public String f;
+    public final int a;
+    public final String b;
+    public final bm c;
+    public final cm d;
+    public final String e;
+    public final String f;
 
     public fm(int i, String str, bm bmVar, cm cmVar, String str2, String str3) {
         this.a = i;

@@ -2,8 +2,8 @@ package tz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z0 {
-    public String a;
-    public q0 b;
+    public final String a;
+    public final q0 b;
 
     public z0(String str, q0 q0Var) {
         k71.k.g(str, "__typename");

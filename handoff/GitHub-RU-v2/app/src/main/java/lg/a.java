@@ -17,6 +17,4 @@ public final class a extends MetricAffectingSpan {
         k.g(textPaint, "paint");
         textPaint.setTypeface(null);
     }
-    public Object c(Object, Object) { return null; }
-    public Object d(Object, Object) { return null; }
 }

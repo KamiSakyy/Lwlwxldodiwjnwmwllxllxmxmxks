@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class yi implements aaShadow.m0 {
-    public zi a;
+    public final zi a;
 
     public yi(zi ziVar) {
         this.a = ziVar;

@@ -2,11 +2,11 @@ package cq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class s4 {
-    public String a;
-    public String b;
-    public boolean c;
-    public t4 d;
-    public String e;
+    public final String a;
+    public final String b;
+    public final boolean c;
+    public final t4 d;
+    public final String e;
 
     public s4(String str, String str2, boolean z, t4 t4Var, String str3) {
         this.a = str;

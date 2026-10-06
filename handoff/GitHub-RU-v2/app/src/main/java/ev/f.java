@@ -14,9 +14,9 @@ import x61.r;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f implements w0 {
     public static final a Companion = new a();
-    public String r;
-    public String s;
-    public int t;
+    public final String r;
+    public final String s;
+    public final int t;
 
     public f(String str, int i, String str2) {
         k71.k.g(str, "owner");

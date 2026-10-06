@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class gy {
-    public String a;
-    public hy b;
-    public ja0.a c;
+    public final String a;
+    public final hy b;
+    public final ja0.a c;
 
     public gy(String str, hy hyVar, ja0.a aVar) {
         k71.k.g(str, "__typename");

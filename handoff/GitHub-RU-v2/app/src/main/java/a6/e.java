@@ -4,10 +4,10 @@ package a6;
 public final class e implements a {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f521a;
+    public final String f521a;
 
     /* renamed from: b, reason: collision with root package name */
-    public j71.a f522b;
+    public final j71.a f522b;
 
     public e(String str, j71.a aVar) {
         this.f521a = str;

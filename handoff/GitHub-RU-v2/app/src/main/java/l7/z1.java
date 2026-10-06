@@ -25,10 +25,10 @@ public class z1 {
     public int f28382e;
 
     /* renamed from: f, reason: collision with root package name */
-    public Object f28383f;
+    public final Object f28383f;
 
     /* renamed from: g, reason: collision with root package name */
-    public Object f28384g;
+    public final Object f28384g;
 
     public z1(int i) {
         this.f28378a = 1;

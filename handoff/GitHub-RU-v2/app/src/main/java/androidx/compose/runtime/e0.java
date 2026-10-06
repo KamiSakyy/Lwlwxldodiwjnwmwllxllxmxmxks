@@ -4,7 +4,7 @@ package androidx.compose.runtime;
 public final class e0 implements m3 {
 
     /* renamed from: a, reason: collision with root package name */
-    public j71.c f1598a;
+    public final j71.c f1598a;
 
     public e0(j71.c cVar) {
         this.f1598a = cVar;

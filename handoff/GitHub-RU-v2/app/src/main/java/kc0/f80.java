@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f80 {
-    public String a;
-    public String b;
-    public mh0.a c;
+    public final String a;
+    public final String b;
+    public final mh0.a c;
 
     public f80(String str, String str2, mh0.a aVar) {
         this.a = str;

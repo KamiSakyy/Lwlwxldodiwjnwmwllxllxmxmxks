@@ -12,25 +12,25 @@ public final class i extends ReplacementSpan {
     public boolean B;
 
     /* renamed from: r, reason: collision with root package name */
-    public float f26988r;
+    public final float f26988r;
 
     /* renamed from: s, reason: collision with root package name */
-    public int f26989s;
+    public final int f26989s;
 
     /* renamed from: t, reason: collision with root package name */
-    public float f26990t;
+    public final float f26990t;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f26991u;
+    public final int f26991u;
 
     /* renamed from: v, reason: collision with root package name */
-    public float f26992v;
+    public final float f26992v;
 
     /* renamed from: w, reason: collision with root package name */
-    public float f26993w;
+    public final float f26993w;
 
     /* renamed from: x, reason: collision with root package name */
-    public int f26994x;
+    public final int f26994x;
 
     /* renamed from: y, reason: collision with root package name */
     public Paint.FontMetricsInt f26995y;

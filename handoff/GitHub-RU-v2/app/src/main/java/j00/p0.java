@@ -2,7 +2,7 @@ package j00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p0 implements aa.m0 {
-    public r0 a;
+    public final r0 a;
 
     public p0(r0 r0Var) {
         this.a = r0Var;

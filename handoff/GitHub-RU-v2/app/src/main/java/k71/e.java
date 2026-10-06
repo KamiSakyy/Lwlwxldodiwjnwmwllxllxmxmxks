@@ -11,7 +11,7 @@ import v8.l0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements r71.b, d {
     public static final Map b;
-    public Class a;
+    public final Class a;
 
     static {
         List r = x61.l.r(new Class[]{j71.a.class, j71.c.class, j71.e.class, j71.f.class, j71.g.class, j71.h.class, j71.i.class, r1.c.class, j71.j.class, r1.c.class, r1.c.class, r1.c.class, j71.b.class, r1.c.class, r1.c.class, r1.c.class, r1.c.class, r1.c.class, r1.c.class, r1.c.class, r1.c.class, r1.c.class, j71.d.class});
@@ -58,7 +58,7 @@ public final class e implements r71.b, d {
         return str == null ? "kotlin.Array" : str;
     }
 
-    public static final String c() {
+    public final String c() {
         String g;
         Class cls = this.a;
         k.g(cls, "jClass");
@@ -117,5 +117,5 @@ public final class e implements r71.b, d {
     }
     public Object c(Object p1, Object p2, Object p3) { return null; }
     public Object j() { return null; }
-    public static Object z(Object p1, Object p2, Object p3) { return null; }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

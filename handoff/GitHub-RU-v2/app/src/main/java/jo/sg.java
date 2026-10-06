@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class sg implements aaShadow.v0 {
-    public yg a;
-    public String b;
-    public String c;
+    public final yg a;
+    public final String b;
+    public final String c;
 
     public sg(yg ygVar, String str, String str2) {
         this.a = ygVar;

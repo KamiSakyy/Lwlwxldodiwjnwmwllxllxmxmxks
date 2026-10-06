@@ -36,21 +36,21 @@ import q81.z;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class c implements r, v81.d {
-    public t81.e a;
-    public t0 b;
-    public int c;
-    public int d;
-    public int e;
-    public int f;
-    public int g;
-    public boolean h;
-    public m i;
-    public o j;
-    public d0 k;
-    public List l;
-    public androidx.lifecycle.b m;
-    public int n;
-    public boolean o;
+    public final t81.e a;
+    public final t0 b;
+    public final int c;
+    public final int d;
+    public final int e;
+    public final int f;
+    public final int g;
+    public final boolean h;
+    public final m i;
+    public final o j;
+    public final d0 k;
+    public final List l;
+    public final androidx.lifecycle.b m;
+    public final int n;
+    public final boolean o;
     public volatile boolean p;
     public Socket q;
     public Socket r;

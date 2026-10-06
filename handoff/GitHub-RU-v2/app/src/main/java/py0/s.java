@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s {
-    public u a;
-    public List b;
+    public final u a;
+    public final List b;
 
     public s(u uVar, List list) {
         this.a = uVar;
@@ -43,8 +43,4 @@ public final class s {
     public Object q0() { return null; }
     public Object S = null;
     public Object T = null;
-    public Object S(int, boolean) { return null; }
-    public Object k(Object) { return null; }
-    public Object n0(Object) { return null; }
-    public Object q(boolean) { return null; }
 }

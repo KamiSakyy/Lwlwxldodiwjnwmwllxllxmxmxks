@@ -15,8 +15,8 @@ import x61.x;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public class l extends a {
-    public kotlinx.serialization.json.c f;
-    public SerialDescriptor g;
+    public final kotlinx.serialization.json.c f;
+    public final SerialDescriptor g;
     public int h;
     public boolean i;
 

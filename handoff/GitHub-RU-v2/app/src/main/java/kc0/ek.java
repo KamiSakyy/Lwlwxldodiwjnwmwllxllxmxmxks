@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ek implements aaShadow.w0 {
     public static final sj Companion = new sj();
-    public aa.u0 r;
-    public String s;
+    public final aa.u0 r;
+    public final String s;
 
     public ek(aa.u0 u0Var, String str) {
         k71.k.g(str, "nodeID");

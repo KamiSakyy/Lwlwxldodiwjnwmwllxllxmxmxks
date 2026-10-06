@@ -15,22 +15,22 @@ public interface e extends Parcelable {
         public static final Parcelable.Creator<a> CREATOR = new C0008a();
 
         /* renamed from: r, reason: collision with root package name */
-        public String f6787r;
+        public final String f6787r;
 
         /* renamed from: s, reason: collision with root package name */
-        public String f6788s;
+        public final String f6788s;
 
         /* renamed from: t, reason: collision with root package name */
-        public int f6789t;
+        public final int f6789t;
 
         /* renamed from: u, reason: collision with root package name */
-        public String f6790u;
+        public final String f6790u;
 
         /* renamed from: v, reason: collision with root package name */
-        public DiscussionStateReason f6791v;
+        public final DiscussionStateReason f6791v;
 
         /* renamed from: w, reason: collision with root package name */
-        public String f6792w;
+        public final String f6792w;
 
         /* renamed from: com.github.rudroid.agents.copilothome.navigation.e$a$a, reason: collision with other inner class name */
         public static final class C0008a implements Parcelable.Creator<a> {
@@ -122,19 +122,19 @@ public interface e extends Parcelable {
         public static final Parcelable.Creator<b> CREATOR = new a();
 
         /* renamed from: r, reason: collision with root package name */
-        public String f6793r;
+        public final String f6793r;
 
         /* renamed from: s, reason: collision with root package name */
-        public String f6794s;
+        public final String f6794s;
 
         /* renamed from: t, reason: collision with root package name */
-        public String f6795t;
+        public final String f6795t;
 
         /* renamed from: u, reason: collision with root package name */
-        public String f6796u;
+        public final String f6796u;
 
         /* renamed from: v, reason: collision with root package name */
-        public String f6797v;
+        public final String f6797v;
 
         public static final class a implements Parcelable.Creator<b> {
             @Override // android.os.Parcelable.Creator
@@ -219,16 +219,16 @@ public interface e extends Parcelable {
         public static final Parcelable.Creator<c> CREATOR = new a();
 
         /* renamed from: r, reason: collision with root package name */
-        public String f6798r;
+        public final String f6798r;
 
         /* renamed from: s, reason: collision with root package name */
-        public String f6799s;
+        public final String f6799s;
 
         /* renamed from: t, reason: collision with root package name */
-        public int f6800t;
+        public final int f6800t;
 
         /* renamed from: u, reason: collision with root package name */
-        public String f6801u;
+        public final String f6801u;
 
         public static final class a implements Parcelable.Creator<c> {
             @Override // android.os.Parcelable.Creator
@@ -307,22 +307,22 @@ public interface e extends Parcelable {
         public static final Parcelable.Creator<d> CREATOR = new a();
 
         /* renamed from: r, reason: collision with root package name */
-        public String f6802r;
+        public final String f6802r;
 
         /* renamed from: s, reason: collision with root package name */
-        public String f6803s;
+        public final String f6803s;
 
         /* renamed from: t, reason: collision with root package name */
-        public int f6804t;
+        public final int f6804t;
 
         /* renamed from: u, reason: collision with root package name */
-        public String f6805u;
+        public final String f6805u;
 
         /* renamed from: v, reason: collision with root package name */
-        public IssueOrPullRequestState f6806v;
+        public final IssueOrPullRequestState f6806v;
 
         /* renamed from: w, reason: collision with root package name */
-        public String f6807w;
+        public final String f6807w;
 
         public static final class a implements Parcelable.Creator<d> {
             @Override // android.os.Parcelable.Creator
@@ -414,22 +414,22 @@ public interface e extends Parcelable {
         public static final Parcelable.Creator<C0009e> CREATOR = new a();
 
         /* renamed from: r, reason: collision with root package name */
-        public String f6808r;
+        public final String f6808r;
 
         /* renamed from: s, reason: collision with root package name */
-        public String f6809s;
+        public final String f6809s;
 
         /* renamed from: t, reason: collision with root package name */
-        public int f6810t;
+        public final int f6810t;
 
         /* renamed from: u, reason: collision with root package name */
-        public String f6811u;
+        public final String f6811u;
 
         /* renamed from: v, reason: collision with root package name */
-        public IssueOrPullRequestState f6812v;
+        public final IssueOrPullRequestState f6812v;
 
         /* renamed from: w, reason: collision with root package name */
-        public String f6813w;
+        public final String f6813w;
 
         /* renamed from: com.github.rudroid.agents.copilothome.navigation.e$e$a */
         public static final class a implements Parcelable.Creator<C0009e> {
@@ -521,7 +521,7 @@ public interface e extends Parcelable {
         public static final Parcelable.Creator<f> CREATOR = new a();
 
         /* renamed from: r, reason: collision with root package name */
-        public String f6814r;
+        public final String f6814r;
 
         public static final class a implements Parcelable.Creator<f> {
             @Override // android.os.Parcelable.Creator
@@ -580,16 +580,16 @@ public interface e extends Parcelable {
         public static final Parcelable.Creator<g> CREATOR = new a();
 
         /* renamed from: r, reason: collision with root package name */
-        public String f6815r;
+        public final String f6815r;
 
         /* renamed from: s, reason: collision with root package name */
-        public String f6816s;
+        public final String f6816s;
 
         /* renamed from: t, reason: collision with root package name */
-        public String f6817t;
+        public final String f6817t;
 
         /* renamed from: u, reason: collision with root package name */
-        public String f6818u;
+        public final String f6818u;
 
         public static final class a implements Parcelable.Creator<g> {
             @Override // android.os.Parcelable.Creator
@@ -670,13 +670,13 @@ public interface e extends Parcelable {
         public static final Parcelable.Creator<h> CREATOR = new a();
 
         /* renamed from: r, reason: collision with root package name */
-        public String f6819r;
+        public final String f6819r;
 
         /* renamed from: s, reason: collision with root package name */
-        public String f6820s;
+        public final String f6820s;
 
         /* renamed from: t, reason: collision with root package name */
-        public String f6821t;
+        public final String f6821t;
 
         public static final class a implements Parcelable.Creator<h> {
             @Override // android.os.Parcelable.Creator
@@ -753,13 +753,13 @@ public interface e extends Parcelable {
         public static final Parcelable.Creator<i> CREATOR = new a();
 
         /* renamed from: r, reason: collision with root package name */
-        public String f6822r;
+        public final String f6822r;
 
         /* renamed from: s, reason: collision with root package name */
-        public String f6823s;
+        public final String f6823s;
 
         /* renamed from: t, reason: collision with root package name */
-        public String f6824t;
+        public final String f6824t;
 
         public static final class a implements Parcelable.Creator<i> {
             @Override // android.os.Parcelable.Creator
@@ -836,13 +836,13 @@ public interface e extends Parcelable {
         public static final Parcelable.Creator<j> CREATOR = new a();
 
         /* renamed from: r, reason: collision with root package name */
-        public String f6825r;
+        public final String f6825r;
 
         /* renamed from: s, reason: collision with root package name */
-        public String f6826s;
+        public final String f6826s;
 
         /* renamed from: t, reason: collision with root package name */
-        public String f6827t;
+        public final String f6827t;
 
         public static final class a implements Parcelable.Creator<j> {
             @Override // android.os.Parcelable.Creator
@@ -922,5 +922,5 @@ public interface e extends Parcelable {
     }
 
     String B();
-    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

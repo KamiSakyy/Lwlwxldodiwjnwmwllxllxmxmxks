@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w9 {
-    public String a;
-    public String b;
-    public xt0.e c;
+    public final String a;
+    public final String b;
+    public final xt0.e c;
 
     public w9(String str, String str2, xt0.e eVar) {
         this.a = str;

@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class tf {
-    public List a;
-    public jg b;
+    public final List a;
+    public final jg b;
 
     public tf(List list, jg jgVar) {
         this.a = list;

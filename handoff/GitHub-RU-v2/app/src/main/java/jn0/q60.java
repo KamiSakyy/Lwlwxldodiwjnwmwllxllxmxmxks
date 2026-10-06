@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q60 {
-    public String a;
-    public k60 b;
-    public n60 c;
+    public final String a;
+    public final k60 b;
+    public final n60 c;
 
     public q60(String str, k60 k60Var, n60 n60Var) {
         k71.k.g(str, "__typename");

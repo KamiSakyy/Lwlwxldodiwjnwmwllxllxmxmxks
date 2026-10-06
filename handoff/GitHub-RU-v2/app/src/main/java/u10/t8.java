@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t8 {
-    public String a;
-    public String b;
-    public y30.f c;
+    public final String a;
+    public final String b;
+    public final y30.f c;
 
     public t8(String str, String str2, y30.f fVar) {
         this.a = str;

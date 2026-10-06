@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
-    public ArrayList a;
-    public x01.i b;
+    public final ArrayList a;
+    public final x01.i b;
 
     public f(ArrayList arrayList, x01.i iVar) {
         this.a = arrayList;

@@ -2,8 +2,8 @@ package qn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a0 {
-    public String a;
-    public vn0.a b;
+    public final String a;
+    public final vn0.a b;
 
     public a0(String str, vn0.a aVar) {
         this.a = str;

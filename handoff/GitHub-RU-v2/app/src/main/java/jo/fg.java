@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fg implements aaShadow.w0 {
     public static final cg Companion = new cg();
-    public String r;
+    public final String r;
 
     public fg(String str) {
         this.r = str;

@@ -4,10 +4,10 @@ package d9;
 public final class u {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f21753a;
+    public final String f21753a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f21754b;
+    public final String f21754b;
 
     public u(String str, String str2) {
         k71.k.g(str, "tag");

@@ -2,11 +2,11 @@ package cc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m {
-    public String a;
-    public j b;
-    public k c;
-    public i d;
-    public ja0.a e;
+    public final String a;
+    public final j b;
+    public final k c;
+    public final i d;
+    public final ja0.a e;
 
     public m(String str, j jVar, k kVar, i iVar, ja0.a aVar) {
         k71.k.g(str, "__typename");

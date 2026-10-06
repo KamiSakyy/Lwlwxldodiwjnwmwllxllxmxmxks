@@ -3,7 +3,7 @@ package b41;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d implements c41.c {
     public final /* synthetic */ int r;
-    public y51.c s;
+    public final y51.c s;
 
     public /* synthetic */ d(y51.c cVar, int i) {
         this.r = i;

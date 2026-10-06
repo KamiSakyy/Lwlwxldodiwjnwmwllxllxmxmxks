@@ -9,7 +9,7 @@ public final class l2 {
     public static final l2 t;
     public static final /* synthetic */ l2[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         l2 l2Var = new l2("ACTION_REQUIRED", 0, "ACTION_REQUIRED");

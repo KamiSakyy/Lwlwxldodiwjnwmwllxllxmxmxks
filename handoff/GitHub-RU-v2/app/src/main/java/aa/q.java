@@ -4,7 +4,7 @@ package aa;
 public abstract class q extends w8.s {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f677a;
+    public final String f677a;
 
     public q(String str) {
         this.f677a = str;

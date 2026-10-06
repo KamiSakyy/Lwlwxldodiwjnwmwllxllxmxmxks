@@ -7,7 +7,7 @@ import kotlin.NoWhenBranchMatchedException;
 public interface a1 {
 
     public static abstract class a {
-        public pm.c a;
+        public final pm.c a;
 
         /* renamed from: com.github.rudroid.settings.a1$a$a, reason: collision with other inner class name */
         public static final class C0005a extends a {

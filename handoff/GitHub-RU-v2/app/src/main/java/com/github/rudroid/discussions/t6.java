@@ -9,30 +9,30 @@ import java.util.concurrent.CancellationException;
 /* loaded from: /home/user/work/p/classes.dex */
 public final class t6 extends androidx.lifecycle.k1 implements com.github.rudroid.viewmodels.v3 {
     public static final a Companion = new a();
-    public LinkedHashSet A;
+    public final LinkedHashSet A;
     public v71.q1 B;
     public x01.i C;
 
     /* renamed from: s, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f11818s;
+    public final com.github.rudroid.activities.util.c f11818s;
 
     /* renamed from: t, reason: collision with root package name */
-    public ik.n f11819t;
+    public final ik.n f11819t;
 
     /* renamed from: u, reason: collision with root package name */
-    public String f11820u;
+    public final String f11820u;
 
     /* renamed from: v, reason: collision with root package name */
-    public String f11821v;
+    public final String f11821v;
 
     /* renamed from: w, reason: collision with root package name */
-    public DiscussionCategoryData f11822w;
+    public final DiscussionCategoryData f11822w;
 
     /* renamed from: x, reason: collision with root package name */
-    public y71.y1 f11823x;
+    public final y71.y1 f11823x;
 
     /* renamed from: y, reason: collision with root package name */
-    public y71.i1 f11824y;
+    public final y71.i1 f11824y;
 
     /* renamed from: z, reason: collision with root package name */
     public DiscussionCategoryData f11825z;

@@ -5,7 +5,7 @@ import z01.k1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l0 {
-    public oa.g a;
+    public final oa.g a;
 
     public l0(oa.g gVar) {
         k71.k.g(gVar, "subscribeServiceFactory");

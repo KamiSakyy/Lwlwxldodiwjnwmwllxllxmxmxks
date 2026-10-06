@@ -7,7 +7,7 @@ import android.util.DisplayMetrics;
 public final class c implements i {
 
     /* renamed from: r, reason: collision with root package name */
-    public Context f31767r;
+    public final Context f31767r;
 
     public c(Context context) {
         this.f31767r = context;

@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qf {
-    public String a;
-    public bn0.e b;
+    public final String a;
+    public final bn0.e b;
 
     public qf(String str, bn0.e eVar) {
         this.a = str;

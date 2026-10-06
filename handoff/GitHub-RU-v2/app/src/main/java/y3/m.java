@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public final class m implements l2 {
 
     /* renamed from: r, reason: collision with root package name */
-    public k f34221r;
+    public final k f34221r;
 
     /* renamed from: s, reason: collision with root package name */
     public Handler f34222s;

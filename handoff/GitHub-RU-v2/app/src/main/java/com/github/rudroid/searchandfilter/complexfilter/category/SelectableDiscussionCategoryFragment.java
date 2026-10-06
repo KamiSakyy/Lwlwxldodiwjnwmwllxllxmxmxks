@@ -11,8 +11,8 @@ import k71.x;
 public final class SelectableDiscussionCategoryFragment extends Hilt_SelectableDiscussionCategoryFragment<com.github.rudroid.searchandfilter.complexfilter.category.a> {
     public static final a Companion = new a();
     public com.github.rudroid.html.b H0;
-    public l1 I0;
-    public w61.p J0;
+    public final l1 I0;
+    public final w61.p J0;
 
     public static final class a {
     }

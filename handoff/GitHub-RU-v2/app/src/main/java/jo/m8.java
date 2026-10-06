@@ -2,11 +2,11 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m8 {
-    public String a;
-    public n8 b;
-    public int c;
-    public String d;
-    public String e;
+    public final String a;
+    public final n8 b;
+    public final int c;
+    public final String d;
+    public final String e;
 
     public m8(String str, n8 n8Var, int i, String str2, String str3) {
         this.a = str;

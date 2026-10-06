@@ -2,9 +2,9 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l4 implements aa.h0 {
-    public String a;
-    public String b;
-    public k4 c;
+    public final String a;
+    public final String b;
+    public final k4 c;
 
     public l4(String str, String str2, k4 k4Var) {
         this.a = str;

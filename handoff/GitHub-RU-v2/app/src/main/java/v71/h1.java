@@ -2,10 +2,10 @@ package v71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class h1 extends f1 {
-    public j1 v;
-    public i1 w;
-    public p x;
-    public Object y;
+    public final j1 v;
+    public final i1 w;
+    public final p x;
+    public final Object y;
 
     public h1(j1 j1Var, i1 i1Var, p pVar, Object obj) {
         this.v = j1Var;

@@ -8,8 +8,8 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class k1 extends s {
-    public r71.b b;
-    public c c;
+    public final r71.b b;
+    public final c c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public k1(r71.b bVar, KSerializer kSerializer) {

@@ -8,19 +8,19 @@ import f0.j1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n<T> {
     public static final a Companion = new a();
-    public j71.c a;
-    public com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j b;
-    public j71.c c;
-    public a0 d;
-    public x e;
-    public p1 f;
-    public androidx.compose.runtime.g0 g;
-    public androidx.compose.runtime.g0 h;
-    public l1 i;
-    public l1 j;
-    public p1 k;
-    public p1 l;
-    public u m;
+    public final j71.c a;
+    public final com.github.rudroid.projects.triagesheet.singleselectionvaluepicker.j b;
+    public final j71.c c;
+    public final a0 d;
+    public final x e;
+    public final p1 f;
+    public final androidx.compose.runtime.g0 g;
+    public final androidx.compose.runtime.g0 h;
+    public final l1 i;
+    public final l1 j;
+    public final p1 k;
+    public final p1 l;
+    public final u m;
 
     public static final class a {
     }

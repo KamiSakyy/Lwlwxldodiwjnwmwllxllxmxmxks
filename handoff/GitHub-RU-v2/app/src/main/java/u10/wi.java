@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class wi {
-    public String a;
-    public q60.d b;
+    public final String a;
+    public final q60.d b;
 
     public wi(String str, q60.d dVar) {
         this.a = str;

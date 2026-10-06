@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class jb0 implements aaShadow.w0 {
     public static final db0 Companion = new db0();
-    public String r;
-    public aa.u0 s;
+    public final String r;
+    public final aa.u0 s;
 
     public jb0(aa.u0 u0Var, String str) {
         k71.k.g(str, "login");

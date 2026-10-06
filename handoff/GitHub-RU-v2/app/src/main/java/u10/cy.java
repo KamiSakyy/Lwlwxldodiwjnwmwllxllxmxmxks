@@ -4,9 +4,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class cy {
-    public int a;
-    public ay b;
-    public List c;
+    public final int a;
+    public final ay b;
+    public final List c;
 
     public cy(int i, ay ayVar, List list) {
         this.a = i;

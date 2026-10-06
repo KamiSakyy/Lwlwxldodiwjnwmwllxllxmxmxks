@@ -8,8 +8,8 @@ import java.util.function.Consumer;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class i0 {
     public static final i0 c;
-    public HashMap a;
-    public i0 b;
+    public final HashMap a;
+    public final i0 b;
 
     static {
         i0 i0Var = new i0();

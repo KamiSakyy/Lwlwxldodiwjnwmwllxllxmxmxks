@@ -28,11 +28,11 @@ import u31.z;
 /* loaded from: /home/user/work/p/classes4.dex */
 public class MaterialButtonToggleGroup extends d {
     public static final /* synthetic */ int H = 0;
-    public LinkedHashSet B;
+    public final LinkedHashSet B;
     public boolean C;
     public boolean D;
     public boolean E;
-    public int F;
+    public final int F;
     public HashSet G;
 
     public MaterialButtonToggleGroup(Context context, AttributeSet attributeSet) {

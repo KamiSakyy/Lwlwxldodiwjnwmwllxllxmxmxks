@@ -9,5 +9,4 @@ public final class c implements p61.d {
     public final Object get() {
         return new b();
     }
-    public Object t(Object, Object) { return null; }
 }

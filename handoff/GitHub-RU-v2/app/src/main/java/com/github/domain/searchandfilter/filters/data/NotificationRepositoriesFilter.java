@@ -18,7 +18,7 @@ import x61.m;
 public final class NotificationRepositoriesFilter extends d {
     public static final w61.h[] w;
     public static final e50.e x;
-    public List v;
+    public final List v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<NotificationRepositoriesFilter> CREATOR = new o(3);
 

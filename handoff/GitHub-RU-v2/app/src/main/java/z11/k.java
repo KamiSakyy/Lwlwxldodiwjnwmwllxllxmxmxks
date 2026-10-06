@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class kShadow extends c41.d implements j0 {
-    public int g;
+    public final int g;
 
     public k(byte[] bArr) {
         super("com.google.android.gms.common.internal.ICertData");

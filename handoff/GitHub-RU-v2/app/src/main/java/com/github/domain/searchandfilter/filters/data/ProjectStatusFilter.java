@@ -24,7 +24,7 @@ public final class ProjectStatusFilter extends d {
     public static final w61.h[] w;
     public static final f0 x;
     public static final i80.d y;
-    public f0 v;
+    public final f0 v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<ProjectStatusFilter> CREATOR = new o(8);
 

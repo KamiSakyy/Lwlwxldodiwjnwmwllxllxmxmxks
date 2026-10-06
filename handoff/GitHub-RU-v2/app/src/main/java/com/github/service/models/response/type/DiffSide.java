@@ -14,7 +14,7 @@ public final class DiffSide {
     public static final DiffSide LEFT = new DiffSide("LEFT", 0, "LEFT");
     public static final DiffSide RIGHT = new DiffSide("RIGHT", 1, "RIGHT");
     public static final DiffSide UNKNOWN__ = new DiffSide("UNKNOWN__", 2, "UNKNOWN__");
-    private String rawValue;
+    private final String rawValue;
 
     private static final /* synthetic */ DiffSide[] $values() {
         return new DiffSide[]{LEFT, RIGHT, UNKNOWN__};

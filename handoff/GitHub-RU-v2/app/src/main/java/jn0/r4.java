@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class r4 {
-    public u4 a;
+    public final u4 a;
 
     public r4(u4 u4Var) {
         this.a = u4Var;

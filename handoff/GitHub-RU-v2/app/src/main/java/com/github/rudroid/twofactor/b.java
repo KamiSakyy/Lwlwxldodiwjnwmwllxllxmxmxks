@@ -4,9 +4,9 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public fn.a a;
-    public a b;
-    public String c;
+    public final fn.a a;
+    public final a b;
+    public final String c;
 
     public b(fn.a aVar, a aVar2, String str) {
         k71.k.g(str, "currentValue");

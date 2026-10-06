@@ -3,7 +3,7 @@ package x41;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f implements k {
     public static final i50.c t = new i50.c(9);
-    public Object r;
+    public final Object r;
     public Object s;
 
     public f(b51.d dVar) {

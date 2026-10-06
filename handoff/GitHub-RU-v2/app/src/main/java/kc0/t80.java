@@ -2,11 +2,11 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t80 {
-    public String a;
-    public u80 b;
-    public w80 c;
-    public p80 d;
-    public String e;
+    public final String a;
+    public final u80 b;
+    public final w80 c;
+    public final p80 d;
+    public final String e;
 
     public t80(String str, u80 u80Var, w80 w80Var, p80 p80Var, String str2) {
         this.a = str;

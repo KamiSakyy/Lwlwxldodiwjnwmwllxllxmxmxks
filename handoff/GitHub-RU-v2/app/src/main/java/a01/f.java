@@ -8,11 +8,11 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
-    public String a;
-    public String b;
-    public int c;
-    public String d;
-    public List e;
+    public final String a;
+    public final String b;
+    public final int c;
+    public final String d;
+    public final List e;
 
     public f(int i, String str, String str2, String str3, List list) {
         k.g(str, "id");

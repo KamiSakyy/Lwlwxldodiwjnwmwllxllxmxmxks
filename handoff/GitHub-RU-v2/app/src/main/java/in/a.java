@@ -20,6 +20,6 @@ public final class a extends c71.c {
         this.v |= Integer.MIN_VALUE;
         return this.w.c(null, this);
     }
-    public static Object h0(Object p1) { return null; }
+    public Object h0(Object p1) { return null; }
     public static final Object b = null;
 }

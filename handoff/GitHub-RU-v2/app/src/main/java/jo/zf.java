@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zf {
-    public String a;
-    public String b;
-    public wf c;
-    public vx.a d;
+    public final String a;
+    public final String b;
+    public final wf c;
+    public final vx.a d;
 
     public zf(String str, String str2, wf wfVar, vx.a aVar) {
         k71.k.g(str, "__typename");

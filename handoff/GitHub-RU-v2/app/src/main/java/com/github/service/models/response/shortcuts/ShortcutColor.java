@@ -10,7 +10,7 @@ public final class ShortcutColor {
     private static final /* synthetic */ d71.a $ENTRIES;
     private static final /* synthetic */ ShortcutColor[] $VALUES;
     public static final l Companion;
-    private String value;
+    private final String value;
     public static final ShortcutColor GRAY = new ShortcutColor("GRAY", 0, "GRAY");
     public static final ShortcutColor BLUE = new ShortcutColor("BLUE", 1, "BLUE");
     public static final ShortcutColor GREEN = new ShortcutColor("GREEN", 2, "GREEN");

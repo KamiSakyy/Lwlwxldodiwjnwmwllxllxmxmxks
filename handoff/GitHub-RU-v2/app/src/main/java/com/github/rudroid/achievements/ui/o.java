@@ -4,22 +4,22 @@ package com.github.rudroid.achievements.ui;
 final class o {
 
     /* renamed from: a, reason: collision with root package name */
-    public float f4579a;
+    public final float f4579a;
 
     /* renamed from: b, reason: collision with root package name */
-    public float f4580b;
+    public final float f4580b;
 
     /* renamed from: c, reason: collision with root package name */
-    public float f4581c;
+    public final float f4581c;
 
     /* renamed from: d, reason: collision with root package name */
-    public float f4582d;
+    public final float f4582d;
 
     /* renamed from: e, reason: collision with root package name */
-    public float f4583e;
+    public final float f4583e;
 
     /* renamed from: f, reason: collision with root package name */
-    public float f4584f;
+    public final float f4584f;
 
     public o(float f6, float f10, float f11, float f12, float f13, float f14) {
         this.f4579a = f6;

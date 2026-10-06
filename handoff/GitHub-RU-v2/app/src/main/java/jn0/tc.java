@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class tc implements aaShadow.n0 {
     public static final oc Companion = new oc();
-    public String r;
-    public String s;
+    public final String r;
+    public final String s;
 
     public tc(String str, String str2) {
         k71.k.g(str, "id");

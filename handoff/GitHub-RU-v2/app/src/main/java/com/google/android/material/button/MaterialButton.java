@@ -73,8 +73,8 @@ public class MaterialButton extends o implements Checkable, y {
     public float T;
     public float U;
     public e V;
-    public e31.e u;
-    public LinkedHashSet v;
+    public final e31.e u;
+    public final LinkedHashSet v;
     public b w;
     public PorterDuff.Mode x;
     public ColorStateList y;
@@ -1265,5 +1265,4 @@ public class MaterialButton extends o implements Checkable, y {
     public static Object getVisibility(Object... a) {
         return null;
     }
-    public Object post(Object) { return null; }
 }

@@ -5,7 +5,7 @@ import com.google.android.gms.internal.measurement.n4;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class f extends n4 {
-    public boolean t;
+    public final boolean t;
 
     public f(v vVar, boolean z) {
         super(vVar, (byte) 0);

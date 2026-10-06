@@ -2,10 +2,10 @@ package a61;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q0 {
-    public String a;
-    public String b;
-    public int c;
-    public long d;
+    public final String a;
+    public final String b;
+    public final int c;
+    public final long d;
 
     public q0(String str, String str2, int i, long j) {
         k71.k.g(str, "sessionId");
@@ -39,6 +39,4 @@ public final class q0 {
     }
     public Object a(Object p1) { return null; }
     public Object e(Object p1, Object p2, Object p3) { return null; }
-    public Object a(Object) { return null; }
-    public Object e(Object, Object, Object) { return null; }
 }

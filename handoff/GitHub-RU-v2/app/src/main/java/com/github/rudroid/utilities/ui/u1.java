@@ -2,8 +2,8 @@ package com.github.rudroid.utilities.ui;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u1<T> implements g1<T> {
-    public Object a;
-    public rh.f b;
+    public final Object a;
+    public final rh.f b;
 
     public u1(Object obj, rh.f fVar) {
         this.a = obj;

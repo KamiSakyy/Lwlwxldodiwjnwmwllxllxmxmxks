@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zm {
-    public qm a;
+    public final qm a;
 
     public zm(qm qmVar) {
         this.a = qmVar;

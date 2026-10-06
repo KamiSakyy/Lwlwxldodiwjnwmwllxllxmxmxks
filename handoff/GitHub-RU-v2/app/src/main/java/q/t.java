@@ -9,10 +9,10 @@ import android.widget.TextView;
 public final class t {
 
     /* renamed from: a, reason: collision with root package name */
-    public TextView f30720a;
+    public final TextView f30720a;
 
     /* renamed from: b, reason: collision with root package name */
-    public s21.a f30721b;
+    public final s21.a f30721b;
 
     public t(TextView textView) {
         this.f30720a = textView;

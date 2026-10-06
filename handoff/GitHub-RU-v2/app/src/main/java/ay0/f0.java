@@ -2,7 +2,7 @@ package ay0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f0 {
-    public String a;
+    public final String a;
 
     public f0(String str) {
         this.a = str;

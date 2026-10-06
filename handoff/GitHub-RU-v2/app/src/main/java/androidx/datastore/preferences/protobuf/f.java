@@ -4,10 +4,10 @@ package androidx.datastore.preferences.protobuf;
 public final class f extends g {
 
     /* renamed from: v, reason: collision with root package name */
-    public int f2275v;
+    public final int f2275v;
 
     /* renamed from: w, reason: collision with root package name */
-    public int f2276w;
+    public final int f2276w;
 
     public f(byte[] bArr, int i, int i10) {
         super(bArr);

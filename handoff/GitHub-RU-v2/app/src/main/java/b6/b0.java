@@ -4,10 +4,10 @@ package b6;
 public final class b0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public z5.n f3492a;
+    public final z5.n f3492a;
 
     /* renamed from: b, reason: collision with root package name */
-    public z5.n f3493b;
+    public final z5.n f3493b;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*

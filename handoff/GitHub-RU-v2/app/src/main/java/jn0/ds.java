@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ds {
-    public String a;
-    public int b;
-    public as c;
-    public String d;
+    public final String a;
+    public final int b;
+    public final as c;
+    public final String d;
 
     public ds(String str, int i, as asVar, String str2) {
         this.a = str;

@@ -7,11 +7,11 @@ import yz0.v2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements a {
-    public String a;
-    public String b;
-    public boolean c;
-    public String d;
-    public v2 e;
+    public final String a;
+    public final String b;
+    public final boolean c;
+    public final String d;
+    public final v2 e;
 
     public e(String str, String str2, boolean z, String str3, v2 v2Var) {
         k71.k.g(str, "term");
@@ -46,5 +46,5 @@ public final class e implements a {
         o.append(")");
         return o.toString();
     }
-    public static Object z(Object p1, Object p2, Object p3) { return null; }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

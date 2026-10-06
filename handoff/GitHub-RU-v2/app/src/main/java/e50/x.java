@@ -5,19 +5,19 @@ import hc0.ev;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x implements aa.h0 {
-    public String a;
-    public String b;
-    public w c;
-    public String d;
-    public String e;
-    public ev f;
-    public boolean g;
-    public boolean h;
-    public boolean i;
-    public boolean j;
-    public l0 k;
-    public i80.c l;
-    public g70.a m;
+    public final String a;
+    public final String b;
+    public final w c;
+    public final String d;
+    public final String e;
+    public final ev f;
+    public final boolean g;
+    public final boolean h;
+    public final boolean i;
+    public final boolean j;
+    public final l0 k;
+    public final i80.c l;
+    public final g70.a m;
 
     public x(String str, String str2, w wVar, String str3, String str4, ev evVar, boolean z, boolean z2, boolean z3, boolean z4, l0 l0Var, i80.c cVar, g70.a aVar) {
         this.a = str;

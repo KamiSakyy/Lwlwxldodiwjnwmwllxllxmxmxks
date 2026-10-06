@@ -16,7 +16,7 @@ public final class e10 {
     public static final e10 x;
     public static final e10 y;
     public static final e10 z;
-    public String r;
+    public final String r;
 
     static {
         e10 e10Var = new e10("DISCUSSIONS", 0, "DISCUSSIONS");

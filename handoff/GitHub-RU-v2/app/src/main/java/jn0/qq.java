@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qq {
-    public String a;
-    public ap0.p6 b;
+    public final String a;
+    public final ap0.p6 b;
 
     public qq(String str, ap0.p6 p6Var) {
         k71.k.g(str, "__typename");

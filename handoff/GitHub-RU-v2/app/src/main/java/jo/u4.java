@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class u4 {
-    public boolean a;
-    public String b;
+    public final boolean a;
+    public final String b;
 
     public u4(String str, boolean z) {
         this.a = z;

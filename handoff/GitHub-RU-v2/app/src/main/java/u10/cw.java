@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class cw {
-    public bw a;
-    public String b;
-    public String c;
+    public final bw a;
+    public final String b;
+    public final String c;
 
     public cw(bw bwVar, String str, String str2) {
         this.a = bwVar;

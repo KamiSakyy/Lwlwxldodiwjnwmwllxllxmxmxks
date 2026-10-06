@@ -7,16 +7,16 @@ import yz0.b8;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public lj.b a;
-    public Integer b;
-    public boolean c;
-    public boolean d;
-    public boolean e;
-    public boolean f;
-    public String g;
-    public boolean h;
-    public List i;
-    public b8 j;
+    public final lj.b a;
+    public final Integer b;
+    public final boolean c;
+    public final boolean d;
+    public final boolean e;
+    public final boolean f;
+    public final String g;
+    public final boolean h;
+    public final List i;
+    public final b8 j;
 
     public d(lj.b bVar, Integer num, boolean z, boolean z2, boolean z3, boolean z4, String str, boolean z5, List list, b8 b8Var) {
         this.a = bVar;

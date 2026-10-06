@@ -2,9 +2,9 @@ package wc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i1 {
-    public String a;
-    public l1 b;
-    public String c;
+    public final String a;
+    public final l1 b;
+    public final String c;
 
     public i1(String str, l1 l1Var, String str2) {
         this.a = str;

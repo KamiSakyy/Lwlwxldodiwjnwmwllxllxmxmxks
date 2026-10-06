@@ -7,9 +7,9 @@ import yz0.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public boolean a;
-    public List b;
-    public f4 c;
+    public final boolean a;
+    public final List b;
+    public final f4 c;
 
     public e(boolean z, List list, f4 f4Var) {
         this.a = z;
@@ -50,6 +50,6 @@ public final class e {
     public final String toString() {
         return "DiscussionCommentsDataPage(isLoading=" + this.a + ", discussionComments=" + this.b + ", page=" + this.c + ")";
     }
-    public static Object c(Object p1, Object p2, Object p3) { return null; }
-    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object c(Object p1, Object p2, Object p3) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

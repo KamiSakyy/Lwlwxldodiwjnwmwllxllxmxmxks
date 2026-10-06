@@ -10,7 +10,7 @@ import android.hardware.SensorManager;
 public final class l implements SensorEventListener {
 
     /* renamed from: a, reason: collision with root package name */
-    public w61.p f4532a;
+    public final w61.p f4532a;
 
     /* renamed from: b, reason: collision with root package name */
     public float[] f4533b;
@@ -19,7 +19,7 @@ public final class l implements SensorEventListener {
     public float[] f4534c;
 
     /* renamed from: d, reason: collision with root package name */
-    public x71.h f4535d;
+    public final x71.h f4535d;
 
     public l(Context context) {
         k71.k.g(context, "context");

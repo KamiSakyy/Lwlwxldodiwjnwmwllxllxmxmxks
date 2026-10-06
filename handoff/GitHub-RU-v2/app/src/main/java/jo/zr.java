@@ -2,18 +2,18 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zr {
-    public String a;
-    public String b;
-    public String c;
-    public m10.xz d;
-    public fs e;
-    public String f;
-    public m10.fz g;
-    public ar.c h;
-    public pv.c i;
-    public mx.c j;
-    public pu.a k;
-    public ju.a l;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final m10.xz d;
+    public final fs e;
+    public final String f;
+    public final m10.fz g;
+    public final ar.c h;
+    public final pv.c i;
+    public final mx.c j;
+    public final pu.a k;
+    public final ju.a l;
 
     public zr(String str, String str2, String str3, m10.xz xzVar, fs fsVar, String str4, m10.fz fzVar, ar.c cVar, pv.c cVar2, mx.c cVar3, pu.a aVar, ju.a aVar2) {
         this.a = str;

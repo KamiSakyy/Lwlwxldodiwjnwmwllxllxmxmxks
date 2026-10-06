@@ -2,7 +2,7 @@ package id0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l {
-    public k a;
+    public final k a;
 
     public l(k kVar) {
         this.a = kVar;

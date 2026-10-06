@@ -12,7 +12,7 @@ public abstract class i extends d {
     public static final StatusFilter$Inbox w;
     public static final n3 x;
     public static final Object y;
-    public String v;
+    public final String v;
 
     static {
         w61.i iVar = w61.i.r;

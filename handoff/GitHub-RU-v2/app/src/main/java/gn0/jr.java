@@ -9,7 +9,7 @@ public final class jr {
     public static final jr t;
     public static final /* synthetic */ jr[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         jr jrVar = new jr("ADMIN", 0, "ADMIN");

@@ -4,8 +4,8 @@ import oj0.a4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c0 {
-    public String a;
-    public a4 b;
+    public final String a;
+    public final a4 b;
 
     public c0(String str, a4 a4Var) {
         k71.k.g(str, "__typename");

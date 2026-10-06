@@ -16,5 +16,4 @@ public interface g {
         public b() {
         }
     }
-    public Object a(Object) { return null; }
 }

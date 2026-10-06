@@ -9,7 +9,7 @@ public final class pj {
     public static final pj t;
     public static final /* synthetic */ pj[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         pj pjVar = new pj("ADDED", 0, "ADDED");

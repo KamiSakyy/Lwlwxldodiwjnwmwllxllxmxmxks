@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class wk {
-    public xk a;
-    public String b;
-    public String c;
+    public final xk a;
+    public final String b;
+    public final String c;
 
     public wk(xk xkVar, String str, String str2) {
         this.a = xkVar;

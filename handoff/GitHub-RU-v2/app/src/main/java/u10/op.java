@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class op {
-    public String a;
-    public String b;
-    public dp c;
+    public final String a;
+    public final String b;
+    public final dp c;
 
     public op(String str, String str2, dp dpVar) {
         k71.k.g(str, "__typename");

@@ -12,10 +12,10 @@ import kotlin.NoWhenBranchMatchedException;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r3 implements z01.f0, mi0 {
-    public com.github.service.wrapper.j r;
-    public com.github.service.wrapper.b s;
-    public v71.v t;
-    public a00.b u;
+    public final com.github.service.wrapper.j r;
+    public final com.github.service.wrapper.b s;
+    public final v71.v t;
+    public final a00.b u;
 
     public r3(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar) {
         k71.k.g(jVar, "client");

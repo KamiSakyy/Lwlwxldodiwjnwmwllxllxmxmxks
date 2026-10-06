@@ -20,7 +20,7 @@ public final class a {
     public static final Object f34616e = new Object();
 
     /* renamed from: c, reason: collision with root package name */
-    public Context f34619c;
+    public final Context f34619c;
 
     /* renamed from: b, reason: collision with root package name */
     public final HashSet f34618b = new HashSet();

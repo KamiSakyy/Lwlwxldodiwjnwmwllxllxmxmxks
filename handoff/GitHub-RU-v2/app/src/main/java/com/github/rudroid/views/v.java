@@ -14,6 +14,4 @@ public final class v {
             imageView.setOnClickListener(new com.github.rudroid.actions.checklog.c(aVar));
         }
     }
-    public Object b() { return null; }
-    public Object d(int, int, boolean, boolean) { return null; }
 }

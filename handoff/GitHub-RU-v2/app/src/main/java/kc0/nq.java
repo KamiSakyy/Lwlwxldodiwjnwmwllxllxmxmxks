@@ -2,11 +2,11 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class nq {
-    public String a;
-    public iq b;
-    public kq c;
-    public lq d;
-    public String e;
+    public final String a;
+    public final iq b;
+    public final kq c;
+    public final lq d;
+    public final String e;
 
     public nq(String str, iq iqVar, kq kqVar, lq lqVar, String str2) {
         this.a = str;

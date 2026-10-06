@@ -2,8 +2,8 @@ package y71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class b2 implements j {
-    public j r;
-    public c71.j s;
+    public final j r;
+    public final c71.j s;
 
     public b2(j71.e eVar, j jVar) {
         this.r = jVar;

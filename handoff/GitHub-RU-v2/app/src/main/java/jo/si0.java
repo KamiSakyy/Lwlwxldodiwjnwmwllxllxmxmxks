@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class si0 implements aaShadow.v0 {
-    public ti0 a;
-    public String b;
-    public String c;
+    public final ti0 a;
+    public final String b;
+    public final String c;
 
     public si0(ti0 ti0Var, String str, String str2) {
         this.a = ti0Var;

@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class uq {
-    public String a;
-    public tq b;
-    public m10.ks c;
-    public ArrayList d;
-    public String e;
+    public final String a;
+    public final tq b;
+    public final m10.ks c;
+    public final ArrayList d;
+    public final String e;
 
     public uq(String str, tq tqVar, m10.ks ksVar, ArrayList arrayList, String str2) {
         this.a = str;

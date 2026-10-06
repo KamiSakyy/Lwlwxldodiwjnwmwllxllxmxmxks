@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class tl {
-    public boolean a;
+    public final boolean a;
 
     public tl(boolean z) {
         this.a = z;

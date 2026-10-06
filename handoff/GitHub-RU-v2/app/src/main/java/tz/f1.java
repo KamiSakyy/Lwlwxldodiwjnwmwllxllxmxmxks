@@ -4,13 +4,13 @@ import java.time.LocalDate;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f1 {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public int e;
-    public LocalDate f;
-    public u g;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final int e;
+    public final LocalDate f;
+    public final u g;
 
     public f1(String str, String str2, String str3, String str4, int i, LocalDate localDate, u uVar) {
         this.a = str;

@@ -6,5 +6,5 @@ public final class r0 implements y71.i {
         Object a = z71.b.a(cVar, new p0(), new q0(3, null), jVar, (y71.i[]) null);
         return a == b71.a.r ? a : w61.a0.a;
     }
-    public static Object hasNext() { return null; }
+    public Object hasNext() { return null; }
 }

@@ -15,13 +15,13 @@ import kotlinx.serialization.KSerializer;
 public final class EditIssueOrPullTitleRoute implements Parcelable {
 
     /* renamed from: r, reason: collision with root package name */
-    public String f15766r;
+    public final String f15766r;
 
     /* renamed from: s, reason: collision with root package name */
-    public String f15767s;
+    public final String f15767s;
 
     /* renamed from: t, reason: collision with root package name */
-    public boolean f15768t;
+    public final boolean f15768t;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<EditIssueOrPullTitleRoute> CREATOR = new a();
 

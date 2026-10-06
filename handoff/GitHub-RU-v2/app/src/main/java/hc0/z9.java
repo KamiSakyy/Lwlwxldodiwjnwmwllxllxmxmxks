@@ -11,7 +11,7 @@ public final class z9 {
     public static final z9 v;
     public static final /* synthetic */ z9[] w;
     public static final /* synthetic */ d71.b x;
-    public String r;
+    public final String r;
 
     static {
         z9 z9Var = new z9("DISMISSED", 0, "DISMISSED");

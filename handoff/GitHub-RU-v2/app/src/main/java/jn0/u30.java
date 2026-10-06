@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u30 {
-    public String a;
-    public String b;
-    public uu0.z4 c;
+    public final String a;
+    public final String b;
+    public final uu0.z4 c;
 
     public u30(String str, String str2, uu0.z4 z4Var) {
         this.a = str;

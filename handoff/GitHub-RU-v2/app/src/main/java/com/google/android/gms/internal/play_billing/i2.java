@@ -12,15 +12,15 @@ import sun.misc.Unsafe;
 public final class i2 implements o2 {
     public static final int[] j = new int[0];
     public static final Unsafe k = v2.i();
-    public int[] a;
-    public Object[] b;
-    public int c;
-    public int d;
-    public g1 e;
-    public int[] f;
-    public int g;
-    public int h;
-    public r1 i;
+    public final int[] a;
+    public final Object[] b;
+    public final int c;
+    public final int d;
+    public final g1 e;
+    public final int[] f;
+    public final int g;
+    public final int h;
+    public final r1 i;
 
     public i2(int[] iArr, Object[] objArr, int i, int i2, g1 g1Var, int[] iArr2, int i3, int i4, r1 r1Var, r1 r1Var2) {
         this.a = iArr;

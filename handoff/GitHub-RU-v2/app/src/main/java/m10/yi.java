@@ -13,7 +13,7 @@ public final class yi {
     public static final yi x;
     public static final /* synthetic */ yi[] y;
     public static final /* synthetic */ d71.b z;
-    public String r;
+    public final String r;
 
     static {
         yi yiVar = new yi("COMPLETED", 0, "COMPLETED");

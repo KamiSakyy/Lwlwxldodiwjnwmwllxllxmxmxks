@@ -4,19 +4,19 @@ import pz0.f40;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a0 implements aa.h0 {
-    public String a;
-    public String b;
-    public z c;
-    public String d;
-    public String e;
-    public f40 f;
-    public boolean g;
-    public boolean h;
-    public boolean i;
-    public boolean j;
-    public p0 k;
-    public gu0.c l;
-    public gt0.a m;
+    public final String a;
+    public final String b;
+    public final z c;
+    public final String d;
+    public final String e;
+    public final f40 f;
+    public final boolean g;
+    public final boolean h;
+    public final boolean i;
+    public final boolean j;
+    public final p0 k;
+    public final gu0.c l;
+    public final gt0.a m;
 
     public a0(String str, String str2, z zVar, String str3, String str4, f40 f40Var, boolean z, boolean z2, boolean z3, boolean z4, p0 p0Var, gu0.c cVar, gt0.a aVar) {
         this.a = str;

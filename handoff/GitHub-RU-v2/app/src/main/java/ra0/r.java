@@ -4,9 +4,9 @@ import w80.a2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r {
-    public String a;
-    public a2 b;
-    public w80.h c;
+    public final String a;
+    public final a2 b;
+    public final w80.h c;
 
     public r(String str, a2 a2Var, w80.h hVar) {
         k71.k.g(str, "__typename");

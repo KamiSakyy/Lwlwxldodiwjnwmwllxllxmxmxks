@@ -4,8 +4,8 @@ import a0.s0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public int a;
-    public long b;
+    public final int a;
+    public final long b;
 
     public a(int i, long j) {
         if (i == 0) {

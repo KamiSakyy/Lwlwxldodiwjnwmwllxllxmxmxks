@@ -105,6 +105,6 @@ public final class t {
         }
     }
     public Object B(Object p1) { return null; }
-    public static Object L(Object p1) { return null; }
+    public Object L(Object p1) { return null; }
     public static final Object j = null;
 }

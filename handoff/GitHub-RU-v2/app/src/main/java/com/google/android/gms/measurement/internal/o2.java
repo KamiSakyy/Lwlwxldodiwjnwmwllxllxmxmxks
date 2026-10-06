@@ -40,5 +40,4 @@ public final class o2 implements Runnable {
     public Object b = null;
     public Object c = null;
     public Object d = null;
-    public Object o(boolean, boolean, long) { return null; }
 }

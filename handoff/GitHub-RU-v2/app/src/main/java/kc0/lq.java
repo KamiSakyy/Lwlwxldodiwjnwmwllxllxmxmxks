@@ -4,23 +4,23 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class lq {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public pq f;
-    public xp g;
-    public String h;
-    public boolean i;
-    public boolean j;
-    public boolean k;
-    public ZonedDateTime l;
-    public ZonedDateTime m;
-    public mq n;
-    public bq o;
-    public cq p;
-    public aj0.c q;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final pq f;
+    public final xp g;
+    public final String h;
+    public final boolean i;
+    public final boolean j;
+    public final boolean k;
+    public final ZonedDateTime l;
+    public final ZonedDateTime m;
+    public final mq n;
+    public final bq o;
+    public final cq p;
+    public final aj0.c q;
 
     public lq(String str, String str2, String str3, String str4, String str5, pq pqVar, xp xpVar, String str6, boolean z, boolean z2, boolean z3, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, mq mqVar, bq bqVar, cq cqVar, aj0.c cVar) {
         this.a = str;

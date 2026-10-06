@@ -4,11 +4,11 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p {
-    public String a;
-    public String b;
-    public o c;
-    public String d;
-    public vx.a e;
+    public final String a;
+    public final String b;
+    public final o c;
+    public final String d;
+    public final vx.a e;
 
     public p(String str, String str2, o oVar, String str3, vx.a aVar) {
         this.a = str;

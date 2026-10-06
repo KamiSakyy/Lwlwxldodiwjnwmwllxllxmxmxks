@@ -21,7 +21,7 @@ public class m0 {
         return this;
     }
 
-    public static long c() {
+    public long c() {
         if (this.a) {
             return this.b;
         }

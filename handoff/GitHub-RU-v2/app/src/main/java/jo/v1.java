@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v1 implements aaShadow.n0 {
     public static final l1 Companion = new l1();
-    public String r;
-    public String s;
+    public final String r;
+    public final String s;
 
     public v1(String str, String str2) {
         k71.k.g(str, "threadId");

@@ -4,13 +4,13 @@ package f1;
 public final class aa {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f22483a;
+    public final String f22483a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f22484b;
+    public final String f22484b;
 
     /* renamed from: c, reason: collision with root package name */
-    public v9 f22485c;
+    public final v9 f22485c;
 
     public aa(String str, String str2, v9 v9Var) {
         this.f22483a = str;

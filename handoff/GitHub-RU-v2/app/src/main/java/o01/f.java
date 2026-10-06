@@ -6,9 +6,9 @@ import x01.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
-    public a a;
-    public List b;
-    public i c;
+    public final a a;
+    public final List b;
+    public final i c;
 
     public f(a aVar, List list, i iVar) {
         this.a = aVar;

@@ -9,10 +9,10 @@ public abstract class j implements h {
     public int f34582a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f34583b;
+    public final boolean f34583b;
 
     /* renamed from: c, reason: collision with root package name */
-    public ArrayList f34584c;
+    public final ArrayList f34584c;
 
     public j(int i, int i10) {
         i = (i10 & 1) != 0 ? Integer.MAX_VALUE : i;

@@ -4,8 +4,8 @@ import com.github.domain.discussions.data.DiscussionCategoryData;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public DiscussionCategoryData a;
-    public boolean b;
+    public final DiscussionCategoryData a;
+    public final boolean b;
 
     public a(DiscussionCategoryData discussionCategoryData, boolean z) {
         k71.k.g(discussionCategoryData, "category");

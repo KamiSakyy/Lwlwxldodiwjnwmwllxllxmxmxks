@@ -21,9 +21,9 @@ public final class RepositoryAssigneesBottomSheet extends Hilt_RepositoryAssigne
     public static final /* synthetic */ r71.e[] d1;
     public final com.github.rudroid.fragments.util.c Y0 = new com.github.rudroid.fragments.util.c("EXTRA_IS_ACTIVITY_HOSTED", new com.github.rudroid.searchandfilter.complexfilter.user.assignee.l(0));
     public final p Z0 = w.t(new com.github.rudroid.searchandfilter.complexfilter.user.assignee.m(this, 0));
-    public l1 a1;
-    public int b1;
-    public int c1;
+    public final l1 a1;
+    public final int b1;
+    public final int c1;
 
     public static final class a {
     }

@@ -4,10 +4,10 @@ package f0;
 public final class v {
 
     /* renamed from: a, reason: collision with root package name */
-    public float f22377a;
+    public final float f22377a;
 
     /* renamed from: b, reason: collision with root package name */
-    public d2.p f22378b;
+    public final d2.p f22378b;
 
     public v(float f6, d2.p pVar) {
         this.f22377a = f6;

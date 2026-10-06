@@ -11,7 +11,7 @@ public final class u8 {
     public static final u8 v;
     public static final /* synthetic */ u8[] w;
     public static final /* synthetic */ d71.b x;
-    public String r;
+    public final String r;
 
     static {
         u8 u8Var = new u8("DUPLICATE", 0, "DUPLICATE");

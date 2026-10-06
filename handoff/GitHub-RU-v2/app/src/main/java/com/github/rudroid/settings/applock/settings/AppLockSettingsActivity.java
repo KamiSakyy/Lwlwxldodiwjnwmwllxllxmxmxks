@@ -16,8 +16,8 @@ import v71.q1;
 public final class AppLockSettingsActivity extends w {
     public static final a Companion = new a();
     public com.github.rudroid.settings.applock.v t0;
-    public l1 u0;
-    public h.g v0;
+    public final l1 u0;
+    public final h.g v0;
     public q1 w0;
 
     public static final class a {

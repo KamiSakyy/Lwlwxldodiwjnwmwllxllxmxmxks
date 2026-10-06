@@ -2,11 +2,11 @@ package uu0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i6 implements aa.h0 {
-    public String a;
-    public String b;
-    public d6 c;
-    public r0 d;
-    public v5 e;
+    public final String a;
+    public final String b;
+    public final d6 c;
+    public final r0 d;
+    public final v5 e;
 
     public i6(String str, String str2, d6 d6Var, r0 r0Var, v5 v5Var) {
         this.a = str;

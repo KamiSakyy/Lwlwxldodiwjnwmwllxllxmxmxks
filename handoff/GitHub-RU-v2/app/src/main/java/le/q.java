@@ -6,10 +6,10 @@ import yz0.x0;
 public final class q {
 
     /* renamed from: a, reason: collision with root package name */
-    public x0 f28718a;
+    public final x0 f28718a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f28719b;
+    public final String f28719b;
 
     public q(x0 x0Var) {
         k71.k.g(x0Var, "contributor");

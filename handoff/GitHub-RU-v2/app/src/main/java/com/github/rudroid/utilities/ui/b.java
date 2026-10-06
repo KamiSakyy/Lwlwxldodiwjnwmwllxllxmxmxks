@@ -39,7 +39,7 @@ public final /* synthetic */ class b implements j71.e {
         }
         return w61.a0.a;
     }
-    public static Object B(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
-    public static Object w(Object p1, Object p2) { return null; }
-    public static Object x(Object p1, Object p2) { return null; }
+    public Object B(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public Object w(Object p1, Object p2) { return null; }
+    public Object x(Object p1, Object p2) { return null; }
 }

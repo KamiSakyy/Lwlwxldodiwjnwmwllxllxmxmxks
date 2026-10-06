@@ -2,8 +2,8 @@ package g20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n {
-    public String a;
-    public e30.a b;
+    public final String a;
+    public final e30.a b;
 
     public n(String str, e30.a aVar) {
         k71.k.g(str, "__typename");

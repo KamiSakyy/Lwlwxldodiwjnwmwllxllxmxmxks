@@ -7,9 +7,9 @@ import y71.n1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g {
     public static final a Companion = new a();
-    public n5.f a;
-    public um.r b;
-    public oa.m c;
+    public final n5.f a;
+    public final um.r b;
+    public final oa.m c;
 
     public static final class a {
     }

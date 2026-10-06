@@ -7,14 +7,14 @@ import hc0.lc;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e0 implements aa.h0 {
-    public String a;
-    public jc b;
-    public String c;
-    public String d;
-    public int e;
-    public d0 f;
-    public lc g;
-    public String h;
+    public final String a;
+    public final jc b;
+    public final String c;
+    public final String d;
+    public final int e;
+    public final d0 f;
+    public final lc g;
+    public final String h;
 
     public e0(String str, jc jcVar, String str2, String str3, int i, d0 d0Var, lc lcVar, String str4) {
         this.a = str;

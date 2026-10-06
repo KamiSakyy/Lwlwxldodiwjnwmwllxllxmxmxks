@@ -2,8 +2,8 @@ package ea1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public class l extends n {
-    public int a;
-    public int b;
+    public final int a;
+    public final int b;
     public final /* synthetic */ int c;
 
     public l(int i, int i2, int i3) {

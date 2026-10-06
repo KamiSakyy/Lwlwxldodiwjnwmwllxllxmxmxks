@@ -33,9 +33,9 @@ import u10.y90;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x4 implements z01.n0, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
-    public com.github.service.wrapper.j s;
-    public com.github.service.wrapper.bShadow t;
-    public v71.v u;
+    public final com.github.service.wrapper.j s;
+    public final com.github.service.wrapper.bShadow t;
+    public final v71.v u;
 
     public x4(com.github.service.wrapper.j jVar, com.github.service.wrapper.bShadow bVar, v71.v vVar, int i) {
         this.r = i;

@@ -4,10 +4,10 @@ package com.github.rudroid.pushnotifications.decryption;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public a f18561a;
+    public final a f18561a;
 
     /* renamed from: b, reason: collision with root package name */
-    public a f18562b;
+    public final a f18562b;
 
     public g(a aVar, a aVar2) {
         this.f18561a = aVar;

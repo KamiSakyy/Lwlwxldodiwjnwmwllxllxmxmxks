@@ -4,15 +4,15 @@ import pz0.gu;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u1 implements aa.h0 {
-    public String a;
-    public gu b;
-    public String c;
-    public String d;
-    public int e;
-    public boolean f;
-    public t1 g;
-    public boolean h;
-    public String i;
+    public final String a;
+    public final gu b;
+    public final String c;
+    public final String d;
+    public final int e;
+    public final boolean f;
+    public final t1 g;
+    public final boolean h;
+    public final String i;
 
     public u1(String str, gu guVar, String str2, String str3, int i, boolean z, t1 t1Var, boolean z2, String str4) {
         this.a = str;

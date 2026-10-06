@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class sh {
-    public String a;
-    public hz0.e b;
+    public final String a;
+    public final hz0.e b;
 
     public sh(String str, hz0.e eVar) {
         this.a = str;

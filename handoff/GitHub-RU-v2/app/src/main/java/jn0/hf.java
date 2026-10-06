@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class hf implements aaShadow.w0 {
     public static final ef Companion = new ef();
-    public String r;
+    public final String r;
 
     public hf(String str) {
         this.r = str;

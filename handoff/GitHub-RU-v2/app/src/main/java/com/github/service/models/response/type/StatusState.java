@@ -11,7 +11,7 @@ public final class StatusState {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ StatusState[] $VALUES;
     public static final x Companion;
-    private String rawValue;
+    private final String rawValue;
     public static final StatusState EXPECTED = new StatusState("EXPECTED", 0, "EXPECTED");
     public static final StatusState ERROR = new StatusState("ERROR", 1, "ERROR");
     public static final StatusState FAILURE = new StatusState("FAILURE", 2, "FAILURE");

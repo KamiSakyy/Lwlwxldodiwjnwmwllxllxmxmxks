@@ -10,7 +10,7 @@ public final class PullRequestState {
     private static final /* synthetic */ d71.a $ENTRIES;
     private static final /* synthetic */ PullRequestState[] $VALUES;
     public static final o3 Companion;
-    private String rawValue;
+    private final String rawValue;
     public static final PullRequestState OPEN = new PullRequestState("OPEN", 0, "OPEN");
     public static final PullRequestState CLOSED = new PullRequestState("CLOSED", 1, "CLOSED");
     public static final PullRequestState MERGED = new PullRequestState("MERGED", 2, "MERGED");

@@ -25,5 +25,5 @@ public abstract class a {
         a = dVar.a();
         b = d5.q(new q6(12));
     }
-    public static Object z(Object p1) { return null; }
+    public Object z(Object p1) { return null; }
 }

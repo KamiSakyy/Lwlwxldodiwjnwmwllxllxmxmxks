@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class oh {
-    public kh a;
-    public jh b;
+    public final kh a;
+    public final jh b;
 
     public oh(kh khVar, jh jhVar) {
         this.a = khVar;

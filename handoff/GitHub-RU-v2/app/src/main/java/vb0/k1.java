@@ -21,14 +21,14 @@ import u10.zq;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k1 implements z01.n, y90 {
     public static final n0 Companion = new n0();
-    public com.github.service.wrapper.j r;
-    public com.github.service.wrapper.b s;
-    public v71.v t;
-    public jy.d u;
-    public jy.d v;
-    public jy.d w;
-    public wb0.q x;
-    public jy.d y;
+    public final com.github.service.wrapper.j r;
+    public final com.github.service.wrapper.b s;
+    public final v71.v t;
+    public final jy.d u;
+    public final jy.d v;
+    public final jy.d w;
+    public final wb0.q x;
+    public final jy.d y;
 
     public k1(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, String str) {
         k71.k.g(jVar, "client");

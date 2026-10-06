@@ -13,16 +13,16 @@ public final class j implements Comparable {
     public static final j f29667w;
 
     /* renamed from: r, reason: collision with root package name */
-    public int f29668r;
+    public final int f29668r;
 
     /* renamed from: s, reason: collision with root package name */
-    public int f29669s;
+    public final int f29669s;
 
     /* renamed from: t, reason: collision with root package name */
-    public int f29670t;
+    public final int f29670t;
 
     /* renamed from: u, reason: collision with root package name */
-    public String f29671u;
+    public final String f29671u;
 
     /* renamed from: v, reason: collision with root package name */
     public final p f29672v = w.t(new ma.a(2, this));

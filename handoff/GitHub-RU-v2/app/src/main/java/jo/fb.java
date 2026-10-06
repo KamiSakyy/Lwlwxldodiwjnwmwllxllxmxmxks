@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fb implements aaShadow.m0 {
-    public gb a;
+    public final gb a;
 
     public fb(gb gbVar) {
         this.a = gbVar;

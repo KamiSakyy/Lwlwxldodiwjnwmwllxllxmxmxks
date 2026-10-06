@@ -4,9 +4,9 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class i implements Comparable {
-    public int r;
-    public int s;
-    public x91.e t;
+    public final int r;
+    public final int s;
+    public final x91.e t;
 
     public i(int i, int i2, x91.e eVar) {
         this.r = i;

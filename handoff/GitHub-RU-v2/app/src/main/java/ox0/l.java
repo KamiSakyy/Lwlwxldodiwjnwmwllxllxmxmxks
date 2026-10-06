@@ -5,13 +5,13 @@ import pz0.df;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l {
-    public String a;
-    public String b;
-    public int c;
-    public bf d;
-    public m0 e;
-    public df f;
-    public String g;
+    public final String a;
+    public final String b;
+    public final int c;
+    public final bf d;
+    public final m0 e;
+    public final df f;
+    public final String g;
 
     public l(String str, String str2, int i, bf bfVar, m0 m0Var, df dfVar, String str3) {
         this.a = str;

@@ -2,10 +2,10 @@ package y71;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class k1 implements v71.n0 {
-    public m1 r;
-    public long s;
-    public Object t;
-    public v71.l u;
+    public final m1 r;
+    public final long s;
+    public final Object t;
+    public final v71.l u;
 
     public k1(m1 m1Var, long j, Object obj, v71.l lVar) {
         this.r = m1Var;

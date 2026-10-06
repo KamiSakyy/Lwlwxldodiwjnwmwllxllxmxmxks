@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ad implements aaShadow.v0 {
-    public bd a;
-    public String b;
-    public String c;
+    public final bd a;
+    public final String b;
+    public final String c;
 
     public ad(bd bdVar, String str, String str2) {
         this.a = bdVar;

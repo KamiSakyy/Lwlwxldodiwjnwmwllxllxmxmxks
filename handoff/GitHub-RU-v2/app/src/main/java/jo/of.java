@@ -2,16 +2,16 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class of {
-    public String a;
-    public cq.r b;
-    public cq.b0 c;
-    public cq.z0 d;
-    public cq.j1 e;
-    public cq.t1 f;
-    public cq.d2 g;
-    public cq.d3 h;
-    public cq.b6 i;
-    public cq.j6 j;
+    public final String a;
+    public final cq.r b;
+    public final cq.b0 c;
+    public final cq.z0 d;
+    public final cq.j1 e;
+    public final cq.t1 f;
+    public final cq.d2 g;
+    public final cq.d3 h;
+    public final cq.b6 i;
+    public final cq.j6 j;
 
     public of(String str, cq.r rVar, cq.b0 b0Var, cq.z0 z0Var, cq.j1 j1Var, cq.t1 t1Var, cq.d2 d2Var, cq.d3 d3Var, cq.b6 b6Var, cq.j6 j6Var) {
         k71.k.g(str, "__typename");

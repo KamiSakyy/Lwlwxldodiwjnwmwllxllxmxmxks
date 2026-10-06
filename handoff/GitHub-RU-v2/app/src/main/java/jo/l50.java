@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l50 implements aaShadow.v0 {
-    public p50 a;
-    public String b;
-    public String c;
+    public final p50 a;
+    public final String b;
+    public final String c;
 
     public l50(p50 p50Var, String str, String str2) {
         this.a = p50Var;

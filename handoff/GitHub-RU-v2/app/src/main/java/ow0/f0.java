@@ -5,14 +5,14 @@ import pz0.y2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f0 {
-    public String a;
-    public y2 b;
-    public String c;
-    public int d;
-    public String e;
-    public String f;
-    public v g;
-    public boolean h;
+    public final String a;
+    public final y2 b;
+    public final String c;
+    public final int d;
+    public final String e;
+    public final String f;
+    public final v g;
+    public final boolean h;
 
     public f0(String str, y2 y2Var, String str2, int i, String str3, String str4, v vVar, boolean z) {
         this.a = str;

@@ -6,9 +6,9 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a {
-    public List a;
-    public ArrayList b;
-    public List c;
+    public final List a;
+    public final ArrayList b;
+    public final List c;
 
     public a(List list, ArrayList arrayList, List list2) {
         k.g(list, "navLinks");
@@ -42,5 +42,4 @@ public final class a {
         return x.i.l(sb, this.c, ")");
     }
     public Object a(Object p1) { return null; }
-    public Object a(Object) { return null; }
 }

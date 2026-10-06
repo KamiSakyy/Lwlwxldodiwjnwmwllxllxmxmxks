@@ -2,8 +2,8 @@ package gy0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f {
-    public String a;
-    public iy0.w b;
+    public final String a;
+    public final iy0.w b;
 
     public f(String str, iy0.w wVar) {
         k71.k.g(str, "__typename");

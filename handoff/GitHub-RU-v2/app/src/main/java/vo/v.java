@@ -5,26 +5,26 @@ import m10.t3;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v implements aa.h0 {
-    public String a;
-    public b4 b;
-    public t3 c;
-    public String d;
-    public int e;
-    public String f;
-    public d g;
-    public r h;
-    public p i;
-    public f j;
-    public h k;
-    public boolean l;
-    public c m;
-    public g n;
-    public i o;
-    public s p;
-    public t q;
-    public j r;
-    public u s;
-    public String t;
+    public final String a;
+    public final b4 b;
+    public final t3 c;
+    public final String d;
+    public final int e;
+    public final String f;
+    public final d g;
+    public final r h;
+    public final p i;
+    public final f j;
+    public final h k;
+    public final boolean l;
+    public final c m;
+    public final g n;
+    public final i o;
+    public final s p;
+    public final t q;
+    public final j r;
+    public final u s;
+    public final String t;
 
     public v(String str, b4 b4Var, t3 t3Var, String str2, int i, String str3, d dVar, r rVar, p pVar, f fVar, h hVar, boolean z, c cVar, g gVar, i iVar, s sVar, t tVar, j jVar, u uVar, String str4) {
         this.a = str;

@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class qc {
-    public sc a;
+    public final sc a;
 
     public qc(sc scVar) {
         this.a = scVar;

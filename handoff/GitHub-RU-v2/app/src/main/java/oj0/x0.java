@@ -2,10 +2,10 @@ package oj0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x0 {
-    public String a;
-    public String b;
-    public v0 c;
-    public String d;
+    public final String a;
+    public final String b;
+    public final v0 c;
+    public final String d;
 
     public x0(String str, String str2, v0 v0Var, String str3) {
         this.a = str;

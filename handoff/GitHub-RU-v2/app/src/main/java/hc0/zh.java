@@ -10,7 +10,7 @@ public final class zh {
     public static final zh u;
     public static final /* synthetic */ zh[] v;
     public static final /* synthetic */ d71.b w;
-    public String r;
+    public final String r;
 
     static {
         zh zhVar = new zh("ASC", 0, "ASC");

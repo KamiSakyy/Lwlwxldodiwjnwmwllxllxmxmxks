@@ -9,10 +9,10 @@ public abstract class c {
     public static final class a {
 
         /* renamed from: a, reason: collision with root package name */
-        public String f9484a;
+        public final String f9484a;
 
         /* renamed from: b, reason: collision with root package name */
-        public k91.a f9485b;
+        public final k91.a f9485b;
 
         public a(String str, k91.a aVar) {
             k71.k.g(str, "messageMarkdown");
@@ -44,10 +44,10 @@ public abstract class c {
     public static final class b extends c {
 
         /* renamed from: a, reason: collision with root package name */
-        public xn.r0 f9486a;
+        public final xn.r0 f9486a;
 
         /* renamed from: b, reason: collision with root package name */
-        public xn.f0 f9487b;
+        public final xn.f0 f9487b;
 
         public b(xn.r0 r0Var, xn.f0 f0Var) {
             k71.k.g(r0Var, "errorType");
@@ -80,10 +80,10 @@ public abstract class c {
     public static final class C0021c extends c {
 
         /* renamed from: a, reason: collision with root package name */
-        public String f9488a;
+        public final String f9488a;
 
         /* renamed from: b, reason: collision with root package name */
-        public double f9489b;
+        public final double f9489b;
 
         public C0021c(String str, double d10) {
             k71.k.g(str, "modelName");
@@ -132,16 +132,16 @@ public abstract class c {
     public static final class e {
 
         /* renamed from: a, reason: collision with root package name */
-        public String f9491a;
+        public final String f9491a;
 
         /* renamed from: b, reason: collision with root package name */
-        public a f9492b;
+        public final a f9492b;
 
         /* renamed from: c, reason: collision with root package name */
-        public String f9493c;
+        public final String f9493c;
 
         /* renamed from: d, reason: collision with root package name */
-        public boolean f9494d;
+        public final boolean f9494d;
 
         public e(String str, a aVar, String str2, boolean z10) {
             k71.k.g(str, "title");
@@ -179,32 +179,32 @@ public abstract class c {
     public static final class f extends c {
 
         /* renamed from: a, reason: collision with root package name */
-        public String f9495a;
+        public final String f9495a;
 
         /* renamed from: b, reason: collision with root package name */
-        public String f9496b;
+        public final String f9496b;
 
         /* renamed from: c, reason: collision with root package name */
-        public k91.a f9497c;
+        public final k91.a f9497c;
 
         /* renamed from: d, reason: collision with root package name */
-        public xn.w f9498d;
+        public final xn.w f9498d;
 
         /* renamed from: e, reason: collision with root package name */
-        public ZonedDateTime f9499e;
+        public final ZonedDateTime f9499e;
 
         /* renamed from: f, reason: collision with root package name */
-        public boolean f9500f;
+        public final boolean f9500f;
 
         /* renamed from: g, reason: collision with root package name */
-        public boolean f9501g;
+        public final boolean f9501g;
 
         /* renamed from: h, reason: collision with root package name */
-        public List f9502h;
-        public List i;
+        public final List f9502h;
+        public final List i;
 
         /* renamed from: j, reason: collision with root package name */
-        public List f9503j;
+        public final List f9503j;
 
         public f(String str, String str2, k91.a aVar, xn.w wVar, ZonedDateTime zonedDateTime, boolean z10, boolean z11, List list, List list2, List list3) {
             k71.k.g(str, "id");
@@ -264,7 +264,7 @@ public abstract class c {
     public static final class g {
 
         /* renamed from: a, reason: collision with root package name */
-        public xn.c0 f9504a;
+        public final xn.c0 f9504a;
 
         public g(xn.c0 c0Var) {
             k71.k.g(c0Var, "state");
@@ -290,19 +290,19 @@ public abstract class c {
     public static final class h extends c {
 
         /* renamed from: a, reason: collision with root package name */
-        public String f9505a;
+        public final String f9505a;
 
         /* renamed from: b, reason: collision with root package name */
-        public String f9506b;
+        public final String f9506b;
 
         /* renamed from: c, reason: collision with root package name */
-        public k91.a f9507c;
+        public final k91.a f9507c;
 
         /* renamed from: d, reason: collision with root package name */
-        public ZonedDateTime f9508d;
+        public final ZonedDateTime f9508d;
 
         /* renamed from: e, reason: collision with root package name */
-        public List f9509e;
+        public final List f9509e;
 
         public h(String str, String str2, k91.a aVar, ZonedDateTime zonedDateTime, List list) {
             k71.k.g(str, "id");
@@ -377,5 +377,4 @@ public abstract class c {
         }
     }
     public Object v(Object p1) { return null; }
-    public Object v(Object) { return null; }
 }

@@ -12,10 +12,10 @@ import androidx.appcompat.widget.LinearLayoutCompat;
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class g extends LinearLayoutCompat {
     public Drawable G;
-    public Rect H;
-    public Rect I;
+    public final Rect H;
+    public final Rect I;
     public int J;
-    public boolean K;
+    public final boolean K;
     public boolean L;
 
     public g(Context context, AttributeSet attributeSet) {
@@ -161,6 +161,4 @@ public abstract class g extends LinearLayoutCompat {
         return super/*android.view.View*/.verifyDrawable(drawable) || drawable == this.G;
     }
     public Object onCreateDrawableState(Object p1) { return null; }
-    public Object setWillNotDraw(boolean) { return null; }
-    public Object unscheduleDrawable(Object) { return null; }
 }

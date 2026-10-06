@@ -5,9 +5,9 @@ import m10.ya0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w {
-    public String a;
-    public ya0 b;
-    public vx.a c;
+    public final String a;
+    public final ya0 b;
+    public final vx.a c;
 
     public w(String str, ya0 ya0Var, vx.a aVar) {
         k71.k.g(str, "__typename");

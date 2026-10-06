@@ -12,5 +12,5 @@ public final class e implements i51.c {
         dVar.a(b, ((o) ((a0) obj)).a);
         dVar.a(c, z.r);
     }
-    public static Object g(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
 }

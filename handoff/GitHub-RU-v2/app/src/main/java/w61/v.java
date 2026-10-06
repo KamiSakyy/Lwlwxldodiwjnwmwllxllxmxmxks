@@ -4,7 +4,7 @@ import sy.c0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v implements Comparable {
-    public long r;
+    public final long r;
 
     @Override // java.lang.Comparable
     public final int compareTo(Object obj) {

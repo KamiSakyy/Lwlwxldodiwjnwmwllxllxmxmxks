@@ -6,7 +6,7 @@ import java.util.Arrays;
 public final class f0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public float[] f21340a;
+    public final float[] f21340a;
 
     public static float[] a() {
         return new float[]{1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f};

@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class gm implements aaShadow.m0 {
-    public hm a;
+    public final hm a;
 
     public gm(hm hmVar) {
         this.a = hmVar;

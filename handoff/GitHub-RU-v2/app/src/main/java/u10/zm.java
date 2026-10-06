@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zm implements aaShadow.v0 {
-    public en a;
+    public final en a;
 
     public zm(en enVar) {
         this.a = enVar;

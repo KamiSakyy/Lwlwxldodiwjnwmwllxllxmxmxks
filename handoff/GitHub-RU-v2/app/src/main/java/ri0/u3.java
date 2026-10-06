@@ -4,9 +4,9 @@ import gn0.hn;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u3 implements aa.h0 {
-    public String a;
-    public hn b;
-    public String c;
+    public final String a;
+    public final hn b;
+    public final String c;
 
     public u3(String str, hn hnVar, String str2) {
         this.a = str;

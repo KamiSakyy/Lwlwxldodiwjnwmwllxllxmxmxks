@@ -13,8 +13,8 @@ public class l extends j0 implements k, c71.d, a2 {
     private volatile /* synthetic */ int _decisionAndIndex$volatile;
     private volatile /* synthetic */ Object _parentHandle$volatile;
     private volatile /* synthetic */ Object _state$volatile;
-    public a71.c u;
-    public a71.h v;
+    public final a71.c u;
+    public final a71.h v;
 
     public l(int i, a71.c cVar) {
         super(i);

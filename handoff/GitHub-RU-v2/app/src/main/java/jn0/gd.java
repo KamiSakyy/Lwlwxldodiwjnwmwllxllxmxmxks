@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class gd {
-    public id a;
+    public final id a;
 
     public gd(id idVar) {
         this.a = idVar;

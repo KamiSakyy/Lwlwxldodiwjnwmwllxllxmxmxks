@@ -5,13 +5,13 @@ import com.github.service.models.response.type.IssueState;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q4 extends o.b {
-    public String t;
-    public String u;
-    public int v;
-    public IssueState w;
-    public String x;
-    public String y;
-    public CloseReason z;
+    public final String t;
+    public final String u;
+    public final int v;
+    public final IssueState w;
+    public final String x;
+    public final String y;
+    public final CloseReason z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public q4(String str, String str2, int i, IssueState issueState, String str3, String str4, CloseReason closeReason) {

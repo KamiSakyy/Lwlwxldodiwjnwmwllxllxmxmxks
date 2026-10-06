@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e implements k, l {
     public static final d Companion = new d();
-    public Object a;
-    public Object b;
+    public final Object a;
+    public final Object b;
 
     public e(List list, List list2) {
         this.a = list;
@@ -31,5 +31,5 @@ public final class e implements k, l {
     public final String toString() {
         return "AliveProjectDenormalizedMessage(affectedIds=" + this.a + ", affectedModels=" + this.b + ")";
     }
-    public static Object c(Object p1, Object p2, Object p3) { return null; }
+    public Object c(Object p1, Object p2, Object p3) { return null; }
 }

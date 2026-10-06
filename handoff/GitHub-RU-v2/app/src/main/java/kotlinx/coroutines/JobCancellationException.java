@@ -7,7 +7,7 @@ import v71.m1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class JobCancellationException extends CancellationException {
-    public transient j1 r;
+    public final transient j1 r;
 
     public JobCancellationException(String str, Throwable th, j1 j1Var) {
         super(str);

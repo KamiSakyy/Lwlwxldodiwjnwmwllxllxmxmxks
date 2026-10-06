@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class yy implements aaShadow.v0 {
-    public hz a;
-    public String b;
-    public String c;
+    public final hz a;
+    public final String b;
+    public final String c;
 
     public yy(hz hzVar, String str, String str2) {
         this.a = hzVar;

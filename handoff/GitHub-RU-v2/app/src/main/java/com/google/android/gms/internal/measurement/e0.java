@@ -9,10 +9,10 @@ import java.util.concurrent.Callable;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e0 {
-    public w51.r a;
+    public final w51.r a;
     public w51.r b;
-    public a5.s c;
-    public t d;
+    public final a5.s c;
+    public final t d;
 
     public e0() {
         w51.r rVar = new w51.r(5);

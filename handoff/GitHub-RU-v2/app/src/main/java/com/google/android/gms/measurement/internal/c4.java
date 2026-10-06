@@ -6,9 +6,9 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c4 extends d21.a {
     public static final Parcelable.Creator<c4> CREATOR = new c21.c0(7);
-    public String r;
-    public long s;
-    public int t;
+    public final String r;
+    public final long s;
+    public final int t;
 
     public c4(int i, long j, String str) {
         this.r = str;

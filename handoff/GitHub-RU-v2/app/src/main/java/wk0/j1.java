@@ -4,9 +4,9 @@ import gn0.ev;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j1 {
-    public String a;
-    public ev b;
-    public String c;
+    public final String a;
+    public final ev b;
+    public final String c;
 
     public j1(String str, ev evVar, String str2) {
         this.a = str;

@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t50 implements aaShadow.n0 {
     public static final q50 Companion = new q50();
-    public String r;
-    public String s;
+    public final String r;
+    public final String s;
 
     public t50(String str, String str2) {
         k71.k.g(str, "commentId");

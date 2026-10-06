@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class dp {
-    public String a;
-    public String b;
-    public ep c;
+    public final String a;
+    public final String b;
+    public final ep c;
 
     public dp(String str, String str2, ep epVar) {
         k71.k.g(str, "__typename");

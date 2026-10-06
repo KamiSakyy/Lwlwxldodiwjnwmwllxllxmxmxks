@@ -6,9 +6,9 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public String a;
-    public String b;
-    public int c;
+    public final String a;
+    public final String b;
+    public final int c;
 
     public a(String str, int i, String str2) {
         k.g(str, "owner");

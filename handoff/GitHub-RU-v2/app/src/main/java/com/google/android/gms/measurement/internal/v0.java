@@ -17,11 +17,11 @@ import java.util.zip.GZIPOutputStream;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v0 implements Runnable {
     public final /* synthetic */ int r = 0;
-    public URL s;
-    public byte[] t;
-    public String u;
-    public Map v;
-    public Object w;
+    public final URL s;
+    public final byte[] t;
+    public final String u;
+    public final Map v;
+    public final Object w;
     public final /* synthetic */ androidx.compose.foundation.lazy.layout.s0 x;
 
     public v0(w0 w0Var, String str, URL url, byte[] bArr, Map map, u0 u0Var) {

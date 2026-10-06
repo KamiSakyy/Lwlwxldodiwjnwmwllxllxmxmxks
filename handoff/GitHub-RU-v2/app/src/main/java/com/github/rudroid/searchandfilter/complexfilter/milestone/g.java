@@ -14,10 +14,10 @@ import yz0.v2;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g extends com.github.rudroid.searchandfilter.complexfilter.k<v2> implements d0<com.github.rudroid.searchandfilter.complexfilter.milestone.a> {
     public static final a Companion = new a();
-    public im.g E;
-    public v F;
-    public String G;
-    public String H;
+    public final im.g E;
+    public final v F;
+    public final String G;
+    public final String H;
 
     public static final class a {
     }

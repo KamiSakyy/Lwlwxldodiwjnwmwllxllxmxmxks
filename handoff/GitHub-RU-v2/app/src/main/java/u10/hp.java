@@ -4,23 +4,23 @@ import java.time.ZonedDateTime;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class hp {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public lp f;
-    public to g;
-    public String h;
-    public boolean i;
-    public boolean j;
-    public boolean k;
-    public ZonedDateTime l;
-    public ZonedDateTime m;
-    public ip n;
-    public xo o;
-    public yo p;
-    public i80.c q;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final lp f;
+    public final to g;
+    public final String h;
+    public final boolean i;
+    public final boolean j;
+    public final boolean k;
+    public final ZonedDateTime l;
+    public final ZonedDateTime m;
+    public final ip n;
+    public final xo o;
+    public final yo p;
+    public final i80.c q;
 
     public hp(String str, String str2, String str3, String str4, String str5, lp lpVar, to toVar, String str6, boolean z, boolean z2, boolean z3, ZonedDateTime zonedDateTime, ZonedDateTime zonedDateTime2, ip ipVar, xo xoVar, yo yoVar, i80.c cVar) {
         this.a = str;

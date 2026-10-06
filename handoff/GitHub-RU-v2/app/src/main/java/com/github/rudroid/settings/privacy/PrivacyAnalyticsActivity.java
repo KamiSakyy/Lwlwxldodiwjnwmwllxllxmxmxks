@@ -6,7 +6,7 @@ import ic.j0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class PrivacyAnalyticsActivity extends b<j0> {
-    public int v0;
+    public final int v0;
 
     public PrivacyAnalyticsActivity() {
         this.u0 = false;

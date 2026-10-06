@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n80 implements aaShadow.n0 {
     public static final i80 Companion = new i80();
-    public String r;
+    public final String r;
 
     public n80(String str) {
         k71.k.g(str, "id");

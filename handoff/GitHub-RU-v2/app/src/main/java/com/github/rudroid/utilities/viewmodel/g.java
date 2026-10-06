@@ -10,8 +10,8 @@ import y71.y1;
 public interface g {
 
     public static final class a implements g {
-        public y1 r;
-        public i1 s;
+        public final y1 r;
+        public final i1 s;
 
         public a() {
             y1 c = n1.c((Object) null);

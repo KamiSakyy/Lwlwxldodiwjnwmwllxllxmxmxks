@@ -7,8 +7,8 @@ import pz0.sk;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t implements aa.n0 {
     public static final p Companion = new p();
-    public String r;
-    public ArrayList s;
+    public final String r;
+    public final ArrayList s;
 
     public t(String str, ArrayList arrayList) {
         k71.k.g(str, "baseIssueOrPullRequestId");

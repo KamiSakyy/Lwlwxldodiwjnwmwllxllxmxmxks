@@ -17,14 +17,14 @@ import kc0.yb0;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b2 implements z01.n, yb0 {
     public static final y0 Companion = new y0();
-    public com.github.service.wrapper.j r;
-    public com.github.service.wrapper.bShadow s;
-    public v71.v t;
-    public a00.bShadow u;
-    public a00.bShadow v;
-    public a00.bShadow w;
-    public sm0.r x;
-    public a00.bShadow y;
+    public final com.github.service.wrapper.j r;
+    public final com.github.service.wrapper.bShadow s;
+    public final v71.v t;
+    public final a00.bShadow u;
+    public final a00.bShadow v;
+    public final a00.bShadow w;
+    public final sm0.r x;
+    public final a00.bShadow y;
 
     public b2(com.github.service.wrapper.j jVar, com.github.service.wrapper.bShadow bVar, v71.v vVar, String str) {
         k71.k.g(jVar, "client");

@@ -4,10 +4,10 @@ import hc0.dk;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a3 {
-    public String a;
-    public String b;
-    public dk c;
-    public String d;
+    public final String a;
+    public final String b;
+    public final dk c;
+    public final String d;
 
     public a3(String str, String str2, dk dkVar, String str3) {
         this.a = str;

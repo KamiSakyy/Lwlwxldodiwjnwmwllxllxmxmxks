@@ -6,7 +6,7 @@ import k71.k;
 public class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public Object[] f34548a;
+    public final Object[] f34548a;
 
     /* renamed from: b, reason: collision with root package name */
     public int f34549b;

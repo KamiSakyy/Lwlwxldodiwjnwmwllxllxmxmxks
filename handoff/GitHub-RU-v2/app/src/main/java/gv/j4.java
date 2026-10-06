@@ -2,10 +2,10 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j4 {
-    public boolean a;
-    public String b;
-    public boolean c;
-    public String d;
+    public final boolean a;
+    public final String b;
+    public final boolean c;
+    public final String d;
 
     public j4(String str, String str2, boolean z, boolean z2) {
         this.a = z;

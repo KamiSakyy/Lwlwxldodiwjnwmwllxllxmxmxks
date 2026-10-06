@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ag {
-    public String a;
-    public eg b;
-    public bl0.a c;
+    public final String a;
+    public final eg b;
+    public final bl0.a c;
 
     public ag(String str, eg egVar, bl0.a aVar) {
         k71.k.g(str, "__typename");

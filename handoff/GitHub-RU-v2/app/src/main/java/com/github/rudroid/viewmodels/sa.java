@@ -4,9 +4,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class sa extends w3 {
-    public lm.j u;
-    public com.github.rudroid.activities.util.c v;
-    public androidx.lifecycle.p0 w;
+    public final lm.j u;
+    public final com.github.rudroid.activities.util.c v;
+    public final androidx.lifecycle.p0 w;
     public x01.i x;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

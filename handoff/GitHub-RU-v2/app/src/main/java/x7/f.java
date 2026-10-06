@@ -6,10 +6,10 @@ import sy.r;
 public abstract class f implements v7.c {
 
     /* renamed from: r, reason: collision with root package name */
-    public w7.a f33950r;
+    public final w7.a f33950r;
 
     /* renamed from: s, reason: collision with root package name */
-    public String f33951s;
+    public final String f33951s;
 
     /* renamed from: t, reason: collision with root package name */
     public boolean f33952t;

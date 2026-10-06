@@ -7,7 +7,7 @@ import k71.k;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public c f27396a;
+    public final c f27396a;
 
     public a(c cVar) {
         k.g(cVar, "systemPreferences");

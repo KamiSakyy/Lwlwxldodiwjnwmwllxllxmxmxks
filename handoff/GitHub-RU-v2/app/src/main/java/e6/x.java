@@ -42,7 +42,7 @@ public enum x implements b0 {
 
 
     /* renamed from: r, reason: collision with root package name */
-    public int f21984r;
+    public final int f21984r;
 
     x(int i) {
         this.f21984r = i;

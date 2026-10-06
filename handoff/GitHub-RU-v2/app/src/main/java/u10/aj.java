@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class aj {
-    public ui a;
+    public final ui a;
 
     public aj(ui uiVar) {
         this.a = uiVar;

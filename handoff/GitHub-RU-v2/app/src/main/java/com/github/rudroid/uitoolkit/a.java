@@ -13,7 +13,7 @@ public final class a {
     public static final a x;
     public static final a y;
     public static final a z;
-    public float r;
+    public final float r;
 
     static {
         a aVar = new a("Avatar16", 0, ih.a.u);

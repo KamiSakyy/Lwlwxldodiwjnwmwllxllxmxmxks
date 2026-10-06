@@ -15,7 +15,7 @@ public final class b implements Iterator, l71.a {
     public int f31725s;
 
     /* renamed from: t, reason: collision with root package name */
-    public Iterator f31726t;
+    public final Iterator f31726t;
 
     public b(Iterator it) {
         k71.k.g(it, "iterator");

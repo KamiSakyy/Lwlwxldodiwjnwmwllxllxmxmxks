@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class iu {
-    public ku a;
+    public final ku a;
 
     public iu(ku kuVar) {
         this.a = kuVar;

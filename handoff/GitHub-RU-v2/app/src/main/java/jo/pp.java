@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class pp implements aaShadow.v0 {
-    public sp a;
-    public String b;
-    public String c;
+    public final sp a;
+    public final String b;
+    public final String c;
 
     public pp(sp spVar, String str, String str2) {
         this.a = spVar;

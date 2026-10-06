@@ -6,6 +6,4 @@ package oa;
  */
 public interface g {
     public Object a(Object p1) { return null; }
-    public Object a(Object) { return null; }
-    public Object a(Object) { return null; }
 }

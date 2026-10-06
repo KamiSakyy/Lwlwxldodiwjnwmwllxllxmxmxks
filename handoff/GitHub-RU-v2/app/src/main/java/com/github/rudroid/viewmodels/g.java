@@ -2,10 +2,10 @@ package com.github.rudroid.viewmodels;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g extends androidx.lifecycle.k1 {
-    public kj.k s;
-    public com.github.rudroid.activities.util.c t;
-    public y71.y1 u;
-    public y71.i1 v;
+    public final kj.k s;
+    public final com.github.rudroid.activities.util.c t;
+    public final y71.y1 u;
+    public final y71.i1 v;
 
     public g(kj.k kVar, com.github.rudroid.activities.util.c cVar) {
         k71.k.g(kVar, "commitSuggestionUseCase");

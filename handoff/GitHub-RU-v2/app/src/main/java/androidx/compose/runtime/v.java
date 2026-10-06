@@ -11,5 +11,5 @@ public class v {
     public static Object b(Object... a) {
         return null;
     }
-    public static Object a(Object p1) { return null; }
+    public Object a(Object p1) { return null; }
 }

@@ -15,8 +15,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t {
-    public Object a;
-    public Object b;
+    public final Object a;
+    public final Object b;
 
     public /* synthetic */ t(Object obj, Object obj2) {
         this.a = obj;

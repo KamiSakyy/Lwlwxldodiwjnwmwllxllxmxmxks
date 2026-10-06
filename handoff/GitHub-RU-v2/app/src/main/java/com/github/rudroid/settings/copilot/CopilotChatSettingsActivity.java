@@ -14,7 +14,7 @@ import com.github.service.models.response.type.MobileSubjectType;
 public final class CopilotChatSettingsActivity extends l0 {
     public static final a Companion = new a();
     public h.g t0;
-    public l1 u0;
+    public final l1 u0;
 
     public static final class a {
     }

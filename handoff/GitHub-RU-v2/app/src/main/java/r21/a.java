@@ -24,8 +24,8 @@ import x.e;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a extends c {
-    public o1 a;
-    public t2 b;
+    public final o1 a;
+    public final t2 b;
 
     public a(o1 o1Var) {
         u.g(o1Var);

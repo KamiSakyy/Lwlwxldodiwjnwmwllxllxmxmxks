@@ -4,10 +4,10 @@ package g3;
 public final class z {
 
     /* renamed from: a, reason: collision with root package name */
-    public y f24719a;
+    public final y f24719a;
 
     /* renamed from: b, reason: collision with root package name */
-    public x f24720b;
+    public final x f24720b;
 
     public z(y yVar, x xVar) {
         this.f24719a = yVar;

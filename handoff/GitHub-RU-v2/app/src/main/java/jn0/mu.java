@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class mu {
-    public nu a;
+    public final nu a;
 
     public mu(nu nuVar) {
         this.a = nuVar;

@@ -14,7 +14,7 @@ import z70.j3;
 @g81.e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class IssueTypeFilter extends d {
-    public IssueType v;
+    public final IssueType v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<IssueTypeFilter> CREATOR = new a21.g(25);
     public static final w61.h[] w = {w.s(w61.i.r, new bm.i(7)), null, null};

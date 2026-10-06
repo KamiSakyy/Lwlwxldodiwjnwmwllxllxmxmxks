@@ -56,5 +56,5 @@ final class m0 extends c71.j implements j71.e {
         l0 l0Var = new l0(lVar);
         this.v = 2;
     }
-    public static Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

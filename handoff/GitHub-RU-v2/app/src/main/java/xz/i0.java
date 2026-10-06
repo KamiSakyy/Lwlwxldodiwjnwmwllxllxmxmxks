@@ -2,15 +2,15 @@ package xz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i0 implements aa.h0 {
-    public String a;
-    public a0 b;
-    public b0 c;
-    public c0 d;
-    public d0 e;
-    public e0 f;
-    public f0 g;
-    public g0 h;
-    public h0 i;
+    public final String a;
+    public final a0 b;
+    public final b0 c;
+    public final c0 d;
+    public final d0 e;
+    public final e0 f;
+    public final f0 g;
+    public final g0 h;
+    public final h0 i;
 
     public i0(String str, a0 a0Var, b0 b0Var, c0 c0Var, d0 d0Var, e0 e0Var, f0 f0Var, g0 g0Var, h0 h0Var) {
         k71.k.g(str, "__typename");

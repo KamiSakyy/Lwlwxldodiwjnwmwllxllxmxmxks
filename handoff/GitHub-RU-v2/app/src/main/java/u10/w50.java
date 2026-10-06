@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w50 {
-    public boolean a;
+    public final boolean a;
 
     public w50(boolean z) {
         this.a = z;

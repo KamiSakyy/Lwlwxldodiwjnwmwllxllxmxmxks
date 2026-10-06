@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class tf implements aaShadow.w0 {
     public static final qf Companion = new qf();
-    public String r;
-    public String s;
-    public aa1.b t;
+    public final String r;
+    public final String s;
+    public final aa1.b t;
 
     public tf(String str, String str2) {
         k71.k.g(str, "owner");

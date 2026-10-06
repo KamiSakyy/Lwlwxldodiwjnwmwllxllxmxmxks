@@ -5,9 +5,9 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class eo implements aaShadow.w0 {
     public static final vn Companion = new vn();
-    public String r;
-    public hc0.zm s;
-    public aa.u0 t;
+    public final String r;
+    public final hc0.zm s;
+    public final aa.u0 t;
 
     public eo(String str, hc0.zm zmVar, aa.u0 u0Var) {
         k71.k.g(str, "id");

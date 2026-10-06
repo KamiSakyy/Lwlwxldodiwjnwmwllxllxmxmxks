@@ -2,14 +2,14 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ji implements aaShadow.v0 {
-    public ki a;
-    public yi b;
-    public zi c;
-    public aj d;
-    public wi e;
-    public hi f;
-    public String g;
-    public String h;
+    public final ki a;
+    public final yi b;
+    public final zi c;
+    public final aj d;
+    public final wi e;
+    public final hi f;
+    public final String g;
+    public final String h;
 
     public ji(ki kiVar, yi yiVar, zi ziVar, aj ajVar, wi wiVar, hi hiVar, String str, String str2) {
         this.a = kiVar;

@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m5 implements aaShadow.v0 {
-    public r5 a;
+    public final r5 a;
 
     public m5(r5 r5Var) {
         this.a = r5Var;

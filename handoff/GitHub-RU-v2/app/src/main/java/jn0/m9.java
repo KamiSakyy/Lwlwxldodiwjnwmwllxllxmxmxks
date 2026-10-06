@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m9 {
-    public String a;
-    public String b;
-    public xt0.z7 c;
-    public xt0.v d;
+    public final String a;
+    public final String b;
+    public final xt0.z7 c;
+    public final xt0.v d;
 
     public m9(String str, String str2, xt0.z7 z7Var, xt0.v vVar) {
         this.a = str;

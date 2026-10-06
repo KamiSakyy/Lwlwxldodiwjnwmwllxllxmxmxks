@@ -8,11 +8,11 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements h0 {
-    public String a;
-    public String b;
-    public a c;
-    public d d;
-    public ZonedDateTime e;
+    public final String a;
+    public final String b;
+    public final a c;
+    public final d d;
+    public final ZonedDateTime e;
 
     public e(String str, String str2, a aVar, d dVar, ZonedDateTime zonedDateTime) {
         this.a = str;
@@ -47,6 +47,6 @@ public final class e implements h0 {
         o.append(", createdAt=");
         return h1.q(o, this.e, ")");
     }
-    public static Object i(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object i(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

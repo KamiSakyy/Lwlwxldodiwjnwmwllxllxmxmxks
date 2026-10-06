@@ -18,7 +18,4 @@ final class j<T> implements y71.j {
         y1Var.k((Object) null, bool);
         return w61.a0.a;
     }
-    public Object J0() { return null; }
-    public Object m() { return null; }
-    public Object setResult(int, Object) { return null; }
 }

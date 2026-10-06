@@ -13,7 +13,7 @@ import java.nio.ByteOrder;
 public class b extends InputStream implements DataInput {
 
     /* renamed from: r, reason: collision with root package name */
-    public DataInputStream f33324r;
+    public final DataInputStream f33324r;
 
     /* renamed from: s, reason: collision with root package name */
     public int f33325s;
@@ -25,7 +25,7 @@ public class b extends InputStream implements DataInput {
     public byte[] f33327u;
 
     /* renamed from: v, reason: collision with root package name */
-    public int f33328v;
+    public final int f33328v;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*

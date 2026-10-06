@@ -2,11 +2,11 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ja {
-    public String a;
-    public hc0.fq b;
-    public ia c;
-    public boolean d;
-    public String e;
+    public final String a;
+    public final hc0.fq b;
+    public final ia c;
+    public final boolean d;
+    public final String e;
 
     public ja(String str, hc0.fq fqVar, ia iaVar, boolean z, String str2) {
         this.a = str;

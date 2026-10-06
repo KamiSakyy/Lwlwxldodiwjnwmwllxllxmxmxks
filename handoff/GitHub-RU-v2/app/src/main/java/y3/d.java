@@ -6,22 +6,22 @@ import java.util.LinkedHashMap;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public Object f34194a;
+    public final Object f34194a;
 
     /* renamed from: b, reason: collision with root package name */
-    public Object f34195b;
+    public final Object f34195b;
 
     /* renamed from: c, reason: collision with root package name */
-    public g f34196c;
+    public final g f34196c;
 
     /* renamed from: d, reason: collision with root package name */
-    public f f34197d;
+    public final f f34197d;
 
     /* renamed from: e, reason: collision with root package name */
-    public g f34198e;
+    public final g f34198e;
 
     /* renamed from: f, reason: collision with root package name */
-    public f f34199f;
+    public final f f34199f;
 
     public d(Object obj) {
         this.f34194a = obj;

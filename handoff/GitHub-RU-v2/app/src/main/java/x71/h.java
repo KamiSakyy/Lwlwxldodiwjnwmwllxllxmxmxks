@@ -25,7 +25,7 @@ public class h implements l {
     private volatile /* synthetic */ Object bufferEndSegment$volatile;
     private volatile /* synthetic */ Object closeHandler$volatile;
     private volatile /* synthetic */ long completedExpandBuffersAndPauseFlag$volatile;
-    public int r;
+    public final int r;
     private volatile /* synthetic */ Object receiveSegment$volatile;
     private volatile /* synthetic */ long receivers$volatile;
     private volatile /* synthetic */ Object sendSegment$volatile;

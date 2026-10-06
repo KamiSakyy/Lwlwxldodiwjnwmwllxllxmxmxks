@@ -21,11 +21,11 @@ import w61.i;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ProjectV2Field$ProjectV2SingleSelectField implements j0 {
     public static final h[] w;
-    public String r;
-    public int s;
-    public String t;
-    public ProjectFieldType u;
-    public List v;
+    public final String r;
+    public final int s;
+    public final String t;
+    public final ProjectFieldType u;
+    public final List v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<ProjectV2Field$ProjectV2SingleSelectField> CREATOR = new c(19);
 

@@ -19,10 +19,10 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j implements a21.d, a21.e {
-    public a21.a g;
-    public a h;
-    public b1.m i;
-    public int l;
+    public final a21.a g;
+    public final a h;
+    public final b1.m i;
+    public final int l;
     public boolean m;
     public final /* synthetic */ d p;
     public final LinkedList f = new LinkedList();

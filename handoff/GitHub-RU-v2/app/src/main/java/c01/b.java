@@ -15,13 +15,13 @@ import x61.s;
 public final class b {
     public static final a Companion = new a();
     public static final b h;
-    public String a;
-    public p0 b;
-    public t0 c;
-    public com.github.service.models.response.a d;
-    public String e;
-    public String f;
-    public ZonedDateTime g;
+    public final String a;
+    public final p0 b;
+    public final t0 c;
+    public final com.github.service.models.response.a d;
+    public final String e;
+    public final String f;
+    public final ZonedDateTime g;
 
     static {
         com.github.service.models.response.a.Companion.getClass();

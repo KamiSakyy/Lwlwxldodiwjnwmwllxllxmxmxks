@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class mg {
-    public sg a;
-    public List b;
+    public final sg a;
+    public final List b;
 
     public mg(sg sgVar, List list) {
         this.a = sgVar;

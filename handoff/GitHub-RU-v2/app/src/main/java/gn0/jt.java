@@ -16,7 +16,7 @@ public final class jt {
     public static final jt x;
     public static final jt y;
     public static final jt z;
-    public String r;
+    public final String r;
 
     static {
         jt jtVar = new jt("BLUE", 0, "BLUE");

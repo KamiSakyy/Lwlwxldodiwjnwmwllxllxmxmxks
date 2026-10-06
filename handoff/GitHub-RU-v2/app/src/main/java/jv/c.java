@@ -6,9 +6,9 @@ import m10.da0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c {
-    public String a;
-    public da0 b;
-    public String c;
+    public final String a;
+    public final da0 b;
+    public final String c;
 
     public c(String str, String str2, da0 da0Var) {
         this.a = str;

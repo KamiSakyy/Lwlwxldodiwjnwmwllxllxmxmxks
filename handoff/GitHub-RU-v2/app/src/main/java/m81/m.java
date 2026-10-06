@@ -4,8 +4,8 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class m extends a {
-    public kotlinx.serialization.json.a f;
-    public int g;
+    public final kotlinx.serialization.json.a f;
+    public final int g;
     public int h;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */

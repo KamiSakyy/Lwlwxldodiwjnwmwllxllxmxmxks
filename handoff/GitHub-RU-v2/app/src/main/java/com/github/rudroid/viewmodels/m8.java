@@ -14,29 +14,29 @@ public final class m8 extends androidx.lifecycle.k1 implements x3 {
     public x01.i A;
     public x01.i B;
     public x01.i C;
-    public LinkedHashSet D;
-    public LinkedHashSet E;
-    public LinkedHashSet F;
-    public LinkedHashSet G;
-    public LinkedHashSet H;
+    public final LinkedHashSet D;
+    public final LinkedHashSet E;
+    public final LinkedHashSet F;
+    public final LinkedHashSet G;
+    public final LinkedHashSet H;
     public String I;
     public String J;
     public String K;
-    public y71.y1 L;
-    public km.b s;
-    public km.d t;
-    public zk.x1 u;
-    public zk.z1 v;
-    public com.github.rudroid.activities.util.c w;
+    public final y71.y1 L;
+    public final km.b s;
+    public final km.d t;
+    public final zk.x1 u;
+    public final zk.z1 v;
+    public final com.github.rudroid.activities.util.c w;
     public b x;
     public v71.q1 y;
-    public androidx.lifecycle.p0 z;
+    public final androidx.lifecycle.p0 z;
 
     public static final class a {
     }
 
     public static abstract class b {
-        public int a;
+        public final int a;
 
         public static final class a extends b {
             public static final a b = new a(2131954869);

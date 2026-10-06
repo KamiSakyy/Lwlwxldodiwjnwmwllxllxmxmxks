@@ -2,24 +2,24 @@ package oj0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e2 implements aa.h0 {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public boolean f;
-    public boolean g;
-    public b2 h;
-    public d2 i;
-    public boolean j;
-    public String k;
-    public boolean l;
-    public boolean m;
-    public boolean n;
-    public boolean o;
-    public c2 p;
-    public y1 q;
-    public q3 r;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final boolean f;
+    public final boolean g;
+    public final b2 h;
+    public final d2 i;
+    public final boolean j;
+    public final String k;
+    public final boolean l;
+    public final boolean m;
+    public final boolean n;
+    public final boolean o;
+    public final c2 p;
+    public final y1 q;
+    public final q3 r;
 
     public e2(String str, String str2, String str3, String str4, String str5, boolean z, boolean z2, b2 b2Var, d2 d2Var, boolean z3, String str6, boolean z4, boolean z5, boolean z6, boolean z7, c2 c2Var, y1 y1Var, q3 q3Var) {
         this.a = str;

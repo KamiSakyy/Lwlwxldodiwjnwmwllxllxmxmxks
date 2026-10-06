@@ -2,18 +2,18 @@ package y41;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b0 extends n2 {
-    public String b;
-    public String c;
-    public int d;
-    public String e;
-    public String f;
-    public String g;
-    public String h;
-    public String i;
-    public String j;
-    public m2 k;
-    public s1 l;
-    public p1 m;
+    public final String b;
+    public final String c;
+    public final int d;
+    public final String e;
+    public final String f;
+    public final String g;
+    public final String h;
+    public final String i;
+    public final String j;
+    public final m2 k;
+    public final s1 l;
+    public final p1 m;
 
     public b0(String str, String str2, int i, String str3, String str4, String str5, String str6, String str7, String str8, m2 m2Var, s1 s1Var, p1 p1Var) {
         this.b = str;

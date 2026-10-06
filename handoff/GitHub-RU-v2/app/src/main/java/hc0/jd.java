@@ -9,7 +9,7 @@ public final class jd {
     public static final jd t;
     public static final /* synthetic */ jd[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         jd jdVar = new jd("OFF_TOPIC", 0, "OFF_TOPIC");

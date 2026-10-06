@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j4 {
-    public m4 a;
-    public a4 b;
+    public final m4 a;
+    public final a4 b;
 
     public j4(m4 m4Var, a4 a4Var) {
         this.a = m4Var;

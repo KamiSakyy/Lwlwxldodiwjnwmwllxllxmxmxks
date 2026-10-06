@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class cn {
-    public String a;
+    public final String a;
 
     public cn(String str) {
         k71.k.g(str, "id");

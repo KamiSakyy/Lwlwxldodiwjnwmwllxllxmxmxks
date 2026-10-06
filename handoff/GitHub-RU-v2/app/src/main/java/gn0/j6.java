@@ -14,7 +14,7 @@ public final class j6 {
     public static final j6 x;
     public static final j6 y;
     public static final /* synthetic */ j6[] z;
-    public String r;
+    public final String r;
 
     static {
         j6 j6Var = new j6("DISCUSSION", 0, "DISCUSSION");

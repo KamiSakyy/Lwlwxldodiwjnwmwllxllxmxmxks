@@ -7,8 +7,8 @@ import java.util.Iterator;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b2 {
     public static final b2 c = new b2(100);
-    public EnumMap a;
-    public int b;
+    public final EnumMap a;
+    public final int b;
 
     public b2(int i) {
         EnumMap enumMap = new EnumMap(a2.class);

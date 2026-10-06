@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w70 {
-    public boolean a;
+    public final boolean a;
 
     public w70(boolean z) {
         this.a = z;

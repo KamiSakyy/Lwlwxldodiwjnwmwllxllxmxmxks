@@ -2,12 +2,12 @@ package m10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q60 {
-    public s60 a;
-    public y60 b;
-    public String c;
-    public aa1.b d;
-    public aa1.b e;
-    public y70 f;
+    public final s60 a;
+    public final y60 b;
+    public final String c;
+    public final aa1.b d;
+    public final aa1.b e;
+    public final y70 f;
 
     public q60(s60 s60Var, y60 y60Var, String str, aa1.b bVar, aa1.b bVar2, y70 y70Var) {
         k71.k.g(str, "name");

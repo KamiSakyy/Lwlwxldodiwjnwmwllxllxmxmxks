@@ -7,7 +7,7 @@ public final class p extends h91.q {
     public static final h91.k f26118t;
 
     /* renamed from: s, reason: collision with root package name */
-    public h91.h f26119s;
+    public final h91.h f26119s;
 
     static {
         h91.k kVar = h91.k.u;

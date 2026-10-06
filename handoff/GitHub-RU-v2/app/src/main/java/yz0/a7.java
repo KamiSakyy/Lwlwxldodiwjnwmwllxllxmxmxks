@@ -6,16 +6,16 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a7 extends s7 {
-    public String a;
-    public boolean b;
-    public int c;
-    public s d;
-    public List e;
-    public boolean f;
+    public final String a;
+    public final boolean b;
+    public final int c;
+    public final s d;
+    public final List e;
+    public final boolean f;
     public final TimelineItem$TimelinePullRequestReview$ReviewState g;
-    public ZonedDateTime h;
-    public boolean i;
-    public boolean j;
+    public final ZonedDateTime h;
+    public final boolean i;
+    public final boolean j;
 
     public a7(String str, boolean z, int i, s sVar, List list, boolean z2, TimelineItem$TimelinePullRequestReview$ReviewState timelineItem$TimelinePullRequestReview$ReviewState, ZonedDateTime zonedDateTime, boolean z3, boolean z4) {
         k71.k.g(sVar, "comment");

@@ -6,7 +6,7 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p implements d0, Parcelable {
     public static final Parcelable.Creator<p> CREATOR = new c(10);
-    public String r;
+    public final String r;
 
     public p(String str) {
         k71.k.g(str, "id");

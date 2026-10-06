@@ -6,28 +6,28 @@ import q2.t;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public long f29399a;
+    public final long f29399a;
 
     /* renamed from: b, reason: collision with root package name */
-    public long f29400b;
+    public final long f29400b;
 
     /* renamed from: c, reason: collision with root package name */
-    public long f29401c;
+    public final long f29401c;
 
     /* renamed from: d, reason: collision with root package name */
-    public boolean f29402d;
+    public final boolean f29402d;
 
     /* renamed from: e, reason: collision with root package name */
-    public float f29403e;
+    public final float f29403e;
 
     /* renamed from: f, reason: collision with root package name */
-    public long f29404f;
+    public final long f29404f;
 
     /* renamed from: g, reason: collision with root package name */
-    public long f29405g;
+    public final long f29405g;
 
     /* renamed from: h, reason: collision with root package name */
-    public boolean f29406h;
+    public final boolean f29406h;
     public boolean i;
 
     public b(long j10, long j11, long j12, boolean z10, float f6, long j13, long j14, boolean z11) {

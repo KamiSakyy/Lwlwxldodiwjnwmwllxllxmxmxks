@@ -24,7 +24,7 @@ public final class RepositoryVisibilityFilter extends d {
     public static final w61.h[] w;
     public static final j0 x;
     public static final rb0.b y;
-    public j0 v;
+    public final j0 v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<RepositoryVisibilityFilter> CREATOR = new o(16);
 

@@ -24,11 +24,11 @@ public final class s extends c71.c {
         this.A |= Integer.MIN_VALUE;
         return this.z.M((String) null, (String) null, false, (HideCommentReason) null, this);
     }
-    public static Object A(Object p1) { return null; }
-    public static Object G(Object p1) { return null; }
-    public static Object H(Object p1) { return null; }
-    public static Object e(Object p1) { return null; }
-    public static Object f(Object p1) { return null; }
-    public static ArrayList h(Object p1, Object p2) { return null; }
+    public Object A(Object p1) { return null; }
+    public Object G(Object p1) { return null; }
+    public Object H(Object p1) { return null; }
+    public Object e(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object h(Object p1, Object p2) { return null; }
     public static final Object d = null;
 }

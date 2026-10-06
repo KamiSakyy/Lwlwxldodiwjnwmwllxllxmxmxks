@@ -4,8 +4,8 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c implements k, l {
-    public int a;
-    public int b;
+    public final int a;
+    public final int b;
 
     public c(int i, int i2) {
         this.a = i;

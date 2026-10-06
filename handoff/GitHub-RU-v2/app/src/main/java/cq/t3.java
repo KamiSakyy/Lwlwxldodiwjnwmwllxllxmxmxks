@@ -2,7 +2,7 @@ package cq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t3 {
-    public int a;
+    public final int a;
 
     public t3(int i) {
         this.a = i;

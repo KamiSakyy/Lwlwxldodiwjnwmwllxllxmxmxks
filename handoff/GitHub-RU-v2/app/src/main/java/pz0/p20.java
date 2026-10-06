@@ -9,7 +9,7 @@ public final class p20 {
     public static final p20 t;
     public static final /* synthetic */ p20[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         p20 p20Var = new p20("BLUESKY", 0, "BLUESKY");

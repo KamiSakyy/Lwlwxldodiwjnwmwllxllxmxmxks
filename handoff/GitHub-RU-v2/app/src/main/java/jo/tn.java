@@ -2,15 +2,15 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class tn {
-    public String a;
-    public String b;
-    public String c;
-    public qn d;
-    public sn e;
-    public m10.wm f;
-    public boolean g;
-    public boolean h;
-    public gv.e4 i;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final qn d;
+    public final sn e;
+    public final m10.wm f;
+    public final boolean g;
+    public final boolean h;
+    public final gv.e4 i;
 
     public tn(String str, String str2, String str3, qn qnVar, sn snVar, m10.wm wmVar, boolean z, boolean z2, gv.e4 e4Var) {
         this.a = str;

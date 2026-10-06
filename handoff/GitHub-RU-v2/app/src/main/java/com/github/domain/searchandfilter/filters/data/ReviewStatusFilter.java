@@ -25,7 +25,7 @@ public final class ReviewStatusFilter extends d {
     public static final w61.h[] w;
     public static final k0 x;
     public static final w50.c y;
-    public k0 v;
+    public final k0 v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<ReviewStatusFilter> CREATOR = new o(18);
 

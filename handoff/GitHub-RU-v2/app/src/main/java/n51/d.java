@@ -9,11 +9,11 @@ import w21.o;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d implements f, g {
-    public k41.c a;
-    public Context b;
-    public p51.b c;
-    public Set d;
-    public Executor e;
+    public final k41.c a;
+    public final Context b;
+    public final p51.b c;
+    public final Set d;
+    public final Executor e;
 
     public d(Context context, String str, Set set, p51.b bVar, Executor executor) {
         this.a = new k41.c(context, str);

@@ -8,7 +8,7 @@ public final class i7 {
     public static final i7 s;
     public static final i7 t;
     public static final /* synthetic */ i7[] u;
-    public String r;
+    public final String r;
 
     static {
         i7 i7Var = new i7("MISSION_CONTROL", 0, "MISSION_CONTROL");

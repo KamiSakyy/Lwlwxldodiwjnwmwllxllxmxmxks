@@ -2,11 +2,11 @@ package xt0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j8 implements aa.h0 {
-    public String a;
-    public boolean b;
-    public i8 c;
-    public g8 d;
-    public String e;
+    public final String a;
+    public final boolean b;
+    public final i8 c;
+    public final g8 d;
+    public final String e;
 
     public j8(String str, boolean z, i8 i8Var, g8 g8Var, String str2) {
         this.a = str;

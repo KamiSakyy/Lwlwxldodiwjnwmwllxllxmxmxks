@@ -4,12 +4,12 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class g {
-    public boolean a;
-    public Integer b;
-    public boolean c;
-    public Integer d;
-    public boolean e;
-    public boolean f;
+    public final boolean a;
+    public final Integer b;
+    public final boolean c;
+    public final Integer d;
+    public final boolean e;
+    public final boolean f;
 
     public g(boolean z, Integer num, boolean z2, Integer num2, boolean z3, boolean z4) {
         this.a = z;

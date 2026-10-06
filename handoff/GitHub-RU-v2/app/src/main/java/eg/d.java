@@ -8,11 +8,11 @@ import xn.e1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d {
-    public boolean a;
-    public boolean b;
-    public boolean c;
-    public e1 d;
-    public List e;
+    public final boolean a;
+    public final boolean b;
+    public final boolean c;
+    public final e1 d;
+    public final List e;
 
     public d(boolean z, boolean z2, boolean z3, e1 e1Var, List list) {
         k.g(e1Var, "licenseType");

@@ -4,13 +4,13 @@ import pz0.n30;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i5 {
-    public String a;
-    public String b;
-    public n30 c;
-    public String d;
-    public String e;
-    public String f;
-    public boolean g;
+    public final String a;
+    public final String b;
+    public final n30 c;
+    public final String d;
+    public final String e;
+    public final String f;
+    public final boolean g;
 
     public i5(String str, String str2, n30 n30Var, String str3, String str4, String str5, boolean z) {
         this.a = str;

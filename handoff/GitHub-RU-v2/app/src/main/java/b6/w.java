@@ -4,7 +4,7 @@ package b6;
 public final class w implements z5.m {
 
     /* renamed from: a, reason: collision with root package name */
-    public n6.g f3721a;
+    public final n6.g f3721a;
 
     public w(n6.g gVar) {
         this.f3721a = gVar;

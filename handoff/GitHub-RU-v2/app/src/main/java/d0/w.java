@@ -6,19 +6,19 @@ import a0.b1;
 public final class w {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f20982a;
+    public final int f20982a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f20983b;
+    public final int f20983b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f20984c;
+    public final int f20984c;
 
     /* renamed from: d, reason: collision with root package name */
-    public b1 f20985d;
+    public final b1 f20985d;
 
     /* renamed from: e, reason: collision with root package name */
-    public n f20986e;
+    public final n f20986e;
 
     public w(int i, int i10, int i11, b1 b1Var, n nVar) {
         this.f20982a = i;

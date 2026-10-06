@@ -12,7 +12,7 @@ public final class u9 {
     public static final u9 w;
     public static final /* synthetic */ u9[] x;
     public static final /* synthetic */ d71.b y;
-    public String r;
+    public final String r;
 
     static {
         u9 u9Var = new u9("DUPLICATE", 0, "DUPLICATE");

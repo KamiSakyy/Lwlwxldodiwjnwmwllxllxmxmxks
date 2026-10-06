@@ -2,12 +2,12 @@ package d51;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public p81.a a;
-    public a b;
-    public long c;
-    public double d;
-    public double e;
-    public int f;
+    public final p81.a a;
+    public final a b;
+    public final long c;
+    public final double d;
+    public final double e;
+    public final int f;
 
     public b(long j, p81.a aVar, a aVar2, double d, double d2, int i) {
         this.c = j;
@@ -21,5 +21,4 @@ public final class b {
     public b(Object... a) {
     }
     public Object m(Object p1) { return null; }
-    public Object m(Object) { return null; }
 }

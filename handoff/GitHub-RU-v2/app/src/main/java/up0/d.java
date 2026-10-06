@@ -4,7 +4,7 @@ import pz0.e3;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d {
-    public e3 a;
+    public final e3 a;
 
     public d(e3 e3Var) {
         this.a = e3Var;

@@ -4,8 +4,8 @@ import m10.qf;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class y0 {
-    public qf a;
-    public String b;
+    public final qf a;
+    public final String b;
 
     public y0(qf qfVar, String str) {
         this.a = qfVar;

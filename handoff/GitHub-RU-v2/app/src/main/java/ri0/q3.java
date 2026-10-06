@@ -4,10 +4,10 @@ import gn0.pm;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q3 implements aa.h0 {
-    public String a;
-    public pm b;
-    public Integer c;
-    public String d;
+    public final String a;
+    public final pm b;
+    public final Integer c;
+    public final String d;
 
     public q3(String str, pm pmVar, Integer num, String str2) {
         this.a = str;

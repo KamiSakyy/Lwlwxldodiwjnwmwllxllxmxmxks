@@ -15,7 +15,7 @@ public final class x40 {
     public static final x40 x;
     public static final x40 y;
     public static final x40 z;
-    public String r;
+    public final String r;
 
     static {
         x40 x40Var = new x40("ARCHIVED", 0, "ARCHIVED");

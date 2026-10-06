@@ -9,7 +9,7 @@ public final class bz {
     public static final bz t;
     public static final bz u;
     public static final /* synthetic */ bz[] v;
-    public String r;
+    public final String r;
 
     static {
         bz bzVar = new bz("INTERNAL", 0, "INTERNAL");

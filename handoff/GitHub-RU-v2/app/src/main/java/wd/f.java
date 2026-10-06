@@ -4,7 +4,7 @@ package wd;
 public final class f {
 
     /* renamed from: a, reason: collision with root package name */
-    public gi.c f33503a;
+    public final gi.c f33503a;
 
     public f(gi.c cVar) {
         k71.k.g(cVar, "systemPreferences");

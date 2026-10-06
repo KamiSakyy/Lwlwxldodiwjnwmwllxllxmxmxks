@@ -13,6 +13,4 @@ final /* synthetic */ class a extends k71.i implements j71.c {
         return a0.a;
     }
     public Object e(Object p1, Object p2) { return null; }
-    public Object e(Object, Object) { return null; }
-    public Object g(Object, Object) { return null; }
 }

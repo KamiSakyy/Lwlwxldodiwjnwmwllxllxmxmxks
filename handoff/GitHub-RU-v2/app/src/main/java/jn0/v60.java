@@ -2,13 +2,13 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class v60 {
-    public String a;
-    public boolean b;
-    public boolean c;
-    public boolean d;
-    public String e;
-    public uu0.z4 f;
-    public uu0.o g;
+    public final String a;
+    public final boolean b;
+    public final boolean c;
+    public final boolean d;
+    public final String e;
+    public final uu0.z4 f;
+    public final uu0.o g;
 
     public v60(String str, boolean z, boolean z2, boolean z3, String str2, uu0.z4 z4Var, uu0.o oVar) {
         this.a = str;

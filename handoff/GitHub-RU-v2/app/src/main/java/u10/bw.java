@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class bw {
-    public String a;
-    public v70.d b;
+    public final String a;
+    public final v70.d b;
 
     public bw(String str, v70.d dVar) {
         k71.k.g(str, "__typename");

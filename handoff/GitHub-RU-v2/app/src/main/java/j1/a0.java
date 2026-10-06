@@ -145,5 +145,5 @@ public abstract class a0 {
     }
 
     public static Object d;
-    public long e(Object p1, Object p2, Object p3) { return null; }
+    public Object e(Object p1, Object p2, Object p3) { return null; }
 }

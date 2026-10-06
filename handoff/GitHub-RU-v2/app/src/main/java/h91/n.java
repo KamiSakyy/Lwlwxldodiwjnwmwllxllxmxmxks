@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class n implements k0 {
-    public v r;
+    public final v r;
     public long s;
     public boolean t;
 

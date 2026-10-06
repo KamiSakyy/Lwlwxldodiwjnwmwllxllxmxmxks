@@ -8,6 +8,6 @@ public final class t {
 
     public t(Object... a) {
     }
-    public static Object L(Object p1) { return null; }
-    public static Object n(Object p1, Object p2) { return null; }
+    public Object L(Object p1) { return null; }
+    public Object n(Object p1, Object p2) { return null; }
 }

@@ -27,7 +27,7 @@ import z70.x3;
 public final class LabelFilter extends d {
     public static final w61.h[] w;
     public static final x3 x;
-    public List v;
+    public final List v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<LabelFilter> CREATOR = new a21.g(27);
 

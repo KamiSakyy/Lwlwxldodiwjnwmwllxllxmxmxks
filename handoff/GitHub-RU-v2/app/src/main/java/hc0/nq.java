@@ -15,7 +15,7 @@ public final class nq {
     public static final nq x;
     public static final nq y;
     public static final nq z;
-    public String r;
+    public final String r;
 
     static {
         nq nqVar = new nq("ARCHIVED", 0, "ARCHIVED");

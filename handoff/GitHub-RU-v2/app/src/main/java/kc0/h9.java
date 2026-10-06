@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h9 {
-    public f9 a;
-    public String b;
-    public String c;
-    public String d;
+    public final f9 a;
+    public final String b;
+    public final String c;
+    public final String d;
 
     public h9(f9 f9Var, String str, String str2, String str3) {
         this.a = f9Var;

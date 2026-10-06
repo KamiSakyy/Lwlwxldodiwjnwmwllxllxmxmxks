@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p60 {
-    public k60 a;
-    public q60 b;
-    public String c;
-    public String d;
+    public final k60 a;
+    public final q60 b;
+    public final String c;
+    public final String d;
 
     public p60(k60 k60Var, q60 q60Var, String str, String str2) {
         this.a = k60Var;

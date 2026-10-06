@@ -21,6 +21,6 @@ public abstract class l0 {
         wg.Companion.getClass();
         a = sy.d0.n(new aa.m("deleteRef", q0Var, (String) null, rVar, no.a.s(wg.K, new aa.u0(a0.s0.p("refId", new aa.t("refId")))), n));
     }
-    public p a(Object p1) { return null; }
-    public r b(Object p1) { return null; }
+    public Object a(Object p1) { return null; }
+    public Object b(Object p1) { return null; }
 }

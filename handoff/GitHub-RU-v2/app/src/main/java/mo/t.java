@@ -2,10 +2,10 @@ package mo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t {
-    public c0 a;
-    public int b;
-    public String c;
-    public String d;
+    public final c0 a;
+    public final int b;
+    public final String c;
+    public final String d;
 
     public t(c0 c0Var, int i, String str, String str2) {
         this.a = c0Var;

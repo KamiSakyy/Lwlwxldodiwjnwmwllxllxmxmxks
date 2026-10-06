@@ -4,10 +4,10 @@ package com.github.rudroid.copilot.preferences;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f9959a;
+    public final String f9959a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f9960b;
+    public final String f9960b;
 
     public b(String str, String str2) {
         this.f9959a = str;

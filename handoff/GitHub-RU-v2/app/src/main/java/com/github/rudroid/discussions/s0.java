@@ -10,10 +10,10 @@ public abstract class s0 {
         public static final Parcelable.Creator<a> CREATOR = new C0027a();
 
         /* renamed from: r, reason: collision with root package name */
-        public String f11782r;
+        public final String f11782r;
 
         /* renamed from: s, reason: collision with root package name */
-        public boolean f11783s;
+        public final boolean f11783s;
 
         /* renamed from: com.github.rudroid.discussions.s0$a$a, reason: collision with other inner class name */
         public static final class C0027a implements Parcelable.Creator<a> {

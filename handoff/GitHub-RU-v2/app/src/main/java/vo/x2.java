@@ -4,12 +4,12 @@ import m10.n40;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class x2 {
-    public String a;
-    public String b;
-    public w2 c;
-    public n40 d;
-    public t2 e;
-    public String f;
+    public final String a;
+    public final String b;
+    public final w2 c;
+    public final n40 d;
+    public final t2 e;
+    public final String f;
 
     public x2(String str, String str2, w2 w2Var, n40 n40Var, t2 t2Var, String str3) {
         this.a = str;

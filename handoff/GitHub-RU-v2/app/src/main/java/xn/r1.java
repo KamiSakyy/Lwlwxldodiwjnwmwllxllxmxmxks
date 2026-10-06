@@ -2,7 +2,7 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r1 extends w1Shadow {
-    public boolean a;
+    public final boolean a;
 
     public r1(boolean z) {
         this.a = z;

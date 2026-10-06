@@ -4,10 +4,10 @@ package f1;
 public final class z9 {
 
     /* renamed from: a, reason: collision with root package name */
-    public aa f24190a;
+    public final aa f24190a;
 
     /* renamed from: b, reason: collision with root package name */
-    public v71.l f24191b;
+    public final v71.l f24191b;
 
     public z9(aa aaVar, v71.l lVar) {
         this.f24190a = aaVar;

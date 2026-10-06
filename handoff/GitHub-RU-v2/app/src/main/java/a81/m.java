@@ -11,9 +11,9 @@ public final class m {
     public static final t g = new t(0, "REMOVE_FROZEN", false);
     private volatile /* synthetic */ Object _next$volatile;
     private volatile /* synthetic */ long _state$volatile;
-    public int a;
-    public boolean b;
-    public int c;
+    public final int a;
+    public final boolean b;
+    public final int c;
     public final /* synthetic */ AtomicReferenceArray d;
 
     public m(int i, boolean z) {

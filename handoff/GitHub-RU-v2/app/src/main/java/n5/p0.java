@@ -4,7 +4,7 @@ package n5;
 public abstract class p0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f29582a;
+    public final int f29582a;
 
     public p0(int i) {
         this.f29582a = i;

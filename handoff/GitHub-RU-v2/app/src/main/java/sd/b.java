@@ -14,16 +14,16 @@ import q4.l;
 public final class b extends ForegroundColorSpan implements LeadingMarginSpan {
 
     /* renamed from: r, reason: collision with root package name */
-    public int f31979r;
+    public final int f31979r;
 
     /* renamed from: s, reason: collision with root package name */
-    public int f31980s;
+    public final int f31980s;
 
     /* renamed from: t, reason: collision with root package name */
-    public int f31981t;
+    public final int f31981t;
 
     /* renamed from: u, reason: collision with root package name */
-    public int f31982u;
+    public final int f31982u;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*

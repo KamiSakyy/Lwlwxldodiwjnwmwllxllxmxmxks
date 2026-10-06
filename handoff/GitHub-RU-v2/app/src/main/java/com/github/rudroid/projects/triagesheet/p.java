@@ -7,22 +7,22 @@ import y71.y1;
 public final class p<T, V> {
 
     /* renamed from: a, reason: collision with root package name */
-    public j71.e f18071a;
+    public final j71.e f18071a;
 
     /* renamed from: b, reason: collision with root package name */
-    public y1 f18072b;
+    public final y1 f18072b;
 
     /* renamed from: c, reason: collision with root package name */
-    public y1 f18073c;
+    public final y1 f18073c;
 
     /* renamed from: d, reason: collision with root package name */
-    public y1 f18074d;
+    public final y1 f18074d;
 
     /* renamed from: e, reason: collision with root package name */
-    public y71.i1 f18075e;
+    public final y71.i1 f18075e;
 
     /* renamed from: f, reason: collision with root package name */
-    public y71.i1 f18076f;
+    public final y71.i1 f18076f;
 
     public p(List list, fl.f fVar, j71.e eVar, v6.a aVar) {
         k71.k.g(list, "initialSelectedItems");

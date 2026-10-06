@@ -11,7 +11,7 @@ public final class MinimizedStateReason {
     private static final /* synthetic */ a $ENTRIES;
     private static final /* synthetic */ MinimizedStateReason[] $VALUES;
     public static final h Companion;
-    private String rawValue;
+    private final String rawValue;
     public static final MinimizedStateReason ABUSE = new MinimizedStateReason("ABUSE", 0, "abuse");
     public static final MinimizedStateReason OFFTOPIC = new MinimizedStateReason("OFFTOPIC", 1, "off-topic");
     public static final MinimizedStateReason OUTDATED = new MinimizedStateReason("OUTDATED", 2, "outdated");

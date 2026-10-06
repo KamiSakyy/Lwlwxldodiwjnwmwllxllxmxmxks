@@ -7,7 +7,7 @@ public final class ze {
     public static final ye Companion;
     public static final ze s;
     public static final /* synthetic */ ze[] t;
-    public String r;
+    public final String r;
 
     static {
         ze zeVar = new ze("CLOSE_REFERENCES", 0, "CLOSE_REFERENCES");

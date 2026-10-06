@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class io {
-    public String a;
-    public eo b;
-    public String c;
+    public final String a;
+    public final eo b;
+    public final String c;
 
     public io(String str, eo eoVar, String str2) {
         this.a = str;

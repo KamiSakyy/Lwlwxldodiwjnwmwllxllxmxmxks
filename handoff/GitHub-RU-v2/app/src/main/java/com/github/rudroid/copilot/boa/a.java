@@ -14,16 +14,16 @@ public final class a extends k1 implements com.github.rudroid.utilities.viewmode
     public static final C0020a Companion = new C0020a();
 
     /* renamed from: s, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f9424s;
+    public final com.github.rudroid.activities.util.c f9424s;
 
     /* renamed from: t, reason: collision with root package name */
-    public nj.t f9425t;
+    public final nj.t f9425t;
 
     /* renamed from: u, reason: collision with root package name */
-    public y1 f9426u;
+    public final y1 f9426u;
 
     /* renamed from: v, reason: collision with root package name */
-    public i1 f9427v;
+    public final i1 f9427v;
 
     /* renamed from: w, reason: collision with root package name */
     public q1 f9428w;

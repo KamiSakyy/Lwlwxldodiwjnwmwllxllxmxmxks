@@ -5,11 +5,11 @@ import m10.b00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o implements aa.h0 {
-    public String a;
-    public ZonedDateTime b;
-    public b00 c;
-    public String d;
-    public z2 e;
+    public final String a;
+    public final ZonedDateTime b;
+    public final b00 c;
+    public final String d;
+    public final z2 e;
 
     public o(String str, ZonedDateTime zonedDateTime, b00 b00Var, String str2, z2 z2Var) {
         this.a = str;

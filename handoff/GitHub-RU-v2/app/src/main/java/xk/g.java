@@ -6,8 +6,8 @@ import java.time.LocalDate;
 public final class g {
     public static final f Companion = new f();
     public static final g c = new g(new qa.c(3, 13), LocalDate.of(2026, 6, 30));
-    public qa.c a;
-    public LocalDate b;
+    public final qa.c a;
+    public final LocalDate b;
 
     public g(qa.c cVar, LocalDate localDate) {
         this.a = cVar;

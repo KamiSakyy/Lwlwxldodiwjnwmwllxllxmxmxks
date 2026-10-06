@@ -13,8 +13,8 @@ import kotlin.NoWhenBranchMatchedException;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j {
-    public sc.c1 a;
-    public k.i b;
+    public final sc.c1 a;
+    public final k.i b;
 
     public j(sc.c1 c1Var, k.i iVar) {
         k71.k.g(c1Var, "forUserImageLoaderFactory");

@@ -16,10 +16,10 @@ import w61.p;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b extends n1 {
     public static final /* synthetic */ e[] y;
-    public fh u;
-    public a v;
-    public p w;
-    public b5.e x;
+    public final fh u;
+    public final a v;
+    public final p w;
+    public final b5.e x;
 
     public interface a {
         void a(int i);

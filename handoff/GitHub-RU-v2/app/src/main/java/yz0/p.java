@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p {
-    public double a;
-    public ArrayList b;
-    public int c;
-    public int d;
-    public int e;
+    public final double a;
+    public final ArrayList b;
+    public final int c;
+    public final int d;
+    public final int e;
 
     public p(double d, int i, int i2, int i3, ArrayList arrayList) {
         this.a = d;

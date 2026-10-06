@@ -10,7 +10,7 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class b implements d {
-    public LinkedHashMap a;
+    public final LinkedHashMap a;
 
     public b(X509Certificate... x509CertificateArr) {
         k.g(x509CertificateArr, "caCerts");

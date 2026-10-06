@@ -6,10 +6,10 @@ import java.lang.reflect.Method;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f2834a;
+    public final int f2834a;
 
     /* renamed from: b, reason: collision with root package name */
-    public Method f2835b;
+    public final Method f2835b;
 
     public d(Method method, int i) {
         this.f2834a = i;

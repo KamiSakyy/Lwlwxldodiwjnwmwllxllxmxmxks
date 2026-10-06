@@ -5,9 +5,9 @@ import ri0.b4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n0 {
-    public String a;
-    public String b;
-    public b4 c;
+    public final String a;
+    public final String b;
+    public final b4 c;
 
     public n0(String str, String str2, b4 b4Var) {
         this.a = str;

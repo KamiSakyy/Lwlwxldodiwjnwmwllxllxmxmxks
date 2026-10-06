@@ -6,10 +6,10 @@ import m10.p00;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t implements aa.w0 {
     public static final p Companion = new p();
-    public String r;
-    public String s;
-    public int t;
-    public aa.u0 u;
+    public final String r;
+    public final String s;
+    public final int t;
+    public final aa.u0 u;
 
     public t(String str, String str2, int i, aa.u0 u0Var) {
         this.r = str;

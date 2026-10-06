@@ -2,8 +2,8 @@ package cq0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h {
-    public String a;
-    public p b;
+    public final String a;
+    public final p b;
 
     public h(String str, p pVar) {
         k71.k.g(str, "__typename");

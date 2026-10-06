@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class zd {
-    public String a;
-    public String b;
-    public ap0.p4 c;
+    public final String a;
+    public final String b;
+    public final ap0.p4 c;
 
     public zd(String str, String str2, ap0.p4 p4Var) {
         this.a = str;

@@ -6,10 +6,10 @@ import java.text.CharacterIterator;
 public final class h implements CharacterIterator {
 
     /* renamed from: r, reason: collision with root package name */
-    public CharSequence f25454r;
+    public final CharSequence f25454r;
 
     /* renamed from: s, reason: collision with root package name */
-    public int f25455s;
+    public final int f25455s;
 
     /* renamed from: t, reason: collision with root package name */
     public int f25456t = 0;

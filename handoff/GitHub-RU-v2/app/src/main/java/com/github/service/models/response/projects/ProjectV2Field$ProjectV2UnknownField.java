@@ -16,10 +16,10 @@ import w61.i;
 @e
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ProjectV2Field$ProjectV2UnknownField implements j0 {
-    public String r;
-    public int s;
-    public String t;
-    public ProjectFieldType u;
+    public final String r;
+    public final int s;
+    public final String t;
+    public final ProjectFieldType u;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<ProjectV2Field$ProjectV2UnknownField> CREATOR = new c(21);
     public static final h[] v = {null, null, null, w.s(i.r, new kh.a(7))};

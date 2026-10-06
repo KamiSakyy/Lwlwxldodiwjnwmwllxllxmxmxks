@@ -2,10 +2,10 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rc {
-    public String a;
-    public String b;
-    public oc c;
-    public ja0.a d;
+    public final String a;
+    public final String b;
+    public final oc c;
+    public final ja0.a d;
 
     public rc(String str, String str2, oc ocVar, ja0.a aVar) {
         k71.k.g(str, "__typename");

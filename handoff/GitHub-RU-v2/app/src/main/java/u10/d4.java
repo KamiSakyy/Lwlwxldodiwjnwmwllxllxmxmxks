@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d4 {
-    public g4 a;
-    public u3 b;
+    public final g4 a;
+    public final u3 b;
 
     public d4(g4 g4Var, u3 u3Var) {
         this.a = g4Var;

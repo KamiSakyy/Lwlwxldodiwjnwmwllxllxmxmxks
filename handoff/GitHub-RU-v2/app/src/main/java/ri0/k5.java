@@ -4,13 +4,13 @@ import gn0.yv;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k5 {
-    public String a;
-    public String b;
-    public yv c;
-    public String d;
-    public String e;
-    public String f;
-    public boolean g;
+    public final String a;
+    public final String b;
+    public final yv c;
+    public final String d;
+    public final String e;
+    public final String f;
+    public final boolean g;
 
     public k5(String str, String str2, yv yvVar, String str3, String str4, String str5, boolean z) {
         this.a = str;

@@ -20,5 +20,4 @@ public final /* synthetic */ class r implements j71.a {
         this.t.setValue(Boolean.FALSE);
         return w61.a0.a;
     }
-    public Object f(Object) { return null; }
 }

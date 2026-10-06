@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class lc implements aaShadow.v0 {
-    public qc a;
+    public final qc a;
 
     public lc(qc qcVar) {
         this.a = qcVar;

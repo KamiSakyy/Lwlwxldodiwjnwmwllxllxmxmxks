@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class at implements aaShadow.v0 {
-    public ft a;
-    public String b;
-    public String c;
+    public final ft a;
+    public final String b;
+    public final String c;
 
     public at(ft ftVar, String str, String str2) {
         this.a = ftVar;

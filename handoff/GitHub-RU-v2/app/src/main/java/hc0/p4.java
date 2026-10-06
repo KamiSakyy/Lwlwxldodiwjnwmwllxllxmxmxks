@@ -9,7 +9,7 @@ public final class p4 {
     public static final p4 t;
     public static final /* synthetic */ p4[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         p4 p4Var = new p4("FIRST_QUARTILE", 0, "FIRST_QUARTILE");

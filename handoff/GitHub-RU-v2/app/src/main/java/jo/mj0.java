@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class mj0 {
-    public String a;
-    public oj0 b;
-    public pj0 c;
+    public final String a;
+    public final oj0 b;
+    public final pj0 c;
 
     public mj0(String str, oj0 oj0Var, pj0 pj0Var) {
         k71.k.g(str, "__typename");

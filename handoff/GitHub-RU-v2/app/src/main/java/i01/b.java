@@ -9,13 +9,13 @@ import yz0.j3;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public String a;
-    public com.github.service.models.response.a b;
-    public Integer c;
-    public boolean d;
-    public boolean e;
-    public int f;
-    public j3 g;
+    public final String a;
+    public final com.github.service.models.response.a b;
+    public final Integer c;
+    public final boolean d;
+    public final boolean e;
+    public final int f;
+    public final j3 g;
 
     public b(String str, com.github.service.models.response.a aVar, Integer num, boolean z, boolean z2, int i, j3 j3Var) {
         this.a = str;

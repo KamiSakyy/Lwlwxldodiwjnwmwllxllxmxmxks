@@ -5,8 +5,8 @@ import java.util.ListIterator;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c extends d {
-    public transient int t;
-    public transient int u;
+    public final transient int t;
+    public final transient int u;
     public final /* synthetic */ d v;
 
     public c(d dVar, int i, int i2) {

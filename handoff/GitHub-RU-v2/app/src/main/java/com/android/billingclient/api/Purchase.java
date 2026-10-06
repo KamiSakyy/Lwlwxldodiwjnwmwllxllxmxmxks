@@ -9,13 +9,13 @@ import org.json.JSONObject;
 public final class Purchase {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f4263a;
+    public final String f4263a;
 
     /* renamed from: b, reason: collision with root package name */
-    public String f4264b;
+    public final String f4264b;
 
     /* renamed from: c, reason: collision with root package name */
-    public JSONObject f4265c;
+    public final JSONObject f4265c;
 
     public Purchase(String str, String str2) {
         this.f4263a = str;

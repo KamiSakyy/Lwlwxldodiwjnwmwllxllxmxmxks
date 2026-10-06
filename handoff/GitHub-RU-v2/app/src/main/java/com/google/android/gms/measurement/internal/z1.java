@@ -5,7 +5,7 @@ public enum z1 {
     STORAGE(a2.AD_STORAGE, a2.ANALYTICS_STORAGE),
     DMA(a2.AD_USER_DATA);
 
-    public a2[] r;
+    public final a2[] r;
 
     z1(a2... a2VarArr) {
         this.r = a2VarArr;

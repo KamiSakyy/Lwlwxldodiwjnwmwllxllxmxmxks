@@ -13,11 +13,11 @@ import kotlinx.serialization.KSerializer;
 @e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class CustomNotificationFilter extends a {
-    public String s;
-    public String t;
-    public String u;
-    public int v;
-    public boolean w;
+    public final String s;
+    public final String t;
+    public final String u;
+    public final int v;
+    public final boolean w;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<CustomNotificationFilter> CREATOR = new f8.a(24);
 

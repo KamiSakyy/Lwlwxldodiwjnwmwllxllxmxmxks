@@ -2,21 +2,21 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h1 implements aa.h0 {
-    public String a;
-    public String b;
-    public String c;
-    public boolean d;
-    public String e;
-    public String f;
-    public int g;
-    public int h;
-    public u0 i;
-    public v0 j;
-    public f1 k;
-    public p0 l;
-    public e1 m;
-    public t0 n;
-    public f0 o;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final boolean d;
+    public final String e;
+    public final String f;
+    public final int g;
+    public final int h;
+    public final u0 i;
+    public final v0 j;
+    public final f1 k;
+    public final p0 l;
+    public final e1 m;
+    public final t0 n;
+    public final f0 o;
 
     public h1(String str, String str2, String str3, boolean z, String str4, String str5, int i, int i2, u0 u0Var, v0 v0Var, f1 f1Var, p0 p0Var, e1 e1Var, t0 t0Var, f0 f0Var) {
         this.a = str;

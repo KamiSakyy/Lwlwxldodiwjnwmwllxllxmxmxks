@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class v80 implements aaShadow.v0 {
-    public w80 a;
+    public final w80 a;
 
     public v80(w80 w80Var) {
         this.a = w80Var;

@@ -30,7 +30,4 @@ public final class q0 extends x implements r0 {
 
     public q0(Object... a) {
     }
-    public Object get(Object) { return null; }
-    public Object put(Object, Object) { return null; }
-    public Object put(Object, Object) { return null; }
 }

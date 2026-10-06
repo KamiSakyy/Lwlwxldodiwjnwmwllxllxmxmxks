@@ -4,8 +4,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f {
-    public oa.g a;
-    public cn.a b;
+    public final oa.g a;
+    public final cn.a b;
 
     public f(oa.g gVar, cn.a aVar) {
         k.g(gVar, "service");

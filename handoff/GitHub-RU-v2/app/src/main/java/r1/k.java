@@ -4,13 +4,13 @@ package r1;
 public final class k {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f31091a;
+    public final int f31091a;
 
     /* renamed from: b, reason: collision with root package name */
-    public long[] f31092b;
+    public final long[] f31092b;
 
     /* renamed from: c, reason: collision with root package name */
-    public Object[] f31093c;
+    public final Object[] f31093c;
 
     public k(int i, long[] jArr, Object[] objArr) {
         this.f31091a = i;

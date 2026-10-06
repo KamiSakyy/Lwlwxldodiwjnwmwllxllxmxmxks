@@ -7,14 +7,14 @@ import pz0.df;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k0 implements aa.h0 {
-    public String a;
-    public bf b;
-    public String c;
-    public String d;
-    public int e;
-    public j0 f;
-    public df g;
-    public String h;
+    public final String a;
+    public final bf b;
+    public final String c;
+    public final String d;
+    public final int e;
+    public final j0 f;
+    public final df g;
+    public final String h;
 
     public k0(String str, bf bfVar, String str2, String str3, int i, j0 j0Var, df dfVar, String str4) {
         this.a = str;

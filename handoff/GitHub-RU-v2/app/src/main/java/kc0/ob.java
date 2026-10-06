@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ob implements aaShadow.v0 {
-    public rb a;
-    public sb b;
+    public final rb a;
+    public final sb b;
 
     public ob(rb rbVar, sb sbVar) {
         this.a = rbVar;

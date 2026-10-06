@@ -2,9 +2,9 @@ package com.github.rudroid.uitoolkit;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class m1 extends i2.b {
-    public float w;
-    public long x;
-    public long y;
+    public final float w;
+    public final long x;
+    public final long y;
     public final float z = 2;
     public final long A = 9205357640488583168L;
 

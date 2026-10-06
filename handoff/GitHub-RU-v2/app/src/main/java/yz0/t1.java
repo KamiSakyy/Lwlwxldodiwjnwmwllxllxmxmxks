@@ -6,16 +6,16 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t1 {
-    public String a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public Language f;
-    public int g;
-    public int h;
-    public List i;
-    public ArrayList j;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final Language f;
+    public final int g;
+    public final int h;
+    public final List i;
+    public final ArrayList j;
 
     public t1(String str, String str2, String str3, String str4, String str5, Language language, int i, int i2, List list, ArrayList arrayList) {
         this.a = str;

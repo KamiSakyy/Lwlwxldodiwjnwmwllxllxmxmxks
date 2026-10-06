@@ -7,7 +7,7 @@ import kotlinx.coroutines.DispatchException;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class a extends j1 implements a71.c, z {
-    public a71.h t;
+    public final a71.h t;
 
     public a(a71.h hVar, boolean z) {
         super(z);

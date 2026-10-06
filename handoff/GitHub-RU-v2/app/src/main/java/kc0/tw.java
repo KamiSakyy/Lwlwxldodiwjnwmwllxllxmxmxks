@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class tw {
-    public String a;
-    public qw b;
-    public String c;
+    public final String a;
+    public final qw b;
+    public final String c;
 
     public tw(String str, qw qwVar, String str2) {
         this.a = str;

@@ -4,10 +4,10 @@ import gv.g6;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h0 {
-    public String a;
-    public yw.b b;
-    public g6 c;
-    public dw.e1 d;
+    public final String a;
+    public final yw.b b;
+    public final g6 c;
+    public final dw.e1 d;
 
     public h0(String str, yw.b bVar, g6 g6Var, dw.e1 e1Var) {
         this.a = str;

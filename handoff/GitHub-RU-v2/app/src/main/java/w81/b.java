@@ -8,7 +8,7 @@ import h91.r;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class b implements i0 {
-    public r r;
+    public final r r;
     public boolean s;
     public final /* synthetic */ f t;
 

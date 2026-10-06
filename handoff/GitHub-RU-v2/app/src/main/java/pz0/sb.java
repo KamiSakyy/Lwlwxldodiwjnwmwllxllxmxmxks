@@ -12,7 +12,7 @@ public final class sb {
     public static final sb w;
     public static final /* synthetic */ sb[] x;
     public static final /* synthetic */ d71.b y;
-    public String r;
+    public final String r;
 
     static {
         sb sbVar = new sb("DISMISSED", 0, "DISMISSED");

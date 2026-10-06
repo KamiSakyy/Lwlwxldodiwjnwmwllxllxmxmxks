@@ -2,8 +2,8 @@ package yx0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l {
-    public String a;
-    public ay0.p b;
+    public final String a;
+    public final ay0.p b;
 
     public l(String str, ay0.p pVar) {
         this.a = str;

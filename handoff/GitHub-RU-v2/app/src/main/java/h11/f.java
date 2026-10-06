@@ -14,8 +14,8 @@ import y41.t1;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f extends m0 {
     public final /* synthetic */ int d;
-    public d71.b e;
-    public k71.i f;
+    public final d71.b e;
+    public final k71.i f;
 
     public f(o0 o0Var, byte b) {
         this.d = 1;

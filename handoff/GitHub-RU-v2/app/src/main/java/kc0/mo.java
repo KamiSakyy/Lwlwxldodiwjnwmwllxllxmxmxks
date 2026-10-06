@@ -4,18 +4,18 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class mo {
-    public String a;
-    public String b;
-    public String c;
-    public gn0.dn d;
-    public boolean e;
-    public boolean f;
-    public boolean g;
-    public qo h;
-    public boolean i;
-    public List j;
-    public bo k;
-    public yi0.a l;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final gn0.dn d;
+    public final boolean e;
+    public final boolean f;
+    public final boolean g;
+    public final qo h;
+    public final boolean i;
+    public final List j;
+    public final bo k;
+    public final yi0.a l;
 
     public mo(String str, String str2, String str3, gn0.dn dnVar, boolean z, boolean z2, boolean z3, qo qoVar, boolean z4, List list, bo boVar, yi0.a aVar) {
         this.a = str;

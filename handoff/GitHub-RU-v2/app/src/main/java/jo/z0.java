@@ -2,11 +2,11 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z0 {
-    public m10.xz a;
-    public y0 b;
-    public u0 c;
-    public String d;
-    public String e;
+    public final m10.xz a;
+    public final y0 b;
+    public final u0 c;
+    public final String d;
+    public final String e;
 
     public z0(m10.xz xzVar, y0 y0Var, u0 u0Var, String str, String str2) {
         this.a = xzVar;

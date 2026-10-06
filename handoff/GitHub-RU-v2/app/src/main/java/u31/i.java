@@ -4,7 +4,7 @@ import com.google.android.material.button.MaterialButton;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i extends sy.q {
-    public int a;
+    public final int a;
 
     public i(int i) {
         this.a = i;

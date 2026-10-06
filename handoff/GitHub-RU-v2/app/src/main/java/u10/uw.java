@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class uw {
-    public String a;
-    public String b;
-    public i90.f c;
+    public final String a;
+    public final String b;
+    public final i90.f c;
 
     public uw(String str, String str2, i90.f fVar) {
         this.a = str;

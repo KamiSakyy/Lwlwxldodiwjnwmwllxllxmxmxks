@@ -7,5 +7,5 @@ package f1;
 public class va {
     public va() {
     }
-    public static Object a(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public Object a(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
 }

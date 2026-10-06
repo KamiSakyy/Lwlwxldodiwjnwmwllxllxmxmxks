@@ -5,8 +5,8 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b extends a {
-    public PendingIntent r;
-    public boolean s;
+    public final PendingIntent r;
+    public final boolean s;
 
     public b(PendingIntent pendingIntent, boolean z) {
         if (pendingIntent == null) {

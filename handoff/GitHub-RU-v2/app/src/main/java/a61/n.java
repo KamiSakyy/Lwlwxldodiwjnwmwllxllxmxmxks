@@ -6,7 +6,7 @@ public enum n implements k51.f {
     EF0(0),
     s(1);
 
-    public int r;
+    public final int r;
 
     n(int i) {
         this.r = i;

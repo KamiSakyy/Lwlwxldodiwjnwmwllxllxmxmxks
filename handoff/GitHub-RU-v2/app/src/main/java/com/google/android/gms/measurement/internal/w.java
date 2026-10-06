@@ -6,10 +6,10 @@ import android.os.Parcelable;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w extends d21.a {
     public static final Parcelable.Creator<w> CREATOR = new c21.c0(6);
-    public String r;
-    public v s;
-    public String t;
-    public long u;
+    public final String r;
+    public final v s;
+    public final String t;
+    public final long u;
 
     public w(w wVar, long j) {
         c21.u.g(wVar);
@@ -43,7 +43,4 @@ public final class w extends d21.a {
     public Object a(Object p1) { return null; }
     public Object k(Object p1, Object p2) { return null; }
     public Object l(Object p1) { return null; }
-    public Object a(Object) { return null; }
-    public Object k(int, Object) { return null; }
-    public Object l(Object) { return null; }
 }

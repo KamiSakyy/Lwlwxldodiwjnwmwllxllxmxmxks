@@ -8,8 +8,8 @@ import kotlinx.serialization.KSerializer;
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class c {
     public static final b d = new b(new h(false, false, false, true, "    ", false, "type", true, a.s), kotlinx.serialization.modules.e.a);
-    public h a;
-    public b21.l b;
+    public final h a;
+    public final b21.l b;
     public final kk.a c = new kk.a(8);
 
     public c(h hVar, b21.l lVar) {

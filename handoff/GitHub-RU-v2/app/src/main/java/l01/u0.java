@@ -7,26 +7,26 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u0 implements x {
-    public String a;
-    public String b;
-    public String c;
-    public int d;
-    public ZonedDateTime e;
-    public int f;
-    public int g;
-    public int h;
-    public boolean i;
-    public boolean j;
-    public boolean k;
-    public boolean l;
-    public boolean m;
-    public boolean n;
-    public Object o;
-    public PullRequestState p;
-    public boolean q;
-    public boolean r;
-    public String s;
-    public String t;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final int d;
+    public final ZonedDateTime e;
+    public final int f;
+    public final int g;
+    public final int h;
+    public final boolean i;
+    public final boolean j;
+    public final boolean k;
+    public final boolean l;
+    public final boolean m;
+    public final boolean n;
+    public final Object o;
+    public final PullRequestState p;
+    public final boolean q;
+    public final boolean r;
+    public final String s;
+    public final String t;
 
     public u0(String str, String str2, String str3, int i, ZonedDateTime zonedDateTime, int i2, int i3, int i4, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, List list, PullRequestState pullRequestState, boolean z7, boolean z8, String str4, String str5) {
         k71.k.g(pullRequestState, "state");

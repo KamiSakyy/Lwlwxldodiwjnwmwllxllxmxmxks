@@ -10,11 +10,11 @@ import yz0.x2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
-    public String a;
-    public String b;
-    public com.github.service.models.response.a c;
-    public ZonedDateTime d;
-    public x2 e;
+    public final String a;
+    public final String b;
+    public final com.github.service.models.response.a c;
+    public final ZonedDateTime d;
+    public final x2 e;
 
     public e(String str, String str2, com.github.service.models.response.a aVar, ZonedDateTime zonedDateTime, x2 x2Var) {
         k.g(zonedDateTime, "modifiedAt");
@@ -50,6 +50,6 @@ public final class e {
         o.append(")");
         return o.toString();
     }
-    public static Object c(Object p1, Object p2, Object p3) { return null; }
-    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object c(Object p1, Object p2, Object p3) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

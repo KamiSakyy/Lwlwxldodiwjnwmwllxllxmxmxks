@@ -6,24 +6,24 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u0 {
-    public String a;
-    public String b;
-    public ZonedDateTime c;
-    public String d;
-    public String e;
-    public String f;
-    public com.github.service.models.response.a g;
-    public com.github.service.models.response.a h;
-    public int i;
-    public int j;
-    public int k;
-    public ArrayList l;
-    public StatusState m;
-    public ArrayList n;
-    public ArrayList o;
-    public ArrayList p;
-    public String q;
-    public String r;
+    public final String a;
+    public final String b;
+    public final ZonedDateTime c;
+    public final String d;
+    public final String e;
+    public final String f;
+    public final com.github.service.models.response.a g;
+    public final com.github.service.models.response.a h;
+    public final int i;
+    public final int j;
+    public final int k;
+    public final ArrayList l;
+    public final StatusState m;
+    public final ArrayList n;
+    public final ArrayList o;
+    public final ArrayList p;
+    public final String q;
+    public final String r;
 
     public u0(String str, String str2, ZonedDateTime zonedDateTime, String str3, String str4, String str5, com.github.service.models.response.a aVar, com.github.service.models.response.a aVar2, int i, int i2, int i3, ArrayList arrayList, StatusState statusState, ArrayList arrayList2, ArrayList arrayList3, ArrayList arrayList4, String str6, String str7) {
         k71.k.g(statusState, "checksState");

@@ -25,7 +25,7 @@ public final class DiscussionsTopFilter extends d {
     public static final bm.j x;
     public static final c y;
     public static final DateTimeFormatter z;
-    public bm.j v;
+    public final bm.j v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<DiscussionsTopFilter> CREATOR = new a21.g(22);
 

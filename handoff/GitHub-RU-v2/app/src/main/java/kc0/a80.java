@@ -5,8 +5,8 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a80 implements aaShadow.n0 {
     public static final n70 Companion = new n70();
-    public String r;
-    public gn0.nl s;
+    public final String r;
+    public final gn0.nl s;
 
     public a80(String str, gn0.nl nlVar) {
         this.r = str;

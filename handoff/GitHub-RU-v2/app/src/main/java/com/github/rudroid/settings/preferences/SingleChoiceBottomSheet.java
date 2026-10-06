@@ -43,8 +43,8 @@ public final class SingleChoiceBottomSheet extends BaseComposeBottomSheetDialog 
 
     public static final class b implements Parcelable {
         public static final Parcelable.Creator<b> CREATOR = new a();
-        public String r;
-        public String s;
+        public final String r;
+        public final String s;
 
         public static final class a implements Parcelable.Creator<b> {
             @Override // android.os.Parcelable.Creator

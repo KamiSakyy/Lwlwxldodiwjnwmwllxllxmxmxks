@@ -42,5 +42,5 @@ public final /* synthetic */ class e implements p51.b {
                 return null;
         }
     }
-    public static Object z(Object p1, Object p2, Object p3) { return null; }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

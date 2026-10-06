@@ -30,9 +30,9 @@ import l7.x1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q extends r1 implements o1 {
-    public x1 a;
-    public s0 b;
-    public Bundle c;
+    public final x1 a;
+    public final s0 b;
+    public final Bundle c;
     public final /* synthetic */ com.github.domain.users.a d;
     public final /* synthetic */ r e;
 

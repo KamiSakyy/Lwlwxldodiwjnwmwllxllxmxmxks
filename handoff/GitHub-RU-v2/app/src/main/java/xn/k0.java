@@ -7,13 +7,13 @@ import java.util.ArrayList;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k0 implements l0, Parcelable {
     public static final Parcelable.Creator<k0> CREATOR = new i0(1);
-    public String r;
-    public String s;
-    public ArrayList t;
-    public String u;
-    public String v;
-    public String w;
-    public Boolean x;
+    public final String r;
+    public final String s;
+    public final ArrayList t;
+    public final String u;
+    public final String v;
+    public final String w;
+    public final Boolean x;
 
     public k0(String str, String str2, ArrayList arrayList, String str3, String str4, String str5, Boolean bool) {
         k71.k.g(str, "query");

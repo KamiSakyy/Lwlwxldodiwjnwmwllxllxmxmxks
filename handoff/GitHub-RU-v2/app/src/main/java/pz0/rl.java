@@ -9,7 +9,7 @@ public final class rl {
     public static final rl t;
     public static final /* synthetic */ rl[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         rl rlVar = new rl("LIST_IGNORED", 0, "LIST_IGNORED");

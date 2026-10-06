@@ -34,27 +34,27 @@ import sy.w;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class LoadingViewFlipper extends ViewAnimator {
     public static final a Companion = new a();
-    public ImageView A;
-    public Button B;
-    public ComposeView C;
-    public w61.p D;
-    public ViewGroup r;
-    public View s;
-    public RecyclerView t;
-    public SwipeRefreshLayout u;
-    public SwipeRefreshLayout v;
+    public final ImageView A;
+    public final Button B;
+    public final ComposeView C;
+    public final w61.p D;
+    public final ViewGroup r;
+    public final View s;
+    public final RecyclerView t;
+    public final SwipeRefreshLayout u;
+    public final SwipeRefreshLayout v;
     public n w;
     public vf.a x;
-    public TextView y;
-    public TextView z;
+    public final TextView y;
+    public final TextView z;
 
     public static final class a {
     }
 
     public static final class c implements Parcelable {
         public static final Parcelable.Creator<c> CREATOR = new a();
-        public int r;
-        public Parcelable s;
+        public final int r;
+        public final Parcelable s;
 
         public static final class a implements Parcelable.Creator<c> {
             @Override // android.os.Parcelable.Creator
@@ -501,10 +501,10 @@ public final class LoadingViewFlipper extends ViewAnimator {
     }
 
     public static final class b {
-        public String a;
-        public String b;
-        public Integer c;
-        public j71.a d;
+        public final String a;
+        public final String b;
+        public final Integer c;
+        public final j71.a d;
 
         public b(String str, String str2, Integer num, j71.a aVar) {
             k71.k.g(str, "title");

@@ -13,11 +13,11 @@ public final class y implements Runnable {
     public static final Object w = new Object();
     public static Boolean x;
     public static Boolean y;
-    public Context r;
-    public j4.h s;
-    public PowerManager.WakeLock t;
-    public w u;
-    public long v;
+    public final Context r;
+    public final j4.h s;
+    public final PowerManager.WakeLock t;
+    public final w u;
+    public final long v;
 
     public y(w wVar, Context context, j4.h hVar, long j) {
         this.u = wVar;
@@ -154,9 +154,9 @@ public final class y implements Runnable {
             throw th;
         }
     }
-    public static Object S(Object p1, Object p2, Object p3) { return null; }
-    public static Object Z(Object p1, Object p2) { return null; }
-    public static Object a0(Object p1, Object p2) { return null; }
+    public Object S(Object p1, Object p2, Object p3) { return null; }
+    public Object Z(Object p1, Object p2) { return null; }
+    public Object a0(Object p1, Object p2) { return null; }
     public static final Object r = null;
     public static final Object s = null;
 }

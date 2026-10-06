@@ -8,10 +8,10 @@ import vb.a;
 public final class g<G extends a<?>> {
 
     /* renamed from: a, reason: collision with root package name */
-    public ArrayList f32870a;
+    public final ArrayList f32870a;
 
     /* renamed from: b, reason: collision with root package name */
-    public e f32871b;
+    public final e f32871b;
 
     public g(ArrayList arrayList, e eVar) {
         this.f32870a = arrayList;

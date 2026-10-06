@@ -4,13 +4,13 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a0 {
-    public String a;
-    public w b;
-    public q c;
-    public y d;
-    public x e;
-    public m f;
-    public vx.a g;
+    public final String a;
+    public final w b;
+    public final q c;
+    public final y d;
+    public final x e;
+    public final m f;
+    public final vx.a g;
 
     public a0(String str, w wVar, q qVar, y yVar, x xVar, m mVar, vx.a aVar) {
         k71.k.g(str, "__typename");

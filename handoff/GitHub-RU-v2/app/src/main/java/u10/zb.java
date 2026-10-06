@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class zb implements aaShadow.v0 {
-    public ac a;
+    public final ac a;
 
     public zb(ac acVar) {
         this.a = acVar;

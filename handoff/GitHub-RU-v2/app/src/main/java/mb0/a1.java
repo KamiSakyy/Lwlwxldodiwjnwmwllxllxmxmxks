@@ -7,7 +7,7 @@ import jo.f4;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a1 implements aa.n0 {
     public static final v0 Companion = new v0();
-    public aa.u0 r;
+    public final aa.u0 r;
 
     public a1(aa.u0 u0Var) {
         this.r = u0Var;

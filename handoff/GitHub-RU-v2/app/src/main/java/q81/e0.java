@@ -13,7 +13,7 @@ public final class e0 {
     public static final e0 w;
     public static final e0 x;
     public static final /* synthetic */ e0[] y;
-    public String r;
+    public final String r;
 
     static {
         e0 e0Var = new e0("TLS_1_3", 0, "TLSv1.3");

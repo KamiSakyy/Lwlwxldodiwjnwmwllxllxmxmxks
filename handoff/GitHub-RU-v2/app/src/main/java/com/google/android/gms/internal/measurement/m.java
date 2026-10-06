@@ -5,9 +5,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class m extends h {
-    public ArrayList t;
-    public ArrayList u;
-    public w51.r v;
+    public final ArrayList t;
+    public final ArrayList u;
+    public final w51.r v;
 
     public m(m mVar) {
         super(mVar.r);

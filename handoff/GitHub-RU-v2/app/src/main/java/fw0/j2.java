@@ -2,9 +2,9 @@ package fw0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j2 implements aa.h0 {
-    public i2 a;
-    public String b;
-    public String c;
+    public final i2 a;
+    public final String b;
+    public final String c;
 
     public j2(i2 i2Var, String str, String str2) {
         this.a = i2Var;

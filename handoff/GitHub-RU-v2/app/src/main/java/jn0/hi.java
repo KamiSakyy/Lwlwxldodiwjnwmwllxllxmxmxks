@@ -2,12 +2,12 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class hi {
-    public String a;
-    public String b;
-    public String c;
-    public boolean d;
-    public cp0.g e;
-    public fw0.z f;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final boolean d;
+    public final cp0.g e;
+    public final fw0.z f;
 
     public hi(String str, String str2, String str3, boolean z, cp0.g gVar, fw0.z zVar) {
         this.a = str;

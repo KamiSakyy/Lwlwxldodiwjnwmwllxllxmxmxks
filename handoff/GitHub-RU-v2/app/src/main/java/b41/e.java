@@ -14,9 +14,9 @@ import w21.o;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
-    public k a;
-    public c b;
-    public Context c;
+    public final k a;
+    public final c b;
+    public final Context c;
 
     public e(k kVar, c cVar, Context context) {
         new Handler(Looper.getMainLooper());

@@ -2,14 +2,14 @@ package hc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class d5 {
-    public aa1.b a;
-    public es b;
-    public aa1.b c;
-    public ks d;
-    public String e;
-    public aa1.b f;
-    public aa1.b g;
-    public lt h;
+    public final aa1.b a;
+    public final es b;
+    public final aa1.b c;
+    public final ks d;
+    public final String e;
+    public final aa1.b f;
+    public final aa1.b g;
+    public final lt h;
 
     public d5(es esVar, ks ksVar, String str, aa1.b bVar, aa1.b bVar2, lt ltVar) {
         k71.k.g(str, "name");

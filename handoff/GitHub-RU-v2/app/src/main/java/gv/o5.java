@@ -2,9 +2,9 @@ package gv;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o5 {
-    public boolean a;
-    public boolean b;
-    public a6 c;
+    public final boolean a;
+    public final boolean b;
+    public final a6 c;
 
     public o5(boolean z, boolean z2, a6 a6Var) {
         this.a = z;

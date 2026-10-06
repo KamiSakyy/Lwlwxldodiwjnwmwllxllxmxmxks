@@ -2,7 +2,7 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e8 implements aaShadow.m0 {
-    public f8 a;
+    public final f8 a;
 
     public e8(f8 f8Var) {
         this.a = f8Var;

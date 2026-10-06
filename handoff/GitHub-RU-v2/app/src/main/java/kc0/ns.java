@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ns {
-    public String a;
-    public String b;
-    public os c;
+    public final String a;
+    public final String b;
+    public final os c;
 
     public ns(String str, String str2, os osVar) {
         k71.k.g(str, "__typename");

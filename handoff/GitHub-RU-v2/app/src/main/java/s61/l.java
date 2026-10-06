@@ -9,9 +9,9 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l extends AsyncTask {
-    public WeakReference a;
-    public WeakReference b;
-    public WeakReference c;
+    public final WeakReference a;
+    public final WeakReference b;
+    public final WeakReference c;
     public Exception d;
 
     public l(SubsamplingScaleImageView subsamplingScaleImageView, t61.c cVar, k kVar) {

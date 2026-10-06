@@ -9,8 +9,8 @@ import l7.n1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class p extends n1 {
-    public TextView u;
-    public MaterialCalendarGridView v;
+    public final TextView u;
+    public final MaterialCalendarGridView v;
 
     public p(LinearLayout linearLayout, boolean z) {
         super(linearLayout);

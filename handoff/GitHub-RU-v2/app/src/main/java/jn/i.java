@@ -6,9 +6,9 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i {
-    public x01.i a;
-    public Object b;
-    public int c;
+    public final x01.i a;
+    public final Object b;
+    public final int c;
 
     public i(int i, List list, x01.i iVar) {
         this.a = iVar;

@@ -2,11 +2,11 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ic {
-    public String a;
-    public m10.n40 b;
-    public hc c;
-    public boolean d;
-    public String e;
+    public final String a;
+    public final m10.n40 b;
+    public final hc c;
+    public final boolean d;
+    public final String e;
 
     public ic(String str, m10.n40 n40Var, hc hcVar, boolean z, String str2) {
         this.a = str;

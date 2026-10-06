@@ -27,9 +27,9 @@ public final class b {
     public static final androidx.compose.foundation.lazy.layout.a h = new androidx.compose.foundation.lazy.layout.a(3);
     public static final a i = new a(0);
     public final AtomicInteger a = new AtomicInteger(0);
-    public d b;
-    public d51.d c;
-    public i d;
+    public final d b;
+    public final d51.d c;
+    public final i d;
 
     public b(d dVar, d51.d dVar2, i iVar) {
         this.b = dVar;

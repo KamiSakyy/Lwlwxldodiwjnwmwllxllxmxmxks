@@ -8,7 +8,7 @@ public final class wf {
     public static final wf s;
     public static final /* synthetic */ wf[] t;
     public static final /* synthetic */ d71.b u;
-    public String r;
+    public final String r;
 
     static {
         wf wfVar = new wf("GESTURE", 0, "GESTURE");

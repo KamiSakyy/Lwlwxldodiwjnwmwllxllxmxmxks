@@ -2,11 +2,11 @@ package e50;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d1 implements aa.h0 {
-    public String a;
-    public boolean b;
-    public boolean c;
-    public int d;
-    public ja0.a e;
+    public final String a;
+    public final boolean b;
+    public final boolean c;
+    public final int d;
+    public final ja0.a e;
 
     public d1(String str, boolean z, boolean z2, int i, ja0.a aVar) {
         k71.k.g(str, "__typename");

@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e implements n {
-    public boolean r;
+    public final boolean r;
 
     public e(Boolean bool) {
         this.r = bool == null ? false : bool.booleanValue();
@@ -65,9 +65,4 @@ public final class e implements n {
     }
     public Object i = null;
     public Object k = null;
-    public Object clear() { return null; }
-    public Object get(Object) { return null; }
-    public Object put(Object, Object) { return null; }
-    public Object put(Object, Object) { return null; }
-    public Object values() { return null; }
 }

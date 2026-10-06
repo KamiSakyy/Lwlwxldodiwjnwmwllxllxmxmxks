@@ -13,9 +13,9 @@ import l7.x0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q extends m0 {
-    public b d;
-    public x3 e;
-    public int f;
+    public final b d;
+    public final x3 e;
+    public final int f;
 
     public q(ContextThemeWrapper contextThemeWrapper, b bVar, x3 x3Var) {
         m mVar = bVar.r;
@@ -75,5 +75,4 @@ public final class q extends m0 {
         linearLayout.setLayoutParams(new x0(-1, this.f));
         return new p(linearLayout, true);
     }
-    public Object D(boolean) { return null; }
 }

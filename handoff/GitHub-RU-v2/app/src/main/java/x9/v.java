@@ -6,7 +6,7 @@ import com.google.android.gms.internal.play_billing.a4;
 public final class v extends c41.d {
 
     /* renamed from: g, reason: collision with root package name */
-    public a4 f34047g;
+    public final a4 f34047g;
 
     /* JADX WARN: Multi-variable type inference failed */
     public v(a4 a4Var) {

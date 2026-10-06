@@ -6,12 +6,12 @@ import pz0.su;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a2 implements aa.w0 {
     public static final u1 Companion = new u1();
-    public String r;
-    public aa1.b s;
-    public aa1.b t;
-    public aa1.b u;
-    public aa1.b v;
-    public aa1.b w;
+    public final String r;
+    public final aa1.b s;
+    public final aa1.b t;
+    public final aa1.b u;
+    public final aa1.b v;
+    public final aa1.b w;
 
     public a2(String str, aa.u0 u0Var, aa1.b bVar, aa.u0 u0Var2) {
         k71.k.g(str, "id");

@@ -2,7 +2,7 @@ package xn;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z3 {
-    public String a;
+    public final String a;
 
     public z3(String str) {
         k71.k.g(str, "slug");

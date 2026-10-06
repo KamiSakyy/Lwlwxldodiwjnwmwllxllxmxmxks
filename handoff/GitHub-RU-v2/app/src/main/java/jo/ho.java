@@ -2,12 +2,12 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ho {
-    public String a;
-    public String b;
-    public m10.wm c;
-    public boolean d;
-    public fo e;
-    public go f;
+    public final String a;
+    public final String b;
+    public final m10.wm c;
+    public final boolean d;
+    public final fo e;
+    public final go f;
 
     public ho(String str, String str2, m10.wm wmVar, boolean z, fo foVar, go goVar) {
         this.a = str;

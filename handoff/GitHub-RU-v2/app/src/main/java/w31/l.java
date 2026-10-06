@@ -14,7 +14,7 @@ import com.google.android.material.snackbar.SnackbarContentLayout;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class l extends i {
     public static final int[] E = {2130969772, 2130969774};
-    public AccessibilityManager C;
+    public final AccessibilityManager C;
     public boolean D;
 
     public l(Context context, ViewGroup viewGroup, SnackbarContentLayout snackbarContentLayout, SnackbarContentLayout snackbarContentLayout2) {

@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class gt {
-    public et a;
-    public List b;
+    public final et a;
+    public final List b;
 
     public gt(et etVar, List list) {
         this.a = etVar;

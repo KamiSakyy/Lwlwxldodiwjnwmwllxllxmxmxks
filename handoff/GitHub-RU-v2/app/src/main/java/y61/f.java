@@ -9,7 +9,7 @@ import x61.h;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class f extends h {
     public final /* synthetic */ int r;
-    public e s;
+    public final e s;
 
     public /* synthetic */ f(e eVar, int i) {
         this.r = i;

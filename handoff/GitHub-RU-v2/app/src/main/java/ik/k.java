@@ -4,7 +4,7 @@ import com.github.rudroid.discussions.m2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k {
-    public oa.g a;
+    public final oa.g a;
 
     public k(oa.g gVar) {
         k71.k.g(gVar, "discussionsService");

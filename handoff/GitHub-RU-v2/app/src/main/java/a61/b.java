@@ -4,8 +4,8 @@ import android.os.Build;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public String a;
-    public a b;
+    public final String a;
+    public final a b;
 
     public b(String str, a aVar) {
         String str2 = Build.MODEL;

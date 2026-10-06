@@ -8,14 +8,14 @@ import m10.yi;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n implements h0 {
-    public String a;
-    public String b;
-    public yi c;
-    public a d;
-    public c e;
-    public d f;
-    public e g;
-    public ZonedDateTime h;
+    public final String a;
+    public final String b;
+    public final yi c;
+    public final a d;
+    public final c e;
+    public final d f;
+    public final e g;
+    public final ZonedDateTime h;
 
     public n(String str, String str2, yi yiVar, a aVar, c cVar, d dVar, e eVar, ZonedDateTime zonedDateTime) {
         this.a = str;

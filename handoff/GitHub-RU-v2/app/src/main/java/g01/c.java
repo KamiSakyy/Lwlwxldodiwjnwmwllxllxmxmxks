@@ -10,12 +10,12 @@ import yz0.c5;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class c {
-    public InteractionType a;
-    public String b;
-    public Avatar c;
-    public ZonedDateTime d;
-    public com.github.service.models.response.a e;
-    public c5 f;
+    public final InteractionType a;
+    public final String b;
+    public final Avatar c;
+    public final ZonedDateTime d;
+    public final com.github.service.models.response.a e;
+    public final c5 f;
 
     public c(InteractionType interactionType, String str, Avatar avatar, ZonedDateTime zonedDateTime, com.github.service.models.response.a aVar) {
         c5 c5Var;

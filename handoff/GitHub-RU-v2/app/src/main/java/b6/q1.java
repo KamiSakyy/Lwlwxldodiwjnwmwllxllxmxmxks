@@ -4,13 +4,13 @@ package b6;
 public final class q1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public l1 f3677a;
+    public final l1 f3677a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f3678b;
+    public final boolean f3678b;
 
     /* renamed from: c, reason: collision with root package name */
-    public boolean f3679c;
+    public final boolean f3679c;
 
     public q1(l1 l1Var, boolean z10, boolean z11) {
         this.f3677a = l1Var;

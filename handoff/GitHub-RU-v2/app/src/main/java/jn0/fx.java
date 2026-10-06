@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class fx {
-    public dx a;
-    public List b;
+    public final dx a;
+    public final List b;
 
     public fx(dx dxVar, List list) {
         this.a = dxVar;

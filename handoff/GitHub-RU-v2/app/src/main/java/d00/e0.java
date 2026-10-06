@@ -2,9 +2,9 @@ package d00;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e0 {
-    public String a;
-    public b0 b;
-    public f00.b0 c;
+    public final String a;
+    public final b0 b;
+    public final f00.b0 c;
 
     public e0(String str, b0 b0Var, f00.b0 b0Var2) {
         this.a = str;

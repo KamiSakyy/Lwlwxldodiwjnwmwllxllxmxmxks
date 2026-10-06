@@ -6,10 +6,10 @@ public interface b0 {
     public static final class a implements b0 {
 
         /* renamed from: a, reason: collision with root package name */
-        public m0 f13510a;
+        public final m0 f13510a;
 
         /* renamed from: b, reason: collision with root package name */
-        public String f13511b;
+        public final String f13511b;
 
         public a(m0 m0Var, String str) {
             k71.k.g(str, "header");
@@ -40,7 +40,7 @@ public interface b0 {
     public static final class b implements b0 {
 
         /* renamed from: a, reason: collision with root package name */
-        public m f13512a;
+        public final m f13512a;
 
         public b(m mVar) {
             this.f13512a = mVar;

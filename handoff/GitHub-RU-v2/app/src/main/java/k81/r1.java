@@ -9,10 +9,10 @@ import kotlinx.serialization.encoding.Encoder;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class r1 implements KSerializer {
-    public KSerializer a;
-    public KSerializer b;
-    public KSerializer c;
-    public i81.g d;
+    public final KSerializer a;
+    public final KSerializer b;
+    public final KSerializer c;
+    public final i81.g d;
 
     public r1(KSerializer kSerializer, KSerializer kSerializer2, KSerializer kSerializer3) {
         k71.k.g(kSerializer, "aSerializer");

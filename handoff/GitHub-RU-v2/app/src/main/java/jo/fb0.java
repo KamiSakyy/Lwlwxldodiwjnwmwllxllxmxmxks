@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class fb0 {
-    public int a;
-    public gb0 b;
-    public String c;
-    public String d;
+    public final int a;
+    public final gb0 b;
+    public final String c;
+    public final String d;
 
     public fb0(int i, gb0 gb0Var, String str, String str2) {
         this.a = i;

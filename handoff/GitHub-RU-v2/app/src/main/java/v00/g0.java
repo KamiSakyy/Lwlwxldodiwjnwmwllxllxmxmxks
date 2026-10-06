@@ -11,9 +11,9 @@ import y71.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class g0 implements z01.l, mi0 {
-    public v71.v r;
-    public g61.a s;
-    public i t;
+    public final v71.v r;
+    public final g61.a s;
+    public final i t;
 
     public g0(q81.u uVar, v71.v vVar, com.github.service.wrapper.b bVar, oa.h hVar, oa.j jVar) {
         k71.k.g(uVar, "okHttpClient");

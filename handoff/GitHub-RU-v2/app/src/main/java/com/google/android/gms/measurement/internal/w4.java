@@ -9,13 +9,13 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w4 {
-    public String a;
-    public boolean b;
-    public com.google.android.gms.internal.measurement.m3 c;
-    public BitSet d;
-    public BitSet e;
-    public x.e f;
-    public x.e g;
+    public final String a;
+    public final boolean b;
+    public final com.google.android.gms.internal.measurement.m3 c;
+    public final BitSet d;
+    public final BitSet e;
+    public final x.e f;
+    public final x.e g;
     public final /* synthetic */ d h;
 
     public w4(d dVar, String str, com.google.android.gms.internal.measurement.m3 m3Var, BitSet bitSet, BitSet bitSet2, x.e eVar, x.e eVar2) {

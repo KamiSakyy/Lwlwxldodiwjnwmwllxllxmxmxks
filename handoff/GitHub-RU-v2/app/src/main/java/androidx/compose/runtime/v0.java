@@ -4,7 +4,7 @@ package androidx.compose.runtime;
 public final class v0 implements m3 {
 
     /* renamed from: a, reason: collision with root package name */
-    public w61.p f1872a;
+    public final w61.p f1872a;
 
     public v0(j71.a aVar) {
         this.f1872a = sy.w.t(aVar);

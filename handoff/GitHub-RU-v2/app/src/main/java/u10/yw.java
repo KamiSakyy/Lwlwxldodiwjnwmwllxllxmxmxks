@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class yw {
-    public String a;
-    public String b;
-    public w50.l c;
+    public final String a;
+    public final String b;
+    public final w50.l c;
 
     public yw(String str, String str2, w50.l lVar) {
         this.a = str;

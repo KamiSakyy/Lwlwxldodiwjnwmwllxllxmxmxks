@@ -2,8 +2,8 @@ package com.github.rudroid.uitoolkit.text;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i0 {
-    public String a;
-    public j71.a b;
+    public final String a;
+    public final j71.a b;
 
     public i0(String str, j71.a aVar) {
         k71.k.g(str, "tag");

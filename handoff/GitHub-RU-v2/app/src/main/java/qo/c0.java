@@ -2,10 +2,10 @@ package qo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c0 {
-    public String a;
-    public x b;
-    public d0 c;
-    public vo.s1 d;
+    public final String a;
+    public final x b;
+    public final d0 c;
+    public final vo.s1 d;
 
     public c0(String str, x xVar, d0 d0Var, vo.s1 s1Var) {
         this.a = str;

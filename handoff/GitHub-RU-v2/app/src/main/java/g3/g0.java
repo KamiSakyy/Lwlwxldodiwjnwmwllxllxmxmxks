@@ -10,9 +10,9 @@ public class g0 {
 
     public static Object b;
 
-    public static long b(Object... a) {
+    public static Object b(Object... a) {
         return null;
     }
-    public static Object b(Object p1, Object p2) { return null; }
-    public static Object i(Object p1, Object p2) { return null; }
+    public Object b(Object p1, Object p2) { return null; }
+    public Object i(Object p1, Object p2) { return null; }
 }

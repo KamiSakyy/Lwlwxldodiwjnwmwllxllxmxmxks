@@ -7,16 +7,16 @@ public abstract class d4 implements Parcelable {
     public static final a Companion = new a();
 
     /* renamed from: r, reason: collision with root package name */
-    public com.github.rudroid.common.d f7031r;
+    public final com.github.rudroid.common.d f7031r;
 
     /* renamed from: s, reason: collision with root package name */
-    public String f7032s;
+    public final String f7032s;
 
     /* renamed from: t, reason: collision with root package name */
-    public String f7033t;
+    public final String f7033t;
 
     /* renamed from: u, reason: collision with root package name */
-    public boolean f7034u;
+    public final boolean f7034u;
 
     public static final class a {
     }

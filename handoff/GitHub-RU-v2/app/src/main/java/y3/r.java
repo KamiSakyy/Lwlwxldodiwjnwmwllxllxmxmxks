@@ -10,7 +10,7 @@ public final class r {
     public static final r f34250c = new r("gone");
 
     /* renamed from: a, reason: collision with root package name */
-    public String f34251a;
+    public final String f34251a;
 
     public r(String str) {
         this.f34251a = str;

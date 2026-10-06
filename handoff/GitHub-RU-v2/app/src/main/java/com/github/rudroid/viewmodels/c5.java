@@ -11,25 +11,25 @@ import java.util.concurrent.CancellationException;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class c5 extends androidx.lifecycle.a implements com.github.rudroid.utilities.viewmodel.d {
-    public bj.g A;
-    public zk.d0 B;
-    public hj.e C;
-    public com.github.rudroid.activities.util.c D;
-    public a4 E;
-    public PullRequestReviewRoute F;
-    public y71.y1 G;
-    public y71.y1 H;
-    public y71.y1 I;
-    public LinkedHashSet J;
+    public final bj.g A;
+    public final zk.d0 B;
+    public final hj.e C;
+    public final com.github.rudroid.activities.util.c D;
+    public final a4 E;
+    public final PullRequestReviewRoute F;
+    public final y71.y1 G;
+    public final y71.y1 H;
+    public final y71.y1 I;
+    public final LinkedHashSet J;
     public v71.q1 K;
     public v71.q1 L;
     public final /* synthetic */ d.a t;
-    public zk.q0 u;
-    public zk.e1 v;
-    public zk.l1 w;
-    public zk.t1 x;
-    public kj.g y;
-    public kj.g0 z;
+    public final zk.q0 u;
+    public final zk.e1 v;
+    public final zk.l1 w;
+    public final zk.t1 x;
+    public final kj.g y;
+    public final kj.g0 z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public c5(Application application, zk.q0 q0Var, zk.e1 e1Var, zk.l1 l1Var, zk.t1 t1Var, kj.g gVar, kj.g0 g0Var, bj.g gVar2, zk.d0 d0Var, hj.e eVar, com.github.rudroid.activities.util.c cVar, a4 a4Var, androidx.lifecycle.a1 a1Var) {

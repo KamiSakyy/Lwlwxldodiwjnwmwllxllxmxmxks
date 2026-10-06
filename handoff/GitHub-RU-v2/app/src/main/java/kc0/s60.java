@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s60 {
-    public j60 a;
-    public n60 b;
+    public final j60 a;
+    public final n60 b;
 
     public s60(j60 j60Var, n60 n60Var) {
         this.a = j60Var;

@@ -9,7 +9,7 @@ public final class au {
     public static final au t;
     public static final /* synthetic */ au[] u;
     public static final /* synthetic */ d71.b v;
-    public String r;
+    public final String r;
 
     static {
         au auVar = new au("FACEBOOK", 0, "FACEBOOK");

@@ -2,15 +2,15 @@ package y41;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n0 extends v1 {
-    public int a;
-    public String b;
-    public int c;
-    public long d;
-    public long e;
-    public boolean f;
-    public int g;
-    public String h;
-    public String i;
+    public final int a;
+    public final String b;
+    public final int c;
+    public final long d;
+    public final long e;
+    public final boolean f;
+    public final int g;
+    public final String h;
+    public final String i;
 
     public n0(int i, String str, int i2, long j, long j2, boolean z, int i3, String str2, String str3) {
         this.a = i;

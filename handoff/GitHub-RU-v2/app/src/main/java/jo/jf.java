@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class jf {
-    public lf a;
-    public String b;
-    public String c;
+    public final lf a;
+    public final String b;
+    public final String c;
 
     public jf(lf lfVar, String str, String str2) {
         this.a = lfVar;

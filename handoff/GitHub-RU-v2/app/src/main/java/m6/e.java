@@ -8,19 +8,19 @@ import z70.m2;
 public final class e {
 
     /* renamed from: a, reason: collision with root package name */
-    public n6.a f28934a;
+    public final n6.a f28934a;
 
     /* renamed from: b, reason: collision with root package name */
-    public o f28935b;
+    public final o f28935b;
 
     /* renamed from: c, reason: collision with root package name */
-    public b f28936c;
+    public final b f28936c;
 
     /* renamed from: d, reason: collision with root package name */
-    public c f28937d;
+    public final c f28937d;
 
     /* renamed from: e, reason: collision with root package name */
-    public m2 f28938e;
+    public final m2 f28938e;
 
     public e(n6.a aVar, o oVar, b bVar, c cVar, m2 m2Var) {
         this.f28934a = aVar;

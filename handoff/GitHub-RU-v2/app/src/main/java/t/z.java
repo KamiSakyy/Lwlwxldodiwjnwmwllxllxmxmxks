@@ -5,7 +5,6 @@ package t;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface z {
-    public static Object d(Object p1) { return null; }
-    public static Object f(Object p1, Object p2, Object p3) { return null; }
-    public Object a(Object, Object, Object, Object, int) { return null; }
+    public Object d(Object p1) { return null; }
+    public Object f(Object p1, Object p2, Object p3) { return null; }
 }

@@ -4,10 +4,10 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i {
-    public dd.a a;
-    public List b;
-    public boolean c;
-    public boolean d;
+    public final dd.a a;
+    public final List b;
+    public final boolean c;
+    public final boolean d;
 
     public i(dd.a aVar, List list, boolean z, boolean z2) {
         k71.k.g(aVar, "banner");

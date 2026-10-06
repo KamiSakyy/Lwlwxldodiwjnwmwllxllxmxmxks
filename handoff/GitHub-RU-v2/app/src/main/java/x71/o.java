@@ -3,7 +3,7 @@ package x71;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class o {
     public static final n b = new n();
-    public Object a;
+    public final Object a;
 
     public static final Throwable a(Object obj) {
         m mVar = obj instanceof m ? (m) obj : null;

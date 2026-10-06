@@ -7,7 +7,7 @@ import android.widget.EdgeEffect;
 public final class r0 extends EdgeEffect {
 
     /* renamed from: a, reason: collision with root package name */
-    public float f22359a;
+    public final float f22359a;
 
     /* renamed from: b, reason: collision with root package name */
     public float f22360b;

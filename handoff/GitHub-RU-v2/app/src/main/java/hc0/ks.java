@@ -40,7 +40,7 @@ public final class ks {
     public static final ks x;
     public static final ks y;
     public static final ks z;
-    public String r;
+    public final String r;
 
     static {
         ks ksVar = new ks("ALERT", 0, "ALERT");

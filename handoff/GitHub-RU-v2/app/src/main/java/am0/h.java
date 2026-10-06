@@ -6,10 +6,10 @@ import gn0.r2;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h {
-    public String a;
-    public String b;
-    public l2 c;
-    public r2 d;
+    public final String a;
+    public final String b;
+    public final l2 c;
+    public final r2 d;
 
     public h(String str, String str2, l2 l2Var, r2 r2Var) {
         this.a = str;

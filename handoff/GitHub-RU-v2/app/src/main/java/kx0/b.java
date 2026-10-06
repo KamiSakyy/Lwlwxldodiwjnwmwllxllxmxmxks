@@ -11,20 +11,20 @@ import yz0.s;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements s {
-    public String a;
-    public String b;
-    public com.github.service.models.response.a c;
-    public com.github.service.models.response.a d;
-    public ZonedDateTime e;
-    public boolean f;
-    public ZonedDateTime g;
-    public String h;
-    public String i;
-    public boolean j;
-    public boolean k;
-    public String l;
-    public q0 m;
-    public CommentAuthorAssociation n;
+    public final String a;
+    public final String b;
+    public final com.github.service.models.response.a c;
+    public final com.github.service.models.response.a d;
+    public final ZonedDateTime e;
+    public final boolean f;
+    public final ZonedDateTime g;
+    public final String h;
+    public final String i;
+    public final boolean j;
+    public final boolean k;
+    public final String l;
+    public final q0 m;
+    public final CommentAuthorAssociation n;
 
     public b(yp0.c cVar, String str, q0 q0Var) {
         kw0.a aVar;

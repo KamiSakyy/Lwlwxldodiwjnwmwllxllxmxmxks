@@ -5,8 +5,8 @@ import java.util.Objects;
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class t {
     public static final t c;
-    public s a;
-    public s b;
+    public final s a;
+    public final s b;
 
     static {
         s sVar = new s(-1, -1, -1);

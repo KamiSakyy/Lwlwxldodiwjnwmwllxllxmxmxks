@@ -13,13 +13,13 @@ import x6.l0;
 public class a<T extends Parcelable> extends l0 {
 
     /* renamed from: r, reason: collision with root package name */
-    public Class f16931r;
+    public final Class f16931r;
 
     /* renamed from: s, reason: collision with root package name */
-    public KSerializer f16932s;
+    public final KSerializer f16932s;
 
     /* renamed from: t, reason: collision with root package name */
-    public String f16933t;
+    public final String f16933t;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public a(Class cls, KSerializer kSerializer) {

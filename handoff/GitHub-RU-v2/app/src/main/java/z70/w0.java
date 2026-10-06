@@ -2,21 +2,21 @@ package z70;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w0 implements aa.h0 {
-    public String a;
-    public String b;
-    public String c;
-    public boolean d;
-    public String e;
-    public String f;
-    public int g;
-    public int h;
-    public j0 i;
-    public k0 j;
-    public u0 k;
-    public e0 l;
-    public t0 m;
-    public i0 n;
-    public v o;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final boolean d;
+    public final String e;
+    public final String f;
+    public final int g;
+    public final int h;
+    public final j0 i;
+    public final k0 j;
+    public final u0 k;
+    public final e0 l;
+    public final t0 m;
+    public final i0 n;
+    public final v o;
 
     public w0(String str, String str2, String str3, boolean z, String str4, String str5, int i, int i2, j0 j0Var, k0 k0Var, u0 u0Var, e0 e0Var, t0 t0Var, i0 i0Var, v vVar) {
         this.a = str;

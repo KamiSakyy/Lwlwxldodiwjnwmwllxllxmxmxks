@@ -37,5 +37,5 @@ public final /* synthetic */ class w implements j71.a {
     }
 
     public Object ordinal() { return null; }
-    public static Object values() { return null; }
+    public Object values() { return null; }
 }

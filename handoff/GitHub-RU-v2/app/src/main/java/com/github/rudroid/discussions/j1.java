@@ -10,25 +10,25 @@ public abstract class j1 {
     public static final class b extends j1 {
 
         /* renamed from: a, reason: collision with root package name */
-        public String f11404a;
+        public final String f11404a;
 
         /* renamed from: b, reason: collision with root package name */
-        public String f11405b;
+        public final String f11405b;
 
         /* renamed from: c, reason: collision with root package name */
-        public String f11406c;
+        public final String f11406c;
 
         /* renamed from: d, reason: collision with root package name */
-        public boolean f11407d;
+        public final boolean f11407d;
 
         /* renamed from: e, reason: collision with root package name */
-        public boolean f11408e;
+        public final boolean f11408e;
 
         /* renamed from: f, reason: collision with root package name */
-        public String f11409f;
+        public final String f11409f;
 
         /* renamed from: g, reason: collision with root package name */
-        public String f11410g;
+        public final String f11410g;
 
         public b(String str, String str2, String str3, boolean z10, boolean z11, String str4, String str5) {
             k71.k.g(str, "categoryId");

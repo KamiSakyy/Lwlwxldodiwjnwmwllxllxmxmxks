@@ -14,25 +14,25 @@ public final class v extends k1 {
     public static final a Companion = new a();
 
     /* renamed from: s, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f8402s;
+    public final com.github.rudroid.activities.util.c f8402s;
 
     /* renamed from: t, reason: collision with root package name */
-    public vi.a f8403t;
+    public final vi.a f8403t;
 
     /* renamed from: u, reason: collision with root package name */
-    public ui.e f8404u;
+    public final ui.e f8404u;
 
     /* renamed from: v, reason: collision with root package name */
     public q1 f8405v;
 
     /* renamed from: w, reason: collision with root package name */
-    public LinkedHashSet f8406w;
+    public final LinkedHashSet f8406w;
 
     /* renamed from: x, reason: collision with root package name */
-    public y1 f8407x;
+    public final y1 f8407x;
 
     /* renamed from: y, reason: collision with root package name */
-    public y00.l f8408y;
+    public final y00.l f8408y;
 
     public static final class a {
     }

@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w00 {
-    public String a;
-    public n00 b;
+    public final String a;
+    public final n00 b;
 
     public w00(String str, n00 n00Var) {
         this.a = str;

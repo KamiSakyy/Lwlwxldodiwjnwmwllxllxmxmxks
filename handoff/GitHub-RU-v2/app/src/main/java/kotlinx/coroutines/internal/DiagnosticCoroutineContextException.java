@@ -4,7 +4,7 @@ import a71.h;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class DiagnosticCoroutineContextException extends RuntimeException {
-    public transient h r;
+    public final transient h r;
 
     public DiagnosticCoroutineContextException(h hVar) {
         this.r = hVar;

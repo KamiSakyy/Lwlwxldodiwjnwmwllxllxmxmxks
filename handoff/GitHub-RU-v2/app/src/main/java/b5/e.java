@@ -34,7 +34,7 @@ public final class e {
         return null;
     }
     public Object a(Object p1, Object p2) { return null; }
-    public static Object c(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object c(Object p1, Object p2, Object p3, Object p4) { return null; }
     public Object d(Object p1, Object p2) { return null; }
     public Object b = null;
     public Object f3483b = null;

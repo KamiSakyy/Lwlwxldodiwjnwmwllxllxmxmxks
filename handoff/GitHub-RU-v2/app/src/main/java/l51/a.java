@@ -2,7 +2,7 @@ package l51;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a implements e {
-    public int a;
+    public final int a;
 
     public a(int i) {
         this.a = i;
@@ -37,5 +37,4 @@ public final class a implements e {
     public final String toString() {
         return "@com.google.firebase.encoders.proto.Protobuf(tag=" + this.a + "intEncoding=" + d.r + ')';
     }
-    public Object a(Object) { return null; }
 }

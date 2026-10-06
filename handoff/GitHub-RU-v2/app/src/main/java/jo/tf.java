@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class tf implements aaShadow.v0 {
-    public ag a;
-    public String b;
-    public String c;
+    public final ag a;
+    public final String b;
+    public final String c;
 
     public tf(ag agVar, String str, String str2) {
         this.a = agVar;

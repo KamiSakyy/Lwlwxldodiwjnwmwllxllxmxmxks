@@ -4,23 +4,23 @@ import jo.f4;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b0 {
-    public String a;
-    public h b;
-    public j c;
-    public g d;
-    public z e;
-    public k f;
-    public o g;
-    public p h;
-    public t i;
-    public u j;
-    public r k;
-    public i l;
-    public s m;
-    public v n;
-    public l o;
-    public n p;
-    public vx.a q;
+    public final String a;
+    public final h b;
+    public final j c;
+    public final g d;
+    public final z e;
+    public final k f;
+    public final o g;
+    public final p h;
+    public final t i;
+    public final u j;
+    public final r k;
+    public final i l;
+    public final s m;
+    public final v n;
+    public final l o;
+    public final n p;
+    public final vx.a q;
 
     public b0(String str, h hVar, j jVar, g gVar, z zVar, k kVar, o oVar, p pVar, t tVar, u uVar, r rVar, i iVar, s sVar, v vVar, l lVar, n nVar, vx.a aVar) {
         k71.k.g(str, "__typename");

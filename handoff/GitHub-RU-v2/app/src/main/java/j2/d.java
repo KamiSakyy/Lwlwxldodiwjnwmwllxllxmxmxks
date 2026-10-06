@@ -7,32 +7,32 @@ import java.util.List;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f26785a;
+    public final String f26785a;
 
     /* renamed from: b, reason: collision with root package name */
-    public float f26786b;
+    public final float f26786b;
 
     /* renamed from: c, reason: collision with root package name */
-    public float f26787c;
+    public final float f26787c;
 
     /* renamed from: d, reason: collision with root package name */
-    public float f26788d;
+    public final float f26788d;
 
     /* renamed from: e, reason: collision with root package name */
-    public float f26789e;
+    public final float f26789e;
 
     /* renamed from: f, reason: collision with root package name */
-    public float f26790f;
+    public final float f26790f;
 
     /* renamed from: g, reason: collision with root package name */
-    public float f26791g;
+    public final float f26791g;
 
     /* renamed from: h, reason: collision with root package name */
-    public float f26792h;
-    public List i;
+    public final float f26792h;
+    public final List i;
 
     /* renamed from: j, reason: collision with root package name */
-    public ArrayList f26793j;
+    public final ArrayList f26793j;
 
     public d(String str, float f6, float f10, float f11, float f12, float f13, float f14, float f15, List list, int i) {
         str = (i & 1) != 0 ? "" : str;

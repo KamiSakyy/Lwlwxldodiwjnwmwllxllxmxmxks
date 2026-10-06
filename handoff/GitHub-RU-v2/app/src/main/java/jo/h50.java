@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h50 {
-    public boolean a;
-    public String b;
+    public final boolean a;
+    public final String b;
 
     public h50(String str, boolean z) {
         this.a = z;

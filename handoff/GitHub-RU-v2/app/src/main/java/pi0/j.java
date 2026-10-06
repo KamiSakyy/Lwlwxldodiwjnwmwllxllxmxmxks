@@ -4,8 +4,8 @@ import ri0.r8;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j {
-    public String a;
-    public r8 b;
+    public final String a;
+    public final r8 b;
 
     public j(String str, r8 r8Var) {
         this.a = str;

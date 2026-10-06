@@ -5,7 +5,7 @@ import android.os.Bundle;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class SettingsNotificationSchedulesActivity extends e<ic.j0> {
     public static final a Companion = new a();
-    public int v0;
+    public final int v0;
 
     public static final class a {
     }

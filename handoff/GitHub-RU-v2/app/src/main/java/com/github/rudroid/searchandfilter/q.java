@@ -21,34 +21,34 @@ import y71.y1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public class q extends androidx.lifecycle.k1 {
     public static final b Companion = new b();
-    public j71.c A;
-    public com.github.rudroid.searchandfilter.newflags.i B;
-    public com.github.rudroid.searchandfilter.newflags.k C;
-    public y1 D;
-    public y1 E;
-    public y1 F;
-    public r3Shadow G;
-    public y1 H;
-    public y00.l I;
-    public y1 J;
-    public y00.l K;
-    public y1 L;
-    public y71.i1 M;
+    public final j71.c A;
+    public final com.github.rudroid.searchandfilter.newflags.i B;
+    public final com.github.rudroid.searchandfilter.newflags.k C;
+    public final y1 D;
+    public final y1 E;
+    public final y1 F;
+    public final r3Shadow G;
+    public final y1 H;
+    public final y00.l I;
+    public final y1 J;
+    public final y00.l K;
+    public final y1 L;
+    public final y71.i1 M;
     public v71.q1 N;
-    public bm.u s;
+    public final bm.u s;
     public List t;
-    public boolean u;
-    public c v;
-    public a w;
-    public com.github.rudroid.activities.util.a x;
-    public tm.e y;
-    public d z;
+    public final boolean u;
+    public final c v;
+    public final a w;
+    public final com.github.rudroid.activities.util.a x;
+    public final tm.e y;
+    public final d z;
 
     public static final class a {
-        public com.github.rudroid.activities.util.a a;
-        public kj.j b;
-        public MobileAppElement c;
-        public MobileEventContext d;
+        public final com.github.rudroid.activities.util.a a;
+        public final kj.j b;
+        public final MobileAppElement c;
+        public final MobileEventContext d;
 
         public a(com.github.rudroid.activities.util.a aVar, kj.j jVar, MobileAppElement mobileAppElement, MobileEventContext mobileEventContext) {
             k71.k.g(aVar, "accountHolder");
@@ -93,11 +93,11 @@ public class q extends androidx.lifecycle.k1 {
     }
 
     public static final class c {
-        public com.github.rudroid.activities.util.a a;
-        public yl.d b;
-        public yl.a c;
-        public yl.c d;
-        public fk.f e;
+        public final com.github.rudroid.activities.util.a a;
+        public final yl.d b;
+        public final yl.a c;
+        public final yl.c d;
+        public final fk.f e;
 
         public c(com.github.rudroid.activities.util.a aVar, yl.d dVar, yl.a aVar2, yl.c cVar, fk.f fVar) {
             k71.k.g(aVar, "accountHolder");
@@ -113,9 +113,9 @@ public class q extends androidx.lifecycle.k1 {
     }
 
     public static final class d {
-        public com.github.rudroid.activities.util.a a;
-        public ShortcutType b;
-        public com.github.service.models.response.shortcuts.a c;
+        public final com.github.rudroid.activities.util.a a;
+        public final ShortcutType b;
+        public final com.github.service.models.response.shortcuts.a c;
 
         public d(com.github.rudroid.activities.util.c cVar, ShortcutType shortcutType, com.github.service.models.response.shortcuts.a aVar) {
             k71.k.g(cVar, "accountHolder");

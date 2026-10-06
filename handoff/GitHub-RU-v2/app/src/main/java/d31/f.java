@@ -21,8 +21,8 @@ public final class f {
     public final /* synthetic */ int a;
     public boolean b;
     public int c;
-    public Object d;
-    public Object e;
+    public final Object d;
+    public final Object e;
 
     public f(long[] jArr, RemoteViews[] remoteViewsArr) {
         this.a = 1;

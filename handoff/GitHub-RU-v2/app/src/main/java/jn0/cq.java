@@ -2,18 +2,18 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class cq {
-    public String a;
-    public String b;
-    public String c;
-    public pz0.cu d;
-    public iq e;
-    public String f;
-    public pz0.kt g;
-    public yp0.c h;
-    public gu0.c i;
-    public bw0.c j;
-    public gt0.a k;
-    public at0.a l;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final pz0.cu d;
+    public final iq e;
+    public final String f;
+    public final pz0.kt g;
+    public final yp0.c h;
+    public final gu0.c i;
+    public final bw0.c j;
+    public final gt0.a k;
+    public final at0.a l;
 
     public cq(String str, String str2, String str3, pz0.cu cuVar, iq iqVar, String str4, pz0.kt ktVar, yp0.c cVar, gu0.c cVar2, bw0.c cVar3, gt0.a aVar, at0.a aVar2) {
         this.a = str;

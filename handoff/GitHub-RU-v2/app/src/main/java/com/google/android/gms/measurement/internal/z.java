@@ -5,8 +5,8 @@ import java.util.Iterator;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z extends a0 {
-    public x.e t;
-    public x.e u;
+    public final x.e t;
+    public final x.e u;
     public long v;
 
     public z(o1 o1Var) {
@@ -111,5 +111,4 @@ public final class z extends a0 {
         }
         this.v = j;
     }
-    public Object C(long) { return null; }
 }

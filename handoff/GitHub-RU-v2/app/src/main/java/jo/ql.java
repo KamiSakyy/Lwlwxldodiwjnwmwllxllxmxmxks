@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ql implements aaShadow.m0 {
-    public rl a;
+    public final rl a;
 
     public ql(rl rlVar) {
         this.a = rlVar;

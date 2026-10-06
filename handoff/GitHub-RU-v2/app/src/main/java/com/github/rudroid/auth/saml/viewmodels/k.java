@@ -6,10 +6,10 @@ import com.github.service.models.response.organizations.OrganizationNameAndAvata
 public final class k {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f8600a;
+    public final String f8600a;
 
     /* renamed from: b, reason: collision with root package name */
-    public OrganizationNameAndAvatarUrl f8601b;
+    public final OrganizationNameAndAvatarUrl f8601b;
 
     public k(String str, OrganizationNameAndAvatarUrl organizationNameAndAvatarUrl) {
         this.f8600a = str;

@@ -10,12 +10,12 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b implements h0 {
-    public String a;
-    public String b;
-    public a c;
-    public ZonedDateTime d;
-    public String e;
-    public String f;
+    public final String a;
+    public final String b;
+    public final a c;
+    public final ZonedDateTime d;
+    public final String e;
+    public final String f;
 
     public b(String str, String str2, a aVar, ZonedDateTime zonedDateTime, String str3, String str4) {
         this.a = str;

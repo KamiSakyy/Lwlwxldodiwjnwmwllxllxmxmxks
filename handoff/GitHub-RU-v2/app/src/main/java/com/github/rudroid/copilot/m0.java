@@ -35,7 +35,7 @@ final class m0 extends c71.j implements j71.e {
         return r((a71.c) obj2, (v71.z) obj).v(w61.a0.a);
     }
 
-    public static final Object v(Object obj) {
+    public final Object v(Object obj) {
         m0 m0Var;
         b71.a aVar = b71.a.r;
         int i = this.f9889v;
@@ -58,8 +58,8 @@ final class m0 extends c71.j implements j71.e {
         m0Var.f9892y.a();
         return w61.a0.a;
     }
-    public static Object a(Object p1, Object p2, Object p3) { return null; }
-    public static Object k(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
-    public static Object o(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object k(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object o(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
     public Object v(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

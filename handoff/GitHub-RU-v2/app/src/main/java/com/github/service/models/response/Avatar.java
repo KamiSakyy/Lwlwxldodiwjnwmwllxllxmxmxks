@@ -14,8 +14,8 @@ import w61.i;
 @e
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class Avatar implements Parcelable {
-    public String r;
-    public Type s;
+    public final String r;
+    public final Type s;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<Avatar> CREATOR = new b();
     public static final h[] t = {null, w.s(i.r, new wm.a(21))};

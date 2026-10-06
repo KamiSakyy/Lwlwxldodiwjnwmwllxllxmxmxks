@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class oa {
-    public String a;
-    public String b;
-    public pa c;
-    public yf0.d0 d;
+    public final String a;
+    public final String b;
+    public final pa c;
+    public final yf0.d0 d;
 
     public oa(String str, String str2, pa paVar, yf0.d0 d0Var) {
         k71.k.g(str, "__typename");

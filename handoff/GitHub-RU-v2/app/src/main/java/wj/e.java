@@ -13,12 +13,12 @@ import x.i;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
     public static final d Companion = new d();
-    public int a;
-    public String b;
-    public String c;
-    public String d;
-    public String e;
-    public String f;
+    public final int a;
+    public final String b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final String f;
 
     public e(int i, String str, String str2, String str3, String str4, String str5) {
         k.g(str, "appElement");
@@ -74,5 +74,5 @@ public final class e {
         String zonedDateTime = ZonedDateTime.now(ZoneOffset.UTC).toString();
         k.f(zonedDateTime, "toString(...)");
     }
-    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class gb implements aaShadow.v0 {
-    public jb a;
-    public kb b;
+    public final jb a;
+    public final kb b;
 
     public gb(jb jbVar, kb kbVar) {
         this.a = jbVar;

@@ -2,8 +2,8 @@ package wx0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class q4 {
-    public String a;
-    public i5 b;
+    public final String a;
+    public final i5 b;
 
     public q4(String str, i5 i5Var) {
         this.a = str;

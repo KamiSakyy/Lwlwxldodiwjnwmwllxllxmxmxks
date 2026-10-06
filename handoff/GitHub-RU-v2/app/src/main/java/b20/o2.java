@@ -2,7 +2,7 @@ package b20;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o2 implements aa.v0 {
-    public p2 a;
+    public final p2 a;
 
     public o2(p2 p2Var) {
         this.a = p2Var;

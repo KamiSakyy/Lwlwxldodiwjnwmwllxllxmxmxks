@@ -12,7 +12,7 @@ public final class i9 {
     public static final i9 w;
     public static final /* synthetic */ i9[] x;
     public static final /* synthetic */ d71.b y;
-    public String r;
+    public final String r;
 
     static {
         i9 i9Var = new i9("DUPLICATE", 0, "DUPLICATE");

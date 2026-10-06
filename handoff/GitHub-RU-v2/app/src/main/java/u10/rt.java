@@ -2,7 +2,7 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class rt implements aaShadow.v0 {
-    public st a;
+    public final st a;
 
     public rt(st stVar) {
         this.a = stVar;

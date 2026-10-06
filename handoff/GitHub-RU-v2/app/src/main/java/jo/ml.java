@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ml implements aaShadow.m0 {
-    public nl a;
+    public final nl a;
 
     public ml(nl nlVar) {
         this.a = nlVar;

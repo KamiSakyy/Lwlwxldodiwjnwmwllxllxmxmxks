@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ic {
-    public String a;
-    public gn0.qw b;
+    public final String a;
+    public final gn0.qw b;
 
     public ic(String str, gn0.qw qwVar) {
         this.a = str;

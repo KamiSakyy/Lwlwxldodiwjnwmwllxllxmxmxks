@@ -4,12 +4,12 @@ import hc0.fq;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t2 {
-    public String a;
-    public String b;
-    public s2 c;
-    public fq d;
-    public p2 e;
-    public String f;
+    public final String a;
+    public final String b;
+    public final s2 c;
+    public final fq d;
+    public final p2 e;
+    public final String f;
 
     public t2(String str, String str2, s2 s2Var, fq fqVar, p2 p2Var, String str3) {
         this.a = str;

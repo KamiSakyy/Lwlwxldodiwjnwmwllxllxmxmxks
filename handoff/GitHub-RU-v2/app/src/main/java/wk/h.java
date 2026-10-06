@@ -8,10 +8,10 @@ import z01.a0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public i a;
-    public j b;
-    public oa.g c;
-    public r d;
+    public final i a;
+    public final j b;
+    public final oa.g c;
+    public final r d;
 
     public h(i iVar, j jVar, oa.g gVar, r rVar) {
         k.g(iVar, "refreshMyWorkItemsUseCase");

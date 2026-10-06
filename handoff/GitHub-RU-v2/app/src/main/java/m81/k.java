@@ -4,7 +4,7 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class k extends a {
-    public kotlinx.serialization.json.b f;
+    public final kotlinx.serialization.json.b f;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public k(l81.c cVar, kotlinx.serialization.json.b bVar, String str) {

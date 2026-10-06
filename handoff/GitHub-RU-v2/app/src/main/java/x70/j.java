@@ -4,8 +4,8 @@ import z70.c8;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class j {
-    public String a;
-    public c8 b;
+    public final String a;
+    public final c8 b;
 
     public j(String str, c8 c8Var) {
         this.a = str;

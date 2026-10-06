@@ -13,14 +13,14 @@ public final class ServerAndCapabilitiesWorker extends CoroutineWorker {
     public static final a Companion = new a();
 
     /* renamed from: g, reason: collision with root package name */
-    public v f4359g;
+    public final v f4359g;
 
     /* renamed from: h, reason: collision with root package name */
-    public ji.c f4360h;
-    public ji.e i;
+    public final ji.c f4360h;
+    public final ji.e i;
 
     /* renamed from: j, reason: collision with root package name */
-    public com.github.rudroid.featureflags.f f4361j;
+    public final com.github.rudroid.featureflags.f f4361j;
 
     public static final class a {
     }

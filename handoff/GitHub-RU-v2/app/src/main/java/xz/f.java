@@ -5,11 +5,11 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f implements aa.h0 {
-    public String a;
-    public String b;
-    public a c;
-    public e d;
-    public String e;
+    public final String a;
+    public final String b;
+    public final a c;
+    public final e d;
+    public final String e;
 
     public f(String str, String str2, a aVar, e eVar, String str3) {
         k71.k.g(str3, "__typename");

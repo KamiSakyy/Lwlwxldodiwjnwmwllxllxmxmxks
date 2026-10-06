@@ -2,11 +2,11 @@ package y41;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class x0 extends z1 {
-    public long a;
-    public String b;
-    public String c;
-    public long d;
-    public int e;
+    public final long a;
+    public final String b;
+    public final String c;
+    public final long d;
+    public final int e;
 
     public x0(long j, String str, String str2, long j2, int i) {
         this.a = j;

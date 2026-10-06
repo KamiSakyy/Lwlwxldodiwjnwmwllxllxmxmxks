@@ -6,16 +6,16 @@ import android.view.animation.Interpolator;
 public abstract class w1 {
 
     /* renamed from: a, reason: collision with root package name */
-    public int f505a;
+    public final int f505a;
 
     /* renamed from: b, reason: collision with root package name */
     public float f506b;
 
     /* renamed from: c, reason: collision with root package name */
-    public Interpolator f507c;
+    public final Interpolator f507c;
 
     /* renamed from: d, reason: collision with root package name */
-    public long f508d;
+    public final long f508d;
 
     public w1(int i, Interpolator interpolator, long j10) {
         this.f505a = i;

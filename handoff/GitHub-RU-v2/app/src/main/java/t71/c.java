@@ -6,13 +6,13 @@ import java.util.Iterator;
 public final class c implements s71.h {
 
     /* renamed from: a, reason: collision with root package name */
-    public CharSequence f32115a;
+    public final CharSequence f32115a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f32116b;
+    public final int f32116b;
 
     /* renamed from: c, reason: collision with root package name */
-    public j71.e f32117c;
+    public final j71.e f32117c;
 
     public c(CharSequence charSequence, int i, j71.e eVar) {
         k71.k.g(charSequence, "input");

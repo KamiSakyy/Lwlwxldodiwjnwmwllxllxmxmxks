@@ -25,14 +25,14 @@ import x81.x;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class n extends x81.l implements v81.d {
-    public t81.e b;
-    public d0 c;
-    public Socket d;
-    public Socket e;
-    public q81.m f;
-    public v g;
-    public l51.h h;
-    public int i;
+    public final t81.e b;
+    public final d0 c;
+    public final Socket d;
+    public final Socket e;
+    public final q81.m f;
+    public final v g;
+    public final l51.h h;
+    public final int i;
     public x81.o j;
     public boolean k;
     public boolean l;
@@ -40,7 +40,7 @@ public final class n extends x81.l implements v81.d {
     public int n;
     public int o;
     public int p;
-    public ArrayList q;
+    public final ArrayList q;
     public long r;
 
     public n(t81.e eVar, t0 t0Var, d0 d0Var, Socket socket, Socket socket2, q81.m mVar, v vVar, l51.h hVar, int i) {

@@ -4,16 +4,16 @@ package d1;
 public final class s0Shadow {
 
     /* renamed from: a, reason: collision with root package name */
-    public s0.c0 f21216a;
+    public final s0.c0 f21216a;
 
     /* renamed from: b, reason: collision with root package name */
-    public long f21217b;
+    public final long f21217b;
 
     /* renamed from: c, reason: collision with root package name */
-    public r0 f21218c;
+    public final r0 f21218c;
 
     /* renamed from: d, reason: collision with root package name */
-    public boolean f21219d;
+    public final boolean f21219d;
 
     public s0(s0.c0 c0Var, long j10, r0 r0Var, boolean z10) {
         this.f21216a = c0Var;
@@ -53,5 +53,5 @@ public final class s0Shadow {
         public c0() {
         }
     }
-    public static Object b(Object p1, Object p2, Object p3) { return null; }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

@@ -2,14 +2,14 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r4 {
-    public String a;
-    public m10.t3 b;
-    public String c;
-    public String d;
-    public String e;
-    public int f;
-    public h4 g;
-    public boolean h;
+    public final String a;
+    public final m10.t3 b;
+    public final String c;
+    public final String d;
+    public final String e;
+    public final int f;
+    public final h4 g;
+    public final boolean h;
 
     public r4(String str, m10.t3 t3Var, String str2, String str3, String str4, int i, h4 h4Var, boolean z) {
         this.a = str;

@@ -8,7 +8,7 @@ import java.util.Arrays;
 /* loaded from: /home/user/work/p/classes5.dex */
 public class k implements Serializable, Comparable {
     public static final k u = new k(new byte[0]);
-    public byte[] r;
+    public final byte[] r;
     public transient int s;
     public transient String t;
 
@@ -471,5 +471,4 @@ public class k implements Serializable, Comparable {
 
     public k(Object... a) {
     }
-    public Object i(int) { return null; }
 }

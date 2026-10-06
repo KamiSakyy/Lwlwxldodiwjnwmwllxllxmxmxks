@@ -12,19 +12,19 @@ public final class j0 extends k1 {
     public static final a Companion = new a();
 
     /* renamed from: s, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f8371s;
+    public final com.github.rudroid.activities.util.c f8371s;
 
     /* renamed from: t, reason: collision with root package name */
-    public vi.a f8372t;
+    public final vi.a f8372t;
 
     /* renamed from: u, reason: collision with root package name */
-    public vi.c f8373u;
+    public final vi.c f8373u;
 
     /* renamed from: v, reason: collision with root package name */
-    public ui.e f8374v;
+    public final ui.e f8374v;
 
     /* renamed from: w, reason: collision with root package name */
-    public y1 f8375w;
+    public final y1 f8375w;
 
     public static final class a {
     }

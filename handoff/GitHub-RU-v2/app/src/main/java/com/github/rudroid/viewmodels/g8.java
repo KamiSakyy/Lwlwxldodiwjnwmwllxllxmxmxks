@@ -14,13 +14,13 @@ import java.util.concurrent.CancellationException;
 public final class g8 extends androidx.lifecycle.k1 implements com.github.rudroid.utilities.viewmodel.d {
     public String A;
     public final /* synthetic */ d.a s;
-    public zk.c0 t;
-    public zk.u0 u;
-    public com.github.rudroid.activities.util.c v;
-    public LinkedHashMap w;
-    public y71.y1 x;
-    public y71.y1 y;
-    public y71.i1 z;
+    public final zk.c0 t;
+    public final zk.u0 u;
+    public final com.github.rudroid.activities.util.c v;
+    public final LinkedHashMap w;
+    public final y71.y1 x;
+    public final y71.y1 y;
+    public final y71.i1 z;
 
     public g8(zk.c0 c0Var, zk.u0 u0Var, com.github.rudroid.activities.util.c cVar) {
         k71.k.g(c0Var, "fetchSubIssuesUseCase");

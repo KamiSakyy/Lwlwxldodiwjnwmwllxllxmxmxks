@@ -13,7 +13,7 @@ import com.google.android.material.chip.Chip;
 /* loaded from: /home/user/work/p/classes4.dex */
 class TimePickerView extends ConstraintLayout {
     public static final /* synthetic */ int I = 0;
-    public Chip H;
+    public final Chip H;
 
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r0v5, types: [android.view.View, com.google.android.material.chip.Chip] */

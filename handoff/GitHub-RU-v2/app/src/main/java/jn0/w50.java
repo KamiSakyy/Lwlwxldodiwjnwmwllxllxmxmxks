@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w50 {
-    public v50 a;
+    public final v50 a;
 
     public w50(v50 v50Var) {
         this.a = v50Var;

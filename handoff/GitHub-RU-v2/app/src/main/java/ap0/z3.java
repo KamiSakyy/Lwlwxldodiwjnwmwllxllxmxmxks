@@ -2,14 +2,14 @@ package ap0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class z3 implements aa.h0 {
-    public String a;
-    public Integer b;
-    public o3 c;
-    public boolean d;
-    public w3 e;
-    public v3 f;
-    public boolean g;
-    public String h;
+    public final String a;
+    public final Integer b;
+    public final o3 c;
+    public final boolean d;
+    public final w3 e;
+    public final v3 f;
+    public final boolean g;
+    public final String h;
 
     public z3(String str, Integer num, o3 o3Var, boolean z, w3 w3Var, v3 v3Var, boolean z2, String str2) {
         this.a = str;

@@ -8,7 +8,7 @@ import sy.d0;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class a extends u91.b {
-    public h0 e;
+    public final h0 e;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public a(t91.d dVar, q1 q1Var, q71.g gVar, int i, int i2) {

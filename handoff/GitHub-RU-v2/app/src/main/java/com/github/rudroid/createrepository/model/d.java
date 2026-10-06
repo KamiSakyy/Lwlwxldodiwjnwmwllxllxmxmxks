@@ -7,16 +7,16 @@ import k71.k;
 public final class d {
 
     /* renamed from: a, reason: collision with root package name */
-    public a f10590a;
+    public final a f10590a;
 
     /* renamed from: b, reason: collision with root package name */
-    public g1 f10591b;
+    public final g1 f10591b;
 
     /* renamed from: c, reason: collision with root package name */
-    public g1 f10592c;
+    public final g1 f10592c;
 
     /* renamed from: d, reason: collision with root package name */
-    public String f10593d;
+    public final String f10593d;
 
     public d(a aVar, g1 g1Var, g1 g1Var2, String str) {
         k.g(aVar, "createRepositoryFormData");

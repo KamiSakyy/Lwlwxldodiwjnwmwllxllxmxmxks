@@ -6,14 +6,14 @@ import com.github.rudroid.m0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g implements h0 {
-    public String a;
-    public e b;
-    public Integer c;
-    public boolean d;
-    public boolean e;
-    public int f;
-    public f g;
-    public String h;
+    public final String a;
+    public final e b;
+    public final Integer c;
+    public final boolean d;
+    public final boolean e;
+    public final int f;
+    public final f g;
+    public final String h;
 
     public g(String str, e eVar, Integer num, boolean z, boolean z2, int i, f fVar, String str2) {
         this.a = str;

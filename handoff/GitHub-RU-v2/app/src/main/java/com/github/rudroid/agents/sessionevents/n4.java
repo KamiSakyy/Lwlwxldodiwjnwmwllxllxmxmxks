@@ -6,16 +6,16 @@ import java.util.Map;
 final class n4 {
 
     /* renamed from: a, reason: collision with root package name */
-    public com.github.rudroid.utilities.ui.g1 f7739a;
+    public final com.github.rudroid.utilities.ui.g1 f7739a;
 
     /* renamed from: b, reason: collision with root package name */
-    public j4 f7740b;
+    public final j4 f7740b;
 
     /* renamed from: c, reason: collision with root package name */
-    public Map f7741c;
+    public final Map f7741c;
 
     /* renamed from: d, reason: collision with root package name */
-    public boolean f7742d;
+    public final boolean f7742d;
 
     public n4(com.github.rudroid.utilities.ui.g1 g1Var, j4 j4Var, Map map, boolean z10) {
         k71.k.g(g1Var, "steeringState");

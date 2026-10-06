@@ -5,9 +5,9 @@ import v71.z;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class a extends oa.c {
-    public z b;
-    public v c;
-    public qe.a d;
+    public final z b;
+    public final v c;
+    public final qe.a d;
 
     public a(z zVar, v vVar, qe.a aVar) {
         k71.k.g(zVar, "applicationScope");

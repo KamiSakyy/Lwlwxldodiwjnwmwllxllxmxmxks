@@ -18,38 +18,38 @@ import yz0.v2;
 /* loaded from: /home/user/work/p/classes.dex */
 public final class j extends k1 implements v3 {
     public static final a Companion = new a();
-    public String A;
-    public x1 B;
-    public ProjectsMetaInfo C;
-    public y1 D;
-    public y1 E;
-    public c00.g F;
+    public final String A;
+    public final x1 B;
+    public final ProjectsMetaInfo C;
+    public final y1 D;
+    public final y1 E;
+    public final c00.g F;
     public x01.i G;
     public q1 H;
 
     /* renamed from: s, reason: collision with root package name */
-    public im.g f16480s;
+    public final im.g f16480s;
 
     /* renamed from: t, reason: collision with root package name */
-    public im.d f16481t;
+    public final im.d f16481t;
 
     /* renamed from: u, reason: collision with root package name */
-    public im.f f16482u;
+    public final im.f f16482u;
 
     /* renamed from: v, reason: collision with root package name */
-    public com.github.rudroid.issueorpullrequest.triagesheet.milestone.a f16483v;
+    public final com.github.rudroid.issueorpullrequest.triagesheet.milestone.a f16483v;
 
     /* renamed from: w, reason: collision with root package name */
-    public com.github.rudroid.activities.util.c f16484w;
+    public final com.github.rudroid.activities.util.c f16484w;
 
     /* renamed from: x, reason: collision with root package name */
-    public v2 f16485x;
+    public final v2 f16485x;
 
     /* renamed from: y, reason: collision with root package name */
-    public String f16486y;
+    public final String f16486y;
 
     /* renamed from: z, reason: collision with root package name */
-    public String f16487z;
+    public final String f16487z;
 
     public static final class a {
     }

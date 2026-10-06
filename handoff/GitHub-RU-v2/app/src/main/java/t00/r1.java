@@ -17,5 +17,5 @@ public final class r1 extends c71.c {
         this.v |= Integer.MIN_VALUE;
         return this.w.c(null, this);
     }
-    public static boolean hasNext() { return null; }
+    public Object hasNext() { return null; }
 }

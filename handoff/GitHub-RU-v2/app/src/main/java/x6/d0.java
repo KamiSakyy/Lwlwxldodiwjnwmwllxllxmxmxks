@@ -4,29 +4,29 @@ package x6;
 public final class d0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public boolean f33812a;
+    public final boolean f33812a;
 
     /* renamed from: b, reason: collision with root package name */
-    public boolean f33813b;
+    public final boolean f33813b;
 
     /* renamed from: c, reason: collision with root package name */
-    public int f33814c;
+    public final int f33814c;
 
     /* renamed from: d, reason: collision with root package name */
-    public boolean f33815d;
+    public final boolean f33815d;
 
     /* renamed from: e, reason: collision with root package name */
-    public boolean f33816e;
+    public final boolean f33816e;
 
     /* renamed from: f, reason: collision with root package name */
-    public int f33817f;
+    public final int f33817f;
 
     /* renamed from: g, reason: collision with root package name */
-    public int f33818g;
+    public final int f33818g;
 
     /* renamed from: h, reason: collision with root package name */
-    public int f33819h;
-    public int i;
+    public final int f33819h;
+    public final int i;
 
     /* renamed from: j, reason: collision with root package name */
     public String f33820j;

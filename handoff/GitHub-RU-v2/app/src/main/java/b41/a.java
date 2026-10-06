@@ -4,12 +4,12 @@ import android.app.PendingIntent;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a {
-    public int a;
-    public int b;
-    public int c;
-    public int d;
-    public PendingIntent e;
-    public PendingIntent f;
+    public final int a;
+    public final int b;
+    public final int c;
+    public final int d;
+    public final PendingIntent e;
+    public final PendingIntent f;
     public boolean g = false;
 
     public a(int i, int i2, int i3, int i4, long j, long j2, PendingIntent pendingIntent, PendingIntent pendingIntent2, PendingIntent pendingIntent3, PendingIntent pendingIntent4) {
@@ -36,7 +36,7 @@ public final class a {
         }
         return pendingIntent;
     }
-    public static Object g(Object p1, Object p2) { return null; }
-    public static Object i0(Object p1) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
+    public Object i0(Object p1) { return null; }
     public static final Object r = null;
 }

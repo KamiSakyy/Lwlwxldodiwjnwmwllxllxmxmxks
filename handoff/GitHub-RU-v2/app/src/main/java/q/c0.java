@@ -10,7 +10,7 @@ import android.widget.SeekBar;
 public final class c0 extends SeekBar {
 
     /* renamed from: r, reason: collision with root package name */
-    public d0 f30556r;
+    public final d0 f30556r;
 
     public c0(Context context, AttributeSet attributeSet) {
         super(context, attributeSet, 2130969717);

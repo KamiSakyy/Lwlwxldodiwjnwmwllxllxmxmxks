@@ -2,7 +2,7 @@ package fa1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class h0 extends x0 {
-    public boolean d;
+    public final boolean d;
 
     public h0(boolean z) {
         this.d = z;

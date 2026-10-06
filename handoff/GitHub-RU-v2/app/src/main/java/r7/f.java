@@ -6,16 +6,16 @@ import k71.k;
 public final class f implements Comparable {
 
     /* renamed from: r, reason: collision with root package name */
-    public int f31202r;
+    public final int f31202r;
 
     /* renamed from: s, reason: collision with root package name */
-    public int f31203s;
+    public final int f31203s;
 
     /* renamed from: t, reason: collision with root package name */
-    public String f31204t;
+    public final String f31204t;
 
     /* renamed from: u, reason: collision with root package name */
-    public String f31205u;
+    public final String f31205u;
 
     public f(int i, int i10, String str, String str2) {
         k.g(str, "from");

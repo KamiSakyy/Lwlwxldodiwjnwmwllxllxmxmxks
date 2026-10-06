@@ -4,8 +4,8 @@ import com.github.rudroid.common.m0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class k {
-    public m0 a;
-    public String b;
+    public final m0 a;
+    public final String b;
 
     public k(m0 m0Var, String str) {
         this.a = m0Var;

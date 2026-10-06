@@ -982,8 +982,4 @@ public class a implements b, k, g, h, e, n, g1, c, i0Shadow.k, d, o.a, l0, m1, b
 
     public a(Object... a) {
     }
-    public Object b(Object, Object) { return null; }
-    public Object g(Object, Object) { return null; }
-    public Object o(Object, Object) { return null; }
-    public Object q(Object) { return null; }
 }

@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q {
-    public String a;
-    public n b;
-    public String c;
+    public final String a;
+    public final n b;
+    public final String c;
 
     public q(String str, n nVar, String str2) {
         this.a = str;

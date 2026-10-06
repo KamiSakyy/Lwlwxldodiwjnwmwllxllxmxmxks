@@ -7,14 +7,14 @@ import hc0.p2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class f implements h0 {
-    public String a;
-    public p2 b;
-    public String c;
-    public j2 d;
-    public String e;
-    public a f;
-    public e g;
-    public String h;
+    public final String a;
+    public final p2 b;
+    public final String c;
+    public final j2 d;
+    public final String e;
+    public final a f;
+    public final e g;
+    public final String h;
 
     public f(String str, p2 p2Var, String str2, j2 j2Var, String str3, a aVar, e eVar, String str4) {
         this.a = str;

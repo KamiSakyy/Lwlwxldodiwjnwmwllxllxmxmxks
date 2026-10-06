@@ -5,9 +5,9 @@ import com.github.rudroid.copilot.h1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i {
-    public String a;
-    public String b;
-    public j c;
+    public final String a;
+    public final String b;
+    public final j c;
 
     public i(String str, String str2, j jVar) {
         k71.k.g(str, "__typename");

@@ -5,7 +5,7 @@ import k71.k;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
     public static final a Companion = new a();
-    public al.c a;
+    public final al.c a;
 
     public static final class a {
     }

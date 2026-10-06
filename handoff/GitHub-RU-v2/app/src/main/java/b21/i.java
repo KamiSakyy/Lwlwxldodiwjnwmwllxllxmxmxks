@@ -6,8 +6,8 @@ import com.google.android.material.datepicker.MaterialCalendar;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i implements Runnable {
     public final /* synthetic */ int r;
-    public int s;
-    public Object t;
+    public final int s;
+    public final Object t;
 
     public /* synthetic */ i(Object obj, int i, int i2) {
         this.r = i2;

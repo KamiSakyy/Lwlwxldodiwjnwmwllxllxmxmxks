@@ -2,17 +2,17 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p40 {
-    public String a;
-    public String b;
-    public String c;
-    public hc0.jc d;
-    public String e;
-    public q40 f;
-    public t40 g;
-    public boolean h;
-    public i30.i i;
-    public c60.j j;
-    public c40.c k;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final hc0.jc d;
+    public final String e;
+    public final q40 f;
+    public final t40 g;
+    public final boolean h;
+    public final i30.i i;
+    public final c60.j j;
+    public final c40.c k;
 
     public p40(String str, String str2, String str3, hc0.jc jcVar, String str4, q40 q40Var, t40 t40Var, boolean z, i30.i iVar, c60.j jVar, c40.c cVar) {
         this.a = str;

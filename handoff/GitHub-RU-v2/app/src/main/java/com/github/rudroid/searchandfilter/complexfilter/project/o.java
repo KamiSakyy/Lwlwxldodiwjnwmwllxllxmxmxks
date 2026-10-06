@@ -4,8 +4,8 @@ import com.github.service.models.response.LegacyProjectWithNumber;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o {
-    public LegacyProjectWithNumber a;
-    public boolean b;
+    public final LegacyProjectWithNumber a;
+    public final boolean b;
 
     public o(LegacyProjectWithNumber legacyProjectWithNumber, boolean z) {
         k71.k.g(legacyProjectWithNumber, "project");

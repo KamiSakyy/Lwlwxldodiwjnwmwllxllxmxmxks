@@ -7,7 +7,7 @@ package h0;
 public class l {
     public l() {
     }
-    public static Object j1(Object p1, Object p2, Object p3) { return null; }
+    public Object j1(Object p1, Object p2, Object p3) { return null; }
     public Object k1() { return null; }
     public Object Z = null;
     public Object a0 = null;

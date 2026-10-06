@@ -26,8 +26,8 @@ public final class x0 {
     public boolean Q;
     public long R;
     public long S;
-    public o1 a;
-    public String b;
+    public final o1 a;
+    public final String b;
     public String c;
     public String d;
     public String e;

@@ -14,7 +14,7 @@ public final class PullRequestMergeAction {
     public static final PullRequestMergeAction DIRECT_MERGE = new PullRequestMergeAction("DIRECT_MERGE", 0, "DIRECT_MERGE");
     public static final PullRequestMergeAction MERGE_QUEUE = new PullRequestMergeAction("MERGE_QUEUE", 1, "MERGE_QUEUE");
     public static final PullRequestMergeAction UNKNOWN__ = new PullRequestMergeAction("UNKNOWN__", 2, "UNKNOWN__");
-    private String rawValue;
+    private final String rawValue;
 
     private static final /* synthetic */ PullRequestMergeAction[] $values() {
         return new PullRequestMergeAction[]{DIRECT_MERGE, MERGE_QUEUE, UNKNOWN__};

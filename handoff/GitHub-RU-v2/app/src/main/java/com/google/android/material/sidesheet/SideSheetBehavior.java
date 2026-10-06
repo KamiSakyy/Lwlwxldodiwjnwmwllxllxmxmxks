@@ -50,28 +50,28 @@ import u31.m;
 /* loaded from: /home/user/work/p/classes4.dex */
 public class SideSheetBehavior<V extends View> extends b implements p31.b {
     public n a;
-    public j b;
-    public ColorStateList c;
-    public u31.n d;
-    public f e;
-    public float f;
-    public boolean g;
+    public final j b;
+    public final ColorStateList c;
+    public final u31.n d;
+    public final f e;
+    public final float f;
+    public final boolean g;
     public int h;
     public d i;
     public boolean j;
-    public float k;
+    public final float k;
     public int l;
     public int m;
     public int n;
     public int o;
     public WeakReference p;
     public WeakReference q;
-    public int r;
+    public final int r;
     public VelocityTracker s;
     public h t;
     public int u;
-    public LinkedHashSet v;
-    public c w;
+    public final LinkedHashSet v;
+    public final c w;
 
     public SideSheetBehavior() {
         this.e = new f(this);

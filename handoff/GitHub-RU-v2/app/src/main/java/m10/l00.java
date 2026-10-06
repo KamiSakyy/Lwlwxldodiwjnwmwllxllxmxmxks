@@ -10,7 +10,7 @@ public final class l00 {
     public static final l00 u;
     public static final /* synthetic */ l00[] v;
     public static final /* synthetic */ d71.b w;
-    public String r;
+    public final String r;
 
     static {
         l00 l00Var = new l00("CLOSED", 0, "CLOSED");

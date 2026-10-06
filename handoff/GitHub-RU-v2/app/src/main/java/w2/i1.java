@@ -7,10 +7,10 @@ public final class i1 {
     public static final i1 f33055c = new i1(0, 0);
 
     /* renamed from: a, reason: collision with root package name */
-    public long f33056a;
+    public final long f33056a;
 
     /* renamed from: b, reason: collision with root package name */
-    public long f33057b;
+    public final long f33057b;
 
     public i1(long j10, long j11) {
         this.f33056a = j10;

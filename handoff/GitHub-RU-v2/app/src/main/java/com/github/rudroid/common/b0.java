@@ -6,10 +6,10 @@ import java.util.List;
 public final class b0<T> {
 
     /* renamed from: a, reason: collision with root package name */
-    public Object f9248a;
+    public final Object f9248a;
 
     /* renamed from: b, reason: collision with root package name */
-    public int f9249b;
+    public final int f9249b;
 
     public b0(int i, List list) {
         this.f9248a = list;

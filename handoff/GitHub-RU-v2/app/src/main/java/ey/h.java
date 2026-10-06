@@ -5,8 +5,8 @@ import m10.ba0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public ba0 a;
-    public ArrayList b;
+    public final ba0 a;
+    public final ArrayList b;
 
     public h(ba0 ba0Var, ArrayList arrayList) {
         this.a = ba0Var;

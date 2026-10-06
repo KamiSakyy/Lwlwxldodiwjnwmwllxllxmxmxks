@@ -4,8 +4,8 @@ import java.util.RandomAccess;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class y extends x61.e implements RandomAccess {
-    public k[] r;
-    public int[] s;
+    public final k[] r;
+    public final int[] s;
 
     public y(k[] kVarArr, int[] iArr) {
         this.r = kVarArr;

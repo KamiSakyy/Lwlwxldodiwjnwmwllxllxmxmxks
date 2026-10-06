@@ -4,10 +4,10 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class i0 {
-    public String a;
-    public int b;
-    public h0 c;
-    public List d;
+    public final String a;
+    public final int b;
+    public final h0 c;
+    public final List d;
 
     public i0(String str, int i, h0 h0Var, List list) {
         this.a = str;

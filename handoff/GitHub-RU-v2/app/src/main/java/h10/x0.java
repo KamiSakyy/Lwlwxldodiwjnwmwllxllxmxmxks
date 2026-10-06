@@ -29,6 +29,4 @@ public abstract class x0 {
         a = x61.l.r(new aa.m[]{new aa.m("discussionCategory", q0Var, (String) null, rVar, x61.l.r(new aa.k[]{new aa.k(p00.d, new aa.u0(new aa.t("repositoryOwner"))), new aa.k(p00.e, new aa.u0(new aa.t("repositoryName"))), new aa.k(p00.f, new aa.u0(new aa.t("slug")))}), r), new aa.m("id", v8.l0.b(xVar2), (String) null, rVar, rVar, rVar), new aa.m("__typename", v8.l0.b(xVar), (String) null, rVar, rVar, rVar)});
     }
     public Object d(Object p1) { return null; }
-    public Object c(Object, Object, Object, Object, Object) { return null; }
-    public Object d(Object) { return null; }
 }

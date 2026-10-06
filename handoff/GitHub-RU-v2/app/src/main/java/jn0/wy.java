@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class wy implements aaShadow.v0 {
-    public bz a;
-    public String b;
-    public String c;
+    public final bz a;
+    public final String b;
+    public final String c;
 
     public wy(bz bzVar, String str, String str2) {
         this.a = bzVar;

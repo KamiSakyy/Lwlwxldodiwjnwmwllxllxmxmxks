@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class z40 {
-    public String a;
-    public String b;
-    public tu.s c;
+    public final String a;
+    public final String b;
+    public final tu.s c;
 
     public z40(String str, String str2, tu.s sVar) {
         this.a = str;

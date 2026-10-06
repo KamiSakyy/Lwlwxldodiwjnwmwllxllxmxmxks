@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class wa0 {
-    public ra0 a;
-    public ua0 b;
+    public final ra0 a;
+    public final ua0 b;
 
     public wa0(ra0 ra0Var, ua0 ua0Var) {
         this.a = ra0Var;

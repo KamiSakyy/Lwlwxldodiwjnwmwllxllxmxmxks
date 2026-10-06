@@ -767,18 +767,4 @@ public final class b implements aa.a {
                 return;
         }
     }
-    public Object e(Object, Object, Object) { return null; }
-    public Object e(Object, Object, Object) { return null; }
-    public Object g(Object, Object) { return null; }
-    public Object g(Object, Object) { return null; }
-    public Object g(Object, Object) { return null; }
-    public Object g(Object, Object) { return null; }
-    public Object g(Object, Object) { return null; }
-    public Object g(Object, Object) { return null; }
-    public Object g(Object, Object) { return null; }
-    public Object g(Object, Object) { return null; }
-    public Object g(Object, Object) { return null; }
-    public Object g(Object, Object) { return null; }
-    public Object g(Object, Object) { return null; }
-    public Object g(Object, Object) { return null; }
 }

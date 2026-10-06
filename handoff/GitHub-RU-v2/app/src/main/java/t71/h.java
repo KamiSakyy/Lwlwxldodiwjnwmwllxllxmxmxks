@@ -7,13 +7,13 @@ public final class h {
     public static final h f32123d;
 
     /* renamed from: a, reason: collision with root package name */
-    public boolean f32124a;
+    public final boolean f32124a;
 
     /* renamed from: b, reason: collision with root package name */
-    public f f32125b;
+    public final f f32125b;
 
     /* renamed from: c, reason: collision with root package name */
-    public g f32126c;
+    public final g f32126c;
 
     static {
         f fVar = f.f32120a;

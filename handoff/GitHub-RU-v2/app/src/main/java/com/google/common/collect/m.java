@@ -17,9 +17,9 @@ public final class m implements Map, Serializable {
     public transient j r;
     public transient k s;
     public transient l t;
-    public transient Object u;
-    public transient Object[] v;
-    public transient int w;
+    public final transient Object u;
+    public final transient Object[] v;
+    public final transient int w;
 
     public m(int i, Object obj, Object[] objArr) {
         this.u = obj;

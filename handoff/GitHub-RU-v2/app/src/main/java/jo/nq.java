@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class nq {
-    public lq a;
-    public String b;
-    public String c;
+    public final lq a;
+    public final String b;
+    public final String c;
 
     public nq(lq lqVar, String str, String str2) {
         this.a = lqVar;

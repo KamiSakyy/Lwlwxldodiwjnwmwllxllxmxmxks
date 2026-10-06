@@ -4,7 +4,7 @@ package rh;
 public final class d extends f {
 
     public static final class a implements e {
-        public fl.b a;
+        public final fl.b a;
 
         public a(fl.b bVar) {
             k71.k.g(bVar, "executionError");
@@ -33,7 +33,7 @@ public final class d extends f {
     }
 
     public static final class b implements d {
-        public fl.b a;
+        public final fl.b a;
 
         public b(fl.b bVar) {
             k71.k.g(bVar, "executionError");
@@ -62,7 +62,7 @@ public final class d extends f {
     }
 
     public static final class c implements d {
-        public fl.b a;
+        public final fl.b a;
 
         public c(fl.b bVar) {
             k71.k.g(bVar, "executionError");

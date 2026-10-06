@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class u20 {
-    public String a;
-    public l20 b;
+    public final String a;
+    public final l20 b;
 
     public u20(String str, l20 l20Var) {
         this.a = str;

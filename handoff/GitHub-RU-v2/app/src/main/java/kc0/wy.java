@@ -2,8 +2,8 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class wy implements aaShadow.v0 {
-    public ez a;
-    public fz b;
+    public final ez a;
+    public final fz b;
 
     public wy(ez ezVar, fz fzVar) {
         this.a = ezVar;

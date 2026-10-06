@@ -16,7 +16,7 @@ import y21.a;
 public class SnackbarContentLayout extends LinearLayout implements j {
     public TextView r;
     public Button s;
-    public TimeInterpolator t;
+    public final TimeInterpolator t;
     public int u;
 
     public SnackbarContentLayout(Context context, AttributeSet attributeSet) {

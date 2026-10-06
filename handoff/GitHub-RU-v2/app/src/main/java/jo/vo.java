@@ -2,8 +2,8 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class vo {
-    public String a;
-    public cq.x2 b;
+    public final String a;
+    public final cq.x2 b;
 
     public vo(String str, cq.x2 x2Var) {
         this.a = str;

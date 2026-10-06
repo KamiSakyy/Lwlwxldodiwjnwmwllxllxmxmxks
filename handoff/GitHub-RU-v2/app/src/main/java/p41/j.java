@@ -7,9 +7,9 @@ import java.util.concurrent.Executor;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class j implements m51.c, m51.b {
-    public HashMap a;
+    public final HashMap a;
     public ArrayDeque b;
-    public q41.k c;
+    public final q41.k c;
 
     public j() {
         q41.k kVar = q41.k.r;

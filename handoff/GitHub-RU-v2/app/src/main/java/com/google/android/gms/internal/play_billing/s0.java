@@ -7,7 +7,7 @@ import java.util.logging.Level;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s0 implements u0 {
     public static final t0 s = new t0(s0.class);
-    public Object r;
+    public final Object r;
 
     public s0(Object obj) {
         this.r = obj;

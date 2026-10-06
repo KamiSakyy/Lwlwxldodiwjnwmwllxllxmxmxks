@@ -13,14 +13,14 @@ public final class DisableLiveUpdatesWorker extends CoroutineWorker {
     public static final v8.f f18512k;
 
     /* renamed from: g, reason: collision with root package name */
-    public oa.m f18513g;
+    public final oa.m f18513g;
 
     /* renamed from: h, reason: collision with root package name */
-    public sm.g f18514h;
-    public com.github.rudroid.utilities.e i;
+    public final sm.g f18514h;
+    public final com.github.rudroid.utilities.e i;
 
     /* renamed from: j, reason: collision with root package name */
-    public v71.v f18515j;
+    public final v71.v f18515j;
 
     public static final class a {
     }

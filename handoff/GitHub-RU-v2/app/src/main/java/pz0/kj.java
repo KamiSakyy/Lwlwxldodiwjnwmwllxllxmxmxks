@@ -8,7 +8,7 @@ public final class kj {
     public static final kj s;
     public static final /* synthetic */ kj[] t;
     public static final /* synthetic */ d71.b u;
-    public String r;
+    public final String r;
 
     static {
         kj kjVar = new kj("GESTURE", 0, "GESTURE");

@@ -11,7 +11,7 @@ public final class qf {
     public static final qf v;
     public static final /* synthetic */ qf[] w;
     public static final /* synthetic */ d71.b x;
-    public String r;
+    public final String r;
 
     static {
         qf qfVar = new qf("DISMISSED", 0, "DISMISSED");

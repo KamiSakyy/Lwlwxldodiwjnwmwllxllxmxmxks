@@ -5,7 +5,7 @@ import java.util.Iterator;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class k implements s71.h {
     public final /* synthetic */ int a;
-    public Object b;
+    public final Object b;
 
     public /* synthetic */ k(int i, Object obj) {
         this.a = i;

@@ -2,11 +2,11 @@ package dw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l1 implements aa.h0 {
-    public String a;
-    public String b;
-    public boolean c;
-    public k1 d;
-    public String e;
+    public final String a;
+    public final String b;
+    public final boolean c;
+    public final k1 d;
+    public final String e;
 
     public l1(String str, String str2, boolean z, k1 k1Var, String str3) {
         this.a = str;

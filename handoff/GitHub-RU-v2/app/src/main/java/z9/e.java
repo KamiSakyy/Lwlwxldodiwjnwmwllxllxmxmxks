@@ -12,10 +12,10 @@ public final class e implements e0 {
     public static final c f34645c = new c();
 
     /* renamed from: a, reason: collision with root package name */
-    public v f34646a;
+    public final v f34646a;
 
     /* renamed from: b, reason: collision with root package name */
-    public a81.d f34647b;
+    public final a81.d f34647b;
 
     public e(v vVar, a81.d dVar) {
         k.g(vVar, "dispatcher");

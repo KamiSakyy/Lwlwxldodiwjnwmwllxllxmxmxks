@@ -6,13 +6,13 @@ import java.util.Iterator;
 public class e implements Iterable, l71.a {
 
     /* renamed from: r, reason: collision with root package name */
-    public int f30996r;
+    public final int f30996r;
 
     /* renamed from: s, reason: collision with root package name */
-    public int f30997s;
+    public final int f30997s;
 
     /* renamed from: t, reason: collision with root package name */
-    public int f30998t;
+    public final int f30998t;
 
     public e(int i, int i10, int i11) {
         if (i11 == 0) {

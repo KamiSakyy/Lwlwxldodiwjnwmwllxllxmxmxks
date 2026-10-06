@@ -2,8 +2,8 @@ package mb0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class t {
-    public boolean a;
-    public boolean b;
+    public final boolean a;
+    public final boolean b;
 
     public t(boolean z, boolean z2) {
         this.a = z;

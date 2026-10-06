@@ -6,9 +6,9 @@ import yz0.q8;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b {
-    public boolean a;
-    public int b;
-    public q8 c;
+    public final boolean a;
+    public final int b;
+    public final q8 c;
 
     public b(boolean z, int i, q8 q8Var) {
         this.a = z;

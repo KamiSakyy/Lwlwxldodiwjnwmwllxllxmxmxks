@@ -23,12 +23,12 @@ public abstract class h extends FrameLayout {
     public Rect A;
     public boolean B;
     public i r;
-    public n s;
+    public final n s;
     public int t;
-    public float u;
-    public float v;
-    public int w;
-    public int x;
+    public final float u;
+    public final float v;
+    public final int w;
+    public final int x;
     public ColorStateList y;
     public PorterDuff.Mode z;
 

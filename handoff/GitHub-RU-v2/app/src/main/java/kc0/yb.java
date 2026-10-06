@@ -2,10 +2,10 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class yb {
-    public String a;
-    public xb b;
-    public String c;
-    public wi0.c d;
+    public final String a;
+    public final xb b;
+    public final String c;
+    public final wi0.c d;
 
     public yb(String str, xb xbVar, String str2, wi0.c cVar) {
         this.a = str;

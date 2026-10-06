@@ -49,7 +49,7 @@ public final class a {
         public static final EnumC0023a f10635z;
 
         /* renamed from: r, reason: collision with root package name */
-        public String f10636r;
+        public final String f10636r;
 
         static {
             EnumC0023a enumC0023a = new EnumC0023a("SESSION", 0, "session");
@@ -106,7 +106,7 @@ public final class a {
         public static final /* synthetic */ b[] f10643a6;
 
         /* renamed from: r, reason: collision with root package name */
-        public String f10793r;
+        public final String f10793r;
 
         /* renamed from: s, reason: collision with root package name */
         public static final b f10741s = new b("ABOUT", 0, "about");

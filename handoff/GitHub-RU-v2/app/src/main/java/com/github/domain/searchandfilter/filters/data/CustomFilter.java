@@ -17,7 +17,7 @@ import x61.m;
 @g81.e
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class CustomFilter extends d {
-    public String v;
+    public final String v;
     public static final Companion Companion = new Companion();
     public static final Parcelable.Creator<CustomFilter> CREATOR = new a21.g(16);
     public static final w61.h[] w = {w.s(w61.i.r, new c2(21)), null, null};

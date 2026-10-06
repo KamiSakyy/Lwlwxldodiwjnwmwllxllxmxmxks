@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class ip implements aaShadow.v0 {
-    public kp a;
-    public String b;
-    public String c;
+    public final kp a;
+    public final String b;
+    public final String c;
 
     public ip(kp kpVar, String str, String str2) {
         this.a = kpVar;

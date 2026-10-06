@@ -2,9 +2,9 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class hz {
-    public String a;
-    public cz b;
-    public bz c;
+    public final String a;
+    public final cz b;
+    public final bz c;
 
     public hz(String str, cz czVar, bz bzVar) {
         k71.k.g(str, "__typename");

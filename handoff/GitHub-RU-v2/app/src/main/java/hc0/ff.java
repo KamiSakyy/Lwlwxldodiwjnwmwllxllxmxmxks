@@ -10,7 +10,7 @@ public final class ff {
     public static final ff u;
     public static final /* synthetic */ ff[] v;
     public static final /* synthetic */ d71.b w;
-    public String r;
+    public final String r;
 
     static {
         ff ffVar = new ff("BEHIND", 0, "BEHIND");

@@ -6,9 +6,9 @@ import org.json.JSONObject;
 /* loaded from: /home/user/work/p/classes3.dex */
 public abstract class c {
     public static final b Companion = new b();
-    public JSONObject a;
-    public String b;
-    public String c;
+    public final JSONObject a;
+    public final String b;
+    public final String c;
 
     public c(JSONObject jSONObject) {
         this.a = jSONObject;

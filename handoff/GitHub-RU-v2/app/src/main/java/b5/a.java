@@ -8,13 +8,13 @@ import android.view.View;
 public final class a extends ClickableSpan {
 
     /* renamed from: r, reason: collision with root package name */
-    public int f3464r;
+    public final int f3464r;
 
     /* renamed from: s, reason: collision with root package name */
-    public f f3465s;
+    public final f f3465s;
 
     /* renamed from: t, reason: collision with root package name */
-    public int f3466t;
+    public final int f3466t;
 
     public a(int i, f fVar, int i10) {
         this.f3464r = i;

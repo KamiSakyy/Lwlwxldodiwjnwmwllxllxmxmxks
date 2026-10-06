@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h {
-    public h01.q a;
-    public Object b;
+    public final h01.q a;
+    public final Object b;
 
     public h(h01.q qVar, List list) {
         k71.k.g(qVar, "timeline");
@@ -32,5 +32,4 @@ public final class h {
         return "CacheEntry(timeline=" + this.a + ", localAdditions=" + this.b + ")";
     }
     public Object d(Object p1, Object p2, Object p3) { return null; }
-    public Object d(Object, int, Object) { return null; }
 }

@@ -8,16 +8,16 @@ import org.json.JSONObject;
 public final class i {
 
     /* renamed from: a, reason: collision with root package name */
-    public String f34008a;
+    public final String f34008a;
 
     /* renamed from: b, reason: collision with root package name */
-    public ArrayList f34009b;
+    public final ArrayList f34009b;
 
     /* renamed from: c, reason: collision with root package name */
-    public String f34010c;
+    public final String f34010c;
 
     /* renamed from: d, reason: collision with root package name */
-    public la0.d f34011d;
+    public final la0.d f34011d;
 
     public i(JSONObject jSONObject) {
         jSONObject.optString("formattedPrice");

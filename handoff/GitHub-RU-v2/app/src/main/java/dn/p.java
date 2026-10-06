@@ -8,9 +8,9 @@ import y71.n0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class p {
-    public s a;
-    public oa.m b;
-    public com.github.rudroid.common.k c;
+    public final s a;
+    public final oa.m b;
+    public final com.github.rudroid.common.k c;
 
     public p(s sVar, oa.m mVar, com.github.rudroid.common.k kVar) {
         k71.k.g(sVar, "fetchMobileAuthRequestUseCase");

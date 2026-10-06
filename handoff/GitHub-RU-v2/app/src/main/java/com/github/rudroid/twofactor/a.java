@@ -32,9 +32,8 @@ public final class a {
         return (a[]) v.clone();
     }
 
-    public static Object a(Object... a) {
+    public a(Object... a) {
     }
     public Object d = null;
     public Object e = null;
-    public Object ordinal() { return null; }
 }

@@ -13,7 +13,7 @@ public final class k extends x61.e {
     public final /* synthetic */ int f32134r = 1;
 
     /* renamed from: s, reason: collision with root package name */
-    public Object f32135s;
+    public final Object f32135s;
 
     public k(List list) {
         k71.k.g(list, "delegate");

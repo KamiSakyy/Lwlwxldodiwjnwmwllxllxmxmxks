@@ -2,9 +2,9 @@ package na0;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l0 {
-    public String a;
-    public m0 b;
-    public n0 c;
+    public final String a;
+    public final m0 b;
+    public final n0 c;
 
     public l0(String str, m0 m0Var, n0 n0Var) {
         k71.k.g(str, "__typename");

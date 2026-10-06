@@ -7,7 +7,4 @@ package f1;
 public class qa {
     public qa() {
     }
-    public Object a(Object, Object, long, long, float, float, Object, Object, Object, int, int) { return null; }
-    public Object a(Object, Object, long, long, float, float, Object, Object, Object, int, int) { return null; }
-    public Object a(Object, Object, long, long, float, float, Object, Object, Object, int, int) { return null; }
 }

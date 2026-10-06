@@ -6,9 +6,9 @@ import oj0.v3;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class t {
-    public String a;
-    public String b;
-    public v3 c;
+    public final String a;
+    public final String b;
+    public final v3 c;
 
     public t(String str, String str2, v3 v3Var) {
         this.a = str;

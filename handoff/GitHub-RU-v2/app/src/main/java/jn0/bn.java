@@ -2,9 +2,9 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class bn {
-    public String a;
-    public cn b;
-    public at0.a c;
+    public final String a;
+    public final cn b;
+    public final at0.a c;
 
     public bn(String str, cn cnVar, at0.a aVar) {
         k71.k.g(str, "__typename");

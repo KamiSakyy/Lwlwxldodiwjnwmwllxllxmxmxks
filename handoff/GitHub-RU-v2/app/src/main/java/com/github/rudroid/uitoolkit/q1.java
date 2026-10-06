@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q1 {
-    public ArrayList a;
-    public ArrayList b;
+    public final ArrayList a;
+    public final ArrayList b;
 
     public q1(ArrayList arrayList, ArrayList arrayList2) {
         this.a = arrayList;

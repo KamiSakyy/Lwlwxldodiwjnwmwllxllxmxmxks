@@ -6,9 +6,9 @@ import x01.i;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class e {
-    public Object a;
-    public ArrayList b;
-    public i c;
+    public final Object a;
+    public final ArrayList b;
+    public final i c;
 
     public e(List list, ArrayList arrayList, i iVar) {
         this.a = list;
@@ -34,5 +34,5 @@ public final class e {
     public final String toString() {
         return "StatusChecksAndRollupsWithPage(statusChecks=" + this.a + ", stateRollups=" + this.b + ", page=" + this.c + ")";
     }
-    public static Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

@@ -5,7 +5,7 @@ import java.util.List;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ou implements aaShadow.n0 {
     public static final ku Companion = new ku();
-    public String r;
+    public final String r;
 
     public ou(String str) {
         this.r = str;

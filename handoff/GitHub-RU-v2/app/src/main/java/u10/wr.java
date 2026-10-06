@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class wr {
-    public ur a;
-    public String b;
-    public String c;
+    public final ur a;
+    public final String b;
+    public final String c;
 
     public wr(ur urVar, String str, String str2) {
         this.a = urVar;

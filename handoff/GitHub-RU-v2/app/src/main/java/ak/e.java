@@ -4,8 +4,8 @@ import k71.k;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public a a;
-    public boolean b;
+    public final a a;
+    public final boolean b;
 
     public e(a aVar, boolean z) {
         k.g(aVar, "type");

@@ -16,7 +16,7 @@ public class h extends Drawable.ConstantState {
     public ColorStateList f;
     public PorterDuff.Mode g;
     public Rect h;
-    public float i;
+    public final float i;
     public float j;
     public float k;
     public int l;
@@ -24,7 +24,7 @@ public class h extends Drawable.ConstantState {
     public float n;
     public int o;
     public int p;
-    public Paint.Style q;
+    public final Paint.Style q;
 
     public h(n nVar) {
         this.d = null;

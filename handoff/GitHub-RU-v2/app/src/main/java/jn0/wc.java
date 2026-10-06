@@ -2,7 +2,7 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class wc implements aaShadow.m0 {
-    public xc a;
+    public final xc a;
 
     public wc(xc xcVar) {
         this.a = xcVar;

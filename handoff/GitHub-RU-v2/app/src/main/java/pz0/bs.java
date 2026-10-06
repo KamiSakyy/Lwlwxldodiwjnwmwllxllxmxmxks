@@ -13,7 +13,7 @@ public final class bs {
     public static final bs x;
     public static final /* synthetic */ bs[] y;
     public static final /* synthetic */ d71.b z;
-    public String r;
+    public final String r;
 
     static {
         bs bsVar = new bs("FLOAT", 0, "FLOAT");

@@ -23,7 +23,7 @@ public final class h {
     public static final h r;
     public static final h s;
     public static final h t;
-    public String a;
+    public final String a;
 
     static {
         b bVar = new b();

@@ -9,7 +9,7 @@ import y71.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e {
-    public qm.d a;
+    public final qm.d a;
 
     public e(qm.d dVar) {
         k.g(dVar, "repository");

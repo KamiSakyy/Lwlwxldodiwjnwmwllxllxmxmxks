@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ue {
-    public af a;
-    public List b;
+    public final af a;
+    public final List b;
 
     public ue(af afVar, List list) {
         this.a = afVar;

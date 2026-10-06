@@ -5,8 +5,8 @@ import android.os.Handler;
 /* loaded from: /home/user/work/p/classes4.dex */
 public abstract class p {
     public static volatile com.google.android.gms.internal.measurement.h0 d;
-    public x1 a;
-    public com.google.common.util.concurrent.b b;
+    public final x1 a;
+    public final com.google.common.util.concurrent.b b;
     public volatile long c;
 
     public p(x1 x1Var) {

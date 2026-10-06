@@ -2,10 +2,10 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class q20 {
-    public n20 a;
-    public p20 b;
-    public String c;
-    public String d;
+    public final n20 a;
+    public final p20 b;
+    public final String c;
+    public final String d;
 
     public q20(n20 n20Var, p20 p20Var, String str, String str2) {
         this.a = n20Var;

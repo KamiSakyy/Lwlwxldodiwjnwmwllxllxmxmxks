@@ -4,7 +4,7 @@ package com.github.rudroid.home;
 public final class a2 {
 
     /* renamed from: a, reason: collision with root package name */
-    public h.c f14863a;
+    public final h.c f14863a;
 
     public a2(h.c cVar) {
         k71.k.g(cVar, "inAppUpdateLauncher");

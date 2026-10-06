@@ -2,10 +2,10 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class s80 {
-    public q80 a;
-    public String b;
-    public String c;
-    public String d;
+    public final q80 a;
+    public final String b;
+    public final String c;
+    public final String d;
 
     public s80(q80 q80Var, String str, String str2, String str3) {
         this.a = q80Var;

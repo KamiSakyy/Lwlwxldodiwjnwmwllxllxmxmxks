@@ -15,8 +15,8 @@ import y71.n1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b implements z01.j, mi0 {
-    public com.github.service.wrapper.j r;
-    public v71.v s;
+    public final com.github.service.wrapper.j r;
+    public final v71.v s;
 
     public b(com.github.service.wrapper.j jVar, v71.v vVar) {
         k71.k.g(jVar, "client");

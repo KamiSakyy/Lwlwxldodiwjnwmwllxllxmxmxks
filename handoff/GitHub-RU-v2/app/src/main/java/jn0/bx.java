@@ -2,8 +2,8 @@ package jn0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class bx {
-    public fx a;
-    public String b;
+    public final fx a;
+    public final String b;
 
     public bx(fx fxVar, String str) {
         this.a = fxVar;

@@ -6,10 +6,10 @@ import java.util.List;
 final class j0 {
 
     /* renamed from: a, reason: collision with root package name */
-    public List f6536a;
+    public final List f6536a;
 
     /* renamed from: b, reason: collision with root package name */
-    public on.g f6537b;
+    public final on.g f6537b;
 
     public j0(List list, on.g gVar) {
         k71.k.g(list, "states");

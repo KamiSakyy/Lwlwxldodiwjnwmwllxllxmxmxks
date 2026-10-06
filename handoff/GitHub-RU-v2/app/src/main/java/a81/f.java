@@ -10,10 +10,10 @@ import v71.v0;
 public final class f extends j0 implements c71.d, a71.c {
     public static final /* synthetic */ AtomicReferenceFieldUpdater y = AtomicReferenceFieldUpdater.newUpdater(f.class, Object.class, "_reusableCancellableContinuation$volatile");
     private volatile /* synthetic */ Object _reusableCancellableContinuation$volatile;
-    public v71.v u;
-    public c71.c v;
+    public final v71.v u;
+    public final c71.c v;
     public Object w;
-    public Object x;
+    public final Object x;
 
     public f(v71.v vVar, c71.c cVar) {
         super(-1);

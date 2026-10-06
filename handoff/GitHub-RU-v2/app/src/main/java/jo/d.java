@@ -2,7 +2,7 @@ package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d implements aaShadow.m0 {
-    public a a;
+    public final a a;
 
     public d(a aVar) {
         this.a = aVar;

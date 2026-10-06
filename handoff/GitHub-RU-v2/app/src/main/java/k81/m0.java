@@ -4,7 +4,7 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class m0 implements r71.f {
-    public r71.f a;
+    public final r71.f a;
 
     public m0(r71.f fVar) {
         k71.k.g(fVar, "origin");

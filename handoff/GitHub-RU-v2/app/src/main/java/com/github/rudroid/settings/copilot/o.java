@@ -16,23 +16,23 @@ import y71.y1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class o extends k1 {
     public static final a Companion = new a();
-    public y1 A;
-    public y1 B;
-    public y1 C;
-    public y1 D;
-    public y1 E;
-    public i1 F;
+    public final y1 A;
+    public final y1 B;
+    public final y1 C;
+    public final y1 D;
+    public final y1 E;
+    public final i1 F;
     public q1 G;
     public q1 H;
     public q1 I;
-    public com.github.rudroid.copilot.preferences.k s;
-    public nj.d0 t;
-    public com.github.rudroid.copilot.preferences.n u;
-    public com.github.rudroid.copilot.inapppurchase.usecases.d v;
-    public d1 w;
-    public r0 x;
-    public com.github.rudroid.activities.util.c y;
-    public qe.a z;
+    public final com.github.rudroid.copilot.preferences.k s;
+    public final nj.d0 t;
+    public final com.github.rudroid.copilot.preferences.n u;
+    public final com.github.rudroid.copilot.inapppurchase.usecases.d v;
+    public final d1 w;
+    public final r0 x;
+    public final com.github.rudroid.activities.util.c y;
+    public final qe.a z;
 
     public static final class a {
     }

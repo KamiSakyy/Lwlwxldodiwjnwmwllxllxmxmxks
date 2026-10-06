@@ -2,9 +2,9 @@ package kc0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class wl {
-    public String a;
-    public cm b;
-    public String c;
+    public final String a;
+    public final cm b;
+    public final String c;
 
     public wl(String str, cm cmVar, String str2) {
         this.a = str;

@@ -6,7 +6,7 @@ import androidx.work.impl.WorkDatabase;
 public final class g {
 
     /* renamed from: a, reason: collision with root package name */
-    public WorkDatabase f22144a;
+    public final WorkDatabase f22144a;
 
     public g(WorkDatabase workDatabase, int i) {
         switch (i) {

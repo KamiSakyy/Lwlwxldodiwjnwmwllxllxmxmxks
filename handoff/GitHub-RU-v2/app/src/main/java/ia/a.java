@@ -14,7 +14,7 @@ import x61.x;
 public final class a {
 
     /* renamed from: a, reason: collision with root package name */
-    public Map f26146a;
+    public final Map f26146a;
 
     public a(Map map) {
         k.g(map, "data");

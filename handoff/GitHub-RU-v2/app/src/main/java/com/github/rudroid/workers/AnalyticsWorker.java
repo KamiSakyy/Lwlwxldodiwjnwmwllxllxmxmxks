@@ -22,10 +22,10 @@ import y71.i;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class AnalyticsWorker extends CoroutineWorker {
     public static final a Companion = new a();
-    public wj.a g;
-    public c0 h;
-    public com.github.rudroid.common.e i;
-    public m j;
+    public final wj.a g;
+    public final c0 h;
+    public final com.github.rudroid.common.e i;
+    public final m j;
 
     public static final class a {
     }

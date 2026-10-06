@@ -6,7 +6,7 @@ import java.util.concurrent.CancellationException;
 final class AbortFlowException extends CancellationException {
 
     /* renamed from: r, reason: collision with root package name */
-    public c f4286r;
+    public final c f4286r;
 
     public AbortFlowException(c cVar) {
         super("Flow was aborted, no more elements needed");

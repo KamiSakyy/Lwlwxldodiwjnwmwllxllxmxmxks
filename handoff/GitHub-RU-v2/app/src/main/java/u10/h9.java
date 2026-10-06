@@ -2,8 +2,8 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class h9 {
-    public d9 a;
-    public i9 b;
+    public final d9 a;
+    public final i9 b;
 
     public h9(d9 d9Var, i9 i9Var) {
         this.a = d9Var;

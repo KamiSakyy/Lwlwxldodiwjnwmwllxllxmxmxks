@@ -5,10 +5,10 @@ import m10.rz;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class d6 {
-    public rz a;
-    public ZonedDateTime b;
-    public String c;
-    public String d;
+    public final rz a;
+    public final ZonedDateTime b;
+    public final String c;
+    public final String d;
 
     public d6(rz rzVar, ZonedDateTime zonedDateTime, String str, String str2) {
         this.a = rzVar;

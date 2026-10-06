@@ -2,9 +2,9 @@ package u10;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class mj {
-    public String a;
-    public String b;
-    public nj c;
+    public final String a;
+    public final String b;
+    public final nj c;
 
     public mj(String str, String str2, nj njVar) {
         k71.k.g(str, "__typename");

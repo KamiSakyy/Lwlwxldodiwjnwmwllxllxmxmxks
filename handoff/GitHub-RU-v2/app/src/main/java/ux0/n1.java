@@ -2,9 +2,9 @@ package ux0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class n1 implements aa.v0 {
-    public o1 a;
-    public String b;
-    public String c;
+    public final o1 a;
+    public final String b;
+    public final String c;
 
     public n1(o1 o1Var, String str, String str2) {
         this.a = o1Var;

@@ -16,14 +16,14 @@ import y71.y1;
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class l extends k1 {
     public static final a Companion = new a();
-    public bn.b s;
-    public com.github.rudroid.activities.util.c t;
-    public y1 u;
-    public i1 v;
-    public String w;
-    public String x;
-    public String y;
-    public Map z;
+    public final bn.b s;
+    public final com.github.rudroid.activities.util.c t;
+    public final y1 u;
+    public final i1 v;
+    public final String w;
+    public final String x;
+    public final String y;
+    public final Map z;
 
     public static final class a {
     }

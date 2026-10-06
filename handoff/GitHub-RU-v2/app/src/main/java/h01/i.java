@@ -6,10 +6,10 @@ import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class i {
-    public String a;
-    public String b;
-    public ArrayList c;
-    public PullRequestMergeRequirementsState d;
+    public final String a;
+    public final String b;
+    public final ArrayList c;
+    public final PullRequestMergeRequirementsState d;
 
     public i(String str, String str2, ArrayList arrayList, PullRequestMergeRequirementsState pullRequestMergeRequirementsState) {
         k71.k.g(pullRequestMergeRequirementsState, "state");

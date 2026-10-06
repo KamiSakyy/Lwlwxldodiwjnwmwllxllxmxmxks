@@ -2,7 +2,7 @@ package sd0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class b0 {
-    public String a;
+    public final String a;
 
     public b0(String str) {
         this.a = str;

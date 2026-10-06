@@ -17,5 +17,4 @@ final class t0 extends c71.j implements j71.e {
         throw null;
     }
     public Object f(Object p1, Object p2, Object p3, Object p4) { return null; }
-    public Object f(Object, Object, Object, Object) { return null; }
 }

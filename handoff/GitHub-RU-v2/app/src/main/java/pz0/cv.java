@@ -17,7 +17,7 @@ public final class cv {
     public static final cv x;
     public static final cv y;
     public static final cv z;
-    public String r;
+    public final String r;
 
     static {
         cv cvVar = new cv("CONFUSED", 0, "CONFUSED");

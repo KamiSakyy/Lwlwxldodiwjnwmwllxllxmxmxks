@@ -4,7 +4,7 @@ import com.github.rudroid.discussions.ac;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class r {
-    public oa.g a;
+    public final oa.g a;
 
     public r(oa.g gVar) {
         k71.k.g(gVar, "organizationService");

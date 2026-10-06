@@ -6,7 +6,7 @@ import com.google.android.gms.internal.measurement.z3;
 public final class i extends z3 {
 
     /* renamed from: b, reason: collision with root package name */
-    public b f4150b;
+    public final b f4150b;
 
     public i(b bVar) {
         k71.k.g(bVar, "latestEvent");

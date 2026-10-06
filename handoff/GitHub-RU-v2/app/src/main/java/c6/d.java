@@ -6,10 +6,10 @@ import android.content.Intent;
 public final class d implements a6.a {
 
     /* renamed from: a, reason: collision with root package name */
-    public Intent f4123a;
+    public final Intent f4123a;
 
     /* renamed from: b, reason: collision with root package name */
-    public a6.f f4124b;
+    public final a6.f f4124b;
 
     public d(Intent intent, a6.f fVar) {
         this.f4123a = intent;

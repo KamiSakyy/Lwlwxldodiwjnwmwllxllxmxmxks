@@ -27,5 +27,4 @@ public final class j implements k {
     public Object name() { return null; }
     public Object ordinal() { return null; }
     public Object s(Object p1) { return null; }
-    public Object s(int) { return null; }
 }

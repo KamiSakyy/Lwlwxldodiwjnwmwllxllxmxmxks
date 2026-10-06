@@ -7,11 +7,11 @@ import x.i;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class b {
-    public h0 a;
-    public int b;
-    public int c;
-    public int d;
-    public int e;
+    public final h0 a;
+    public final int b;
+    public final int c;
+    public final int d;
+    public final int e;
 
     public b(h0 h0Var, int i, int i2, int i3, int i4) {
         this.a = h0Var;
@@ -51,5 +51,4 @@ public final class b {
     }
     public Object add(Object p1) { return null; }
     public Object pop() { return null; }
-    public Object add(Object) { return null; }
 }

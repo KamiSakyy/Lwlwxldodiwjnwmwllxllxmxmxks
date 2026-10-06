@@ -16,26 +16,26 @@ import yz0.x2;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class b {
-    public String a;
-    public a b;
-    public a c;
-    public String d;
-    public ZonedDateTime e;
-    public boolean f;
-    public ZonedDateTime g;
-    public String h;
-    public String i;
-    public boolean j;
-    public boolean k;
-    public String l;
-    public q0 m;
-    public List n;
-    public boolean o;
-    public x2 p;
-    public boolean q;
-    public boolean r;
-    public CommentAuthorAssociation s;
-    public boolean t;
+    public final String a;
+    public final a b;
+    public final a c;
+    public final String d;
+    public final ZonedDateTime e;
+    public final boolean f;
+    public final ZonedDateTime g;
+    public final String h;
+    public final String i;
+    public final boolean j;
+    public final boolean k;
+    public final String l;
+    public final q0 m;
+    public final List n;
+    public final boolean o;
+    public final x2 p;
+    public final boolean q;
+    public final boolean r;
+    public final CommentAuthorAssociation s;
+    public final boolean t;
 
     public b(String str, a aVar, a aVar2, String str2, ZonedDateTime zonedDateTime, boolean z, ZonedDateTime zonedDateTime2, String str3, String str4, boolean z2, boolean z3, String str5, q0 q0Var, List list, boolean z4, x2 x2Var, boolean z5, boolean z6, CommentAuthorAssociation commentAuthorAssociation, boolean z7) {
         k.g(str, "id");

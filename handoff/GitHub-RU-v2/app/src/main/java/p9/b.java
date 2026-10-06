@@ -8,10 +8,10 @@ import k71.k;
 public final class b {
 
     /* renamed from: a, reason: collision with root package name */
-    public Bitmap f30442a;
+    public final Bitmap f30442a;
 
     /* renamed from: b, reason: collision with root package name */
-    public Map f30443b;
+    public final Map f30443b;
 
     public b(Bitmap bitmap, Map map) {
         this.f30442a = bitmap;

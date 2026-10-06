@@ -2,11 +2,11 @@ package dw;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class w3 {
-    public String a;
-    public String b;
-    public yw.b c;
-    public gv.g6 d;
-    public e1 e;
+    public final String a;
+    public final String b;
+    public final yw.b c;
+    public final gv.g6 d;
+    public final e1 e;
 
     public w3(String str, String str2, yw.b bVar, gv.g6 g6Var, e1 e1Var) {
         this.a = str;

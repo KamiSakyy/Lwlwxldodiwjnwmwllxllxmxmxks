@@ -2,10 +2,10 @@ package cq0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class h1 {
-    public String a;
-    public String b;
-    public String c;
-    public k1 d;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final k1 d;
 
     public h1(String str, String str2, String str3, k1 k1Var) {
         this.a = str;

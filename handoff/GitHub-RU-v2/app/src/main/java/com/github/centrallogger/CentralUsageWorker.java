@@ -22,8 +22,8 @@ import x61.m;
 public final class CentralUsageWorker extends CoroutineWorker {
     public static final b Companion = new b();
     public static final f i;
-    public v g;
-    public d h;
+    public final v g;
+    public final d h;
 
     static {
         y yVar = y.r;

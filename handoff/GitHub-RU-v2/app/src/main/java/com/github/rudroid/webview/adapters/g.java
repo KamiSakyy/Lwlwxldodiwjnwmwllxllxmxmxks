@@ -11,10 +11,10 @@ import x61.m;
 public interface g {
 
     public static final class a implements g {
-        public String a;
-        public List b;
-        public List c;
-        public boolean d;
+        public final String a;
+        public final List b;
+        public final List c;
+        public final boolean d;
 
         public a(String str, List list, List list2, boolean z) {
             k.g(str, "id");
@@ -52,10 +52,10 @@ public interface g {
     }
 
     public static final class b implements g {
-        public String a;
-        public ArrayList b;
-        public ArrayList c;
-        public boolean d;
+        public final String a;
+        public final ArrayList b;
+        public final ArrayList c;
+        public final boolean d;
 
         public b(String str, ArrayList arrayList, ArrayList arrayList2, boolean z) {
             k.g(str, "id");
@@ -98,7 +98,7 @@ public interface g {
     }
 
     public static final class c implements g {
-        public zh.b a;
+        public final zh.b a;
 
         public c(zh.b bVar) {
             k.g(bVar, "singleItem");

@@ -5,7 +5,7 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public abstract class o0 implements SerialDescriptor {
-    public SerialDescriptor a;
+    public final SerialDescriptor a;
 
     public o0(SerialDescriptor serialDescriptor) {
         this.a = serialDescriptor;

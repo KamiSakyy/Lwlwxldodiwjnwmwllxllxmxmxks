@@ -4,8 +4,8 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class wc {
-    public List a;
-    public vc b;
+    public final List a;
+    public final vc b;
 
     public wc(List list, vc vcVar) {
         this.a = list;

@@ -17,7 +17,7 @@ public final class bo {
     public static final bo x;
     public static final bo y;
     public static final bo z;
-    public String r;
+    public final String r;
 
     static {
         bo boVar = new bo("CONFUSED", 0, "CONFUSED");

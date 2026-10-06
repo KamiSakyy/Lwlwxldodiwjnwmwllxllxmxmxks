@@ -4,9 +4,9 @@ import java.time.LocalDate;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class e1 {
-    public String a;
-    public LocalDate b;
-    public b0 c;
+    public final String a;
+    public final LocalDate b;
+    public final b0 c;
 
     public e1(String str, LocalDate localDate, b0 b0Var) {
         this.a = str;
