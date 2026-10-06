@@ -44,10 +44,10 @@ jobs:
           PROJ="$PWD/handoff/GitHub-RU-v2"
           echo "PROJ=$PROJ" >> "$GITHUB_ENV"
           # идемпотентные фиксы (безопасно повторить)
+          SRC="$PROJ/app/src/main/java"
           python3 tools/fix_heat.py "$PROJ" || true
           python3 tools/fix_compile.py "$PROJ" || true
           python3 tools/fix_stab_generics.py - "$SRC" --remove-all || true
-          SRC="$PROJ/app/src/main/java"
           find "$SRC" -name "*.java" | sort > /tmp/sources.txt
           echo "Файлов: $(wc -l < /tmp/sources.txt)"
 
