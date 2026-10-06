@@ -178,6 +178,9 @@ jobs:
           else
             echo "NO BUILD LOG (упало до Gradle)" > handoff/studio-diag/build-log.txt
           fi
+          cp /tmp/studio-badging.txt handoff/studio-diag/badging.txt 2>/dev/null || true
+          cp /tmp/studio-ziplist.txt handoff/studio-diag/ziplist.txt 2>/dev/null || true
+          cp /tmp/studio-apk.sha256 handoff/studio-diag/apk.sha256 2>/dev/null || true
           {
             echo "run=${{ github.run_number }}"
             echo "job_status=${{ job.status }}"
