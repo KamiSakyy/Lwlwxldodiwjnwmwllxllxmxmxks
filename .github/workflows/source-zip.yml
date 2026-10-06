@@ -1,0 +1,25 @@
+name: MailGram — исходники
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - arena/8437a850-lwlwxldodiwjnwmwllxllxmxmxks
+
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Архив исходников
+        run: git archive --format=zip --prefix=MailGram-source/ -o "ИСХОДНИК.zip" HEAD
+
+      - name: Публикация в релиз
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view apk-latest > /dev/null 2>&1 || \
+            gh release create apk-latest --title "MailGram — APK (последняя сборка)" --prerelease
+          gh release upload apk-latest "ИСХОДНИК.zip" --clobber
+          echo "::notice title=Исходники::https://github.com/${GITHUB_REPOSITORY}/releases/download/apk-latest/ИСХОДНИК.zip"
