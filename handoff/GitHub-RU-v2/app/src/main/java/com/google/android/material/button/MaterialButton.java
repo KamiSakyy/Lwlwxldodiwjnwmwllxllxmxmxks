@@ -1122,147 +1122,147 @@ public class MaterialButton extends o implements Checkable, y {
     }
 
 
-    public static  getContext(Object... a) {
+    public static Object getContext(Object... a) {
         return null;
     }
 
-    public static  getPaddingStart(Object... a) {
+    public static Object getPaddingStart(Object... a) {
         return null;
     }
 
-    public static  getPaddingTop(Object... a) {
+    public static Object getPaddingTop(Object... a) {
         return null;
     }
 
-    public static  getPaddingEnd(Object... a) {
+    public static Object getPaddingEnd(Object... a) {
         return null;
     }
 
-    public static  getPaddingBottom(Object... a) {
+    public static Object getPaddingBottom(Object... a) {
         return null;
     }
 
-    public static  setPaddingRelative(Object... a) {
+    public static Object setPaddingRelative(Object... a) {
         return null;
     }
 
-    public static  setCompoundDrawablePadding(Object... a) {
+    public static Object setCompoundDrawablePadding(Object... a) {
         return null;
     }
 
-    public static  invalidate(Object... a) {
+    public static Object invalidate(Object... a) {
         return null;
     }
 
-    public static  getTextAlignment(Object... a) {
+    public static Object getTextAlignment(Object... a) {
         return null;
     }
 
-    public static  getGravity(Object... a) {
+    public static Object getGravity(Object... a) {
         return null;
     }
 
-    public static  getLineCount(Object... a) {
+    public static Object getLineCount(Object... a) {
         return null;
     }
 
-    public static  getLayout(Object... a) {
+    public static Object getLayout(Object... a) {
         return null;
     }
 
-    public static  getPaint(Object... a) {
+    public static Object getPaint(Object... a) {
         return null;
     }
 
-    public static  getText(Object... a) {
+    public static Object getText(Object... a) {
         return null;
     }
 
-    public static  getTransformationMethod(Object... a) {
+    public static Object getTransformationMethod(Object... a) {
         return null;
     }
 
-    public static  getParent(Object... a) {
+    public static Object getParent(Object... a) {
         return null;
     }
 
-    public static  getId(Object... a) {
+    public static Object getId(Object... a) {
         return null;
     }
 
-    public static  getDrawableState(Object... a) {
+    public static Object getDrawableState(Object... a) {
         return null;
     }
 
-    public static  getWidth(Object... a) {
+    public static Object getWidth(Object... a) {
         return null;
     }
 
-    public static  setCompoundDrawablesRelative(Object... a) {
+    public static Object setCompoundDrawablesRelative(Object... a) {
         return null;
     }
 
-    public static  getLayoutDirection(Object... a) {
+    public static Object getLayoutDirection(Object... a) {
         return null;
     }
 
-    public static  getLayoutParams(Object... a) {
+    public static Object getLayoutParams(Object... a) {
         return null;
     }
 
-    public static  isClickable(Object... a) {
+    public static Object isClickable(Object... a) {
         return null;
     }
 
-    public static  getMeasuredWidth(Object... a) {
+    public static Object getMeasuredWidth(Object... a) {
         return null;
     }
 
-    public static  getMeasuredHeight(Object... a) {
+    public static Object getMeasuredHeight(Object... a) {
         return null;
     }
 
-    public static  getResources(Object... a) {
+    public static Object getResources(Object... a) {
         return null;
     }
 
-    public static  isEnabled(Object... a) {
+    public static Object isEnabled(Object... a) {
         return null;
     }
 
-    public static  setMaxLines(Object... a) {
+    public static Object setMaxLines(Object... a) {
         return null;
     }
 
-    public static  setEllipsize(Object... a) {
+    public static Object setEllipsize(Object... a) {
         return null;
     }
 
-    public static  setTag(Object... a) {
+    public static Object setTag(Object... a) {
         return null;
     }
 
-    public static  setText(Object... a) {
+    public static Object setText(Object... a) {
         return null;
     }
 
-    public static  setOnClickListener(Object... a) {
+    public static Object setOnClickListener(Object... a) {
         return null;
     }
 
-    public static  setId(Object... a) {
+    public static Object setId(Object... a) {
         return null;
     }
 
-    public static  setLayoutParams(Object... a) {
+    public static Object setLayoutParams(Object... a) {
         return null;
     }
 
-    public static  setEnabled(Object... a) {
+    public static Object setEnabled(Object... a) {
         return null;
     }
 
-    public static  getVisibility(Object... a) {
+    public static Object getVisibility(Object... a) {
         return null;
     }
 }

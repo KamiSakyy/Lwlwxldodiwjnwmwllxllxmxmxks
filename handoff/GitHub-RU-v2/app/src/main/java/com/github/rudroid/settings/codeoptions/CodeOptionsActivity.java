@@ -57,23 +57,23 @@ public final class CodeOptionsActivity extends h0 {
     }
 
 
-    public static  f0(Object... a) {
+    public static Object f0(Object... a) {
         return null;
     }
 
-    public static  K0(Object... a) {
+    public static Object K0(Object... a) {
         return null;
     }
 
-    public static  g0(Object... a) {
+    public static Object g0(Object... a) {
         return null;
     }
 
-    public static  C(Object... a) {
+    public static Object C(Object... a) {
         return null;
     }
 
-    public static  finish(Object... a) {
+    public static Object finish(Object... a) {
         return null;
     }
     public Object finish() { return null; }

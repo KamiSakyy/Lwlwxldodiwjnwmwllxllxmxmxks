@@ -8,31 +8,31 @@ public class Preference {
     public Preference() {
     }
 
-    public static  n(Object... a) {
+    public static Object n(Object... a) {
         return null;
     }
 
-    public static  r(Object... a) {
+    public static Object r(Object... a) {
         return null;
     }
 
-    public static  s(Object... a) {
+    public static Object s(Object... a) {
         return null;
     }
 
-    public static  B(Object... a) {
+    public static Object B(Object... a) {
         return null;
     }
 
-    public static  w(Object... a) {
+    public static Object w(Object... a) {
         return null;
     }
 
-    public static  D(Object... a) {
+    public static Object D(Object... a) {
         return null;
     }
 
-    public static  u(Object... a) {
+    public static Object u(Object... a) {
         return null;
     }
     public Object s() { return null; }

@@ -160,11 +160,11 @@ public final class RepositoryFilterSortBottomSheetDialog extends BaseBottomSheet
     }
 
 
-    public static  s4(Object... a) {
+    public static Object s4(Object... a) {
         return null;
     }
 
-    public static  j4(Object... a) {
+    public static Object j4(Object... a) {
         return null;
     }
     public Object s4() { return null; }

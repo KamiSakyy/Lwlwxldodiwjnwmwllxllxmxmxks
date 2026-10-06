@@ -7,19 +7,19 @@ package a2;
 public class i {
     public i() {}
 
-    public static  f(Object... a) {
+    public static Object f(Object... a) {
         return null;
     }
 
-    public static  d(Object... a) {
+    public static Object d(Object... a) {
         return null;
     }
 
-    public static  b(Object... a) {
+    public static Object b(Object... a) {
         return null;
     }
 
-    public static  a(Object... a) {
+    public static Object a(Object... a) {
         return null;
     }
 }

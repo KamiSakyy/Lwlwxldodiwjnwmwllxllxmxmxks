@@ -8,7 +8,7 @@ public class BaseBottomSheetDialog {
     public BaseBottomSheetDialog() {
     }
 
-    public static  R3(Object... a) {
+    public static Object R3(Object... a) {
         return null;
     }
 }

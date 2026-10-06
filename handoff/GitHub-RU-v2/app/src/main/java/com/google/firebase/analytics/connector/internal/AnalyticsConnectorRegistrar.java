@@ -64,7 +64,7 @@ public class AnalyticsConnectorRegistrar implements ComponentRegistrar {
         return Arrays.asList(a.b(), o.c("fire-analytics", "23.0.0"));
     }
 
-    public static  zza(Object... a) {
+    public static Object zza(Object... a) {
         return null;
     }
 }

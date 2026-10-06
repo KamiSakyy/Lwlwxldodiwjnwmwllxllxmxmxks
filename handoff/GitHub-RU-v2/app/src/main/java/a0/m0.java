@@ -17,7 +17,7 @@ public final class m0 {
     public m0(Object p1, Object p2, Object p3) {
     }
 
-    public static  a(Object... a) {
+    public static Object a(Object... a) {
         return null;
     }
 }

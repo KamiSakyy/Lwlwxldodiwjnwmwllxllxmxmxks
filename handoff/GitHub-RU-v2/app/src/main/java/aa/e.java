@@ -29,7 +29,7 @@ public final class e {
     public e(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7) {
     }
 
-    public static  a(Object... a) {
+    public static Object a(Object... a) {
         return null;
     }
     public Object c(Object p1) { return null; }

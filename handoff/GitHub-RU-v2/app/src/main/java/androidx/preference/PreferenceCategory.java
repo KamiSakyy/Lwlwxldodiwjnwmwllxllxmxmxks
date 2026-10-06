@@ -8,11 +8,11 @@ public class PreferenceCategory {
     public PreferenceCategory() {
     }
 
-    public static  K(Object... a) {
+    public static Object K(Object... a) {
         return null;
     }
 
-    public static  D(Object... a) {
+    public static Object D(Object... a) {
         return null;
     }
 }

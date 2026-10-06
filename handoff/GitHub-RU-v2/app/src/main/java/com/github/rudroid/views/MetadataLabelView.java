@@ -95,31 +95,31 @@ public final class MetadataLabelView extends AppCompatTextView {
         u2.c(this, drawable);
     }
 
-    public static  getResources(Object... a) {
+    public static Object getResources(Object... a) {
         return null;
     }
 
-    public static  setPadding(Object... a) {
+    public static Object setPadding(Object... a) {
         return null;
     }
 
-    public static  setTextAppearance(Object... a) {
+    public static Object setTextAppearance(Object... a) {
         return null;
     }
 
-    public static  getContext(Object... a) {
+    public static Object getContext(Object... a) {
         return null;
     }
 
-    public static  setBackground(Object... a) {
+    public static Object setBackground(Object... a) {
         return null;
     }
 
-    public static  getCompoundDrawablesRelative(Object... a) {
+    public static Object getCompoundDrawablesRelative(Object... a) {
         return null;
     }
 
-    public static  setText(Object... a) {
+    public static Object setText(Object... a) {
         return null;
     }
 }

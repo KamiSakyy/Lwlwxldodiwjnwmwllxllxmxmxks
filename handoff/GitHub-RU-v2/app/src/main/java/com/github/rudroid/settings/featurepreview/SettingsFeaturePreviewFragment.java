@@ -58,15 +58,15 @@ public final class SettingsFeaturePreviewFragment extends Hilt_SettingsFeaturePr
         s4(2132148239);
     }
 
-    public static  C3(Object... a) {
+    public static Object C3(Object... a) {
         return null;
     }
 
-    public static  t4(Object... a) {
+    public static Object t4(Object... a) {
         return null;
     }
 
-    public static  s4(Object... a) {
+    public static Object s4(Object... a) {
         return null;
     }
 }

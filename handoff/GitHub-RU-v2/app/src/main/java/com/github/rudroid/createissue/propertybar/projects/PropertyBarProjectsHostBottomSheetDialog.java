@@ -8,7 +8,7 @@ public class PropertyBarProjectsHostBottomSheetDialog {
     public PropertyBarProjectsHostBottomSheetDialog() {
     }
 
-    public static  z4(Object... a) {
+    public static Object z4(Object... a) {
         return null;
     }
 }

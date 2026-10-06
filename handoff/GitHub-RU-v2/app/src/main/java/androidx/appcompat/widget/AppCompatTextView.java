@@ -8,119 +8,119 @@ public class AppCompatTextView {
     public AppCompatTextView() {
     }
 
-    public static  setText(Object... a) {
+    public static Object setText(Object... a) {
         return null;
     }
 
-    public static  onDetachedFromWindow(Object... a) {
+    public static Object onDetachedFromWindow(Object... a) {
         return null;
     }
 
-    public static  onDraw(Object... a) {
+    public static Object onDraw(Object... a) {
         return null;
     }
 
-    public static  setVisibility(Object... a) {
+    public static Object setVisibility(Object... a) {
         return null;
     }
 
-    public static  getContentDescription(Object... a) {
+    public static Object getContentDescription(Object... a) {
         return null;
     }
 
-    public static  getCurrentTextColor(Object... a) {
+    public static Object getCurrentTextColor(Object... a) {
         return null;
     }
 
-    public static  getTextColors(Object... a) {
+    public static Object getTextColors(Object... a) {
         return null;
     }
 
-    public static  setTextAppearance(Object... a) {
+    public static Object setTextAppearance(Object... a) {
         return null;
     }
 
-    public static  setTextColor(Object... a) {
+    public static Object setTextColor(Object... a) {
         return null;
     }
 
-    public static  setGravity(Object... a) {
+    public static Object setGravity(Object... a) {
         return null;
     }
 
-    public static  setPadding(Object... a) {
+    public static Object setPadding(Object... a) {
         return null;
     }
 
-    public static  getPaint(Object... a) {
+    public static Object getPaint(Object... a) {
         return null;
     }
 
-    public static  getTextSize(Object... a) {
+    public static Object getTextSize(Object... a) {
         return null;
     }
 
-    public static  getTypeface(Object... a) {
+    public static Object getTypeface(Object... a) {
         return null;
     }
 
-    public static  getLetterSpacing(Object... a) {
+    public static Object getLetterSpacing(Object... a) {
         return null;
     }
 
-    public static  getMeasuredWidth(Object... a) {
+    public static Object getMeasuredWidth(Object... a) {
         return null;
     }
 
-    public static  setAccessibilityLiveRegion(Object... a) {
+    public static Object setAccessibilityLiveRegion(Object... a) {
         return null;
     }
 
-    public static  setContentDescription(Object... a) {
+    public static Object setContentDescription(Object... a) {
         return null;
     }
 
-    public static  setTypeface(Object... a) {
+    public static Object setTypeface(Object... a) {
         return null;
     }
 
-    public static  getContext(Object... a) {
+    public static Object getContext(Object... a) {
         return null;
     }
 
-    public static  setLineHeight(Object... a) {
+    public static Object setLineHeight(Object... a) {
         return null;
     }
 
-    public static  getBreakStrategy(Object... a) {
+    public static Object getBreakStrategy(Object... a) {
         return null;
     }
 
-    public static  setId(Object... a) {
+    public static Object setId(Object... a) {
         return null;
     }
 
-    public static  setLayoutParams(Object... a) {
+    public static Object setLayoutParams(Object... a) {
         return null;
     }
 
-    public static  getPaddingEnd(Object... a) {
+    public static Object getPaddingEnd(Object... a) {
         return null;
     }
 
-    public static  setPaddingRelative(Object... a) {
+    public static Object setPaddingRelative(Object... a) {
         return null;
     }
 
-    public static  getVisibility(Object... a) {
+    public static Object getVisibility(Object... a) {
         return null;
     }
 
-    public static  getText(Object... a) {
+    public static Object getText(Object... a) {
         return null;
     }
 
-    public static  getPaddingStart(Object... a) {
+    public static Object getPaddingStart(Object... a) {
         return null;
     }
 }

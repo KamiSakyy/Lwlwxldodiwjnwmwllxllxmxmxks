@@ -291,11 +291,11 @@ public final class SwipeRefreshUiStateRecyclerView extends d<bh> {
 
 
 
-    public static  getContext(Object... a) {
+    public static Object getContext(Object... a) {
         return null;
     }
 
-    public static  setRefreshing(Object... a) {
+    public static Object setRefreshing(Object... a) {
         return null;
     }
 }

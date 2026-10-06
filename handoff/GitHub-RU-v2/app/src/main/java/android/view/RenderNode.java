@@ -8,23 +8,23 @@ public class RenderNode {
     public RenderNode() {
     }
 
-    public static  discardDisplayList(Object... a) {
+    public static Object discardDisplayList(Object... a) {
         return null;
     }
 
-    public static  getAmbientShadowColor(Object... a) {
+    public static Object getAmbientShadowColor(Object... a) {
         return null;
     }
 
-    public static  getSpotShadowColor(Object... a) {
+    public static Object getSpotShadowColor(Object... a) {
         return null;
     }
 
-    public static  setAmbientShadowColor(Object... a) {
+    public static Object setAmbientShadowColor(Object... a) {
         return null;
     }
 
-    public static  setSpotShadowColor(Object... a) {
+    public static Object setSpotShadowColor(Object... a) {
         return null;
     }
 }

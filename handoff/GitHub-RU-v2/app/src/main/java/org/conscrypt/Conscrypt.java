@@ -8,27 +8,27 @@ public class Conscrypt {
     public Conscrypt() {
     }
 
-    public static  isConscrypt(Object... a) {
+    public static Object isConscrypt(Object... a) {
         return null;
     }
 
-    public static  version(Object... a) {
+    public static Object version(Object... a) {
         return null;
     }
 
-    public static  isAvailable(Object... a) {
+    public static Object isAvailable(Object... a) {
         return null;
     }
 
-    public static  getApplicationProtocol(Object... a) {
+    public static Object getApplicationProtocol(Object... a) {
         return null;
     }
 
-    public static  setUseSessionTickets(Object... a) {
+    public static Object setUseSessionTickets(Object... a) {
         return null;
     }
 
-    public static  setApplicationProtocols(Object... a) {
+    public static Object setApplicationProtocols(Object... a) {
         return null;
     }
 }

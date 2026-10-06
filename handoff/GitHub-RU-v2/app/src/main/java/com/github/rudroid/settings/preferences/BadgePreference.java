@@ -73,7 +73,7 @@ public final class BadgePreference extends Preference {
     }
 
 
-    public static  j(Object... a) {
+    public static Object j(Object... a) {
         return null;
     }
 }

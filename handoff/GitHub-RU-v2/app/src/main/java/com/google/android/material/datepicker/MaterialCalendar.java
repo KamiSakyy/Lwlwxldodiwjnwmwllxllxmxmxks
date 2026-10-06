@@ -197,23 +197,23 @@ public final class MaterialCalendar<S> extends PickerFragment<S> {
         }
     }
 
-    public static  y3(Object... a) {
+    public static Object y3(Object... a) {
         return null;
     }
 
-    public static  i4(Object... a) {
+    public static Object i4(Object... a) {
         return null;
     }
 
-    public static  n4(Object... a) {
+    public static Object n4(Object... a) {
         return null;
     }
 
-    public static  a(Object... a) {
+    public static Object a(Object... a) {
         return null;
     }
 
-    public static  C3(Object... a) {
+    public static Object C3(Object... a) {
         return null;
     }
 }

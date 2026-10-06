@@ -213,7 +213,7 @@ public final class e implements RandomAccess {
     }
 
 
-    public static  g(Object... a) {
+    public static Object g(Object... a) {
         return null;
     }
     public Object f27901r = null;

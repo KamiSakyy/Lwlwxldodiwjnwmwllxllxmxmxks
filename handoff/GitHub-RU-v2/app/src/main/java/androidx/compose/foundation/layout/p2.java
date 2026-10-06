@@ -8,29 +8,29 @@ public class p2 {
     public p2() {
     }
 
-    public static  e(Object... a) {
+    public static Object e(Object... a) {
         return null;
     }
 
-    public static  o(Object... a) {
+    public static Object o(Object... a) {
         return null;
     }
 
     public static Object a;
 
-    public static  p(Object... a) {
+    public static Object p(Object... a) {
         return null;
     }
 
-    public static  d(Object... a) {
+    public static Object d(Object... a) {
         return null;
     }
 
-    public static  s(Object... a) {
+    public static Object s(Object... a) {
         return null;
     }
 
-    public static  f(Object... a) {
+    public static Object f(Object... a) {
         return null;
     }
 

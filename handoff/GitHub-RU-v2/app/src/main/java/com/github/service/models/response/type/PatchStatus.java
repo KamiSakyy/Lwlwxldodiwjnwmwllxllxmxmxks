@@ -68,7 +68,7 @@ public final class PatchStatus implements Parcelable {
         parcel.writeString(name());
     }
 
-    public static  ordinal(Object... a) {
+    public static Object ordinal(Object... a) {
         return null;
     }
 }

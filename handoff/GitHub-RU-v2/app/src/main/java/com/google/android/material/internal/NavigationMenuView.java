@@ -21,7 +21,7 @@ public class NavigationMenuView extends RecyclerView implements z {
         return 0;
     }
 
-    public static  setLayoutManager(Object... a) {
+    public static Object setLayoutManager(Object... a) {
         return null;
     }
 }

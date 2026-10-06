@@ -7,11 +7,11 @@ package b7;
 public class i {
     public i() {}
 
-    public static  b(Object... a) {
+    public static Object b(Object... a) {
         return null;
     }
 
-    public static  a(Object... a) {
+    public static Object a(Object... a) {
         return null;
     }
 
@@ -19,7 +19,7 @@ public class i {
         return null;
     }
 
-    public static  c(Object... a) {
+    public static Object c(Object... a) {
         return null;
     }
 }

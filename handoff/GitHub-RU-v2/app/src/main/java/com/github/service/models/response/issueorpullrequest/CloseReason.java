@@ -38,15 +38,15 @@ public final class CloseReason {
         return (CloseReason[]) $VALUES.clone();
     }
 
-    public static  ordinal(Object... a) {
+    public static Object ordinal(Object... a) {
         return null;
     }
 
-    public static  name(Object... a) {
+    public static Object name(Object... a) {
         return null;
     }
 
-    public static  w(Object... a) {
+    public static Object w(Object... a) {
         return null;
     }
 }

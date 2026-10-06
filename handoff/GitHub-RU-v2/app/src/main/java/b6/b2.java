@@ -8,7 +8,7 @@ public class b2 {
     public b2() {
     }
 
-    public static  a(Object... a) {
+    public static Object a(Object... a) {
         return null;
     }
     public Object a = null;

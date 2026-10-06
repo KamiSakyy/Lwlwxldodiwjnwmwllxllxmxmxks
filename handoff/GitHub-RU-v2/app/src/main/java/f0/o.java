@@ -7,39 +7,39 @@ package f0;
 public class o {
     public o() {}
 
-    public static  c(Object... a) {
+    public static Object c(Object... a) {
         return null;
     }
 
-    public static  v(Object... a) {
+    public static Object v(Object... a) {
         return null;
     }
 
     public static Object f;
 
-    public static  f(Object... a) {
+    public static Object f(Object... a) {
         return null;
     }
 
-    public static  m(Object... a) {
+    public static Object m(Object... a) {
         return null;
     }
 
-    public static  a(Object... a) {
+    public static Object a(Object... a) {
         return null;
     }
 
-    public static  r(Object... a) {
+    public static Object r(Object... a) {
         return null;
     }
 
     public static Object a;
 
-    public static  w(Object... a) {
+    public static Object w(Object... a) {
         return null;
     }
 
-    public static  u(Object... a) {
+    public static Object u(Object... a) {
         return null;
     }
     public Object a(Object p1, Object p2) { return null; }

@@ -39,7 +39,7 @@ public final class u6 {
         return (u6[]) u.clone();
     }
 
-    public static  ordinal(Object... a) {
+    public static Object ordinal(Object... a) {
         return null;
     }
 }

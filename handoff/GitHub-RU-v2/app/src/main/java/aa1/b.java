@@ -1845,11 +1845,11 @@ public abstract class b {
 
 
 
-    public static  L(Object... a) {
+    public static Object L(Object... a) {
         return null;
     }
 
-    public static  j(Object... a) {
+    public static Object j(Object... a) {
         return null;
     }
 }

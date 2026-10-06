@@ -7,59 +7,59 @@ package k;
 public class i {
     public i() {}
 
-    public static  f0(Object... a) {
+    public static Object f0(Object... a) {
         return null;
     }
 
-    public static  onDestroy(Object... a) {
+    public static Object onDestroy(Object... a) {
         return null;
     }
 
-    public static  K0(Object... a) {
+    public static Object K0(Object... a) {
         return null;
     }
 
-    public static  g0(Object... a) {
+    public static Object g0(Object... a) {
         return null;
     }
 
-    public static  getMainLooper(Object... a) {
+    public static Object getMainLooper(Object... a) {
         return null;
     }
 
-    public static  H(Object... a) {
+    public static Object H(Object... a) {
         return null;
     }
 
-    public static  getResources(Object... a) {
+    public static Object getResources(Object... a) {
         return null;
     }
 
-    public static  getString(Object... a) {
+    public static Object getString(Object... a) {
         return null;
     }
 
-    public static  findViewById(Object... a) {
+    public static Object findViewById(Object... a) {
         return null;
     }
 
-    public static  getColor(Object... a) {
+    public static Object getColor(Object... a) {
         return null;
     }
 
-    public static  onNewIntent(Object... a) {
+    public static Object onNewIntent(Object... a) {
         return null;
     }
 
-    public static  onResume(Object... a) {
+    public static Object onResume(Object... a) {
         return null;
     }
 
-    public static  onSaveInstanceState(Object... a) {
+    public static Object onSaveInstanceState(Object... a) {
         return null;
     }
 
-    public static  b(Object... a) {
+    public static Object b(Object... a) {
         return null;
     }
     public Object B(Object p1, Object p2) { return null; }

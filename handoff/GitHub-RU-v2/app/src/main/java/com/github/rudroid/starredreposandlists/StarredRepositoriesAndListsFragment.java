@@ -293,35 +293,35 @@ public final class StarredRepositoriesAndListsFragment extends Hilt_StarredRepos
 
 
 
-    public static  f0(Object... a) {
+    public static Object f0(Object... a) {
         return null;
     }
 
-    public static  f4(Object... a) {
+    public static Object f4(Object... a) {
         return null;
     }
 
-    public static  C3(Object... a) {
+    public static Object C3(Object... a) {
         return null;
     }
 
-    public static  i4(Object... a) {
+    public static Object i4(Object... a) {
         return null;
     }
 
-    public static  F3(Object... a) {
+    public static Object F3(Object... a) {
         return null;
     }
 
-    public static  g4(Object... a) {
+    public static Object g4(Object... a) {
         return null;
     }
 
-    public static  E(Object... a) {
+    public static Object E(Object... a) {
         return null;
     }
 
-    public static  x3(Object... a) {
+    public static Object x3(Object... a) {
         return null;
     }
     public Object g4() { return null; }

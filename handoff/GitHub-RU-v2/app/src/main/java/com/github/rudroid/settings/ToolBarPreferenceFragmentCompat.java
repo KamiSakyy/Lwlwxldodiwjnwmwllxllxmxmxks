@@ -72,47 +72,47 @@ public abstract class ToolBarPreferenceFragmentCompat extends PreferenceFragment
         }
     }
 
-    public static  O3(Object... a) {
+    public static Object O3(Object... a) {
         return null;
     }
 
-    public static  V3(Object... a) {
+    public static Object V3(Object... a) {
         return null;
     }
 
-    public static  f0(Object... a) {
+    public static Object f0(Object... a) {
         return null;
     }
 
-    public static  y3(Object... a) {
+    public static Object y3(Object... a) {
         return null;
     }
 
-    public static  w3(Object... a) {
+    public static Object w3(Object... a) {
         return null;
     }
 
-    public static  F3(Object... a) {
+    public static Object F3(Object... a) {
         return null;
     }
 
-    public static  I3(Object... a) {
+    public static Object I3(Object... a) {
         return null;
     }
 
-    public static  J3(Object... a) {
+    public static Object J3(Object... a) {
         return null;
     }
 
-    public static  i4(Object... a) {
+    public static Object i4(Object... a) {
         return null;
     }
 
-    public static  C3(Object... a) {
+    public static Object C3(Object... a) {
         return null;
     }
 
-    public static  g4(Object... a) {
+    public static Object g4(Object... a) {
         return null;
     }
     public Object f0() { return null; }

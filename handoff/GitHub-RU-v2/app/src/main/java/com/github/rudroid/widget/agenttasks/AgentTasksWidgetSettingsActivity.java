@@ -33,7 +33,7 @@ public final class AgentTasksWidgetSettingsActivity extends d0 {
         AgentTasksWidgetWorker.a.a(context);
     }
 
-    public static  C(Object... a) {
+    public static Object C(Object... a) {
         return null;
     }
 }

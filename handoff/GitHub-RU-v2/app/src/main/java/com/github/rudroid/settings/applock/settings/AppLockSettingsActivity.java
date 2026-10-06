@@ -101,47 +101,47 @@ public final class AppLockSettingsActivity extends w {
     }
 
 
-    public static  f0(Object... a) {
+    public static Object f0(Object... a) {
         return null;
     }
 
-    public static  K0(Object... a) {
+    public static Object K0(Object... a) {
         return null;
     }
 
-    public static  g0(Object... a) {
+    public static Object g0(Object... a) {
         return null;
     }
 
-    public static  C(Object... a) {
+    public static Object C(Object... a) {
         return null;
     }
 
-    public static  E(Object... a) {
+    public static Object E(Object... a) {
         return null;
     }
 
-    public static  H(Object... a) {
+    public static Object H(Object... a) {
         return null;
     }
 
-    public static  recreate(Object... a) {
+    public static Object recreate(Object... a) {
         return null;
     }
 
-    public static  finish(Object... a) {
+    public static Object finish(Object... a) {
         return null;
     }
 
-    public static  getPackageManager(Object... a) {
+    public static Object getPackageManager(Object... a) {
         return null;
     }
 
-    public static  y0(Object... a) {
+    public static Object y0(Object... a) {
         return null;
     }
 
-    public static  w0(Object... a) {
+    public static Object w0(Object... a) {
         return null;
     }
     public Object E(Object p1, Object p2) { return null; }

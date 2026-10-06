@@ -160,15 +160,15 @@ public final class FilterSortBottomSheetDialog extends BaseBottomSheetDialog {
     }
 
 
-    public static  C3(Object... a) {
+    public static Object C3(Object... a) {
         return null;
     }
 
-    public static  s4(Object... a) {
+    public static Object s4(Object... a) {
         return null;
     }
 
-    public static  j4(Object... a) {
+    public static Object j4(Object... a) {
         return null;
     }
     public Object s4() { return null; }

@@ -23,15 +23,15 @@ public final class t {
     public t(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8, Object p9, Object p10) {
     }
 
-    public static  q(Object... a) {
+    public static Object q(Object... a) {
         return null;
     }
 
-    public static  w(Object... a) {
+    public static Object w(Object... a) {
         return null;
     }
 
-    public static  s(Object... a) {
+    public static Object s(Object... a) {
         return null;
     }
     public Object m(Object p1, Object p2, Object p3, Object p4) { return null; }

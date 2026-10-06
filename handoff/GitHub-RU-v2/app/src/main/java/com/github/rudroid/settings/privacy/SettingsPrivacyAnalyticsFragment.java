@@ -146,19 +146,19 @@ public final class SettingsPrivacyAnalyticsFragment extends Hilt_SettingsPrivacy
     }
 
 
-    public static  C3(Object... a) {
+    public static Object C3(Object... a) {
         return null;
     }
 
-    public static  t4(Object... a) {
+    public static Object t4(Object... a) {
         return null;
     }
 
-    public static  s4(Object... a) {
+    public static Object s4(Object... a) {
         return null;
     }
 
-    public static  E(Object... a) {
+    public static Object E(Object... a) {
         return null;
     }
     public Object E(Object p1, Object p2) { return null; }

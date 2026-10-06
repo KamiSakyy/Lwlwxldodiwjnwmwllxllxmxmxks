@@ -107,7 +107,7 @@ public final class LicenseTemplate implements Parcelable {
         this(str, str2, (i & 4) != 0 ? "" : str3, "", "");
     }
 
-    public static  e(Object... a) {
+    public static Object e(Object... a) {
         return null;
     }
 }

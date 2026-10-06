@@ -297,31 +297,31 @@ public final class ShortcutsOverviewFragment extends Hilt_ShortcutsOverviewFragm
     }
 
 
-    public static  f0(Object... a) {
+    public static Object f0(Object... a) {
         return null;
     }
 
-    public static  i4(Object... a) {
+    public static Object i4(Object... a) {
         return null;
     }
 
-    public static  f4(Object... a) {
+    public static Object f4(Object... a) {
         return null;
     }
 
-    public static  g4(Object... a) {
+    public static Object g4(Object... a) {
         return null;
     }
 
-    public static  F3(Object... a) {
+    public static Object F3(Object... a) {
         return null;
     }
 
-    public static  C3(Object... a) {
+    public static Object C3(Object... a) {
         return null;
     }
 
-    public static  B4(Object... a) {
+    public static Object B4(Object... a) {
         return null;
     }
     public Object f4(Object p1, Object p2) { return null; }

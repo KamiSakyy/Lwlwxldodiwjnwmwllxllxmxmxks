@@ -27,7 +27,7 @@ public final class f {
 
 
 
-    public static  a(Object... a) {
+    public static Object a(Object... a) {
         return null;
     }
 }

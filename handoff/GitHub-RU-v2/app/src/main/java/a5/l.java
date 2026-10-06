@@ -8,23 +8,23 @@ public class l {
     public l() {
     }
 
-    public static  b(Object... a) {
+    public static Object b(Object... a) {
         return null;
     }
 
-    public static  D(Object... a) {
+    public static Object D(Object... a) {
         return null;
     }
 
-    public static  A(Object... a) {
+    public static Object A(Object... a) {
         return null;
     }
 
-    public static  e(Object... a) {
+    public static Object e(Object... a) {
         return null;
     }
 
-    public static  d(Object... a) {
+    public static Object d(Object... a) {
         return null;
     }
     public Object a(Object p1) { return null; }

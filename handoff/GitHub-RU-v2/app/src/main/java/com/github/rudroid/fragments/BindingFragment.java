@@ -8,7 +8,7 @@ public class BindingFragment {
     public BindingFragment() {
     }
 
-    public static  y3(Object... a) {
+    public static Object y3(Object... a) {
         return null;
     }
 }

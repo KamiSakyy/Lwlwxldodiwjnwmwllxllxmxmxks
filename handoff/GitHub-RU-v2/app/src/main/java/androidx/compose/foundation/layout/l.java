@@ -18,7 +18,7 @@ public class l {
 
     public static Object e;
 
-    public static  g(Object... a) {
+    public static Object g(Object... a) {
         return null;
     }
 

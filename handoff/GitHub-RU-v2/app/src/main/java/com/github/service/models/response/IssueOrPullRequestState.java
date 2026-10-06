@@ -41,11 +41,11 @@ public final class IssueOrPullRequestState {
         return (IssueOrPullRequestState[]) $VALUES.clone();
     }
 
-    public static  name(Object... a) {
+    public static Object name(Object... a) {
         return null;
     }
 
-    public static  ordinal(Object... a) {
+    public static Object ordinal(Object... a) {
         return null;
     }
 }

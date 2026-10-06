@@ -58,19 +58,19 @@ public final class TestingSettingsActivity extends b {
         }
     }
 
-    public static  findViewById(Object... a) {
+    public static Object findViewById(Object... a) {
         return null;
     }
 
-    public static  getString(Object... a) {
+    public static Object getString(Object... a) {
         return null;
     }
 
-    public static  W(Object... a) {
+    public static Object W(Object... a) {
         return null;
     }
 
-    public static  G(Object... a) {
+    public static Object G(Object... a) {
         return null;
     }
 }

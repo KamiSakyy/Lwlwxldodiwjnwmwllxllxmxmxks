@@ -8,7 +8,7 @@ public class IssueOrPullRequestFragment {
     public IssueOrPullRequestFragment() {
     }
 
-    public static  O4(Object... a) {
+    public static Object O4(Object... a) {
         return null;
     }
     public Object O4() { return null; }

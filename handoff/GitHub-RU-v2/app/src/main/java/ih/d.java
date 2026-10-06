@@ -33,17 +33,17 @@ public final class d {
 
     public static Object a;
 
-    public static  b(Object... a) {
+    public static Object b(Object... a) {
         return null;
     }
 
     public static Object b;
 
-    public static  f(Object... a) {
+    public static Object f(Object... a) {
         return null;
     }
 
-    public static  a(Object... a) {
+    public static Object a(Object... a) {
         return null;
     }
 }

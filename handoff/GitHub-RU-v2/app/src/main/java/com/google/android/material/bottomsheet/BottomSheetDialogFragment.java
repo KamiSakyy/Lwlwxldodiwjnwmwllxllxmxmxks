@@ -46,15 +46,15 @@ public class BottomSheetDialogFragment extends AppCompatDialogFragment {
         return jVar;
     }
 
-    public static  P3(Object... a) {
+    public static Object P3(Object... a) {
         return null;
     }
 
-    public static  a4(Object... a) {
+    public static Object a4(Object... a) {
         return null;
     }
 
-    public static  t4(Object... a) {
+    public static Object t4(Object... a) {
         return null;
     }
 }

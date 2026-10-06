@@ -10,7 +10,7 @@ public class g0 {
 
     public static Object b;
 
-    public static  b(Object... a) {
+    public static Object b(Object... a) {
         return null;
     }
     public Object b(Object p1, Object p2) { return null; }

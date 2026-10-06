@@ -51,7 +51,7 @@ public final class TestingSettingsFragment extends Hilt_TestingSettingsFragment 
     }
 
 
-    public static  i4(Object... a) {
+    public static Object i4(Object... a) {
         return null;
     }
 }

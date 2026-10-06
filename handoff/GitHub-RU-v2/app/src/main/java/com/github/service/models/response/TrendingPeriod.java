@@ -83,15 +83,15 @@ public final class TrendingPeriod implements Parcelable {
         parcel.writeString(name());
     }
 
-    public static  ordinal(Object... a) {
+    public static Object ordinal(Object... a) {
         return null;
     }
 
-    public static  name(Object... a) {
+    public static Object name(Object... a) {
         return null;
     }
 
-    public static  c(Object... a) {
+    public static Object c(Object... a) {
         return null;
     }
 }

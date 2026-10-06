@@ -92,23 +92,23 @@ public final class z {
         return sb3;
     }
 
-    public static  h(Object... a) {
+    public static Object h(Object... a) {
         return null;
     }
 
-    public static  j(Object... a) {
+    public static Object j(Object... a) {
         return null;
     }
 
-    public static  g(Object... a) {
+    public static Object g(Object... a) {
         return null;
     }
 
-    public static  i(Object... a) {
+    public static Object i(Object... a) {
         return null;
     }
 
-    public static  d(Object... a) {
+    public static Object d(Object... a) {
         return null;
     }
     public Object a = null;

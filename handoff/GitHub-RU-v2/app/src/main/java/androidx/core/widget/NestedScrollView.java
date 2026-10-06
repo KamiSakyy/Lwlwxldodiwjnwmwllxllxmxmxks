@@ -8,51 +8,51 @@ public class NestedScrollView {
     public NestedScrollView() {
     }
 
-    public static  setVisibility(Object... a) {
+    public static Object setVisibility(Object... a) {
         return null;
     }
 
-    public static  j(Object... a) {
+    public static Object j(Object... a) {
         return null;
     }
 
-    public static  getVerticalScrollFactorCompat(Object... a) {
+    public static Object getVerticalScrollFactorCompat(Object... a) {
         return null;
     }
 
-    public static  getScrollRange(Object... a) {
+    public static Object getScrollRange(Object... a) {
         return null;
     }
 
-    public static  getScrollX(Object... a) {
+    public static Object getScrollX(Object... a) {
         return null;
     }
 
-    public static  getScrollY(Object... a) {
+    public static Object getScrollY(Object... a) {
         return null;
     }
 
-    public static  isEnabled(Object... a) {
+    public static Object isEnabled(Object... a) {
         return null;
     }
 
-    public static  getHeight(Object... a) {
+    public static Object getHeight(Object... a) {
         return null;
     }
 
-    public static  getMatrix(Object... a) {
+    public static Object getMatrix(Object... a) {
         return null;
     }
 
-    public static  getGlobalVisibleRect(Object... a) {
+    public static Object getGlobalVisibleRect(Object... a) {
         return null;
     }
 
-    public static  getPaddingBottom(Object... a) {
+    public static Object getPaddingBottom(Object... a) {
         return null;
     }
 
-    public static  getPaddingTop(Object... a) {
+    public static Object getPaddingTop(Object... a) {
         return null;
     }
 }

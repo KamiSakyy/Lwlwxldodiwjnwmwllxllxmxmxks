@@ -86,35 +86,35 @@ public final class CopilotChatSettingsActivity extends l0 {
     }
 
 
-    public static  f0(Object... a) {
+    public static Object f0(Object... a) {
         return null;
     }
 
-    public static  K0(Object... a) {
+    public static Object K0(Object... a) {
         return null;
     }
 
-    public static  g0(Object... a) {
+    public static Object g0(Object... a) {
         return null;
     }
 
-    public static  C(Object... a) {
+    public static Object C(Object... a) {
         return null;
     }
 
-    public static  getResources(Object... a) {
+    public static Object getResources(Object... a) {
         return null;
     }
 
-    public static  s0(Object... a) {
+    public static Object s0(Object... a) {
         return null;
     }
 
-    public static  w0(Object... a) {
+    public static Object w0(Object... a) {
         return null;
     }
 
-    public static  y0(Object... a) {
+    public static Object y0(Object... a) {
         return null;
     }
     public Object y0() { return null; }

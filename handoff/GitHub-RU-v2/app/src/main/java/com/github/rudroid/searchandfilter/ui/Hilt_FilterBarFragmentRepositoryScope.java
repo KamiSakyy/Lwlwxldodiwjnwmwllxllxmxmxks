@@ -55,7 +55,7 @@ public abstract class Hilt_FilterBarFragmentRepositoryScope extends FilterBarFra
         return this.I0;
     }
 
-    public static  w(Object... a) {
+    public static Object w(Object... a) {
         return null;
     }
 }

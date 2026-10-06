@@ -216,47 +216,47 @@ class ClockFaceView extends h implements f {
         }
     }
 
-    public static  findViewById(Object... a) {
+    public static Object findViewById(Object... a) {
         return null;
     }
 
-    public static  getViewTreeObserver(Object... a) {
+    public static Object getViewTreeObserver(Object... a) {
         return null;
     }
 
-    public static  setFocusable(Object... a) {
+    public static Object setFocusable(Object... a) {
         return null;
     }
 
-    public static  getContext(Object... a) {
+    public static Object getContext(Object... a) {
         return null;
     }
 
-    public static  removeView(Object... a) {
+    public static Object removeView(Object... a) {
         return null;
     }
 
-    public static  getChildCount(Object... a) {
+    public static Object getChildCount(Object... a) {
         return null;
     }
 
-    public static  getChildAt(Object... a) {
+    public static Object getChildAt(Object... a) {
         return null;
     }
 
-    public static  getResources(Object... a) {
+    public static Object getResources(Object... a) {
         return null;
     }
 
-    public static  setMeasuredDimension(Object... a) {
+    public static Object setMeasuredDimension(Object... a) {
         return null;
     }
 
-    public static  isShown(Object... a) {
+    public static Object isShown(Object... a) {
         return null;
     }
 
-    public static  getHeight(Object... a) {
+    public static Object getHeight(Object... a) {
         return null;
     }
     public Object getHeight() { return null; }

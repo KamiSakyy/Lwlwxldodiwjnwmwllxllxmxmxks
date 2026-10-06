@@ -47,7 +47,7 @@ public final class PullRequestMergeAction {
         return this.rawValue;
     }
 
-    public static  ordinal(Object... a) {
+    public static Object ordinal(Object... a) {
         return null;
     }
 }

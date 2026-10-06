@@ -55,11 +55,11 @@ public final class FocusedFilterExplainerBottomSheet extends Hilt_FocusedFilterE
     }
 
 
-    public static  g4(Object... a) {
+    public static Object g4(Object... a) {
         return null;
     }
 
-    public static  s4(Object... a) {
+    public static Object s4(Object... a) {
         return null;
     }
     public Object s4() { return null; }

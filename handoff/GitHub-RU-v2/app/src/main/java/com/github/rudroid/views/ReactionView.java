@@ -156,15 +156,15 @@ public final class ReactionView extends AppCompatTextView {
         u2.a(this, i5);
     }
 
-    public static  getContext(Object... a) {
+    public static Object getContext(Object... a) {
         return null;
     }
 
-    public static  setBackground(Object... a) {
+    public static Object setBackground(Object... a) {
         return null;
     }
 
-    public static  setTextColor(Object... a) {
+    public static Object setTextColor(Object... a) {
         return null;
     }
 }

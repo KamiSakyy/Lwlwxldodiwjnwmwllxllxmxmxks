@@ -49,7 +49,7 @@ public abstract class b {
 
     public abstract void q(boolean z10);
 
-    public static  f(Object... a) {
+    public static Object f(Object... a) {
         return null;
     }
 }

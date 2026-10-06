@@ -8,43 +8,43 @@ public class SearchView {
     public SearchView() {
     }
 
-    public static  getContext(Object... a) {
+    public static Object getContext(Object... a) {
         return null;
     }
 
-    public static  getLayoutDirection(Object... a) {
+    public static Object getLayoutDirection(Object... a) {
         return null;
     }
 
-    public static  getQuery(Object... a) {
+    public static Object getQuery(Object... a) {
         return null;
     }
 
-    public static  r(Object... a) {
+    public static Object r(Object... a) {
         return null;
     }
 
-    public static  setLayoutParams(Object... a) {
+    public static Object setLayoutParams(Object... a) {
         return null;
     }
 
-    public static  t(Object... a) {
+    public static Object t(Object... a) {
         return null;
     }
 
-    public static  getSuggestionRowLayout(Object... a) {
+    public static Object getSuggestionRowLayout(Object... a) {
         return null;
     }
 
-    public static  getSuggestionCommitIconResId(Object... a) {
+    public static Object getSuggestionCommitIconResId(Object... a) {
         return null;
     }
 
-    public static  p(Object... a) {
+    public static Object p(Object... a) {
         return null;
     }
 
-    public static  setQueryHint(Object... a) {
+    public static Object setQueryHint(Object... a) {
         return null;
     }
 }

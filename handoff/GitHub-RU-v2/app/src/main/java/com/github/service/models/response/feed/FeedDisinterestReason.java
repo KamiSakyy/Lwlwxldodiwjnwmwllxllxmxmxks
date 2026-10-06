@@ -39,7 +39,7 @@ public final class FeedDisinterestReason {
         return (FeedDisinterestReason[]) $VALUES.clone();
     }
 
-    public static  ordinal(Object... a) {
+    public static Object ordinal(Object... a) {
         return null;
     }
 }

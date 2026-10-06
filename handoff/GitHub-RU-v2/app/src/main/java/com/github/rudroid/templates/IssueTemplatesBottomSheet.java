@@ -123,19 +123,19 @@ public final class IssueTemplatesBottomSheet extends Hilt_IssueTemplatesBottomSh
     }
 
 
-    public static  A3(Object... a) {
+    public static Object A3(Object... a) {
         return null;
     }
 
-    public static  s4(Object... a) {
+    public static Object s4(Object... a) {
         return null;
     }
 
-    public static  n4(Object... a) {
+    public static Object n4(Object... a) {
         return null;
     }
 
-    public static  f0(Object... a) {
+    public static Object f0(Object... a) {
         return null;
     }
 }

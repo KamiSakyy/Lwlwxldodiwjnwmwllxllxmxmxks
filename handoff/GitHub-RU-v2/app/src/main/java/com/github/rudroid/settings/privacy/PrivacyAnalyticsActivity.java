@@ -29,7 +29,7 @@ public final class PrivacyAnalyticsActivity extends b<j0> {
         }
     }
 
-    public static  C(Object... a) {
+    public static Object C(Object... a) {
         return null;
     }
 }

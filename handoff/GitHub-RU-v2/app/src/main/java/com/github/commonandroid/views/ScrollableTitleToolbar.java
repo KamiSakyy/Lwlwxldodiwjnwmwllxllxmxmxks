@@ -37,23 +37,23 @@ public final class ScrollableTitleToolbar extends Toolbar {
         }
     }
 
-    public static  setTag(Object... a) {
+    public static Object setTag(Object... a) {
         return null;
     }
 
-    public static  getHeight(Object... a) {
+    public static Object getHeight(Object... a) {
         return null;
     }
 
-    public static  m(Object... a) {
+    public static Object m(Object... a) {
         return null;
     }
 
-    public static  getMenu(Object... a) {
+    public static Object getMenu(Object... a) {
         return null;
     }
 
-    public static  setOnMenuItemClickListener(Object... a) {
+    public static Object setOnMenuItemClickListener(Object... a) {
         return null;
     }
 }

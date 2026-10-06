@@ -131,7 +131,7 @@ public final class SelectableNotificationRepositoryBottomSheet extends Hilt_Sele
     }
 
 
-    public static  f0(Object... a) {
+    public static Object f0(Object... a) {
         return null;
     }
 }

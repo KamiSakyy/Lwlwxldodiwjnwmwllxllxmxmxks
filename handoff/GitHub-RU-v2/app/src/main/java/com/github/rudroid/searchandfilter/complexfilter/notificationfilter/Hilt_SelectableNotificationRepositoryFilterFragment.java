@@ -56,7 +56,7 @@ public abstract class Hilt_SelectableNotificationRepositoryFilterFragment<T> ext
         return this.E0;
     }
 
-    public static  w(Object... a) {
+    public static Object w(Object... a) {
         return null;
     }
 }

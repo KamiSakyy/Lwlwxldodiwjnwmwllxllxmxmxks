@@ -18,7 +18,7 @@ public final class x {
         k71.k.g(rVar, "<this>");
     }
 
-    public static  a(Object... a) {
+    public static Object a(Object... a) {
         return null;
     }
 }

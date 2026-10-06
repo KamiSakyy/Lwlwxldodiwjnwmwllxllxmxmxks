@@ -8,7 +8,7 @@ public class BCSSLParameters {
     public BCSSLParameters() {
     }
 
-    public static  setApplicationProtocols(Object... a) {
+    public static Object setApplicationProtocols(Object... a) {
         return null;
     }
 }

@@ -8,11 +8,11 @@ public class PreferenceScreen {
     public PreferenceScreen() {
     }
 
-    public static  l(Object... a) {
+    public static Object l(Object... a) {
         return null;
     }
 
-    public static  I(Object... a) {
+    public static Object I(Object... a) {
         return null;
     }
 }

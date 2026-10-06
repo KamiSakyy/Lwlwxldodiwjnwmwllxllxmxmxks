@@ -711,7 +711,7 @@ public abstract class b0 {
         return y(zVar, hVar, a0Var, eVar);
     }
 
-    public static  E(Object... a) {
+    public static Object E(Object... a) {
         return null;
     }
 }

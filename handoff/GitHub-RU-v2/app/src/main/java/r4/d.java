@@ -493,7 +493,7 @@ public final class d {
         this.f31154b = b31.b.M(fArr, fArr.length);
     }
 
-    public static  b(Object... a) {
+    public static Object b(Object... a) {
         return null;
     }
 }

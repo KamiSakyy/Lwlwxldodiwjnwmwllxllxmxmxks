@@ -223,47 +223,47 @@ public class NavigationMenuItemView extends g implements y {
     }
 
 
-    public static  setOrientation(Object... a) {
+    public static Object setOrientation(Object... a) {
         return null;
     }
 
-    public static  findViewById(Object... a) {
+    public static Object findViewById(Object... a) {
         return null;
     }
 
-    public static  setId(Object... a) {
+    public static Object setId(Object... a) {
         return null;
     }
 
-    public static  setVisibility(Object... a) {
+    public static Object setVisibility(Object... a) {
         return null;
     }
 
-    public static  getBackground(Object... a) {
+    public static Object getBackground(Object... a) {
         return null;
     }
 
-    public static  getContext(Object... a) {
+    public static Object getContext(Object... a) {
         return null;
     }
 
-    public static  setBackground(Object... a) {
+    public static Object setBackground(Object... a) {
         return null;
     }
 
-    public static  setEnabled(Object... a) {
+    public static Object setEnabled(Object... a) {
         return null;
     }
 
-    public static  getPaddingTop(Object... a) {
+    public static Object getPaddingTop(Object... a) {
         return null;
     }
 
-    public static  getPaddingBottom(Object... a) {
+    public static Object getPaddingBottom(Object... a) {
         return null;
     }
 
-    public static  getResources(Object... a) {
+    public static Object getResources(Object... a) {
         return null;
     }
 }

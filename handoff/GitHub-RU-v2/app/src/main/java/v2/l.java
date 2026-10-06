@@ -8,11 +8,11 @@ public class l {
     public l() {
     }
 
-    public static  b(Object... a) {
+    public static Object b(Object... a) {
         return null;
     }
 
-    public static  e(Object... a) {
+    public static Object e(Object... a) {
         return null;
     }
 
@@ -20,11 +20,11 @@ public class l {
         return null;
     }
 
-    public static  k(Object... a) {
+    public static Object k(Object... a) {
         return null;
     }
 
-    public static  w(Object... a) {
+    public static Object w(Object... a) {
         return null;
     }
 

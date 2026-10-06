@@ -388,7 +388,7 @@ public final class k0 {
         }
     }
 
-    public static  b(Object... a) {
+    public static Object b(Object... a) {
         return null;
     }
 }

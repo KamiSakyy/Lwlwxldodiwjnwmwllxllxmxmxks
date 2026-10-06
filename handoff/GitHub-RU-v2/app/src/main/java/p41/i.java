@@ -61,7 +61,7 @@ public final class i {
         this.c = i2;
     }
 
-    public static  a(Object... a) {
+    public static Object a(Object... a) {
         return null;
     }
 }

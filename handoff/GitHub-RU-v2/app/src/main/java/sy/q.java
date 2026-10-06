@@ -349,7 +349,7 @@ public abstract class q {
 
     public abstract void k(u31.y yVar, float f);
 
-    public static  pShadow(Object... a) {
+    public static Object pShadow(Object... a) {
         return null;
     }
     public static final Object a = null;

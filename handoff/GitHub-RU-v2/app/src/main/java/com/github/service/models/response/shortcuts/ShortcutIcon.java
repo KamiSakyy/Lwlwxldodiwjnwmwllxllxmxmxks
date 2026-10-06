@@ -110,11 +110,11 @@ public final class ShortcutIcon {
         return this.value;
     }
 
-    public static  ordinal(Object... a) {
+    public static Object ordinal(Object... a) {
         return null;
     }
 
-    public static  name(Object... a) {
+    public static Object name(Object... a) {
         return null;
     }
 }

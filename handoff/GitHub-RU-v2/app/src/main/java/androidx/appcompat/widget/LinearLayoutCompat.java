@@ -8,23 +8,23 @@ public class LinearLayoutCompat {
     public LinearLayoutCompat() {
     }
 
-    public static  draw(Object... a) {
+    public static Object draw(Object... a) {
         return null;
     }
 
-    public static  drawableHotspotChanged(Object... a) {
+    public static Object drawableHotspotChanged(Object... a) {
         return null;
     }
 
-    public static  drawableStateChanged(Object... a) {
+    public static Object drawableStateChanged(Object... a) {
         return null;
     }
 
-    public static  jumpDrawablesToCurrentState(Object... a) {
+    public static Object jumpDrawablesToCurrentState(Object... a) {
         return null;
     }
 
-    public static  verifyDrawable(Object... a) {
+    public static Object verifyDrawable(Object... a) {
         return null;
     }
 }

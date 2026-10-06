@@ -42,7 +42,7 @@ public final class SearchViewModelType {
         return (SearchViewModelType[]) $VALUES.clone();
     }
 
-    public static  name(Object... a) {
+    public static Object name(Object... a) {
         return null;
     }
     public Object name() { return null; }

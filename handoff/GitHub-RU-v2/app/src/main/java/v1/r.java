@@ -8,15 +8,15 @@ public class r {
     public r() {
     }
 
-    public static  e(Object... a) {
+    public static Object e(Object... a) {
         return null;
     }
 
-    public static  h(Object... a) {
+    public static Object h(Object... a) {
         return null;
     }
 
-    public static  k(Object... a) {
+    public static Object k(Object... a) {
         return null;
     }
     public Object c(Object p1, Object p2) { return null; }

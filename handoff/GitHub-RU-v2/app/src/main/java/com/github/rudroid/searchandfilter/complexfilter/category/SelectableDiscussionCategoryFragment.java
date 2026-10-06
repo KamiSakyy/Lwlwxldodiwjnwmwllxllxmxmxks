@@ -98,7 +98,7 @@ public final class SelectableDiscussionCategoryFragment extends Hilt_SelectableD
     }
 
 
-    public static  j4(Object... a) {
+    public static Object j4(Object... a) {
         return null;
     }
 }

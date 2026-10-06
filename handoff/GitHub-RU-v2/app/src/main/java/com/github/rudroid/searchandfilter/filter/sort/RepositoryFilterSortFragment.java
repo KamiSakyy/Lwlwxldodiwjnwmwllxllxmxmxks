@@ -53,11 +53,11 @@ public final class RepositoryFilterSortFragment extends Hilt_RepositoryFilterSor
         }
     }
 
-    public static  n4(Object... a) {
+    public static Object n4(Object... a) {
         return null;
     }
 
-    public static  B4(Object... a) {
+    public static Object B4(Object... a) {
         return null;
     }
 }

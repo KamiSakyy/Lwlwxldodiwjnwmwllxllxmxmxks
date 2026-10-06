@@ -8,7 +8,7 @@ public class ComposeView {
     public ComposeView() {
     }
 
-    public static  setContent(Object... a) {
+    public static Object setContent(Object... a) {
         return null;
     }
 }

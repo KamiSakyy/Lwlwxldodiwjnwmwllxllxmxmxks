@@ -50,31 +50,31 @@ public abstract class SearchAndFilterBaseBottomSheetDialog extends BaseBottomShe
         return R3;
     }
 
-    public static  C3(Object... a) {
+    public static Object C3(Object... a) {
         return null;
     }
 
-    public static  G4(Object... a) {
+    public static Object G4(Object... a) {
         return null;
     }
 
-    public static  i4(Object... a) {
+    public static Object i4(Object... a) {
         return null;
     }
 
-    public static  y3(Object... a) {
+    public static Object y3(Object... a) {
         return null;
     }
 
-    public static  N3(Object... a) {
+    public static Object N3(Object... a) {
         return null;
     }
 
-    public static  O3(Object... a) {
+    public static Object O3(Object... a) {
         return null;
     }
 
-    public static  V3(Object... a) {
+    public static Object V3(Object... a) {
         return null;
     }
 }

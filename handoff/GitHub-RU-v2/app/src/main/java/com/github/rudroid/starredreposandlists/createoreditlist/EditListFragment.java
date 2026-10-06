@@ -125,23 +125,23 @@ public final class EditListFragment extends Hilt_EditListFragment implements com
     }
 
 
-    public static  f0(Object... a) {
+    public static Object f0(Object... a) {
         return null;
     }
 
-    public static  C3(Object... a) {
+    public static Object C3(Object... a) {
         return null;
     }
 
-    public static  F3(Object... a) {
+    public static Object F3(Object... a) {
         return null;
     }
 
-    public static  g4(Object... a) {
+    public static Object g4(Object... a) {
         return null;
     }
 
-    public static  w3(Object... a) {
+    public static Object w3(Object... a) {
         return null;
     }
     public Object g4() { return null; }

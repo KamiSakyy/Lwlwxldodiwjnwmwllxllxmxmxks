@@ -72,27 +72,27 @@ public final class CopilotManageSubscriptionActivity extends i0 {
 
 
 
-    public static  f0(Object... a) {
+    public static Object f0(Object... a) {
         return null;
     }
 
-    public static  K0(Object... a) {
+    public static Object K0(Object... a) {
         return null;
     }
 
-    public static  g0(Object... a) {
+    public static Object g0(Object... a) {
         return null;
     }
 
-    public static  C(Object... a) {
+    public static Object C(Object... a) {
         return null;
     }
 
-    public static  k0(Object... a) {
+    public static Object k0(Object... a) {
         return null;
     }
 
-    public static  w0(Object... a) {
+    public static Object w0(Object... a) {
         return null;
     }
     public Object finish() { return null; }

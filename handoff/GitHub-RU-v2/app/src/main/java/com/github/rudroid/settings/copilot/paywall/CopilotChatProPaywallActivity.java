@@ -161,35 +161,35 @@ public final class CopilotChatProPaywallActivity extends o {
 
 
 
-    public static  f0(Object... a) {
+    public static Object f0(Object... a) {
         return null;
     }
 
-    public static  K0(Object... a) {
+    public static Object K0(Object... a) {
         return null;
     }
 
-    public static  g0(Object... a) {
+    public static Object g0(Object... a) {
         return null;
     }
 
-    public static  C(Object... a) {
+    public static Object C(Object... a) {
         return null;
     }
 
-    public static  a0(Object... a) {
+    public static Object a0(Object... a) {
         return null;
     }
 
-    public static  m(Object... a) {
+    public static Object m(Object... a) {
         return null;
     }
 
-    public static  w0(Object... a) {
+    public static Object w0(Object... a) {
         return null;
     }
 
-    public static  y0(Object... a) {
+    public static Object y0(Object... a) {
         return null;
     }
     public Object w0() { return null; }

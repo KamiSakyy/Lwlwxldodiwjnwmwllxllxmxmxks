@@ -1806,95 +1806,95 @@ public class Chip extends p implements e, y, i {
         g();
     }
 
-    public static  getElevation(Object... a) {
+    public static Object getElevation(Object... a) {
         return null;
     }
 
-    public static  setOutlineProvider(Object... a) {
+    public static Object setOutlineProvider(Object... a) {
         return null;
     }
 
-    public static  setHorizontallyScrolling(Object... a) {
+    public static Object setHorizontallyScrolling(Object... a) {
         return null;
     }
 
-    public static  setMinHeight(Object... a) {
+    public static Object setMinHeight(Object... a) {
         return null;
     }
 
-    public static  getLayoutDirection(Object... a) {
+    public static Object getLayoutDirection(Object... a) {
         return null;
     }
 
-    public static  refreshDrawableState(Object... a) {
+    public static Object refreshDrawableState(Object... a) {
         return null;
     }
 
-    public static  setMinWidth(Object... a) {
+    public static Object setMinWidth(Object... a) {
         return null;
     }
 
-    public static  getMinHeight(Object... a) {
+    public static Object getMinHeight(Object... a) {
         return null;
     }
 
-    public static  getMinWidth(Object... a) {
+    public static Object getMinWidth(Object... a) {
         return null;
     }
 
-    public static  performClick(Object... a) {
+    public static Object performClick(Object... a) {
         return null;
     }
 
-    public static  playSoundEffect(Object... a) {
+    public static Object playSoundEffect(Object... a) {
         return null;
     }
 
-    public static  getText(Object... a) {
+    public static Object getText(Object... a) {
         return null;
     }
 
-    public static  isClickable(Object... a) {
+    public static Object isClickable(Object... a) {
         return null;
     }
 
-    public static  isEnabled(Object... a) {
+    public static Object isEnabled(Object... a) {
         return null;
     }
 
-    public static  getResources(Object... a) {
+    public static Object getResources(Object... a) {
         return null;
     }
 
-    public static  getContext(Object... a) {
+    public static Object getContext(Object... a) {
         return null;
     }
 
-    public static  setOnClickListener(Object... a) {
+    public static Object setOnClickListener(Object... a) {
         return null;
     }
 
-    public static  setTag(Object... a) {
+    public static Object setTag(Object... a) {
         return null;
     }
 
-    public static  setOnTouchListener(Object... a) {
+    public static Object setOnTouchListener(Object... a) {
         return null;
     }
 
-    public static  sendAccessibilityEvent(Object... a) {
+    public static Object sendAccessibilityEvent(Object... a) {
         return null;
     }
 
-    public static  requestLayout(Object... a) {
+    public static Object requestLayout(Object... a) {
         return null;
     }
 
-    public static  invalidate(Object... a) {
+    public static Object invalidate(Object... a) {
         return null;
     }
 
-    public static  invalidateOutline(Object... a) {
+    public static Object invalidateOutline(Object... a) {
         return null;
     }
 }

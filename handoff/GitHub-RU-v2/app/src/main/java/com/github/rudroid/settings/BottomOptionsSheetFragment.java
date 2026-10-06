@@ -42,7 +42,7 @@ public final class BottomOptionsSheetFragment extends BottomSheetDialogFragment 
         (i >= 35 ? new a5.t2(window, cVar) : i >= 30 ? new a5.r2(window, cVar) : new a5.q2(window, cVar)).V(true);
     }
 
-    public static  x4(Object... a) {
+    public static Object x4(Object... a) {
         return null;
     }
 }

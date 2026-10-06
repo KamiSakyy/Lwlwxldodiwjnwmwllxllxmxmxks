@@ -295,23 +295,23 @@ public final class RepositoryAuthorBottomSheet extends Hilt_RepositoryAuthorBott
 
 
 
-    public static  f0(Object... a) {
+    public static Object f0(Object... a) {
         return null;
     }
 
-    public static  F3(Object... a) {
+    public static Object F3(Object... a) {
         return null;
     }
 
-    public static  j4(Object... a) {
+    public static Object j4(Object... a) {
         return null;
     }
 
-    public static  n4(Object... a) {
+    public static Object n4(Object... a) {
         return null;
     }
 
-    public static  z4(Object... a) {
+    public static Object z4(Object... a) {
         return null;
     }
     public Object j4() { return null; }

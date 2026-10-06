@@ -276,59 +276,59 @@ public class ShapeableImageView extends v implements y {
         setStrokeWidth(getResources().getDimensionPixelSize(i));
     }
 
-    public static  setImageDrawable(Object... a) {
+    public static Object setImageDrawable(Object... a) {
         return null;
     }
 
-    public static  setBackgroundColor(Object... a) {
+    public static Object setBackgroundColor(Object... a) {
         return null;
     }
 
-    public static  setImageURI(Object... a) {
+    public static Object setImageURI(Object... a) {
         return null;
     }
 
-    public static  setOnClickListener(Object... a) {
+    public static Object setOnClickListener(Object... a) {
         return null;
     }
 
-    public static  setLayerType(Object... a) {
+    public static Object setLayerType(Object... a) {
         return null;
     }
 
-    public static  setOutlineProvider(Object... a) {
+    public static Object setOutlineProvider(Object... a) {
         return null;
     }
 
-    public static  getLayoutDirection(Object... a) {
+    public static Object getLayoutDirection(Object... a) {
         return null;
     }
 
-    public static  getDrawableState(Object... a) {
+    public static Object getDrawableState(Object... a) {
         return null;
     }
 
-    public static  isLayoutDirectionResolved(Object... a) {
+    public static Object isLayoutDirectionResolved(Object... a) {
         return null;
     }
 
-    public static  isPaddingRelative(Object... a) {
+    public static Object isPaddingRelative(Object... a) {
         return null;
     }
 
-    public static  getWidth(Object... a) {
+    public static Object getWidth(Object... a) {
         return null;
     }
 
-    public static  getHeight(Object... a) {
+    public static Object getHeight(Object... a) {
         return null;
     }
 
-    public static  invalidateOutline(Object... a) {
+    public static Object invalidateOutline(Object... a) {
         return null;
     }
 
-    public static  getContext(Object... a) {
+    public static Object getContext(Object... a) {
         return null;
     }
 }

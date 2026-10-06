@@ -38,11 +38,11 @@ public final class PullsWidgetFilter {
         return (PullsWidgetFilter[]) $VALUES.clone();
     }
 
-    public static  name(Object... a) {
+    public static Object name(Object... a) {
         return null;
     }
 
-    public static  ordinal(Object... a) {
+    public static Object ordinal(Object... a) {
         return null;
     }
 }

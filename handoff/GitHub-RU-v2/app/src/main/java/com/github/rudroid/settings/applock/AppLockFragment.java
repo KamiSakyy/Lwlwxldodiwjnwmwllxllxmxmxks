@@ -79,11 +79,11 @@ public final class AppLockFragment extends Hilt_AppLockFragment {
         return composeView;
     }
 
-    public static  i4(Object... a) {
+    public static Object i4(Object... a) {
         return null;
     }
 
-    public static  g4(Object... a) {
+    public static Object g4(Object... a) {
         return null;
     }
     public Object g4() { return null; }

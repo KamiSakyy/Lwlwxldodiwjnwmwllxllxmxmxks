@@ -96,7 +96,7 @@ public final class EditDiscussionTitleFragment extends Hilt_EditDiscussionTitleF
         return (l8) this.I0.getValue();
     }
 
-    public static  f0(Object... a) {
+    public static Object f0(Object... a) {
         return null;
     }
 }

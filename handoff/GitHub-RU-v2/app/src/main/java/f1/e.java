@@ -26,39 +26,39 @@ public final class e {
     public e(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) {
     }
 
-    public static  c(Object... a) {
+    public static Object c(Object... a) {
         return null;
     }
 
-    public static  b(Object... a) {
+    public static Object b(Object... a) {
         return null;
     }
 
-    public static  h(Object... a) {
+    public static Object h(Object... a) {
         return null;
     }
 
-    public static  r(Object... a) {
+    public static Object r(Object... a) {
         return null;
     }
 
-    public static  z(Object... a) {
+    public static Object z(Object... a) {
         return null;
     }
 
-    public static  x(Object... a) {
+    public static Object x(Object... a) {
         return null;
     }
 
-    public static  i(Object... a) {
+    public static Object i(Object... a) {
         return null;
     }
 
-    public static  p(Object... a) {
+    public static Object p(Object... a) {
         return null;
     }
 
-    public static  t(Object... a) {
+    public static Object t(Object... a) {
         return null;
     }
 
@@ -66,49 +66,49 @@ public final class e {
         return null;
     }
 
-    public static  A(Object... a) {
+    public static Object A(Object... a) {
         return null;
     }
 
-    public static  o(Object... a) {
+    public static Object o(Object... a) {
         return null;
     }
 
-    public static  g(Object... a) {
+    public static Object g(Object... a) {
         return null;
     }
 
-    public static  q(Object... a) {
+    public static Object q(Object... a) {
         return null;
     }
 
-    public static  n(Object... a) {
+    public static Object n(Object... a) {
         return null;
     }
 
-    public static  w(Object... a) {
+    public static Object w(Object... a) {
         return null;
     }
 
-    public static  l(Object... a) {
+    public static Object l(Object... a) {
         return null;
     }
 
-    public static  a(Object... a) {
+    public static Object a(Object... a) {
         return null;
     }
 
-    public static  k(Object... a) {
+    public static Object k(Object... a) {
         return null;
     }
 
     public static Object e;
 
-    public static  j(Object... a) {
+    public static Object j(Object... a) {
         return null;
     }
 
-    public static  v(Object... a) {
+    public static Object v(Object... a) {
         return null;
     }
     public Object b(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }

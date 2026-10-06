@@ -192,19 +192,19 @@ public final class FilterBarFragmentRepositoryScope extends Hilt_FilterBarFragme
     }
 
 
-    public static  g4(Object... a) {
+    public static Object g4(Object... a) {
         return null;
     }
 
-    public static  A3(Object... a) {
+    public static Object A3(Object... a) {
         return null;
     }
 
-    public static  F3(Object... a) {
+    public static Object F3(Object... a) {
         return null;
     }
 
-    public static  j4(Object... a) {
+    public static Object j4(Object... a) {
         return null;
     }
     public Object j4() { return null; }

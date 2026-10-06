@@ -26,11 +26,11 @@ public final class w {
     public w(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7) {
     }
 
-    public static  M(Object... a) {
+    public static Object M(Object... a) {
         return null;
     }
 
-    public static  L(Object... a) {
+    public static Object L(Object... a) {
         return null;
     }
     public Object E = null;

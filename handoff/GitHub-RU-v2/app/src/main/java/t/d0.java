@@ -6,7 +6,7 @@ public abstract class d0 {
         return 2130968856;
     }
 
-    public static  P(Object... a) {
+    public static Object P(Object... a) {
         return null;
     }
 }

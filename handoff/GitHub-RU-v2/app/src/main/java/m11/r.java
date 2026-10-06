@@ -254,23 +254,23 @@ public final /* synthetic */ class r implements j11.g, p51.a, p41.d, w21.d, t11.
         }
     }
 
-    public static  e(Object... a) {
+    public static Object e(Object... a) {
         return null;
     }
 
-    public static  g(Object... a) {
+    public static Object g(Object... a) {
         return null;
     }
 
-    public static  j(Object... a) {
+    public static Object j(Object... a) {
         return null;
     }
 
-    public static  l(Object... a) {
+    public static Object l(Object... a) {
         return null;
     }
 
-    public static  m(Object... a) {
+    public static Object m(Object... a) {
         return null;
     }
 }

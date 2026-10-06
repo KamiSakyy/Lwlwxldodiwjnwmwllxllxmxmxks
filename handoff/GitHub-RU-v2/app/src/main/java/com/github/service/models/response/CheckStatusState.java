@@ -49,11 +49,11 @@ public final class CheckStatusState {
         return this.rawValue;
     }
 
-    public static  F(Object... a) {
+    public static Object F(Object... a) {
         return null;
     }
 
-    public static  ordinal(Object... a) {
+    public static Object ordinal(Object... a) {
         return null;
     }
 }

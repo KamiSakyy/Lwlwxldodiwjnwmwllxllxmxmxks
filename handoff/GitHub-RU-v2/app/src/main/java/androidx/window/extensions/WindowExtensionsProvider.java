@@ -8,7 +8,7 @@ public class WindowExtensionsProvider {
     public WindowExtensionsProvider() {
     }
 
-    public static  getWindowExtensions(Object... a) {
+    public static Object getWindowExtensions(Object... a) {
         return null;
     }
 }

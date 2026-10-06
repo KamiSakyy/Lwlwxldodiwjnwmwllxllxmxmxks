@@ -109,19 +109,19 @@ public final class LegacyProjectsTabFragment extends Hilt_LegacyProjectsTabFragm
     }
 
 
-    public static  A3(Object... a) {
+    public static Object A3(Object... a) {
         return null;
     }
 
-    public static  C3(Object... a) {
+    public static Object C3(Object... a) {
         return null;
     }
 
-    public static  j4(Object... a) {
+    public static Object j4(Object... a) {
         return null;
     }
 
-    public static  B4(Object... a) {
+    public static Object B4(Object... a) {
         return null;
     }
 }

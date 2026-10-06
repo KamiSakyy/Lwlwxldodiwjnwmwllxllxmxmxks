@@ -169,7 +169,7 @@ public final class Avatar implements Parcelable {
         }
     }
 
-    public static  q(Object... a) {
+    public static Object q(Object... a) {
         return null;
     }
 }

@@ -40,7 +40,7 @@ public final class BlockDuration {
         return (BlockDuration[]) $VALUES.clone();
     }
 
-    public static  ordinal(Object... a) {
+    public static Object ordinal(Object... a) {
         return null;
     }
 }

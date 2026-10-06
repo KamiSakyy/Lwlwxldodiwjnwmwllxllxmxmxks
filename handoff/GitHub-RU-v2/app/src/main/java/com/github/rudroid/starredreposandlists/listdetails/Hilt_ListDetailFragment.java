@@ -56,7 +56,7 @@ public abstract class Hilt_ListDetailFragment extends GitHubFragment {
         return this.A0;
     }
 
-    public static  w(Object... a) {
+    public static Object w(Object... a) {
         return null;
     }
 }

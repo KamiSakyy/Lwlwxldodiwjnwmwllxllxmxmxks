@@ -8,31 +8,31 @@ public class s0 {
     public s0() {
     }
 
-    public static  b(Object... a) {
+    public static Object b(Object... a) {
         return null;
     }
 
-    public static  y(Object... a) {
+    public static Object y(Object... a) {
         return null;
     }
 
-    public static  m(Object... a) {
+    public static Object m(Object... a) {
         return null;
     }
 
-    public static  i(Object... a) {
+    public static Object i(Object... a) {
         return null;
     }
 
-    public static  n(Object... a) {
+    public static Object n(Object... a) {
         return null;
     }
 
-    public static  o(Object... a) {
+    public static Object o(Object... a) {
         return null;
     }
 
-    public static  l(Object... a) {
+    public static Object l(Object... a) {
         return null;
     }
     public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }

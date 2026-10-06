@@ -47,7 +47,7 @@ public final class MilestoneState {
         return this.rawValue;
     }
 
-    public static  name(Object... a) {
+    public static Object name(Object... a) {
         return null;
     }
 }

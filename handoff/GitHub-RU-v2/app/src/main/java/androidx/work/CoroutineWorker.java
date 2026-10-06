@@ -8,7 +8,7 @@ public class CoroutineWorker {
     public CoroutineWorker() {
     }
 
-    public static  c(Object... a) {
+    public static Object c(Object... a) {
         return null;
     }
 }

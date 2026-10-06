@@ -8,23 +8,23 @@ public class DialogFragment {
     public DialogFragment() {
     }
 
-    public static  a4(Object... a) {
+    public static Object a4(Object... a) {
         return null;
     }
 
-    public static  Z3(Object... a) {
+    public static Object Z3(Object... a) {
         return null;
     }
 
-    public static  b4(Object... a) {
+    public static Object b4(Object... a) {
         return null;
     }
 
-    public static  onDismiss(Object... a) {
+    public static Object onDismiss(Object... a) {
         return null;
     }
 
-    public static  u4(Object... a) {
+    public static Object u4(Object... a) {
         return null;
     }
 }

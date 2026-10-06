@@ -54,15 +54,15 @@ public class TransportRegistrar implements ComponentRegistrar {
         return Arrays.asList(b, b3, b4.b(), sy.o.c(LIBRARY_NAME, "19.0.0"));
     }
 
-    public static  c(Object... a) {
+    public static Object c(Object... a) {
         return null;
     }
 
-    public static  b(Object... a) {
+    public static Object b(Object... a) {
         return null;
     }
 
-    public static  a(Object... a) {
+    public static Object a(Object... a) {
         return null;
     }
 }

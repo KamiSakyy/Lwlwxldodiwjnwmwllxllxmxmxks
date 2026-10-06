@@ -8,7 +8,7 @@ public class CommitDetailsFragment {
     public CommitDetailsFragment() {
     }
 
-    public static  i4(Object... a) {
+    public static Object i4(Object... a) {
         return null;
     }
 }

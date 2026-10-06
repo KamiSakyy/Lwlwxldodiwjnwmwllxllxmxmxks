@@ -56,7 +56,7 @@ public abstract class Hilt_SelectableOrganizationFragment<T> extends SearchAndFi
         return this.E0;
     }
 
-    public static  w(Object... a) {
+    public static Object w(Object... a) {
         return null;
     }
 }

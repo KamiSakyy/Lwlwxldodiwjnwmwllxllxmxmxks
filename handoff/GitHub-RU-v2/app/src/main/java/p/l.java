@@ -848,7 +848,7 @@ public class l implements Menu {
         }
     }
 
-    public static  findItem(Object... a) {
+    public static Object findItem(Object... a) {
         return null;
     }
     public Object e = null;

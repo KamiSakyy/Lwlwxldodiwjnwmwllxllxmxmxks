@@ -67,23 +67,23 @@ public final class TwoFactorActivity extends d<n0> {
         return this.k0;
     }
 
-    public static  C(Object... a) {
+    public static Object C(Object... a) {
         return null;
     }
 
-    public static  s0(Object... a) {
+    public static Object s0(Object... a) {
         return null;
     }
 
-    public static  getIntent(Object... a) {
+    public static Object getIntent(Object... a) {
         return null;
     }
 
-    public static  b0(Object... a) {
+    public static Object b0(Object... a) {
         return null;
     }
 
-    public static  finish(Object... a) {
+    public static Object finish(Object... a) {
         return null;
     }
     public Object finish() { return null; }

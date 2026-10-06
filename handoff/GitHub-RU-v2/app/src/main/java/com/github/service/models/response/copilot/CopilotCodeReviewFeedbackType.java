@@ -63,7 +63,7 @@ public final class CopilotCodeReviewFeedbackType {
         throw new NoWhenBranchMatchedException();
     }
 
-    public static  ordinal(Object... a) {
+    public static Object ordinal(Object... a) {
         return null;
     }
 }

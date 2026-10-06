@@ -8,15 +8,15 @@ public class LegacyIssueOrPullRequestActivity {
     public LegacyIssueOrPullRequestActivity() {
     }
 
-    public static  W0(Object... a) {
+    public static Object W0(Object... a) {
         return null;
     }
 
-    public static  a1(Object... a) {
+    public static Object a1(Object... a) {
         return null;
     }
 
-    public static  Y0(Object... a) {
+    public static Object Y0(Object... a) {
         return null;
     }
     public Object W0() { return null; }

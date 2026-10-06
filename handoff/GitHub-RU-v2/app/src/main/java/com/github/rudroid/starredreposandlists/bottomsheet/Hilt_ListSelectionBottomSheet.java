@@ -56,15 +56,15 @@ public abstract class Hilt_ListSelectionBottomSheet extends BaseComposeBottomShe
         return this.P0;
     }
 
-    public static  w(Object... a) {
+    public static Object w(Object... a) {
         return null;
     }
 
-    public static  Y3(Object... a) {
+    public static Object Y3(Object... a) {
         return null;
     }
 
-    public static  onDismiss(Object... a) {
+    public static Object onDismiss(Object... a) {
         return null;
     }
     public Object P3(Object p1) { return null; }

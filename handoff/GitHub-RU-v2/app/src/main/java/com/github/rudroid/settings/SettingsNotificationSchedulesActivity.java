@@ -32,7 +32,7 @@ public final class SettingsNotificationSchedulesActivity extends e<ic.j0> {
         }
     }
 
-    public static  C(Object... a) {
+    public static Object C(Object... a) {
         return null;
     }
 }

@@ -327,19 +327,19 @@ public class MaterialDatePicker<S> extends DialogFragment {
         return dialog;
     }
 
-    public static  i4(Object... a) {
+    public static Object i4(Object... a) {
         return null;
     }
 
-    public static  w4(Object... a) {
+    public static Object w4(Object... a) {
         return null;
     }
 
-    public static  k4(Object... a) {
+    public static Object k4(Object... a) {
         return null;
     }
 
-    public static  B3(Object... a) {
+    public static Object B3(Object... a) {
         return null;
     }
 }

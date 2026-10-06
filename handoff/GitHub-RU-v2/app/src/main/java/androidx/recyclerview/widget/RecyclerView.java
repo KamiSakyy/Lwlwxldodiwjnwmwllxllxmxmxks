@@ -8,39 +8,39 @@ public class RecyclerView {
     public RecyclerView() {
     }
 
-    public static  o0(Object... a) {
+    public static Object o0(Object... a) {
         return null;
     }
 
-    public static  setAccessibilityDelegateCompat(Object... a) {
+    public static Object setAccessibilityDelegateCompat(Object... a) {
         return null;
     }
 
-    public static  j(Object... a) {
+    public static Object j(Object... a) {
         return null;
     }
 
-    public static  setAdapter(Object... a) {
+    public static Object setAdapter(Object... a) {
         return null;
     }
 
-    public static  setLayoutManager(Object... a) {
+    public static Object setLayoutManager(Object... a) {
         return null;
     }
 
-    public static  K(Object... a) {
+    public static Object K(Object... a) {
         return null;
     }
 
-    public static  getAccessibilityClassName(Object... a) {
+    public static Object getAccessibilityClassName(Object... a) {
         return null;
     }
 
-    public static  onInterceptTouchEvent(Object... a) {
+    public static Object onInterceptTouchEvent(Object... a) {
         return null;
     }
 
-    public static  onTouchEvent(Object... a) {
+    public static Object onTouchEvent(Object... a) {
         return null;
     }
 }

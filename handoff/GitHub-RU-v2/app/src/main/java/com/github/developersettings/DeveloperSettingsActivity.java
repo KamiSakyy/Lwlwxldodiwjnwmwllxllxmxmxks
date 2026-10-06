@@ -57,31 +57,31 @@ public final class DeveloperSettingsActivity extends b {
         }
     }
 
-    public static  findViewById(Object... a) {
+    public static Object findViewById(Object... a) {
         return null;
     }
 
-    public static  getString(Object... a) {
+    public static Object getString(Object... a) {
         return null;
     }
 
-    public static  W(Object... a) {
+    public static Object W(Object... a) {
         return null;
     }
 
-    public static  G(Object... a) {
+    public static Object G(Object... a) {
         return null;
     }
 
-    public static  getDrawable(Object... a) {
+    public static Object getDrawable(Object... a) {
         return null;
     }
 
-    public static  getColor(Object... a) {
+    public static Object getColor(Object... a) {
         return null;
     }
 
-    public static  H(Object... a) {
+    public static Object H(Object... a) {
         return null;
     }
 }

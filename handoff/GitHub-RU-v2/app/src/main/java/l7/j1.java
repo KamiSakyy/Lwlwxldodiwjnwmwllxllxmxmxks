@@ -54,7 +54,7 @@ public final class j1 {
         return "State{mTargetPosition=" + this.f28164a + ", mData=null, mItemCount=" + this.f28168e + ", mIsMeasuring=" + this.i + ", mPreviousLayoutItemCount=" + this.f28165b + ", mDeletedInvisibleItemCountSincePreviousLayout=" + this.f28166c + ", mStructureChanged=" + this.f28169f + ", mInPreLayout=" + this.f28170g + ", mRunSimpleAnimations=" + this.f28172j + ", mRunPredictiveAnimations=" + this.f28173k + '}';
     }
 
-    public static  b(Object... a) {
+    public static Object b(Object... a) {
         return null;
     }
 }

@@ -212,55 +212,55 @@ public class MaterialToolbar extends Toolbar {
         textView.layout(i, textView.getTop(), i2, textView.getBottom());
     }
 
-    public static  getBackground(Object... a) {
+    public static Object getBackground(Object... a) {
         return null;
     }
 
-    public static  getElevation(Object... a) {
+    public static Object getElevation(Object... a) {
         return null;
     }
 
-    public static  setBackground(Object... a) {
+    public static Object setBackground(Object... a) {
         return null;
     }
 
-    public static  getTitle(Object... a) {
+    public static Object getTitle(Object... a) {
         return null;
     }
 
-    public static  getSubtitle(Object... a) {
+    public static Object getSubtitle(Object... a) {
         return null;
     }
 
-    public static  getMeasuredWidth(Object... a) {
+    public static Object getMeasuredWidth(Object... a) {
         return null;
     }
 
-    public static  getPaddingLeft(Object... a) {
+    public static Object getPaddingLeft(Object... a) {
         return null;
     }
 
-    public static  getPaddingRight(Object... a) {
+    public static Object getPaddingRight(Object... a) {
         return null;
     }
 
-    public static  getChildCount(Object... a) {
+    public static Object getChildCount(Object... a) {
         return null;
     }
 
-    public static  getChildAt(Object... a) {
+    public static Object getChildAt(Object... a) {
         return null;
     }
 
-    public static  getLogo(Object... a) {
+    public static Object getLogo(Object... a) {
         return null;
     }
 
-    public static  requestLayout(Object... a) {
+    public static Object requestLayout(Object... a) {
         return null;
     }
 
-    public static  getNavigationIcon(Object... a) {
+    public static Object getNavigationIcon(Object... a) {
         return null;
     }
 }

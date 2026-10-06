@@ -428,11 +428,11 @@ public class q0 {
         return true;
     }
 
-    public static  get(Object... a) {
+    public static Object get(Object... a) {
         return null;
     }
 
-    public static  put(Object... a) {
+    public static Object put(Object... a) {
         return null;
     }
     public Object t = null;

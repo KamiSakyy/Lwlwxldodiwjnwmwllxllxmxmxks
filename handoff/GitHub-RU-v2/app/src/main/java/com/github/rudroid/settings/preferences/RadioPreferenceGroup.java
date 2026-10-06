@@ -217,7 +217,7 @@ public final class RadioPreferenceGroup extends Preference {
     }
 
 
-    public static  j(Object... a) {
+    public static Object j(Object... a) {
         return null;
     }
 }

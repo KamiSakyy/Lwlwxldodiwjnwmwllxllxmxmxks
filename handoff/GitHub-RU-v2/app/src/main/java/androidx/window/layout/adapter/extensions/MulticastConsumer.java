@@ -8,7 +8,7 @@ public class MulticastConsumer {
     public MulticastConsumer() {
     }
 
-    public static  accept(Object... a) {
+    public static Object accept(Object... a) {
         return null;
     }
 }

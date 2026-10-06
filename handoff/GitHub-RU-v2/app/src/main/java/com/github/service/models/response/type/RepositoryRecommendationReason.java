@@ -44,7 +44,7 @@ public final class RepositoryRecommendationReason {
         return (RepositoryRecommendationReason[]) $VALUES.clone();
     }
 
-    public static  ordinal(Object... a) {
+    public static Object ordinal(Object... a) {
         return null;
     }
 }

@@ -8,7 +8,7 @@ public class Worker {
     public Worker() {
     }
 
-    public static  c(Object... a) {
+    public static Object c(Object... a) {
         return null;
     }
 }

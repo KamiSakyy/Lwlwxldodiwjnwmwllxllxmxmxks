@@ -52,11 +52,11 @@ public final class NavLinkIdentifier {
         return this.rawValue;
     }
 
-    public static  ordinal(Object... a) {
+    public static Object ordinal(Object... a) {
         return null;
     }
 
-    public static  name(Object... a) {
+    public static Object name(Object... a) {
         return null;
     }
 }

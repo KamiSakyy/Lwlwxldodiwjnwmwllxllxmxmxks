@@ -121,13 +121,13 @@ public abstract /* synthetic */ class i {
 
     public static Object i;
 
-    public static  b(Object... a) {
+    public static Object b(Object... a) {
         return null;
     }
 
     public static Object e;
 
-    public static  e(Object... a) {
+    public static Object e(Object... a) {
         return null;
     }
     public Object a() { return null; }

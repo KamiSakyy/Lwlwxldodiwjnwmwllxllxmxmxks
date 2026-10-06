@@ -59,7 +59,7 @@ public abstract class Hilt_RepositoryFilterSortFragment<T extends f> extends Bin
         return this.B0;
     }
 
-    public static  w(Object... a) {
+    public static Object w(Object... a) {
         return null;
     }
 }

@@ -92,11 +92,11 @@ public final class DeveloperSettingsFragment extends Hilt_DeveloperSettingsFragm
         menuInflater.inflate(2131689479, menu);
     }
 
-    public static  g4(Object... a) {
+    public static Object g4(Object... a) {
         return null;
     }
 
-    public static  F3(Object... a) {
+    public static Object F3(Object... a) {
         return null;
     }
 }

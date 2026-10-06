@@ -23,11 +23,11 @@ public final class s {
     public s(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7) {
     }
 
-    public static  t(Object... a) {
+    public static Object t(Object... a) {
         return null;
     }
 
-    public static  F(Object... a) {
+    public static Object F(Object... a) {
         return null;
     }
     public Object D(Object p1, Object p2, Object p3, Object p4) { return null; }

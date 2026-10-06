@@ -931,47 +931,47 @@ public final class SettingsFragment extends Hilt_SettingsFragment implements com
         v4(preferenceScreen);
     }
 
-    public static  g4(Object... a) {
+    public static Object g4(Object... a) {
         return null;
     }
 
-    public static  t4(Object... a) {
+    public static Object t4(Object... a) {
         return null;
     }
 
-    public static  i4(Object... a) {
+    public static Object i4(Object... a) {
         return null;
     }
 
-    public static  w3(Object... a) {
+    public static Object w3(Object... a) {
         return null;
     }
 
-    public static  B3(Object... a) {
+    public static Object B3(Object... a) {
         return null;
     }
 
-    public static  C3(Object... a) {
+    public static Object C3(Object... a) {
         return null;
     }
 
-    public static  F3(Object... a) {
+    public static Object F3(Object... a) {
         return null;
     }
 
-    public static  x3(Object... a) {
+    public static Object x3(Object... a) {
         return null;
     }
 
-    public static  A3(Object... a) {
+    public static Object A3(Object... a) {
         return null;
     }
 
-    public static  E(Object... a) {
+    public static Object E(Object... a) {
         return null;
     }
 
-    public static  h(Object... a) {
+    public static Object h(Object... a) {
         return null;
     }
     public Object A3() { return null; }

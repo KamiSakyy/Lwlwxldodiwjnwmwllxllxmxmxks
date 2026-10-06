@@ -682,7 +682,7 @@ public final class h0 {
         }
     }
 
-    public static  g(Object... a) {
+    public static Object g(Object... a) {
         return null;
     }
     public Object a = null;

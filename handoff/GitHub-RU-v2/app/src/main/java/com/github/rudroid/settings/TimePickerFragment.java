@@ -64,15 +64,15 @@ public final class TimePickerFragment extends DialogFragment implements TimePick
         return timePickerDialog;
     }
 
-    public static  t4(Object... a) {
+    public static Object t4(Object... a) {
         return null;
     }
 
-    public static  w3(Object... a) {
+    public static Object w3(Object... a) {
         return null;
     }
 
-    public static  y3(Object... a) {
+    public static Object y3(Object... a) {
         return null;
     }
 }

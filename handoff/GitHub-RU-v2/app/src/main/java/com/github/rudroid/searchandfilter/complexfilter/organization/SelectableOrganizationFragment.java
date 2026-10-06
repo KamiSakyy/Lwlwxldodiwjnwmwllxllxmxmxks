@@ -98,11 +98,11 @@ public final class SelectableOrganizationFragment extends Hilt_SelectableOrganiz
     }
 
 
-    public static  j4(Object... a) {
+    public static Object j4(Object... a) {
         return null;
     }
 
-    public static  f0(Object... a) {
+    public static Object f0(Object... a) {
         return null;
     }
 }

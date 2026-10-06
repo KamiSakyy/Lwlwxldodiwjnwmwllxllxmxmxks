@@ -83,15 +83,15 @@ public final class SwipeActionPreference extends Preference {
         this.h0 = true;
     }
 
-    public static  j(Object... a) {
+    public static Object j(Object... a) {
         return null;
     }
 
-    public static  B(Object... a) {
+    public static Object B(Object... a) {
         return null;
     }
 
-    public static  h(Object... a) {
+    public static Object h(Object... a) {
         return null;
     }
 }

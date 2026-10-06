@@ -90,123 +90,123 @@ public class CheckableImageButton extends u implements Checkable {
         setChecked(!this.u);
     }
 
-    public static  setAlpha(Object... a) {
+    public static Object setAlpha(Object... a) {
         return null;
     }
 
-    public static  setTag(Object... a) {
+    public static Object setTag(Object... a) {
         return null;
     }
 
-    public static  setImageDrawable(Object... a) {
+    public static Object setImageDrawable(Object... a) {
         return null;
     }
 
-    public static  p(Object... a) {
+    public static Object p(Object... a) {
         return null;
     }
 
-    public static  setOnClickListener(Object... a) {
+    public static Object setOnClickListener(Object... a) {
         return null;
     }
 
-    public static  sendAccessibilityEvent(Object... a) {
+    public static Object sendAccessibilityEvent(Object... a) {
         return null;
     }
 
-    public static  getContentDescription(Object... a) {
+    public static Object getContentDescription(Object... a) {
         return null;
     }
 
-    public static  getDrawable(Object... a) {
+    public static Object getDrawable(Object... a) {
         return null;
     }
 
-    public static  setActivated(Object... a) {
+    public static Object setActivated(Object... a) {
         return null;
     }
 
-    public static  setOnLongClickListener(Object... a) {
+    public static Object setOnLongClickListener(Object... a) {
         return null;
     }
 
-    public static  setScaleType(Object... a) {
+    public static Object setScaleType(Object... a) {
         return null;
     }
 
-    public static  setContentDescription(Object... a) {
+    public static Object setContentDescription(Object... a) {
         return null;
     }
 
-    public static  hasOnClickListeners(Object... a) {
+    public static Object hasOnClickListeners(Object... a) {
         return null;
     }
 
-    public static  setFocusable(Object... a) {
+    public static Object setFocusable(Object... a) {
         return null;
     }
 
-    public static  setClickable(Object... a) {
+    public static Object setClickable(Object... a) {
         return null;
     }
 
-    public static  setLongClickable(Object... a) {
+    public static Object setLongClickable(Object... a) {
         return null;
     }
 
-    public static  setImportantForAccessibility(Object... a) {
+    public static Object setImportantForAccessibility(Object... a) {
         return null;
     }
 
-    public static  getDrawableState(Object... a) {
+    public static Object getDrawableState(Object... a) {
         return null;
     }
 
-    public static  performClick(Object... a) {
+    public static Object performClick(Object... a) {
         return null;
     }
 
-    public static  jumpDrawablesToCurrentState(Object... a) {
+    public static Object jumpDrawablesToCurrentState(Object... a) {
         return null;
     }
 
-    public static  hasFocus(Object... a) {
+    public static Object hasFocus(Object... a) {
         return null;
     }
 
-    public static  setId(Object... a) {
+    public static Object setId(Object... a) {
         return null;
     }
 
-    public static  getLayoutParams(Object... a) {
+    public static Object getLayoutParams(Object... a) {
         return null;
     }
 
-    public static  getVisibility(Object... a) {
+    public static Object getVisibility(Object... a) {
         return null;
     }
 
-    public static  isActivated(Object... a) {
+    public static Object isActivated(Object... a) {
         return null;
     }
 
-    public static  setVisibility(Object... a) {
+    public static Object setVisibility(Object... a) {
         return null;
     }
 
-    public static  setOnFocusChangeListener(Object... a) {
+    public static Object setOnFocusChangeListener(Object... a) {
         return null;
     }
 
-    public static  getMeasuredWidth(Object... a) {
+    public static Object getMeasuredWidth(Object... a) {
         return null;
     }
 
-    public static  setMinimumWidth(Object... a) {
+    public static Object setMinimumWidth(Object... a) {
         return null;
     }
 
-    public static  setMinimumHeight(Object... a) {
+    public static Object setMinimumHeight(Object... a) {
         return null;
     }
 }

@@ -59,31 +59,31 @@ public abstract class SearchAndFilterBaseFragment<T> extends BindingFragment imp
         I4().getData().e(F3(), new c0.a(new y(0, this)));
     }
 
-    public static  i4(Object... a) {
+    public static Object i4(Object... a) {
         return null;
     }
 
-    public static  B4(Object... a) {
+    public static Object B4(Object... a) {
         return null;
     }
 
-    public static  F3(Object... a) {
+    public static Object F3(Object... a) {
         return null;
     }
 
-    public static  y3(Object... a) {
+    public static Object y3(Object... a) {
         return null;
     }
 
-    public static  N3(Object... a) {
+    public static Object N3(Object... a) {
         return null;
     }
 
-    public static  O3(Object... a) {
+    public static Object O3(Object... a) {
         return null;
     }
 
-    public static  V3(Object... a) {
+    public static Object V3(Object... a) {
         return null;
     }
 }

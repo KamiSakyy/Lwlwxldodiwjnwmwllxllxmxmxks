@@ -71,19 +71,19 @@ public final class WebViewActivity extends t {
         return this.f5777j0;
     }
 
-    public static  s0(Object... a) {
+    public static Object s0(Object... a) {
         return null;
     }
 
-    public static  getIntent(Object... a) {
+    public static Object getIntent(Object... a) {
         return null;
     }
 
-    public static  W(Object... a) {
+    public static Object W(Object... a) {
         return null;
     }
 
-    public static  getString(Object... a) {
+    public static Object getString(Object... a) {
         return null;
     }
 }

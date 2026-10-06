@@ -57,7 +57,7 @@ public final class ApiFailureType {
         return (ApiFailureType[]) $VALUES.clone();
     }
 
-    public static  ordinal(Object... a) {
+    public static Object ordinal(Object... a) {
         return null;
     }
 }
