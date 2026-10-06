@@ -1,128 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Меню вложений: две строки круглых иконок, как в каскаде Telegram. -->
+<!--
+  Шторка вложений — как .action-sheet-content: фон #1c1c1e со скруглением 20dp
+  сверху, пункты radius 12dp на #2c2c2e, подпись 15sp/500.
+-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/bg_sheet"
     android:orientation="vertical"
-    android:paddingStart="12dp"
-    android:paddingTop="16dp"
-    android:paddingEnd="12dp"
-    android:paddingBottom="18dp">
+    android:padding="16dp">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="8dp"
-        android:paddingBottom="12dp"
-        android:text="@string/attach_title"
-        android:textAppearance="@style/TextAppearance.MailGram.Title" />
+        android:id="@+id/attach_photo"
+        style="@style/Widget.MailGram.ActionItem"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="0"
+        android:gravity="center_vertical"
+        android:text="@string/attach_photo">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+    </TextView>
 
-        <LinearLayout
-            android:id="@+id/attach_photo"
-            style="@style/Widget.MailGram.AttachAction">
+    <TextView
+        android:id="@+id/attach_video"
+        style="@style/Widget.MailGram.ActionItem"
+        android:layout_marginBottom="8dp"
+        android:text="@string/attach_video" />
 
-            <ImageView
-                style="@style/Widget.MailGram.AttachIcon"
-                android:backgroundTint="#0A84FF"
-                android:contentDescription="@string/attach_photo"
-                android:src="@drawable/ic_gallery"
-                app:tint="#FFFFFFFF" />
+    <TextView
+        android:id="@+id/attach_circle"
+        style="@style/Widget.MailGram.ActionItem"
+        android:layout_marginBottom="8dp"
+        android:text="@string/attach_circle" />
 
-            <TextView
-                style="@style/Widget.MailGram.AttachLabel"
-                android:text="@string/attach_photo" />
-        </LinearLayout>
+    <TextView
+        android:id="@+id/attach_file"
+        style="@style/Widget.MailGram.ActionItem"
+        android:layout_marginBottom="8dp"
+        android:text="@string/attach_file" />
 
-        <LinearLayout
-            android:id="@+id/attach_video"
-            style="@style/Widget.MailGram.AttachAction">
-
-            <ImageView
-                style="@style/Widget.MailGram.AttachIcon"
-                android:backgroundTint="#AF52DE"
-                android:contentDescription="@string/attach_video"
-                android:src="@drawable/ic_video"
-                app:tint="#FFFFFFFF" />
-
-            <TextView
-                style="@style/Widget.MailGram.AttachLabel"
-                android:text="@string/attach_video" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/attach_circle"
-            style="@style/Widget.MailGram.AttachAction">
-
-            <ImageView
-                style="@style/Widget.MailGram.AttachIcon"
-                android:backgroundTint="#FF2D55"
-                android:contentDescription="@string/attach_circle"
-                android:src="@drawable/ic_circle_video"
-                app:tint="#FFFFFFFF" />
-
-            <TextView
-                style="@style/Widget.MailGram.AttachLabel"
-                android:text="@string/attach_circle" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:id="@+id/attach_file"
-            style="@style/Widget.MailGram.AttachAction">
-
-            <ImageView
-                style="@style/Widget.MailGram.AttachIcon"
-                android:backgroundTint="#FF9500"
-                android:contentDescription="@string/attach_file"
-                android:src="@drawable/ic_file"
-                app:tint="#FFFFFFFF" />
-
-            <TextView
-                style="@style/Widget.MailGram.AttachLabel"
-                android:text="@string/attach_file" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/attach_camera"
-            style="@style/Widget.MailGram.AttachAction">
-
-            <ImageView
-                style="@style/Widget.MailGram.AttachIcon"
-                android:backgroundTint="#34C759"
-                android:contentDescription="@string/attach_camera"
-                android:src="@drawable/ic_camera"
-                app:tint="#FFFFFFFF" />
-
-            <TextView
-                style="@style/Widget.MailGram.AttachLabel"
-                android:text="@string/attach_camera" />
-        </LinearLayout>
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_weight="1" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/attach_camera"
+        style="@style/Widget.MailGram.ActionItem"
+        android:text="@string/attach_camera" />
 
     <TextView
         android:id="@+id/attach_limits"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:text="@string/limits_hint"
-        android:textAppearance="@style/TextAppearance.MailGram.Caption"
-        android:textColor="@color/text_tertiary" />
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/text_muted"
+        android:textSize="11sp" />
 </LinearLayout>

@@ -3,11 +3,7 @@
     android:color="@color/ripple_strong">
     <item>
         <shape android:shape="oval">
-            <gradient
-                android:type="linear"
-                android:angle="270"
-                android:startColor="@color/bubble_out_top"
-                android:endColor="@color/bubble_out_bottom" />
+            <solid android:color="#FFFFFFFF" />
         </shape>
     </item>
 </ripple>

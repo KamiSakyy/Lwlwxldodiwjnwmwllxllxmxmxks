@@ -1,30 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
-        <shape android:shape="rectangle">
-            <solid android:color="@color/wallpaper_core" />
-        </shape>
-    </item>
-    <item>
-        <shape android:shape="rectangle">
-            <gradient
-                android:type="radial"
-                android:centerX="0.5"
-                android:centerY="1.05"
-                android:gradientRadius="95%p"
-                android:startColor="@color/wallpaper_indigo"
-                android:endColor="#00000000" />
-        </shape>
-    </item>
-    <item>
-        <shape android:shape="rectangle">
-            <gradient
-                android:type="radial"
-                android:centerX="0.9"
-                android:centerY="0.05"
-                android:gradientRadius="55%p"
-                android:startColor="@color/wallpaper_glow"
-                android:endColor="#00000000" />
-        </shape>
-    </item>
-</layer-list>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/bg" />
+</shape>

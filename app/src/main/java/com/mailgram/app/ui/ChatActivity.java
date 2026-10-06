@@ -171,13 +171,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             androidx.core.view.ViewCompat.setTransitionName(avatar, sharedAvatar);
         }
         findViewById(R.id.chat_back).setOnClickListener(v -> finishAfterTransition());
-        findViewById(R.id.chat_menu_btn).setOnClickListener(v -> {
-            androidx.appcompat.widget.PopupMenu popup =
-                    new androidx.appcompat.widget.PopupMenu(this, findViewById(R.id.chat_menu_btn));
-            popup.getMenuInflater().inflate(R.menu.menu_chat, popup.getMenu());
-            popup.setOnMenuItemClickListener(this::onMenu);
-            popup.show();
-        });
+        findViewById(R.id.chat_menu_btn).setOnClickListener(v -> showSheet());
         findViewById(R.id.chat_search_btn).setOnClickListener(v -> toggleSearch());
         Anim.pressFeedback(avatar);
 
@@ -334,7 +328,10 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     // ---------------- меню ----------------
 
     private boolean onMenu(MenuItem item) {
-        int id = item.getItemId();
+        return handleMenuId(item.getItemId());
+    }
+
+    private boolean handleMenuId(int id) {
         if (id == R.id.action_search) {
             toggleSearch();
             return true;
@@ -591,44 +588,89 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                 .show();
     }
 
-    /** Карточка чата: собеседник, статистика, состояние шифрования и номер безопасности. */
+    /** Профиль собеседника — как .profile-view-modal в старом мессенджере. */
     private void showChatInfo() {
+        showProfile();
+    }
+
+    private void showProfile() {
         chat = Store.get(this).chat(uid);
         if (chat == null) return;
-        int[] counts = Store.get(this).mediaCounts(uid);
+        final View view = findViewById(R.id.profile_view);
+        if (view == null) return;
+        String title = chat.name != null && !chat.name.isEmpty()
+                ? chat.name : Store.displayName(this, chat.peer);
         String myKey = "";
         try {
-            myKey = com.mailgram.app.crypto.B64.str(com.mailgram.app.crypto.Identity.publicKeyRaw(this));
+            myKey = B64.str(Identity.publicKeyRaw(this));
         } catch (Exception ignored) {
         }
         final String number = Ui.safetyNumber(chat.peerPublic, myKey);
-        boolean session = com.mailgram.app.crypto.RatchetStore.hasSession(this, uid);
+        ((AvatarView) findViewById(R.id.profile_avatar)).setName(title);
+        ((TextView) findViewById(R.id.profile_name)).setText(title);
+        ((TextView) findViewById(R.id.profile_status)).setText(chat.peer);
+        int[] counts = Store.get(this).mediaCounts(uid);
+        ((TextView) findViewById(R.id.profile_info_count))
+                .setText(getString(R.string.media_count, counts[0], counts[1], counts[2]));
+        final TextView verify = findViewById(R.id.profile_info_key);
+        verify.setText(chat.verified ? R.string.verified_short : R.string.unverified_short);
+        verify.setOnClickListener(v -> {
+            Store.get(this).setVerified(uid, !chat.verified);
+            chat = Store.get(this).chat(uid);
+            verify.setText(chat != null && chat.verified
+                    ? R.string.verified_short : R.string.unverified_short);
+            Anim.haptic(verify, false);
+        });
+        TextView keyBox = findViewById(R.id.profile_key_box);
+        keyBox.setText(number.isEmpty() ? chat.peer : number);
+        keyBox.setOnClickListener(v -> Ui.copy(this, getString(R.string.safety_number),
+                number.isEmpty() ? chat.peer : number));
+        findViewById(R.id.profile_close).setOnClickListener(v -> hideProfile());
+        view.setVisibility(View.VISIBLE);
+        view.startAnimation(android.view.animation.AnimationUtils.loadAnimation(this, R.anim.slide_up));
+        Anim.haptic(view, false);
+    }
 
-        StringBuilder body = new StringBuilder();
-        body.append(chat.peer).append("\n")
-                .append(getString(R.string.media_count, counts[0], counts[1], counts[2])).append("\n")
-                .append(session ? getString(R.string.ratchet_on) : getString(R.string.ratchet_wait));
-        if (!number.isEmpty()) {
-            body.append("\n\n").append(getString(R.string.safety_number)).append(":\n")
-                    .append(number).append("\n\n").append(getString(R.string.safety_hint));
+    private void hideProfile() {
+        final View view = findViewById(R.id.profile_view);
+        if (view == null) return;
+        view.startAnimation(android.view.animation.AnimationUtils.loadAnimation(this, R.anim.slide_down));
+        view.postDelayed(() -> view.setVisibility(View.GONE), 200L);
+    }
+
+    /** Шторка действий — .action-sheet: фон затемняется, панель выезжает снизу. */
+    private void showSheet() {
+        final View sheet = findViewById(R.id.chat_sheet);
+        if (sheet == null) return;
+        sheet.setVisibility(View.VISIBLE);
+        sheet.setAlpha(0f);
+        sheet.animate().alpha(1f).setDuration(150L).start();
+        final View panel = ((ViewGroup) sheet).getChildAt(0);
+        if (panel != null) {
+            panel.startAnimation(android.view.animation.AnimationUtils.loadAnimation(this, R.anim.sheet_up));
+            panel.setOnClickListener(v -> {
+            });
         }
+        sheet.setOnClickListener(v -> hideSheet());
+        int[] ids = {R.id.action_pin, R.id.action_mute, R.id.action_search, R.id.action_export,
+                R.id.action_safety, R.id.action_rename, R.id.action_clear, R.id.action_delete};
+        for (int itemId : ids) {
+            final int actionId = itemId;
+            View item = findViewById(actionId);
+            if (item == null) continue;
+            item.setOnClickListener(v -> {
+                hideSheet();
+                handleMenuId(actionId);
+            });
+            Anim.pressFeedback(item);
+        }
+    }
 
-        new MaterialAlertDialogBuilder(this)
-                .setTitle(R.string.chat_info)
-                .setMessage(body.toString())
-                .setNeutralButton(chat.verified ? R.string.unverify_chat : R.string.verify_chat,
-                        (d, w) -> {
-                            Store.get(this).setVerified(uid, !chat.verified);
-                            Ui.toast(this, getString(chat.verified
-                                    ? R.string.chat_unverified : R.string.chat_verified));
-                            refresh();
-                        })
-                .setNegativeButton(R.string.done, null)
-                .setPositiveButton(R.string.copy, (d, w) -> {
-                    Ui.copy(this, getString(R.string.safety_number),
-                            number.isEmpty() ? chat.peer : number);
-                })
-                .show();
+    private void hideSheet() {
+        final View sheet = findViewById(R.id.chat_sheet);
+        if (sheet == null) return;
+        sheet.animate().alpha(0f).setDuration(150L)
+                .withEndAction(() -> sheet.setVisibility(View.GONE)).start();
     }
 
     /** Плавный переход к сообщению по его mid с короткой вспышкой подсветки. */
@@ -1540,12 +1582,44 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     }
 
     private void showSafety() {
+        showSafetyModal();
+    }
+
+    /** Крипто-модалка дизайна: ключ в .key-box, отпечаток и адрес собеседника. */
+    private void showSafetyModal() {
         chat = Store.get(this).chat(uid);
-        String safety = "—";
-        String peerKey = "—";
+        if (chat == null) return;
+        String myKey = "";
+        try {
+            myKey = B64.str(Identity.publicKeyRaw(this));
+        } catch (Exception ignored) {
+        }
+        final String number = Ui.safetyNumber(chat.peerPublic, myKey);
+        final View modal = findViewById(R.id.encrypt_modal);
+        if (modal == null) {
+            showSafetyDialog();
+            return;
+        }
+        ((TextView) findViewById(R.id.encrypt_key_box)).setText(myKey);
+        ((TextView) findViewById(R.id.encrypt_safety_box))
+                .setText(number.isEmpty() ? getString(R.string.peer_no_key) : number);
+        ((TextView) findViewById(R.id.encrypt_delfan_box)).setText(chat.peer);
+        modal.setVisibility(View.VISIBLE);
+        modal.setAlpha(0f);
+        modal.animate().alpha(1f).setDuration(150L).start();
+        modal.setOnClickListener(v -> modal.setVisibility(View.GONE));
+        findViewById(R.id.encrypt_close).setOnClickListener(v -> modal.setVisibility(View.GONE));
+        findViewById(R.id.encrypt_copy).setOnClickListener(v -> Ui.copy(this,
+                getString(R.string.safety_number), number.isEmpty() ? myKey : number));
+    }
+
+    /** Запасной вариант: тот же номер безопасности обычным диалогом. */
+    private void showSafetyDialog() {
+        String safety = "\u2014";
+        String peerKey = "\u2014";
         try {
             byte[] mine = Identity.publicKeyRaw(this);
-            if (chat.peerPublic != null && !chat.peerPublic.isEmpty()) {
+            if (chat != null && chat.peerPublic != null && !chat.peerPublic.isEmpty()) {
                 byte[] peer = B64.bytes(chat.peerPublic);
                 if (peer.length == 65) {
                     safety = NativeCrypto.safetyNumber(mine, peer);
@@ -1553,7 +1627,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                 }
             }
         } catch (Exception e) {
-            safety = "ошибка: " + e.getMessage();
+            safety = getString(R.string.error_generic, e.getMessage());
         }
         final String safetyValue = safety;
         View view = LayoutInflater.from(this).inflate(R.layout.dialog_text, null);
@@ -1566,7 +1640,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                 .setTitle(R.string.chat_menu_safety)
                 .setView(view)
                 .setNegativeButton(R.string.done, null)
-                .setPositiveButton(R.string.copy, (d, w) -> Ui.copy(this, "MailGram safety", safetyValue))
+                .setPositiveButton(R.string.copy, (d, w) -> Ui.copy(this, getString(R.string.safety_number), safetyValue))
                 .show();
     }
 

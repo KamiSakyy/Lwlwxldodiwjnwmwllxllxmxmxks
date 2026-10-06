@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Текстовый блок модалки — как .key-box: #0a0a0a, рамка #222, radius 10dp, monospace 11sp -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:maxHeight="420dp"
-    android:paddingStart="22dp"
+    android:paddingStart="20dp"
     android:paddingTop="10dp"
-    android:paddingEnd="22dp"
+    android:paddingEnd="20dp"
     android:paddingBottom="4dp">
 
     <TextView
         android:id="@+id/dialog_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/bg_key_box"
         android:fontFamily="monospace"
         android:lineSpacingExtra="4dp"
-        android:textAppearance="@style/TextAppearance.MailGram.Caption"
-        android:textColor="@color/text_primary"
-        android:textIsSelectable="true" />
+        android:padding="10dp"
+        android:textColor="@color/key_text"
+        android:textIsSelectable="true"
+        android:textSize="11sp" />
 </ScrollView>

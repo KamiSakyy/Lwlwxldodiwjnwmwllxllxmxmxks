@@ -110,6 +110,8 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         Ui.liftAboveBars(findViewById(R.id.fab_new_chat));
         findViewById(R.id.fab_new_chat).setOnClickListener(v -> newChatDialog());
         findViewById(R.id.empty_action).setOnClickListener(v -> newChatDialog());
+        setUpDrawer();
+        setUpBottomNav();
 
         searchInput.addTextChangedListener(new TextWatcher() {
             @Override
@@ -133,6 +135,118 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
             SyncService.start(this);
         }
         refresh();
+    }
+
+    /** Меню-панель слева — как .drawer в старом мессенджере. */
+    private void setUpDrawer() {
+        toolbar.setNavigationOnClickListener(v -> toggleDrawer(true));
+        final View overlay = findViewById(R.id.drawer_overlay);
+        final View panel = findViewById(R.id.drawer_panel);
+        if (overlay == null || panel == null) return;
+        overlay.setOnClickListener(v -> toggleDrawer(false));
+        String account = Auth.account(this);
+        String name = account == null || account.isEmpty() ? getString(R.string.me) : account;
+        AvatarView drawerAvatar = findViewById(R.id.drawer_avatar);
+        if (drawerAvatar != null) drawerAvatar.setName(name);
+        ((TextView) findViewById(R.id.drawer_name)).setText(name);
+        ((TextView) findViewById(R.id.drawer_status)).setText(R.string.app_name);
+        ((TextView) findViewById(R.id.drawer_online)).setText(R.string.online_now);
+        findViewById(R.id.drawer_item_new_chat).setOnClickListener(v -> {
+            toggleDrawer(false);
+            newChatDialog();
+        });
+        findViewById(R.id.drawer_item_contacts).setOnClickListener(v -> {
+            toggleDrawer(false);
+            newChatDialog();
+        });
+        findViewById(R.id.drawer_item_invite).setOnClickListener(v -> {
+            toggleDrawer(false);
+            shareInvite();
+        });
+        View.OnClickListener toSettings = v -> {
+            toggleDrawer(false);
+            openSettings();
+        };
+        findViewById(R.id.drawer_item_notifications).setOnClickListener(toSettings);
+        findViewById(R.id.drawer_item_security).setOnClickListener(toSettings);
+        findViewById(R.id.drawer_item_my_key).setOnClickListener(toSettings);
+        findViewById(R.id.drawer_item_settings).setOnClickListener(toSettings);
+        findViewById(R.id.drawer_item_logout).setOnClickListener(toSettings);
+    }
+
+    private void openSettings() {
+        startActivity(new Intent(this, SettingsActivity.class));
+    }
+
+    /** Приглашение: свой публичный ключ можно переслать в любом мессенджере. */
+    private void shareInvite() {
+        String key = "";
+        try {
+            key = com.mailgram.app.crypto.B64.str(
+                    com.mailgram.app.crypto.Identity.publicKeyRaw(this));
+        } catch (Exception ignored) {
+        }
+        Intent send = new Intent(Intent.ACTION_SEND);
+        send.setType("text/plain");
+        send.putExtra(Intent.EXTRA_TEXT, getString(R.string.invite_share, key));
+        try {
+            startActivity(Intent.createChooser(send, getString(R.string.invite_title)));
+        } catch (Exception e) {
+            Ui.toast(this, getString(R.string.error_generic, getString(R.string.invite_title)));
+        }
+    }
+
+    private void setUpBottomNav() {
+        findViewById(R.id.nav_chats).setOnClickListener(v -> {
+            if (!list.canScrollVertically(-1)) refresh();
+            list.smoothScrollToPosition(0);
+        });
+        findViewById(R.id.nav_channels).setOnClickListener(v -> searchMessagesDialog());
+        findViewById(R.id.nav_contacts).setOnClickListener(v -> newChatDialog());
+        findViewById(R.id.nav_settings).setOnClickListener(v -> openSettings());
+    }
+
+    private void toggleDrawer(final boolean open) {
+        final View overlay = findViewById(R.id.drawer_overlay);
+        final View panel = findViewById(R.id.drawer_panel);
+        if (overlay == null || panel == null) return;
+        if (open) {
+            overlay.setVisibility(View.VISIBLE);
+            panel.setVisibility(View.VISIBLE);
+            overlay.setAlpha(0f);
+            overlay.animate().alpha(1f).setDuration(250L).start();
+            panel.startAnimation(android.view.animation.AnimationUtils.loadAnimation(this, R.anim.drawer_in));
+        } else {
+            overlay.animate().alpha(0f).setDuration(200L)
+                    .withEndAction(() -> overlay.setVisibility(View.GONE)).start();
+            android.view.animation.Animation out =
+                    android.view.animation.AnimationUtils.loadAnimation(this, R.anim.drawer_out);
+            out.setAnimationListener(new android.view.animation.Animation.AnimationListener() {
+                @Override
+                public void onAnimationStart(android.view.animation.Animation animation) {
+                }
+
+                @Override
+                public void onAnimationEnd(android.view.animation.Animation animation) {
+                    panel.setVisibility(View.GONE);
+                }
+
+                @Override
+                public void onAnimationRepeat(android.view.animation.Animation animation) {
+                }
+            });
+            panel.startAnimation(out);
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        View panel = findViewById(R.id.drawer_panel);
+        if (panel != null && panel.getVisibility() == View.VISIBLE) {
+            toggleDrawer(false);
+            return;
+        }
+        super.onBackPressed();
     }
 
     private boolean onMenu(MenuItem item) {

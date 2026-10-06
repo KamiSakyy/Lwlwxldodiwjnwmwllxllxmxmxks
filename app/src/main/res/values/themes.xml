@@ -1,43 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Тема MailGram (светлая). Собирается скриптом tools/make_themes.py:
-  наборы стилей в светлой и чёрной темах совпадают полностью.
+  Тема MailGram. Собирается скриптом tools/make_themes.py.
+  Размеры и цвета — из дизайна старого мессенджера: шапка 56dp, поверхность
+  #1c1c1e, вторая #2c2c2e, акцент #0a84ff, зелёный #34c759, красный #ff3b30.
 -->
 <resources>
-    <style name="Theme.MailGram" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="android:colorBackground">@color/bg</item>
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:textColorHint">@color/text_tertiary</item>
-        <item name="android:textColorPrimary">@color/text_primary</item>
-        <item name="android:textColorSecondary">@color/text_secondary</item>
-        <item name="android:windowBackground">@color/bg</item>
-        <item name="android:windowLightNavigationBar">true</item>
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="colorAccent">@color/brand</item>
-        <item name="colorControlHighlight">@color/ripple</item>
-        <item name="colorControlNormal">@color/text_primary</item>
-        <item name="colorError">@color/danger</item>
-        <item name="colorOnError">#FFFFFFFF</item>
+    <style name="Theme.MailGram" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/brand</item>
         <item name="colorOnPrimary">@color/text_on_accent</item>
-        <item name="colorOnPrimaryContainer">@color/text_on_accent</item>
+        <item name="colorPrimaryContainer">@color/surface3</item>
+        <item name="colorOnPrimaryContainer">@color/text_primary</item>
+        <item name="colorSecondary">@color/brand</item>
         <item name="colorOnSecondary">@color/text_on_accent</item>
+        <item name="colorSecondaryContainer">@color/surface3</item>
         <item name="colorOnSecondaryContainer">@color/text_primary</item>
+        <item name="colorTertiary">@color/brand</item>
+        <item name="colorSurface">@color/surface2</item>
+        <item name="colorSurfaceVariant">@color/surface3</item>
+        <item name="colorSurfaceContainer">@color/surface2</item>
+        <item name="colorSurfaceContainerHigh">@color/surface3</item>
+        <item name="colorSurfaceContainerLow">@color/surface1</item>
         <item name="colorOnSurface">@color/text_primary</item>
         <item name="colorOnSurfaceVariant">@color/text_secondary</item>
-        <item name="colorOutline">@color/divider</item>
-        <item name="colorOutlineVariant">@color/divider</item>
-        <item name="colorPrimary">@color/brand</item>
-        <item name="colorPrimaryContainer">@color/brand</item>
-        <item name="colorSecondary">@color/brand</item>
-        <item name="colorSecondaryContainer">@color/brand_soft</item>
-        <item name="colorSurface">@color/surface</item>
-        <item name="colorSurfaceContainer">@color/surface</item>
-        <item name="colorSurfaceContainerHigh">@color/surface_alt</item>
-        <item name="colorSurfaceContainerLow">@color/surface</item>
-        <item name="colorSurfaceVariant">@color/surface_alt</item>
-        <item name="colorTertiary">@color/brand</item>
+        <item name="colorOutline">@color/bar_border</item>
+        <item name="colorOutlineVariant">@color/row_divider</item>
+        <item name="colorError">@color/danger</item>
+        <item name="colorOnError">@color/text_primary</item>
+        <item name="colorControlNormal">@color/text_primary</item>
+        <item name="colorControlHighlight">@color/ripple</item>
         <item name="rippleColor">@color/ripple</item>
+        <item name="android:colorBackground">@color/bg</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_muted</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="colorAccent">@color/brand</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActivityTransitions">true</item>
@@ -46,114 +47,208 @@
         <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
         <item name="android:enforceStatusBarContrast">false</item>
         <item name="android:enforceNavigationBarContrast">false</item>
-        <item name="android:fontFamily">sans-serif</item>
         <item name="materialAlertDialogTheme">@style/Theme.MailGram.Dialog</item>
         <item name="toolbarStyle">@style/Widget.MailGram.Toolbar</item>
         <item name="android:toolbarStyle">@style/Widget.MailGram.Toolbar</item>
     </style>
 
-    <style name="Animation.MailGram" parent="@android:style/Animation.Activity">
-        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
-        <item name="android:activityOpenExitAnimation">@anim/fade_out_slight</item>
-        <item name="android:activityCloseEnterAnimation">@anim/fade_in_slight</item>
-        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    <style name="TextAppearance.MailGram.HeaderMain" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:letterSpacing">0.08</item>
     </style>
 
-    <style name="ShapeAppearance.MailGram.Dialog" parent="">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">22dp</item>
+    <style name="TextAppearance.MailGram.HeaderTitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:letterSpacing">0.05</item>
     </style>
 
-    <style name="ShapeAppearance.MailGram.Media" parent="">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">14dp</item>
+    <style name="TextAppearance.MailGram.HeaderSubtitle" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_icon</item>
     </style>
 
-    <style name="ShapeAppearance.MailGram.Circle" parent="">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">50%</item>
+    <style name="TextAppearance.MailGram.DialogName" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
     </style>
 
-    <style name="ShapeAppearance.MailGram.Sheet" parent="">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSizeTopLeft">22dp</item>
-        <item name="cornerSizeTopRight">22dp</item>
-        <item name="cornerSizeBottomLeft">0dp</item>
-        <item name="cornerSizeBottomRight">0dp</item>
+    <style name="TextAppearance.MailGram.DialogTime" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/text_muted</item>
     </style>
 
-    <style name="TextAppearance.MailGram.Hero" parent="TextAppearance.Material3.HeadlineLarge">
+    <style name="TextAppearance.MailGram.DialogPreview" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.BubbleText" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.BubbleTime" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.BubbleAuthor" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_dim</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.ReplyName" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_dim</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.ReplyText" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_drawer</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.FolderTab" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_icon</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.ActionItem" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.DrawerItem" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_drawer</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.DrawerName" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.DrawerOnline" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/success</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.DrawerStatus" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_dim</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.ModalTitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.ModalText" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_dim</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.LoginTitle" parent="TextAppearance.Material3.HeadlineLarge">
         <item name="android:textSize">32sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/text_primary</item>
-        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:letterSpacing">0.15</item>
     </style>
 
-    <style name="TextAppearance.MailGram.Title" parent="TextAppearance.Material3.TitleLarge">
-        <item name="android:textSize">22sp</item>
+    <style name="TextAppearance.MailGram.LoginText" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.Chip" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_icon</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.Section" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">12sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/text_primary</item>
-    </style>
-
-    <style name="TextAppearance.MailGram.RowTitle" parent="TextAppearance.Material3.BodyLarge">
-        <item name="android:textSize">17sp</item>
-        <item name="android:textColor">@color/text_primary</item>
-    </style>
-
-    <style name="TextAppearance.MailGram.Body" parent="TextAppearance.Material3.BodyLarge">
-        <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/text_primary</item>
-    </style>
-
-    <style name="TextAppearance.MailGram.BodySmall" parent="TextAppearance.Material3.BodyMedium">
-        <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:letterSpacing">0.08</item>
     </style>
 
     <style name="TextAppearance.MailGram.Caption" parent="TextAppearance.Material3.LabelSmall">
-        <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@color/text_secondary</item>
-    </style>
-
-    <style name="TextAppearance.MailGram.Section" parent="TextAppearance.Material3.LabelLarge">
-        <item name="android:textSize">13sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/text_secondary</item>
-        <item name="android:letterSpacing">0.06</item>
-    </style>
-
-    <style name="TextAppearance.MailGram.ChatTitle" parent="TextAppearance.Material3.TitleMedium">
-        <item name="android:textSize">17sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/text_primary</item>
-    </style>
-
-    <style name="TextAppearance.MailGram.ChatSubtitle" parent="TextAppearance.Material3.BodySmall">
-        <item name="android:textSize">13sp</item>
-        <item name="android:textColor">@color/brand</item>
-    </style>
-
-    <style name="TextAppearance.MailGram.Button" parent="TextAppearance.Material3.LabelLarge">
-        <item name="android:textSize">16sp</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/text_muted</item>
     </style>
 
     <style name="Widget.MailGram.Toolbar" parent="Widget.Material3.Toolbar">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:minHeight">56dp</item>
-        <item name="titleTextAppearance">@style/TextAppearance.MailGram.ChatTitle</item>
-        <item name="subtitleTextAppearance">@style/TextAppearance.MailGram.Caption</item>
+        <item name="titleTextAppearance">@style/TextAppearance.MailGram.HeaderTitle</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.MailGram.HeaderSubtitle</item>
         <item name="titleTextColor">@color/text_primary</item>
-        <item name="subtitleTextColor">@color/text_secondary</item>
+        <item name="subtitleTextColor">@color/text_icon</item>
         <item name="navigationIconTint">@color/text_primary</item>
-        <item name="contentInsetStartWithNavigation">4dp</item>
         <item name="contentInsetStart">4dp</item>
         <item name="contentInsetEnd">4dp</item>
+        <item name="contentInsetStartWithNavigation">4dp</item>
+    </style>
+
+    <style name="Widget.MailGram.IconCircleSoft" parent="">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/bg_icon_circle_soft</item>
+        <item name="android:padding">9dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:tint">@color/text_primary</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="Widget.MailGram.HeaderBtn" parent="">
+        <item name="android:layout_width">38dp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:background">@drawable/bg_icon_circle_faint</item>
+        <item name="android:padding">9dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:tint">@color/text_dim</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="Widget.MailGram.AttachButton" parent="">
+        <item name="android:layout_width">38dp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:background">@drawable/bg_header_icon</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:tint">@color/text_dim</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="Widget.MailGram.SendButton" parent="">
+        <item name="android:layout_width">38dp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:background">@drawable/bg_send</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:tint">@color/text_on_light</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
     </style>
 
     <style name="Widget.MailGram.GlassIcon" parent="">
-        <item name="android:layout_width">42dp</item>
-        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
         <item name="android:background">@drawable/bg_header_icon</item>
         <item name="android:padding">9dp</item>
         <item name="android:scaleType">centerInside</item>
@@ -162,62 +257,86 @@
         <item name="android:focusable">true</item>
     </style>
 
-    <style name="Widget.MailGram.Pill" parent="">
+    <style name="Widget.MailGram.SearchPill" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/bg_search_pill</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_muted</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Widget.MailGram.Input" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_muted</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:maxHeight">100dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Widget.MailGram.FolderTab" parent="TextAppearance.MailGram.FolderTab">
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_height">32dp</item>
         <item name="android:gravity">center</item>
-        <item name="android:minWidth">64dp</item>
-        <item name="android:paddingStart">16dp</item>
-        <item name="android:paddingEnd">16dp</item>
+        <item name="android:minWidth">56dp</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
         <item name="android:singleLine">true</item>
-        <item name="android:textAppearance">@style/TextAppearance.MailGram.BodySmall</item>
-        <item name="android:textColor">@color/text_secondary</item>
         <item name="android:background">@drawable/bg_glass_pill</item>
+        <item name="android:textColor">@color/text_icon</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
     </style>
 
-    <style name="Widget.MailGram.PillActive" parent="Widget.MailGram.Pill">
-        <item name="android:textColor">@color/text_on_accent</item>
-        <item name="android:textStyle">bold</item>
+    <style name="Widget.MailGram.FolderTabActive" parent="Widget.MailGram.FolderTab">
         <item name="android:background">@drawable/bg_pill_accent</item>
+        <item name="android:textColor">@color/text_primary</item>
     </style>
 
-    <style name="Widget.MailGram.Row" parent="">
+    <style name="Widget.MailGram.ActionItem" parent="TextAppearance.MailGram.ActionItem">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:minHeight">54dp</item>
+        <item name="android:minHeight">50dp</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:orientation">horizontal</item>
         <item name="android:paddingStart">16dp</item>
         <item name="android:paddingEnd">16dp</item>
-        <item name="android:paddingTop">8dp</item>
-        <item name="android:paddingBottom">8dp</item>
-        <item name="android:background">@drawable/bg_row_ripple</item>
+        <item name="android:background">@drawable/bg_action_item</item>
+        <item name="android:foreground">@drawable/bg_row_ripple_round</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
     </style>
 
-    <style name="Widget.MailGram.RowTitle" parent="TextAppearance.MailGram.RowTitle">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">1</item>
-    </style>
-
-    <style name="Widget.MailGram.RowValue" parent="TextAppearance.MailGram.BodySmall">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/text_secondary</item>
-        <item name="android:paddingStart">10dp</item>
-    </style>
-
-    <style name="Widget.MailGram.SectionTitle" parent="TextAppearance.MailGram.Section">
+    <style name="Widget.MailGram.DrawerItem" parent="TextAppearance.MailGram.DrawerItem">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingStart">20dp</item>
-        <item name="android:paddingEnd">20dp</item>
-        <item name="android:paddingTop">22dp</item>
-        <item name="android:paddingBottom">9dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:background">@drawable/bg_row_ripple_round</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="Widget.MailGram.Sheet" parent="">
+        <item name="android:background">@drawable/bg_sheet</item>
+    </style>
+
+    <style name="Widget.MailGram.ModalCard" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bg_modal</item>
+        <item name="android:padding">20dp</item>
     </style>
 
     <style name="Widget.MailGram.Card" parent="">
@@ -225,10 +344,35 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
         <item name="android:background">@drawable/bg_card</item>
-        <item name="android:clipToOutline">true</item>
+        <item name="android:padding">14dp</item>
+    </style>
+
+    <style name="Widget.MailGram.CardFlat" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bg_card_flat</item>
+        <item name="android:padding">14dp</item>
+    </style>
+
+    <style name="Widget.MailGram.Row" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:background">@drawable/bg_row_ripple</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
     </style>
 
     <style name="Widget.MailGram.CardRow" parent="Widget.MailGram.Row">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:foreground">@drawable/bg_row_ripple_round</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
     </style>
 
     <style name="Widget.MailGram.Separator" parent="">
@@ -237,45 +381,96 @@
         <item name="android:background">@drawable/bg_separator</item>
     </style>
 
-    <style name="Widget.MailGram.Button.Accent" parent="Widget.Material3.Button">
-        <item name="android:layout_height">52dp</item>
-        <item name="android:backgroundTint">@color/brand</item>
-        <item name="android:textColor">@color/text_on_accent</item>
-        <item name="android:textAllCaps">false</item>
-        <item name="android:textAppearance">@style/TextAppearance.MailGram.Button</item>
-        <item name="cornerRadius">16dp</item>
-        <item name="rippleColor">@color/ripple_strong</item>
-        <item name="iconTint">@color/text_on_accent</item>
-        <item name="iconPadding">10dp</item>
-        <item name="iconGravity">textStart</item>
+    <style name="Widget.MailGram.KeyBox" parent="TextAppearance.MailGram.Caption">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_key_box</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/key_text</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textIsSelectable">true</item>
     </style>
 
-    <style name="Widget.MailGram.Button.Ghost" parent="Widget.Material3.Button.OutlinedButton">
+    <style name="Widget.MailGram.InfoBox" parent="TextAppearance.MailGram.ModalText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_info_box</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/brand</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Widget.MailGram.WarnBox" parent="TextAppearance.MailGram.ModalText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_warn_box</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/danger</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Widget.MailGram.Button.Primary" parent="Widget.Material3.Button">
         <item name="android:layout_height">52dp</item>
+        <item name="android:backgroundTint">#FFFFFFFF</item>
+        <item name="android:textColor">@color/text_on_light</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="rippleColor">@color/ripple_strong</item>
+    </style>
+
+    <style name="Widget.MailGram.Button.Secondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_height">50dp</item>
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:textAllCaps">false</item>
-        <item name="android:textAppearance">@style/TextAppearance.MailGram.Button</item>
-        <item name="strokeColor">@color/divider</item>
+        <item name="android:textSize">15sp</item>
+        <item name="strokeColor">#FF333333</item>
         <item name="strokeWidth">1dp</item>
-        <item name="cornerRadius">16dp</item>
+        <item name="cornerRadius">14dp</item>
         <item name="rippleColor">@color/ripple</item>
+    </style>
+
+    <style name="Widget.MailGram.Button.Danger" parent="Widget.Material3.Button">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:backgroundTint">@color/danger</item>
+        <item name="android:textColor">@color/text_on_accent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="rippleColor">@color/ripple_strong</item>
     </style>
 
     <style name="Widget.MailGram.Button.Text" parent="Widget.Material3.Button.TextButton">
         <item name="android:layout_height">48dp</item>
         <item name="android:textColor">@color/brand</item>
         <item name="android:textAllCaps">false</item>
-        <item name="android:textAppearance">@style/TextAppearance.MailGram.Button</item>
+        <item name="android:textSize">15sp</item>
         <item name="rippleColor">@color/ripple</item>
     </style>
 
+    <style name="Widget.MailGram.Button.Accent" parent="Widget.Material3.Button">
+        <item name="android:layout_height">52dp</item>
+        <item name="android:backgroundTint">@color/brand</item>
+        <item name="android:textColor">@color/text_on_accent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="rippleColor">@color/ripple_strong</item>
+    </style>
+
     <style name="Widget.MailGram.Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
-        <item name="android:minHeight">48dp</item>
-        <item name="thumbTint">@color/text_on_accent</item>
+        <item name="android:minHeight">44dp</item>
+        <item name="thumbTint">@color/switch_thumb</item>
+        <item name="trackTint">@color/switch_track</item>
+        <item name="trackDecorationTint">@android:color/transparent</item>
     </style>
 
     <style name="Widget.MailGram.RadioButton" parent="Widget.Material3.CompoundButton.RadioButton">
-        <item name="android:textAppearance">@style/TextAppearance.MailGram.RowTitle</item>
+        <item name="android:textAppearance">@style/TextAppearance.MailGram.ActionItem</item>
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:buttonTint">@color/brand</item>
         <item name="buttonTint">@color/brand</item>
@@ -285,44 +480,40 @@
     <style name="Widget.MailGram.Progress" parent="Widget.Material3.LinearProgressIndicator">
         <item name="android:layout_height">3dp</item>
         <item name="indicatorColor">@color/brand</item>
-        <item name="trackColor">@color/divider</item>
+        <item name="trackColor">@color/row_divider</item>
         <item name="trackThickness">3dp</item>
     </style>
 
-    <style name="Widget.MailGram.Input" parent="@android:style/Widget.EditText">
+    <style name="Widget.MailGram.Badge" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:minWidth">20dp</item>
+        <item name="android:background">@drawable/bg_badge</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">6dp</item>
+        <item name="android:paddingEnd">6dp</item>
         <item name="android:textColor">@color/text_primary</item>
-        <item name="android:textColorHint">@color/text_tertiary</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:background">@drawable/bg_input</item>
-        <item name="android:paddingStart">18dp</item>
-        <item name="android:paddingEnd">18dp</item>
-        <item name="android:minHeight">44dp</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="Widget.MailGram.FileRow" parent="Widget.MailGram.Card">
-        <item name="android:background">@drawable/bg_row_ripple_round</item>
-    </style>
-
-    <style name="Widget.MailGram.AttachAction" parent="">
+    <style name="Widget.MailGram.NavItem" parent="">
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">1</item>
         <item name="android:orientation">vertical</item>
         <item name="android:gravity">center</item>
-        <item name="android:minHeight">84dp</item>
-        <item name="android:paddingTop">12dp</item>
-        <item name="android:paddingBottom">12dp</item>
-        <item name="android:background">@drawable/bg_row_ripple_round</item>
+        <item name="android:background">@drawable/bg_row_ripple</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
     </style>
 
-    <style name="Widget.MailGram.AttachIcon" parent="">
-        <item name="android:layout_width">48dp</item>
-        <item name="android:layout_height">48dp</item>
-        <item name="android:background">@drawable/bg_attach_sheet_icon</item>
-        <item name="android:padding">12dp</item>
-        <item name="android:tint">@color/brand</item>
+    <style name="Widget.MailGram.NavLabel" parent="TextAppearance.MailGram.Caption">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/text_icon</item>
     </style>
 
     <style name="Widget.MailGram.AttachLabel" parent="TextAppearance.MailGram.Caption">
@@ -330,29 +521,158 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">8dp</item>
         <item name="android:textColor">@color/text_primary</item>
-        <item name="android:gravity">center</item>
         <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Widget.MailGram.Pill" parent="TextAppearance.MailGram.FolderTab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">56dp</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:background">@drawable/bg_glass_pill</item>
+        <item name="android:textColor">@color/text_icon</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="Widget.MailGram.PillActive" parent="Widget.MailGram.Pill">
+        <item name="android:background">@drawable/bg_pill_accent</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="ShapeAppearance.MailGram.Dialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="ShapeAppearance.MailGram.Media" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="ShapeAppearance.MailGram.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeAppearance.MailGram.Sheet" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeTopRight">20dp</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.ChatTitle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.ChatSubtitle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.Title" parent="@android:style/TextAppearance">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.Hero" parent="@android:style/TextAppearance">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.Body" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_drawer</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.BodySmall" parent="@android:style/TextAppearance">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.RowTitle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.MailGram.RowValue" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="Widget.MailGram.Button.Ghost" parent="Widget.Material3.Button.TextButton">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textColor">@color/brand</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="rippleColor">@color/ripple</item>
+    </style>
+
+    <style name="Widget.MailGram.SectionTitle" parent="TextAppearance.MailGram.Section">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+    <style name="Widget.MailGram.RowTitle" parent="TextAppearance.MailGram.RowTitle">
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="Widget.MailGram.RowValue" parent="TextAppearance.MailGram.RowValue">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="Widget.MailGram.AttachAction" parent="Widget.MailGram.ActionItem">
+    </style>
+
+    <style name="Widget.MailGram.AttachIcon" parent="Widget.MailGram.IconCircleSoft">
+    </style>
+
+    <style name="Animation.MailGram" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="Animation.MailGram.Dialog" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
     </style>
 
     <style name="Theme.MailGram.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
-        <item name="android:colorBackgroundFloating">@color/surface</item>
-        <item name="android:textColorPrimary">@color/text_primary</item>
-        <item name="android:textColorSecondary">@color/text_secondary</item>
-        <item name="android:windowBackground">@color/surface</item>
-        <item name="colorOnSurface">@color/text_primary</item>
-        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
-        <item name="colorOutline">@color/divider</item>
         <item name="colorPrimary">@color/brand</item>
-        <item name="colorSurface">@color/surface</item>
-        <item name="colorSurfaceContainerHigh">@color/surface_alt</item>
+        <item name="colorSurface">@color/modal_surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_dim</item>
+        <item name="colorSurfaceContainerHigh">@color/modal_surface</item>
+        <item name="colorOutline">@color/modal_border</item>
+        <item name="colorError">@color/danger</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_dim</item>
+        <item name="android:colorBackgroundFloating">@color/modal_surface</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="backgroundTint">@color/modal_surface</item>
         <item name="shapeAppearanceCornerExtraLarge">@style/ShapeAppearance.MailGram.Dialog</item>
         <item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.MailGram.Dialog</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.MailGram.Button.Text</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.MailGram.Button.Text</item>
+        <item name="android:windowAnimationStyle">@style/Animation.MailGram.Dialog</item>
     </style>
 
     <style name="Theme.MailGram.Transparent" parent="Theme.MailGram">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowNoTitle">true</item>
     </style>
 
     <style name="Theme.MailGram.Fullscreen" parent="Theme.MailGram">

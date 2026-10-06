@@ -267,4 +267,14 @@
     <string name="wallpaper_indigo">Глубокая синева</string>
     <string name="link_failed">Не удалось открыть ссылку</string>
     <string name="export_failed">Не удалось выгрузить переписку</string>
+    <string name="close">Закрыть</string>
+    <string name="video">Видео</string>
+    <string name="voice_message">Голосовое сообщение</string>
+    <string name="pinned_title">Закреплённое сообщение</string>
+    <string name="contacts_title">Контакты</string>
+    <string name="chat_menu_export">Выгрузить переписку</string>
+    <string name="online_now">в сети</string>
+    <string name="invite_share">Мой публичный ключ MailGram: %1$s</string>
+    <string name="verified_short">Ключ отмечен как проверенный</string>
+    <string name="unverified_short">Ключ ещё не проверен</string>
 </resources>
