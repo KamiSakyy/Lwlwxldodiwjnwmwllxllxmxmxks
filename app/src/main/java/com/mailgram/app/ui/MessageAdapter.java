@@ -57,6 +57,9 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         void onVoiceSpeed(Msg msg);
 
         void onJumpToMessage(Msg msg);
+
+        /** Сколько сообщений выбрано (0 — режим выбора выключен). */
+        void onSelectionChanged(int count);
     }
 
     private static final int TYPE_DAY = 0;
@@ -201,6 +204,7 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         }
         int position = positionOfMid(msg.mid);
         if (position >= 0) notifyItemChanged(position);
+        actions.onSelectionChanged(selected.size());
     }
 
     public void clearSelection() {

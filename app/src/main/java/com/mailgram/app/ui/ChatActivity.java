@@ -101,6 +101,10 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     private ImageView pinnedRow;
     private TextView pinnedText;
     private View scrollDown;
+    private TextView scrollBadge;
+    private View selectionBar;
+    private TextView selectionTitle;
+    private boolean selecting;
 
     private final Handler handler = new Handler(Looper.getMainLooper());
     private Runnable poller;
@@ -176,6 +180,10 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         adapter = new MessageAdapter(new MessageAdapter.Actions() {
             @Override
             public void onMessageLongPress(Msg msg, View anchor) {
+                if (selecting) {
+                    adapter.toggleSelection(msg);
+                    return;
+                }
                 messageMenu(msg);
             }
 
@@ -215,6 +223,11 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             public void onJumpToMessage(Msg msg) {
                 jumpTo(msg.replyMid);
             }
+
+            @Override
+            public void onSelectionChanged(int count) {
+                updateSelectionUi(count);
+            }
         });
         LinearLayoutManager manager = new LinearLayoutManager(this);
         manager.setStackFromEnd(true);
@@ -252,6 +265,13 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         findViewById(R.id.chat_title).setOnClickListener(info);
         avatar.setOnClickListener(info);
         setUpVoiceButton();
+        selectionBar = findViewById(R.id.selection_bar);
+        selectionTitle = findViewById(R.id.selection_title);
+        findViewById(R.id.sel_close).setOnClickListener(v -> exitSelection());
+        findViewById(R.id.sel_copy).setOnClickListener(v -> copySelected());
+        findViewById(R.id.sel_forward).setOnClickListener(v -> forwardSelected());
+        findViewById(R.id.sel_pin).setOnClickListener(v -> pinSelected());
+        findViewById(R.id.sel_delete).setOnClickListener(v -> deleteSelected());
 
         input.setOnEditorActionListener((v, actionId, event) -> {
             sendMessage();
@@ -407,6 +427,23 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     }
 
     @Override
+    public void onBackPressed() {
+        if (selecting) {
+            exitSelection();
+            return;
+        }
+        if (replyBar != null && replyBar.getVisibility() == View.VISIBLE) {
+            setReplyTarget(null);
+            return;
+        }
+        if (emojiPanel != null && emojiPanel.getVisibility() == View.VISIBLE) {
+            toggleEmoji();
+            return;
+        }
+        super.onBackPressed();
+    }
+
+    @Override
     protected void onDestroy() {
         SyncEngine.get(this).removeListener(this);
         if (recorder != null) {
@@ -417,14 +454,140 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         super.onDestroy();
     }
 
+    // ---------------- режим выбора нескольких сообщений ----------------
+
+    private void enterSelection(Msg msg) {
+        selecting = true;
+        adapter.toggleSelection(msg);
+        Anim.slidePanel(selectionBar, true);
+        Anim.haptic(selectionBar, false);
+        View inputBar = findViewById(R.id.input_bar);
+        if (inputBar != null) inputBar.setVisibility(View.GONE);
+        updateSelectionUi(adapter.selectedCount());
+    }
+
+    private void updateSelectionUi(int count) {
+        if (!selecting) return;
+        if (count <= 0) {
+            exitSelection();
+            return;
+        }
+        selectionTitle.setText(getString(R.string.selected_count, count));
+    }
+
+    private void exitSelection() {
+        selecting = false;
+        adapter.clearSelection();
+        Anim.slidePanel(selectionBar, false);
+        View inputBar = findViewById(R.id.input_bar);
+        if (inputBar != null) inputBar.setVisibility(View.VISIBLE);
+    }
+
+    /** Собранные сообщения из списка выбранных, в порядке ленты. */
+    private List<Msg> selectedMessages() {
+        List<Msg> picked = new ArrayList<>();
+        for (Msg m : Store.get(this).messages(uid)) {
+            if (adapter.selectedMids().contains(m.mid)) picked.add(m);
+        }
+        return picked;
+    }
+
+    private void copySelected() {
+        List<Msg> picked = selectedMessages();
+        StringBuilder sb = new StringBuilder();
+        for (Msg m : picked) {
+            if (m.text != null && !m.text.isEmpty()) {
+                if (sb.length() > 0) sb.append('\n');
+                sb.append(m.text);
+            }
+        }
+        if (sb.length() == 0) {
+            Ui.toast(this, getString(R.string.nothing_here));
+            return;
+        }
+        Ui.copy(this, getString(R.string.copy), sb.toString());
+        exitSelection();
+    }
+
+    private void pinSelected() {
+        List<Msg> picked = selectedMessages();
+        boolean allPinned = true;
+        for (Msg m : picked) {
+            if (!m.pinned) {
+                allPinned = false;
+                break;
+            }
+        }
+        final boolean pin = !allPinned;
+        for (Msg m : picked) {
+            SyncEngine.get(this).sendPin(chat, m, pin, null);
+        }
+        Ui.toast(this, getString(pin ? R.string.pinned_toast : R.string.unpinned_toast, picked.size()));
+        exitSelection();
+        refresh();
+    }
+
+    private void deleteSelected() {
+        final List<Msg> picked = selectedMessages();
+        if (picked.isEmpty()) {
+            exitSelection();
+            return;
+        }
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(getString(R.string.delete_for_all))
+                .setMessage(getString(R.string.delete_many_confirm, picked.size()))
+                .setNegativeButton(R.string.cancel, null)
+                .setPositiveButton(R.string.delete_for_all, (d, w) -> {
+                    for (Msg m : picked) {
+                        SyncEngine.get(this).sendDelete(chat, m, null);
+                    }
+                    exitSelection();
+                    refresh();
+                })
+                .show();
+    }
+
+    private void forwardSelected() {
+        final List<Msg> picked = selectedMessages();
+        if (picked.isEmpty()) {
+            exitSelection();
+            return;
+        }
+        final List<Chat> chats = new ArrayList<>(Store.get(this).chats());
+        if (chats.isEmpty()) {
+            Ui.toast(this, getString(R.string.nothing_here));
+            return;
+        }
+        String[] names = new String[chats.size()];
+        for (int i = 0; i < chats.size(); i++) {
+            Chat c = chats.get(i);
+            names[i] = (c.name != null && !c.name.isEmpty() ? c.name : Store.displayName(this, c.peer));
+        }
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(getString(R.string.forward_to_chat))
+                .setItems(names, (d, which) -> {
+                    Chat target = chats.get(which);
+                    int limit = Math.min(picked.size(), 20);
+                    for (int i = 0; i < limit; i++) {
+                        SyncEngine.get(this).sendForward(target, picked.get(i), null);
+                    }
+                    Ui.toast(this, getString(R.string.forwarded_count, limit));
+                    exitSelection();
+                })
+                .show();
+    }
+
     /** Карточка чата: собеседник, статистика, состояние шифрования и номер безопасности. */
     private void showChatInfo() {
         chat = Store.get(this).chat(uid);
         if (chat == null) return;
         int[] counts = Store.get(this).mediaCounts(uid);
-        final String me = com.mailgram.app.net.Auth.account(this);
-        final String number = Ui.safetyNumber(chat.peerPublic,
-                com.mailgram.app.crypto.Identity.publicKey(this));
+        String myKey = "";
+        try {
+            myKey = com.mailgram.app.crypto.B64.str(com.mailgram.app.crypto.Identity.publicKeyRaw(this));
+        } catch (Exception ignored) {
+        }
+        final String number = Ui.safetyNumber(chat.peerPublic, myKey);
         boolean session = com.mailgram.app.crypto.RatchetStore.hasSession(this, uid);
 
         StringBuilder body = new StringBuilder();
@@ -1103,6 +1266,8 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             items.add(getString(R.string.copy));
             ids.add(2);
         }
+        items.add(getString(R.string.select));
+        ids.add(11);
         items.add(getString(R.string.forward));
         ids.add(9);
         if (msg.state == Msg.STATE_FAILED) {
@@ -1143,6 +1308,9 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                     } else if (id == 6) {
                         Store.get(this).setMsgPinned(uid, msg.mid, !msg.pinned);
                         refresh();
+                    } else if (id == 11) {
+                        adapter.clearSelection();
+                        enterSelection(msg);
                     } else if (id == 9) {
                         forwardDialog(msg);
                     } else if (id == 7) {

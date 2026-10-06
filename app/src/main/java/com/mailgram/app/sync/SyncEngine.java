@@ -329,13 +329,15 @@ public final class SyncEngine {
             String type = payload.optString("t", "text");
 
             // Служебные конверты меняют уже существующее сообщение и в ленту не попадают.
-            if ("react".equals(type) || "edit".equals(type) || "del".equals(type)) {
+            if ("react".equals(type) || "edit".equals(type) || "del".equals(type) || "pin".equals(type)) {
                 if (!outgoing) {
                     String targetMid = payload.optString("mid", "");
                     if ("react".equals(type)) {
                         store.applyReaction(chat.uid, targetMid, payload.optString("e", ""));
                     } else if ("edit".equals(type)) {
                         store.applyEdit(chat.uid, targetMid, payload.optString("b", ""));
+                    } else if ("pin".equals(type)) {
+                        store.setMsgPinned(chat.uid, targetMid, payload.optBoolean("v", true));
                     } else {
                         store.applyDelete(chat.uid, targetMid);
                     }
@@ -552,6 +554,20 @@ public final class SyncEngine {
         } catch (Exception ignored) {
         }
         Store.get(app).applyDelete(chat.uid, target.mid);
+        notifyDirty();
+        sendControl(chat, payload, callback);
+    }
+
+    /** Закрепление и открепление сообщения — общее для обоих участников переписки. */
+    public void sendPin(final Chat chat, final Msg target, final boolean pinned, final SendCallback callback) {
+        JSONObject payload = new JSONObject();
+        try {
+            payload.put("t", "pin");
+            payload.put("mid", target.mid);
+            payload.put("v", pinned);
+        } catch (Exception ignored) {
+        }
+        Store.get(app).setMsgPinned(chat.uid, target.mid, pinned);
         notifyDirty();
         sendControl(chat, payload, callback);
     }

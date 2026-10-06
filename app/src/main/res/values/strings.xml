@@ -244,4 +244,8 @@
     <string name="chat_unverified">Отметка проверки снята</string>
     <string name="unverify_chat">Снять проверку</string>
     <string name="safety_hint">Сравните номер с собеседником лично или по другому каналу: если он совпадает, посредника в переписке нет.</string>
+    <string name="pinned_toast">Закреплено сообщений: %1$d</string>
+    <string name="unpinned_toast">Откреплено сообщений: %1$d</string>
+    <string name="delete_many_confirm">Удалить у обоих участников выбранные сообщения (%1$d)?</string>
+    <string name="forwarded_count">Переслано сообщений: %1$d</string>
 </resources>

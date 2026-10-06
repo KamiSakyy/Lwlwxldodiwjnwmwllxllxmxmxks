@@ -357,6 +357,78 @@
         android:visibility="gone" />
 
     <LinearLayout
+        android:id="@+id/selection_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_toolbar_glass"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/sel_close"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cancel"
+            android:padding="10dp"
+            android:src="@drawable/ic_close"
+            app:tint="?attr/colorOnSurface" />
+
+        <TextView
+            android:id="@+id/selection_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="6dp"
+            android:text="@string/select"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:textColor="?attr/colorOnSurface" />
+
+        <ImageView
+            android:id="@+id/sel_copy"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/copy"
+            android:padding="10dp"
+            android:src="@drawable/ic_copy"
+            app:tint="?attr/colorOnSurface" />
+
+        <ImageView
+            android:id="@+id/sel_forward"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/forward"
+            android:padding="10dp"
+            android:src="@drawable/ic_forward"
+            app:tint="?attr/colorOnSurface" />
+
+        <ImageView
+            android:id="@+id/sel_pin"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/pin_chat"
+            android:padding="10dp"
+            android:src="@drawable/ic_pin"
+            app:tint="?attr/colorOnSurface" />
+
+        <ImageView
+            android:id="@+id/sel_delete"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/delete_for_all"
+            android:padding="10dp"
+            android:src="@drawable/ic_delete"
+            app:tint="@color/google_red" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/input_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
