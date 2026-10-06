@@ -84,7 +84,7 @@ public final class GmailApi {
     private static Mail parseMessage(JSONObject obj, String fallbackId) throws IOException {
         Mail mail = new Mail();
         mail.id = obj.optString("id", fallbackId);
-        {
+        try {
             mail.threadId = obj.optString("threadId", null);
             mail.internalDate = obj.optLong("internalDate", 0L);
             JSONArray labels = obj.optJSONArray("labelIds");
@@ -114,6 +114,8 @@ public final class GmailApi {
                 String body = extractText(payload);
                 mail.body = body == null ? "" : body;
             }
+        } catch (Exception e) {
+            throw new IOException("не удалось разобрать письмо: " + e.getMessage(), e);
         }
         return mail;
     }
