@@ -42,7 +42,7 @@ jobs:
       - name: apktool 2.9.3
         run: curl -fsSL -o /tmp/apktool.jar https://github.com/iBotPeaches/Apktool/releases/download/v2.9.3/apktool_2.9.3.jar
 
-      - name: База: официальный APK + сплиты
+      - name: База — официальный APK и сплиты
         run: |
           set -e
           mkdir -p /tmp/base
