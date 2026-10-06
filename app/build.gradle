@@ -3,18 +3,33 @@ plugins {
 }
 
 // OAuth client ID публичного клиента не является секретом (он виден в любом APK и в
-// запросах к Google). Значение по умолчанию вшито в сборку, чтобы вход работал сразу
-// после установки; переопределить можно через -Pmailgram.oauthClientId=... или
-// переменную окружения MAILGRAM_OAUTH_CLIENT_ID (например, из GitHub Secret).
-def defaultOauthClientId = '520212121691-pjglb4uc35pk682uej869kr9o82j186f.apps.googleusercontent.com'
+// запросах к Google). Значения по умолчанию вшиты в сборку, чтобы вход работал сразу
+// после установки.
+//
+// Основной клиент — Desktop: Google с 2023 года отключает custom URI scheme у новых
+// Android-клиентов, поэтому надёжный путь — локальный порт (loopback) клиента типа
+// Desktop, а он требует client ID именно такого типа.
+// Резервный Android-клиент остаётся в сборке: если в консоли включить ему
+// «Advanced Settings → Enable custom URI scheme», приложение выберет его само.
+//
+// client_secret клиента Desktop приложение отправляет только если он передан при сборке
+// (MAILGRAM_OAUTH_CLIENT_SECRET / -Pmailgram.oauthClientSecret): по документации Google
+// для installed-приложений он необязателен при PKCE, а в репозитории ему не место.
+def defaultOauthClientId = '520212121691-evjpfvomb9k1j5lv9naskcsges4c9mn4.apps.googleusercontent.com'
+def defaultAndroidClientId = '520212121691-pjglb4uc35pk682uej869kr9o82j186f.apps.googleusercontent.com'
 def oauthClientId = (project.findProperty('mailgram.oauthClientId')
         ?: System.getenv('MAILGRAM_OAUTH_CLIENT_ID') ?: defaultOauthClientId).toString().trim()
+def androidClientId = (project.findProperty('mailgram.androidClientId')
+        ?: System.getenv('MAILGRAM_ANDROID_CLIENT_ID') ?: defaultAndroidClientId).toString().trim()
+def oauthClientSecret = (project.findProperty('mailgram.oauthClientSecret')
+        ?: System.getenv('MAILGRAM_OAUTH_CLIENT_SECRET') ?: '').toString().trim()
 def googleSuffix = '.apps.googleusercontent.com'
-def redirectScheme = oauthClientId.isEmpty()
-        ? 'com.mailgram.app'
-        : 'com.googleusercontent.apps.' + (oauthClientId.endsWith(googleSuffix)
-            ? oauthClientId.substring(0, oauthClientId.length() - googleSuffix.length())
-            : oauthClientId)
+def schemeOf = { id -> id.endsWith(googleSuffix)
+        ? 'com.googleusercontent.apps.' + id.substring(0, id.length() - googleSuffix.length())
+        : 'com.mailgram.app' }
+def redirectScheme = androidClientId.isEmpty() ? 'com.mailgram.app' : schemeOf(androidClientId)
+// Режим по умолчанию: если вшитый client ID — тот же Android-клиент, то схема, иначе локальный порт.
+def defaultAuthMode = oauthClientId.equals(androidClientId) ? 'android' : 'loopback'
 
 // Подпись: свои значения можно передать через секреты/параметры сборки.
 def storeFilePath = (project.findProperty('mailgram.storeFile')
@@ -38,7 +53,10 @@ android {
 
         manifestPlaceholders.put('appAuthRedirectScheme', redirectScheme)
         buildConfigField 'String', 'OAUTH_CLIENT_ID', '"' + oauthClientId + '"'
+        buildConfigField 'String', 'OAUTH_ANDROID_CLIENT_ID', '"' + androidClientId + '"'
         buildConfigField 'String', 'OAUTH_REDIRECT_SCHEME', '"' + redirectScheme + '"'
+        buildConfigField 'String', 'OAUTH_DEFAULT_MODE', '"' + defaultAuthMode + '"'
+        buildConfigField 'String', 'OAUTH_CLIENT_SECRET', '"' + oauthClientSecret + '"'
 
         externalNativeBuild {
             cmake {

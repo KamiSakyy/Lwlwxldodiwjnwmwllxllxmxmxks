@@ -76,10 +76,22 @@ public final class Auth {
     public static String authMode(Context ctx) {
         String stored = prefs(ctx).getString(K_MODE, null);
         if (stored != null) return stored;
-        // Android-режим требует, чтобы схема редиректа была «вшита» в манифест при сборке
-        return redirectForBuildClient(ctx).equals(OAuth.redirectForAndroidClient(clientId(ctx)))
-                ? MODE_ANDROID
-                : MODE_LOOPBACK;
+        // Значение по умолчанию задаёт сборка: клиент типа Desktop работает через локальный
+        // порт, Android-клиент — через схему, прописанную в манифесте.
+        String mode = BuildConfig.OAUTH_DEFAULT_MODE;
+        return MODE_LOOPBACK.equals(mode) ? MODE_LOOPBACK : MODE_ANDROID;
+    }
+
+    /** Client ID резервного Android-клиента (схема редиректа берётся из него же). */
+    public static String androidClientId() {
+        String id = BuildConfig.OAUTH_ANDROID_CLIENT_ID;
+        return id == null ? "" : id.trim();
+    }
+
+    /** client_secret, если он передан при сборке (по умолчанию пусто — хватает PKCE). */
+    public static String clientSecret() {
+        String secret = BuildConfig.OAUTH_CLIENT_SECRET;
+        return secret == null ? "" : secret.trim();
     }
 
     public static void setAuthMode(Context ctx, String mode) {
@@ -197,11 +209,30 @@ public final class Auth {
             return p;
         }
         String verifier = OAuth.randomVerifier();
-        p.androidError = OAuth.probeRedirect(clientId, verifier, OAuth.redirectForAndroidClient(clientId));
-        p.loopbackError = OAuth.probeRedirect(clientId, verifier, LoopbackServer.redirectUri());
+        String secret = clientSecret();
+        p.androidError = OAuth.probeRedirect(clientId, secret, verifier,
+                OAuth.redirectForAndroidClient(clientId));
+        p.loopbackError = OAuth.probeRedirect(clientId, secret, verifier, LoopbackServer.redirectUri());
         p.androidOk = accepted(p.androidError);
         p.loopbackOk = accepted(p.loopbackError);
         p.schemeDisabled = mentionsScheme(p.androidError);
+
+        // На случай, если рабочим окажется резервный Android-клиент (custom URI scheme включён
+        // в консоли) — проверяем и его, чтобы выбрать работающий вход, а не угадывать.
+        String androidId = androidClientId();
+        if (!androidId.isEmpty() && !androidId.equalsIgnoreCase(clientId)) {
+            String androidProbe = OAuth.probeRedirect(androidId, secret, verifier,
+                    OAuth.redirectForAndroidClient(androidId));
+            if (accepted(androidProbe)) {
+                p.mode = MODE_ANDROID;
+                p.summary = "Вход через Android-клиент готов";
+                p.androidOk = true;
+                Log.i(TAG, "рабочий Android-клиент: " + androidId);
+                saveProbe(ctx, p);
+                return p;
+            }
+            Log.i(TAG, "резервный Android-клиент: " + androidProbe);
+        }
 
         if (p.androidOk) {
             p.mode = MODE_ANDROID;
@@ -294,7 +325,7 @@ public final class Auth {
         }
         String refresh = refreshToken(ctx);
         if (refresh.isEmpty()) throw new IllegalStateException("нужно войти в аккаунт Google");
-        OAuth.Tokens fresh = OAuth.refresh(clientId(ctx), refresh);
+        OAuth.Tokens fresh = OAuth.refresh(clientId(ctx), clientSecret(), refresh);
         saveTokens(ctx, fresh);
         return fresh.accessToken;
     }
@@ -322,7 +353,8 @@ public final class Auth {
         if (verifier == null || verifier.isEmpty()) {
             throw new IllegalStateException("нет code_verifier — начните вход заново");
         }
-        OAuth.Tokens tokens = OAuth.exchangeCode(clientId(ctx), code, verifier, redirectUri(ctx));
+        OAuth.Tokens tokens = OAuth.exchangeCode(clientId(ctx), clientSecret(), code, verifier,
+                redirectUri(ctx));
         saveTokens(ctx, tokens);
         String email = OAuth.userEmail(tokens.accessToken);
         setAccount(ctx, email);

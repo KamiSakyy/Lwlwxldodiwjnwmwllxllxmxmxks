@@ -121,14 +121,15 @@
     <string name="login_check">Проверить подключение к Google</string>
     <string name="login_check_running">Проверяю настройки входа…</string>
     <string name="login_fix_title">Нужна одна настройка в Google Cloud</string>
-    <string name="login_fix_message">Google выключает custom URI scheme у новых Android-клиентов по умолчанию, поэтому запрос отклоняется с ошибкой 400 invalid_request — это и есть «Доступ заблокирован: недопустимый запрос».
+    <string name="login_fix_message">Google проверяет схемы редиректа для каждого клиента отдельно, и не все они включены. Приложение уже попробовало оба ваших клиента и выбрало рабочий режим автоматически.
 
-Вариант 1 (30 секунд, этот APK менять не нужно):
-Google Cloud Console → APIs &amp; Services → Credentials → ваш Android-клиент → раздел «Advanced Settings» → включите «Enable custom URI scheme» → Save.
+Если вход всё равно не проходит — вот два быстрых пути:
 
-Вариант 2: создайте клиент типа «Desktop app», добавьте redirect URI http://127.0.0.1:7717/oauth2redirect и нажмите «Проверить снова» — приложение само переключится на этот режим.
+Путь 1 (клиент Desktop, ничего пересобирать не нужно): в Google Cloud Console откройте клиент Desktop → в разделе «Authorized redirect URIs» добавьте http://127.0.0.1:7717/oauth2redirect → Save.
 
-Если вы уже включили схему — нажмите «Проверить снова».</string>
+Путь 2 (клиент Android): откройте свой Android-клиент → раздел «Advanced Settings» → включите «Enable custom URI scheme» → Save.
+
+После любого изменения нажмите «Проверить снова» — приложение само определит, что заработало.</string>
     <string name="login_fix_open">Открыть настройки клиента</string>
     <string name="login_fix_recheck">Проверить снова</string>
     <string name="setup_probe_hint">Для клиента типа «Android» обязательно включите «Advanced Settings → Enable custom URI scheme» — по умолчанию Google её выключает и возвращает ошибку 400 invalid_request.</string>

@@ -61,6 +61,38 @@ jobs:
         if: always()
         run: bash tools/ci-report.sh app/build/outputs/apk/release/app-release.apk build-report.md || true
 
+  oauth-check:
+    name: Проверка OAuth-клиентов (живой запрос к Google)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Спросить у Google, какие redirect URI принимает каждый клиент
+        env:
+          DESKTOP_ID: "520212121691-evjpfvomb9k1j5lv9naskcsges4c9mn4.apps.googleusercontent.com"
+          ANDROID_ID: "520212121691-pjglb4uc35pk682uej869kr9o82j186f.apps.googleusercontent.com"
+        run: |
+          set -uo pipefail
+          VERIFIER=$(head -c 32 /dev/urandom | base64 | tr -dc 'A-Za-z0-9-._~' | head -c 50)
+          FAKE_CODE="4/0AVMBsJ$(head -c 24 /dev/urandom | base64 | tr -dc 'A-Za-z0-9' | head -c 32)"
+          probe () {
+            local label="$1" cid="$2" uri="$3"
+            local body
+            body=$(curl -s -X POST https://oauth2.googleapis.com/token \
+              -H 'Content-Type: application/x-www-form-urlencoded' \
+              --data-urlencode "client_id=$cid" \
+              --data-urlencode "code=$FAKE_CODE" \
+              --data-urlencode "code_verifier=$VERIFIER" \
+              --data-urlencode "grant_type=authorization_code" \
+              --data-urlencode "redirect_uri=$uri")
+            local short="${body:0:240}"
+            echo "::notice title=OAuth-проба [$label]::$short"
+            echo "[$label] $body"
+          }
+          : > oauth-check.log
+          probe "A. Desktop-клиент + локальный порт" "$DESKTOP_ID" "http://127.0.0.1:7717/oauth2redirect" | tee -a oauth-check.log
+          probe "B. Desktop-клиент + схема Android" "$DESKTOP_ID" "com.googleusercontent.apps.520212121691-evjpfvomb9k1j5lv9naskcsges4c9mn4:/oauth2redirect" | tee -a oauth-check.log
+          probe "C. Android-клиент + схема" "$ANDROID_ID" "com.googleusercontent.apps.520212121691-pjglb4uc35pk682uej869kr9o82j186f:/oauth2redirect" | tee -a oauth-check.log
+          probe "D. Android-клиент + локальный порт" "$ANDROID_ID" "http://127.0.0.1:7717/oauth2redirect" | tee -a oauth-check.log
+
   apk:
     name: Сборка APK (Java + C++)
     runs-on: ubuntu-latest

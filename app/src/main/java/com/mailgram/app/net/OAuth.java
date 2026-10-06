@@ -105,9 +105,16 @@ public final class OAuth {
         return t;
     }
 
-    public static Tokens exchangeCode(String clientId, String code, String verifier, String redirectUri)
-            throws Exception {
+    /** client_secret нужен только клиентам, которым его выдала консоль (Desktop); при PKCE — необязателен. */
+    private static String secretPart(String clientSecret) {
+        return clientSecret == null || clientSecret.isEmpty()
+                ? "" : "&client_secret=" + enc(clientSecret);
+    }
+
+    public static Tokens exchangeCode(String clientId, String clientSecret, String code,
+                                      String verifier, String redirectUri) throws Exception {
         String form = "client_id=" + enc(clientId)
+                + secretPart(clientSecret)
                 + "&code=" + enc(code)
                 + "&code_verifier=" + enc(verifier)
                 + "&grant_type=authorization_code"
@@ -115,8 +122,9 @@ public final class OAuth {
         return parse(Http.postForm(TOKEN_ENDPOINT, form), null);
     }
 
-    public static Tokens refresh(String clientId, String refreshToken) throws Exception {
+    public static Tokens refresh(String clientId, String clientSecret, String refreshToken) throws Exception {
         String form = "client_id=" + enc(clientId)
+                + secretPart(clientSecret)
                 + "&refresh_token=" + enc(refreshToken)
                 + "&grant_type=refresh_token";
         return parse(Http.postForm(TOKEN_ENDPOINT, form), refreshToken);
@@ -147,8 +155,10 @@ public final class OAuth {
      *
      * @return код ошибки Google в виде {@code "код: описание"} (пустая строка — параметры приняты)
      */
-    public static String probeRedirect(String clientId, String verifier, String redirectUri) {
+    public static String probeRedirect(String clientId, String clientSecret, String verifier,
+                                       String redirectUri) {
         String form = "client_id=" + enc(clientId)
+                + secretPart(clientSecret)
                 + "&code=" + enc(probeCode())
                 + "&code_verifier=" + enc(verifier)
                 + "&grant_type=authorization_code"
