@@ -1,0 +1,19 @@
+{
+  "name": "github-ru-studio-vue",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Vue-фронт GitHub RU Studio: собирается Vite и упаковывается в APK (assets/web/vue). Работает полностью офлайн.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "3.5.43"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "6.0.9",
+    "vite": "8.3.3"
+  }
+}

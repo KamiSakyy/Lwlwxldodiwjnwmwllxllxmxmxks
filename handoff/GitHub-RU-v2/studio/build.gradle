@@ -1,0 +1,133 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.github.rudroid.studio'
+    compileSdk 36
+    // NDK по умолчанию для AGP 9.4 (нужен для JNI-моста встроенного Node.js).
+    ndkVersion '28.2.13676358'
+
+    defaultConfig {
+        // Тот же applicationId и тот же ключ, что у основного приложения:
+        // будущий полный клиент встанет обновлением поверх без конфликтов.
+        applicationId 'com.github.rudroid'
+        // ТОЛЬКО современные API: 28 (Android 9) ... 36 (Android 16).
+        minSdk 28
+        targetSdk 36
+        versionCode 927
+        versionName '1.257.0-ru3-studio'
+        externalNativeBuild {
+            cmake {
+                cppFlags '-std=c++17'
+            }
+        }
+    }
+
+    // Только arm64-v8a (все современные устройства; под него и libnode.so).
+    splits { abi { enable true; reset(); include 'arm64-v8a' } }
+
+    signingConfigs {
+        release {
+            storeFile file('../app/github-ru.jks')   // пароль: android, алиас: github-ru
+            storePassword 'android'
+            keyAlias 'github-ru'
+            keyPassword 'android'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            // Без R8-минификации: код маленький, надёжность важнее.
+            // (Нативный libnode.so минификации не подлежит в любом случае.)
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path 'src/main/cpp/CMakeLists.txt'
+            version '3.22.1'
+        }
+    }
+
+    packaging {
+        jniLibs { useLegacyPackaging = false }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    sourceSets {
+        main {
+            // Сюда задача bundleWebAssets кладёт собранные web-react/web-vue
+            // (или офлайн-заглушки, если dist нет) — см. ниже.
+            assets.srcDir("$buildDir/generated/webAssets")
+        }
+    }
+}
+
+// ---------------------------------------------------------------------------
+// React/Vue -> APK: копируем web-react/dist и web-vue/dist в assets/web/*.
+//
+// ГЛАВНОЕ ТРЕБОВАНИЕ: APK ОБЯЗАН СОБИРАТЬСЯ ДАЖЕ БЕЗ dist!
+// Если dist нет (нет node/npm, офлайн-билд, упала сборка фронта) —
+// генерируем аккуратную офлайн-заглушку, и сборка продолжается.
+// ---------------------------------------------------------------------------
+tasks.register('bundleWebAssets') {
+    description = 'Упаковывает React/Vue dist в assets (с заглушкой, если dist нет)'
+    def outDir = file("$buildDir/generated/webAssets/web")
+    def targets = [
+        [web: 'web-react', asset: 'react', title: 'React'],
+        [web: 'web-vue',   asset: 'vue',   title: 'Vue'],
+    ]
+    doLast {
+        targets.each { t ->
+            def distDir = file("$rootDir/${t.web}/dist")
+            def destDir = new File(outDir, t.asset)
+            destDir.mkdirs()
+            if (distDir.isDirectory() && (distDir.list() ?: []).length > 0) {
+                println("bundleWebAssets: ${t.title} — копирую ${distDir} -> ${destDir}")
+                copy {
+                    from distDir
+                    into destDir
+                }
+                if (!new File(destDir, 'index.html').isFile()) {
+                    throw new GradleException("bundleWebAssets: в ${distDir} нет index.html!")
+                }
+            } else {
+                println("bundleWebAssets: ${t.title} — dist НЕ НАЙДЕН, генерирую офлайн-заглушку (APK соберётся всё равно)")
+                new File(destDir, 'index.html').text = """<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>${t.title} — офлайн-заглушка</title>
+<style>
+body{background:#0d1117;color:#e6edf3;font-family:system-ui,sans-serif;margin:0;
+display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center}
+.card{max-width:520px;padding:32px;border:1px solid #30363d;border-radius:16px;background:#161b22;margin:16px}
+h1{font-size:22px;margin:0 0 12px}p{color:#9aa4b2;line-height:1.6}.b{color:#3fb950;font-weight:700}
+code{background:#0d1117;padding:2px 8px;border-radius:6px;border:1px solid #30363d}
+</style></head><body><div class="card">
+<h1>${t.title}-сборка недоступна офлайн</h1>
+<p>APK собран <span class="b">без ${t.title}-фронта</span>: папки <code>${t.web}/dist</code>
+не было на момент сборки (нет node/npm или сборка фронта упала).</p>
+<p>Само приложение и встроенный Node.js работают полностью офлайн.
+Пересоберите проект с интернетом (<code>npm install &amp;&amp; npm run build</code>
+в <code>${t.web}/</code>), чтобы этот экран стал настоящим ${t.title}-приложением.</p>
+</div></body></html>
+"""
+            }
+        }
+    }
+}
+
+// Гарантия порядка: ассеты готовятся ДО слияния ассетов AAPT.
+tasks.matching { it.name == 'preBuild' }.configureEach {
+    dependsOn('bundleWebAssets')
+}
+
+// Зависимостей НОЛЬ: только Android SDK (API 28–36), без библиотек.
+dependencies {
+}

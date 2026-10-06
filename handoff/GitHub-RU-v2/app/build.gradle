@@ -8,7 +8,8 @@ android {
 
     defaultConfig {
         applicationId 'com.github.rudroid'
-        minSdk 26
+        // Современные API 28–36: минимум Android 9 (API 28), цель — Android 16 (API 36).
+        minSdk 28
         targetSdk 36
         versionCode 926
         versionName '1.257.0-ru2'
@@ -36,8 +37,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    packagingOptions { jniLibs.useLegacyPackaging = false }
-    lint { abortOnError false; checkReleaseBuilds false }
+    packaging { jniLibs { useLegacyPackaging = false } }
 }
 
 tasks.withType(JavaCompile).configureEach {

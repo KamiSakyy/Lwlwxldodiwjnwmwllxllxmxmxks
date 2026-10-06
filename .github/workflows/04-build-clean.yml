@@ -38,7 +38,7 @@ jobs:
         run: |
           SDK="${ANDROID_HOME:-$ANDROID_SDK_ROOT}"
           yes | "$SDK/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null 2>&1 || true
-          "$SDK/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" "platforms;android-35" "platforms;android-34" "build-tools;34.0.0" "platform-tools" | tail -2
+          "$SDK/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" "platforms;android-35" "platforms;android-34" "build-tools;36.0.0" "platform-tools" | tail -2
 
       - name: "Клонирование чистого исходника github/mobile"
         run: git clone --depth 1 https://github.com/github/mobile.git /tmp/mobile
@@ -97,7 +97,7 @@ jobs:
             cp -f "$APK" "$GITHUB_WORKSPACE/handoff/GitHub-RU-Clean-v3-930-release.apk"
             sha256sum "$GITHUB_WORKSPACE/handoff/GitHub-RU-Clean-v3-930-release.apk" > "$GITHUB_WORKSPACE/handoff/APK-Clean-v3-SHA256.txt"
             cat "$GITHUB_WORKSPACE/handoff/APK-Clean-v3-SHA256.txt"
-            "${ANDROID_HOME:-$ANDROID_SDK_ROOT}/build-tools/34.0.0/apksigner" verify --print-certs "$APK" | head -6 || true
+            "${ANDROID_HOME:-$ANDROID_SDK_ROOT}/build-tools/36.0.0/apksigner" verify --print-certs "$APK" | head -6 || true
           else
             echo "APK не собран — смотреть clean-build-log.txt"
           fi

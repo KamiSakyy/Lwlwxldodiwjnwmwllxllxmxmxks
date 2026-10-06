@@ -38,7 +38,7 @@ jobs:
           SDK="${ANDROID_HOME:-$ANDROID_SDK_ROOT}"
           echo "SDK: $SDK"
           yes | "$SDK/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null 2>&1 || true
-          "$SDK/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" "platforms;android-35" "build-tools;34.0.0" "platform-tools" | tail -3
+          "$SDK/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" "platforms;android-35" "build-tools;36.0.0" "platform-tools" | tail -3
 
       - name: "Установка 7-Zip и распаковка исходников"
         run: |
@@ -111,7 +111,7 @@ jobs:
             cp -f "$APK" "$GITHUB_WORKSPACE/handoff/GitHub-RU-v2-926-release.apk"
             sha256sum "$GITHUB_WORKSPACE/handoff/GitHub-RU-v2-926-release.apk" > "$GITHUB_WORKSPACE/handoff/APK-SHA256.txt"
             cat "$GITHUB_WORKSPACE/handoff/APK-SHA256.txt"
-            "${ANDROID_HOME:-$ANDROID_SDK_ROOT}/build-tools/34.0.0/apksigner" verify --print-certs "$APK" | head -8 || true
+            "${ANDROID_HOME:-$ANDROID_SDK_ROOT}/build-tools/36.0.0/apksigner" verify --print-certs "$APK" | head -8 || true
             MAP=$(find app/build/outputs -name "mapping.txt" | head -1)
             [ -n "$MAP" ] && gzip -c "$MAP" > "$GITHUB_WORKSPACE/handoff/R8-mapping.txt.gz" || true
           else

@@ -1,0 +1,185 @@
+name: "06 — Studio (API 28–36 + Node.js 24 + React/Vue) → APK + Release"
+
+# Современная сборка: модуль :studio собирается ВСЕГДА —
+# даже без dist (заглушки) и даже без скачанного Node.js (stub).
+# Эмулятор НЕ используется: только сборка + проверка подписью/aapt.
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "arena/8b3246a5-lwlwxldodiwjnwmwllxllxmxmxks"
+    paths:
+      - ".github/workflows/06-studio-modern.yml"
+      - "handoff/GitHub-RU-v2/studio/**"
+      - "handoff/GitHub-RU-v2/web-react/**"
+      - "handoff/GitHub-RU-v2/web-vue/**"
+      - "handoff/GitHub-RU-v2/build.gradle"
+      - "handoff/GitHub-RU-v2/settings.gradle"
+      - "handoff/GitHub-RU-v2/gradle.properties"
+      - "handoff/GitHub-RU-v2/gradle/**"
+      - "handoff/GitHub-RU-v2/app/build.gradle"
+
+permissions:
+  contents: write
+
+env:
+  PROJ: handoff/GitHub-RU-v2
+  NODE_MOBILE_TAG: v24.20.0-0
+  NODE_MOBILE_ZIP: nodejs-mobile-android-24.20.0-0.zip
+
+jobs:
+  studio:
+    name: "Сборка Studio APK + GitHub Release"
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: "Checkout ветки"
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: "JDK 17 (для AGP 9.4)"
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: "Node.js 22 (сборка React/Vue)"
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: "Android SDK 36 + NDK + CMake"
+        run: |
+          set -e
+          SDK="${ANDROID_HOME:-$ANDROID_SDK_ROOT}"
+          echo "SDK: $SDK"
+          yes | "$SDK/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null 2>&1 || true
+          "$SDK/cmdline-tools/latest/bin/sdkmanager" \
+            "platforms;android-36" "build-tools;36.0.0" "platform-tools" \
+            "ndk;28.2.13676358" "cmake;3.22.1" | tail -3
+          echo "BT=$SDK/build-tools/36.0.0" >> "$GITHUB_ENV"
+
+      - name: "Скачивание Node.js 24 под arm64 (digidem/nodejs-mobile)"
+        run: |
+          set -e
+          JNIDIR="$PROJ/studio/src/main/jniLibs/arm64-v8a"
+          mkdir -p "$JNIDIR" /tmp/nodem
+          if gh release download "$NODE_MOBILE_TAG" --repo digidem/nodejs-mobile \
+               --pattern "$NODE_MOBILE_ZIP" --dir /tmp/nodem --clobber; then
+            ZIP="/tmp/nodem/$NODE_MOBILE_ZIP"
+            ls -la "$ZIP"
+            echo "=== Содержимое архива (первые 15 строк) ==="
+            unzip -l "$ZIP" | head -15
+            CAND=$(unzip -l "$ZIP" | grep -oE '[^ ]*libnode\.so' | grep -iE 'arm64|aarch64' | head -1 || true)
+            if [ -z "$CAND" ]; then
+              CAND=$(unzip -l "$ZIP" | grep -oE '[^ ]*libnode\.so' | head -1 || true)
+            fi
+            echo "Выбран: $CAND"
+            if [ -n "$CAND" ]; then
+              unzip -p "$ZIP" "$CAND" > "$JNIDIR/libnode.so"
+              ls -la "$JNIDIR"
+              file "$JNIDIR/libnode.so" || true
+              echo "NODE_STATUS=встроен" >> "$GITHUB_ENV"
+            else
+              echo "::warning::libnode.so не найден в архиве — сборка пойдёт в режиме заглушки"
+              echo "NODE_STATUS=заглушка" >> "$GITHUB_ENV"
+            fi
+          else
+            echo "::warning::Не удалось скачать Node.js — сборка пойдёт в режиме заглушки (APK соберётся всё равно)"
+            echo "NODE_STATUS=заглушка" >> "$GITHUB_ENV"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: "Сборка фронта: React (Vite)"
+        run: |
+          cd "$PROJ/web-react"
+          if npm install --no-audit --no-fund && npm run build; then
+            echo "REACT_STATUS=собран" >> "$GITHUB_ENV"
+            ls -la dist/
+          else
+            echo "::warning::React не собрался — в APK встанет офлайн-заглушка (APK соберётся всё равно)"
+            echo "REACT_STATUS=заглушка" >> "$GITHUB_ENV"
+          fi
+
+      - name: "Сборка фронта: Vue (Vite)"
+        run: |
+          cd "$PROJ/web-vue"
+          if npm install --no-audit --no-fund && npm run build; then
+            echo "VUE_STATUS=собран" >> "$GITHUB_ENV"
+            ls -la dist/
+          else
+            echo "::warning::Vue не собрался — в APK встанет офлайн-заглушка (APK соберётся всё равно)"
+            echo "VUE_STATUS=заглушка" >> "$GITHUB_ENV"
+          fi
+
+      - name: "Сборка: ./gradlew :studio:assembleRelease"
+        run: |
+          set -e
+          set -o pipefail
+          cd "$PROJ"
+          chmod +x gradlew
+          sed -i 's/-Xmx4096m/-Xmx6g/; s/MaxMetaspaceSize=1024m/MaxMetaspaceSize=2048m/' gradle.properties
+          echo "=== СТАРТ СБОРКИ $(date -u +%H:%M:%S) ==="
+          ./gradlew :studio:assembleRelease --no-daemon --stacktrace 2>&1 | tee /tmp/studio-build-log.txt | tail -30
+          echo "=== APK ==="
+          find studio/build/outputs -name "*.apk" -exec ls -la {} \;
+
+      - name: "Проверка APK: подпись + API 28–36 + состав"
+        run: |
+          set -e
+          cd "$PROJ"
+          APK=$(find studio/build/outputs -name "*release*.apk" | head -1)
+          echo "APK=$APK"
+          [ -n "$APK" ] || (echo "APK НЕ НАЙДЕН"; exit 1)
+          echo "APK_PATH=$PROJ/$APK" >> "$GITHUB_ENV"
+          echo "=== Подпись ==="
+          "$BT/apksigner" verify --print-certs "$APK" | head -8
+          echo "=== API-уровни (должно быть 28 / 36) ==="
+          "$BT/aapt" dump badging "$APK" | grep -E "^package:|sdkVersion|targetSdkVersion|native-code|launchable-activity"
+          echo "=== Состав (Node.js + React/Vue + мост) ==="
+          unzip -l "$APK" | grep -E "lib/arm64-v8a/lib(node|nodestarter)\.so|assets/web/(react|vue)/index\.html|assets/nodejs/server\.js" || echo "ЧТО-ТО НЕ УПАКОВАНО!"
+          sha256sum "$APK" | tee /tmp/studio-apk.sha256
+
+      - name: "Артефакт: Studio APK"
+        uses: actions/upload-artifact@v4
+        with:
+          name: GitHub-RU-Studio-927-apk
+          path: ${{ env.APK_PATH }}
+          retention-days: 90
+
+      - name: "GitHub Release: studio-modern (APK для скачивания)"
+        run: |
+          set -e
+          APK="${{ env.APK_PATH }}"
+          SHA=$(cut -d' ' -f1 /tmp/studio-apk.sha256)
+          SIZE=$(du -h "$APK" | cut -f1)
+          NOTES="GitHub RU Studio — современная сборка (API 28–36).
+          |
+          | Компонент | Статус |
+          |---|---|
+          | minSdk / targetSdk / compileSdk | **28 / 36 / 36** (Android 9–16) |
+          | Node.js 24 (встроенный, офлайн) | **${NODE_STATUS:-?}** |
+          | React 19 (assets/web/react) | **${REACT_STATUS:-?}** |
+          | Vue 3 (assets/web/vue) | **${VUE_STATUS:-?}** |
+          |
+          | APK | SHA-256 |
+          |---|---|
+          | \`$(basename $APK)\` ($SIZE) | \`$SHA\` |
+          |
+          | Требования: **Android 9+ (API 28+)**, процессор **arm64-v8a**. Интернет для работы НЕ нужен.
+          | Установка: скачать APK → открыть → разрешить установку → готово.
+          | Сборка: $(date -u +%Y-%m-%dT%H:%M:%SZ), run #${{ github.run_number }}."
+          if ! gh release view studio-modern >/dev/null 2>&1; then
+            gh release create studio-modern --title "GitHub RU Studio — API 28–36 + Node.js 24 + React/Vue (офлайн)" --notes "$NOTES"
+          else
+            gh release edit studio-modern --notes "$NOTES"
+          fi
+          gh release upload studio-modern "$APK" --clobber
+          echo "=== ССЫЛКА НА APK ==="
+          gh release view studio-modern --json assets --jq '.assets[].browser_download_url'
+        env:
+          GH_TOKEN: ${{ github.token }}
