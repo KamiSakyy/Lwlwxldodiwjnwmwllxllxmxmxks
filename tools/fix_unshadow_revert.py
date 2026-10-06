@@ -80,8 +80,8 @@ for fp in files:
         nm = m.group(2)[:-7]
         return "%s.%s" % (m.group(1), nm) if (m.group(1), nm) in pairset else m.group(0)
     text = qual_re.sub(qrep, text)
-    # 3c. голый XShadow: в пакете P (holder не переименован) или у импортёров P.X
-    if bare_re.search(text):
+    # 3c. ОТКЛЮЧЕНО: голые имена двусмысленны (чужие пакеты с тем же простым именем)
+    if False and bare_re.search(text):
         cand = set()
         for m in bare_re.finditer(text):
             X = m.group(1)
