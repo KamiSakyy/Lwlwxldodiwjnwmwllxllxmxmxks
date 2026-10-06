@@ -223,7 +223,7 @@
 
                 <TextView
                     android:id="@+id/settings_encryption_desc"
-                    style="@style/TextAppearance.MailGram.RowSummary"
+                    style="@style/TextAppearance.MailGram.Caption"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="16dp"
