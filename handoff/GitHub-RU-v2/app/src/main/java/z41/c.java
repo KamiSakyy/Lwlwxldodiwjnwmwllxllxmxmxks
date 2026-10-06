@@ -84,7 +84,7 @@ import y41.v1;
 import y41.w;
 import y41.w0;
 import y41.w1;
-import y41.x;
+import y41.xShadow;
 import y41.x0;
 import y41.x1;
 import y41.y;
@@ -163,7 +163,7 @@ public final class c {
         u uVar = u.a;
         dVar.a(f2.class, uVar);
         dVar.a(c1.class, uVar);
-        x xVar = x.a;
+        xShadow xVar = xShadow.a;
         dVar.a(i2.class, xVar);
         dVar.a(g1.class, xVar);
         v vVar = v.a;

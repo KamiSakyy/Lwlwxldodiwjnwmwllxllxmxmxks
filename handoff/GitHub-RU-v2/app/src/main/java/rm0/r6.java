@@ -1437,7 +1437,7 @@ public final class r6 implements y71.j {
                             }
                             String str28 = z6Var2.a;
                             kc0.a7 a7Var2 = z6Var2.b;
-                            p01.b bVar = new p01.b(z6Var2.c, str28, a7Var2.c.b, a7Var2.b, z6Var2.d);
+                            p01.bShadow bVar = new p01.b(z6Var2.c, str28, a7Var2.c.b, a7Var2.b, z6Var2.d);
                             d7Var.v = 1;
                             if (this.s.c(bVar, d7Var) == aVar9) {
                                 return aVar9;

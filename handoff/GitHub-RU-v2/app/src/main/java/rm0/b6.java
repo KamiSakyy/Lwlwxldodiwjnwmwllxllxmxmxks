@@ -71,11 +71,11 @@ import u10.z60;
 public final class b6 implements z01.t0, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
     public final com.github.service.wrapper.j s;
-    public final com.github.service.wrapper.b t;
+    public final com.github.service.wrapper.bShadow t;
     public final v71.v u;
     public final s01.p v;
 
-    public b6(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, int i) {
+    public b6(com.github.service.wrapper.j jVar, com.github.service.wrapper.bShadow bVar, v71.v vVar, int i) {
         this.r = i;
         switch (i) {
             case 1:
@@ -169,28 +169,28 @@ public final class b6 implements z01.t0, yb0, mi0, y90, yf0 {
                 aa.u0 u0Var = new aa.u0(nn.t);
                 aa.t0 t0Var = aa.t0.d;
                 l80 l80Var = new l80(str, u0Var, t0Var, t0Var, t0Var, t0Var, t0Var);
-                com.github.service.wrapper.b bVar = this.t;
+                com.github.service.wrapper.bShadow bVar = this.t;
                 return y71.n1.y(new d5(new y00.l(in.r.m(in.r.h(bVar.d(l80Var)), bVar, new ri0.w3(), str, new s(8)), 10), 9), this.u);
             case 1:
                 k71.k.g(str, "id");
                 aa.u0 u0Var2 = new aa.u0(l00.t);
                 aa.t0 t0Var2 = aa.t0.d;
                 aa.n0 ze0Var = new ze0(str, u0Var2, t0Var2, t0Var2, t0Var2, t0Var2);
-                com.github.service.wrapper.b bVar2 = this.t;
+                com.github.service.wrapper.bShadow bVar2 = this.t;
                 return y71.n1.y(new t00.w3(new y00.l(in.r.m(in.r.h(bVar2.d(ze0Var)), bVar2, new gv.g4(), str, new sw0.e(20)), 10), 23), this.u);
             case 2:
                 k71.k.g(str, "id");
                 aa.u0 u0Var3 = new aa.u0(lm.t);
                 aa.t0 t0Var3 = aa.t0.d;
                 aa.n0 l60Var = new l60(str, u0Var3, t0Var3, t0Var3, t0Var3, t0Var3, t0Var3);
-                com.github.service.wrapper.b bVar3 = this.t;
+                com.github.service.wrapper.bShadow bVar3 = this.t;
                 return y71.n1.y(new vb0.t3(new y00.l(in.r.m(in.r.h(bVar3.d(l60Var)), bVar3, new z70.m3(0), str, new v00.n(17)), 10), 7), this.u);
             default:
                 k71.k.g(str, "id");
                 aa.u0 u0Var4 = new aa.u0(ou.t);
                 aa.t0 t0Var4 = aa.t0.d;
                 lc0 lc0Var = new lc0(str, u0Var4, t0Var4, t0Var4, t0Var4, t0Var4, t0Var4);
-                com.github.service.wrapper.b bVar4 = this.t;
+                com.github.service.wrapper.bShadow bVar4 = this.t;
                 return y71.n1.y(new wy0.q3(new y00.l(in.r.m(in.r.h(bVar4.d(lc0Var)), bVar4, new xt0.w3(), str, new wy0.p4(2)), 10), 18), this.u);
         }
     }
@@ -271,13 +271,13 @@ public final class b6 implements z01.t0, yb0, mi0, y90, yf0 {
                 return y71.n1.y(new vb0.t3(new y00.l(in.r.h(this.t.d(new xb(str, u0Var12, u0Var13, u0Var14, u0Var15, u0Var11))), 10), 3), this.u);
             default:
                 zs Q = pullRequestMergeMethod != null ? aa1.b.Q(pullRequestMergeMethod) : null;
-                aa1.b bVar = aa.t0.d;
-                aa1.b u0Var16 = Q == null ? bVar : new aa.u0(Q);
-                aa1.b u0Var17 = str2 == null ? bVar : new aa.u0(str2);
+                aa1.bShadow bVar = aa.t0.d;
+                aa1.bShadow u0Var16 = Q == null ? bVar : new aa.u0(Q);
+                aa1.bShadow u0Var17 = str2 == null ? bVar : new aa.u0(str2);
                 String str10 = s2Var != null ? s2Var.r : null;
-                aa1.b u0Var18 = str10 == null ? bVar : new aa.u0(str10);
+                aa1.bShadow u0Var18 = str10 == null ? bVar : new aa.u0(str10);
                 String str11 = s2Var != null ? s2Var.s : null;
-                aa1.b u0Var19 = str11 == null ? bVar : new aa.u0(str11);
+                aa1.bShadow u0Var19 = str11 == null ? bVar : new aa.u0(str11);
                 if (str3 != null) {
                     bVar = new aa.u0(str3);
                 }
@@ -372,7 +372,7 @@ public final class b6 implements z01.t0, yb0, mi0, y90, yf0 {
                 } else {
                     nnVar = null;
                 }
-                aa1.b bVar = aa.t0.d;
+                aa1.bShadow bVar = aa.t0.d;
                 return y71.n1.y(new d5(new y00.l(in.r.h(this.t.d(new l80(str, nnVar == null ? bVar : new aa.u0(nnVar), bVar, str2 == null ? bVar : new aa.u0(str2), bVar, arrayList == null ? bVar : new aa.u0(arrayList), bVar))), 10), 10), this.u);
             case 1:
                 k71.k.g(str, "id");
@@ -391,7 +391,7 @@ public final class b6 implements z01.t0, yb0, mi0, y90, yf0 {
                 } else {
                     l00Var = null;
                 }
-                aa1.b bVar2 = aa.t0.d;
+                aa1.bShadow bVar2 = aa.t0.d;
                 return y71.n1.y(new t00.w3(new y00.l(in.r.h(this.t.d(new ze0(str, l00Var == null ? bVar2 : new aa.u0(l00Var), bVar2, str2 == null ? bVar2 : new aa.u0(str2), bVar2, bVar2))), 10), 24), this.u);
             case 2:
                 k71.k.g(str, "id");
@@ -410,7 +410,7 @@ public final class b6 implements z01.t0, yb0, mi0, y90, yf0 {
                 } else {
                     lmVar = null;
                 }
-                aa1.b bVar3 = aa.t0.d;
+                aa1.bShadow bVar3 = aa.t0.d;
                 return y71.n1.y(new vb0.t3(new y00.l(in.r.h(this.t.d(new l60(str, lmVar == null ? bVar3 : new aa.u0(lmVar), bVar3, str2 == null ? bVar3 : new aa.u0(str2), bVar3, arrayList == null ? bVar3 : new aa.u0(arrayList), bVar3))), 10), 8), this.u);
             default:
                 k71.k.g(str, "id");
@@ -429,7 +429,7 @@ public final class b6 implements z01.t0, yb0, mi0, y90, yf0 {
                 } else {
                     ouVar = null;
                 }
-                aa1.b bVar4 = aa.t0.d;
+                aa1.bShadow bVar4 = aa.t0.d;
                 return y71.n1.y(new wy0.q3(new y00.l(in.r.h(this.t.d(new lc0(str, ouVar == null ? bVar4 : new aa.u0(ouVar), bVar4, str2 == null ? bVar4 : new aa.u0(str2), bVar4, arrayList == null ? bVar4 : new aa.u0(arrayList), bVar4))), 10), 19), this.u);
         }
     }
@@ -540,22 +540,22 @@ public final class b6 implements z01.t0, yb0, mi0, y90, yf0 {
             case 0:
                 k71.k.g(str, "id");
                 kc0.z4 z4Var = new kc0.z4(str);
-                com.github.service.wrapper.b bVar = this.t;
+                com.github.service.wrapper.bShadow bVar = this.t;
                 return y71.n1.y(new d5(new y00.l(in.r.m(in.r.h(bVar.d(z4Var)), bVar, new ri0.w3(), str, new s(6)), 10), 3), this.u);
             case 1:
                 k71.k.g(str, "id");
                 aa.n0 p5Var = new jo.p5(str);
-                com.github.service.wrapper.b bVar2 = this.t;
+                com.github.service.wrapper.bShadow bVar2 = this.t;
                 return y71.n1.y(new t00.w3(new y00.l(in.r.m(in.r.h(bVar2.d(p5Var)), bVar2, new gv.g4(), str, new sw0.e(22)), 10), 17), this.u);
             case 2:
                 k71.k.g(str, "id");
                 aa.n0 z4Var2 = new u10.z4(str);
-                com.github.service.wrapper.b bVar3 = this.t;
+                com.github.service.wrapper.bShadow bVar3 = this.t;
                 return y71.n1.y(new vb0.t3(new y00.l(in.r.m(in.r.h(bVar3.d(z4Var2)), bVar3, new z70.m3(0), str, new v00.n(19)), 10), 1), this.u);
             default:
                 k71.k.g(str, "id");
                 jn0.f5 f5Var = new jn0.f5(str);
-                com.github.service.wrapper.b bVar4 = this.t;
+                com.github.service.wrapper.bShadow bVar4 = this.t;
                 return y71.n1.y(new wy0.q3(new y00.l(in.r.m(in.r.h(bVar4.d(f5Var)), bVar4, new xt0.w3(), str, new wy0.p4(3)), 10), 12), this.u);
         }
     }

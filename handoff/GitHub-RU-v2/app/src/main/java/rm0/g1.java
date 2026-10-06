@@ -53,7 +53,7 @@ public final class g1 extends c71.j implements j71.e {
                 int i = this.x;
                 if (i == 0) {
                     sy.y.j(obj);
-                    com.github.service.wrapper.b bVar = this.z.s;
+                    com.github.service.wrapper.bShadow bVar = this.z.s;
                     uf0.m mVar = new uf0.m();
                     this.y = null;
                     this.w = jVar;
@@ -86,7 +86,7 @@ public final class g1 extends c71.j implements j71.e {
                 int i2 = this.x;
                 if (i2 == 0) {
                     sy.y.j(obj);
-                    com.github.service.wrapper.b bVar2 = this.z.s;
+                    com.github.service.wrapper.bShadow bVar2 = this.z.s;
                     uf0.m mVar2 = new uf0.m();
                     this.y = null;
                     this.w = jVar2;
@@ -119,7 +119,7 @@ public final class g1 extends c71.j implements j71.e {
                 int i3 = this.x;
                 if (i3 == 0) {
                     sy.y.j(obj);
-                    com.github.service.wrapper.b bVar3 = this.z.s;
+                    com.github.service.wrapper.bShadow bVar3 = this.z.s;
                     uf0.c0 c0Var = new uf0.c0();
                     this.y = null;
                     this.w = jVar3;

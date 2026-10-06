@@ -2,19 +2,19 @@ package wb0;
 
 import aa.v0;
 import sy.y;
-import u10.ea;
+import u10.eaShadow;
 import w61.a0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class g extends c71.j implements j71.c {
     public final /* synthetic */ int v;
     public int w;
-    public final /* synthetic */ ea x;
+    public final /* synthetic */ eaShadow x;
     public final /* synthetic */ q y;
     public final /* synthetic */ s20.f z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    public /* synthetic */ g(ea eaVar, q qVar, s20.f fVar, a71.c cVar, int i) {
+    public /* synthetic */ g(eaShadow eaVar, q qVar, s20.f fVar, a71.c cVar, int i) {
         super(1, cVar);
         this.v = i;
         this.x = eaVar;

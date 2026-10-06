@@ -46,7 +46,7 @@ public final /* synthetic */ class ya implements j71.e {
                 k71.k.g(str, "after");
                 return new vz.h(zVar.a, new aa.u0(10), new aa.u0(str), new aa.u0(zVar.b));
             case 2:
-                vz.b bVar = (vz.b) obj;
+                vz.bShadow bVar = (vz.b) obj;
                 List list2 = (List) obj2;
                 k71.k.g(bVar, "data");
                 k71.k.g(list2, "nodes");
@@ -123,7 +123,7 @@ public final /* synthetic */ class ya implements j71.e {
                 k71.k.g(str8, "before");
                 return new u10.ka(fVar2.a, new aa.u0(str8));
             case 13:
-                u10.ea eaVar = (u10.ea) obj;
+                u10.eaShadow eaVar = (u10.eaShadow) obj;
                 List list8 = (List) obj2;
                 k71.k.g(eaVar, "data");
                 k71.k.g(list8, "nodes");
@@ -132,7 +132,7 @@ public final /* synthetic */ class ya implements j71.e {
                     i50.c0 c0Var = gaVar.d;
                     r3 = u10.ga.a(gaVar, c0Var != null ? i50.c0.a(c0Var, i50.b0.a(c0Var.c, 0, list8, 3), (i50.h) null, 27) : null);
                 }
-                return new u10.ea(r3);
+                return new u10.eaShadow(r3);
             case 14:
                 s20.g gVar = (s20.g) obj;
                 String str9 = (String) obj2;
@@ -189,8 +189,8 @@ public final /* synthetic */ class ya implements j71.e {
                 String str13 = nVar.a;
                 aa.u0 u0Var2 = new aa.u0(str11);
                 String str14 = nVar.b;
-                aa1.b bVar2 = aa.t0.d;
-                aa1.b u0Var3 = str14 == null ? bVar2 : new aa.u0(str14);
+                aa1.bShadow bVar2 = aa.t0.d;
+                aa1.bShadow u0Var3 = str14 == null ? bVar2 : new aa.u0(str14);
                 if (str12 != null) {
                     bVar2 = new aa.u0(str12);
                 }

@@ -121,8 +121,8 @@ public final class q9 implements z01.j1, yb0, mi0, y90, yf0 {
                 pt t = sy.p.t(mVar.f);
                 String str = mVar.a;
                 String str2 = mVar.b;
-                aa1.b bVar = aa.t0.d;
-                aa1.b u0Var = str2 == null ? bVar : new aa.u0(str2);
+                aa1.bShadow bVar = aa.t0.d;
+                aa1.bShadow u0Var = str2 == null ? bVar : new aa.u0(str2);
                 br m0 = com.google.android.gms.internal.measurement.b4.m0(mVar.c);
                 if (m0 != null) {
                     bVar = new aa.u0(m0);
@@ -133,8 +133,8 @@ public final class q9 implements z01.j1, yb0, mi0, y90, yf0 {
                 m10.y60 L = com.google.android.gms.internal.measurement.z3.L(mVar.f);
                 String str3 = mVar.a;
                 String str4 = mVar.b;
-                aa1.b bVar2 = aa.t0.d;
-                aa1.b u0Var2 = str4 == null ? bVar2 : new aa.u0(str4);
+                aa1.bShadow bVar2 = aa.t0.d;
+                aa1.bShadow u0Var2 = str4 == null ? bVar2 : new aa.u0(str4);
                 f40 u = sy.p.u(mVar.c);
                 if (u != null) {
                     bVar2 = new aa.u0(u);
@@ -145,8 +145,8 @@ public final class q9 implements z01.j1, yb0, mi0, y90, yf0 {
                 ks M = y41.t1.M(mVar.f);
                 String str5 = mVar.a;
                 String str6 = mVar.b;
-                aa1.b bVar3 = aa.t0.d;
-                aa1.b u0Var3 = str6 == null ? bVar3 : new aa.u0(str6);
+                aa1.bShadow bVar3 = aa.t0.d;
+                aa1.bShadow u0Var3 = str6 == null ? bVar3 : new aa.u0(str6);
                 xp s = t.e.s(mVar.c);
                 if (s != null) {
                     bVar3 = new aa.u0(s);
@@ -157,8 +157,8 @@ public final class q9 implements z01.j1, yb0, mi0, y90, yf0 {
                 y00 c0 = b31.b.c0(mVar.f);
                 String str7 = mVar.a;
                 String str8 = mVar.b;
-                aa1.b bVar4 = aa.t0.d;
-                aa1.b u0Var4 = str8 == null ? bVar4 : new aa.u0(str8);
+                aa1.bShadow bVar4 = aa.t0.d;
+                aa1.bShadow u0Var4 = str8 == null ? bVar4 : new aa.u0(str8);
                 hy I = y9.a.I(mVar.c);
                 if (I != null) {
                     bVar4 = new aa.u0(I);

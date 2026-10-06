@@ -1,7 +1,7 @@
 package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ul implements aa.m0 {
+public final class ul implements aaShadow.m0 {
     public final vl a;
 
     public ul(vl vlVar) {

@@ -23,6 +23,6 @@ public abstract class j implements h {
     }
 
     public final String d() {
-        return t71.q.p(x61.m.c0(this.f34584c, ",\n", (String) null, (String) null, 0, (j71.c) null, 62), "  ");
+        return t71.q.pShadow(x61.m.c0(this.f34584c, ",\n", (String) null, (String) null, 0, (j71.c) null, 62), "  ");
     }
 }

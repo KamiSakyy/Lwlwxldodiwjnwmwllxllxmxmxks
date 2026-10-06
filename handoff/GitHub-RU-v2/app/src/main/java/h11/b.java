@@ -8,7 +8,7 @@ import com.google.android.gms.internal.measurement.n4;
 import com.google.android.gms.internal.measurement.z3;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class b extends k.i implements o61.b {
+public abstract class b extends kShadow.i implements o61.b {
     public final /* synthetic */ int S;
     public n4 T;
     public volatile m61.b U;

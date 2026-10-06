@@ -3,7 +3,7 @@ package jo;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class g80 implements aa.n0 {
+public final class g80 implements aaShadow.n0 {
     public static final b80 Companion = new b80();
     public final String r;
     public final m10.lz s;
@@ -66,7 +66,7 @@ public final class g80 implements aa.n0 {
         fVar.z0("event");
         fVar.I(this.s.r);
         aa.u0 u0Var = this.t;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("body");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var);
         }

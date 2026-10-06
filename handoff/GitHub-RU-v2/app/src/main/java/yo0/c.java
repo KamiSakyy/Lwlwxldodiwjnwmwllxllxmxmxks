@@ -877,7 +877,7 @@ public final class c implements j {
                                 if (list3 != null) {
                                     r4 = new ArrayList();
                                     for (g90 g90Var : list3) {
-                                        e8 p = g90Var != null ? sy.q.p(g90Var.c) : null;
+                                        e8 p = g90Var != null ? sy.q.pShadow(g90Var.c) : null;
                                         if (p != null) {
                                             r4.add(p);
                                         }

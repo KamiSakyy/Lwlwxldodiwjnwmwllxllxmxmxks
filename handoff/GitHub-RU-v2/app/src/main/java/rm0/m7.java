@@ -61,7 +61,7 @@ public final class m7 extends c71.j implements j71.e {
                 int i = this.w;
                 if (i == 0) {
                     sy.y.j(obj);
-                    com.github.service.wrapper.b bVar = ((y8) this.x).t;
+                    com.github.service.wrapper.bShadow bVar = ((y8) this.x).t;
                     s sVar = new s(10);
                     this.w = 1;
                     if (b31.b.b(bVar, sVar, this) == aVar) {
@@ -125,7 +125,7 @@ public final class m7 extends c71.j implements j71.e {
                 int i4 = this.w;
                 if (i4 == 0) {
                     sy.y.j(obj);
-                    com.github.service.wrapper.b bVar2 = ((t00.c9) this.x).t;
+                    com.github.service.wrapper.bShadow bVar2 = ((t00.c9) this.x).t;
                     sw0.e eVar = new sw0.e(25);
                     this.w = 1;
                     if (sy.n.a(bVar2, eVar, this) == aVar4) {
@@ -143,7 +143,7 @@ public final class m7 extends c71.j implements j71.e {
                 int i5 = this.w;
                 if (i5 == 0) {
                     sy.y.j(obj);
-                    com.github.service.wrapper.b bVar3 = ((y8) this.x).t;
+                    com.github.service.wrapper.bShadow bVar3 = ((y8) this.x).t;
                     v00.n nVar = new v00.n(21);
                     this.w = 1;
                     if (sy.s.c(bVar3, nVar, this) == aVar5) {
@@ -161,7 +161,7 @@ public final class m7 extends c71.j implements j71.e {
                 int i6 = this.w;
                 if (i6 == 0) {
                     sy.y.j(obj);
-                    com.github.service.wrapper.b bVar4 = ((t00.c9) this.x).t;
+                    com.github.service.wrapper.bShadow bVar4 = ((t00.c9) this.x).t;
                     wy0.p4 p4Var = new wy0.p4(7);
                     this.w = 1;
                     if (sy.y.b(bVar4, p4Var, this) == aVar6) {

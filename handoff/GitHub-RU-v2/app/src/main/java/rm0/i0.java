@@ -874,9 +874,9 @@ public final class i0 implements y71.j {
         String str;
         x61.r rVar;
         String str2;
-        oe0.b bVar2;
+        oe0.bShadow bVar2;
         String str3;
-        oe0.b bVar3;
+        oe0.bShadow bVar3;
         List<oe0.c> list;
         CheckStatusState checkStatusState;
         String str4;
@@ -1368,7 +1368,7 @@ public final class i0 implements y71.j {
                                         Object obj13 = S2.get(i39);
                                         i39++;
                                         ArrayList arrayList6 = S2;
-                                        of0.b bVar4 = (of0.b) obj13;
+                                        of0.bShadow bVar4 = (of0.b) obj13;
                                         int i40 = size2;
                                         of0.c cVar4 = bVar4.c;
                                         if (cVar4 != null) {
@@ -1659,7 +1659,7 @@ public final class i0 implements y71.j {
                             if (p0Var2 == null) {
                                 throw new ApiFailure(ApiFailureType.PARSE_ERROR, "Invalid server response.", null, null, null, null, null, 120);
                             }
-                            b01.b i56 = y41.t1.i(p0Var2);
+                            b01.bShadow i56 = y41.t1.i(p0Var2);
                             h1Var.v = 1;
                             if (this.s.c(i56, h1Var) == aVar18) {
                                 return aVar18;
@@ -1696,7 +1696,7 @@ public final class i0 implements y71.j {
                             if (p0Var3 == null) {
                                 throw new ApiFailure(ApiFailureType.PARSE_ERROR, "Invalid server response.", null, null, null, null, null, 120);
                             }
-                            b01.b i58 = y41.t1.i(p0Var3);
+                            b01.bShadow i58 = y41.t1.i(p0Var3);
                             k1Var.v = 1;
                             if (this.s.c(i58, k1Var) == aVar19) {
                                 return aVar19;

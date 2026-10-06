@@ -3,7 +3,7 @@ package jo;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class b0 implements aa.n0 {
+public final class b0 implements aaShadow.n0 {
     public static final z Companion = new z();
     public final String r;
     public final String s;
@@ -70,12 +70,12 @@ public final class b0 implements aa.n0 {
         fVar.z0("deviceName");
         bVar.b(fVar, wVar, this.s);
         aa.u0 u0Var = this.t;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("encryptionKey");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var);
         }
         aa.u0 u0Var2 = this.u;
-        if (u0Var2 instanceof aa.u0) {
+        if (u0Var2 instanceof aaShadow.u0) {
             fVar.z0("hmacKey");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var2);
         }

@@ -14,11 +14,11 @@ public final class s6 implements aa.a {
         while (eVar.r0(b) == 0) {
             str = (String) aa.c.i.a(eVar, wVar);
         }
-        return new jo.ea(str);
+        return new jo.eaShadow(str);
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.ea eaVar = (jo.ea) obj;
+        jo.eaShadow eaVar = (jo.eaShadow) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(eaVar, "value");

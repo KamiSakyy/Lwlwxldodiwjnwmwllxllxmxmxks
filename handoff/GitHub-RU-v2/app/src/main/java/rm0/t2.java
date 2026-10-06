@@ -312,7 +312,7 @@ public final class t2 implements y71.j {
                         String str8 = s2Var.f;
                         jr jrVar2 = s2Var.g;
                         oj0.r2 r2Var = s2Var.e;
-                        ek0.b bVar = p2Var.e;
+                        ek0.bShadow bVar = p2Var.e;
                         ek0.a aVar4 = bVar.e;
                         kw kwVar = bVar.c;
                         oj0.n2 n2Var2 = m2Var2 != null ? m2Var2.b : null;
@@ -386,7 +386,7 @@ public final class t2 implements y71.j {
                                     IssueOrPullRequestState issueOrPullRequestState3 = issueOrPullRequestState2;
                                     com.github.service.models.response.a aVar7 = new com.github.service.models.response.a(a3Var != null ? a3Var.b : "", b41.b.O(a3Var != null ? a3Var.c : null), (String) null, false, (String) null, 60);
                                     boolean b = k71.k.b(g3Var.j, Boolean.TRUE);
-                                    wl0.b bVar2 = new wl0.b(g3Var.x, g3Var.l, new yz0.a0(str9));
+                                    wl0.bShadow bVar2 = new wl0.b(g3Var.x, g3Var.l, new yz0.a0(str9));
                                     ArrayList p = aa1.b.p(cVar2, str9);
                                     boolean z24 = cVar2.c;
                                     oj0.c3 c3Var = g3Var.o;
@@ -410,7 +410,7 @@ public final class t2 implements y71.j {
                                         ArrayList arrayList6 = S;
                                         oj0.e3 e3Var = d3Var.b;
                                         oj0.b3 b3Var = d3Var.a;
-                                        wl0.b bVar3 = bVar2;
+                                        wl0.bShadow bVar3 = bVar2;
                                         boolean z25 = z23;
                                         String str14 = str8;
                                         arrayList3.add(new xz0.f(new SimpleLegacyProject(e3Var.b, e3Var.a, y41.t1.R(e3Var.c), b3Var != null ? b3Var.a : null), b3Var != null ? b3Var.a : ""));
@@ -423,7 +423,7 @@ public final class t2 implements y71.j {
                                         str8 = str14;
                                     }
                                     String str15 = str9;
-                                    wl0.b bVar4 = bVar2;
+                                    wl0.bShadow bVar4 = bVar2;
                                     boolean z26 = z23;
                                     String str16 = str8;
                                     boolean z27 = g3Var.g;
@@ -513,7 +513,7 @@ public final class t2 implements y71.j {
                                 IssueOrPullRequestState issueOrPullRequestState32 = issueOrPullRequestState2;
                                 com.github.service.models.response.a aVar72 = new com.github.service.models.response.a(a3Var2 != null ? a3Var2.b : "", b41.b.O(a3Var2 != null ? a3Var2.c : null), (String) null, false, (String) null, 60);
                                 boolean b2 = k71.k.b(g3Var.j, Boolean.TRUE);
-                                wl0.b bVar22 = new wl0.b(g3Var.x, g3Var.l, new yz0.a0(str9));
+                                wl0.bShadow bVar22 = new wl0.b(g3Var.x, g3Var.l, new yz0.a0(str9));
                                 ArrayList p2 = aa1.b.p(cVar2, str9);
                                 boolean z242 = cVar2.c;
                                 oj0.c3 c3Var2 = g3Var.o;
@@ -530,7 +530,7 @@ public final class t2 implements y71.j {
                                 while (i7 < size3) {
                                 }
                                 String str152 = str9;
-                                wl0.b bVar42 = bVar22;
+                                wl0.bShadow bVar42 = bVar22;
                                 boolean z262 = z232;
                                 String str162 = str8;
                                 boolean z272 = g3Var.g;
@@ -577,7 +577,7 @@ public final class t2 implements y71.j {
                             IssueOrPullRequestState issueOrPullRequestState322 = issueOrPullRequestState2;
                             com.github.service.models.response.a aVar722 = new com.github.service.models.response.a(a3Var22 != null ? a3Var22.b : "", b41.b.O(a3Var22 != null ? a3Var22.c : null), (String) null, false, (String) null, 60);
                             boolean b22 = k71.k.b(g3Var.j, Boolean.TRUE);
-                            wl0.b bVar222 = new wl0.b(g3Var.x, g3Var.l, new yz0.a0(str9));
+                            wl0.bShadow bVar222 = new wl0.b(g3Var.x, g3Var.l, new yz0.a0(str9));
                             ArrayList p22 = aa1.b.p(cVar2, str9);
                             boolean z2422 = cVar2.c;
                             oj0.c3 c3Var22 = g3Var.o;
@@ -594,7 +594,7 @@ public final class t2 implements y71.j {
                             while (i7 < size3) {
                             }
                             String str1522 = str9;
-                            wl0.b bVar422 = bVar222;
+                            wl0.bShadow bVar422 = bVar222;
                             boolean z2622 = z2322;
                             String str1622 = str8;
                             boolean z2722 = g3Var.g;
@@ -714,7 +714,7 @@ public final class t2 implements y71.j {
                                         com.github.service.models.response.a aVar12 = new com.github.service.models.response.a(l4Var != null ? l4Var.b : "", b41.b.O(l4Var != null ? l4Var.c : null), (String) null, false, (String) null, 60);
                                         boolean b3 = k71.k.b(y5Var.o, Boolean.TRUE);
                                         SubscriptionState subscriptionState14 = subscriptionState9;
-                                        wl0.b bVar5 = new wl0.b(y5Var.V, str19, new yz0.b0(str20));
+                                        wl0.bShadow bVar5 = new wl0.b(y5Var.V, str19, new yz0.b0(str20));
                                         list2 = list;
                                         ArrayList p3 = aa1.b.p(cVar3, str20);
                                         boolean z44 = cVar3.c;
@@ -789,7 +789,7 @@ public final class t2 implements y71.j {
                                             list4 = new ArrayList();
                                             Iterator it4 = list5.iterator();
                                             while (it4.hasNext()) {
-                                                yg0.b bVar6 = (yg0.b) it4.next();
+                                                yg0.bShadow bVar6 = (yg0.b) it4.next();
                                                 if (bVar6 != null) {
                                                     mg0.g0 g0Var = bVar6.c;
                                                     it = it4;
@@ -906,7 +906,7 @@ public final class t2 implements y71.j {
                                         pullRequestReviewDecision = PullRequestReviewDecision.UNKNOWN__;
                                         PullRequestReviewDecision pullRequestReviewDecision3 = pullRequestReviewDecision;
                                         ri0.x4 x4Var = y5Var.x;
-                                        ri0.b bVar7 = y5Var.d0;
+                                        ri0.bShadow bVar7 = y5Var.d0;
                                         MergeStateStatus o = sy.c0.o(y5Var.v);
                                         ArrayList K = x61.l.K(new PullRequestMergeMethod[]{s2Var.j ? PullRequestMergeMethod.MERGE : null, s2Var.h ? PullRequestMergeMethod.SQUASH : null, s2Var.i ? PullRequestMergeMethod.REBASE : null});
                                         boolean z58 = !((t4Var != null || (o5Var = t4Var.b) == null) ? true : o5Var.a);
@@ -923,10 +923,10 @@ public final class t2 implements y71.j {
                                         String str33 = x4Var != null ? x4Var.a : null;
                                         ZonedDateTime zonedDateTime3 = x4Var != null ? x4Var.b : null;
                                         ri0.z4 z4Var = y5Var.z;
-                                        i01.b T = z4Var != null ? k41.b.T(z4Var.c) : null;
+                                        i01.bShadow T = z4Var != null ? k41.b.T(z4Var.c) : null;
                                         ri0.y4 y4Var = y5Var.y;
                                         h01.h hVar2 = new h01.h(o, K, z58, w, str31, list13, iVar2, z59, z60, z62, str32, str33, zonedDateTime3, T, y4Var != null ? m7.y.N(y4Var.c) : null);
-                                        xl0.b bVar8 = new xl0.b(y5Var);
+                                        xl0.bShadow bVar8 = new xl0.b(y5Var);
                                         a = pl0.a.a(r5Var, w4Var, v4Var);
                                         int intValue = (m4Var != null || (p5Var3 = m4Var.a) == null || (num = p5Var3.a) == null) ? 0 : num.intValue();
                                         boolean z63 = (m4Var != null || (p5Var2 = m4Var.a) == null) ? false : p5Var2.b;
@@ -940,7 +940,7 @@ public final class t2 implements y71.j {
                                                 Object obj6 = a.get(i29);
                                                 i29++;
                                                 yz0.e2 e2Var = (yz0.e2) obj6;
-                                                xl0.b bVar9 = bVar8;
+                                                xl0.bShadow bVar9 = bVar8;
                                                 IssueOrPullRequest$ReviewerReviewState issueOrPullRequest$ReviewerReviewState2 = e2Var.b;
                                                 ArrayList arrayList13 = a;
                                                 boolean z64 = e2Var.c;
@@ -964,7 +964,7 @@ public final class t2 implements y71.j {
                                                 bVar8 = bVar9;
                                             }
                                         }
-                                        xl0.b bVar10 = bVar8;
+                                        xl0.bShadow bVar10 = bVar8;
                                         int i30 = intValue > 0 ? z63 ? (i5 * 100) / (intValue + i5) : (i5 * 100) / intValue : 0;
                                         boolean z65 = !((m4Var != null || (p5Var = m4Var.a) == null) ? z38 : p5Var.c) && z5;
                                         boolean z66 = s2Var.n;
@@ -1039,7 +1039,7 @@ public final class t2 implements y71.j {
                                     com.github.service.models.response.a aVar122 = new com.github.service.models.response.a(l4Var2 != null ? l4Var2.b : "", b41.b.O(l4Var2 != null ? l4Var2.c : null), (String) null, false, (String) null, 60);
                                     boolean b32 = k71.k.b(y5Var.o, Boolean.TRUE);
                                     SubscriptionState subscriptionState142 = subscriptionState9;
-                                    wl0.b bVar52 = new wl0.b(y5Var.V, str19, new yz0.b0(str20));
+                                    wl0.bShadow bVar52 = new wl0.b(y5Var.V, str19, new yz0.b0(str20));
                                     list2 = list;
                                     ArrayList p32 = aa1.b.p(cVar3, str20);
                                     boolean z442 = cVar3.c;
@@ -1111,7 +1111,7 @@ public final class t2 implements y71.j {
                                     pullRequestReviewDecision = PullRequestReviewDecision.UNKNOWN__;
                                     PullRequestReviewDecision pullRequestReviewDecision32 = pullRequestReviewDecision;
                                     ri0.x4 x4Var2 = y5Var.x;
-                                    ri0.b bVar72 = y5Var.d0;
+                                    ri0.bShadow bVar72 = y5Var.d0;
                                     MergeStateStatus o2 = sy.c0.o(y5Var.v);
                                     ArrayList K2 = x61.l.K(new PullRequestMergeMethod[]{s2Var.j ? PullRequestMergeMethod.MERGE : null, s2Var.h ? PullRequestMergeMethod.SQUASH : null, s2Var.i ? PullRequestMergeMethod.REBASE : null});
                                     boolean z582 = !((t4Var != null || (o5Var = t4Var.b) == null) ? true : o5Var.a);
@@ -1136,7 +1136,7 @@ public final class t2 implements y71.j {
                                     }
                                     ri0.y4 y4Var2 = y5Var.y;
                                     h01.h hVar22 = new h01.h(o2, K2, z582, w2, str312, list132, iVar2, z592, z602, z622, str32, str33, zonedDateTime3, T, y4Var2 != null ? m7.y.N(y4Var2.c) : null);
-                                    xl0.b bVar82 = new xl0.b(y5Var);
+                                    xl0.bShadow bVar82 = new xl0.b(y5Var);
                                     a = pl0.a.a(r5Var, w4Var, v4Var);
                                     if (m4Var != null) {
                                     }
@@ -1144,7 +1144,7 @@ public final class t2 implements y71.j {
                                     }
                                     if (a.isEmpty()) {
                                     }
-                                    xl0.b bVar102 = bVar82;
+                                    xl0.bShadow bVar102 = bVar82;
                                     if (intValue > 0) {
                                     }
                                     if ((m4Var != null || (p5Var = m4Var.a) == null) ? z38 : p5Var.c) {
@@ -1194,7 +1194,7 @@ public final class t2 implements y71.j {
                             com.github.service.models.response.a aVar1222 = new com.github.service.models.response.a(l4Var22 != null ? l4Var22.b : "", b41.b.O(l4Var22 != null ? l4Var22.c : null), (String) null, false, (String) null, 60);
                             boolean b322 = k71.k.b(y5Var.o, Boolean.TRUE);
                             SubscriptionState subscriptionState1422 = subscriptionState9;
-                            wl0.b bVar522 = new wl0.b(y5Var.V, str19, new yz0.b0(str20));
+                            wl0.bShadow bVar522 = new wl0.b(y5Var.V, str19, new yz0.b0(str20));
                             list2 = list;
                             ArrayList p322 = aa1.b.p(cVar3, str20);
                             boolean z4422 = cVar3.c;
@@ -1266,7 +1266,7 @@ public final class t2 implements y71.j {
                             pullRequestReviewDecision = PullRequestReviewDecision.UNKNOWN__;
                             PullRequestReviewDecision pullRequestReviewDecision322 = pullRequestReviewDecision;
                             ri0.x4 x4Var22 = y5Var.x;
-                            ri0.b bVar722 = y5Var.d0;
+                            ri0.bShadow bVar722 = y5Var.d0;
                             MergeStateStatus o22 = sy.c0.o(y5Var.v);
                             ArrayList K22 = x61.l.K(new PullRequestMergeMethod[]{s2Var.j ? PullRequestMergeMethod.MERGE : null, s2Var.h ? PullRequestMergeMethod.SQUASH : null, s2Var.i ? PullRequestMergeMethod.REBASE : null});
                             boolean z5822 = !((t4Var != null || (o5Var = t4Var.b) == null) ? true : o5Var.a);
@@ -1291,7 +1291,7 @@ public final class t2 implements y71.j {
                             }
                             ri0.y4 y4Var22 = y5Var.y;
                             h01.h hVar222 = new h01.h(o22, K22, z5822, w22, str3122, list1322, iVar2, z5922, z6022, z6222, str32, str33, zonedDateTime3, T, y4Var22 != null ? m7.y.N(y4Var22.c) : null);
-                            xl0.b bVar822 = new xl0.b(y5Var);
+                            xl0.bShadow bVar822 = new xl0.b(y5Var);
                             a = pl0.a.a(r5Var, w4Var, v4Var);
                             if (m4Var != null) {
                             }
@@ -1299,7 +1299,7 @@ public final class t2 implements y71.j {
                             }
                             if (a.isEmpty()) {
                             }
-                            xl0.b bVar1022 = bVar822;
+                            xl0.bShadow bVar1022 = bVar822;
                             if (intValue > 0) {
                             }
                             if ((m4Var != null || (p5Var = m4Var.a) == null) ? z38 : p5Var.c) {
@@ -2310,7 +2310,7 @@ public final class t2 implements y71.j {
                                 while (i38 < size2) {
                                     Object obj12 = arrayList16.get(i38);
                                     i38++;
-                                    wk0.b bVar = (wk0.b) obj12;
+                                    wk0.bShadow bVar = (wk0.b) obj12;
                                     k71.k.g(bVar, "<this>");
                                     arrayList17.add(new g01.d(sy.d0.y(bVar.a), bVar.b));
                                 }

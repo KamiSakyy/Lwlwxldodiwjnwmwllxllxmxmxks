@@ -3,7 +3,7 @@ package jo;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ed0 implements aa.n0 {
+public final class ed0 implements aaShadow.n0 {
     public static final zc0 Companion = new zc0();
     public final String r;
     public final aa1.b s;
@@ -62,7 +62,7 @@ public final class ed0 implements aa.n0 {
         fVar.z0("issueId");
         aa.c.a.b(fVar, wVar, this.r);
         aa.u0 u0Var = this.s;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("issueTypeId");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var);
         }

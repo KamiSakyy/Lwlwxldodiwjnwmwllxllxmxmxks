@@ -3,7 +3,7 @@ package f0;
 import android.view.ViewConfiguration;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public abstract class j0 {
+public abstract class j0Shadow {
 
     /* renamed from: a, reason: collision with root package name */
     public static final float f22305a = ViewConfiguration.getScrollFriction();

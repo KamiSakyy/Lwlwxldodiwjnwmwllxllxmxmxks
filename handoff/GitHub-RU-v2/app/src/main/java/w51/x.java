@@ -7,7 +7,7 @@ import android.util.Log;
 import java.util.concurrent.TimeUnit;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class x extends BroadcastReceiver {
+public final class xShadow extends BroadcastReceiver {
     public y a;
 
     @Override // android.content.BroadcastReceiver

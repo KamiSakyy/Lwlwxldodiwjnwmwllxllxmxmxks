@@ -1,7 +1,7 @@
 package a61;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class j0 extends c71.c {
+public final class j0Shadow extends c71.c {
     public /* synthetic */ Object u;
     public int v;
     public final /* synthetic */ k0 w;

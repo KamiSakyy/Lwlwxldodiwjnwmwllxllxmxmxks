@@ -34,10 +34,10 @@ import u10.y90;
 public final class x4 implements z01.n0, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
     public final com.github.service.wrapper.j s;
-    public final com.github.service.wrapper.b t;
+    public final com.github.service.wrapper.bShadow t;
     public final v71.v u;
 
-    public x4(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, int i) {
+    public x4(com.github.service.wrapper.j jVar, com.github.service.wrapper.bShadow bVar, v71.v vVar, int i) {
         this.r = i;
         switch (i) {
             case 1:
@@ -81,10 +81,10 @@ public final class x4 implements z01.n0, yb0, mi0, y90, yf0 {
             case 0:
                 k71.k.g(pullRequestMergeMethod, "method");
                 bm s = sy.f0.s(pullRequestMergeMethod);
-                aa1.b bVar = aa.t0.d;
-                aa1.b u0Var = str2 == null ? bVar : new aa.u0(str2);
+                aa1.bShadow bVar = aa.t0.d;
+                aa1.bShadow u0Var = str2 == null ? bVar : new aa.u0(str2);
                 String str4 = s2Var != null ? s2Var.r : null;
-                aa1.b u0Var2 = str4 == null ? bVar : new aa.u0(str4);
+                aa1.bShadow u0Var2 = str4 == null ? bVar : new aa.u0(str4);
                 String str5 = s2Var != null ? s2Var.s : null;
                 if (str5 != null) {
                     bVar = new aa.u0(str5);
@@ -93,10 +93,10 @@ public final class x4 implements z01.n0, yb0, mi0, y90, yf0 {
             case 1:
                 k71.k.g(pullRequestMergeMethod, "method");
                 py z = w8.s.z(pullRequestMergeMethod);
-                aa1.b bVar2 = aa.t0.d;
-                aa1.b u0Var3 = str2 == null ? bVar2 : new aa.u0(str2);
+                aa1.bShadow bVar2 = aa.t0.d;
+                aa1.bShadow u0Var3 = str2 == null ? bVar2 : new aa.u0(str2);
                 String str6 = s2Var != null ? s2Var.r : null;
-                aa1.b u0Var4 = str6 == null ? bVar2 : new aa.u0(str6);
+                aa1.bShadow u0Var4 = str6 == null ? bVar2 : new aa.u0(str6);
                 String str7 = s2Var != null ? s2Var.s : null;
                 if (str7 != null) {
                     bVar2 = new aa.u0(str7);
@@ -105,10 +105,10 @@ public final class x4 implements z01.n0, yb0, mi0, y90, yf0 {
             case 2:
                 k71.k.g(pullRequestMergeMethod, "method");
                 zk F = i21.a.F(pullRequestMergeMethod);
-                aa1.b bVar3 = aa.t0.d;
-                aa1.b u0Var5 = str2 == null ? bVar3 : new aa.u0(str2);
+                aa1.bShadow bVar3 = aa.t0.d;
+                aa1.bShadow u0Var5 = str2 == null ? bVar3 : new aa.u0(str2);
                 String str8 = s2Var != null ? s2Var.r : null;
-                aa1.b u0Var6 = str8 == null ? bVar3 : new aa.u0(str8);
+                aa1.bShadow u0Var6 = str8 == null ? bVar3 : new aa.u0(str8);
                 String str9 = s2Var != null ? s2Var.s : null;
                 if (str9 != null) {
                     bVar3 = new aa.u0(str9);
@@ -117,10 +117,10 @@ public final class x4 implements z01.n0, yb0, mi0, y90, yf0 {
             default:
                 k71.k.g(pullRequestMergeMethod, "method");
                 zs Q = aa1.b.Q(pullRequestMergeMethod);
-                aa1.b bVar4 = aa.t0.d;
-                aa1.b u0Var7 = str2 == null ? bVar4 : new aa.u0(str2);
+                aa1.bShadow bVar4 = aa.t0.d;
+                aa1.bShadow u0Var7 = str2 == null ? bVar4 : new aa.u0(str2);
                 String str10 = s2Var != null ? s2Var.r : null;
-                aa1.b u0Var8 = str10 == null ? bVar4 : new aa.u0(str10);
+                aa1.bShadow u0Var8 = str10 == null ? bVar4 : new aa.u0(str10);
                 String str11 = s2Var != null ? s2Var.s : null;
                 if (str11 != null) {
                     bVar4 = new aa.u0(str11);

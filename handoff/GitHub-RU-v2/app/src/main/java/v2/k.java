@@ -1,7 +1,7 @@
 package v2;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public abstract class k extends w1.q {
+public abstract class k extends w1Shadow.q {
     public final int F = e1.e(this);
     public w1.q G;
 
@@ -67,7 +67,7 @@ public abstract class k extends w1.q {
     public final j O0(j jVar) {
         w1.q qVar = ((w1.q) jVar).f32947r;
         if (qVar != jVar) {
-            w1.q qVar2 = jVar instanceof w1.q ? (w1.q) jVar : null;
+            w1.q qVar2 = jVar instanceof w1Shadow.q ? (w1.q) jVar : null;
             w1.q qVar3 = qVar2 != null ? qVar2.f32951v : null;
             if (qVar != this.f32947r || !k71.k.b(qVar3, this)) {
                 throw new IllegalStateException("Cannot delegate to an already delegated node");

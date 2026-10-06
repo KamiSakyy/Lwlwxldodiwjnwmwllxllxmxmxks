@@ -563,7 +563,7 @@ public final class w0 extends i4 {
             if (q != null) {
                 L(i2, sb);
                 sb.append("string_filter {\n");
-                if (q.p()) {
+                if (q.pShadow()) {
                     switch (q.x()) {
                         case 1:
                             str = "UNKNOWN_MATCH_TYPE";

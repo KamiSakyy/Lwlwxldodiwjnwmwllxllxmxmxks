@@ -1,7 +1,7 @@
 package a61;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public abstract class h0 {
+public abstract class h0Shadow {
     public static final s5.e a = b91.g.Q("session_id");
 
 
@@ -68,7 +68,7 @@ public abstract class h0 {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a0 {
+    public static class a0Shadow {
         public a0() {
         }
     }

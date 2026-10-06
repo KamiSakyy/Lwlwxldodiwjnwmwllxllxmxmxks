@@ -353,7 +353,7 @@ public final class u7 implements y71.j {
                         if (i4 != 0) {
                             sy.y.j(obj5);
                             y71.j jVar4 = (y71.j) this.s;
-                            wn.b bVar = ((q) this.t).u;
+                            wn.bShadow bVar = ((q) this.t).u;
                             List list10 = ((jo.d4) obj).a;
                             bVar.getClass();
                             LinkedHashSet a = wn.b.a(list10);
@@ -608,7 +608,7 @@ public final class u7 implements y71.j {
                                         if (!list11.isEmpty() && !t71.p.T(c0) && !t71.p.T(str3)) {
                                             FilterPersistedKey.Companion companion = com.github.domain.database.serialization.b.Companion;
                                             companion.getClass();
-                                            l81.b bVar2 = l81.c.d;
+                                            l81.bShadow bVar2 = l81.c.d;
                                             bVar2.getClass();
                                             RepositoryDiscussionsFilterPersistenceKey repositoryDiscussionsFilterPersistenceKey = (com.github.domain.database.serialization.b) bVar2.a(str3, companion.serializer());
                                             boolean z = repositoryDiscussionsFilterPersistenceKey instanceof HomeIssuesFilterPersistenceKey;
@@ -728,7 +728,7 @@ public final class u7 implements y71.j {
                         if (i10 != 0) {
                             sy.y.j(obj12);
                             y71.j jVar10 = (y71.j) this.s;
-                            wn.b bVar3 = ((q) this.t).u;
+                            wn.bShadow bVar3 = ((q) this.t).u;
                             List list12 = ((u10.p3) obj).a;
                             bVar3.getClass();
                             LinkedHashSet a2 = wn.b.a(list12);
@@ -797,7 +797,7 @@ public final class u7 implements y71.j {
                         if (i13 != 0) {
                             sy.y.j(obj14);
                             y71.j jVar12 = (y71.j) this.s;
-                            wn.b bVar4 = ((q) this.t).u;
+                            wn.bShadow bVar4 = ((q) this.t).u;
                             List list13 = ((jn0.v3) obj).a;
                             bVar4.getClass();
                             LinkedHashSet a3 = wn.b.a(list13);

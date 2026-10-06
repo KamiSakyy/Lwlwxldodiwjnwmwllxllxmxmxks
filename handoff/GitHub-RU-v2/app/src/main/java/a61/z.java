@@ -76,7 +76,7 @@ public final class z {
                     dVar = str3;
                     k71.k.f(obj, "{\n          firebaseInst…ions.id.await()\n        }");
                     str2 = (String) obj;
-                    return new a0(str2, dVar);
+                    return new a0Shadow(str2, dVar);
                 }
                 q51.d dVar2 = (q51.d) yVar.u;
                 sy.y.j(obj);

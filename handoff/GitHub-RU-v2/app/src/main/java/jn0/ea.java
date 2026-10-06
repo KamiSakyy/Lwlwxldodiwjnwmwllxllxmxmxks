@@ -3,7 +3,7 @@ package jn0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ea implements aa.w0 {
+public final class eaShadow implements aa.w0 {
     public static final q9 Companion = new q9();
     public final String r;
     public final aa.u0 s;
@@ -29,10 +29,10 @@ public final class ea implements aa.w0 {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof ea)) {
+        if (!(obj instanceof eaShadow)) {
             return false;
         }
-        ea eaVar = (ea) obj;
+        eaShadow eaVar = (eaShadow) obj;
         return k71.k.b(this.r, eaVar.r) && this.s.equals(eaVar.s);
     }
 

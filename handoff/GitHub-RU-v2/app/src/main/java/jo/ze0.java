@@ -3,7 +3,7 @@ package jo;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ze0 implements aa.n0 {
+public final class ze0 implements aaShadow.n0 {
     public static final ue0 Companion = new ue0();
     public final String r;
     public final aa1.b s;
@@ -76,25 +76,25 @@ public final class ze0 implements aa.n0 {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, this.r);
         aa.u0 u0Var = this.s;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("state");
             aa.c.d(aa.c.b(n10.b.v)).d(fVar, wVar, u0Var);
         }
         aa.u0 u0Var2 = this.t;
-        if (u0Var2 instanceof aa.u0) {
+        if (u0Var2 instanceof aaShadow.u0) {
             f4.e(fVar, "assigneeIds", bVar).d(fVar, wVar, u0Var2);
         }
         aa.u0 u0Var3 = this.u;
-        if (u0Var3 instanceof aa.u0) {
+        if (u0Var3 instanceof aaShadow.u0) {
             fVar.z0("body");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var3);
         }
         aa.u0 u0Var4 = this.v;
-        if (u0Var4 instanceof aa.u0) {
+        if (u0Var4 instanceof aaShadow.u0) {
             f4.e(fVar, "labelIds", bVar).d(fVar, wVar, u0Var4);
         }
         aa.u0 u0Var5 = this.w;
-        if (u0Var5 instanceof aa.u0) {
+        if (u0Var5 instanceof aaShadow.u0) {
             fVar.z0("milestoneId");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var5);
         }

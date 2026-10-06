@@ -4,7 +4,7 @@ import kc0.ca0;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class w9 extends c71.c {
-    public com.github.service.wrapper.b u;
+    public com.github.service.wrapper.bShadow u;
     public ca0 v;
     public /* synthetic */ Object w;
     public final /* synthetic */ y9 x;

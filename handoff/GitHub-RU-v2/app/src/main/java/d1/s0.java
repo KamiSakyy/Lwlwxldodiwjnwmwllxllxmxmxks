@@ -1,7 +1,7 @@
 package d1;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class s0 {
+public final class s0Shadow {
 
     /* renamed from: a, reason: collision with root package name */
     public final s0.c0 f21216a;
@@ -26,10 +26,10 @@ public final class s0 {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof s0)) {
+        if (!(obj instanceof s0Shadow)) {
             return false;
         }
-        s0 s0Var = (s0) obj;
+        s0Shadow s0Var = (s0Shadow) obj;
         return this.f21216a == s0Var.f21216a && c2.b.c(this.f21217b, s0Var.f21217b) && this.f21218c == s0Var.f21218c && this.f21219d == s0Var.f21219d;
     }
 

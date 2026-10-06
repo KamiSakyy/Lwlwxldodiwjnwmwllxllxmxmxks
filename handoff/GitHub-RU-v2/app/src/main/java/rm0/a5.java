@@ -121,7 +121,7 @@ public final class a5 implements y71.j {
                             if (aVar2 != null) {
                                 e2Var = pl0.c.c(aVar2, z);
                             } else {
-                                uj0.b bVar = cVar2.b;
+                                uj0.bShadow bVar = cVar2.b;
                                 if (bVar != null) {
                                     e2Var = pl0.c.d(bVar, z, null);
                                 }
@@ -977,7 +977,7 @@ public final class a5 implements y71.j {
                             ml0.j jVar2 = (ml0.j) obj;
                             k71.k.g(jVar2, "<this>");
                             ml0.k kVar2 = jVar2.a;
-                            i01.b T = (kVar2 == null || (nVar = kVar2.a) == null || (oVar = nVar.b) == null || (mVar = oVar.d) == null) ? null : k41.b.T(mVar.c);
+                            i01.bShadow T = (kVar2 == null || (nVar = kVar2.a) == null || (oVar = nVar.b) == null || (mVar = oVar.d) == null) ? null : k41.b.T(mVar.c);
                             if (T != null) {
                                 m5Var.v = 1;
                                 if (this.s.c(T, m5Var) == aVar10) {

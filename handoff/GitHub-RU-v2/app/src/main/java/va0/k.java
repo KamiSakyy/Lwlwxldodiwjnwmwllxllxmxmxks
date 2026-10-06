@@ -303,7 +303,7 @@ public final class k {
                         arrayList = new ArrayList();
                         for (u3 u3Var : list) {
                             boolean z23 = z182;
-                            e8 p = u3Var != null ? sy.q.p(u3Var.c) : null;
+                            e8 p = u3Var != null ? sy.q.pShadow(u3Var.c) : null;
                             if (p != null) {
                                 arrayList.add(p);
                             }

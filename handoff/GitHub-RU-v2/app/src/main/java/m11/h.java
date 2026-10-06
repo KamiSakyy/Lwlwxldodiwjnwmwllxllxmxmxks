@@ -7,7 +7,7 @@ import v2.a1;
 import v2.d1;
 import v2.e1;
 import v2.g0;
-import v2.w1;
+import v2.w1Shadow;
 import v2.x;
 import v2.x0;
 import v2.z;
@@ -32,8 +32,8 @@ public final class h {
     public /* synthetic */ h() {
     }
 
-    public static final void a(h hVar, w1.q qVar, d1 d1Var) {
-        for (w1.q qVar2 = qVar.v; qVar2 != null; qVar2 = qVar2.v) {
+    public static final void a(h hVar, w1Shadow.q qVar, d1 d1Var) {
+        for (w1Shadow.q qVar2 = qVar.v; qVar2 != null; qVar2 = qVar2.v) {
             if (qVar2 == ((a1) hVar.c)) {
                 g0 w = ((g0) hVar.b).w();
                 d1Var.H = w != null ? (v2.s) w.X.d : null;
@@ -48,13 +48,13 @@ public final class h {
         }
     }
 
-    public static w1.q d(w1.p pVar, w1.q qVar) {
-        w1.q qVar2;
+    public static w1Shadow.q d(w1Shadow.p pVar, w1Shadow.q qVar) {
+        w1Shadow.q qVar2;
         if (pVar instanceof x0) {
             qVar2 = ((x0) pVar).g();
             qVar2.t = e1.f(qVar2);
         } else {
-            w1.q bVar = new v2.b();
+            w1Shadow.q bVar = new v2.b();
             bVar.t = e1.d(pVar);
             ((v2.b) bVar).F = pVar;
             new HashSet();
@@ -64,7 +64,7 @@ public final class h {
             t2.a.b("A ModifierNodeElement cannot return an already attached node from create() ");
         }
         qVar2.z = true;
-        w1.q qVar3 = qVar.w;
+        w1Shadow.q qVar3 = qVar.w;
         if (qVar3 != null) {
             qVar3.v = qVar2;
             qVar2.w = qVar3;
@@ -74,7 +74,7 @@ public final class h {
         return qVar2;
     }
 
-    public static w1.q e(w1.q qVar) {
+    public static w1Shadow.q e(w1Shadow.q qVar) {
         boolean z = qVar.E;
         if (z) {
             c0 c0Var = e1.a;
@@ -85,8 +85,8 @@ public final class h {
             qVar.L0();
             qVar.F0();
         }
-        w1.q qVar2 = qVar.w;
-        w1.q qVar3 = qVar.v;
+        w1Shadow.q qVar2 = qVar.w;
+        w1Shadow.q qVar3 = qVar.v;
         if (qVar2 != null) {
             qVar2.v = qVar3;
             qVar.w = null;
@@ -99,7 +99,7 @@ public final class h {
         return qVar3;
     }
 
-    public static void j(w1.p pVar, w1.p pVar2, w1.q qVar) {
+    public static void j(w1Shadow.p pVar, w1Shadow.p pVar2, w1Shadow.q qVar) {
         if ((pVar instanceof x0) && (pVar2 instanceof x0)) {
             k71.k.e(qVar, "null cannot be cast to non-null type T of androidx.compose.ui.node.NodeChainKt.updateUnsafe");
             ((x0) pVar2).h(qVar);
@@ -116,18 +116,18 @@ public final class h {
             return;
         }
         v2.b bVar = (v2.b) qVar;
-        boolean z = ((w1.q) bVar).E;
+        boolean z = ((w1Shadow.q) bVar).E;
         if (z) {
             if (!z) {
                 t2.a.b("unInitializeModifier called on unattached node");
             }
-            if ((((w1.q) bVar).t & 8) != 0) {
+            if ((((w1Shadow.q) bVar).t & 8) != 0) {
                 v2.l.w(bVar).G();
             }
         }
         bVar.F = pVar2;
-        ((w1.q) bVar).t = e1.d(pVar2);
-        if (((w1.q) bVar).E) {
+        ((w1Shadow.q) bVar).t = e1.d(pVar2);
+        if (((w1Shadow.q) bVar).E) {
             bVar.O0(false);
         }
         if (qVar.E) {
@@ -166,11 +166,11 @@ public final class h {
     }
 
     public boolean f(int i) {
-        return (i & ((w1.q) this.g).u) != 0;
+        return (i & ((w1Shadow.q) this.g).u) != 0;
     }
 
     public void g() {
-        for (w1.q qVar = (w1.q) this.g; qVar != null; qVar = qVar.w) {
+        for (w1Shadow.q qVar = (w1Shadow.q) this.g; qVar != null; qVar = qVar.w) {
             qVar.K0();
             if (qVar.z) {
                 c0 c0Var = e1.a;
@@ -368,7 +368,7 @@ public final class h {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public void h(int i, l1.e eVar, l1.e eVar2, w1.q qVar, boolean z) {
+    public void h(int i, l1.e eVar, l1.e eVar2, w1Shadow.q qVar, boolean z) {
         int i2;
         l1.e eVar3;
         l1.e eVar4;
@@ -581,7 +581,7 @@ public final class h {
             int i68 = iArr8[i62 + 1] - i66;
             i62 += 3;
             while (i63 < i67) {
-                w1.q qVar2 = z0Var.a.w;
+                w1Shadow.q qVar2 = z0Var.a.w;
                 k71.k.d(qVar2);
                 if ((qVar2.t & 2) != 0) {
                     d1 d1Var = qVar2.y;
@@ -599,10 +599,10 @@ public final class h {
                 i63++;
             }
             while (i64 < i68) {
-                w1.q d = d((w1.p) z0Var.d.r[z0Var.b + i64], z0Var.a);
+                w1Shadow.q d = d((w1Shadow.p) z0Var.d.r[z0Var.b + i64], z0Var.a);
                 z0Var.a = d;
                 if (z0Var.e) {
-                    w1.q qVar3 = d.w;
+                    w1Shadow.q qVar3 = d.w;
                     k71.k.d(qVar3);
                     d1 d1Var4 = qVar3.y;
                     k71.k.d(d1Var4);
@@ -619,7 +619,7 @@ public final class h {
                     }
                     z0Var.a.E0();
                     z0Var.a.K0();
-                    w1.q qVar4 = z0Var.a;
+                    w1Shadow.q qVar4 = z0Var.a;
                     c0 c0Var = e1.a;
                     if (!qVar4.E) {
                         t2.a.b("autoInvalidateInsertedNode called on unattached node");
@@ -633,13 +633,13 @@ public final class h {
             while (true) {
                 int i69 = i66 - 1;
                 if (i66 > 0) {
-                    w1.q qVar5 = z0Var.a.w;
+                    w1Shadow.q qVar5 = z0Var.a.w;
                     k71.k.d(qVar5);
                     z0Var.a = qVar5;
                     l1.e eVar5 = z0Var.c;
                     int i70 = z0Var.b;
-                    w1.p pVar = (w1.p) eVar5.r[i70 + i63];
-                    w1.p pVar2 = (w1.p) z0Var.d.r[i70 + i64];
+                    w1Shadow.p pVar = (w1Shadow.p) eVar5.r[i70 + i63];
+                    w1Shadow.p pVar2 = (w1Shadow.p) z0Var.d.r[i70 + i64];
                     if (!k71.k.b(pVar, pVar2)) {
                         j(pVar, pVar2, z0Var.a);
                     }
@@ -650,7 +650,7 @@ public final class h {
             }
         }
         int i72 = i3;
-        for (w1.q qVar6 = ((w1.q) ((w1) this.f)).v; qVar6 != null && qVar6 != ((a1) this.c); qVar6 = qVar6.v) {
+        for (w1Shadow.q qVar6 = ((w1Shadow.q) ((w1Shadow) this.f)).v; qVar6 != null && qVar6 != ((a1) this.c); qVar6 = qVar6.v) {
             i72 |= qVar6.t;
             qVar6.u = i72;
         }
@@ -661,10 +661,10 @@ public final class h {
         m1 m1Var;
         g0 g0Var = (g0) this.b;
         z zVar2 = (v2.s) this.d;
-        for (x xVar = ((w1.q) ((w1) this.f)).v; xVar != null; xVar = ((w1.q) xVar).v) {
+        for (x xVar = ((w1Shadow.q) ((w1Shadow) this.f)).v; xVar != null; xVar = ((w1Shadow.q) xVar).v) {
             x f = v2.l.f(xVar);
             if (f != null) {
-                z zVar3 = ((w1.q) xVar).y;
+                z zVar3 = ((w1Shadow.q) xVar).y;
                 if (zVar3 != null) {
                     zVar = zVar3;
                     x xVar2 = zVar.j0;
@@ -692,8 +692,8 @@ public final class h {
         switch (this.a) {
             case 1:
                 StringBuilder sb = new StringBuilder("[");
-                w1.q qVar = (w1.q) this.g;
-                w1.q qVar2 = (w1) this.f;
+                w1Shadow.q qVar = (w1Shadow.q) this.g;
+                w1Shadow.q qVar2 = (w1Shadow) this.f;
                 if (qVar == qVar2) {
                     sb.append("]");
                 } else {
@@ -720,15 +720,15 @@ public final class h {
     public h(g0 g0Var) {
         this.b = g0Var;
         a1 a1Var = new a1();
-        ((w1.q) a1Var).u = -1;
+        ((w1Shadow.q) a1Var).u = -1;
         this.c = a1Var;
         v2.s sVar = new v2.s(g0Var);
         this.d = sVar;
         this.e = sVar;
-        w1 w1Var = sVar.j0;
+        w1Shadow w1Var = sVar.j0;
         this.f = w1Var;
         this.g = w1Var;
-        this.j = new l1.e(new w1.r[16]);
+        this.j = new l1.e(new w1Shadow.r[16]);
     }
 
 

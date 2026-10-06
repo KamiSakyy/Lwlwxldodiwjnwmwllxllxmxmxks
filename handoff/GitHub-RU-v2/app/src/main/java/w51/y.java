@@ -125,7 +125,7 @@ public final class y implements Runnable {
                         }
                         return;
                     }
-                    x xVar = new x();
+                    xShadow xVar = new xShadow();
                     xVar.a = this;
                     Log.isLoggable("FirebaseMessaging", 3);
                     context.registerReceiver(xVar, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));

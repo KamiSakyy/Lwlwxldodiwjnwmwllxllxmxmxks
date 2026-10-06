@@ -12,7 +12,7 @@ public final class da implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         List list = null;
         while (eVar.r0(b) == 0) {
-            list = (List) aa.c.b(aa.c.a(aa.c.c(ea.a, true))).a(eVar, wVar);
+            list = (List) aa.c.b(aa.c.a(aa.c.c(eaShadow.a, true))).a(eVar, wVar);
         }
         return new jo.df(list);
     }
@@ -23,6 +23,6 @@ public final class da implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(dfVar, "value");
         fVar.z0("filters");
-        aa.c.b(aa.c.a(aa.c.c(ea.a, true))).b(fVar, wVar, dfVar.a);
+        aa.c.b(aa.c.a(aa.c.c(eaShadow.a, true))).b(fVar, wVar, dfVar.a);
     }
 }

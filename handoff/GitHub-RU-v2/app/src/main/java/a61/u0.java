@@ -139,7 +139,7 @@ public final class u0 extends c71.j implements j71.e {
         Object b;
         k41.g gVar;
         q0 q0Var;
-        a0 a0Var;
+        a0Shadow a0Var;
         w0 w0Var;
         s0 s0Var;
         e61.g gVar2;
@@ -150,12 +150,12 @@ public final class u0 extends c71.j implements j71.e {
         k41.g gVar4;
         j jVar2;
         Object a3;
-        w61.a0 a0Var2;
+        w61.a0Shadow a0Var2;
         Object f;
         kotlinx.serialization.json.c cVar;
         hz.a aVar;
         Iterator it;
-        w61.a0 a0Var3;
+        w61.a0Shadow a0Var3;
         Object obj2;
         ChatMessageReferenceResponse.FileReferenceResponse webSearchReferenceResponse;
         hz.d dVar;
@@ -171,7 +171,7 @@ public final class u0 extends c71.j implements j71.e {
         List list;
         String str;
         int i2 = this.v;
-        w61.a0 a0Var4 = w61.a0.a;
+        w61.a0Shadow a0Var4 = w61.a0.a;
         Object obj3 = this.D;
         Object obj4 = this.z;
         switch (i2) {
@@ -189,7 +189,7 @@ public final class u0 extends c71.j implements j71.e {
                         if (i3 == 2) {
                             sy.y.j(obj);
                             a2 = obj;
-                            a0 a0Var5 = (a0) a2;
+                            a0Shadow a0Var5 = (a0Shadow) a2;
                             s0 s0Var2 = s0.a;
                             k41.g gVar6 = w0Var2.a;
                             q0 q0Var2 = (q0) obj3;
@@ -248,7 +248,7 @@ public final class u0 extends c71.j implements j71.e {
                         k41.g gVar8 = (k41.g) this.B;
                         s0 s0Var3 = (s0) this.A;
                         w0 w0Var3 = (w0) this.y;
-                        a0 a0Var6 = (a0) this.x;
+                        a0Shadow a0Var6 = (a0Shadow) this.x;
                         sy.y.j(obj);
                         a0Var = a0Var6;
                         w0Var = w0Var3;
@@ -512,9 +512,9 @@ public final class u0 extends c71.j implements j71.e {
                 ArrayList arrayList3 = new ArrayList(x61.n.F(list4, 10));
                 Iterator it3 = list4.iterator();
                 while (it3.hasNext()) {
-                    xn.h0 h0Var = (xn.l0) it3.next();
+                    xn.h0Shadow h0Var = (xn.l0) it3.next();
                     if (h0Var instanceof xn.h0) {
-                        xn.h0 h0Var2 = h0Var;
+                        xn.h0Shadow h0Var2 = h0Var;
                         it = it3;
                         a0Var3 = a0Var4;
                         webSearchReferenceResponse = new ChatMessageReferenceResponse.FileReferenceResponse(h0Var2.r, h0Var2.s, h0Var2.t, h0Var2.u, h0Var2.v, h0Var2.w, h0Var2.x);
@@ -522,7 +522,7 @@ public final class u0 extends c71.j implements j71.e {
                     } else {
                         it = it3;
                         if (h0Var instanceof xn.j0) {
-                            xn.j0 j0Var = (xn.j0) h0Var;
+                            xn.j0Shadow j0Var = (xn.j0) h0Var;
                             int i9 = j0Var.r;
                             String str15 = j0Var.s;
                             String str16 = j0Var.t;

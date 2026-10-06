@@ -34,10 +34,10 @@ import g3.p0;
 import h0.g1;
 import h0.y0;
 import h91.e0;
-import h91.i0;
+import h91.i0Shadow;
 import h91.j0;
 import h91.k0;
-import i0.j;
+import i0Shadow.j;
 import i3.d;
 import java.io.IOException;
 import java.lang.reflect.Type;
@@ -76,7 +76,7 @@ import x.r;
 import y41.t1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 {
+public class a implements b, k, g, h, e, n, g1, c, i0Shadow.k, d, o.a, l0, m1, b1, s1 {
     public final /* synthetic */ int r;
     public Object s;
     public Object t;
@@ -335,7 +335,7 @@ public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 
             case 13:
                 s sVar = (s) this.s;
                 java.util.List r3 = (java.util.List) (sVar.h().k);
-                i0.m mVar = (i0.m) this.t;
+                i0Shadow.m mVar = (i0Shadow.m) this.t;
                 int size = r3.size();
                 float f2 = Float.NEGATIVE_INFINITY;
                 float f3 = Float.POSITIVE_INFINITY;
@@ -375,7 +375,7 @@ public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 
                 return f2;
             default:
                 x xVar = (x) this.s;
-                i0.m mVar2 = xVar.l().n;
+                i0Shadow.m mVar2 = xVar.l().n;
                 List list = xVar.l().a;
                 int size2 = list.size();
                 float f4 = Float.POSITIVE_INFINITY;
@@ -504,7 +504,7 @@ public class a implements b, k, g, h, e, n, g1, c, i0.k, d, o.a, l0, m1, b1, s1 
     */
     public void p(u81.m mVar, q81.a0 a0Var) {
         k0 a;
-        i0 c;
+        i0Shadow c;
         int intValue;
         int i;
         int i2;

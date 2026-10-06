@@ -1,7 +1,7 @@
 package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class kt implements aa.m0 {
+public final class kt implements aaShadow.m0 {
     public final mt a;
 
     public kt(mt mtVar) {

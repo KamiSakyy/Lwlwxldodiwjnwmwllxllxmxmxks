@@ -26,8 +26,8 @@ public final class e9 implements z01.d1, yb0 {
             d1Var.m((CancellationException) null);
         }
         this.t = null;
-        aa1.b bVar = aa.t0.d;
-        aa1.b u0Var = str2 == null ? bVar : new aa.u0(str2);
+        aa1.bShadow bVar = aa.t0.d;
+        aa1.bShadow u0Var = str2 == null ? bVar : new aa.u0(str2);
         if (str3 != null) {
             bVar = new aa.u0(str3);
         }
@@ -43,8 +43,8 @@ public final class e9 implements z01.d1, yb0 {
             d1Var.m((CancellationException) null);
         }
         this.t = null;
-        aa1.b bVar = aa.t0.d;
-        aa1.b u0Var = str3 == null ? bVar : new aa.u0(str3);
+        aa1.bShadow bVar = aa.t0.d;
+        aa1.bShadow u0Var = str3 == null ? bVar : new aa.u0(str3);
         if (str4 != null) {
             bVar = new aa.u0(str4);
         }

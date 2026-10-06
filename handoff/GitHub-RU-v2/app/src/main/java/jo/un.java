@@ -3,7 +3,7 @@ package jo;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class un implements aa.n0 {
+public final class un implements aaShadow.n0 {
     public static final on Companion = new on();
     public final String r;
     public final m10.py s;
@@ -72,17 +72,17 @@ public final class un implements aa.n0 {
         fVar.z0("method");
         fVar.I(this.s.r);
         aa.u0 u0Var = this.t;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("authorEmail");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var);
         }
         aa.u0 u0Var2 = this.u;
-        if (u0Var2 instanceof aa.u0) {
+        if (u0Var2 instanceof aaShadow.u0) {
             fVar.z0("commitHeadline");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var2);
         }
         aa.u0 u0Var3 = this.v;
-        if (u0Var3 instanceof aa.u0) {
+        if (u0Var3 instanceof aaShadow.u0) {
             fVar.z0("commitBody");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var3);
         }

@@ -286,7 +286,7 @@ public final class o extends c71.j implements j71.e {
         int i2 = 0;
         CancellationException cancellationException = null;
         Object[] objArr = 0;
-        w61.a0 a0Var = w61.a0.a;
+        w61.a0Shadow a0Var = w61.a0.a;
         Object obj3 = this.z;
         switch (i) {
             case 0:
@@ -383,7 +383,7 @@ public final class o extends c71.j implements j71.e {
                 k71.k.g(cVar2, "<this>");
                 return cVar2.a == ApiRequestStatus.SUCCESS ? v8.v.a() : ((v8.w) centralUsageWorker).b.c < 5 ? new v8.t() : new v8.s();
             case 2:
-                androidx.compose.foundation.lazy.layout.a0 a0Var2 = (androidx.compose.foundation.lazy.layout.a0) this.x;
+                androidx.compose.foundation.lazy.layout.a0Shadow a0Var2 = (androidx.compose.foundation.lazy.layout.a0) this.x;
                 b71.a aVar5 = b71.a.r;
                 int i5 = this.w;
                 try {
@@ -890,7 +890,7 @@ public final class o extends c71.j implements j71.e {
                 sy.y.j(obj);
                 h0.b0 b0Var = (h0.b0) this.x;
                 m1 m1Var = b0Var.c;
-                h0.a0 a0Var3 = b0Var.b;
+                h0.a0Shadow a0Var3 = b0Var.b;
                 j1 j1Var = (j1) this.y;
                 o oVar = new o((Object) b0Var, obj3, (a71.c) (objArr == true ? 1 : 0), 20);
                 this.w = 1;

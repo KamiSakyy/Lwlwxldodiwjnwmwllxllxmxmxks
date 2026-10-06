@@ -3,7 +3,7 @@ package h91;
 import java.io.FileOutputStream;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class z implements i0 {
+public final class z implements i0Shadow {
     public final FileOutputStream r;
     public final m0 s;
 
@@ -12,7 +12,7 @@ public final class z implements i0 {
         this.s = m0Var;
     }
 
-    @Override // h91.i0
+    @Override // h91.i0Shadow
     public final void I0(h hVar, long j) {
         b.e(hVar.s, 0L, j);
         while (j > 0) {
@@ -33,17 +33,17 @@ public final class z implements i0 {
         }
     }
 
-    @Override // h91.i0
+    @Override // h91.i0Shadow
     public final m0 b() {
         return this.s;
     }
 
-    @Override // h91.i0, java.io.Closeable, java.lang.AutoCloseable, java.nio.channels.Channel
+    @Override // h91.i0Shadow, java.io.Closeable, java.lang.AutoCloseable, java.nio.channels.Channel
     public final void close() {
         this.r.close();
     }
 
-    @Override // h91.i0, java.io.Flushable
+    @Override // h91.i0Shadow, java.io.Flushable
     public final void flush() {
         this.r.flush();
     }

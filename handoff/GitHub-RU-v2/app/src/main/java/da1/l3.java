@@ -16,7 +16,7 @@ public abstract class l3 {
     public static final e3 E0;
     public static final a1 F;
     public static final f3 F0;
-    public static final b1 G;
+    public static final b1Shadow G;
     public static final g3 G0;
     public static final c1 H;
     public static final char[] H0;
@@ -108,7 +108,7 @@ public abstract class l3 {
         E = z0Var;
         a1 a1Var = new a1();
         F = a1Var;
-        b1 b1Var = new b1();
+        b1Shadow b1Var = new b1Shadow();
         G = b1Var;
         c1 c1Var = new c1();
         H = c1Var;

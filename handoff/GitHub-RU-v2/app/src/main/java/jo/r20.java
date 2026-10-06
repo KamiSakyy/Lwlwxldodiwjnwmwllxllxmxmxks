@@ -3,7 +3,7 @@ package jo;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class r20 implements aa.w0 {
+public final class r20 implements aaShadow.w0 {
     public static final l20 Companion = new l20();
     public final String r;
     public final String s;
@@ -68,7 +68,7 @@ public final class r20 implements aa.w0 {
         fVar.z0("repo");
         bVar.b(fVar, wVar, this.s);
         aa.u0 u0Var = this.t;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("query");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var);
         }

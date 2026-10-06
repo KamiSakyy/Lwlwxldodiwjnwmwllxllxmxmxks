@@ -144,7 +144,7 @@ public final class c implements j {
                         cVar2 = (c) bVar.u;
                         y.j(obj);
                         r4 = aVar5;
-                        str = ((a61.a0) obj).a;
+                        str = ((a61.a0Shadow) obj).a;
                         if (!str.equals("")) {
                             r4.f((Object) null);
                             return a0Var;
@@ -186,7 +186,7 @@ public final class c implements j {
                         aVar2.f((Object) null);
                         return a0Var;
                     }
-                    z zVar = a61.a0.c;
+                    z zVar = a61.a0Shadow.c;
                     q51.d dVar2 = cVar2.a;
                     bVar.u = cVar2;
                     bVar.v = aVar2;
@@ -196,7 +196,7 @@ public final class c implements j {
                     if (obj == aVar3) {
                         return aVar3;
                     }
-                    str = ((a61.a0) obj).a;
+                    str = ((a61.a0Shadow) obj).a;
                     if (!str.equals("")) {
                     }
                 }

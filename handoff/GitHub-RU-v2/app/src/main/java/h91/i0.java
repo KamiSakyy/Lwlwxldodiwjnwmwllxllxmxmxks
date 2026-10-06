@@ -4,7 +4,7 @@ import java.io.Closeable;
 import java.io.Flushable;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public interface i0 extends Closeable, Flushable {
+public interface i0Shadow extends Closeable, Flushable {
     void I0(h hVar, long j);
 
     m0 b();

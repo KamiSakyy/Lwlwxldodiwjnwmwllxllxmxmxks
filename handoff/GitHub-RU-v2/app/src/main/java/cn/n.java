@@ -321,7 +321,7 @@ public final class n implements y71.j {
         int i22;
         d20.q qVar3;
         String str14;
-        rm0.b bVar2;
+        rm0.bShadow bVar2;
         int i23;
         t2 t2Var;
         u1 u1Var;
@@ -1087,8 +1087,8 @@ public final class n implements y71.j {
                 }
                 return a0.a;
             case 20:
-                if (cVar instanceof rm0.b) {
-                    bVar2 = (rm0.b) cVar;
+                if (cVar instanceof rm0.bShadow) {
+                    bVar2 = (rm0.bShadow) cVar;
                     int i59 = bVar2.v;
                     if ((i59 & Integer.MIN_VALUE) != 0) {
                         bVar2.v = i59 - Integer.MIN_VALUE;
@@ -1121,7 +1121,7 @@ public final class n implements y71.j {
                         return a0.a;
                     }
                 }
-                bVar2 = new rm0.b(this, cVar);
+                bVar2 = new rm0.bShadow(this, cVar);
                 Object obj232 = bVar2.u;
                 b71.a aVar222 = b71.a.r;
                 i23 = bVar2.v;

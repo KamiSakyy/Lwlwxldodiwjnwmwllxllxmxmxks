@@ -24,7 +24,7 @@ import q.i0;
 import q.y1;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class r extends q.n {
+public final class r extends qShadow.n {
     public ColorStateList A;
     public int B;
     public ColorStateList C;
@@ -235,16 +235,16 @@ public final class r extends q.n {
     /* JADX WARN: Multi-variable type inference failed */
     public void setSimpleItemSelectedColor(int i) {
         this.B = i;
-        if (getAdapter() instanceof q) {
-            ((q) getAdapter()).a();
+        if (getAdapter() instanceof qShadow) {
+            ((qShadow) getAdapter()).a();
         }
     }
 
     /* JADX WARN: Multi-variable type inference failed */
     public void setSimpleItemSelectedRippleColor(ColorStateList colorStateList) {
         this.C = colorStateList;
-        if (getAdapter() instanceof q) {
-            ((q) getAdapter()).a();
+        if (getAdapter() instanceof qShadow) {
+            ((qShadow) getAdapter()).a();
         }
     }
 
@@ -264,6 +264,6 @@ public final class r extends q.n {
 
     /* JADX WARN: Multi-variable type inference failed */
     public void setSimpleItems(String[] strArr) {
-        setAdapter(new q(this, getContext(), this.y, strArr));
+        setAdapter(new qShadow(this, getContext(), this.y, strArr));
     }
 }

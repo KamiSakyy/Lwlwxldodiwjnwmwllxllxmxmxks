@@ -1,7 +1,7 @@
 package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class fk implements aa.m0 {
+public final class fk implements aaShadow.m0 {
     public final hk a;
 
     public fk(hk hkVar) {

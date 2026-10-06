@@ -1,7 +1,7 @@
 package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ng0 implements aa.m0 {
+public final class ng0 implements aaShadow.m0 {
     public final pg0 a;
 
     public ng0(pg0 pg0Var) {

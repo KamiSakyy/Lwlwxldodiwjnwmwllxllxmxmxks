@@ -3,7 +3,7 @@ package p20;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class ea implements aa.a {
+public abstract class eaShadow implements aa.a {
     public static final List a = x61.l.r(new String[]{"__typename", "id"});
 
     public static u10.bf c(ea.e eVar, aa.w wVar) {

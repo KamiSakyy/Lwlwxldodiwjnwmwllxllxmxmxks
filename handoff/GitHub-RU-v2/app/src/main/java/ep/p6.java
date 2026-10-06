@@ -10,9 +10,9 @@ public final class p6 implements aa.a {
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jo.aa aaVar = null;
+        jo.aaShadow aaVar = null;
         while (eVar.r0(b) == 0) {
-            aaVar = (jo.aa) aa.c.b(aa.c.c(q6.a, false)).a(eVar, wVar);
+            aaVar = (jo.aaShadow) aa.c.b(aa.c.c(q6.a, false)).a(eVar, wVar);
         }
         return new jo.z9(aaVar);
     }

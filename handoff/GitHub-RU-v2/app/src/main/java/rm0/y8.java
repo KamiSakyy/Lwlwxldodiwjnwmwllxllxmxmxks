@@ -60,11 +60,11 @@ import u10.zu;
 public final class y8 implements z01.g1, yb0, y90 {
     public final /* synthetic */ int r;
     public final com.github.service.wrapper.j s;
-    public final com.github.service.wrapper.b t;
+    public final com.github.service.wrapper.bShadow t;
     public final v71.v u;
     public final s01.p v;
 
-    public y8(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, int i) {
+    public y8(com.github.service.wrapper.j jVar, com.github.service.wrapper.bShadow bVar, v71.v vVar, int i) {
         this.r = i;
         k71.k.g(jVar, "client");
         k71.k.g(bVar, "cachedClient");
@@ -89,7 +89,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                 this.s = jVar;
                 this.t = bVar;
                 this.u = vVar;
-                jy.b bVar2 = new jy.b(29);
+                jy.bShadow bVar2 = new jy.b(29);
                 lb0.a aVar6 = new lb0.a(1);
                 s01.o oVar2 = s01.o.r;
                 lb0.a aVar7 = new lb0.a(2);
@@ -125,7 +125,7 @@ public final class y8 implements z01.g1, yb0, y90 {
         r8 r8Var;
         int i;
         oj0.a4 a4Var;
-        com.github.service.wrapper.b bVar = y8Var.t;
+        com.github.service.wrapper.bShadow bVar = y8Var.t;
         if (cVar instanceof r8) {
             r8Var = (r8) cVar;
             int i2 = r8Var.w;
@@ -193,7 +193,7 @@ public final class y8 implements z01.g1, yb0, y90 {
         vb0.l6 l6Var;
         int i;
         w80.v3 v3Var;
-        com.github.service.wrapper.b bVar = y8Var.t;
+        com.github.service.wrapper.bShadow bVar = y8Var.t;
         if (cVar instanceof vb0.l6) {
             l6Var = (vb0.l6) cVar;
             int i2 = l6Var.w;
@@ -485,7 +485,7 @@ public final class y8 implements z01.g1, yb0, y90 {
             case 0:
                 k71.k.g(str, "owner");
                 k71.k.g(str2, "name");
-                aa1.b bVar = aa.t0.d;
+                aa1.bShadow bVar = aa.t0.d;
                 return y71.n1.y(in.r.l(com.github.service.wrapper.a.o(this.t, new vt(str3 == null ? bVar : new aa.u0(str3), bVar, str, str2), null, false, null, null, 62)), this.u);
             default:
                 k71.k.g(str, "owner");
@@ -602,16 +602,16 @@ public final class y8 implements z01.g1, yb0, y90 {
     public final Object a(String str, v01.d dVar, com.github.rudroid.common.i0 i0Var) {
         switch (this.r) {
             case 0:
-                aa1.b bVar = aa.t0.d;
-                aa1.b u0Var = str == null ? bVar : new aa.u0(str);
+                aa1.bShadow bVar = aa.t0.d;
+                aa1.bShadow u0Var = str == null ? bVar : new aa.u0(str);
                 rr M = t.a0.M(dVar);
                 if (M != null) {
                     bVar = new aa.u0(M);
                 }
                 return y71.n1.y(new j8(new y00.l(com.github.service.wrapper.a.o(this.s, new g30(u0Var, bVar, 8), null, false, null, null, 62), 10), i0Var, 0), this.u);
             default:
-                aa1.b bVar2 = aa.t0.d;
-                aa1.b u0Var2 = str == null ? bVar2 : new aa.u0(str);
+                aa1.bShadow bVar2 = aa.t0.d;
+                aa1.bShadow u0Var2 = str == null ? bVar2 : new aa.u0(str);
                 nq f0 = m71.a.f0(dVar);
                 if (f0 != null) {
                     bVar2 = new aa.u0(f0);
@@ -663,7 +663,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                         Object obj = v7Var.z;
                         b71.a aVar = b71.a.r;
                         i = v7Var.B;
-                        aa1.b bVar = aa.t0.d;
+                        aa1.bShadow bVar = aa.t0.d;
                         if (i != 0) {
                             sy.y.j(obj);
                             vtVar = new vt(str8 == null ? bVar : new aa.u0(str8), bVar, str6, str7);
@@ -696,7 +696,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                         }
                         nt ntVar = (nt) f;
                         qt qtVar = (ntVar != null || (utVar = ntVar.a) == null) ? null : utVar.b;
-                        aa1.b u0Var = str8 != null ? bVar : new aa.u0(str8);
+                        aa1.bShadow u0Var = str8 != null ? bVar : new aa.u0(str8);
                         if (str5 != null) {
                             bVar = new aa.u0(str5);
                         }
@@ -707,7 +707,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                 Object obj2 = v7Var.z;
                 b71.a aVar2 = b71.a.r;
                 i = v7Var.B;
-                aa1.b bVar2 = aa.t0.d;
+                aa1.bShadow bVar2 = aa.t0.d;
                 if (i != 0) {
                 }
                 nt ntVar2 = (nt) f;
@@ -834,7 +834,7 @@ public final class y8 implements z01.g1, yb0, y90 {
     public final Object m(String str, String str2, String str3) {
         switch (this.r) {
             case 0:
-                aa1.b bVar = aa.t0.d;
+                aa1.bShadow bVar = aa.t0.d;
                 return y71.n1.y(new j3(com.github.service.wrapper.b.a(this.t, new vt(str3 == null ? bVar : new aa.u0(str3), bVar, str, str2), ga.h.t, false, null, 60), 19), this.u);
             default:
                 return y41.t1.S("fetchMergeQueueEntries", "3.10");
@@ -1024,7 +1024,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                             sy.y.j(obj);
                         }
                         q3Var = (oj0.q3) obj;
-                        com.github.service.wrapper.b bVar = this.t;
+                        com.github.service.wrapper.bShadow bVar = this.t;
                         if (q3Var == null) {
                             kc0.v1 v1Var = new kc0.v1(str);
                             String str2 = q3Var.a;
@@ -1042,7 +1042,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                 if (i != 0) {
                 }
                 q3Var = (oj0.q3) obj3;
-                com.github.service.wrapper.b bVar2 = this.t;
+                com.github.service.wrapper.bShadow bVar2 = this.t;
                 if (q3Var == null) {
                 }
                 return y71.n1.y(new aq.c(new y71.y(in.r.h(d), new m7(this, null, 0), 6), 13), this.u);
@@ -1071,7 +1071,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                             sy.y.j(obj4);
                         }
                         m3Var = (w80.m3) obj4;
-                        com.github.service.wrapper.b bVar3 = this.t;
+                        com.github.service.wrapper.bShadow bVar3 = this.t;
                         if (m3Var == null) {
                             u10.v1 v1Var2 = new u10.v1(str);
                             String str3 = m3Var.a;
@@ -1089,7 +1089,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                 if (i2 != 0) {
                 }
                 m3Var = (w80.m3) obj42;
-                com.github.service.wrapper.b bVar32 = this.t;
+                com.github.service.wrapper.bShadow bVar32 = this.t;
                 if (m3Var == null) {
                 }
                 return y71.n1.y(new tw0.i(new y71.y(in.r.h(d2), new m7(this, null, 4), 6), 6), this.u);
@@ -1143,7 +1143,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                             sy.y.j(obj);
                         }
                         q3Var = (oj0.q3) obj;
-                        com.github.service.wrapper.b bVar = this.t;
+                        com.github.service.wrapper.bShadow bVar = this.t;
                         if (q3Var == null) {
                             yr yrVar = new yr(str);
                             String str2 = q3Var.a;
@@ -1161,7 +1161,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                 if (i != 0) {
                 }
                 q3Var = (oj0.q3) obj3;
-                com.github.service.wrapper.b bVar2 = this.t;
+                com.github.service.wrapper.bShadow bVar2 = this.t;
                 if (q3Var == null) {
                 }
                 return y71.n1.y(new aq.c(new y71.y(in.r.h(d), new v4(this, str, null, 2), 6), 14), this.u);
@@ -1190,7 +1190,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                             sy.y.j(obj4);
                         }
                         m3Var = (w80.m3) obj4;
-                        com.github.service.wrapper.b bVar3 = this.t;
+                        com.github.service.wrapper.bShadow bVar3 = this.t;
                         if (m3Var == null) {
                             uq uqVar = new uq(str);
                             String str3 = m3Var.a;
@@ -1208,7 +1208,7 @@ public final class y8 implements z01.g1, yb0, y90 {
                 if (i2 != 0) {
                 }
                 m3Var = (w80.m3) obj42;
-                com.github.service.wrapper.b bVar32 = this.t;
+                com.github.service.wrapper.bShadow bVar32 = this.t;
                 if (m3Var == null) {
                 }
                 return y71.n1.y(new tw0.i(new y71.y(in.r.h(d2), new v4(this, str, null, 13), 6), 7), this.u);

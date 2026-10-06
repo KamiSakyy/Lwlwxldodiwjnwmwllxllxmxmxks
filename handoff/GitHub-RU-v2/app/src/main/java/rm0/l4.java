@@ -53,7 +53,7 @@ public final class l4 extends c71.j implements j71.e {
         k71.w wVar4;
         switch (this.v) {
             case 0:
-                com.github.service.wrapper.b bVar = this.A.s;
+                com.github.service.wrapper.bShadow bVar = this.A.s;
                 b71.a aVar = b71.a.r;
                 int i = this.y;
                 String str = this.B;
@@ -91,7 +91,7 @@ public final class l4 extends c71.j implements j71.e {
                     ah0.g gVar2 = new ah0.g();
                     ah0.c cVar = eVar5.c;
                     ah0.c a = cVar != null ? ah0.c.a(cVar, false) : null;
-                    ah0.b bVar2 = eVar5.d;
+                    ah0.bShadow bVar2 = eVar5.d;
                     ah0.e a2 = ah0.e.a(eVar5, true, a, bVar2 != null ? ah0.b.a(bVar2, false) : null, aVar2 != null ? ah0.a.a(aVar2, z, z) : null);
                     this.w = eVar5;
                     this.x = wVar;
@@ -107,7 +107,7 @@ public final class l4 extends c71.j implements j71.e {
                 wVar.r = eVar;
                 return w61.a0.a;
             default:
-                com.github.service.wrapper.b bVar3 = this.A.s;
+                com.github.service.wrapper.bShadow bVar3 = this.A.s;
                 b71.a aVar3 = b71.a.r;
                 int i2 = this.y;
                 String str2 = this.B;
@@ -143,8 +143,8 @@ public final class l4 extends c71.j implements j71.e {
                     ah0.g gVar4 = new ah0.g();
                     ah0.c cVar2 = eVar6.c;
                     ah0.c a3 = cVar2 != null ? ah0.c.a(cVar2, true) : null;
-                    ah0.b bVar4 = eVar6.d;
-                    ah0.b a4 = bVar4 != null ? ah0.b.a(bVar4, true) : null;
+                    ah0.bShadow bVar4 = eVar6.d;
+                    ah0.bShadow a4 = bVar4 != null ? ah0.b.a(bVar4, true) : null;
                     ah0.a aVar4 = eVar6.e;
                     ah0.e a5 = ah0.e.a(eVar6, false, a3, a4, aVar4 != null ? ah0.a.a(aVar4, true, true) : null);
                     this.w = eVar6;

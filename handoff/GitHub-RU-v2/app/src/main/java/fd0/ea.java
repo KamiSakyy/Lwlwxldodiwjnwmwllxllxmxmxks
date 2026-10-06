@@ -3,8 +3,8 @@ package fd0;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class ea implements aa.a {
-    public static final ea a = new ea();
+public final class eaShadow implements aa.a {
+    public static final eaShadow a = new eaShadow();
     public static final List b = sy.d0.o(new String[]{"hasNextPage", "endCursor"});
 
     public final Object a(ea.e eVar, aa.w wVar) {

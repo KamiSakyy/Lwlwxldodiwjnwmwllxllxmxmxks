@@ -12,7 +12,7 @@ import com.google.android.gms.internal.measurement.b4;
 import com.google.android.gms.internal.measurement.i4;
 import com.google.android.gms.internal.measurement.z3;
 import gi.c;
-import h11.k;
+import h11.kShadow;
 import m61.f;
 import m61.j;
 import o61.b;
@@ -73,7 +73,7 @@ public abstract class Hilt_TestingSettingsFragment extends a0 implements b {
         }
         this.x0 = true;
         TestingSettingsFragment testingSettingsFragment = (TestingSettingsFragment) this;
-        e eVar = (k) w();
+        e eVar = (kShadow) w();
         testingSettingsFragment.y0 = (c) eVar.c.e.get();
         r rVar = eVar.a;
         testingSettingsFragment.z0 = (m) rVar.p.get();

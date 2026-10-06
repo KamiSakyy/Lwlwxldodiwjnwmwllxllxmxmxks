@@ -137,7 +137,7 @@ public final class h implements j, i, Cloneable, ByteChannel {
         return W(this.s);
     }
 
-    @Override // h91.i0
+    @Override // h91.i0Shadow
     public final void I0(h hVar, long j) {
         f0 b;
         k71.k.g(hVar, "source");
@@ -810,7 +810,7 @@ public final class h implements j, i, Cloneable, ByteChannel {
         return hVar;
     }
 
-    @Override // java.io.Closeable, java.lang.AutoCloseable, java.nio.channels.Channel, h91.i0
+    @Override // java.io.Closeable, java.lang.AutoCloseable, java.nio.channels.Channel, h91.i0Shadow
     public final void close() {
     }
 
@@ -875,7 +875,7 @@ public final class h implements j, i, Cloneable, ByteChannel {
         return true;
     }
 
-    @Override // h91.i, h91.i0, java.io.Flushable
+    @Override // h91.i, h91.i0Shadow, java.io.Flushable
     public final void flush() {
     }
 

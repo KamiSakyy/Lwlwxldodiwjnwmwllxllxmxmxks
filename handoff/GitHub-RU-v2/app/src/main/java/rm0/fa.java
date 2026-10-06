@@ -19,10 +19,10 @@ import u10.y90;
 public final class fa implements z01.n1, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
     public final com.github.service.wrapper.j s;
-    public final com.github.service.wrapper.b t;
+    public final com.github.service.wrapper.bShadow t;
     public final v71.v u;
 
-    public fa(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, int i) {
+    public fa(com.github.service.wrapper.j jVar, com.github.service.wrapper.bShadow bVar, v71.v vVar, int i) {
         this.r = i;
         switch (i) {
             case 1:

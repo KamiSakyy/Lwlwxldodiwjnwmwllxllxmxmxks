@@ -3,7 +3,7 @@ package jo;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class v6 implements aa.w0 {
+public final class v6 implements aaShadow.w0 {
     public static final j6 Companion = new j6();
     public final String r;
     public final aa.u0 s;

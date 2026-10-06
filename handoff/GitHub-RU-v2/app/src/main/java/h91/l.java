@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.zip.Deflater;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class l implements i0 {
+public final class l implements i0Shadow {
     public final /* synthetic */ int r = 0;
     public boolean s;
     public final Object t;
@@ -15,7 +15,7 @@ public final class l implements i0 {
         this.u = deflater;
     }
 
-    @Override // h91.i0
+    @Override // h91.i0Shadow
     public final void I0(h hVar, long j) {
         switch (this.r) {
             case 0:
@@ -50,7 +50,7 @@ public final class l implements i0 {
         }
     }
 
-    @Override // h91.i0
+    @Override // h91.i0Shadow
     public final m0 b() {
         switch (this.r) {
             case 0:
@@ -60,7 +60,7 @@ public final class l implements i0 {
         }
     }
 
-    @Override // h91.i0, java.io.Closeable, java.lang.AutoCloseable, java.nio.channels.Channel
+    @Override // h91.i0Shadow, java.io.Closeable, java.lang.AutoCloseable, java.nio.channels.Channel
     public final void close() {
         switch (this.r) {
             case 0:
@@ -144,7 +144,7 @@ public final class l implements i0 {
         }
     }
 
-    @Override // h91.i0, java.io.Flushable
+    @Override // h91.i0Shadow, java.io.Flushable
     public final void flush() {
         switch (this.r) {
             case 0:

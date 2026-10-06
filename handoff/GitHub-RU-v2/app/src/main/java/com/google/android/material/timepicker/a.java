@@ -3,7 +3,7 @@ package com.google.android.material.timepicker;
 import android.text.Editable;
 import android.text.TextUtils;
 import o31.n;
-import q.p;
+import q.pShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class a extends n {
@@ -22,7 +22,7 @@ public final class a extends n {
             return;
         }
         CharSequence a = ChipTextInputComboView.a(chipTextInputComboView, editable);
-        p pVar = chipTextInputComboView.r;
+        pShadow pVar = chipTextInputComboView.r;
         if (TextUtils.isEmpty(a)) {
             a = ChipTextInputComboView.a(chipTextInputComboView, "00");
         }

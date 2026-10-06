@@ -1,7 +1,7 @@
 package da1;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-final class b1 extends l3 {
+final class b1Shadow extends l3 {
     public b1() {
         super("RawtextEndTagName", 15);
     }

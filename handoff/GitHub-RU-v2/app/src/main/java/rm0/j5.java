@@ -158,15 +158,15 @@ public final class j5 implements z01.r0, yb0, y90 {
     public final Object j(String str, String str2, String str3, String str4) {
         switch (this.r) {
             case 0:
-                aa1.b bVar = aa.t0.d;
-                aa1.b u0Var = str3 == null ? bVar : new aa.u0(str3);
+                aa1.bShadow bVar = aa.t0.d;
+                aa1.bShadow u0Var = str3 == null ? bVar : new aa.u0(str3);
                 if (str4 != null) {
                     bVar = new aa.u0(str4);
                 }
                 return y71.n1.y(new h5(new y00.l(com.github.service.wrapper.a.o(this.s, new cy(u0Var, bVar, str, str2), null, false, null, null, 62), 10), str, str2, 0), this.t);
             default:
-                aa1.b bVar2 = aa.t0.d;
-                aa1.b u0Var2 = str3 == null ? bVar2 : new aa.u0(str3);
+                aa1.bShadow bVar2 = aa.t0.d;
+                aa1.bShadow u0Var2 = str3 == null ? bVar2 : new aa.u0(str3);
                 if (str4 != null) {
                     bVar2 = new aa.u0(str4);
                 }
@@ -234,15 +234,15 @@ public final class j5 implements z01.r0, yb0, y90 {
     public final Object o(String str, String str2, String str3, String str4) {
         switch (this.r) {
             case 0:
-                aa1.b bVar = aa.t0.d;
-                aa1.b u0Var = str3 == null ? bVar : new aa.u0(str3);
+                aa1.bShadow bVar = aa.t0.d;
+                aa1.bShadow u0Var = str3 == null ? bVar : new aa.u0(str3);
                 if (str4 != null) {
                     bVar = new aa.u0(str4);
                 }
                 return y71.n1.y(new h5(new y00.l(com.github.service.wrapper.a.o(this.s, new gy(u0Var, bVar, str, str2), null, false, null, null, 62), 10), str, str2, 1), this.t);
             default:
-                aa1.b bVar2 = aa.t0.d;
-                aa1.b u0Var2 = str3 == null ? bVar2 : new aa.u0(str3);
+                aa1.bShadow bVar2 = aa.t0.d;
+                aa1.bShadow u0Var2 = str3 == null ? bVar2 : new aa.u0(str3);
                 if (str4 != null) {
                     bVar2 = new aa.u0(str4);
                 }

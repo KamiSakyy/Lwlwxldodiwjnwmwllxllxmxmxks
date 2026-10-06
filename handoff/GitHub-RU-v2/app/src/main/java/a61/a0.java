@@ -1,7 +1,7 @@
 package a61;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class a0 {
+public final class a0Shadow {
     public static final z c = new z();
     public final String a;
     public final String b;

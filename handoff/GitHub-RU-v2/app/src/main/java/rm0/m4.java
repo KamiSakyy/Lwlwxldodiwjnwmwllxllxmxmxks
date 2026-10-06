@@ -56,7 +56,7 @@ public final class m4 extends c71.j implements j71.f {
                 if (eVar == null) {
                     throw th;
                 }
-                com.github.service.wrapper.b bVar = this.z.s;
+                com.github.service.wrapper.bShadow bVar = this.z.s;
                 ah0.g gVar = new ah0.g();
                 this.x = th;
                 this.w = 1;
@@ -80,7 +80,7 @@ public final class m4 extends c71.j implements j71.f {
                 if (eVar2 == null) {
                     throw th2;
                 }
-                com.github.service.wrapper.b bVar2 = this.z.s;
+                com.github.service.wrapper.bShadow bVar2 = this.z.s;
                 ah0.g gVar2 = new ah0.g();
                 this.x = th2;
                 this.w = 1;

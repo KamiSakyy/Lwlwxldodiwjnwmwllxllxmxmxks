@@ -3,7 +3,7 @@ package jo;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class re implements aa.v0 {
+public final class re implements aaShadow.v0 {
     public final List a;
     public final String b;
     public final String c;

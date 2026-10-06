@@ -83,7 +83,7 @@ public final /* synthetic */ class ua implements j71.c {
                 while (i < size) {
                     Object obj3 = S.get(i);
                     i++;
-                    jo.x3 x3Var = (jo.x3) obj3;
+                    jo.x3Shadow x3Var = (jo.x3) obj3;
                     arrayList.add(new yz0.h4(x3Var.b, x3Var.c));
                 }
                 jo.y3 y3Var = z3Var2 != null ? z3Var2.a : null;

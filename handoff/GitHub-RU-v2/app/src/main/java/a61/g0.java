@@ -148,7 +148,7 @@ public final class g0 extends c71.j implements j71.e {
                 return ((g0) r((a71.c) obj2, (v71.z) obj)).v(w61.a0.a);
             case 27:
                 g0 g0Var = (g0) r((a71.c) obj2, (h2) obj);
-                w61.a0 a0Var = w61.a0.a;
+                w61.a0Shadow a0Var = w61.a0.a;
                 g0Var.v(a0Var);
                 return a0Var;
             case 28:

@@ -10,9 +10,9 @@ public final class r6 implements aa.a {
     public final Object a(ea.e eVar, aa.w wVar) {
         k71.k.g(eVar, "reader");
         k71.k.g(wVar, "customScalarAdapters");
-        jo.ea eaVar = null;
+        jo.eaShadow eaVar = null;
         while (eVar.r0(b) == 0) {
-            eaVar = (jo.ea) aa.c.b(aa.c.c(s6.a, false)).a(eVar, wVar);
+            eaVar = (jo.eaShadow) aa.c.b(aa.c.c(s6.a, false)).a(eVar, wVar);
         }
         return new jo.da(eaVar);
     }

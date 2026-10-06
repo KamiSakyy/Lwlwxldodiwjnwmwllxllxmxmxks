@@ -3,7 +3,7 @@ package jo;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class k5 implements aa.n0 {
+public final class k5 implements aaShadow.n0 {
     public static final g5 Companion = new g5();
     public final String r;
     public final aa1.b s;
@@ -64,12 +64,12 @@ public final class k5 implements aa.n0 {
         fVar.z0("id");
         aa.c.a.b(fVar, wVar, this.r);
         aa.u0 u0Var = this.s;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("stateReason");
             aa.c.d(aa.c.b(n10.b.d)).d(fVar, wVar, u0Var);
         }
         aa.u0 u0Var2 = this.t;
-        if (u0Var2 instanceof aa.u0) {
+        if (u0Var2 instanceof aaShadow.u0) {
             fVar.z0("duplicateIssueId");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var2);
         }

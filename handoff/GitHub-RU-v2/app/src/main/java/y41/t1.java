@@ -95,7 +95,7 @@ public abstract class t1 {
         if (g == null) {
             return false;
         }
-        if (!(g instanceof x.i0)) {
+        if (!(g instanceof xShadow.i0)) {
             if (!g.equals(obj2)) {
                 return false;
             }
@@ -127,7 +127,7 @@ public abstract class t1 {
                         int i4 = (i << 3) + i3;
                         Object obj2 = h0Var.b[i4];
                         Object obj3 = h0Var.c[i4];
-                        if (obj3 instanceof x.i0) {
+                        if (obj3 instanceof xShadow.i0) {
                             x.i0 i0Var = (x.i0) obj3;
                             i0Var.l(obj);
                             z = i0Var.g();
@@ -505,7 +505,7 @@ public abstract class t1 {
         boolean z = f < 0;
         Object obj3 = z ? null : h0Var.c[f];
         if (obj3 != null) {
-            if (obj3 instanceof x.i0) {
+            if (obj3 instanceof xShadow.i0) {
                 ((x.i0) obj3).a(obj2);
             } else if (obj3 != obj2) {
                 x.i0 i0Var = new x.i0();

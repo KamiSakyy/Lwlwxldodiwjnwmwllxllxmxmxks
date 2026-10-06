@@ -2,7 +2,7 @@ package w81;
 
 import h91.d0;
 import h91.h;
-import h91.i0;
+import h91.i0Shadow;
 import h91.m0;
 import h91.r;
 
@@ -17,7 +17,7 @@ public final class b implements i0 {
         this.r = new r(((d0) fVar.c.u).r.b());
     }
 
-    @Override // h91.i0
+    @Override // h91.i0Shadow
     public final void I0(h hVar, long j) {
         if (this.s) {
             throw new IllegalStateException("closed");
@@ -36,12 +36,12 @@ public final class b implements i0 {
         d0Var.d0("\r\n");
     }
 
-    @Override // h91.i0
+    @Override // h91.i0Shadow
     public final m0 b() {
         return this.r;
     }
 
-    @Override // h91.i0, java.io.Closeable, java.lang.AutoCloseable, java.nio.channels.Channel
+    @Override // h91.i0Shadow, java.io.Closeable, java.lang.AutoCloseable, java.nio.channels.Channel
     public final synchronized void close() {
         if (this.s) {
             return;
@@ -56,7 +56,7 @@ public final class b implements i0 {
         this.t.d = 3;
     }
 
-    @Override // h91.i0, java.io.Flushable
+    @Override // h91.i0Shadow, java.io.Flushable
     public final synchronized void flush() {
         if (this.s) {
             return;

@@ -18,15 +18,15 @@ import kc0.yb0;
 public final class b2 implements z01.n, yb0 {
     public static final y0 Companion = new y0();
     public final com.github.service.wrapper.j r;
-    public final com.github.service.wrapper.b s;
+    public final com.github.service.wrapper.bShadow s;
     public final v71.v t;
-    public final a00.b u;
-    public final a00.b v;
-    public final a00.b w;
+    public final a00.bShadow u;
+    public final a00.bShadow v;
+    public final a00.bShadow w;
     public final sm0.r x;
-    public final a00.b y;
+    public final a00.bShadow y;
 
-    public b2(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, String str) {
+    public b2(com.github.service.wrapper.j jVar, com.github.service.wrapper.bShadow bVar, v71.v vVar, String str) {
         k71.k.g(jVar, "client");
         k71.k.g(bVar, "cachedClient");
         k71.k.g(vVar, "ioDispatcher");
@@ -37,11 +37,11 @@ public final class b2 implements z01.n, yb0 {
         id.a aVar = new id.a(1);
         he.c cVar = new he.c(21);
         s01.o oVar = s01.o.s;
-        a00.b bVar2 = new a00.b(jVar, bVar, vVar, aVar, cVar, oVar, new he.c(22), new id.a(2), new id.a(3), new id.a(4), new id.a(5), null, null, 126976);
+        a00.bShadow bVar2 = new a00.b(jVar, bVar, vVar, aVar, cVar, oVar, new he.c(22), new id.a(2), new id.a(3), new id.a(4), new id.a(5), null, null, 126976);
         this.u = bVar2;
-        a00.b bVar3 = new a00.b(jVar, bVar, vVar, new id.a(6), new he.c(23), oVar, new he.c(24), new id.a(7), new id.a(8), new id.a(9), new id.a(10), null, null, 126976);
+        a00.bShadow bVar3 = new a00.b(jVar, bVar, vVar, new id.a(6), new he.c(23), oVar, new he.c(24), new id.a(7), new id.a(8), new id.a(9), new id.a(10), null, null, 126976);
         this.v = bVar3;
-        a00.b bVar4 = new a00.b(jVar, bVar, vVar, new id.a(11), new he.c(25), oVar, new he.c(26), new id.a(12), new id.a(13), new id.a(14), new id.a(15), null, null, 126976);
+        a00.bShadow bVar4 = new a00.b(jVar, bVar, vVar, new id.a(11), new he.c(25), oVar, new he.c(26), new id.a(12), new id.a(13), new id.a(14), new id.a(15), null, null, 126976);
         this.w = bVar4;
         this.x = new sm0.r(bVar, str, bVar2, bVar3, bVar4);
         this.y = new a00.b(jVar, bVar, vVar, new id.a(16), new he.c(27), s01.o.r, new he.c(28), new id.a(17), new id.a(18), new id.a(19), new id.a(20), new he.c(29), null, 120832);

@@ -3,7 +3,7 @@ package jo;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class a1 implements aa.n0 {
+public final class a1 implements aaShadow.n0 {
     public static final v0 Companion = new v0();
     public final aa1.b A;
     public final aa1.b B;
@@ -91,17 +91,17 @@ public final class a1 implements aa.n0 {
         f1.e.A(i, aVar2, fVar, wVar, "path");
         bVar.b(fVar, wVar, this.u);
         aa.u0 u0Var = this.v;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("endSide");
             aa.c.d(aa.c.b(aVar)).d(fVar, wVar, u0Var);
         }
         aa.u0 u0Var2 = this.w;
-        if (u0Var2 instanceof aa.u0) {
+        if (u0Var2 instanceof aaShadow.u0) {
             fVar.z0("startLine");
             aa.c.d(aa.c.b(aVar2)).d(fVar, wVar, u0Var2);
         }
         aa.u0 u0Var3 = this.x;
-        if (u0Var3 instanceof aa.u0) {
+        if (u0Var3 instanceof aaShadow.u0) {
             fVar.z0("startSide");
             aa.c.d(aa.c.b(aVar)).d(fVar, wVar, u0Var3);
         }
@@ -110,17 +110,17 @@ public final class a1 implements aa.n0 {
         k71.k.g(xzVar, "value");
         fVar.I(xzVar.r);
         aa.u0 u0Var4 = this.z;
-        if (u0Var4 instanceof aa.u0) {
+        if (u0Var4 instanceof aaShadow.u0) {
             fVar.z0("linePositioning");
             aa.c.d(aa.c.b(aa.c.c(n10.a.f, false))).d(fVar, wVar, u0Var4);
         }
         aa.u0 u0Var5 = this.A;
-        if (u0Var5 instanceof aa.u0) {
+        if (u0Var5 instanceof aaShadow.u0) {
             fVar.z0("multilinePositioning");
             aa.c.d(aa.c.b(aa.c.c(n10.a.g, false))).d(fVar, wVar, u0Var5);
         }
         aa.u0 u0Var6 = this.B;
-        if (u0Var6 instanceof aa.u0) {
+        if (u0Var6 instanceof aaShadow.u0) {
             fVar.z0("filePositioning");
             aa.c.d(aa.c.b(aa.c.c(n10.a.e, false))).d(fVar, wVar, u0Var6);
         }

@@ -4,11 +4,11 @@ import java.nio.ByteBuffer;
 
 /* loaded from: /home/user/work/p/classes5.dex */
 public final class d0 implements i {
-    public final i0 r;
+    public final i0Shadow r;
     public final h s;
     public boolean t;
 
-    public d0(i0 i0Var) {
+    public d0(i0Shadow i0Var) {
         k71.k.g(i0Var, "sink");
         this.r = i0Var;
         this.s = new h();
@@ -28,7 +28,7 @@ public final class d0 implements i {
         }
     }
 
-    @Override // h91.i0
+    @Override // h91.i0Shadow
     public final void I0(h hVar, long j) {
         k71.k.g(hVar, "source");
         if (this.t) {
@@ -53,14 +53,14 @@ public final class d0 implements i {
         return this;
     }
 
-    @Override // h91.i0
+    @Override // h91.i0Shadow
     public final m0 b() {
         return this.r.b();
     }
 
-    @Override // h91.i0, java.io.Closeable, java.lang.AutoCloseable, java.nio.channels.Channel
+    @Override // h91.i0Shadow, java.io.Closeable, java.lang.AutoCloseable, java.nio.channels.Channel
     public final void close() {
-        i0 i0Var = this.r;
+        i0Shadow i0Var = this.r;
         if (this.t) {
             return;
         }
@@ -110,14 +110,14 @@ public final class d0 implements i {
         return this;
     }
 
-    @Override // h91.i, h91.i0, java.io.Flushable
+    @Override // h91.i, h91.i0Shadow, java.io.Flushable
     public final void flush() {
         if (this.t) {
             throw new IllegalStateException("closed");
         }
         h hVar = this.s;
         long j = hVar.s;
-        i0 i0Var = this.r;
+        i0Shadow i0Var = this.r;
         if (j > 0) {
             i0Var.I0(hVar, j);
         }

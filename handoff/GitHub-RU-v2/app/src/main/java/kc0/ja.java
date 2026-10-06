@@ -4,7 +4,7 @@ import java.util.List;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class ja implements aa.w0 {
-    public static final ea Companion = new ea();
+    public static final eaShadow Companion = new eaShadow();
     public final String r;
     public final String s;
     public final int t;

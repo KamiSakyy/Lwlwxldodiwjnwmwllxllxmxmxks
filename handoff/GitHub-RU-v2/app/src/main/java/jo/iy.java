@@ -1,7 +1,7 @@
 package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class iy implements aa.v0 {
+public final class iy implements aaShadow.v0 {
     public final ky a;
     public final String b;
     public final String c;

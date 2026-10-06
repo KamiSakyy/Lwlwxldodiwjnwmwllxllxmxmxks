@@ -15,7 +15,7 @@ public final class y9 implements aa.a {
         while (true) {
             int r0 = eVar.r0(b);
             if (r0 == 0) {
-                bfVar = (kc0.bf) aa.c.c(ea.a, false).a(eVar, wVar);
+                bfVar = (kc0.bf) aa.c.c(eaShadow.a, false).a(eVar, wVar);
             } else {
                 if (r0 != 1) {
                     break;
@@ -36,7 +36,7 @@ public final class y9 implements aa.a {
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(veVar, "value");
         fVar.z0("pageInfo");
-        aa.c.c(ea.a, false).b(fVar, wVar, veVar.a);
+        aa.c.c(eaShadow.a, false).b(fVar, wVar, veVar.a);
         fVar.z0("nodes");
         aa.c.b(aa.c.a(aa.c.b(aa.c.c(z9.a, true)))).b(fVar, wVar, veVar.b);
     }

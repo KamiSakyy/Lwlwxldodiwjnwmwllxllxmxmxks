@@ -3,7 +3,7 @@ package jo;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class gr implements aa.n0 {
+public final class gr implements aaShadow.n0 {
     public static final dr Companion = new dr();
     public final String r;
     public final m10.c8 s;
@@ -70,7 +70,7 @@ public final class gr implements aa.n0 {
         fVar.z0("feedbackChoice");
         aa.c.d(aa.c.b(aa.c.a(n10.a.n))).d(fVar, wVar, this.t);
         aa.u0 u0Var = this.u;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("textResponse");
             aa.c.d(aa.c.i).d(fVar, wVar, u0Var);
         }

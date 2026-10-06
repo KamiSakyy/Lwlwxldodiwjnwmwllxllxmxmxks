@@ -10,7 +10,7 @@ public final class l9 implements z01.i1, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
     public final s01.p s;
 
-    public l9(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, int i) {
+    public l9(com.github.service.wrapper.j jVar, com.github.service.wrapper.bShadow bVar, v71.v vVar, int i) {
         this.r = i;
         switch (i) {
             case 1:

@@ -41,7 +41,7 @@ import com.google.android.gms.internal.measurement.r9;
 import com.google.android.gms.internal.measurement.t5;
 import com.google.android.gms.internal.measurement.w3;
 import d1.c2;
-import h91.i0;
+import h91.i0Shadow;
 import h91.j0;
 import java.io.InterruptedIOException;
 import java.lang.ref.WeakReference;
@@ -1065,7 +1065,7 @@ public final class r implements j0, o.a {
         n5.h hVar;
         int i;
         n5.c cVar2;
-        n5.x xVar = (n5.x) this.v;
+        n5.xShadow xVar = (n5.x) this.v;
         if (cVar instanceof n5.h) {
             hVar = (n5.h) cVar;
             int i2 = hVar.w;
@@ -1224,7 +1224,7 @@ public final class r implements j0, o.a {
         this.t = tVar;
     }
 
-    public r(v71.z zVar, h1.r rVar, n0.x xVar, gi.b bVar) {
+    public r(v71.z zVar, h1.r rVar, n0.xShadow xVar, gi.b bVar) {
         this.r = 18;
         k71.k.g(zVar, "scope");
         this.s = zVar;
@@ -1677,7 +1677,7 @@ public final class r implements j0, o.a {
         this.v = identityCredential;
     }
 
-    public r(n5.x xVar, List list) {
+    public r(n5.xShadow xVar, List list) {
         this.r = 17;
         this.v = xVar;
         this.s = e81.d.a();

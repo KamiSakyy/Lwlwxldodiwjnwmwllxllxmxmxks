@@ -2,7 +2,7 @@ package i91;
 
 import h91.f0;
 import h91.g0;
-import h91.i0;
+import h91.i0Shadow;
 import h91.m0;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -23,7 +23,7 @@ public final class d implements i0 {
         this.s = new i(socket);
     }
 
-    @Override // h91.i0
+    @Override // h91.i0Shadow
     public final void I0(h91.h hVar, long j) {
         h91.b.e(hVar.s, 0L, j);
         while (j > 0) {
@@ -61,12 +61,12 @@ public final class d implements i0 {
         }
     }
 
-    @Override // h91.i0
+    @Override // h91.i0Shadow
     public final m0 b() {
         return this.s;
     }
 
-    @Override // h91.i0, java.io.Closeable, java.lang.AutoCloseable, java.nio.channels.Channel
+    @Override // h91.i0Shadow, java.io.Closeable, java.lang.AutoCloseable, java.nio.channels.Channel
     public final void close() {
         int i;
         OutputStream outputStream = this.r;
@@ -116,7 +116,7 @@ public final class d implements i0 {
         }
     }
 
-    @Override // h91.i0, java.io.Flushable
+    @Override // h91.i0Shadow, java.io.Flushable
     public final void flush() {
         i iVar = this.s;
         iVar.i();

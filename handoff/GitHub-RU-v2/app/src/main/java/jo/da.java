@@ -1,10 +1,10 @@
 package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class da implements aa.m0 {
-    public final ea a;
+public final class da implements aaShadow.m0 {
+    public final eaShadow a;
 
-    public da(ea eaVar) {
+    public da(eaShadow eaVar) {
         this.a = eaVar;
     }
 
@@ -16,7 +16,7 @@ public final class da implements aa.m0 {
     }
 
     public final int hashCode() {
-        ea eaVar = this.a;
+        eaShadow eaVar = this.a;
         if (eaVar == null) {
             return 0;
         }

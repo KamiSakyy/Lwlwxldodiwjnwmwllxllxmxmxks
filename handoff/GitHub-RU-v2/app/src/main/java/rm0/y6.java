@@ -19,10 +19,10 @@ import u10.y90;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y6 implements z01.w0, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
-    public final com.github.service.wrapper.b s;
+    public final com.github.service.wrapper.bShadow s;
     public final v71.v t;
 
-    public y6(com.github.service.wrapper.b bVar, v71.v vVar, int i) {
+    public y6(com.github.service.wrapper.bShadow bVar, v71.v vVar, int i) {
         this.r = i;
         switch (i) {
             case 1:
@@ -83,7 +83,7 @@ public final class y6 implements z01.w0, yb0, mi0, y90, yf0 {
                         }
                         i2 = -1;
                     }
-                    com.github.service.wrapper.b bVar = y6Var.s;
+                    com.github.service.wrapper.bShadow bVar = y6Var.s;
                     aj0.e eVar = new aj0.e();
                     x6Var.u = boVar;
                     x6Var.v = z;
@@ -116,7 +116,7 @@ public final class y6 implements z01.w0, yb0, mi0, y90, yf0 {
                     for (aj0.a aVar2 : list) {
                         bo boVar2 = aVar2.d;
                         if (boVar2 == boVar) {
-                            aj0.b bVar2 = aVar2.c;
+                            aj0.bShadow bVar2 = aVar2.c;
                             aVar2 = new aj0.a(aVar2.a, z, new aj0.b(bVar2.a, bVar2.b + i3), boVar2);
                         }
                         arrayList.add(aVar2);
@@ -168,7 +168,7 @@ public final class y6 implements z01.w0, yb0, mi0, y90, yf0 {
                         }
                         i2 = -1;
                     }
-                    com.github.service.wrapper.b bVar = y6Var.s;
+                    com.github.service.wrapper.bShadow bVar = y6Var.s;
                     i80.d dVar = new i80.d(0);
                     f5Var.u = zmVar;
                     f5Var.v = z;
@@ -201,7 +201,7 @@ public final class y6 implements z01.w0, yb0, mi0, y90, yf0 {
                     for (i80.a aVar2 : list) {
                         zm zmVar2 = aVar2.d;
                         if (zmVar2 == zmVar) {
-                            i80.b bVar2 = aVar2.c;
+                            i80.bShadow bVar2 = aVar2.c;
                             aVar2 = new i80.a(aVar2.a, z, new i80.b(bVar2.a, bVar2.b + i3), zmVar2);
                         }
                         arrayList.add(aVar2);
@@ -253,7 +253,7 @@ public final class y6 implements z01.w0, yb0, mi0, y90, yf0 {
                         }
                         i2 = -1;
                     }
-                    com.github.service.wrapper.b bVar = y6Var.s;
+                    com.github.service.wrapper.bShadow bVar = y6Var.s;
                     pv.e eVar = new pv.e();
                     y6Var2.u = z00Var;
                     y6Var2.v = z;
@@ -286,7 +286,7 @@ public final class y6 implements z01.w0, yb0, mi0, y90, yf0 {
                     for (pv.a aVar2 : list) {
                         z00 z00Var2 = aVar2.d;
                         if (z00Var2 == z00Var) {
-                            pv.b bVar2 = aVar2.c;
+                            pv.bShadow bVar2 = aVar2.c;
                             aVar2 = new pv.a(aVar2.a, z, new pv.b(bVar2.a, bVar2.b + i3), z00Var2);
                         }
                         arrayList.add(aVar2);
@@ -338,7 +338,7 @@ public final class y6 implements z01.w0, yb0, mi0, y90, yf0 {
                         }
                         i2 = -1;
                     }
-                    com.github.service.wrapper.b bVar = y6Var.s;
+                    com.github.service.wrapper.bShadow bVar = y6Var.s;
                     gu0.e eVar = new gu0.e();
                     a6Var.u = cvVar;
                     a6Var.v = z;
@@ -371,7 +371,7 @@ public final class y6 implements z01.w0, yb0, mi0, y90, yf0 {
                     for (gu0.a aVar2 : list) {
                         cv cvVar2 = aVar2.d;
                         if (cvVar2 == cvVar) {
-                            gu0.b bVar2 = aVar2.c;
+                            gu0.bShadow bVar2 = aVar2.c;
                             aVar2 = new gu0.a(aVar2.a, z, new gu0.b(bVar2.a, bVar2.b + i3), cvVar2);
                         }
                         arrayList.add(aVar2);

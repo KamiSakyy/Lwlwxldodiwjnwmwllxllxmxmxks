@@ -43,10 +43,10 @@ import ub.a;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
-    public final com.github.service.wrapper.b s;
+    public final com.github.service.wrapper.bShadow s;
     public final v71.v t;
 
-    public y9(com.github.service.wrapper.b bVar, v71.v vVar, int i) {
+    public y9(com.github.service.wrapper.bShadow bVar, v71.v vVar, int i) {
         this.r = i;
         switch (i) {
             case 1:
@@ -94,25 +94,25 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
         w61.k kVar;
         gn0.j6 j6Var;
         ca0 ca0Var;
-        com.github.service.wrapper.b bVar;
+        com.github.service.wrapper.bShadow bVar;
         c71.c r9Var;
         int i2;
         w61.k kVar2;
         m10.ia iaVar;
         qg0 qg0Var;
-        com.github.service.wrapper.b bVar2;
+        com.github.service.wrapper.bShadow bVar2;
         vb0.l7 l7Var;
         int i3;
         w61.k kVar3;
         hc0.z5 z5Var;
         c80 c80Var;
-        com.github.service.wrapper.b bVar3;
+        com.github.service.wrapper.bShadow bVar3;
         wy0.t8 t8Var;
         int i4;
         w61.k kVar4;
         pz0.e7 e7Var;
         ce0 ce0Var;
-        com.github.service.wrapper.b bVar4;
+        com.github.service.wrapper.bShadow bVar4;
         switch (this.r) {
             case 0:
                 if (cVar instanceof w9) {
@@ -169,7 +169,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                             kw kwVar2 = (kw) kVar.r;
                             List list = (List) kVar.s;
                             ca0 ca0Var2 = new ca0(str, kwVar2, list == null ? aa.t0.d : new aa.u0(list));
-                            com.github.service.wrapper.b bVar5 = this.s;
+                            com.github.service.wrapper.bShadow bVar5 = this.s;
                             w9Var.u = bVar5;
                             w9Var.v = ca0Var2;
                             w9Var.y = 1;
@@ -252,7 +252,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                             ya0 ya0Var2 = (ya0) kVar2.r;
                             List list2 = (List) kVar2.s;
                             qg0 qg0Var2 = new qg0(str, ya0Var2, list2 == null ? aa.t0.d : new aa.u0(list2));
-                            com.github.service.wrapper.b bVar6 = this.s;
+                            com.github.service.wrapper.bShadow bVar6 = this.s;
                             ((t00.r9) r9Var).u = bVar6;
                             ((t00.r9) r9Var).v = qg0Var2;
                             ((t00.r9) r9Var).y = 1;
@@ -335,7 +335,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                             ev evVar2 = (ev) kVar3.r;
                             List list3 = (List) kVar3.s;
                             c80 c80Var2 = new c80(str, evVar2, list3 == null ? aa.t0.d : new aa.u0(list3));
-                            com.github.service.wrapper.b bVar7 = this.s;
+                            com.github.service.wrapper.bShadow bVar7 = this.s;
                             l7Var.u = bVar7;
                             l7Var.v = c80Var2;
                             l7Var.y = 1;
@@ -418,7 +418,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                             f40 f40Var2 = (f40) kVar4.r;
                             List list4 = (List) kVar4.s;
                             ce0 ce0Var2 = new ce0(str, f40Var2, list4 == null ? aa.t0.d : new aa.u0(list4));
-                            com.github.service.wrapper.b bVar8 = this.s;
+                            com.github.service.wrapper.bShadow bVar8 = this.s;
                             t8Var.u = bVar8;
                             t8Var.v = ce0Var2;
                             t8Var.y = 1;
@@ -487,19 +487,19 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
         x9 x9Var;
         int i;
         ca0 ca0Var;
-        com.github.service.wrapper.b bVar;
+        com.github.service.wrapper.bShadow bVar;
         c71.c s9Var;
         int i2;
         qg0 qg0Var;
-        com.github.service.wrapper.b bVar2;
+        com.github.service.wrapper.bShadow bVar2;
         vb0.m7 m7Var;
         int i3;
         c80 c80Var;
-        com.github.service.wrapper.b bVar3;
+        com.github.service.wrapper.bShadow bVar3;
         wy0.u8 u8Var;
         int i4;
         ce0 ce0Var;
-        com.github.service.wrapper.b bVar4;
+        com.github.service.wrapper.bShadow bVar4;
         switch (this.r) {
             case 0:
                 if (cVar instanceof x9) {
@@ -514,7 +514,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                             sy.y.j(obj);
                             ca0 ca0Var2 = new ca0(str, sy.r.x(subscriptionState), aa.t0.d);
                             kw x = sy.r.x(subscriptionState);
-                            com.github.service.wrapper.b bVar5 = this.s;
+                            com.github.service.wrapper.bShadow bVar5 = this.s;
                             x9Var.u = bVar5;
                             x9Var.v = ca0Var2;
                             x9Var.y = 1;
@@ -556,7 +556,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                             sy.y.j(obj4);
                             qg0 qg0Var2 = new qg0(str, com.google.android.gms.internal.measurement.i4.r0(subscriptionState), aa.t0.d);
                             ya0 r0 = com.google.android.gms.internal.measurement.i4.r0(subscriptionState);
-                            com.github.service.wrapper.b bVar6 = this.s;
+                            com.github.service.wrapper.bShadow bVar6 = this.s;
                             ((t00.s9) s9Var).u = bVar6;
                             ((t00.s9) s9Var).v = qg0Var2;
                             ((t00.s9) s9Var).y = 1;
@@ -598,7 +598,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                             sy.y.j(obj6);
                             c80 c80Var2 = new c80(str, a.a.w(subscriptionState), aa.t0.d);
                             ev w = a.a.w(subscriptionState);
-                            com.github.service.wrapper.b bVar7 = this.s;
+                            com.github.service.wrapper.bShadow bVar7 = this.s;
                             m7Var.u = bVar7;
                             m7Var.v = c80Var2;
                             m7Var.y = 1;
@@ -640,7 +640,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                             sy.y.j(obj8);
                             ce0 ce0Var2 = new ce0(str, i21.a.G(subscriptionState), aa.t0.d);
                             f40 G = i21.a.G(subscriptionState);
-                            com.github.service.wrapper.b bVar8 = this.s;
+                            com.github.service.wrapper.bShadow bVar8 = this.s;
                             u8Var.u = bVar8;
                             u8Var.v = ce0Var2;
                             u8Var.y = 1;
@@ -704,7 +704,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
     public Object e(String str, kw kwVar, List list, c71.c cVar) {
         s9 s9Var;
         int i;
-        ek0.b bVar;
+        ek0.bShadow bVar;
         ek0.a aVar;
         if (cVar instanceof s9) {
             s9Var = (s9) cVar;
@@ -736,7 +736,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                 if (bVar != null) {
                     return null;
                 }
-                ek0.b a = ek0.b.a(bVar, kwVar, null, 27);
+                ek0.bShadow a = ek0.b.a(bVar, kwVar, null, 27);
                 ek0.a aVar3 = a.e;
                 if (aVar3 != null) {
                     if (list == null) {
@@ -770,7 +770,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
     public Object f(String str, ev evVar, List list, c71.c cVar) {
         vb0.i7 i7Var;
         int i;
-        m90.b bVar;
+        m90.bShadow bVar;
         m90.a aVar;
         if (cVar instanceof vb0.i7) {
             i7Var = (vb0.i7) cVar;
@@ -802,7 +802,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                 if (bVar != null) {
                     return null;
                 }
-                m90.b a = m90.b.a(bVar, evVar, (m90.a) null, 27);
+                m90.bShadow a = m90.b.a(bVar, evVar, (m90.a) null, 27);
                 m90.a aVar3 = a.e;
                 if (aVar3 != null) {
                     if (list == null) {
@@ -836,7 +836,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
     public Object g(String str, ya0 ya0Var, List list, c71.c cVar) {
         t00.o9 o9Var;
         int i;
-        yw.b bVar;
+        yw.bShadow bVar;
         yw.a aVar;
         if (cVar instanceof t00.o9) {
             o9Var = (t00.o9) cVar;
@@ -868,7 +868,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                 if (bVar != null) {
                     return null;
                 }
-                yw.b a = yw.b.a(bVar, ya0Var, (yw.a) null, 27);
+                yw.bShadow a = yw.b.a(bVar, ya0Var, (yw.a) null, 27);
                 yw.a aVar3 = a.e;
                 if (aVar3 != null) {
                     if (list == null) {
@@ -907,7 +907,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
     public Object i(String str, f40 f40Var, List list, c71.c cVar) {
         wy0.q8 q8Var;
         int i;
-        nv0.b bVar;
+        nv0.bShadow bVar;
         nv0.a aVar;
         if (cVar instanceof wy0.q8) {
             q8Var = (wy0.q8) cVar;
@@ -939,7 +939,7 @@ public final class y9 implements z01.k1, yb0, mi0, y90, yf0 {
                 if (bVar != null) {
                     return null;
                 }
-                nv0.b a = nv0.b.a(bVar, f40Var, null, 27);
+                nv0.bShadow a = nv0.b.a(bVar, f40Var, null, 27);
                 nv0.a aVar3 = a.e;
                 if (aVar3 != null) {
                     if (list == null) {

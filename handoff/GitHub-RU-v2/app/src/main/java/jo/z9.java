@@ -1,10 +1,10 @@
 package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class z9 implements aa.m0 {
-    public final aa a;
+public final class z9 implements aaShadow.m0 {
+    public final aaShadow a;
 
-    public z9(aa aaVar) {
+    public z9(aaShadow aaVar) {
         this.a = aaVar;
     }
 
@@ -16,7 +16,7 @@ public final class z9 implements aa.m0 {
     }
 
     public final int hashCode() {
-        aa aaVar = this.a;
+        aaShadow aaVar = this.a;
         if (aaVar == null) {
             return 0;
         }

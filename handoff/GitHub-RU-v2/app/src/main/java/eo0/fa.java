@@ -18,7 +18,7 @@ public final class fa implements aa.a {
             if (r0 == 0) {
                 str = (String) aa.c.a.a(eVar, wVar);
             } else if (r0 == 1) {
-                bfVar = (jn0.bf) aa.c.b(aa.c.c(ea.a, true)).a(eVar, wVar);
+                bfVar = (jn0.bf) aa.c.b(aa.c.c(eaShadow.a, true)).a(eVar, wVar);
             } else {
                 if (r0 != 2) {
                     break;
@@ -46,7 +46,7 @@ public final class fa implements aa.a {
         aa.b bVar = aa.c.a;
         bVar.b(fVar, wVar, cfVar.a);
         fVar.z0("repoObject");
-        aa.c.b(aa.c.c(ea.a, true)).b(fVar, wVar, cfVar.b);
+        aa.c.b(aa.c.c(eaShadow.a, true)).b(fVar, wVar, cfVar.b);
         fVar.z0("__typename");
         bVar.b(fVar, wVar, cfVar.c);
     }

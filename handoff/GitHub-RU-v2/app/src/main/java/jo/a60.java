@@ -1,7 +1,7 @@
 package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class a60 implements aa.m0 {
+public final class a60 implements aaShadow.m0 {
     public final b60 a;
 
     public a60(b60 b60Var) {

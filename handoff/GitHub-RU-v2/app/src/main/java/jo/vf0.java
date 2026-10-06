@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class vf0 implements aa.n0 {
+public final class vf0 implements aaShadow.n0 {
     public static final rf0 Companion = new rf0();
     public final ArrayList r;
     public final LocalTime s;

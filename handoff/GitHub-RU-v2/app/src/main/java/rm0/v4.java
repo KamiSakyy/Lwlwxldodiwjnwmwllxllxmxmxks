@@ -292,7 +292,7 @@ public final class v4 extends c71.j implements j71.e {
                     return a0Var;
                 }
                 ri0.u3 u3Var = xkVar.i;
-                com.github.service.wrapper.b bVar = ((x4) obj2).t;
+                com.github.service.wrapper.bShadow bVar = ((x4) obj2).t;
                 ri0.w3 w3Var = new ri0.w3();
                 String str = u3Var.a;
                 this.x = null;
@@ -315,7 +315,7 @@ public final class v4 extends c71.j implements j71.e {
                     return a0Var;
                 }
                 ri0.q3 q3Var = ybVar.b.d;
-                com.github.service.wrapper.b bVar2 = ((b6) obj2).t;
+                com.github.service.wrapper.bShadow bVar2 = ((b6) obj2).t;
                 ri0.s3 s3Var = new ri0.s3();
                 String str2 = q3Var.a;
                 this.x = null;
@@ -339,7 +339,7 @@ public final class v4 extends c71.j implements j71.e {
                     }
                     sy.y.j(obj);
                 }
-                com.github.service.wrapper.b bVar3 = y8Var.t;
+                com.github.service.wrapper.bShadow bVar3 = y8Var.t;
                 s sVar = new s(11);
                 this.w = 2;
                 if (b31.b.b(bVar3, sVar, this) != aVar3) {
@@ -363,7 +363,7 @@ public final class v4 extends c71.j implements j71.e {
                     return a0Var;
                 }
                 ri0.q3 q3Var2 = c20Var.b.c;
-                com.github.service.wrapper.b bVar4 = ((k9) obj2).t;
+                com.github.service.wrapper.bShadow bVar4 = ((k9) obj2).t;
                 ri0.s3 s3Var2 = new ri0.s3();
                 String str3 = q3Var2.a;
                 this.x = null;
@@ -401,7 +401,7 @@ public final class v4 extends c71.j implements j71.e {
                     return a0Var;
                 }
                 aa.h0 h0Var = tnVar.i;
-                com.github.service.wrapper.b bVar5 = ((x4) obj2).t;
+                com.github.service.wrapper.bShadow bVar5 = ((x4) obj2).t;
                 gv.g4 g4Var = new gv.g4();
                 String str4 = ((gv.e4) h0Var).a;
                 this.x = null;
@@ -424,7 +424,7 @@ public final class v4 extends c71.j implements j71.e {
                     return a0Var;
                 }
                 aa.h0 h0Var2 = pdVar.b.d;
-                com.github.service.wrapper.b bVar6 = ((b6) obj2).t;
+                com.github.service.wrapper.bShadow bVar6 = ((b6) obj2).t;
                 gv.c4 c4Var = new gv.c4();
                 String str5 = ((gv.a4) h0Var2).a;
                 this.x = null;
@@ -448,7 +448,7 @@ public final class v4 extends c71.j implements j71.e {
                     }
                     sy.y.j(obj);
                 }
-                com.github.service.wrapper.b bVar7 = c9Var.t;
+                com.github.service.wrapper.bShadow bVar7 = c9Var.t;
                 sw0.e eVar = new sw0.e(26);
                 this.w = 2;
                 if (sy.n.a(bVar7, eVar, this) != aVar8) {
@@ -472,7 +472,7 @@ public final class v4 extends c71.j implements j71.e {
                     return a0Var;
                 }
                 aa.h0 h0Var3 = e80Var.b.c;
-                com.github.service.wrapper.b bVar8 = ((k9) obj2).t;
+                com.github.service.wrapper.bShadow bVar8 = ((k9) obj2).t;
                 gv.c4 c4Var2 = new gv.c4();
                 String str6 = ((gv.a4) h0Var3).a;
                 this.x = null;
@@ -523,7 +523,7 @@ public final class v4 extends c71.j implements j71.e {
                     return a0Var;
                 }
                 aa.h0 h0Var4 = vjVar.i;
-                com.github.service.wrapper.b bVar9 = ((x4) obj2).t;
+                com.github.service.wrapper.bShadow bVar9 = ((x4) obj2).t;
                 z70.m3 m3Var = new z70.m3(0);
                 String str7 = ((z70.l3) h0Var4).a;
                 this.x = null;
@@ -546,7 +546,7 @@ public final class v4 extends c71.j implements j71.e {
                     return a0Var;
                 }
                 aa.h0 h0Var5 = qbVar.b.d;
-                com.github.service.wrapper.b bVar10 = ((b6) obj2).t;
+                com.github.service.wrapper.bShadow bVar10 = ((b6) obj2).t;
                 z70.j3 j3Var = new z70.j3(0);
                 String str8 = ((z70.i3) h0Var5).a;
                 this.x = null;
@@ -570,7 +570,7 @@ public final class v4 extends c71.j implements j71.e {
                     }
                     sy.y.j(obj);
                 }
-                com.github.service.wrapper.b bVar11 = y8Var2.t;
+                com.github.service.wrapper.bShadow bVar11 = y8Var2.t;
                 v00.n nVar = new v00.n(22);
                 this.w = 2;
                 if (sy.s.c(bVar11, nVar, this) != aVar14) {
@@ -594,7 +594,7 @@ public final class v4 extends c71.j implements j71.e {
                     return a0Var;
                 }
                 aa.h0 h0Var6 = e00Var.b.c;
-                com.github.service.wrapper.b bVar12 = ((k9) obj2).t;
+                com.github.service.wrapper.bShadow bVar12 = ((k9) obj2).t;
                 z70.j3 j3Var2 = new z70.j3(0);
                 String str9 = ((z70.i3) h0Var6).a;
                 this.x = null;
@@ -740,7 +740,7 @@ public final class v4 extends c71.j implements j71.e {
                     return a0Var;
                 }
                 xt0.u3 u3Var2 = omVar.i;
-                com.github.service.wrapper.b bVar13 = ((x4) obj2).t;
+                com.github.service.wrapper.bShadow bVar13 = ((x4) obj2).t;
                 xt0.w3 w3Var2 = new xt0.w3();
                 String str10 = u3Var2.a;
                 this.x = null;
@@ -763,7 +763,7 @@ public final class v4 extends c71.j implements j71.e {
                     return a0Var;
                 }
                 xt0.q3 q3Var3 = scVar.b.d;
-                com.github.service.wrapper.b bVar14 = ((b6) obj2).t;
+                com.github.service.wrapper.bShadow bVar14 = ((b6) obj2).t;
                 xt0.s3 s3Var3 = new xt0.s3();
                 String str11 = q3Var3.a;
                 this.x = null;
@@ -787,7 +787,7 @@ public final class v4 extends c71.j implements j71.e {
                     }
                     sy.y.j(obj);
                 }
-                com.github.service.wrapper.b bVar15 = c9Var2.t;
+                com.github.service.wrapper.bShadow bVar15 = c9Var2.t;
                 wy0.p4 p4Var = new wy0.p4(i2);
                 this.w = 2;
                 if (sy.y.b(bVar15, p4Var, this) != aVar22) {
@@ -811,7 +811,7 @@ public final class v4 extends c71.j implements j71.e {
                     return a0Var;
                 }
                 xt0.q3 q3Var4 = v50Var.b.c;
-                com.github.service.wrapper.b bVar16 = ((k9) obj2).t;
+                com.github.service.wrapper.bShadow bVar16 = ((k9) obj2).t;
                 xt0.s3 s3Var4 = new xt0.s3();
                 String str12 = q3Var4.a;
                 this.x = null;

@@ -1667,7 +1667,7 @@ public abstract class g {
         if (collection.isEmpty()) {
             return " }";
         }
-        return t71.q.p(x61.m.c0(collection, ",\n", "\n", "\n", 0, (j71.c) null, 56), "    ") + "},";
+        return t71.q.pShadow(x61.m.c0(collection, ",\n", "\n", "\n", 0, (j71.c) null, 56), "    ") + "},";
     }
 
     public static float s(EdgeEffect edgeEffect) {
@@ -1735,11 +1735,11 @@ public abstract class g {
     }
 
     public static final String x(Collection collection) {
-        return t71.q.p(x61.m.c0(collection, ",", (String) null, (String) null, 0, (j71.c) null, 62), "    ") + t71.q.p(" }", "    ");
+        return t71.q.pShadow(x61.m.c0(collection, ",", (String) null, (String) null, 0, (j71.c) null, 62), "    ") + t71.q.pShadow(" }", "    ");
     }
 
     public static final String y(Collection collection) {
-        return t71.q.p(x61.m.c0(collection, ",", (String) null, (String) null, 0, (j71.c) null, 62), "    ") + t71.q.p("},", "    ");
+        return t71.q.pShadow(x61.m.c0(collection, ",", (String) null, (String) null, 0, (j71.c) null, 62), "    ") + t71.q.pShadow("},", "    ");
     }
 
     public static final s5.e z(String str) {

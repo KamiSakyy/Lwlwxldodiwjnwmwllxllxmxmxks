@@ -33,10 +33,10 @@ import u10.y90;
 public final class f5 implements z01.o0, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
     public final com.github.service.wrapper.j s;
-    public final com.github.service.wrapper.b t;
+    public final com.github.service.wrapper.bShadow t;
     public final v71.v u;
 
-    public f5(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, int i) {
+    public f5(com.github.service.wrapper.j jVar, com.github.service.wrapper.bShadow bVar, v71.v vVar, int i) {
         this.r = i;
         switch (i) {
             case 1:
@@ -108,7 +108,7 @@ public final class f5 implements z01.o0, yb0, mi0, y90, yf0 {
             case 0:
                 k71.k.g(str, "id");
                 dj.Companion.getClass();
-                ai0.b bVar = new ai0.b(new ai0.c(new ai0.d("Organization", str, new ci0.a(str, ((aa.q) dj.m).a, true))));
+                ai0.bShadow bVar = new ai0.b(new ai0.c(new ai0.d("Organization", str, new ci0.a(str, ((aa.q) dj.m).a, true))));
                 return y71.n1.y(in.r.l(in.r.h(this.t.k(new ai0.e(str), bVar))), this.u);
             case 1:
                 k71.k.g(str, "id");
@@ -123,7 +123,7 @@ public final class f5 implements z01.o0, yb0, mi0, y90, yf0 {
             default:
                 k71.k.g(str, "id");
                 bm.Companion.getClass();
-                it0.b bVar4 = new it0.b(new it0.c(new it0.d("Organization", str, new kt0.a(str, ((aa.q) bm.o).a, true))));
+                it0.bShadow bVar4 = new it0.b(new it0.c(new it0.d("Organization", str, new kt0.a(str, ((aa.q) bm.o).a, true))));
                 return y71.n1.y(in.r.l(in.r.h(this.t.k(new it0.e(str), bVar4))), this.u);
         }
     }

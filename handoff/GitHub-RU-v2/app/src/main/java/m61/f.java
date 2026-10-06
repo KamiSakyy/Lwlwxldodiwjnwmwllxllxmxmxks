@@ -54,7 +54,7 @@ public final class f implements o61.b {
             obj = null;
         }
         if (obj instanceof o61.b) {
-            com.github.rudroid.b bVar = (k) k41.b.v(k.class, (o61.b) obj);
+            com.github.rudroid.b bVar = (kShadow) k41.b.v(kShadow.class, (o61.b) obj);
             return new s(bVar.b, bVar.c);
         }
         throw new IllegalStateException(jVar.getClass() + ", Hilt view must be attached to an @AndroidEntryPoint Fragment or Activity.");

@@ -17,10 +17,10 @@ import u10.y90;
 public final class c4 implements z01.f0, yb0, y90, yf0 {
     public final /* synthetic */ int r;
     public final com.github.service.wrapper.j s;
-    public final com.github.service.wrapper.b t;
+    public final com.github.service.wrapper.bShadow t;
     public final v71.v u;
 
-    public c4(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, int i) {
+    public c4(com.github.service.wrapper.j jVar, com.github.service.wrapper.bShadow bVar, v71.v vVar, int i) {
         this.r = i;
         switch (i) {
             case 1:
@@ -74,7 +74,7 @@ public final class c4 implements z01.f0, yb0, y90, yf0 {
         int i3;
         mg0.m mVar;
         String str2 = str;
-        com.github.service.wrapper.b bVar = c4Var.t;
+        com.github.service.wrapper.bShadow bVar = c4Var.t;
         if (cVar instanceof a4) {
             a4Var = (a4) cVar;
             int i4 = a4Var.y;
@@ -153,7 +153,7 @@ public final class c4 implements z01.f0, yb0, y90, yf0 {
         int i3;
         w50.l lVar;
         String str2 = str;
-        com.github.service.wrapper.b bVar = c4Var.t;
+        com.github.service.wrapper.bShadow bVar = c4Var.t;
         if (cVar instanceof vb0.w2) {
             w2Var = (vb0.w2) cVar;
             int i4 = w2Var.y;
@@ -232,7 +232,7 @@ public final class c4 implements z01.f0, yb0, y90, yf0 {
         int i3;
         ur0.o oVar;
         String str2 = str;
-        com.github.service.wrapper.b bVar = c4Var.t;
+        com.github.service.wrapper.bShadow bVar = c4Var.t;
         if (cVar instanceof wy0.b3) {
             b3Var = (wy0.b3) cVar;
             int i4 = b3Var.y;
@@ -311,7 +311,7 @@ public final class c4 implements z01.f0, yb0, y90, yf0 {
         int i3;
         ri0.p2 p2Var;
         String str2 = str;
-        com.github.service.wrapper.b bVar = c4Var.t;
+        com.github.service.wrapper.bShadow bVar = c4Var.t;
         if (cVar instanceof b4) {
             b4Var = (b4) cVar;
             int i4 = b4Var.y;
@@ -390,7 +390,7 @@ public final class c4 implements z01.f0, yb0, y90, yf0 {
         int i3;
         z70.l2 l2Var;
         String str2 = str;
-        com.github.service.wrapper.b bVar = c4Var.t;
+        com.github.service.wrapper.bShadow bVar = c4Var.t;
         if (cVar instanceof vb0.x2) {
             x2Var = (vb0.x2) cVar;
             int i4 = x2Var.y;
@@ -469,7 +469,7 @@ public final class c4 implements z01.f0, yb0, y90, yf0 {
         int i3;
         xt0.p2 p2Var;
         String str2 = str;
-        com.github.service.wrapper.b bVar = c4Var.t;
+        com.github.service.wrapper.bShadow bVar = c4Var.t;
         if (cVar instanceof wy0.c3) {
             c3Var = (wy0.c3) cVar;
             int i4 = c3Var.y;
@@ -688,7 +688,7 @@ public final class c4 implements z01.f0, yb0, y90, yf0 {
         switch (this.r) {
             case 0:
                 int ordinal = b0Var.ordinal();
-                aa1.b bVar = aa.t0.d;
+                aa1.bShadow bVar = aa.t0.d;
                 if (ordinal == 0) {
                     if (str3 != null) {
                         bVar = new aa.u0(str3);
@@ -708,7 +708,7 @@ public final class c4 implements z01.f0, yb0, y90, yf0 {
                 return y71.n1.y(new j3(com.github.service.wrapper.a.o(this.s, p0Var, null, false, null, null, 62), 4), this.u);
             case 1:
                 int ordinal2 = b0Var.ordinal();
-                aa1.b bVar2 = aa.t0.d;
+                aa1.bShadow bVar2 = aa.t0.d;
                 if (ordinal2 == 0) {
                     if (str3 != null) {
                         bVar2 = new aa.u0(str3);
@@ -728,7 +728,7 @@ public final class c4 implements z01.f0, yb0, y90, yf0 {
                 return y71.n1.y(new vb0.e2(com.github.service.wrapper.a.o(this.s, p0Var2, null, false, null, null, 62), 2), this.u);
             default:
                 int ordinal3 = b0Var.ordinal();
-                aa1.b bVar3 = aa.t0.d;
+                aa1.bShadow bVar3 = aa.t0.d;
                 if (ordinal3 == 0) {
                     if (str3 != null) {
                         bVar3 = new aa.u0(str3);

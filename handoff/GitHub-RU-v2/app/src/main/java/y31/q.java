@@ -12,7 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public final class q extends ArrayAdapter {
+public final class qShadow extends ArrayAdapter {
     public ColorStateList r;
     public ColorStateList s;
     public final /* synthetic */ r t;

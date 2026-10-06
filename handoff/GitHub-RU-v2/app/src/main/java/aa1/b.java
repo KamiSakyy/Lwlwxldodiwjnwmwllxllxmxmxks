@@ -1606,7 +1606,7 @@ public abstract class b {
                     }
                 }
                 v = v.w();
-                qVar3 = (v == null || (hVar = v.X) == null) ? null : (v2.w1) hVar.f;
+                qVar3 = (v == null || (hVar = v.X) == null) ? null : (v2.w1Shadow) hVar.f;
             }
             a3.a aVar2 = (a3.a) qVar;
             if (aVar2 != null && (m0 = aVar2.m0((u = v2.l.u(jVar)), new a2.b(1, aVar, u), cVar)) == b71.a.r) {

@@ -20,7 +20,7 @@ public abstract class b {
         return true;
     }
 
-    public static final d0 b(i0 i0Var) {
+    public static final d0 b(i0Shadow i0Var) {
         k71.k.g(i0Var, "<this>");
         return new d0(i0Var);
     }

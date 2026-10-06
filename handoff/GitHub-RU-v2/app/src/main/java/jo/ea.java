@@ -1,7 +1,7 @@
 package jo;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class ea {
+public final class eaShadow {
     public final String a;
 
     public ea(String str) {
@@ -12,7 +12,7 @@ public final class ea {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof ea) && k71.k.b(this.a, ((ea) obj).a);
+        return (obj instanceof eaShadow) && k71.k.b(this.a, ((eaShadow) obj).a);
     }
 
     public final int hashCode() {

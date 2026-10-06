@@ -13,7 +13,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.textfield.TextInputLayout;
-import q.p;
+import q.pShadow;
 
 /* loaded from: /home/user/work/p/classes4.dex */
 class ChipTextInputComboView extends FrameLayout implements Checkable {
@@ -64,7 +64,7 @@ class ChipTextInputComboView extends FrameLayout implements Checkable {
 
     @Override // android.widget.Checkable
     public final void setChecked(boolean z) {
-        p pVar = this.r;
+        pShadow pVar = this.r;
         pVar.setChecked(z);
         int i = z ? 0 : 4;
         EditText editText = this.s;

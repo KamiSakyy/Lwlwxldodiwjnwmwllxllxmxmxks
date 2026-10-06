@@ -3,7 +3,7 @@ package h91;
 import java.util.concurrent.locks.ReentrantLock;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public final class m implements i0 {
+public final class m implements i0Shadow {
     public final v r;
     public long s;
     public boolean t;
@@ -14,7 +14,7 @@ public final class m implements i0 {
         this.s = 0L;
     }
 
-    @Override // h91.i0
+    @Override // h91.i0Shadow
     public final void I0(h hVar, long j) {
         if (this.t) {
             throw new IllegalStateException("closed");
@@ -48,12 +48,12 @@ public final class m implements i0 {
         this.s += j;
     }
 
-    @Override // h91.i0
+    @Override // h91.i0Shadow
     public final m0 b() {
         return m0.d;
     }
 
-    @Override // h91.i0, java.io.Closeable, java.lang.AutoCloseable, java.nio.channels.Channel
+    @Override // h91.i0Shadow, java.io.Closeable, java.lang.AutoCloseable, java.nio.channels.Channel
     public final void close() {
         v vVar = this.r;
         if (this.t) {
@@ -77,7 +77,7 @@ public final class m implements i0 {
         }
     }
 
-    @Override // h91.i0, java.io.Flushable
+    @Override // h91.i0Shadow, java.io.Flushable
     public final void flush() {
         if (this.t) {
             throw new IllegalStateException("closed");

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class e implements aa.n0 {
+public final class e implements aaShadow.n0 {
     public static final c Companion = new c();
     public final String r;
     public final ArrayList s;
@@ -68,7 +68,7 @@ public final class e implements aa.n0 {
         fVar.z0("assigneeIds");
         aa.c.a(bVar).e(fVar, wVar, this.s);
         aa.u0 u0Var = this.t;
-        if (u0Var instanceof aa.u0) {
+        if (u0Var instanceof aaShadow.u0) {
             fVar.z0("agentAssignment");
             aa.c.d(aa.c.b(aa.c.c(n10.a.c, false))).d(fVar, wVar, u0Var);
         }

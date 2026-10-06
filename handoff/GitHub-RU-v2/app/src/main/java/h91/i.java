@@ -3,7 +3,7 @@ package h91;
 import java.nio.channels.WritableByteChannel;
 
 /* loaded from: /home/user/work/p/classes5.dex */
-public interface i extends i0, WritableByteChannel {
+public interface i extends i0Shadow, WritableByteChannel {
     long G(k0 k0Var);
 
     h a();
@@ -12,7 +12,7 @@ public interface i extends i0, WritableByteChannel {
 
     i d0(String str);
 
-    @Override // h91.i0, java.io.Flushable
+    @Override // h91.i0Shadow, java.io.Flushable
     void flush();
 
     i p(k kVar);

@@ -1,6 +1,6 @@
 package x81;
 
-import h91.i0;
+import h91.i0Shadow;
 import h91.m0;
 import java.io.InterruptedIOException;
 import java.util.TimeZone;
@@ -17,7 +17,7 @@ public final class t implements i0 {
         this.r = z;
     }
 
-    @Override // h91.i0
+    @Override // h91.i0Shadow
     public final void I0(h91.h hVar, long j) {
         TimeZone timeZone = r81.g.a;
         h91.h hVar2 = this.s;
@@ -27,12 +27,12 @@ public final class t implements i0 {
         }
     }
 
-    @Override // h91.i0
+    @Override // h91.i0Shadow
     public final m0 b() {
         return this.u.B;
     }
 
-    @Override // h91.i0, java.io.Closeable, java.lang.AutoCloseable, java.nio.channels.Channel
+    @Override // h91.i0Shadow, java.io.Closeable, java.lang.AutoCloseable, java.nio.channels.Channel
     public final void close() {
         w wVar = this.u;
         TimeZone timeZone = r81.g.a;
@@ -96,7 +96,7 @@ public final class t implements i0 {
         }
     }
 
-    @Override // h91.i0, java.io.Flushable
+    @Override // h91.i0Shadow, java.io.Flushable
     public final void flush() {
         w wVar = this.u;
         TimeZone timeZone = r81.g.a;

@@ -14,11 +14,11 @@ public final class q6 implements aa.a {
         while (eVar.r0(b) == 0) {
             bool = (Boolean) aa.c.k.a(eVar, wVar);
         }
-        return new jo.aa(bool);
+        return new jo.aaShadow(bool);
     }
 
     public final void b(ea.f fVar, aa.w wVar, Object obj) {
-        jo.aa aaVar = (jo.aa) obj;
+        jo.aaShadow aaVar = (jo.aaShadow) obj;
         k71.k.g(fVar, "writer");
         k71.k.g(wVar, "customScalarAdapters");
         k71.k.g(aaVar, "value");

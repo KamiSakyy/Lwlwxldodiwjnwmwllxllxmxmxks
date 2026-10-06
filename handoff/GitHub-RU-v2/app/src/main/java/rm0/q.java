@@ -10,9 +10,9 @@ public final class q implements z01.e, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
     public final com.github.service.wrapper.j s;
     public final v71.v t;
-    public final wn.b u;
+    public final wn.bShadow u;
 
-    public q(com.github.service.wrapper.j jVar, v71.v vVar, wn.b bVar, int i) {
+    public q(com.github.service.wrapper.j jVar, v71.v vVar, wn.bShadow bVar, int i) {
         this.r = i;
         switch (i) {
             case 1:

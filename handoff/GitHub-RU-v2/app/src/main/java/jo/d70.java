@@ -3,7 +3,7 @@ package jo;
 import java.util.ArrayList;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public final class d70 implements aa.v0 {
+public final class d70 implements aaShadow.v0 {
     public final ArrayList a;
     public final String b;
     public final String c;

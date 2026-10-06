@@ -68,7 +68,7 @@ public final /* synthetic */ class s implements j71.c {
         xz.a aVar;
         vz.f fVar5;
         int i = this.r;
-        aa1.b bVar = aa.t0.d;
+        aa1.bShadow bVar = aa.t0.d;
         w61.a0 a0Var = w61.a0.a;
         Collection collection = x61.r.r;
         r8 = null;
@@ -199,7 +199,7 @@ public final /* synthetic */ class s implements j71.c {
                 k71.k.g(zVar, "params");
                 return new vz.h(new aa.u0(10), new aa.u0(zVar.b), zVar.a);
             case 18:
-                vz.b bVar2 = (vz.b) obj;
+                vz.bShadow bVar2 = (vz.b) obj;
                 k71.k.g(bVar2, "data");
                 vz.e eVar2 = bVar2.a;
                 if (eVar2 != null && (fVar = eVar2.c) != null && (cVar = fVar.b) != null && (list2 = cVar.c) != null) {
@@ -207,7 +207,7 @@ public final /* synthetic */ class s implements j71.c {
                 }
                 return Boolean.valueOf(z2);
             case 19:
-                vz.b bVar3 = (vz.b) obj;
+                vz.bShadow bVar3 = (vz.b) obj;
                 k71.k.g(bVar3, "data");
                 vz.e eVar3 = bVar3.a;
                 if (eVar3 == null || (fVar2 = eVar3.c) == null || (cVar2 = fVar2.b) == null || (gVar = cVar2.b) == null) {
@@ -215,7 +215,7 @@ public final /* synthetic */ class s implements j71.c {
                 }
                 return new x01.i(gVar.b, gVar.a, !gVar.c);
             case 20:
-                vz.b bVar4 = (vz.b) obj;
+                vz.bShadow bVar4 = (vz.b) obj;
                 k71.k.g(bVar4, "data");
                 vz.e eVar4 = bVar4.a;
                 if (eVar4 != null && (fVar3 = eVar4.c) != null && (cVar3 = fVar3.b) != null) {
@@ -223,7 +223,7 @@ public final /* synthetic */ class s implements j71.c {
                 }
                 return list3 == null ? collection : list3;
             case 21:
-                vz.b bVar5 = (vz.b) obj;
+                vz.bShadow bVar5 = (vz.b) obj;
                 k71.k.g(bVar5, "data");
                 vz.e eVar5 = bVar5.a;
                 Collection<vz.d> collection3 = (eVar5 == null || (fVar5 = eVar5.c) == null) ? null : fVar5.b.c;
@@ -233,7 +233,7 @@ public final /* synthetic */ class s implements j71.c {
                 ArrayList arrayList2 = new ArrayList();
                 for (vz.d dVar : collection3) {
                     if (dVar != null && (aVar = dVar.c.d.c) != null) {
-                        xz.b bVar6 = aVar.b;
+                        xz.bShadow bVar6 = aVar.b;
                         if (bVar6 != null) {
                             str3 = bVar6.a;
                         } else {

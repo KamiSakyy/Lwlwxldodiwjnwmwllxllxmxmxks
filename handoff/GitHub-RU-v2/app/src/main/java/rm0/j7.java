@@ -27,10 +27,10 @@ import u10.y90;
 public final class j7 implements z01.c1, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
     public final com.github.service.wrapper.j s;
-    public final com.github.service.wrapper.b t;
+    public final com.github.service.wrapper.bShadow t;
     public final v71.v u;
 
-    public j7(com.github.service.wrapper.j jVar, com.github.service.wrapper.b bVar, v71.v vVar, int i) {
+    public j7(com.github.service.wrapper.j jVar, com.github.service.wrapper.bShadow bVar, v71.v vVar, int i) {
         this.r = i;
         switch (i) {
             case 1:
@@ -104,7 +104,7 @@ public final class j7 implements z01.c1, yb0, mi0, y90, yf0 {
                 if (str4 == null || t71.p.T(str4)) {
                     str4 = null;
                 }
-                aa1.b bVar = aa.t0.d;
+                aa1.bShadow bVar = aa.t0.d;
                 return y71.n1.y(new d5(new y00.l(com.github.service.wrapper.a.o(this.s, new pv(str, str2, u0Var, str4 == null ? bVar : new aa.u0(str4), bVar), null, false, null, null, 58), 10), 20), this.u);
             case 1:
                 k71.k.g(str, "ownerName");
@@ -113,7 +113,7 @@ public final class j7 implements z01.c1, yb0, mi0, y90, yf0 {
                 if (str4 == null || t71.p.T(str4)) {
                     str4 = null;
                 }
-                aa1.b bVar2 = aa.t0.d;
+                aa1.bShadow bVar2 = aa.t0.d;
                 return y71.n1.y(new t00.q6(new y00.l(com.github.service.wrapper.a.o(this.s, new a00(str, str2, u0Var2, str4 == null ? bVar2 : new aa.u0(str4), bVar2), null, false, null, null, 58), 10), 5), this.u);
             case 2:
                 k71.k.g(str, "ownerName");
@@ -122,7 +122,7 @@ public final class j7 implements z01.c1, yb0, mi0, y90, yf0 {
                 if (str4 == null || t71.p.T(str4)) {
                     str4 = null;
                 }
-                aa1.b bVar3 = aa.t0.d;
+                aa1.bShadow bVar3 = aa.t0.d;
                 return y71.n1.y(new vb0.t3(new y00.l(com.github.service.wrapper.a.o(this.s, new bu(str, str2, u0Var3, str4 == null ? bVar3 : new aa.u0(str4), bVar3), null, false, null, null, 58), 10), 17), this.u);
             default:
                 k71.k.g(str, "ownerName");
@@ -131,7 +131,7 @@ public final class j7 implements z01.c1, yb0, mi0, y90, yf0 {
                 if (str4 == null || t71.p.T(str4)) {
                     str4 = null;
                 }
-                aa1.b bVar4 = aa.t0.d;
+                aa1.bShadow bVar4 = aa.t0.d;
                 return y71.n1.y(new wy0.q3(new y00.l(com.github.service.wrapper.a.o(this.s, new zx(str, str2, u0Var4, str4 == null ? bVar4 : new aa.u0(str4), bVar4), null, false, null, null, 58), 10), 29), this.u);
         }
     }

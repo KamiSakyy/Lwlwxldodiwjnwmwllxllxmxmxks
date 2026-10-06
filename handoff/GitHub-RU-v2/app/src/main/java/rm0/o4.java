@@ -16,10 +16,10 @@ import u10.y90;
 /* loaded from: /home/user/work/p/classes4.dex */
 public final class o4 implements z01.k0, yb0, mi0, y90, yf0 {
     public final /* synthetic */ int r;
-    public final com.github.service.wrapper.b s;
+    public final com.github.service.wrapper.bShadow s;
     public final v71.v t;
 
-    public o4(com.github.service.wrapper.b bVar, v71.v vVar, int i) {
+    public o4(com.github.service.wrapper.bShadow bVar, v71.v vVar, int i) {
         this.r = i;
         switch (i) {
             case 1:

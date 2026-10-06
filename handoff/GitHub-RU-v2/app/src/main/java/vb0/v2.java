@@ -2926,7 +2926,7 @@ public final class v2 implements y71.j {
                             } else {
                                 r2 = new ArrayList();
                                 for (w80.u3 u3Var : list9) {
-                                    yz0.e8 p = u3Var != null ? sy.q.p(u3Var.c) : null;
+                                    yz0.e8 p = u3Var != null ? sy.q.pShadow(u3Var.c) : null;
                                     if (p != null) {
                                         r2.add(p);
                                     }

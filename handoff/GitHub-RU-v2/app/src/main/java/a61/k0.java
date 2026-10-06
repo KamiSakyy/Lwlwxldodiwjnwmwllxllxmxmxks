@@ -590,7 +590,7 @@ public final class k0 implements y71.j {
         Code decompiled incorrectly, please refer to instructions dump.
     */
     public final Object c(Object obj, a71.c cVar) {
-        j0 j0Var;
+        j0Shadow j0Var;
         int i;
         aq.b bVar;
         int i2;
@@ -669,8 +669,8 @@ public final class k0 implements y71.j {
         int i24;
         switch (this.r) {
             case 0:
-                if (cVar instanceof j0) {
-                    j0Var = (j0) cVar;
+                if (cVar instanceof j0Shadow) {
+                    j0Var = (j0Shadow) cVar;
                     int i25 = j0Var.v;
                     if ((i25 & Integer.MIN_VALUE) != 0) {
                         j0Var.v = i25 - Integer.MIN_VALUE;
@@ -679,7 +679,7 @@ public final class k0 implements y71.j {
                         i = j0Var.v;
                         if (i != 0) {
                             sy.y.j(obj4);
-                            v vVar = new v((String) ((s5.b) obj).d(h0.a));
+                            v vVar = new v((String) ((s5.b) obj).d(h0Shadow.a));
                             j0Var.v = 1;
                             if (this.s.c(vVar, j0Var) == aVar4) {
                                 return aVar4;
@@ -693,7 +693,7 @@ public final class k0 implements y71.j {
                         return w61.a0.a;
                     }
                 }
-                j0Var = new j0(this, cVar);
+                j0Var = new j0Shadow(this, cVar);
                 Object obj42 = j0Var.u;
                 b71.a aVar42 = b71.a.r;
                 i = j0Var.v;
@@ -1609,7 +1609,7 @@ public final class k0 implements y71.j {
                         Object obj33 = sVar.u;
                         b71.a aVar26 = b71.a.r;
                         i22 = sVar.v;
-                        w61.a0 a0Var = w61.a0.a;
+                        w61.a0Shadow a0Var = w61.a0.a;
                         if (i22 != 0) {
                             sy.y.j(obj33);
                             sVar.v = 1;
@@ -1629,7 +1629,7 @@ public final class k0 implements y71.j {
                 Object obj332 = sVar.u;
                 b71.a aVar262 = b71.a.r;
                 i22 = sVar.v;
-                w61.a0 a0Var2 = w61.a0.a;
+                w61.a0Shadow a0Var2 = w61.a0.a;
                 if (i22 != 0) {
                 }
                 return a0Var2;
@@ -1642,7 +1642,7 @@ public final class k0 implements y71.j {
                         Object obj34 = uVar.u;
                         b71.a aVar27 = b71.a.r;
                         i23 = uVar.v;
-                        w61.a0 a0Var3 = w61.a0.a;
+                        w61.a0Shadow a0Var3 = w61.a0.a;
                         if (i23 != 0) {
                             sy.y.j(obj34);
                             uVar.v = 1;
@@ -1662,7 +1662,7 @@ public final class k0 implements y71.j {
                 Object obj342 = uVar.u;
                 b71.a aVar272 = b71.a.r;
                 i23 = uVar.v;
-                w61.a0 a0Var32 = w61.a0.a;
+                w61.a0Shadow a0Var32 = w61.a0.a;
                 if (i23 != 0) {
                 }
                 return a0Var32;
