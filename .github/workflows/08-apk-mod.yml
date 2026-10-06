@@ -3,20 +3,19 @@ name: "08 — APK-мод: получить базовый APK, разобрат�
 # Разведка перед модом: нужен APK приложения (его нельзя собрать из zip-исходника —
 # это результат декомпиляции, ~59 000 ошибок компиляции).
 #
-# Запуск: Actions → Run workflow. Можно передать прямую ссылку на APK,
-# иначе пробуем известные зеркала официального GitHub-клиента.
+# Как отдать базовый APK:
+#   1) положить файл в  handoff/apkmod/base/*.apk  и запушить — workflow возьмёт его;
+#   2) или записать прямую ссылку в  handoff/apkmod/URL.txt  и запушить.
+# Если ни того, ни другого нет — пробуем зеркала официального GitHub-клиента.
 
 on:
   workflow_dispatch:
-    inputs:
-      apk_url:
-        description: "Прямая ссылка на APK (пусто = пробуем зеркала)"
-        required: false
-        default: ""
-      apk_name:
-        description: "Имя файла (необязательно)"
-        required: false
-        default: ""
+  push:
+    branches:
+      - 'arena/**'
+    paths:
+      - '.github/workflows/08-apk-mod.yml'
+      - 'handoff/apkmod/**'
 
 permissions:
   contents: write
@@ -48,16 +47,17 @@ jobs:
           ls -la tools/bin/apktool.jar
           java -jar tools/bin/apktool.jar --version
 
-      - name: "Получить APK"
+      - name: "Получить APK (из репозитория → URL.txt → зеркала)"
         run: |
           set -e
           mkdir -p "$OUT/base"
-          URL="${{ github.event.inputs.apk_url }}"
-          NAME="${{ github.event.inputs.apk_name }}"
-          [ -n "$NAME" ] || NAME="base.apk"
-          if [ -n "$URL" ]; then
-            echo "Скачиваю по ссылке: $URL"
-            curl -sSL --retry 2 -o "$OUT/base/$NAME" "$URL" || true
+          APK=$(ls -S "$OUT/base/"*.apk 2>/dev/null | head -1 || true)
+          if [ -n "$APK" ]; then
+            echo "Уже есть в репозитории: $APK ($(stat -c%s "$APK") байт)"
+          elif [ -f "$OUT/URL.txt" ]; then
+            URL=$(head -1 "$OUT/URL.txt" | tr -d '\r\n')
+            echo "Скачиваю по ссылке из URL.txt: $URL"
+            curl -sSL --retry 2 --max-time 900 -o "$OUT/base/base.apk" "$URL" || true
           else
             for U in \
               "https://d.apkpure.net/b/APK/com.github.android?version=latest" \
@@ -68,7 +68,7 @@ jobs:
               size=$(stat -c%s /tmp/cand.apk 2>/dev/null || echo 0)
               echo "    HTTP $code, $size байт"
               if [ "$code" = "200" ] && [ "$size" -gt 1000000 ] && head -c2 /tmp/cand.apk | grep -q PK; then
-                cp /tmp/cand.apk "$OUT/base/$NAME"; echo "    ✔ подходит"; break
+                cp /tmp/cand.apk "$OUT/base/base.apk"; echo "    ✔ подходит"; break
               fi
             done
           fi
@@ -86,12 +86,10 @@ jobs:
             echo
           } > "$OUT/REPORT.md"
           if [ -z "$APK" ]; then
-            echo "**APK не получен** — зеркала не отдали файл. Нужна прямая ссылка или загрузка APK в репозиторий." >> "$OUT/REPORT.md"
+            echo "**APK не получен** — зеркала не отдали файл. Нужна прямая ссылка (handoff/apkmod/URL.txt) или сам APK в handoff/apkmod/base/." >> "$OUT/REPORT.md"
             exit 0
           fi
           echo "**Файл:** \`$(basename "$APK")\` — $(stat -c%s "$APK") байт" >> "$OUT/REPORT.md"
-          echo >> "$OUT/REPORT.md"
-          unzip -l "$APK" | tail -3 >> "$OUT/REPORT.md" || true
           echo >> "$OUT/REPORT.md"
           echo "## Крупнейшее внутри" >> "$OUT/REPORT.md"
           echo '```' >> "$OUT/REPORT.md"
@@ -103,10 +101,15 @@ jobs:
           unzip -l "$APK" | grep 'lib/' | awk '{print $4}' | cut -d/ -f1-2 | sort | uniq -c | sort -rn | head -20 >> "$OUT/REPORT.md" || true
           echo '```' >> "$OUT/REPORT.md"
           echo >> "$OUT/REPORT.md"
+          echo "## Ресурсы по языкам" >> "$OUT/REPORT.md"
+          echo '```' >> "$OUT/REPORT.md"
+          unzip -l "$APK" | grep -oE 'res/[^/]+' | sort | uniq -c | sort -rn | head -15 >> "$OUT/REPORT.md" || true
+          echo '```' >> "$OUT/REPORT.md"
+          echo >> "$OUT/REPORT.md"
           echo "## Расшифровка (apktool, только ресурсы)" >> "$OUT/REPORT.md"
           echo '```' >> "$OUT/REPORT.md"
           rm -rf /tmp/decoded
-          java -jar tools/bin/apktool.jar d -f -s -o /tmp/decoded "$APK" 2>&1 | tail -5 >> "$OUT/REPORT.md" || true
+          java -jar tools/bin/apktool.jar d -f -s -o /tmp/decoded "$APK" 2>&1 | tail -8 >> "$OUT/REPORT.md" || true
           echo '```' >> "$OUT/REPORT.md"
           if [ -f /tmp/decoded/apktool.yml ]; then
             echo >> "$OUT/REPORT.md"
@@ -115,12 +118,10 @@ jobs:
             head -40 /tmp/decoded/apktool.yml >> "$OUT/REPORT.md"
             echo '```' >> "$OUT/REPORT.md"
             echo >> "$OUT/REPORT.md"
-            echo "## Что можно улучшить (черновик)" >> "$OUT/REPORT.md"
-            echo "- Языки/ресурсы: остаётся только ru+en" >> "$OUT/REPORT.md"
-            echo "- ABI: остаётся только arm64-v8a" >> "$OUT/REPORT.md"
-            echo "- Ассеты редактора файлов: \`assets/webview/*\` (правятся без пересборки кода)" >> "$OUT/REPORT.md"
-            echo "- Тема/цвета: \`res/values*/colors.xml\`, \`styles.xml\`" >> "$OUT/REPORT.md"
-            ls /tmp/decoded/assets 2>/dev/null | head -20 >> "$OUT/REPORT.md" || true
+            echo "## Ассеты (что можно править без пересборки кода)" >> "$OUT/REPORT.md"
+            echo '```' >> "$OUT/REPORT.md"
+            ls /tmp/decoded/assets 2>/dev/null | head -30 >> "$OUT/REPORT.md" || true
+            echo '```' >> "$OUT/REPORT.md"
           fi
           cat "$OUT/REPORT.md"
 
@@ -132,12 +133,13 @@ jobs:
           APK=$(ls -S "$OUT/base/"*.apk 2>/dev/null | head -1 || true)
           if [ -n "$APK" ]; then
             SZ=$(stat -c%s "$APK")
+            echo "APK: $SZ байт"
             if [ "$SZ" -gt 90000000 ]; then
               echo "APK больше 90 МБ — в репозиторий не кладу, оставляю артефактом"
               rm -f "$APK"
             fi
           fi
-          git add -A "$OUT" || true
+          git add -A "$OUT" .gitignore || true
           if git diff --cached --quiet; then echo "нечего коммитить"; exit 0; fi
           git commit -m "apk-mod: разведка базы (отчёт + APK) [skip ci]"
           git push || true
