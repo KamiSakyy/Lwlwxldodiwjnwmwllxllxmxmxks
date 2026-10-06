@@ -20,7 +20,9 @@ HKDF-SHA256) с отдельным ключом на каждое письмо, 
 ```
 
 **Живой APK:** https://github.com/KamiSakyy/Lwlwxldodiwjnwmwllxllxmxmxks/releases/tag/apk-latest → `app-release.apk`
-Последняя сборка (6 октября 2026, версия 3.6, versionCode 10): собрана Actions, лежит в релизе `apk-latest`
+Последняя сборка: 6 октября 2026, версия **3.6** (versionCode 10), 1.74 МБ — собрана Actions,
+лежит в релизе `apk-latest`. Режим по умолчанию — почта без шифрования (вся почта видна и
+отправляется на любой адрес); сквозное шифрование включается в настройках
 (`app-release.apk`). Лимит 15 МБ — с запасом.
 Внутри `lib/arm64-v8a/libmailgram.so` (C++ ядро с криптопримитивами).
 
