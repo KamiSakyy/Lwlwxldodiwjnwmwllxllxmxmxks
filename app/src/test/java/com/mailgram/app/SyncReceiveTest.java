@@ -286,6 +286,14 @@ public class SyncReceiveTest {
         env2.put("c", B64.str(ct2));
         served.put("gm-v2b", MailCrypto.toMailBody(env2.toString()));
 
+        // проба: прямой open второго конверта на текущем состоянии сессии
+        try {
+            MailCrypto.Envelope probe = MailCrypto.open(ctx, served.get("gm-v2b"), ME);
+            assertNotNull("прямой open второго v2 вернул null", probe);
+        } catch (Exception e) {
+            fail("прямой open второго v2 упал (состояние после синка сломано): " + e);
+        }
+
         Msg m2 = awaitMessage(mid2);
         assertNotNull("второе входящее v2 должно расшифроваться в готовой сессии", m2);
         assertEquals("Второе сообщение (сессия установлена)", m2.text);
