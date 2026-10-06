@@ -17,20 +17,25 @@ final class BinaryXmlPatcher {
     private BinaryXmlPatcher() { }
 
     static byte[] patch(byte[] xml, Map<String, String> replacements) throws IOException {
-        return patch(xml, replacements, null, null);
+        return patch(xml, replacements, null, null, null);
     }
 
     static byte[] patch(byte[] xml, Map<String, String> replacements, boolean autoRotate) throws IOException {
-        return patch(xml, replacements, Boolean.valueOf(autoRotate), null);
+        return patch(xml, replacements, Boolean.valueOf(autoRotate), null, null);
     }
 
     static byte[] patch(byte[] xml, Map<String, String> replacements, boolean autoRotate,
                         int versionCode) throws IOException {
-        return patch(xml, replacements, Boolean.valueOf(autoRotate), Integer.valueOf(versionCode));
+        return patch(xml, replacements, Boolean.valueOf(autoRotate), Integer.valueOf(versionCode), null);
+    }
+
+    static byte[] patch(byte[] xml, Map<String, String> replacements, boolean autoRotate,
+                        int versionCode, Integer targetSdkVersion) throws IOException {
+        return patch(xml, replacements, Boolean.valueOf(autoRotate), Integer.valueOf(versionCode), targetSdkVersion);
     }
 
     private static byte[] patch(byte[] xml, Map<String, String> replacements, Boolean autoRotate,
-                                Integer versionCode) throws IOException {
+                                Integer versionCode, Integer targetSdkVersion) throws IOException {
         if (xml == null || xml.length < 8 || u16(xml, 0) != RES_XML_TYPE) {
             throw new IOException("Шаблон APK не содержит бинарный AndroidManifest.xml");
         }
@@ -73,6 +78,9 @@ final class BinaryXmlPatcher {
         }
         if (autoRotate != null) patchScreenOrientation(xml, strings, autoRotate.booleanValue());
         if (versionCode != null) patchIntegerAttribute(xml, strings, "versionCode", versionCode.intValue());
+        if (targetSdkVersion != null) {
+            patchIntegerAttribute(xml, strings, "targetSdkVersion", targetSdkVersion.intValue());
+        }
 
         byte[] newPool = writeUtf8StringPool(strings);
         ByteArrayOutputStream out = new ByteArrayOutputStream(xml.length + newPool.length - poolSize);
@@ -130,6 +138,17 @@ final class BinaryXmlPatcher {
     }
 
     static int readVersionCode(byte[] xml) throws IOException {
+        return readIntegerAttribute(xml, "versionCode");
+    }
+
+    static int readTargetSdkVersion(byte[] xml) throws IOException {
+        return readIntegerAttribute(xml, "targetSdkVersion");
+    }
+
+    private static int readIntegerAttribute(byte[] xml, String name) throws IOException {
+        if (xml == null || xml.length < 8 || u16(xml, 0) != RES_XML_TYPE) {
+            throw new IOException("Некорректный бинарный AndroidManifest.xml");
+        }
         int offset = u16(xml, 2);
         while (offset + 8 <= xml.length) {
             int type = u16(xml, offset);
@@ -137,8 +156,8 @@ final class BinaryXmlPatcher {
             if (size < 8 || offset + size > xml.length) throw new IOException("Повреждённый XML-чанк");
             if (type == RES_STRING_POOL_TYPE) {
                 List<String> strings = readStringPool(xml, offset, size);
-                int attribute = findAndroidAttribute(xml, strings, "versionCode");
-                return checkedInt(u32(xml, attribute + 16), "versionCode");
+                int attribute = findAndroidAttribute(xml, strings, name);
+                return checkedInt(u32(xml, attribute + 16), name);
             }
             offset += size;
         }

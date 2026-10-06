@@ -1,7 +1,6 @@
 package com.webapk.hosttemplate;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
@@ -30,20 +29,38 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import androidx.activity.ComponentActivity;
+import androidx.activity.OnBackPressedCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.core.content.ContextCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
+
 import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-/** Runs the bundled Flask application on loopback and displays it in a locked-down WebView. */
-public final class PythonHostActivity extends Activity {
+/** Runs the packaged Python/WSGI project on loopback and displays it in the Android WebView. */
+public final class PythonHostActivity extends ComponentActivity {
     private static final String FULLSCREEN_META = "com.webapk.studio.FULLSCREEN";
-    private static final int WEB_MEDIA_PERMISSION_REQUEST = 71;
-    private static final int FILE_CHOOSER_REQUEST = 72;
     private final ExecutorService engineExecutor = Executors.newSingleThreadExecutor();
     private FrameLayout root;
     private WebView webView;
@@ -56,11 +73,15 @@ public final class PythonHostActivity extends Activity {
     private volatile String serverUrl;
     private PermissionRequest pendingMediaRequest;
     private ValueCallback<android.net.Uri[]> pendingFileCallback;
+    private ActivityResultLauncher<Intent> fileChooserLauncher;
+    private ActivityResultLauncher<String[]> mediaPermissionLauncher;
     private boolean fullscreen;
 
     @Override
     protected void onCreate(Bundle state) {
         super.onCreate(state);
+        registerActivityResults();
+        registerBackNavigation();
         fullscreen = readFullscreenSetting();
         configureSystemBars(getWindow());
 
@@ -80,6 +101,42 @@ public final class PythonHostActivity extends Activity {
         setContentView(root);
         showLoading("Запускаем локальный Python-сервер…");
         startServer();
+    }
+
+    private void registerBackNavigation() {
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                if (webView != null && webView.canGoBack()) {
+                    webView.goBack();
+                } else {
+                    setEnabled(false);
+                    getOnBackPressedDispatcher().onBackPressed();
+                }
+            }
+        });
+    }
+
+    private void registerActivityResults() {
+        fileChooserLauncher = registerForActivityResult(
+                new ActivityResultContracts.StartActivityForResult(), result -> {
+                    ValueCallback<android.net.Uri[]> callback = pendingFileCallback;
+                    pendingFileCallback = null;
+                    if (callback != null) callback.onReceiveValue(
+                            result.getResultCode() == RESULT_OK
+                                    ? WebChromeClient.FileChooserParams.parseResult(result.getResultCode(), result.getData())
+                                    : null);
+                });
+        mediaPermissionLauncher = registerForActivityResult(
+                new ActivityResultContracts.RequestMultiplePermissions(), result -> {
+                    PermissionRequest request = pendingMediaRequest;
+                    pendingMediaRequest = null;
+                    if (request == null || destroyed || !isLocalServerUrl(request.getOrigin().toString())) return;
+                    boolean granted = !result.isEmpty();
+                    for (Boolean value : result.values()) granted &= Boolean.TRUE.equals(value);
+                    if (granted) request.grant(request.getResources());
+                    else request.deny();
+                });
     }
 
     private void configureWebView() {
@@ -106,7 +163,7 @@ public final class PythonHostActivity extends Activity {
                 if (pendingFileCallback != null) pendingFileCallback.onReceiveValue(null);
                 pendingFileCallback = callback;
                 try {
-                    startActivityForResult(params.createIntent(), FILE_CHOOSER_REQUEST);
+                    fileChooserLauncher.launch(params.createIntent());
                     return true;
                 } catch (Exception ignored) {
                     pendingFileCallback = null;
@@ -211,30 +268,80 @@ public final class PythonHostActivity extends Activity {
             return;
         }
         if (pendingMediaRequest != null) pendingMediaRequest.deny();
+        if (Build.VERSION.SDK_INT < 23) {
+            request.grant(resources);
+            return;
+        }
         pendingMediaRequest = request;
         List<String> missing = new ArrayList<>();
         for (String permission : required) {
-            if (checkSelfPermission(permission) != PackageManager.PERMISSION_GRANTED) missing.add(permission);
+            if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) missing.add(permission);
         }
         if (missing.isEmpty()) {
             pendingMediaRequest = null;
             request.grant(resources);
         } else {
-            requestPermissions(missing.toArray(new String[0]), WEB_MEDIA_PERMISSION_REQUEST);
+            mediaPermissionLauncher.launch(missing.toArray(new String[0]));
         }
     }
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode != WEB_MEDIA_PERMISSION_REQUEST) return;
-        PermissionRequest request = pendingMediaRequest;
-        pendingMediaRequest = null;
-        if (request == null || destroyed || !isLocalServerUrl(request.getOrigin().toString())) return;
-        boolean granted = grantResults.length > 0;
-        for (int result : grantResults) granted &= result == PackageManager.PERMISSION_GRANTED;
-        if (granted) request.grant(request.getResources());
-        else request.deny();
+    private File preparePythonProject() throws IOException {
+        File project = new File(getFilesDir(), "python-project");
+        File versionMarker = new File(getFilesDir(), "python-project-version");
+        String version = installedVersionCode();
+        if (project.isDirectory() && versionMarker.isFile()) {
+            try (BufferedReader reader = new BufferedReader(new InputStreamReader(
+                    new FileInputStream(versionMarker), java.nio.charset.StandardCharsets.UTF_8))) {
+                if (version.equals(reader.readLine())) return project;
+            } catch (Exception ignored) { }
+        }
+        deleteRecursively(project);
+        if (!project.exists() && !project.mkdirs()) throw new IOException("Не удалось создать папку Python-проекта.");
+        copyAssetFolder("python-project", project);
+        try (OutputStream output = new FileOutputStream(versionMarker, false)) {
+            output.write(version.getBytes(java.nio.charset.StandardCharsets.UTF_8));
+        }
+        return project;
+    }
+
+    private String installedVersionCode() {
+        try {
+            android.content.pm.PackageInfo info = getPackageManager().getPackageInfo(getPackageName(), 0);
+            return Build.VERSION.SDK_INT >= 28 ? Long.toString(info.getLongVersionCode()) : Integer.toString(info.versionCode);
+        } catch (PackageManager.NameNotFoundException ignored) {
+            return "0";
+        }
+    }
+
+    private void copyAssetFolder(String assetPath, File destination) throws IOException {
+        String[] children = getAssets().list(assetPath);
+        if (children == null || children.length == 0) {
+            try (InputStream input = new BufferedInputStream(getAssets().open(assetPath));
+                 OutputStream output = new BufferedOutputStream(new FileOutputStream(destination))) {
+                copyStream(input, output);
+            }
+            return;
+        }
+        if (!destination.exists() && !destination.mkdirs()) throw new IOException("Не удалось создать папку Python-проекта.");
+        for (String child : children) {
+            File target = new File(destination, child);
+            copyAssetFolder(assetPath + "/" + child, target);
+        }
+    }
+
+    private void copyStream(InputStream input, OutputStream output) throws IOException {
+        byte[] buffer = new byte[64 * 1024];
+        int read;
+        while ((read = input.read(buffer)) != -1) output.write(buffer, 0, read);
+    }
+
+    private void deleteRecursively(File target) {
+        if (target == null || !target.exists()) return;
+        if (target.isDirectory()) {
+            File[] children = target.listFiles();
+            if (children != null) for (File child : children) deleteRecursively(child);
+        }
+        target.delete();
     }
 
     private void startServer() {
@@ -242,9 +349,11 @@ public final class PythonHostActivity extends Activity {
         engineExecutor.execute(() -> {
             try {
                 if (destroyed) return;
+                File pythonProject = preparePythonProject();
                 if (!Python.isStarted()) Python.start(new AndroidPlatform(getApplicationContext()));
                 PyObject module = Python.getInstance().getModule("engine");
-                int port = module.callAttr("start", getFilesDir().getAbsolutePath()).toInt();
+                int port = module.callAttr("start", getFilesDir().getAbsolutePath(),
+                        pythonProject.getAbsolutePath()).toInt();
                 if (port < 1 || port > 65535) throw new IllegalStateException("Python engine returned an invalid port.");
                 engineModule = module;
                 if (destroyed) {
@@ -411,29 +520,25 @@ public final class PythonHostActivity extends Activity {
     }
 
     private void configureSystemBars(Window window) {
-        if (Build.VERSION.SDK_INT >= 30) window.setDecorFitsSystemWindows(false);
+        WindowCompat.setDecorFitsSystemWindows(window, false);
         window.setStatusBarColor(Color.TRANSPARENT);
         window.setNavigationBarColor(Color.TRANSPARENT);
         window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
-        window.getDecorView().setSystemUiVisibility(systemUiFlags());
-    }
-
-    private int systemUiFlags() {
-        int flags = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
+        WindowInsetsControllerCompat bars = WindowCompat.getInsetsController(window, window.getDecorView());
+        bars.setAppearanceLightStatusBars(false);
+        bars.setAppearanceLightNavigationBars(false);
         if (fullscreen) {
-            flags |= View.SYSTEM_UI_FLAG_FULLSCREEN
-                    | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                    | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
+            bars.setSystemBarsBehavior(WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
+            bars.hide(WindowInsetsCompat.Type.systemBars());
+        } else {
+            bars.show(WindowInsetsCompat.Type.systemBars());
         }
-        return flags;
     }
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        if (hasFocus && fullscreen) getWindow().getDecorView().setSystemUiVisibility(systemUiFlags());
+        if (hasFocus && fullscreen) configureSystemBars(getWindow());
     }
 
     private void stopPythonServer() {
@@ -447,24 +552,6 @@ public final class PythonHostActivity extends Activity {
                 });
             } catch (RuntimeException ignored) { }
         }
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == FILE_CHOOSER_REQUEST) {
-            ValueCallback<android.net.Uri[]> callback = pendingFileCallback;
-            pendingFileCallback = null;
-            if (callback != null) callback.onReceiveValue(
-                    resultCode == RESULT_OK ? WebChromeClient.FileChooserParams.parseResult(resultCode, data) : null);
-            return;
-        }
-        super.onActivityResult(requestCode, resultCode, data);
-    }
-
-    @Override
-    public void onBackPressed() {
-        if (webView != null && webView.canGoBack()) webView.goBack();
-        else super.onBackPressed();
     }
 
     @Override

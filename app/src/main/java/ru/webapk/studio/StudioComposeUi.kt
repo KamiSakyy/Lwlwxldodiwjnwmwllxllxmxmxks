@@ -96,10 +96,14 @@ class StudioComposeUi(private val activity: MainActivity) {
     private var buildProgress by mutableStateOf(0f)
     private var buildProgressMessage by mutableStateOf("")
     private var pythonRuntimeSelected by mutableStateOf(preferences.getBoolean("python_server_mode", false))
+    private var pythonProjectSummaryState by mutableStateOf(
+        preferences.getString("draft_python_project_summary", "Python-проект не выбран") ?: "Python-проект не выбран"
+    )
     private var packageErrorState by mutableStateOf<String?>(null)
     private var versionErrorState by mutableStateOf<String?>(null)
     private val projectReady: Boolean
-        get() = pythonRuntimeSelected || projectSummaryState != "Файл ещё не выбран"
+        get() = if (pythonRuntimeSelected) pythonProjectSummaryState != "Python-проект не выбран"
+        else projectSummaryState != "Файл ещё не выбран"
 
     fun install(view: ComposeView) {
         view.setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
@@ -116,6 +120,7 @@ class StudioComposeUi(private val activity: MainActivity) {
     fun getAutoRotateValue(): Boolean = autoRotate
     fun getFullscreenValue(): Boolean = fullscreen
     fun getProjectSummaryValue(): String = projectSummaryState
+    fun getPythonProjectSummaryValue(): String = pythonProjectSummaryState
     fun getPythonServerMode(): Boolean = pythonRuntimeSelected
 
     fun setPythonServerMode(value: Boolean) {
@@ -123,7 +128,13 @@ class StudioComposeUi(private val activity: MainActivity) {
         pythonRuntimeSelected = value
         preferences.edit().putBoolean("python_server_mode", value).apply()
         canSave = false
-        statusMessage = if (value) "Встроенный Python/Flask режим выбран" else "Режим статического сайта выбран"
+        statusMessage = if (value) "Импортируемый Python/Flask режим выбран" else "Режим статического сайта выбран"
+    }
+
+    fun setPythonProjectSummary(value: String) {
+        pythonProjectSummaryState = value
+        preferences.edit().putString("draft_python_project_summary", value).apply()
+        canSave = false
     }
 
     fun setAppNameValue(value: String) {
@@ -238,21 +249,38 @@ class StudioComposeUi(private val activity: MainActivity) {
                                 shape = RoundedCornerShape(14.dp),
                                 color = Raised
                             ) {
-                                Column(modifier = Modifier.padding(13.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
+                                Column(modifier = Modifier.padding(13.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                                     androidx.compose.material3.Text(
-                                        "Python 3.10 + Flask + requests",
+                                        "Python 3.10 + Flask · Android API 22–36",
                                         color = Mint,
                                         fontSize = 13.sp,
                                         fontWeight = FontWeight.Bold
                                     )
                                     androidx.compose.material3.Text(
-                                        "В APK встроен server (13).py; WebView открывает его локальный интерфейс.",
+                                        "Проект: $pythonProjectSummaryState",
                                         color = Ink,
                                         fontSize = 12.sp,
                                         lineHeight = 17.sp
                                     )
+                                    Row(verticalAlignment = Alignment.CenterVertically) {
+                                        OutlinedButton(
+                                            onClick = { activity.openPythonProjectPicker() },
+                                            enabled = !isBusy,
+                                            modifier = Modifier.weight(1f).height(44.dp),
+                                            shape = RoundedCornerShape(13.dp),
+                                            border = BorderStroke(1.dp, Outline),
+                                            colors = ButtonDefaults.outlinedButtonColors(contentColor = Ink)
+                                        ) {
+                                            androidx.compose.material3.Text("Импорт .py / ZIP", fontSize = 12.sp)
+                                        }
+                                        if (pythonProjectSummaryState != "Python-проект не выбран") {
+                                            TextButton(onClick = { activity.clearPythonProject() }, enabled = !isBusy) {
+                                                androidx.compose.material3.Text("Удалить", color = Error, fontSize = 11.sp)
+                                            }
+                                        }
+                                    }
                                     androidx.compose.material3.Text(
-                                        "Cloud/Firebase отключены. Android 7.0+ (API 24); Flask слушает только 127.0.0.1. VK требует интернет. APK будет крупнее и дольше запускаться.",
+                                        "WSGI: app.py / wsgi.py / server.py или webapk.json. requirements.txt не устанавливается автоматически: добавьте Android-совместимые .whl в wheels/ либо код в vendor/.",
                                         color = Muted,
                                         fontSize = 11.sp,
                                         lineHeight = 16.sp

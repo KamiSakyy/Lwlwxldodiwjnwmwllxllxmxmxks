@@ -55,7 +55,7 @@ jobs:
       - name: Установить пакеты Android SDK
         run: |
           yes | sdkmanager --licenses >/dev/null || true
-          sdkmanager "platforms;android-36" "build-tools;36.0.0" "platform-tools" "ndk;27.2.12479018" "cmake;3.22.1"
+          sdkmanager "platforms;android-33" "platforms;android-36" "build-tools;33.0.2" "build-tools;36.0.0" "platform-tools" "ndk;27.2.12479018" "cmake;3.22.1"
 
       - name: Собрать APK конвертера (release)
         shell: bash
@@ -80,7 +80,14 @@ jobs:
 
       - name: Проверить шифрование сайта и ARM APK
         shell: bash
-        run: bash scripts/test-runtime-apk.sh "$ANDROID_HOME/build-tools/36.0.0" template/build/outputs/apk/release/template-release-unsigned.apk "$RUNNER_TEMP/webapk-runtime-smoke" app/build/outputs/apk/release/app-release.apk pythonTemplate/build/outputs/apk/release/pythonTemplate-release-unsigned.apk
+        run: |
+          set -euo pipefail
+          PYTHON_TEMPLATE_APK="$(find pythonTemplate/build/outputs/apk/release -maxdepth 1 -type f -name '*.apk' -print -quit)"
+          if [ -z "$PYTHON_TEMPLATE_APK" ]; then
+            echo "The isolated Chaquopy build did not produce a release APK." >&2
+            exit 1
+          fi
+          bash scripts/test-runtime-apk.sh "$ANDROID_HOME/build-tools/36.0.0" template/build/outputs/apk/release/template-release-unsigned.apk "$RUNNER_TEMP/webapk-runtime-smoke" app/build/outputs/apk/release/app-release.apk "$PYTHON_TEMPLATE_APK"
 
       - name: Показать этап сбоя smoke-теста
         if: failure()

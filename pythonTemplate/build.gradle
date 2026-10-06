@@ -5,16 +5,26 @@ plugins {
 
 android {
     namespace 'com.webapk.hosttemplate'
-    compileSdk 36
+    // Chaquopy 14.0.2 supports AGP 8.0, so this isolated template uses its API 33 toolchain.
+    // The generated APK manifest is patched to target API 36 by the on-device packager.
+    compileSdk 33
+    buildToolsVersion '33.0.2'
 
     defaultConfig {
         applicationId 'com.webapk.hosttemplate'
-        minSdk 24
-        targetSdk 36
+        minSdk 22
+        targetSdk 33
         versionCode 1
         versionName '1.0'
         ndk {
             abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
+        python {
+            version '3.10'
+            pip {
+                install 'Flask==3.1.1'
+                install 'requests==2.32.4'
+            }
         }
     }
 
@@ -32,12 +42,7 @@ android {
     }
 }
 
-chaquopy {
-    defaultConfig {
-        version = '3.10'
-        pip {
-            install('Flask==3.1.1')
-            install('requests==2.32.4')
-        }
-    }
+dependencies {
+    implementation 'androidx.activity:activity:1.7.2'
+    implementation 'androidx.core:core:1.9.0'
 }

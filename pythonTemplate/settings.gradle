@@ -5,6 +5,10 @@ pluginManagement {
         maven { url = uri('https://chaquo.com/maven') }
         gradlePluginPortal()
     }
+    plugins {
+        id 'com.android.application' version '8.0.2'
+        id 'com.chaquo.python' version '14.0.2'
+    }
 }
 
 dependencyResolutionManagement {
@@ -15,5 +19,4 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = 'WebApkStudio'
-include ':app', ':template'
+rootProject.name = 'pythonTemplate'

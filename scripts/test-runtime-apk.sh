@@ -112,12 +112,20 @@ grep -F "android.permission.RECORD_AUDIO" <<< "$PYTHON_PERMISSIONS"
 PYTHON_MANIFEST_TREE="$("$BUILD_TOOLS/aapt" dump xmltree "$PYTHON_TEMPLATE_APK" AndroidManifest.xml)"
 grep -F "com.webapk.hosttemplate.PythonHostActivity" <<< "$PYTHON_MANIFEST_TREE"
 grep -F "android:networkSecurityConfig" <<< "$PYTHON_MANIFEST_TREE"
+PYTHON_BADGING="$("$BUILD_TOOLS/aapt" dump badging "$PYTHON_TEMPLATE_APK")"
+grep -F "sdkVersion:'22'" <<< "$PYTHON_BADGING"
+grep -F "targetSdkVersion:'33'" <<< "$PYTHON_BADGING"
 PYTHONPYCACHEPREFIX="$TEMP_DIR/python-bytecode" python3 -m py_compile \
   "$ROOT/pythonTemplate/src/main/python/engine.py" \
   "$ROOT/pythonTemplate/src/main/python/cloud.py" \
   "$ROOT/pythonTemplate/src/main/python/server.py"
 grep -F 'make_server("127.0.0.1", 0' "$ROOT/pythonTemplate/src/main/python/engine.py"
-grep -F 'FIREBASE_DB_URL"] = ""' "$ROOT/pythonTemplate/src/main/python/engine.py"
+grep -F "FIREBASE_DB_URL = ''" "$ROOT/pythonTemplate/src/main/python/server.py"
+grep -F "app.config['LOCAL_ENGINE_TOKEN']" "$ROOT/pythonTemplate/src/main/python/server.py"
+if grep -F 'FIREBASE_DB_URL' "$ROOT/pythonTemplate/src/main/python/engine.py"; then
+  echo "Generic Python engine must not override environment settings for imported projects" >&2
+  exit 1
+fi
 grep -F 'Cloud storage is disabled' "$ROOT/pythonTemplate/src/main/python/cloud.py"
 stage "verify native libraries in generated site APK"
 check_native_libraries "Generated site APK" "$SIGNED_ENTRIES"
@@ -175,4 +183,6 @@ grep -F "android:roundIcon" <<< "$TEMPLATE_MANIFEST_TREE"
 grep -F "android:extractNativeLibs" <<< "$TEMPLATE_MANIFEST_TREE"
 grep -F "package: name='com.smoke.offline'" <<< "$BADGING"
 grep -F "versionCode='42'" <<< "$BADGING"
+grep -F "sdkVersion:'22'" <<< "$BADGING"
+grep -F "targetSdkVersion:'36'" <<< "$BADGING"
 grep -F "application-label:'Offline smoke test'" <<< "$BADGING"

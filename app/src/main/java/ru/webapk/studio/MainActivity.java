@@ -17,6 +17,8 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
 import androidx.compose.ui.platform.ComposeView;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.core.content.FileProvider;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
@@ -44,25 +46,35 @@ public final class MainActivity extends ComponentActivity {
     private static final int PICK_ZIP = 11;
     private static final int PICK_ICON = 12;
     private static final int SAVE_APK = 13;
+    private static final int PICK_PYTHON_PROJECT = 16;
     private static final int REQUEST_INSTALL_SOURCE = 14;
     private static final int INSTALL_APK = 15;
     private static final int MAX_IMPORT_FILES = 10000;
+    private static final long MAX_PYTHON_PROJECT_BYTES = 1024L * 1024L * 1024L;
     private static final ExecutorService IO = Executors.newSingleThreadExecutor();
     private StudioComposeUi composeUi;
     private volatile File siteRoot;
+    private volatile File pythonProjectRoot;
     private volatile File iconFile;
     private volatile File generatedApk;
+    private ActivityResultLauncher<Intent> activityResultLauncher;
+    private int pendingActivityRequestCode = -1;
     private boolean pendingInstallAfterSourceAccess;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        activityResultLauncher = registerForActivityResult(
+                new ActivityResultContracts.StartActivityForResult(),
+                result -> handleActivityResult(pendingActivityRequestCode, result.getResultCode(), result.getData()));
         enableEdgeToEdge();
         composeUi = new StudioComposeUi(this);
 
         if (savedInstanceState != null) {
             pendingInstallAfterSourceAccess = savedInstanceState.getBoolean("pendingInstallAfterSourceAccess", false);
+            pendingActivityRequestCode = savedInstanceState.getInt("pendingActivityRequestCode", -1);
             siteRoot = existing(savedInstanceState.getString("siteRoot"));
+            pythonProjectRoot = existing(savedInstanceState.getString("pythonProjectRoot"));
             iconFile = existing(savedInstanceState.getString("iconFile"));
             generatedApk = existing(savedInstanceState.getString("generatedApk"));
             composeUi.setAppNameValue(savedInstanceState.getString("appName", composeUi.getAppNameValue()));
@@ -72,9 +84,11 @@ public final class MainActivity extends ComponentActivity {
             composeUi.setFullscreenValue(savedInstanceState.getBoolean("fullscreen", composeUi.getFullscreenValue()));
         } else {
             siteRoot = restoreSiteRoot();
+            pythonProjectRoot = restorePythonProjectRoot();
             iconFile = existing(new File(getFilesDir(), "workspace/custom-icon.png").getAbsolutePath());
         }
         if (siteRoot == null) siteRoot = restoreSiteRoot();
+        if (pythonProjectRoot == null) pythonProjectRoot = restorePythonProjectRoot();
         if (iconFile == null) {
             iconFile = existing(new File(getFilesDir(), "workspace/custom-icon.png").getAbsolutePath());
         }
@@ -94,9 +108,11 @@ public final class MainActivity extends ComponentActivity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putString("siteRoot", siteRoot == null ? null : siteRoot.getAbsolutePath());
+        outState.putString("pythonProjectRoot", pythonProjectRoot == null ? null : pythonProjectRoot.getAbsolutePath());
         outState.putString("iconFile", iconFile == null ? null : iconFile.getAbsolutePath());
         outState.putString("generatedApk", generatedApk == null ? null : generatedApk.getAbsolutePath());
         outState.putBoolean("pendingInstallAfterSourceAccess", pendingInstallAfterSourceAccess);
+        outState.putInt("pendingActivityRequestCode", pendingActivityRequestCode);
         if (composeUi != null) {
             outState.putString("appName", composeUi.getAppNameValue());
             outState.putString("packageId", composeUi.getPackageIdValue());
@@ -126,13 +142,18 @@ public final class MainActivity extends ComponentActivity {
                 "application/octet-stream"});
     }
 
+    void openPythonProjectPicker() {
+        openDocument(PICK_PYTHON_PROJECT, new String[]{"application/zip", "application/x-zip-compressed",
+                "application/octet-stream", "text/x-python", "text/plain"});
+    }
+
     private void openDocument(int request, String[] mimeTypes) {
         Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         intent.addCategory(Intent.CATEGORY_OPENABLE);
         intent.setType("*/*");
         intent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes);
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-        startActivityForResult(intent, request);
+        launchActivityForResult(intent, request);
     }
 
     void openIconPicker() {
@@ -141,13 +162,13 @@ public final class MainActivity extends ComponentActivity {
         intent.setType("image/*");
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         try {
-            startActivityForResult(Intent.createChooser(intent, "Выберите фото из галереи"), PICK_ICON);
+            launchActivityForResult(Intent.createChooser(intent, "Выберите фото из галереи"), PICK_ICON);
         } catch (Exception unavailable) {
             Intent fallback = new Intent(Intent.ACTION_OPEN_DOCUMENT);
             fallback.addCategory(Intent.CATEGORY_OPENABLE);
             fallback.setType("image/*");
             fallback.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-            startActivityForResult(fallback, PICK_ICON);
+            launchActivityForResult(fallback, PICK_ICON);
         }
     }
 
@@ -177,6 +198,22 @@ public final class MainActivity extends ComponentActivity {
         });
     }
 
+    void clearPythonProject() {
+        pythonProjectRoot = null;
+        generatedApk = null;
+        getPreferences(MODE_PRIVATE).edit().remove("pythonProjectRoot").apply();
+        composeUi.setPythonProjectSummary("Python-проект не выбран");
+        composeUi.setSaveAvailable(false);
+        IO.execute(() -> {
+            try {
+                clearDirectory(new File(getFilesDir(), "workspace/python-project"));
+                runOnUiThread(() -> setStatus("Python-проект удалён с устройства", false));
+            } catch (Exception error) {
+                showFailure("Не удалось очистить Python-проект: " + error.getMessage());
+            }
+        });
+    }
+
     private void beginProjectImport() {
         siteRoot = null;
         generatedApk = null;
@@ -185,9 +222,14 @@ public final class MainActivity extends ComponentActivity {
         composeUi.setSaveAvailable(false);
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
+    private void launchActivityForResult(Intent intent, int requestCode) {
+        pendingActivityRequestCode = requestCode;
+        if (activityResultLauncher == null) throw new IllegalStateException("Android result launcher is not ready.");
+        activityResultLauncher.launch(intent);
+    }
+
+    private void handleActivityResult(int requestCode, int resultCode, Intent data) {
+        pendingActivityRequestCode = -1;
         if (requestCode == REQUEST_INSTALL_SOURCE) {
             boolean retry = pendingInstallAfterSourceAccess;
             pendingInstallAfterSourceAccess = false;
@@ -215,6 +257,7 @@ public final class MainActivity extends ComponentActivity {
         if (uri == null) return;
         if (requestCode == PICK_HTML) importHtml(uri);
         else if (requestCode == PICK_ZIP) importZip(uri);
+        else if (requestCode == PICK_PYTHON_PROJECT) importPythonProject(uri);
         else if (requestCode == PICK_ICON) importIcon(uri);
         else if (requestCode == SAVE_APK) saveApk(uri);
     }
@@ -342,6 +385,163 @@ public final class MainActivity extends ComponentActivity {
         });
     }
 
+    private void importPythonProject(Uri uri) {
+        pythonProjectRoot = null;
+        generatedApk = null;
+        composeUi.setPythonProjectSummary("Импорт Python-проекта…");
+        composeUi.setSaveAvailable(false);
+        setStatus("Импортирую Python/Flask проект офлайн…", true);
+        IO.execute(() -> {
+            File workspaceRoot = new File(getFilesDir(), "workspace/python-project");
+            File root = workspaceRoot;
+            try {
+                clearDirectory(workspaceRoot);
+                if (!root.exists() && !root.mkdirs()) throw new IOException("Не удалось создать папку проекта.");
+                String displayName = getDisplayName(uri);
+                if (displayName.toLowerCase(java.util.Locale.ROOT).endsWith(".py")) {
+                    File target = new File(root, "app.py");
+                    InputStream opened = getContentResolver().openInputStream(uri);
+                    if (opened == null) throw new IOException("Не удалось открыть Python-файл.");
+                    long total;
+                    try (InputStream input = new BufferedInputStream(opened);
+                         OutputStream output = new BufferedOutputStream(new FileOutputStream(target))) {
+                        total = copyStreamLimited(input, output, MAX_PYTHON_PROJECT_BYTES);
+                    }
+                    if (total == 0) throw new IOException("Python-файл пуст.");
+                    if (total > MAX_PYTHON_PROJECT_BYTES) throw new IOException("Python-проект слишком большой.");
+                } else if (displayName.toLowerCase(java.util.Locale.ROOT).endsWith(".zip")) {
+                    int files = 0;
+                    int entries = 0;
+                    long total = 0;
+                    InputStream opened = getContentResolver().openInputStream(uri);
+                    if (opened == null) throw new IOException("Не удалось открыть ZIP-проект.");
+                    try (ZipInputStream zip = new ZipInputStream(new BufferedInputStream(opened))) {
+                        ZipEntry entry;
+                        byte[] buffer = new byte[16 * 1024];
+                        while ((entry = zip.getNextEntry()) != null) {
+                            if (++entries > MAX_IMPORT_FILES * 2) {
+                                throw new IOException("В ZIP слишком много файловых и папочных записей.");
+                            }
+                            String relative = normalizeZipPath(entry.getName());
+                            if (relative.isEmpty() || isPythonArchiveMetadata(relative)) {
+                                zip.closeEntry();
+                                continue;
+                            }
+                            File target = new File(root, relative);
+                            String basePath = root.getCanonicalPath();
+                            String targetPath = target.getCanonicalPath();
+                            if (!targetPath.startsWith(basePath + File.separator)) {
+                                throw new IOException("В ZIP найден путь за пределами проекта.");
+                            }
+                            if (entry.isDirectory()) {
+                                if (!target.exists() && !target.mkdirs()) throw new IOException("Не удалось создать папку проекта.");
+                            } else {
+                                File parent = target.getParentFile();
+                                if (parent != null && !parent.exists() && !parent.mkdirs()) {
+                                    throw new IOException("Не удалось распаковать папку проекта.");
+                                }
+                                if (target.exists()) throw new IOException("В ZIP повторяется путь: " + relative);
+                                try (OutputStream output = new BufferedOutputStream(new FileOutputStream(target))) {
+                                    int read;
+                                    while ((read = zip.read(buffer)) != -1) {
+                                        total += read;
+                                        if (total > MAX_PYTHON_PROJECT_BYTES) {
+                                            throw new IOException("Распакованный Python-проект превышает 1 ГБ.");
+                                        }
+                                        output.write(buffer, 0, read);
+                                    }
+                                }
+                                files++;
+                                if (files > MAX_IMPORT_FILES) throw new IOException("В ZIP больше 10 000 файлов.");
+                            }
+                            zip.closeEntry();
+                        }
+                    }
+                    root = selectPythonProjectRoot(root);
+                    if (!containsPythonSource(root)) {
+                        throw new IOException("В архиве не найден Python-файл (.py). Проверьте содержимое ZIP.");
+                    }
+                } else {
+                    throw new IOException("Выберите Python-файл .py или ZIP проекта.");
+                }
+
+                pythonProjectRoot = root;
+                getPreferences(MODE_PRIVATE).edit().putString("pythonProjectRoot", root.getAbsolutePath()).apply();
+                generatedApk = null;
+                File finalRoot = root;
+                runOnUiThread(() -> {
+                    composeUi.setPythonProjectSummary("Python · " + countFiles(finalRoot) + " файлов");
+                    setStatus("Python-проект импортирован без сети", false);
+                });
+            } catch (Exception error) {
+                clearDirectory(workspaceRoot);
+                pythonProjectRoot = null;
+                getPreferences(MODE_PRIVATE).edit().remove("pythonProjectRoot").apply();
+                showFailure("Не удалось импортировать Python-проект: " + error.getMessage());
+                runOnUiThread(() -> composeUi.setPythonProjectSummary("Python-проект не выбран"));
+            }
+        });
+    }
+
+    private String getDisplayName(Uri uri) {
+        try (android.database.Cursor cursor = getContentResolver().query(uri,
+                new String[]{android.provider.OpenableColumns.DISPLAY_NAME}, null, null, null)) {
+            if (cursor != null && cursor.moveToFirst()) {
+                int index = cursor.getColumnIndex(android.provider.OpenableColumns.DISPLAY_NAME);
+                if (index >= 0) return cursor.getString(index);
+            }
+        } catch (Exception ignored) { }
+        return uri.getLastPathSegment() == null ? "project.zip" : uri.getLastPathSegment();
+    }
+
+    private File selectPythonProjectRoot(File root) {
+        File selected = root;
+        while (true) {
+            File[] children = selected.listFiles();
+            if (children == null) return selected;
+            File onlyDirectory = null;
+            boolean hasOtherContent = false;
+            for (File child : children) {
+                if (isPythonArchiveMetadata(child.getName())) continue;
+                if (!child.isDirectory() || onlyDirectory != null) {
+                    hasOtherContent = true;
+                    break;
+                }
+                onlyDirectory = child;
+            }
+            if (hasOtherContent || onlyDirectory == null) return selected;
+            selected = onlyDirectory;
+        }
+    }
+
+    private boolean isPythonArchiveMetadata(String relative) {
+        String[] parts = relative.replace('\\', '/').split("/");
+        for (String part : parts) {
+            if ("__MACOSX".equals(part) || ".DS_Store".equals(part) || "Thumbs.db".equalsIgnoreCase(part)
+                    || part.startsWith("._")) return true;
+        }
+        return false;
+    }
+
+    private boolean containsPythonSource(File root) {
+        File[] children = root.listFiles();
+        if (children == null) return false;
+        for (File child : children) {
+            if (isPythonArchiveMetadata(child.getName())) continue;
+            if (child.isFile() && child.getName().toLowerCase(java.util.Locale.ROOT).endsWith(".py")) return true;
+            if (child.isDirectory() && containsPythonSource(child)) return true;
+        }
+        return false;
+    }
+
+    private int countFiles(File root) {
+        File[] children = root.listFiles();
+        if (children == null) return 0;
+        int count = 0;
+        for (File child : children) count += child.isDirectory() ? countFiles(child) : 1;
+        return count;
+    }
+
     private void importIcon(Uri uri) {
         setStatus("Подготавливаю иконку…", true);
         IO.execute(() -> {
@@ -435,8 +635,13 @@ public final class MainActivity extends ComponentActivity {
         hideKeyboard();
         boolean pythonServer = composeUi.getPythonServerMode();
         File selectedSite = siteRoot;
-        if (pythonServer && Build.VERSION.SDK_INT < 24) {
-            Toast.makeText(this, "Python runtime требует Android 7.0 (API 24) или новее", Toast.LENGTH_LONG).show();
+        File selectedPythonProject = pythonProjectRoot;
+        if (pythonServer && (selectedPythonProject == null || !selectedPythonProject.isDirectory())) {
+            Toast.makeText(this, "Сначала импортируйте Python/Flask проект ZIP или .py", Toast.LENGTH_LONG).show();
+            return;
+        }
+        if (pythonServer && Build.VERSION.SDK_INT < 22) {
+            Toast.makeText(this, "Python runtime требует Android API 22 или новее", Toast.LENGTH_LONG).show();
             return;
         }
         if (!pythonServer && (selectedSite == null || !new File(selectedSite, "index.html").isFile())) {
@@ -476,7 +681,7 @@ public final class MainActivity extends ComponentActivity {
         IO.execute(() -> {
             try {
                 File apk = ApkBuilder.build(this, selectedSite, packageName, appName, selectedIcon,
-                        autoRotate, fullscreen, versionCode, pythonServer,
+                        autoRotate, fullscreen, versionCode, pythonServer, selectedPythonProject,
                         (percent, message) -> runOnUiThread(() ->
                                 composeUi.setBuildProgress(percent / 100f, message)));
                 generatedApk = apk;
@@ -508,7 +713,7 @@ public final class MainActivity extends ComponentActivity {
             try {
                 Intent settings = new Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES,
                         Uri.parse("package:" + getPackageName()));
-                startActivityForResult(settings, REQUEST_INSTALL_SOURCE);
+                launchActivityForResult(settings, REQUEST_INSTALL_SOURCE);
             } catch (Exception error) {
                 pendingInstallAfterSourceAccess = false;
                 showFailure("Не удалось открыть разрешение на установку APK: " + error.getMessage());
@@ -522,7 +727,7 @@ public final class MainActivity extends ComponentActivity {
             install.setDataAndType(apkUri, "application/vnd.android.package-archive");
             install.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             install.putExtra(Intent.EXTRA_RETURN_RESULT, true);
-            startActivityForResult(install, INSTALL_APK);
+            launchActivityForResult(install, INSTALL_APK);
             setStatus("Откройте системный установщик и подтвердите установку", false);
         } catch (Exception error) {
             showFailure("Не удалось запустить установку: " + error.getMessage());
@@ -542,7 +747,7 @@ public final class MainActivity extends ComponentActivity {
         intent.addCategory(Intent.CATEGORY_OPENABLE);
         intent.setType("application/vnd.android.package-archive");
         intent.putExtra(Intent.EXTRA_TITLE, title + ".apk");
-        startActivityForResult(intent, SAVE_APK);
+        launchActivityForResult(intent, SAVE_APK);
     }
 
     private void saveApk(Uri destination) {
@@ -577,7 +782,20 @@ public final class MainActivity extends ComponentActivity {
         return restored != null && new File(restored, "index.html").isFile() ? restored : null;
     }
 
+    private File restorePythonProjectRoot() {
+        String savedPath = getPreferences(MODE_PRIVATE).getString("pythonProjectRoot", null);
+        File restored = existing(savedPath);
+        if (restored == null) restored = existing(new File(getFilesDir(), "workspace/python-project").getAbsolutePath());
+        return restored != null && restored.isDirectory() ? restored : null;
+    }
+
     private void refreshImportedFiles() {
+        if (pythonProjectRoot != null && pythonProjectRoot.isDirectory()) {
+            composeUi.setPythonProjectSummary("Python · проект восстановлен");
+        } else {
+            pythonProjectRoot = null;
+            composeUi.setPythonProjectSummary("Python-проект не выбран");
+        }
         if (siteRoot != null && new File(siteRoot, "index.html").isFile()) {
             composeUi.setProjectSummary("Проект восстановлен · index.html");
         } else {
@@ -636,6 +854,18 @@ public final class MainActivity extends ComponentActivity {
         int read;
         long total = 0;
         while ((read = input.read(buffer)) != -1) {
+            total += read;
+            output.write(buffer, 0, read);
+        }
+        return total;
+    }
+
+    private long copyStreamLimited(InputStream input, OutputStream output, long maxBytes) throws IOException {
+        byte[] buffer = new byte[64 * 1024];
+        int read;
+        long total = 0;
+        while ((read = input.read(buffer)) != -1) {
+            if (read > maxBytes - total) throw new IOException("Python-файл превышает лимит 1 ГБ.");
             total += read;
             output.write(buffer, 0, read);
         }

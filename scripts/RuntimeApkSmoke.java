@@ -64,17 +64,19 @@ public final class RuntimeApkSmoke {
                     replacements.put(OLD_PACKAGE, NEW_PACKAGE);
                     replacements.put("__WEBAPK_LABEL__", "Offline smoke test");
                     replacements.put("__WEBAPK_FULLSCREEN__", "false");
-                    byte[] portraitManifest = BinaryXmlPatcher.patch(contents, replacements, false, 41);
+                    byte[] portraitManifest = BinaryXmlPatcher.patch(contents, replacements, false, 41, 33);
                     if (BinaryXmlPatcher.readScreenOrientation(portraitManifest) != 1
                             || BinaryXmlPatcher.readVersionCode(portraitManifest) != 41
+                            || BinaryXmlPatcher.readTargetSdkVersion(portraitManifest) != 33
                             || !"false".equals(BinaryXmlPatcher.readMetaDataString(
                                     portraitManifest, "com.webapk.studio.FULLSCREEN"))) {
                         throw new IOException("Portrait/version/non-fullscreen manifest smoke check failed");
                     }
                     replacements.put("__WEBAPK_FULLSCREEN__", "true");
-                    contents = BinaryXmlPatcher.patch(contents, replacements, true, 42);
+                    contents = BinaryXmlPatcher.patch(contents, replacements, true, 42, 36);
                     if (BinaryXmlPatcher.readScreenOrientation(contents) != 4
                             || BinaryXmlPatcher.readVersionCode(contents) != 42
+                            || BinaryXmlPatcher.readTargetSdkVersion(contents) != 36
                             || !"true".equals(BinaryXmlPatcher.readMetaDataString(
                                     contents, "com.webapk.studio.FULLSCREEN"))) {
                         throw new IOException("Auto-rotation/version/fullscreen manifest smoke check failed");
@@ -156,7 +158,7 @@ public final class RuntimeApkSmoke {
         if (unsigned.exists() && !unsigned.delete()) throw new IOException("Cannot remove unsigned test APK");
         System.out.println("Runtime APK smoke test passed: " + signed.length()
                 + " bytes; encrypted site round-trip, wrong-key rejection, path traversal, "
-                + "five icon densities and both fullscreen settings verified; "
+                + "five icon densities, API 33/36 target patching and both fullscreen settings verified; "
                 + "stable handoff key reused for successive APKs");
     }
 

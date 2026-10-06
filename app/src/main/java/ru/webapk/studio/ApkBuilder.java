@@ -93,6 +93,13 @@ final class ApkBuilder {
     static File build(Context context, File siteRoot, String packageName, String appLabel, File iconFile,
                       boolean autoRotate, boolean fullscreen, int versionCode,
                       boolean pythonServer, ProgressListener progressListener) throws Exception {
+        return build(context, siteRoot, packageName, appLabel, iconFile, autoRotate, fullscreen,
+                versionCode, pythonServer, null, progressListener);
+    }
+
+    static File build(Context context, File siteRoot, String packageName, String appLabel, File iconFile,
+                      boolean autoRotate, boolean fullscreen, int versionCode,
+                      boolean pythonServer, File pythonProjectRoot, ProgressListener progressListener) throws Exception {
         reportProgress(progressListener, 3, "Проверка проекта");
         if (!isValidPackageName(packageName)) {
             throw new IOException("Пакет должен выглядеть как com.example.app (строчные латинские буквы).");
@@ -100,8 +107,21 @@ final class ApkBuilder {
         if (versionCode < 1) throw new IOException("Номер версии приложения должен быть положительным.");
 
         List<File> siteFiles = Collections.emptyList();
+        List<File> pythonProjectFiles = Collections.emptyList();
         if (pythonServer) {
-            reportProgress(progressListener, 12, "Проверка встроенного Python/Flask проекта");
+            if (pythonProjectRoot == null || !pythonProjectRoot.isDirectory()) {
+                throw new IOException("Сначала импортируйте Python/Flask проект .py или ZIP.");
+            }
+            pythonProjectFiles = collectPythonProjectFiles(pythonProjectRoot);
+            boolean hasPythonSource = false;
+            for (File file : pythonProjectFiles) {
+                if (file.getName().toLowerCase(Locale.ROOT).endsWith(".py")) {
+                    hasPythonSource = true;
+                    break;
+                }
+            }
+            if (!hasPythonSource) throw new IOException("В Python-проекте не найдено файлов .py.");
+            reportProgress(progressListener, 12, "Python-проект · файлов: " + pythonProjectFiles.size());
         } else {
             if (siteRoot == null || !siteRoot.isDirectory()) {
                 throw new IOException("Сначала выберите index.html или ZIP сайта.");
@@ -151,7 +171,8 @@ final class ApkBuilder {
                     replacements.put(TEMPLATE_PACKAGE, packageName);
                     replacements.put("__WEBAPK_LABEL__", sanitizeLabel(appLabel));
                     replacements.put("__WEBAPK_FULLSCREEN__", Boolean.toString(fullscreen));
-                    byte[] patched = BinaryXmlPatcher.patch(original, replacements, autoRotate, versionCode);
+                    byte[] patched = BinaryXmlPatcher.patch(original, replacements, autoRotate, versionCode,
+                            pythonServer ? Integer.valueOf(36) : null);
                     putStoredAligned(apk, countingOut, name, patched);
                     manifestSeen = true;
                 } else if (name.equals("resources.arsc")) {
@@ -190,6 +211,24 @@ final class ApkBuilder {
                 source.closeEntry();
             }
 
+            if (pythonServer) {
+                String projectBase = pythonProjectRoot.getCanonicalPath();
+                for (int index = 0; index < pythonProjectFiles.size(); index++) {
+                    File projectFile = pythonProjectFiles.get(index);
+                    String relative = projectFile.getCanonicalPath().substring(projectBase.length() + 1)
+                            .replace(File.separatorChar, '/');
+                    ZipEntry projectEntry = new ZipEntry("assets/python-project/" + relative);
+                    projectEntry.setTime(0L);
+                    apk.putNextEntry(projectEntry);
+                    try (InputStream input = new BufferedInputStream(new FileInputStream(projectFile))) {
+                        copy(input, apk);
+                    }
+                    apk.closeEntry();
+                    int percent = 25 + (int) ((48L * (index + 1)) / Math.max(1, pythonProjectFiles.size()));
+                    reportProgress(progressListener, percent, "Упаковка Python-проекта · "
+                            + (index + 1) + " / " + pythonProjectFiles.size());
+                }
+            }
             if (!manifestSeen || !resourcesSeen) {
                 throw new IOException("Встроенный APK-шаблон неполный. Пересоберите приложение через GitHub Actions.");
             }
@@ -200,7 +239,7 @@ final class ApkBuilder {
                 throw new IOException("Не удалось заменить все размеры иконки приложения.");
             }
             if (pythonServer) {
-                reportProgress(progressListener, 78, "Flask server и зависимости встроены");
+                reportProgress(progressListener, 78, "Python-проект и офлайн-зависимости встроены");
             } else {
                 File encryptedArchive = new File(cache, "website-assets-a.c.tmp");
                 byte[] masterKey = N.k();
@@ -280,6 +319,50 @@ final class ApkBuilder {
             }
         });
         return files;
+    }
+
+    private static List<File> collectPythonProjectFiles(File root) throws IOException {
+        String rootPath = root.getCanonicalPath();
+        List<File> files = new ArrayList<>();
+        List<File> pending = new ArrayList<>();
+        pending.add(root);
+        long totalBytes = 0;
+        while (!pending.isEmpty()) {
+            File current = pending.remove(pending.size() - 1);
+            File[] children = current.listFiles();
+            if (children == null) continue;
+            for (File child : children) {
+                String name = child.getName();
+                if (isPythonArchiveMetadata(name)) continue;
+                if (child.isDirectory() && (".git".equals(name) || ".venv".equals(name)
+                        || "venv".equals(name) || "__pycache__".equals(name) || ".idea".equals(name))) continue;
+                String canonical = child.getCanonicalPath();
+                if (!canonical.startsWith(rootPath + File.separator) && !canonical.equals(rootPath)) {
+                    throw new IOException("В Python-проекте найден файл вне папки проекта.");
+                }
+                if (child.isDirectory()) {
+                    pending.add(child);
+                } else if (child.isFile()) {
+                    files.add(child);
+                    totalBytes += child.length();
+                    if (files.size() > 10000) throw new IOException("В Python-проекте больше 10 000 файлов.");
+                    if (totalBytes > 1024L * 1024L * 1024L) {
+                        throw new IOException("Python-проект превышает 1 ГБ.");
+                    }
+                }
+            }
+        }
+        Collections.sort(files, new Comparator<File>() {
+            @Override public int compare(File left, File right) {
+                return relativePathUnchecked(root, left).compareTo(relativePathUnchecked(root, right));
+            }
+        });
+        return files;
+    }
+
+    private static boolean isPythonArchiveMetadata(String name) {
+        return "__MACOSX".equals(name) || ".DS_Store".equals(name) || "Thumbs.db".equalsIgnoreCase(name)
+                || name.startsWith("._");
     }
 
     private static String relativePath(File root, File file) throws IOException {

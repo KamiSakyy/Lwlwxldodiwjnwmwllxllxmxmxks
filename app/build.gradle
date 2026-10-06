@@ -101,12 +101,18 @@ android {
 
 def embeddedTemplateDir = layout.buildDirectory.dir('generated/template-assets')
 
+tasks.register('buildPythonRuntimeTemplate', GradleBuild) {
+    dir = rootProject.file('pythonTemplate')
+    tasks = ['assembleRelease']
+}
+
 tasks.register('prepareEmbeddedTemplate', Copy) {
-    dependsOn(':template:assembleRelease', ':pythonTemplate:assembleRelease')
+    dependsOn(':template:assembleRelease', tasks.named('buildPythonRuntimeTemplate'))
     from(project(':template').layout.buildDirectory.file('outputs/apk/release/template-release-unsigned.apk')) {
         rename { 'host-template.apk' }
     }
-    from(project(':pythonTemplate').layout.buildDirectory.file('outputs/apk/release/pythonTemplate-release-unsigned.apk')) {
+    from(rootProject.file('pythonTemplate/build/outputs/apk/release')) {
+        include '*.apk'
         rename { 'python-host-template.apk' }
     }
     from(signingStoreFile) {

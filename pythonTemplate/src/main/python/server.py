@@ -13,6 +13,7 @@ from cloud import cloud_bp
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('FLASK_SECRET', os.urandom(32).hex())
+app.config['LOCAL_ENGINE_TOKEN'] = secrets.token_urlsafe(32)
 
 
 @app.before_request
@@ -30,8 +31,10 @@ def require_local_engine_token():
 VK_API = "https://api.vk.com/method"
 API_VERSION = "5.199"
 
-FIREBASE_DB_URL = os.environ.get('FIREBASE_DB_URL', 'https://meow-874ce-default-rtdb.europe-west1.firebasedatabase.app')
-FIREBASE_API_KEY = os.environ.get('FIREBASE_API_KEY', '')
+# The bundled Web APK Studio profile is intentionally offline: do not contact Firebase.
+# Other user-imported projects are not affected; their own environment/config remains intact.
+FIREBASE_DB_URL = ''
+FIREBASE_API_KEY = ''
 
 KEYS_FILE = os.path.join(os.environ.get('PYAPP_DATA_DIR', os.path.dirname(os.path.abspath(__file__))), 'keys_storage.json')
 
