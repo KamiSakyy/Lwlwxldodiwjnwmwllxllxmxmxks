@@ -1,0 +1,34 @@
+Archive:  studio/build/outputs/apk/release/studio-arm64-v8a-release.apk
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+       56  1981-01-01 01:01   META-INF/com/android/build/gradle/app-metadata.properties
+       46  1981-01-01 01:01   META-INF/version-control-info.textproto
+  2107372  1981-01-01 01:01   classes.dex
+ 65139832  1981-01-01 01:01   lib/arm64-v8a/libnode.so
+  1040256  1981-01-01 01:01   lib/arm64-v8a/libnodestarter.so
+     3126  1981-01-01 01:01   assets/nodejs/server.js
+   223466  1981-01-01 01:01   assets/web/react/assets/index-De2gFhUF.js
+     1779  1981-01-01 01:01   assets/web/react/assets/index-kE4tvZ01.css
+      461  1981-01-01 01:01   assets/web/react/index.html
+     1767  1981-01-01 01:01   assets/web/vue/assets/index-B7AW1JpK.css
+    66112  1981-01-01 01:01   assets/web/vue/assets/index-D0l4HC_y.js
+      458  1981-01-01 01:01   assets/web/vue/index.html
+     1006  1981-01-01 01:01   kotlin/annotation/annotation.kotlin_builtins
+     8308  1981-01-01 01:01   kotlin/collections/collections.kotlin_builtins
+     2674  1981-01-01 01:01   kotlin/concurrent/atomics/atomics.kotlin_builtins
+      137  1981-01-01 01:01   kotlin/coroutines/coroutines.kotlin_builtins
+      590  1981-01-01 01:01   kotlin/internal/internal.kotlin_builtins
+    29399  1981-01-01 01:01   kotlin/kotlin.kotlin_builtins
+     4184  1981-01-01 01:01   kotlin/ranges/ranges.kotlin_builtins
+     4827  1981-01-01 01:01   kotlin/reflect/reflect.kotlin_builtins
+     2636  1981-01-01 01:01   AndroidManifest.xml
+     1345  1981-01-01 01:01   res/9w.png
+      548  1981-01-01 01:01   res/BW.xml
+     1853  1981-01-01 01:01   res/FS.png
+      728  1981-01-01 01:01   res/Qr.xml
+     3683  1981-01-01 01:01   res/RJ.png
+     4711  1981-01-01 01:01   res/o-.png
+     1906  1981-01-01 01:01   res/yn.png
+     1536  1981-01-01 01:01   resources.arsc
+---------                     -------
+ 68654802                     29 files
