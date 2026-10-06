@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="37" android:compileSdkVersionCodename="17" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.github.rudroid" platformBuildVersionCode="37" platformBuildVersionName="17">
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.APP_BROWSER"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.speech.RecognitionService"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+        </intent>
+    </queries>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.POST_PROMOTED_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <permission android:name="com.github.rudroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.github.rudroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/data_extraction_rules" android:extractNativeLibs="false" android:fullBackupContent="@xml/backup_rules" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:localeConfig="@xml/locales_config" android:name="com.github.rudroid.GitHubApplication" android:supportsRtl="false" android:theme="@style/GitHubTheme" android:usesCleartextTraffic="false">
+        <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="false" />
+        <meta-data android:name="firebase_analytics_collection_deactivated" android:value="true" />
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="false" />
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false" />
+
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <provider android:authorities="com.github.rudroid.ahp-attachments" android:exported="false" android:grantUriPermissions="true" android:name="com.github.rudroid.agents.ahp.AHPAttachmentFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/ahp_attachment_paths"/>
+        </provider>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.github.rudroid.main.MainActivity" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/menu_option_create_agent_task">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="net.openid.appauth.RedirectUriReceiverActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="github"/>
+                <data android:host="com.github.android"/>
+                <data android:pathPattern="/oauth"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.github.rudroid.agents.ahp.AHPGitHubAppWebAuthorizationActivity" android:theme="@style/TransparentSystemBarsTheme"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.github.rudroid.agents.ahp.auth.AHPGitHubAppAuthorizationCallbackActivity" android:noHistory="true" android:theme="@style/NoDisplayTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.github.android" android:path="/appauth" android:scheme="github"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleInstance" android:name="com.github.rudroid.activities.DeepLinkActivity" android:theme="@style/NoDisplayTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="github"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:name="com.github.rudroid.DeepLinkAliasActivityApi35" android:targetActivity="com.github.rudroid.activities.DeepLinkActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="github.com"/>
+                <data android:host="*.ghe.com"/>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:pathPattern="/mcp/.*"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:path="/mcp"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="true">
+                    <data android:pathPattern="/copilot/tasks/.*"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:pathPattern="/copilot/.*"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="true">
+                    <data android:path="/copilot"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:pathPattern="/sessions/.*"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:path="/sessions"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:pathPattern="/session/.*"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:path="/session"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:pathPattern="/logout/*"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:path="/logout"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:pathPattern="/signup/.*"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:path="/signup"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:pathPattern="/login/.*"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:path="/login"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:pathPattern="/join/.*"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:path="/join"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:pathPattern="/suspended/.*"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:path="/suspended"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:pathPattern="/password_reset/.*"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:path="/password_reset"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:pathPattern="/switch_account/.*"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:path="/switch_account"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:pathPattern="/account_verifications/.*"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:path="/account_verifications"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:pathPattern="/auth/.*"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:path="/auth"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:pathPattern="/saml/.*"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:path="/saml"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:path="/enterprises/github/sso"/>
+                    <data android:queryAdvancedPattern=".+"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:path="/login"/>
+                    <data android:queryAdvancedPattern=".+"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:pathPattern="/spark/.*"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="false">
+                    <data android:path="/spark"/>
+                </uri-relative-filter-group>
+                <uri-relative-filter-group android:allow="true">
+                    <data android:pathPattern="/.*"/>
+                </uri-relative-filter-group>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:name="com.github.rudroid.DeepLinkAliasActivity" android:targetActivity="com.github.rudroid.activities.DeepLinkActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="github.com"/>
+                <data android:host="*.ghe.com"/>
+                <data android:pathAdvancedPattern="/[^alsjpm].*"/>
+                <data android:pathAdvancedPattern="/l[^o].*"/>
+                <data android:pathAdvancedPattern="/lo[^g].*"/>
+                <data android:pathAdvancedPattern="/l"/>
+                <data android:pathAdvancedPattern="/lo"/>
+                <data android:pathAdvancedPattern="/log"/>
+                <data android:pathAdvancedPattern="/log[^io].*"/>
+                <data android:pathAdvancedPattern="/logi[^n].*"/>
+                <data android:pathAdvancedPattern="/login[a-zA-Z0-9\\-\\_].*"/>
+                <data android:pathAdvancedPattern="/logi"/>
+                <data android:pathAdvancedPattern="/logo[^u].*"/>
+                <data android:pathAdvancedPattern="/logou[^t].*"/>
+                <data android:pathAdvancedPattern="/logout[a-zA-Z0-9\\-\\_].*"/>
+                <data android:pathAdvancedPattern="/logo"/>
+                <data android:pathAdvancedPattern="/logou"/>
+                <data android:pathAdvancedPattern="/s[^aeiupw].*"/>
+                <data android:pathAdvancedPattern="/se[^s].*"/>
+                <data android:pathAdvancedPattern="/ses[^s].*"/>
+                <data android:pathAdvancedPattern="/sess[^i].*"/>
+                <data android:pathAdvancedPattern="/sessi[^o].*"/>
+                <data android:pathAdvancedPattern="/sessio[^n].*"/>
+                <data android:pathAdvancedPattern="/session[^s/].*"/>
+                <data android:pathAdvancedPattern="/sessions[a-zA-Z0-9\\-\\_].*"/>
+                <data android:pathAdvancedPattern="/s"/>
+                <data android:pathAdvancedPattern="/se"/>
+                <data android:pathAdvancedPattern="/sess"/>
+                <data android:pathAdvancedPattern="/sessi"/>
+                <data android:pathAdvancedPattern="/sessio"/>
+                <data android:pathAdvancedPattern="/si[^g].*"/>
+                <data android:pathAdvancedPattern="/sig[^n].*"/>
+                <data android:pathAdvancedPattern="/sign[^u].*"/>
+                <data android:pathAdvancedPattern="/signu[^p].*"/>
+                <data android:pathAdvancedPattern="/signup[a-zA-Z0-9\\-\\_].*"/>
+                <data android:pathAdvancedPattern="/si"/>
+                <data android:pathAdvancedPattern="/sig"/>
+                <data android:pathAdvancedPattern="/sign"/>
+                <data android:pathAdvancedPattern="/signu"/>
+                <data android:pathAdvancedPattern="/su[^s].*"/>
+                <data android:pathAdvancedPattern="/sus[^p].*"/>
+                <data android:pathAdvancedPattern="/susp[^e].*"/>
+                <data android:pathAdvancedPattern="/suspe[^n].*"/>
+                <data android:pathAdvancedPattern="/suspen[^d].*"/>
+                <data android:pathAdvancedPattern="/suspend[^e].*"/>
+                <data android:pathAdvancedPattern="/suspende[^d].*"/>
+                <data android:pathAdvancedPattern="/suspended[a-zA-Z0-9\\-\\_].*"/>
+                <data android:pathAdvancedPattern="/su"/>
+                <data android:pathAdvancedPattern="/sus"/>
+                <data android:pathAdvancedPattern="/susp"/>
+                <data android:pathAdvancedPattern="/suspe"/>
+                <data android:pathAdvancedPattern="/suspen"/>
+                <data android:pathAdvancedPattern="/suspend"/>
+                <data android:pathAdvancedPattern="/suspende"/>
+                <data android:pathAdvancedPattern="/j[^o].*"/>
+                <data android:pathAdvancedPattern="/jo[^i].*"/>
+                <data android:pathAdvancedPattern="/joi[^n].*"/>
+                <data android:pathAdvancedPattern="/join[a-zA-Z0-9\\-\\_].*"/>
+                <data android:pathAdvancedPattern="/j"/>
+                <data android:pathAdvancedPattern="/jo"/>
+                <data android:pathAdvancedPattern="/joi"/>
+                <data android:pathAdvancedPattern="/m[^c].*"/>
+                <data android:pathAdvancedPattern="/mc[^p].*"/>
+                <data android:pathAdvancedPattern="/mcp[a-zA-Z0-9\\-\\_].*"/>
+                <data android:pathAdvancedPattern="/m"/>
+                <data android:pathAdvancedPattern="/mc"/>
+                <data android:pathAdvancedPattern="/p[^a].*"/>
+                <data android:pathAdvancedPattern="/pa[^s].*"/>
+                <data android:pathAdvancedPattern="/pas[^s].*"/>
+                <data android:pathAdvancedPattern="/pass[^w].*"/>
+                <data android:pathAdvancedPattern="/passw[^o].*"/>
+                <data android:pathAdvancedPattern="/passwo[^r].*"/>
+                <data android:pathAdvancedPattern="/passwor[^d].*"/>
+                <data android:pathAdvancedPattern="/password[^_].*"/>
+                <data android:pathAdvancedPattern="/password_[^r].*"/>
+                <data android:pathAdvancedPattern="/password_r[^e].*"/>
+                <data android:pathAdvancedPattern="/password_re[^s].*"/>
+                <data android:pathAdvancedPattern="/password_res[^e].*"/>
+                <data android:pathAdvancedPattern="/password_reset[a-zA-Z0-9\\-\\_].*"/>
+                <data android:pathAdvancedPattern="/p"/>
+                <data android:pathAdvancedPattern="/pa"/>
+                <data android:pathAdvancedPattern="/pas"/>
+                <data android:pathAdvancedPattern="/pass"/>
+                <data android:pathAdvancedPattern="/passw"/>
+                <data android:pathAdvancedPattern="/passwo"/>
+                <data android:pathAdvancedPattern="/passwor"/>
+                <data android:pathAdvancedPattern="/password"/>
+                <data android:pathAdvancedPattern="/password_"/>
+                <data android:pathAdvancedPattern="/password_r"/>
+                <data android:pathAdvancedPattern="/password_re"/>
+                <data android:pathAdvancedPattern="/password_res"/>
+                <data android:pathAdvancedPattern="/password_rese"/>
+                <data android:pathAdvancedPattern="/sw[^i].*"/>
+                <data android:pathAdvancedPattern="/swi[^t].*"/>
+                <data android:pathAdvancedPattern="/swit[^c].*"/>
+                <data android:pathAdvancedPattern="/switc[^h].*"/>
+                <data android:pathAdvancedPattern="/switch[^_].*"/>
+                <data android:pathAdvancedPattern="/switch_[^a].*"/>
+                <data android:pathAdvancedPattern="/switch_a[^c].*"/>
+                <data android:pathAdvancedPattern="/switch_ac[^c].*"/>
+                <data android:pathAdvancedPattern="/switch_acc[^o].*"/>
+                <data android:pathAdvancedPattern="/switch_acco[^u].*"/>
+                <data android:pathAdvancedPattern="/switch_accou[^n].*"/>
+                <data android:pathAdvancedPattern="/switch_accoun[^t].*"/>
+                <data android:pathAdvancedPattern="/switch_account[a-zA-Z0-9\\-\\_].*"/>
+                <data android:pathAdvancedPattern="/sw"/>
+                <data android:pathAdvancedPattern="/swi"/>
+                <data android:pathAdvancedPattern="/swit"/>
+                <data android:pathAdvancedPattern="/switc"/>
+                <data android:pathAdvancedPattern="/switch"/>
+                <data android:pathAdvancedPattern="/switch_"/>
+                <data android:pathAdvancedPattern="/switch_a"/>
+                <data android:pathAdvancedPattern="/switch_ac"/>
+                <data android:pathAdvancedPattern="/switch_acc"/>
+                <data android:pathAdvancedPattern="/switch_acco"/>
+                <data android:pathAdvancedPattern="/switch_accou"/>
+                <data android:pathAdvancedPattern="/switch_accoun"/>
+                <data android:pathAdvancedPattern="/sp[^a].*"/>
+                <data android:pathAdvancedPattern="/spa[^r].*"/>
+                <data android:pathAdvancedPattern="/spar[^k].*"/>
+                <data android:pathAdvancedPattern="/spark[a-zA-Z0-9\\-\\_].*"/>
+                <data android:pathAdvancedPattern="/sp"/>
+                <data android:pathAdvancedPattern="/spa"/>
+                <data android:pathAdvancedPattern="/spar"/>
+                <data android:pathAdvancedPattern="/a[^uc].*"/>
+                <data android:pathAdvancedPattern="/au[^t].*"/>
+                <data android:pathAdvancedPattern="/aut[^h].*"/>
+                <data android:pathAdvancedPattern="/auth[a-zA-Z0-9\\-\\_].*"/>
+                <data android:pathAdvancedPattern="/a"/>
+                <data android:pathAdvancedPattern="/au"/>
+                <data android:pathAdvancedPattern="/aut"/>
+                <data android:pathAdvancedPattern="/sa[^m].*"/>
+                <data android:pathAdvancedPattern="/sam[^l].*"/>
+                <data android:pathAdvancedPattern="/saml[a-zA-Z0-9\\-\\_].*"/>
+                <data android:pathAdvancedPattern="/sa"/>
+                <data android:pathAdvancedPattern="/sam"/>
+                <data android:pathAdvancedPattern="/ac[^c].*"/>
+                <data android:pathAdvancedPattern="/acc[^o].*"/>
+                <data android:pathAdvancedPattern="/accou[^n].*"/>
+                <data android:pathAdvancedPattern="/accoun[^t].*"/>
+                <data android:pathAdvancedPattern="/account[^_].*"/>
+                <data android:pathAdvancedPattern="/account_[^v].*"/>
+                <data android:pathAdvancedPattern="/account_v[^e].*"/>
+                <data android:pathAdvancedPattern="/account_ve[^r].*"/>
+                <data android:pathAdvancedPattern="/account_ver[^i].*"/>
+                <data android:pathAdvancedPattern="/account_veri[^f].*"/>
+                <data android:pathAdvancedPattern="/account_verif[^i].*"/>
+                <data android:pathAdvancedPattern="/account_verifi[^c].*"/>
+                <data android:pathAdvancedPattern="/account_verific[^a].*"/>
+                <data android:pathAdvancedPattern="/account_verifica[^t].*"/>
+                <data android:pathAdvancedPattern="/account_verificat[^i].*"/>
+                <data android:pathAdvancedPattern="/account_verificati[^o].*"/>
+                <data android:pathAdvancedPattern="/account_verificatio[^n].*"/>
+                <data android:pathAdvancedPattern="/account_verification[^s].*"/>
+                <data android:pathAdvancedPattern="/account_verifications[a-zA-Z0-9\\-\\_].*"/>
+                <data android:pathAdvancedPattern="/ac"/>
+                <data android:pathAdvancedPattern="/acc"/>
+                <data android:pathAdvancedPattern="/acco"/>
+                <data android:pathAdvancedPattern="/accou"/>
+                <data android:pathAdvancedPattern="/accoun"/>
+                <data android:pathAdvancedPattern="/account_"/>
+                <data android:pathAdvancedPattern="/account_v"/>
+                <data android:pathAdvancedPattern="/account_ve"/>
+                <data android:pathAdvancedPattern="/account_ver"/>
+                <data android:pathAdvancedPattern="/account_veri"/>
+                <data android:pathAdvancedPattern="/account_verif"/>
+                <data android:pathAdvancedPattern="/account_verifi"/>
+                <data android:pathAdvancedPattern="/account_verific"/>
+                <data android:pathAdvancedPattern="/account_verifica"/>
+                <data android:pathAdvancedPattern="/account_verificat"/>
+                <data android:pathAdvancedPattern="/account_verificati"/>
+                <data android:pathAdvancedPattern="/account_verificatio"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:name="com.github.rudroid.auth.SimplifiedLoginActivity" android:theme="@style/TransparentSystemBarsTheme"/>
+        <activity android:name="com.github.rudroid.auth.ReLoginActivity" android:theme="@style/TransparentActivity"/>
+        <activity android:name="com.github.rudroid.fileschanged.delete.DeleteFileActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.github.rudroid.fileschanged.RefComparisonFilesChangedActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.github.rudroid.fileeditor.FileEditorActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.github.rudroid.settings.SettingsActivity"/>
+        <activity android:name="com.github.rudroid.settings.SettingsNotificationsActivity"/>
+        <activity android:name="com.github.rudroid.settings.SettingsNotificationSchedulesActivity"/>
+        <activity android:name="com.github.rudroid.settings.featurepreview.SettingsFeaturePreviewActivity"/>
+        <activity android:name="com.github.rudroid.settings.privacy.PrivacyAnalyticsActivity"/>
+        <activity android:name="com.github.rudroid.createissue.CreateIssueComposeActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.github.rudroid.activities.WebViewActivity"/>
+        <activity android:name="com.github.rudroid.checks.ChecksActivity"/>
+        <activity android:name="com.github.rudroid.activities.CreateIssueRepoSearchActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.github.rudroid.templates.IssueTemplatesActivity"/>
+        <activity android:name="com.github.rudroid.settings.codeoptions.CodeOptionsActivity"/>
+        <activity android:name="com.github.rudroid.settings.copilot.CopilotChatSettingsActivity"/>
+        <activity android:name="com.github.rudroid.settings.copilot.debug.CopilotPermissionsOverrideActivity"/>
+        <activity android:name="com.github.rudroid.settings.developersetting.mockedresponse.MockedResponseSettingActivity"/>
+        <activity android:name="com.github.rudroid.agesignals.debug.AgeSignalsDebugActivity"/>
+        <activity android:name="com.github.rudroid.main.GenericRouteHostActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.github.rudroid.accounts.UserAccountsActivity"/>
+        <activity android:name="com.github.rudroid.deploymentreview.DeploymentReviewActivity"/>
+        <activity android:name="com.github.rudroid.starredreposandlists.createoreditlist.CreateNewListActivity"/>
+        <activity android:exported="false" android:name="com.github.rudroid.widget.contribution.ContributionWidgetSettingsActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.github.rudroid.widget.pullrequests.PullRequestsWidgetSettingsActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.github.rudroid.widget.agenttasks.AgentTasksWidgetSettingsActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.github.rudroid.widget.shortcuts.ShortcutWidgetSettingsActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.github.rudroid.activities.ShareImageActivity">
+            <intent-filter android:label="@string/menu_option_create_issue">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="image/gif"/>
+                <data android:mimeType="image/png"/>
+                <data android:mimeType="image/jpeg"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.github.rudroid.twofactor.TwoFactorActivity" android:theme="@style/TransparentActivity"/>
+        <activity android:name="com.github.rudroid.achievements.UserAchievementsActivity" android:theme="@style/TransparentSystemBarsTheme"/>
+        <activity android:name="com.github.rudroid.settings.copilot.paywall.CopilotLicensePaywallActivity" android:theme="@style/TransparentSystemBarsTheme"/>
+        <activity android:name="com.github.rudroid.settings.applock.settings.AppLockSettingsActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.github.rudroid.settings.applock.AppLockActivity"/>
+        <activity android:name="com.github.rudroid.settings.copilot.managesubscription.CopilotManageSubscriptionActivity"/>
+        <service android:exported="false" android:name="com.github.service.auth.AuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <service android:exported="false" android:name="com.github.rudroid.pushnotifications.PushNotificationsService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="com.github.rudroid.pushnotifications.DisableLiveUpdatesReceiver">
+            <intent-filter>
+                <action android:name="com.github.rudroid.action.DISABLE_LIVE_UPDATES"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="false" android:exported="false" android:name="androidx.appcompat.app.AppLocalesMetadataHolderService">
+            <meta-data android:name="autoStoreLocales" android:value="true"/>
+        </service>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_github_mark"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/notificationColor"/>
+        <provider android:authorities="com.github.rudroid.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="okhttp3.internal.platform.PlatformInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.apollographql.apollo.cache.normalized.sql.ApolloInitializer" android:value="androidx.startup"/>
+        </provider>
+        <receiver android:exported="false" android:name="com.github.rudroid.widget.contribution.ContributionGlanceWidgetReceiver">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/contributions_widget_metadata"/>
+        </receiver>
+        <activity android:name="com.github.developersettings.DeveloperSettingsActivity"/>
+        <activity android:name="com.github.testingsettings.TestingSettingsActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="net.openid.appauth.AuthorizationManagementActivity" android:theme="@style/Theme.AppCompat.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="8.3.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:name="com.google.android.play.agesignals.AgeSharingConsentWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.Play.AgeSignals.Transparent"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:enabled="false" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.github.rudroid.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:exported="false" android:name="androidx.glance.appwidget.action.ActionTrampolineActivity" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:enabled="true" android:exported="false" android:launchMode="singleInstance" android:name="androidx.glance.appwidget.action.InvisibleActionTrampolineActivity" android:noHistory="true" android:taskAffinity="androidx.glance.appwidget.ListAdapterCallbackTrampoline" android:theme="@style/Widget.Glance.AppWidget.CallbackTrampoline"/>
+        <receiver android:enabled="true" android:exported="false" android:name="androidx.glance.appwidget.action.ActionCallbackBroadcastReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="androidx.glance.appwidget.UnmanagedSessionReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="androidx.glance.appwidget.MyPackageReplacedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="androidx.glance.appwidget.GlanceRemoteViewsService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <service android:name="androidx.core.widget.RemoteViewsCompatService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <service android:exported="false" android:name="es.voghdev.pdfviewpager.library.service.CopyAssetService"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="4"/>
+    </application>
+</manifest>
