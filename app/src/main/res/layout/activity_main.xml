@@ -70,7 +70,6 @@
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
                     android:maxLines="1"
-                    android:text="@string/online_now"
                     android:textColor="@color/text_icon"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -386,10 +385,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="@string/online_now"
-                android:textColor="@color/success"
-                android:textSize="13sp"
-                android:textStyle="bold" />
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp" />
 
             <LinearLayout
                 android:id="@+id/drawer_status_row"

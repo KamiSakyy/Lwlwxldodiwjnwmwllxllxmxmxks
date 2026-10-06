@@ -197,7 +197,6 @@
     <string name="filters_media">Медиа</string>
     <string name="error_gmailless">Не удалось: %1$s</string>
     <string name="scroll_down">Вниз</string>
-    <string name="limits_hint">Лимиты письма: фото 1,2 МБ · видео 4 МБ · голосовое 2 МБ · файл 6 МБ</string>
     <string name="edit">Изменить</string>
     <string name="edit_message">Изменить сообщение</string>
     <string name="delete_for_all">Удалить у всех</string>
@@ -273,13 +272,9 @@
     <string name="pinned_title">Закреплённое сообщение</string>
     <string name="contacts_title">Контакты</string>
     <string name="chat_menu_export">Выгрузить переписку</string>
-    <string name="online_now">в сети</string>
     <string name="drawer_last_sync">Проверка почты: %1$s</string>
     <string name="sync_drawer_status">в ящике %1$d писем, добавлено %2$d</string>
     <string name="drawer_never_synced">Проверьте подключение — синхронизация ещё не проходила</string>
-    <string name="peer_was_recently">был(а) в сети только что</string>
-    <string name="peer_seen_at">заходил(а): %1$s</string>
-    <string name="peer_no_activity">ожидается первое письмо</string>
     <string name="invite_share">Мой публичный ключ MailGram: %1$s</string>
     <string name="verified_short">Ключ отмечен как проверенный</string>
     <string name="unverified_short">Ключ ещё не проверен</string>
@@ -301,13 +296,9 @@
     <string name="all_mail_title">Вся почта</string>
     <string name="chat_kind_mail">Письмо из почты</string>
     <string name="chat_kind_secure">Защищённый чат</string>
-    <string name="all_mail_title">Вся почта</string>
-    <string name="mail_reply_subject">Ответ из MailGram</string>
     <string name="mail_from_prefix">Отправитель: %1$s</string>
     <string name="invite_sent_note">Приглашение отправлено — собеседнику придёт мой открытый ключ, и ответы пойдут уже шифрованными.</string>
     <string name="invite_received_note">Собеседник прислал свой открытый ключ: чат готов к шифрованной переписке.</string>
-    <string name="chat_kind_mail">Письмо из почты</string>
-    <string name="chat_kind_secure">Защищённый чат</string>
     <string name="sync_note">Проверено писем: %1$d, новых: %2$d</string>
     <string name="sync_undecryptable_note">Не расшифровалось писем: %1$d — они видны в чатах, приложение повторит попытку само.</string>
     <string name="sync_pending_note">Ждут повторной обработки: %1$d</string>

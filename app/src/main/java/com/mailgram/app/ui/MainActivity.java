@@ -391,9 +391,13 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         int unread = Store.get(this).totalUnread();
         TextView subtitle = findViewById(R.id.main_subtitle);
         if (subtitle != null) {
-            subtitle.setText(unread > 0
+            String text = unread > 0
                     ? Auth.account(this) + " · " + getString(R.string.unread, unread)
-                    : Auth.account(this));
+                    : Auth.account(this);
+            // если часть писем ждёт повторной обработки — это видно сразу, без «в сети»
+            int pending = com.mailgram.app.store.Prefs.retryCount(this);
+            if (pending > 0) text += " · " + getString(R.string.sync_pending_note, pending);
+            subtitle.setText(text);
         }
     }
 
