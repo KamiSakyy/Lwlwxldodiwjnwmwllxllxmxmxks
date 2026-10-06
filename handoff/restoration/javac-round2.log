@@ -40,47 +40,12 @@ import y71.y;
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/al/d.java:7: error: package z01 does not exist
 import z01.h0;
           ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/al/d.java:11: error: cannot find symbol
-    public g a;
-           ^
-  symbol:   class g
-  location: class d
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/al/d.java:13: error: cannot find symbol
-    public final y a(j jVar, String str, j71.c cVar) {
-                     ^
-  symbol:   class j
-  location: class d
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/al/d.java:13: error: package j71 does not exist
     public final y a(j jVar, String str, j71.c cVar) {
                                             ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/al/d.java:13: error: cannot find symbol
-    public final y a(j jVar, String str, j71.c cVar) {
-                 ^
-  symbol:   class y
-  location: class d
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/al/c.java:11: error: cannot find symbol
-    public final g a;
-                 ^
-  symbol:   class g
-  location: class c
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/al/c.java:13: error: cannot find symbol
-    public c(g gVar) {
-             ^
-  symbol:   class g
-  location: class c
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/al/c.java:18: error: cannot find symbol
-    public final y a(j jVar, String str, j71.c cVar) {
-                     ^
-  symbol:   class j
-  location: class c
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/al/c.java:18: error: package j71 does not exist
     public final y a(j jVar, String str, j71.c cVar) {
                                             ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/al/c.java:18: error: cannot find symbol
-    public final y a(j jVar, String str, j71.c cVar) {
-                 ^
-  symbol:   class y
-  location: class c
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/widget/shortcuts/model/b.java:25: error: class b is already defined in package com.github.rudroid.widget.shortcuts.model
     public static class b<T1,T2,T3,T4> {
                   ^
@@ -245119,9 +245084,14 @@ public final class d implements b {
   location: class c
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/al/c.java:21: error: cannot find symbol
         return b31.b.J(((h0) this.a.a(jVar)).g(str), jVar, cVar);
-                         ^
-  symbol:   class h0
-  location: class c
+                                   ^
+  symbol:   method a(j)
+  location: variable a of type g
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/al/c.java:21: error: cannot find symbol
+        return b31.b.J(((h0) this.a.a(jVar)).g(str), jVar, cVar);
+                                            ^
+  symbol:   method g(String)
+  location: class h0
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/al/d.java:14: error: cannot find symbol
         k.g(jVar, "user");
         ^
@@ -245134,9 +245104,14 @@ public final class d implements b {
   location: class d
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/al/d.java:16: error: cannot find symbol
         return b31.b.J(((h0) this.a.a(jVar)).e(str), jVar, cVar);
-                         ^
-  symbol:   class h0
-  location: class d
+                                   ^
+  symbol:   method a(j)
+  location: variable a of type g
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/al/d.java:16: error: cannot find symbol
+        return b31.b.J(((h0) this.a.a(jVar)).e(str), jVar, cVar);
+                                            ^
+  symbol:   method e(String)
+  location: class h0
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/b.java:24: error: method does not override or implement a method from a supertype
     @Override // com.google.android.gms.measurement.internal.c
     ^
@@ -294726,5 +294701,5 @@ Note: Recompile with -Xlint:deprecation for details.
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-58953 errors
-printing javac parameters to: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/javac.20261005_232527.args
+58948 errors
+printing javac parameters to: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/javac.20261006_000417.args
