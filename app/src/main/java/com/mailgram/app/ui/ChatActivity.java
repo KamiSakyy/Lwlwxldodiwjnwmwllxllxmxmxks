@@ -107,6 +107,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     private View selectionBar;
     private TextView selectionTitle;
     private boolean selecting;
+    private boolean sendShown;
 
     private final Handler handler = new Handler(Looper.getMainLooper());
     private Runnable poller;
@@ -287,8 +288,18 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 boolean hasText = s.toString().trim().length() > 0;
-                sendButton.setVisibility(hasText ? View.VISIBLE : View.GONE);
-                micButton.setVisibility(hasText ? View.GONE : View.VISIBLE);
+                if (hasText != sendShown) {
+                    sendShown = hasText;
+                    if (hasText) {
+                        sendButton.setVisibility(View.VISIBLE);
+                        Anim.pop(sendButton);
+                        micButton.setVisibility(View.GONE);
+                    } else {
+                        micButton.setVisibility(View.VISIBLE);
+                        Anim.fadeIn(micButton, 180L);
+                        sendButton.setVisibility(View.GONE);
+                    }
+                }
             }
 
             @Override
@@ -808,27 +819,31 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         View view = LayoutInflater.from(this).inflate(R.layout.dialog_attach, null);
         final androidx.appcompat.app.AlertDialog dialog =
                 new MaterialAlertDialogBuilder(this).setView(view).create();
-        view.findViewById(R.id.attach_photo).setOnClickListener(v -> {
-            dialog.dismiss();
-            pick(REQ_PICK_PHOTO, "image/*");
-        });
-        view.findViewById(R.id.attach_video).setOnClickListener(v -> {
-            dialog.dismiss();
-            pick(REQ_PICK_VIDEO, "video/*");
-        });
-        view.findViewById(R.id.attach_file).setOnClickListener(v -> {
-            dialog.dismiss();
-            pick(REQ_PICK_FILE, "*/*");
-        });
-        view.findViewById(R.id.attach_circle).setOnClickListener(v -> {
-            dialog.dismiss();
-            openCircle();
-        });
-        view.findViewById(R.id.attach_camera).setOnClickListener(v -> {
-            dialog.dismiss();
-            openCamera();
-        });
+        attachAction(view, R.id.attach_photo, () -> pick(REQ_PICK_PHOTO, "image/*"), dialog);
+        attachAction(view, R.id.attach_video, () -> pick(REQ_PICK_VIDEO, "video/*"), dialog);
+        attachAction(view, R.id.attach_circle, this::openCircle, dialog);
+        attachAction(view, R.id.attach_file, () -> pick(REQ_PICK_FILE, "*/*"), dialog);
+        attachAction(view, R.id.attach_camera, this::openCamera, dialog);
         dialog.show();
+
+        // Кружки появляются каскадом — как меню вложений в iOS
+        int[] ids = {R.id.attach_photo, R.id.attach_video, R.id.attach_circle,
+                R.id.attach_file, R.id.attach_camera};
+        for (int i = 0; i < ids.length; i++) {
+            Anim.staggeredIn(view.findViewById(ids[i]), i);
+        }
+    }
+
+    /** Пункт меню вложений: пружинный отклик, хептика, закрытие меню и запуск действия. */
+    private void attachAction(final View root, int id, final Runnable action,
+                              final androidx.appcompat.app.AlertDialog dialog) {
+        View item = root.findViewById(id);
+        Anim.pressFeedback(item);
+        item.setOnClickListener(v -> {
+            Anim.haptic(v, false);
+            dialog.dismiss();
+            action.run();
+        });
     }
 
     private void pick(int request, String mime) {

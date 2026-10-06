@@ -251,4 +251,10 @@
     <string name="search_messages">Поиск в сообщениях</string>
     <string name="search_messages_hint">Слово или фраза</string>
     <string name="found_count">Найдено сообщений: %1$d — нажмите, чтобы открыть первое</string>
+    <string name="empty_unread_title">Нет непрочитанных</string>
+    <string name="empty_unread_text">Все сообщения прочитаны. Хорошего дня!</string>
+    <string name="empty_pinned_title">Нет закреплённых чатов</string>
+    <string name="empty_pinned_text">Долгое нажатие по чату — и он всегда будет наверху.</string>
+    <string name="empty_search_title">Ничего не найдено</string>
+    <string name="empty_search_text">По запросу «%1$s» ничего нет. Проверьте раскладку или попробуйте другое слово.</string>
 </resources>

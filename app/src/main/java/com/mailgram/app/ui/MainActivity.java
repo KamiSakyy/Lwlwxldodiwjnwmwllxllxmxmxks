@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
     private LinearProgressIndicator syncBar;
     private View searchBar;
     private EditText searchInput;
+    private String activeFilter = ChatListAdapter.FILTER_ALL;
     private ChatListAdapter adapter;
     private final Handler handler = new Handler(Looper.getMainLooper());
     private Runnable poller;
@@ -191,8 +192,37 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
 
     private void updateEmpty() {
         boolean empty = adapter.isEmpty();
+        boolean wasHidden = emptyView.getVisibility() != View.VISIBLE;
         emptyView.setVisibility(empty ? View.VISIBLE : View.GONE);
         list.setVisibility(empty ? View.GONE : View.VISIBLE);
+        if (!empty) return;
+
+        final String query = searchInput == null ? "" : searchInput.getText().toString().trim();
+        TextView title = findViewById(R.id.empty_title);
+        TextView text = findViewById(R.id.empty_text);
+        View action = findViewById(R.id.empty_action);
+        if (!query.isEmpty()) {
+            title.setText(R.string.empty_search_title);
+            text.setText(getString(R.string.empty_search_text, query));
+            action.setVisibility(View.GONE);
+        } else if (ChatListAdapter.FILTER_UNREAD.equals(activeFilter)) {
+            title.setText(R.string.empty_unread_title);
+            text.setText(R.string.empty_unread_text);
+            action.setVisibility(View.GONE);
+        } else if (ChatListAdapter.FILTER_PINNED.equals(activeFilter)) {
+            title.setText(R.string.empty_pinned_title);
+            text.setText(R.string.empty_pinned_text);
+            action.setVisibility(View.GONE);
+        } else {
+            title.setText(R.string.no_chats_title);
+            text.setText(R.string.no_chats_text);
+            action.setVisibility(View.VISIBLE);
+        }
+        if (wasHidden) {
+            Anim.springIn(findViewById(R.id.empty_icon), 0.88f, 14f);
+            Anim.staggeredIn(title, 0);
+            Anim.staggeredIn(text, 1);
+        }
     }
 
     private void openChat(Chat chat) {
@@ -228,6 +258,7 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
     }
 
     private void applyFilter(String filter) {
+        activeFilter = filter;
         adapter.setQuickFilter(filter);
         int[] ids = {R.id.filter_all, R.id.filter_unread, R.id.filter_pinned};
         String[] filters = {ChatListAdapter.FILTER_ALL, ChatListAdapter.FILTER_UNREAD,
