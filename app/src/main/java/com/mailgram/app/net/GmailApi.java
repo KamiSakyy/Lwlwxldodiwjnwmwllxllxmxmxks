@@ -206,7 +206,7 @@ public final class GmailApi {
             if (payload != null) {
                 JSONArray headers = payload.optJSONArray("headers");
                 if (headers != null) {
-                    for (int i = 0; i < headers.length; i++) {
+                    for (int i = 0; i < headers.length(); i++) {
                         JSONObject h = headers.getJSONObject(i);
                         String name = h.optString("name", "").toLowerCase(java.util.Locale.US);
                         String value = h.optString("value", "");
