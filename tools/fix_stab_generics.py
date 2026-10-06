@@ -51,7 +51,7 @@ if remove_all:
                 continue
             if not is_stub(t) or "<T" not in t:
                 continue
-            t2 = re.sub(r"(<)\s*T\d+(?:\s*extends\s+[\w.$]+)?(?:\s*,\s*T\d+(?:\s*extends\s+[\w.$]+)?)*\s*(>)", r"\1\2", t, count=2)
+            t2 = re.sub(r"(public\s+(?:class|interface|enum)\s+%s)\s*<[^<>]*>" % re.escape(fn[:-5]), r"\1", t, count=1)
             if t2 != t:
                 with open(p, "w", encoding="utf-8") as f:
                     f.write(t2)
