@@ -146,18 +146,23 @@ jobs:
         run: |
           set -e
           cd work/dec
-          # --- ВЕС: оставляем только ru и en из языков
+          # --- ВЕС: удаляем только ЯЗЫКОВЫЕ варианты (values-de, values-pt-rBR, values-b+sr+Latn);
+          # values-night / values-v31 / values-anydpi и прочие НЕ трогаем, иначе ломается public.xml
           removed=0
+          kept=""
           for d in res/values-*; do
             [ -d "$d" ] || continue
-            lang=$(basename "$d")
-            case "$lang" in
-              values-ru|values-en) ;;
-              *) rm -rf "$d"; removed=$((removed+1)) ;;
+            q="${d#res/values-}"
+            case "$q" in
+              ru|en) kept="$kept $q"; continue ;;
+              b+*) rm -rf "$d"; removed=$((removed+1)); continue ;;
             esac
+            if printf '%s' "$q" | grep -qE '^[a-z]{2}(-r[A-Z]{2})?$'; then
+              rm -rf "$d"; removed=$((removed+1))
+            fi
           done
-          echo "удалено языковых папок: $removed"
-          ls res | grep '^values' | head -30
+          echo "удалено языковых папок: $removed; оставлены: ru/en$kept"
+          ls res | grep '^values' | tr '\n' ' '; echo
           # --- ВЕС: только arm64-v8a
           if [ -d lib ]; then
             for d in lib/*; do
@@ -254,7 +259,8 @@ jobs:
             echo "::warning title=tail-$v::${TAIL}"
           done
           if [ -f work/signed.apk ]; then
-            echo "::notice title=apk::собран, $(stat -c%s work/signed.apk) байт"
+            PKG=$("$BT/aapt2" dump badging work/signed.apk 2>/dev/null | grep -o "package: name='[^']*'" | head -1)
+            echo "::notice title=apk::собран, $(stat -c%s work/signed.apk) байт; $PKG; стратегии: $(cat work/build-exit.txt 2>/dev/null | tr '\n' ' ')"
           else
             echo "::notice title=apk::НЕ собран — см. аннотации build-A/B/C"
           fi
@@ -273,6 +279,7 @@ jobs:
             echo "- скачано: $(stat -c%s work/download.bin 2>/dev/null || echo 0) байт"
             echo "- базовый APK: $(stat -c%s work/base.apk 2>/dev/null || echo 0) байт"
             echo "- собрано: $(stat -c%s work/signed.apk 2>/dev/null || echo 0) байт"
+            echo "- стратегии (exit-коды): $(cat work/build-exit.txt 2>/dev/null | tr '\n' ' ')"
             echo
             echo "## Итоговый APK"
             echo '```'
