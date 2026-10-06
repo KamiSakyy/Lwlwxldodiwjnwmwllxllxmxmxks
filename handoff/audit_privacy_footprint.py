@@ -9,6 +9,7 @@ A match does not by itself prove that a code path is active.
 from __future__ import annotations
 
 import os
+import re
 import sys
 import zipfile
 from collections import Counter
@@ -64,6 +65,17 @@ PERMISSIONS = (
     "android.permission.GET_ACCOUNTS",
     "android.permission.QUERY_ALL_PACKAGES",
 )
+MANIFEST_SDK_MARKERS = (
+    b"com.google.android.gms.ads",
+    b"com.google.ads",
+    b"com.applovin",
+    b"com.unity3d",
+    b"com.vungle",
+    b"com.ironsource",
+    b"com.my.tracker",
+    b"com.yandex",
+    b"com.google.firebase",
+)
 def dex_files(names: list[str]) -> list[str]:
     return sorted(
         name for name in names
@@ -107,6 +119,26 @@ def audit(apk_path: Path) -> list[str]:
         )
     present = [permission for permission in PERMISSIONS if permission.encode("ascii") in manifest]
     result.append("- Privacy-sensitive manifest permissions: " + (", ".join(f"`{name}`" for name in present) if present else "none from the reviewed list"))
+    manifest_strings = {
+        match.decode("ascii", errors="ignore")
+        for match in re.findall(rb"[A-Za-z0-9_.$/]{4,}", manifest)
+    }
+    sdk_names = sorted(
+        value for value in manifest_strings
+        if any(marker.decode("ascii") in value for marker in MANIFEST_SDK_MARKERS)
+    )
+    result.append(
+        "- SDK-related manifest component/class names: "
+        + (", ".join(f"`{name}`" for name in sdk_names[:80]) if sdk_names else "none of the known SDK package names found")
+    )
+    firebase_optouts = sorted(
+        value for value in manifest_strings
+        if value.startswith("firebase_") or value.startswith("google_analytics_")
+    )
+    result.append(
+        "- Firebase/Google Analytics opt-out keys already present: "
+        + (", ".join(f"`{name}`" for name in firebase_optouts) if firebase_optouts else "none")
+    )
     return result
 
 
