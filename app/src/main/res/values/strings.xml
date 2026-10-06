@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Nox P2P</string>
+    <string name="notification_channel_session">Активный P2P-чат</string>
+    <string name="notification_channel_messages">Сообщения Nox</string>
+</resources>

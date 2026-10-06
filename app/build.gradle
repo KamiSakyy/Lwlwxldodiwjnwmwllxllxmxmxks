@@ -1,0 +1,66 @@
+plugins {
+    id "com.android.application"
+}
+
+def quotedBuildField = { String value ->
+    def escaped = value.replace("\\", "\\\\").replace("\"", "\\\"")
+    return "\"${escaped}\""
+}
+
+def firebaseApiKey = (project.findProperty("firebaseApiKey") ?: "AIzaSyBm0mIvHVznIeF2PoFk6dtdaiT5r877wyA").toString()
+def databaseUrl = (project.findProperty("databaseUrl") ?: "https://meow-874ce-default-rtdb.europe-west1.firebasedatabase.app").toString()
+def turnUrl = (project.findProperty("turnUrl") ?: "").toString()
+def turnUsername = (project.findProperty("turnUsername") ?: "").toString()
+def turnCredential = (project.findProperty("turnCredential") ?: "").toString()
+
+android {
+    namespace "com.kamisakyy.noxchat"
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.kamisakyy.noxchat"
+        minSdk 26
+        targetSdk 36
+        versionCode 1
+        versionName "1.0.0"
+
+        buildConfigField "String", "FIREBASE_API_KEY", quotedBuildField(firebaseApiKey)
+        buildConfigField "String", "FIREBASE_DATABASE_URL", quotedBuildField(databaseUrl)
+        buildConfigField "String", "TURN_URL", quotedBuildField(turnUrl)
+        buildConfigField "String", "TURN_USERNAME", quotedBuildField(turnUsername)
+        buildConfigField "String", "TURN_CREDENTIAL", quotedBuildField(turnCredential)
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    packaging {
+        resources {
+            excludes += ["META-INF/DEPENDENCIES", "META-INF/LICENSE*", "META-INF/NOTICE*"]
+        }
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+}
+
+dependencies {
+    implementation "androidx.activity:activity:1.10.1"
+    implementation "androidx.core:core:1.16.0"
+    implementation "com.squareup.okhttp3:okhttp:4.12.0"
+    implementation "io.github.webrtc-sdk:android:125.6422.07"
+}

@@ -1,0 +1,11 @@
+<resources>
+    <color name="nox_background">#08090B</color>
+    <color name="nox_surface">#111318</color>
+    <color name="nox_surface_raised">#191C22</color>
+    <color name="nox_border">#272B33</color>
+    <color name="nox_text">#F5F6F8</color>
+    <color name="nox_muted">#9298A5</color>
+    <color name="nox_accent">#B7F36B</color>
+    <color name="nox_accent_dark">#243414</color>
+    <color name="nox_error">#FF7474</color>
+</resources>

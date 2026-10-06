@@ -1,0 +1,89 @@
+name: Android APK (API 36)
+
+on:
+  push:
+    branches:
+      - arena/ade03820-lwlwxldodiwjnwmwllxllxmxmxks
+    paths-ignore:
+      - HANDOFF/**
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nox-android-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.ref == 'refs/heads/arena/ade03820-lwlwxldodiwjnwmwllxllxmxmxks'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout session branch
+        uses: actions/checkout@v4
+        with:
+          ref: arena/ade03820-lwlwxldodiwjnwmwllxllxmxmxks
+          fetch-depth: 0
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install Android SDK 36
+        uses: android-actions/setup-android@v3
+
+      - name: Install API 36 platform and build tools
+        run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
+
+      - name: Install Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.13'
+
+      - name: Build debug APK
+        env:
+          TURN_URL: ${{ secrets.TURN_URL }}
+          TURN_USERNAME: ${{ secrets.TURN_USERNAME }}
+          TURN_CREDENTIAL: ${{ secrets.TURN_CREDENTIAL }}
+        run: >-
+          gradle --no-daemon clean assembleDebug
+          -PturnUrl="${TURN_URL}"
+          -PturnUsername="${TURN_USERNAME}"
+          -PturnCredential="${TURN_CREDENTIAL}"
+
+      - name: Prepare HANDOFF files
+        run: |
+          mkdir -p HANDOFF
+          cp app/build/outputs/apk/debug/app-debug.apk HANDOFF/Nox-P2P-API36-debug.apk
+          rm -f HANDOFF/Nox-P2P-Android-sources.zip
+          zip -r HANDOFF/Nox-P2P-Android-sources.zip \
+            app/src app/build.gradle app/proguard-rules.pro \
+            settings.gradle build.gradle gradle.properties .gitignore \
+            database.rules.json README.md .github/workflows/android-apk.yml \
+            -x 'app/build/*' '*/.DS_Store'
+
+      - name: Upload APK and source archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: Nox-P2P-API36-HANDOFF
+          path: |
+            HANDOFF/Nox-P2P-API36-debug.apk
+            HANDOFF/Nox-P2P-Android-sources.zip
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Publish generated handoff files on the session branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add HANDOFF/Nox-P2P-API36-debug.apk HANDOFF/Nox-P2P-Android-sources.zip
+          if git diff --cached --quiet; then
+            echo "HANDOFF files already match this build."
+            exit 0
+          fi
+          git commit -m "build: publish API 36 Android handoff [skip ci]"
+          git push origin HEAD:arena/ade03820-lwlwxldodiwjnwmwllxllxmxmxks

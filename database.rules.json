@@ -1,0 +1,26 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "rooms": {
+      "$roomId": {
+        "members": {
+          ".read": "auth != null",
+          "$uid": {
+            ".write": "auth != null && (auth.uid === $uid || (!newData.exists() && data.child('lastSeen').val() < now - 90000))",
+            ".validate": "!newData.exists() || (newData.hasChildren(['name', 'lastSeen']) && newData.child('name').isString() && newData.child('name').val().length <= 32 && newData.child('lastSeen').isNumber())"
+          }
+        },
+        "signals": {
+          "$targetUid": {
+            ".read": "auth != null && auth.uid === $targetUid",
+            "$signalId": {
+              ".write": "auth != null && ((newData.exists() && newData.child('from').val() === auth.uid && root.child('rooms').child($roomId).child('members').child($targetUid).exists()) || (!newData.exists() && (auth.uid === $targetUid || data.child('from').val() === auth.uid)))",
+              ".validate": "!newData.exists() || (newData.hasChildren(['from', 'type', 'epoch']) && newData.child('from').isString() && newData.child('type').isString() && newData.child('epoch').isString())"
+            }
+          }
+        }
+      }
+    }
+  }
+}
