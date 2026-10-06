@@ -129,12 +129,14 @@ def imports_of(fp):
     return imports_cache[fp]
 
 def resolve_type(site_fp, simple):
-    cands = []
+    imp = []
     for q in imports_of(site_fp):
         if q.endswith("." + simple):
             p = q[: -(len(simple) + 1)]
             if simple in pkg_classes.get(p, ()):
-                cands.append((p, simple))
+                imp.append((p, simple))
+    if len(imp) == 1: return imp[0]          # single-import ВЫИГРЫВАЕТ (JLS)
+    cands = list(imp)
     site_pkg = os.path.relpath(os.path.dirname(site_fp), ROOT)
     if simple in pkg_classes.get(site_pkg, ()):
         cands.append((site_pkg, simple))
