@@ -35,4 +35,22 @@ public final class a extends g {
     public final String toString() {
         return "BackHandlerInfo(owner=" + this.f21795a + ", compositeKey=" + this.f21796b + ')';
     }
+
+    public static Object r;
+
+    public static Object w;
+
+    public static Object x;
+
+    public static Object y;
+
+    public static Object v;
+
+    public static Object q;
+
+    public static Object t;
+
+    public static Object c;
+
+    public static Object b;
 }

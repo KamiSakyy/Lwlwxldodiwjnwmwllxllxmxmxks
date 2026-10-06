@@ -50,4 +50,5 @@ public final class e extends c {
         float f6 = this.f4109v;
         return hashCode + (f6 != 0.0f ? Float.floatToIntBits(f6) : 0);
     }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

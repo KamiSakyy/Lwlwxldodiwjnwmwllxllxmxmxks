@@ -5,4 +5,5 @@ package r9;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface f {
+    public Object a = null;
 }

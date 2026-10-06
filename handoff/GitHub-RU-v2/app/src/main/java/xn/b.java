@@ -49,4 +49,5 @@ public final class b {
         f1.e.x(sb, this.c, ", baseRef=", this.d, ", headRef=");
         return com.github.rudroid.copilot.h1.p(sb, this.e, ")");
     }
+    public Object B(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
 }

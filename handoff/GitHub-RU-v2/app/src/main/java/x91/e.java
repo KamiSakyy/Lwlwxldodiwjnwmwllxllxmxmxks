@@ -32,4 +32,5 @@ public final class e {
     public final String toString() {
         return "Node(range=" + this.a + ", type=" + this.b + ')';
     }
+    public Object c(Object p1, Object p2, Object p3) { return null; }
 }

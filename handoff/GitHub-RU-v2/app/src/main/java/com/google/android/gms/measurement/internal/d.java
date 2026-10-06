@@ -39,4 +39,9 @@ public final class d extends i4 {
         this.x.put(num, w4Var);
         return w4Var;
     }
+    public Object d(Object p1, Object p2) { return null; }
+    public Object f(Object p1, Object p2) { return null; }
+    public Object h() { return null; }
+    public Object a = null;
+    public Object t = null;
 }

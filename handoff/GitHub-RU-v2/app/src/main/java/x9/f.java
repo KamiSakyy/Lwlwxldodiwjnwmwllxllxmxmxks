@@ -24,4 +24,7 @@ public final class f implements w21.c {
         }
         scheduledFuture.cancel(false);
     }
+    public Object r = null;
+    public Object s = null;
+    public Object t = null;
 }

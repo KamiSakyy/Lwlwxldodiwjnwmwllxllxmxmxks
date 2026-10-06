@@ -28,4 +28,5 @@ public final /* synthetic */ class f implements j71.a {
                 return new z("com.github.rudroid.profile.navigation.ProfileScreenRoute", ProfileScreenRoute.INSTANCE, new Annotation[0]);
         }
     }
+    public static final Object J = null;
 }

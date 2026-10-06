@@ -40,4 +40,8 @@ public final class q0 implements aa.h0 {
         o.append(")");
         return o.toString();
     }
+    public Object b = null;
+    public Object c = null;
+    public Object d = null;
+    public Object e = null;
 }

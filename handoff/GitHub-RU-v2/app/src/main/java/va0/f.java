@@ -31,4 +31,6 @@ public abstract class f {
         }
         return new r2(str, cVar.c, q.q(cVar.e), false);
     }
+
+    public static Object c;
 }

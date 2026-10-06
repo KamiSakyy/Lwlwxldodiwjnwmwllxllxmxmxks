@@ -5,4 +5,6 @@ package c9;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface b {
+    public Object s = null;
+    public Object y = null;
 }

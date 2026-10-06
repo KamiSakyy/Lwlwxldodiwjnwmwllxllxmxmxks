@@ -19,4 +19,5 @@ public final class d0 extends c71.c {
         this.f29517w |= Integer.MIN_VALUE;
         return com.google.common.util.concurrent.a.d((File) null, (j71.c) null, this);
     }
+    public Object w = null;
 }

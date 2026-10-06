@@ -38,4 +38,5 @@ public final class a implements h0 {
     public final String toString() {
         return no.a.p(m0.o("UpdatableFields(__typename=", this.a, ", viewerCanUpdate=", ", nodeIdFragment=", this.b), this.c, ")");
     }
+    public Object O(Object p1) { return null; }
 }

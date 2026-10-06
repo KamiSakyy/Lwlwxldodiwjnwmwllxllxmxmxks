@@ -70,4 +70,12 @@ public abstract class m0 implements aa.a {
         jo.f4.C(g0Var.c, bVar, fVar, wVar, "viewerHasUpvoted");
         bVar.b(fVar, wVar, Boolean.valueOf(g0Var.d));
     }
+    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
+    public Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object o(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object p(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object y(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object z(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

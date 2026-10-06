@@ -56,4 +56,13 @@ public abstract class Hilt_SupportFragment<T extends k5.f> extends BindingFragme
         H4();
         return this.B0;
     }
+
+    public <T0> T0 w(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 M3(Object... a) {
+        return null;
+    }
+    public Object M3(Object p1, Object p2, Object p3) { return null; }
 }

@@ -7,4 +7,10 @@ package w8;
 public class b0 {
     public b0() {
     }
+
+    public static Object a;
+
+    public <T0> T0 a(Object... a) {
+        return null;
+    }
 }

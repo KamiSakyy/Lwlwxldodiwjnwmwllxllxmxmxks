@@ -154,4 +154,5 @@ public abstract class w implements aa.a {
         fVar.z0("isRequired");
         aa.c.f.b(fVar, wVar, Boolean.valueOf(d0Var.g));
     }
+    public Object e(Object p1) { return null; }
 }

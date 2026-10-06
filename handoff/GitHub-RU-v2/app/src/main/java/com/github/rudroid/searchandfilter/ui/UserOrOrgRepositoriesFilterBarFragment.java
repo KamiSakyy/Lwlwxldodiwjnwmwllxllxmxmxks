@@ -99,4 +99,16 @@ public final class UserOrOrgRepositoriesFilterBarFragment extends Hilt_UserOrOrg
         throw null;
     }
 
+
+    public <T0> T0 j4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 A3(Object... a) {
+        return null;
+    }
 }

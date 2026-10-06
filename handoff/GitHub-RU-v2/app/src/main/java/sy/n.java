@@ -790,4 +790,7 @@ public abstract class n {
         public CoordinatorLayout() {
         }
     }
+    public static final Object a = null;
+    public static final Object c = null;
+    public static final Object w = null;
 }

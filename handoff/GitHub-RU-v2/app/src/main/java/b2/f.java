@@ -24,4 +24,5 @@ public final class f {
     public final String toString() {
         return a(this.f3325a);
     }
+    public static final Object J = null;
 }

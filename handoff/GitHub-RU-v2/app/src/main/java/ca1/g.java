@@ -118,4 +118,5 @@ public final class g extends j {
     public g() {
         this("http://www.w3.org/1999/xhtml", "", new f0(new da1.b()));
     }
+    public Object f(Object p1, Object p2) { return null; }
 }

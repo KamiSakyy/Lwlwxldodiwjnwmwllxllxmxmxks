@@ -35,4 +35,5 @@ public final class gn {
     public static gn[] values() {
         return (gn[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

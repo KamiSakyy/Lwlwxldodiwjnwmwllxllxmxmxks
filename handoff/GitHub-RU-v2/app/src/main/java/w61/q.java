@@ -37,4 +37,5 @@ public final class q implements Serializable {
     public final String toString() {
         return "(" + this.r + ", " + this.s + ", " + this.t + ')';
     }
+    public Object pShadow(Object p1, Object p2) { return null; }
 }

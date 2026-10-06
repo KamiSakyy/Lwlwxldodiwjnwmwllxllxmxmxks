@@ -7,4 +7,6 @@ package f1;
 public class s5 {
     public s5() {
     }
+    public Object S0() { return null; }
+    public Object M = null;
 }

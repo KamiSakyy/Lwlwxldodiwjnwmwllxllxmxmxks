@@ -131,4 +131,5 @@ public abstract class c {
         }
         return new d2(str, arrayList, reviewerReviewState, z);
     }
+    public static final Object a = null;
 }

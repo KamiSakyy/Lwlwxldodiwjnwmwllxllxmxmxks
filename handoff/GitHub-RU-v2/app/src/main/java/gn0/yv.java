@@ -38,4 +38,5 @@ public final class yv {
     public static yv[] values() {
         return (yv[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

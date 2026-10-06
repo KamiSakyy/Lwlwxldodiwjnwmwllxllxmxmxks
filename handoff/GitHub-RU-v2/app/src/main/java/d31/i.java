@@ -89,4 +89,6 @@ public final class i extends d {
         }
     }
 
+
+    public Object a;
 }

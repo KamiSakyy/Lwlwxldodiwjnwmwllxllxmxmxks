@@ -89,4 +89,5 @@ public final class c implements aa.a {
     public final /* bridge */ /* synthetic */ void b(f fVar, w wVar, Object obj) {
         d(fVar, wVar, (a) obj);
     }
+    public static final Object i = null;
 }

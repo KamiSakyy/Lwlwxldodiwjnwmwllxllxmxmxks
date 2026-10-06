@@ -85,4 +85,10 @@ public interface c {
     default long z(float f6) {
         return m(H(f6));
     }
+
+    default <T0> T0 b(Object... a) {
+        return null;
+    }
+    public Object a = null;
+    public Object d = null;
 }

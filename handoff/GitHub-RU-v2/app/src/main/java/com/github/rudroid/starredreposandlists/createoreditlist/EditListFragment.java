@@ -124,4 +124,26 @@ public final class EditListFragment extends Hilt_EditListFragment implements com
         com.github.rudroid.utilities.w0.a(new y00.l(((u0) this.E0.getValue()).B, 10), F3(), androidx.lifecycle.w.u, new k0(this, view, null));
     }
 
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 F3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 w3(Object... a) {
+        return null;
+    }
+    public Object g4() { return null; }
+    public Object w3() { return null; }
 }

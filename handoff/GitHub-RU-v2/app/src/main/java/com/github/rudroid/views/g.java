@@ -27,4 +27,6 @@ public final class g extends s0 {
             ((m0) iVar).a.e(0, 1);
         }
     }
+    public Object ordinal() { return null; }
+    public Object t(Object p1, Object p2) { return null; }
 }

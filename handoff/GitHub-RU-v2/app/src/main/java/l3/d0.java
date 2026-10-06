@@ -15,4 +15,6 @@ public final class d0 implements p {
     public int m(int i) {
         return i;
     }
+
+    public static Object r;
 }

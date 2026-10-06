@@ -33,4 +33,6 @@ public final class a0 {
         public r() {
         }
     }
+    public Object s(Object p1, Object p2) { return null; }
+    public Object x() { return null; }
 }

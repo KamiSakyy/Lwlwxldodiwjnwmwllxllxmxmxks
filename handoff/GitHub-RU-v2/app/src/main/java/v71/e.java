@@ -12,4 +12,5 @@ public final class e {
         this.a = e0VarArr;
         this.notCompletedCount$volatile = e0VarArr.length;
     }
+    public static final Object a = null;
 }

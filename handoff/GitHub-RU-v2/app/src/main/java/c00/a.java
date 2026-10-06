@@ -654,4 +654,6 @@ public final class a extends c71.j implements j71.f {
         this.z = i0Var;
         this.A = str;
     }
+    public Object M(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object O(Object p1, Object p2, Object p3) { return null; }
 }

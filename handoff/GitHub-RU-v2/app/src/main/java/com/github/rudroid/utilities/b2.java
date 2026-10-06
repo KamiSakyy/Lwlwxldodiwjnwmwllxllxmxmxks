@@ -44,4 +44,5 @@ public final class b2 extends l7.p1 {
         public RecyclerView() {
         }
     }
+    public Object d = null;
 }

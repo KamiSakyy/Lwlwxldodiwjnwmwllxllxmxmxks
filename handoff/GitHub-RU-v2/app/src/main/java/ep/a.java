@@ -25,4 +25,8 @@ public final class a implements aaShadow.a {
         fVar.z0("assignable");
         aa.c.b(aa.c.c(b.a, true)).b(fVar, wVar, aVar.a);
     }
+    public Object O(Object p1) { return null; }
+    public static final Object d = null;
+    public static final Object o = null;
+    public static final Object r = null;
 }

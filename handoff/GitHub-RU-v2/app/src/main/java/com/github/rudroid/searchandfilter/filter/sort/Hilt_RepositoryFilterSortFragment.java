@@ -58,4 +58,8 @@ public abstract class Hilt_RepositoryFilterSortFragment<T extends f> extends Bin
         H4();
         return this.B0;
     }
+
+    public <T0> T0 w(Object... a) {
+        return null;
+    }
 }

@@ -100,4 +100,6 @@ public final class a7 extends s7 {
         ZonedDateTime now = ZonedDateTime.now();
         k71.k.f(now, "now(...)");
     }
+
+    public Object i;
 }

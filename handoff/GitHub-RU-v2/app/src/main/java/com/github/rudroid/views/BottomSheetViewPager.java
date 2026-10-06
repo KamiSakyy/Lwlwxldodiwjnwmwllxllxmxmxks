@@ -88,4 +88,16 @@ public final class BottomSheetViewPager extends androidx.viewpager.widget.k {
         k71.k.d(childAt3);
         return childAt3;
     }
+
+    public <T0> T0 requestLayout(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getChildCount(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getCurrentItem(Object... a) {
+        return null;
+    }
 }

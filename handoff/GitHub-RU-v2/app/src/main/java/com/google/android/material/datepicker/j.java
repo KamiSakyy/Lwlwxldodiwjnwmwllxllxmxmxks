@@ -60,4 +60,6 @@ public final class j extends b1 {
         public RecyclerView() {
         }
     }
+    public Object getContext() { return null; }
+    public Object isShowing() { return null; }
 }

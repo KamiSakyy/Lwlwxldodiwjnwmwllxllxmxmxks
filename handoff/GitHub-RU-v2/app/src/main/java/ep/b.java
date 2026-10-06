@@ -33,4 +33,7 @@ public final class b implements aaShadow.a {
         List list = gq.d.a;
         gq.d.d(fVar, wVar, bVar.b);
     }
+    public static final Object A = null;
+    public static final Object h = null;
+    public static final Object r = null;
 }

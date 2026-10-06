@@ -72,4 +72,7 @@ public final class d {
         public g() {
         }
     }
+    public Object c = null;
+    public Object e = null;
+    public Object f = null;
 }

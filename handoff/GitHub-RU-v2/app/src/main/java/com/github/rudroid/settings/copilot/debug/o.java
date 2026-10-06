@@ -17,4 +17,5 @@ final /* synthetic */ class o extends k71.i implements j71.c {
         });
         return w61.a0.a;
     }
+    public Object v(Object p1) { return null; }
 }

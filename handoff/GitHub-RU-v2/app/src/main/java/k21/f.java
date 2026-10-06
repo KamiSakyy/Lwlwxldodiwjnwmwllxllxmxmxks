@@ -1165,4 +1165,6 @@ public abstract class f {
 
 
 
+
+    public static Object a;
 }

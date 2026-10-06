@@ -33,4 +33,8 @@ public final class m0 implements aa.a {
         List list = o50.b.a;
         o50.b.d(fVar, wVar, xVar.b);
     }
+    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
+    public Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object o(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

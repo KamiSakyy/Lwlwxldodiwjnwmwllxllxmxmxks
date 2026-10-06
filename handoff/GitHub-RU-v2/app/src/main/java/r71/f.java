@@ -9,4 +9,5 @@ public interface f {
     List b();
 
     b c();
+    public Object j = null;
 }

@@ -19,4 +19,5 @@ public abstract class y {
     }
 
     public abstract void d(h91.i iVar);
+    public Object c = null;
 }

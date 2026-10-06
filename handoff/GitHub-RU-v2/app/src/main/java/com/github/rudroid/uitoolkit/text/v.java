@@ -38,4 +38,7 @@ public final /* synthetic */ class v implements j71.c {
         }
         return w61.a0.a;
     }
+
+    public Object s;
+    public Object b(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

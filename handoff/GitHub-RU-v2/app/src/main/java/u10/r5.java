@@ -44,4 +44,5 @@ public final class r5 {
         o.append(", nodeIdFragment=");
         return no.a.p(o, this.e, ")");
     }
+    public Object iterator() { return null; }
 }

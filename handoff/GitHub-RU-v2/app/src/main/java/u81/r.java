@@ -13,4 +13,5 @@ public interface r {
     q e();
 
     q g();
+    public static final Object b = null;
 }

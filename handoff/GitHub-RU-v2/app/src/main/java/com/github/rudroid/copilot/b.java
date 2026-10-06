@@ -46,4 +46,5 @@ final class b {
         sb2.append(", chatSuggestions=");
         return x.i.l(sb2, this.f9418c, ")");
     }
+    public Object ordinal() { return null; }
 }

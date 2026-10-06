@@ -59,4 +59,5 @@ public final class a implements h0 {
         m0.x(o, this.c, ", viewerCanMinimize=", this.d, ", nodeIdFragment=");
         return f4.r(o, this.e, ")");
     }
+    public Object O(Object p1) { return null; }
 }

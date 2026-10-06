@@ -19,4 +19,5 @@ public final class e extends n1 {
         k71.k.f(findViewById2, "findViewById(...)");
         this.v = (SwitchMaterial) findViewById2;
     }
+    public Object a(Object p1) { return null; }
 }

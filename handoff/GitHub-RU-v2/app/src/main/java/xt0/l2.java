@@ -30,4 +30,5 @@ public final class l2 {
     public final String toString() {
         return f1.e.m(a0.s0.o("Node(__typename=", this.a, ", id=", this.b, ", actorFields="), this.c, ")");
     }
+    public Object ordinal() { return null; }
 }

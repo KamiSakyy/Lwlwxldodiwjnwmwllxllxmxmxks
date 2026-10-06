@@ -11,4 +11,5 @@ public abstract class i {
 
     /* renamed from: t, reason: collision with root package name */
     public static final u f27674t = new u("monospace", "FontFamily.Monospace");
+    public Object d(Object p1, Object p2, Object p3) { return null; }
 }

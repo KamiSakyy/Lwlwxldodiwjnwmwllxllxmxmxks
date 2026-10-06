@@ -43,4 +43,6 @@ public final class v5 {
         sb.append(", path=");
         return com.github.rudroid.copilot.h1.p(sb, this.e, ")");
     }
+
+    public Object e;
 }

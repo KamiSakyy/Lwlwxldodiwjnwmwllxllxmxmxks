@@ -772,4 +772,5 @@ public abstract class m extends p {
         }
         return zArr;
     }
+    public Object e() { return null; }
 }

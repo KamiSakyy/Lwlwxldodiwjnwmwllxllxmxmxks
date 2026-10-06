@@ -59,4 +59,6 @@ public final class l {
 
     public l(Object... a) {
     }
+    public Object b(Object p1) { return null; }
+    public Object c = null;
 }

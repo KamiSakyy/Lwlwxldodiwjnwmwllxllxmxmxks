@@ -24,4 +24,8 @@ public final class e {
         this.f30451c = map;
         this.f30452d = i10;
     }
+    public Object a = null;
+    public Object b = null;
+    public Object c = null;
+    public Object d = null;
 }

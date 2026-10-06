@@ -45,4 +45,8 @@ public final class a {
     public final String toString() {
         return "AndroidApplicationInfo(packageName=" + this.a + ", versionName=" + this.b + ", appBuildVersion=" + this.c + ", deviceManufacturer=" + Build.MANUFACTURER + ", currentProcessDetails=" + this.d + ", appProcessDetails=" + this.e + ')';
     }
+    public Object P(Object p1, Object p2, Object p3) { return null; }
+    public Object d(Object p1) { return null; }
+    public static final Object u = null;
+    public Object r = null;
 }

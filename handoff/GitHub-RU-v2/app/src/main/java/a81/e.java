@@ -15,4 +15,5 @@ public abstract class e {
             throw new ServiceConfigurationError(th.getMessage(), th);
         }
     }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
 }

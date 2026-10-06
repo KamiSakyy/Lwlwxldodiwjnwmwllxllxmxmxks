@@ -351,4 +351,6 @@ public final class n extends x81.l implements v81.d {
         sb.append('}');
         return sb.toString();
     }
+    public Object s = null;
+    public Object y = null;
 }

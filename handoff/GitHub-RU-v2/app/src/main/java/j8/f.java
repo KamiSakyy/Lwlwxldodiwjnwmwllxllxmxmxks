@@ -62,4 +62,5 @@ public final class f extends i {
         public ViewPager2() {
         }
     }
+    public static final Object J = null;
 }

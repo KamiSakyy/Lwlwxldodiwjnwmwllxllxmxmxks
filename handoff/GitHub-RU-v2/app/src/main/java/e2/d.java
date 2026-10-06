@@ -5,4 +5,7 @@ package e2;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface d {
+    public static final Object f21852a = null;
+    public static final Object f21854c = null;
+    public static final Object f21855d = null;
 }

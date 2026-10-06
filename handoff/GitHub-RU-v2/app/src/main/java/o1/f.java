@@ -105,4 +105,5 @@ public class f extends d {
         public m() {
         }
     }
+    public static final Object J = null;
 }

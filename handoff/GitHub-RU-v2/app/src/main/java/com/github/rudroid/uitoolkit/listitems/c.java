@@ -14,4 +14,5 @@ public final class c {
         d = new r1.d(new com.github.rudroid.uitoolkit.banner.o(8), false, -1464635109);
         new r1.d(new com.github.rudroid.uitoolkit.banner.o(9), false, -486236436);
     }
+    public Object b = null;
 }

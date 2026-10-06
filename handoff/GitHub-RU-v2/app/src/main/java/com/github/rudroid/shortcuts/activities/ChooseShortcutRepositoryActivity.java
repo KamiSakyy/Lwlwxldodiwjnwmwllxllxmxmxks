@@ -30,4 +30,12 @@ public final class ChooseShortcutRepositoryActivity extends f0<ic.d0> {
         x6.y yVar = new x6.y(s4.b.s, ChooseShortcutRepositoryRoute.INSTANCE, (k71.e) null);
         com.github.rudroid.m0.D(new z6.i(com.github.rudroid.m0.r(yVar.g, z6.e.class), k71.x.a(ChooseShortcutRepositoryRoute.class), x61.s.r, k71.x.a(ChooseShortcutRepositoryFragment.class)), yVar.j, yVar, s4);
     }
+
+    public <T0> T0 C(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 H(Object... a) {
+        return null;
+    }
 }

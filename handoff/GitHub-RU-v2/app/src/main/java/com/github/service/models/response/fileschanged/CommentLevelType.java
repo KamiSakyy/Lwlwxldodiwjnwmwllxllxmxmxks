@@ -37,4 +37,8 @@ public final class CommentLevelType {
     public static CommentLevelType[] values() {
         return (CommentLevelType[]) $VALUES.clone();
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

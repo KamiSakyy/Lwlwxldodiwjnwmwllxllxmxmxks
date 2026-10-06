@@ -20,4 +20,5 @@ public final class a extends c71.c {
         this.x |= Integer.MIN_VALUE;
         return this.w.b((j) null, this);
     }
+    public Object ordinal() { return null; }
 }

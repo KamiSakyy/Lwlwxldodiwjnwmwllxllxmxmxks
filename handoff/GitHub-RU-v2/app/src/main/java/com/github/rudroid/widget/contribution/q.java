@@ -25,4 +25,6 @@ final class q extends c71.c {
         this.A |= Integer.MIN_VALUE;
         return ContributionWidgetSettingsActivity.v0(this.z, null, this);
     }
+    public Object X(Object p1) { return null; }
+    public Object Z(Object p1) { return null; }
 }

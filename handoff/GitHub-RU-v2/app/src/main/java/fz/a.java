@@ -144,4 +144,5 @@ public final class a implements yz0.l {
         String str6 = (u4Var == null || (str = u4Var.a) == null) ? "" : str;
         String str7 = t5Var.e;
     }
+    public Object h0(Object p1) { return null; }
 }

@@ -52,4 +52,6 @@ public final class w5 {
         sb.append(", startLine=");
         return com.github.rudroid.m0.c(this.g, ", startPath=", this.h, ")", sb);
     }
+
+    public Object e;
 }

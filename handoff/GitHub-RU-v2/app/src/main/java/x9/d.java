@@ -14,4 +14,5 @@ public final /* synthetic */ class d {
         k71.k.d(list);
         rVar.X(new n(hVar, list));
     }
+    public Object a = null;
 }

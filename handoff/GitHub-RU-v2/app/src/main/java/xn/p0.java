@@ -26,4 +26,5 @@ public final class p0 {
     public final String toString() {
         return f1.e.z("ChatModel(title=", this.a, ")");
     }
+    public Object b(Object p1) { return null; }
 }

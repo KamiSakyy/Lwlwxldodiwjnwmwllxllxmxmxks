@@ -9,4 +9,8 @@ public final class b extends k41.b {
     public final String toString() {
         return "Dimension.Undefined";
     }
+
+    public static s9.a a;
+
+    public static s9.b a;
 }

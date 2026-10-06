@@ -60,4 +60,5 @@ public final class f1 {
         public i1() {
         }
     }
+    public Object ordinal() { return null; }
 }

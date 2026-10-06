@@ -42,4 +42,9 @@ public final /* synthetic */ class a0 implements w21.c, w7.b, o31.k {
 
     public a0(Object... a) {
     }
+    public Object b(Object p1) { return null; }
+    public Object c() { return null; }
+    public Object C = null;
+    public Object V = null;
+    public Object w = null;
 }

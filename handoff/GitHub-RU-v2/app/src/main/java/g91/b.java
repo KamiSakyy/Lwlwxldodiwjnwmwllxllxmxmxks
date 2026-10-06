@@ -10,4 +10,5 @@ public abstract class b {
         k kVar = k.u;
         a = c30.d.a("000000ffff");
     }
+    public Object c = null;
 }

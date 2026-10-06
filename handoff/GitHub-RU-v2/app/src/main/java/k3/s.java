@@ -86,4 +86,19 @@ public final class s implements Comparable {
     public final String toString() {
         return x.i.j(new StringBuilder("FontWeight(weight="), this.f27698r, ')');
     }
+
+    public static k3.s u;
+
+    public static Object w;
+
+    public static Object z;
+
+    public static Object x;
+
+    public static Object y;
+
+    public static k3.s x;
+    public Object a(Object p1) { return null; }
+    public static final Object u = null;
+    public Object r = null;
 }

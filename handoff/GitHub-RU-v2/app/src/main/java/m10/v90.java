@@ -50,4 +50,5 @@ public final class v90 {
     public static v90[] values() {
         return (v90[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

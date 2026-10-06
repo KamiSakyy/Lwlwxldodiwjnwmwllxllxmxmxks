@@ -67,4 +67,6 @@ public abstract class a {
         k.g(str, "message");
         throw new NoSuchElementException(str);
     }
+
+    public static Object a;
 }

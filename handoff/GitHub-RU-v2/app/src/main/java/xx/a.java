@@ -40,4 +40,6 @@ public final class a implements h0 {
     public final String toString() {
         return m0.l(m0.o("PageInfoFragment(endCursor=", this.a, ", hasNextPage=", ", hasPreviousPage=", this.b), this.c, ", startCursor=", this.d, ")");
     }
+    public Object b = null;
+    public Object c = null;
 }

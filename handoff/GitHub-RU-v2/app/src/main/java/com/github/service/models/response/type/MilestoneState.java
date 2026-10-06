@@ -46,4 +46,8 @@ public final class MilestoneState {
     public final String getRawValue() {
         return this.rawValue;
     }
+
+    public <T0> T0 name(Object... a) {
+        return null;
+    }
 }

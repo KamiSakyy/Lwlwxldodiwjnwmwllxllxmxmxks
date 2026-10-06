@@ -125,4 +125,5 @@ public final class f {
         this.f32098j = new g0();
         this.i = f6;
     }
+    public static final Object J = null;
 }

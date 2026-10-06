@@ -54,4 +54,5 @@ public final class r6 {
     public static r6[] values() {
         return (r6[]) v.clone();
     }
+    public Object ordinal() { return null; }
 }

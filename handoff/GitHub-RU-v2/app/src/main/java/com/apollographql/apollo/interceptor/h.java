@@ -12,4 +12,6 @@ public abstract class h {
     static {
         new ApolloNetworkException(OfflineException.f4268r, "The device is offline");
     }
+
+    public static Object a;
 }

@@ -50,4 +50,8 @@ public final class ShortcutViewActivity extends j0<ic.d0> {
         x6.y yVar = new x6.y(s4.b.s, new ShortcutViewRoute((String) this.w0.c(this, x0[0])), (k71.e) null);
         com.github.rudroid.m0.D(new z6.i(com.github.rudroid.m0.r(yVar.g, z6.e.class), k71.x.a(ShortcutViewRoute.class), x61.s.r, k71.x.a(ShortcutViewFragment.class)), yVar.j, yVar, s4);
     }
+
+    public <T0> T0 C(Object... a) {
+        return null;
+    }
 }

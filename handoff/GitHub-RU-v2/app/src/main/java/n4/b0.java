@@ -55,4 +55,5 @@ public final class b0 {
         }
         notificationManager.cancel(null, i);
     }
+    public Object b = null;
 }

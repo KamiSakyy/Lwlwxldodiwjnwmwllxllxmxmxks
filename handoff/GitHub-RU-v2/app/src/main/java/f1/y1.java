@@ -7,4 +7,5 @@ package f1;
 public class y1 {
     public y1() {
     }
+    public Object m0 = null;
 }

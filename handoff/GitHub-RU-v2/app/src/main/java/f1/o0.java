@@ -20,4 +20,6 @@ public class o0 {
         public x() {
         }
     }
+    public Object b = null;
+    public Object d = null;
 }

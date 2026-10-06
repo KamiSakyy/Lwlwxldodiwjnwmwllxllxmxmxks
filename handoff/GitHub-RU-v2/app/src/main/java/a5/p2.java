@@ -7,4 +7,9 @@ package a5;
 public class p2 {
     public p2() {
     }
+    public Object a() { return null; }
+    public Object b() { return null; }
+    public Object c() { return null; }
+    public Object d() { return null; }
+    public Object a = null;
 }

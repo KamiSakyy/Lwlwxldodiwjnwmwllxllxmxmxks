@@ -39,4 +39,10 @@ public final class xz {
     public static xz[] values() {
         return (xz[]) w.clone();
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
+    public Object ordinal() { return null; }
+    public Object r = null;
 }

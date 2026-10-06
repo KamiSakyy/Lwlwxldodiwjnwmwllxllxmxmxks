@@ -223,4 +223,6 @@ public final class k2 implements aa.h0 {
         o.append(")");
         return o.toString();
     }
+
+    public Object i;
 }

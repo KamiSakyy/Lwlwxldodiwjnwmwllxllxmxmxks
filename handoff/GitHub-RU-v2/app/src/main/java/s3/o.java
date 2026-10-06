@@ -54,4 +54,9 @@ public final class o {
     public final String toString() {
         return d(this.f31710a);
     }
+
+    public static Object c;
+
+    public static Object b;
+    public Object a = null;
 }

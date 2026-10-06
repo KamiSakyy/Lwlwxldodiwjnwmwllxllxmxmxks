@@ -37,4 +37,5 @@ public final class w {
     public final String toString() {
         return "RecentInteraction(interaction=" + this.a + ", occurredAt=" + this.b + ", commenter=" + this.c + ", interactable=" + this.d + ")";
     }
+    public Object e(Object p1) { return null; }
 }

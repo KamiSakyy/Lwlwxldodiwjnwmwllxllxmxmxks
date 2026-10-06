@@ -49,4 +49,5 @@ public final class w implements aa.a {
         List list = cp0.d.a;
         cp0.d.d(fVar, wVar, kVar.c);
     }
+    public Object e(Object p1) { return null; }
 }

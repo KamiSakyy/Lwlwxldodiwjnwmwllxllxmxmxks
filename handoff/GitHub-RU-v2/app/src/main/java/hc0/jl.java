@@ -35,4 +35,5 @@ public final class jl {
     public static jl[] values() {
         return (jl[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

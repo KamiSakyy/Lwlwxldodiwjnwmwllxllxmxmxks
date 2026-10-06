@@ -51,4 +51,6 @@ public final class z {
         return sb2.toString();
     }
 
+    public Object b = null;
+    public Object c = null;
 }

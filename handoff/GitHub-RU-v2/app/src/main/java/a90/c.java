@@ -43,4 +43,7 @@ public final class c {
         sb.append(", includesCreatedEdit=");
         return m0.l(sb, this.c, ", id=", this.d, ")");
     }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
+    public static final Object f = null;
 }

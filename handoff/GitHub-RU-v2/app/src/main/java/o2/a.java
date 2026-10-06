@@ -208,4 +208,12 @@ public abstract class a {
     public static final boolean a(long j10, long j11) {
         return j10 == j11;
     }
+
+    public static Object a;
+
+    public static Object g;
+
+    public static Object f;
+
+    public static Object t;
 }

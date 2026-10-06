@@ -68,4 +68,5 @@ public final class r extends u {
     public final String toString() {
         return "AnimationVector2D: v1 = " + this.f225a + ", v2 = " + this.f226b;
     }
+    public Object a = null;
 }

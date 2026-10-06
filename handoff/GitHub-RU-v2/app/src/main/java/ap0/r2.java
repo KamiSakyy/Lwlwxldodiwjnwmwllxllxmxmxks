@@ -62,4 +62,6 @@ public final class r2 implements aa.h0 {
         o.append(")");
         return o.toString();
     }
+
+    public Object e;
 }

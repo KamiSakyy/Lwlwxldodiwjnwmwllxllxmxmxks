@@ -26,4 +26,7 @@ public final class h extends c71.c {
         this.f30018v |= Integer.MIN_VALUE;
         return this.f30020x.c((Object) null, this);
     }
+    public Object u = null;
+    public Object v = null;
+    public Object w = null;
 }

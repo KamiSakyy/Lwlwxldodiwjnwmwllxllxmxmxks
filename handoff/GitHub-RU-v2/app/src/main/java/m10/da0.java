@@ -38,4 +38,5 @@ public final class da0 {
     public static da0[] values() {
         return (da0[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

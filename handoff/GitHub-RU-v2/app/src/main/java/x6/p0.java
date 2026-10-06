@@ -7,4 +7,5 @@ package x6;
 public class p0 {
     public p0() {
     }
+    public Object b(Object p1) { return null; }
 }

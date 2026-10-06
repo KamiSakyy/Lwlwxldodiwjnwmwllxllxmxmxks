@@ -23,4 +23,6 @@ public final class e implements h, d {
     public final Iterator iterator() {
         return q.r;
     }
+
+    public static Object a;
 }

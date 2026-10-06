@@ -62,4 +62,6 @@ public final class g0 implements f0 {
         float f11 = this.f86s;
         return ((f10 / f11) * ((float) Math.exp((f11 * ((log / f11) * 1000)) / 1000.0f))) + (f6 - (f10 / f11));
     }
+    public Object r = null;
+    public Object s = null;
 }

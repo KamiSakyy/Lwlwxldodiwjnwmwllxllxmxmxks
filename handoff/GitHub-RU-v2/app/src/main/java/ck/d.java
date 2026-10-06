@@ -131,4 +131,5 @@ public final class d extends l0 {
                 return "DELETE FROM `filter_bars` WHERE `id` = ?";
         }
     }
+    public Object z(Object p1, Object p2) { return null; }
 }

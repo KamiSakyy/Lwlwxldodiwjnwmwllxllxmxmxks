@@ -28,4 +28,5 @@ public final class e {
     public final String toString() {
         return "OrganizationItemShowcase(__typename=" + this.a + ", itemShowcaseFragment=" + this.b + ")";
     }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

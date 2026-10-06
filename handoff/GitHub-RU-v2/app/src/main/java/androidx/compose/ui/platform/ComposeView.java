@@ -7,4 +7,8 @@ package androidx.compose.ui.platform;
 public class ComposeView {
     public ComposeView() {
     }
+
+    public <T0> T0 setContent(Object... a) {
+        return null;
+    }
 }

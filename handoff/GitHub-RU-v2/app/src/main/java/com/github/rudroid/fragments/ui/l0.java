@@ -6,4 +6,5 @@ public final class l0 implements j71.c {
         ((Number) obj).intValue();
         throw null;
     }
+    public Object t(Object p1) { return null; }
 }

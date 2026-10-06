@@ -23,4 +23,5 @@ public final class b2 extends k71.l implements j71.e {
         public a0() {
         }
     }
+    public Object d = null;
 }

@@ -9,4 +9,5 @@ public abstract class t0 {
         x61.r rVar = x61.r.r;
         a = new aa.q0("ArtifactConnection", rVar, rVar);
     }
+    public static final Object d = null;
 }

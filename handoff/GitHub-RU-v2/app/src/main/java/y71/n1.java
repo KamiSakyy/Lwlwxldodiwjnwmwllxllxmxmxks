@@ -959,4 +959,8 @@ public abstract class n1 {
     public static final i z(j1 j1Var, a71.h hVar, int i, x71.a aVar) {
         return ((i == 0 || i == -3) && aVar == x71.a.r) ? j1Var : new z71.h(i, hVar, aVar, j1Var);
     }
+
+    public <T0> T0 l(Object... a) {
+        return null;
+    }
 }

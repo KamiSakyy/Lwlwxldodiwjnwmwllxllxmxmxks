@@ -39,4 +39,5 @@ public final class s2 {
         f1.e.x(n, this.c, ", contentType=", this.d, ", viewerHasReacted=");
         return f4.s(n, this.e, ")");
     }
+    public Object a() { return null; }
 }

@@ -30,4 +30,5 @@ public final class d extends Handler {
         k71.k.f(message, "getMessage(...)");
         c.a(loggerName, i, message, logRecord.getThrown());
     }
+    public Object ordinal() { return null; }
 }

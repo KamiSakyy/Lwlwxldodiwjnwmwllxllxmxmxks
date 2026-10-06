@@ -20,4 +20,5 @@ public final class g {
 
     /* renamed from: e, reason: collision with root package name */
     public static boolean f33459e = true;
+    public Object ordinal() { return null; }
 }

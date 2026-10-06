@@ -123,4 +123,6 @@ public final class v {
         }
         return str;
     }
+    public Object r = null;
+    public Object s = null;
 }

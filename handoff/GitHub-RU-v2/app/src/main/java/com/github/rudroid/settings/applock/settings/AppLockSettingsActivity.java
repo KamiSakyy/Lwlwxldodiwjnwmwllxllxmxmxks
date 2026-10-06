@@ -100,4 +100,54 @@ public final class AppLockSettingsActivity extends w {
         e.c.a(this, new r1.d(new com.github.rudroid.settings.applock.settings.b(this, 0), true, -730549251));
     }
 
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 K0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 E(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 H(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 recreate(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 finish(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getPackageManager(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 y0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 w0(Object... a) {
+        return null;
+    }
+    public Object E(Object p1, Object p2) { return null; }
+    public Object finish() { return null; }
+    public Object getPackageManager() { return null; }
+    public Object recreate() { return null; }
+    public Object w0() { return null; }
+    public Object y0() { return null; }
 }

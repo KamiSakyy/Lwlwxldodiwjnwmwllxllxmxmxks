@@ -28,4 +28,5 @@ public final class a {
         this.f24378a = mVar;
         this.f24379b = b0.o(mVar);
     }
+    public Object d = null;
 }

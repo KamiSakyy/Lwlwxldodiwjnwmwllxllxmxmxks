@@ -101,4 +101,6 @@ public final class m0 extends c71.j implements j71.e {
                 return new r1(gitObjectType, (r1Var == null || (str3 = r1Var.b) == null) ? "" : str3, (r1Var == null || (str2 = r1Var.c) == null) ? str4 : str2, (r1Var == null || (str = r1Var.d) == null) ? "" : str, r1Var != null ? r1Var.e : false);
         }
     }
+    public Object a() { return null; }
+    public Object a = null;
 }

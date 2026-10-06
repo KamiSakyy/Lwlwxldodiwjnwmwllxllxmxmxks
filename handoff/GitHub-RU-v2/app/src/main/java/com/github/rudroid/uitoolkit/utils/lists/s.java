@@ -46,4 +46,17 @@ final class s extends c71.j implements j71.e {
         return w61.a0.a;
     }
 
+    public Object N() { return null; }
+    public Object S(Object p1, Object p2) { return null; }
+    public Object V() { return null; }
+    public Object c(Object p1) { return null; }
+    public Object c0(Object p1) { return null; }
+    public Object d(Object p1) { return null; }
+    public Object e0(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object h() { return null; }
+    public Object h(Object p1) { return null; }
+    public Object n0(Object p1) { return null; }
+    public Object q(Object p1) { return null; }
+    public Object t() { return null; }
 }

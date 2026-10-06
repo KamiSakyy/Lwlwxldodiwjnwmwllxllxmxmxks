@@ -201,4 +201,30 @@ public abstract /* synthetic */ class a {
         }
     }
 
+
+    public static Object g;
+
+    public <T0> T0 s(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 e(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 h(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 c(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 d(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 b(Object... a) {
+        return null;
+    }
 }

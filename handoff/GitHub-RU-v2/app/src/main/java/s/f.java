@@ -140,4 +140,5 @@ public class f implements Iterable {
             }
         }
     }
+    public static final Object J = null;
 }

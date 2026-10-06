@@ -5,4 +5,5 @@ package l7;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface m0 {
+    public Object j(Object p1, Object p2, Object p3) { return null; }
 }

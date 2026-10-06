@@ -7,4 +7,5 @@ package q;
 public class d3 {
     public d3() {
     }
+    public Object s = null;
 }

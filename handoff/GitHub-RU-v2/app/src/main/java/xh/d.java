@@ -54,4 +54,5 @@ public abstract class d<T extends f> extends SwipeRefreshLayout {
     }
 
 
+    public Object setOnRefreshListener(Object p1) { return null; }
 }

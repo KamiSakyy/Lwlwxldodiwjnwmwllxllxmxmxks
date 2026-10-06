@@ -34,4 +34,10 @@ public final class f0 {
     public final String toString() {
         return "ViewerCodingAgents(totalCount=" + this.a + ", nodes=" + this.b + ", pageInfo=" + this.c + ")";
     }
+    public static final Object B = null;
+    public static final Object i = null;
+    public static final Object j = null;
+    public static final Object x = null;
+    public static final Object y = null;
+    public static final Object z = null;
 }

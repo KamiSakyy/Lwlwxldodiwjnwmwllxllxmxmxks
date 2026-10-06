@@ -116,4 +116,16 @@ public abstract class l0 {
         public d() {
         }
     }
+
+    public static Object b;
+
+    public static Object f;
+
+    public static Object g;
+
+    public static Object j;
+
+    public static Object o;
+
+    public static Object p;
 }

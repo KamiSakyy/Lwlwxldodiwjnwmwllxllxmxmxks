@@ -45,4 +45,5 @@ public final class y implements Comparable {
     public final String toString() {
         return "CalendarDate(year=" + this.f25446r + ", month=" + this.f25447s + ", dayOfMonth=" + this.f25448t + ", utcTimeMillis=" + this.f25449u + ')';
     }
+    public Object u = null;
 }

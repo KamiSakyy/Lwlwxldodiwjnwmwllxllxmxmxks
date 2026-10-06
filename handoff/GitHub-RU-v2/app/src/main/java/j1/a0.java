@@ -143,4 +143,7 @@ public abstract class a0 {
         public w() {
         }
     }
+
+    public static Object d;
+    public Object e(Object p1, Object p2, Object p3) { return null; }
 }

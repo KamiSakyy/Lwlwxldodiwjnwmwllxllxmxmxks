@@ -35,4 +35,13 @@ public final class y implements Runnable {
         Objects.requireNonNull(f3Var);
         this.t = f3Var;
     }
+    public Object S(Object p1, Object p2, Object p3) { return null; }
+    public Object U(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object V(Object p1, Object p2, Object p3) { return null; }
+    public Object X(Object p1, Object p2, Object p3) { return null; }
+    public Object Y(Object p1, Object p2, Object p3) { return null; }
+    public Object Z(Object p1, Object p2) { return null; }
+    public Object a0(Object p1, Object p2) { return null; }
+    public Object p(Object p1, Object p2) { return null; }
+    public Object s(Object p1, Object p2, Object p3) { return null; }
 }

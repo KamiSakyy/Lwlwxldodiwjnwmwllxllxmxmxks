@@ -64,4 +64,6 @@ public final class r extends b0 {
         sb2.append(", arcStartDy=");
         return x.i.i(sb2, this.i, ')');
     }
+
+    public Object i;
 }

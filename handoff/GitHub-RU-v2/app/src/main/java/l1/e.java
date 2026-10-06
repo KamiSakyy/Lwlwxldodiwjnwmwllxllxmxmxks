@@ -212,4 +212,11 @@ public final class e implements RandomAccess {
         this.f27901r = objArr2;
     }
 
+
+    public <T0> T0 g(Object... a) {
+        return null;
+    }
+    public Object f27901r = null;
+    public Object f27903t = null;
+    public Object t = null;
 }

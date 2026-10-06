@@ -9,4 +9,6 @@ public abstract class j {
     static {
         k71.k.f(x.b("Data"), "tagWithPrefix(...)");
     }
+
+    public static Object a;
 }

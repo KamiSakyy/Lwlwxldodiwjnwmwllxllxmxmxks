@@ -70,4 +70,5 @@ public final class gh0 {
     public static gh0[] values() {
         return (gh0[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

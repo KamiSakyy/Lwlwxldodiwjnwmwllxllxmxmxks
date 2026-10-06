@@ -8,4 +8,5 @@ public final class d1 {
         k71.k.g(gVar, "service");
         this.a = gVar;
     }
+    public Object k(Object p1) { return null; }
 }

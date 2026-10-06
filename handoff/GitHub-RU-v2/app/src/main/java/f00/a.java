@@ -39,4 +39,5 @@ public final class a {
     public final String toString() {
         return "Content(__typename=" + this.a + ", onIssue=" + this.b + ", onPullRequest=" + this.c + ", onDraftIssue=" + this.d + ")";
     }
+    public Object O(Object p1) { return null; }
 }

@@ -28,4 +28,5 @@ public final class b {
     public final String toString() {
         return "Assignable(__typename=" + this.a + ", assignableFragment=" + this.b + ")";
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

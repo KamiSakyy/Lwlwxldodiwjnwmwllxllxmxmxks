@@ -188,4 +188,6 @@ public final class n extends SQLiteOpenHelper {
     public n(Context context, String str) {
         super(context, true == str.equals("") ? null : str, (SQLiteDatabase.CursorFactory) null, 1);
     }
+
+    public Object s;
 }

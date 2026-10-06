@@ -5,4 +5,12 @@ package w1;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface a {
+
+    default <T0> T0 c(Object... a) {
+        return null;
+    }
+
+    default <T0> T0 a(Object... a) {
+        return null;
+    }
 }

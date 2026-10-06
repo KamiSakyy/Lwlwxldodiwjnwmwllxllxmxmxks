@@ -32,4 +32,6 @@ public final class b {
     public final String toString() {
         return b(this.f26021a);
     }
+
+    public static Object b;
 }

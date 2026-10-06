@@ -50,4 +50,6 @@ public abstract class a {
         sa.Companion.getClass();
         a = l.r(new m[]{mVar3, mVar4, mVar5, mVar6, mVar7, new m("createdAt", l0.b(sa.a), (String) null, rVar, rVar, rVar)});
     }
+
+    public static Object a;
 }

@@ -12,4 +12,5 @@ public final class f0 extends p0 {
         k71.k.g(th, "finalException");
         this.f29522b = th;
     }
+    public Object r = null;
 }

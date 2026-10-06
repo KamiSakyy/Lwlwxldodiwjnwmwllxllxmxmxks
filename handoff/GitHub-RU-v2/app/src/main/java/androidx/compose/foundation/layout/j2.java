@@ -7,4 +7,6 @@ package androidx.compose.foundation.layout;
 public class j2 {
     public j2() {
     }
+
+    public static Object a;
 }

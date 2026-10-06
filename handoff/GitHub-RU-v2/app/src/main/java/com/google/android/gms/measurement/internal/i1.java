@@ -906,4 +906,6 @@ public final class i1 extends i4 implements g {
         }
         return null;
     }
+    public Object r = null;
+    public Object t = null;
 }

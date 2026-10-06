@@ -28,4 +28,5 @@ public final /* synthetic */ class e implements j71.a {
         }
         return a0.a;
     }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
 }

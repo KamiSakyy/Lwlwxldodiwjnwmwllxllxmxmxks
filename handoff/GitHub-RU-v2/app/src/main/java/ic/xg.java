@@ -7,4 +7,6 @@ package ic;
 public class xg {
     public xg() {
     }
+    public Object N = null;
+    public Object O = null;
 }

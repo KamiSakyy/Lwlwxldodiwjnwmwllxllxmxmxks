@@ -45,4 +45,8 @@ public abstract /* synthetic */ class h {
         }
         f21344b = iArr2;
     }
+
+    public static Object a;
+
+    public static Object b;
 }

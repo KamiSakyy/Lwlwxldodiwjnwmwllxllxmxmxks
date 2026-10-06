@@ -249,4 +249,8 @@ public final class o implements Closeable {
             }
         }
     }
+    public Object f = null;
+    public Object g = null;
+    public Object h = null;
+    public Object i = null;
 }

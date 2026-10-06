@@ -337,4 +337,9 @@ public abstract /* synthetic */ class s {
         }
         a = iArr2;
     }
+    public Object L(Object p1) { return null; }
+    public Object N() { return null; }
+    public Object f(Object p1) { return null; }
+    public Object h(Object p1) { return null; }
+    public Object n0(Object p1) { return null; }
 }

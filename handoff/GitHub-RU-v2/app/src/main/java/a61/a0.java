@@ -88,4 +88,5 @@ public final class a0Shadow {
         public o() {
         }
     }
+    public static final Object t = null;
 }

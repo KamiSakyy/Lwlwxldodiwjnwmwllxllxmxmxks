@@ -7,4 +7,8 @@ package f1;
 public class c8 {
     public c8() {
     }
+    public Object a = null;
+    public Object b = null;
+    public Object c = null;
+    public Object d = null;
 }

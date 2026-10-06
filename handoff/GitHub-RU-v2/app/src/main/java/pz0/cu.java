@@ -39,4 +39,5 @@ public final class cu {
     public static cu[] values() {
         return (cu[]) w.clone();
     }
+    public Object ordinal() { return null; }
 }

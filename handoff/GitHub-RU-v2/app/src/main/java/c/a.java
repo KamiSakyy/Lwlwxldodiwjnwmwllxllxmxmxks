@@ -12,4 +12,38 @@ public final class a implements c {
     public final IBinder asBinder() {
         return this.f3940f;
     }
+
+    public static Object a;
+
+    public <T0> T0 arrayIndexScale(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getInt(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 putInt(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getLong(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 putLong(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getObject(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 putObject(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 arrayBaseOffset(Object... a) {
+        return null;
+    }
 }

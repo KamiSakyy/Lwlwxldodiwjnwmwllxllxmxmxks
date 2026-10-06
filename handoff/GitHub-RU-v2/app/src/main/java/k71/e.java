@@ -115,4 +115,7 @@ public final class e implements r71.b, d {
     public final String toString() {
         return this.a.toString() + " (Kotlin reflection is not available)";
     }
+    public Object c(Object p1, Object p2, Object p3) { return null; }
+    public Object j() { return null; }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

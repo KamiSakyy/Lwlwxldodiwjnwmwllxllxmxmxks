@@ -103,4 +103,5 @@ public final class j3 {
     public static j3[] values() {
         return (j3[]) L.clone();
     }
+    public Object ordinal() { return null; }
 }

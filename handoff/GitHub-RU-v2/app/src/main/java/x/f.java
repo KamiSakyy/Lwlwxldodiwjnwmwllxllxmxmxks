@@ -299,4 +299,5 @@ public final class f implements Collection, Set, l71.b, l71.f {
         x61.l.x(0, 0, this.f33556t, this.f33555s, objArr);
         return objArr;
     }
+    public static final Object J = null;
 }

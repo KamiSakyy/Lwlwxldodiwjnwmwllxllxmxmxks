@@ -30,4 +30,5 @@ public final class a {
     public final String toString() {
         return "DiffLine(__typename=" + this.a + ", diffLineFragment=" + this.b + ")";
     }
+    public Object O(Object p1) { return null; }
 }

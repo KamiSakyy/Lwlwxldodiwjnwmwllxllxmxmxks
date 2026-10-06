@@ -7,4 +7,8 @@ package com.github.rudroid.fragments;
 public class BindingFragment {
     public BindingFragment() {
     }
+
+    public <T0> T0 y3(Object... a) {
+        return null;
+    }
 }

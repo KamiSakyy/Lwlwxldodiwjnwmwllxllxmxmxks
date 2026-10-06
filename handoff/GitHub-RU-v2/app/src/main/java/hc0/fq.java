@@ -38,4 +38,5 @@ public final class fq {
     public static fq[] values() {
         return (fq[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

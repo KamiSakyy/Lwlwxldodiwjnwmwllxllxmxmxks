@@ -33,4 +33,5 @@ public final class e {
     public final String toString() {
         return m0.f("PageInfo(hasNextPage=", ", endCursor=", this.b, ")", this.a);
     }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
 }

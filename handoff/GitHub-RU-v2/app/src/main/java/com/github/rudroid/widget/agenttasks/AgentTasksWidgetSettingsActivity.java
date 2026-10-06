@@ -32,4 +32,8 @@ public final class AgentTasksWidgetSettingsActivity extends d0 {
         AgentTasksWidgetWorker.Companion.getClass();
         AgentTasksWidgetWorker.a.a(context);
     }
+
+    public <T0> T0 C(Object... a) {
+        return null;
+    }
 }

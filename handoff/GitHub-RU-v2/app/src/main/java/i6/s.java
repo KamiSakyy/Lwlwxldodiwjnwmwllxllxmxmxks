@@ -9,4 +9,8 @@ public final class s implements z5.m {
     public s(n6.g gVar) {
         this.f26057a = gVar;
     }
+    public Object e0(Object p1) { return null; }
+    public Object h(Object p1, Object p2) { return null; }
+    public Object R = null;
+    public Object a = null;
 }

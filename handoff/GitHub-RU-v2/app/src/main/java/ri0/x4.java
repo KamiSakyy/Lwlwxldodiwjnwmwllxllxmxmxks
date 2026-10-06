@@ -34,4 +34,5 @@ public final class x4 {
     public final String toString() {
         return x.i.k(com.github.rudroid.copilot.h1.s("MergeCommit(abbreviatedOid=", this.a, ", committedDate=", ", id=", this.b), this.c, ", __typename=", this.d, ")");
     }
+    public Object i = null;
 }

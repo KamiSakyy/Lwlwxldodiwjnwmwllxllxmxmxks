@@ -160,4 +160,38 @@ public final class CopilotChatProPaywallActivity extends o {
 
 
 
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 K0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 a0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 m(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 w0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 y0(Object... a) {
+        return null;
+    }
+    public Object w0() { return null; }
+    public Object y0() { return null; }
 }

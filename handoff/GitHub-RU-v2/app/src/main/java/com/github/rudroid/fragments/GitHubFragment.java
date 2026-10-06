@@ -168,4 +168,6 @@ public abstract class GitHubFragment extends Hilt_GitHubFragment {
         public ComposeView() {
         }
     }
+
+    public Object Y;
 }

@@ -35,4 +35,5 @@ public final class a implements aa.a {
         List list = eq.d.a;
         eq.d.d(fVar, wVar, bVar.b);
     }
+    public Object O(Object p1) { return null; }
 }

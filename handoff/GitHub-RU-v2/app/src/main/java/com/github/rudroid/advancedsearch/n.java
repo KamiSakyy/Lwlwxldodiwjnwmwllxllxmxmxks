@@ -7,4 +7,9 @@ package com.github.rudroid.advancedsearch;
 public class n {
     public n() {
     }
+
+    public static n.a Companion;
+    public Object Q() { return null; }
+    public Object f6294w = null;
+    public Object f6297z = null;
 }

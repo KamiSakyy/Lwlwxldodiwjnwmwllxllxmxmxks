@@ -5,4 +5,5 @@ package f1;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface z8 {
+    public Object c() { return null; }
 }

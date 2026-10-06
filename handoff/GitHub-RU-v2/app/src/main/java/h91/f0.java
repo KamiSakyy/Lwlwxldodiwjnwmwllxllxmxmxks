@@ -82,4 +82,5 @@ public final class f0 {
         this.d = z;
         this.e = z2;
     }
+    public Object e(Object p1, Object p2, Object p3) { return null; }
 }

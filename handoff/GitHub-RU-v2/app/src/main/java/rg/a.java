@@ -14,4 +14,6 @@ public final class a {
         new r1.d(new o(22), false, 849780877);
         new r1.d(new ra.c(5), false, 1510254110);
     }
+    public Object L(Object p1) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
 }

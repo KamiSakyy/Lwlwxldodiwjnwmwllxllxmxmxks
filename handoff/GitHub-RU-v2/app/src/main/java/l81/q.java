@@ -9,4 +9,6 @@ public @interface q {
     String[] names();
 
 
+    public Object i() { return null; }
+    public Object l() { return null; }
 }

@@ -9,4 +9,5 @@ public final class l0 implements p61.d {
     public final Object get() {
         return new j0();
     }
+    public Object t(Object p1) { return null; }
 }

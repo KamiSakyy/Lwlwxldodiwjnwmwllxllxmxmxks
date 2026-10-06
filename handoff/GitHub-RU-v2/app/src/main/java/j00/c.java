@@ -26,4 +26,6 @@ public final class c {
     public final String toString() {
         return com.github.rudroid.m0.e(this.a, "MobilePushNotificationSettings(getsLiveActivityCopilotCodingAgentV2=", ")");
     }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object k = null;
 }

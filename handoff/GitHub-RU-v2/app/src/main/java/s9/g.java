@@ -36,4 +36,8 @@ public final class g {
 
     public g(Object... a) {
     }
+
+    public static Object s;
+
+    public static Object r;
 }

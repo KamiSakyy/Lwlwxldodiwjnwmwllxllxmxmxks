@@ -97,4 +97,12 @@ public final class SelectableLabelFragment extends Hilt_SelectableLabelFragment<
         return (g) this.H0.getValue();
     }
 
+
+    public <T0> T0 j4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
 }

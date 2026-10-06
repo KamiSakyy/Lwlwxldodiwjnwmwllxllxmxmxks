@@ -7,4 +7,5 @@ public interface b {
     int a(Context context, String str, boolean z);
 
     int b(Context context, String str);
+    public Object r = null;
 }

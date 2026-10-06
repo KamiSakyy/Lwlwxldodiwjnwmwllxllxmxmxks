@@ -115,4 +115,5 @@ public final /* synthetic */ class y implements j71.c {
         }
         return a0Var;
     }
+    public Object h() { return null; }
 }

@@ -33,4 +33,5 @@ public final class b {
     public final String toString() {
         return i.g("OnUser(id=", this.a, ", name=", this.b, ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

@@ -7,4 +7,6 @@ package ic;
 public class qc {
     public qc() {
     }
+    public Object F0() { return null; }
+    public Object P0(Object p1) { return null; }
 }

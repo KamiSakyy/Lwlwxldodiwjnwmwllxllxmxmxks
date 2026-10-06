@@ -31,4 +31,5 @@ public final class e {
     public final String toString() {
         return "FilterBarContextMenuItem(label=" + this.a + ", action=" + this.b + ")";
     }
+    public Object r(Object p1, Object p2, Object p3) { return null; }
 }

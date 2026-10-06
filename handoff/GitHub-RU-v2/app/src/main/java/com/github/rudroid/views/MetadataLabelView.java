@@ -94,4 +94,32 @@ public final class MetadataLabelView extends AppCompatTextView {
         k71.k.g(drawable, "icon");
         u2.c(this, drawable);
     }
+
+    public <T0> T0 getResources(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setPadding(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setTextAppearance(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getContext(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setBackground(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getCompoundDrawablesRelative(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setText(Object... a) {
+        return null;
+    }
 }

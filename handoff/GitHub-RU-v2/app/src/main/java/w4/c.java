@@ -45,4 +45,6 @@ public final class c {
     public final String toString() {
         return this.f33318a.f33319a.toString();
     }
+
+    public static Object b;
 }

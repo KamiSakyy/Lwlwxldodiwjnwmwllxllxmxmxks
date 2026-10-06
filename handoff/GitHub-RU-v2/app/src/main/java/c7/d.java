@@ -5,4 +5,6 @@ package c7;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface d {
+    public Object b() { return null; }
+    public Object c = null;
 }

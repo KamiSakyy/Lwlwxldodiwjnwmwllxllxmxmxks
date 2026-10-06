@@ -43,4 +43,6 @@ public final class a {
 
     public a(Object... a) {
     }
+    public Object e(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
 }

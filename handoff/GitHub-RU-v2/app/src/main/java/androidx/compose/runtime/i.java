@@ -98,4 +98,8 @@ public final class i implements a71.g, a3 {
                 return "Empty";
         }
     }
+
+    public static Object u;
+
+    public static Object x;
 }

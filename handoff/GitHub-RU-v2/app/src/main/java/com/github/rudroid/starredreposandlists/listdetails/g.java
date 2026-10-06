@@ -42,4 +42,5 @@ public final /* synthetic */ class g implements j71.c {
         public b() {
         }
     }
+    public Object ordinal() { return null; }
 }

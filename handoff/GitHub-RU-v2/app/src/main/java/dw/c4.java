@@ -100,4 +100,6 @@ public final class c4 implements aa.h0 {
         o.append(")");
         return o.toString();
     }
+
+    public Object i;
 }

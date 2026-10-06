@@ -72,4 +72,6 @@ public final class mo {
         o.append(")");
         return o.toString();
     }
+
+    public Object i;
 }

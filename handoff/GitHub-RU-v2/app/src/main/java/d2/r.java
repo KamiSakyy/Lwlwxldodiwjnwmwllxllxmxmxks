@@ -43,4 +43,16 @@ public interface r {
     void s(i iVar, y11.l lVar);
 
     void t();
+
+    default <T0> T0 p(Object... a) {
+        return null;
+    }
+
+    default <T0> T0 b(Object... a) {
+        return null;
+    }
+
+    default <T0> T0 a(Object... a) {
+        return null;
+    }
 }

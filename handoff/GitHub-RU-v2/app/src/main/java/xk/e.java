@@ -8,4 +8,5 @@ public final class e {
         k71.k.g(aVar, "cachedForUserDatabase");
         this.a = aVar;
     }
+    public Object c(Object p1, Object p2, Object p3) { return null; }
 }

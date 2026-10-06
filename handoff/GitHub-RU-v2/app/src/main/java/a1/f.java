@@ -11,4 +11,6 @@ public abstract class f {
     static {
         f330a = Build.VERSION.SDK_INT >= 34;
     }
+
+    public static Object a;
 }

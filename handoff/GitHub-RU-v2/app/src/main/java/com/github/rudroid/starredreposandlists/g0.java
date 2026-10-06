@@ -24,4 +24,6 @@ public final class g0 extends androidx.compose.foundation.lazy.layout.s0 {
         h0Var.x = iVar;
         h0Var.P(g1.a.c(com.github.rudroid.utilities.ui.g1.Companion));
     }
+    public Object t(Object p1, Object p2) { return null; }
+    public Object y(Object p1, Object p2) { return null; }
 }

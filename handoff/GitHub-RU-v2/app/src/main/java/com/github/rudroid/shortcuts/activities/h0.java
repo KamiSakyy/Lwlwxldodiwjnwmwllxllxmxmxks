@@ -14,4 +14,5 @@ public abstract class h0<T extends k5.f> extends d3 {
         this.u0 = true;
         ((j) w()).O0((ConfigureShortcutActivity) this);
     }
+    public Object onCreate(Object p1) { return null; }
 }

@@ -25,4 +25,7 @@ public final class c extends o0 {
                 return "kotlin.collections.LinkedHashSet";
         }
     }
+    public static final Object u = null;
+    public static final Object v = null;
+    public static final Object w = null;
 }

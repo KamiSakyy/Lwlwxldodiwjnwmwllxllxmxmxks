@@ -38,4 +38,9 @@ public final class d {
         return rVar.f(s1Var).f(b).f(s1Var.b);
     }
 
+
+    public static Object a;
+    public Object W(Object p1) { return null; }
+    public Object a() { return null; }
+    public Object c0() { return null; }
 }

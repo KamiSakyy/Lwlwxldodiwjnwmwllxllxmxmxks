@@ -47,4 +47,5 @@ public final class a implements h0 {
         o.append(", nodeIdFragment=");
         return no.a.p(o, this.e, ")");
     }
+    public Object O(Object p1) { return null; }
 }

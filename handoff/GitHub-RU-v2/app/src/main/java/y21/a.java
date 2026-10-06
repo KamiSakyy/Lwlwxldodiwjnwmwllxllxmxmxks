@@ -23,4 +23,11 @@ public abstract class a {
     public static int c(int i, float f, int i2) {
         return Math.round(f * (i2 - i)) + i;
     }
+
+    public static Object c;
+
+    public <T0> T0 c(Object... a) {
+        return null;
+    }
+    public static final Object e = null;
 }

@@ -14,4 +14,5 @@ public final class j0 {
     public final String toString() {
         return "CopilotLicenseFeatureComparison(title=0, details=null)";
     }
+    public Object ordinal() { return null; }
 }

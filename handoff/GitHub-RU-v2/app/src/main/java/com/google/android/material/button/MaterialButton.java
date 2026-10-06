@@ -1121,4 +1121,148 @@ public class MaterialButton extends o implements Checkable, y {
         setChecked(!this.F);
     }
 
+
+    public <T0> T0 getContext(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getPaddingStart(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getPaddingTop(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getPaddingEnd(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getPaddingBottom(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setPaddingRelative(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setCompoundDrawablePadding(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 invalidate(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getTextAlignment(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getGravity(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getLineCount(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getLayout(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getPaint(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getText(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getTransformationMethod(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getParent(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getId(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getDrawableState(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getWidth(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setCompoundDrawablesRelative(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getLayoutDirection(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getLayoutParams(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 isClickable(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getMeasuredWidth(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getMeasuredHeight(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getResources(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 isEnabled(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setMaxLines(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setEllipsize(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setTag(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setText(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setOnClickListener(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setId(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setLayoutParams(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setEnabled(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getVisibility(Object... a) {
+        return null;
+    }
 }

@@ -18,4 +18,10 @@ public final class d extends com.github.rudroid.adapters.viewholders.e<k5.f> {
         this.v = supportFragment;
     }
 
+    public Object a() { return null; }
+    public Object b() { return null; }
+    public Object B = null;
+    public Object s = null;
+    public Object t = null;
+    public Object u = null;
 }

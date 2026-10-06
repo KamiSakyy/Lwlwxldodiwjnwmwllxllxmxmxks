@@ -47,4 +47,5 @@ public final class b implements h0 {
         o.append(", createdAt=");
         return h1.q(o, this.e, ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

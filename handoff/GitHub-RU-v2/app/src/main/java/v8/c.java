@@ -5,4 +5,5 @@ package v8;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface c {
+    public Object v(Object p1) { return null; }
 }

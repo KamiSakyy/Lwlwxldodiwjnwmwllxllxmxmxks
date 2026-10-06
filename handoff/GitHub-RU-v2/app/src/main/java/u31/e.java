@@ -8,4 +8,8 @@ public final class e extends sy.u {
         double d = f3;
         xVar.c((float) (Math.sin(Math.toRadians(90.0f)) * d), (float) (Math.sin(Math.toRadians(0.0f)) * d));
     }
+    public Object a(Object p1) { return null; }
+    public Object b(Object p1, Object p2) { return null; }
+    public Object d() { return null; }
+    public Object j() { return null; }
 }

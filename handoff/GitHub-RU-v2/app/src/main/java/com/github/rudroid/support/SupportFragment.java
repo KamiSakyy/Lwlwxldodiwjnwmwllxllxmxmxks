@@ -183,4 +183,32 @@ public final class SupportFragment extends Hilt_SupportFragment<e4> implements a
         } while (!y1Var.i(value, new h0(a2)));
     }
 
+
+    public <T0> T0 g4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 B4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 D3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 F3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 r4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 u4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C3(Object... a) {
+        return null;
+    }
 }

@@ -14,4 +14,6 @@ public final class j {
         this.b = mVar;
         this.c = aVar;
     }
+    public Object a() { return null; }
+    public Object k0(Object p1, Object p2) { return null; }
 }

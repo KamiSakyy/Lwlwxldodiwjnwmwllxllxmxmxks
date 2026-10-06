@@ -35,4 +35,5 @@ public final class kt {
     public static kt[] values() {
         return (kt[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

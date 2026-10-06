@@ -48,4 +48,6 @@ public final class ya0 {
     public static ya0[] values() {
         return (ya0[]) z.clone();
     }
+    public Object ordinal() { return null; }
+    public Object r = null;
 }

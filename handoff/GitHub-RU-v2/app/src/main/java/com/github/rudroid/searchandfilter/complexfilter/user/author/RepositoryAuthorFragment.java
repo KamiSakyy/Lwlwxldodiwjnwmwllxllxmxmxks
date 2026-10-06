@@ -103,4 +103,12 @@ public final class RepositoryAuthorFragment extends Hilt_RepositoryAuthorFragmen
         return (com.github.rudroid.searchandfilter.complexfilter.user.d) this.H0.getValue();
     }
 
+
+    public <T0> T0 j4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
 }

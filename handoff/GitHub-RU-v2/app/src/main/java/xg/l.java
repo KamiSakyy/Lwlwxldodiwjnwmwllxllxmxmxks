@@ -75,4 +75,6 @@ public final class l {
             };
         }
     }
+    public static final Object b = null;
+    public static final Object c = null;
 }

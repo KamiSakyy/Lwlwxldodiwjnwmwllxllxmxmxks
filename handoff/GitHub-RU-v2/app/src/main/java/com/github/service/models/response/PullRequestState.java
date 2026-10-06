@@ -46,4 +46,8 @@ public final class PullRequestState {
     public final String getRawValue() {
         return this.rawValue;
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

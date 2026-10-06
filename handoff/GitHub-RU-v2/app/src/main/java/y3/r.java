@@ -15,4 +15,8 @@ public final class r {
     public r(String str) {
         this.f34251a = str;
     }
+
+    public static Object b;
+
+    public static Object c;
 }

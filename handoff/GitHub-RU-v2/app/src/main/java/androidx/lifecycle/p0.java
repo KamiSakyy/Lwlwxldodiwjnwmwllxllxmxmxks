@@ -27,4 +27,11 @@ public class p0 extends l0 {
             cVar.f31061h.post(h0Var);
         }
     }
+
+    public Object f2890a;
+
+    public Object f2895f;
+
+    public Object f2898j;
+    public Object j(Object p1) { return null; }
 }

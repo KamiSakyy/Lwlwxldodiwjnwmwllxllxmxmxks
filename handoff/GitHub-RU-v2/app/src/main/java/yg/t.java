@@ -73,4 +73,5 @@ public final class t {
             t.d = new bd.m(i, str, 16);
         }
     }
+    public Object L(Object p1) { return null; }
 }

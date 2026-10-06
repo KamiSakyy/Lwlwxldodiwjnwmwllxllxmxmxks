@@ -377,4 +377,11 @@ public final class g {
             };
         }
     }
+
+    public static Object a;
+    public static final Object b = null;
+    public static final Object d = null;
+    public static final Object e = null;
+    public static final Object f = null;
+    public static final Object h = null;
 }

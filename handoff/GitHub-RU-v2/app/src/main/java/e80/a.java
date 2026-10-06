@@ -30,4 +30,5 @@ public final class a {
     public final String toString() {
         return m0.b(this.b, "Comments(__typename=", this.a, ", totalCount=", ")");
     }
+    public Object O(Object p1) { return null; }
 }

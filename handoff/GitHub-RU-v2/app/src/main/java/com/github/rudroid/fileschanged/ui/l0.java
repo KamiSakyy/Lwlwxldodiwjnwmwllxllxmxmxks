@@ -6,4 +6,5 @@ package com.github.rudroid.fileschanged.ui;
  */
 public class l0 {
     public l0() {}
+    public Object t(Object p1) { return null; }
 }

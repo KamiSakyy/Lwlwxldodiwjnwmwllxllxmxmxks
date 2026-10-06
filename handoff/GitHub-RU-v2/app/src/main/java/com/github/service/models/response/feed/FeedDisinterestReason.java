@@ -38,4 +38,8 @@ public final class FeedDisinterestReason {
     public static FeedDisinterestReason[] values() {
         return (FeedDisinterestReason[]) $VALUES.clone();
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

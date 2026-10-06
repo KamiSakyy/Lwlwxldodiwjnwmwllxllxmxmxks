@@ -5,4 +5,5 @@ package x6;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface w {
+    public Object t = null;
 }

@@ -7,4 +7,8 @@ package androidx.compose.foundation.layout;
 public class c0 {
     public c0() {
     }
+
+    public <T0> T0 a(Object... a) {
+        return null;
+    }
 }

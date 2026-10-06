@@ -9,4 +9,5 @@ public final class g8 implements j41.d {
     public final Object get() {
         return (h8) this.r.r;
     }
+    public Object ordinal() { return null; }
 }

@@ -46,4 +46,5 @@ public final class h {
             appBarLayout.setImportantForAccessibility(0);
         }
     }
+    public Object c(Object p1, Object p2) { return null; }
 }

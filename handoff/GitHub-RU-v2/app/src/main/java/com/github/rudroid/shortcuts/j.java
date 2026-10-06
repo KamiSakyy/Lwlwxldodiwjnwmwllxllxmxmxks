@@ -23,4 +23,5 @@ final class j<T> implements y71.j {
         y1Var.k((Object) null, t1Var);
         return w61.a0.a;
     }
+    public Object f(Object p1) { return null; }
 }

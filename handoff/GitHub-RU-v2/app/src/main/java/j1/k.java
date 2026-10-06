@@ -154,4 +154,50 @@ public abstract class k {
         T = j18;
         U = m0.J;
     }
+
+    public static Object z;
+
+    public static Object j;
+
+    public static Object k;
+
+    public static Object e;
+
+    public static Object n;
+
+    public static Object o;
+
+    public static Object t;
+
+    public static Object u;
+
+    public static Object a;
+
+    public static Object g;
+
+    public static Object r;
+
+    public static Object s;
+
+    public static Object f;
+
+    public static Object d;
+
+    public static Object b;
+
+    public static Object h;
+
+    public static Object c;
+
+    public static Object x;
+
+    public static Object y;
+
+    public static Object p;
+
+    public static Object q;
+
+    public static Object v;
+
+    public static Object w;
 }

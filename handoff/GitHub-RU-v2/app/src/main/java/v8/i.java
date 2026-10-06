@@ -90,4 +90,9 @@ public final class i {
         k71.k.g(linkedHashMap, "values");
         this.f32790a = new HashMap(linkedHashMap);
     }
+
+    public static v8.i b;
+
+    public static Object b;
+    public Object a = null;
 }

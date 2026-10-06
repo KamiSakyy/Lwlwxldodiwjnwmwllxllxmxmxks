@@ -10,4 +10,10 @@ public final class a extends c {
     public final Object a(b bVar) {
         return null;
     }
+
+    public static Object f32099b;
+
+    public static Object b;
+
+    public static t6.a b;
 }

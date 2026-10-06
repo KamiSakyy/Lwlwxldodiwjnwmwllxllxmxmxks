@@ -473,4 +473,28 @@ public final class ShortcutWidgetSettingsActivity extends com.github.rudroid.wid
         return (com.github.rudroid.widget.shortcuts.viewmodel.f) this.i0.getValue();
     }
 
+
+    public <T0> T0 finish(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 K0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 startActivity(Object... a) {
+        return null;
+    }
 }

@@ -82,4 +82,16 @@ public final class SwipeActionPreference extends Preference {
         k.g(context, "context");
         this.h0 = true;
     }
+
+    public <T0> T0 j(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 B(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 h(Object... a) {
+        return null;
+    }
 }

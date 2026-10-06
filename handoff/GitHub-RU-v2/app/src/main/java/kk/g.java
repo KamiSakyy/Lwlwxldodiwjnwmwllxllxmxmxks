@@ -98,4 +98,5 @@ public final class g {
 
     public g(Object... a) {
     }
+    public Object e() { return null; }
 }

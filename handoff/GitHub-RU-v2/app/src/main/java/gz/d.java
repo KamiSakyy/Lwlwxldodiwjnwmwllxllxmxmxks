@@ -30,4 +30,5 @@ public final class d {
     public static d[] values() {
         return (d[]) u.clone();
     }
+    public static final Object r = null;
 }

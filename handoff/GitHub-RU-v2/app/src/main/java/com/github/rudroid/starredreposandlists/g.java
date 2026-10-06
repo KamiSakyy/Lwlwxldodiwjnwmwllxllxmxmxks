@@ -27,4 +27,5 @@ public abstract class g<T extends k5.f> extends d3 {
         public b() {
         }
     }
+    public Object onCreate(Object p1) { return null; }
 }

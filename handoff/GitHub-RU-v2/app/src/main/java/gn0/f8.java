@@ -44,4 +44,5 @@ public final class f8 {
     public static f8[] values() {
         return (f8[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

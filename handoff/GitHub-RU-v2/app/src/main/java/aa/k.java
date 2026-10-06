@@ -13,4 +13,5 @@ public final class k {
         this.f658a = tVar;
         this.f659b = u0Var;
     }
+    public Object b = null;
 }

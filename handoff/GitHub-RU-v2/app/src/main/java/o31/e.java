@@ -45,4 +45,5 @@ public abstract class e {
         }
         matrix.preConcat(view.getMatrix());
     }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

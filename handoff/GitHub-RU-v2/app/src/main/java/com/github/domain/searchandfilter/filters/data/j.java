@@ -24,4 +24,7 @@ public final class j implements k {
         trendingPeriod = TrendingPeriodFilter.x;
         return new TrendingPeriodFilter(trendingPeriod);
     }
+    public Object name() { return null; }
+    public Object ordinal() { return null; }
+    public Object s(Object p1) { return null; }
 }

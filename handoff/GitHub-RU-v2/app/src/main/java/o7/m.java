@@ -5,4 +5,5 @@ package o7;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface m {
+    public Object a(Object p1, Object p2, Object p3) { return null; }
 }

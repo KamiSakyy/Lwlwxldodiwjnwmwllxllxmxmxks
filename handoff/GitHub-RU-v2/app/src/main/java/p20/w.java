@@ -25,4 +25,5 @@ public final class w implements aaShadow.a {
         fVar.z0("comment");
         aa.c.b(aa.c.c(x.a, true)).b(fVar, wVar, i0Var.a);
     }
+    public Object e(Object p1) { return null; }
 }

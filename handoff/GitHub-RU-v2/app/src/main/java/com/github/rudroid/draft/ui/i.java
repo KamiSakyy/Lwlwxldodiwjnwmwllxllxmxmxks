@@ -48,4 +48,6 @@ public final class i {
     public static i[] values() {
         return (i[]) f12147w.clone();
     }
+
+    public static Object r;
 }

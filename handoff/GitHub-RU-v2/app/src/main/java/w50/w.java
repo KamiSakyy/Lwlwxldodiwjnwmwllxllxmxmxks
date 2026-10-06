@@ -42,4 +42,5 @@ public final class w {
         n.append(")");
         return n.toString();
     }
+    public Object e(Object p1) { return null; }
 }

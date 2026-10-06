@@ -14,4 +14,5 @@ public abstract class j0<T extends k5.f> extends d3 {
         this.u0 = true;
         ((m0) w()).d0((ShortcutViewActivity) this);
     }
+    public Object onCreate(Object p1) { return null; }
 }

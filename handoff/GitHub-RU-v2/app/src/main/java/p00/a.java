@@ -34,4 +34,6 @@ public abstract class a {
         eh.Companion.getClass();
         a = l.r(new m[]{mVar, mVar2, mVar3, new m("__typename", l0.b(eh.a), (String) null, rVar, rVar, rVar)});
     }
+
+    public static Object a;
 }

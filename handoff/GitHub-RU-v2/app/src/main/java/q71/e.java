@@ -81,4 +81,7 @@ public class e implements Iterable, l71.a {
 
     public e(Object... a) {
     }
+    public Object r = null;
+    public Object s = null;
+    public Object t = null;
 }

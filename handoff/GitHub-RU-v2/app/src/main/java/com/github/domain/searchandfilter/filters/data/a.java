@@ -23,4 +23,6 @@ public final class a implements k {
         gVar = AgentTasksSortFilter.x;
         return new AgentTasksSortFilter(gVar);
     }
+    public Object name() { return null; }
+    public Object z(Object p1) { return null; }
 }

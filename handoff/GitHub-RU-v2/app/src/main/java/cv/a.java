@@ -31,4 +31,5 @@ public final class a {
     public final String toString() {
         return x.i.g("File(name=", this.a, ", text=", this.b, ")");
     }
+    public Object O(Object p1) { return null; }
 }

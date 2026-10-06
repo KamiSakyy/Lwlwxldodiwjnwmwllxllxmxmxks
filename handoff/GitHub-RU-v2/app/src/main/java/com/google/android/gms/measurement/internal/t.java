@@ -41,4 +41,5 @@ public final class t {
     public final t b(Long l, Long l2, Boolean bool) {
         return new t(this.a, this.b, this.c, this.d, this.e, this.f, this.g, this.h, l, l2, bool);
     }
+    public Object e = null;
 }

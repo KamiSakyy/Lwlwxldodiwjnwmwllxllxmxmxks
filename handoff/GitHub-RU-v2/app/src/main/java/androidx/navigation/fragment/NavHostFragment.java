@@ -7,4 +7,8 @@ package androidx.navigation.fragment;
 public class NavHostFragment {
     public NavHostFragment() {
     }
+
+    public <T0> T0 s4(Object... a) {
+        return null;
+    }
 }

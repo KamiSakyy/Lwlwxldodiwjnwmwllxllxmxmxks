@@ -50,4 +50,6 @@ public final class e {
     public final String toString() {
         return "DiscussionCommentsDataPage(isLoading=" + this.a + ", discussionComments=" + this.b + ", page=" + this.c + ")";
     }
+    public Object c(Object p1, Object p2, Object p3) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

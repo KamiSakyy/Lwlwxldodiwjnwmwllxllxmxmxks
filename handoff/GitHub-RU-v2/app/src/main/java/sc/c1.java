@@ -5,4 +5,5 @@ package sc;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface c1 {
+    public Object a(Object p1) { return null; }
 }

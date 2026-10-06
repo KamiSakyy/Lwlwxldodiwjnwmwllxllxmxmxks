@@ -15,4 +15,9 @@ public final class i implements s {
     public v61.a k;
     public v61.a l;
     public v61.a m;
+    public Object e(Object p1, Object p2) { return null; }
+    public Object q() { return null; }
+    public Object r() { return null; }
+    public Object size() { return null; }
+    public Object t() { return null; }
 }

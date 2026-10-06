@@ -41,4 +41,5 @@ public final class c {
         Object n = z3.n(this.a, new i(eVar, obj, (a71.c) null, 2), cVar);
         return n == b71.a.r ? n : a0.a;
     }
+    public Object v(Object p1) { return null; }
 }

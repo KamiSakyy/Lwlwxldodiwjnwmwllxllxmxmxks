@@ -35,4 +35,6 @@ public final class d {
         sb2.append(", columnCount=");
         return x.i.j(sb2, this.f21418b, ')');
     }
+    public Object a = null;
+    public Object b = null;
 }

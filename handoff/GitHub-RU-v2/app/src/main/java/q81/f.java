@@ -27,4 +27,6 @@ public final class f {
         m7.y yVar = this.b;
         return hashCode + (yVar != null ? yVar.hashCode() : 0);
     }
+    public Object E = null;
+    public Object F = null;
 }

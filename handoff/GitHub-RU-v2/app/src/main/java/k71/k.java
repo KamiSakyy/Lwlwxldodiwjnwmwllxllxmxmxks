@@ -112,4 +112,6 @@ public abstract class k {
         l(uninitializedPropertyAccessException, k.class.getName());
         throw uninitializedPropertyAccessException;
     }
+
+    public static Object b;
 }

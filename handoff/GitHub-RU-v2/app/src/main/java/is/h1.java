@@ -80,4 +80,5 @@ public final class h1 implements aa.a {
         f4.C(b1Var.d, aa.c.f, fVar, wVar, "__typename");
         bVar.b(fVar, wVar, b1Var.e);
     }
+    public static final Object i = null;
 }

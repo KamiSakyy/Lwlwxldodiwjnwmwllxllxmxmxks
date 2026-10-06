@@ -34,4 +34,5 @@ final class q extends c71.j implements j71.e {
         bVar.f(this.w, this.x);
         return w61.a0.a;
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

@@ -110,4 +110,5 @@ public final class p0 implements aa.h0 {
         o.append(")");
         return o.toString();
     }
+    public Object b(Object p1) { return null; }
 }

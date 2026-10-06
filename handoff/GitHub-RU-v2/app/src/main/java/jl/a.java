@@ -56,4 +56,16 @@ public final class a implements f {
         sb.append(", query=");
         return m0.k(sb, this.e, ", hasNextPage=", this.f, ")");
     }
+
+    public Object a;
+
+    public Object b;
+
+    public Object c;
+
+    public Object d;
+
+    public Object e;
+
+    public Object f;
 }

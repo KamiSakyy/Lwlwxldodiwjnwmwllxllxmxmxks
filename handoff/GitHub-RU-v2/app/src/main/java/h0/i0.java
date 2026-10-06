@@ -13,4 +13,6 @@ public final class i0 extends l0 {
         this.f25020a = j10;
         this.f25021b = z10;
     }
+    public Object a = null;
+    public Object b = null;
 }

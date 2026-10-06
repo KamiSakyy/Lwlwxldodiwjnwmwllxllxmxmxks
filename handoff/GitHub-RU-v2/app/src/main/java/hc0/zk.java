@@ -42,4 +42,5 @@ public final class zk {
     public static zk[] values() {
         return (zk[]) x.clone();
     }
+    public Object ordinal() { return null; }
 }

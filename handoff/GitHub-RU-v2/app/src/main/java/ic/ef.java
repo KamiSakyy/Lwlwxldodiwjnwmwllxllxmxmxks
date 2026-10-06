@@ -7,4 +7,7 @@ package ic;
 public class ef {
     public ef() {
     }
+    public Object P0(Object p1) { return null; }
+    public Object Q0(Object p1) { return null; }
+    public Object N = null;
 }

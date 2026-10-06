@@ -40,4 +40,5 @@ public final class t9 {
     public static t9[] values() {
         return (t9[]) v.clone();
     }
+    public Object ordinal() { return null; }
 }

@@ -36,4 +36,6 @@ public final class z0 {
         f1.e.w(u, this.c, ", model=", this.d, ", targetRepositoryId=");
         return f1.e.k(u, this.e, ")");
     }
+
+    public Object e;
 }

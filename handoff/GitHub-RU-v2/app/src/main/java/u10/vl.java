@@ -26,4 +26,5 @@ public final class vl implements aaShadow.v0 {
     public final String toString() {
         return "Data(user=" + this.a + ")";
     }
+    public Object ordinal() { return null; }
 }

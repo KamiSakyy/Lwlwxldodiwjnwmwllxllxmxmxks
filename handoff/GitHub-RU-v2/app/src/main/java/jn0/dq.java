@@ -72,4 +72,6 @@ public final class dq {
         o.append(")");
         return o.toString();
     }
+
+    public Object i;
 }

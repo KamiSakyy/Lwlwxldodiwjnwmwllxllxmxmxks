@@ -7,4 +7,5 @@ package f1;
 public class y4 {
     public y4() {
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

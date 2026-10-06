@@ -5,4 +5,6 @@ package b6;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface m {
+    public Object b = null;
+    public Object d = null;
 }

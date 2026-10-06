@@ -18,4 +18,8 @@ public abstract class d {
     public static final s5.e l = g.z("key_system_draft_banner_dismissed");
     public static final s5.e m = g.z("key_system_agent_task_skip_pr_banner_dismissed");
     public static final s5.e n = g.z("key_system_vscode_session_banner_dismissed");
+
+    public static Object a;
+    public static final Object r = null;
+    public static final Object s = null;
 }

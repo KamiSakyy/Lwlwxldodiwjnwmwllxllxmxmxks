@@ -7,4 +7,10 @@ package w8;
 public class q {
     public q() {
     }
+
+    public <T0> T0 Z(Object... a) {
+        return null;
+    }
+    public Object W(Object p1) { return null; }
+    public Object s = null;
 }

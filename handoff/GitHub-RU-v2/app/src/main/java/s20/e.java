@@ -75,4 +75,5 @@ public final class e implements n0 {
     public final String toString() {
         return f4.k(this.s, "CloseDiscussionMutation(discussionId=", this.r, ", reason=", ")");
     }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

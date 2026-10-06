@@ -309,4 +309,5 @@ public final class t {
             };
         }
     }
+    public Object J(Object p1) { return null; }
 }

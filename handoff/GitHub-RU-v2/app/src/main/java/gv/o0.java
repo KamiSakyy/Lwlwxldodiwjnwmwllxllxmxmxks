@@ -22,4 +22,5 @@ public final class o0 {
     public final String toString() {
         return a0.s0.i("Comments(totalCount=", this.a, ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

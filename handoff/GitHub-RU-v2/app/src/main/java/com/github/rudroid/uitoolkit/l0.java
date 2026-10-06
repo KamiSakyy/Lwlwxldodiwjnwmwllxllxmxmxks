@@ -10,4 +10,5 @@ public final class l0 extends h0 {
         str = (i & 1) != 0 ? null : str;
         this.c = str;
     }
+    public Object t(Object p1) { return null; }
 }

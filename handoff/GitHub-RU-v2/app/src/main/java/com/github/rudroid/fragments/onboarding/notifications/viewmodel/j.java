@@ -44,4 +44,6 @@ public final class j {
     public static j[] values() {
         return (j[]) f14284v.clone();
     }
+
+    public static com.github.rudroid.fragments.onboarding.notifications.viewmodel.j r;
 }

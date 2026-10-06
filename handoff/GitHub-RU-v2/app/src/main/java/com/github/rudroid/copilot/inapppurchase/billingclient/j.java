@@ -84,4 +84,5 @@ public interface j {
             return "UserCancelled";
         }
     }
+    public Object s(Object p1, Object p2) { return null; }
 }

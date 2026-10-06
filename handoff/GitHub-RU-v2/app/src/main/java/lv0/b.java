@@ -49,4 +49,5 @@ public final class b {
         sb.append(")");
         return sb.toString();
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

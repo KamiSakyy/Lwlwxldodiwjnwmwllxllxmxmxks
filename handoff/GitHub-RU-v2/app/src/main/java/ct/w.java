@@ -33,4 +33,5 @@ public final class w implements aa.i0 {
     public final void o(ea.f fVar, aa.w wVar, boolean z) {
         k71.k.g(wVar, "customScalarAdapters");
     }
+    public Object e(Object p1) { return null; }
 }

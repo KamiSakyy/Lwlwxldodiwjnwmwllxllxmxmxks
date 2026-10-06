@@ -89,4 +89,5 @@ public final class h {
             t.d = new j(rVar, g1Var, aVar, cVar, sVar, i, 22);
         }
     }
+    public static final Object o = null;
 }

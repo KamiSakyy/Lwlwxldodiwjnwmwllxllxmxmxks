@@ -58,4 +58,8 @@ final class m0 extends c71.j implements j71.e {
         m0Var.f9892y.a();
         return w61.a0.a;
     }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object k(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object o(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object v(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

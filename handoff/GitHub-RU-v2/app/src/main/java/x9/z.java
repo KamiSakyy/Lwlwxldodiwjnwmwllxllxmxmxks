@@ -225,4 +225,18 @@ public abstract class z {
         a10.f1677t = str;
         return a10.l();
     }
+
+    public static x9.h j;
+
+    public static Object j;
+
+    public static Object h;
+
+    public static x9.h b;
+
+    public static x9.h h;
+
+    public static x9.h e;
+    public static final Object b = null;
+    public static final Object e = null;
 }

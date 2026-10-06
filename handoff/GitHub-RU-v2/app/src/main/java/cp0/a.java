@@ -31,4 +31,5 @@ public final class a {
     public final String toString() {
         return h1.n("OnBot(id=", this.a, ", isCopilot=", ")", this.b);
     }
+    public Object O(Object p1) { return null; }
 }

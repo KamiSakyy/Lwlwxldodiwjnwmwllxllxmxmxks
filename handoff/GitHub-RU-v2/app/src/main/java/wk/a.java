@@ -41,4 +41,5 @@ public final class a {
         sb.append(", shortcuts=");
         return x.i.l(sb, this.c, ")");
     }
+    public Object a(Object p1) { return null; }
 }

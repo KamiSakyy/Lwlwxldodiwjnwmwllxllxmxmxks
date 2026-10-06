@@ -40,4 +40,8 @@ public final class c {
         sb.append(", nodeIdFragment=");
         return no.a.p(sb, this.c, ")");
     }
+    public Object b(Object p1) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
+    public static final Object f = null;
 }

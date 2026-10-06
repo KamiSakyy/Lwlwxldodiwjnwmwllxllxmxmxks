@@ -765,4 +765,6 @@ public final class s {
 
     public s(Object... a) {
     }
+    public Object N() { return null; }
+    public Object n0(Object p1) { return null; }
 }

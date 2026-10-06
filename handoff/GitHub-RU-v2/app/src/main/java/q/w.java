@@ -5,4 +5,8 @@ package q;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface w {
+    public Object getSelectionEnd() { return null; }
+    public Object getText() { return null; }
+    public Object setSelection(Object p1) { return null; }
+    public Object setText(Object p1) { return null; }
 }

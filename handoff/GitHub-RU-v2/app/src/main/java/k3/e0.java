@@ -23,4 +23,5 @@ public final class e0 implements f0 {
     public final Object getValue() {
         return this.f27670r;
     }
+    public Object r = null;
 }

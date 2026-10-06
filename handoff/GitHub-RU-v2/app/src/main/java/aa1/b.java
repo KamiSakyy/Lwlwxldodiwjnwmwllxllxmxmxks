@@ -1844,4 +1844,12 @@ public abstract class b {
 
 
 
+
+    public <T0> T0 L(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 j(Object... a) {
+        return null;
+    }
 }

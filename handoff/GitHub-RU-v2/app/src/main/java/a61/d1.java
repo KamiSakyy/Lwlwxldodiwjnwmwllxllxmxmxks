@@ -188,4 +188,5 @@ public final class d1Shadow extends Handler {
         public x0() {
         }
     }
+    public static final Object a = null;
 }

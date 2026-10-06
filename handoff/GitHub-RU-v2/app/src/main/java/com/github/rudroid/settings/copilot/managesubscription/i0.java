@@ -13,4 +13,5 @@ public abstract class i0 extends p2 {
         this.s0 = true;
         ((s) w()).u0((CopilotManageSubscriptionActivity) this);
     }
+    public Object onCreate(Object p1) { return null; }
 }

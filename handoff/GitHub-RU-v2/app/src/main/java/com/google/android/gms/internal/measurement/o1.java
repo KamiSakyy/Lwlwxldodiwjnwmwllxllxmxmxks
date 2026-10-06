@@ -108,4 +108,8 @@ public final class o1 extends g5 {
     public final boolean z() {
         return (this.zzb & 64) != 0;
     }
+    public Object a0 = null;
+    public Object b = null;
+    public Object c = null;
+    public Object t = null;
 }

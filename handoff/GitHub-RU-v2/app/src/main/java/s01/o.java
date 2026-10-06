@@ -30,4 +30,5 @@ public final class o {
 
     public o(Object... a) {
     }
+    public Object ordinal() { return null; }
 }

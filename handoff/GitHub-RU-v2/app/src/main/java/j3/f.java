@@ -30,4 +30,5 @@ public final class f extends MetricAffectingSpan {
         }
         textPaint.setLetterSpacing(this.f26977r / textScaleX);
     }
+    public static final Object J = null;
 }

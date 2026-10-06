@@ -51,4 +51,13 @@ public final class y {
     public static y[] values() {
         return (y[]) f32855x.clone();
     }
+
+    public static v8.y r;
+
+    public static Object s;
+    public Object a(Object p1, Object p2) { return null; }
+    public Object o(Object p1, Object p2) { return null; }
+    public Object ordinal() { return null; }
+    public Object t(Object p1, Object p2) { return null; }
+    public static final Object r = null;
 }

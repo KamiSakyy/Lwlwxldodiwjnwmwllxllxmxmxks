@@ -51,4 +51,5 @@ public final class g4 {
 
     public g4(Object... a) {
     }
+    public Object a = null;
 }

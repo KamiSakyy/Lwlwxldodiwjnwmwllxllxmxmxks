@@ -46,4 +46,5 @@ public final class h implements Parcelable {
         parcel.writeString(this.r.name());
         parcel.writeString(this.s);
     }
+    public Object i = null;
 }

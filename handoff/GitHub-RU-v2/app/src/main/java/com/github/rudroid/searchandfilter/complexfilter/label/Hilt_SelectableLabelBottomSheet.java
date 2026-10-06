@@ -55,4 +55,9 @@ public abstract class Hilt_SelectableLabelBottomSheet extends SearchAndFilterBas
         L4();
         return this.V0;
     }
+
+    public <T0> T0 w(Object... a) {
+        return null;
+    }
+    public Object c4(Object p1, Object p2) { return null; }
 }

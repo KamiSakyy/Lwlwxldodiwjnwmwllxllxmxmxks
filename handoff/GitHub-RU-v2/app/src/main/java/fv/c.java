@@ -31,4 +31,5 @@ public abstract class c implements aa.a {
         aa.c.a.b(fVar, wVar, dVar.a);
     }
 
+    public static final Object f = null;
 }

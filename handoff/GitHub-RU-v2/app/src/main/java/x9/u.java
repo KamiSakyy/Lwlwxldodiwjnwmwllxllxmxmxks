@@ -7,4 +7,6 @@ package x9;
 public class u {
     public u() {
     }
+    public Object c(Object p1) { return null; }
+    public Object v = null;
 }

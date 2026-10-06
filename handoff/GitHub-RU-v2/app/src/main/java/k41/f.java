@@ -29,4 +29,15 @@ public final class f extends BroadcastReceiver {
         }
         this.a.unregisterReceiver(this);
     }
+    public Object a(Object p1) { return null; }
+    public Object e(Object p1) { return null; }
+    public static final Object a = null;
+    public static final Object r = null;
+    public static final Object t = null;
+    public static final Object u = null;
+    public static final Object v = null;
+    public static final Object w = null;
+    public static final Object x = null;
+    public static final Object y = null;
+    public static final Object z = null;
 }

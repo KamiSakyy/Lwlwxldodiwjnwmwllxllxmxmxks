@@ -36,4 +36,5 @@ public final class pm {
     public static pm[] values() {
         return (pm[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

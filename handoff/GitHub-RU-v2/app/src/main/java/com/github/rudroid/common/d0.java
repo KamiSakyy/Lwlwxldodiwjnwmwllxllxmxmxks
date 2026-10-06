@@ -7,4 +7,10 @@ package com.github.rudroid.common;
 public class d0 {
     public d0() {
     }
+
+    public <T0> T0 values(Object... a) {
+        return null;
+    }
+
+    public static com.github.rudroid.common.d0 r;
 }

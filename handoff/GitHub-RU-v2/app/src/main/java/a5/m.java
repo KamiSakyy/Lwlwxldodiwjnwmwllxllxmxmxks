@@ -53,4 +53,5 @@ public abstract class m {
     public static void i(AccessibilityNodeInfo accessibilityNodeInfo, CharSequence charSequence) {
         accessibilityNodeInfo.setStateDescription(charSequence);
     }
+    public static final Object f10894x = null;
 }

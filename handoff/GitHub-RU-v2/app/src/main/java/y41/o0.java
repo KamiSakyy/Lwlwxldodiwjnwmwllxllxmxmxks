@@ -45,4 +45,5 @@ public final class o0Shadow {
         public q() {
         }
     }
+    public static final Object a = null;
 }

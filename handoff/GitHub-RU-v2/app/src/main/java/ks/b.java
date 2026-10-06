@@ -62,4 +62,5 @@ public final class b implements h0 {
         o.append(")");
         return o.toString();
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

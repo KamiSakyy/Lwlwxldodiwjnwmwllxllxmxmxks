@@ -7,4 +7,8 @@ package a5;
 public class n {
     public n() {
     }
+
+    public <T0> T0 f(Object... a) {
+        return null;
+    }
 }

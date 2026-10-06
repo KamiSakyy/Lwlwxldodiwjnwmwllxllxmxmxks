@@ -90,4 +90,5 @@ public final class a implements g, i, b {
     public final int hashCode() {
         return this.f32160s.hashCode();
     }
+    public Object s = null;
 }

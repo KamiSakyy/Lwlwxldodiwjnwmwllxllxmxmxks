@@ -97,4 +97,36 @@ public final class e extends q0 implements Map {
             this.f33610t = i;
         }
     }
+
+    public <T0> T0 get(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 put(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 values(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 clear(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 remove(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 isEmpty(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 containsKey(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 keySet(Object... a) {
+        return null;
+    }
 }

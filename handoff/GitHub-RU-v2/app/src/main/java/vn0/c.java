@@ -32,4 +32,11 @@ public final class c {
     public final String toString() {
         return x.i.k(a0.s0.o("App(id=", this.a, ", name=", this.b, ", logoUrl="), this.c, ", __typename=", this.d, ")");
     }
+    public Object a(Object p1) { return null; }
+    public Object b(Object p1) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
+    public static final Object f = null;
+    public static final Object i = null;
+    public static final Object k = null;
 }

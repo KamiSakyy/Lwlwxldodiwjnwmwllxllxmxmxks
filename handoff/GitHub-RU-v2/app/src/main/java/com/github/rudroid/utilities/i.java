@@ -23,4 +23,6 @@ final class i extends c71.c {
         this.B |= Integer.MIN_VALUE;
         return this.A.a(null, null, null, null, null, null, this);
     }
+    public Object a() { return null; }
+    public Object d(Object p1) { return null; }
 }

@@ -45,4 +45,16 @@ public class BottomSheetDialogFragment extends AppCompatDialogFragment {
         obtainStyledAttributes.recycle();
         return jVar;
     }
+
+    public <T0> T0 P3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 a4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 t4(Object... a) {
+        return null;
+    }
 }

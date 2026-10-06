@@ -6,4 +6,5 @@ import com.google.android.gms.measurement.internal.h2;
 public abstract class h {
     public static final h2 a = new h2();
     public static final k.m b = new k.m(2);
+    public Object J(Object p1, Object p2) { return null; }
 }

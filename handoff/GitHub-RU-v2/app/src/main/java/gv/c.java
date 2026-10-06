@@ -47,4 +47,9 @@ public final class c implements aa.a {
         fVar.z0("mergeMethod");
         fVar.I(aVar.a.r);
     }
+    public Object b(Object p1) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object f = null;
+    public static final Object i = null;
+    public static final Object k = null;
 }

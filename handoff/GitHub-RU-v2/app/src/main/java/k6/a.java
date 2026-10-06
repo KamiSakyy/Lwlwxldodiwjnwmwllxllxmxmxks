@@ -29,4 +29,6 @@ public final class a extends c71.c {
         this.f27722z |= Integer.MIN_VALUE;
         return i4.Z(this);
     }
+
+    public static Object a;
 }

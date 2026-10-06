@@ -24,4 +24,5 @@ public abstract class d extends com.github.rudroid.activities.m0 {
         public j() {
         }
     }
+    public Object onCreate(Object p1) { return null; }
 }

@@ -65,4 +65,5 @@ public abstract class d implements Parcelable {
         this.r = lVar;
         this.s = str;
     }
+    public Object s(Object p1) { return null; }
 }

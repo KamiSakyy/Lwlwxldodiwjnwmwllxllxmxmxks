@@ -41,4 +41,6 @@ public final class o {
         o.append(", nodeIdFragment=");
         return f1.e.n(o, this.e, ")");
     }
+
+    public Object e;
 }

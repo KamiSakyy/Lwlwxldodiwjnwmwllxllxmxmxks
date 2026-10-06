@@ -33,4 +33,8 @@ public final class t1 implements Callable {
 
     public t1(Object... a) {
     }
+    public Object b(Object p1) { return null; }
+    public Object o() { return null; }
+    public Object p(Object p1) { return null; }
+    public Object b = null;
 }

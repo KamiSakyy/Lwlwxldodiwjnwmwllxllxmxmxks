@@ -51,4 +51,5 @@ public final class b extends BaseAdapter {
         f.G0(view);
         throw null;
     }
+    public static final Object a = null;
 }

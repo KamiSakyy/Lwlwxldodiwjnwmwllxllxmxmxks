@@ -27,4 +27,6 @@ final class a extends com.github.rudroid.activities.util.e<w61.a0, ShortcutScope
         }
         return (ShortcutScope.SpecificRepository) parcelable;
     }
+    public Object F() { return null; }
+    public Object G(Object p1) { return null; }
 }

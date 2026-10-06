@@ -7,4 +7,6 @@ package ic;
 public class fh {
     public fh() {
     }
+    public Object N = null;
+    public Object P = null;
 }

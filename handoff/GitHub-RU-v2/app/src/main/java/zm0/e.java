@@ -33,4 +33,5 @@ public final class e implements v0 {
     public final String toString() {
         return "Data(repository=" + this.a + ", resource=" + this.b + ")";
     }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

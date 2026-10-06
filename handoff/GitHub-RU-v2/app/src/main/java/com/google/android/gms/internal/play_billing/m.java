@@ -76,4 +76,6 @@ public final class m {
         }
         return f1.e.h(format, " ", str);
     }
+
+    public Object a;
 }

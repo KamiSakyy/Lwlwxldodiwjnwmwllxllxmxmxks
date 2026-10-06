@@ -56,4 +56,5 @@ public final class z implements j71.g {
         }
         return w61.a0.a;
     }
+    public Object e(Object p1) { return null; }
 }

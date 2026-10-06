@@ -169,4 +169,6 @@ public final class t implements u5.l {
         }
         throw new IllegalArgumentException("url must not be null.");
     }
+    public Object Companion = null;
+    public Object a = null;
 }

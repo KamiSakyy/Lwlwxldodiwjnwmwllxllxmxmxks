@@ -60,4 +60,5 @@ public final class g7 {
     public static g7[] values() {
         return (g7[]) C.clone();
     }
+    public Object ordinal() { return null; }
 }

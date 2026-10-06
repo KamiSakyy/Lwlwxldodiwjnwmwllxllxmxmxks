@@ -30,4 +30,5 @@ public final class b {
     public final String toString() {
         return f1.e.i("DeletedCommentAuthor(__typename=", this.a, ", actorFields=", this.b, ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

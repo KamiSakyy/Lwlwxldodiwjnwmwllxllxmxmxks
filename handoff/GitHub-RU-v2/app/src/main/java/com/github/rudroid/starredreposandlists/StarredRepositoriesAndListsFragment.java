@@ -292,4 +292,38 @@ public final class StarredRepositoriesAndListsFragment extends Hilt_StarredRepos
     }
 
 
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 f4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 i4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 F3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 E(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 x3(Object... a) {
+        return null;
+    }
+    public Object g4() { return null; }
+    public Object x3() { return null; }
 }

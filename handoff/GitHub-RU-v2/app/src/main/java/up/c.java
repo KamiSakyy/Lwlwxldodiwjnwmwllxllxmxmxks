@@ -31,4 +31,5 @@ public final class c {
     public final String toString() {
         return h1.n("FeatureFlag(name=", this.a, ", enabled=", ")", this.b);
     }
+    public static final Object a = null;
 }

@@ -9,4 +9,6 @@ public final class i {
     public i(boolean z10) {
         this.f29441a = z10;
     }
+    public Object getComponentName() { return null; }
+    public Object getParentActivityIntent() { return null; }
 }

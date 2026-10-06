@@ -42,4 +42,7 @@ public final class f {
     public static f[] values() {
         return (f[]) w.clone();
     }
+    public Object b(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
+    public static final Object j = null;
 }

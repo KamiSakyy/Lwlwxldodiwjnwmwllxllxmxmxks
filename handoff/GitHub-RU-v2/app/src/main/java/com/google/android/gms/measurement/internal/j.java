@@ -19,4 +19,6 @@ public final class j extends d21.a {
         m7.y.S(parcel, 1, this.r);
         m7.y.a0(parcel, Z);
     }
+    public Object g0(Object p1) { return null; }
+    public Object getWindow() { return null; }
 }

@@ -28,4 +28,6 @@ public final class e {
     public final String toString() {
         return x.i.g("ParentRepo(owner=", this.a, ", name=", this.b, ")");
     }
+    public Object c(Object p1, Object p2, Object p3) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

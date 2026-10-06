@@ -27,4 +27,6 @@ final class j extends c71.j implements j71.e {
         y.j(obj);
         return this.v;
     }
+    public Object b() { return null; }
+    public Object d() { return null; }
 }

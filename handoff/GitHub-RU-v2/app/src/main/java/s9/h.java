@@ -40,4 +40,7 @@ public final class h {
     public final String toString() {
         return "Size(width=" + this.f31778a + ", height=" + this.f31779b + ')';
     }
+
+    public static Object c;
+    public Object b = null;
 }

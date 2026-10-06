@@ -56,4 +56,5 @@ public final class l implements l6.g {
     public final Object b(Context context, String str) {
         return (n5.f) c.a(context, b[0]);
     }
+    public Object g(Object p1) { return null; }
 }

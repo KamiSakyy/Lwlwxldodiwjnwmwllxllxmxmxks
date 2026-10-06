@@ -26,4 +26,5 @@ public abstract class d<T extends k5.f> extends com.github.rudroid.activities.t 
         public j() {
         }
     }
+    public Object onCreate(Object p1) { return null; }
 }

@@ -53,4 +53,5 @@ public final class h<T> implements y71.j {
         }
         return w61.a0.a;
     }
+    public Object d() { return null; }
 }

@@ -42,4 +42,7 @@ public final class c implements h0 {
         sb.append(", nodeIdFragment=");
         return f4.q(sb, this.c, ")");
     }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
+    public static final Object f = null;
 }

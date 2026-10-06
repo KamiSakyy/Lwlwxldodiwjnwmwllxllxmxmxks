@@ -15,4 +15,5 @@ public abstract class w implements aa.a {
         }
         return new q(str);
     }
+    public Object e(Object p1) { return null; }
 }

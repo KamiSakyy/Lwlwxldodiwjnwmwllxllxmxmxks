@@ -46,4 +46,15 @@ public final class w {
     public static w[] values() {
         return (w[]) f2944w.clone();
     }
+
+    public static androidx.lifecycle.w r;
+
+    public static Object u;
+
+    public static androidx.lifecycle.w u;
+
+    public static Object r;
+
+    public static Object v;
+    public Object ordinal() { return null; }
 }

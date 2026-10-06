@@ -46,4 +46,5 @@ public final class e implements a {
         o.append(")");
         return o.toString();
     }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

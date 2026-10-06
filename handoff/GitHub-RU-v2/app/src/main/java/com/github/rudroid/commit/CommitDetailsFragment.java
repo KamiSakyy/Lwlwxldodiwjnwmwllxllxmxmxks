@@ -7,4 +7,8 @@ package com.github.rudroid.commit;
 public class CommitDetailsFragment {
     public CommitDetailsFragment() {
     }
+
+    public <T0> T0 i4(Object... a) {
+        return null;
+    }
 }

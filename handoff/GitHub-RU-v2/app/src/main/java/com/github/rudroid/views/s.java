@@ -11,4 +11,6 @@ public final class s extends s0 {
         r71.e[] eVarArr = t.I;
         throw null;
     }
+    public Object S(Object p1, Object p2) { return null; }
+    public Object V() { return null; }
 }

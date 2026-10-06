@@ -38,4 +38,5 @@ public abstract /* synthetic */ class kShadow {
         }
         a = iArr;
     }
+    public static final Object b = null;
 }

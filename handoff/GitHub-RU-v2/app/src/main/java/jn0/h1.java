@@ -26,4 +26,5 @@ public final class h1 implements aaShadow.m0 {
     public final String toString() {
         return "Data(addPullRequestReviewThreadReply=" + this.a + ")";
     }
+    public static final Object i = null;
 }

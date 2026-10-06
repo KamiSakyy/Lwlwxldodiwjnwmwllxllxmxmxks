@@ -356,4 +356,5 @@ public final class n {
         if (t != null) {
         }
     }
+    public static final Object a = null;
 }

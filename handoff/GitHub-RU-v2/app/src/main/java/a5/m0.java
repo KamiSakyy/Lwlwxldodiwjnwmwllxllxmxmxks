@@ -17,4 +17,6 @@ public final class m0 {
 
     /* renamed from: e, reason: collision with root package name */
     public int f445e = 0;
+    public Object f(Object p1) { return null; }
+    public Object g(Object p1) { return null; }
 }

@@ -15,4 +15,5 @@ public abstract class o0 implements aa.a {
         }
         return new f0(str);
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

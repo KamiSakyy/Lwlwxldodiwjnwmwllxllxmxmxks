@@ -21,4 +21,5 @@ public final class c {
         int i = this.f28932a;
         return i == 1 ? "Left" : i == 2 ? "Right" : i == 3 ? "Center" : i == 4 ? "Start" : i == 5 ? "End" : "Invalid";
     }
+    public Object a = null;
 }

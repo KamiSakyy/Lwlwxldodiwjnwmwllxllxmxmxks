@@ -93,4 +93,20 @@ public final class RoundedBgTextView extends AppCompatTextView {
         this.y = null;
         super/*android.widget.TextView*/.setText(charSequence, bufferType);
     }
+
+    public <T0> T0 getText(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getLayout(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getTotalPaddingLeft(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getTotalPaddingTop(Object... a) {
+        return null;
+    }
 }

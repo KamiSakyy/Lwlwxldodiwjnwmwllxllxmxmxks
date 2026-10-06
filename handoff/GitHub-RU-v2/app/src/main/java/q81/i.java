@@ -176,4 +176,8 @@ public final class i {
         }
         return "ConnectionSpec(cipherSuites=" + Objects.toString(b(), "[all enabled]") + ", tlsVersions=" + Objects.toString(c(), "[all enabled]") + ", supportsTlsExtensions=" + this.b + ')';
     }
+
+    public Object a;
+
+    public Object b;
 }

@@ -686,4 +686,7 @@ public class a implements z, t1, o31.h, z1, p9.f, w, j, u0, r9.e {
         public CoordinatorLayout() {
         }
     }
+    public Object b = null;
+    public Object c = null;
+    public Object d = null;
 }

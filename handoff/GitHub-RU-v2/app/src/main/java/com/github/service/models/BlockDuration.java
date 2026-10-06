@@ -39,4 +39,8 @@ public final class BlockDuration {
     public static BlockDuration[] values() {
         return (BlockDuration[]) $VALUES.clone();
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

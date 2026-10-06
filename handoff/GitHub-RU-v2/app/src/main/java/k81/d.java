@@ -145,4 +145,5 @@ public final class d extends s {
                 break;
         }
     }
+    public static final Object t = null;
 }

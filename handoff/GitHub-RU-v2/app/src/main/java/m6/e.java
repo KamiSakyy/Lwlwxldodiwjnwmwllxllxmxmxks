@@ -75,4 +75,9 @@ public final class e {
     public final String toString() {
         return "TextStyle(color=" + this.f28934a + ", fontSize=" + this.f28935b + ", fontWeight=" + this.f28936c + ", fontStyle=null, textDecoration=null, textAlign=" + this.f28937d + ", fontFamily=" + this.f28938e + ')';
     }
+
+    public static Object a;
+    public Object b = null;
+    public Object c = null;
+    public Object d = null;
 }

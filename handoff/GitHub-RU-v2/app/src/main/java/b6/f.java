@@ -11,4 +11,5 @@ public final class f {
     public f(Bundle bundle) {
         this.f3538a = bundle;
     }
+    public static final Object J = null;
 }

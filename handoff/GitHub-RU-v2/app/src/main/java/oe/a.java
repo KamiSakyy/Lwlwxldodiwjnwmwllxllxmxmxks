@@ -168,4 +168,11 @@ public final class a implements v, k {
         this.M = i12;
         this.N = i13;
     }
+    public Object r = null;
+    public Object t = null;
+    public Object u = null;
+    public Object w = null;
+    public Object x = null;
+    public Object y = null;
+    public Object z = null;
 }

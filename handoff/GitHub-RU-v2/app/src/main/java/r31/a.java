@@ -29,4 +29,5 @@ public final class a extends d5 {
         }
         this.b.a(typeface);
     }
+    public static final Object b = null;
 }

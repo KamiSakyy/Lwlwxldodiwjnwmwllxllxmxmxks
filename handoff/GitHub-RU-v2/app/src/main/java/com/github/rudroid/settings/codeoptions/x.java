@@ -40,4 +40,6 @@ public final class x extends xa.k {
     public final boolean O() {
         throw null;
     }
+
+    public Object g;
 }

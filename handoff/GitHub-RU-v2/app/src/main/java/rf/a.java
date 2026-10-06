@@ -10,4 +10,6 @@ public final class a {
 
     /* renamed from: a, reason: collision with root package name */
     public static final Map f31368a = x.t(new k(k71.x.b(PendingRepositoryInfo.class), new com.github.rudroid.main.navigation.a(PendingRepositoryInfo.class, PendingRepositoryInfo.Companion.serializer())));
+
+    public static Object a;
 }

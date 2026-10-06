@@ -42,4 +42,6 @@ public final class n5 {
     public final String toString() {
         return "CreateDashboardSearchShortcutInput(clientMutationId=" + this.a + ", color=" + this.b + ", description=" + this.c + ", icon=" + this.d + ", name=" + this.e + ", query=" + this.f + ", scopingRepository=" + this.g + ", searchType=" + this.h + ")";
     }
+
+    public Object e;
 }

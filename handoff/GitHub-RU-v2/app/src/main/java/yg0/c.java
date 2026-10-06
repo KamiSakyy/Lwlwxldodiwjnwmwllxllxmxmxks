@@ -28,4 +28,5 @@ public final class c {
     public final String toString() {
         return x.i.g("Node(id=", this.a, ", __typename=", this.b, ")");
     }
+    public static final Object a = null;
 }

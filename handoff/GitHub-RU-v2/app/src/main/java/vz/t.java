@@ -64,4 +64,6 @@ public final class t implements w0 {
     public final String toString() {
         return f1.e.z("FetchProjectV2ItemQuery(itemId=", this.r, ")");
     }
+    public Object I(Object p1, Object p2, Object p3) { return null; }
+    public Object x() { return null; }
 }

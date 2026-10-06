@@ -28,4 +28,31 @@ public final class g {
     public static final d f32491h = d.f32449t;
 
 
+
+    public static v2.f b;
+
+    public static Object f;
+
+    public static Object e;
+
+    public static Object g;
+
+    public static Object h;
+
+    public static Object d;
+
+    public static v2.e f;
+
+    public static v2.e e;
+
+    public static v2.e g;
+
+    public static v2.d h;
+
+    public static v2.e d;
+
+    public static j71.a b;
+
+    public static j71.e e;
+    public static final Object b = null;
 }

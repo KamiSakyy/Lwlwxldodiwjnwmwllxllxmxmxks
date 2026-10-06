@@ -221,4 +221,6 @@ public abstract class g {
         k.f(unmodifiableList, "unmodifiableList(...)");
         return unmodifiableList;
     }
+
+    public static Object b;
 }

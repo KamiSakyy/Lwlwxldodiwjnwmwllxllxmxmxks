@@ -31,4 +31,6 @@ public final class m0 {
     public final String toString() {
         return "UpdateMobilePushNotificationSettings(clientMutationId=" + this.a + ", user=" + this.b + ")";
     }
+    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object i(Object p1, Object p2, Object p3) { return null; }
 }

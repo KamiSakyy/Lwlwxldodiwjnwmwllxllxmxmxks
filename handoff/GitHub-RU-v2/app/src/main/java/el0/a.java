@@ -25,4 +25,5 @@ public final class a implements aa.a {
         fVar.z0("node");
         aa.c.b(aa.c.c(b.a, true)).b(fVar, wVar, bVar.a);
     }
+    public Object O(Object p1) { return null; }
 }

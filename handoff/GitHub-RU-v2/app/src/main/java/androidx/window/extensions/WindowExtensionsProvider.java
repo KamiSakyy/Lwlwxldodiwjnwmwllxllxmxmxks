@@ -7,4 +7,8 @@ package androidx.window.extensions;
 public class WindowExtensionsProvider {
     public WindowExtensionsProvider() {
     }
+
+    public <T0> T0 getWindowExtensions(Object... a) {
+        return null;
+    }
 }

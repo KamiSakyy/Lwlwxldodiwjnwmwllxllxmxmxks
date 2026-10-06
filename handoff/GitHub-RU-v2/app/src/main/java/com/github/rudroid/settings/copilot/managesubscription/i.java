@@ -19,4 +19,5 @@ final /* synthetic */ class i extends k71.i implements j71.a {
         J0.x = v71.b0.z(d1.k(J0), (a71.h) null, (v71.a0) null, new a0(J0, d, null), 3);
         return w61.a0.a;
     }
+    public Object d(Object p1, Object p2, Object p3) { return null; }
 }

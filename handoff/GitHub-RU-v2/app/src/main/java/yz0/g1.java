@@ -28,4 +28,6 @@ public final class g1 {
     public final String toString() {
         return "FetchRepositoriesListLoad(listDetailData=" + this.a + ", repositoriesInListPaged=" + this.b + ")";
     }
+    public Object a = null;
+    public Object b = null;
 }

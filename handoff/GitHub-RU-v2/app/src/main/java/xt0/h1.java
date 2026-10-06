@@ -61,4 +61,5 @@ public final class h1 implements aa.a {
         fVar.z0("fileType");
         aa.c.b(aa.c.c(b1.a, true)).b(fVar, wVar, m0Var.e);
     }
+    public static final Object i = null;
 }

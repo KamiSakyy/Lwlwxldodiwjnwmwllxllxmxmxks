@@ -89,4 +89,20 @@ public abstract class BaseEditTitleFragment extends BindingFragment {
         ((ic.s2) B4()).P.setText(Editable.Factory.getInstance().newEditable(H4().n()));
         ((ic.s2) B4()).P.setSelection(H4().n().length());
     }
+
+    public <T0> T0 B4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 F3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 i4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C3(Object... a) {
+        return null;
+    }
 }

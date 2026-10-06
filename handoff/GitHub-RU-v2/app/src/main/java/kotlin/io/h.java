@@ -25,4 +25,5 @@ public final class h {
     public static h[] values() {
         return (h[]) s.clone();
     }
+    public Object ordinal() { return null; }
 }

@@ -38,4 +38,5 @@ public final class e {
         sb.append(", id=");
         return h1.p(sb, this.c, ")");
     }
+    public Object i(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

@@ -13,4 +13,6 @@ public final class h {
         this.f33832a = str;
         this.f33833b = jVar;
     }
+    public Object a = null;
+    public Object b = null;
 }

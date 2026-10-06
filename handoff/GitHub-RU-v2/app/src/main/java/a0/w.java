@@ -275,4 +275,6 @@ public final class w implements a0 {
         sb2.append(", d=");
         return x.i.i(sb2, this.f284d, ')');
     }
+    public static final Object HAS_IMAGE_ALPHA_FIELD_NUMBER = null;
+    public static final Object HAS_IMAGE_COLOR_FILTER_FIELD_NUMBER = null;
 }

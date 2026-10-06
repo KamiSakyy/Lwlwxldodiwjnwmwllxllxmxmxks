@@ -34,4 +34,5 @@ public final class h1 implements l1 {
     public final String toString() {
         return x.i.g("MarkdownFileContent(content=", this.a, ", repoId=", this.b, ")");
     }
+    public static final Object i = null;
 }

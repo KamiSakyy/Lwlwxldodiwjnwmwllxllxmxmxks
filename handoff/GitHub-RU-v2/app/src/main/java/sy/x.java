@@ -26,4 +26,19 @@ public abstract /* synthetic */ class xShadow {
         }
         a = iArr;
     }
+    public static final Object B = null;
+    public static final Object F = null;
+    public static final Object I = null;
+    public static final Object J = null;
+    public static final Object K = null;
+    public static final Object O = null;
+    public static final Object a = null;
+    public static final Object e = null;
+    public static final Object f = null;
+    public static final Object i = null;
+    public static final Object n = null;
+    public static final Object q = null;
+    public static final Object r = null;
+    public static final Object s = null;
+    public static final Object y = null;
 }

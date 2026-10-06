@@ -36,4 +36,9 @@ public final class g0 {
         o.append(")");
         return o.toString();
     }
+    public Object o() { return null; }
+    public Object w() { return null; }
+    public Object y() { return null; }
+    public Object X = null;
+    public Object s = null;
 }

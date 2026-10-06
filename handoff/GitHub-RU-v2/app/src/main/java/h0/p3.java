@@ -7,4 +7,5 @@ package h0;
 public class p3 {
     public p3() {
     }
+    public Object e = null;
 }

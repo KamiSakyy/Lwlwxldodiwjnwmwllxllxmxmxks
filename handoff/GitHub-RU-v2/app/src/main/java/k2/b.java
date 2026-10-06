@@ -16,4 +16,6 @@ public abstract class b {
 
     /* renamed from: d, reason: collision with root package name */
     public static final int[] f27648d = {R.attr.name, R.attr.pathData};
+
+    public static Object b;
 }

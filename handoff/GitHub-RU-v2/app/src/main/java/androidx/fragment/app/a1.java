@@ -5,4 +5,5 @@ package androidx.fragment.app;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface a1 {
+    public Object O(Object p1) { return null; }
 }

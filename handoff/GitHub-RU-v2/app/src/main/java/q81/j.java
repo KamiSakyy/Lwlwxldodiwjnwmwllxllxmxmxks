@@ -86,4 +86,6 @@ public final class j {
         k71.k.f(sb2, "toString(...)");
         return sb2;
     }
+
+    public Object i;
 }

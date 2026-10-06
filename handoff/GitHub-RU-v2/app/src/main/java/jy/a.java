@@ -28,4 +28,5 @@ public final class a {
     public final String toString() {
         return e.z("AdvancedSearchParameters(queryString=", this.a, ")");
     }
+    public Object h0(Object p1) { return null; }
 }

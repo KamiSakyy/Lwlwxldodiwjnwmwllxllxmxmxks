@@ -18,4 +18,5 @@ public interface f0 {
         public j() {
         }
     }
+    public Object ordinal() { return null; }
 }

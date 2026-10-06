@@ -49,4 +49,5 @@ public abstract class l0 {
         sk.Companion.getClass();
         a = sy.d0.n(new aa.m("deleteDiscussionComment", q0Var3, (String) null, rVar, no.a.s(sk.M, new aa.u0(a0.s0.p("id", new aa.t("commentId")))), r5));
     }
+    public Object a(Object p1) { return null; }
 }

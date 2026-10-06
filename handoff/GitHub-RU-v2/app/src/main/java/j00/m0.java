@@ -36,4 +36,7 @@ public final class m0 {
         sb.append(", __typename=");
         return com.github.rudroid.copilot.h1.p(sb, this.c, ")");
     }
+    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object e(Object p1, Object p2, Object p3) { return null; }
+    public Object i(Object p1, Object p2, Object p3) { return null; }
 }

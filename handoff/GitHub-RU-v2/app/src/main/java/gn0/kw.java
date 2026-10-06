@@ -48,4 +48,5 @@ public final class kw {
     public static kw[] values() {
         return (kw[]) z.clone();
     }
+    public Object ordinal() { return null; }
 }

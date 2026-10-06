@@ -60,4 +60,5 @@ public final class b extends d5 {
                 break;
         }
     }
+    public static final Object e = null;
 }

@@ -293,4 +293,8 @@ public final class g {
         }
     }
 
+    public static final Object b = null;
+    public static final Object e = null;
+    public static final Object f = null;
+    public static final Object h = null;
 }

@@ -26,4 +26,5 @@ public final class e {
     public final String toString() {
         return f1.e.z("ApproveMobileAuthDeviceRequest(clientMutationId=", this.a, ")");
     }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

@@ -42,4 +42,5 @@ public final class ProjectState {
     public final String getRawValue() {
         return this.rawValue;
     }
+    public Object name() { return null; }
 }

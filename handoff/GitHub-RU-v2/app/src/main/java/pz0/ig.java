@@ -37,4 +37,5 @@ public final class ig {
     public static ig[] values() {
         return (ig[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

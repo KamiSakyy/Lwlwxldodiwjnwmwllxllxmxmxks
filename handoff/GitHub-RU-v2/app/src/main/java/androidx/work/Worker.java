@@ -7,4 +7,8 @@ package androidx.work;
 public class Worker {
     public Worker() {
     }
+
+    public <T0> T0 c(Object... a) {
+        return null;
+    }
 }

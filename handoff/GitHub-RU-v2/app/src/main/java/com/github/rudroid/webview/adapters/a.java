@@ -12,4 +12,5 @@ final /* synthetic */ class a extends k71.i implements j71.c {
         ((z0) ((k71.c) this).s).Z2(str);
         return a0.a;
     }
+    public Object e(Object p1, Object p2) { return null; }
 }

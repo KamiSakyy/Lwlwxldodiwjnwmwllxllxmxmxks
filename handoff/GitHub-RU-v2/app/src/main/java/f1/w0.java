@@ -28,4 +28,5 @@ public abstract class w0 {
         }
         return ((NumberFormat) obj2).format(Integer.valueOf(i));
     }
+    public Object a(Object p1) { return null; }
 }

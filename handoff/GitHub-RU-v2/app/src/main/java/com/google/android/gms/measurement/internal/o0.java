@@ -31,4 +31,5 @@ public final class o0 extends c21.e {
 
     public o0(Object... a) {
     }
+    public Object a() { return null; }
 }

@@ -46,4 +46,5 @@ public final class w implements aa.a {
         fVar.z0("login");
         bVar.b(fVar, wVar, iVar.b);
     }
+    public Object e(Object p1) { return null; }
 }

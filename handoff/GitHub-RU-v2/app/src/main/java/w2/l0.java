@@ -6,4 +6,7 @@ package w2;
  */
 public class l0 {
     public l0() {}
+    public Object a(Object p1, Object p2) { return null; }
+    public Object r = null;
+    public Object s = null;
 }

@@ -54,4 +54,5 @@ public final class i90 {
     public static i90[] values() {
         return (i90[]) B.clone();
     }
+    public Object ordinal() { return null; }
 }

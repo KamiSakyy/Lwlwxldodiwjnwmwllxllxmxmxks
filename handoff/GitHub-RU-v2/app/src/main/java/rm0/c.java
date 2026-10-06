@@ -41,4 +41,5 @@ public final class c implements y71.i {
         }
         return w61.a0.a;
     }
+    public static final Object a = null;
 }

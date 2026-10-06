@@ -24,4 +24,6 @@ public final class m {
     public final int hashCode() {
         return Arrays.hashCode(new Object[]{this.a});
     }
+    public Object s = null;
+    public Object t = null;
 }

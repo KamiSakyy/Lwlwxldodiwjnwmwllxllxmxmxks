@@ -87,4 +87,6 @@ public final class e {
         o.append(")");
         return o.toString();
     }
+    public Object c(Object p1, Object p2, Object p3) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

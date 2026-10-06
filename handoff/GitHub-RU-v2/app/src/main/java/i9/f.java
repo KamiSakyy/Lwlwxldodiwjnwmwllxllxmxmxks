@@ -43,4 +43,8 @@ public final class f {
     public static f[] values() {
         return (f[]) f26100v.clone();
     }
+
+    public static i9.f r;
+    public Object w = null;
+    public Object y = null;
 }

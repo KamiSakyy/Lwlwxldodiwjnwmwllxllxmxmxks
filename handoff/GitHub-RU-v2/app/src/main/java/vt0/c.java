@@ -31,4 +31,5 @@ public final class c {
     public final String toString() {
         return "IssueOrPullRequest(__typename=" + this.a + ", onNode=" + this.b + ")";
     }
+    public static final Object a = null;
 }

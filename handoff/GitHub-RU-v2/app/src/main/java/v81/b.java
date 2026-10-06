@@ -281,4 +281,7 @@ public final class b implements p {
             throw e9;
         }
     }
+    public Object c = null;
+    public Object d = null;
+    public Object e = null;
 }

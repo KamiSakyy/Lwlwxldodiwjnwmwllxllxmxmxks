@@ -29,4 +29,15 @@ public abstract class f {
         }
         return new r2(str, cVar.c, w8.s.A(cVar.e), false);
     }
+
+    public static Object c;
+    public static final Object a = null;
+    public static final Object r = null;
+    public static final Object t = null;
+    public static final Object u = null;
+    public static final Object v = null;
+    public static final Object w = null;
+    public static final Object x = null;
+    public static final Object y = null;
+    public static final Object z = null;
 }

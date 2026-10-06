@@ -44,4 +44,5 @@ public final class d1 implements aa.h0 {
         s.append(")");
         return s.toString();
     }
+    public Object e1() { return null; }
 }

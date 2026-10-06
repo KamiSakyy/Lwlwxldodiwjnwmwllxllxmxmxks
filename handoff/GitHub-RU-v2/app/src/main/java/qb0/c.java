@@ -35,4 +35,5 @@ public abstract class c implements aa.a {
         rb0.c cVar = rb0.c.a;
         rb0.c.d(fVar, wVar, dVar.b);
     }
+    public static final Object i = null;
 }

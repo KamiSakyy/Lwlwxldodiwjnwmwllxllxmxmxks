@@ -42,4 +42,5 @@ public final class TrailingMetadataPreference extends Preference {
             textView.setText((String) iVar.t(this, eVarArr[0]));
         }
     }
+    public Object j() { return null; }
 }

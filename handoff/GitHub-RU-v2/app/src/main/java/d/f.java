@@ -7,4 +7,5 @@ public final class f {
 
     /* renamed from: a, reason: collision with root package name */
     public t1 f20888a;
+    public static final Object J = null;
 }

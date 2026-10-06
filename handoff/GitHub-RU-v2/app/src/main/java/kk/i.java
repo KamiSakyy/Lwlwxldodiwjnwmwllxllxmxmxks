@@ -10,4 +10,6 @@ public final class i {
         k.g(aVar, "authorMapper");
         this.a = aVar;
     }
+    public Object a() { return null; }
+    public Object c() { return null; }
 }

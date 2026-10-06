@@ -5,4 +5,12 @@ package w9;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface d {
+
+    default <T0> T0 a(Object... a) {
+        return null;
+    }
+
+    default <T0> T0 b(Object... a) {
+        return null;
+    }
 }

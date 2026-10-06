@@ -96,4 +96,5 @@ public final class a {
     public static a[] values() {
         return (a[]) K.clone();
     }
+    public Object ordinal() { return null; }
 }

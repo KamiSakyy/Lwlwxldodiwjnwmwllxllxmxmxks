@@ -14,4 +14,6 @@ public abstract class b<T extends k5.f> extends d3 {
         this.u0 = true;
         ((f) w()).I0((IssueTemplatesActivity) this);
     }
+    public Object onActivityResult(Object p1, Object p2, Object p3) { return null; }
+    public Object onCreate(Object p1) { return null; }
 }

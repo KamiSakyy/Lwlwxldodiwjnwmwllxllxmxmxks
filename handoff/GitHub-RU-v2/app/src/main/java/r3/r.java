@@ -21,4 +21,6 @@ public final class r {
         int i = this.f31141a;
         return i == 1 ? "Linearity.Linear" : i == 2 ? "Linearity.FontHinting" : i == 3 ? "Linearity.None" : "Invalid";
     }
+
+    public static Object length;
 }

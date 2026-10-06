@@ -5,4 +5,6 @@ package z7;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface b {
+    public Object a() { return null; }
+    public Object b(Object p1) { return null; }
 }

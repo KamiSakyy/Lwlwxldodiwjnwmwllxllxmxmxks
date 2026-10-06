@@ -55,4 +55,8 @@ public abstract class Hilt_SelectableDiscussionCategoryFragment<T> extends Searc
         J4();
         return this.E0;
     }
+
+    public <T0> T0 w(Object... a) {
+        return null;
+    }
 }

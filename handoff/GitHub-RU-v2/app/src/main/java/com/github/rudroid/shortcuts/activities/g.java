@@ -16,4 +16,5 @@ public interface g {
         public b() {
         }
     }
+    public Object ordinal() { return null; }
 }

@@ -84,4 +84,36 @@ public class SwitchMaterial extends SwitchCompat {
             setTrackTintList((ColorStateList) null);
         }
     }
+
+    public <T0> T0 setOnCheckedChangeListener(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getResources(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getParent(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getThumbTintList(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setThumbTintList(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getTrackTintList(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setTrackTintList(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setChecked(Object... a) {
+        return null;
+    }
 }

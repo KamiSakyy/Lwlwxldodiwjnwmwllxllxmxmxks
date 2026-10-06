@@ -54,4 +54,13 @@ public final class FocusedFilterExplainerBottomSheet extends Hilt_FocusedFilterE
         v71.b0.z(d1.i(this), (a71.h) null, (v71.a0) null, new e(this, null), 3);
     }
 
+
+    public <T0> T0 g4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 s4(Object... a) {
+        return null;
+    }
+    public Object s4() { return null; }
 }

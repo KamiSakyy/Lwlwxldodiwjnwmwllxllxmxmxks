@@ -174,4 +174,5 @@ public final class m4 {
         }
         return this.e;
     }
+    public Object c() { return null; }
 }

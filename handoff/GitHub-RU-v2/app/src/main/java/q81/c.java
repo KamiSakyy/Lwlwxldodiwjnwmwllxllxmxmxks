@@ -108,4 +108,5 @@ public final class c {
         this.m = sb2;
         return sb2;
     }
+    public static final Object u = null;
 }

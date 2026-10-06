@@ -67,4 +67,6 @@ public final class n60 {
         o.append(")");
         return o.toString();
     }
+
+    public Object i;
 }

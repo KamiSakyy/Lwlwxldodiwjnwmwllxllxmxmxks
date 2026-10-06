@@ -39,4 +39,12 @@ public final class DiscussionStateReason {
     public static DiscussionStateReason[] values() {
         return (DiscussionStateReason[]) $VALUES.clone();
     }
+
+    public <T0> T0 name(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

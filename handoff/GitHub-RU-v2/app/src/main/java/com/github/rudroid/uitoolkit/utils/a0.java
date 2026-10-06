@@ -51,4 +51,5 @@ public final /* synthetic */ class a0 implements j71.a {
                 return Integer.valueOf(i2);
         }
     }
+    public Object c(Object p1) { return null; }
 }

@@ -43,4 +43,5 @@ public final class va {
     public static va[] values() {
         return (va[]) x.clone();
     }
+    public Object ordinal() { return null; }
 }

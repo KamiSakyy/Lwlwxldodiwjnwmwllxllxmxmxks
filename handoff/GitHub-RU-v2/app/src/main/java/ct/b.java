@@ -42,4 +42,5 @@ public final class b {
         com.github.rudroid.m0.z(sb, this.c, ", id=", this.d, ", __typename=");
         return h1.p(sb, this.e, ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

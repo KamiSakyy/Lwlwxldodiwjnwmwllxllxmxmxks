@@ -42,4 +42,6 @@ public final class i implements Runnable {
         this.s = i;
         this.t = mVar;
     }
+    public Object a() { return null; }
+    public Object d() { return null; }
 }

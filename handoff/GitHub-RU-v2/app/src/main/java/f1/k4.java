@@ -7,4 +7,5 @@ package f1;
 public class k4 {
     public k4() {
     }
+    public Object a() { return null; }
 }

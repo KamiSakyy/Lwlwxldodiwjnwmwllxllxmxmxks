@@ -181,4 +181,14 @@ public abstract class k extends w1Shadow.q {
         }
     }
 
+
+    public Object f32954y;
+
+    public Object f32947r;
+
+    public Object f32949t;
+
+    public Object E;
+
+    public Object f32950u;
 }

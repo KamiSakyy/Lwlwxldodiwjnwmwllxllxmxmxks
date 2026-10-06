@@ -63,4 +63,6 @@ public final class e implements n {
 
     public e(Object... a) {
     }
+    public Object i = null;
+    public Object k = null;
 }

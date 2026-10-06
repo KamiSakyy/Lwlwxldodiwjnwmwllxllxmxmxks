@@ -126,4 +126,5 @@ public abstract class d {
         method = declaredMethod322;
         f29435f = method;
     }
+    public Object h() { return null; }
 }

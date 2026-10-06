@@ -6,4 +6,6 @@ package b9;
  */
 public class i {
     public i() {}
+
+    public static Object c;
 }

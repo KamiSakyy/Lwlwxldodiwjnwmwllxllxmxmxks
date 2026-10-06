@@ -10,4 +10,6 @@ public abstract class m {
         k71.k.f(v8.x.b("WrkDbPathHelper"), "tagWithPrefix(...)");
         f33415a = new String[]{"-journal", "-shm", "-wal"};
     }
+
+    public static Object a;
 }

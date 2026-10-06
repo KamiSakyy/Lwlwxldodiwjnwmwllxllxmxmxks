@@ -19,4 +19,16 @@ public enum n implements k51.f {
 
     n(Object... a) {
     }
+    public Object A() { return null; }
+    public Object B() { return null; }
+    public Object C() { return null; }
+    public Object D() { return null; }
+    public Object b(Object p1) { return null; }
+    public Object t() { return null; }
+    public Object u() { return null; }
+    public Object v() { return null; }
+    public Object w() { return null; }
+    public Object x() { return null; }
+    public Object y() { return null; }
+    public Object z() { return null; }
 }

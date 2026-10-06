@@ -23,4 +23,8 @@ public abstract class h {
         RepositoryTypeFilter.Companion.getClass();
         return RepositoryTypeFilter.x;
     }
+    public Object name() { return null; }
+    public Object ordinal() { return null; }
+    public Object s(Object p1) { return null; }
+    public Object values() { return null; }
 }

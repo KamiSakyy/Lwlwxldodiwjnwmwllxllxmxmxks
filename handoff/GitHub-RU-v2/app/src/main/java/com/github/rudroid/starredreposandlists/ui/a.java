@@ -43,4 +43,5 @@ final class a extends c71.j implements j71.e {
         return a0.a;
     }
 
+    public static final Object a = null;
 }

@@ -32,4 +32,5 @@ public final /* synthetic */ class h implements j71.a {
         }
         return w61.a0.a;
     }
+    public Object d() { return null; }
 }

@@ -16,4 +16,5 @@ public final class c extends n1 {
         vfVar.P0(searchAndFilterBaseFragment);
     }
 
+    public Object a(Object p1, Object p2) { return null; }
 }

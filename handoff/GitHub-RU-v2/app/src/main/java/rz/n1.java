@@ -35,4 +35,5 @@ public final class n1 implements aa.v0 {
         sb.append(", __typename=");
         return com.github.rudroid.copilot.h1.p(sb, this.c, ")");
     }
+    public Object b() { return null; }
 }

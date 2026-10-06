@@ -33,4 +33,5 @@ public final class b {
     public static b[] values() {
         return (b[]) t.clone();
     }
+    public Object a = null;
 }

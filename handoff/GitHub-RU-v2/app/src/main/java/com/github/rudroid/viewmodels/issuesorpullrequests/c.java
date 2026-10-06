@@ -13,4 +13,5 @@ public final class c implements y71.i {
         Object a = z71.b.a(cVar, new a(iVarArr), new b(3, null), jVar, iVarArr);
         return a == b71.a.r ? a : w61.a0.a;
     }
+    public Object v(Object p1) { return null; }
 }

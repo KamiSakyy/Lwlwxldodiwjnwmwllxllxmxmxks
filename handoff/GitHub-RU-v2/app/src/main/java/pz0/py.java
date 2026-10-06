@@ -38,4 +38,5 @@ public final class py {
     public static py[] values() {
         return (py[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

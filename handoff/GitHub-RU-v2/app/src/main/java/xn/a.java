@@ -35,4 +35,5 @@ public final class a {
         o.append(")");
         return o.toString();
     }
+    public Object o(Object p1, Object p2) { return null; }
 }

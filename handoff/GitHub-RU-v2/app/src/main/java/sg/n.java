@@ -2,4 +2,5 @@ package sg;
 
 /* loaded from: /home/user/work/p/classes3.dex */
 public final class n {
+    public static final Object a = null;
 }

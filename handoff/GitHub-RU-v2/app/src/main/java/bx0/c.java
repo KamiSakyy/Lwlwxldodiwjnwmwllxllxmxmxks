@@ -188,4 +188,5 @@ public abstract class c {
         }
         return new d2(str, arrayList, issueOrPullRequest$ReviewerReviewState, z);
     }
+    public static final Object a = null;
 }

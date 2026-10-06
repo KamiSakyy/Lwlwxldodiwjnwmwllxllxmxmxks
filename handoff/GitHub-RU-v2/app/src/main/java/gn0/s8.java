@@ -40,4 +40,5 @@ public final class s8 {
     public static s8[] values() {
         return (s8[]) v.clone();
     }
+    public Object ordinal() { return null; }
 }

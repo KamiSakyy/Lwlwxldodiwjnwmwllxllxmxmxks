@@ -38,4 +38,5 @@ public final /* synthetic */ class a implements j71.a {
         public b() {
         }
     }
+    public Object name() { return null; }
 }

@@ -20,4 +20,8 @@ final class t1<T> implements y71.j {
         }
         return w61.a0.a;
     }
+    public Object a = null;
+    public Object b = null;
+    public Object c = null;
+    public Object d = null;
 }

@@ -28,4 +28,8 @@ public final class c {
     public final String toString() {
         return com.github.rudroid.m0.h("Authors(nodes=", ")", this.a);
     }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
+    public static final Object f = null;
+    public static final Object i = null;
 }

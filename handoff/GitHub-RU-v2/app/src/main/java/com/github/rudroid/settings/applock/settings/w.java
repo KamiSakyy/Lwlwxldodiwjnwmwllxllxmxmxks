@@ -13,4 +13,5 @@ public abstract class w extends p2 {
         this.s0 = true;
         ((g) w()).D0((AppLockSettingsActivity) this);
     }
+    public Object onCreate(Object p1) { return null; }
 }

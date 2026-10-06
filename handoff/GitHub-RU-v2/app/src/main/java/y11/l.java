@@ -189,4 +189,5 @@ public final class l {
         this.d = hVar;
     }
 
+    public Object a = null;
 }

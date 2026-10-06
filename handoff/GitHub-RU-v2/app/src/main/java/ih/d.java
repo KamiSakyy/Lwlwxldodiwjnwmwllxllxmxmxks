@@ -30,4 +30,20 @@ public final class d {
         return (lh.c) sVar.j(lh.d.m);
     }
 
+
+    public static Object a;
+
+    public <T0> T0 b(Object... a) {
+        return null;
+    }
+
+    public static Object b;
+
+    public <T0> T0 f(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 a(Object... a) {
+        return null;
+    }
 }

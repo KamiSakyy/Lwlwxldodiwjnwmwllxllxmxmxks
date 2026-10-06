@@ -193,4 +193,6 @@ public final class m implements Runnable {
         this.s = obj;
         this.t = obj2;
     }
+
+    public Object t;
 }

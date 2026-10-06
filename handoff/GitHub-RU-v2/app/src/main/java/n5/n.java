@@ -23,4 +23,6 @@ public final class n extends c71.c {
         this.f29564v |= Integer.MIN_VALUE;
         return this.f29565w.c((Object) null, this);
     }
+    public Object u = null;
+    public Object v = null;
 }

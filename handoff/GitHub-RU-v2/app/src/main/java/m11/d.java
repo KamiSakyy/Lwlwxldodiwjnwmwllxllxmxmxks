@@ -15,4 +15,5 @@ public final class d implements i51.c {
         dVar.a(b, eVar.a);
         dVar.a(c, eVar.b);
     }
+    public Object c() { return null; }
 }

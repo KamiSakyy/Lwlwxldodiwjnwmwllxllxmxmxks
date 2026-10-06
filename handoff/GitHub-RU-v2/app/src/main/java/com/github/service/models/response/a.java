@@ -104,4 +104,5 @@ public final class a implements Parcelable {
             avatar = Avatar.u;
         }
     }
+    public Object z(Object p1) { return null; }
 }

@@ -154,4 +154,5 @@ public final /* synthetic */ class e implements j71.e {
         }
         return a0Var;
     }
+    public Object r(Object p1, Object p2, Object p3) { return null; }
 }

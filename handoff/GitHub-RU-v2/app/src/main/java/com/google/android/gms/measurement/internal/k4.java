@@ -143,4 +143,5 @@ public final class k4 extends e4 {
 
     public k4(Object... a) {
     }
+    public Object z() { return null; }
 }

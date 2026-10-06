@@ -1664,4 +1664,6 @@ public final class b implements Runnable {
 
     public b(Object... a) {
     }
+
+    public Object t;
 }

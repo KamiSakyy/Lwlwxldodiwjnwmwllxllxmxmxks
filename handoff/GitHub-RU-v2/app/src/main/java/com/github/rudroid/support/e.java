@@ -106,4 +106,6 @@ public final class e extends m0 {
         k71.k.f(b2, "inflate(...)");
         return new d(b2, this.e);
     }
+    public Object n() { return null; }
+    public Object u = null;
 }

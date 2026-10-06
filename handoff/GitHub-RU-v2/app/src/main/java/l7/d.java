@@ -5,4 +5,10 @@ package l7;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface d {
+
+    default <T0> T0 d(Object... a) {
+        return null;
+    }
+    public Object a = null;
+    public Object c = null;
 }

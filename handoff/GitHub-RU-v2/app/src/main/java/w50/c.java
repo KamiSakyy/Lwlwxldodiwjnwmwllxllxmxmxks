@@ -201,4 +201,7 @@ public final class c implements aa.i0, bm.k, com.google.android.gms.measurement.
         k71.k.g(wVar, "customScalarAdapters");
     }
 
+    public static final Object a = null;
+    public static final Object f = null;
+    public static final Object i = null;
 }

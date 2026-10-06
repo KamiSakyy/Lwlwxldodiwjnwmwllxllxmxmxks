@@ -405,4 +405,5 @@ public class c implements o, c41.c, d, c21.b, c21.c, s4 {
         this.r = 3;
         this.s = new h0(f, f2, 0.01f);
     }
+    public Object k = null;
 }

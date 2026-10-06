@@ -47,4 +47,9 @@ public final class ComposeDatePickerDialogFragment extends DialogFragment {
         int i = Build.VERSION.SDK_INT;
         (i >= 35 ? new t2(window, cVar) : i >= 30 ? new r2(window, cVar) : new q2(window, cVar)).V(true);
     }
+
+    public <T0> T0 t4(Object... a) {
+        return null;
+    }
+    public Object t4(Object p1, Object p2) { return null; }
 }

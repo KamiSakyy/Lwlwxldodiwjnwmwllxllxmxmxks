@@ -45,4 +45,5 @@ public final class o0 {
         o.append(", isOrganizationDiscussionRepository=");
         return com.github.rudroid.m0.l(o, this.e, ", __typename=", this.f, ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

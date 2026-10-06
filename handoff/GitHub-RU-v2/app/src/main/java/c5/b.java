@@ -5,4 +5,6 @@ package c5;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface b {
+    public Object f4114s = null;
+    public Object s = null;
 }

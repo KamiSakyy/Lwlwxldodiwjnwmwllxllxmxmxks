@@ -7,4 +7,7 @@ package ic;
 public class g9 {
     public g9() {
     }
+    public Object N = null;
+    public Object O = null;
+    public Object P = null;
 }

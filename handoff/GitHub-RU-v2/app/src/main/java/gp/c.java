@@ -31,4 +31,7 @@ public abstract class c implements aa.a {
         List list = hp.d.a;
         hp.d.d(fVar, wVar, eVar.b);
     }
+    public static final Object f = null;
+    public static final Object i = null;
+    public static final Object k = null;
 }

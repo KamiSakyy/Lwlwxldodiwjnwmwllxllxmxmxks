@@ -29,4 +29,10 @@ public final class l implements n {
     public final String toString() {
         return "Modifier";
     }
+
+    public static Object a;
+
+    public static z5.n a;
+
+    public static z5.l a;
 }

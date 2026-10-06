@@ -32,4 +32,5 @@ public final class d {
     public final String toString() {
         return "DeepLinkHashesEntry(id=" + this.a + ", timestamp=" + this.b + ")";
     }
+    public Object z(Object p1, Object p2) { return null; }
 }

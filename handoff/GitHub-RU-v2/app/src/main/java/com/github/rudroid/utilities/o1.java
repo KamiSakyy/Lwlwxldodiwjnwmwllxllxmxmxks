@@ -80,4 +80,5 @@ public final class o1 {
         k71.k.f(string3, "getString(...)");
         return string3;
     }
+    public Object d(Object p1, Object p2) { return null; }
 }

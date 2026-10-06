@@ -28,4 +28,5 @@ public final class b {
     public final String toString() {
         return com.github.rudroid.m0.h("ProjectItems(nodes=", ")", this.a);
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

@@ -29,4 +29,6 @@ public final class i {
             }
         }
     }
+    public Object j(Object p1) { return null; }
+    public Object k(Object p1) { return null; }
 }

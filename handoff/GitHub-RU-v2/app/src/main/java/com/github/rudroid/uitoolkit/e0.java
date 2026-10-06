@@ -38,4 +38,5 @@ final class e0 extends c71.j implements j71.e {
         b2.a0.a(this.w);
         return w61.a0.a;
     }
+    public Object i = null;
 }

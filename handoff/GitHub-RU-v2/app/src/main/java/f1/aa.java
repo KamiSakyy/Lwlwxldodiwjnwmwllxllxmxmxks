@@ -34,4 +34,5 @@ public final class aa {
         String str = this.f22484b;
         return this.f22485c.hashCode() + x.i.e((hashCode + (str != null ? str.hashCode() : 0)) * 31, 31, false);
     }
+    public Object f(Object p1) { return null; }
 }

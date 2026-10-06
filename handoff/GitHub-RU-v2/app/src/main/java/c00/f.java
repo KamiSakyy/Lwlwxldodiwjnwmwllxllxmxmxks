@@ -2202,4 +2202,5 @@ public final class f implements y71.j {
         this.t = a81.b.m(hVar);
         this.u = new v4(jVar, (a71.c) null, 28);
     }
+    public Object h = null;
 }

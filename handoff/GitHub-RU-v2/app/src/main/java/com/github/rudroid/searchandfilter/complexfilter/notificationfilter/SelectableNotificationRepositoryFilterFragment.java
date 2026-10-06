@@ -179,4 +179,16 @@ public final class SelectableNotificationRepositoryFilterFragment extends Hilt_S
         }
     }
 
+
+    public <T0> T0 g4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 j4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 F3(Object... a) {
+        return null;
+    }
 }

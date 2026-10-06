@@ -7,4 +7,8 @@ package androidx.window.layout.adapter.extensions;
 public class MulticastConsumer {
     public MulticastConsumer() {
     }
+
+    public <T0> T0 accept(Object... a) {
+        return null;
+    }
 }

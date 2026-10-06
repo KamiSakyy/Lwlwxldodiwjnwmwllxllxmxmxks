@@ -39,4 +39,6 @@ public abstract class e {
             return false;
         }
     }
+
+    public static Object b;
 }

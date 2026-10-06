@@ -83,4 +83,8 @@ public final class b implements ha.c {
         throw new CacheMissException(str, b);
     }
 
+    public Object C(Object p1) { return null; }
+    public Object s() { return null; }
+    public Object d = null;
+    public Object e = null;
 }

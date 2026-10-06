@@ -67,4 +67,6 @@ public final class p40 {
         o.append(")");
         return o.toString();
     }
+
+    public Object i;
 }

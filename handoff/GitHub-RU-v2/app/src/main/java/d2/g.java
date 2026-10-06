@@ -29,4 +29,5 @@ public final class g {
         }
         return config == Bitmap.Config.HARDWARE ? 4 : 0;
     }
+    public Object a = null;
 }

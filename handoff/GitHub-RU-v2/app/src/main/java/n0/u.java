@@ -8,4 +8,6 @@ public final class u {
 
     /* renamed from: b, reason: collision with root package name */
     public static int f29332b;
+
+    public static Object b;
 }

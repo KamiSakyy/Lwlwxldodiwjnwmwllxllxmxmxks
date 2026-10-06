@@ -7,4 +7,11 @@ package a7;
 public class q {
     public q() {
     }
+
+    public <T0> T0 s(Object... a) {
+        return null;
+    }
+    public Object b = null;
+    public Object c = null;
+    public Object f = null;
 }

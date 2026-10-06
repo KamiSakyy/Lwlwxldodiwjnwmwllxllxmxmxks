@@ -22,4 +22,8 @@ public abstract class f {
         f34269c = new n4(eVar, false);
         f34270d = new n4(eVar, true);
     }
+
+    public static Object d;
+
+    public static Object c;
 }

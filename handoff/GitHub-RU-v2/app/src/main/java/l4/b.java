@@ -88,4 +88,5 @@ public abstract class b {
         public CoordinatorLayout() {
         }
     }
+    public Object a() { return null; }
 }

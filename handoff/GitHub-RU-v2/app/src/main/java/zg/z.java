@@ -254,4 +254,6 @@ public final class z {
         if (t != null) {
         }
     }
+
+    public static Object a;
 }

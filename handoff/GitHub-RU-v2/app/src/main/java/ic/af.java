@@ -7,4 +7,8 @@ package ic;
 public class af {
     public af() {
     }
+    public Object N = null;
+    public Object O = null;
+    public Object Q = null;
+    public Object R = null;
 }

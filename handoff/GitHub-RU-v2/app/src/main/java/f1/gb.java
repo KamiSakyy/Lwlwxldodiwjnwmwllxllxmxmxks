@@ -7,4 +7,6 @@ package f1;
 public class gb {
     public gb() {
     }
+    public Object a = null;
+    public Object i = null;
 }

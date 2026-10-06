@@ -14,4 +14,6 @@ public final class c extends p0 {
         this.f29503b = obj;
         this.f29504c = i;
     }
+    public Object v(Object p1) { return null; }
+    public Object b = null;
 }

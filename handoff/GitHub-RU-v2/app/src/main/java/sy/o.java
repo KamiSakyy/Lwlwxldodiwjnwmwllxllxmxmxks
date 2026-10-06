@@ -233,4 +233,5 @@ public abstract class o {
         }
         return 1;
     }
+    public static final Object z = null;
 }

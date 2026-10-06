@@ -12,4 +12,7 @@ public final class o1 {
         Map map = Collections.EMPTY_MAP;
         a = o1Var;
     }
+    public Object b = null;
+    public Object c = null;
+    public Object d = null;
 }

@@ -33,4 +33,5 @@ public final class m {
     public final String toString() {
         return f4.i(this.a, "AssignedActors(totalCount=", ", nodes=", ")", this.b);
     }
+    public Object a = null;
 }

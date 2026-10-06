@@ -37,4 +37,12 @@ public final class PullsWidgetFilter {
     public static PullsWidgetFilter[] values() {
         return (PullsWidgetFilter[]) $VALUES.clone();
     }
+
+    public <T0> T0 name(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

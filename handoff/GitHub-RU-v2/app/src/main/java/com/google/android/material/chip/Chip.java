@@ -1805,4 +1805,96 @@ public class Chip extends p implements e, y, i {
         }
         g();
     }
+
+    public <T0> T0 getElevation(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setOutlineProvider(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setHorizontallyScrolling(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setMinHeight(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getLayoutDirection(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 refreshDrawableState(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setMinWidth(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getMinHeight(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getMinWidth(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 performClick(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 playSoundEffect(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getText(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 isClickable(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 isEnabled(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getResources(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getContext(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setOnClickListener(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setTag(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setOnTouchListener(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 sendAccessibilityEvent(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 requestLayout(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 invalidate(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 invalidateOutline(Object... a) {
+        return null;
+    }
 }

@@ -52,4 +52,6 @@ public abstract class c implements aa.a {
         aa.c.i.b(fVar, wVar, dVar.c);
     }
 
+    public Object b(Object p1) { return null; }
+    public static final Object i = null;
 }

@@ -49,4 +49,5 @@ public final class f {
         }
         return Long.valueOf(this.f30470d);
     }
+    public static final Object J = null;
 }

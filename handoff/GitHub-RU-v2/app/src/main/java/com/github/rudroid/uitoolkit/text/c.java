@@ -7,4 +7,6 @@ public final class c {
         new r1.d(new com.github.rudroid.uitoolkit.listitems.d(9), false, -223789522);
         new r1.d(new com.github.rudroid.uitoolkit.listitems.d(10), false, 483435984);
     }
+    public Object a(Object p1) { return null; }
+    public Object v(Object p1) { return null; }
 }

@@ -74,4 +74,5 @@ public abstract class d {
             this.a = aVar;
         }
     }
+    public Object s(Object p1, Object p2) { return null; }
 }

@@ -293,4 +293,6 @@ public final class a implements f {
         this.f22168u[i - 1] = str;
         return this;
     }
+
+    public static Object y;
 }

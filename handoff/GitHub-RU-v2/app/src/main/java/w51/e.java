@@ -23,4 +23,6 @@ public abstract class e {
 
     public e(Object... a) {
     }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

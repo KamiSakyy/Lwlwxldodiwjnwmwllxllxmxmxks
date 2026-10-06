@@ -21,4 +21,18 @@ public final class s implements i51.c {
         dVar.d(f, b1Var.e);
         dVar.d(g, b1Var.f);
     }
+    public Object C() { return null; }
+    public Object N() { return null; }
+    public Object V() { return null; }
+    public Object a0() { return null; }
+    public Object d0(Object p1) { return null; }
+    public Object e0(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object k(Object p1) { return null; }
+    public Object n0(Object p1) { return null; }
+    public Object q(Object p1) { return null; }
+    public Object q0() { return null; }
+    public Object t() { return null; }
+    public Object S = null;
+    public Object a = null;
 }

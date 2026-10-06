@@ -48,4 +48,5 @@ public final class i0 extends g0 {
         }
         super.c();
     }
+    public Object s = null;
 }

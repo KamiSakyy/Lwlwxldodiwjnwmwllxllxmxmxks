@@ -30,4 +30,6 @@ public abstract class c {
     public static final r e(r rVar, j71.c cVar) {
         return rVar.f(new d(null, cVar));
     }
+
+    public static Object c;
 }

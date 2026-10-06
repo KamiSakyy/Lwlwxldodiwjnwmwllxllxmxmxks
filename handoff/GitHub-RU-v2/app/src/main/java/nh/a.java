@@ -9,4 +9,6 @@ public final class a {
     public static final float a(int i, s sVar) {
         return ((c) sVar.j(g1.h)).E(i);
     }
+
+    public static Object a;
 }

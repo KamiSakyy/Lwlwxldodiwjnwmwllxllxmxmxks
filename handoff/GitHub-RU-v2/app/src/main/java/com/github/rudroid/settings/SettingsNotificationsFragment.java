@@ -830,4 +830,45 @@ public final class SettingsNotificationsFragment extends Hilt_SettingsNotificati
         s4(2132148238);
     }
 
+
+    public <T0> T0 f4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 t4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 B3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 i4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 D3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 x3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 F3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 s4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 E(Object... a) {
+        return null;
+    }
+    public Object E(Object p1, Object p2) { return null; }
 }

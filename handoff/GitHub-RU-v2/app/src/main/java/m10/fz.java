@@ -35,4 +35,5 @@ public final class fz {
     public static fz[] values() {
         return (fz[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

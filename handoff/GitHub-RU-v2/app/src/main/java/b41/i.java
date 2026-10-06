@@ -16,4 +16,5 @@ public final class i extends hShadow {
             gVar.c(null);
         }
     }
+    public Object a = null;
 }

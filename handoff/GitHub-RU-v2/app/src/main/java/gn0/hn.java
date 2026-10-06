@@ -40,4 +40,5 @@ public final class hn {
     public static hn[] values() {
         return (hn[]) w.clone();
     }
+    public Object ordinal() { return null; }
 }

@@ -20,4 +20,5 @@ public final class j implements d {
     public final String getId() {
         return this.f29679a;
     }
+    public Object b = null;
 }

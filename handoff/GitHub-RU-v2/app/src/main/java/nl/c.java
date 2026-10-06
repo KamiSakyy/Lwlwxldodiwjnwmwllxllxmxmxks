@@ -27,4 +27,5 @@ public final class c {
         dVar.getClass();
         return n1.I(b31.b.J(((c1) dVar.a.a(jVar)).a(str, "refs/heads/".concat(str4), str6), jVar, cVar), new a(null, this, jVar, str2, str3, str8, str7, str9, z, str10, str5, cVar));
     }
+    public Object j(Object p1) { return null; }
 }

@@ -5,4 +5,5 @@ public interface f {
     Object a(j71.e eVar, a71.c cVar);
 
     y71.i getData();
+    public static final Object J = null;
 }

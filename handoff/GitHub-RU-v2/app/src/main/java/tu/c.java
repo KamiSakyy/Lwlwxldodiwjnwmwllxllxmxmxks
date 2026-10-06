@@ -24,4 +24,8 @@ public final class c {
     public final String toString() {
         return s0.i("Discussions(totalCount=", this.a, ")");
     }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
+    public static final Object f = null;
+    public static final Object i = null;
 }

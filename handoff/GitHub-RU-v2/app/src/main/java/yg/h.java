@@ -44,4 +44,5 @@ public final /* synthetic */ class h implements j71.e {
         this.w = e0Var;
         this.v = i3;
     }
+    public static final Object o = null;
 }

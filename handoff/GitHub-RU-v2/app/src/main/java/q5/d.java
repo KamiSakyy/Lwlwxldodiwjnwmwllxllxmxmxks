@@ -18,4 +18,6 @@ public final class d {
         this.f30983a = sharedPreferences;
         this.f30984b = set;
     }
+    public Object a = null;
+    public Object b = null;
 }

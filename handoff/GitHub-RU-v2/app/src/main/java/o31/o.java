@@ -118,4 +118,5 @@ public abstract class o {
                 return mode;
         }
     }
+    public Object getWidth() { return null; }
 }

@@ -37,4 +37,7 @@ public abstract class x {
         a.getClass();
         return new a0(a2, false);
     }
+
+    public static Object a;
+    public Object values() { return null; }
 }

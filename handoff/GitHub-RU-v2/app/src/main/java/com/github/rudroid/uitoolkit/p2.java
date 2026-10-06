@@ -75,4 +75,10 @@ public final class p2 {
         r.append(")");
         return r.toString();
     }
+    public Object d(Object p1, Object p2) { return null; }
+    public Object e(Object p1, Object p2) { return null; }
+    public Object f(Object p1, Object p2) { return null; }
+    public Object o(Object p1, Object p2) { return null; }
+    public Object p(Object p1, Object p2, Object p3) { return null; }
+    public Object s(Object p1, Object p2) { return null; }
 }

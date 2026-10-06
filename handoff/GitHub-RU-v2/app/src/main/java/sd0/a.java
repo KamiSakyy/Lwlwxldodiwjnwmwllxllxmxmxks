@@ -22,4 +22,5 @@ public final class a {
     public final String toString() {
         return a0.s0.i("Followers(totalCount=", this.a, ")");
     }
+    public Object O(Object p1) { return null; }
 }

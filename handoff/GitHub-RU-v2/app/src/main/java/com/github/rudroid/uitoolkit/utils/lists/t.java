@@ -102,4 +102,8 @@ public final class t {
         sVar2.q(false);
         return E;
     }
+    public Object J(Object p1) { return null; }
+    public Object g(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object h(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object s(Object p1) { return null; }
 }

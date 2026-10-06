@@ -45,4 +45,5 @@ public final class bs {
     public static bs[] values() {
         return (bs[]) y.clone();
     }
+    public Object ordinal() { return null; }
 }

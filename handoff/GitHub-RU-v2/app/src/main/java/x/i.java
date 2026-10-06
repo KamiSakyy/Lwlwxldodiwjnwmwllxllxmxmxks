@@ -118,4 +118,20 @@ public abstract /* synthetic */ class i {
         k71.k.g(str2, str3);
         return bundle.containsKey(str4);
     }
+
+    public static Object i;
+
+    public <T0> T0 b(Object... a) {
+        return null;
+    }
+
+    public static Object e;
+
+    public <T0> T0 e(Object... a) {
+        return null;
+    }
+    public Object a() { return null; }
+    public Object b(Object p1, Object p2) { return null; }
+    public Object c() { return null; }
+    public Object d() { return null; }
 }

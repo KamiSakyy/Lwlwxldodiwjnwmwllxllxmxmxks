@@ -7,4 +7,6 @@ package w2;
 public class h1 {
     public h1() {
     }
+    public Object a() { return null; }
+    public Object b() { return null; }
 }

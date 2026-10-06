@@ -20,4 +20,6 @@ public class l2 {
         public a() {
         }
     }
+
+    public static Object f7988a;
 }

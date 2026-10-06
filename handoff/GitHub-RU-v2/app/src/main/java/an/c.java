@@ -13,4 +13,8 @@ public final class c {
         this.a = p0Var;
         this.b = mVar;
     }
+    public Object b(Object p1, Object p2) { return null; }
+    public Object containsKey(Object p1) { return null; }
+    public Object get(Object p1) { return null; }
+    public Object v(Object p1) { return null; }
 }

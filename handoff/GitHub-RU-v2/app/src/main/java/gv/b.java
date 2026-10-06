@@ -41,4 +41,5 @@ public final class b implements aa.h0 {
         o.append(", __typename=");
         return com.github.rudroid.copilot.h1.p(o, this.e, ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

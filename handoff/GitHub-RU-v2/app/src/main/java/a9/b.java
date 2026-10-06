@@ -26,4 +26,5 @@ public abstract class b implements d {
 
     public abstract boolean d(Object obj);
 
+    public Object a = null;
 }

@@ -78,4 +78,13 @@ public final class AppLockFragment extends Hilt_AppLockFragment {
         composeView.setContent(new r1.d(new n(this, 1), true, 1391347062));
         return composeView;
     }
+
+    public <T0> T0 i4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g4(Object... a) {
+        return null;
+    }
+    public Object g4() { return null; }
 }

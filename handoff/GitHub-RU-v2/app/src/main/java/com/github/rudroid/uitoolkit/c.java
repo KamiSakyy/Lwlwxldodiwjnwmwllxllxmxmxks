@@ -14,4 +14,5 @@ public final class c {
         this.c = z;
         this.d = z2;
     }
+    public Object v(Object p1) { return null; }
 }

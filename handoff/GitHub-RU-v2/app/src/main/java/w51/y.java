@@ -154,4 +154,9 @@ public final class y implements Runnable {
             throw th;
         }
     }
+    public Object S(Object p1, Object p2, Object p3) { return null; }
+    public Object Z(Object p1, Object p2) { return null; }
+    public Object a0(Object p1, Object p2) { return null; }
+    public static final Object r = null;
+    public static final Object s = null;
 }

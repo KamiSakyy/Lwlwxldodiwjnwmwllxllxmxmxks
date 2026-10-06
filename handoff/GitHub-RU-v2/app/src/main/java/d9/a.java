@@ -14,4 +14,5 @@ public final class a {
         this.f21675a = str;
         this.f21676b = str2;
     }
+    public Object b = null;
 }

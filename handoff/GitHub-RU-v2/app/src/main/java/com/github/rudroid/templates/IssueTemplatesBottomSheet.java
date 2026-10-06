@@ -122,4 +122,20 @@ public final class IssueTemplatesBottomSheet extends Hilt_IssueTemplatesBottomSh
         return (l) this.S0.getValue();
     }
 
+
+    public <T0> T0 A3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 s4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 n4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
 }

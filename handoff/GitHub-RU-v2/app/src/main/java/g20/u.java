@@ -22,4 +22,6 @@ public final class u {
     public final String toString() {
         return a0.s0.i("SuccessfulCheckRuns(totalCount=", this.a, ")");
     }
+    public Object b = null;
+    public Object k = null;
 }

@@ -5,4 +5,5 @@ package v2;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface f {
+    public static final Object J = null;
 }

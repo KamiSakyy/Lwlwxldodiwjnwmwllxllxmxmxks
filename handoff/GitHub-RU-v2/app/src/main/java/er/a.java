@@ -28,4 +28,5 @@ public final class a {
     public final String toString() {
         return com.github.rudroid.m0.h("AssociatedPullRequests(nodes=", ")", this.a);
     }
+    public Object O(Object p1) { return null; }
 }

@@ -37,4 +37,6 @@ public final class CopilotWebSearchReferenceBottomSheet extends Hilt_CopilotWebS
         parcelableArrayList = bundle2 != null ? bundle2.getParcelableArrayList("key_results") : null;
         return parcelableArrayList == null ? rVar : parcelableArrayList;
     }
+
+    public Object f2466x;
 }

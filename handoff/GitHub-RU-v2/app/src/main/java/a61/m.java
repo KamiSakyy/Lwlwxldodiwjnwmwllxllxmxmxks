@@ -44,4 +44,7 @@ public final class m implements d61.b {
 
     public m(Object... a) {
     }
+    public Object p() { return null; }
+    public Object r() { return null; }
+    public Object y() { return null; }
 }

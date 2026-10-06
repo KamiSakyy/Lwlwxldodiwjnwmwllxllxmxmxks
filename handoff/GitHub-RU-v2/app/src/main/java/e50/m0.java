@@ -54,4 +54,10 @@ public final class m0 implements aa.a {
         List list = i50.k.a;
         i50.k.d(fVar, wVar, c0Var.d);
     }
+    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object o(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object w(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object y(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

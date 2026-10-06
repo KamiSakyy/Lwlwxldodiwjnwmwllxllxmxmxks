@@ -45,4 +45,12 @@ public class h extends g {
         public p() {
         }
     }
+
+    public Object f24743e;
+
+    public Object f24747j;
+
+    public Object f24745g;
+
+    public Object f24748k;
 }

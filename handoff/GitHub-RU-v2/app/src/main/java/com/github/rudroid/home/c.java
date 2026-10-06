@@ -39,4 +39,6 @@ final class c {
     public final String toString() {
         return "HomeBanners(ghesDeprecationData=" + this.f14916a + ", notificationsBannerData=" + this.f14917b + ", inAppUpdateStateData=" + this.f14918c + ")";
     }
+    public Object name() { return null; }
+    public Object v(Object p1) { return null; }
 }

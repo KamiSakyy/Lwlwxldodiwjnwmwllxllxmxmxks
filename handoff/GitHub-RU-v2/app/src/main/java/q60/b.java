@@ -42,4 +42,5 @@ public final class b {
         f1.e.x(o, this.c, ", teamAvatarUrl=", this.d, ", id=");
         return h1.p(o, this.e, ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

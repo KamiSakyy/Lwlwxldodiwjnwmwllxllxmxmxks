@@ -43,4 +43,5 @@ public final class ff {
     public static ff[] values() {
         return (ff[]) v.clone();
     }
+    public Object ordinal() { return null; }
 }

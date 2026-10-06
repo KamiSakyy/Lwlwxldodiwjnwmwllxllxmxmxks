@@ -78,4 +78,8 @@ public final class ActionPreferenceIcon extends Preference {
         this.f0 = new a();
     }
 
+
+    public <T0> T0 j(Object... a) {
+        return null;
+    }
 }

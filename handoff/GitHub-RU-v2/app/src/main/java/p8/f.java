@@ -21,4 +21,5 @@ public final class f {
         f30430b = w.t(new kh.a(28));
         f30431c = a.f30411a;
     }
+    public static final Object J = null;
 }

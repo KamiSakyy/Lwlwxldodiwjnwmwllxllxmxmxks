@@ -45,4 +45,5 @@ public final class m0 implements aa.a {
         fVar.z0("login");
         bVar.b(fVar, wVar, i0Var.b);
     }
+    public Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

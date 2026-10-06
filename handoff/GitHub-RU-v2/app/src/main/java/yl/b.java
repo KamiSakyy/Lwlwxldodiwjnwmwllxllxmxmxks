@@ -421,4 +421,5 @@ public final class b extends j implements e {
         this.y = obj2;
         this.z = obj3;
     }
+    public Object A = null;
 }

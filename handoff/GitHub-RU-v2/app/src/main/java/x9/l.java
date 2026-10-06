@@ -117,4 +117,5 @@ public final class l {
         sb2.append("', productDetailsToken='");
         return x.i.k(sb2, this.f34020f, "', subscriptionOfferDetails=", valueOf, "}");
     }
+    public Object h = null;
 }

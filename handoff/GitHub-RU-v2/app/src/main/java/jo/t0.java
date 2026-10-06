@@ -26,4 +26,5 @@ public final class t0 {
     public final String toString() {
         return "AddPullRequestReviewThread(thread=" + this.a + ")";
     }
+    public static final Object d = null;
 }

@@ -36,4 +36,7 @@ public final class c {
     public final String toString() {
         return h1.n("OnPullRequest(id=", this.a, ", viewerCanReact=", ")", this.b);
     }
+    public Object b(Object p1) { return null; }
+    public static final Object a = null;
+    public static final Object f = null;
 }

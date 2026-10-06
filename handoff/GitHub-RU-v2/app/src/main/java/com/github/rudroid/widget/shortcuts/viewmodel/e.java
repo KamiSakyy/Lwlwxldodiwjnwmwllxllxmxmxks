@@ -58,4 +58,5 @@ final class e extends c71.j implements j71.e {
         }
         return a0Var;
     }
+    public Object c(Object p1, Object p2, Object p3) { return null; }
 }

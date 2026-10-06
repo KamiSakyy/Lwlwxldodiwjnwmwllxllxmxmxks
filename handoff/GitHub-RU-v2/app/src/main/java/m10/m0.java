@@ -42,4 +42,7 @@ public final class m0 {
         f1.e.w(sb, this.c, ", subIssueId=", this.d, ", subIssueUrl=");
         return f1.e.k(sb, this.e, ")");
     }
+
+    public Object e;
+    public Object c(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

@@ -106,4 +106,5 @@ public final class d0 {
         k71.k.f(sb3, "toString(...)");
         return sb3;
     }
+    public Object k = null;
 }

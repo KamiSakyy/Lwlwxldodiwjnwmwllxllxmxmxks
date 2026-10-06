@@ -35,4 +35,5 @@ public final class of {
     public static of[] values() {
         return (of[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

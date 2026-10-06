@@ -7,4 +7,7 @@ package v2;
 public class g0 {
     public g0() {
     }
+    public Object I() { return null; }
+    public Object w() { return null; }
+    public Object X = null;
 }

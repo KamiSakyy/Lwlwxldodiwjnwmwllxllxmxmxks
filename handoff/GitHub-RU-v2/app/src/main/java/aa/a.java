@@ -5,4 +5,7 @@ package aa;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface a {
+    default Object a(Object p1, Object p2) { return null; }
+    default void b(Object p1, Object p2, Object p3) {
+    }
 }

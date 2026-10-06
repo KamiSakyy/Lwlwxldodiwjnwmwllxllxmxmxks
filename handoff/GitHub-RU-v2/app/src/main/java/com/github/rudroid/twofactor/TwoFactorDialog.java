@@ -470,4 +470,8 @@ public final class TwoFactorDialog extends w2.a {
         this.z = aVar;
     }
 
+
+    public <T0> T0 getContext(Object... a) {
+        return null;
+    }
 }

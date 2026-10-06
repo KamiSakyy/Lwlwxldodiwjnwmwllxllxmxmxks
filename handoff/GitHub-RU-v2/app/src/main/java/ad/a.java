@@ -31,4 +31,5 @@ public interface a {
         public g() {
         }
     }
+    public Object c(Object p1, Object p2) { return null; }
 }

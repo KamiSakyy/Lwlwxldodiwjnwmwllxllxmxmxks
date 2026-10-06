@@ -25,4 +25,12 @@ public final class g1 {
 
     public g1(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7) {
     }
+    public Object a = null;
+    public Object b = null;
+    public Object c = null;
+    public Object d = null;
+    public Object e = null;
+    public Object f = null;
+    public Object g = null;
+    public Object h = null;
 }

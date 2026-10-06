@@ -34,4 +34,9 @@ public final class m0 {
     public final String toString() {
         return x.i.l(a0.s0.n(this.b, "Commits(__typename=", this.a, ", totalCount=", ", nodes="), this.c, ")");
     }
+    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object b(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
 }

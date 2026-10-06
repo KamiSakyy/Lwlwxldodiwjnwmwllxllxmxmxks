@@ -7,4 +7,8 @@ package androidx.preference;
 public class SwitchPreferenceCompat {
     public SwitchPreferenceCompat() {
     }
+
+    public <T0> T0 H(Object... a) {
+        return null;
+    }
 }

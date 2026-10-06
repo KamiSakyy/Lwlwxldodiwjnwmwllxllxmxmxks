@@ -24,4 +24,5 @@ public final class b0 extends Binder {
         gVar.r.execute(new androidx.fragment.app.e(gVar, intent, gVar2, 5));
         gVar2.a.a(new i7.c(0), new a0(0, c0Var));
     }
+    public static final Object a = null;
 }

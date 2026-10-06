@@ -34,4 +34,5 @@ public final class g {
         int i = Build.VERSION.SDK_INT;
         (i >= 35 ? new a5.t2(window, cVar) : i >= 30 ? new a5.r2(window, cVar) : new a5.q2(window, cVar)).W(true);
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

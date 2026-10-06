@@ -61,4 +61,6 @@ public final class k implements aa.h0 {
         o.append(", __typename=");
         return com.github.rudroid.copilot.h1.p(o, this.g, ")");
     }
+
+    public static Object a;
 }

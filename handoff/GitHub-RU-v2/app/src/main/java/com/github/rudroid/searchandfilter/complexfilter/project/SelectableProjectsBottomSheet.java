@@ -439,4 +439,25 @@ public final class SelectableProjectsBottomSheet extends Hilt_SelectableProjects
         o0Var.e(F3(), new i(new com.github.rudroid.fragments.onboarding.notifications.viewmodel.z(21, this)));
     }
 
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 F3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 j4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 n4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 z4(Object... a) {
+        return null;
+    }
+    public Object j4() { return null; }
 }

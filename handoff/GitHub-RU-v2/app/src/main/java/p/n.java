@@ -630,4 +630,8 @@ public final class n implements u4.a {
         return this;
     }
 
+    public Object d = null;
+    public Object e = null;
+    public Object q = null;
+    public Object r = null;
 }

@@ -113,4 +113,5 @@ public final class u {
         this.f30899k = arrayList;
         this.l = j16;
     }
+    public Object c = null;
 }

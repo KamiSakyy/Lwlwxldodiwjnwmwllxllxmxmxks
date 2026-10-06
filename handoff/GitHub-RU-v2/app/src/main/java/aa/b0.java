@@ -33,4 +33,8 @@ public final class b0 {
     public final String toString() {
         return "Error(message = " + this.f610a + ", locations = " + this.f611b + ", path=" + this.f612c + ", extensions = " + this.f613d + ", nonStandardFields = " + this.f614e + ')';
     }
+    public Object a = null;
+    public Object c = null;
+    public Object d = null;
+    public Object e = null;
 }

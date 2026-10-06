@@ -73,4 +73,5 @@ public final class a {
         }
     }
 
+    public static final Object r = null;
 }

@@ -68,4 +68,8 @@ public final class e1 {
     public static e1[] values() {
         return (e1[]) f26452z.clone();
     }
+    public Object B = null;
+    public Object C = null;
+    public Object f26531y = null;
+    public Object f26532z = null;
 }

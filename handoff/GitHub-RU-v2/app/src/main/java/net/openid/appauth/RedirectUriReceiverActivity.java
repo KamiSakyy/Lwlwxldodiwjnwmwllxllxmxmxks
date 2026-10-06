@@ -17,4 +17,8 @@ public class RedirectUriReceiverActivity extends k.i {
         startActivity(intent);
         finish();
     }
+
+    public <T0> T0 startActivity(Object... a) {
+        return null;
+    }
 }

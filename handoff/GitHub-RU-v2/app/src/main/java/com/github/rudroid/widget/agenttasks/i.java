@@ -16,4 +16,5 @@ final class i extends c71.j implements j71.e {
         sy.y.j(obj);
         throw null;
     }
+    public Object d(Object p1, Object p2, Object p3) { return null; }
 }

@@ -12,4 +12,20 @@ public interface a {
     boolean o(b bVar, Menu menu);
 
     void q(b bVar);
+
+    default <T0> T0 b(Object... a) {
+        return null;
+    }
+
+    default <T0> T0 g(Object... a) {
+        return null;
+    }
+
+    default <T0> T0 o(Object... a) {
+        return null;
+    }
+
+    default <T0> T0 q(Object... a) {
+        return null;
+    }
 }

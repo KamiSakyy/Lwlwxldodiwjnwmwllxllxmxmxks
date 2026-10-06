@@ -7,4 +7,6 @@ package com.github.rudroid.copilot.ui;
 public class n {
     public n() {
     }
+
+    public static Object f10133a;
 }

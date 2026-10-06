@@ -45,4 +45,12 @@ class TimePickerView extends ConstraintLayout {
             this.H.sendAccessibilityEvent(8);
         }
     }
+
+    public <T0> T0 findViewById(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getContext(Object... a) {
+        return null;
+    }
 }

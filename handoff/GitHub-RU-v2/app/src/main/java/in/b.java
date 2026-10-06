@@ -107,4 +107,5 @@ public final class b implements y71.j {
         }
         return w61.a0.a;
     }
+    public Object L(Object p1) { return null; }
 }

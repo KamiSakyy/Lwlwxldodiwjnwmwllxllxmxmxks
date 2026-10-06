@@ -96,4 +96,6 @@ public final class a {
         sb.append(")");
         return sb.toString();
     }
+
+    public Object i;
 }

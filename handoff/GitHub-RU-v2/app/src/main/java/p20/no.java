@@ -27,4 +27,6 @@ public final class no implements aaShadow.a {
         fVar.z0("repositoryOwner");
         aa.c.b(aa.c.c(ro.a, true)).b(fVar, wVar, uzVar.a);
     }
+    public Object e(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object h(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

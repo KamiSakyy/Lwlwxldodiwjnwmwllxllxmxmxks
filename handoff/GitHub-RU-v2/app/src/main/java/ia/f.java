@@ -71,4 +71,6 @@ public final class f extends s0 {
             return null;
         }
     }
+
+    public Object f1480s;
 }

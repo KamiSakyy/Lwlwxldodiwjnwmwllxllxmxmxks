@@ -5,4 +5,5 @@ package g4;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface f {
+    public Object c = null;
 }

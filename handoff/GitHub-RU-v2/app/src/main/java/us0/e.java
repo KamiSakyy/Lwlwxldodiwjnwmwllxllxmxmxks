@@ -57,4 +57,5 @@ public final class e implements aa.a {
         fVar.z0("id");
         bVar2.b(fVar, wVar, bVar.c);
     }
+    public Object i(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

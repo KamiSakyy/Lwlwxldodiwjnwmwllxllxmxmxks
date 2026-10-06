@@ -34,4 +34,5 @@ public final class i extends h0 {
             eVar.f(context, b, a == null ? null : PendingIntent.getActivity(context, 0, a, 201326592));
         }
     }
+    public Object H() { return null; }
 }

@@ -17,4 +17,5 @@ public final class h1 implements j1, i, z71.r {
     public final Object b(j jVar, a71.c cVar) {
         return this.r.b(jVar, cVar);
     }
+    public Object j() { return null; }
 }

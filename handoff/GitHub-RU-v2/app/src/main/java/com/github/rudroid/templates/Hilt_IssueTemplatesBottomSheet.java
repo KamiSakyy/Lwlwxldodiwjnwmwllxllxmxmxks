@@ -55,4 +55,8 @@ public abstract class Hilt_IssueTemplatesBottomSheet extends BaseComposeBottomSh
         H4();
         return this.P0;
     }
+
+    public <T0> T0 w(Object... a) {
+        return null;
+    }
 }

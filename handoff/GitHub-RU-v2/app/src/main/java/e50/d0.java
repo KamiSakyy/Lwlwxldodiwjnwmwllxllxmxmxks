@@ -33,4 +33,6 @@ public final class d0 {
     public final String toString() {
         return "Author(__typename=" + this.a + ", onNode=" + this.b + ", actorFields=" + this.c + ")";
     }
+    public Object values() { return null; }
+    public Object j = null;
 }

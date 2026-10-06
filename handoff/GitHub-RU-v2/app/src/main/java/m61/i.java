@@ -21,4 +21,6 @@ public final class i implements o61.b {
         }
         return this.s;
     }
+    public Object K0() { return null; }
+    public Object g0() { return null; }
 }

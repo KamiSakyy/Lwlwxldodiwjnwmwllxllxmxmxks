@@ -8,4 +8,5 @@ public final class c {
         k71.k.g(s0Var, "sessionEventsRepository");
         this.a = s0Var;
     }
+    public Object v(Object p1) { return null; }
 }

@@ -253,4 +253,24 @@ public final /* synthetic */ class r implements j11.g, p51.a, p41.d, w21.d, t11.
                 throw new ClassCastException();
         }
     }
+
+    public <T0> T0 e(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 j(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 l(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 m(Object... a) {
+        return null;
+    }
 }

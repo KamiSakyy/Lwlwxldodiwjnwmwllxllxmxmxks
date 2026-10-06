@@ -259,4 +259,6 @@ public abstract class n1 {
         public RecyclerView() {
         }
     }
+    public Object k(Object p1) { return null; }
+    public Object a = null;
 }

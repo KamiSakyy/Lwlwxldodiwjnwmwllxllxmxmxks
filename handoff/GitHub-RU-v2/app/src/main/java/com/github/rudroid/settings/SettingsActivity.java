@@ -26,4 +26,12 @@ public final class SettingsActivity extends c<ic.j0> {
             aVar.g();
         }
     }
+
+    public <T0> T0 C(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 H(Object... a) {
+        return null;
+    }
 }

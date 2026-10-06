@@ -81,4 +81,5 @@ public final class f implements g {
         sb2.append(", lengthAfterCursor=");
         return x.i.j(sb2, this.f27948b, ')');
     }
+    public static final Object J = null;
 }

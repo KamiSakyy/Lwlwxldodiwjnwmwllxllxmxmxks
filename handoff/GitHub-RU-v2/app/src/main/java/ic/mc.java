@@ -7,4 +7,7 @@ package ic;
 public class mc {
     public mc() {
     }
+    public Object P0(Object p1) { return null; }
+    public Object O = null;
+    public Object R = null;
 }

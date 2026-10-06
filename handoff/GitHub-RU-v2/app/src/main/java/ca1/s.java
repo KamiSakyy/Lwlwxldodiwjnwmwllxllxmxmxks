@@ -34,4 +34,5 @@ public final class s {
     public final String toString() {
         return this.b + "," + this.c + ":" + this.a;
     }
+    public Object K(Object p1, Object p2) { return null; }
 }

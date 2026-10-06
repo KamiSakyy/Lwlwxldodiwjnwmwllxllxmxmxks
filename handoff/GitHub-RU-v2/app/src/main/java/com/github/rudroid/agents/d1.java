@@ -8,4 +8,5 @@ public final class d1 {
 
     public static final class b {
     }
+    public Object k(Object p1) { return null; }
 }

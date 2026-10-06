@@ -91,4 +91,5 @@ public final /* synthetic */ class o implements j71.f {
         this.u = f1Var;
         this.s = i;
     }
+    public static final Object a = null;
 }

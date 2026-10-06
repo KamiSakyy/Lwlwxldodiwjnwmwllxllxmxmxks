@@ -170,4 +170,8 @@ public final class SingleChoiceBottomSheet extends BaseComposeBottomSheetDialog 
         return new r1.d(new h(this, 0), true, -992792757);
     }
 
+
+    public <T0> T0 n4(Object... a) {
+        return null;
+    }
 }

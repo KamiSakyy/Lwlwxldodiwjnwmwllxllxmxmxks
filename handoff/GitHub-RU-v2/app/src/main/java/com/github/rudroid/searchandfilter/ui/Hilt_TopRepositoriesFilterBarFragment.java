@@ -59,4 +59,8 @@ public abstract class Hilt_TopRepositoriesFilterBarFragment extends FilterBarFra
         K4();
         return this.L0;
     }
+
+    public <T0> T0 w(Object... a) {
+        return null;
+    }
 }

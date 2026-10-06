@@ -45,4 +45,6 @@ final class d extends b0 {
         zVar.d(s0Var, bVar);
         return true;
     }
+    public Object hasNext() { return null; }
+    public Object next() { return null; }
 }

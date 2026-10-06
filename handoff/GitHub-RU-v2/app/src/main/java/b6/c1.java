@@ -42,4 +42,6 @@ public final class c1 {
     public /* synthetic */ c1(int i, int i10, Map map, int i11) {
         this((i11 & 1) != 0 ? -1 : i, (i11 & 2) != 0 ? -1 : i10, (i11 & 4) != 0 ? x61.s.r : map);
     }
+    public Object a = null;
+    public Object r = null;
 }

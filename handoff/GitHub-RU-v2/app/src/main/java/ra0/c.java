@@ -28,4 +28,9 @@ public final class c implements m0 {
     public final String toString() {
         return "Data(createUserList=" + this.a + ")";
     }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
+    public static final Object i = null;
+    public static final Object k = null;
+    public static final Object l = null;
 }

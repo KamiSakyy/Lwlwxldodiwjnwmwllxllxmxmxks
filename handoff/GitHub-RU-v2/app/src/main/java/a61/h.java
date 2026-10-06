@@ -23,4 +23,5 @@ public final class h implements i51.c {
         dVar.a(g, z0Var.f);
         dVar.a(h, z0Var.g);
     }
+    public static final Object a = null;
 }

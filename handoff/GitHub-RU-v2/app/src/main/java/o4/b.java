@@ -156,4 +156,6 @@ public abstract class b {
         }
         return context.getString(i);
     }
+
+    public static Object b;
 }

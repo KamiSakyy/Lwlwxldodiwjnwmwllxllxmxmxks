@@ -5,4 +5,5 @@ package f1;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface b8 {
+    public Object a(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7) { return null; }
 }

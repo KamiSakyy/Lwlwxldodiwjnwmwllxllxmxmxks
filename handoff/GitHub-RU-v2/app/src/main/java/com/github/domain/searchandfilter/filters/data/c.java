@@ -24,4 +24,5 @@ public final class c implements k {
         jVar = DiscussionsTopFilter.x;
         return new DiscussionsTopFilter(jVar);
     }
+    public Object name() { return null; }
 }

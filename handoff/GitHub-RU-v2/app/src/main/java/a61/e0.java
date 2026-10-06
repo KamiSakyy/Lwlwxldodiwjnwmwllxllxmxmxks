@@ -12,4 +12,5 @@ public abstract class e0 {
         a = f1.e.z("firebase_session_", encodeToString, "_data");
         b = f1.e.z("firebase_session_", encodeToString, "_settings");
     }
+    public static final Object b = null;
 }

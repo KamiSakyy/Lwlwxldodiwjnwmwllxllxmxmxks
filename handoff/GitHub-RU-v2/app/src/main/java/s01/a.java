@@ -43,4 +43,5 @@ public final /* synthetic */ class a implements j71.e {
                 return (ApiFailure) this.s.p.f((v0) obj, this.t, apiFailure);
         }
     }
+    public Object E(Object p1) { return null; }
 }

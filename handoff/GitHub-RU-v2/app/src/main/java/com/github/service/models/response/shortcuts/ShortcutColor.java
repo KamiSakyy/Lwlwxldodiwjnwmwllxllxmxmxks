@@ -49,4 +49,8 @@ public final class ShortcutColor {
     public final String getValue() {
         return this.value;
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

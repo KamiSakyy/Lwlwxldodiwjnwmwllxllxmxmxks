@@ -46,4 +46,5 @@ final class p1 extends c71.c {
             throw v71.b0.a("Transition to state with id: 0 did not complete in timeout.", e);
         }
     }
+    public Object d(Object p1, Object p2) { return null; }
 }

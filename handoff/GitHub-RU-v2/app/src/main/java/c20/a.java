@@ -63,4 +63,5 @@ public final class a implements aa.a {
         fVar.z0("__typename");
         bVar.b(fVar, wVar, aVar.d);
     }
+    public Object O(Object p1) { return null; }
 }

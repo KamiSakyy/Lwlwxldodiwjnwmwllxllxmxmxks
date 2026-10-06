@@ -252,4 +252,11 @@ public final class z implements e {
     public final Object m1clone() {
         return new z(this.r, this.s, this.t, this.u, this.v);
     }
+    public Object C = null;
+    public Object L = null;
+    public Object M = null;
+    public Object N = null;
+    public Object O = null;
+    public Object P = null;
+    public Object R = null;
 }

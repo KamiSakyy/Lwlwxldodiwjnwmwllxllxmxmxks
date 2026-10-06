@@ -59,4 +59,5 @@ final class d extends c71.j implements j71.e {
         c cVar = new c(bVar);
         this.v = 2;
     }
+    public Object k(Object p1) { return null; }
 }

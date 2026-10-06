@@ -54,4 +54,5 @@ public final class e {
         if (t == null) {
         }
     }
+    public static final Object a = null;
 }

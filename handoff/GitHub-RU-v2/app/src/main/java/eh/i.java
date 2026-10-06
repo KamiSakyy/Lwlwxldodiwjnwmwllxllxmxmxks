@@ -479,4 +479,5 @@ public final class i {
     }
 
 
+    public Object d(Object p1, Object p2, Object p3) { return null; }
 }

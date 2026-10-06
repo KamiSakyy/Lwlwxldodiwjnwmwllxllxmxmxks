@@ -39,4 +39,5 @@ public final class c implements aa.a {
         ud0.b.d(fVar, wVar, aVar.b);
     }
 
+    public Object b(Object p1) { return null; }
 }

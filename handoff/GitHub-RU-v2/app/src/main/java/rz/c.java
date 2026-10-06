@@ -26,4 +26,9 @@ public final class c implements aa.m0 {
     public final String toString() {
         return "Data(addProjectV2ItemById=" + this.a + ")";
     }
+    public Object b(Object p1) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
+    public Object d(Object p1) { return null; }
+    public static final Object a = null;
+    public static final Object i = null;
 }

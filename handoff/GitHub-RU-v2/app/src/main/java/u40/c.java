@@ -43,4 +43,7 @@ public final class c {
         sb.append(", environmentUrl=");
         return i.k(sb, this.c, ", id=", this.d, ")");
     }
+    public Object b(Object p1) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
 }

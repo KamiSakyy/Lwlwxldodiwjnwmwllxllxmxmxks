@@ -128,4 +128,5 @@ public final class f extends c71.j implements j71.e {
         }
     }
 
+    public static final Object J = null;
 }

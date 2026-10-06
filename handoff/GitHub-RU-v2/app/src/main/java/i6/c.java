@@ -42,4 +42,8 @@ public final class c {
     public final String toString() {
         return "Alignment(horizontal=" + ((Object) a.b(this.f26025a)) + ", vertical=" + ((Object) b.b(this.f26026b)) + ')';
     }
+
+    public static Object c;
+
+    public static Object e;
 }

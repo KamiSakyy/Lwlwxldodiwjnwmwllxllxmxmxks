@@ -53,4 +53,16 @@ public class TransportRegistrar implements ComponentRegistrar {
         b4.f = new m(17);
         return Arrays.asList(b, b3, b4.b(), sy.o.c(LIBRARY_NAME, "19.0.0"));
     }
+
+    public <T0> T0 c(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 b(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 a(Object... a) {
+        return null;
+    }
 }

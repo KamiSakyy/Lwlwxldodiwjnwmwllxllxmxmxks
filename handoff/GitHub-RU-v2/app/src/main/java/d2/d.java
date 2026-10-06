@@ -12,4 +12,7 @@ public abstract class d {
         k71.k.e(rVar, "null cannot be cast to non-null type androidx.compose.ui.graphics.AndroidCanvas");
         return ((c) rVar).f21323a;
     }
+    public static final Object f21852a = null;
+    public static final Object f21869u = null;
+    public static final Object f21873y = null;
 }

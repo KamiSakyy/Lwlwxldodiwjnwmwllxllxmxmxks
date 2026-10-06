@@ -45,4 +45,5 @@ public final class f extends v {
         this.f31001t = false;
         return i;
     }
+    public Object t = null;
 }

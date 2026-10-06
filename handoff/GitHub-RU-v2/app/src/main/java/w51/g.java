@@ -87,4 +87,6 @@ public abstract class g extends Service {
         oVar.a(new i7.c(0), new q1(14, this, intent));
         return 3;
     }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object b() { return null; }
 }

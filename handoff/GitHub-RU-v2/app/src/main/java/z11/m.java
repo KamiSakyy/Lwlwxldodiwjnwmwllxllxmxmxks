@@ -52,4 +52,5 @@ public final /* synthetic */ class m implements Callable {
         }
         return str2 + ": pkg=" + str + ", sha256=" + new String(cArr) + ", atk=" + z + ", ver=12451000.false";
     }
+    public Object a(Object p1, Object p2) { return null; }
 }

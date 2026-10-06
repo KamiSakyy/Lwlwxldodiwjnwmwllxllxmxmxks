@@ -53,4 +53,20 @@ public final class CopilotPermissionsOverrideActivity extends c0 {
         e.c.a(this, new r1.d(new com.github.rudroid.settings.copilot.debug.b(this, 0), true, 428578399));
     }
 
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 K0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C(Object... a) {
+        return null;
+    }
 }

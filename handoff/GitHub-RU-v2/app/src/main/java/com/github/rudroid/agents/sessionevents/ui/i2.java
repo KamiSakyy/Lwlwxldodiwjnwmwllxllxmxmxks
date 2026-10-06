@@ -7,4 +7,6 @@ package com.github.rudroid.agents.sessionevents.ui;
 public class i2 {
     public i2() {
     }
+
+    public static Object f7947a;
 }

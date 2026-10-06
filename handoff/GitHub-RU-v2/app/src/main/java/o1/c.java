@@ -5,4 +5,7 @@ package o1;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface c {
+    public static final Object f29906t = null;
+    public Object f29907r = null;
+    public Object f29908s = null;
 }

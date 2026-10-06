@@ -45,4 +45,5 @@ public final class b implements h0 {
         sb.append(", createdAt=");
         return i.h(", __typename=", this.d, ")", sb, this.c);
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

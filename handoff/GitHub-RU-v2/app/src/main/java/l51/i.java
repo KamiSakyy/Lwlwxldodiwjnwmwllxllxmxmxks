@@ -35,4 +35,6 @@ public final class i implements i51.f {
 
     public i(Object... a) {
     }
+    public Object b() { return null; }
+    public static final Object b = null;
 }

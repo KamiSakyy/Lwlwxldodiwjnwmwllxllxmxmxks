@@ -40,4 +40,6 @@ public final class e implements aa.a {
             cp0.d.d(fVar, wVar, cVar);
         }
     }
+    public Object i(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object n(Object p1, Object p2, Object p3) { return null; }
 }

@@ -20,4 +20,5 @@ public class q {
         public j() {
         }
     }
+    public Object a = null;
 }

@@ -5,4 +5,6 @@ package w2;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface g1 {
+    public static final Object h = null;
+    public static final Object t = null;
 }

@@ -5,4 +5,8 @@ public final class k {
     public static aa.j0 a() {
         return l.a;
     }
+
+    public <T0> T0 a(Object... a) {
+        return null;
+    }
 }

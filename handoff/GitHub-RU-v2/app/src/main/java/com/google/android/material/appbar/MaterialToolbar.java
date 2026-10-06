@@ -211,4 +211,56 @@ public class MaterialToolbar extends Toolbar {
         }
         textView.layout(i, textView.getTop(), i2, textView.getBottom());
     }
+
+    public <T0> T0 getBackground(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getElevation(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setBackground(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getTitle(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getSubtitle(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getMeasuredWidth(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getPaddingLeft(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getPaddingRight(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getChildCount(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getChildAt(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getLogo(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 requestLayout(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getNavigationIcon(Object... a) {
+        return null;
+    }
 }

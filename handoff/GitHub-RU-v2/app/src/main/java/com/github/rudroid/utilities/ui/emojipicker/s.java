@@ -53,4 +53,16 @@ public final class s implements j71.g {
         }
         return a0.a;
     }
+    public Object N() { return null; }
+    public Object e0(Object p1) { return null; }
+    public Object g(Object p1) { return null; }
+    public Object g0() { return null; }
+    public Object h(Object p1) { return null; }
+    public Object k(Object p1) { return null; }
+    public Object l() { return null; }
+    public Object n0(Object p1) { return null; }
+    public Object q0() { return null; }
+    public Object t() { return null; }
+    public Object S = null;
+    public Object T = null;
 }

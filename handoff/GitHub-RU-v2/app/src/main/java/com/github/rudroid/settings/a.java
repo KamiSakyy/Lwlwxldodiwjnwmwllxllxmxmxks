@@ -21,4 +21,7 @@ public final class a extends l7.m0 {
         k71.k.f(b, "inflate(...)");
         return new com.github.rudroid.adapters.viewholders.e(b);
     }
+    public Object name() { return null; }
+    public Object ordinal() { return null; }
+    public Object q(Object p1) { return null; }
 }

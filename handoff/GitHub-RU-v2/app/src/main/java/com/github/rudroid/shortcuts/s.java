@@ -19,4 +19,5 @@ final class s<T> implements y71.j {
         y1Var.k((Object) null, c);
         return w61.a0.a;
     }
+    public Object m(Object p1) { return null; }
 }

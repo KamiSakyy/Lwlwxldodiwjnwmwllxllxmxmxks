@@ -7,4 +7,6 @@ package androidx.lifecycle;
 public class o0 {
     public o0() {
     }
+    public Object g() { return null; }
+    public Object h() { return null; }
 }

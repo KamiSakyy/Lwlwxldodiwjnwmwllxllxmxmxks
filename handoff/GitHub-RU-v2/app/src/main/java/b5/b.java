@@ -25,4 +25,22 @@ public final class b {
 
     public b(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) {
     }
+
+    public static Object e;
+
+    public static Object h;
+
+    public static Object i;
+
+    public static Object l;
+
+    public static Object k;
+
+    public static Object j;
+
+    public static Object n;
+
+    public static Object p;
+    public Object a() { return null; }
+    public Object f3478a = null;
 }

@@ -31,4 +31,5 @@ public final class b implements Runnable {
                 break;
         }
     }
+    public static final Object f1079h = null;
 }

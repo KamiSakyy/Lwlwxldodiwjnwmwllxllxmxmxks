@@ -7,4 +7,5 @@ public final class f {
     public f(i iVar) {
         this.a = iVar;
     }
+    public Object b = null;
 }

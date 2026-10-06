@@ -11,4 +11,6 @@ public final class a {
     public final int a() {
         return SdkExtensions.getExtensionVersion(31);
     }
+
+    public static f7.a a;
 }

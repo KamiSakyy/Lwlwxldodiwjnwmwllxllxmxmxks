@@ -14,4 +14,5 @@ public final class m implements y71.i {
         Object b = this.r.b(new l(jVar, this.s), cVar);
         return b == b71.a.r ? b : w61.a0.a;
     }
+    public Object h(Object p1) { return null; }
 }

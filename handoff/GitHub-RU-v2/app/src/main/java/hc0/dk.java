@@ -35,4 +35,5 @@ public final class dk {
     public static dk[] values() {
         return (dk[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

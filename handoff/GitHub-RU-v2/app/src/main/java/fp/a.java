@@ -39,4 +39,5 @@ public final class a {
         sb.append(", pageSize=");
         return a0.s0.l(sb, this.c, ")");
     }
+    public Object m(Object p1) { return null; }
 }

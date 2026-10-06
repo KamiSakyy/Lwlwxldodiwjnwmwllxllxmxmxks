@@ -28,4 +28,5 @@ public final class f2 {
     public final String toString() {
         return com.github.rudroid.m0.h("RepositoryTopics(nodes=", ")", this.a);
     }
+    public Object i = null;
 }

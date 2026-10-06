@@ -57,4 +57,5 @@ public final class f implements Iterator {
         this.f4112t = dVar;
         this.f4111s = 0;
     }
+    public static final Object J = null;
 }

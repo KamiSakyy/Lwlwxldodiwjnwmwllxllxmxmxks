@@ -7,4 +7,23 @@ package t;
 public class q {
     public q() {
     }
+
+    public <T0> T0 t(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 j(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 c(Object... a) {
+        return null;
+    }
+
+    public static Object q;
+    public Object d(Object p1, Object p2, Object p3) { return null; }
+    public Object f(Object p1, Object p2) { return null; }
+    public Object k(Object p1) { return null; }
+    public Object pShadow(Object p1) { return null; }
+    public Object q(Object p1) { return null; }
 }

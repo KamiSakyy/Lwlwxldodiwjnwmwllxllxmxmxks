@@ -34,4 +34,5 @@ public final class g {
     public final String toString() {
         return "GhesDeprecationData(serverVersion=" + this.a + ", deprecationDate=" + this.b + ")";
     }
+    public Object a(Object p1) { return null; }
 }

@@ -30,4 +30,5 @@ public final class a {
     public final String toString() {
         return f1.e.i("Actor(__typename=", this.a, ", actorFields=", this.b, ")");
     }
+    public Object O(Object p1) { return null; }
 }

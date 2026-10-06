@@ -234,4 +234,7 @@ public final class b {
         spannableStringBuilder.append((CharSequence) str);
         return spannableStringBuilder;
     }
+
+    public static Object b;
+    public static final Object f1079h = null;
 }

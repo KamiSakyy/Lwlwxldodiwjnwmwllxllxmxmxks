@@ -34,4 +34,5 @@ public final class s {
             return null;
         }
     }
+    public static final Object b = null;
 }

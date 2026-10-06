@@ -4,4 +4,6 @@ package a61;
 public abstract class t {
     public static final u a = new u(0);
     public static final u b = new u(1);
+    public Object J(Object p1) { return null; }
+    public Object v(Object p1) { return null; }
 }

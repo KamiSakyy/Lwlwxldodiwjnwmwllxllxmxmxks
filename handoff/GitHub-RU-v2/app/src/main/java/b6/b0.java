@@ -42,4 +42,6 @@ public final class b0 {
         this.f3492a = nVar;
         this.f3493b = nVar2;
     }
+    public Object a = null;
+    public Object b = null;
 }

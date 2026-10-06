@@ -42,4 +42,5 @@ public final class zs {
     public static zs[] values() {
         return (zs[]) x.clone();
     }
+    public Object ordinal() { return null; }
 }

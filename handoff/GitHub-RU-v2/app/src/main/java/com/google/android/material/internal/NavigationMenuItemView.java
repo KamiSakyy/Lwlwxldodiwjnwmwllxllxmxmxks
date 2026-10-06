@@ -222,4 +222,48 @@ public class NavigationMenuItemView extends g implements y {
         this.Q.setText(charSequence);
     }
 
+
+    public <T0> T0 setOrientation(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 findViewById(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setId(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setVisibility(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getBackground(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getContext(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setBackground(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setEnabled(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getPaddingTop(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getPaddingBottom(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getResources(Object... a) {
+        return null;
+    }
 }

@@ -215,4 +215,7 @@ public final class e {
             }
         }
     }
+
+    public Object a;
+    public Object m = null;
 }

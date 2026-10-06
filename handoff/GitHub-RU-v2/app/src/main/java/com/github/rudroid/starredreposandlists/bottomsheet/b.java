@@ -44,4 +44,6 @@ public final class b extends com.github.rudroid.activities.util.e<w61.a0, C0006b
     public final Object y(Intent intent, int i) {
         return (intent == null || i != -1) ? new C0006b(false) : new C0006b(intent.getBooleanExtra("EXTRA_REFRESH_NEEDED", false));
     }
+    public Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object z(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

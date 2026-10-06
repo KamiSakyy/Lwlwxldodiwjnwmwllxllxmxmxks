@@ -28,4 +28,5 @@ public final class b implements v0 {
     public final String toString() {
         return "Data(node=" + this.a + ")";
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

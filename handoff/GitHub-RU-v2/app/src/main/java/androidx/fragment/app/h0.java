@@ -7,4 +7,8 @@ package androidx.fragment.app;
 public class h0 {
     public h0() {
     }
+
+    public <T0> T0 c(Object... a) {
+        return null;
+    }
 }

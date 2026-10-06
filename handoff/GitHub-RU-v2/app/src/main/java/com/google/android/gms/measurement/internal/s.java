@@ -247,4 +247,9 @@ public final class s implements u81.g {
         this.w = new CopyOnWriteArrayList();
         this.x = new LinkedBlockingDeque();
     }
+    public Object F(Object p1) { return null; }
+    public Object i(Object p1, Object p2) { return null; }
+    public Object n(Object p1) { return null; }
+    public Object t() { return null; }
+    public Object u() { return null; }
 }

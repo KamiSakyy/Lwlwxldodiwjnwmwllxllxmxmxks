@@ -36,4 +36,8 @@ public final class o2 implements Runnable {
 
     public o2(Object... a) {
     }
+    public Object a = null;
+    public Object b = null;
+    public Object c = null;
+    public Object d = null;
 }

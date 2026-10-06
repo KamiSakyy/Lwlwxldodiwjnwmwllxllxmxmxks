@@ -89,4 +89,124 @@ public class CheckableImageButton extends u implements Checkable {
     public final void toggle() {
         setChecked(!this.u);
     }
+
+    public <T0> T0 setAlpha(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setTag(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setImageDrawable(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 p(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setOnClickListener(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 sendAccessibilityEvent(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getContentDescription(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getDrawable(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setActivated(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setOnLongClickListener(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setScaleType(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setContentDescription(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 hasOnClickListeners(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setFocusable(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setClickable(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setLongClickable(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setImportantForAccessibility(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getDrawableState(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 performClick(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 jumpDrawablesToCurrentState(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 hasFocus(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setId(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getLayoutParams(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getVisibility(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 isActivated(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setVisibility(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setOnFocusChangeListener(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getMeasuredWidth(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setMinimumWidth(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setMinimumHeight(Object... a) {
+        return null;
+    }
 }

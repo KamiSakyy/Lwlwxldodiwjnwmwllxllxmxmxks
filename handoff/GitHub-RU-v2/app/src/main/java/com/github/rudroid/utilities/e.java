@@ -16,4 +16,5 @@ public final class e {
         k71.k.g(jVar, "user");
         v71.b0.z(this.b, (a71.h) null, (v71.a0) null, new d(this, jVar, eVar, null), 3);
     }
+    public Object c(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

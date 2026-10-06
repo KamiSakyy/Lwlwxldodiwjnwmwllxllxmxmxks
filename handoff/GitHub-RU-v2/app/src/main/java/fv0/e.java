@@ -55,4 +55,5 @@ public final class e implements aa.a {
         }
     }
 
+    public Object i(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

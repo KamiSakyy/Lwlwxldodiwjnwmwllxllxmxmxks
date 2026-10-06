@@ -45,4 +45,5 @@ public final class yi {
     public static yi[] values() {
         return (yi[]) y.clone();
     }
+    public Object ordinal() { return null; }
 }

@@ -31,4 +31,8 @@ public final class t {
     public final int hashCode() {
         return Arrays.hashCode(new Object[]{this.b, this.a});
     }
+    public Object d(Object p1) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
+    public Object i(Object p1, Object p2) { return null; }
+    public Object k(Object p1, Object p2) { return null; }
 }

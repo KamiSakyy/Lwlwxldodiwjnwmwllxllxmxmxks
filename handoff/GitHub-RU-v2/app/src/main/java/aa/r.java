@@ -7,4 +7,6 @@ package aa;
 public class r {
     public r() {
     }
+    public Object Companion = null;
+    public Object a = null;
 }

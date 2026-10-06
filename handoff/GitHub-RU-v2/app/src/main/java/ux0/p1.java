@@ -85,4 +85,5 @@ public final class p1 implements aa.w0 {
     public final String toString() {
         return "UserAllProjectsV2Query(query=" + this.r + ", orderField=" + this.s + ", orderDirection=" + this.t + ", first=30, after=" + this.u + ")";
     }
+    public Object getValue() { return null; }
 }

@@ -60,4 +60,8 @@ public final class h extends o1.c implements v1 {
         return !(obj instanceof y1) ? obj2 : (m3) super.getOrDefault((y1) obj, (m3) obj2);
     }
 
+
+    public Object f29907r;
+
+    public Object f29908s;
 }

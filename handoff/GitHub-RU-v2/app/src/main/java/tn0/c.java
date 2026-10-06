@@ -49,4 +49,6 @@ public abstract class c implements aa.a {
         fVar.z0("updatesChannel");
         aa.c.i.b(fVar, wVar, dVar.c);
     }
+    public Object b(Object p1) { return null; }
+    public static final Object i = null;
 }

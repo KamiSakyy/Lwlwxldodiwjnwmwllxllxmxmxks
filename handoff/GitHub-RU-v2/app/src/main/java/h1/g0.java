@@ -36,4 +36,5 @@ public final class g0 {
     public final String toString() {
         return "DateInputFormat(patternWithDelimiters=" + this.f25326a + ", delimiter=" + this.f25327b + ')';
     }
+    public Object c = null;
 }

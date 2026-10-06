@@ -100,4 +100,13 @@ public final class d implements l0 {
         this.f627c = z.f692a;
         this.f634k = true;
     }
+    public Object a = null;
+    public Object b = null;
+    public Object c = null;
+    public Object e = null;
+    public Object f = null;
+    public Object g = null;
+    public Object h = null;
+    public Object j = null;
+    public Object k = null;
 }

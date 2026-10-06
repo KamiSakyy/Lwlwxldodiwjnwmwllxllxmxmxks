@@ -30,4 +30,6 @@ public abstract class e0 {
     public static int b(long j10) {
         return (int) (j10 ^ (j10 >>> 32));
     }
+
+    public static Object b;
 }

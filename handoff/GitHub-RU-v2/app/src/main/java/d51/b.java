@@ -20,4 +20,5 @@ public final class b {
 
     public b(Object... a) {
     }
+    public Object m(Object p1) { return null; }
 }

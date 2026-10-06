@@ -6,4 +6,7 @@ public final /* synthetic */ class d {
 
     public d(Object... a) {
     }
+    public static final Object a = null;
+    public Object b = null;
+    public Object c = null;
 }

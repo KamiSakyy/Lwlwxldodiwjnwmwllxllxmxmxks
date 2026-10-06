@@ -167,4 +167,6 @@ public final class b extends Drawable {
         this.i = a(this.f32915j, mode);
         invalidateSelf();
     }
+    public Object a = null;
+    public Object e = null;
 }

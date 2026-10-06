@@ -40,4 +40,5 @@ public abstract class f {
     private static final void f(int i, int i10) {
         throw new IllegalArgumentException(f4.h(i, i10, "Indices are out of order. fromIndex (", ") is greater than toIndex (", ")."));
     }
+    public static final Object J = null;
 }

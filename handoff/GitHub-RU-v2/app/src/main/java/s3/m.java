@@ -36,4 +36,9 @@ public final class m {
 
     public m(Object... a) {
     }
+
+    public static Object r;
+
+    public static Object s;
+    public Object ordinal() { return null; }
 }

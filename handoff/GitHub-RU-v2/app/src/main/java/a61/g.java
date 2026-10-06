@@ -19,4 +19,6 @@ public final class g implements i51.c {
 
     public g(Object... a) {
     }
+    public Object a() { return null; }
+    public Object c() { return null; }
 }

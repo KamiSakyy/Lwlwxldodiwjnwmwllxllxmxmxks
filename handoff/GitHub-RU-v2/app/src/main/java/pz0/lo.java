@@ -43,4 +43,6 @@ public final class lo {
         f1.e.w(u, this.c, ", singleSelectOptionId=", this.d, ", text=");
         return f1.e.k(u, this.e, ")");
     }
+
+    public Object e;
 }

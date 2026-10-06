@@ -7,4 +7,8 @@ package androidx.recyclerview.widget;
 public class LinearLayoutManager {
     public LinearLayoutManager() {
     }
+
+    public <T0> T0 S0(Object... a) {
+        return null;
+    }
 }

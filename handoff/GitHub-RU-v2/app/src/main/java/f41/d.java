@@ -91,4 +91,5 @@ public final class d implements w21.e, w21.d, w21.c, fa1.h {
             this.s.i(oVar.h());
         }
     }
+    public Object k(Object p1) { return null; }
 }

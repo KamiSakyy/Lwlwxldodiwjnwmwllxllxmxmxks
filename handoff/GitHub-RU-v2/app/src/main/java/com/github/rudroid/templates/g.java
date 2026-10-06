@@ -126,4 +126,5 @@ public final class g extends m0 {
         public b() {
         }
     }
+    public Object n() { return null; }
 }

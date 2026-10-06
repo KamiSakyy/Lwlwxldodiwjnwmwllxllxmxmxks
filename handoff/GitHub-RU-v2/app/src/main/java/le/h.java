@@ -97,4 +97,6 @@ public final class h {
     public h(int i, String str, String str2, String str3) {
         this(null, str, str3, null, str2, false, false, null, i, 1536);
     }
+
+    public Object i;
 }

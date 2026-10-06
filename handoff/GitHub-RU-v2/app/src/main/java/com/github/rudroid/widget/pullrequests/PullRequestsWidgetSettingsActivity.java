@@ -153,4 +153,8 @@ public final class PullRequestsWidgetSettingsActivity extends m0 {
             e.c.a(this, new r1.d(new v0(this, i, 10), true, 1265171020));
         }
     }
+
+    public <T0> T0 getIntent(Object... a) {
+        return null;
+    }
 }

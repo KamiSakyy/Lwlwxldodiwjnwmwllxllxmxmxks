@@ -39,4 +39,5 @@ public final /* synthetic */ class d implements j71.e {
         }
         return w61.a0.a;
     }
+    public static final Object b = null;
 }

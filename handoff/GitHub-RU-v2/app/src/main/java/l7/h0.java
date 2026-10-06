@@ -85,4 +85,20 @@ public abstract class h0 {
         this.f28140b = hVar;
     }
 
+
+    public <T0> T0 n(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 d(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 m(Object... a) {
+        return null;
+    }
 }

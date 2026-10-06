@@ -7,4 +7,8 @@ package androidx.viewpager2.widget;
 public class ViewPager2 {
     public ViewPager2() {
     }
+
+    public <T0> T0 b(Object... a) {
+        return null;
+    }
 }

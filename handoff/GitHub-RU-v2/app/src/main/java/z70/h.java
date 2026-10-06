@@ -22,4 +22,5 @@ public final class h {
     public final String toString() {
         return f1.e.z("OnMarkdownFileType(__typename=", this.a, ")");
     }
+    public Object values() { return null; }
 }

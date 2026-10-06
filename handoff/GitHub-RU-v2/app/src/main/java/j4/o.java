@@ -6,4 +6,7 @@ package j4;
  */
 public class o {
     public o() {}
+    public Object b(Object p1) { return null; }
+    public Object e(Object p1) { return null; }
+    public Object i(Object p1) { return null; }
 }

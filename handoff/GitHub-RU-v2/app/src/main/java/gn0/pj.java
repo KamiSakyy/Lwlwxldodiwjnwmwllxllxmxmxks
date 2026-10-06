@@ -39,4 +39,5 @@ public final class pj {
     public static pj[] values() {
         return (pj[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

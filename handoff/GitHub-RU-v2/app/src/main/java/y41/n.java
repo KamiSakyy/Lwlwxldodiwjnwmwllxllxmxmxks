@@ -19,4 +19,5 @@ public final class n implements i51.c {
         dVar.a(e, t0Var.d);
         dVar.e(f, t0Var.e);
     }
+    public static final Object a = null;
 }

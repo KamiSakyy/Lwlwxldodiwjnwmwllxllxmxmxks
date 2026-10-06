@@ -54,4 +54,5 @@ public final class w implements aa.a {
         List list = g70.b.a;
         g70.b.d(fVar, wVar, sVar.d);
     }
+    public Object e(Object p1) { return null; }
 }

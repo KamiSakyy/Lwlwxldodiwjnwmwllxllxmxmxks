@@ -60,4 +60,8 @@ public final class i {
         this.b = i;
         this.c = i2;
     }
+
+    public <T0> T0 a(Object... a) {
+        return null;
+    }
 }

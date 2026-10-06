@@ -5,4 +5,6 @@ package ga;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface h {
+    public static final Object s = null;
+    public static final Object t = null;
 }

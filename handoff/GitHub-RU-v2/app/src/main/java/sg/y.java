@@ -249,4 +249,6 @@ public final class y {
         }
         return new f0.v(f, new r0(j));
     }
+
+    public static Object a;
 }

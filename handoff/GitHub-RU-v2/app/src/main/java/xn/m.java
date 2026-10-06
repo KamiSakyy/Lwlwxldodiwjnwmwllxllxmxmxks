@@ -37,4 +37,5 @@ public final class m implements Parcelable {
         k71.k.g(parcel, "dest");
         parcel.writeInt(this.r ? 1 : 0);
     }
+    public Object i = null;
 }

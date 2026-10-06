@@ -19,4 +19,5 @@ public final class z1 {
 
     public z1(Object p1, Object p2, Object p3, Object p4) {
     }
+    public Object a = null;
 }

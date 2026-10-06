@@ -241,4 +241,6 @@ public abstract class f {
         }
         (list2 == null ? list7 : list2).isEmpty();
     }
+
+    public static Object b;
 }

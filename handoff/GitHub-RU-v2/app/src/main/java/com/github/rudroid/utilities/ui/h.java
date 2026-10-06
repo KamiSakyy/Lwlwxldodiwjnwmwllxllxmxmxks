@@ -46,4 +46,5 @@ public final /* synthetic */ class h implements j71.c {
         }
         return w61.a0.a;
     }
+    public static final Object o = null;
 }

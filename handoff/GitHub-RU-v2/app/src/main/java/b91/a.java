@@ -49,4 +49,6 @@ public final class a implements n {
             throw new IOException("Android internal error", e);
         }
     }
+    public Object Q(Object p1) { return null; }
+    public Object e(Object p1) { return null; }
 }

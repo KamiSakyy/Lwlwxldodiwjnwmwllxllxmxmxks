@@ -108,4 +108,5 @@ public final /* synthetic */ class f implements j71.a {
                 throw new KotlinNothingValueException();
         }
     }
+    public static final Object J = null;
 }

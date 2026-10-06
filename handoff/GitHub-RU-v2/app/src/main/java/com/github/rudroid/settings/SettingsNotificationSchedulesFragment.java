@@ -295,4 +295,38 @@ public final class SettingsNotificationSchedulesFragment extends Hilt_SettingsNo
             }, eVarArr[2]);
         }
     }
+
+    public <T0> T0 i4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 t4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 F3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 s4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 x3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 w3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 E(Object... a) {
+        return null;
+    }
+    public Object E(Object p1, Object p2) { return null; }
+    public Object x3() { return null; }
 }

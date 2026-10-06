@@ -113,4 +113,5 @@ public abstract class a extends j1 implements a71.c, z {
 
     public a(Object... a) {
     }
+    public static final Object u = null;
 }

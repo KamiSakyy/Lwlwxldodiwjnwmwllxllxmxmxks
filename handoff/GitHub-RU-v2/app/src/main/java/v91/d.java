@@ -80,4 +80,5 @@ public final class d extends u91.b {
     public final boolean f(s91.c cVar) {
         return true;
     }
+    public Object k(Object p1) { return null; }
 }

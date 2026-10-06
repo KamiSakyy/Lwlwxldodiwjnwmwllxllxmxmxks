@@ -13,4 +13,7 @@ public final class l {
     public final String toString() {
         return "CopilotChatFeatureExternalLink(title=2131952256, url=2131952038)";
     }
+    public Object g(Object p1) { return null; }
+    public static final Object a = null;
+    public static final Object c = null;
 }

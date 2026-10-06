@@ -8,4 +8,6 @@ public abstract class a {
 
     /* renamed from: a, reason: collision with root package name */
     public static final d0 f21605a = new d0((j71.a) new p(14));
+
+    public static Object a;
 }

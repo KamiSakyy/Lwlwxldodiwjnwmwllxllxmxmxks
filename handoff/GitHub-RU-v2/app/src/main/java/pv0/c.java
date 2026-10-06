@@ -55,4 +55,6 @@ public final class c implements aa.a {
         fVar.z0("id");
         bVar.b(fVar, wVar, aVar.c);
     }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object i = null;
 }

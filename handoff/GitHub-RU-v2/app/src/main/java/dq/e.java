@@ -43,4 +43,5 @@ public abstract class e {
         fd.Companion.getClass();
         a = x61.l.r(new aa.m[]{mVar3, mVar4, mVar5, mVar6, mVar7, new aa.m("discussion", v8.l0.b(fd.l), (String) null, rVar, rVar, r3)});
     }
+    public Object e(Object p1) { return null; }
 }

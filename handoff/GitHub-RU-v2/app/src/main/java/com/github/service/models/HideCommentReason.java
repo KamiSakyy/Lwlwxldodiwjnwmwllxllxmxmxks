@@ -40,4 +40,8 @@ public final class HideCommentReason {
     public static HideCommentReason[] values() {
         return (HideCommentReason[]) $VALUES.clone();
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

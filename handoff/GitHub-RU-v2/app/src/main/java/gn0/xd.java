@@ -37,4 +37,5 @@ public final class xd {
     public static xd[] values() {
         return (xd[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

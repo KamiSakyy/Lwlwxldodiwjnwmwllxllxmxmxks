@@ -39,4 +39,5 @@ public final class a implements h0 {
     public final String toString() {
         return f4.r(m0.o("DeletableFields(__typename=", this.a, ", viewerCanDelete=", ", nodeIdFragment=", this.b), this.c, ")");
     }
+    public Object O(Object p1) { return null; }
 }

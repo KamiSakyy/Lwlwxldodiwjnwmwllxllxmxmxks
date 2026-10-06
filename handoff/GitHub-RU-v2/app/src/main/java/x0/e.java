@@ -12,4 +12,5 @@ public final class e implements v0.g {
     public final void close() {
         this.f33662a.j(a0.a);
     }
+    public Object a = null;
 }

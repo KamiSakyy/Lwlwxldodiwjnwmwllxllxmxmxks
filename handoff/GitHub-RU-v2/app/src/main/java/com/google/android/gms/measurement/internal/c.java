@@ -223,4 +223,9 @@ public abstract class c {
             }
         }
     }
+    public Object A(Object p1, Object p2, Object p3) { return null; }
+    public Object k(Object p1, Object p2) { return null; }
+    public Object s(Object p1, Object p2, Object p3) { return null; }
+    public Object t(Object p1) { return null; }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

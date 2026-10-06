@@ -18,4 +18,7 @@ public final class b0 extends c71.c {
         this.x |= Integer.MIN_VALUE;
         return rm0.m0.q(this.w, (String) null, this);
     }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object ordinal() { return null; }
+    public static final Object a = null;
 }

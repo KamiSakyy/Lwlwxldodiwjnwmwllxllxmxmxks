@@ -154,4 +154,12 @@ public final class p {
         }
     }
 
+    public Object b = null;
+    public Object e = null;
+    public Object f = null;
+    public Object g = null;
+    public Object j = null;
+    public Object r = null;
+    public Object t = null;
+    public Object v = null;
 }

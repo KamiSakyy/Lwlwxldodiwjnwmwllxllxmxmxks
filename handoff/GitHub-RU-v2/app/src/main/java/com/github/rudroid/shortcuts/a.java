@@ -34,4 +34,5 @@ public final class a {
     public final String toString() {
         return "ConfigureShortcutUIState(shortcutModel=" + this.a + ", mergeQueueEnabled=" + this.b + ", savingState=" + this.c + ")";
     }
+    public Object a(Object p1) { return null; }
 }

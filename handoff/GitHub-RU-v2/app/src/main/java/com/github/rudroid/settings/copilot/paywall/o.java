@@ -13,4 +13,7 @@ public abstract class o extends p2 {
         this.s0 = true;
         ((k) w()).E((CopilotChatProPaywallActivity) this);
     }
+    public Object onCreate(Object p1) { return null; }
+    public Object onPause() { return null; }
+    public Object onResume() { return null; }
 }

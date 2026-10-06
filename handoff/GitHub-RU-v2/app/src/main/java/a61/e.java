@@ -15,4 +15,9 @@ public final class e implements i51.c {
         dVar.a(c, kVar.b);
         dVar.f(d, kVar.c);
     }
+    public Object c(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public Object d() { return null; }
+    public Object q() { return null; }
+    public Object r() { return null; }
+    public Object t() { return null; }
 }

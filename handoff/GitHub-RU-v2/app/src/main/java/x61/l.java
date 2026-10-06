@@ -549,4 +549,11 @@ public abstract class l extends c0 {
         k71.k.g(jArr2, "destination");
         System.arraycopy(jArr, i2, jArr2, i, i3 - i2);
     }
+
+    public static Object r;
+
+    public <T0> T0 J(Object... a) {
+        return null;
+    }
+    public Object a() { return null; }
 }

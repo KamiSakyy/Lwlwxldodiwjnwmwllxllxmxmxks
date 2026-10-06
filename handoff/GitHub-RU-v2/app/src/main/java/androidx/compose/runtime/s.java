@@ -5,4 +5,6 @@ package androidx.compose.runtime;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface s {
+    public Object n() { return null; }
+    public Object A = null;
 }

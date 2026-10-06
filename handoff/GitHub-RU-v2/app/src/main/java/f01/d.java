@@ -52,4 +52,5 @@ public final class d implements e {
         o.append(")");
         return o.toString();
     }
+    public Object b = null;
 }

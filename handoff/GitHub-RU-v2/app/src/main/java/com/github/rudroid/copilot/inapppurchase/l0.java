@@ -41,4 +41,5 @@ public final class l0 {
     public final String toString() {
         return "CopilotSubscriptionState(state=" + this.f9718a + ", loadingState=" + this.f9719b + ", errorState=" + this.f9720c + ")";
     }
+    public Object t(Object p1) { return null; }
 }

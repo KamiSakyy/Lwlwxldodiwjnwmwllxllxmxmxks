@@ -42,4 +42,5 @@ public final class e {
         sb.append(", hasIssuesEnabled=");
         return m0.m(sb, this.c, ", isDiscussionsEnabled=", this.d, ")");
     }
+    public Object g(Object p1, Object p2) { return null; }
 }

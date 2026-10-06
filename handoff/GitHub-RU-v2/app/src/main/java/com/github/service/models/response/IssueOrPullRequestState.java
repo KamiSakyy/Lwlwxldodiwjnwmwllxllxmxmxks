@@ -40,4 +40,12 @@ public final class IssueOrPullRequestState {
     public static IssueOrPullRequestState[] values() {
         return (IssueOrPullRequestState[]) $VALUES.clone();
     }
+
+    public <T0> T0 name(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

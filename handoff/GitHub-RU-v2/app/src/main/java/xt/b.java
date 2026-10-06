@@ -39,4 +39,5 @@ public final class b {
     public final String toString() {
         return "Canonical(__typename=" + this.a + ", onIssue=" + this.b + ", onPullRequest=" + this.c + ", crossReferencedEventRepositoryFields=" + this.d + ")";
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

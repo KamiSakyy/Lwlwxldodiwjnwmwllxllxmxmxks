@@ -36,4 +36,5 @@ public final class d {
         o.append(")");
         return o.toString();
     }
+    public Object ordinal() { return null; }
 }

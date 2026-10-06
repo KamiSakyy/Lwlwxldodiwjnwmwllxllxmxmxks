@@ -19,4 +19,5 @@ public final class c implements b, c61.a {
     public final Object get() {
         return this.a;
     }
+    public Object f = null;
 }

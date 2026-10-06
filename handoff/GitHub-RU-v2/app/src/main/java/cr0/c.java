@@ -177,4 +177,5 @@ public abstract class c implements aa.a {
         bVar2.b(fVar, wVar, bVar.h);
     }
 
+    public static final Object i = null;
 }

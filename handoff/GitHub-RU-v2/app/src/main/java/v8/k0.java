@@ -78,4 +78,6 @@ public final class k0 {
     public final String toString() {
         return "WorkInfo{id='" + this.f32802a + "', state=" + this.f32803b + ", outputData=" + this.f32805d + ", tags=" + this.f32804c + ", progress=" + this.f32806e + ", runAttemptCount=" + this.f32807f + ", generation=" + this.f32808g + ", constraints=" + this.f32809h + ", initialDelayMillis=" + this.i + ", periodicityInfo=" + this.f32810j + ", nextScheduleTimeMillis=" + this.f32811k + "}, stopReason=" + this.l;
     }
+
+    public Object i;
 }

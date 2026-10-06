@@ -13,4 +13,7 @@ public final class q {
     public final String toString() {
         return "TintColorFilterParams(colorProvider=" + this.f34588a + "))";
     }
+    public Object pShadow(Object p1, Object p2) { return null; }
+    public Object a = null;
+    public Object t = null;
 }

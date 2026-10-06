@@ -90,4 +90,12 @@ public final class s {
             t.d = new androidx.compose.foundation.lazy.layout.k0(dVar, aVar2, rVar2, i, 27);
         }
     }
+    public Object C() { return null; }
+    public Object g(Object p1) { return null; }
+    public Object g0() { return null; }
+    public Object k(Object p1) { return null; }
+    public Object l() { return null; }
+    public Object q0() { return null; }
+    public Object S = null;
+    public Object T = null;
 }

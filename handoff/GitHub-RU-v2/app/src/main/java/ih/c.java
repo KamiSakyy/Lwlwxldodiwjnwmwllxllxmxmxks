@@ -7,4 +7,5 @@ import hz.k;
 public final class c {
     public static final j3 a = new j3(new k(21));
 
+    public static final Object a = null;
 }

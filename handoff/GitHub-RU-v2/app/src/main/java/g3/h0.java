@@ -7,4 +7,8 @@ package g3;
 public class h0 {
     public h0() {
     }
+    public Object c = null;
+    public Object d = null;
+    public Object e = null;
+    public Object f = null;
 }

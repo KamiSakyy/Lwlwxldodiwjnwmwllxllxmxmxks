@@ -38,4 +38,8 @@ public final class u6 {
     public static u6[] values() {
         return (u6[]) u.clone();
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

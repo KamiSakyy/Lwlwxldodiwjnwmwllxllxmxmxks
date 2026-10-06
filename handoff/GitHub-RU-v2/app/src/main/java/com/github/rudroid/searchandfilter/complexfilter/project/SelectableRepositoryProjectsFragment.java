@@ -93,4 +93,12 @@ public final class SelectableRepositoryProjectsFragment extends Hilt_SelectableR
         return (y) this.H0.getValue();
     }
 
+
+    public <T0> T0 j4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
 }

@@ -39,4 +39,5 @@ public final class jc {
     public static jc[] values() {
         return (jc[]) w.clone();
     }
+    public Object ordinal() { return null; }
 }

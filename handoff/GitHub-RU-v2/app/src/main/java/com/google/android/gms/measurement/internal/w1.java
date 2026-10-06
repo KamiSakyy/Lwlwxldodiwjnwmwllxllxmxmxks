@@ -30,4 +30,5 @@ public abstract class w1 extends androidx.compose.foundation.lazy.layout.s0 {
 
     public w1(Object... a) {
     }
+    public Object pShadow() { return null; }
 }

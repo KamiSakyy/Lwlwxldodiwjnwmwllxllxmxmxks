@@ -15,4 +15,5 @@ public final class t {
         this.f32956a = d1Var;
         this.f32957b = obj;
     }
+    public Object getCoroutineContext() { return null; }
 }

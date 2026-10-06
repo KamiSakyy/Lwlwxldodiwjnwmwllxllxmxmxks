@@ -232,4 +232,39 @@ public final class t {
     public final String toString() {
         return i(this.f21390a);
     }
+
+    public static Object d;
+
+    public static Object g;
+
+    public static Object f;
+
+    public static Object c;
+
+    public static Object b;
+
+    public <T0> T0 c(Object... a) {
+        return null;
+    }
+
+    public static Object l;
+
+    public <T0> T0 i(Object... a) {
+        return null;
+    }
+
+    public static Object k;
+
+    public static Object j;
+
+    public <T0> T0 b(Object... a) {
+        return null;
+    }
+
+    public static Object i;
+    public Object E(Object p1, Object p2) { return null; }
+    public Object I(Object p1, Object p2, Object p3) { return null; }
+    public Object L(Object p1) { return null; }
+    public Object w(Object p1, Object p2, Object p3) { return null; }
+    public Object a = null;
 }

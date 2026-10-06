@@ -38,4 +38,5 @@ public final class a extends z {
             setButtonTintList(null);
         }
     }
+    public Object getContext() { return null; }
 }

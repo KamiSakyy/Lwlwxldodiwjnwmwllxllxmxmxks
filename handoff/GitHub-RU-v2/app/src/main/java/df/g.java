@@ -5,4 +5,8 @@ package df;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface g {
+
+    default <T0> T0 b(Object... a) {
+        return null;
+    }
 }

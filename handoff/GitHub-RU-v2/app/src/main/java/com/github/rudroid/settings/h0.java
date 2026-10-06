@@ -39,4 +39,5 @@ public final /* synthetic */ class h0 implements e7.j {
         }
     }
 
+    public Object c(Object p1, Object p2) { return null; }
 }

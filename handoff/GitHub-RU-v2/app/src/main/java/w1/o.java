@@ -24,4 +24,15 @@ public final class o implements r {
     public final String toString() {
         return "Modifier";
     }
+
+    public static Object a;
+
+    public static w1.r a;
+
+    public static w1.o a;
+    public Object f(Object p1, Object p2, Object p3) { return null; }
+    public Object m(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public Object r(Object p1, Object p2, Object p3) { return null; }
+    public Object u(Object p1) { return null; }
+    public Object v(Object p1) { return null; }
 }

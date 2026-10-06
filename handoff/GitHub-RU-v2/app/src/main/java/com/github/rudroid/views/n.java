@@ -27,4 +27,5 @@ public final /* synthetic */ class n implements b8.j {
                 break;
         }
     }
+    public Object t(Object p1) { return null; }
 }

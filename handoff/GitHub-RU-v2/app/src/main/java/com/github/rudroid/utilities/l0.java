@@ -12,4 +12,5 @@ final class l0<T> implements y71.j {
         Object s = this.r.s(obj, cVar);
         return s == b71.a.r ? s : w61.a0.a;
     }
+    public Object t(Object p1) { return null; }
 }

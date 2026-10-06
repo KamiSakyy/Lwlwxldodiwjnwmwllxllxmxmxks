@@ -7,4 +7,5 @@ package ic;
 public class d1 {
     public d1() {
     }
+    public Object N = null;
 }

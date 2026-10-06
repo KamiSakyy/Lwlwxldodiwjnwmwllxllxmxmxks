@@ -32,4 +32,6 @@ public final class l {
     public final String toString() {
         return "CompiledCondition(name=" + this.f662a + ", inverted=" + this.f663b + ')';
     }
+    public Object a = null;
+    public Object b = null;
 }

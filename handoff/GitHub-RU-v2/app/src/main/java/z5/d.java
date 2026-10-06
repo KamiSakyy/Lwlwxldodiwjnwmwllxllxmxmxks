@@ -9,4 +9,5 @@ public final class d {
     public d(q qVar) {
         this.f34568a = qVar;
     }
+    public Object a = null;
 }

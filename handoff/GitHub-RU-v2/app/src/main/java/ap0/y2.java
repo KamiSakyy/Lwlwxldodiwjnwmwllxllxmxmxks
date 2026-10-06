@@ -64,4 +64,8 @@ public final class y2 implements aa.h0 {
         o.append(")");
         return o.toString();
     }
+
+    public Object i;
+
+    public Object e;
 }

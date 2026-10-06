@@ -97,4 +97,8 @@ public final class SelectableDiscussionCategoryFragment extends Hilt_SelectableD
         return (i) this.I0.getValue();
     }
 
+
+    public <T0> T0 j4(Object... a) {
+        return null;
+    }
 }

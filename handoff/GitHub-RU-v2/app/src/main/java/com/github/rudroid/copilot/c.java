@@ -376,4 +376,5 @@ public abstract class c {
             return "WelcomeMessage";
         }
     }
+    public Object v(Object p1) { return null; }
 }

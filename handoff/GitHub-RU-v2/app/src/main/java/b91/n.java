@@ -12,4 +12,5 @@ public interface n {
     String c(SSLSocket sSLSocket);
 
     void d(SSLSocket sSLSocket, String str, List list);
+    public static final Object a = null;
 }

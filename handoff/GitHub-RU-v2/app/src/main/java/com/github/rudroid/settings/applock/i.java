@@ -56,4 +56,5 @@ final class i extends c71.j implements j71.e {
         com.github.rudroid.settings.applock.usecases.g gVar = kVar.c;
         this.v = 2;
     }
+    public Object d(Object p1, Object p2, Object p3) { return null; }
 }

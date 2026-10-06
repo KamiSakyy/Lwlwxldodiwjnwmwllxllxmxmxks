@@ -37,4 +37,5 @@ public final class a {
         sb.append(", id=");
         return x.i.k(sb, this.c, ", __typename=", this.d, ")");
     }
+    public Object O(Object p1) { return null; }
 }

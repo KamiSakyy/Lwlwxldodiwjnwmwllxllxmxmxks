@@ -26,4 +26,5 @@ public final class s {
     public final String toString() {
         return "AddDiscussionPollVote(pollOption=" + this.a + ")";
     }
+    public static final Object r = null;
 }

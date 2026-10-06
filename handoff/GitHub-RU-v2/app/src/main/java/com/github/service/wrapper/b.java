@@ -69,4 +69,6 @@ public interface b extends a {
     y71.i m(w0 w0Var, ga.h hVar, boolean z, Set set, Set set2, com.github.rudroid.utilities.ui.emojipicker.e eVar);
 
     Object p(i0 i0Var, h0 h0Var, String str, a71.c cVar);
+    public Object b(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8, Object p9) { return null; }
+    public Object t(Object p1, Object p2) { return null; }
 }

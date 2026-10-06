@@ -386,4 +386,5 @@ public final class f {
     }
 
 
+    public Object a = null;
 }

@@ -46,4 +46,8 @@ public final class ActionPreference extends Preference {
         this.g0 = "";
         this.h0 = "";
     }
+
+    public <T0> T0 j(Object... a) {
+        return null;
+    }
 }

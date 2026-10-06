@@ -53,4 +53,8 @@ public final class h {
         }
         mVar.k(null);
     }
+    public Object a = null;
+    public Object b = null;
+    public Object c = null;
+    public Object d = null;
 }

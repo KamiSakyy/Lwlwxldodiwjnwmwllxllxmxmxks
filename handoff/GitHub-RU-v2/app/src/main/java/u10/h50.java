@@ -26,4 +26,5 @@ public final class h50 {
     public final String toString() {
         return "UpdateUserDashboardPins(user=" + this.a + ")";
     }
+    public Object a = null;
 }

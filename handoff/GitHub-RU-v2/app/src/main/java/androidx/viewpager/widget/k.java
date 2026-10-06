@@ -5,4 +5,5 @@ package androidx.viewpager.widget;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface k {
+    public Object e() { return null; }
 }

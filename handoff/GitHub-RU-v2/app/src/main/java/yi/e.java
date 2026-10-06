@@ -31,4 +31,5 @@ public final class e implements k, l {
     public final String toString() {
         return "AliveProjectDenormalizedMessage(affectedIds=" + this.a + ", affectedModels=" + this.b + ")";
     }
+    public Object c(Object p1, Object p2, Object p3) { return null; }
 }

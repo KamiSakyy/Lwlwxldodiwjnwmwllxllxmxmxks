@@ -22,4 +22,14 @@ public interface r {
         public l() {
         }
     }
+
+    default <T0> T0 f(Object... a) {
+        return null;
+    }
+    public Object L(Object p1) { return null; }
+    public Object D = null;
+    public Object a = null;
+    public Object b = null;
+    public Object c = null;
+    public Object d = null;
 }

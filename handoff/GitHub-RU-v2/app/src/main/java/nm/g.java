@@ -157,4 +157,5 @@ public final class g implements y71.i {
         }
         return a0.a;
     }
+    public Object a(Object p1) { return null; }
 }

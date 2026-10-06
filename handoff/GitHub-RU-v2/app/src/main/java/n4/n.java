@@ -7,4 +7,5 @@ package n4;
 public class n {
     public n() {
     }
+    public Object u = null;
 }

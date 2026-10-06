@@ -37,4 +37,8 @@ public final class c {
     public final String toString() {
         return "UnderlyingContext(__typename=" + this.a + ", onCheckRun=" + this.b + ", onStatusContext=" + this.c + ")";
     }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
+    public static final Object f = null;
+    public static final Object i = null;
 }

@@ -56,4 +56,8 @@ public final class ApiFailureType {
     public static ApiFailureType[] values() {
         return (ApiFailureType[]) $VALUES.clone();
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

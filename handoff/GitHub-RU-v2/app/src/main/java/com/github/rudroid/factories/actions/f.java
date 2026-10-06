@@ -10,4 +10,5 @@ public final class f<T> implements Comparator {
     public final int compare(Object obj, Object obj2) {
         return t.g(Long.valueOf(((File) obj).lastModified()), Long.valueOf(((File) obj2).lastModified()));
     }
+    public Object b() { return null; }
 }

@@ -17,4 +17,8 @@ public final class x {
     public static final void c(w1.r rVar, String str) {
         k71.k.g(rVar, "<this>");
     }
+
+    public <T0> T0 a(Object... a) {
+        return null;
+    }
 }

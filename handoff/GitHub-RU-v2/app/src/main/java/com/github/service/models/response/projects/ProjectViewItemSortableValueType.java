@@ -37,4 +37,8 @@ public final class ProjectViewItemSortableValueType {
     public static ProjectViewItemSortableValueType[] values() {
         return (ProjectViewItemSortableValueType[]) $VALUES.clone();
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

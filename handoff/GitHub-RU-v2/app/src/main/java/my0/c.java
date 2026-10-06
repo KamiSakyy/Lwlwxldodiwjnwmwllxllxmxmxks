@@ -49,4 +49,8 @@ public final class c {
         com.github.rudroid.m0.A(u, this.g, ", getsCiFailedOnly=", this.h, ", getsReleases=");
         return f4.s(u, this.i, ")");
     }
+
+    public Object i;
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object k = null;
 }

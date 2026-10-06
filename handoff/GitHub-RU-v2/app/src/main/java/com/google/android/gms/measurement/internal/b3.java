@@ -21,4 +21,5 @@ public final class b3 {
     public b3(long j, String str, String str2) {
         this(str, str2, j, false, 0L);
     }
+    public Object s = null;
 }

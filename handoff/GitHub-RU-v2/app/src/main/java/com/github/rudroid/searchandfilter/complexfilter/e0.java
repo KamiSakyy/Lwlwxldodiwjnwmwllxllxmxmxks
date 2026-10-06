@@ -22,4 +22,5 @@ public abstract class e0<T> extends m0 {
     public final long l(int i) {
         return this.e.a(F(this.d.get(i)));
     }
+    public Object n() { return null; }
 }

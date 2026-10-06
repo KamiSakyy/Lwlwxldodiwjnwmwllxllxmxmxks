@@ -292,4 +292,17 @@ public final class SelectableRepositoryBottomSheet extends Hilt_SelectableReposi
     }
 
 
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 F3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 j4(Object... a) {
+        return null;
+    }
+    public Object j4() { return null; }
 }

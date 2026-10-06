@@ -29,4 +29,5 @@ public final class q {
     public final String toString() {
         return x.i.g("ThreeFaceStackColor(selectedColor=", d2.t.i(this.a), ", unselectedColor=", d2.t.i(this.b), ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

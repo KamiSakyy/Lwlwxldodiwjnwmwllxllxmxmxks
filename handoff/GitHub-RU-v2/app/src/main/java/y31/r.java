@@ -266,4 +266,5 @@ public final class r extends qShadow.n {
     public void setSimpleItems(String[] strArr) {
         setAdapter(new qShadow(this, getContext(), this.y, strArr));
     }
+    public Object getText() { return null; }
 }

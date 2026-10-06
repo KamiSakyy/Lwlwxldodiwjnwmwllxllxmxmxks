@@ -43,4 +43,7 @@ public final class l0 {
         j71.c cVar3 = this.f31524c;
         return hashCode2 + (cVar3 != null ? cVar3.hashCode() : 0);
     }
+
+    public static Object d;
+    public Object t(Object p1) { return null; }
 }

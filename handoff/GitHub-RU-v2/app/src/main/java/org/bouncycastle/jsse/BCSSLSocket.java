@@ -7,4 +7,16 @@ package org.bouncycastle.jsse;
 public class BCSSLSocket {
     public BCSSLSocket() {
     }
+
+    public <T0> T0 getApplicationProtocol(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getParameters(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setParameters(Object... a) {
+        return null;
+    }
 }

@@ -86,4 +86,6 @@ public abstract class l {
         }
         throw new Resources.NotFoundException("Font resource ID #0x" + Integer.toHexString(i) + " could not be retrieved.");
     }
+
+    public static Object a;
 }

@@ -45,4 +45,6 @@ public final class c implements h0 {
     public final String toString() {
         return "DiscussionVotableFragment(__typename=" + this.a + ", onDiscussion=" + this.b + ", onDiscussionComment=" + this.c + ")";
     }
+    public static final Object a = null;
+    public static final Object f = null;
 }

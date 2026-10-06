@@ -41,4 +41,5 @@ public final class wm {
     public static wm[] values() {
         return (wm[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

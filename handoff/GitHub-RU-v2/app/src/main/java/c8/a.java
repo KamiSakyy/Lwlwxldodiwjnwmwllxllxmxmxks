@@ -15,4 +15,8 @@ public abstract class a {
     public static boolean c() {
         return Trace.isEnabled();
     }
+
+    public <T0> T0 c(Object... a) {
+        return null;
+    }
 }

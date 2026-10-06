@@ -58,4 +58,5 @@ public abstract class c {
 
 
 
+    public Object v(Object p1) { return null; }
 }

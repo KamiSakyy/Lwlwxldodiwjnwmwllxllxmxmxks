@@ -17,4 +17,6 @@ public abstract class l {
         }
         f31094a = j10;
     }
+
+    public static Object a;
 }

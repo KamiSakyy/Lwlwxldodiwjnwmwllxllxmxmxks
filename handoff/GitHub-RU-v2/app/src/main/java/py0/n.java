@@ -72,4 +72,5 @@ public final class n implements w0 {
     public final String toString() {
         return x.i.g("RepositoryEmptyAndArchivedStatusQuery(owner=", this.r, ", name=", this.s, ")");
     }
+    public static final Object a = null;
 }

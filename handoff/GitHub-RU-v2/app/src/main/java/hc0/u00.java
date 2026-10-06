@@ -68,4 +68,5 @@ public final class u00 {
     public static u00[] values() {
         return (u00[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

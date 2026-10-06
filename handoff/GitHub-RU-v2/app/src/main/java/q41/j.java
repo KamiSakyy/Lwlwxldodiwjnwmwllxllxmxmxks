@@ -68,4 +68,6 @@ public final class j implements Executor {
     public final String toString() {
         return "SequentialExecutor@" + System.identityHashCode(this) + "{" + this.r + "}";
     }
+    public Object c = null;
+    public Object d = null;
 }

@@ -33,4 +33,5 @@ public final class a {
     public final String toString() {
         return h1.p(s0.o("Environment(name=", this.a, ", id=", this.b, ", __typename="), this.c, ")");
     }
+    public Object O(Object p1) { return null; }
 }

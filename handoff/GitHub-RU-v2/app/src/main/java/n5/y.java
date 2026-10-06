@@ -32,4 +32,7 @@ public class y implements j0 {
     public final void close() {
         this.f29632c.set(true);
     }
+    public Object s(Object p1, Object p2) { return null; }
+    public Object a = null;
+    public Object b = null;
 }

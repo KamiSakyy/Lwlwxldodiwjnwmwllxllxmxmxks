@@ -33,4 +33,7 @@ public final class b0 {
     public static b0[] values() {
         return (b0[]) f33250t.clone();
     }
+
+    public static w3.b0 f33248r;
+    public static final Object f33248r = null;
 }

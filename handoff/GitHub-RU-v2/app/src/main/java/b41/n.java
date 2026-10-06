@@ -31,4 +31,5 @@ public final class n {
     public final String toString() {
         return s0.i("AppUpdateOptions{appUpdateType=", this.a, ", allowAssetPackDeletion=false}");
     }
+    public static final Object a = null;
 }

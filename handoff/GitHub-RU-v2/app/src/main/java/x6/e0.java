@@ -37,4 +37,12 @@ public final class e0 {
         this.f33823a = c0Var;
         this.f33826d = -1;
     }
+    public Object a = null;
+    public Object b = null;
+    public Object c = null;
+    public Object d = null;
+    public Object e = null;
+    public Object f = null;
+    public Object g = null;
+    public Object h = null;
 }

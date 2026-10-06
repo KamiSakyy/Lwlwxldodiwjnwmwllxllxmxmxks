@@ -48,4 +48,8 @@ public abstract class b {
     public abstract void p(CharSequence charSequence);
 
     public abstract void q(boolean z10);
+
+    public <T0> T0 f(Object... a) {
+        return null;
+    }
 }

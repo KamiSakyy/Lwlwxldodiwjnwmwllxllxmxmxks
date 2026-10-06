@@ -43,4 +43,6 @@ public final class e implements v0 {
         sb.append(", id=");
         return x.i.k(sb, this.c, ", __typename=", this.d, ")");
     }
+    public Object n(Object p1, Object p2, Object p3) { return null; }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

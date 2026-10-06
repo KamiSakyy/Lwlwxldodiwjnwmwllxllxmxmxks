@@ -116,4 +116,6 @@ public final /* synthetic */ class e implements j71.a {
                 return c1.e("com.github.service.dotcom.models.response.copilot.serialization.ChatServerSentEventErrorTypeResponse", j.values(), new String[]{"exception", "rateLimit", "unknown"}, new Annotation[][]{null, null, null});
         }
     }
+    public Object a(Object p1) { return null; }
+    public Object c(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

@@ -11,4 +11,5 @@ public abstract class y extends f0 implements g0 {
         super(ApiRequestStatus.FAILURE, str2, str3);
         this.d = str;
     }
+    public Object s(Object p1, Object p2) { return null; }
 }

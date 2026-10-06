@@ -54,4 +54,5 @@ public final class dg0 {
     public static dg0[] values() {
         return (dg0[]) B.clone();
     }
+    public Object ordinal() { return null; }
 }

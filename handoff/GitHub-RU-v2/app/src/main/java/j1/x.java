@@ -119,4 +119,43 @@ public abstract class x {
         C = lVar2;
         D = lVar2;
     }
+
+    public static Object v;
+
+    public static Object z;
+
+    public static Object g;
+
+    public static Object f;
+
+    public static Object q;
+
+    public static j1.l c;
+
+    public static Object b;
+
+    public static Object p;
+
+    public static Object u;
+
+    public static Object a;
+
+    public static Object e;
+
+    public static Object d;
+
+    public static Object o;
+
+    public static Object x;
+
+    public static Object j;
+
+    public static Object s;
+
+    public static Object y;
+
+    public static Object n;
+
+    public static Object t;
+    public static final Object c = null;
 }

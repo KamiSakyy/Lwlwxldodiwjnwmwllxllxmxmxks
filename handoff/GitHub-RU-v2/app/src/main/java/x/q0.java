@@ -427,4 +427,13 @@ public class q0 {
         h(d10, obj3);
         return true;
     }
+
+    public <T0> T0 get(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 put(Object... a) {
+        return null;
+    }
+    public Object t = null;
 }

@@ -13,4 +13,6 @@ public abstract class n {
         s3.b.h(0, 0, 0, 0);
         s9.h hVar = s9.h.f31777c;
     }
+
+    public static Object a;
 }

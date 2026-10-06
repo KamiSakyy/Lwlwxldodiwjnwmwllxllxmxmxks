@@ -32,4 +32,6 @@ public final class z {
     public final String toString() {
         return com.github.rudroid.copilot.h1.p(a0.s0.o("ChatMessageAgentConfirmation(title=", this.a, ", message=", this.b, ", confirmation="), this.c, ")");
     }
+    public Object c(Object p1) { return null; }
+    public Object l(Object p1, Object p2) { return null; }
 }

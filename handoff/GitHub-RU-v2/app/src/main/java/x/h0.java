@@ -681,4 +681,11 @@ public final class h0 {
         public z() {
         }
     }
+
+    public <T0> T0 g(Object... a) {
+        return null;
+    }
+    public Object a = null;
+    public Object b = null;
+    public Object c = null;
 }

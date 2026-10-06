@@ -20,4 +20,7 @@ public class h0 {
         public b2() {
         }
     }
+    public Object G = null;
+    public Object H = null;
+    public Object I = null;
 }

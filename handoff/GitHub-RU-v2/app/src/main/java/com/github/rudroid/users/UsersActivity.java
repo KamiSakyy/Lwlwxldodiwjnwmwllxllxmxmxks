@@ -104,4 +104,8 @@ public final class UsersActivity extends b<d0> {
         ze.b.a(yVar);
         s4.g(yVar.h());
     }
+
+    public <T0> T0 C(Object... a) {
+        return null;
+    }
 }

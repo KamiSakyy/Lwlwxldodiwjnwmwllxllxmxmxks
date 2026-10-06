@@ -13,4 +13,6 @@ public abstract class e extends m0 {
         this.h0 = true;
         ((g) w()).Z((f) this);
     }
+    public Object onCreate(Object p1) { return null; }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

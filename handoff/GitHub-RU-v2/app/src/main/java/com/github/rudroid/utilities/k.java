@@ -18,4 +18,5 @@ public final class k implements p61.d {
         public i() {
         }
     }
+    public Object n() { return null; }
 }

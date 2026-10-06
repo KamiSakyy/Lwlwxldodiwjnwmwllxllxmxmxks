@@ -55,4 +55,6 @@ public final class f extends oa.c {
 
 
 
+    public Object a(Object p1) { return null; }
+    public static final Object b = null;
 }

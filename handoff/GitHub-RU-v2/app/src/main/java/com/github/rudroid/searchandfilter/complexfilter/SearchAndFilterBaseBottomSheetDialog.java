@@ -49,4 +49,32 @@ public abstract class SearchAndFilterBaseBottomSheetDialog extends BaseBottomShe
         }
         return R3;
     }
+
+    public <T0> T0 C3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 G4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 i4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 y3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 N3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 O3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 V3(Object... a) {
+        return null;
+    }
 }

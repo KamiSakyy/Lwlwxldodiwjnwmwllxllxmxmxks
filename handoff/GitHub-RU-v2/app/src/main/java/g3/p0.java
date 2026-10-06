@@ -58,4 +58,15 @@ public final class p0 {
     public final String toString() {
         return h(this.f24684a);
     }
+
+    public <T0> T0 a(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 c(Object... a) {
+        return null;
+    }
+
+    public static Object c;
+    public Object a = null;
 }

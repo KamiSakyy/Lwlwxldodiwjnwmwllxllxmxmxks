@@ -98,4 +98,16 @@ public final class BadgeSwitchPreference extends SwitchPreference {
         this.o0 = new b(this);
     }
 
+
+    public <T0> T0 H(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 D(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 c(Object... a) {
+        return null;
+    }
 }

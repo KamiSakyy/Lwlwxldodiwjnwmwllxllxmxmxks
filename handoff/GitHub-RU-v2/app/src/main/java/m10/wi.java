@@ -39,4 +39,5 @@ public final class wi {
     public static wi[] values() {
         return (wi[]) w.clone();
     }
+    public Object ordinal() { return null; }
 }

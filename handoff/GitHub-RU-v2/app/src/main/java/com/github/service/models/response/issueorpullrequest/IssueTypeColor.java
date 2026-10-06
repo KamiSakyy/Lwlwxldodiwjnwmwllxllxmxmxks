@@ -42,4 +42,5 @@ public final class IssueTypeColor {
     public static IssueTypeColor[] values() {
         return (IssueTypeColor[]) $VALUES.clone();
     }
+    public Object name() { return null; }
 }

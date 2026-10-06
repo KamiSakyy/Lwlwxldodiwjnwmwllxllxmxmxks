@@ -86,4 +86,5 @@ public abstract /* synthetic */ class g {
         }
         a = iArr2;
     }
+    public static final Object b = null;
 }

@@ -31,4 +31,5 @@ public final class f extends s0 {
             ((m0) eVar2).a.e(0, 1);
         }
     }
+    public Object t(Object p1, Object p2) { return null; }
 }

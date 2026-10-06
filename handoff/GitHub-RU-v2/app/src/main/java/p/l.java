@@ -847,4 +847,10 @@ public class l implements Menu {
         public x() {
         }
     }
+
+    public <T0> T0 findItem(Object... a) {
+        return null;
+    }
+    public Object e = null;
+    public Object x = null;
 }

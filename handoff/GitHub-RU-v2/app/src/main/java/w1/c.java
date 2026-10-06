@@ -36,4 +36,12 @@ public final class c implements a71.g {
     public static final h E = new h(0.0f);
     public static final h F = new h(1.0f);
     public static final /* synthetic */ c G = new c();
+
+    public static Object r;
+
+    public static w1.j r;
+
+    public static Object v;
+
+    public static w1.j v;
 }

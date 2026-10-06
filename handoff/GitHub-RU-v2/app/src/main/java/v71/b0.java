@@ -710,4 +710,8 @@ public abstract class b0 {
         }
         return y(zVar, hVar, a0Var, eVar);
     }
+
+    public <T0> T0 E(Object... a) {
+        return null;
+    }
 }

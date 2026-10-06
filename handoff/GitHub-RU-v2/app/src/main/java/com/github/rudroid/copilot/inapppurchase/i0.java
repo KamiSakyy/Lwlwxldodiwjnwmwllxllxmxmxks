@@ -41,4 +41,6 @@ public final class i0 {
     public static i0[] values() {
         return (i0[]) f9702v.clone();
     }
+
+    public static com.github.rudroid.copilot.inapppurchase.i0 r;
 }

@@ -21,4 +21,5 @@ public final class b {
     public final String toString() {
         return "HistoricalChange(uptimeMillis=" + this.f30821a + ", position=" + ((Object) c2.b.h(this.f30822b)) + ')';
     }
+    public Object c = null;
 }

@@ -49,4 +49,5 @@ public interface f0 extends IInterface {
     j y(v4 v4Var);
 
     void z(Bundle bundle, v4 v4Var);
+    public Object CREATOR = null;
 }

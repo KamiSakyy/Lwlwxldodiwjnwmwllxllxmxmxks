@@ -7,4 +7,7 @@ package ic;
 public class pf {
     public pf() {
     }
+    public Object O = null;
+    public Object P = null;
+    public Object Q = null;
 }

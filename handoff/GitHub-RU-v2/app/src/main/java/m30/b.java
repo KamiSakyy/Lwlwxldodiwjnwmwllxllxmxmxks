@@ -51,4 +51,5 @@ public final class b implements h0 {
         f4.A(", reasonCode=", this.d, ", __typename=", sb, this.c);
         return h1.p(sb, this.e, ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

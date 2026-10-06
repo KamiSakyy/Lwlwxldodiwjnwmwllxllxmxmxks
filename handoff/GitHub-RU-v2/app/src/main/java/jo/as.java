@@ -72,4 +72,6 @@ public final class as {
         o.append(")");
         return o.toString();
     }
+
+    public Object i;
 }

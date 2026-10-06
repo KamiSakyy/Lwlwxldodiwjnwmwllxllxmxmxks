@@ -38,4 +38,5 @@ public final class e implements h0 {
     public final String toString() {
         return "LinkedIssues(id=" + this.a + ", userLinkedOnlyClosingIssueReferences=" + this.b + ", allClosingIssueReferences=" + this.c + ", __typename=" + this.d + ")";
     }
+    public Object s0 = null;
 }

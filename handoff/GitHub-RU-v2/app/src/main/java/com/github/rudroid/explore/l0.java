@@ -51,4 +51,5 @@ public final class l0<T> implements y71.j {
         }
         return w61.a0.a;
     }
+    public Object t(Object p1) { return null; }
 }

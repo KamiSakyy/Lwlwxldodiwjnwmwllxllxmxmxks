@@ -296,4 +296,33 @@ public final class ShortcutsOverviewFragment extends Hilt_ShortcutsOverviewFragm
         }
     }
 
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 i4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 f4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 F3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 B4(Object... a) {
+        return null;
+    }
+    public Object f4(Object p1, Object p2) { return null; }
 }

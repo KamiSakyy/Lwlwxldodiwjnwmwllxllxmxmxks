@@ -160,4 +160,6 @@ public final class d {
             i4 += 7;
         }
     }
+    public Object b(Object p1, Object p2) { return null; }
+    public Object e() { return null; }
 }

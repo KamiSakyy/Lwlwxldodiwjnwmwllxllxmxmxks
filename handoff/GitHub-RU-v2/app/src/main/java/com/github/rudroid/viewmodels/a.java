@@ -31,4 +31,6 @@ public final class a {
     public static a[] values() {
         return (a[]) v.clone();
     }
+    public Object M(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object a(Object p1) { return null; }
 }

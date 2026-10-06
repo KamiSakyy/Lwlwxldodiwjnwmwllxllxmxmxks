@@ -26,4 +26,5 @@ public final class u implements aaShadow.m0 {
     public final String toString() {
         return "Data(addDiscussionPollVote=" + this.a + ")";
     }
+    public static final Object r = null;
 }

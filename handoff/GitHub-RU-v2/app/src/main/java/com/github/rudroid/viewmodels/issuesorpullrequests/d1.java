@@ -38,4 +38,5 @@ final class d1 extends c71.j implements j71.e {
         }
         return w61.a0.a;
     }
+    public Object k(Object p1) { return null; }
 }

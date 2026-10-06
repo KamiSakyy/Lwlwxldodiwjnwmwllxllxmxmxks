@@ -99,4 +99,6 @@ public final class d6 {
         com.github.rudroid.utilities.ui.h0 a = g1.a.a();
         aVar.getClass();
     }
+
+    public Object i;
 }

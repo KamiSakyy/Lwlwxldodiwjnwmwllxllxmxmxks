@@ -159,4 +159,17 @@ public final class FilterSortBottomSheetDialog extends BaseBottomSheetDialog {
         return filterSortFragment;
     }
 
+
+    public <T0> T0 C3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 s4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 j4(Object... a) {
+        return null;
+    }
+    public Object s4() { return null; }
 }

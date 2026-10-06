@@ -20,4 +20,5 @@ public final class q extends d21.a {
         m7.y.S(parcel, 2, this.r);
         m7.y.a0(parcel, Z);
     }
+    public Object b() { return null; }
 }

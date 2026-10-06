@@ -25,4 +25,5 @@ final class i extends c71.c {
         this.A |= Integer.MIN_VALUE;
         return PullRequestsWidgetSettingsActivity.s0(this.z, null, this);
     }
+    public Object d(Object p1, Object p2, Object p3) { return null; }
 }

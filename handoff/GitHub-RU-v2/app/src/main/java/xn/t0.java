@@ -73,4 +73,5 @@ public final class t0 implements y {
         int i2 = i & 64;
         List list2 = x61.r.r;
     }
+    public static final Object d = null;
 }

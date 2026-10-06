@@ -36,4 +36,5 @@ public final class l0 {
     public final String toString() {
         return "OnCheckSuite(__typename=" + this.a + ", workflowRun=" + this.b + ", app=" + this.c + ", checkSuiteFragment=" + this.d + ")";
     }
+    public Object e(Object p1) { return null; }
 }

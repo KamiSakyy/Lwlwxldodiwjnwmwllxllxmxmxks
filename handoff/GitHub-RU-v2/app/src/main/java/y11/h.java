@@ -23,4 +23,6 @@ public final /* synthetic */ class h implements Executor {
                 break;
         }
     }
+    public static final Object a = null;
+    public static final Object b = null;
 }

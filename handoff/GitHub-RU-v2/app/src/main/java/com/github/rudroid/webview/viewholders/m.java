@@ -19,4 +19,5 @@ public final class m extends s0 {
         this.t.N.setWebViewLoadedListener((GitHubWebView.c) obj2);
     }
 
+    public Object t(Object p1, Object p2) { return null; }
 }

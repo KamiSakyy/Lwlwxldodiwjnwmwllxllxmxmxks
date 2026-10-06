@@ -39,4 +39,8 @@ public final class g implements j71.g {
         }
         return a0.a;
     }
+    public static final Object b = null;
+    public static final Object d = null;
+    public static final Object f = null;
+    public static final Object h = null;
 }

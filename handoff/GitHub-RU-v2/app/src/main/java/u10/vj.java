@@ -58,4 +58,6 @@ public final class vj {
         o.append(")");
         return o.toString();
     }
+
+    public Object i;
 }

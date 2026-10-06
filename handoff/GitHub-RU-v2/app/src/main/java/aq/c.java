@@ -214,4 +214,6 @@ public final class c implements i {
         }
         return a0.a;
     }
+    public Object j(Object p1) { return null; }
+    public Object v(Object p1) { return null; }
 }

@@ -100,4 +100,14 @@ public final class h implements h0 {
         o.append(")");
         return o.toString();
     }
+    public Object a = null;
+    public Object c = null;
+    public Object d = null;
+    public Object e = null;
+    public Object f = null;
+    public Object g = null;
+    public Object i = null;
+    public Object k = null;
+    public Object l = null;
+    public Object m = null;
 }

@@ -30,4 +30,5 @@ public abstract class c implements aa.a {
         fVar.z0("id");
         aa.c.a.b(fVar, wVar, dVar.a);
     }
+    public static final Object f = null;
 }

@@ -8,4 +8,5 @@ public abstract class b {
 
     /* renamed from: a, reason: collision with root package name */
     public static final Handler f32925a = new Handler(Looper.getMainLooper());
+    public Object a() { return null; }
 }

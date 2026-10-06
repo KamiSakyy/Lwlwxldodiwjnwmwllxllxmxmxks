@@ -12,4 +12,5 @@ final class c<T> implements y71.j {
         this.r.E.j((a) obj);
         return w61.a0.a;
     }
+    public Object v(Object p1) { return null; }
 }

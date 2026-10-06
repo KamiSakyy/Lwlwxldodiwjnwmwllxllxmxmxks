@@ -7,4 +7,5 @@ package f1;
 public class ib {
     public ib() {
     }
+    public Object a() { return null; }
 }

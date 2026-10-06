@@ -33,4 +33,5 @@ public final class i {
     public final String toString() {
         return f4.i(this.a, "FailedCheckRuns(totalCount=", ", nodes=", ")", this.b);
     }
+    public Object a = null;
 }

@@ -41,4 +41,5 @@ public final class i {
         c = new j3(new cb.b(11));
     }
 
+    public Object d(Object p1, Object p2, Object p3) { return null; }
 }

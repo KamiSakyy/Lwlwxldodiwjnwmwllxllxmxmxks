@@ -9,4 +9,10 @@ public abstract class a {
     public static final void b(String str) {
         throw new IllegalStateException(str);
     }
+
+    public <T0> T0 a(Object... a) {
+        return null;
+    }
+
+    public static Object a;
 }

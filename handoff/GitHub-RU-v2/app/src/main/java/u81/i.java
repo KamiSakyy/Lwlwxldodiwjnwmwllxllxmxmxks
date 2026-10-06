@@ -35,4 +35,5 @@ public final class i extends t81.a {
 
     public i(Object... a) {
     }
+    public Object b() { return null; }
 }

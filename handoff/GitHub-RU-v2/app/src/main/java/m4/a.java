@@ -22,4 +22,6 @@ public abstract class a {
 
     /* renamed from: f, reason: collision with root package name */
     public static final int[] f28919f = {R.attr.color, R.attr.offset};
+
+    public static Object b;
 }

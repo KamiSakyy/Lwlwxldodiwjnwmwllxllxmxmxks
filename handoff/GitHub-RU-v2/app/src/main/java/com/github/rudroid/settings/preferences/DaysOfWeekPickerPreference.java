@@ -101,4 +101,8 @@ public final class DaysOfWeekPickerPreference extends Preference implements b.a,
         k.g(context, "context");
         this.f0 = w.t(new j(16, this));
     }
+
+    public <T0> T0 D(Object... a) {
+        return null;
+    }
 }

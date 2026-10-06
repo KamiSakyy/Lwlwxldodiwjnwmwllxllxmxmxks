@@ -7,4 +7,6 @@ package b6;
 public class q0 {
     public q0() {
     }
+    public Object b(Object p1) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
 }

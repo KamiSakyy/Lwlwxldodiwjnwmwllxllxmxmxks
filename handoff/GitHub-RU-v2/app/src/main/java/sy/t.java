@@ -859,4 +859,11 @@ public abstract class t {
                 return WorkflowRunEvent.WORKFLOW_RUN;
         }
     }
+
+    public static Object g;
+    public Object I(Object p1, Object p2, Object p3) { return null; }
+    public Object g() { return null; }
+    public Object k() { return null; }
+    public Object l() { return null; }
+    public Object x() { return null; }
 }

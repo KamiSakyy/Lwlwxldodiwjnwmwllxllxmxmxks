@@ -12,4 +12,5 @@ public final class h implements y71.i {
         Object b = this.r.b(new g(jVar), cVar);
         return b == b71.a.r ? b : w61.a0.a;
     }
+    public Object d() { return null; }
 }

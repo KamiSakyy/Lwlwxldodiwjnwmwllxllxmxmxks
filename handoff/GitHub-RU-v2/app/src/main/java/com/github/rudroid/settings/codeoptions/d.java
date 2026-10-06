@@ -144,4 +144,7 @@ public final class d {
         public j() {
         }
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
+    public Object k() { return null; }
+    public Object a = null;
 }

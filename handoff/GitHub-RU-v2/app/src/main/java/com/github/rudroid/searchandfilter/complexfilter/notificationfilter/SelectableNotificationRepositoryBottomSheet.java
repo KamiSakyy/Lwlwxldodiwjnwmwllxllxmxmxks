@@ -130,4 +130,8 @@ public final class SelectableNotificationRepositoryBottomSheet extends Hilt_Sele
         s0Var.V(str);
     }
 
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
 }

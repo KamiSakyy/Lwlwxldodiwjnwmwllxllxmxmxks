@@ -20,4 +20,5 @@ public final class a extends oa.c {
     public final Object b(oa.j jVar) {
         return new s(this.b, this.c, this.d);
     }
+    public Object a(Object p1) { return null; }
 }

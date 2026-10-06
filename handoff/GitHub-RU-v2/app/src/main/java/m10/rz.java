@@ -38,4 +38,9 @@ public final class rz {
     public static rz[] values() {
         return (rz[]) u.clone();
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
+    public Object ordinal() { return null; }
 }

@@ -158,4 +158,7 @@ public final class t {
         if (t == null) {
         }
     }
+    public static final Object d = null;
+    public static final Object j = null;
+    public static final Object k = null;
 }

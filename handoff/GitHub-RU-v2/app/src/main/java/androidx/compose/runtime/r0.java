@@ -34,4 +34,5 @@ public final class r0 {
     public final String toString() {
         return "JoinedKey(left=" + this.f1767a + ", right=" + this.f1768b + ')';
     }
+    public Object size() { return null; }
 }

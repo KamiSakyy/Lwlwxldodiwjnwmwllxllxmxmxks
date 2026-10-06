@@ -39,4 +39,9 @@ public final class g implements v0 {
         sb.append(", __typename=");
         return h1.p(sb, this.c, ")");
     }
+    public static final Object b = null;
+    public static final Object d = null;
+    public static final Object e = null;
+    public static final Object f = null;
+    public static final Object h = null;
 }

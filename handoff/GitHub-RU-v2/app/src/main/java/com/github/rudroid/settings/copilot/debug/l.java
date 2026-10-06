@@ -17,4 +17,5 @@ final /* synthetic */ class l extends k71.i implements j71.c {
         } while (!y1Var.i(value, nj.d.a(dVar, null, null, null, bool, null, 23)));
         return w61.a0.a;
     }
+    public Object g(Object p1) { return null; }
 }

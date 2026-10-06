@@ -31,4 +31,9 @@ public final class c implements aa.h0 {
     public final String toString() {
         return "ProjectV2ConnectionFragment(nodes=" + this.a + ", pageInfo=" + this.b + ")";
     }
+    public Object b(Object p1) { return null; }
+    public static final Object a = null;
+    public static final Object f = null;
+    public static final Object i = null;
+    public static final Object j = null;
 }

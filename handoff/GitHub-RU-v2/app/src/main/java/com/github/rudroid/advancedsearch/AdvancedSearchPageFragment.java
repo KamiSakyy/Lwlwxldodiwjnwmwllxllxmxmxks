@@ -7,4 +7,8 @@ package com.github.rudroid.advancedsearch;
 public class AdvancedSearchPageFragment {
     public AdvancedSearchPageFragment() {
     }
+
+    public <T0> T0 n4(Object... a) {
+        return null;
+    }
 }

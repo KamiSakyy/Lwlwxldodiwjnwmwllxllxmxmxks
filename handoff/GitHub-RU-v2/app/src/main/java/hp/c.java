@@ -66,4 +66,9 @@ public final class c implements h0 {
         s0.w(this.j, this.i, ", additions=", ", deletions=", sb);
         return m0.c(this.k, ", __typename=", this.l, ")", sb);
     }
+
+    public Object i;
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
+    public static final Object f = null;
 }

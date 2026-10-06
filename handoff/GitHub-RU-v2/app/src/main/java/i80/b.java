@@ -31,4 +31,5 @@ public final class b {
     public final String toString() {
         return m0.b(this.b, "Reactors(__typename=", this.a, ", totalCount=", ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

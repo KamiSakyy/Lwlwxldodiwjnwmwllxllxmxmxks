@@ -49,4 +49,6 @@ public final class b {
         sb.append(", normIndex=");
         return i.j(sb, this.e, ')');
     }
+    public Object add(Object p1) { return null; }
+    public Object pop() { return null; }
 }

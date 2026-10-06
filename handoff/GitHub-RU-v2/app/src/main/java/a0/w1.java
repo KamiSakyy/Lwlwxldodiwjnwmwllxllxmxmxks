@@ -20,4 +20,5 @@ public class w1 {
         public r() {
         }
     }
+    public Object y = null;
 }

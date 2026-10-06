@@ -25,4 +25,5 @@ public final class c implements d {
             obtain.recycle();
         }
     }
+    public Object v(Object p1) { return null; }
 }

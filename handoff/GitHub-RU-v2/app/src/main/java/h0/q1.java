@@ -33,4 +33,6 @@ public final class q1 {
         this.f25159b = arrayList;
         this.f25158a = i;
     }
+    public Object a = null;
+    public Object b = null;
 }

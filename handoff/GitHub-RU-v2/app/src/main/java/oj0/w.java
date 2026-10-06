@@ -27,4 +27,5 @@ public abstract class w implements aa.a {
         fVar.z0("id");
         aa.c.a.b(fVar, wVar, rVar.a);
     }
+    public Object e(Object p1) { return null; }
 }

@@ -46,4 +46,5 @@ public final class t {
         o.append(")");
         return o.toString();
     }
+    public static final Object g = null;
 }

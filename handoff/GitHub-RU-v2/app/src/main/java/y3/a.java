@@ -25,4 +25,6 @@ public abstract /* synthetic */ class a {
         System.arraycopy(f34181a, 0, iArr, 0, i);
         return iArr;
     }
+
+    public static Object a;
 }

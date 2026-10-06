@@ -44,4 +44,5 @@ public final class xc {
     public static xc[] values() {
         return (xc[]) x.clone();
     }
+    public Object ordinal() { return null; }
 }

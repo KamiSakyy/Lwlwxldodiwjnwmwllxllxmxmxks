@@ -107,4 +107,5 @@ public final class t {
         public u() {
         }
     }
+    public Object c = null;
 }

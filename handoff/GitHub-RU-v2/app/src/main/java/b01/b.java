@@ -130,4 +130,6 @@ public final class b {
         o.append(")");
         return o.toString();
     }
+
+    public Object i;
 }

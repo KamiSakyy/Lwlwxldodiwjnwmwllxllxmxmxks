@@ -17,4 +17,5 @@ public final class t0 implements z01.k, yb0 {
     public final Object h() {
         return this;
     }
+    public static final Object d = null;
 }

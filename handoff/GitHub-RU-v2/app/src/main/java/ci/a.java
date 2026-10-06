@@ -15,4 +15,5 @@ public abstract class a extends k5.f {
         this.O = cVar;
     }
 
+    public Object M0(Object p1) { return null; }
 }

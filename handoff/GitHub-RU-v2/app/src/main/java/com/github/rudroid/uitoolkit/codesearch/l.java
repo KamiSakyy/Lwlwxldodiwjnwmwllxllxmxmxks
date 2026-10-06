@@ -14,4 +14,5 @@ public final class l implements j71.c {
         this.r.get(((Number) obj).intValue());
         return null;
     }
+    public Object g(Object p1) { return null; }
 }

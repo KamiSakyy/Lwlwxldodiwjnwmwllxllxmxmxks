@@ -13,4 +13,5 @@ final class j<T> implements y71.j {
         v71.b0.z(androidx.lifecycle.d1.k(qVar), (a71.h) null, (v71.a0) null, new r(qVar.v, qVar, null), 3);
         return w61.a0.a;
     }
+    public Object f(Object p1) { return null; }
 }

@@ -28,4 +28,6 @@ public final class e {
     public final String toString() {
         return "OnPullRequest(__typename=" + this.a + ", agentPullRequestResourceFragment=" + this.b + ")";
     }
+    public Object c(Object p1) { return null; }
+    public Object e(Object p1) { return null; }
 }

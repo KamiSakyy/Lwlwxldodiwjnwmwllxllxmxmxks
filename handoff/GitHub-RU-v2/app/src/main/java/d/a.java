@@ -44,4 +44,5 @@ public final class a {
         this(bVar.f4128c, bVar.f4129d, bVar.f4127b, bVar.f4126a, bVar.f4130e);
         k71.k.g(bVar, "navigationEvent");
     }
+    public Object c = null;
 }

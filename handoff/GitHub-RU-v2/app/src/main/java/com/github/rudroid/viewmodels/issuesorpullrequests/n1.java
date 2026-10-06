@@ -17,4 +17,5 @@ final class n1<T> implements y71.j {
         y1Var.k((Object) null, d6.a(d6Var, false, true, false, null, null, false, false, new com.github.rudroid.utilities.ui.t1(this.s), 16379));
         return w61.a0.a;
     }
+    public Object l(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

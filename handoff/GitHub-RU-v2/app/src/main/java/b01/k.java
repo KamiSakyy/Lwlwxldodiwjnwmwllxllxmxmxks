@@ -49,4 +49,5 @@ public final class k {
         o.append(")");
         return o.toString();
     }
+    public Object i = null;
 }

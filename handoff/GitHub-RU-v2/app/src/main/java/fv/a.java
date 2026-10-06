@@ -54,4 +54,5 @@ public final class a implements aa.a {
         bVar2.b(fVar, wVar, bVar.c);
     }
 
+    public Object O(Object p1) { return null; }
 }

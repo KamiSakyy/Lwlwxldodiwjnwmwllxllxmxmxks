@@ -65,4 +65,5 @@ public final class f implements n {
 
     public f(Object... a) {
     }
+    public Object b(Object p1) { return null; }
 }

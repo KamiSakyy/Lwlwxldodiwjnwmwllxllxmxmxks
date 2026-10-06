@@ -48,4 +48,5 @@ public final class f40 {
     public static f40[] values() {
         return (f40[]) z.clone();
     }
+    public Object ordinal() { return null; }
 }

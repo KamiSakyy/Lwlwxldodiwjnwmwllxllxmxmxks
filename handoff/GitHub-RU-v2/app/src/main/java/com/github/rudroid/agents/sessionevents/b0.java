@@ -1778,4 +1778,6 @@ public abstract class b0 {
             }
         }
     }
+
+    public Object i;
 }

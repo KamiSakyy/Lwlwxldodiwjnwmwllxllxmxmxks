@@ -418,4 +418,11 @@ public final class d {
             t.d = new d2(rVar, str, aVar, cVar, list, i, 8);
         }
     }
+    public Object W(Object p1) { return null; }
+    public Object a() { return null; }
+    public Object h() { return null; }
+    public Object i(Object p1) { return null; }
+    public Object i(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object j(Object p1) { return null; }
+    public Object w(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

@@ -31,4 +31,5 @@ public final class c0 extends androidx.compose.foundation.lazy.layout.s0 {
             d0Var.n();
         }
     }
+    public Object t(Object p1, Object p2) { return null; }
 }

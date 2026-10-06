@@ -22,4 +22,6 @@ public final class h extends c71.c {
         this.A |= Integer.MIN_VALUE;
         return this.z.F(null, null, false, null, this);
     }
+    public static final Object r = null;
+    public static final Object t = null;
 }

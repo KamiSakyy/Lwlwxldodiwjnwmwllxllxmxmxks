@@ -7,4 +7,8 @@ package androidx.appcompat.widget;
 public class ActionBarOverlayLayout {
     public ActionBarOverlayLayout() {
     }
+
+    public <T0> T0 b(Object... a) {
+        return null;
+    }
 }

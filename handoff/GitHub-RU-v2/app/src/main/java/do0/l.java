@@ -18,4 +18,5 @@ public final class l extends c71.c {
         this.v |= Integer.MIN_VALUE;
         return this.w.c(null, this);
     }
+    public Object k(Object p1) { return null; }
 }

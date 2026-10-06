@@ -26,4 +26,7 @@ public final class k0 extends c71.c {
         this.f29551x |= Integer.MIN_VALUE;
         return this.f29550w.N(this);
     }
+    public Object u = null;
+    public Object v = null;
+    public Object x = null;
 }

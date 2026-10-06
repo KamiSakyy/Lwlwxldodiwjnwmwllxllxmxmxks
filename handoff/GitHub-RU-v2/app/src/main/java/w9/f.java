@@ -79,4 +79,8 @@ public abstract class f {
         throw new NoWhenBranchMatchedException();
     }
 
+
+    public static Object c;
+
+    public static Object a;
 }

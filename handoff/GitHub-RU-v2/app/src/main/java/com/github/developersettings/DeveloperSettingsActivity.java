@@ -56,4 +56,32 @@ public final class DeveloperSettingsActivity extends b {
             aVar.g();
         }
     }
+
+    public <T0> T0 findViewById(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getString(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 W(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 G(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getDrawable(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getColor(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 H(Object... a) {
+        return null;
+    }
 }

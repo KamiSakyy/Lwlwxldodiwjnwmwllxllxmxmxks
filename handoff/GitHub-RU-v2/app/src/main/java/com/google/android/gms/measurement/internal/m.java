@@ -118,4 +118,6 @@ public final class m {
 
     public m(Object... a) {
     }
+    public Object s = null;
+    public Object t = null;
 }

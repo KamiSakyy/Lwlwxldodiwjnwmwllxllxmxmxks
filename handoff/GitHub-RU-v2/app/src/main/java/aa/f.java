@@ -68,4 +68,7 @@ public final class f {
         return a0.s0.m(sb2, str, ')');
     }
 
+    public Object b = null;
+    public Object e = null;
+    public Object g = null;
 }

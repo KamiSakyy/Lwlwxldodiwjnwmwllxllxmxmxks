@@ -24,4 +24,5 @@ public final class a {
     public final String toString() {
         return f1.e.z("OnCheckRun(id=", this.a, ")");
     }
+    public Object O(Object p1) { return null; }
 }

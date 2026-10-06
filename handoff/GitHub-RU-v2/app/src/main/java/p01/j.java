@@ -278,4 +278,6 @@ public final class j {
         o.append(", existingForkUrl=");
         return m0.k(o, this.W, ", isAgentEnabled=", this.X, ")");
     }
+
+    public Object i;
 }

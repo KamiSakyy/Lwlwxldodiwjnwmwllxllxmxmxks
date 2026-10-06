@@ -41,4 +41,12 @@ public final class c0 {
         o.append(")");
         return o.toString();
     }
+    public Object a = null;
+    public Object b = null;
+    public Object c = null;
+    public Object d = null;
+    public Object e = null;
+    public Object f = null;
+    public Object g = null;
+    public Object h = null;
 }

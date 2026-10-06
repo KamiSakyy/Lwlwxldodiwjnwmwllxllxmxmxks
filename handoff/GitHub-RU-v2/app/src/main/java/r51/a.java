@@ -114,4 +114,18 @@ public final class a {
         return h1.p(sb, this.g, "}");
     }
 
+
+    public Object a;
+
+    public Object b;
+
+    public Object c;
+
+    public Object d;
+
+    public Object e;
+
+    public Object f;
+
+    public Object g;
 }

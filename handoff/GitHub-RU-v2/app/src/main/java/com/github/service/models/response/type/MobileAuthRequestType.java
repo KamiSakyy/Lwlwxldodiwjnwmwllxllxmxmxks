@@ -39,4 +39,8 @@ public final class MobileAuthRequestType {
     public static MobileAuthRequestType[] values() {
         return (MobileAuthRequestType[]) $VALUES.clone();
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

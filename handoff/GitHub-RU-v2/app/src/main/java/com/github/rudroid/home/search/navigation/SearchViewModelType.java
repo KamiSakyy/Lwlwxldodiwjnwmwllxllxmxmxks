@@ -41,4 +41,9 @@ public final class SearchViewModelType {
     public static SearchViewModelType[] values() {
         return (SearchViewModelType[]) $VALUES.clone();
     }
+
+    public <T0> T0 name(Object... a) {
+        return null;
+    }
+    public Object name() { return null; }
 }

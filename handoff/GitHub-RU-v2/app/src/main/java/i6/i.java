@@ -48,4 +48,6 @@ public final class i extends z5.j {
     public final String toString() {
         return "EmittableBox(modifier=" + this.f26036d + ", contentAlignment=" + this.f26037e + "children=[\n" + d() + "\n])";
     }
+    public Object d = null;
+    public Object e = null;
 }

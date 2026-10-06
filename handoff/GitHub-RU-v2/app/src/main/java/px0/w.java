@@ -47,4 +47,5 @@ public abstract class w implements aa.a {
             kw0.b.d(fVar, wVar, aVar);
         }
     }
+    public Object e(Object p1) { return null; }
 }

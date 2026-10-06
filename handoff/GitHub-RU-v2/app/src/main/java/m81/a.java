@@ -530,4 +530,5 @@ public abstract class a implements l81.i, Decoder, j81.a {
         k71.k.g(serialDescriptor, "descriptor");
         return K(S(serialDescriptor, i));
     }
+    public Object ordinal() { return null; }
 }

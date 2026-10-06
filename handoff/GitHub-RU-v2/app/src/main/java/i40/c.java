@@ -48,4 +48,8 @@ public final class c {
         f1.e.x(sb, this.c, ", url=", this.d, ", number=");
         return m0.c(this.e, ", id=", this.f, ")", sb);
     }
+    public Object b(Object p1) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
+    public static final Object f = null;
 }

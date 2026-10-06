@@ -23,4 +23,6 @@ public final class e extends c71.c {
         this.f27343v |= Integer.MIN_VALUE;
         return this.f27344w.c(null, this);
     }
+    public Object c(Object p1) { return null; }
+    public Object d() { return null; }
 }

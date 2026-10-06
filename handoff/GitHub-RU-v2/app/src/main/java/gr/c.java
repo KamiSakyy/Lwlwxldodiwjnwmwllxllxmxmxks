@@ -51,4 +51,8 @@ public final class c {
         m0.w(sb, this.e, ", isInMergeQueue=", this.f, ", id=");
         return h1.p(sb, this.g, ")");
     }
+    public Object b(Object p1) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
+    public static final Object f = null;
 }

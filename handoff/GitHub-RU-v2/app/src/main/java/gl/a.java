@@ -17,4 +17,5 @@ public final class a extends c71.c {
         this.w |= Integer.MIN_VALUE;
         return d.a(this.v, null, this);
     }
+    public static final Object w = null;
 }

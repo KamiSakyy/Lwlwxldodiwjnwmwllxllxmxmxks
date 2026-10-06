@@ -19,4 +19,19 @@ final class s implements j71.c {
         y3.e.c(cVar.g, dVar.f, 0.0f, 0.0f, 6);
         return w61.a0.a;
     }
+    public Object C() { return null; }
+    public Object N() { return null; }
+    public Object S(Object p1, Object p2) { return null; }
+    public Object V() { return null; }
+    public Object c0(Object p1) { return null; }
+    public Object e0(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object g0() { return null; }
+    public Object l() { return null; }
+    public Object n0(Object p1) { return null; }
+    public Object q(Object p1) { return null; }
+    public Object q0() { return null; }
+    public Object t() { return null; }
+    public Object S = null;
+    public Object T = null;
 }

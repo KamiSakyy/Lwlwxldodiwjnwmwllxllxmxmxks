@@ -189,4 +189,5 @@ public final class l extends i implements List, l71.a {
     public final Object[] toArray(Object[] objArr) {
         return k71.j.b(this, objArr);
     }
+    public Object u = null;
 }

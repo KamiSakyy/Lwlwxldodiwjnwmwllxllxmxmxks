@@ -32,4 +32,15 @@ public final class s {
     public final String toString() {
         return "IssueTypes(pageInfo=" + this.a + ", nodes=" + this.b + ")";
     }
+    public Object N() { return null; }
+    public Object S(Object p1, Object p2) { return null; }
+    public Object V() { return null; }
+    public Object g0() { return null; }
+    public Object k(Object p1) { return null; }
+    public Object l() { return null; }
+    public Object n0(Object p1) { return null; }
+    public Object q(Object p1) { return null; }
+    public Object q0() { return null; }
+    public Object S = null;
+    public Object T = null;
 }

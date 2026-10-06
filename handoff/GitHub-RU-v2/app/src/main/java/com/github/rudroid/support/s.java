@@ -139,4 +139,7 @@ public final class s extends k1 {
         h hVar2 = (h) ((g1) y1Var.getValue()).getData();
         return (hVar2 != null ? hVar2.e : null) != null;
     }
+    public Object I(Object p1) { return null; }
+    public Object t() { return null; }
+    public Object u() { return null; }
 }

@@ -5,4 +5,5 @@ public interface b {
     void e(int i);
 
     void f();
+    public static final Object a = null;
 }

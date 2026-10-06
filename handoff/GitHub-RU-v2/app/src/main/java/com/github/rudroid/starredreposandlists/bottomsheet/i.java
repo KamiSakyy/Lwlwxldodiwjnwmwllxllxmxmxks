@@ -33,4 +33,5 @@ public abstract class i {
     public static final class c extends i {
         public static final c a = new c();
     }
+    public Object d(Object p1, Object p2, Object p3) { return null; }
 }

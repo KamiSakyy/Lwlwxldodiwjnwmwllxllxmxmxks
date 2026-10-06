@@ -98,4 +98,12 @@ public final class RepositoryAssigneesFragment extends Hilt_RepositoryAssigneesF
         return (f) this.H0.getValue();
     }
 
+
+    public <T0> T0 j4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
 }

@@ -80,4 +80,8 @@ public final class c {
         if (i != 0) {
         }
     }
+
+    public <T0> T0 a(Object... a) {
+        return null;
+    }
 }

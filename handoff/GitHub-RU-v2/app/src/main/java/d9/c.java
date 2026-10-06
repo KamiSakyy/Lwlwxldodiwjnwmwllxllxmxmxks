@@ -34,4 +34,6 @@ public final class c {
     public final String toString() {
         return "Preference(key=" + this.f21679a + ", value=" + this.f21680b + ')';
     }
+    public Object a = null;
+    public Object b = null;
 }

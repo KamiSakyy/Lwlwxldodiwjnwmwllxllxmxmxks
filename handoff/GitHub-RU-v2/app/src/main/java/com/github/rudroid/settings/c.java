@@ -13,4 +13,8 @@ public abstract class c<T extends k5.f> extends com.github.rudroid.activities.z1
         this.n0 = true;
         ((n) w()).f((SettingsActivity) this);
     }
+    public Object a(Object p1, Object p2) { return null; }
+    public Object n() { return null; }
+    public Object onCreate(Object p1) { return null; }
+    public Object v(Object p1) { return null; }
 }

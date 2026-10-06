@@ -280,4 +280,7 @@ public final class z {
         if (t != null) {
         }
     }
+
+    public static Object a;
+    public Object c(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

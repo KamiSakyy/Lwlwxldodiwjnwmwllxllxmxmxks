@@ -46,4 +46,9 @@ public final class g {
             t.d = new androidx.compose.foundation.layout.r(i, 18, rVar);
         }
     }
+    public static final Object b = null;
+    public static final Object d = null;
+    public static final Object e = null;
+    public static final Object f = null;
+    public static final Object h = null;
 }

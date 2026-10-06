@@ -29,4 +29,6 @@ public final class c {
     public final String toString() {
         return m0.h("Commits(nodes=", ")", this.a);
     }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
 }

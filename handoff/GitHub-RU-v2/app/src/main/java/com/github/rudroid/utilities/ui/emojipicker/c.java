@@ -26,4 +26,7 @@ public final /* synthetic */ class c implements j71.a {
         }
         return a0.a;
     }
+    public Object c(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object e(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object v(Object p1) { return null; }
 }

@@ -930,4 +930,50 @@ public final class SettingsFragment extends Hilt_SettingsFragment implements com
         styledPreferenceCategory4.H(preference17);
         v4(preferenceScreen);
     }
+
+    public <T0> T0 g4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 t4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 i4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 w3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 B3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 F3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 x3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 A3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 E(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 h(Object... a) {
+        return null;
+    }
+    public Object A3() { return null; }
+    public Object h(Object p1, Object p2) { return null; }
 }

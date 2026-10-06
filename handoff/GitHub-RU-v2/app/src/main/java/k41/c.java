@@ -58,4 +58,6 @@ public final /* synthetic */ class c implements p51.b {
         this.b = context;
         this.c = str;
     }
+    public Object ordinal() { return null; }
+    public static final Object a = null;
 }

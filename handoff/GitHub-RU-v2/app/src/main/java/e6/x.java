@@ -47,4 +47,6 @@ public enum x implements b0 {
     x(int i) {
         this.f21984r = i;
     }
+
+    public static Object x;
 }

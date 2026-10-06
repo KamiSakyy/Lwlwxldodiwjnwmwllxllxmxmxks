@@ -7,4 +7,10 @@ package i4;
 public class u {
     public u() {
     }
+    public Object a(Object p1) { return null; }
+    public Object b() { return null; }
+    public Object i(Object p1) { return null; }
+    public Object b = null;
+    public Object c = null;
+    public Object f = null;
 }

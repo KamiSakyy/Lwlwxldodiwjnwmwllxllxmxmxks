@@ -67,4 +67,8 @@ public final class PatchStatus implements Parcelable {
         k.g(parcel, "dest");
         parcel.writeString(name());
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

@@ -6,4 +6,10 @@ public final class c0 {
         k71.k.g(rVar, "$this$setupEdgeToEdge");
         return rVar.f(androidx.compose.foundation.layout.b.J(f0.o.f(w1.o.a, j, d2.a0.b), new a7.i(5)));
     }
+
+    public <T0> T0 a(Object... a) {
+        return null;
+    }
+
+    public static Object a;
 }

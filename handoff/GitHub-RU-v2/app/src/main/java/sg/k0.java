@@ -387,4 +387,8 @@ public final class k0 {
         if (t != null) {
         }
     }
+
+    public <T0> T0 b(Object... a) {
+        return null;
+    }
 }

@@ -71,4 +71,6 @@ public final class c {
         this.f30460b = sharedPreferences;
         this.f30462d = "";
     }
+    public Object b = null;
+    public Object d = null;
 }

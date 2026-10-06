@@ -231,4 +231,10 @@ public final class f1 {
         public n0() {
         }
     }
+
+    public static Object a;
+
+    public <T0> T0 a(Object... a) {
+        return null;
+    }
 }

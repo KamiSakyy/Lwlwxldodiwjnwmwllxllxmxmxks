@@ -28,4 +28,6 @@ public final class c {
     public final String toString() {
         return x.i.g("OnTeam(name=", this.a, ", id=", this.b, ")");
     }
+    public static final Object a = null;
+    public static final Object f = null;
 }

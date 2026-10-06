@@ -14,4 +14,5 @@ public final class v extends c41.d {
         attachInterface(this, "com.google.android.apps.play.billingtestcompanion.aidl.IBillingOverrideServiceCallback");
         this.f34047g = a4Var;
     }
+    public Object g = null;
 }

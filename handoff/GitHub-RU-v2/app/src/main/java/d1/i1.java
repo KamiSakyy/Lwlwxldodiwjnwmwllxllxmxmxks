@@ -16,4 +16,5 @@ public final class i1 {
 
     public i1(Object p1, Object p2, Object p3, Object p4, Object p5) {
     }
+    public Object a() { return null; }
 }

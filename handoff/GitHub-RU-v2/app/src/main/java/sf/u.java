@@ -7,4 +7,7 @@ package sf;
 public class u {
     public u() {
     }
+
+    public static Object r;
+    public Object ordinal() { return null; }
 }

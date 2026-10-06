@@ -28,4 +28,5 @@ public final class a {
     public final String toString() {
         return x.i.g("Owner(id=", this.a, ", login=", this.b, ")");
     }
+    public Object O(Object p1) { return null; }
 }

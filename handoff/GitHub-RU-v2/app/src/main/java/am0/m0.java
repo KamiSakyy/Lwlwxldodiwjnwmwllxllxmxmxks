@@ -87,4 +87,10 @@ public final class m0 {
     public final String toString() {
         return "Subject(__typename=" + this.a + ", onCommit=" + this.b + ", onGist=" + this.c + ", onTeamDiscussion=" + this.d + ", onCheckSuite=" + this.e + ", onWorkflowRun=" + this.f + ", onIssue=" + this.g + ", onPullRequest=" + this.h + ", onRelease=" + this.i + ", onRepositoryInvitation=" + this.j + ", onRepositoryVulnerabilityAlert=" + this.k + ", onRepositoryAdvisory=" + this.l + ", onDiscussion=" + this.m + ", onRepositoryDependabotAlertsThread=" + this.n + ", onSecurityAdvisory=" + this.o + ", onMemberFeatureRequestNotification=" + this.p + ")";
     }
+    public Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
+    public Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object y(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object z(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

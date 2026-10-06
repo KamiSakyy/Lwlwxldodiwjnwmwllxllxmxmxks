@@ -8,4 +8,6 @@ public abstract class g {
 
     /* renamed from: a, reason: collision with root package name */
     public static final Set f30471a = l.j0(com.github.rudroid.common.a.values());
+
+    public static Object a;
 }

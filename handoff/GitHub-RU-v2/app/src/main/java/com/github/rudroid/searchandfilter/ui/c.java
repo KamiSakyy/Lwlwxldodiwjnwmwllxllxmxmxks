@@ -58,4 +58,6 @@ final class c extends c71.j implements j71.e {
         y1Var2.c(valueOf, this);
         return a0Var2 == a0Var ? a0Var : a0Var2;
     }
+    public Object a(Object p1, Object p2) { return null; }
+    public Object ordinal() { return null; }
 }

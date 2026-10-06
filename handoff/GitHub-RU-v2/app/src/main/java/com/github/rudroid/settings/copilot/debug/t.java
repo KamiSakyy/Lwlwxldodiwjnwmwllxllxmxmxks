@@ -324,4 +324,5 @@ public final class t {
             t.d = new com.github.rudroid.actions.checkdetail.j(f1Var, cVar, cVar2, cVar3, cVar4, i, 14);
         }
     }
+    public Object w(Object p1, Object p2, Object p3) { return null; }
 }

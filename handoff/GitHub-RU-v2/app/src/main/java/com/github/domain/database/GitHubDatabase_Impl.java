@@ -690,4 +690,12 @@ public final class GitHubDatabase_Impl extends GitHubDatabase {
         return (xj.c) this.v.getValue();
     }
 
+
+    public <T0> T0 a(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 o(Object... a) {
+        return null;
+    }
 }

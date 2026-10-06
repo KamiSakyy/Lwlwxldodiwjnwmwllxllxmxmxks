@@ -33,4 +33,5 @@ public final class l0 {
         o.append(")");
         return o.toString();
     }
+    public Object Q(Object p1) { return null; }
 }

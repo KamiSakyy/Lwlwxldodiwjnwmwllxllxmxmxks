@@ -48,4 +48,7 @@ public final class gu {
         f1.e.x(o, this.e, ", messageBodyHTML=", this.f, ", authoredDate=");
         return com.github.rudroid.copilot.h1.q(o, this.g, ")");
     }
+
+    public Object e;
+    public Object c = null;
 }

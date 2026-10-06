@@ -56,4 +56,5 @@ public final class f extends m71.a {
         if (i == 0) {
         }
     }
+    public Object k0(Object p1, Object p2, Object p3) { return null; }
 }

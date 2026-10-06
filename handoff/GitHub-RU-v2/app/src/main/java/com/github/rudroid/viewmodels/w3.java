@@ -24,4 +24,8 @@ public abstract class w3 extends androidx.lifecycle.k1 implements x3 {
         fl.f fVar = (fl.f) P().d();
         return (fVar == null || (gVar = fVar.a) == null) ? fl.g.r : gVar;
     }
+
+    public Object s;
+
+    public Object t;
 }

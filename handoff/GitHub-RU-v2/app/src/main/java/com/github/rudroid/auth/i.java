@@ -75,4 +75,13 @@ public final class i {
     public static i[] values() {
         return (i[]) D.clone();
     }
+
+    public static Object z;
+
+    public static Object w;
+
+    public static Object x;
+
+    public static Object v;
+    public Object ordinal() { return null; }
 }

@@ -44,4 +44,12 @@ public final class b2 {
         public a0() {
         }
     }
+
+    public static Object f24910r;
+
+    public static Object f24911s;
+    public Object a(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8, Object p9) { return null; }
+    public Object b(Object p1, Object p2) { return null; }
+    public Object d = null;
+    public Object q = null;
 }

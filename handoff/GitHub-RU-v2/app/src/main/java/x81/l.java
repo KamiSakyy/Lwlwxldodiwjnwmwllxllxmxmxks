@@ -9,4 +9,5 @@ public abstract class l {
     }
 
     public abstract void b(w wVar);
+    public Object J(Object p1, Object p2) { return null; }
 }

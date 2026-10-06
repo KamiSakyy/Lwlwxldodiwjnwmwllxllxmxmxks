@@ -19,4 +19,5 @@ public final class q implements i51.c {
         dVar.d(e, x0Var.d);
         dVar.e(f, x0Var.e);
     }
+    public Object b() { return null; }
 }

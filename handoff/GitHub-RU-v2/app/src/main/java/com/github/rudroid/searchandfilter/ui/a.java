@@ -6,4 +6,6 @@ final /* synthetic */ class a extends k71.i implements j71.a {
         ((FilterBarFragmentBase) ((k71.c) this).s).H4().V();
         return w61.a0.a;
     }
+    public Object ordinal() { return null; }
+    public static final Object b = null;
 }

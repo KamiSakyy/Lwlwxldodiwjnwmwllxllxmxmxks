@@ -7,4 +7,6 @@ public final class l {
     static {
         new r1.d(new n6(18), false, 1437428597);
     }
+    public Object g(Object p1) { return null; }
+    public static final Object c = null;
 }

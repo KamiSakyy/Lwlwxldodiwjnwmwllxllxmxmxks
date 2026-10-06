@@ -33,4 +33,5 @@ public final /* synthetic */ class t implements j71.f {
         }
         return a0.a;
     }
+    public Object L(Object p1) { return null; }
 }

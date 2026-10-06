@@ -7,4 +7,5 @@ package com.github.rudroid.fragments.onboarding.notifications.viewmodel;
 public class r0 {
     public r0() {
     }
+    public Object a() { return null; }
 }

@@ -7,4 +7,8 @@ package com.github.rudroid.createissue.propertybar.projects;
 public class PropertyBarProjectsHostBottomSheetDialog {
     public PropertyBarProjectsHostBottomSheetDialog() {
     }
+
+    public <T0> T0 z4(Object... a) {
+        return null;
+    }
 }

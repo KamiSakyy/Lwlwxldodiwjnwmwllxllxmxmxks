@@ -18,4 +18,5 @@ public final class y {
         k71.k.g(jVar, "user");
         return b31.b.J(new y71.y(((z01.i) this.a.a(jVar)).d(), new m7.x(this, jVar, list, (a71.c) null, 4), 6), jVar, cVar);
     }
+    public Object h(Object p1) { return null; }
 }

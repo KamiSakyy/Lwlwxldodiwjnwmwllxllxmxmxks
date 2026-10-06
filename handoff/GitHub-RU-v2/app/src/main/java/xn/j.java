@@ -31,4 +31,5 @@ public final class j {
     public static j[] values() {
         return (j[]) v.clone();
     }
+    public Object name() { return null; }
 }

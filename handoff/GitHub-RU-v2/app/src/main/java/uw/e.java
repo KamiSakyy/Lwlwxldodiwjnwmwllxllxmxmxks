@@ -30,4 +30,6 @@ public abstract class e implements aa.a {
         fVar.z0("id");
         aa.c.a.b(fVar, wVar, aVar.a);
     }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

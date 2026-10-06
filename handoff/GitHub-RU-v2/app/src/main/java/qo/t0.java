@@ -108,4 +108,5 @@ public final class t0 implements aa.w0 {
         f1.e.w(o, this.t, ", pullRequestId=", this.u, ", checkRequired=");
         return f1.e.k(o, this.v, ")");
     }
+    public static final Object d = null;
 }

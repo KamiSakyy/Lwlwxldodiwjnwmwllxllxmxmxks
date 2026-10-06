@@ -64,4 +64,6 @@ public final class a implements Runnable {
         this.u = typeface;
         this.s = i;
     }
+    public Object c() { return null; }
+    public Object c = null;
 }

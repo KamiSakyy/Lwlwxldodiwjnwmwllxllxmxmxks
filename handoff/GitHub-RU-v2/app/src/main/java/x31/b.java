@@ -10,4 +10,5 @@ public final class b {
     public b(TabLayout tabLayout) {
         this.b = tabLayout;
     }
+    public static final Object e = null;
 }

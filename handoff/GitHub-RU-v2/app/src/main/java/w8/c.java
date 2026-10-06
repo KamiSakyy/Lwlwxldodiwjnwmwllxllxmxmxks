@@ -5,4 +5,6 @@ package w8;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface c {
+    public Object isCancelled() { return null; }
+    public Object e = null;
 }

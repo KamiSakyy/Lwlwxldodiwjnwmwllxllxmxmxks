@@ -117,4 +117,5 @@ public final class f implements Iterator, l71.a {
         this.f31735v = lVar;
         this.f31732s = lVar.f31747b.iterator();
     }
+    public static final Object J = null;
 }

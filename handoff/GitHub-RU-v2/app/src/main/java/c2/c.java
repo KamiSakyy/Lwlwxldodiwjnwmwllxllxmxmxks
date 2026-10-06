@@ -107,4 +107,7 @@ public final class c {
     public final String toString() {
         return "Rect.fromLTRB(" + s.J(this.f4060a) + ", " + s.J(this.f4061b) + ", " + s.J(this.f4062c) + ", " + s.J(this.f4063d) + ')';
     }
+    public Object a = null;
+    public Object b = null;
+    public Object d = null;
 }

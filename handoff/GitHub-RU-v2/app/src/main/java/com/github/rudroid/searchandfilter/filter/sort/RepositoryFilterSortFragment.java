@@ -52,4 +52,12 @@ public final class RepositoryFilterSortFragment extends Hilt_RepositoryFilterSor
             }
         }
     }
+
+    public <T0> T0 n4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 B4(Object... a) {
+        return null;
+    }
 }

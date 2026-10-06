@@ -23,4 +23,7 @@ public final class c implements i51.c {
         dVar.a(f, aVar.d);
         dVar.a(g, aVar.e);
     }
+    public Object p() { return null; }
+    public Object r() { return null; }
+    public static final Object v = null;
 }

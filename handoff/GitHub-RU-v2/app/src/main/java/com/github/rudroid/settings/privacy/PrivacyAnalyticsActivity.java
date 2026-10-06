@@ -28,4 +28,8 @@ public final class PrivacyAnalyticsActivity extends b<j0> {
             aVar.g();
         }
     }
+
+    public <T0> T0 C(Object... a) {
+        return null;
+    }
 }

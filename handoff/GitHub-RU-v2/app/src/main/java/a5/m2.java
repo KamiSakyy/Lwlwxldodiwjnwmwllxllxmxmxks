@@ -7,4 +7,5 @@ package a5;
 public class m2 {
     public m2() {
     }
+    public Object o() { return null; }
 }

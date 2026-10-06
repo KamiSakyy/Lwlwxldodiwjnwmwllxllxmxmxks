@@ -1071,4 +1071,5 @@ public final class f extends u31.j implements Drawable.Callback, l {
             rectF.bottom = exactCenterY + f5;
         }
     }
+    public Object a = null;
 }

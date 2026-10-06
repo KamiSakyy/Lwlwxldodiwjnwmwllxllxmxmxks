@@ -43,4 +43,6 @@ public final class b {
     public final String toString() {
         return "ApplicationInfo(appId=" + this.a + ", deviceModel=" + Build.MODEL + ", sessionSdkVersion=2.1.2, osVersion=" + Build.VERSION.RELEASE + ", logEnvironment=" + b0.s + ", androidAppInfo=" + this.b + ')';
     }
+    public Object c = null;
+    public Object e = null;
 }

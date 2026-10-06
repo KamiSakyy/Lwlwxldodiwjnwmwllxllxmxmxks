@@ -54,4 +54,5 @@ final class d extends c71.j implements j71.e {
         y1Var.k((Object) null, r);
         return w61.a0.a;
     }
+    public Object ordinal() { return null; }
 }

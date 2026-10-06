@@ -5,4 +5,5 @@ package f0;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface j {
+    public Object b = null;
 }

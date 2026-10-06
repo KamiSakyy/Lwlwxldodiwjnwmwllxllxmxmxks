@@ -59,4 +59,7 @@ public final class c implements h0 {
         o.append(", nodeIdFragment=");
         return f1.e.n(o, this.g, ")");
     }
+    public static final Object a = null;
+    public static final Object f = null;
+    public static final Object i = null;
 }

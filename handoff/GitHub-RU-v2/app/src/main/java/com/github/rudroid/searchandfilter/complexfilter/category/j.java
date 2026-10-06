@@ -9,4 +9,5 @@ public final class j<T> implements Comparator {
     public final int compare(Object obj, Object obj2) {
         return sy.t.g(((DiscussionCategoryData) obj).s, ((DiscussionCategoryData) obj2).s);
     }
+    public Object j(Object p1) { return null; }
 }

@@ -9,4 +9,6 @@ public final class f2 extends sy.e0 {
 
     public f2(Object... a) {
     }
+
+    public static Object d;
 }

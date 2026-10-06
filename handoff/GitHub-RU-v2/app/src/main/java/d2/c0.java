@@ -21,4 +21,5 @@ public final class c0 {
         int i = this.f21326a;
         return i == 0 ? "Argb8888" : i == 1 ? "Alpha8" : i == 2 ? "Rgb565" : i == 3 ? "F16" : i == 4 ? "Gpu" : "Unknown";
     }
+    public Object a = null;
 }

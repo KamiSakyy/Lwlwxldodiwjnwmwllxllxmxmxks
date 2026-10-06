@@ -65,4 +65,28 @@ public final class CreateNewListActivity extends b1 {
         ((com.github.rudroid.utilities.b) this.u0.getValue()).b(string);
     }
 
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 K0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getString(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 c0(Object... a) {
+        return null;
+    }
 }

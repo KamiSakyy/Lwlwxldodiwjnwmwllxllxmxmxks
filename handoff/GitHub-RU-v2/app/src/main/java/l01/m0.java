@@ -36,4 +36,7 @@ public final class m0 {
     public final String toString() {
         return x.i.k(a0.s0.o("ProjectViewGroup(groupedByFieldId=", this.a, ", fieldValue=", this.b, ", title="), this.c, ", viewGroupId=", this.d, ")");
     }
+    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

@@ -69,4 +69,7 @@ public final class m0 implements aa.w0 {
     public final String toString() {
         return com.github.rudroid.m0.b(this.s, "RefreshStatusChecksQuery(id=", this.r, ", prNumber=", ")");
     }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object b(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
 }

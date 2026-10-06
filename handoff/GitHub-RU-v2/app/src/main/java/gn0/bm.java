@@ -42,4 +42,5 @@ public final class bm {
     public static bm[] values() {
         return (bm[]) x.clone();
     }
+    public Object ordinal() { return null; }
 }

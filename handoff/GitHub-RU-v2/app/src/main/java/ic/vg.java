@@ -7,4 +7,8 @@ package ic;
 public class vg {
     public vg() {
     }
+    public Object N = null;
+    public Object O = null;
+    public Object P = null;
+    public Object Q = null;
 }

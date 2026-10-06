@@ -15,4 +15,5 @@ public final class o implements i51.c {
         dVar.a(c, u0Var.b);
         dVar.d(d, u0Var.c);
     }
+    public static final Object b = null;
 }

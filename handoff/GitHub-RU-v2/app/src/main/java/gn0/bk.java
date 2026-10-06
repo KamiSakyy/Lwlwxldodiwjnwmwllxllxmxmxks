@@ -39,4 +39,5 @@ public final class bk {
     public static bk[] values() {
         return (bk[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

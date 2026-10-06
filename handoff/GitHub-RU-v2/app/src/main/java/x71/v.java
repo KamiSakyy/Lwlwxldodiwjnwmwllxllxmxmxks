@@ -15,4 +15,5 @@ public interface v {
     Object k(a71.c cVar);
 
     void m(CancellationException cancellationException);
+    public Object a = null;
 }

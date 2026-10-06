@@ -5,4 +5,9 @@ package f1;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface y3 {
+    public Object r = null;
+    public Object s = null;
+    public Object t = null;
+    public Object u = null;
+    public Object v = null;
 }

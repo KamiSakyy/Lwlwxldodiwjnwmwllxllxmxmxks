@@ -42,4 +42,5 @@ public final class a {
     public final String toString() {
         return i.g("UnfurledIcon(imageId=", this.f32174a, ", status=", this.f32175b, ")");
     }
+    public Object b = null;
 }

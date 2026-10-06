@@ -17,4 +17,8 @@ public final class a extends z3 {
     public final String toString() {
         return "{}";
     }
+    public static final Object b = null;
+    public static final Object c = null;
+    public static final Object d = null;
+    public static final Object e = null;
 }

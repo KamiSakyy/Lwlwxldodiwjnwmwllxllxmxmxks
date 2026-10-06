@@ -112,4 +112,5 @@ public final class d1 {
         if (t != null) {
         }
     }
+    public Object i(Object p1) { return null; }
 }

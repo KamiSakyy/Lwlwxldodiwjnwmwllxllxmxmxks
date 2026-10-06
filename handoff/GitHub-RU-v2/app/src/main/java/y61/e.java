@@ -598,4 +598,6 @@ public final class e implements Map, Serializable, l71.e {
         this.x = Integer.numberOfLeadingZeros(highestOneBit) + 1;
     }
 
+    public Object a = null;
+    public Object b = null;
 }

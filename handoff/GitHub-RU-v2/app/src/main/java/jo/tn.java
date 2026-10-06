@@ -58,4 +58,6 @@ public final class tn {
         o.append(")");
         return o.toString();
     }
+
+    public Object i;
 }

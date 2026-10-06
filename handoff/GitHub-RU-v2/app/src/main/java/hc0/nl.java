@@ -36,4 +36,6 @@ public final class nl {
     public static nl[] values() {
         return (nl[]) u.clone();
     }
+    public Object ordinal() { return null; }
+    public Object i = null;
 }

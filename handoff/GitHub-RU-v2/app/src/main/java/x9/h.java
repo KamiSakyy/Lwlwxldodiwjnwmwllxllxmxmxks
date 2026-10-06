@@ -29,4 +29,5 @@ public final class h {
         Integer valueOf = Integer.valueOf(i);
         return s0.k("Response Code: ", (!a0Var.containsKey(valueOf) ? com.google.android.gms.internal.play_billing.h.s : (com.google.android.gms.internal.play_billing.h) a0Var.get(valueOf)).toString(), ", Debug Message: ", this.f34007c);
     }
+    public Object a = null;
 }

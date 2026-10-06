@@ -7,4 +7,5 @@ package pc;
 public class u {
     public u() {
     }
+    public Object v = null;
 }

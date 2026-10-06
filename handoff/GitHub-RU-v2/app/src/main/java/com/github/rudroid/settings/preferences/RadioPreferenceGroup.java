@@ -216,4 +216,8 @@ public final class RadioPreferenceGroup extends Preference {
         this.h0 = new d(new f(), this);
     }
 
+
+    public <T0> T0 j(Object... a) {
+        return null;
+    }
 }

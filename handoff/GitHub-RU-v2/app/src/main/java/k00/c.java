@@ -50,4 +50,7 @@ public final class c implements aa.a {
         fVar.z0("__typename");
         bVar.b(fVar, wVar, dVar.c);
     }
+    public static final Object f = null;
+    public static final Object i = null;
+    public static final Object k = null;
 }

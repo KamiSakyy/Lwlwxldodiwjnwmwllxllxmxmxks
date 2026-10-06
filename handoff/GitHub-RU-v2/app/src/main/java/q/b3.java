@@ -5,4 +5,5 @@ package q;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface b3 {
+    public Object r = null;
 }

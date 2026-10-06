@@ -57,4 +57,6 @@ public final class h6 {
         u.append(", title=");
         return com.github.rudroid.copilot.h1.p(u, this.k, ")");
     }
+
+    public Object e;
 }

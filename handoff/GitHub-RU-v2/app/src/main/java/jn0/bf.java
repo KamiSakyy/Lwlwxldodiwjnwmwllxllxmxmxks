@@ -42,4 +42,5 @@ public final class bf {
         o.append(")");
         return o.toString();
     }
+    public Object ordinal() { return null; }
 }

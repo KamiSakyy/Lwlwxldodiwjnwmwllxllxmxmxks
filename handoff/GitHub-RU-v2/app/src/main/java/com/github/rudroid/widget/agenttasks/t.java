@@ -71,4 +71,6 @@ final class t extends c71.j implements j71.e {
         }
         return S == aVar ? aVar : a0Var;
     }
+    public Object L(Object p1) { return null; }
+    public Object f(Object p1, Object p2, Object p3) { return null; }
 }

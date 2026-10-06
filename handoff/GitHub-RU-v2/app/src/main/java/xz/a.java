@@ -39,4 +39,5 @@ public final class a {
     public final String toString() {
         return "Field(__typename=" + this.a + ", onProjectV2Field=" + this.b + ", onProjectV2SingleSelectField=" + this.c + ", onProjectV2IterationField=" + this.d + ")";
     }
+    public Object O(Object p1) { return null; }
 }

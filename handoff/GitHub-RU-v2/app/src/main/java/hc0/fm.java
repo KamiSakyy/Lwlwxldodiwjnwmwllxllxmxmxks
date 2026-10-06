@@ -40,4 +40,5 @@ public final class fm {
     public static fm[] values() {
         return (fm[]) w.clone();
     }
+    public Object ordinal() { return null; }
 }

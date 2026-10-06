@@ -15,4 +15,6 @@ public final class c {
         this.f30444a = fVar;
         this.f30445b = vVar;
     }
+    public Object a = null;
+    public Object b = null;
 }

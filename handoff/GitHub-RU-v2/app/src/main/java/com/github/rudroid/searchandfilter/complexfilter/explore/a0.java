@@ -246,4 +246,6 @@ public final /* synthetic */ class a0 implements j71.c {
                 return a0Var;
         }
     }
+    public Object f0() { return null; }
+    public Object g4() { return null; }
 }

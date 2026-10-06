@@ -37,4 +37,5 @@ public final class kk {
     public static kk[] values() {
         return (kk[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

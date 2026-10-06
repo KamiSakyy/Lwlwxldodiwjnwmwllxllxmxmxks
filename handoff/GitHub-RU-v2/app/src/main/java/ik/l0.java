@@ -33,4 +33,5 @@ public final class l0 {
         }
         return new y71.y(b31.b.J(n1Var.a(i0Var, str, arrayList, projectsMetaInfo), jVar, cVar), new an.d(this, jVar, str, set, linkedHashSet, (a71.c) null, 5), 6);
     }
+    public Object C(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

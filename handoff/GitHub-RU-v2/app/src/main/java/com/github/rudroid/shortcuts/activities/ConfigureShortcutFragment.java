@@ -231,4 +231,35 @@ public final class ConfigureShortcutFragment extends Hilt_ConfigureShortcutFragm
         com.github.rudroid.utilities.w0.a(D4().G, F3(), androidx.lifecycle.w.u, new z(this, null));
     }
 
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 f4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 F3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 x3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 i4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 w3(Object... a) {
+        return null;
+    }
+    public Object f4(Object p1, Object p2) { return null; }
+    public Object g4() { return null; }
+    public Object w3() { return null; }
 }

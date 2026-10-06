@@ -7,4 +7,8 @@ package org.bouncycastle.jsse;
 public class BCSSLParameters {
     public BCSSLParameters() {
     }
+
+    public <T0> T0 setApplicationProtocols(Object... a) {
+        return null;
+    }
 }

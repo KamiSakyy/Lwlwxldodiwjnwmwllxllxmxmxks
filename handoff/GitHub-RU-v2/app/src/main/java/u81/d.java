@@ -6,4 +6,6 @@ public final class d {
 
     public d(Object... a) {
     }
+    public Object e() { return null; }
+    public Object l(Object p1) { return null; }
 }

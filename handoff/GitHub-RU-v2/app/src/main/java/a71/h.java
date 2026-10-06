@@ -9,4 +9,7 @@ public interface h {
     f w0(g gVar);
 
     Object x0(j71.e eVar, Object obj);
+    public Object b() { return null; }
+    public Object c(Object p1, Object p2) { return null; }
+    public Object b = null;
 }

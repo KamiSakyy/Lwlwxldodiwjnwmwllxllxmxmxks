@@ -7,4 +7,8 @@ package com.github.rudroid.fragments;
 public class BaseBottomSheetDialog {
     public BaseBottomSheetDialog() {
     }
+
+    public <T0> T0 R3(Object... a) {
+        return null;
+    }
 }

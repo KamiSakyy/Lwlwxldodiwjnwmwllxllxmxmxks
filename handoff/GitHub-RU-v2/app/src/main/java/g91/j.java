@@ -165,4 +165,5 @@ public final class j implements Closeable {
         hVar3.I0(hVar, j3);
         this.r.flush();
     }
+    public Object b(Object p1, Object p2) { return null; }
 }

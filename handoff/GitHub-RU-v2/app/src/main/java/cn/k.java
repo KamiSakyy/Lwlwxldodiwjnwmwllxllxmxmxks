@@ -28,4 +28,5 @@ public final class k {
         }
         sVar.c(str);
     }
+    public static final Object a = null;
 }

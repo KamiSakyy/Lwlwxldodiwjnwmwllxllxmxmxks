@@ -144,4 +144,5 @@ public final class x extends k71.l implements j71.e {
         sVar.q(z);
         return a0Var;
     }
+    public Object a = null;
 }

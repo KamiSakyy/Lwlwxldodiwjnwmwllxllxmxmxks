@@ -58,4 +58,8 @@ public abstract class Hilt_FilterSortFragment<T extends f> extends BindingFragme
         H4();
         return this.B0;
     }
+
+    public <T0> T0 w(Object... a) {
+        return null;
+    }
 }

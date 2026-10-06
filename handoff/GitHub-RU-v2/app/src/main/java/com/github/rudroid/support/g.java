@@ -33,4 +33,5 @@ public final class g {
     public static g[] values() {
         return (g[]) v.clone();
     }
+    public Object ordinal() { return null; }
 }

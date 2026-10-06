@@ -70,4 +70,5 @@ public abstract class c {
             logger.addHandler(d.a);
         }
     }
+    public Object b(Object p1) { return null; }
 }

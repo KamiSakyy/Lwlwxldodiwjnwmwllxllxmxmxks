@@ -96,4 +96,6 @@ public final class hp {
         o.append(")");
         return o.toString();
     }
+
+    public Object i;
 }

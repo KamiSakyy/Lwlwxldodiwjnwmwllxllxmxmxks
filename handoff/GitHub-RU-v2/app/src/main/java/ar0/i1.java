@@ -39,4 +39,6 @@ public final class i1 implements aa.h0 {
         com.github.rudroid.m0.y(o, this.c, ", upvoteCount=", this.d, ", nodeIdFragment=");
         return f1.e.n(o, this.e, ")");
     }
+
+    public Object e;
 }

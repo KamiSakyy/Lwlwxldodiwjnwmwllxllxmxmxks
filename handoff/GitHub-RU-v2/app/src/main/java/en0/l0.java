@@ -21,4 +21,6 @@ public abstract class l0 {
         wh.Companion.getClass();
         a = sy.d0.n(new aa.m("deleteMobileDeviceToken", q0Var, (String) null, rVar, no.a.s(wh.I, new aa.u0(x61.x.u(new w61.k("deviceToken", new aa.t("deviceToken")), new w61.k("service", "FCM")))), n));
     }
+    public Object a(Object p1) { return null; }
+    public Object b(Object p1) { return null; }
 }

@@ -62,4 +62,6 @@ public final class j implements aa.h0 {
         o.append(", __typename=");
         return h1.p(o, this.g, ")");
     }
+
+    public static Object a;
 }

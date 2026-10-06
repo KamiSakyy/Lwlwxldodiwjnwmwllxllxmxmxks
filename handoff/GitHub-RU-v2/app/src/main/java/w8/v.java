@@ -9,4 +9,5 @@ public final class v extends x {
     public v(v8.v vVar) {
         this.f33436a = vVar;
     }
+    public Object a = null;
 }

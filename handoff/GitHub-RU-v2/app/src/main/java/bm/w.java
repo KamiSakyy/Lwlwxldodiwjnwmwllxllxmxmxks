@@ -26,4 +26,5 @@ public abstract class w {
         k71.k.f(string3, "getString(...)");
         return string3;
     }
+    public Object values() { return null; }
 }

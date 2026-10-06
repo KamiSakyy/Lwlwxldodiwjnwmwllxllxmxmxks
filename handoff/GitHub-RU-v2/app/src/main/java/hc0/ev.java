@@ -48,4 +48,5 @@ public final class ev {
     public static ev[] values() {
         return (ev[]) z.clone();
     }
+    public Object ordinal() { return null; }
 }

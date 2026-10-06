@@ -335,4 +335,48 @@ public class CarouselLayoutManager extends w0 implements i1 {
         public RecyclerView() {
         }
     }
+
+    public <T0> T0 t0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 G0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 c(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 v(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 u(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 F(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 o0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 J(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 G(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 H(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 I(Object... a) {
+        return null;
+    }
 }

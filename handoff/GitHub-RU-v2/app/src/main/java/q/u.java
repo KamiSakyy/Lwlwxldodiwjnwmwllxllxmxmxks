@@ -7,4 +7,8 @@ package q;
 public class u {
     public u() {
     }
+    public Object onCreateDrawableState(Object p1) { return null; }
+    public Object onRestoreInstanceState(Object p1) { return null; }
+    public Object onSaveInstanceState() { return null; }
+    public Object setPressed(Object p1) { return null; }
 }

@@ -91,4 +91,26 @@ public final class z {
         k71.k.f(sb3, "toString(...)");
         return sb3;
     }
+
+    public <T0> T0 h(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 j(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 i(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 d(Object... a) {
+        return null;
+    }
+    public Object a = null;
+    public Object b = null;
 }

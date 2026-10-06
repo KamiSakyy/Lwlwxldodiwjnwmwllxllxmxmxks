@@ -36,4 +36,7 @@ public final class b {
     public final String toString() {
         return "Value(bitmap=" + this.f30442a + ", extras=" + this.f30443b + ')';
     }
+    public Object a = null;
+    public Object w = null;
+    public Object y = null;
 }

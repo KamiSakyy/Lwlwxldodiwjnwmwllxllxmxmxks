@@ -43,4 +43,5 @@ public final class u9 {
     public static u9[] values() {
         return (u9[]) x.clone();
     }
+    public Object ordinal() { return null; }
 }

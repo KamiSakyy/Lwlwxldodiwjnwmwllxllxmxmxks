@@ -70,4 +70,6 @@ public final class f1 implements v1 {
         }
         return true;
     }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

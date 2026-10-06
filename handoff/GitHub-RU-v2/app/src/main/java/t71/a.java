@@ -34,4 +34,14 @@ public abstract class a {
         k71.k.f(Charset.forName("US-ASCII"), "forName(...)");
         k71.k.f(Charset.forName("ISO-8859-1"), "forName(...)");
     }
+
+    public static Object a;
+
+    public static Object b;
+
+    public static Object d;
+
+    public static Object c;
+
+    public static Object e;
 }

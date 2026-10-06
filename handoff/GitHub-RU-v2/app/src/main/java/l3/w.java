@@ -14,4 +14,6 @@ public final class w {
     public w(q qVar) {
         this.f27980a = qVar;
     }
+    public Object a = null;
+    public Object b = null;
 }

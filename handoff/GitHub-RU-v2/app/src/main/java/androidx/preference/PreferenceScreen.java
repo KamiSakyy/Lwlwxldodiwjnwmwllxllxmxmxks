@@ -7,4 +7,12 @@ package androidx.preference;
 public class PreferenceScreen {
     public PreferenceScreen() {
     }
+
+    public <T0> T0 l(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 I(Object... a) {
+        return null;
+    }
 }

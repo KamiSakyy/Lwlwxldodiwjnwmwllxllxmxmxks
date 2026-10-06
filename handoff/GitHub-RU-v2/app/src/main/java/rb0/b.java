@@ -137,4 +137,5 @@ public final class b implements i0, k, x, d {
 
 
 
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

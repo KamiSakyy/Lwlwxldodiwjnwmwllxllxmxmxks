@@ -30,4 +30,5 @@ public final class c {
     public final String toString() {
         return x.i.g("Owner(id=", this.a, ", login=", this.b, ")");
     }
+    public static final Object a = null;
 }

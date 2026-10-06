@@ -7,4 +7,12 @@ package d3;
 public class n {
     public n() {
     }
+
+    public static d3.b0 a;
+
+    public static Object c;
+
+    public static Object w;
+
+    public static Object k;
 }

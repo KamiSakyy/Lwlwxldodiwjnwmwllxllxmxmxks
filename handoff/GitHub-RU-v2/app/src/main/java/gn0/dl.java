@@ -35,4 +35,5 @@ public final class dl {
     public static dl[] values() {
         return (dl[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

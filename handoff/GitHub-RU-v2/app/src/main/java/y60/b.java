@@ -163,4 +163,5 @@ public class b implements i0, k, g, x, m {
 
 
 
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

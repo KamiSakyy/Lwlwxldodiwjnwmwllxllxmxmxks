@@ -37,4 +37,6 @@ public final class q0 {
 
     public q0(Object... a) {
     }
+    public Object a(Object p1) { return null; }
+    public Object e(Object p1, Object p2, Object p3) { return null; }
 }

@@ -44,4 +44,5 @@ public final class e implements h0 {
         o.append(")");
         return o.toString();
     }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

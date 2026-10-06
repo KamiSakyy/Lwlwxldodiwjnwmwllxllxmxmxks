@@ -51,4 +51,7 @@ public final class e1 {
     public static e1[] values() {
         return (e1[]) A.clone();
     }
+    public Object j(Object p1) { return null; }
+    public Object ordinal() { return null; }
+    public Object a = null;
 }

@@ -51,4 +51,6 @@ public final class e2 {
     public static e2[] values() {
         return (e2[]) f1613x.clone();
     }
+
+    public static Object s;
 }

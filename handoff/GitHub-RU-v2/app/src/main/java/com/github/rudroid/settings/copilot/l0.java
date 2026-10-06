@@ -13,4 +13,5 @@ public abstract class l0 extends p2 {
         this.s0 = true;
         ((n) w()).z0((CopilotChatSettingsActivity) this);
     }
+    public Object onCreate(Object p1) { return null; }
 }

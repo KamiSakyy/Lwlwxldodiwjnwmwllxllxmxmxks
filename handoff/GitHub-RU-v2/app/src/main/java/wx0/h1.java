@@ -32,4 +32,5 @@ public final class h1 {
     public final String toString() {
         return "OnProjectV2ItemFieldNumberValue(id=" + this.a + ", number=" + this.b + ", field=" + this.c + ")";
     }
+    public static final Object i = null;
 }

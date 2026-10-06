@@ -74,4 +74,8 @@ public final class y2 {
         String[] strArr = (String[]) arrayList.toArray(new String[0]);
         d((String[]) Arrays.copyOf(strArr, strArr.length));
     }
+    public Object a = null;
+    public Object b = null;
+    public Object c = null;
+    public Object d = null;
 }

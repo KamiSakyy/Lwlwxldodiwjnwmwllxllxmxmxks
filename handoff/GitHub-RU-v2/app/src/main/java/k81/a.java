@@ -38,4 +38,8 @@ public abstract class a implements KSerializer {
     public abstract Object g(Object obj);
 
     public abstract Object h(Object obj);
+    public Object b(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object j(Object p1) { return null; }
+    public static final Object u = null;
 }

@@ -13,4 +13,8 @@ public abstract class c extends k5.f {
         this.N = scrollableTitleToolbar;
     }
 
+    public Object E0() { return null; }
+    public Object H0() { return null; }
+    public Object I0() { return null; }
+    public Object M0(Object p1) { return null; }
 }

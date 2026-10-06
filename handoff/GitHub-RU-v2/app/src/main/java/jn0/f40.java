@@ -28,4 +28,5 @@ public final class f40 {
     public final String toString() {
         return "LabelableRecord(__typename=" + this.a + ", labelsFragment=" + this.b + ")";
     }
+    public Object ordinal() { return null; }
 }

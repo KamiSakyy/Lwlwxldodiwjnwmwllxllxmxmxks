@@ -289,4 +289,6 @@ public final class r implements Cloneable {
     public /* synthetic */ r(Object obj) {
         this(10);
     }
+    public Object h = null;
+    public Object i = null;
 }

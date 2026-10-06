@@ -5,4 +5,8 @@ package g3;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface p {
+    public Object b(Object p1) { return null; }
+    public Object d(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object f24679f = null;
 }

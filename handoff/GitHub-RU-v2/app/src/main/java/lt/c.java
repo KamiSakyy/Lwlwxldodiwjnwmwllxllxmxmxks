@@ -33,4 +33,5 @@ public final class c {
     public final String toString() {
         return f4.o("Labels(__typename=", this.a, ", nodes=", ")", this.b);
     }
+    public static final Object a = null;
 }

@@ -53,4 +53,5 @@ public final class b {
         sb.append(", id=");
         return h1.p(sb, this.e, ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

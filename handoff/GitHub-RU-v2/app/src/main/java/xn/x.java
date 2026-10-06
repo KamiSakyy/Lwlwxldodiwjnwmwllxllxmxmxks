@@ -151,4 +151,5 @@ public final class x implements y {
         this.n = f3Var;
         this.o = !z;
     }
+    public static final Object a = null;
 }

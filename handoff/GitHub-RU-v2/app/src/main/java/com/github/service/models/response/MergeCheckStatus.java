@@ -41,4 +41,8 @@ public final class MergeCheckStatus {
     public static MergeCheckStatus[] values() {
         return (MergeCheckStatus[]) $VALUES.clone();
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

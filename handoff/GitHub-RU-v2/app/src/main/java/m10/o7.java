@@ -57,4 +57,5 @@ public final class o7 {
     public static o7[] values() {
         return (o7[]) C.clone();
     }
+    public Object ordinal() { return null; }
 }

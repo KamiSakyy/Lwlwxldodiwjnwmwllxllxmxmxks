@@ -42,4 +42,6 @@ public class h0 {
         this.c = z;
         this.b = str;
     }
+    public Object d() { return null; }
+    public Object f = null;
 }

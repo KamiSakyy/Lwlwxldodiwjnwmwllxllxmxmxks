@@ -42,4 +42,5 @@ public final class t3 {
     public static t3[] values() {
         return (t3[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

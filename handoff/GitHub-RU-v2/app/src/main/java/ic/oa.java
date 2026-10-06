@@ -7,4 +7,5 @@ package ic;
 public class oa {
     public oa() {
     }
+    public Object P0(Object p1) { return null; }
 }

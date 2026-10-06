@@ -55,4 +55,5 @@ public final class z {
         throw new IllegalStateException("message == null");
     }
 
+    public Object d = null;
 }

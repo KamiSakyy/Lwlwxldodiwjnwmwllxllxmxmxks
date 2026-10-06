@@ -36,4 +36,7 @@ public final class a {
         }
         return pendingIntent;
     }
+    public Object g(Object p1, Object p2) { return null; }
+    public Object i0(Object p1) { return null; }
+    public static final Object r = null;
 }

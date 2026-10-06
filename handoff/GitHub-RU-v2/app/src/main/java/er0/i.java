@@ -99,4 +99,5 @@ public final class i implements aa.h0 {
         o.append(")");
         return o.toString();
     }
+    public Object a = null;
 }

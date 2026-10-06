@@ -279,4 +279,5 @@ public final class l {
         if (t == null) {
         }
     }
+    public static final Object c = null;
 }

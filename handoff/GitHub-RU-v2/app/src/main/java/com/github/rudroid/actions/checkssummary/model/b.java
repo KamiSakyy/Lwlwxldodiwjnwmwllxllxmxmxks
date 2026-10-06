@@ -104,4 +104,5 @@ public final class b {
     public static b[] values() {
         return (b[]) f5038u.clone();
     }
+    public Object ordinal() { return null; }
 }

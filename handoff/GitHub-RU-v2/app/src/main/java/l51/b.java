@@ -25,4 +25,6 @@ public final class b extends OutputStream {
         }
         throw new IndexOutOfBoundsException();
     }
+    public static final Object a = null;
+    public static final Object u = null;
 }

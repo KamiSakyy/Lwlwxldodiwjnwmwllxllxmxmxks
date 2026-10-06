@@ -111,4 +111,5 @@ public final class c0 {
             }
         }
     }
+    public Object b(Object p1) { return null; }
 }

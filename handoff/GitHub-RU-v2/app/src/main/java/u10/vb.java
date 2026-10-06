@@ -31,4 +31,5 @@ public final class vb {
     public final String toString() {
         return "EnablePullRequestAutoMerge(actor=" + this.a + ", pullRequest=" + this.b + ")";
     }
+    public Object b = null;
 }

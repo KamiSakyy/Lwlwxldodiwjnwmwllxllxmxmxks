@@ -39,4 +39,5 @@ public final class a {
     public final String toString() {
         return i.k(s0.o("OnTeam(__typename=", this.a, ", id=", this.b, ", name="), this.c, ", teamAvatar=", this.d, ")");
     }
+    public Object O(Object p1) { return null; }
 }

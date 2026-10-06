@@ -6,4 +6,10 @@ package t71;
  */
 public class o {
     public o() {}
+
+    public static t71.o s;
+
+    public static Object u;
+    public static final Object s = null;
+    public Object f32146r = null;
 }

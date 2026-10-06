@@ -41,4 +41,6 @@ public final class p5 {
     public static p5[] values() {
         return (p5[]) u.clone();
     }
+    public Object b(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
 }

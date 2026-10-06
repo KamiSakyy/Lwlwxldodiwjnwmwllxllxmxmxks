@@ -36,4 +36,5 @@ public final class w {
         o.append(")");
         return o.toString();
     }
+    public Object e(Object p1) { return null; }
 }

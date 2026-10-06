@@ -13,4 +13,5 @@ public abstract class c0 extends p2 {
         this.s0 = true;
         ((p) w()).k0((CopilotPermissionsOverrideActivity) this);
     }
+    public Object onCreate(Object p1) { return null; }
 }

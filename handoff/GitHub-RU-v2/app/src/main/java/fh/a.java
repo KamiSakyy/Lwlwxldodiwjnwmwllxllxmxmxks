@@ -9,4 +9,5 @@ public final class a {
     static {
         new r1.d(new qb(1), false, 1337738226);
     }
+    public Object c(Object p1, Object p2) { return null; }
 }

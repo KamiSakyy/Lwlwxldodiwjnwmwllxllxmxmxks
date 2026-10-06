@@ -95,4 +95,8 @@ public final class EditDiscussionTitleFragment extends Hilt_EditDiscussionTitleF
     public final com.github.rudroid.viewmodels.u0 H4() {
         return (l8) this.I0.getValue();
     }
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
 }

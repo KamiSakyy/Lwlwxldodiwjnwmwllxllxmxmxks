@@ -44,4 +44,9 @@ final class t {
     public final String toString() {
         return "MarkdownTableMetrics(columnWidths=" + this.a + ", rowHeights=" + this.b + ")";
     }
+    public Object B(Object p1) { return null; }
+    public Object E(Object p1, Object p2) { return null; }
+    public Object I(Object p1, Object p2, Object p3) { return null; }
+    public Object L(Object p1) { return null; }
+    public Object w(Object p1, Object p2, Object p3) { return null; }
 }

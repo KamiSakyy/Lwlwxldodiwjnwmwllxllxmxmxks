@@ -40,4 +40,6 @@ public final class no implements aaShadow.a {
         fVar.z0("nodes");
         aa.c.b(aa.c.a(aa.c.b(aa.c.c(ho.a, true)))).b(fVar, wVar, fzVar.b);
     }
+    public Object e(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object h(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

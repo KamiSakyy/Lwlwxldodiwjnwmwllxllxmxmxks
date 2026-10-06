@@ -11,4 +11,6 @@ public final class b implements i51.c {
     public final void a(Object obj, Object obj2) {
         ((i51.d) obj2).a(b, ((p11.b) obj).a);
     }
+    public Object O0(Object p1) { return null; }
+    public Object g(Object p1) { return null; }
 }

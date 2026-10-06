@@ -70,4 +70,7 @@ public abstract /* synthetic */ class e {
         } catch (NoSuchFieldError unused12) {
         }
     }
+    public Object b(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
+    public Object p(Object p1) { return null; }
 }

@@ -82,4 +82,16 @@ public final class TrendingPeriod implements Parcelable {
         k.g(parcel, "dest");
         parcel.writeString(name());
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 name(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 c(Object... a) {
+        return null;
+    }
 }

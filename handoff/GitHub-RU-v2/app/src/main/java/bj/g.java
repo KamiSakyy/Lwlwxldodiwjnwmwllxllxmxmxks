@@ -10,4 +10,5 @@ public final class g {
         k.g(gVar, "userService");
         this.a = gVar;
     }
+    public Object a(Object p1) { return null; }
 }

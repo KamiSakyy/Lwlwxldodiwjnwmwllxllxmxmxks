@@ -5,4 +5,5 @@ public final class n implements p61.d {
     public final Object get() {
         throw null;
     }
+    public Object a = null;
 }

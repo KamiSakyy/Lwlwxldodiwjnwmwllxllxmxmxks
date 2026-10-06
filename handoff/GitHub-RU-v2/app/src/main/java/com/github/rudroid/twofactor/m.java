@@ -36,4 +36,6 @@ final class m extends c71.j implements j71.e {
         y1Var.k((Object) null, b);
         return w61.a0.a;
     }
+    public Object g() { return null; }
+    public Object h(Object p1) { return null; }
 }

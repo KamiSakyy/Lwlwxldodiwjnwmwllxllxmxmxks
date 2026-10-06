@@ -27,4 +27,5 @@ public final class u extends v {
     public final String toString() {
         return "Success {mOutputData=" + this.f32841a + '}';
     }
+    public Object a = null;
 }

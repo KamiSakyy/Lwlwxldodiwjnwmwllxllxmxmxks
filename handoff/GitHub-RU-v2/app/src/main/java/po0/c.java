@@ -55,4 +55,5 @@ public final class c implements aa.a {
         List list = d1.a;
         d1.d(fVar, wVar, dVar.c);
     }
+    public static final Object i = null;
 }

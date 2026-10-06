@@ -24,4 +24,5 @@ public final class l0 implements KSerializer {
     public final void serialize(Encoder encoder, Object obj) {
         encoder.l(((Number) obj).intValue());
     }
+    public Object x(Object p1) { return null; }
 }

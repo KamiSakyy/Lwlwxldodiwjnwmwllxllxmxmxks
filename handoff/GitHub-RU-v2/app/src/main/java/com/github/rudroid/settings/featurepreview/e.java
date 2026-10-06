@@ -14,4 +14,5 @@ public abstract class e<T extends k5.f> extends d3 {
         this.u0 = true;
         ((f) w()).N0((SettingsFeaturePreviewActivity) this);
     }
+    public Object onCreate(Object p1) { return null; }
 }

@@ -89,4 +89,11 @@ public final class h {
                 throw new NoWhenBranchMatchedException();
         }
     }
+
+    public <T0> T0 a(Object... a) {
+        return null;
+    }
+
+    public static Object a;
+    public static final Object o = null;
 }

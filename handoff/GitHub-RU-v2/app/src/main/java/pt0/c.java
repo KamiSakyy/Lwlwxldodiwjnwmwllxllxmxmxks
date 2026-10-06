@@ -31,4 +31,8 @@ public final class c {
     public final String toString() {
         return "FileType(__typename=" + this.a + ", onImageFileType=" + this.b + ")";
     }
+    public Object b(Object p1) { return null; }
+    public static final Object a = null;
+    public static final Object f = null;
+    public static final Object i = null;
 }

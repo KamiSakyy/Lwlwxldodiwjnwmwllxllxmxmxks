@@ -138,4 +138,6 @@ public final class d implements Comparable, Serializable {
         sb2.append('Z');
         return sb2.toString();
     }
+
+    public static kotlin.time.d t;
 }

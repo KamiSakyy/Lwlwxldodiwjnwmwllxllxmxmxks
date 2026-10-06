@@ -22,4 +22,6 @@ public abstract class a {
         ah.Companion.getClass();
         a = l.r(new m[]{mVar, new m("id", l0.b(ah.a), (String) null, rVar, rVar, rVar), new m("name", l0.b(xVar), (String) null, rVar, rVar, rVar), new m("color", l0.b(xVar), (String) null, rVar, rVar, rVar)});
     }
+
+    public static Object a;
 }

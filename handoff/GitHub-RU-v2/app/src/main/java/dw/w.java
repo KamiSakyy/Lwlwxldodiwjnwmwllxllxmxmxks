@@ -63,4 +63,5 @@ public final class w implements aa.a {
         List list = eq.h.a;
         eq.h.d(fVar, wVar, mVar.e);
     }
+    public Object e(Object p1) { return null; }
 }

@@ -5,4 +5,5 @@ package h9;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface m {
+    public static final Object a = null;
 }

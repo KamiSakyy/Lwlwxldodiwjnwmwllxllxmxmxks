@@ -19,4 +19,7 @@ public interface g6 {
     void i(Object obj);
 
     int j(g5 g5Var);
+    public Object b0(Object p1) { return null; }
+    public Object c0(Object p1) { return null; }
+    public Object s0(Object p1) { return null; }
 }

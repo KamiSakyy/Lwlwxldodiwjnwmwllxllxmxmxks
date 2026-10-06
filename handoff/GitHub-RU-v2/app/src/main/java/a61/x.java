@@ -18,4 +18,5 @@ public final class x implements d61.b {
     public final Object get() {
         return new p((k41.g) this.a.a, (e61.g) this.b.get(), (a71.h) this.c.get(), (e1) this.d.get());
     }
+    public Object f(Object p1, Object p2, Object p3) { return null; }
 }

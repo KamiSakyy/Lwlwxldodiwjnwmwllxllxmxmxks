@@ -7,4 +7,12 @@ package a7;
 public class n {
     public n() {
     }
+    public Object a() { return null; }
+    public Object a = null;
+    public Object b = null;
+    public Object c = null;
+    public Object d = null;
+    public Object e = null;
+    public Object f = null;
+    public Object g = null;
 }

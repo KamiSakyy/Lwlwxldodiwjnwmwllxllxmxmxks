@@ -67,4 +67,6 @@ public final class b implements Parcelable {
         parcel.writeParcelable(this.t, 0);
         parcel.writeInt(this.v);
     }
+    public Object a(Object p1) { return null; }
+    public Object b() { return null; }
 }

@@ -7,4 +7,5 @@ package androidx.compose.runtime;
 public class g0 {
     public g0() {
     }
+    public Object E() { return null; }
 }

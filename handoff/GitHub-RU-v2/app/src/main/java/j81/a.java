@@ -37,4 +37,5 @@ public interface a {
     Object x(SerialDescriptor serialDescriptor, int i, KSerializer kSerializer, Object obj);
 
     double z(SerialDescriptor serialDescriptor, int i);
+    public Object s = null;
 }

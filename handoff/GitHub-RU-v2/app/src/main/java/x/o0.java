@@ -36,4 +36,6 @@ public abstract class o0 {
         }
         return ((i - 1) / 7) + i;
     }
+
+    public static Object a;
 }

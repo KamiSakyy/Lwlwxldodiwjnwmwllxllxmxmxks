@@ -9,4 +9,5 @@ public final class n {
         new g0(2131952117, sy.d0.o(new f0(true, 2131952115), new f0(false, 2131952116)));
         new g0(2131952109, sy.d0.o(new f0(true, 2131952103), new f0(false, 2131952104), new f0(false, 2131952105), new f0(false, 2131952106), new f0(false, 2131952107), new f0(false, 2131952108)));
     }
+    public static final Object a = null;
 }

@@ -94,4 +94,6 @@ public final class b implements o61.b {
                 return (i61.a) this.v;
         }
     }
+    public Object c = null;
+    public Object d = null;
 }

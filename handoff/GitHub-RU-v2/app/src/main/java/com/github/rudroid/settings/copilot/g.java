@@ -47,4 +47,5 @@ final class g extends c71.j implements j71.e {
         public b() {
         }
     }
+    public Object a(Object p1) { return null; }
 }

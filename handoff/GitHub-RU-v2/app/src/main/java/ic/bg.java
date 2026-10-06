@@ -7,4 +7,5 @@ package ic;
 public class bg {
     public bg() {
     }
+    public Object N = null;
 }

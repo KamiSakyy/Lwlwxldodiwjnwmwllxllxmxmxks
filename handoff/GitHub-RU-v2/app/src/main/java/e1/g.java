@@ -5,4 +5,9 @@ package e1;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface g {
+    public Object a = null;
+    public Object b = null;
+    public Object c = null;
+    public Object d = null;
+    public Object e = null;
 }

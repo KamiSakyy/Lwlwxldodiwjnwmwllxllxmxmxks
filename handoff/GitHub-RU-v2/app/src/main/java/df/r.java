@@ -34,4 +34,5 @@ public final class r {
     public final String toString() {
         return x.i.g("ProjectUsers(login=", this.f21793a, ", avatarURL=", this.f21794b, ")");
     }
+    public Object b = null;
 }

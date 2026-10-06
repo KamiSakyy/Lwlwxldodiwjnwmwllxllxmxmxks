@@ -97,4 +97,5 @@ public final class b extends s0 {
             this.u++;
         }
     }
+    public Object m(Object p1) { return null; }
 }

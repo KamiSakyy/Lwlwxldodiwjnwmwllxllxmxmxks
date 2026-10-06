@@ -21,4 +21,7 @@ public final class t implements i51.c {
         dVar.a(f, p0Var.e);
         dVar.a(g, p0Var.f);
     }
+    public Object B(Object p1) { return null; }
+    public Object f(Object p1, Object p2, Object p3) { return null; }
+    public Object x() { return null; }
 }

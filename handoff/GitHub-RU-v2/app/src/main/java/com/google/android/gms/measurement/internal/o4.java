@@ -6803,4 +6803,5 @@ public final class o4 implements x1 {
             s0Var.x.c("Failed to parse config URL. Not fetching. appId", s0.H(x0Var.D()), uri);
         }
     }
+    public Object CREATOR = null;
 }

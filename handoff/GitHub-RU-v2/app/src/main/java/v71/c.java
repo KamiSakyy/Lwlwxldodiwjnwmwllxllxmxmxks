@@ -53,4 +53,5 @@ public final class c extends f1 {
 
     public c(Object... a) {
     }
+    public static final Object s = null;
 }

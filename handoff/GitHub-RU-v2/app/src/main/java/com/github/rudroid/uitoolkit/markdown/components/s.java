@@ -454,4 +454,9 @@ public final class s {
         }
         return arrayList;
     }
+    public Object A() { return null; }
+    public Object X() { return null; }
+    public Object r() { return null; }
+    public Object S = null;
+    public Object T = null;
 }

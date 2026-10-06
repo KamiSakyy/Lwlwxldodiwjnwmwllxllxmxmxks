@@ -16,4 +16,6 @@ public final class n2 implements m2 {
         }
         return rVar.f(new w1(f6, z10));
     }
+
+    public static androidx.compose.foundation.layout.n2 a;
 }

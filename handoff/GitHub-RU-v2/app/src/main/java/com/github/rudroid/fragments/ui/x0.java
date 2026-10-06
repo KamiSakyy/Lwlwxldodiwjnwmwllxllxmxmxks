@@ -41,4 +41,7 @@ public final class x0 {
     public static x0[] values() {
         return (x0[]) f14748v.clone();
     }
+
+    public static com.github.rudroid.fragments.ui.x0 r;
+    public Object name() { return null; }
 }

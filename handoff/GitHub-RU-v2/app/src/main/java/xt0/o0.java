@@ -30,4 +30,5 @@ public final class o0 {
     public final String toString() {
         return "Node2(viewerViewedState=" + this.a + ", path=" + this.b + ")";
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

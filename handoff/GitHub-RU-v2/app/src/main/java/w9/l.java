@@ -7,4 +7,8 @@ package w9;
 public class l {
     public l() {
     }
+    public Object a() { return null; }
+    public Object b() { return null; }
+    public Object r = null;
+    public Object v = null;
 }

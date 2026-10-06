@@ -39,4 +39,5 @@ public final class a {
     public final String toString() {
         return i.k(i.m(this.a, this.b, "CodeBlockVulnerability(startOffset=", ", endOffset=", ", type="), this.c, ", description=", this.d, ")");
     }
+    public Object c(Object p1, Object p2) { return null; }
 }

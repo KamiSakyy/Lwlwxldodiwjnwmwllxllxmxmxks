@@ -31,4 +31,5 @@ public final class la {
     public static la[] values() {
         return (la[]) f23255t.clone();
     }
+    public Object ordinal() { return null; }
 }

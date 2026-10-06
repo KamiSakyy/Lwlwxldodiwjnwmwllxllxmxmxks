@@ -1706,4 +1706,5 @@ public final class r implements j0, o.a {
         public ViewPager2() {
         }
     }
+    public Object i = null;
 }

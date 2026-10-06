@@ -63,4 +63,7 @@ public final /* synthetic */ class b implements j71.c {
         }
         return a0Var;
     }
+    public Object R() { return null; }
+    public Object S() { return null; }
+    public Object C = null;
 }

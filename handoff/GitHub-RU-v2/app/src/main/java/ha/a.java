@@ -15,4 +15,6 @@ public final class a {
     public a(Map map) {
         this.f25574a = map;
     }
+
+    public static Object b;
 }

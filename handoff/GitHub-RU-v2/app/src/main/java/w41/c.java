@@ -40,4 +40,5 @@ public final class c {
         Thread.currentThread().getName();
         Log.isLoggable("FirebaseCrashlytics", 3);
     }
+    public Object e = null;
 }

@@ -99,4 +99,7 @@ public final class t {
         Period between = Period.between(zonedDateTime.toLocalDate(), zonedDateTime2.toLocalDate());
         return between.getMonths() < 1 && between.getYears() == 0;
     }
+    public Object L(Object p1) { return null; }
+    public Object y(Object p1) { return null; }
+    public Object z(Object p1) { return null; }
 }

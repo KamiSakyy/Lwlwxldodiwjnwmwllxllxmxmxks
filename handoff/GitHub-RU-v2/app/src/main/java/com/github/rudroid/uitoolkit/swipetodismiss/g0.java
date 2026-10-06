@@ -25,4 +25,7 @@ public final class g0 {
         l1 l1Var2 = nVar.i;
         return (l1Var.y() == 0.0f || Float.isNaN(l1Var2.y())) ? h0.t : l1Var2.y() > 0.0f ? h0.r : h0.s;
     }
+    public Object getValue() { return null; }
+    public Object r = null;
+    public Object s = null;
 }

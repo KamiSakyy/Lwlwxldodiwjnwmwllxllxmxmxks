@@ -7,4 +7,9 @@ package androidx.compose.runtime;
 public class v {
     public v() {
     }
+
+    public <T0> T0 b(Object... a) {
+        return null;
+    }
+    public Object a(Object p1) { return null; }
 }

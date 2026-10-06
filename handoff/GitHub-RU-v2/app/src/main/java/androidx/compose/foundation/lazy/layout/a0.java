@@ -20,4 +20,6 @@ public class a0 {
         public p() {
         }
     }
+
+    public static Object t;
 }

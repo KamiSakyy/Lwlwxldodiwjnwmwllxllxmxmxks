@@ -34,4 +34,5 @@ public final class d implements Parcelable {
     public final void writeToParcel(Parcel parcel, int i) {
         parcel.writeLong(this.r);
     }
+    public Object c(Object p1) { return null; }
 }

@@ -71,4 +71,51 @@ public abstract class ToolBarPreferenceFragmentCompat extends PreferenceFragment
             viewGroup.setVisibility(0);
         }
     }
+
+    public <T0> T0 O3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 V3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 y3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 w3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 F3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 I3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 J3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 i4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g4(Object... a) {
+        return null;
+    }
+    public Object f0() { return null; }
+    public Object g4() { return null; }
+    public Object y3() { return null; }
 }

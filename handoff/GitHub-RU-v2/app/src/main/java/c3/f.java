@@ -23,4 +23,5 @@ public final class f extends c71.c {
         this.f4096w |= Integer.MIN_VALUE;
         return this.f4095v.b(0.0f, this);
     }
+    public static final Object J = null;
 }

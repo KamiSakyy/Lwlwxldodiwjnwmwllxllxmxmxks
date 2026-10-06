@@ -58,4 +58,5 @@ public final class a implements Executor {
                 break;
         }
     }
+    public static final Object t = null;
 }

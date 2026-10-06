@@ -78,4 +78,7 @@ public final class p implements h, Serializable {
         public l() {
         }
     }
+    public Object a(Object p1) { return null; }
+    public Object t(Object p1) { return null; }
+    public Object a = null;
 }

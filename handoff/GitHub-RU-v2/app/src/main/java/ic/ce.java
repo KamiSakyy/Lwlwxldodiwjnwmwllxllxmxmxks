@@ -7,4 +7,6 @@ package ic;
 public class ce {
     public ce() {
     }
+    public Object P0(Object p1) { return null; }
+    public Object Q0(Object p1) { return null; }
 }

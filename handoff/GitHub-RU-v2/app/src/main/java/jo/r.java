@@ -70,4 +70,5 @@ public final class r implements aaShadow.n0 {
     public final String toString() {
         return x.i.g("AddDiscussionCommentMutation(discussionId=", this.r, ", body=", this.s, ")");
     }
+    public static final Object a = null;
 }

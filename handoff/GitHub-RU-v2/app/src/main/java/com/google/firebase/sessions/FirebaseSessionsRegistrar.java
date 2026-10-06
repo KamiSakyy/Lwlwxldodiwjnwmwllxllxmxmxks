@@ -101,4 +101,12 @@ public final class FirebaseSessionsRegistrar implements ComponentRegistrar {
         a2.f = new a5.i(7);
         return l.r(new p41.a[]{b, a2.b(), sy.o.c(LIBRARY_NAME, "2.1.2")});
     }
+
+    public <T0> T0 b(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 a(Object... a) {
+        return null;
+    }
 }

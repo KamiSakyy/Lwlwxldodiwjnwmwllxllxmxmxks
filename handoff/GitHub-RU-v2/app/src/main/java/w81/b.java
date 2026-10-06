@@ -63,4 +63,6 @@ public final class b implements i0 {
         }
         ((d0) this.t.c.u).flush();
     }
+    public Object c = null;
+    public Object d = null;
 }

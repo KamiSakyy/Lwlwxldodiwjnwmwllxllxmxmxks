@@ -22,4 +22,6 @@ public final class g extends s0 {
         gitHubWebView.a(str);
         gitHubWebView.setScrollToAnchor(null);
     }
+    public Object t(Object p1, Object p2) { return null; }
+    public Object y(Object p1, Object p2) { return null; }
 }

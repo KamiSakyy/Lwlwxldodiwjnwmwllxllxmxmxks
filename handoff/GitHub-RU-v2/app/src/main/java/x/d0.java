@@ -247,4 +247,6 @@ public final class d0 {
     public /* synthetic */ d0() {
         this(16);
     }
+    public Object a = null;
+    public Object b = null;
 }

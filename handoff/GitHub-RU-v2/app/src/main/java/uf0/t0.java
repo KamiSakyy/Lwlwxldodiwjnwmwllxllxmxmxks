@@ -38,4 +38,5 @@ public final class t0 implements aa.a {
         fVar.z0("totalCount");
         fVar.z(j0Var.a);
     }
+    public static final Object d = null;
 }

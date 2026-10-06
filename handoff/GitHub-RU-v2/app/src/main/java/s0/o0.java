@@ -7,4 +7,9 @@ package s0;
 public class o0 {
     public o0() {
     }
+
+    public <T0> T0 d(Object... a) {
+        return null;
+    }
+    public Object b() { return null; }
 }

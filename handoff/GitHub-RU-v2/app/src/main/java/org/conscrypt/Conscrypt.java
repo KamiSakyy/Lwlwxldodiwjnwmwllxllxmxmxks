@@ -7,4 +7,28 @@ package org.conscrypt;
 public class Conscrypt {
     public Conscrypt() {
     }
+
+    public <T0> T0 isConscrypt(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 version(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 isAvailable(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getApplicationProtocol(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setUseSessionTickets(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setApplicationProtocols(Object... a) {
+        return null;
+    }
 }

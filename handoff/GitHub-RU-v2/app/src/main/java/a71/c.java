@@ -5,4 +5,10 @@ public interface c<T> {
     void i(Object obj);
 
     h q();
+    public Object a = null;
+    public Object b = null;
+    public Object u = null;
+    public Object v = null;
+    public Object w = null;
+    public Object x = null;
 }

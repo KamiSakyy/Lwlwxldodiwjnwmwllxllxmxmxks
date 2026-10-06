@@ -49,4 +49,13 @@ public final class u implements TextWatcher {
     @Override // android.text.TextWatcher
     public final void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
     }
+    public Object getContentDescription() { return null; }
+    public Object getDrawable() { return null; }
+    public Object getLayoutParams() { return null; }
+    public Object getMeasuredWidth() { return null; }
+    public Object getVisibility() { return null; }
+    public Object setMinimumWidth(Object p1) { return null; }
+    public Object setScaleX(Object p1) { return null; }
+    public Object setScaleY(Object p1) { return null; }
+    public Object setVisibility(Object p1) { return null; }
 }

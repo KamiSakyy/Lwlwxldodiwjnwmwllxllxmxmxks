@@ -59,4 +59,11 @@ public final class d {
         this.i = list;
         this.f26793j = arrayList;
     }
+    public Object b = null;
+    public Object c = null;
+    public Object e = null;
+    public Object f = null;
+    public Object h = null;
+    public Object i = null;
+    public Object j = null;
 }

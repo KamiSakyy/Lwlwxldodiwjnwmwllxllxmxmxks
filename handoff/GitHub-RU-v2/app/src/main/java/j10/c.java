@@ -28,4 +28,7 @@ public final class c implements aa.a {
         aa.c.i.b(fVar, wVar, eVar.a);
     }
 
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object f = null;
+    public static final Object i = null;
 }

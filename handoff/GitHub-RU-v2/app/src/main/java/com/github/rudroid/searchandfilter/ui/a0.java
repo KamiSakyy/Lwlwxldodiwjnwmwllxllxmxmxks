@@ -27,4 +27,6 @@ public final /* synthetic */ class a0 implements j71.a {
         return w61.a0.a;
     }
 
+    public Object f0() { return null; }
+    public Object g4() { return null; }
 }

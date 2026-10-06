@@ -41,4 +41,6 @@ public final class o4 {
     public static o4[] values() {
         return (o4[]) u.clone();
     }
+    public Object b(Object p1, Object p2) { return null; }
+    public Object g(Object p1, Object p2) { return null; }
 }

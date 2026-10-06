@@ -31,4 +31,5 @@ public final class c implements f {
     public final boolean f() {
         return false;
     }
+    public Object v(Object p1) { return null; }
 }

@@ -8,4 +8,5 @@ public final class c {
         new r1.d(new o(27), false, 1148986868);
         new r1.d(new o(28), false, -208758988);
     }
+    public static final Object v = null;
 }

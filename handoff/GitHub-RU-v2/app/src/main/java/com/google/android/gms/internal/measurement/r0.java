@@ -8,4 +8,5 @@ public interface r0 extends IInterface {
     int b();
 
     void m(long j, Bundle bundle, String str, String str2);
+    public Object start() { return null; }
 }

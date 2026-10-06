@@ -22,4 +22,12 @@ public final class q implements j11.f {
         }
         throw new IllegalArgumentException(String.format("%s is not supported byt this factory. Supported encodings are: %s.", cVar, set));
     }
+    public Object A = null;
+    public Object E = null;
+    public Object F = null;
+    public Object t = null;
+    public Object v = null;
+    public Object w = null;
+    public Object y = null;
+    public Object z = null;
 }

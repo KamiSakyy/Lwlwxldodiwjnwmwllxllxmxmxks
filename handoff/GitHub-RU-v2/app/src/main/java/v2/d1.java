@@ -7,4 +7,6 @@ package v2;
 public class d1 {
     public d1() {
     }
+    public Object G = null;
+    public Object H = null;
 }

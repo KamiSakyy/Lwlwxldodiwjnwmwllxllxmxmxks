@@ -33,4 +33,5 @@ public final class l0 {
     public final String toString() {
         return x.i.g("SafeStringMessage(message=", this.f9345a, ", justification=", this.f9346b, ")");
     }
+    public Object t(Object p1) { return null; }
 }

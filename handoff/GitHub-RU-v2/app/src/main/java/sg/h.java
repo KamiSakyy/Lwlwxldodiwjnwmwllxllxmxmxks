@@ -10,4 +10,5 @@ public final class h {
         new r1.d(new g(0), false, -1989182933);
         new r1.d(new g(1), false, 1942183316);
     }
+    public static final Object o = null;
 }

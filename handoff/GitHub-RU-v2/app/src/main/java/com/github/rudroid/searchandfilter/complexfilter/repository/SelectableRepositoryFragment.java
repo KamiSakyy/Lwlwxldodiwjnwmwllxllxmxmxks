@@ -95,4 +95,12 @@ public final class SelectableRepositoryFragment extends Hilt_SelectableRepositor
         return (com.github.rudroid.searchandfilter.complexfilter.repository.a) this.H0.getValue();
     }
 
+
+    public <T0> T0 j4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
 }

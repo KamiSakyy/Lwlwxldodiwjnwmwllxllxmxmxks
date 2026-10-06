@@ -36,4 +36,5 @@ public final class i {
         sb2.append(", generation=");
         return x.i.j(sb2, this.f21697b, ')');
     }
+    public Object a = null;
 }

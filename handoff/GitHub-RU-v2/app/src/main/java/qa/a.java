@@ -10,4 +10,8 @@ public final class a extends f {
 
     /* renamed from: d, reason: collision with root package name */
     public static final a f31025d = new a();
+
+    public static Object c;
+
+    public static Object d;
 }

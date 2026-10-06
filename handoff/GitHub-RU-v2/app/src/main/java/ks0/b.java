@@ -36,4 +36,5 @@ public final class b {
     public final String toString() {
         return h1.n("OnIssue(id=", this.a, ", viewerCanReact=", ")", this.b);
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

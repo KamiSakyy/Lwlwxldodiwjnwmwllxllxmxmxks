@@ -36,4 +36,5 @@ public final class d extends e implements RandomAccess {
         int i3 = this.s;
         return new d(this.r, i + i3, i3 + i2);
     }
+    public static final Object r = null;
 }

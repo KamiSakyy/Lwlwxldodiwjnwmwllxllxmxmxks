@@ -28,4 +28,5 @@ public abstract class w implements aa.a {
         fVar.z0("repository");
         aa.c.c(b0.a, false).b(fVar, wVar, hVar.a);
     }
+    public Object e(Object p1) { return null; }
 }

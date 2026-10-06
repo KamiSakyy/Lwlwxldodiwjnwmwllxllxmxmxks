@@ -7,4 +7,9 @@ package f1;
 public class p5 {
     public p5() {
     }
+
+    public <T0> T0 a(Object... a) {
+        return null;
+    }
+    public Object a(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7) { return null; }
 }

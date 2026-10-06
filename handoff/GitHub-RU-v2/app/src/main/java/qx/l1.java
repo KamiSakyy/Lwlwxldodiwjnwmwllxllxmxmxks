@@ -30,4 +30,5 @@ public final class l1 {
     public final String toString() {
         return "ProfileReadme(__typename=" + this.a + ", repositoryReadmeFragment=" + this.b + ")";
     }
+    public Object i = null;
 }

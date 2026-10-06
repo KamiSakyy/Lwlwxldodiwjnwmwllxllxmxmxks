@@ -20,4 +20,8 @@ public final class h {
 
     /* renamed from: f, reason: collision with root package name */
     public static final c1 f1967f = new c1(2);
+
+    public static Object a;
+
+    public static Object d;
 }

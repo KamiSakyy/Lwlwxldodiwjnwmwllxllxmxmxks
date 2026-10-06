@@ -119,4 +119,5 @@ public final class n implements Serializable {
         this.f32141r = compile;
     }
 
+    public Object C0000a = null;
 }

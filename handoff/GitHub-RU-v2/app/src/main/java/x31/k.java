@@ -49,4 +49,8 @@ public final class k implements d {
                 break;
         }
     }
+    public Object getAdapter() { return null; }
+    public Object getCurrentItem() { return null; }
+    public Object l0 = null;
+    public Object n0 = null;
 }

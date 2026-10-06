@@ -33,4 +33,7 @@ public final class f implements Comparable {
         int i = this.f31202r - fVar.f31202r;
         return i == 0 ? this.f31203s - fVar.f31203s : i;
     }
+    public static final Object J = null;
+    public Object t = null;
+    public Object u = null;
 }

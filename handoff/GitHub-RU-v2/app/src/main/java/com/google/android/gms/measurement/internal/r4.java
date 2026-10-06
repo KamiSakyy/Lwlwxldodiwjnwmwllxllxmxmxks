@@ -17,4 +17,6 @@ public final class r4 {
         this.d = j;
         this.e = obj;
     }
+    public Object H(Object p1, Object p2) { return null; }
+    public Object c(Object p1) { return null; }
 }

@@ -53,4 +53,5 @@ public final class i0 {
         sb.append(")");
         return sb.toString();
     }
+    public Object ordinal() { return null; }
 }

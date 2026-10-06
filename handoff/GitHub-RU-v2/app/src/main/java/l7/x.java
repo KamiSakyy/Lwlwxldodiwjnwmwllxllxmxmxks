@@ -5,4 +5,7 @@ package l7;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface x {
+    public Object m = null;
+    public Object p = null;
+    public Object r = null;
 }

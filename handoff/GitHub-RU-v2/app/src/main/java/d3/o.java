@@ -6,4 +6,7 @@ package d3;
  */
 public class o {
     public o() {}
+    public Object r = null;
+    public Object t = null;
+    public Object u = null;
 }

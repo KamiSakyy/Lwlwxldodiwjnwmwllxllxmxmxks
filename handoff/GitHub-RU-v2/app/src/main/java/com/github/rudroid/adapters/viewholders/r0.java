@@ -7,4 +7,5 @@ package com.github.rudroid.adapters.viewholders;
 public class r0 {
     public r0() {
     }
+    public Object getValue() { return null; }
 }

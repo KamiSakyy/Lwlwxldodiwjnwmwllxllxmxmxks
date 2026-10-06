@@ -41,4 +41,5 @@ public final class a {
         sb.append(", __typename=");
         return h1.p(sb, this.c, ")");
     }
+    public Object O(Object p1) { return null; }
 }

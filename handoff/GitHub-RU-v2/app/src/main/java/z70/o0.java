@@ -66,4 +66,5 @@ public final class o0 {
         m.append(", __typename=");
         return com.github.rudroid.copilot.h1.p(m, this.k, ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

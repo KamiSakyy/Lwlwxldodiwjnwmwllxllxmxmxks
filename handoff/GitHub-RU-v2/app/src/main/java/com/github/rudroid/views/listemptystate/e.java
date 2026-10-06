@@ -118,4 +118,6 @@ public final class e extends m0 {
         public RecyclerView() {
         }
     }
+    public Object o(Object p1) { return null; }
+    public Object t(Object p1) { return null; }
 }

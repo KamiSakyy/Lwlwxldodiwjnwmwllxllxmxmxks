@@ -45,4 +45,5 @@ public final class mx {
     public static mx[] values() {
         return (mx[]) y.clone();
     }
+    public Object ordinal() { return null; }
 }

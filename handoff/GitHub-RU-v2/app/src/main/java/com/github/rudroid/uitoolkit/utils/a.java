@@ -30,4 +30,7 @@ public final class a {
         }
         dVar.b(new h0(0L, 0L, (k3.s) null, (k3.o) null, (k3.p) null, lh.d.a, (String) null, 0L, (r3.a) null, (r3.p) null, (n3.b) null, 0L, (r3.l) null, (o0) null, 65503), R, str2.length() + R);
     }
+    public Object b(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
+    public Object i(Object p1) { return null; }
 }

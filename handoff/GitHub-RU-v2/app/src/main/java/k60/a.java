@@ -47,4 +47,6 @@ public final class a {
         sb.append(", viewerCanReact=");
         return m0.m(sb, this.c, ", viewerCanUpvote=", this.d, ")");
     }
+    public Object O(Object p1) { return null; }
+    public static final Object b = null;
 }

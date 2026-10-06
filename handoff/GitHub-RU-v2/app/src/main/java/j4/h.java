@@ -5,4 +5,10 @@ package j4;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface h {
+
+    default <T0> T0 c(Object... a) {
+        return null;
+    }
+    public Object b = null;
+    public Object c = null;
 }

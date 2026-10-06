@@ -30,4 +30,6 @@ public final class e {
     public final String toString() {
         return f4.n("Enqueuer(__typename=", this.a, ", actorFields=", this.b, ")");
     }
+    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

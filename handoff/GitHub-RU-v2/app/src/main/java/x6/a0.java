@@ -7,4 +7,5 @@ package x6;
 public class a0 {
     public a0() {
     }
+    public Object b = null;
 }

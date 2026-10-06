@@ -236,4 +236,5 @@ public final class f implements i51.d {
         }
         this.a.write(((int) j) & 127);
     }
+    public static final Object a = null;
 }

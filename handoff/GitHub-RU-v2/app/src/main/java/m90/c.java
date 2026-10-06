@@ -127,4 +127,5 @@ public final class c implements i0, k, x {
 
 
 
+    public static final Object a = null;
 }

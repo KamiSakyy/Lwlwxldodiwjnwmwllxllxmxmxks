@@ -39,4 +39,6 @@ public final class c {
         sb.append(", id=");
         return h1.p(sb, this.c, ")");
     }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
 }

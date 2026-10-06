@@ -21,4 +21,5 @@ public final class m extends ImageSpan {
             canvas.restoreToCount(save);
         }
     }
+    public Object e() { return null; }
 }

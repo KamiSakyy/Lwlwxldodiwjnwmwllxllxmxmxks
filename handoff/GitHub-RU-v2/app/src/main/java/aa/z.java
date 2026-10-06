@@ -28,4 +28,6 @@ public final class z implements g0 {
         k71.k.g(g0Var, "context");
         return g0Var;
     }
+
+    public static Object a;
 }

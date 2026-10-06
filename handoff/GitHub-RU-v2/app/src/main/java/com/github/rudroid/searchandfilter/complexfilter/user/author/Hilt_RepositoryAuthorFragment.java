@@ -57,4 +57,8 @@ public abstract class Hilt_RepositoryAuthorFragment<T> extends SearchAndFilterBa
         J4();
         return this.E0;
     }
+
+    public <T0> T0 w(Object... a) {
+        return null;
+    }
 }

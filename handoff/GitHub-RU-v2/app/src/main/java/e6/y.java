@@ -18,4 +18,10 @@ public enum y implements b0 {
     y(int i) {
         this.f21990r = i;
     }
+
+    public static Object s;
+
+    public static Object t;
+
+    public static Object u;
 }

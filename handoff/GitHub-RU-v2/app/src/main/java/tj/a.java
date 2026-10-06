@@ -34,4 +34,5 @@ public final class a {
     public final String toString() {
         return i.g("ChatThreadEntry(id=", this.a, ", selectedModel=", this.b, ")");
     }
+    public Object o(Object p1, Object p2) { return null; }
 }

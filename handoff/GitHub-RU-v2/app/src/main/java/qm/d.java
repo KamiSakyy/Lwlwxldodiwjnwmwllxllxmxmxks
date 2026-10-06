@@ -277,4 +277,5 @@ public final class d {
         return aVar2;
     }
 
+    public Object a = null;
 }

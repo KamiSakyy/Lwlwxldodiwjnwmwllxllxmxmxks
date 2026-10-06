@@ -24,4 +24,5 @@ public final class j extends c71.c {
         this.z |= Integer.MIN_VALUE;
         return this.y.g(null, false, this);
     }
+    public Object A(Object p1) { return null; }
 }

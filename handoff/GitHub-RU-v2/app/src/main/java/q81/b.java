@@ -137,4 +137,5 @@ public final class b implements f0 {
         }
         return hVar;
     }
+    public Object s() { return null; }
 }

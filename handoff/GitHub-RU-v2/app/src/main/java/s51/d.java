@@ -56,4 +56,5 @@ public final class d {
         }
         return;
     }
+    public Object f(Object p1, Object p2) { return null; }
 }

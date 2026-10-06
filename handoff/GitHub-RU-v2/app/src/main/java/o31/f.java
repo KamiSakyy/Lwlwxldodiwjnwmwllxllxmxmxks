@@ -159,4 +159,6 @@ public abstract class f extends ViewGroup {
     public void setSingleLine(boolean z) {
         this.t = z;
     }
+    public static final Object c = null;
+    public static final Object d = null;
 }

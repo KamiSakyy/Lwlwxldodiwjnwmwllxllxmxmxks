@@ -33,4 +33,5 @@ public final class a {
 
     public a(Object... a) {
     }
+    public Object e = null;
 }

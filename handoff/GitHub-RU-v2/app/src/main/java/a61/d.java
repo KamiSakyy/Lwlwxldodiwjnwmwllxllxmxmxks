@@ -23,4 +23,5 @@ public final class d implements i51.c {
         dVar.a(f, b0.s);
         dVar.a(g, bVar.b);
     }
+    public Object ordinal() { return null; }
 }

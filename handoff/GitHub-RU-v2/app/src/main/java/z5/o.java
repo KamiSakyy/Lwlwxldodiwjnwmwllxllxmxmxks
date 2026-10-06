@@ -9,4 +9,6 @@ public final /* synthetic */ class o extends k71.i implements j71.a {
     public final Object a() {
         return new i();
     }
+
+    public static Object z;
 }

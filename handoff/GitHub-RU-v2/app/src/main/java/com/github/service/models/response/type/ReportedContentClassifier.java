@@ -73,4 +73,8 @@ public final class ReportedContentClassifier {
                 throw new NoWhenBranchMatchedException();
         }
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

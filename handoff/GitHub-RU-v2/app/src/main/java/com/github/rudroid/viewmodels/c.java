@@ -14,4 +14,5 @@ public final class c implements b {
         this.s = c;
         this.t = c;
     }
+    public Object v(Object p1) { return null; }
 }

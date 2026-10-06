@@ -5,4 +5,6 @@ package vf;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface a {
+    public Object b = null;
+    public Object c = null;
 }

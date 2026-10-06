@@ -31,4 +31,5 @@ public final class e {
     public final String toString() {
         return f1.e.i("Owner(__typename=", this.a, ", actorFields=", this.b, ")");
     }
+    public Object i(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

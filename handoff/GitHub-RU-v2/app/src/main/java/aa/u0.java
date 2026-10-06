@@ -28,4 +28,5 @@ public final class u0 extends aa1.b {
     public final String toString() {
         return "Present(value=" + this.f683d + ')';
     }
+    public Object d = null;
 }

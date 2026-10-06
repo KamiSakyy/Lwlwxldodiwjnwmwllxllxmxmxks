@@ -9,4 +9,6 @@ public final class y {
     public y(f0 f0Var) {
         this.f311a = f0Var;
     }
+    public Object L(Object p1) { return null; }
+    public Object o(Object p1, Object p2) { return null; }
 }

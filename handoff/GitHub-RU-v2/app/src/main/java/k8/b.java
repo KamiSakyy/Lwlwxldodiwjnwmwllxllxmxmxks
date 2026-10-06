@@ -23,4 +23,5 @@ public final class b {
         this.f27812b = str;
         this.f27813c = aVar;
     }
+    public Object c = null;
 }

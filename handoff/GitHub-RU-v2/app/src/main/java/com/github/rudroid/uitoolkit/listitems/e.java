@@ -21,4 +21,6 @@ public final class e {
         new r1.d(new d(7), false, 1348224476);
         new r1.d(new com.github.rudroid.uitoolkit.banner.m(22), false, 311107899);
     }
+    public Object a(Object p1) { return null; }
+    public Object t(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

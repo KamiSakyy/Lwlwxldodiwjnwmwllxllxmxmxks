@@ -82,4 +82,5 @@ public abstract class a extends AbstractCollection implements Serializable {
         b(objArr);
         return objArr;
     }
+    public Object d0(Object p1) { return null; }
 }

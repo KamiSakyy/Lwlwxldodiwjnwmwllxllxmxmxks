@@ -41,4 +41,10 @@ public final class m0 {
     public static m0[] values() {
         return (m0[]) f13552v.clone();
     }
+
+    public static com.github.rudroid.fileschanged.ui.m0 t;
+
+    public static com.github.rudroid.fileschanged.ui.m0 s;
+
+    public static Object t;
 }

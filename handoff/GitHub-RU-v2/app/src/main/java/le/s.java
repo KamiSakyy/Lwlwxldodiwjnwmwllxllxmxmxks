@@ -256,4 +256,8 @@ public final class s implements me.d {
             num = Integer.valueOf(((o4) h10).w);
         }
     }
+    public Object e = null;
+    public Object f = null;
+    public Object j = null;
+    public Object k = null;
 }

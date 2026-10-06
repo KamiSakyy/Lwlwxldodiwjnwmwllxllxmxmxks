@@ -150,4 +150,6 @@ public final class l {
 
     public l(Object... a) {
     }
+    public Object name() { return null; }
+    public Object ordinal() { return null; }
 }

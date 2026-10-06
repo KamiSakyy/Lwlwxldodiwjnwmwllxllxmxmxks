@@ -105,4 +105,7 @@ public final class a extends com.github.rudroid.adapters.viewholders.e<k5.f> imp
     }
 
 
+
+    public Object y;
+    public Object W(Object p1) { return null; }
 }

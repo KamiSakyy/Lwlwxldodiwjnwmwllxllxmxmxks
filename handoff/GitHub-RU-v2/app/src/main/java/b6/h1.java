@@ -7,4 +7,7 @@ package b6;
 public class h1 {
     public h1() {
     }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object b(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7) { return null; }
+    public Object e(Object p1, Object p2) { return null; }
 }

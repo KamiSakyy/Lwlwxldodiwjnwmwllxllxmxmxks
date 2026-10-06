@@ -32,4 +32,8 @@ public final class j {
     public final String toString() {
         return "MatchGroup(value=" + this.f32132a + ", range=" + this.f32133b + ')';
     }
+    public Object i0(Object p1, Object p2) { return null; }
+    public Object l0(Object p1) { return null; }
+    public Object a = null;
+    public Object b = null;
 }

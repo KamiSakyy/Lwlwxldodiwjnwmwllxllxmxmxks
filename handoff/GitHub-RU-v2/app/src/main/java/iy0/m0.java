@@ -52,4 +52,8 @@ public abstract class m0 implements aa.a {
         fVar.z0("projectsV2");
         aa.c.c(n0.a, false).b(fVar, wVar, k0Var.c);
     }
+    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

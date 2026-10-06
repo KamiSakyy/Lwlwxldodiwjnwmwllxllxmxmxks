@@ -136,4 +136,5 @@ public final class w implements aa.i0, bm.k, com.google.android.gms.measurement.
     public void o(ea.f fVar, aa.w wVar, boolean z) {
         k71.k.g(wVar, "customScalarAdapters");
     }
+    public Object e(Object p1) { return null; }
 }

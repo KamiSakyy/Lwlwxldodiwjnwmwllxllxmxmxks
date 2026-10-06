@@ -26,4 +26,5 @@ public final class l implements z5.h {
     public final String toString() {
         return "EmittableSpacer(modifier=" + this.f26044a + ')';
     }
+    public Object o = null;
 }

@@ -81,4 +81,13 @@ public final class n {
         int a10 = c10.a(6);
         return !(a10 == 0 || ((ByteBuffer) c10.f469u).get(a10 + c10.f466r) == 0) || this.f32229e == 65039;
     }
+    public Object a = null;
+    public Object b = null;
+    public Object c = null;
+    public Object d = null;
+    public Object e = null;
+    public Object f = null;
+    public Object j = null;
+    public Object k = null;
+    public Object o = null;
 }

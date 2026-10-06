@@ -60,4 +60,5 @@ public final class ka {
     public static ka[] values() {
         return (ka[]) C.clone();
     }
+    public Object ordinal() { return null; }
 }

@@ -40,4 +40,5 @@ public final class qf {
     public static qf[] values() {
         return (qf[]) w.clone();
     }
+    public Object ordinal() { return null; }
 }

@@ -43,4 +43,6 @@ public final class b {
     public static b[] values() {
         return (b[]) f4174v.clone();
     }
+
+    public static cc.b r;
 }

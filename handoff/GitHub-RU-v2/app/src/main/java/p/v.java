@@ -114,4 +114,16 @@ public class v {
         public t() {
         }
     }
+
+    public <T0> T0 b(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 d(Object... a) {
+        return null;
+    }
+    public Object e = null;
+    public Object g = null;
+    public Object h = null;
+    public Object i = null;
 }

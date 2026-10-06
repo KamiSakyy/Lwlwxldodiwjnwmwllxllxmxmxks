@@ -7,4 +7,6 @@ package l7;
 public class u {
     public u() {
     }
+    public Object e = null;
+    public Object k = null;
 }

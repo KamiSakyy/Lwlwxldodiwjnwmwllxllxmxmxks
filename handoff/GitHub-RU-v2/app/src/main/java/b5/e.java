@@ -25,4 +25,17 @@ public final class e {
 
     public e(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) {
     }
+
+    public <T0> T0 c(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 b(Object... a) {
+        return null;
+    }
+    public Object a(Object p1, Object p2) { return null; }
+    public Object c(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object d(Object p1, Object p2) { return null; }
+    public Object b = null;
+    public Object f3483b = null;
 }

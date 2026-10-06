@@ -20,4 +20,6 @@ public final class d {
         this.f30447b = map;
         this.f30448c = i;
     }
+    public Object b = null;
+    public Object c = null;
 }

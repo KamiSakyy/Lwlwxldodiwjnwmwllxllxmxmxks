@@ -6,4 +6,5 @@ package l7;
  */
 public class j0 {
     public j0() {}
+    public Object a(Object p1) { return null; }
 }

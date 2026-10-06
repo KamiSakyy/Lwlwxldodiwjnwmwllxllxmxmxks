@@ -57,4 +57,5 @@ public final class b {
         }
         return str == null ? "" : str;
     }
+    public Object y(Object p1, Object p2, Object p3) { return null; }
 }

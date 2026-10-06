@@ -84,4 +84,9 @@ public final class t {
             t.d = dVar;
         }
     }
+    public Object E(Object p1, Object p2) { return null; }
+    public Object I(Object p1, Object p2, Object p3) { return null; }
+    public Object L(Object p1) { return null; }
+    public Object d(Object p1, Object p2) { return null; }
+    public Object w(Object p1, Object p2, Object p3) { return null; }
 }

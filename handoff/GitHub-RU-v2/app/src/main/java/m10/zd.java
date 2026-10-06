@@ -43,4 +43,5 @@ public final class zd {
     public static zd[] values() {
         return (zd[]) x.clone();
     }
+    public Object ordinal() { return null; }
 }

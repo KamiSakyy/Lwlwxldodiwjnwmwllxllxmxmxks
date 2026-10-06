@@ -26,4 +26,12 @@ public enum p implements b0 {
         }
         throw new IllegalArgumentException("Can't get the number of an unknown enum value.");
     }
+
+    public static Object s;
+
+    public static Object u;
+
+    public static Object v;
+
+    public static Object t;
 }

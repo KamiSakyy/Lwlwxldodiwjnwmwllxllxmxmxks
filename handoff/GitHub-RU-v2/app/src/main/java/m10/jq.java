@@ -83,4 +83,5 @@ public final class jq {
     public static jq[] values() {
         return (jq[]) K.clone();
     }
+    public Object ordinal() { return null; }
 }

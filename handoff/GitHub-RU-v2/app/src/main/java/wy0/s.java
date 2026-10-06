@@ -18,4 +18,6 @@ public final class s extends c71.c {
         this.v |= Integer.MIN_VALUE;
         return this.w.c(null, this);
     }
+    public Object S(Object p1, Object p2) { return null; }
+    public Object V() { return null; }
 }

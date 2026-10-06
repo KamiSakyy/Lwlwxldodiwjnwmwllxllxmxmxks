@@ -40,4 +40,5 @@ public final class gu {
     public static gu[] values() {
         return (gu[]) w.clone();
     }
+    public Object ordinal() { return null; }
 }

@@ -31,4 +31,5 @@ public final class e {
     public final String toString() {
         return "OldTreeEntry(path=" + this.a + ", fileType=" + this.b + ")";
     }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

@@ -20,4 +20,8 @@ public class NavigationMenuView extends RecyclerView implements z {
     public int getWindowAnimations() {
         return 0;
     }
+
+    public <T0> T0 setLayoutManager(Object... a) {
+        return null;
+    }
 }

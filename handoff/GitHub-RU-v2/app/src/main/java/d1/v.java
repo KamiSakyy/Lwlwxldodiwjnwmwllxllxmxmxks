@@ -31,4 +31,5 @@ public final class v {
     public static v[] values() {
         return (v[]) f21241t.clone();
     }
+    public Object ordinal() { return null; }
 }

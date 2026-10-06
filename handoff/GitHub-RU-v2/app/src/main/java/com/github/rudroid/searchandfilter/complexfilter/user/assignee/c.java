@@ -19,4 +19,5 @@ public final class c extends c71.c {
         return this.w.c(null, this);
     }
 
+    public Object a(Object p1, Object p2) { return null; }
 }

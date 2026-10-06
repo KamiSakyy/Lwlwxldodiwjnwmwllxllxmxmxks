@@ -43,4 +43,6 @@ public final class h {
     public static h[] values() {
         return (h[]) z.clone();
     }
+    public Object Q(Object p1, Object p2, Object p3) { return null; }
+    public Object R(Object p1) { return null; }
 }

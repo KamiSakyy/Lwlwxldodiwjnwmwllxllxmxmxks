@@ -28,4 +28,8 @@ public final class b {
     public final String toString() {
         return "CommitDetails(commitsCount=" + this.a + ", lastCommitDate=" + this.b + ")";
     }
+    public Object A(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object B(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
+    public Object x(Object p1, Object p2) { return null; }
+    public Object z(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

@@ -25,4 +25,9 @@ public final class f {
 
     public f(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8, Object p9, Object p10) {
     }
+    public Object f22074v = null;
+    public Object s = null;
+    public Object u = null;
+    public Object v = null;
+    public Object w = null;
 }

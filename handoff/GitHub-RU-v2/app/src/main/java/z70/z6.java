@@ -28,4 +28,5 @@ public final class z6 {
     public final String toString() {
         return "DiffLine(__typename=" + this.a + ", diffLineFragment=" + this.b + ")";
     }
+    public Object a() { return null; }
 }

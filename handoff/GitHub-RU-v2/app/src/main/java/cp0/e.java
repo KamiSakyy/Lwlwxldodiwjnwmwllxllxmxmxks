@@ -46,4 +46,5 @@ public abstract class e implements aa.a {
         aa.c.f.b(fVar, wVar, Boolean.valueOf(aVar.b));
     }
 
+    public Object n(Object p1, Object p2, Object p3) { return null; }
 }

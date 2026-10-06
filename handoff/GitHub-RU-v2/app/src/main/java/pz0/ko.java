@@ -52,4 +52,5 @@ public final class ko {
     public static ko[] values() {
         return (ko[]) v.clone();
     }
+    public Object ordinal() { return null; }
 }

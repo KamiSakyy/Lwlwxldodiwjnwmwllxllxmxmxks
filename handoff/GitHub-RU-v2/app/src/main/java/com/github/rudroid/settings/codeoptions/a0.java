@@ -20,4 +20,5 @@ public final class a0 extends k1 {
         this.u = new i1(c);
         n1.A(new y71.y(rVar.b, new y(this, null), 6), d1.k(this));
     }
+    public Object c(Object p1) { return null; }
 }

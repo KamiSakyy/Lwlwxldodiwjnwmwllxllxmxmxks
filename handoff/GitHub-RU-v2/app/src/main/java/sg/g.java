@@ -309,4 +309,8 @@ public final /* synthetic */ class g implements j71.f {
         }
         return w61.a0.a;
     }
+    public static final Object b = null;
+    public static final Object d = null;
+    public static final Object e = null;
+    public static final Object h = null;
 }

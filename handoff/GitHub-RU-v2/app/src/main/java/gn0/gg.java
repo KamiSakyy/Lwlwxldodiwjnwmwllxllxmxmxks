@@ -41,4 +41,5 @@ public final class gg {
     public static gg[] values() {
         return (gg[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

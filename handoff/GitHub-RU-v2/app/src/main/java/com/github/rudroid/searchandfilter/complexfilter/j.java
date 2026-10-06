@@ -26,4 +26,6 @@ public final class j extends s0 {
             p0Var.j(fl.e.c(U));
         }
     }
+    public Object t(Object p1, Object p2) { return null; }
+    public Object y(Object p1, Object p2) { return null; }
 }

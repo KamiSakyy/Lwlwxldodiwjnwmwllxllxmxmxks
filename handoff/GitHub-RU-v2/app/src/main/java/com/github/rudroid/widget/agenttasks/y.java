@@ -8,4 +8,5 @@ public final class y implements x {
     public final v8.w a(Context context, WorkerParameters workerParameters) {
         throw null;
     }
+    public Object f(Object p1, Object p2, Object p3) { return null; }
 }

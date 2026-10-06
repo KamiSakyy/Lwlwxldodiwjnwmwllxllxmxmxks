@@ -171,4 +171,5 @@ public final class s {
         c(str);
         return kVar;
     }
+    public Object d(Object p1) { return null; }
 }

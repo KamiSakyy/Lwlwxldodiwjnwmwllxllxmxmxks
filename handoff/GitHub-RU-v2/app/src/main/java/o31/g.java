@@ -160,4 +160,5 @@ public abstract class g extends LinearLayoutCompat {
     public final boolean verifyDrawable(Drawable drawable) {
         return super/*android.view.View*/.verifyDrawable(drawable) || drawable == this.G;
     }
+    public Object onCreateDrawableState(Object p1) { return null; }
 }

@@ -87,4 +87,5 @@ public final class f implements v7.c {
     public final void reset() {
         this.f30011r.reset();
     }
+    public static final Object J = null;
 }

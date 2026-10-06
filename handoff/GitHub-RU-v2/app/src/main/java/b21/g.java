@@ -9,4 +9,5 @@ public abstract class g implements DialogInterface.OnCancelListener {
 
     public g(Object... a) {
     }
+    public Object x = null;
 }

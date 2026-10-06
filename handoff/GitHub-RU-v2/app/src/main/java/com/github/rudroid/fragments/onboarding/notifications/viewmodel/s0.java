@@ -47,4 +47,6 @@ final class s0 extends c71.j implements j71.e {
         }
         return d10 == aVar ? aVar : a0Var;
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
+    public Object l(Object p1, Object p2, Object p3) { return null; }
 }

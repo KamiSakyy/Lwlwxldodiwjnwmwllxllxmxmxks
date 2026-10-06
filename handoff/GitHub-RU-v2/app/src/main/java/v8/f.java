@@ -107,4 +107,10 @@ public final class f {
         this.f32779g = fVar.f32779g;
         this.f32780h = fVar.f32780h;
     }
+    public static final Object J = null;
+    public Object a = null;
+    public Object d = null;
+    public Object e = null;
+    public Object g = null;
+    public Object h = null;
 }

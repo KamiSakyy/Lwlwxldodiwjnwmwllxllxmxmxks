@@ -13,4 +13,6 @@ public abstract class q {
         uVar.a(k71.x.a(p.class), new p4(16));
         f33885a = uVar.d();
     }
+
+    public static l61.d a;
 }

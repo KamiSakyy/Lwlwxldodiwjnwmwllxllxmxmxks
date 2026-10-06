@@ -52,4 +52,6 @@ public final class s5 {
         u.append(", title=");
         return com.github.rudroid.copilot.h1.p(u, this.i, ")");
     }
+
+    public Object e;
 }

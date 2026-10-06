@@ -38,4 +38,7 @@ public final class e {
         sb.append(", __typename=");
         return h1.p(sb, this.c, ")");
     }
+    public Object a(Object p1, Object p2, Object p3) { return null; }
+    public Object k(Object p1, Object p2, Object p3) { return null; }
+    public Object w(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

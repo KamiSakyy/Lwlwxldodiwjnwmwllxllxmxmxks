@@ -28,4 +28,5 @@ final class b implements v0 {
         int i0 = x0Var.i0(1);
         return x0Var.h0((((l1) arrayList.get(1)).j0() / 2) + ((l1) arrayList.get(0)).j0(), ((l1) arrayList.get(0)).g0() + i0, s.r, new w1(arrayList, i0, 2));
     }
+    public Object B(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
 }

@@ -12,4 +12,12 @@ final class s<T> implements y71.j {
         this.r.A.j((com.github.rudroid.copilot.preferences.f) obj);
         return w61.a0.a;
     }
+    public Object N() { return null; }
+    public Object S(Object p1, Object p2) { return null; }
+    public Object V() { return null; }
+    public Object c0(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object h(Object p1) { return null; }
+    public Object n0(Object p1) { return null; }
+    public Object q(Object p1) { return null; }
 }

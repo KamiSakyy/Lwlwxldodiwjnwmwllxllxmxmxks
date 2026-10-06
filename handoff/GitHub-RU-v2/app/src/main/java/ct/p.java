@@ -35,4 +35,5 @@ public final class p {
         o.append(")");
         return o.toString();
     }
+    public Object m = null;
 }

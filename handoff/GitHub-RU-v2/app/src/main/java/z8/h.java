@@ -5,4 +5,5 @@ package z8;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface h {
+    public static final Object a = null;
 }

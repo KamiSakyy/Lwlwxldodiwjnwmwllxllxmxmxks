@@ -14,4 +14,7 @@ public abstract class c0 {
 
     /* renamed from: d, reason: collision with root package name */
     public static final b0 f32d = new b0(0);
+
+    public static a0.w a;
+    public static final Object a = null;
 }

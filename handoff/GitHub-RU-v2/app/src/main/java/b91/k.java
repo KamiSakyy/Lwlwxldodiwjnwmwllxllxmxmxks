@@ -50,4 +50,5 @@ public final class k implements n {
             Conscrypt.setApplicationProtocols(sSLSocket, (String[]) d9.e.a(list).toArray(new String[0]));
         }
     }
+    public static final Object b = null;
 }

@@ -63,4 +63,5 @@ public final class o0 implements aa.h0 {
     public final String toString() {
         return "FeedItemsNoRelatedItems(__typename=" + this.a + ", createdDiscussionFeedItemFragmentNoRelatedItems=" + this.b + ", createdRepositoryFeedItemFragmentNoRelatedItems=" + this.c + ", followRecommendationFeedItemFragmentNoRelatedItems=" + this.d + ", followedUserFeedItemFragmentNoRelatedItems=" + this.e + ", forkedRepositoryFeedItemFragmentNoRelatedItems=" + this.f + ", mergedPullRequestFeedItemFragmentNoRelatedItems=" + this.g + ", publishedReleaseFeedItemFragmentNoRelatedItems=" + this.h + ", repositoryRecommendationFeedItemFragmentNoRelatedItems=" + this.i + ", starredRepositoryFeedItemFragmentNoRelatedItems=" + this.j + ")";
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

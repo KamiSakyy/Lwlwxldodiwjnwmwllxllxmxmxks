@@ -26,4 +26,5 @@ public abstract /* synthetic */ class d {
         }
         a = iArr;
     }
+    public static final Object a = null;
 }

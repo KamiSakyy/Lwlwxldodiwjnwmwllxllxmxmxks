@@ -13,4 +13,5 @@ public final class c {
         new r1.d(new py0.o(14), false, 184589374);
         new r1.d(new py0.o(15), false, -135385311);
     }
+    public static final Object v = null;
 }

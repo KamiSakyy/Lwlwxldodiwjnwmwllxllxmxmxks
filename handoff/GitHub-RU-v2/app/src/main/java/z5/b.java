@@ -5,4 +5,5 @@ package z5;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface b {
+    public static final Object B = null;
 }

@@ -40,4 +40,6 @@ public abstract class b implements Parcelable {
         Parcelable readParcelable = parcel.readParcelable(classLoader);
         this.f26019r = readParcelable == null ? f26018s : readParcelable;
     }
+
+    public static Object s;
 }

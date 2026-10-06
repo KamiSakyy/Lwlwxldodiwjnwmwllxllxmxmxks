@@ -5,4 +5,5 @@ package ia;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface d {
+    public Object a = null;
 }

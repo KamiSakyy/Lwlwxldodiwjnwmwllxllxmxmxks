@@ -7,4 +7,8 @@ package v8;
 public class n {
     public n() {
     }
+
+    public static Object r;
+
+    public static Object s;
 }

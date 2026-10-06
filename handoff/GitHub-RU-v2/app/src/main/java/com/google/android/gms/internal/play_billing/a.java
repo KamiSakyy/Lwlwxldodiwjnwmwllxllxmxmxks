@@ -117,4 +117,6 @@ public final class a extends com.google.android.gms.internal.measurement.x imple
         public a() {
         }
     }
+    public Object P(Object p1, Object p2) { return null; }
+    public Object accept(Object p1) { return null; }
 }

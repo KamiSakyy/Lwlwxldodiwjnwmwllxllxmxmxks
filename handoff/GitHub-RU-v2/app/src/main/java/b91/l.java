@@ -7,4 +7,5 @@ public interface l {
     boolean a(SSLSocket sSLSocket);
 
     n b(SSLSocket sSLSocket);
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

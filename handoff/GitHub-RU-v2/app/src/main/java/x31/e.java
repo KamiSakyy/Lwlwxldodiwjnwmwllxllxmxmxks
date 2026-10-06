@@ -19,4 +19,5 @@ public final class e implements ValueAnimator.AnimatorUpdateListener {
     public final void onAnimationUpdate(ValueAnimator valueAnimator) {
         this.c.c(this.a, this.b, valueAnimator.getAnimatedFraction());
     }
+    public Object b(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6) { return null; }
 }

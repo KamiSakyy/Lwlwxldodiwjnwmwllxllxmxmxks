@@ -791,4 +791,8 @@ public final class d implements Iterable, n, j {
 
     public d(Object... a) {
     }
+    public Object ordinal() { return null; }
+    public Object a = null;
+    public Object b = null;
+    public Object c = null;
 }

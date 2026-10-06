@@ -63,4 +63,7 @@ public abstract class c implements aa.a {
         bVar2.b(fVar, wVar, bVar.d);
     }
 
+    public Object b(Object p1) { return null; }
+    public static final Object f = null;
+    public static final Object i = null;
 }

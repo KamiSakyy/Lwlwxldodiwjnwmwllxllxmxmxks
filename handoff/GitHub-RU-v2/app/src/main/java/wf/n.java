@@ -37,4 +37,5 @@ public final class n extends g<v01.c> {
     public final List getData() {
         return this.g;
     }
+    public Object n() { return null; }
 }

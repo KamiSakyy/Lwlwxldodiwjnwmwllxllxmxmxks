@@ -102,4 +102,5 @@ final class c extends c71.j implements j71.e {
         ((j71.c) f1Var.getValue()).k(obj2);
         return a0Var;
     }
+    public Object b = null;
 }

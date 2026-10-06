@@ -31,4 +31,6 @@ public final class m0 {
     public final String toString() {
         return f4.i(this.a, "CopilotLicenseFeatureSet(title=", ", features=", ")", this.b);
     }
+    public Object C(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object y(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

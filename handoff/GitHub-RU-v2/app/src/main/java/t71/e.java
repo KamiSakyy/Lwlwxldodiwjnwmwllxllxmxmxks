@@ -118,4 +118,6 @@ public abstract class e {
         }
         return j10;
     }
+    public Object p(Object p1) { return null; }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

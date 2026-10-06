@@ -196,4 +196,24 @@ public final class MaterialCalendar<S> extends PickerFragment<S> {
         public RecyclerView() {
         }
     }
+
+    public <T0> T0 y3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 i4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 n4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 a(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C3(Object... a) {
+        return null;
+    }
 }

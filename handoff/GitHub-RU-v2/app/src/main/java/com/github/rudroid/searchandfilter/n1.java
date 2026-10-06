@@ -8,4 +8,5 @@ public final class n1 {
 
     public static final class b {
     }
+    public Object l(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

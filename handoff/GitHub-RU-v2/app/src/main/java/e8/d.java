@@ -5,4 +5,5 @@ package e8;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface d {
+    public Object b = null;
 }

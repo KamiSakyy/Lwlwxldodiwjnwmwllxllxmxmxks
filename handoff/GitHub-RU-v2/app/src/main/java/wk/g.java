@@ -17,4 +17,5 @@ public final class g extends c71.j implements j71.h {
         y.j(obj);
         return a0.a;
     }
+    public Object a(Object p1) { return null; }
 }

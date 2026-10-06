@@ -6,4 +6,5 @@ public final class l {
         new r1.d(new com.github.rudroid.searchandfilter.complexfilter.notificationfilter.k0(18), false, -1950190731);
         new r1.d(new com.github.rudroid.searchandfilter.complexfilter.notificationfilter.k0(19), false, -1278156692);
     }
+    public Object g(Object p1) { return null; }
 }

@@ -39,4 +39,5 @@ public final class e3 {
     public static e3[] values() {
         return (e3[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

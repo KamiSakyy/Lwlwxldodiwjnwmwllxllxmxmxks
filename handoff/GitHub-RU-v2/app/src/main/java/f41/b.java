@@ -23,4 +23,5 @@ public final class b implements d41.a {
             b41.b.W(tVar, new h(zzaVar));
         }
     }
+    public Object C(Object p1) { return null; }
 }

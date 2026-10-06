@@ -56,4 +56,25 @@ public final class CodeOptionsActivity extends h0 {
         e.c.a(this, new r1.d(new h(this, 2), true, 2101953583));
     }
 
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 K0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 finish(Object... a) {
+        return null;
+    }
+    public Object finish() { return null; }
 }

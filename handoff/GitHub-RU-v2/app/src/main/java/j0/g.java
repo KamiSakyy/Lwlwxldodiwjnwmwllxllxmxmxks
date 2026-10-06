@@ -9,4 +9,5 @@ public final class g implements h {
     public g(f fVar) {
         this.f26276a = fVar;
     }
+    public Object a = null;
 }

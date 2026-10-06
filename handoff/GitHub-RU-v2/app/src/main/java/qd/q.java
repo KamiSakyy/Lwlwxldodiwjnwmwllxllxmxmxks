@@ -7,4 +7,6 @@ package qd;
 public class q {
     public q() {
     }
+
+    public static Object a;
 }

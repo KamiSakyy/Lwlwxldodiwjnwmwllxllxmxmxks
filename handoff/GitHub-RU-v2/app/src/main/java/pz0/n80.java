@@ -41,4 +41,6 @@ public final class n80 {
         u.append(", name=");
         return f1.e.k(u, this.e, ")");
     }
+
+    public Object e;
 }

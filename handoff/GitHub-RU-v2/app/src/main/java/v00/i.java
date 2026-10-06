@@ -99,4 +99,5 @@ public final class i {
         if (str != null) {
         }
     }
+    public Object ordinal() { return null; }
 }

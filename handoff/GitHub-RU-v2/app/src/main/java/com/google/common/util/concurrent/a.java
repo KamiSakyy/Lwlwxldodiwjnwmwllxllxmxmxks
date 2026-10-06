@@ -1506,4 +1506,6 @@ public abstract class a {
 
     public abstract void z(double d, float[] fArr);
 
+
+    public static Object a;
 }

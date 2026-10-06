@@ -13,4 +13,8 @@ public final class h {
         k71.k.g(serialDescriptor, "descriptor");
         this.a = new x(serialDescriptor, new o0(2, this, h.class, "readIfAbsent", "readIfAbsent(Lkotlinx/serialization/descriptors/SerialDescriptor;I)Z", 0, 0, 5));
     }
+    public Object k(Object p1, Object p2) { return null; }
+    public Object l(Object p1, Object p2) { return null; }
+    public Object p(Object p1, Object p2) { return null; }
+    public Object q(Object p1, Object p2) { return null; }
 }

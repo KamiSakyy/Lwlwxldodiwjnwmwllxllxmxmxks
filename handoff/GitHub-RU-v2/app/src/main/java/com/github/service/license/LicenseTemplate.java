@@ -106,4 +106,8 @@ public final class LicenseTemplate implements Parcelable {
     public /* synthetic */ LicenseTemplate(int i, String str, String str2, String str3) {
         this(str, str2, (i & 4) != 0 ? "" : str3, "", "");
     }
+
+    public <T0> T0 e(Object... a) {
+        return null;
+    }
 }

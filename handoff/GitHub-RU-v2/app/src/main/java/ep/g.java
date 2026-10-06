@@ -49,4 +49,5 @@ public final class g implements aaShadow.a {
         List list = et.b.a;
         et.b.d(fVar, wVar, jVar.c);
     }
+    public static final Object r = null;
 }

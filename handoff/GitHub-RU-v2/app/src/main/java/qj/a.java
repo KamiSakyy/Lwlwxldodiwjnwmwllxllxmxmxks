@@ -26,4 +26,5 @@ public final class a extends oa.c {
         return (GitHubDatabase) w.b();
     }
 
+    public Object u(Object p1) { return null; }
 }

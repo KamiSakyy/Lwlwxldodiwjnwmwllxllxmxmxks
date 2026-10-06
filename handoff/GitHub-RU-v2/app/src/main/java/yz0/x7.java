@@ -31,4 +31,5 @@ public final class x7 {
     public final String toString() {
         return "UpdateIssueState(state=" + this.a + ", viewerCanReopen=" + this.b + ")";
     }
+    public Object add(Object p1) { return null; }
 }

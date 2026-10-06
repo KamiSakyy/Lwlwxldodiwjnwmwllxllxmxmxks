@@ -41,4 +41,5 @@ public final class h1 {
         o.append(")");
         return o.toString();
     }
+    public static final Object i = null;
 }

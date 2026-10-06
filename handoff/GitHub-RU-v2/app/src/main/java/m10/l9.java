@@ -61,4 +61,6 @@ public final class l9 {
         f1.e.w(u, this.k, ", projectV2Ids=", this.l, ", repositoryId=");
         return x.i.k(u, this.m, ", title=", this.n, ")");
     }
+
+    public Object e;
 }

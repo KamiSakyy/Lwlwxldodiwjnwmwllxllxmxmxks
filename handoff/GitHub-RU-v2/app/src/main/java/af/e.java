@@ -37,4 +37,5 @@ public final class e {
     public final String toString() {
         return "SimplifiedTableState(projectType=" + this.f896a + ", projectBoardUiModel=" + this.f897b + ")";
     }
+    public Object c(Object p1, Object p2, Object p3) { return null; }
 }

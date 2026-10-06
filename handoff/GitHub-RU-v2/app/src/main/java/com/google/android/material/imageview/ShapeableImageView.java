@@ -275,4 +275,60 @@ public class ShapeableImageView extends v implements y {
     public void setStrokeWidthResource(int i) {
         setStrokeWidth(getResources().getDimensionPixelSize(i));
     }
+
+    public <T0> T0 setImageDrawable(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setBackgroundColor(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setImageURI(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setOnClickListener(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setLayerType(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setOutlineProvider(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getLayoutDirection(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getDrawableState(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 isLayoutDirectionResolved(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 isPaddingRelative(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getWidth(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getHeight(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 invalidateOutline(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getContext(Object... a) {
+        return null;
+    }
 }

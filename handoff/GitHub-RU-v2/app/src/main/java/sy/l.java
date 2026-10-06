@@ -401,4 +401,7 @@ public final class l {
         }
         return new p01.j(str3, str12, str14, str, str15, str5, avatar, i3, i4, i5, i6, i7, i8, i9, z2, z3, z4, str2, str9, i, str4, intValue, z6, aVar, z722, t7Var22, l2Var2, z822, z5, z922, i1122, z1122, z1222, eVar2, i1222, dVar222, z1322, z1522, arrayList422, z1622, z, z1822, I, arrayList522, z1922, z22, b32, b222, str18, k71.k.b(k2Var.T, Boolean.TRUE));
     }
+    public Object A(Object p1, Object p2) { return null; }
+    public Object d(Object p1) { return null; }
+    public Object e(Object p1) { return null; }
 }

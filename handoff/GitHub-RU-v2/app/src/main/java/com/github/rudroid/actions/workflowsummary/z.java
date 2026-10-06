@@ -5,4 +5,6 @@ package com.github.rudroid.actions.workflowsummary;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface z {
+    public Object T() { return null; }
+    public Object H = null;
 }

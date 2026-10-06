@@ -133,4 +133,5 @@ public final class g implements y71.i {
                 return k == b71.a.r ? k : a0Var;
         }
     }
+    public Object a(Object p1) { return null; }
 }

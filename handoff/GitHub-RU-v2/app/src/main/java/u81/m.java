@@ -356,4 +356,6 @@ public final class m implements Cloneable {
         return nVar.e;
     }
 
+    public Object a = null;
+    public Object i = null;
 }

@@ -35,4 +35,5 @@ public final class g {
         this.a = g1Var;
         this.b = c6Var;
     }
+    public Object a(Object p1) { return null; }
 }

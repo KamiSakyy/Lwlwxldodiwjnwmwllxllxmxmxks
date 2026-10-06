@@ -38,4 +38,5 @@ public final class c implements aa.a {
         List list = eq.d.a;
         eq.d.d(fVar, wVar, aVar.b);
     }
+    public static final Object i = null;
 }

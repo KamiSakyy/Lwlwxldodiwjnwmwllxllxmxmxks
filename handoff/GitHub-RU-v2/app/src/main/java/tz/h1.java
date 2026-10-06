@@ -29,4 +29,5 @@ public final class h1 {
     public final String toString() {
         return "OnProjectV2ItemFieldMilestoneValue(milestone=" + this.a + ", field=" + this.b + ")";
     }
+    public static final Object i = null;
 }

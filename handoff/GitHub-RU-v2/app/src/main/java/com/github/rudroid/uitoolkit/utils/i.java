@@ -56,4 +56,5 @@ public final /* synthetic */ class i implements j71.e {
         this.x = i4;
     }
 
+    public Object d(Object p1, Object p2) { return null; }
 }

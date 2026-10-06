@@ -34,4 +34,5 @@ public final /* synthetic */ class i implements j71.e {
         }
         return a0.a;
     }
+    public Object d(Object p1, Object p2, Object p3) { return null; }
 }

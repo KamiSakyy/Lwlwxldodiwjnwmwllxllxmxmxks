@@ -81,4 +81,5 @@ public final class ih {
     public static ih[] values() {
         return (ih[]) K.clone();
     }
+    public Object ordinal() { return null; }
 }

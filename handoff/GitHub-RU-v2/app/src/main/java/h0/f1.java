@@ -5,4 +5,7 @@ package h0;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface f1 {
+    public Object a0 = null;
+    public Object d0 = null;
+    public Object e0 = null;
 }

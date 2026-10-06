@@ -28,4 +28,7 @@ public final class c {
     public final String toString() {
         return "Node(__typename=" + this.a + ", onCheckStep=" + this.b + ")";
     }
+    public Object b(Object p1) { return null; }
+    public static final Object a = null;
+    public static final Object i = null;
 }

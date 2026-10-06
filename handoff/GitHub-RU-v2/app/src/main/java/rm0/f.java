@@ -84,4 +84,5 @@ public final class f implements z01.c, yb0, y90 {
         int i = this.r;
         return this;
     }
+    public Object ordinal() { return null; }
 }

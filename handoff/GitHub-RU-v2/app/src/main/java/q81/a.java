@@ -88,4 +88,5 @@ public final class a {
         sb.append('}');
         return sb.toString();
     }
+    public static final Object u = null;
 }

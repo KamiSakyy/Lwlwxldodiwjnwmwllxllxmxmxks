@@ -83,4 +83,10 @@ public final class g0 implements Parcelable {
         parcel.writeInt(this.f13908s ? 1 : 0);
         parcel.writeInt(this.f13909t ? 1 : 0);
     }
+
+    public static Object v;
+
+    public static Object u;
+
+    public static Object w;
 }

@@ -43,4 +43,5 @@ final class j extends c71.j implements j71.e {
         bVar.g(eVar, new Integer(this.f14221x ? 99 : (num != null ? num.intValue() : 0) + 1));
         return w61.a0.a;
     }
+    public Object ordinal() { return null; }
 }

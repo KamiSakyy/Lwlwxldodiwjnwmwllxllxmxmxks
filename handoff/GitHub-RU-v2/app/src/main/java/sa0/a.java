@@ -27,4 +27,5 @@ public final class a implements aa.a {
         fVar.z0("list");
         aa.c.b(aa.c.c(c.a, true)).b(fVar, wVar, bVar.a);
     }
+    public Object O(Object p1) { return null; }
 }

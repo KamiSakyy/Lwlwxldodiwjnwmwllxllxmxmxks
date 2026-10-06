@@ -104,4 +104,25 @@ public final class SupportBottomSheetDialog extends BaseBottomSheetDialog implem
         return true;
     }
 
+
+    public <T0> T0 g4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 i4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 F3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 s4(Object... a) {
+        return null;
+    }
+    public Object s4() { return null; }
 }

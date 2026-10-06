@@ -26,4 +26,5 @@ public final class n {
         new r1.d(new n6(29), false, 2133443435);
         new r1.d(new m(0), false, -689245268);
     }
+    public static final Object a = null;
 }

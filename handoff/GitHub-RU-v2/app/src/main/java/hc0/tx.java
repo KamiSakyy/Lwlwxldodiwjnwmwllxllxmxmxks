@@ -48,4 +48,6 @@ public final class tx {
         f1.e.w(u, this.g, ", searchType=", this.h, ", shortcutId=");
         return com.github.rudroid.copilot.h1.p(u, this.i, ")");
     }
+
+    public Object e;
 }

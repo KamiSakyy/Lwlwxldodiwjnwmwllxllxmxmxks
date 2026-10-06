@@ -53,4 +53,7 @@ public final class k extends z5.j {
     public final String toString() {
         return "EmittableRow(modifier=" + this.f26041d + ", horizontalAlignment=" + ((Object) a.b(this.f26042e)) + ", verticalAlignment=" + ((Object) b.b(this.f26043f)) + ", children=[\n" + d() + "\n])";
     }
+    public Object d = null;
+    public Object e = null;
+    public Object f = null;
 }

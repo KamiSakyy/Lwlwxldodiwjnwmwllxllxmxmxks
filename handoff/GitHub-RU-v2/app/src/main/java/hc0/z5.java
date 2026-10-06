@@ -48,4 +48,5 @@ public final class z5 {
     public static z5[] values() {
         return (z5[]) z.clone();
     }
+    public Object ordinal() { return null; }
 }

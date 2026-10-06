@@ -43,4 +43,5 @@ public final class i9 {
     public static i9[] values() {
         return (i9[]) x.clone();
     }
+    public Object ordinal() { return null; }
 }

@@ -95,4 +95,8 @@ public final class EditIssueOrPullTitleFragment extends Hilt_EditIssueOrPullTitl
     public final com.github.rudroid.viewmodels.u0 H4() {
         return (com.github.rudroid.viewmodels.e0) this.I0.getValue();
     }
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
 }

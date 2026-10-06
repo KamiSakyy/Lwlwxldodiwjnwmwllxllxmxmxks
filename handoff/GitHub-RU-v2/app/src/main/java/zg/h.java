@@ -262,4 +262,5 @@ public final class h {
             t.d = new d2(aVar, aVar2, rVar2, uVar, bVar2, i, 13);
         }
     }
+    public static final Object o = null;
 }

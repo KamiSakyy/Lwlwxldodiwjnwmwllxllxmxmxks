@@ -61,4 +61,6 @@ public final class hg {
         sb.append(", subjectType=");
         return f1.e.k(sb, this.e, ")");
     }
+
+    public Object e;
 }

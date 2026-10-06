@@ -7,4 +7,7 @@ package ic;
 public class jg {
     public jg() {
     }
+    public Object O = null;
+    public Object P = null;
+    public Object Q = null;
 }

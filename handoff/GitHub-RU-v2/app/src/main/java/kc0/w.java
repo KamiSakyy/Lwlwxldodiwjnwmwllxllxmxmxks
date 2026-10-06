@@ -70,4 +70,5 @@ public final class w implements aaShadow.n0 {
     public final String toString() {
         return x.i.g("AddMobileDeviceTokenMutation(deviceToken=", this.r, ", deviceName=", this.s, ")");
     }
+    public Object e(Object p1) { return null; }
 }

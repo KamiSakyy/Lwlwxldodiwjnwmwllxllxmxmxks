@@ -33,4 +33,7 @@ public final class c {
     public final String toString() {
         return "Projects(pageInfo=" + this.a + ", nodes=" + this.b + ")";
     }
+    public static final Object a = null;
+    public static final Object f = null;
+    public static final Object i = null;
 }

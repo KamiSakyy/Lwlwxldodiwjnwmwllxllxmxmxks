@@ -326,4 +326,20 @@ public class MaterialDatePicker<S> extends DialogFragment {
         this.d1.p(dialog.getWindow().getDecorView().getElevation());
         return dialog;
     }
+
+    public <T0> T0 i4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 w4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 k4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 B3(Object... a) {
+        return null;
+    }
 }

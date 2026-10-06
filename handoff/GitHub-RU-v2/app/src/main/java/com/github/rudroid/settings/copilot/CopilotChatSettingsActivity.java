@@ -85,4 +85,37 @@ public final class CopilotChatSettingsActivity extends l0 {
         e.c.a(this, new r1.d(new e(1, this), true, 1969642282));
     }
 
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 K0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getResources(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 s0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 w0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 y0(Object... a) {
+        return null;
+    }
+    public Object y0() { return null; }
 }

@@ -43,4 +43,8 @@ public final class c {
     public final String toString() {
         return "LoginRef(__typename=" + this.a + ", onNode=" + this.b + ", onActor=" + this.c + ", onUser=" + this.d + ", onOrganization=" + this.e + ")";
     }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
+    public static final Object f = null;
+    public static final Object i = null;
 }

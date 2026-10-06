@@ -71,4 +71,5 @@ public final class b {
     public final String toString() {
         return h(this.f4058a);
     }
+    public Object a = null;
 }

@@ -39,4 +39,6 @@ public final class h {
         sb.append(", __typename=");
         return h1.p(sb, this.c, ")");
     }
+    public Object a = null;
+    public Object b = null;
 }

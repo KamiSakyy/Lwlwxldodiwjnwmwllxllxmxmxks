@@ -56,4 +56,13 @@ public final class ProjectFieldType {
     public final String getRawValue() {
         return this.rawValue;
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 name(Object... a) {
+        return null;
+    }
+    public Object name() { return null; }
 }

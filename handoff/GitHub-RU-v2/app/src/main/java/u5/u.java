@@ -7,4 +7,5 @@ package u5;
 public class u {
     public u() {
     }
+    public Object ordinal() { return null; }
 }

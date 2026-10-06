@@ -25,4 +25,5 @@ final /* synthetic */ class g extends k71.i implements j71.e {
         public b() {
         }
     }
+    public Object a(Object p1) { return null; }
 }

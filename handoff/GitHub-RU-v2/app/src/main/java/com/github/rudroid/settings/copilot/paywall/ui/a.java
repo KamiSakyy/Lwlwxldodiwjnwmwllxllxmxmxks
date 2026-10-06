@@ -14,4 +14,5 @@ public final class a {
     public final String toString() {
         return "AvailableInLicenseFeature(description=0, featureStatus=null)";
     }
+    public Object c(Object p1, Object p2) { return null; }
 }

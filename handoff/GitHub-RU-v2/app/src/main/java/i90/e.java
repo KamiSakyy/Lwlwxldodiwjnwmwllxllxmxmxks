@@ -35,4 +35,5 @@ public final class e {
     public final String toString() {
         return h1.p(m0.n("Thread(diffLines=", ", id=", this.b, ", __typename=", this.a), this.c, ")");
     }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

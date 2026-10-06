@@ -42,4 +42,5 @@ public final class h1 {
         public v0() {
         }
     }
+    public static final Object i = null;
 }

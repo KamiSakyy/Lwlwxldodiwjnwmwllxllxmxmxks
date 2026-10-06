@@ -7,4 +7,8 @@ package com.github.rudroid.common;
 public class v {
     public v() {
     }
+
+    public <T0> T0 b(Object... a) {
+        return null;
+    }
 }

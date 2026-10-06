@@ -11,4 +11,5 @@ public final class p {
         this.a = str;
         this.b = str2;
     }
+    public Object add(Object p1) { return null; }
 }

@@ -47,4 +47,8 @@ public final class PullRequestMergeRequirementsState {
     public final String getRawValue() {
         return this.rawValue;
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

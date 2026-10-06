@@ -9,4 +9,5 @@ public final class t {
     public t(String str) {
         this.f680a = str;
     }
+    public Object s(Object p1, Object p2) { return null; }
 }

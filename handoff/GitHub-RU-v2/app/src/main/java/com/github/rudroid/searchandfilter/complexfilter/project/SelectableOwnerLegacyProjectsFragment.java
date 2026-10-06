@@ -112,4 +112,12 @@ public final class SelectableOwnerLegacyProjectsFragment extends Hilt_Selectable
         return (i) this.H0.getValue();
     }
 
+
+    public <T0> T0 j4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
 }

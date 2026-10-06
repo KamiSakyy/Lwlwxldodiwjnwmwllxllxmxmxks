@@ -63,4 +63,6 @@ public final class id0 {
         o.append(")");
         return o.toString();
     }
+
+    public Object i;
 }

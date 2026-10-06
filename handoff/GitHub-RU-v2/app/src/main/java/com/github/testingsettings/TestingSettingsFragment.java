@@ -50,4 +50,8 @@ public final class TestingSettingsFragment extends Hilt_TestingSettingsFragment 
         b0.z(d1.i(this), (h) null, (a0) null, new v0(this, cVar, (a71.c) null), 3);
     }
 
+
+    public <T0> T0 i4(Object... a) {
+        return null;
+    }
 }

@@ -37,4 +37,6 @@ public final class q implements j71.g {
         }
         return w61.a0.a;
     }
+    public Object X(Object p1) { return null; }
+    public Object Z(Object p1) { return null; }
 }

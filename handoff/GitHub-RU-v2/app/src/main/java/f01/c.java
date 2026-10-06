@@ -61,4 +61,5 @@ public final class c implements e {
         o.append(")");
         return o.toString();
     }
+    public Object d = null;
 }

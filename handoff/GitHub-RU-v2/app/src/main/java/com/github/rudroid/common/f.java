@@ -92,4 +92,23 @@ public final class f {
 
     public f(Object... a) {
     }
+
+    public static Object s;
+
+    public static Object y;
+
+    public static Object u;
+
+    public static Object z;
+
+    public static Object t;
+
+    public static Object x;
+
+    public static Object v;
+
+    public static Object w;
+
+    public static Object r;
+    public Object ordinal() { return null; }
 }

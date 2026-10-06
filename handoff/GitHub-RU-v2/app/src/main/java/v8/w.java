@@ -27,4 +27,5 @@ public abstract class w {
     public abstract x3.k a();
 
     public abstract x3.k b();
+    public Object d = null;
 }

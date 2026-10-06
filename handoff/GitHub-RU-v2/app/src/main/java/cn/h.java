@@ -31,4 +31,5 @@ public final class h {
     public final String toString() {
         return "CacheEntry(timeline=" + this.a + ", localAdditions=" + this.b + ")";
     }
+    public Object d(Object p1, Object p2, Object p3) { return null; }
 }

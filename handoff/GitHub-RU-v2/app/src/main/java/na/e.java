@@ -16,4 +16,5 @@ public final class e implements d {
     public final String getId() {
         return null;
     }
+    public Object a = null;
 }

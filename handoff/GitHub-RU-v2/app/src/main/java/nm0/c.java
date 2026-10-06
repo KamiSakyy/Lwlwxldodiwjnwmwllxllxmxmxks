@@ -42,4 +42,5 @@ public final class c implements i0 {
     public final void o(f fVar, w wVar, boolean z) {
         k.g(wVar, "customScalarAdapters");
     }
+    public static final Object a = null;
 }

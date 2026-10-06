@@ -492,4 +492,8 @@ public final class d {
         float[] fArr = dVar.f31154b;
         this.f31154b = b31.b.M(fArr, fArr.length);
     }
+
+    public <T0> T0 b(Object... a) {
+        return null;
+    }
 }

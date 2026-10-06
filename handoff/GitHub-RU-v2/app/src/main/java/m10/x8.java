@@ -35,4 +35,6 @@ public final class x8 {
     public final String toString() {
         return "CreateCommitOnBranchInput(branch=" + this.a + ", clientMutationId=" + this.b + ", expectedHeadOid=" + this.c + ", fileChanges=" + this.d + ", message=" + this.e + ")";
     }
+
+    public Object e;
 }

@@ -70,4 +70,20 @@ public final class WebViewActivity extends t {
     public final int t0() {
         return this.f5777j0;
     }
+
+    public <T0> T0 s0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getIntent(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 W(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getString(Object... a) {
+        return null;
+    }
 }

@@ -33,4 +33,5 @@ public final class w extends r {
     public final int size() {
         return this.t.v;
     }
+    public Object I(Object p1, Object p2, Object p3) { return null; }
 }

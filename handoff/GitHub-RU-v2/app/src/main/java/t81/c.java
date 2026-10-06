@@ -142,4 +142,5 @@ public final class c {
     public final String toString() {
         return this.b;
     }
+    public Object t(Object p1) { return null; }
 }

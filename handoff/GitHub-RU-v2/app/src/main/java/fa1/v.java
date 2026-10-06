@@ -11,4 +11,5 @@ public final class v extends c71.c {
         x0.q(null, this);
         return b71.a.r;
     }
+    public Object t = null;
 }

@@ -7,4 +7,10 @@ package w8;
 public class a0 {
     public a0() {
     }
+    public Object a = null;
+    public Object c = null;
+    public Object f = null;
+    public Object h = null;
+    public Object i = null;
+    public Object j = null;
 }

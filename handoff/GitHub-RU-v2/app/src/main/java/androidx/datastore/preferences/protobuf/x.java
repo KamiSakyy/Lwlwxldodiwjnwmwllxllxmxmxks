@@ -92,4 +92,5 @@ public final class x {
         public e() {
         }
     }
+    public Object ordinal() { return null; }
 }

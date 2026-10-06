@@ -36,4 +36,24 @@ public final class ScrollableTitleToolbar extends Toolbar {
             getHeaderText().setVisibility(0);
         }
     }
+
+    public <T0> T0 setTag(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getHeight(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 m(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getMenu(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setOnMenuItemClickListener(Object... a) {
+        return null;
+    }
 }

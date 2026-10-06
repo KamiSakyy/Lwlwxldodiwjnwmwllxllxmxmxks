@@ -80,4 +80,5 @@ public final class p implements Iterator {
 
     public p(Object... a) {
     }
+    public Object b = null;
 }

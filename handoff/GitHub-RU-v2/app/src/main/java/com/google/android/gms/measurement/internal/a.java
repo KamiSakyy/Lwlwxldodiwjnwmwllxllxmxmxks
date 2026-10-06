@@ -96,4 +96,6 @@ public final class a implements Runnable {
                 break;
         }
     }
+    public Object b() { return null; }
+    public Object e(Object p1) { return null; }
 }

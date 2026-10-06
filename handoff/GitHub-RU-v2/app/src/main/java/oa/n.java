@@ -27,4 +27,5 @@ public final class n implements g {
         return sharedPreferences;
     }
 
+    public Object b(Object p1) { return null; }
 }

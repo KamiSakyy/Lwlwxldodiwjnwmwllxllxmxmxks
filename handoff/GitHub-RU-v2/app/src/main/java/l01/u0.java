@@ -130,4 +130,6 @@ public final class u0 implements x {
         com.github.rudroid.m0.A(o, this.q, ", isInMergeQueue=", this.r, ", baseRefName=");
         return x.i.k(o, this.s, ", headRefName=", this.t, ")");
     }
+
+    public Object i;
 }

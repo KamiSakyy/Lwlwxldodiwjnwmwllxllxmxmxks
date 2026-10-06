@@ -7,4 +7,6 @@ public interface j {
     boolean e(l lVar, MenuItem menuItem);
 
     void j(l lVar);
+    public Object t = null;
+    public Object v = null;
 }

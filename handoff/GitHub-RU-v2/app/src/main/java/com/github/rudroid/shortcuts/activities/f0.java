@@ -14,4 +14,5 @@ public abstract class f0<T extends k5.f> extends d3 {
         this.u0 = true;
         ((b) w()).D((ChooseShortcutRepositoryActivity) this);
     }
+    public Object onCreate(Object p1) { return null; }
 }

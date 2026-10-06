@@ -41,4 +41,5 @@ public final class mj {
     public static mj[] values() {
         return (mj[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

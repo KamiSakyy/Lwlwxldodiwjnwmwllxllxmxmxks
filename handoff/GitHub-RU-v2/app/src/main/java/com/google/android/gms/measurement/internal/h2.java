@@ -39,4 +39,6 @@ public final class h2 implements Executor {
         Looper.getMainLooper();
         this.s = h0Var;
     }
+
+    public Object s;
 }

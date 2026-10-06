@@ -17,4 +17,5 @@ public final class e {
         this.c = aVar;
         this.d = vVar;
     }
+    public Object a(Object p1) { return null; }
 }

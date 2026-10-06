@@ -30,4 +30,5 @@ public abstract class l0 {
             return "LicenseComparison(license=null, description=null, featureStatus=null)";
         }
     }
+    public Object t(Object p1) { return null; }
 }

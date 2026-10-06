@@ -30,4 +30,6 @@ public final class a {
     public static a[] values() {
         return (a[]) u.clone();
     }
+    public Object u = null;
+    public Object v = null;
 }

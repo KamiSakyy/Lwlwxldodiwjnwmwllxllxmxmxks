@@ -98,4 +98,5 @@ public final class b implements Iterator, l71.a {
         this.f31726t = cVar.f31728b.iterator();
         this.f31725s = cVar.f31729c;
     }
+    public Object t = null;
 }

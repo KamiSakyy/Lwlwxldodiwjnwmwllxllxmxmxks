@@ -57,4 +57,5 @@ public final class s {
         }
         return b31.b.J(new c00.g((y71.i) obj2, this, jVar, 4), jVar, vVar);
     }
+    public Object j(Object p1, Object p2, Object p3) { return null; }
 }

@@ -11,4 +11,5 @@ final class o extends c71.c {
         this.v |= Integer.MIN_VALUE;
         throw null;
     }
+    public Object f(Object p1, Object p2, Object p3) { return null; }
 }

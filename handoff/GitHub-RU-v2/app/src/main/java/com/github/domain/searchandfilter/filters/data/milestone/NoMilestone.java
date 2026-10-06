@@ -89,4 +89,8 @@ public final class NoMilestone implements v2 {
             this.u = i2;
         }
     }
+
+    public <T0> T0 s(Object... a) {
+        return null;
+    }
 }

@@ -34,4 +34,7 @@ public final class f extends StyleSpan {
         }
         textPaint.setUnderlineText(this.f31989t);
     }
+    public Object r = null;
+    public Object s = null;
+    public Object t = null;
 }

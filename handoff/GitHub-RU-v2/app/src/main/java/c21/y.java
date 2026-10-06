@@ -61,4 +61,13 @@ public final class y implements ServiceConnection {
         w wVar = eVar2.f;
         wVar.sendMessage(wVar.obtainMessage(6, i, 1));
     }
+    public Object S(Object p1, Object p2, Object p3) { return null; }
+    public Object T(Object p1, Object p2, Object p3) { return null; }
+    public Object U(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object V(Object p1, Object p2, Object p3) { return null; }
+    public Object W(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object X(Object p1, Object p2, Object p3) { return null; }
+    public Object Y(Object p1, Object p2, Object p3) { return null; }
+    public Object Z(Object p1, Object p2) { return null; }
+    public Object a0(Object p1, Object p2) { return null; }
 }

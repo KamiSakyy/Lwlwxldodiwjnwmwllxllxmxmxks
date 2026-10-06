@@ -7,4 +7,6 @@ package ic;
 public class lf {
     public lf() {
     }
+    public Object P0(Object p1) { return null; }
+    public Object Q0(Object p1) { return null; }
 }

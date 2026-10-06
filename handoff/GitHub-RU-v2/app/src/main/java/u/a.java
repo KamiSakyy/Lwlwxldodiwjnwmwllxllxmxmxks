@@ -66,4 +66,5 @@ public final class a extends Binder implements b.a {
                 return super.onTransact(i, parcel, parcel2, i10);
         }
     }
+    public static final Object f3240a = null;
 }

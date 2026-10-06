@@ -34,4 +34,6 @@ public final class c {
     public final String toString() {
         return h1.p(s0.o("BeforeCommit(__typename=", this.a, ", abbreviatedOid=", this.b, ", id="), this.c, ")");
     }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
 }

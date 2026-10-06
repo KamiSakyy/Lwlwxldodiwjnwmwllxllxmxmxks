@@ -209,4 +209,5 @@ public final class h extends androidx.compose.foundation.lazy.layout.s0 {
 
     public h(Object... a) {
     }
+    public Object d() { return null; }
 }

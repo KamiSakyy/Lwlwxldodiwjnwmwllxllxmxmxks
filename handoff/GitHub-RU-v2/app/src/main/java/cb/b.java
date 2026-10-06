@@ -125,4 +125,5 @@ public final /* synthetic */ class b implements j71.a {
                 return MobileSubjectType.UNKNOWN__;
         }
     }
+    public static final Object f1079h = null;
 }

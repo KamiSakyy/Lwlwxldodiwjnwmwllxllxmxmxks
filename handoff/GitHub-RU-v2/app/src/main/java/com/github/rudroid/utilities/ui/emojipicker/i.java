@@ -48,4 +48,8 @@ final class i extends c71.j implements j71.e {
         return a0.a;
     }
 
+    public Object a() { return null; }
+    public Object d() { return null; }
+    public Object d(Object p1, Object p2, Object p3) { return null; }
+    public Object e() { return null; }
 }

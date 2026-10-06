@@ -44,4 +44,5 @@ public final class b {
     public final String toString() {
         return m0.m(s0.n(this.b, "OnDiscussionComment(id=", this.a, ", upvoteCount=", ", viewerCanUpvote="), this.c, ", viewerHasUpvoted=", this.d, ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

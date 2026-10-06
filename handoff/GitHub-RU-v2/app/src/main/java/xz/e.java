@@ -29,4 +29,5 @@ public final class e {
     public final String toString() {
         return "Value(__typename=" + this.a + ", projectV2GroupValueFragment=" + this.b + ")";
     }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

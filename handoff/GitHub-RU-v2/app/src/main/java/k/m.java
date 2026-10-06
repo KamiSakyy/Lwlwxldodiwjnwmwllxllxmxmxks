@@ -29,4 +29,6 @@ public final class m implements Executor {
                 break;
         }
     }
+    public Object s = null;
+    public Object t = null;
 }

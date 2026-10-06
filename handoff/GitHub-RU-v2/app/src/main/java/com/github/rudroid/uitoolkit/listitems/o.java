@@ -21,4 +21,6 @@ final class o implements j71.c {
         y3.e.d(cVar.f, dVar.c, 0.0f, 6);
         return w61.a0.a;
     }
+    public Object e(Object p1, Object p2) { return null; }
+    public Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

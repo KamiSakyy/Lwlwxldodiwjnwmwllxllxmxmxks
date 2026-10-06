@@ -44,4 +44,5 @@ public final class b {
         o.append(", isPrivate=");
         return f4.s(o, this.e, ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

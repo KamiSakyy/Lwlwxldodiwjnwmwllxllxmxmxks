@@ -39,4 +39,5 @@ public final class b extends y {
             throw sSLPeerUnverifiedException;
         }
     }
+    public static final Object r = null;
 }

@@ -46,4 +46,6 @@ public final class a implements o.a {
     public final void q(o.b bVar) {
         throw null;
     }
+    public Object Z(Object p1) { return null; }
+    public Object a0() { return null; }
 }

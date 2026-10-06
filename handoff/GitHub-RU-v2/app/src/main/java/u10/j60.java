@@ -64,4 +64,6 @@ public final class j60 {
         o.append(")");
         return o.toString();
     }
+
+    public Object i;
 }

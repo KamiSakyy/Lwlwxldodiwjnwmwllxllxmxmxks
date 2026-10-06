@@ -54,4 +54,5 @@ public final class wz {
     public static wz[] values() {
         return (wz[]) B.clone();
     }
+    public Object ordinal() { return null; }
 }

@@ -10,4 +10,5 @@ public final class x extends q {
         super(str);
         this.f689b = str2;
     }
+    public Object Companion = null;
 }

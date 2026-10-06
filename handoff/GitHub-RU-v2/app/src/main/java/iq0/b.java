@@ -42,4 +42,5 @@ public final class b {
         n.append(", __typename=");
         return h1.p(n, this.e, ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

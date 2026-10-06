@@ -22,4 +22,36 @@ public final class s {
 
     public s(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8) {
     }
+
+    public <T0> T0 h(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 f(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 j(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 c(Object... a) {
+        return null;
+    }
+    public Object A() { return null; }
+    public Object N() { return null; }
+    public Object S(Object p1, Object p2) { return null; }
+    public Object V() { return null; }
+    public Object X() { return null; }
+    public Object e(Object p1) { return null; }
+    public Object e0(Object p1) { return null; }
+    public Object g(Object p1) { return null; }
+    public Object h() { return null; }
+    public Object n0(Object p1) { return null; }
+    public Object r() { return null; }
+    public Object t() { return null; }
+    public Object d = null;
+    public Object e = null;
+    public Object f = null;
+    public Object p = null;
 }

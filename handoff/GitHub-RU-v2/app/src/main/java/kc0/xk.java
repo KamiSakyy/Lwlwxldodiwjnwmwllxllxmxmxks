@@ -58,4 +58,6 @@ public final class xk {
         o.append(")");
         return o.toString();
     }
+
+    public Object i;
 }

@@ -239,4 +239,5 @@ public final class b {
                 throw new NoWhenBranchMatchedException();
         }
     }
+    public static final Object f1079h = null;
 }

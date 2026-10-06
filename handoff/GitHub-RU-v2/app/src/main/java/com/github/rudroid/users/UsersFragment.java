@@ -196,4 +196,18 @@ public class UsersFragment extends Hilt_UsersFragment implements com.github.rudr
     }
 
 
+
+    public <T0> T0 i4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 E(Object... a) {
+        return null;
+    }
+    public Object E(Object p1, Object p2) { return null; }
+    public Object g4() { return null; }
 }

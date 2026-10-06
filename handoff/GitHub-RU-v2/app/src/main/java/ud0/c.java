@@ -39,4 +39,5 @@ public final class c implements h0 {
     public final String toString() {
         return f4.q(s0.o("AvatarFragment(__typename=", this.a, ", avatarUrl=", this.b, ", nodeIdFragment="), this.c, ")");
     }
+    public static final Object a = null;
 }

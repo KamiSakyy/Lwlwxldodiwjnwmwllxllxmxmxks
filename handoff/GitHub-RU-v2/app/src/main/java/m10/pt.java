@@ -52,4 +52,5 @@ public final class pt {
     public static pt[] values() {
         return (pt[]) v.clone();
     }
+    public Object ordinal() { return null; }
 }

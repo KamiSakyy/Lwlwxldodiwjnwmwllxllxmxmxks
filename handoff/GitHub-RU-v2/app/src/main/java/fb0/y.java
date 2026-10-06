@@ -34,4 +34,5 @@ public final class y {
     public final String toString() {
         return h1.p(a0.s0.o("OnUser(login=", this.a, ", userName=", this.b, ", id="), this.c, ")");
     }
+    public Object Q(Object p1) { return null; }
 }

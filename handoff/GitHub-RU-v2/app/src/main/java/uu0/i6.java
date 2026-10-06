@@ -41,4 +41,5 @@ public final class i6 implements aa.h0 {
         o.append(")");
         return o.toString();
     }
+    public Object a = null;
 }

@@ -21,4 +21,5 @@ public final class a4 {
     public static a4[] values() {
         return (a4[]) t.clone();
     }
+    public Object ordinal() { return null; }
 }

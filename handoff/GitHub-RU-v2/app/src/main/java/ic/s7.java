@@ -7,4 +7,9 @@ package ic;
 public class s7 {
     public s7() {
     }
+    public Object O = null;
+    public Object P = null;
+    public Object Q = null;
+    public Object R = null;
+    public Object b = null;
 }

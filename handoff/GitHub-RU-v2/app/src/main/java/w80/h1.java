@@ -61,4 +61,5 @@ public final class h1 implements aa.a {
         fVar.z0("__typename");
         bVar2.b(fVar, wVar, aVar.d);
     }
+    public static final Object i = null;
 }

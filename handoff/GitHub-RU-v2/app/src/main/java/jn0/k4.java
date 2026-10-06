@@ -50,4 +50,6 @@ public final class k4 {
         f1.e.x(o, this.e, ", targetUrl=", this.f, ", isRequired=");
         return jo.f4.s(o, this.g, ")");
     }
+
+    public Object e;
 }

@@ -7,4 +7,12 @@ package g3;
 public class g0 {
     public g0() {
     }
+
+    public static Object b;
+
+    public <T0> T0 b(Object... a) {
+        return null;
+    }
+    public Object b(Object p1, Object p2) { return null; }
+    public Object i(Object p1, Object p2) { return null; }
 }

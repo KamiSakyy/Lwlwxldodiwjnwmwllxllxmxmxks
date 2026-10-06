@@ -57,4 +57,16 @@ public final class SettingsFeaturePreviewFragment extends Hilt_SettingsFeaturePr
     public final void u4() {
         s4(2132148239);
     }
+
+    public <T0> T0 C3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 t4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 s4(Object... a) {
+        return null;
+    }
 }

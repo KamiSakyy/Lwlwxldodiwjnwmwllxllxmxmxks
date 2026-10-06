@@ -86,4 +86,7 @@ public final class h1 implements aa.h0 {
         o.append(")");
         return o.toString();
     }
+
+    public Object e;
+    public static final Object i = null;
 }

@@ -7,4 +7,7 @@ package ic;
 public class ea {
     public ea() {
     }
+    public Object N = null;
+    public Object O = null;
+    public Object P = null;
 }

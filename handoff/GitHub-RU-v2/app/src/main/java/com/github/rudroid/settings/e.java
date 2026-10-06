@@ -13,4 +13,5 @@ public abstract class e<T extends k5.f> extends com.github.rudroid.activities.d3
         this.u0 = true;
         ((b0) w()).w0((SettingsNotificationSchedulesActivity) this);
     }
+    public Object onCreate(Object p1) { return null; }
 }

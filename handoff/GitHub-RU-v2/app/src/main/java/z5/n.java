@@ -24,4 +24,5 @@ public interface n {
         public e() {
         }
     }
+    public Object d = null;
 }

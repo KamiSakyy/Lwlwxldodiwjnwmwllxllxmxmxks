@@ -28,4 +28,6 @@ public final class h implements Iterable, l71.a {
                 return new s71.b(k71.k.k((Object[]) ((p) this.s).s));
         }
     }
+
+    public Object s;
 }

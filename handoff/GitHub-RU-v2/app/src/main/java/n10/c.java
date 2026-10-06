@@ -287,4 +287,9 @@ public final class c implements aa.a {
                 break;
         }
     }
+    public static final Object i = null;
+    public Object C = null;
+    public Object D = null;
+    public Object E = null;
+    public Object y = null;
 }

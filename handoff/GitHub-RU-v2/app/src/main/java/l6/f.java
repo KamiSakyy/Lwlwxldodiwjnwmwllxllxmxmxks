@@ -311,4 +311,6 @@ public final class f implements a {
         if (a102 != obj22) {
         }
     }
+
+    public static Object a;
 }

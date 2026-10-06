@@ -215,4 +215,5 @@ public final class j extends b0 {
         public CoordinatorLayout() {
         }
     }
+    public Object c() { return null; }
 }

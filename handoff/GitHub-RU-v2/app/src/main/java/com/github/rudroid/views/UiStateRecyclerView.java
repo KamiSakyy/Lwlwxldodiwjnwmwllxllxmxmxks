@@ -95,4 +95,20 @@ public final class UiStateRecyclerView extends RecyclerView {
         setConcatAdapter(cVar);
         setAdapter(getConcatAdapter());
     }
+
+    public <T0> T0 n(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 j(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setAdapter(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setVisibility(Object... a) {
+        return null;
+    }
 }

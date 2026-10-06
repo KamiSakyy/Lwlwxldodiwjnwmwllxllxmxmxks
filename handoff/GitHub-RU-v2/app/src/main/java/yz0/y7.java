@@ -75,4 +75,6 @@ public final class y7 {
         sb.append(", viewerCanReopen=");
         return jo.f4.s(sb, this.k, ")");
     }
+
+    public Object i;
 }

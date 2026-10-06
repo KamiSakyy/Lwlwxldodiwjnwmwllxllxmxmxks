@@ -22,4 +22,6 @@ public final class m0 {
     public final String toString() {
         return "OnProjectV2Owner(projectsV2=" + this.a + ")";
     }
+    public Object b(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object h(Object p1, Object p2, Object p3) { return null; }
 }

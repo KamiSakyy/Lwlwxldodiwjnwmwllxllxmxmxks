@@ -45,4 +45,8 @@ public final class NotificationsFilterBarFragment extends Hilt_NotificationsFilt
         return (com.github.rudroid.searchandfilter.h0) this.O0.getValue();
     }
 
+
+    public <T0> T0 g4(Object... a) {
+        return null;
+    }
 }

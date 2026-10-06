@@ -21,4 +21,5 @@ public final class i extends k71.l implements j71.a {
         r rVar = u1Var instanceof r ? (r) u1Var : null;
         return rVar != null ? rVar.g0() : t6.a.f32099b;
     }
+    public Object getIntent() { return null; }
 }

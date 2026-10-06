@@ -7,4 +7,6 @@ package ic;
 public class qe {
     public qe() {
     }
+    public Object O = null;
+    public Object P = null;
 }

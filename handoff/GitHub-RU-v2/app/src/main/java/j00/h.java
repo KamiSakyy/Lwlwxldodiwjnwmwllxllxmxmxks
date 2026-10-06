@@ -54,4 +54,6 @@ public final class h {
         u.append(")");
         return u.toString();
     }
+
+    public Object i;
 }

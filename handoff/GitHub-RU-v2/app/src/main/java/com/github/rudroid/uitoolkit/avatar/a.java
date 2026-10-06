@@ -32,4 +32,6 @@ public final class a {
     public final String toString() {
         return h1.n("AsyncAvatar(url=", this.a, ", requiresAuthentication=", ")", this.b);
     }
+    public Object c(Object p1, Object p2) { return null; }
+    public Object ordinal() { return null; }
 }

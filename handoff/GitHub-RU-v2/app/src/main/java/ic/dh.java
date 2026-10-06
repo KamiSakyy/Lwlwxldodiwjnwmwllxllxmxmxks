@@ -7,4 +7,6 @@ package ic;
 public class dh {
     public dh() {
     }
+    public Object P0(Object p1) { return null; }
+    public Object O = null;
 }

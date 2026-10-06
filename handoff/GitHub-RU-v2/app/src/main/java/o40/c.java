@@ -51,4 +51,8 @@ public final class c {
         n.append(", id=");
         return h1.p(n, this.g, ")");
     }
+    public Object b(Object p1) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
+    public static final Object f = null;
 }

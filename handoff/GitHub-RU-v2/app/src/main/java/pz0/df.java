@@ -43,4 +43,5 @@ public final class df {
     public static df[] values() {
         return (df[]) x.clone();
     }
+    public Object ordinal() { return null; }
 }

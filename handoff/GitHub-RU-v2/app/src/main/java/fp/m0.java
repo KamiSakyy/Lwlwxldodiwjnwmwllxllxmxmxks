@@ -60,4 +60,5 @@ public final class m0 implements aa.w0 {
     public final String toString() {
         return f1.e.z("ViewerAgentSessionQuery(id=", this.r, ")");
     }
+    public Object f(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

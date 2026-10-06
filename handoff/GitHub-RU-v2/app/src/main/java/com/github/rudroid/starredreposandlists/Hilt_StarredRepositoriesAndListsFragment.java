@@ -55,4 +55,8 @@ public abstract class Hilt_StarredRepositoriesAndListsFragment extends GitHubFra
         B4();
         return this.A0;
     }
+
+    public <T0> T0 w(Object... a) {
+        return null;
+    }
 }

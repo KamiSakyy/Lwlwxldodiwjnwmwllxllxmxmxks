@@ -10,4 +10,6 @@ public final class f {
         k.g(eVar, "discussionCommentDataMapper");
         this.a = eVar;
     }
+    public static final Object a = null;
+    public static final Object r = null;
 }

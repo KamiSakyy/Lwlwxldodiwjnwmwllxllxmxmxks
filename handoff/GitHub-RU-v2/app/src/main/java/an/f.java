@@ -13,4 +13,5 @@ public final class f {
         this.a = y1Var;
         this.b = mVar;
     }
+    public static final Object a = null;
 }

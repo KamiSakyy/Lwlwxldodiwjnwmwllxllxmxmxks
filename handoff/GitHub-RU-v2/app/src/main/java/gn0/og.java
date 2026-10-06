@@ -35,4 +35,5 @@ public final class og {
     public static og[] values() {
         return (og[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

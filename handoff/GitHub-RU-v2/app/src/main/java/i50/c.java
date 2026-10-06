@@ -116,4 +116,7 @@ public final class c implements i0, t6.b, bm.k, com.google.android.gms.measureme
         return false;
     }
 
+    public static final Object a = null;
+    public static final Object f = null;
+    public static final Object i = null;
 }

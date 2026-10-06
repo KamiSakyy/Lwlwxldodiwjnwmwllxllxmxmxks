@@ -7,4 +7,5 @@ package d1;
 public class h1 {
     public h1() {
     }
+    public Object u(Object p1, Object p2) { return null; }
 }

@@ -92,4 +92,5 @@ public final class g0 {
     public static g0[] values() {
         return (g0[]) f18603z.clone();
     }
+    public Object ordinal() { return null; }
 }

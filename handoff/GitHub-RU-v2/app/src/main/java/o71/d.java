@@ -10,4 +10,8 @@ public abstract class d {
         Integer num = g71.a.a;
         f30094r = (num == null || num.intValue() >= 34) ? new p71.a() : new b();
     }
+
+    public static Object r;
+
+    public static o71.a r;
 }

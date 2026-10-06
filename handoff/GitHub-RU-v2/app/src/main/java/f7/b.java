@@ -11,4 +11,7 @@ public final class b {
     public final int a() {
         return SdkExtensions.getExtensionVersion(1000000);
     }
+
+    public static f7.b a;
+    public static final Object a = null;
 }

@@ -109,4 +109,6 @@ public final class lu {
         public a() {
         }
     }
+
+    public Object i;
 }

@@ -200,4 +200,50 @@ public final class c implements l, v {
         this.M = i12;
         this.N = i13;
     }
+
+    public Object f30165r;
+
+    public Object f30166s;
+
+    public Object f30167t;
+
+    public Object f30168u;
+
+    public Object f30169v;
+
+    public Object f30170w;
+
+    public Object f30171x;
+
+    public Object f30172y;
+
+    public Object f30173z;
+
+    public Object A;
+
+    public Object B;
+
+    public Object C;
+
+    public Object D;
+
+    public Object E;
+
+    public Object F;
+
+    public Object G;
+
+    public Object H;
+
+    public Object I;
+
+    public Object J;
+
+    public Object K;
+
+    public Object L;
+
+    public Object M;
+
+    public Object N;
 }

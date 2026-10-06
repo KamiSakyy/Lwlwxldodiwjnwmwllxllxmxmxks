@@ -6,4 +6,5 @@ package n6;
  */
 public class i {
     public i() {}
+    public Object a = null;
 }

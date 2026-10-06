@@ -277,4 +277,7 @@ public final class d0 extends l7.m0 implements jf.c {
         }
         throw new IllegalStateException(("Unimplemented list item type " + i).toString());
     }
+    public Object n() { return null; }
+    public Object r(Object p1, Object p2) { return null; }
+    public Object s(Object p1, Object p2) { return null; }
 }

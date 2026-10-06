@@ -45,4 +45,6 @@ public final class c implements i0 {
 
 
 
+    public static final Object a = null;
+    public static final Object i = null;
 }

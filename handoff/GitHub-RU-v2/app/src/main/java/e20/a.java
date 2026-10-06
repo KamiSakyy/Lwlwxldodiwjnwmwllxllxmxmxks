@@ -29,4 +29,5 @@ public final class a implements aa.a {
         aa.c.b(aa.c.c(b.a, true)).b(fVar, wVar, bVar.a);
     }
 
+    public Object O(Object p1) { return null; }
 }

@@ -12,4 +12,6 @@ final class l1<T> implements y71.j {
         this.r.G.j((pm.c) obj);
         return w61.a0.a;
     }
+    public Object b() { return null; }
+    public Object getValue() { return null; }
 }

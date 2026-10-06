@@ -50,4 +50,8 @@ public final class NotificationReasonState {
     public static NotificationReasonState[] values() {
         return (NotificationReasonState[]) $VALUES.clone();
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

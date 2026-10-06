@@ -195,4 +195,12 @@ public final class y implements y71.i {
         }
         return w61.a0.a;
     }
+    public Object K(Object p1) { return null; }
+    public Object L(Object p1) { return null; }
+    public Object M(Object p1) { return null; }
+    public Object N(Object p1) { return null; }
+    public Object i(Object p1) { return null; }
+    public Object j(Object p1) { return null; }
+    public Object k(Object p1) { return null; }
+    public Object n(Object p1) { return null; }
 }

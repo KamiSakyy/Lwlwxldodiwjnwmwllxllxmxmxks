@@ -5,4 +5,5 @@ public final class o implements j71.c {
     public final /* bridge */ /* synthetic */ Object k(Object obj) {
         return null;
     }
+    public static final Object a = null;
 }

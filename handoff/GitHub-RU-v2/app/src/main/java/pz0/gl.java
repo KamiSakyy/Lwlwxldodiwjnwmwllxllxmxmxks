@@ -82,4 +82,5 @@ public final class gl {
     public static gl[] values() {
         return (gl[]) K.clone();
     }
+    public Object ordinal() { return null; }
 }

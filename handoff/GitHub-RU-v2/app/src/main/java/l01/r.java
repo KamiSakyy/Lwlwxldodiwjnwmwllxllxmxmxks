@@ -156,4 +156,6 @@ public final class r implements x {
         o.append(")");
         return o.toString();
     }
+
+    public Object i;
 }

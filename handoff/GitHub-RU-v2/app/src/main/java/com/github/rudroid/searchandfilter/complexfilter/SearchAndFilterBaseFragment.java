@@ -58,4 +58,32 @@ public abstract class SearchAndFilterBaseFragment<T> extends BindingFragment imp
         recyclerView2.j(new a0(recyclerView2, this));
         I4().getData().e(F3(), new c0.a(new y(0, this)));
     }
+
+    public <T0> T0 i4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 B4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 F3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 y3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 N3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 O3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 V3(Object... a) {
+        return null;
+    }
 }

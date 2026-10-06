@@ -63,4 +63,5 @@ public final class a {
     public static a[] values() {
         return (a[]) E.clone();
     }
+    public Object ordinal() { return null; }
 }

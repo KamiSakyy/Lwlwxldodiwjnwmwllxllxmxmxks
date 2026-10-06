@@ -36,4 +36,5 @@ public final class j1 {
     public static j1[] values() {
         return (j1[]) f22311u.clone();
     }
+    public Object compareTo(Object p1) { return null; }
 }

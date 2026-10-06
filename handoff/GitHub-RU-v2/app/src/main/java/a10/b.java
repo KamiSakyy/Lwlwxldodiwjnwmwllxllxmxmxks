@@ -729,4 +729,6 @@ public final class b extends j implements j71.c {
         this.x = (j) cVar;
     }
 
+    public Object i() { return null; }
+    public Object s() { return null; }
 }

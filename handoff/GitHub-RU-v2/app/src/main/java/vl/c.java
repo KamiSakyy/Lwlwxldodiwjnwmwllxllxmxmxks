@@ -10,4 +10,5 @@ public final class c {
         k.g(gVar, "service");
         this.a = gVar;
     }
+    public Object v(Object p1) { return null; }
 }

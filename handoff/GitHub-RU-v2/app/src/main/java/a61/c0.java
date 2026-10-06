@@ -39,4 +39,5 @@ public final class c0 {
     public final String toString() {
         return "ProcessDetails(processName=" + this.a + ", pid=" + this.b + ", importance=" + this.c + ", isDefaultProcess=" + this.d + ')';
     }
+    public Object ordinal() { return null; }
 }

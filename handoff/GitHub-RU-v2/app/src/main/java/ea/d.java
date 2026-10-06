@@ -78,4 +78,5 @@ public final class d {
 
     public d(Object... a) {
     }
+    public Object ordinal() { return null; }
 }

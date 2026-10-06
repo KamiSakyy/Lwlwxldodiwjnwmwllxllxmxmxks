@@ -69,4 +69,6 @@ public final class d extends j5.b {
             r0.refreshDrawableState();
         }
     }
+    public Object m(Object p1, Object p2) { return null; }
+    public Object r(Object p1, Object p2) { return null; }
 }

@@ -10,4 +10,6 @@ final /* synthetic */ class x extends k71.a implements j71.c {
         ((com.github.rudroid.searchandfilter.q) ((k71.a) this).r).W(list, x61.r.r);
         return w61.a0.a;
     }
+    public Object i(Object p1) { return null; }
+    public Object t(Object p1) { return null; }
 }

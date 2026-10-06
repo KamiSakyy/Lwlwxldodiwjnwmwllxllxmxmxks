@@ -16,4 +16,7 @@ public final class d extends b {
     public final List b() {
         return Collections.singletonList(new c(1));
     }
+    public Object a(Object p1, Object p2) { return null; }
+    public Object d(Object p1, Object p2) { return null; }
+    public Object e() { return null; }
 }

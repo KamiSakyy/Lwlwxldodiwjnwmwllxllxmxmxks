@@ -21,4 +21,8 @@ public final class e implements e0 {
     public final f0 getKey() {
         return f24816b;
     }
+
+    public static Object b;
+    public Object d() { return null; }
+    public Object a = null;
 }

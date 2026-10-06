@@ -26,4 +26,5 @@ public final class t0 {
     public final String toString() {
         return "UnpinIssue(issue=" + this.a + ")";
     }
+    public static final Object d = null;
 }

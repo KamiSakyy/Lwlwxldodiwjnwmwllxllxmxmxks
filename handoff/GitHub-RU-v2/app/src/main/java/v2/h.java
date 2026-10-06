@@ -5,4 +5,5 @@ public interface h {
 
     /* renamed from: o, reason: collision with root package name */
     public static final g f32516o = g.f32484a;
+    public static final Object o = null;
 }

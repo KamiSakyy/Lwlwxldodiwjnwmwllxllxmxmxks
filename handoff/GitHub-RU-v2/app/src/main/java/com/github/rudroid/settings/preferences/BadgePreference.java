@@ -72,4 +72,8 @@ public final class BadgePreference extends Preference {
         this.f0 = new a(this);
     }
 
+
+    public <T0> T0 j(Object... a) {
+        return null;
+    }
 }

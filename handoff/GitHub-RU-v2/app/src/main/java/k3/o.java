@@ -21,4 +21,6 @@ public final class o {
         int i = this.f27687a;
         return i == 0 ? "Normal" : i == 1 ? "Italic" : "Invalid";
     }
+    public Object c(Object p1, Object p2, Object p3, Object p4, Object p5, Object p6, Object p7, Object p8, Object p9, Object p10) { return null; }
+    public Object a = null;
 }

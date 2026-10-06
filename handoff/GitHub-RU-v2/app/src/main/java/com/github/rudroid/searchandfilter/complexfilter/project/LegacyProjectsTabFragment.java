@@ -108,4 +108,20 @@ public final class LegacyProjectsTabFragment extends Hilt_LegacyProjectsTabFragm
         B4().O.setupWithViewPager(B4().P);
     }
 
+
+    public <T0> T0 A3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 j4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 B4(Object... a) {
+        return null;
+    }
 }

@@ -44,4 +44,8 @@ public final class x0 implements d61.b {
 
     public x0(Object... a) {
     }
+    public Object a(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object b(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object d(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object e() { return null; }
 }

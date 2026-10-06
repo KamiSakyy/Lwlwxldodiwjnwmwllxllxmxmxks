@@ -178,4 +178,5 @@ public final class o {
             }
         }
     }
+    public Object z() { return null; }
 }

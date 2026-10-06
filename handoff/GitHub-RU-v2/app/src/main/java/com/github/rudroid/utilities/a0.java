@@ -58,4 +58,8 @@ public final class a0 {
     public static a0[] values() {
         return (a0[]) E.clone();
     }
+    public Object I3() { return null; }
+    public Object name() { return null; }
+    public Object x3() { return null; }
+    public Object j0 = null;
 }

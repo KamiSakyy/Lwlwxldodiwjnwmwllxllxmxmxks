@@ -10,4 +10,5 @@ public final class r1 implements t1 {
     public final s1 g() {
         return new e51.a(this);
     }
+    public Object r = null;
 }

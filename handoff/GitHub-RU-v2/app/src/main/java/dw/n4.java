@@ -33,4 +33,5 @@ public final class n4 {
         o.append(")");
         return o.toString();
     }
+    public Object i = null;
 }

@@ -12,4 +12,8 @@ public final class f0 {
         }
         return rVar.f(new w1(1.0f, z10));
     }
+
+    public static Object a;
+
+    public static androidx.compose.foundation.layout.f0 a;
 }

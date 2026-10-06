@@ -55,4 +55,5 @@ public final class j0 {
     public final boolean a() {
         return this == f32796t || this == f32797u || this == f32799w;
     }
+    public Object ordinal() { return null; }
 }

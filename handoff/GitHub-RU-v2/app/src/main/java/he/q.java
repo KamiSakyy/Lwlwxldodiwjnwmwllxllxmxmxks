@@ -33,4 +33,6 @@ public final class q {
     public static q[] values() {
         return (q[]) f25630t.clone();
     }
+
+    public static Object r;
 }

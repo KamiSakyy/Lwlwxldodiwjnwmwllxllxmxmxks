@@ -24,4 +24,5 @@ public final class b {
     public final String toString() {
         return f1.e.z("OnStatusContext(id=", this.a, ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

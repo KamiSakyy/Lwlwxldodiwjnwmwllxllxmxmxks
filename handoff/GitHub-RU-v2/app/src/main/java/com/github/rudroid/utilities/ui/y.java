@@ -44,4 +44,5 @@ final class y extends c71.j implements j71.e {
         }
         return w61.a0.a;
     }
+    public Object a(Object p1, Object p2) { return null; }
 }

@@ -53,4 +53,6 @@ public final class no implements aaShadow.a {
             bl0.b.d(fVar, wVar, aVar);
         }
     }
+    public Object e(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object h(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

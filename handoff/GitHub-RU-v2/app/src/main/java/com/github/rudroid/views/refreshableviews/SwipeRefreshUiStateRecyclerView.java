@@ -290,4 +290,12 @@ public final class SwipeRefreshUiStateRecyclerView extends d<bh> {
     }
 
 
+
+    public <T0> T0 getContext(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setRefreshing(Object... a) {
+        return null;
+    }
 }

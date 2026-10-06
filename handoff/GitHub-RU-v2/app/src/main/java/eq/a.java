@@ -38,4 +38,5 @@ public final class a {
     public final String toString() {
         return m0.m(s0.o("OnBot(id=", this.a, ", displayName=", this.b, ", isCopilot="), this.c, ", isAgent=", this.d, ")");
     }
+    public Object O(Object p1) { return null; }
 }

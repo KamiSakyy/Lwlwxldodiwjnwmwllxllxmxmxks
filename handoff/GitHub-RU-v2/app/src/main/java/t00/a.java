@@ -156,4 +156,10 @@ public final class a extends c71.j implements j71.f {
                 return w61.a0.a;
         }
     }
+    public Object a(Object p1) { return null; }
+    public Object f(Object p1) { return null; }
+    public Object f0(Object p1) { return null; }
+    public Object h0(Object p1) { return null; }
+    public Object ordinal() { return null; }
+    public static final Object r = null;
 }

@@ -64,4 +64,5 @@ public final class b implements Parcelable {
         parcel.writeString(this.f32294r.name());
         parcel.writeInt(this.f32295s ? 1 : 0);
     }
+    public Object s = null;
 }

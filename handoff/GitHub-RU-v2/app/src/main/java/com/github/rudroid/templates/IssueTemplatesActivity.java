@@ -230,4 +230,46 @@ public final class IssueTemplatesActivity extends com.github.rudroid.templates.b
         R0(cVar, null);
     }
 
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 K0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 w0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 s0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setResult(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getString(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 J0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 y0(Object... a) {
+        return null;
+    }
+    public Object getString(Object p1, Object p2, Object p3) { return null; }
+    public Object y0() { return null; }
 }

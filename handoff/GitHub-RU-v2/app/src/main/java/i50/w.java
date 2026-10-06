@@ -55,4 +55,5 @@ public final class w implements aa.a {
             ja0.b.d(fVar, wVar, aVar);
         }
     }
+    public Object e(Object p1) { return null; }
 }

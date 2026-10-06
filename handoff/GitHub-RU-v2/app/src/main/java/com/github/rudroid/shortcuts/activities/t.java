@@ -14,4 +14,5 @@ final /* synthetic */ class t extends k71.i implements j71.c {
         y1Var.k((Object) null, ShortcutConfigurationModel.c((ShortcutConfigurationModel) y1Var.getValue(), null, null, null, null, null, str, 63));
         return w61.a0.a;
     }
+    public Object f(Object p1, Object p2, Object p3) { return null; }
 }

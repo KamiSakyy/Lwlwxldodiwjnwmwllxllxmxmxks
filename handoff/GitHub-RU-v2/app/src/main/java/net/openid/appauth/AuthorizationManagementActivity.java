@@ -188,4 +188,20 @@ public class AuthorizationManagementActivity extends k.i {
         bundle.putParcelable("completeIntent", this.V);
         bundle.putParcelable("cancelIntent", this.W);
     }
+
+    public <T0> T0 setResult(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getIntent(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setIntent(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 startActivity(Object... a) {
+        return null;
+    }
 }

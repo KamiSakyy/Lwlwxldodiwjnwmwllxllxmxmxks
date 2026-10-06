@@ -38,4 +38,5 @@ public final class w {
         sb.append(", nodeIdFragment=");
         return f1.e.n(sb, this.c, ")");
     }
+    public Object e(Object p1) { return null; }
 }

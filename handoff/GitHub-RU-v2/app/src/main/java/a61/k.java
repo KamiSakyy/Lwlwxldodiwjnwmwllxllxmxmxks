@@ -30,4 +30,6 @@ public final class k {
     public final String toString() {
         return "DataCollectionStatus(performance=" + this.a + ", crashlytics=" + this.b + ", sessionSamplingRate=" + this.c + ')';
     }
+    public Object q() { return null; }
+    public Object r() { return null; }
 }

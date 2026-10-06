@@ -7,4 +7,6 @@ package h0;
 public class d1 {
     public d1() {
     }
+
+    public static go0.o a;
 }

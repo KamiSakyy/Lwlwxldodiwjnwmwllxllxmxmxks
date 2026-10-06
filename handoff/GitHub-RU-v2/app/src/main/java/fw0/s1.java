@@ -150,4 +150,6 @@ public final class s1 implements aa.h0 {
         o.append(")");
         return o.toString();
     }
+
+    public Object e;
 }

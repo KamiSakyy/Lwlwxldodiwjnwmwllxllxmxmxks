@@ -7,4 +7,24 @@ package androidx.fragment.app;
 public class DialogFragment {
     public DialogFragment() {
     }
+
+    public <T0> T0 a4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 Z3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 b4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 onDismiss(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 u4(Object... a) {
+        return null;
+    }
 }

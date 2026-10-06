@@ -7,4 +7,12 @@ package androidx.window.sidecar;
 public class SidecarProvider {
     public SidecarProvider() {
     }
+
+    public <T0> T0 getSidecarImpl(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getApiVersion(Object... a) {
+        return null;
+    }
 }

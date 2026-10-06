@@ -39,4 +39,5 @@ public final class o0 {
     public final String toString() {
         return com.github.rudroid.m0.m(a0.s0.n(this.b, "OnDiscussion(id=", this.a, ", upvoteCount=", ", viewerCanUpvote="), this.c, ", viewerHasUpvoted=", this.d, ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

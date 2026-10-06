@@ -49,4 +49,11 @@ public final class c implements aa.h0 {
         o.append(", viewerCanUnblock=");
         return com.github.rudroid.m0.l(o, this.g, ", __typename=", this.h, ")");
     }
+    public Object b(Object p1) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
+    public static final Object f = null;
+    public static final Object i = null;
+    public static final Object j = null;
+    public static final Object k = null;
 }

@@ -38,4 +38,8 @@ public final class DiscussionCloseReason {
     public static DiscussionCloseReason[] values() {
         return (DiscussionCloseReason[]) $VALUES.clone();
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

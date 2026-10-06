@@ -48,4 +48,5 @@ public abstract class h1 implements aa.a {
         fVar.z0("__typename");
         bVar.b(fVar, wVar, e1Var.c);
     }
+    public static final Object i = null;
 }

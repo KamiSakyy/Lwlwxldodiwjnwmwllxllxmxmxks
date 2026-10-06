@@ -17,4 +17,5 @@ public final class l0 {
         this.f1712b = i10;
         this.f1713c = i11;
     }
+    public Object t(Object p1) { return null; }
 }

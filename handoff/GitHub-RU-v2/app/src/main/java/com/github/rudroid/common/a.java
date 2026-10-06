@@ -139,4 +139,24 @@ public final class a {
     public static a[] values() {
         return (a[]) Z.clone();
     }
+
+    public static Object w;
+
+    public static Object r;
+
+    public static Object u;
+
+    public static com.github.rudroid.common.a w;
+
+    public static Object s;
+
+    public static Object t;
+
+    public static Object v;
+
+    public static Object x;
+
+    public static Object y;
+
+    public static Object z;
 }

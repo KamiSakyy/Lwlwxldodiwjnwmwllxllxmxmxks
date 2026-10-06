@@ -39,4 +39,8 @@ public final class ContributionLevel {
     public static ContributionLevel[] values() {
         return (ContributionLevel[]) $VALUES.clone();
     }
+
+    public <T0> T0 ordinal(Object... a) {
+        return null;
+    }
 }

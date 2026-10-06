@@ -56,4 +56,6 @@ public final class m0 implements aa.a {
         f4.C(h0Var.c, bVar, fVar, wVar, "endCursor");
         o0Var.b(fVar, wVar, h0Var.d);
     }
+    public Object l(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
+    public Object z(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

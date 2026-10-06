@@ -87,4 +87,5 @@ public final class m implements k {
         o.append(")");
         return o.toString();
     }
+    public Object e = null;
 }

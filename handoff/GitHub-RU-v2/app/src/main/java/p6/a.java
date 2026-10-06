@@ -23,4 +23,6 @@ public final class a extends b {
                 break;
         }
     }
+
+    public static Object e;
 }

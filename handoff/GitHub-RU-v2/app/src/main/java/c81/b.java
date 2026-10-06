@@ -36,4 +36,5 @@ public final class b {
     public static b[] values() {
         return (b[]) w.clone();
     }
+    public Object ordinal() { return null; }
 }

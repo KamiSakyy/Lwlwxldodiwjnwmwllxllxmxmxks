@@ -60,4 +60,7 @@ public final /* synthetic */ class h implements j71.a {
                 return filterBarFragmentRepositoryScope.j4();
         }
     }
+    public Object ordinal() { return null; }
+    public Object values() { return null; }
+    public static final Object r = null;
 }

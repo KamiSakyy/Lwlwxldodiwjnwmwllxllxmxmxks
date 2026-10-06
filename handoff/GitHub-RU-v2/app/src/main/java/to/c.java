@@ -52,4 +52,6 @@ public final class c implements aa.a {
         fVar.z0("__typename");
         bVar.b(fVar, wVar, fVar2.c);
     }
+    public Object b(Object p1) { return null; }
+    public static final Object i = null;
 }

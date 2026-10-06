@@ -74,4 +74,7 @@ public final /* synthetic */ class t implements j71.e {
         }
         return w61.a0.a;
     }
+    public Object B(Object p1) { return null; }
+    public Object L(Object p1) { return null; }
+    public Object f(Object p1, Object p2, Object p3) { return null; }
 }

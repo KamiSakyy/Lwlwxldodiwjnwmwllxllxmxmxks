@@ -6,4 +6,5 @@ package com.github.rudroid;
  */
 public class l0 {
     public l0() {}
+    public Object t(Object p1) { return null; }
 }

@@ -14,4 +14,6 @@ public final class n2 extends androidx.compose.foundation.lazy.layout.s0 {
         k71.k.g(eVar, "property");
         this.t.U();
     }
+    public Object t(Object p1, Object p2) { return null; }
+    public Object y(Object p1, Object p2) { return null; }
 }

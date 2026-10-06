@@ -94,4 +94,5 @@ public final class l0 extends androidx.lifecycle.k1 {
             this((i & 1) != 0 ? "" : str, (i & 2) == 0, (i & 4) == 0);
         }
     }
+    public Object d() { return null; }
 }

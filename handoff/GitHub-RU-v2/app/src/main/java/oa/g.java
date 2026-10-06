@@ -5,4 +5,5 @@ package oa;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface g {
+    public Object a(Object p1) { return null; }
 }

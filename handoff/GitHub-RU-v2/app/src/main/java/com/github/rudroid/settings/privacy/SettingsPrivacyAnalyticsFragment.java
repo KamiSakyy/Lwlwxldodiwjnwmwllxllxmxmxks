@@ -145,4 +145,21 @@ public final class SettingsPrivacyAnalyticsFragment extends Hilt_SettingsPrivacy
         s4(2132148240);
     }
 
+
+    public <T0> T0 C3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 t4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 s4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 E(Object... a) {
+        return null;
+    }
+    public Object E(Object p1, Object p2) { return null; }
 }

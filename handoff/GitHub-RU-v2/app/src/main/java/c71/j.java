@@ -28,4 +28,7 @@ public abstract class j extends c implements k71.h {
         k.f(a, "renderLambdaToString(...)");
         return a;
     }
+    public Object c() { return null; }
+    public Object g(Object p1, Object p2, Object p3) { return null; }
+    public Object k(Object p1) { return null; }
 }

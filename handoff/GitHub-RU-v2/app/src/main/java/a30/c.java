@@ -228,4 +228,6 @@ public final class c implements t, y90, mi0, yb0, yf0 {
         int i = this.r;
         return this;
     }
+    public Object j(Object p1) { return null; }
+    public Object v(Object p1) { return null; }
 }

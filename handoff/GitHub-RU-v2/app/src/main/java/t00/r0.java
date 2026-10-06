@@ -143,4 +143,5 @@ public final class r0 implements z01.g, mi0, yf0 {
         int i = this.r;
         return this;
     }
+    public Object isEmpty() { return null; }
 }

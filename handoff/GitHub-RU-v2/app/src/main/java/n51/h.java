@@ -209,4 +209,6 @@ public final class h {
     public h(Context context, String str) {
         this.a = context.getSharedPreferences("FirebaseHeartBeat" + str, 0);
     }
+    public Object b() { return null; }
+    public Object c(Object p1) { return null; }
 }

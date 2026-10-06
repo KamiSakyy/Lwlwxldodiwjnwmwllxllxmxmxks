@@ -22,4 +22,5 @@ public final class b {
     public final String toString() {
         return a0.s0.i("Following(totalCount=", this.a, ")");
     }
+    public Object b(Object p1, Object p2, Object p3) { return null; }
 }

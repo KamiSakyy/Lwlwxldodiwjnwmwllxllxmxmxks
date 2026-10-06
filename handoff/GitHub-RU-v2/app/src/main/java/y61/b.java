@@ -352,4 +352,5 @@ public final class b extends x61.g implements RandomAccess, Serializable {
     public final Object[] toArray() {
         return l.D(this.r, 0, this.s);
     }
+    public Object f = null;
 }

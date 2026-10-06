@@ -53,4 +53,5 @@ public final class j extends m0 {
         k71.k.f(b, "inflate(...)");
         return new l(b, this.d);
     }
+    public Object n() { return null; }
 }

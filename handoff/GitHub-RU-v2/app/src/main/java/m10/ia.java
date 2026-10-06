@@ -48,4 +48,5 @@ public final class ia {
     public static ia[] values() {
         return (ia[]) z.clone();
     }
+    public Object ordinal() { return null; }
 }

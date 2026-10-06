@@ -274,4 +274,7 @@ public final class e {
         this.f25775b = typedArray.getResourceId(28, 0);
         this.f25776c = typedArray.getResourceId(53, 0);
     }
+    public Object b = null;
+    public Object c = null;
+    public Object d = null;
 }

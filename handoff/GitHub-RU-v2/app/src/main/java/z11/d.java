@@ -62,4 +62,6 @@ public final class d extends d21.a {
         parcel.writeInt(this.u ? 1 : 0);
         y.a0(parcel, Z);
     }
+    public Object d(Object p1, Object p2) { return null; }
+    public Object f(Object p1, Object p2) { return null; }
 }

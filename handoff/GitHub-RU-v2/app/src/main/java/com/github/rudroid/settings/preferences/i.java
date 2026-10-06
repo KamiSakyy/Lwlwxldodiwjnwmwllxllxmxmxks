@@ -18,4 +18,6 @@ public final class i extends s0 {
         r71.e[] eVarArr = TrailingMetadataPreference.g0;
         this.t.j();
     }
+    public Object d(Object p1, Object p2, Object p3) { return null; }
+    public Object t(Object p1, Object p2) { return null; }
 }

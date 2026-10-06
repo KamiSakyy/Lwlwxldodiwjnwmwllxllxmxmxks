@@ -20,4 +20,5 @@ public final /* synthetic */ class f implements Runnable {
                 break;
         }
     }
+    public static final Object J = null;
 }

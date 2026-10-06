@@ -1355,4 +1355,6 @@ public abstract class b {
     }
 
 
+
+    public static Object v;
 }

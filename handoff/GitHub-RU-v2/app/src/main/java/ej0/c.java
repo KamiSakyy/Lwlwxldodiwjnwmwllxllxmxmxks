@@ -43,4 +43,7 @@ public final class c {
         o.append(", isPrivate=");
         return f4.s(o, this.e, ")");
     }
+    public Object c(Object p1, Object p2) { return null; }
+    public static final Object a = null;
+    public static final Object f = null;
 }

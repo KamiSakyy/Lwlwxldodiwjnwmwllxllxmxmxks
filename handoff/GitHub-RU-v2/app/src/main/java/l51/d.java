@@ -20,4 +20,6 @@ public final class d {
     public static d[] values() {
         return (d[]) s.clone();
     }
+    public Object a(Object p1) { return null; }
+    public Object b(Object p1, Object p2) { return null; }
 }

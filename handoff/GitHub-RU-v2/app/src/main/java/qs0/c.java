@@ -44,4 +44,7 @@ public final class c {
         o.append(")");
         return o.toString();
     }
+    public static final Object a = null;
+    public static final Object f = null;
+    public static final Object i = null;
 }

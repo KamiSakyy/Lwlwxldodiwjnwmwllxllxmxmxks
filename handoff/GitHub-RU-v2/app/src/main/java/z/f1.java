@@ -5,4 +5,5 @@ package z;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface f1 {
+    public Object a(Object p1) { return null; }
 }

@@ -46,4 +46,5 @@ public final class h1 implements aa.w0 {
     public final void o(ea.f fVar, aa.w wVar, boolean z) {
         k71.k.g(wVar, "customScalarAdapters");
     }
+    public static final Object i = null;
 }

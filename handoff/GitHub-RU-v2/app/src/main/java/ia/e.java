@@ -16,4 +16,7 @@ public final class e {
         this.f26156a = fVar;
         this.f26157b = d0.q(new ha.f[]{fVar});
     }
+    public Object C(Object p1, Object p2) { return null; }
+    public Object D(Object p1, Object p2) { return null; }
+    public Object v(Object p1, Object p2) { return null; }
 }

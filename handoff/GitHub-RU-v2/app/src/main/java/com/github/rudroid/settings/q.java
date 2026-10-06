@@ -36,4 +36,6 @@ public final /* synthetic */ class q implements DialogInterface.OnClickListener 
                 }
         }
     }
+    public Object Z(Object p1) { return null; }
+    public Object a() { return null; }
 }

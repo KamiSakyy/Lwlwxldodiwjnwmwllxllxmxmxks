@@ -42,4 +42,5 @@ public final class a {
         sb.append(", tokenCreationTimestamp=");
         return s0.f(this.c, "}", sb);
     }
+    public Object c(Object p1, Object p2) { return null; }
 }

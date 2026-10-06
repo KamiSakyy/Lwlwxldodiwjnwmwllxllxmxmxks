@@ -9,4 +9,5 @@ public final class u implements Serializable {
     public final String toString() {
         return String.valueOf(this.r);
     }
+    public Object r = null;
 }

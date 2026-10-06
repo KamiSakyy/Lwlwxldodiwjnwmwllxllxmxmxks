@@ -40,4 +40,5 @@ public final class na {
     public static na[] values() {
         return (na[]) w.clone();
     }
+    public Object ordinal() { return null; }
 }

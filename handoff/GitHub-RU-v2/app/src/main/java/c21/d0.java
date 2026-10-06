@@ -39,4 +39,5 @@ public final class d0 {
         u.g(null);
         throw null;
     }
+    public Object a(Object p1, Object p2) { return null; }
 }

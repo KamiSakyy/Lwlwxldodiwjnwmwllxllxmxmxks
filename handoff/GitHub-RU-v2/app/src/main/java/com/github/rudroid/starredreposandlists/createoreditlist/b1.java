@@ -13,4 +13,6 @@ public abstract class b1 extends p2 {
         this.s0 = true;
         ((i) w()).Q((CreateNewListActivity) this);
     }
+    public Object onCreate(Object p1) { return null; }
+    public Object onResume() { return null; }
 }

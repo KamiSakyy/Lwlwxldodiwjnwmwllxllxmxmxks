@@ -18,4 +18,7 @@ public abstract /* synthetic */ class b {
         }
         a = iArr;
     }
+    public Object c = null;
+    public Object d = null;
+    public Object f = null;
 }

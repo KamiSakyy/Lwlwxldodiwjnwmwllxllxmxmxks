@@ -42,4 +42,9 @@ public final class a {
         aVar.f.add(r.r);
         aVar.g.add(false);
     }
+    public Object b = null;
+    public Object c = null;
+    public Object e = null;
+    public Object f = null;
+    public Object g = null;
 }

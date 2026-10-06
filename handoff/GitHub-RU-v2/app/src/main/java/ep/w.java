@@ -34,4 +34,5 @@ public final class w implements aaShadow.a {
         pv.f fVar2 = pv.f.a;
         pv.f.d(fVar, wVar, j0Var.b);
     }
+    public Object e(Object p1) { return null; }
 }

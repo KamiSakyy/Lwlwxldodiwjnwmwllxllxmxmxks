@@ -35,4 +35,5 @@ public final class h {
     public final String toString() {
         return c(this.f31696a);
     }
+    public Object a = null;
 }

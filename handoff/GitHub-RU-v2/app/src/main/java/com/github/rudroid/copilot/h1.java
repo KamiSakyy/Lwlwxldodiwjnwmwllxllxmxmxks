@@ -855,4 +855,6 @@ public abstract /* synthetic */ class h1 {
         sVar.t().q();
         sVar.F(j10);
     }
+
+    public static Object i;
 }

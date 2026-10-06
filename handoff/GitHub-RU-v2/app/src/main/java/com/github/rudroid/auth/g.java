@@ -17,4 +17,6 @@ public final class g implements o {
     public final String toString() {
         return "Initial";
     }
+
+    public static Object a;
 }

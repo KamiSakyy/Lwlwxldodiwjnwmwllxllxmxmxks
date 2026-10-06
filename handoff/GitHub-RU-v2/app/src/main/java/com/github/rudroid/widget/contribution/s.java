@@ -31,4 +31,15 @@ final class s extends c71.c {
         this.E |= Integer.MIN_VALUE;
         return this.D.c(this);
     }
+    public Object N() { return null; }
+    public Object S(Object p1, Object p2) { return null; }
+    public Object V() { return null; }
+    public Object c0(Object p1) { return null; }
+    public Object d0(Object p1) { return null; }
+    public Object e0(Object p1) { return null; }
+    public Object g(Object p1) { return null; }
+    public Object h(Object p1) { return null; }
+    public Object n0(Object p1) { return null; }
+    public Object q(Object p1) { return null; }
+    public Object t() { return null; }
 }

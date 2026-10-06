@@ -56,4 +56,6 @@ public final class c0 implements h0 {
         o.append(")");
         return o.toString();
     }
+
+    public static Object a;
 }

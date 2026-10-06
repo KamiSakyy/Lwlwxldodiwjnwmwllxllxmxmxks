@@ -5,4 +5,7 @@ package m0;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface m {
+    public Object a = null;
+    public Object o = null;
+    public Object p = null;
 }

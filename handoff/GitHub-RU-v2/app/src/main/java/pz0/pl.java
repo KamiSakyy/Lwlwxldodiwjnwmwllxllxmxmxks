@@ -39,4 +39,6 @@ public final class pl {
         f1.e.w(u, this.c, ", starredOnly=", this.d, ", statuses=");
         return f1.e.l(u, this.e, ", threadTypes=", this.f, ")");
     }
+
+    public Object e;
 }

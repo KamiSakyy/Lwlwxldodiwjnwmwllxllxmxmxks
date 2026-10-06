@@ -36,4 +36,5 @@ public final class ot {
     public static ot[] values() {
         return (ot[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

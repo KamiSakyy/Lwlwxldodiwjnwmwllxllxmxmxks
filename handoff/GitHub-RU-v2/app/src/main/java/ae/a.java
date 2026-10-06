@@ -5,4 +5,5 @@ package ae;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface a {
+    public static final Object f855s = null;
 }

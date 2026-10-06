@@ -26,4 +26,5 @@ public final class r0 {
     public final String toString() {
         return f1.e.z("OnImageFileType(url=", this.a, ")");
     }
+    public Object isEmpty() { return null; }
 }

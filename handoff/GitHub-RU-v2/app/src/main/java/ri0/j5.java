@@ -55,4 +55,6 @@ public final class j5 {
         sb.append(")");
         return sb.toString();
     }
+
+    public Object e;
 }

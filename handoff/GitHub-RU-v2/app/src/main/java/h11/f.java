@@ -79,4 +79,5 @@ public final class f extends m0 {
         this.e = ei.g.J;
     }
 
+    public Object n() { return null; }
 }

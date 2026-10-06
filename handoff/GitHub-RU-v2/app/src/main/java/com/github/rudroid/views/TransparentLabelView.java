@@ -83,4 +83,24 @@ public final class TransparentLabelView extends AppCompatTextView {
         this.y = bVar;
         g();
     }
+
+    public <T0> T0 getContext(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setBackground(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setPadding(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setTextColor(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setCompoundDrawablePadding(Object... a) {
+        return null;
+    }
 }

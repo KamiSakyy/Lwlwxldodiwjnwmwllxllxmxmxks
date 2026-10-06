@@ -73,4 +73,5 @@ public final class s extends m {
             editText.setTransformationMethod(PasswordTransformationMethod.getInstance());
         }
     }
+    public Object o(Object p1, Object p2) { return null; }
 }

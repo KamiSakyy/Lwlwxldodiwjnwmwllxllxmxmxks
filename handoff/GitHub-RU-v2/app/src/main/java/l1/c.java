@@ -493,4 +493,5 @@ public final class c implements List, l71.c {
                 return this.f27895s.remove(i + this.f27896t);
         }
     }
+    public Object v(Object p1) { return null; }
 }

@@ -68,4 +68,5 @@ public final class d1 {
         List list;
         return (g4Var == null || (list = g4Var.f) == null || !(list.isEmpty() ^ true)) ? false : true;
     }
+    public Object k(Object p1) { return null; }
 }

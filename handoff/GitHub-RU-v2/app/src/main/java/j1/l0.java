@@ -116,4 +116,5 @@ public abstract class l0 {
         C = lVar4;
         D = lVar4;
     }
+    public Object t(Object p1) { return null; }
 }

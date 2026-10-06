@@ -197,4 +197,5 @@ public final class e implements y71.i {
         }
         return w61.a0.a;
     }
+    public Object g(Object p1, Object p2) { return null; }
 }

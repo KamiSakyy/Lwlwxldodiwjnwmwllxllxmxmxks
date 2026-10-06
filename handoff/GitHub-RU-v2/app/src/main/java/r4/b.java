@@ -74,4 +74,6 @@ public final class b {
         sb2.append(", bottom=");
         return x.i.j(sb2, this.f31151d, '}');
     }
+    public Object a = null;
+    public Object c = null;
 }

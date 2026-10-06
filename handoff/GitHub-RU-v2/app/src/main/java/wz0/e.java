@@ -31,4 +31,5 @@ public final class e {
     public final String toString() {
         return m0.b(this.b, "SyntaxHighlightedLine(html=", this.a, ", contentLength=", ")");
     }
+    public Object z(Object p1, Object p2, Object p3) { return null; }
 }

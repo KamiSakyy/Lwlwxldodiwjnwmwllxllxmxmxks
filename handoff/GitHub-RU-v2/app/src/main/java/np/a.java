@@ -26,4 +26,5 @@ public final class a {
     public final String toString() {
         return "CloseDiscussion(discussion=" + this.a + ")";
     }
+    public Object s(Object p1) { return null; }
 }

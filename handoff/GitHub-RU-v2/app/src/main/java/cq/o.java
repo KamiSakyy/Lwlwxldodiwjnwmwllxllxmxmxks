@@ -37,4 +37,5 @@ public final class o implements aa.h0 {
     public final String toString() {
         return "CopilotLimitedUser(resetDate=" + this.a + ", hasUsageRemaining=" + this.b + ", quotaPercentageRemaining=" + this.c + ")";
     }
+    public Object a = null;
 }

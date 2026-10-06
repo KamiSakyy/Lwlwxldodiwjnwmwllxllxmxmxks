@@ -9,4 +9,5 @@ public final class r {
         this.a = nVar;
         this.b = yVar;
     }
+    public static final Object b = null;
 }

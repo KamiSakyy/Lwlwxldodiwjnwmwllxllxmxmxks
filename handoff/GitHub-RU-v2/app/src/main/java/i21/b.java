@@ -33,4 +33,6 @@ public final class b {
         return dVar;
     }
 
+
+    public static Object a;
 }

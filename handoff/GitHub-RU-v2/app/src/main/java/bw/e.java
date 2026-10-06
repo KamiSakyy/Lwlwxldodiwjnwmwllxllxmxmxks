@@ -33,4 +33,5 @@ public final class e {
     public final String toString() {
         return "Repositories(pageInfo=" + this.a + ", nodes=" + this.b + ")";
     }
+    public Object o(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

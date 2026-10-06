@@ -45,4 +45,6 @@ public final class i extends m0 {
         k71.k.f(b, "inflate(...)");
         return new j(b);
     }
+    public Object d(Object p1, Object p2, Object p3) { return null; }
+    public Object t(Object p1) { return null; }
 }

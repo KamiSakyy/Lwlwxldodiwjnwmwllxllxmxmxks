@@ -36,4 +36,5 @@ public final class s10 {
         sb.append(", __typename=");
         return com.github.rudroid.copilot.h1.p(sb, this.c, ")");
     }
+    public Object a = null;
 }

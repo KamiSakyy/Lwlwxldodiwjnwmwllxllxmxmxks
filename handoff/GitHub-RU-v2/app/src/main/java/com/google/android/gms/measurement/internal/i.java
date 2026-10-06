@@ -19,4 +19,8 @@ public enum i {
     i(char c) {
         this.r = c;
     }
+    public Object a(Object p1, Object p2) { return null; }
+    public Object b(Object p1) { return null; }
+    public Object c(Object p1, Object p2) { return null; }
+    public Object i(Object p1, Object p2, Object p3, Object p4) { return null; }
 }

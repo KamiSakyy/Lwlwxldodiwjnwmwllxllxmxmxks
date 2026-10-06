@@ -5,4 +5,15 @@ package w2;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface t {
+    public Object N(Object p1) { return null; }
+    public Object getAutofillId() { return null; }
+    public Object getContext() { return null; }
+    public Object getRoot() { return null; }
+    public Object getShowLayoutBounds() { return null; }
+    public Object removeCallbacks(Object p1) { return null; }
+    public Object setImportantForAutofill(Object p1) { return null; }
+    public Object L0 = null;
+    public Object M0 = null;
+    public Object T0 = null;
+    public Object f33178y = null;
 }

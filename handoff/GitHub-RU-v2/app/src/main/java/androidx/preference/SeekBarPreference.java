@@ -197,4 +197,10 @@ public class SeekBarPreference extends Preference {
         }
         H(intValue, true);
     }
+
+    public Object f2986s;
+
+    public Object C;
+
+    public Object J;
 }

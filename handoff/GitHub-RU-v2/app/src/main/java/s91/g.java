@@ -51,4 +51,5 @@ public final class g extends s0 {
     public final void o(i iVar, List list) {
         k.g(iVar, "event");
     }
+    public Object m(Object p1) { return null; }
 }

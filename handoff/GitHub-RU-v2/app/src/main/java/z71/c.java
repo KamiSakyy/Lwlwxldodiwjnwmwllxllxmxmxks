@@ -5,4 +5,5 @@ public abstract class c {
     public abstract boolean a(a aVar);
 
     public abstract a71.c[] b(a aVar);
+    public Object v(Object p1) { return null; }
 }

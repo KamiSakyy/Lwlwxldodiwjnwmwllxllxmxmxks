@@ -31,4 +31,5 @@ public final class rn {
     public final String toString() {
         return "MergePullRequest(actor=" + this.a + ", pullRequest=" + this.b + ")";
     }
+    public Object b = null;
 }

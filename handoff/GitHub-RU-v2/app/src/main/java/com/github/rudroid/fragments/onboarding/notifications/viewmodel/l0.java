@@ -10,4 +10,5 @@ public interface l0 {
     w1 k();
 
     void w(g3 g3Var);
+    public Object t(Object p1) { return null; }
 }

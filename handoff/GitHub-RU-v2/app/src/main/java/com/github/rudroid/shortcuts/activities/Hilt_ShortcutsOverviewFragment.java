@@ -56,4 +56,13 @@ public abstract class Hilt_ShortcutsOverviewFragment<T extends k5.f> extends Bin
         H4();
         return this.B0;
     }
+
+    public <T0> T0 w(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 P3(Object... a) {
+        return null;
+    }
+    public Object T3() { return null; }
 }

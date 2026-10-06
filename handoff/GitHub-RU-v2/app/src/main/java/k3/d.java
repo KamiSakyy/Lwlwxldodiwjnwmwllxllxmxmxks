@@ -24,4 +24,5 @@ public final class d {
     public final String toString() {
         return "AsyncTypefaceResult(result=" + this.f27667a + ')';
     }
+    public Object a = null;
 }

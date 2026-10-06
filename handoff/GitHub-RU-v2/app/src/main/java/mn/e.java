@@ -38,4 +38,5 @@ public final class e {
         sb.append(", checkRuns=");
         return x.i.l(sb, this.c, ")");
     }
+    public Object x(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

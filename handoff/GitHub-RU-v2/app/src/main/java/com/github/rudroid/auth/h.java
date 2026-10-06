@@ -17,4 +17,6 @@ public final class h implements o {
     public final String toString() {
         return "Loading";
     }
+
+    public static Object a;
 }

@@ -10,4 +10,6 @@ public final class j extends k71.l implements j71.e {
         sVar.V();
         return w61.a0.a;
     }
+    public Object c(Object p1, Object p2, Object p3, Object p4) { return null; }
+    public Object f(Object p1) { return null; }
 }

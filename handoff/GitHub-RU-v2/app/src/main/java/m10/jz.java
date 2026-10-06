@@ -36,4 +36,5 @@ public final class jz {
     public static jz[] values() {
         return (jz[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

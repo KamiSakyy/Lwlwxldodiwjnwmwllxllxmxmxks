@@ -24,4 +24,5 @@ public final class g implements k {
         dVar = RepositoryTypeFilter.x;
         return new RepositoryTypeFilter(dVar);
     }
+    public Object name() { return null; }
 }

@@ -16,4 +16,5 @@ public final class c1 {
 
     /* renamed from: d, reason: collision with root package name */
     public long f28079d = 0;
+    public static final Object f374a = null;
 }

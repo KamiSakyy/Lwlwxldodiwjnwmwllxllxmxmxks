@@ -368,4 +368,7 @@ public final class ShortcutViewFragment extends Hilt_ShortcutViewFragment<th> im
     }
 
 
+
+    public Object L0;
+    public Object x3() { return null; }
 }

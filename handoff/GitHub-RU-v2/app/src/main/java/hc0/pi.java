@@ -39,4 +39,5 @@ public final class pi {
     public static pi[] values() {
         return (pi[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }

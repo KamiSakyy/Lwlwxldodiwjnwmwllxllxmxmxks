@@ -49,4 +49,5 @@ public final class a {
     public static a[] values() {
         return (a[]) A.clone();
     }
+    public Object ordinal() { return null; }
 }

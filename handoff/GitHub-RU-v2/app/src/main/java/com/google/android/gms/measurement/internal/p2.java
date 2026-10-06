@@ -380,4 +380,6 @@ public final class p2 implements Application.ActivityLifecycleCallbacks {
         this.r = 1;
         this.s = new ArrayDeque(10);
     }
+
+    public Object s;
 }

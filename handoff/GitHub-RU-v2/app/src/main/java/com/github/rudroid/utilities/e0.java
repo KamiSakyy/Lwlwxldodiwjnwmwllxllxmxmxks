@@ -8,4 +8,7 @@ public final class e0<T> implements Comparator {
     public final int compare(Object obj, Object obj2) {
         return sy.t.g(Integer.valueOf((int) (((g3.p0) obj).a >> 32)), Integer.valueOf((int) (((g3.p0) obj2).a >> 32)));
     }
+    public Object h(Object p1) { return null; }
+    public Object s(Object p1, Object p2) { return null; }
+    public Object v = null;
 }

@@ -5,4 +5,5 @@ public final class z {
 
     public static final class a {
     }
+    public Object e(Object p1) { return null; }
 }

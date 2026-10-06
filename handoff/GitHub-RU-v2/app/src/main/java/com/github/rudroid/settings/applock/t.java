@@ -28,4 +28,6 @@ public final class t {
         public r() {
         }
     }
+    public Object f(Object p1, Object p2, Object p3) { return null; }
+    public Object n(Object p1, Object p2) { return null; }
 }

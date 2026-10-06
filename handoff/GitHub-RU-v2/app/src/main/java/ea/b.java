@@ -1107,4 +1107,5 @@ public final class b implements e {
         iArr[i] = iArr[i] + 1;
         return str;
     }
+    public static final Object f1079h = null;
 }

@@ -187,4 +187,32 @@ public final class ChooseShortcutRepositoryFragment extends Hilt_ChooseShortcutR
         com.github.rudroid.utilities.w0.a(((w6) l1Var.getValue()).F, F3(), androidx.lifecycle.w.u, new com.github.rudroid.shortcuts.activities.f(this, null));
     }
 
+
+    public <T0> T0 B3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 f0(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 g4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 C3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 B4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 i4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 F3(Object... a) {
+        return null;
+    }
 }

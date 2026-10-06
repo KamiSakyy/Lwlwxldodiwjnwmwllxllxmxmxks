@@ -77,4 +77,5 @@ public final /* synthetic */ class h implements j71.e {
         this.x = i2;
     }
 
+    public static final Object o = null;
 }

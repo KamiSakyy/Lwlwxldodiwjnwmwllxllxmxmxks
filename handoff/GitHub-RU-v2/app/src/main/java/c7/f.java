@@ -47,4 +47,5 @@ public abstract class f {
     public void b(boolean z10) {
     }
 
+    public static final Object J = null;
 }

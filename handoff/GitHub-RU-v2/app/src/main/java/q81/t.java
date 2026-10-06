@@ -77,4 +77,5 @@ public final class t {
         k71.k.g(timeUnit, "unit");
         this.x = r81.g.b("timeout", j, timeUnit);
     }
+    public Object a = null;
 }

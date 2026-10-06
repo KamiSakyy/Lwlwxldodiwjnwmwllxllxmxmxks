@@ -257,4 +257,5 @@ public final class g {
         mVar.a(this.c, "options");
         return mVar.toString();
     }
+    public Object ordinal() { return null; }
 }

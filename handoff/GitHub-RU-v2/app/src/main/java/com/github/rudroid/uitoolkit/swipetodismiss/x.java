@@ -18,4 +18,6 @@ public final class x implements g1 {
         Object a = this.s.a(j1.s, new v(this, oVar, null), y0Var);
         return a == b71.a.r ? a : w61.a0.a;
     }
+
+    public Object s;
 }

@@ -126,4 +126,24 @@ public class TextInputEditText extends AppCompatEditText {
     public void setTextInputLayoutFocusedRectEnabled(boolean z) {
         this.y = z;
     }
+
+    public <T0> T0 addTextChangedListener(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getScrollX(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getScrollY(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 setHint(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 getHeight(Object... a) {
+        return null;
+    }
 }

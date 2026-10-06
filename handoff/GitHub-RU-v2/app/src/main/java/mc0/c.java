@@ -28,4 +28,6 @@ public final class c implements aa.a {
         fVar.z0("user");
         aa.c.b(aa.c.c(j.a, true)).b(fVar, wVar, dVar.a);
     }
+    public static final Object f = null;
+    public static final Object i = null;
 }

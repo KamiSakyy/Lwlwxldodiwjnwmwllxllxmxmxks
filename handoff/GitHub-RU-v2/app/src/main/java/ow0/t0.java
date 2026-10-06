@@ -38,4 +38,5 @@ public final class t0 implements aa.v0 {
         sb.append(", __typename=");
         return h1.p(sb, this.c, ")");
     }
+    public static final Object d = null;
 }

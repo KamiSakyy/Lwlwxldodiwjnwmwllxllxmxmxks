@@ -191,4 +191,21 @@ public final class FilterBarFragmentRepositoryScope extends Hilt_FilterBarFragme
         w0.a(((q0) this.M0.getValue()).x, F3(), androidx.lifecycle.w.u, new com.github.rudroid.searchandfilter.ui.i(this, null));
     }
 
+
+    public <T0> T0 g4(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 A3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 F3(Object... a) {
+        return null;
+    }
+
+    public <T0> T0 j4(Object... a) {
+        return null;
+    }
+    public Object j4() { return null; }
 }

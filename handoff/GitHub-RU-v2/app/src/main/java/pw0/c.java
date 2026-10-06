@@ -47,4 +47,9 @@ public abstract class c implements aa.a {
         List list = is0.q.a;
         is0.q.d(fVar, wVar, dVar.c);
     }
+    public Object a(Object p1) { return null; }
+    public Object b(Object p1) { return null; }
+    public static final Object f = null;
+    public static final Object i = null;
+    public static final Object k = null;
 }

@@ -82,4 +82,5 @@ public final class ii {
     public static ii[] values() {
         return (ii[]) K.clone();
     }
+    public Object ordinal() { return null; }
 }

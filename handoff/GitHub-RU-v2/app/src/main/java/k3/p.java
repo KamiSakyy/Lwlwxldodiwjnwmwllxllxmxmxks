@@ -21,4 +21,5 @@ public final class p {
         int i = this.f27688a;
         return i == 0 ? "None" : i == 1 ? "Weight" : i == 2 ? "Style" : i == 65535 ? "All" : "Invalid";
     }
+    public Object a = null;
 }

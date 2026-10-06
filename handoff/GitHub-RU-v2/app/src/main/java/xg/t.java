@@ -104,4 +104,7 @@ public final class t {
             t.d = new x0(rVar2, fVar2, dVar, dVar2, aVar2, i, i2);
         }
     }
+    public Object B(Object p1) { return null; }
+    public Object L(Object p1) { return null; }
+    public static final Object j = null;
 }

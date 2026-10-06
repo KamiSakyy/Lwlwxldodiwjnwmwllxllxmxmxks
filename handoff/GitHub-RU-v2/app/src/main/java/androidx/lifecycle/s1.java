@@ -5,4 +5,5 @@ package androidx.lifecycle;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface s1 {
+    public Object f2923a = null;
 }

@@ -25,4 +25,5 @@ public final class i {
     public static i[] values() {
         return (i[]) t.clone();
     }
+    public Object name() { return null; }
 }

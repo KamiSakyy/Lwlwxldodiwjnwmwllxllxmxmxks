@@ -27,4 +27,5 @@ public final class e0 {
     public static e0[] values() {
         return (e0[]) t.clone();
     }
+    public Object ordinal() { return null; }
 }

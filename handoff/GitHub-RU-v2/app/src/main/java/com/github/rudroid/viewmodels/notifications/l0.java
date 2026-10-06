@@ -35,4 +35,5 @@ final class l0 extends c71.j implements j71.f {
         k71.k.g(list, "ids");
         return new y71.y(new k0(sVar, list, null), b31.b.J(((a11.a) oVar.a.a(d)).j(list), d, c0Var));
     }
+    public Object t(Object p1) { return null; }
 }

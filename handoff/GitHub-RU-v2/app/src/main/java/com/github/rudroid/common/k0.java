@@ -7,4 +7,6 @@ package com.github.rudroid.common;
 public class k0 {
     public k0() {
     }
+
+    public static com.github.rudroid.common.k0 s;
 }

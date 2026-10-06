@@ -9,4 +9,5 @@ public final class l implements j71.c {
 
     public l(Object... a) {
     }
+    public Object d = null;
 }

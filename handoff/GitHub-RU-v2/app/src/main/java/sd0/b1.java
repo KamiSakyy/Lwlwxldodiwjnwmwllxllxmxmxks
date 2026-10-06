@@ -37,4 +37,5 @@ public final class b1 implements aa.h0 {
         o.append(")");
         return o.toString();
     }
+    public Object j(Object p1) { return null; }
 }

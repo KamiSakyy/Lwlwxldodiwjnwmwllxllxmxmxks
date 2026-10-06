@@ -52,4 +52,5 @@ public final class e implements aa.a {
         List list = as0.b.a;
         as0.b.d(fVar, wVar, bVar.c);
     }
+    public Object i(Object p1, Object p2, Object p3, Object p4, Object p5) { return null; }
 }

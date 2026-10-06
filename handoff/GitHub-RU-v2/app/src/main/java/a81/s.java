@@ -28,4 +28,5 @@ public abstract class s {
             d2 = "kotlinx.coroutines.internal.StackTraceRecoveryKt";
         }
     }
+    public Object v(Object p1, Object p2) { return null; }
 }

@@ -40,4 +40,6 @@ public final class o {
         }
         return "@" + cls2.getName() + " " + cls.getName();
     }
+    public Object c = null;
+    public Object f = null;
 }

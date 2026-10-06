@@ -38,4 +38,5 @@ public final class uu {
     public static uu[] values() {
         return (uu[]) u.clone();
     }
+    public Object ordinal() { return null; }
 }
