@@ -83,11 +83,8 @@ def main() -> int:
             if package_name != "com.vkontakte.android":
                 print(f"Unexpected package ID: {package_name}", file=sys.stderr)
                 return 1
-            if version_name != "8.197" or str(version_code) != "58503":
-                print(
-                    f"Unexpected app version: {version_name} (code {version_code})",
-                    file=sys.stderr,
-                )
+            if not version_name or version_name == "unknown" or not version_code:
+                print("APK manifest is missing a version name or version code", file=sys.stderr)
                 return 1
             manifest_summary = [
                 f"- Package: `{package_name}`",
@@ -192,6 +189,25 @@ def main() -> int:
     if github_summary:
         with Path(github_summary).open("a", encoding="utf-8") as stream:
             stream.write(output)
+
+    # Keep a few non-sensitive facts available as Check Run annotations too;
+    # raw Actions log retrieval is not always available to this workspace.
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        notice_messages = [
+            f"Package: {package_name}; version: {version_name}; code: {version_code}",
+            f"DEX files: {len(dex_files)}; native libraries: {len(native_libs)}",
+            f"Java files: {len(java_files)}; auth/session candidates: {len(auth_files)}",
+            "OAuth/API reference counts: " + ", ".join(
+                f"{name}={host_counts[name]}" for name in AUTH_URLS
+            ),
+        ]
+        notice_messages.extend(
+            f"Candidate source name only: {relative} (class {class_name})"
+            for _, relative, class_name in candidates
+        )
+        for message in notice_messages:
+            escaped = message.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+            print(f"::notice title=VK APK metadata::{escaped}")
     return 0
 
 
