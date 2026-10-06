@@ -55,6 +55,8 @@ public class SyncReceiveTest {
     private Context ctx;
     private String chatUid;
     private final java.util.Map<String, String> served = new java.util.LinkedHashMap<>();
+    private final java.util.List<String> requests =
+            java.util.Collections.synchronizedList(new java.util.ArrayList<>());
 
     @Before
     public void setUp() throws Exception {
@@ -80,6 +82,7 @@ public class SyncReceiveTest {
 
         Http.testTransport = (method, url, bearer, body) -> {
             if (url.contains("/messages?")) {
+                requests.add("LIST");
                 StringBuilder ids = new StringBuilder();
                 for (String id : served.keySet()) {
                     if (ids.length() > 0) ids.append(',');
@@ -89,6 +92,7 @@ public class SyncReceiveTest {
             }
             for (String id : served.keySet()) {
                 if (!url.contains("/messages/" + id)) continue;
+                requests.add("GET:" + id);
                 String mailBody = served.get(id);
                 String data = b64url(mailBody.getBytes(StandardCharsets.UTF_8));
                 return new Http.Response(200, "{\"id\":\"" + id + "\",\"internalDate\":"
@@ -285,17 +289,19 @@ public class SyncReceiveTest {
         env2.put("nc", B64.str(nonce2));
         env2.put("c", B64.str(ct2));
         served.put("gm-v2b", MailCrypto.toMailBody(env2.toString()));
-
-        // проба: прямой open второго конверта на текущем состоянии сессии
-        try {
-            MailCrypto.Envelope probe = MailCrypto.open(ctx, served.get("gm-v2b"), ME);
-            assertNotNull("прямой open второго v2 вернул null", probe);
-        } catch (Exception e) {
-            fail("прямой open второго v2 упал (состояние после синка сломано): " + e);
-        }
+        requests.clear();
 
         Msg m2 = awaitMessage(mid2);
-        assertNotNull("второе входящее v2 должно расшифроваться в готовой сессии", m2);
+        if (m2 == null) {
+            StringBuilder diag = new StringBuilder("запросы после первого: ").append(requests);
+            try {
+                MailCrypto.Envelope retry = MailCrypto.open(ctx, served.get("gm-v2b"), ME);
+                diag.append(" | повторный прямой open: УСПЕХ ").append(retry.payload);
+            } catch (Exception e) {
+                diag.append(" | повторный прямой open УПАЛ: ").append(e);
+            }
+            fail("второе входящее v2 должно расшифроваться в готовой сессии. " + diag);
+        }
         assertEquals("Второе сообщение (сессия установлена)", m2.text);
     }
 
