@@ -152,8 +152,8 @@ public final class ApiError {
         return flat.length() > 400 ? flat.substring(0, 400) + "…" : flat;
     }
 
-    /** Короткая строка для списка/тоста. */
-    public static String short(Throwable throwable) {
+    /** Короткая строка для списка/тоста (имя метода не может быть ключевым словом Java). */
+    public static String shortText(Throwable throwable) {
         Info info = parse(throwable);
         return info.title + (info.googleMessage.isEmpty() ? "" : ": " + shorten(info.googleMessage));
     }

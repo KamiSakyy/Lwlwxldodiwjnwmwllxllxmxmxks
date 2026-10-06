@@ -526,6 +526,6 @@ public final class SyncEngine {
     }
 
     private static String describe(Exception e) {
-        return com.mailgram.app.net.ApiError.short(e);
+        return com.mailgram.app.net.ApiError.shortText(e);
     }
 }
