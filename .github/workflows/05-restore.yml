@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   restore-loop:
@@ -60,12 +61,16 @@ jobs:
           CYCLE=handoff/restoration/cycle-log.txt
           echo "Цикл восстановления $(date -u)" > "$CYCLE"
           push_artifacts() {
-            git config user.name "kami-bot"
-            git config user.email "kami-bot@users.noreply.github.com"
-            git add handoff/ 2>/dev/null
-            git commit -m "Этап 5 v3: итеративное восстановление (javac+стабы) [skip ci]" 2>/dev/null
-            git pull --rebase -q origin arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks 2>/dev/null
-            git push origin "HEAD:arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks" 2>&1 | tail -2
+            {
+              git config user.name "kami-bot"
+              git config user.email "kami-bot@users.noreply.github.com"
+              git add handoff/ 2>&1
+              git commit -m "Этап 5 v3: итеративное восстановление (javac+стабы) [skip ci]" 2>&1
+              git pull --rebase -q origin arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks 2>&1
+              git push origin "HEAD:arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks" 2>&1
+              echo "PUSH_EXIT=$?"
+            } >> "$CYCLE" 2>&1
+            gh api repos/KamiSakyy/Lwlwxldodiwjnwmwllxllxmxmxks/issues -f title="[CI] cycle-report $(date -u +%H:%M)" -f body="$(tail -c 2500 "$CYCLE" | tail -20)" || true
           }
           trap push_artifacts EXIT
           PREV=999999999
