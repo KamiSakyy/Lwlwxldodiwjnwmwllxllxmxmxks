@@ -194,7 +194,8 @@ jobs:
           trap 'status=$?; echo "::error title=ARM XAPK build::Command failed at shell line $LINENO (exit $status)"; exit "$status"' ERR
           output_xapk="$RUNNER_TEMP/$MOD_XAPK_NAME"
           keystore="$RUNNER_TEMP/vk-mod-temporary.p12"
-          password_file="$RUNNER_TEMP/vk-mod-temporary.pass"
+          store_password_file="$RUNNER_TEMP/vk-mod-store.pass"
+          key_password_file="$RUNNER_TEMP/vk-mod-key.pass"
           sdk_root="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-}}"
           if [[ -z "$sdk_root" || ! -d "$sdk_root/build-tools" ]]; then
             echo 'Android build-tools are unavailable; refusing to produce an unsigned or unverified split package.' >&2
@@ -207,28 +208,32 @@ jobs:
             exit 1
           fi
 
-          python3 - "$password_file" <<'PY'
+          python3 - "$store_password_file" "$key_password_file" <<'PY'
           import secrets
           import sys
           from pathlib import Path
-          path = Path(sys.argv[1])
-          path.write_text(secrets.token_urlsafe(32), encoding='ascii')
-          path.chmod(0o600)
+          secret = secrets.token_urlsafe(32)
+          for value in sys.argv[1:]:
+              path = Path(value)
+              path.write_text(secret + '\n', encoding='ascii')
+              path.chmod(0o600)
           PY
           keytool -genkeypair -noprompt \
             -alias vk-mod-temporary \
             -keyalg RSA -keysize 2048 -sigalg SHA256withRSA \
             -validity 10000 -storetype PKCS12 \
             -keystore "$keystore" \
-            -storepass:file "$password_file" \
-            -keypass:file "$password_file" \
+            -storepass:file "$store_password_file" \
+            -keypass:file "$key_password_file" \
             -dname 'CN=VK ARM size mod, O=Temporary build, C=DE'
 
           python3 handoff/build_arm_xapk.py \
             "$RUNNER_TEMP/$APK_ARCHIVE_NAME" "$output_xapk" \
             --work-dir "$RUNNER_TEMP" \
             --zipalign "$zipalign" --apksigner "$apksigner" \
-            --keystore "$keystore" --password-file "$password_file" \
+            --keystore "$keystore" \
+            --store-password-file "$store_password_file" \
+            --key-password-file "$key_password_file" \
             --keep-abi armeabi-v7a
 
       - name: Preserve optimized ARM XAPK in handoff through Git LFS
@@ -357,6 +362,7 @@ jobs:
         run: |
           rm -rf "$RUNNER_TEMP/$APK_ARCHIVE_NAME" "$RUNNER_TEMP/$APK_NAME" \
             "$RUNNER_TEMP/$MOD_XAPK_NAME" "$RUNNER_TEMP/vk-mod-temporary.p12" \
-            "$RUNNER_TEMP/vk-mod-temporary.pass" "$RUNNER_TEMP/$JADX_DIRECTORY" \
+            "$RUNNER_TEMP/vk-mod-store.pass" "$RUNNER_TEMP/vk-mod-key.pass" \
+            "$RUNNER_TEMP/$JADX_DIRECTORY" \
             "$RUNNER_TEMP/jadx" "$RUNNER_TEMP/jadx.zip" "$RUNNER_TEMP/jadx.log" \
             "$RUNNER_TEMP/apk-signature.txt" "$RUNNER_TEMP/curl-error.txt"

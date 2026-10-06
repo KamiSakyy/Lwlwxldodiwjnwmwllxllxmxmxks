@@ -120,7 +120,8 @@ def build(
     zipalign: Path,
     apksigner: Path,
     keystore: Path,
-    password_file: Path,
+    store_password_file: Path,
+    key_password_file: Path,
     keep_abis: set[str],
 ) -> dict[str, object]:
     if not source_xapk.is_file():
@@ -130,7 +131,11 @@ def build(
     for tool_path, label in ((zipalign, "zipalign"), (apksigner, "apksigner")):
         if not tool_path.is_file() or not os.access(tool_path, os.X_OK):
             raise ValueError(f"{label} executable is unavailable: {tool_path}")
-    for path, label in ((keystore, "temporary signing keystore"), (password_file, "temporary password file")):
+    for path, label in (
+        (keystore, "temporary signing keystore"),
+        (store_password_file, "temporary keystore password file"),
+        (key_password_file, "temporary key password file"),
+    ):
         if not path.is_file():
             raise ValueError(f"{label} is unavailable")
 
@@ -240,8 +245,8 @@ def build(
                         str(apksigner), "sign",
                         "--ks", str(keystore),
                         "--ks-key-alias", "vk-mod-temporary",
-                        "--ks-pass", f"file:{password_file}",
-                        "--key-pass", f"file:{password_file}",
+                        "--ks-pass", f"file:{store_password_file}",
+                        "--key-pass", f"file:{key_password_file}",
                         "--out", str(signed_apk), str(aligned_apk),
                     ],
                     f"APK signing for {PurePosixPath(info.filename).name}",
@@ -353,7 +358,8 @@ def main() -> int:
     parser.add_argument("--zipalign", type=Path, required=True)
     parser.add_argument("--apksigner", type=Path, required=True)
     parser.add_argument("--keystore", type=Path, required=True)
-    parser.add_argument("--password-file", type=Path, required=True)
+    parser.add_argument("--store-password-file", type=Path, required=True)
+    parser.add_argument("--key-password-file", type=Path, required=True)
     parser.add_argument("--keep-abi", action="append", default=[], dest="keep_abis")
     args = parser.parse_args()
 
@@ -365,7 +371,8 @@ def main() -> int:
             args.zipalign,
             args.apksigner,
             args.keystore,
-            args.password_file,
+            args.store_password_file,
+            args.key_password_file,
             set(args.keep_abis),
         )
     except Exception as exc:
