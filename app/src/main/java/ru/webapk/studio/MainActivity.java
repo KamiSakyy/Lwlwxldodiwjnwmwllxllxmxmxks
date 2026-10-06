@@ -474,7 +474,11 @@ public final class MainActivity extends ComponentActivity {
                     setStatus("Python-проект импортирован без сети", false);
                 });
             } catch (Exception error) {
-                clearDirectory(workspaceRoot);
+                try {
+                    clearDirectory(workspaceRoot);
+                } catch (IOException cleanupError) {
+                    error.addSuppressed(cleanupError);
+                }
                 pythonProjectRoot = null;
                 getPreferences(MODE_PRIVATE).edit().remove("pythonProjectRoot").apply();
                 showFailure("Не удалось импортировать Python-проект: " + error.getMessage());
