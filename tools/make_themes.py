@@ -518,6 +518,10 @@ def render():
     lines.append('        <item name="android:windowExitAnimation">@anim/slide_down</item>\n')
     lines.append("    </style>\n\n")
 
+    lines.append('    <style name="Animation.MailGram.Popup" parent="@android:style/Animation">\n')
+    lines.append('        <item name="android:windowEnterAnimation">@anim/scale_in</item>\n')
+    lines.append('        <item name="android:windowExitAnimation">@anim/scale_out</item>\n')
+    lines.append("    </style>\n\n")
     lines.append('    <style name="Theme.MailGram.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">\n')
     for attr, value in DIALOG_ITEMS:
         lines.append('        <item name="%s">%s</item>\n' % (attr, value))

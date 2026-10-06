@@ -58,6 +58,13 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         googleButton.setOnClickListener(v -> startLogin());
+        View logo = findViewById(R.id.login_logo);
+        if (logo != null) {
+            logo.setOnLongClickListener(v -> {
+                startActivity(new Intent(this, SetupOauthActivity.class));
+                return true;
+            });
+        }
         findViewById(R.id.btn_setup).setOnClickListener(v ->
                 startActivity(new Intent(this, SetupOauthActivity.class)));
         findViewById(R.id.btn_diag).setOnClickListener(v -> startProbe(true));

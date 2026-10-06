@@ -360,35 +360,131 @@
                 android:paddingEnd="10dp"
                 android:paddingBottom="12dp">
 
-                <TextView
+                <LinearLayout
                     android:id="@+id/drawer_item_new_chat"
-                    style="@style/Widget.MailGram.DrawerItem"
-                    android:text="@string/new_chat" />
+                    style="@style/Widget.MailGram.DrawerItem">
 
-                <TextView
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="14dp"
+                        android:contentDescription="@string/new_chat"
+                        android:src="@drawable/ic_edit"
+                        app:tint="@color/text_dim" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/new_chat"
+                        android:textColor="@color/text_drawer"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:id="@+id/drawer_item_contacts"
-                    style="@style/Widget.MailGram.DrawerItem"
-                    android:text="@string/contacts_title" />
+                    style="@style/Widget.MailGram.DrawerItem">
 
-                <TextView
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="14dp"
+                        android:contentDescription="@string/contacts_title"
+                        android:src="@drawable/ic_person"
+                        app:tint="@color/text_dim" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/contacts_title"
+                        android:textColor="@color/text_drawer"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:id="@+id/drawer_item_invite"
-                    style="@style/Widget.MailGram.DrawerItem"
-                    android:text="@string/invite_contact" />
+                    style="@style/Widget.MailGram.DrawerItem">
 
-                <TextView
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="14dp"
+                        android:contentDescription="@string/invite_contact"
+                        android:src="@drawable/ic_send"
+                        app:tint="@color/text_dim" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/invite_contact"
+                        android:textColor="@color/text_drawer"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:id="@+id/drawer_item_notifications"
-                    style="@style/Widget.MailGram.DrawerItem"
-                    android:text="@string/settings_notifications" />
+                    style="@style/Widget.MailGram.DrawerItem">
 
-                <TextView
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="14dp"
+                        android:contentDescription="@string/settings_notifications"
+                        android:src="@drawable/ic_notifications"
+                        app:tint="@color/text_dim" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/settings_notifications"
+                        android:textColor="@color/text_drawer"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:id="@+id/drawer_item_security"
-                    style="@style/Widget.MailGram.DrawerItem"
-                    android:text="@string/settings_security" />
+                    style="@style/Widget.MailGram.DrawerItem">
 
-                <TextView
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="14dp"
+                        android:contentDescription="@string/settings_security"
+                        android:src="@drawable/ic_lock"
+                        app:tint="@color/text_dim" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/settings_security"
+                        android:textColor="@color/text_drawer"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:id="@+id/drawer_item_my_key"
-                    style="@style/Widget.MailGram.DrawerItem"
-                    android:text="@string/my_key" />
+                    style="@style/Widget.MailGram.DrawerItem">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="14dp"
+                        android:contentDescription="@string/my_key"
+                        android:src="@drawable/ic_key"
+                        app:tint="@color/text_dim" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/my_key"
+                        android:textColor="@color/text_drawer"
+                        android:textSize="15sp" />
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
@@ -397,16 +493,47 @@
                     android:layout_marginBottom="6dp"
                     android:background="@color/row_divider" />
 
-                <TextView
+                <LinearLayout
                     android:id="@+id/drawer_item_settings"
-                    style="@style/Widget.MailGram.DrawerItem"
-                    android:text="@string/settings" />
+                    style="@style/Widget.MailGram.DrawerItem">
 
-                <TextView
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="14dp"
+                        android:contentDescription="@string/settings"
+                        android:src="@drawable/ic_settings"
+                        app:tint="@color/text_dim" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/settings"
+                        android:textColor="@color/text_drawer"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:id="@+id/drawer_item_logout"
-                    style="@style/Widget.MailGram.DrawerItem"
-                    android:text="@string/logout"
-                    android:textColor="@color/danger" />
+                    style="@style/Widget.MailGram.DrawerItem">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="14dp"
+                        android:contentDescription="@string/logout"
+                        android:src="@drawable/ic_logout"
+                        app:tint="@color/danger" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/logout"
+                        android:textColor="@color/danger"
+                        android:textSize="15sp" />
+                </LinearLayout>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

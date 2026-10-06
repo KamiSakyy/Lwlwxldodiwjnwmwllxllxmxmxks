@@ -182,7 +182,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                     adapter.toggleSelection(msg);
                     return;
                 }
-                messageMenu(msg);
+                messageMenu(msg, anchor);
             }
 
             @Override
@@ -1323,7 +1323,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
 
     // ---------------- меню сообщения и реакции ----------------
 
-    private void messageMenu(final Msg msg) {
+    private void messageMenu(final Msg msg, final View anchor) {
         final List<String> items = new ArrayList<>();
         final List<Integer> ids = new ArrayList<>();
         items.add(getString(R.string.reply));
@@ -1357,37 +1357,70 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         items.add(getString(R.string.delete_message));
         ids.add(8);
 
-        new MaterialAlertDialogBuilder(this)
-                .setItems(items.toArray(new String[0]), (d, which) -> {
-                    int id = ids.get(which);
-                    if (id == 1) {
-                        setReplyTarget(msg);
-                    } else if (id == 2) {
-                        Ui.copy(this, "MailGram", msg.text);
-                    } else if (id == 3) {
-                        SyncEngine.get(this).retry(chat, msg, null);
-                        refresh();
-                    } else if (id == 4) {
-                        editMessage(msg);
-                    } else if (id == 5) {
-                        openViewer(msg);
-                    } else if (id == 6) {
-                        Store.get(this).setMsgPinned(uid, msg.mid, !msg.pinned);
-                        refresh();
-                    } else if (id == 11) {
-                        adapter.clearSelection();
-                        enterSelection(msg);
-                    } else if (id == 9) {
-                        forwardDialog(msg);
-                    } else if (id == 7) {
-                        SyncEngine.get(this).sendDelete(chat, msg, null);
-                        refresh();
-                    } else {
-                        Store.get(this).deleteMessage(uid, msg.mid);
-                        refresh();
-                    }
-                })
-                .show();
+        final LinearLayout menu = new LinearLayout(this);
+        menu.setOrientation(LinearLayout.VERTICAL);
+        menu.setBackgroundResource(R.drawable.bg_context_menu);
+        int gap = Ui.dp(this, 6);
+        menu.setPadding(0, gap, 0, gap);
+        final android.widget.PopupWindow[] holder = new android.widget.PopupWindow[1];
+        for (int i = 0; i < items.size(); i++) {
+            final int actionId = ids.get(i);
+            TextView row = new TextView(this);
+            row.setText(items.get(i));
+            row.setTextSize(14f);
+            row.setPadding(Ui.dp(this, 16), Ui.dp(this, 10), Ui.dp(this, 16), Ui.dp(this, 10));
+            boolean danger = actionId == 7 || actionId == 8;
+            row.setTextColor(getResources().getColor(danger ? R.color.danger : R.color.text_drawer));
+            row.setBackgroundResource(R.drawable.bg_row_ripple);
+            row.setOnClickListener(v -> {
+                if (holder[0] != null) holder[0].dismiss();
+                handleMessageAction(actionId, msg);
+            });
+            menu.addView(row);
+        }
+        android.widget.PopupWindow popup = new android.widget.PopupWindow(menu,
+                Ui.dp(this, 220), ViewGroup.LayoutParams.WRAP_CONTENT, true);
+        holder[0] = popup;
+        popup.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(0x00000000));
+        popup.setOutsideTouchable(true);
+        popup.setElevation(Ui.dp(this, 12));
+        popup.setAnimationStyle(R.style.Animation_MailGram_Popup);
+        if (anchor != null) {
+            popup.showAsDropDown(anchor, 0, -anchor.getHeight(), android.view.Gravity.NO_GRAVITY);
+        } else {
+            popup.showAtLocation(findViewById(R.id.chat_root), android.view.Gravity.CENTER, 0, 0);
+        }
+        Anim.haptic(menu, false);
+    }
+
+    /** Действия из контекстного меню сообщения. */
+    private void handleMessageAction(int id, final Msg msg) {
+        if (id == 1) {
+            setReplyTarget(msg);
+        } else if (id == 2) {
+            Ui.copy(this, getString(R.string.copy), msg.text);
+        } else if (id == 3) {
+            SyncEngine.get(this).retry(chat, msg, null);
+            refresh();
+        } else if (id == 4) {
+            editMessage(msg);
+        } else if (id == 5) {
+            openViewer(msg);
+        } else if (id == 6) {
+            Store.get(this).setMsgPinned(uid, msg.mid, !msg.pinned);
+            refresh();
+        } else if (id == 11) {
+            adapter.clearSelection();
+            enterSelection(msg);
+        } else if (id == 9) {
+            forwardDialog(msg);
+        } else if (id == 7) {
+            SyncEngine.get(this).sendDelete(chat, msg, null);
+            refresh();
+        } else {
+            Store.get(this).deleteMessage(uid, msg.mid);
+            refresh();
+        }
     }
 
     /** Выгрузка переписки в HTML: читаемый файл, который можно открыть или отправить. */

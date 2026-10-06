@@ -378,6 +378,7 @@
 
                 <TextView
                     android:id="@+id/settings_client_id"
+                    android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="16dp"
@@ -387,6 +388,7 @@
 
                 <TextView
                     android:id="@+id/settings_redirect"
+                    android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="16dp"
@@ -396,6 +398,7 @@
 
                 <TextView
                     android:id="@+id/settings_versions"
+                    android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="16dp"

@@ -177,6 +177,14 @@ FILES["drawable/bg_icon_ripple.xml"] = """<ripple {ns} android:color="@color/rip
 """.format(ns=NS)
 
 
+FILES["drawable/bg_context_menu.xml"] = """<shape {ns} android:shape="rectangle">
+    <corners android:radius="12dp" />
+    <solid android:color="@color/surface2" />
+    <stroke android:width="1dp" android:color="@color/surface3" />
+</shape>
+""".format(ns=NS)
+
+
 def main():
     for rel, body in FILES.items():
         path = os.path.join(RES, rel)
