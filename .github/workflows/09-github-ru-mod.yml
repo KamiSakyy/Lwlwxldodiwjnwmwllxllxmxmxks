@@ -194,25 +194,76 @@ jobs:
           p.write_text(s)
           PY
 
-      - name: "Сборка apktool + zipalign + подпись нашим ключом"
+      - name: "Сборка: apktool → apktool+aapt2 → подмена dex (самый надёжный из доступных)"
         continue-on-error: true
         run: |
           set +e
-          java -Xmx6g -jar tools/bin/apktool.jar b work/dec -o work/unsigned.apk --use-aapt2 > work/build.log 2>&1
-          echo "apktool build exit=$?" | tee work/build-exit.txt
-          tail -40 work/build.log
+          export PATH="$BT:$PATH"
+          echo "aapt2 из SDK: $(command -v aapt2)"
+          rm -f work/unsigned.apk
+          echo "=== Стратегия A: apktool build (встроенный aapt2)"
+          java -Xmx6g -jar tools/bin/apktool.jar b work/dec -o work/unsigned.apk > work/build.log 2>&1
+          A=$?
+          echo "exit A=$A"
+          echo "A=$A" > work/build-exit.txt
+          if [ ! -f work/unsigned.apk ]; then
+            echo "=== Стратегия B: apktool build --use-aapt2 (aapt2 из build-tools)"
+            java -Xmx6g -jar tools/bin/apktool.jar b work/dec -o work/unsigned.apk --use-aapt2 >> work/build.log 2>&1
+            B=$?
+            echo "exit B=$B"
+            echo "A=$A B=$B" > work/build-exit.txt
+          fi
+          if [ ! -f work/unsigned.apk ]; then
+            echo "=== Стратегия C: собрать только smali и подменить dex в оригинальном APK"
+            echo "--- стратегия C" > work/build.log
+            i=0
+            good=1
+            for d in work/dec/smali work/dec/smali_classes*; do
+              [ -d "$d" ] || continue
+              if [ $i -eq 0 ]; then dex=classes.dex; else dex=classes$((i+1)).dex; fi
+              echo "--- $d -> $dex" >> work/build.log
+              java -Xmx6g -cp tools/bin/apktool.jar com.android.tools.smali.smali.Main assemble "$d" -a 35 -o "work/$dex" >> work/build.log 2>&1
+              rc=$?
+              echo "smali exit=$rc ($dex)" >> work/build.log
+              [ $rc -ne 0 ] && { good=0; break; }
+              i=$((i+1))
+            done
+            if [ $good -eq 1 ]; then
+              cp work/base.apk work/unsigned.apk
+              ( cd work && zip -q -X unsigned.apk classes*.dex && echo "dex подменены: $(ls classes*.dex | tr '\n' ' ')" )
+            else
+              echo "smali-сборка тоже упала" >> work/build.log
+            fi
+          fi
           if [ -f work/unsigned.apk ]; then
-            "$BT/zipalign" -f -p 4 work/unsigned.apk work/aligned.apk || echo "zipalign упал"
+            "$BT/zipalign" -f -p 4 work/unsigned.apk work/aligned.apk
             "$BT/apksigner" sign --ks handoff/keys/github-ru.jks \
               --ks-pass pass:android --key-pass pass:android --ks-key-alias github-ru \
-              --v1-signing-enabled true --v2-signing-enabled true --v3-signing-enabled true \
               --out work/signed.apk work/aligned.apk 2>&1 | tail -5
-            "$BT/apksigner" verify --print-certs work/signed.apk 2>&1 | head -8
-            ls -la work/signed.apk || true
+            "$BT/apksigner" verify --print-certs work/signed.apk 2>&1 | head -4
+            stat -c%s work/signed.apk 2>/dev/null || echo "signed.apk нет"
           else
-            echo "unsigned.apk не собран" | tee -a work/build-exit.txt
+            echo "APK не собран ни одной стратегией"
           fi
           exit 0
+      - name: "Ошибки сборки — в аннотации (чтобы было видно без логов)"
+        if: always()
+        run: |
+          set +e
+          echo "exit-коды: $(cat work/build-exit.txt 2>/dev/null)"
+          if [ -s work/build.log ]; then
+            MSG=$(grep -E "ERROR|error:|Exception|Could not|cannot |failed|FAILED" work/build.log | tail -8 | tr '\n' '|')
+            MSG=$(printf '%s' "$MSG" | cut -c1-900)
+            echo "::error title=apktool-build::${MSG}"
+            TAIL=$(tail -c 900 work/build.log | tr '\n' '§' | tr -d '\r')
+            echo "::warning title=build-tail::${TAIL}"
+          else
+            echo "::warning title=no-build-log::work/build.log пуст или отсутствует"
+          fi
+          if [ -s work/decode.log ]; then
+            DT=$(tail -c 500 work/decode.log | tr '\n' '§' | tr -d '\r')
+            echo "::notice title=decode-tail::${DT}"
+          fi
 
       - name: "Проверки и отчёт"
         if: always()
