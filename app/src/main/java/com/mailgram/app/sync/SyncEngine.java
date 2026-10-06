@@ -841,7 +841,7 @@ public final class SyncEngine {
         if (callback != null) callback.onError(error);
     }
 
-    private static String describe(Exception e) {
+    private static String describe(Throwable e) {
         return com.mailgram.app.net.ApiError.shortText(e);
     }
 }
