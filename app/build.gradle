@@ -102,9 +102,12 @@ android {
 def embeddedTemplateDir = layout.buildDirectory.dir('generated/template-assets')
 
 tasks.register('prepareEmbeddedTemplate', Copy) {
-    dependsOn(':template:assembleRelease')
+    dependsOn(':template:assembleRelease', ':pythonTemplate:assembleRelease')
     from(project(':template').layout.buildDirectory.file('outputs/apk/release/template-release-unsigned.apk')) {
         rename { 'host-template.apk' }
+    }
+    from(project(':pythonTemplate').layout.buildDirectory.file('outputs/apk/release/pythonTemplate-release-unsigned.apk')) {
+        rename { 'python-host-template.apk' }
     }
     from(signingStoreFile) {
         rename { 'site-signing-key.p12' }

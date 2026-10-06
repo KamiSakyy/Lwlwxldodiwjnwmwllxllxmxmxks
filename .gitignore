@@ -1,5 +1,7 @@
 # Android / Gradle
 .gradle/
+__pycache__/
+*.py[cod]
 **/build/
 **/.cxx/
 local.properties

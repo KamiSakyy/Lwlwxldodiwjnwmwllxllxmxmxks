@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.application'
+    id 'com.chaquo.python'
+}
+
+android {
+    namespace 'com.webapk.hosttemplate'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'com.webapk.hosttemplate'
+        minSdk 24
+        targetSdk 36
+        versionCode 1
+        versionName '1.0'
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+chaquopy {
+    defaultConfig {
+        version = '3.10'
+        pip {
+            install('Flask==3.1.1')
+            install('requests==2.32.4')
+        }
+    }
+}

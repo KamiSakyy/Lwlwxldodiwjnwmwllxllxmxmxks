@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if [ "$#" -ne 4 ]; then
-  echo "usage: test-runtime-apk.sh BUILD_TOOLS_DIR TEMPLATE_APK TEMP_DIR CONVERTER_APK" >&2
+if [ "$#" -ne 5 ]; then
+  echo "usage: test-runtime-apk.sh BUILD_TOOLS_DIR TEMPLATE_APK TEMP_DIR CONVERTER_APK PYTHON_TEMPLATE_APK" >&2
   exit 2
 fi
 BUILD_TOOLS="$1"
 TEMPLATE_APK="$2"
 TEMP_DIR="$3"
 APP_APK="$4"
+PYTHON_TEMPLATE_APK="$5"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 CLASSES="$TEMP_DIR/jvm-smoke-classes"
 UNSIGNED="$TEMP_DIR/runtime-smoke-unsigned.apk"
@@ -98,6 +99,26 @@ check_native_libraries() {
 }
 stage "verify native libraries in host template APK"
 check_native_libraries "Host template APK" "$TEMPLATE_ENTRIES"
+stage "verify embedded Python/Flask runtime template"
+PYTHON_TEMPLATE_ENTRIES="$(unzip -Z1 "$PYTHON_TEMPLATE_APK")"
+if ! grep -Eq '^assets/chaquopy/' <<< "$PYTHON_TEMPLATE_ENTRIES"; then
+  echo "Python runtime template is missing Chaquopy runtime assets" >&2
+  exit 1
+fi
+PYTHON_PERMISSIONS="$("$BUILD_TOOLS/aapt" dump permissions "$PYTHON_TEMPLATE_APK")"
+grep -F "android.permission.INTERNET" <<< "$PYTHON_PERMISSIONS"
+grep -F "android.permission.CAMERA" <<< "$PYTHON_PERMISSIONS"
+grep -F "android.permission.RECORD_AUDIO" <<< "$PYTHON_PERMISSIONS"
+PYTHON_MANIFEST_TREE="$("$BUILD_TOOLS/aapt" dump xmltree "$PYTHON_TEMPLATE_APK" AndroidManifest.xml)"
+grep -F "com.webapk.hosttemplate.PythonHostActivity" <<< "$PYTHON_MANIFEST_TREE"
+grep -F "android:networkSecurityConfig" <<< "$PYTHON_MANIFEST_TREE"
+PYTHONPYCACHEPREFIX="$TEMP_DIR/python-bytecode" python3 -m py_compile \
+  "$ROOT/pythonTemplate/src/main/python/engine.py" \
+  "$ROOT/pythonTemplate/src/main/python/cloud.py" \
+  "$ROOT/pythonTemplate/src/main/python/server.py"
+grep -F 'make_server("127.0.0.1", 0' "$ROOT/pythonTemplate/src/main/python/engine.py"
+grep -F 'FIREBASE_DB_URL"] = ""' "$ROOT/pythonTemplate/src/main/python/engine.py"
+grep -F 'Cloud storage is disabled' "$ROOT/pythonTemplate/src/main/python/cloud.py"
 stage "verify native libraries in generated site APK"
 check_native_libraries "Generated site APK" "$SIGNED_ENTRIES"
 stage "verify native libraries in converter APK"
@@ -146,6 +167,10 @@ fi
 stage "verify final manifest and launcher metadata"
 BADGING="$("$BUILD_TOOLS/aapt" dump badging "$SIGNED")"
 TEMPLATE_MANIFEST_TREE="$("$BUILD_TOOLS/aapt" dump xmltree "$TEMPLATE_APK" AndroidManifest.xml)"
+if "$BUILD_TOOLS/aapt" dump permissions "$TEMPLATE_APK" | grep -F "android.permission.INTERNET"; then
+  echo "Static site template unexpectedly requests INTERNET permission" >&2
+  exit 1
+fi
 grep -F "android:roundIcon" <<< "$TEMPLATE_MANIFEST_TREE"
 grep -F "android:extractNativeLibs" <<< "$TEMPLATE_MANIFEST_TREE"
 grep -F "package: name='com.smoke.offline'" <<< "$BADGING"

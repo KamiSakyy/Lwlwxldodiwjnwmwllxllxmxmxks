@@ -14,7 +14,7 @@ TOP_LEVEL_FILES = {
     "build.gradle",
     "gradle.properties",
 }
-SOURCE_DIRS = {".github", "app", "template", "scripts", "handoff", "native", "shared"}
+SOURCE_DIRS = {".github", "app", "template", "pythonTemplate", "scripts", "handoff", "native", "shared"}
 EXCLUDED_PARTS = {".git", ".gradle", "build", "dist", "__pycache__", ".idea"}
 EXCLUDED_SUFFIXES = {".apk", ".aab", ".keystore", ".jks", ".p12", ".pyc"}
 

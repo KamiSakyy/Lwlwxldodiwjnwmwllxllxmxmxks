@@ -37,10 +37,11 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
-/** Builds a WebView APK by patching the bundled Android template; no network or SDK is used. */
+/** Builds a WebView APK by patching either the offline site or embedded Python template. */
 final class ApkBuilder {
     private static final String TEMPLATE_PACKAGE = "com.webapk.hosttemplate";
     private static final String TEMPLATE_ASSET = "host-template.apk";
+    private static final String PYTHON_TEMPLATE_ASSET = "python-host-template.apk";
     private static final String SITE_SIGNING_ASSET = "site-signing-key.p12";
     private static final String SITE_SIGNING_ALIAS = "webapkstudio";
     private static final String SITE_SIGNING_PASSWORD = "webapk-studio-public-handoff";
@@ -85,22 +86,32 @@ final class ApkBuilder {
     static File build(Context context, File siteRoot, String packageName, String appLabel, File iconFile,
                       boolean autoRotate, boolean fullscreen, int versionCode,
                       ProgressListener progressListener) throws Exception {
+        return build(context, siteRoot, packageName, appLabel, iconFile, autoRotate, fullscreen,
+                versionCode, false, progressListener);
+    }
+
+    static File build(Context context, File siteRoot, String packageName, String appLabel, File iconFile,
+                      boolean autoRotate, boolean fullscreen, int versionCode,
+                      boolean pythonServer, ProgressListener progressListener) throws Exception {
         reportProgress(progressListener, 3, "Проверка проекта");
         if (!isValidPackageName(packageName)) {
             throw new IOException("Пакет должен выглядеть как com.example.app (строчные латинские буквы).");
         }
         if (versionCode < 1) throw new IOException("Номер версии приложения должен быть положительным.");
-        if (siteRoot == null || !siteRoot.isDirectory()) {
-            throw new IOException("Сначала выберите index.html или ZIP сайта.");
-        }
-        File index = new File(siteRoot, "index.html");
-        if (!index.isFile()) {
-            throw new IOException("В корне сайта не найден index.html.");
-        }
 
-        List<File> siteFiles = collectSiteFiles(siteRoot);
-        if (siteFiles.isEmpty()) throw new IOException("Сайт пустой.");
-        reportProgress(progressListener, 12, "Найдено файлов: " + siteFiles.size());
+        List<File> siteFiles = Collections.emptyList();
+        if (pythonServer) {
+            reportProgress(progressListener, 12, "Проверка встроенного Python/Flask проекта");
+        } else {
+            if (siteRoot == null || !siteRoot.isDirectory()) {
+                throw new IOException("Сначала выберите index.html или ZIP сайта.");
+            }
+            File index = new File(siteRoot, "index.html");
+            if (!index.isFile()) throw new IOException("В корне сайта не найден index.html.");
+            siteFiles = collectSiteFiles(siteRoot);
+            if (siteFiles.isEmpty()) throw new IOException("Сайт пустой.");
+            reportProgress(progressListener, 12, "Найдено файлов: " + siteFiles.size());
+        }
         if (iconFile != null && !iconFile.isFile()) {
             throw new IOException("Файл иконки больше недоступен. Выберите его ещё раз.");
         }
@@ -118,13 +129,15 @@ final class ApkBuilder {
                 : makeIconPngs(iconFile);
         Set<String> usedIconDensities = new HashSet<>();
 
-        try (InputStream asset = new BufferedInputStream(context.getAssets().open(TEMPLATE_ASSET));
+        String selectedTemplateAsset = pythonServer ? PYTHON_TEMPLATE_ASSET : TEMPLATE_ASSET;
+        try (InputStream asset = new BufferedInputStream(context.getAssets().open(selectedTemplateAsset));
              ZipInputStream source = new ZipInputStream(asset);
              FileOutputStream fileOut = new FileOutputStream(unsigned);
              CountingOutputStream countingOut = new CountingOutputStream(new BufferedOutputStream(fileOut));
              ZipOutputStream apk = new ZipOutputStream(countingOut)) {
             apk.setLevel(Deflater.DEFAULT_COMPRESSION);
-            reportProgress(progressListener, 18, "Подготовка шаблона приложения");
+            reportProgress(progressListener, 18, pythonServer
+                    ? "Подготовка Python runtime" : "Подготовка шаблона приложения");
             ZipEntry entry;
             while ((entry = source.getNextEntry()) != null) {
                 String name = entry.getName();
@@ -162,7 +175,7 @@ final class ApkBuilder {
                         copy(source, apk);
                         apk.closeEntry();
                     }
-                } else if (name.equals("classes.dex")) {
+                } else if (name.matches("classes[0-9]*\\.dex")) {
                     byte[] dex = readAll(source, 32 * 1024 * 1024);
                     putStoredAligned(apk, countingOut, name, dex);
                 } else if (name.startsWith("assets/site/")) {
@@ -186,31 +199,35 @@ final class ApkBuilder {
             if (iconFile != null && usedIconDensities.size() < 5) {
                 throw new IOException("Не удалось заменить все размеры иконки приложения.");
             }
-            File encryptedArchive = new File(cache, "website-assets-a.c.tmp");
-            byte[] masterKey = N.k();
-            reportProgress(progressListener, 30, "Шифрование файлов проекта");
-            try {
-                EncryptedSiteArchive.create(siteRoot, siteFiles, encryptedArchive, masterKey,
-                        (completedFiles, totalFiles, processedBytes, totalBytes) -> {
-                            double fraction = totalBytes > 0
-                                    ? Math.min(1d, (double) processedBytes / (double) totalBytes)
-                                    : (double) completedFiles / Math.max(1, totalFiles);
-                            int percent = 30 + (int) Math.round(48d * fraction);
-                            String detail = totalBytes > 0
-                                    ? "Шифрование · " + formatBytes(processedBytes) + " / " + formatBytes(totalBytes)
-                                    : "Шифрование · " + completedFiles + " / " + totalFiles + " файлов";
-                            reportProgress(progressListener, Math.min(78, percent), detail);
-                        });
-                ZipEntry archiveEntry = new ZipEntry("assets/" + EncryptedSiteArchive.ASSET_NAME);
-                archiveEntry.setTime(0L);
-                apk.putNextEntry(archiveEntry);
-                try (InputStream input = new BufferedInputStream(new FileInputStream(encryptedArchive))) {
-                    copy(input, apk);
+            if (pythonServer) {
+                reportProgress(progressListener, 78, "Flask server и зависимости встроены");
+            } else {
+                File encryptedArchive = new File(cache, "website-assets-a.c.tmp");
+                byte[] masterKey = N.k();
+                reportProgress(progressListener, 30, "Шифрование файлов проекта");
+                try {
+                    EncryptedSiteArchive.create(siteRoot, siteFiles, encryptedArchive, masterKey,
+                            (completedFiles, totalFiles, processedBytes, totalBytes) -> {
+                                double fraction = totalBytes > 0
+                                        ? Math.min(1d, (double) processedBytes / (double) totalBytes)
+                                        : (double) completedFiles / Math.max(1, totalFiles);
+                                int percent = 30 + (int) Math.round(48d * fraction);
+                                String detail = totalBytes > 0
+                                        ? "Шифрование · " + formatBytes(processedBytes) + " / " + formatBytes(totalBytes)
+                                        : "Шифрование · " + completedFiles + " / " + totalFiles + " файлов";
+                                reportProgress(progressListener, Math.min(78, percent), detail);
+                            });
+                    ZipEntry archiveEntry = new ZipEntry("assets/" + EncryptedSiteArchive.ASSET_NAME);
+                    archiveEntry.setTime(0L);
+                    apk.putNextEntry(archiveEntry);
+                    try (InputStream input = new BufferedInputStream(new FileInputStream(encryptedArchive))) {
+                        copy(input, apk);
+                    }
+                    apk.closeEntry();
+                } finally {
+                    java.util.Arrays.fill(masterKey, (byte) 0);
+                    if (encryptedArchive.exists()) encryptedArchive.delete();
                 }
-                apk.closeEntry();
-            } finally {
-                java.util.Arrays.fill(masterKey, (byte) 0);
-                if (encryptedArchive.exists()) encryptedArchive.delete();
             }
             apk.finish();
             reportProgress(progressListener, 82, "Формирование APK завершено");

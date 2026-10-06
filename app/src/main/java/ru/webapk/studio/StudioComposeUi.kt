@@ -95,10 +95,11 @@ class StudioComposeUi(private val activity: MainActivity) {
     private var canSave by mutableStateOf(false)
     private var buildProgress by mutableStateOf(0f)
     private var buildProgressMessage by mutableStateOf("")
+    private var pythonServerMode by mutableStateOf(preferences.getBoolean("python_server_mode", false))
     private var packageErrorState by mutableStateOf<String?>(null)
     private var versionErrorState by mutableStateOf<String?>(null)
     private val projectReady: Boolean
-        get() = projectSummaryState != "Файл ещё не выбран"
+        get() = pythonServerMode || projectSummaryState != "Файл ещё не выбран"
 
     fun install(view: ComposeView) {
         view.setViewCompositionStrategy(ViewCompositionStrategy.DisposeOnViewTreeLifecycleDestroyed)
@@ -115,6 +116,15 @@ class StudioComposeUi(private val activity: MainActivity) {
     fun getAutoRotateValue(): Boolean = autoRotate
     fun getFullscreenValue(): Boolean = fullscreen
     fun getProjectSummaryValue(): String = projectSummaryState
+    fun getPythonServerMode(): Boolean = pythonServerMode
+
+    fun setPythonServerMode(value: Boolean) {
+        if (pythonServerMode == value || isBusy) return
+        pythonServerMode = value
+        preferences.edit().putBoolean("python_server_mode", value).apply()
+        canSave = false
+        statusMessage = if (value) "Встроенный Python/Flask режим выбран" else "Режим статического сайта выбран"
+    }
 
     fun setAppNameValue(value: String) {
         appName = value.take(40)
@@ -195,72 +205,127 @@ class StudioComposeUi(private val activity: MainActivity) {
                     verticalArrangement = Arrangement.spacedBy(0.dp)
                 ) {
                     StudioHeader()
-                    SectionCard(title = "01 · ПРОЕКТ", subtitle = "Выберите HTML-файл или ZIP-проект.") {
-                        Row(
-                            modifier = Modifier.fillMaxWidth(),
-                            verticalAlignment = Alignment.CenterVertically
-                        ) {
-                            androidx.compose.material3.Text(
-                                text = projectSummaryState,
-                                color = if (projectReady) Mint else Muted,
-                                fontSize = 13.sp,
-                                lineHeight = 18.sp,
-                                modifier = Modifier.weight(1f)
-                            )
-                            if (projectReady) {
-                                TextButton(
-                                    onClick = { showClearProjectDialog = true },
-                                    enabled = !isBusy
-                                ) {
-                                    androidx.compose.material3.Text("Сбросить", color = Error, fontSize = 12.sp)
-                                }
+                    SectionCard(
+                        title = if (pythonServerMode) "01 · PYTHON ENGINE" else "01 · ПРОЕКТ",
+                        subtitle = if (pythonServerMode) "Локальный сервер Flask внутри APK." else "Выберите HTML-файл или ZIP-проект."
+                    ) {
+                        Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth()) {
+                            OutlinedButton(
+                                onClick = { setPythonServerMode(false) },
+                                enabled = !isBusy,
+                                modifier = Modifier.weight(1f).height(46.dp),
+                                shape = RoundedCornerShape(14.dp),
+                                border = BorderStroke(1.dp, if (!pythonServerMode) Mint else Outline),
+                                colors = ButtonDefaults.outlinedButtonColors(contentColor = if (!pythonServerMode) Mint else Ink)
+                            ) {
+                                androidx.compose.material3.Text("Статический сайт", fontSize = 12.sp)
+                            }
+                            OutlinedButton(
+                                onClick = { setPythonServerMode(true) },
+                                enabled = !isBusy,
+                                modifier = Modifier.weight(1f).height(46.dp),
+                                shape = RoundedCornerShape(14.dp),
+                                border = BorderStroke(1.dp, if (pythonServerMode) Mint else Outline),
+                                colors = ButtonDefaults.outlinedButtonColors(contentColor = if (pythonServerMode) Mint else Ink)
+                            ) {
+                                androidx.compose.material3.Text("Python / Flask", fontSize = 12.sp)
                             }
                         }
                         Spacer(Modifier.height(10.dp))
-                        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                            OutlinedButton(
-                                onClick = { activity.openHtmlPicker() },
-                                enabled = !isBusy,
-                                modifier = Modifier.weight(1f).height(46.dp),
+                        if (pythonServerMode) {
+                            Surface(
+                                modifier = Modifier.fillMaxWidth(),
                                 shape = RoundedCornerShape(14.dp),
-                                border = BorderStroke(1.dp, Outline),
-                                colors = ButtonDefaults.outlinedButtonColors(contentColor = Ink)
+                                color = Raised
                             ) {
-                                androidx.compose.material3.Text("HTML-файл", fontSize = 13.sp)
+                                Column(modifier = Modifier.padding(13.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
+                                    androidx.compose.material3.Text(
+                                        "Python 3.10 + Flask + requests",
+                                        color = Mint,
+                                        fontSize = 13.sp,
+                                        fontWeight = FontWeight.Bold
+                                    )
+                                    androidx.compose.material3.Text(
+                                        "В APK встроен server (13).py; WebView открывает его локальный интерфейс.",
+                                        color = Ink,
+                                        fontSize = 12.sp,
+                                        lineHeight = 17.sp
+                                    )
+                                    androidx.compose.material3.Text(
+                                        "Cloud/Firebase отключены. Android 7.0+ (API 24); Flask слушает только 127.0.0.1. VK требует интернет. APK будет крупнее и дольше запускаться.",
+                                        color = Muted,
+                                        fontSize = 11.sp,
+                                        lineHeight = 16.sp
+                                    )
+                                }
                             }
-                            OutlinedButton(
-                                onClick = { activity.openZipPicker() },
-                                enabled = !isBusy,
-                                modifier = Modifier.weight(1f).height(46.dp),
-                                shape = RoundedCornerShape(14.dp),
-                                border = BorderStroke(1.dp, Outline),
-                                colors = ButtonDefaults.outlinedButtonColors(contentColor = Ink)
-                            ) {
-                                androidx.compose.material3.Text("ZIP-проект", fontSize = 13.sp)
-                            }
-                        }
-                        Surface(
-                            modifier = Modifier.fillMaxWidth().padding(top = 10.dp),
-                            shape = RoundedCornerShape(13.dp),
-                            color = Raised
-                        ) {
+                        } else {
                             Row(
-                                modifier = Modifier.padding(horizontal = 11.dp, vertical = 9.dp),
+                                modifier = Modifier.fillMaxWidth(),
                                 verticalAlignment = Alignment.CenterVertically
                             ) {
                                 androidx.compose.material3.Text(
-                                    text = "ЗАЩИТА",
-                                    color = Mint,
-                                    fontSize = 9.sp,
-                                    fontWeight = FontWeight.Bold
+                                    text = projectSummaryState,
+                                    color = if (projectReady) Mint else Muted,
+                                    fontSize = 13.sp,
+                                    lineHeight = 18.sp,
+                                    modifier = Modifier.weight(1f)
                                 )
-                                Spacer(Modifier.size(9.dp))
-                                androidx.compose.material3.Text(
-                                    text = "Сайт шифруется и обрабатывается на устройстве.",
-                                    color = Muted,
-                                    fontSize = 11.sp,
-                                    lineHeight = 15.sp
-                                )
+                                if (projectReady) {
+                                    TextButton(
+                                        onClick = { showClearProjectDialog = true },
+                                        enabled = !isBusy
+                                    ) {
+                                        androidx.compose.material3.Text("Сбросить", color = Error, fontSize = 12.sp)
+                                    }
+                                }
+                            }
+                            Spacer(Modifier.height(10.dp))
+                            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                                OutlinedButton(
+                                    onClick = { activity.openHtmlPicker() },
+                                    enabled = !isBusy,
+                                    modifier = Modifier.weight(1f).height(46.dp),
+                                    shape = RoundedCornerShape(14.dp),
+                                    border = BorderStroke(1.dp, Outline),
+                                    colors = ButtonDefaults.outlinedButtonColors(contentColor = Ink)
+                                ) {
+                                    androidx.compose.material3.Text("HTML-файл", fontSize = 13.sp)
+                                }
+                                OutlinedButton(
+                                    onClick = { activity.openZipPicker() },
+                                    enabled = !isBusy,
+                                    modifier = Modifier.weight(1f).height(46.dp),
+                                    shape = RoundedCornerShape(14.dp),
+                                    border = BorderStroke(1.dp, Outline),
+                                    colors = ButtonDefaults.outlinedButtonColors(contentColor = Ink)
+                                ) {
+                                    androidx.compose.material3.Text("ZIP-проект", fontSize = 13.sp)
+                                }
+                            }
+                            Surface(
+                                modifier = Modifier.fillMaxWidth().padding(top = 10.dp),
+                                shape = RoundedCornerShape(13.dp),
+                                color = Raised
+                            ) {
+                                Row(
+                                    modifier = Modifier.padding(horizontal = 11.dp, vertical = 9.dp),
+                                    verticalAlignment = Alignment.CenterVertically
+                                ) {
+                                    androidx.compose.material3.Text(
+                                        text = "ЗАЩИТА",
+                                        color = Mint,
+                                        fontSize = 9.sp,
+                                        fontWeight = FontWeight.Bold
+                                    )
+                                    Spacer(Modifier.size(9.dp))
+                                    androidx.compose.material3.Text(
+                                        text = "Сайт шифруется и обрабатывается на устройстве.",
+                                        color = Muted,
+                                        fontSize = 11.sp,
+                                        lineHeight = 15.sp
+                                    )
+                                }
                             }
                         }
                     }

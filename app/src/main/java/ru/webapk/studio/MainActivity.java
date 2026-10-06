@@ -38,7 +38,7 @@ import java.util.concurrent.Executors;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-/** Compose Material 3 front end for the offline web-project APK builder. */
+/** Compose Material 3 front end for static-site and embedded Python APK builds. */
 public final class MainActivity extends ComponentActivity {
     private static final int PICK_HTML = 10;
     private static final int PICK_ZIP = 11;
@@ -433,8 +433,13 @@ public final class MainActivity extends ComponentActivity {
 
     void buildApk() {
         hideKeyboard();
+        boolean pythonServer = composeUi.getPythonServerMode();
         File selectedSite = siteRoot;
-        if (selectedSite == null || !new File(selectedSite, "index.html").isFile()) {
+        if (pythonServer && Build.VERSION.SDK_INT < 24) {
+            Toast.makeText(this, "Python runtime требует Android 7.0 (API 24) или новее", Toast.LENGTH_LONG).show();
+            return;
+        }
+        if (!pythonServer && (selectedSite == null || !new File(selectedSite, "index.html").isFile())) {
             Toast.makeText(this, "Сначала выберите index.html или ZIP сайта", Toast.LENGTH_LONG).show();
             return;
         }
@@ -471,7 +476,7 @@ public final class MainActivity extends ComponentActivity {
         IO.execute(() -> {
             try {
                 File apk = ApkBuilder.build(this, selectedSite, packageName, appName, selectedIcon,
-                        autoRotate, fullscreen, versionCode,
+                        autoRotate, fullscreen, versionCode, pythonServer,
                         (percent, message) -> runOnUiThread(() ->
                                 composeUi.setBuildProgress(percent / 100f, message)));
                 generatedApk = apk;
@@ -481,9 +486,10 @@ public final class MainActivity extends ComponentActivity {
                         composeUi.setVersionCodeValue(Integer.toString(versionCode + 1));
                     }
                     composeUi.setSaveAvailable(true);
-                    setStatus("APK готов · " + ApkBuilder.formatBytes(apk.length())
-                            + " · постоянная подпись", false);
-                    Toast.makeText(this, "Настоящий APK создан офлайн", Toast.LENGTH_SHORT).show();
+                    setStatus((pythonServer ? "Flask APK готов · " : "APK готов · ")
+                            + ApkBuilder.formatBytes(apk.length()) + " · постоянная подпись", false);
+                    Toast.makeText(this, pythonServer ? "Python/Flask APK создан" : "Настоящий APK создан офлайн",
+                            Toast.LENGTH_SHORT).show();
                 });
             } catch (Exception error) {
                 showFailure(error.getMessage() == null ? "Ошибка сборки APK" : error.getMessage());
