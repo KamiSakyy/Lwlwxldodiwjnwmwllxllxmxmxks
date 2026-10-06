@@ -69,7 +69,9 @@ public final class Prefs {
      * сквозной режим включается вручную (настройки → приватность).
      */
     public static boolean mailEncryption(Context ctx) {
-        return p(ctx).getBoolean("mail_encryption", false);
+        // ВКЛЮЧЕНО по умолчанию: шифрование/расшифровка работают всегда, а распознавание
+        // писем больше не зависит от темы — письмо находится по From/To и по своему содержимому.
+        return p(ctx).getBoolean("mail_encryption", true);
     }
 
     public static void setMailEncryption(Context ctx, boolean on) {

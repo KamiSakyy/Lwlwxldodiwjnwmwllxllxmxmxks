@@ -72,19 +72,29 @@ public final class SyncEngine {
      * Тема писем в режиме без шифрования: по ней письмо возвращается в нужный чат, а текст
      * остаётся читаемым в любом почтовом клиенте.
      */
+    /** @deprecated тема больше не несёт id чата — оставлено для совместимости форматов. */
+    @Deprecated
     public static final String SUBJECT_PREFIX_PLAIN = "MailGram #";
-    /** Наш маркер в теме открытого письма — допускаем «Re:»/«Fwd:» перед ним. */
-    private static final Pattern PLAIN_MARK_IN_SUBJECT = Pattern.compile(
-            "MailGram #(\\w+)");
-    /** То же для темы зашифрованного конверта. */
-    private static final Pattern ENVELOPE_MARK_IN_SUBJECT = Pattern.compile(
-            "MailGram ([A-Za-z0-9._-]{6,})");
+    /** Тема наших писем — просто «MailGram»; хвост (uid) не обязателен и ни на что не влияет. */
+    public static final String SUBJECT_MARK = "MailGram";
+    /** Служебная строка открытого письма: -- [MailGram "chat:..." "t:..." "id:..."] */
+    private static final Pattern FOOTER_CHAT = Pattern.compile("chat:\\s*([A-Za-z0-9._-]{4,})");
+
+    /** Узнаём, что письмо наше, даже если тема испорчена переносами и «Re:». */
+    private static boolean isMailGramSubject(String subject) {
+        if (subject == null) return false;
+        String s = subject.replace("_", " ").replaceAll("=\?[A-Za-z0-9-]+\?[BQbq]\?", " ")
+                .replaceAll("\?=", " ");
+        if (s.indexOf(SUBJECT_MARK) >= 0) return true;
+        String low = s.toLowerCase(java.util.Locale.US);
+        return low.contains("mailgram") || low.contains("mail gram");
+    }
     /** Вложение в открытом письме: [mailgram-attach b64:<данные>]. */
     private static final Pattern PLAIN_ATTACH = Pattern.compile(
             "\\n?\\[mailgram-attach b64:([A-Za-z0-9+/=\\s]+)\\]\\n?");
-    /** Служебная строка в конце открытого письма: -- [MailGram #<uid> "..." ...]]. */
+    /** Служебная строка в конце открытого письма: -- [MailGram "chat: ..." "t: ..." "id: ...] */
     private static final Pattern PLAIN_FOOTER = Pattern.compile(
-            "\\n?--\\s*\\[MailGram #\\w+ \"[^\\]]*\\]\\s*\\n?$");
+            "\\n?--\\s*\\[MailGram[^\\]]*\\]\\s*\\n?$");
 
     private static volatile SyncEngine instance;
 
@@ -350,24 +360,53 @@ public final class SyncEngine {
         String chatUid = null;
         // тема могла прийти с «Re:»/«Fwd:» (собеседник ответил из Gmail или почтового клиента),
         // поэтому маркер ищем в любом месте темы, а не только в начале
-        java.util.regex.Matcher psm = PLAIN_MARK_IN_SUBJECT.matcher(subject);
-        boolean plainSubject = false;
-        boolean fromSubject = false;
-        if (psm.find()) {
-            plainSubject = true;
-            fromSubject = true;
-            chatUid = psm.group(1);
-        } else {
-            java.util.regex.Matcher em = ENVELOPE_MARK_IN_SUBJECT.matcher(subject);
-            if (em.find()) {
-                fromSubject = true;
-                chatUid = em.group(1);
+        // ТЕМА БОЛЬШЕ НЕ ПЕРЕНОСИТ НАШЕЙ СЕССИОННОЙ ИНФОРМАЦИИ: достаточно слова «MailGram»
+        // в любом виде (MIME-кодирование, «Re:», «Fwd:», обрезка, лишние пробелы). Собеседник и
+        // чат определяются по From/To и по содержимому письма — так сообщение не может «не
+        // распознаться» из-за идиотского hex-хвоста в теме.
+        boolean fromSubject = isMailGramSubject(subject);
+        String body = bodyWithDecoded(mail.body);
+        if (fromSubject && chatUid == null) {
+            String from = Store.normalizeEmail(mail.from);
+            String peerGuess = (me != null && me.equalsIgnoreCase(from)) || from.isEmpty()
+                    ? Store.normalizeEmail(mail.to) : from;
+            if (peerGuess.isEmpty()) peerGuess = Store.normalizeEmail(mail.from);
+            if (!peerGuess.isEmpty()) {
+                Chat pc = store.chatByPeer(peerGuess);
+                chatUid = pc != null ? pc.uid : NativeCrypto.chatUid(me == null ? "" : me, peerGuess);
+            }
+        }
+        if (chatUid == null || chatUid.isEmpty()) {
+            Matcher ff = PLAIN_FOOTER.matcher(body);
+            if (ff.find()) {
+                Matcher fc = FOOTER_CHAT.matcher(ff.group(0));
+                if (fc.find()) chatUid = fc.group(1);
+            }
+        }
+        if (chatUid == null || chatUid.isEmpty()) {
+            String json = MailCrypto.extractEnvelopeJson(mail.body);
+            if (json != null) {
+                try {
+                    chatUid = new org.json.JSONObject(json).optString("chat", "");
+                } catch (Exception ignored) {
+                    chatUid = null;
+                }
             }
         }
         if (chatUid != null) {
             chatUid = chatUid.trim().split("[^A-Za-z0-9._-]+")[0];
-        } else {
-            fromSubject = false;
+            if (chatUid.isEmpty()) chatUid = null;
+        }
+        if (chatUid == null) fromSubject = false;   // не смогли привязать — обычный режим разбора
+        // ГЛАВНОЕ ПРАВИЛО: если в теле нет нашего конверта, это обычное (открытое) письмо —
+        // разбираем его как письмо чата независимо от того, что Gmail сделал с темой.
+        if (!fromSubject && chatUid != null && !chatUid.isEmpty()
+                && MailCrypto.extractEnvelopeJson(mail.body) == null) {
+            String from0 = Store.normalizeEmail(mail.from);
+            boolean own0 = me != null && !me.isEmpty() && me.equalsIgnoreCase(from0);
+            if (!own0 || KEY_LINE.matcher(body).find()) {
+                return parsePlainLetter(store, mail, me, chatUid, subject);
+            }
         }
 
         if (fromSubject) {
@@ -385,7 +424,12 @@ public final class SyncEngine {
                 }
             }
             try {
-                if (!plainSubject) env = MailCrypto.open(app, mail.body, me, peerKeyForOwnMessage);
+                // «открытое» письмо определяем по содержимому, а не по теме: если конверта нет —
+                // это письмо без шифрования, читаем его как есть
+                if (MailCrypto.extractEnvelopeJson(mail.body) == null) {
+                    return parsePlainLetter(store, mail, me, chatUid, subject);
+                }
+                env = MailCrypto.open(app, mail.body, me, peerKeyForOwnMessage);
             } catch (SecurityException se) {
                 if (headerOutgoing) {
                     // своё письмо, но ключа собеседника нет (например, отправлено с другого
@@ -473,7 +517,6 @@ public final class SyncEngine {
                 invite.unread = mail.unread && !outgoing;
                 return invite;
             }
-            if (plainSubject) return parsePlainLetter(store, mail, me, chatUid, subject);
             return null;
         }
 
@@ -970,9 +1013,7 @@ public final class SyncEngine {
                     body.append("(предключ для двойного крысиного шага — прямой секретности каждого сообщения)\r\n");
                 } catch (Exception ignored) {
                 }
-                String mime = Mime.build(me, peer,
-                        (Prefs.mailEncryption(app) ? MailCrypto.SUBJECT_PREFIX : SUBJECT_PREFIX_PLAIN)
-                                + chatUid,
+                String mime = Mime.build(me, peer, SUBJECT_MARK,
                         Mime.wrap(B64ToBody(body.toString())), mid, null);
                 String gmailId = GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(mime));
                 store.updateState(chatUid, mid, Msg.STATE_SENT, gmailId, null);
@@ -1056,7 +1097,11 @@ public final class SyncEngine {
             text = text.replace(am.group(0), "");
         }
         Matcher fm = PLAIN_FOOTER.matcher(text);
-        if (fm.find()) text = text.substring(0, fm.start()).trim();
+        if (fm.find()) {
+            Matcher cm = FOOTER_CHAT.matcher(fm.group(0));
+            if (cm.find()) chatUid = cm.group(1);
+            text = text.substring(0, fm.start()).trim();
+        }
 
         String from = Store.normalizeEmail(mail.from);
         boolean outgoing = me != null && me.equalsIgnoreCase(from);
@@ -1079,7 +1124,7 @@ public final class SyncEngine {
         m.outgoing = outgoing;
         m.type = "text";
         m.text = text.isEmpty() ? str(com.mailgram.app.R.string.mail_empty_body) : text;
-        String cleanSubject = subject.startsWith(SUBJECT_PREFIX_PLAIN) ? "" : subject;
+        String cleanSubject = isMailGramSubject(subject) ? "" : subject;
         m.subject = cleanSubject;
         m.gmailId = mail.id;
         m.state = Msg.STATE_SENT;
@@ -1099,9 +1144,13 @@ public final class SyncEngine {
         return Prefs.mailEncryption(app);
     }
 
-    /** Тема письма: с конвертом — «MailGram », в открытом режиме — «MailGram #». */
+    /**
+     * Тема наших писем — ровно «MailGram», без id чата. Раньше хвост вида «MailGram b8db7d35»
+     * ломал распознавание (MIME-переносы, «Re:», автообрезка), а теперь вся привязка к чату
+     * лежит внутри письма (футер / конверт) и в адресах From/To.
+     */
     private String subjectFor(String chatUid) {
-        return (encryptionOn() ? MailCrypto.SUBJECT_PREFIX : SUBJECT_PREFIX_PLAIN) + chatUid;
+        return SUBJECT_MARK;
     }
 
     /**
@@ -1118,7 +1167,8 @@ public final class SyncEngine {
             sb.append("[mailgram-attach b64:").append(mediaB64.trim()).append("]");
         }
         if (sb.length() == 0) sb.append("(пустое сообщение)");
-        sb.append("\r\n\r\n-- [MailGram #").append(chatUid).append("\" t: \"").append(type)
+        sb.append("\r\n\r\n-- [MailGram \"chat: ").append(chatUid)
+                .append("\" t: \"").append(type)
                 .append("\" id: \"").append(mid).append("\"]");
         return sb.toString();
     }
@@ -1140,12 +1190,12 @@ public final class SyncEngine {
             String envelope = MailCrypto.sealMessage(app, me, to, chatUid, mid,
                     System.currentTimeMillis(), peerKey, payloadJson);
             return GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(Mime.build(
-                    me, to, MailCrypto.SUBJECT_PREFIX + chatUid,
+                    me, to, SUBJECT_MARK,
                     MailCrypto.toMailBody(envelope), mid, inReplyTo)));
         }
         String body = plainMailBody(plainText, chatUid, mid, type, mediaB64);
         return GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(Mime.build(
-                me, to, SUBJECT_PREFIX_PLAIN + chatUid, body, mid, inReplyTo)));
+                me, to, SUBJECT_MARK, body, mid, inReplyTo)));
     }
     private String str(int resId) {
         try {
@@ -1199,11 +1249,14 @@ public final class SyncEngine {
         String peer = from.isEmpty() ? Store.normalizeEmail(mail.to) : from;
         if (peer.isEmpty()) return;
         String subject = mail.subject == null ? "" : mail.subject.trim();
-        boolean plain = subject.startsWith(SUBJECT_PREFIX_PLAIN);
-        String uid = (plain || subject.startsWith(MailCrypto.SUBJECT_PREFIX))
-                ? subject.substring((plain ? SUBJECT_PREFIX_PLAIN
-                        : MailCrypto.SUBJECT_PREFIX).length()).trim().split("\\s+")[0]
-                : null;
+        // uid из темы больше не берём: привязка — по адресу (или по футеру письма)
+        String uid = null;
+        try {
+            String body = bodyWithDecoded(mail.body);
+            java.util.regex.Matcher fcm = FOOTER_CHAT.matcher(body);
+            if (fcm.find()) uid = fcm.group(1);
+        } catch (Exception ignored) {
+        }
         Chat chat = uid != null ? store.chat(uid) : null;
         if (chat == null) chat = store.chatByPeer(peer);
         if (chat == null) {

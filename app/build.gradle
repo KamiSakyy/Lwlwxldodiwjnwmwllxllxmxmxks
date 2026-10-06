@@ -54,8 +54,8 @@ android {
         applicationId 'com.mailgram.app'
         minSdk 26
         targetSdk 36
-        versionCode 12
-        versionName '3.6.2'
+        versionCode 13
+        versionName '3.7'
 
         manifestPlaceholders.put('appAuthRedirectScheme', redirectScheme)
         buildConfigField 'String', 'OAUTH_CLIENT_ID', '"' + oauthClientId + '"'
