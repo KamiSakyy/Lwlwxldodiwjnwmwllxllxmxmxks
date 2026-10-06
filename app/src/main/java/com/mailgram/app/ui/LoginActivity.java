@@ -67,6 +67,12 @@ public class LoginActivity extends AppCompatActivity {
         } else if (Auth.clientIdFromSettings(this).isEmpty() && Auth.clientIdFromBuild()) {
             status.setVisibility(View.VISIBLE);
             status.setText("Client ID взят из сборки: " + shortId(clientId));
+        } else if (!Auth.clientIdFromSettings(this).isEmpty()
+                && !Auth.requiredManifestScheme(this).equalsIgnoreCase(Auth.androidSchemeFromBuild())) {
+            // схема редиректа жёстко прописана в манифесте на этапе сборки
+            status.setVisibility(View.VISIBLE);
+            status.setText(getString(R.string.login_client_mismatch, Auth.androidSchemeFromBuild()));
+            status.setTextColor(0xFFD93025);
         } else {
             status.setVisibility(View.VISIBLE);
             status.setText("Client ID: " + shortId(clientId) + "\nРежим: "
