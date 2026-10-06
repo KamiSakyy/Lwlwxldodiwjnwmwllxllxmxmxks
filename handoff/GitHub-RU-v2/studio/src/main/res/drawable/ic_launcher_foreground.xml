@@ -2,8 +2,7 @@
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
-    android:viewportHeight="108"
-    android:tint="?attr/colorControlNormal">
+    android:viewportHeight="108">
     <!-- Терминальный курсор ">_" — символ встроенного Node.js -->
     <path
         android:fillColor="#FFFFFF"
