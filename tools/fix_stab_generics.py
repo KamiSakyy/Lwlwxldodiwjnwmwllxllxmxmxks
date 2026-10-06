@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Управление дженериками стабов (v3).
-ПРОБЛЕМА: стаб с дженериком НЕПРАВИЛЬНОЙ арности (например <T1,T2,T3,T4> при
-использовании `X<a>` с одним аргументом) вызывает у javac МАССОВУЮ «Object-слепоту»
+ПРОБЛЕМА: дженерик-стаб ЛЮБОЙ арности вызывает у javac массовую «Object-слепоту»
 (десятки тысяч «symbol: class Object» на полной компиляции — порча кэша типов).
-РЕШЕНИЕ: стабы без дженериков; если код параметризует стаб (`X<...>`),
-стабу возвращается дженерик ТОЧНО той арности, что в использовании.
+РЕШЕНИЕ: стабы ВСЕГДА без дженериков (remove-all на подготовке);
+если код параметризует стаб (`X<...>` = «does not take parameters»),
+вырезаем `<...>` ИЗ ИСПОЛЬЗОВАНИЯ в файле-жертве (raw-тип: компилируется).
 Запуск: fix_stab_generics.py <javac-log|-> <java-root> [--remove-all]
 """
 import os, re, sys
@@ -59,69 +59,54 @@ if remove_all:
     print(f"fix_stab_generics: дженерики снесены у {n} стабов")
     sys.exit(0)
 
-# ---------- режим add: по логу ----------
+# ---------- режим strip-usage: по логу ----------
 lines = open(log_path, encoding="utf-8", errors="ignore").read().split("\n")
 ERR = re.compile(r"^(.+?):(\d+): error: (.*)$")
 
-# индекс стабов по имени
-idx = {}
-for dp, _, fs in os.walk(root):
-    for fn in fs:
-        if fn.endswith(".java"):
-            p = os.path.join(dp, fn)
-            try:
-                t = read(p)
-            except OSError:
-                continue
-            if is_stub(t):
-                idx.setdefault(fn[:-5], []).append(p)
-
-def resolve(name, err_file):
-    cands = idx.get(name)
-    if not cands:
-        return None
-    d = os.path.dirname(err_file)
-    for c in cands:
-        if os.path.dirname(c) == d:
-            return c
-    return cands[0]
-
-def generic_params(n):
-    return "<" + ",".join("T%d" % (k + 1) for k in range(n)) + ">"
-
-added = 0
+stripped = 0
 seen = set()
 for i, l in enumerate(lines):
     m = ERR.match(l)
     if not m or "does not take parameters" not in m.group(3):
         continue
+    rel = m.group(1)
+    j = rel.find(SRC_MARK)
+    if j < 0:
+        continue
+    p = rel[j:]
+    if p in seen or not os.path.isfile(p):
+        continue
+    lno = int(m.group(2))
+    try:
+        src_lines = open(p, encoding="utf-8", errors="ignore").read().split("\n")
+    except OSError:
+        continue
+    if lno - 1 >= len(src_lines):
+        continue
+    code = src_lines[lno - 1]
     tm = re.search(r"type\s+([\w.$]+)\s+does not take parameters", m.group(3))
     if not tm:
         continue
-    name = tm.group(1).split(".")[-1]
-    err_file = m.group(1)
-    code = lines[i + 1] if i + 1 < len(lines) else ""
-    n = arity_of(code, name)
-    key = (name, n)
-    if key in seen:
-        continue
-    seen.add(key)
-    p = resolve(name, err_file)
-    if not p:
-        continue
-    t = read(p)
-    cls_decl = re.search(r"(public\s+(?:class|interface|enum)\s+%s)\b" % re.escape(name), t)
-    if not cls_decl:
-        continue
-    gm = re.search(r"(public\s+(?:class|interface|enum)\s+%s)\s*<[^<>]*>" % re.escape(name), t)
-    if gm:
-        if gm.group(0).count(",") + 1 == n:
-            continue
-        t2 = t[:gm.start()] + cls_decl.group(1) + generic_params(n) + t[gm.end():]
-    else:
-        t2 = t[:cls_decl.start()] + cls_decl.group(1) + generic_params(n) + t[cls_decl.end():]
-    with open(p, "w", encoding="utf-8") as f:
-        f.write(t2)
-    added += 1
-
-print(f"fix_stab_generics: дженерик правильной арности у {added} стабов (запрошено {len(seen)})")
+    simple = tm.group(1).split(".")[-1]
+    # найти `<` после вхождения имени в код-строке и вырезать парный блок
+    changed = False
+    for m2 in re.finditer(r"(?:[A-Za-z_$][\w$]*\.)*" + re.escape(simple) + r"\s*<", code):
+        k = m2.end()
+        depth = 1
+        while k < len(code) and depth:
+            if code[k] == "<":
+                depth += 1
+            elif code[k] == ">":
+                depth -= 1
+            k += 1
+        if depth == 0:
+            code2 = code[:m2.end() - 1] + code[k:]
+            if code2 != code:
+                src_lines[lno - 1] = code2
+                with open(p, "w", encoding="utf-8") as f:
+                    f.write("\n".join(src_lines))
+                stripped += 1
+                changed = True
+                seen.add(p)
+            break
+print(f"fix_stab_generics: type-args вырезаны в {stripped} использованиях ({len(seen)} файлов)")
