@@ -84,6 +84,11 @@ public class SettingsActivity extends AppCompatActivity {
         pollValue.setText(pollLabel(Prefs.pollSeconds(this)));
         findViewById(R.id.row_poll).setOnClickListener(Ui.tap(v -> pollDialog(pollValue)));
 
+        MaterialSwitch plain = findViewById(R.id.switch_plain);
+        plain.setChecked(Prefs.plainMode(this));
+        plain.setOnCheckedChangeListener((buttonView, isChecked) ->
+                Prefs.setPlainMode(this, isChecked));
+
         MaterialSwitch background = findViewById(R.id.switch_background);
         background.setChecked(Prefs.backgroundSync(this));
         background.setOnCheckedChangeListener((buttonView, isChecked) -> {

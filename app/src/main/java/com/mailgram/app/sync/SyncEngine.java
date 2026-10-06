@@ -816,7 +816,7 @@ public final class SyncEngine {
                 } catch (Exception ignored) {
                 }
                 String envelope;
-                if (chat.peerPublic != null && !chat.peerPublic.isEmpty()) {
+                if (!Prefs.plainMode(app) && chat.peerPublic != null && !chat.peerPublic.isEmpty()) {
                     // ключ собеседника известен — шифруем, как раньше
                     byte[] peerKey = B64.bytes(chat.peerPublic);
                     if (peerKey.length != 65) throw new IllegalStateException("ключ собеседника повреждён");

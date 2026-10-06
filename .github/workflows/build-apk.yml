@@ -30,6 +30,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-java@v6
         with:
@@ -160,6 +162,24 @@ jobs:
           gh release upload apk-latest app/build/outputs/apk/release/app-release.apk --clobber
           gh release upload apk-latest CHECKSUMS.txt --clobber
           echo "::notice title=Готово::https://github.com/${GITHUB_REPOSITORY}/releases/tag/apk-latest"
+
+      - name: Папка handoff (APK + исходники, без удаления)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "mailgram-ci"
+          git config user.email "ci@mailgram.app"
+          VER=$(grep -oP "versionName '\K[^']+" app/build.gradle | head -1)
+          VC=$(grep -oP "versionCode \K[0-9]+" app/build.gradle | head -1)
+          mkdir -p handoff
+          cp app/build/outputs/apk/release/app-release.apk handoff/app-release.apk
+          cp app/build/outputs/apk/release/app-release.apk "handoff/MailGram-$VER-vc$VC.apk"
+          git archive --format=zip --prefix=MailGram-source/ -o "handoff/ИСХОДНИК.zip" HEAD
+          git add handoff
+          if ! git diff --cached --quiet; then
+            git commit -m "handoff: APK $VER (vc$VC) + исходники [skip ci]"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
 
       - uses: actions/upload-artifact@v7
         with:

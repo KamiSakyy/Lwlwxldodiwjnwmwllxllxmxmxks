@@ -211,6 +211,19 @@
                 <View style="@style/Widget.MailGram.Separator" android:layout_marginStart="16dp" />
 
                 <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/switch_plain"
+                    style="@style/Widget.MailGram.Switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/settings_plain_mode"
+                    android:textAppearance="@style/TextAppearance.MailGram.RowTitle"
+                    android:textColor="@color/text_primary" />
+
+                <View style="@style/Widget.MailGram.Separator" android:layout_marginStart="16dp" />
+
+                <com.google.android.material.materialswitch.MaterialSwitch
                     android:id="@+id/switch_notifications"
                     style="@style/Widget.MailGram.Switch"
                     android:layout_width="match_parent"

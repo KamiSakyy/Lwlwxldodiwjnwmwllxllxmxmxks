@@ -23,6 +23,15 @@ public final class Prefs {
         return p(ctx).getString("theme", THEME_DARK);
     }
 
+    /** Режим «Без шифрования»: все исходящие уходят открытым текстом (конверт v0). */
+    public static boolean plainMode(Context ctx) {
+        return p(ctx).getBoolean("plain_mode", false);
+    }
+
+    public static void setPlainMode(Context ctx, boolean value) {
+        p(ctx).edit().putBoolean("plain_mode", value).apply();
+    }
+
     /** Режим «Не читать»: не отправляем собеседнику отметку о прочтении. */
     public static boolean stealthRead(Context ctx) {
         return p(ctx).getBoolean("stealth_read", false);

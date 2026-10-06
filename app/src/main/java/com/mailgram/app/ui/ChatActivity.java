@@ -62,6 +62,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     private static final int REQ_PICK_FILE = 3003;
     private static final int REQ_CIRCLE = 3004;
     private static final int REQ_CAMERA = 3005;
+    private static final int REQ_IMPORT_KEYS = 3006;
     private static final int REQ_AUDIO_PERMISSION = 3010;
     private static final int REQ_CAMERA_PERMISSION = 3011;
 
@@ -391,6 +392,18 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             exportChat();
             return true;
         }
+        if (id == R.id.action_rotate_key) {
+            rotateKeyDialog();
+            return true;
+        }
+        if (id == R.id.action_keys_export) {
+            exportKeys();
+            return true;
+        }
+        if (id == R.id.action_keys_import) {
+            pickKeysFile();
+            return true;
+        }
         if (id == R.id.action_rename) {
             renameDialog();
             return true;
@@ -688,6 +701,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         }
         sheet.setOnClickListener(Ui.tap(v -> hideSheet()));
         int[] ids = {R.id.action_pin, R.id.action_mute, R.id.action_search, R.id.action_export,
+                R.id.action_rotate_key, R.id.action_keys_export, R.id.action_keys_import,
                 R.id.action_safety, R.id.action_rename, R.id.action_clear, R.id.action_delete};
         for (int itemId : ids) {
             final int actionId = itemId;
@@ -990,6 +1004,10 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode != RESULT_OK) return;
+        if (requestCode == REQ_IMPORT_KEYS) {
+            if (data != null && data.getData() != null) importKeysFile(data.getData());
+            return;
+        }
         if (requestCode == REQ_CIRCLE && data != null) {
             String path = data.getStringExtra(CircleRecordActivity.EXTRA_PATH);
             long duration = data.getLongExtra(CircleRecordActivity.EXTRA_DURATION, 0L);
@@ -1449,48 +1467,65 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     }
 
     /** Выгрузка переписки в HTML: читаемый файл, который можно открыть или отправить. */
+    /** Экспорт переписки: галочками выбираем, что положить в ZIP. */
     private void exportChat() {
         chat = Store.get(this).chat(uid);
         if (chat == null) return;
+        final String[] labels = {
+                getString(R.string.export_opt_text),
+                getString(R.string.export_opt_photo),
+                getString(R.string.export_opt_circle),
+                getString(R.string.export_opt_voice),
+                getString(R.string.export_opt_video)};
+        final boolean[] checked = {true, true, true, true, true};
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.export_options_title)
+                .setMultiChoiceItems(labels, checked, (d, which, isChecked) -> checked[which] = isChecked)
+                .setNegativeButton(R.string.cancel, null)
+                .setPositiveButton(R.string.export_now, (d, w) -> doExportZip(checked.clone()))
+                .show();
+    }
+
+    private void doExportZip(final boolean[] checked) {
         final List<Msg> messages = Store.get(this).messages(uid);
+        final String peer = chat.peer;
         new Thread(() -> {
             try {
-                StringBuilder html = new StringBuilder();
-                html.append("<!doctype html><html lang=\"ru\"><head><meta charset=\"utf-8\">")
-                        .append("<title>MailGram — переписка</title><style>")
-                        .append("body{background:#0b0b0d;color:#eaeaea;font-family:-apple-system,Roboto,sans-serif;margin:0;padding:24px}")
-                        .append("h1{font-size:20px}.m{max-width:640px;margin:10px 0;padding:10px 14px;border-radius:16px;white-space:pre-wrap}")
-                        .append(".in{background:#1c1c1e}.out{background:#0a6bff;margin-left:auto}")
-                        .append(".t{font-size:11px;opacity:.6;margin-top:6px}")
-                        .append("</style></head><body>")
-                        .append("<h1>").append(escape(chat.peer)).append("</h1>");
-                for (Msg m : messages) {
-                    if (m.isControl()) continue;
-                    html.append("<div class=\"m ").append(m.outgoing ? "out" : "in").append("\">");
-                    if (m.forwarded) html.append("<i>Переслано</i><br>");
-                    if (m.replyPreview != null && !m.replyPreview.isEmpty()) {
-                        html.append("<blockquote>").append(escape(m.replyPreview)).append("</blockquote>");
-                    }
-                    if (m.deleted) {
-                        html.append("<i>Сообщение удалено</i>");
-                    } else if (m.hasMedia()) {
-                        html.append("<b>[").append(mediaLabel(m)).append("]</b>");
-                        if (m.text != null && !m.text.isEmpty()) {
-                            html.append("<br>").append(escape(m.text));
-                        }
-                    } else {
-                        html.append(escape(m.text));
-                    }
-                    html.append("<div class=\"t\">").append(Ui.timeShort(m.ts))
-                            .append(m.edited ? " · изменено" : "").append("</div></div>");
-                }
-                html.append("</body></html>");
-
-                java.io.File dir = new File(getExternalFilesDir(null), "export");
+                File dir = new File(getExternalFilesDir(null), "export");
                 if (!dir.exists() && !dir.mkdirs()) dir = getCacheDir();
-                final File out = new File(dir, "mailgram-" + uid + ".html");
-                try (java.io.FileOutputStream fos = new java.io.FileOutputStream(out)) {
-                    fos.write(html.toString().getBytes(java.nio.charset.StandardCharsets.UTF_8));
+                final File out = new File(dir, "mailgram-"
+                        + peer.replaceAll("[^a-zA-Z0-9.@_-]", "_") + ".zip");
+                int mediaNo = 0;
+                try (java.util.zip.ZipOutputStream zip =
+                             new java.util.zip.ZipOutputStream(new java.io.FileOutputStream(out))) {
+                    if (checked[0]) {
+                        zip.putNextEntry(new java.util.zip.ZipEntry("переписка.html"));
+                        zip.write(buildChatHtml(messages).getBytes(java.nio.charset.StandardCharsets.UTF_8));
+                        zip.closeEntry();
+                    }
+                    for (Msg m : messages) {
+                        if (m.isControl() || m.mediaB64 == null || m.mediaB64.isEmpty()) continue;
+                        boolean photo = m.isImage();
+                        boolean video = m.isVideo() && !m.round;
+                        boolean circle = m.isVideo() && m.round;
+                        boolean voice = m.isVoice();
+                        boolean take = (photo && checked[1]) || (circle && checked[2])
+                                || (voice && checked[3]) || (video && checked[4]);
+                        if (!take) continue;
+                        mediaNo++;
+                        String ext = "bin";
+                        if (m.mediaMime != null && m.mediaMime.contains("/")) {
+                            String e = m.mediaMime.substring(m.mediaMime.indexOf('/') + 1)
+                                    .replaceAll("[^a-zA-Z0-9]", "");
+                            if (!e.isEmpty()) ext = e;
+                        }
+                        String kind = photo ? "фото" : circle ? "кружок" : voice ? "голосовое" : "видео";
+                        zip.putNextEntry(new java.util.zip.ZipEntry("медиа/"
+                                + String.format(java.util.Locale.US, "%04d", mediaNo)
+                                + "-" + kind + "." + ext));
+                        zip.write(android.util.Base64.decode(m.mediaB64, android.util.Base64.NO_WRAP));
+                        zip.closeEntry();
+                    }
                 }
                 handler.post(() -> new MaterialAlertDialogBuilder(ChatActivity.this)
                         .setTitle(R.string.export_done)
@@ -1501,7 +1536,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                                 android.net.Uri uri = androidx.core.content.FileProvider.getUriForFile(
                                         ChatActivity.this, getPackageName() + ".files", out);
                                 Intent send = new Intent(Intent.ACTION_SEND);
-                                send.setType("text/html");
+                                send.setType("application/zip");
                                 send.putExtra(Intent.EXTRA_STREAM, uri);
                                 send.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                                 startActivity(Intent.createChooser(send, getString(R.string.share)));
@@ -1515,6 +1550,150 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                         getString(R.string.error_generic, String.valueOf(e.getMessage()))));
             }
         }, "mailgram-export").start();
+    }
+
+    /** HTML-версия переписки: текст + подписи медиа. */
+    private String buildChatHtml(List<Msg> messages) {
+        StringBuilder html = new StringBuilder();
+        html.append("<!doctype html><html lang=\"ru\"><head><meta charset=\"utf-8\">")
+                .append("<title>MailGram — переписка</title><style>")
+                .append("body{background:#0b0b0d;color:#eaeaea;font-family:-apple-system,Roboto,sans-serif;margin:0;padding:24px}")
+                .append("h1{font-size:20px}.m{max-width:640px;margin:10px 0;padding:10px 14px;border-radius:16px;white-space:pre-wrap}")
+                .append(".in{background:#1c1c1e}.out{background:#0a6bff;margin-left:auto}")
+                .append(".t{font-size:11px;opacity:.6;margin-top:6px}")
+                .append("</style></head><body>")
+                .append("<h1>").append(escape(chat == null ? "" : chat.peer)).append("</h1>");
+        for (Msg m : messages) {
+            if (m.isControl()) continue;
+            html.append("<div class=\"m ").append(m.outgoing ? "out" : "in").append("\">");
+            if (m.forwarded) html.append("<i>Переслано</i><br>");
+            if (m.replyPreview != null && !m.replyPreview.isEmpty()) {
+                html.append("<blockquote>").append(escape(m.replyPreview)).append("</blockquote>");
+            }
+            if (m.deleted) {
+                html.append("<i>Сообщение удалено</i>");
+            } else if (m.hasMedia()) {
+                html.append("<b>[").append(mediaLabel(m)).append("]</b>");
+                if (m.text != null && !m.text.isEmpty()) {
+                    html.append("<br>").append(escape(m.text));
+                }
+            } else {
+                html.append(escape(m.text));
+            }
+            html.append("<div class=\"t\">").append(Ui.timeShort(m.ts))
+                    .append(m.edited ? " · изменено" : "").append("</div></div>");
+        }
+        html.append("</body></html>");
+        return html.toString();
+    }
+
+    /** Смена приватного ключа: новая пара создаётся сразу, собеседник получит ключ автоматически. */
+    private void rotateKeyDialog() {
+        new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.rotate_key)
+                .setMessage(R.string.rotate_key_text)
+                .setNegativeButton(R.string.cancel, null)
+                .setPositiveButton(R.string.rotate_key, (d, w) -> {
+                    try {
+                        Identity.destroy(this);
+                        Identity.publicKeyRaw(this); // сразу создаём новую пару
+                        com.mailgram.app.crypto.RatchetStore.wipe(this, uid);
+                        Ui.toast(this, getString(R.string.rotate_key_done));
+                    } catch (Exception e) {
+                        Ui.toast(this, getString(R.string.error_generic, String.valueOf(e.getMessage())));
+                    }
+                })
+                .show();
+    }
+
+    /** Скачать ключи: файл для переноса переписки на новый телефон. */
+    private void exportKeys() {
+        new Thread(() -> {
+            try {
+                final String me = com.mailgram.app.net.Auth.account(this);
+                if ("keystore".equals(Identity.mode(this))) {
+                    handler.post(() -> new MaterialAlertDialogBuilder(ChatActivity.this)
+                            .setTitle(R.string.keys_export)
+                            .setMessage(R.string.keys_hw_notice)
+                            .setNegativeButton(R.string.cancel, null)
+                            .setPositiveButton(R.string.keys_make_sw, (d, w) -> {
+                                try {
+                                    Identity.destroy(ChatActivity.this);
+                                    com.mailgram.app.crypto.RatchetStore.wipeAll(ChatActivity.this);
+                                    writeKeysFile(me);
+                                } catch (Exception e) {
+                                    Ui.toast(ChatActivity.this,
+                                            getString(R.string.error_generic, String.valueOf(e.getMessage())));
+                                }
+                            })
+                            .show());
+                    return;
+                }
+                writeKeysFile(me);
+            } catch (Exception e) {
+                handler.post(() -> Ui.toast(ChatActivity.this,
+                        getString(R.string.error_generic, String.valueOf(e.getMessage()))));
+            }
+        }, "mailgram-keys").start();
+    }
+
+    private void writeKeysFile(String me) throws Exception {
+        String priv = Identity.exportSoftware(this);
+        String pub = B64.str(Identity.publicKeyRaw(this));
+        org.json.JSONObject json = new org.json.JSONObject();
+        json.put("app", "MailGram");
+        json.put("email", me == null ? "" : me);
+        json.put("priv", priv);
+        json.put("pub", pub);
+        File dir = new File(getExternalFilesDir(null), "export");
+        if (!dir.exists() && !dir.mkdirs()) dir = getCacheDir();
+        final File out = new File(dir, "mailgram-keys.json");
+        try (java.io.FileOutputStream fos = new java.io.FileOutputStream(out)) {
+            fos.write(json.toString(2).getBytes(java.nio.charset.StandardCharsets.UTF_8));
+        }
+        handler.post(() -> {
+            Ui.toast(ChatActivity.this, getString(R.string.keys_exported));
+            try {
+                android.net.Uri uri = androidx.core.content.FileProvider.getUriForFile(
+                        ChatActivity.this, getPackageName() + ".files", out);
+                Intent send = new Intent(Intent.ACTION_SEND);
+                send.setType("application/json");
+                send.putExtra(Intent.EXTRA_STREAM, uri);
+                send.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                startActivity(Intent.createChooser(send, getString(R.string.keys_export)));
+            } catch (Exception ignored) {
+            }
+        });
+    }
+
+    /** Загрузить ключи: выбрать файл резервной копии. */
+    private void pickKeysFile() {
+        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        intent.setType("*/*");
+        startActivityForResult(intent, REQ_IMPORT_KEYS);
+    }
+
+    private void importKeysFile(final android.net.Uri uri) {
+        new Thread(() -> {
+            try {
+                String text;
+                try (java.io.InputStream in = getContentResolver().openInputStream(uri)) {
+                    java.io.ByteArrayOutputStream bos = new java.io.ByteArrayOutputStream();
+                    byte[] buf = new byte[8192];
+                    int n;
+                    while ((n = in.read(buf)) > 0) bos.write(buf, 0, n);
+                    text = new String(bos.toByteArray(), java.nio.charset.StandardCharsets.UTF_8);
+                }
+                org.json.JSONObject json = new org.json.JSONObject(text);
+                Identity.importSoftware(this, json.getString("priv"), json.getString("pub"));
+                com.mailgram.app.crypto.RatchetStore.wipeAll(this);
+                handler.post(() -> Ui.toast(this, getString(R.string.keys_imported)));
+            } catch (Exception e) {
+                handler.post(() -> Ui.toast(this,
+                        getString(R.string.error_generic, String.valueOf(e.getMessage()))));
+            }
+        }, "mailgram-keys-import").start();
     }
 
     private static String mediaLabel(Msg m) {

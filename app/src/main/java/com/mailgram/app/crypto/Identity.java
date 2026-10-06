@@ -205,6 +205,37 @@ public final class Identity {
         return out;
     }
 
+    /** Экспорт программного приватного ключа (base64 PKCS8) — для переноса на новый телефон. */
+    public static synchronized String exportSoftware(Context ctx) throws Exception {
+        KeyPair kp = softwareKeyPair(ctx);
+        return B64.str(kp.getPrivate().getEncoded());
+    }
+
+    /**
+     * Импорт программного ключа из резервной копии. Аппаратный ключ удаляется,
+     * чтобы везде использовался восстановленный.
+     */
+    public static synchronized void importSoftware(Context ctx, String privPkcs8B64, String pubRawB64)
+            throws Exception {
+        byte[] pkcs8 = B64.bytes(privPkcs8B64);
+        KeyFactory.getInstance("EC").generatePrivate(new PKCS8EncodedKeySpec(pkcs8)); // проверка
+        byte[] pubRaw = B64.bytes(pubRawB64);
+        if (pubRaw.length != 65) throw new IllegalArgumentException("публичный ключ повреждён");
+        publicKeyFromRaw(pubRaw); // проверка
+        prefs(ctx).edit()
+                .putString(PREF_SW_PRIV, KeystoreBox.seal(ctx, pkcs8))
+                .putString(PREF_SW_PUB, pubRawB64)
+                .apply();
+        try {
+            KeyStore ks = KeyStore.getInstance(KEYSTORE);
+            ks.load(null);
+            if (ks.containsAlias(HW_ALIAS)) ks.deleteEntry(HW_ALIAS);
+        } catch (Exception ignored) {
+        }
+        cachedPublic = null;
+        cachedMode = null;
+    }
+
     /** Полное удаление ключей (выход с очисткой данных). */
     public static synchronized void destroy(Context ctx) {
         try {

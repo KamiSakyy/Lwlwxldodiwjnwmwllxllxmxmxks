@@ -707,6 +707,60 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/action_rotate_key"
+                style="@style/Widget.MailGram.ActionItem">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="@string/rotate_key"
+                    android:src="@drawable/ic_lock"
+                    app:tint="@color/text_dim" />
+
+                <TextView
+                    style="@style/Widget.MailGram.ActionItemText"
+                    android:text="@string/rotate_key"
+                    android:textColor="@color/text_primary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/action_keys_export"
+                style="@style/Widget.MailGram.ActionItem">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="@string/keys_export"
+                    android:src="@drawable/ic_download"
+                    app:tint="@color/text_dim" />
+
+                <TextView
+                    style="@style/Widget.MailGram.ActionItemText"
+                    android:text="@string/keys_export"
+                    android:textColor="@color/text_primary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/action_keys_import"
+                style="@style/Widget.MailGram.ActionItem">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="@string/keys_import"
+                    android:src="@drawable/ic_attach"
+                    app:tint="@color/text_dim" />
+
+                <TextView
+                    style="@style/Widget.MailGram.ActionItemText"
+                    android:text="@string/keys_import"
+                    android:textColor="@color/text_primary" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/action_safety"
                 style="@style/Widget.MailGram.ActionItem"
                 android:layout_marginBottom="8dp">
