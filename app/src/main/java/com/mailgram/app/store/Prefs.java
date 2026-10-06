@@ -32,6 +32,15 @@ public final class Prefs {
         p(ctx).edit().putInt("sync_version", value).apply();
     }
 
+    /** Когда последний раз делали полный проход по ящику (страховка History API). */
+    public static long lastFullScan(Context ctx) {
+        return p(ctx).getLong("last_full_scan", 0L);
+    }
+
+    public static void setLastFullScan(Context ctx, long value) {
+        p(ctx).edit().putLong("last_full_scan", value).apply();
+    }
+
     /** Закладка History API: состояние ящика после последней синхронизации. */
     public static long historyId(Context ctx) {
         return p(ctx).getLong("history_id", 0L);

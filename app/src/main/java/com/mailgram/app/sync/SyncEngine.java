@@ -179,13 +179,13 @@ public final class SyncEngine {
         }
     }
 
-    /** Запрос Gmail: наши письма + вся почта известных собеседников (не более 8). */
+    /** Запрос Gmail: наши письма + вся почта ВСЕХ известных собеседников (до 40 адресов). */
     private static String buildQuery(Store store) {
         StringBuilder q = new StringBuilder(QUERY_BASE);
         int peers = 0;
         try {
             for (Chat c : store.chats()) {
-                if (peers >= 8) break;
+                if (peers >= 40) break;
                 String p = c.peer == null ? "" : c.peer.trim();
                 if (p.isEmpty() || !p.contains("@")) continue;
                 q.append(" OR from:").append(p).append(" OR to:").append(p);
@@ -206,19 +206,25 @@ public final class SyncEngine {
         }
 
         // History API: берём только изменённые письма (2 юнита), поиск q= — лишь первый раз
-        if (Prefs.syncVersion(app) < 3) {
-            // схема синка обновлена: разовый полный пересмотр ящика, старая закладка сгорела
+        if (Prefs.syncVersion(app) < 4) {
+            // схема синка обновлена (messageAdded + полный охват собеседников):
+            // разовый полный пересмотр ящика, старая закладка сгорела
             Prefs.setHistoryId(app, 0L);
-            Prefs.setSyncVersion(app, 3);
+            Prefs.setSyncVersion(app, 4);
         }
         long start = Prefs.historyId(app);
         final long[] newH = {0L};
+        // страховка: раз в 6 часов полный проход поиском — ничего не потеряется,
+        // даже если письмо легло в странную метку или история дала сбой
+        boolean fullDue = System.currentTimeMillis() - Prefs.lastFullScan(app) > 6L * 3600_000L;
         List<String> ids;
-        if (start > 0) {
+        boolean viaFull = start <= 0 || fullDue;
+        if (!viaFull) {
             try {
                 ids = GmailApi.historyChangedIds(token, start, newH);
             } catch (java.io.IOException he) {
                 Log.i(TAG, "History API недоступен, разовый полный проход: " + he.getMessage());
+                viaFull = true;
                 ids = GmailApi.listMessageIds(token, buildQuery(store), MAX_MESSAGES);
             }
         } else {
@@ -232,6 +238,7 @@ public final class SyncEngine {
         Log.i(TAG, "изменений: " + ids.size() + ", новых: " + unknown.size());
         if (unknown.isEmpty()) {
             saveHistory(newH[0]);
+            if (viaFull) Prefs.setLastFullScan(app, System.currentTimeMillis());
             quotaFails = 0;
             return;
         }
@@ -282,6 +289,7 @@ public final class SyncEngine {
         // остались бы «за закладкой» и не появились бы никогда
         if (!truncated && failures.get() == 0) {
             saveHistory(newH[0]);
+            if (viaFull) Prefs.setLastFullScan(app, System.currentTimeMillis());
         }
     }
 

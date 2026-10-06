@@ -131,9 +131,9 @@ public final class GmailApi {
     }
 
     /**
-     * History API (users.me.history): только письма, у которых с startHistoryId
-     * менялись метки (новые в INBOX). Стоимость — 2 юнита за запрос вместо
-     * дорогого поиска q=. Новый historyId возвращается в newHistoryOut[0].
+     * History API (users.me.history): все новые письма с startHistoryId
+     * (messageAdded — независимо от метки: INBOX, спам, фильтры). Стоимость —
+     * 2 юнита за запрос вместо дорогого поиска q=. Новый historyId — в newHistoryOut[0].
      */
     public static List<String> historyChangedIds(String token, long startHistoryId, long[] newHistoryOut)
             throws IOException {
@@ -142,7 +142,7 @@ public final class GmailApi {
         do {
             StringBuilder url = new StringBuilder(BASE).append("/history?startHistoryId=")
                     .append(startHistoryId)
-                    .append("&historyTypes=labelAdded&labelId=INBOX&maxResults=500");
+                    .append("&historyTypes=messageAdded&maxResults=500");
             if (pageToken != null) url.append("&pageToken=").append(pageToken);
             String json = Http.get(url.toString(), token);
             try {
