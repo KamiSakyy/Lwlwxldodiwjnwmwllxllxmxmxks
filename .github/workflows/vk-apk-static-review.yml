@@ -9,6 +9,7 @@ on:
       - .gitattributes
       - handoff/analyze_decompiled.py
       - handoff/analyze_package_size.py
+      - handoff/analyze_xapk_layout.py
       - handoff/optimize_abi_apk.py
       - handoff/prepare_apkpure_xapk.py
       - handoff/README.md
@@ -177,7 +178,15 @@ jobs:
             "$RUNNER_TEMP/$APK_ARCHIVE_NAME" \
             "$RUNNER_TEMP/$APK_NAME"
 
+      - name: Inspect XAPK split layout
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 handoff/analyze_xapk_layout.py "$RUNNER_TEMP/$APK_ARCHIVE_NAME"
+
       - name: Build ARM-focused size-optimized APK
+        id: build_mod
+        continue-on-error: true
         shell: bash
         run: |
           set -Eeuo pipefail
@@ -240,6 +249,7 @@ jobs:
             'BEGIN { printf "Signed APK size: %d -> %d bytes; reduction: %d bytes (%.2f%%)\n", before, after, before-after, (before-after)*100/before }'
 
       - name: Preserve optimized ARM APK in handoff through Git LFS
+        if: steps.build_mod.outcome == 'success'
         shell: bash
         run: |
           set -euo pipefail
@@ -271,6 +281,7 @@ jobs:
           echo 'The signed ARM APK is retained in handoff through Git LFS.'
 
       - name: Audit optimized APK size composition
+        if: steps.build_mod.outcome == 'success'
         shell: bash
         run: |
           set -euo pipefail
@@ -345,6 +356,13 @@ jobs:
             echo '> **Partial decompilation:** JADX hit an error after emitting a substantial tree; the findings below cover emitted files only.' >> "$GITHUB_STEP_SUMMARY"
           fi
           python3 handoff/analyze_decompiled.py "$JADX_OUT" "$APK_PATH"
+
+      - name: Fail job if the mod build failed
+        if: always() && steps.build_mod.outcome == 'failure'
+        shell: bash
+        run: |
+          echo '::error title=VK ARM mod::No optimized APK was created; see the APK size optimization annotation above.'
+          exit 1
 
       - name: Remove temporary APK and decompiled tree
         if: always()

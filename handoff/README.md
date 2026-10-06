@@ -15,9 +15,9 @@ They are tracked with Git LFS so they remain in `handoff/` after the Actions job
 
 ## Size-optimized ARM build
 
-The workflow is configured to produce `vk-mod-arm.apk` from the verified base APK. It keeps the `arm64-v8a` and `armeabi-v7a` native libraries and removes non-ARM native-library variants, then aligns, signs, and verifies the result. It does not alter the manifest, DEX bytecode, resources, assets, or retained library payloads. The size report compares the source APK and mod.
+The extracted base APK contains no bundled `lib/<abi>` native libraries, so filtering the base APK alone would not produce a valid or smaller ARM build. The workflow now inspects the APK members inside the XAPK and their ABI contents; an installable ARM-focused split package has not yet been generated. The full split layout and the next build result will determine its final artifact format and size.
 
-This build is for ARM Android devices; x86/x86_64 devices and emulators are not supported by the reduced package. The official VK signing key is not available, so the output is signed with a temporary key that is never committed. Android will not install it as an update over the official VK app; switching requires uninstalling the official app first, which deletes its local app data. Back up anything important before doing so. The VK login/session code is left unchanged and uses the normal in-app sign-in flow; no manual `access_token` is embedded. Sign-in has not been runtime-tested on a device.
+Any ARM-focused output will preserve the base APK and required ARM configuration APKs while excluding incompatible x86/x86_64 native splits. The official VK signing key is not available, so any modified package must be re-signed with a temporary key that is never committed. Android will not install it as an update over the official VK app; switching requires uninstalling the official app first, which deletes its local app data. Back up anything important before doing so. The VK login/session code will remain unchanged and use the normal in-app sign-in flow; no manual `access_token` will be embedded. Sign-in cannot be claimed as tested unless verified on a device.
 
 ## Verification and decompilation
 
