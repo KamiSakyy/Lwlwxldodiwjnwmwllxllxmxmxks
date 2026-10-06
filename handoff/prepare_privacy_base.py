@@ -106,7 +106,8 @@ def prepare(source_apk: Path, output_apk: Path, apktool_jar: Path, work_parent: 
             if "AndroidManifest.xml" not in archive.namelist():
                 raise ValueError("rebuilt base APK has no AndroidManifest.xml")
             manifest_strings = axml_strings(archive.read("AndroidManifest.xml"))
-        required_values = set(ANALYTICS_OPTOUTS) | set(ANALYTICS_OPTOUTS.values()) | {"com.vkontakte.android"}
+        # Boolean values are encoded as typed AXML attributes, not string-pool entries.
+        required_values = set(ANALYTICS_OPTOUTS) | {"com.vkontakte.android"}
         missing_values = sorted(required_values - manifest_strings)
         if missing_values:
             raise ValueError("rebuilt binary manifest is missing required privacy/package strings: " + ", ".join(missing_values))
