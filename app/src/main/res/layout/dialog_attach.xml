@@ -1,47 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Шторка вложений — как .action-sheet-content: фон #1c1c1e со скруглением 20dp
-  сверху, пункты radius 12dp на #2c2c2e, подпись 15sp/500.
+  Шторка вложений — .action-sheet-content из старого мессенджера:
+  фон #1c1c1e со скруглением 20dp сверху, пункты radius 12dp на #2c2c2e,
+  иконка 20px + подпись 15sp/500.
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/bg_sheet"
     android:orientation="vertical"
     android:padding="16dp">
 
-    <TextView
+    <LinearLayout
         android:id="@+id/attach_photo"
         style="@style/Widget.MailGram.ActionItem"
-        android:layout_marginBottom="8dp"
-        android:layout_weight="0"
-        android:gravity="center_vertical"
-        android:text="@string/attach_photo">
+        android:layout_marginBottom="8dp">
 
-    </TextView>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="12dp"
+            android:contentDescription="@string/attach_photo"
+            android:src="@drawable/ic_image"
+            app:tint="@color/text_dim" />
 
-    <TextView
+        <TextView
+            style="@style/Widget.MailGram.ActionItemText"
+            android:text="@string/attach_photo" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/attach_video"
         style="@style/Widget.MailGram.ActionItem"
-        android:layout_marginBottom="8dp"
-        android:text="@string/attach_video" />
+        android:layout_marginBottom="8dp">
 
-    <TextView
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="12dp"
+            android:contentDescription="@string/attach_video"
+            android:src="@drawable/ic_video_mark"
+            app:tint="@color/text_dim" />
+
+        <TextView
+            style="@style/Widget.MailGram.ActionItemText"
+            android:text="@string/attach_video" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/attach_circle"
         style="@style/Widget.MailGram.ActionItem"
-        android:layout_marginBottom="8dp"
-        android:text="@string/attach_circle" />
+        android:layout_marginBottom="8dp">
 
-    <TextView
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="12dp"
+            android:contentDescription="@string/attach_circle"
+            android:src="@drawable/ic_circle_video"
+            app:tint="@color/text_dim" />
+
+        <TextView
+            style="@style/Widget.MailGram.ActionItemText"
+            android:text="@string/attach_circle" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/attach_file"
         style="@style/Widget.MailGram.ActionItem"
-        android:layout_marginBottom="8dp"
-        android:text="@string/attach_file" />
+        android:layout_marginBottom="8dp">
 
-    <TextView
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="12dp"
+            android:contentDescription="@string/attach_file"
+            android:src="@drawable/ic_file"
+            app:tint="@color/text_dim" />
+
+        <TextView
+            style="@style/Widget.MailGram.ActionItemText"
+            android:text="@string/attach_file" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/attach_camera"
-        style="@style/Widget.MailGram.ActionItem"
-        android:text="@string/attach_camera" />
+        style="@style/Widget.MailGram.ActionItem">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="12dp"
+            android:contentDescription="@string/attach_camera"
+            android:src="@drawable/ic_camera"
+            app:tint="@color/text_dim" />
+
+        <TextView
+            style="@style/Widget.MailGram.ActionItemText"
+            android:text="@string/attach_camera" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/attach_limits"

@@ -641,53 +641,156 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <TextView
+            <LinearLayout
                 android:id="@+id/action_pin"
                 style="@style/Widget.MailGram.ActionItem"
-                android:layout_marginBottom="8dp"
-                android:text="@string/pin_chat" />
+                android:layout_marginBottom="8dp">
 
-            <TextView
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="@string/pin_chat"
+                    android:src="@drawable/ic_pin"
+                    app:tint="@color/text_dim" />
+
+                <TextView
+                    style="@style/Widget.MailGram.ActionItemText"
+                    android:text="@string/pin_chat"
+                    android:textColor="@color/text_primary" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/action_mute"
                 style="@style/Widget.MailGram.ActionItem"
-                android:layout_marginBottom="8dp"
-                android:text="@string/mute_chat" />
+                android:layout_marginBottom="8dp">
 
-            <TextView
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="@string/mute_chat"
+                    android:src="@drawable/ic_mute"
+                    app:tint="@color/text_dim" />
+
+                <TextView
+                    style="@style/Widget.MailGram.ActionItemText"
+                    android:text="@string/mute_chat"
+                    android:textColor="@color/text_primary" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/action_search"
                 style="@style/Widget.MailGram.ActionItem"
-                android:layout_marginBottom="8dp"
-                android:text="@string/search_messages" />
+                android:layout_marginBottom="8dp">
 
-            <TextView
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="@string/search_messages"
+                    android:src="@drawable/ic_search"
+                    app:tint="@color/text_dim" />
+
+                <TextView
+                    style="@style/Widget.MailGram.ActionItemText"
+                    android:text="@string/search_messages"
+                    android:textColor="@color/text_primary" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/action_export"
                 style="@style/Widget.MailGram.ActionItem"
-                android:layout_marginBottom="8dp"
-                android:text="@string/chat_menu_export" />
+                android:layout_marginBottom="8dp">
 
-            <TextView
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="@string/chat_menu_export"
+                    android:src="@drawable/ic_download"
+                    app:tint="@color/text_dim" />
+
+                <TextView
+                    style="@style/Widget.MailGram.ActionItemText"
+                    android:text="@string/chat_menu_export"
+                    android:textColor="@color/text_primary" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/action_safety"
                 style="@style/Widget.MailGram.ActionItem"
-                android:layout_marginBottom="8dp"
-                android:text="@string/chat_menu_safety" />
+                android:layout_marginBottom="8dp">
 
-            <TextView
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="@string/chat_menu_safety"
+                    android:src="@drawable/ic_shield"
+                    app:tint="@color/text_dim" />
+
+                <TextView
+                    style="@style/Widget.MailGram.ActionItemText"
+                    android:text="@string/chat_menu_safety"
+                    android:textColor="@color/text_primary" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/action_rename"
                 style="@style/Widget.MailGram.ActionItem"
-                android:layout_marginBottom="8dp"
-                android:text="@string/chat_menu_rename" />
+                android:layout_marginBottom="8dp">
 
-            <TextView
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="@string/chat_menu_rename"
+                    android:src="@drawable/ic_edit_big"
+                    app:tint="@color/text_dim" />
+
+                <TextView
+                    style="@style/Widget.MailGram.ActionItemText"
+                    android:text="@string/chat_menu_rename"
+                    android:textColor="@color/text_primary" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/action_clear"
                 style="@style/Widget.MailGram.ActionItem"
-                android:layout_marginBottom="8dp"
-                android:text="@string/chat_menu_clear" />
+                android:layout_marginBottom="8dp">
 
-            <TextView
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="@string/chat_menu_clear"
+                    android:src="@drawable/ic_delete"
+                    app:tint="@color/text_dim" />
+
+                <TextView
+                    style="@style/Widget.MailGram.ActionItemText"
+                    android:text="@string/chat_menu_clear"
+                    android:textColor="@color/text_primary" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/action_delete"
-                style="@style/Widget.MailGram.ActionItem"
-                android:text="@string/chat_menu_delete"
-                android:textColor="@color/danger" />
+                style="@style/Widget.MailGram.ActionItem">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="@string/chat_menu_delete"
+                    android:src="@drawable/ic_delete"
+                    app:tint="@color/danger" />
+
+                <TextView
+                    style="@style/Widget.MailGram.ActionItemText"
+                    android:text="@string/chat_menu_delete"
+                    android:textColor="@color/danger" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 

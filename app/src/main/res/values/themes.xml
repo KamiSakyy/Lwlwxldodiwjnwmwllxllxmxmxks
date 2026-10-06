@@ -325,6 +325,15 @@
         <item name="android:focusable">true</item>
     </style>
 
+    <style name="Widget.MailGram.ActionItemText" parent="TextAppearance.MailGram.ActionItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
     <style name="Widget.MailGram.DrawerItemText" parent="TextAppearance.MailGram.DrawerItem">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>

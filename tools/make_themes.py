@@ -203,6 +203,14 @@ WIDGETS = [
         ("android:background", "@drawable/bg_row_ripple_round"),
         ("android:clickable", "true"), ("android:focusable", "true"),
     ]),
+    ("Widget.MailGram.ActionItemText", "TextAppearance.MailGram.ActionItem", [
+        ("android:layout_width", "0dp"),
+        ("android:layout_height", "wrap_content"),
+        ("android:layout_weight", "1"),
+        ("android:textColor", "@color/text_primary"),
+        ("android:ellipsize", "end"),
+        ("android:maxLines", "1"),
+    ]),
     ("Widget.MailGram.DrawerItemText", "TextAppearance.MailGram.DrawerItem", [
         ("android:layout_width", "0dp"),
         ("android:layout_height", "wrap_content"),
