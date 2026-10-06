@@ -1,0 +1,25 @@
+name: "99: JDK17 артефакт (для локальной песочницы)"
+
+on:
+  push:
+    paths:
+      - ".github/workflows/99-jdk-artifact.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: "Скачать Temurin 17 JDK (linux x64)"
+        run: |
+          curl -sSL -o jdk17.tar.gz "https://api.adoptium.net/v3/binary/latest/17/ga/linux/x64/jdk/hotspot/normal/eclipse"
+          ls -la jdk17.tar.gz
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jdk17
+          path: jdk17.tar.gz
+          retention-days: 3
