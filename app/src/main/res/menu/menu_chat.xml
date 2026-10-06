@@ -11,6 +11,8 @@
         android:title="@string/chat_menu_safety" app:showAsAction="never" />
     <item android:id="@+id/action_rename" android:title="@string/chat_menu_rename"
         app:showAsAction="never" />
+    <item android:id="@+id/action_export" android:title="@string/export_chat"
+        app:showAsAction="never" />
     <item android:id="@+id/action_clear" android:title="@string/chat_menu_clear"
         app:showAsAction="never" />
     <item android:id="@+id/action_delete" android:title="@string/chat_menu_delete"

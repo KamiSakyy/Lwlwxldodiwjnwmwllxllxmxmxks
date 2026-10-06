@@ -76,4 +76,5 @@
     <color name="avatar_5">#FF2D55</color>
     <color name="avatar_6">#FF9500</color>
     <color name="avatar_7">#5AC8FA</color>
+    <color name="splash_bg">#000000</color>
 </resources>

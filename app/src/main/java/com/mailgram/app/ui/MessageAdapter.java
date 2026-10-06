@@ -53,6 +53,10 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         void onVoiceTap(Msg msg, VoiceWaveView wave, ImageView play);
 
         void onReactionTap(Msg msg, String emoji);
+
+        void onVoiceSpeed(Msg msg);
+
+        void onJumpToMessage(Msg msg);
     }
 
     private static final int TYPE_DAY = 0;
@@ -285,6 +289,11 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             h.forwarded.setVisibility(View.GONE);
         }
 
+        // ---- переход к исходному сообщению по тапу на цитате ----
+        h.replyQuote.setOnClickListener(v -> {
+            if (m.replyMid != null && !m.replyMid.isEmpty()) actions.onJumpToMessage(m);
+        });
+
         // ---- цитата ответа ----
         if (m.replyMid != null && !m.replyMid.isEmpty()) {
             h.replyQuote.setVisibility(View.VISIBLE);
@@ -331,6 +340,7 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             View.OnClickListener listener = v -> actions.onVoiceTap(m, wave, play);
             h.voicePlay.setOnClickListener(listener);
             h.voiceBox.setOnClickListener(listener);
+            h.voiceTime.setOnClickListener(v -> actions.onVoiceSpeed(m));
         } else if (m.isFile()) {
             h.fileBox.setVisibility(View.VISIBLE);
             h.fileName.setText(m.fileName == null || m.fileName.isEmpty() ? "файл" : m.fileName);

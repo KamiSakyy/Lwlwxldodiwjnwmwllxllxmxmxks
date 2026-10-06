@@ -4,7 +4,7 @@
     android:id="@+id/login_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/colorChatBackground"
+    android:background="@drawable/bg_chat_wallpaper"
     android:fillViewport="true">
 
     <LinearLayout
@@ -17,11 +17,19 @@
         android:paddingEnd="28dp"
         android:paddingBottom="32dp">
 
-        <ImageView
-            android:layout_width="104dp"
-            android:layout_height="104dp"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/logo_mailgram" />
+        <FrameLayout
+            android:layout_width="124dp"
+            android:layout_height="124dp"
+            android:background="@drawable/bg_glass_panel">
+
+            <ImageView
+                android:id="@+id/login_logo"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/logo_mailgram" />
+        </FrameLayout>
 
         <TextView
             android:layout_width="wrap_content"

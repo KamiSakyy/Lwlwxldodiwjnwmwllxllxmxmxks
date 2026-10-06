@@ -45,6 +45,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        Anim.springIn(findViewById(R.id.login_logo), 0.86f, 16f);
         Ui.applySystemBars(this, null, findViewById(R.id.login_root));
 
         googleButton = findViewById(R.id.btn_google);

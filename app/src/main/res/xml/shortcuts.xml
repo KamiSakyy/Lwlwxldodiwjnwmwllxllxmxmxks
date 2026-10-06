@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="new_chat"
+        android:enabled="true"
+        android:icon="@drawable/ic_edit"
+        android:shortcutShortLabel="@string/new_chat">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.mailgram.app.ui.MainActivity"
+            android:targetPackage="com.mailgram.app" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings"
+        android:shortcutShortLabel="@string/settings">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.mailgram.app.ui.SettingsActivity"
+            android:targetPackage="com.mailgram.app" />
+    </shortcut>
+</shortcuts>

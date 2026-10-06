@@ -116,6 +116,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
 
     private MediaPlayer player;
     private String playingMid = "";
+    private float playbackSpeed = 1f;
     private Runnable playTicker;
 
     @Override
@@ -200,7 +201,18 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             @Override
             public void onReactionTap(Msg msg, String emoji) {
                 SyncEngine.get(ChatActivity.this).sendReaction(chat, msg, emoji, null);
+                Anim.haptic(sendButton, false);
                 refresh();
+            }
+
+            @Override
+            public void onVoiceSpeed(Msg msg) {
+                cycleSpeed();
+            }
+
+            @Override
+            public void onJumpToMessage(Msg msg) {
+                jumpTo(msg.replyMid);
             }
         });
         LinearLayoutManager manager = new LinearLayoutManager(this);
@@ -305,6 +317,10 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             showSafety();
             return true;
         }
+        if (id == R.id.action_export) {
+            exportChat();
+            return true;
+        }
         if (id == R.id.action_rename) {
             renameDialog();
             return true;
@@ -395,6 +411,26 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         }
         stopPlayback();
         super.onDestroy();
+    }
+
+    /** Плавный переход к сообщению по его mid с короткой вспышкой подсветки. */
+    private void jumpTo(final String mid) {
+        if (mid == null || mid.isEmpty()) return;
+        List<Msg> all = Store.get(this).messages(uid);
+        for (int i = 0; i < all.size(); i++) {
+            if (mid.equals(all.get(i).mid)) {
+                final int position = i;
+                layout.scrollToPositionWithOffset(position, Ui.dp(this, 90));
+                recycler.postDelayed(() -> {
+                    View row = layout.findViewByPosition(position);
+                    if (row != null) {
+                        Anim.pulse(row);
+                    }
+                }, 260L);
+                return;
+            }
+        }
+        Ui.toast(this, getString(R.string.original_not_found));
     }
 
     private void markRead() {
@@ -921,6 +957,19 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         refresh();
     }
 
+    /** Скорость воспроизведения: 1x → 1.5x → 2x (как в Telegram). */
+    private void cycleSpeed() {
+        playbackSpeed = playbackSpeed >= 2f ? 1f : playbackSpeed >= 1.5f ? 2f : 1.5f;
+        if (player != null) {
+            try {
+                player.setPlaybackParams(new android.media.PlaybackParams()
+                        .setSpeed(playbackSpeed).setPitch(1f));
+            } catch (Exception ignored) {
+            }
+        }
+        Ui.toast(this, String.format(java.util.Locale.US, "%.1fx", playbackSpeed));
+    }
+
     private void toggleVoice(Msg msg) {
         if (playingMid.equals(msg.mid)) {
             stopPlayback();
@@ -934,6 +983,13 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             player.setDataSource(file.getAbsolutePath());
             player.prepare();
             player.start();
+            if (playbackSpeed != 1f) {
+                try {
+                    player.setPlaybackParams(new android.media.PlaybackParams()
+                            .setSpeed(playbackSpeed).setPitch(1f));
+                } catch (Exception ignored) {
+                }
+            }
             playingMid = msg.mid;
             adapter.setPlaying(msg.mid);
             final int duration = Math.max(1, player.getDuration());
@@ -1040,6 +1096,89 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                     }
                 })
                 .show();
+    }
+
+    /** Выгрузка переписки в HTML: читаемый файл, который можно открыть или отправить. */
+    private void exportChat() {
+        chat = Store.get(this).chat(uid);
+        if (chat == null) return;
+        final List<Msg> messages = Store.get(this).messages(uid);
+        new Thread(() -> {
+            try {
+                StringBuilder html = new StringBuilder();
+                html.append("<!doctype html><html lang=\"ru\"><head><meta charset=\"utf-8\">")
+                        .append("<title>MailGram — переписка</title><style>")
+                        .append("body{background:#0b0b0d;color:#eaeaea;font-family:-apple-system,Roboto,sans-serif;margin:0;padding:24px}")
+                        .append("h1{font-size:20px}.m{max-width:640px;margin:10px 0;padding:10px 14px;border-radius:16px;white-space:pre-wrap}")
+                        .append(".in{background:#1c1c1e}.out{background:#0a6bff;margin-left:auto}")
+                        .append(".t{font-size:11px;opacity:.6;margin-top:6px}")
+                        .append("</style></head><body>")
+                        .append("<h1>").append(escape(chat.peer)).append("</h1>");
+                for (Msg m : messages) {
+                    if (m.isControl()) continue;
+                    html.append("<div class=\"m ").append(m.outgoing ? "out" : "in").append("\">");
+                    if (m.forwarded) html.append("<i>Переслано</i><br>");
+                    if (m.replyPreview != null && !m.replyPreview.isEmpty()) {
+                        html.append("<blockquote>").append(escape(m.replyPreview)).append("</blockquote>");
+                    }
+                    if (m.deleted) {
+                        html.append("<i>Сообщение удалено</i>");
+                    } else if (m.hasMedia()) {
+                        html.append("<b>[").append(mediaLabel(m)).append("]</b>");
+                        if (m.text != null && !m.text.isEmpty()) {
+                            html.append("<br>").append(escape(m.text));
+                        }
+                    } else {
+                        html.append(escape(m.text));
+                    }
+                    html.append("<div class=\"t\">").append(Ui.timeShort(m.ts))
+                            .append(m.edited ? " · изменено" : "").append("</div></div>");
+                }
+                html.append("</body></html>");
+
+                java.io.File dir = new File(getExternalFilesDir(null), "export");
+                if (!dir.exists() && !dir.mkdirs()) dir = getCacheDir();
+                final File out = new File(dir, "mailgram-" + uid + ".html");
+                try (java.io.FileOutputStream fos = new java.io.FileOutputStream(out)) {
+                    fos.write(html.toString().getBytes(java.nio.charset.StandardCharsets.UTF_8));
+                }
+                handler.post(() -> new MaterialAlertDialogBuilder(ChatActivity.this)
+                        .setTitle(R.string.export_done)
+                        .setMessage(out.getAbsolutePath())
+                        .setNegativeButton(R.string.done, null)
+                        .setPositiveButton(R.string.share, (d, w) -> {
+                            try {
+                                android.net.Uri uri = androidx.core.content.FileProvider.getUriForFile(
+                                        ChatActivity.this, getPackageName() + ".files", out);
+                                Intent send = new Intent(Intent.ACTION_SEND);
+                                send.setType("text/html");
+                                send.putExtra(Intent.EXTRA_STREAM, uri);
+                                send.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                                startActivity(Intent.createChooser(send, getString(R.string.share)));
+                            } catch (Exception e) {
+                                Ui.toast(ChatActivity.this, getString(R.string.error_generic, "не удалось поделиться"));
+                            }
+                        })
+                        .show());
+            } catch (final Exception e) {
+                handler.post(() -> Ui.toast(ChatActivity.this,
+                        getString(R.string.error_generic, String.valueOf(e.getMessage()))));
+            }
+        }, "mailgram-export").start();
+    }
+
+    private static String mediaLabel(Msg m) {
+        if (m.isImage()) return "фото";
+        if (m.isVideo()) return m.round ? "видеокружок" : "видео";
+        if (m.isVoice()) return "голосовое " + com.mailgram.app.media.MediaUtil.humanDuration(m.durationMs);
+        if (m.isFile()) return "файл " + (m.fileName == null ? "" : m.fileName);
+        return "вложение";
+    }
+
+    private static String escape(String text) {
+        if (text == null) return "";
+        return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+                .replace("\"", "&quot;");
     }
 
     /** Выбор чата для пересылки: список диалогов с аватарами. */

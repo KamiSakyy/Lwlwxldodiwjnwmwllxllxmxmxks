@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 public class AvatarView extends View {
 
     private final Paint circle = new Paint(Paint.ANTI_ALIAS_FLAG);
+    private final Paint ring = new Paint(Paint.ANTI_ALIAS_FLAG);
     private final Paint text = new Paint(Paint.ANTI_ALIAS_FLAG);
     private final RectF bounds = new RectF();
     private String initials = "?";
@@ -29,6 +30,9 @@ public class AvatarView extends View {
     public AvatarView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         circle.setStyle(Paint.Style.FILL);
+        ring.setStyle(Paint.Style.STROKE);
+        ring.setStrokeWidth(Ui.dp(context, 1f));
+        ring.setColor(0x22FFFFFF);
         text.setColor(0xFFFFFFFF);
         text.setTextAlign(Paint.Align.CENTER);
         text.setFakeBoldText(true);
@@ -46,6 +50,24 @@ public class AvatarView extends View {
         invalidate();
     }
 
+    private static int lighten(int color, float amount) {
+        return blend(color, 0xFFFFFFFF, amount);
+    }
+
+    private static int darken(int color, float amount) {
+        return blend(color, 0xFF000000, amount);
+    }
+
+    private static int blend(int color, int target, float amount) {
+        int r = (int) (android.graphics.Color.red(color)
+                + (android.graphics.Color.red(target) - android.graphics.Color.red(color)) * amount);
+        int g = (int) (android.graphics.Color.green(color)
+                + (android.graphics.Color.green(target) - android.graphics.Color.green(color)) * amount);
+        int b = (int) (android.graphics.Color.blue(color)
+                + (android.graphics.Color.blue(target) - android.graphics.Color.blue(color)) * amount);
+        return android.graphics.Color.argb(255, r, g, b);
+    }
+
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
@@ -54,8 +76,15 @@ public class AvatarView extends View {
         float cx = w / 2f;
         float cy = h / 2f;
         float r = Math.min(w, h) / 2f;
-        circle.setColor(color);
+        // мягкий градиент: верх светлее, низ глубже — «объёмный» аватар
+        if (w > 0 && h > 0) {
+            circle.setShader(new android.graphics.LinearGradient(0f, 0f, 0f, h,
+                    lighten(color, 0.18f), darken(color, 0.14f), android.graphics.Shader.TileMode.CLAMP));
+        } else {
+            circle.setColor(color);
+        }
         canvas.drawCircle(cx, cy, r, circle);
+        canvas.drawCircle(cx, cy, r - ring.getStrokeWidth() / 2f, ring);
 
         text.setTextSize(r * (initials.length() > 1 ? 0.78f : 0.9f));
         float baseline = cy - (text.descent() + text.ascent()) / 2f;

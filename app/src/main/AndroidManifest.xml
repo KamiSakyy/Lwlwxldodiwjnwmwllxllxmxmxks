@@ -26,6 +26,10 @@
         android:usesCleartextTraffic="false"
         tools:targetApi="34">
 
+        <meta-data
+            android:name="android.app.shortcuts"
+            android:resource="@xml/shortcuts" />
+
         <activity
             android:name=".ui.LoginActivity"
             android:exported="true"

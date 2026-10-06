@@ -236,4 +236,8 @@
     <string name="forward_to_chat">Переслать в чат</string>
     <string name="nothing_here">Здесь пока пусто</string>
     <string name="forward">Переслать</string>
+    <string name="export_chat">Выгрузить переписку</string>
+    <string name="export_done">Переписка сохранена</string>
+    <string name="export_share">Поделиться файлом</string>
+    <string name="original_not_found">Исходное сообщение не найдено</string>
 </resources>
