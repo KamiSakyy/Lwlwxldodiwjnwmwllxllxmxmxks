@@ -162,7 +162,7 @@ for (pkg, cls) in sorted(flat):
     inner = "" if kind == "interface" else f"    public {cls}() {{\n    }}\n"
     body = (f"package {pkg};\n\n/**\n * СТАБ-{kind.upper()}: сгенерирован автоматически"
             f" (tools/gen_stubs.py).\n * Оригинал потерян при декомпиляции APK.\n */\n"
-            f"public {kind} {cls}<T1,T2,T3,T4> {{\n{inner}}}\n")
+            f"public {kind} {cls} {{\n{inner}}}\n")
     with open(fp, "w", encoding="utf-8") as f:
         f.write(body)
     created += 1
@@ -186,7 +186,7 @@ for host, names in nested.items():
         if anchor <= 0:
             continue
         inner = (f"\n    // [restore] вложенный стаб: оригинал потерян при декомпиляции\n"
-                 f"    public static class {cls}<T1,T2,T3,T4> {{\n"
+                 f"    public static class {cls} {{\n"
                  f"        public {cls}() {{\n        }}\n    }}\n")
         src = src[:anchor] + inner + src[anchor:]
         added = True

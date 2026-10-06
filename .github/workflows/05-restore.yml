@@ -46,6 +46,7 @@ jobs:
           # идемпотентные фиксы (безопасно повторить)
           python3 tools/fix_heat.py "$PROJ" || true
           python3 tools/fix_compile.py "$PROJ" || true
+          python3 tools/fix_stab_generics.py - "$SRC" --remove-all || true
           SRC="$PROJ/app/src/main/java"
           find "$SRC" -name "*.java" | sort > /tmp/sources.txt
           echo "Файлов: $(wc -l < /tmp/sources.txt)"
@@ -135,6 +136,7 @@ jobs:
             fi
             python3 tools/convert_stubs_to_ifaces.py /tmp/javac-iter.log "$SRC" 2>&1 | tee -a "$CYCLE" || true
             python3 tools/fix_from_log.py /tmp/javac-iter.log "$SRC" 2>&1 | tee -a "$CYCLE" || true
+            python3 tools/fix_stab_generics.py /tmp/javac-iter.log "$SRC" 2>&1 | tee -a "$CYCLE" || true
             find "$SRC" -name "*.java" | sort > /tmp/sources.txt
             echo "Файлов теперь: $(wc -l < /tmp/sources.txt)" | tee -a "$CYCLE"
           done
