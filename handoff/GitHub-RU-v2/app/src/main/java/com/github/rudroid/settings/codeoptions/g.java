@@ -169,10 +169,10 @@ public final /* synthetic */ class g implements j71.f {
                 N = new g0.d();
                 sVar.n0(N);
             }
-            g0.d dVar = (g0.d) N;
-            dVar.a.clear();
-            cVar.k(dVar);
-            dVar.a(cVar2, sVar, 0);
+            g0.d dVar_r7 = (g0.d) N;
+            dVar_r7.a.clear();
+            cVar.k(dVar_r7);
+            dVar_r7.a(cVar2, sVar, 0);
         } else {
             sVar.V();
         }
@@ -278,10 +278,10 @@ public final /* synthetic */ class g implements j71.f {
     private final Object q(Object obj, Object obj2, Object obj3) {
         ReRunJobBottomSheet reRunJobBottomSheet = (ReRunJobBottomSheet) this.s;
         oa.j jVar = (oa.j) this.t;
-        mn.d dVar = (mn.d) obj;
+        mn.d dVar_r7 = (mn.d) obj;
         androidx.compose.runtime.s sVar = (androidx.compose.runtime.s) obj2;
         ((Integer) obj3).getClass();
-        k71.k.g(dVar, "data");
+        k71.k.g(dVar_r7, "data");
         w1.r u = p2.u(w1.o.a);
         androidx.compose.foundation.layout.e0 a = androidx.compose.foundation.layout.c0.a(androidx.compose.foundation.layout.l.c, w1.c.D, sVar, 0);
         int hashCode = Long.hashCode(sVar.T);
@@ -305,11 +305,11 @@ public final /* synthetic */ class g implements j71.f {
             k71.k.m("forUserImageLoaderFactory");
             throw null;
         }
-        ih.f.a((g9.h) c1Var.a(jVar), r1.i.d(327665867, new pc.j(3, dVar), sVar), sVar, 48);
-        boolean h = sVar.h(reRunJobBottomSheet) | sVar.h(dVar);
+        ih.f.a((g9.h) c1Var.a(jVar), r1.i.d(327665867, new pc.j(3, dVar_r7), sVar), sVar, 48);
+        boolean h = sVar.h(reRunJobBottomSheet) | sVar.h(dVar_r7);
         Object N = sVar.N();
         if (h || N == androidx.compose.runtime.n.a) {
-            N = new fg.d(25, dVar, reRunJobBottomSheet);
+            N = new fg.d(25, dVar_r7, reRunJobBottomSheet);
             sVar.n0(N);
         }
         com.google.common.util.concurrent.a.b((w1.r) null, (m0.s) null, (d2) null, (androidx.compose.foundation.layout.k) null, (w1.d) null, (h1Shadow) null, false, (f0.j) null, (j71.c) N, sVar, 0, 511);
@@ -544,13 +544,13 @@ public final /* synthetic */ class g implements j71.f {
                 n.d(e, 0, sVar3, (j71.c) N3, null);
                 return a0Var;
             case 3:
-                nj.d dVar = (nj.d) obj6;
+                nj.d dVar_r7 = (nj.d) obj6;
                 j71.c cVar = (j71.c) obj5;
                 androidx.compose.runtime.s sVar4 = (androidx.compose.runtime.s) obj2;
                 int intValue3 = ((Integer) obj3).intValue();
                 k71.k.g((androidx.compose.foundation.layout.f0) obj, "$this$PrimaryPreferenceGroup");
                 if (sVar4.S(intValue3 & 1, (intValue3 & 17) != 16)) {
-                    com.github.rudroid.settings.copilot.debug.t.b(dVar.a, cVar, sVar4, 0);
+                    com.github.rudroid.settings.copilot.debug.t.b(dVar_r7.a, cVar, sVar4, 0);
                     androidx.compose.foundation.layout.b.g(sVar4, p2.f(oVar, ih.a.n));
                 } else {
                     sVar4.V();

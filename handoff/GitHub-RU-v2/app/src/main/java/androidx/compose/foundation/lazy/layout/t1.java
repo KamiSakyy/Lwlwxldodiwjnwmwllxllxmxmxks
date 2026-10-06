@@ -6,4 +6,7 @@ package androidx.compose.foundation.lazy.layout;
  */
 public class t1 {
     public t1() {}
+    public androidx.compose.foundation.lazy.layout.t1 a = null;
+    public androidx.compose.foundation.lazy.layout.t1 c = null;
+    public androidx.compose.foundation.lazy.layout.t1 d = null;
 }

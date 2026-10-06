@@ -191,30 +191,30 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
     public static r9.f o(r9.k kVar, Throwable th) {
         Drawable b;
         if (th instanceof NullRequestDataException) {
-            kVar.getClass();
-            r9.c cVar = kVar.E;
-            Integer num = kVar.C;
+            kVar_r7.getClass();
+            r9.c cVar = kVar_r7.E;
+            Integer num = kVar_r7.C;
             cVar.getClass();
-            b = w9.d.b(kVar, num);
+            b = w9.d.b(kVar_r7, num);
             if (b == null) {
-                Integer num2 = kVar.B;
+                Integer num2 = kVar_r7.B;
                 cVar.getClass();
-                b = w9.d.b(kVar, num2);
+                b = w9.d.b(kVar_r7, num2);
             }
         } else {
-            Integer num3 = kVar.B;
-            kVar.E.getClass();
-            b = w9.d.b(kVar, num3);
+            Integer num3 = kVar_r7.B;
+            kVar_r7.E.getClass();
+            b = w9.d.b(kVar_r7, num3);
         }
-        return new r9.f(b, kVar, th);
+        return new r9.f(b, kVar_r7, th);
     }
 
-    public static boolean x(r9.k kVar, Bitmap.Config config) {
+    public static boolean x(r9.k kVar_r7, Bitmap.Config config) {
         if (config == Bitmap.Config.HARDWARE) {
-            if (!kVar.m) {
+            if (!kVar_r7.m) {
                 return false;
             }
-            t9.a aVar = kVar.c;
+            t9.a aVar = kVar_r7.c;
             if (aVar instanceof t9.a) {
                 ImageView imageView = aVar.s;
                 if (imageView.isAttachedToWindow() && !imageView.isHardwareAccelerated()) {
@@ -236,9 +236,9 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
         k.g(jVar, "user");
         nm.i iVar = (nm.i) this.s;
         iVar.getClass();
-        nm.k kVar = iVar.a;
-        kVar.getClass();
-        zj.b B = ((GitHubDatabase) kVar.a.a(jVar)).B();
+        nm.k kVar_r7 = iVar.a;
+        kVar_r7.getClass();
+        zj.b B = ((GitHubDatabase) kVar_r7.a.a(jVar)).B();
         y71.i p = n1.p(d5.B(B.a, new String[]{"notification_schedules"}, new ze.a(B)));
         h hVar = (h) this.t;
         ak.a aVar = ak.a.s;
@@ -260,10 +260,10 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
             Iterator it = ((s8.l) ((s21.a) this.s).s).b.iterator();
             k.f(it, "iterator(...)");
             while (it.hasNext()) {
-                s8.k kVar = (s8.k) it.next();
-                if (kVar.a.equals(activity)) {
-                    kVar.c = hVar;
-                    kVar.b.accept(hVar);
+                s8.k kVar_r7 = (s8.k) it.next();
+                if (kVar_r7.a.equals(activity)) {
+                    kVar_r7.c = hVar;
+                    kVar_r7.b.accept(hVar);
                 }
             }
         } finally {
@@ -278,22 +278,22 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public n E(r9.k kVar, s9.h hVar) {
-        List list = kVar.h;
-        Bitmap.Config config = kVar.f;
+    public n E(r9.k kVar_r7, s9.h hVar) {
+        List list = kVar_r7.h;
+        Bitmap.Config config = kVar_r7.f;
         if (list.isEmpty() || x61.l.t(w9.f.a, config)) {
             if (config == Bitmap.Config.HARDWARE) {
-                if (x(kVar, config)) {
+                if (x(kVar_r7, config)) {
                 }
             }
             k41.b bVar = hVar.a;
             s9.b bVar2 = s9.b.a;
-            return new n(kVar.a, config, (ColorSpace) null, hVar, (!bVar.equals(bVar2) || hVar.b.equals(bVar2)) ? s9.g.s : kVar.y, w9.d.a(kVar), (kVar.n || !kVar.h.isEmpty() || config == Bitmap.Config.ALPHA_8) ? false : true, kVar.o, (String) null, kVar.j, kVar.k, kVar.z, kVar.p, kVar.q, kVar.r);
+            return new n(kVar_r7.a, config, (ColorSpace) null, hVar, (!bVar.equals(bVar2) || hVar.b.equals(bVar2)) ? s9.g.s : kVar_r7.y, w9.d.a(kVar_r7), (kVar_r7.n || !kVar_r7.h.isEmpty() || config == Bitmap.Config.ALPHA_8) ? false : true, kVar_r7.o, (String) null, kVar_r7.j, kVar_r7.k, kVar_r7.z, kVar_r7.p, kVar_r7.q, kVar_r7.r);
         }
         config = Bitmap.Config.ARGB_8888;
         k41.b bVar3 = hVar.a;
         s9.b bVar22 = s9.b.a;
-        return new n(kVar.a, config, (ColorSpace) null, hVar, (!bVar3.equals(bVar22) || hVar.b.equals(bVar22)) ? s9.g.s : kVar.y, w9.d.a(kVar), (kVar.n || !kVar.h.isEmpty() || config == Bitmap.Config.ALPHA_8) ? false : true, kVar.o, (String) null, kVar.j, kVar.k, kVar.z, kVar.p, kVar.q, kVar.r);
+        return new n(kVar_r7.a, config, (ColorSpace) null, hVar, (!bVar3.equals(bVar22) || hVar.b.equals(bVar22)) ? s9.g.s : kVar_r7.y, w9.d.a(kVar_r7), (kVar_r7.n || !kVar_r7.h.isEmpty() || config == Bitmap.Config.ALPHA_8) ? false : true, kVar_r7.o, (String) null, kVar.j, kVar.k, kVar.z, kVar.p, kVar.q, kVar.r);
     }
 
     public Object F(CharSequence charSequence, int i, int i2, int i3, boolean z, u5.l lVar) {
@@ -418,8 +418,8 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
             return;
         }
         synchronized (this.t) {
-            r1.k kVar = (r1.k) ((AtomicReference) this.s).get();
-            int a = kVar.a(b);
+            r1.k kVar_r7 = (r1.k) ((AtomicReference) this.s).get();
+            int a = kVar_r7.a(b);
             if (a < 0) {
                 ((AtomicReference) this.s).set(kVar.b(b, obj));
             } else {
@@ -696,7 +696,7 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
         if (b == r1.l.a) {
             return this.u;
         }
-        r1.k kVar = (r1.k) ((AtomicReference) this.s).get();
+        r1.k kVar_r7 = (r1.k) ((AtomicReference) this.s).get();
         int a = kVar.a(b);
         if (a >= 0) {
             return kVar.c[a];
@@ -1742,13 +1742,13 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
     }
 
     public h(g9.h hVar, l lVar) {
-        w9.j kVar;
+        w9.j kVar_r7;
         this.r = 13;
         this.s = hVar;
         this.t = lVar;
         int i = Build.VERSION.SDK_INT;
         if (w9.a.a) {
-            kVar = new w9.j(false);
+            kVar_r7 = new w9.j(false);
         } else if (i != 26 && i != 27) {
             kVar = new w9.j(true);
         } else {
@@ -1833,7 +1833,7 @@ public final class h implements q9.e, t41.b, t41.a, u1.d, j0 {
             case 10:
                 String uuid = UUID.randomUUID().toString();
                 k.f(uuid, "toString(...)");
-                h91.k kVar = h91.k.u;
+                h91.k kVar_r7 = h91.k.u;
                 this.s = c30.d.b(uuid);
                 this.t = q81.s.e;
                 this.u = new ArrayList();

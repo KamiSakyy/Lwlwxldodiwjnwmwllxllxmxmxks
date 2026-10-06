@@ -7,4 +7,6 @@ public interface c extends w61.e {
     public Object A = null;
     public Object a = null;
     public Object v = null;
+    public j71.c A = null;
+    public j71.c b = null;
 }

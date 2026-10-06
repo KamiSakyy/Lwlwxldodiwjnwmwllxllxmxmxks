@@ -26,17 +26,17 @@ public final class t0 extends l {
         @Override // android.app.Application.ActivityLifecycleCallbacks
         public void onActivityPostStarted(Activity activity) {
             k71.k.g(activity, "activity");
-            u0 u0Var = this.this$0;
-            int i = u0Var.f2927r + 1;
-            u0Var.f2927r = i;
-            if (i == 1 && u0Var.f2930u) {
-                u0Var.f2932w.C(v.ON_START);
-                u0Var.f2930u = false;
+            u0 u0Var_r7 = this.this$0;
+            int i = u0Var_r7.f2927r + 1;
+            u0Var_r7.f2927r = i;
+            if (i == 1 && u0Var_r7.f2930u) {
+                u0Var_r7.f2932w.C(v.ON_START);
+                u0Var_r7.f2930u = false;
             }
         }
     }
 
-    public t0(u0 u0Var) {
+    public t0(u0 u0Var_r7) {
         this.this$0 = u0Var;
     }
 
@@ -54,13 +54,13 @@ public final class t0 extends l {
     @Override // androidx.lifecycle.l, android.app.Application.ActivityLifecycleCallbacks
     public void onActivityPaused(Activity activity) {
         k71.k.g(activity, "activity");
-        u0 u0Var = this.this$0;
-        int i = u0Var.f2928s - 1;
-        u0Var.f2928s = i;
+        u0 u0Var_r7 = this.this$0;
+        int i = u0Var_r7.f2928s - 1;
+        u0Var_r7.f2928s = i;
         if (i == 0) {
-            Handler handler = u0Var.f2931v;
+            Handler handler = u0Var_r7.f2931v;
             k71.k.d(handler);
-            handler.postDelayed(u0Var.f2933x, 700L);
+            handler.postDelayed(u0Var_r7.f2933x, 700L);
         }
     }
 
@@ -73,11 +73,11 @@ public final class t0 extends l {
     @Override // androidx.lifecycle.l, android.app.Application.ActivityLifecycleCallbacks
     public void onActivityStopped(Activity activity) {
         k71.k.g(activity, "activity");
-        u0 u0Var = this.this$0;
-        int i = u0Var.f2927r - 1;
-        u0Var.f2927r = i;
-        if (i == 0 && u0Var.f2929t) {
-            u0Var.f2932w.C(v.ON_STOP);
+        u0 u0Var_r7 = this.this$0;
+        int i = u0Var_r7.f2927r - 1;
+        u0Var_r7.f2927r = i;
+        if (i == 0 && u0Var_r7.f2929t) {
+            u0Var_r7.f2932w.C(v.ON_STOP);
             u0Var.f2930u = true;
         }
     }

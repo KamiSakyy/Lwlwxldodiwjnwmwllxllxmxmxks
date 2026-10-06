@@ -142,14 +142,14 @@ public class e0 {
 
     public final void h(int i, int i10) {
         PointF f6;
-        RecyclerView recyclerView = this.f28098b;
-        if (this.f28097a == -1 || recyclerView == null) {
+        RecyclerView recyclerView_r7 = this.f28098b;
+        if (this.f28097a == -1 || recyclerView_r7 == null) {
             j();
         }
         if (this.f28100d && this.f28102f == null && this.f28099c != null && (f6 = f(this.f28097a)) != null) {
             float f10 = f6.x;
             if (f10 != 0.0f || f6.y != 0.0f) {
-                recyclerView.k0((int) Math.signum(f10), (int) Math.signum(f6.y), null);
+                recyclerView_r7.k0((int) Math.signum(f10), (int) Math.signum(f6.y), null);
             }
         }
         this.f28100d = false;
@@ -160,16 +160,16 @@ public class e0 {
             n1 P = RecyclerView.P(view);
             if ((P != null ? P.j() : -1) == this.f28097a) {
                 View view2 = this.f28102f;
-                j1 j1Var = recyclerView.f3080y0;
+                j1 j1Var = recyclerView_r7.f3080y0;
                 i(view2, h1Var);
-                h1Var.a(recyclerView);
+                h1Var.a(recyclerView_r7);
                 j();
             } else {
                 this.f28102f = null;
             }
         }
         if (this.f28101e) {
-            j1 j1Var2 = recyclerView.f3080y0;
+            j1 j1Var2 = recyclerView_r7.f3080y0;
             if (this.f28098b.E.v() == 0) {
                 j();
             } else {
@@ -211,10 +211,10 @@ public class e0 {
                 }
             }
             boolean z10 = h1Var.f28145d >= 0;
-            h1Var.a(recyclerView);
+            h1Var.a(recyclerView_r7);
             if (z10 && this.f28101e) {
                 this.f28100d = true;
-                recyclerView.f3074v0.b();
+                recyclerView_r7.f3074v0.b();
             }
         }
     }

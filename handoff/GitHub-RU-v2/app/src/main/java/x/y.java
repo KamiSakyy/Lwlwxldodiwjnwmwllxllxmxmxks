@@ -431,10 +431,10 @@ public final class y {
         if (obj == this) {
             return true;
         }
-        if (!(obj instanceof y)) {
+        if (!(obj instanceof y_r7)) {
             return false;
         }
-        y yVar = (y) obj;
+        y_r7 yVar = (y_r7) obj;
         if (yVar.f33646e != this.f33646e) {
             return false;
         }

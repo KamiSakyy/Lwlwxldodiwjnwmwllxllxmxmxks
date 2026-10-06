@@ -101,9 +101,9 @@ public final class d {
         u11.b bVar;
         long j;
         g gVar;
-        n11.a aVar;
+        n11.a_r7 aVar;
         String str;
-        n11.a aVar2;
+        n11.a_r7 aVar2;
         int i2;
         k11.b m;
         String str2;
@@ -115,19 +115,19 @@ public final class d {
         final m11.j jVar2 = jVar;
         byte[] bArr2 = jVar2.b;
         u11.b bVar2 = (u11.b) dVar2.f;
-        g a = ((n11.e) dVar2.b).a(jVar2.a);
+        g a_r7 = ((n11.e) dVar2.b).a_r7(jVar2.a_r7);
         long j2 = 0;
         while (true) {
             final int i4 = 0;
             i iVar = (i) bVar2;
-            if (!((Boolean) iVar.E(new u11.a(dVar2) { // from class: s11.e
+            if (!((Boolean) iVar.E(new u11.a_r7(dVar2) { // from class: s11.e
                 public final /* synthetic */ d51.d s;
 
                 {
                     this.s = dVar2;
                 }
 
-                @Override // u11.a
+                @Override // u11.a_r7
                 public final Object j() {
                     Boolean bool;
                     switch (i4) {
@@ -167,14 +167,14 @@ public final class d {
                 return;
             }
             final int i5 = 1;
-            Iterable iterable = (Iterable) iVar.E(new u11.a(dVar2) { // from class: s11.e
+            Iterable iterable = (Iterable) iVar.E(new u11.a_r7(dVar2) { // from class: s11.e
                 public final /* synthetic */ d51.d s;
 
                 {
                     this.s = dVar2;
                 }
 
-                @Override // u11.a
+                @Override // u11.a_r7
                 public final Object j() {
                     Boolean bool;
                     switch (i5) {
@@ -213,13 +213,13 @@ public final class d {
             if (!iterable.iterator().hasNext()) {
                 return;
             }
-            if (a == null) {
-                a.a.i(jVar2, "Uploader", "Unknown backend for %s, deleting event batch for it...");
-                aVar2 = new n11.a(3, -1L);
+            if (a_r7 == null) {
+                a_r7.a_r7.i(jVar2, "Uploader", "Unknown backend for %s, deleting event batch for it...");
+                aVar2 = new n11.a_r7(3, -1L);
                 bArr = bArr2;
                 bVar = bVar2;
                 j = j2;
-                gVar = a;
+                gVar = a_r7;
             } else {
                 ArrayList arrayList = new ArrayList();
                 Iterator it = iterable.iterator();
@@ -229,15 +229,15 @@ public final class d {
                 if (bArr2 != null) {
                     t11.c cVar = (t11.c) dVar2.i;
                     Objects.requireNonNull(cVar);
-                    p11.a aVar3 = (p11.a) iVar.E(new c5.b(19, cVar));
+                    p11.a_r7 aVar3 = (p11.a_r7) iVar.E(new c5.b(19, cVar));
                     h hVar = new h();
                     hVar.i = new HashMap();
-                    hVar.g = Long.valueOf(((v11.a) dVar2.g).b());
-                    hVar.h = Long.valueOf(((v11.a) dVar2.h).b());
+                    hVar.g = Long.valueOf(((v11.a_r7) dVar2.g).b());
+                    hVar.h = Long.valueOf(((v11.a_r7) dVar2.h).b());
                     hVar.b = "GDT_CLIENT_METRICS";
                     j11.c cVar2 = new j11.c("proto");
                     aVar3.getClass();
-                    l51.h hVar2 = p.a;
+                    l51.h hVar2 = p.a_r7;
                     hVar2.getClass();
                     bArr = bArr2;
                     ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
@@ -246,11 +246,11 @@ public final class d {
                     } catch (IOException unused) {
                     }
                     hVar.f = new m(cVar2, byteArrayOutputStream.toByteArray());
-                    arrayList.add(((k11.c) a).a(hVar.c()));
+                    arrayList.add(((k11.c) a_r7).a_r7(hVar.c()));
                 } else {
                     bArr = bArr2;
                 }
-                k11.c cVar3 = (k11.c) a;
+                k11.c cVar3 = (k11.c) a_r7;
                 HashMap hashMap = new HashMap();
                 int size = arrayList.size();
                 int i6 = 0;
@@ -258,7 +258,7 @@ public final class d {
                     Object obj = arrayList.get(i6);
                     i6++;
                     m11.i iVar2 = (m11.i) obj;
-                    String str3 = iVar2.a;
+                    String str3 = iVar2.a_r7;
                     if (hashMap.containsKey(str3)) {
                         ((List) hashMap.get(str3)).add(iVar2);
                     } else {
@@ -273,7 +273,7 @@ public final class d {
                     j0 j0Var = j0.r;
                     long b = cVar3.f.b();
                     long b2 = cVar3.e.b();
-                    n nVar = new n(new l(Integer.valueOf(iVar3.b("sdk-version")), iVar3.a("model"), iVar3.a("hardware"), iVar3.a("device"), iVar3.a("product"), iVar3.a("os-uild"), iVar3.a("manufacturer"), iVar3.a("fingerprint"), iVar3.a("locale"), iVar3.a("country"), iVar3.a("mcc_mnc"), iVar3.a("application_build")));
+                    n nVar = new n(new l(Integer.valueOf(iVar3.b("sdk-version")), iVar3.a_r7("model"), iVar3.a_r7("hardware"), iVar3.a_r7("device"), iVar3.a_r7("product"), iVar3.a_r7("os-uild"), iVar3.a_r7("manufacturer"), iVar3.a_r7("fingerprint"), iVar3.a_r7("locale"), iVar3.a_r7("country"), iVar3.a_r7("mcc_mnc"), iVar3.a_r7("application_build")));
                     try {
                         num = Integer.valueOf(Integer.parseInt((String) entry.getKey()));
                         str2 = null;
@@ -287,14 +287,14 @@ public final class d {
                         m mVar = iVar4.c;
                         long j3 = j2;
                         byte[] bArr3 = iVar4.j;
-                        j11.c cVar4 = mVar.a;
+                        j11.c cVar4 = mVar.a_r7;
                         byte[] bArr4 = mVar.b;
                         if (cVar4.equals(new j11.c("proto"))) {
                             dVar = new d();
                             dVar.e = bArr4;
-                            gVar2 = a;
+                            gVar2 = a_r7;
                         } else {
-                            gVar2 = a;
+                            gVar2 = a_r7;
                             if (cVar4.equals(new j11.c("json"))) {
                                 String str4 = new String(bArr4, Charset.forName("UTF-8"));
                                 d dVar3 = new d();
@@ -306,10 +306,10 @@ public final class d {
                                 }
                                 bVar2 = bVar3;
                                 j2 = j3;
-                                a = gVar2;
+                                a_r7 = gVar2;
                             }
                         }
-                        dVar.a = Long.valueOf(iVar4.d);
+                        dVar.a_r7 = Long.valueOf(iVar4.d);
                         dVar.d = Long.valueOf(iVar4.e);
                         String str5 = (String) iVar4.f.get("tz-offset");
                         dVar.g = Long.valueOf(str5 == null ? 0L : Long.valueOf(str5).longValue());
@@ -331,7 +331,7 @@ public final class d {
                             }
                             dVar.i = new l11.p(bArr5, bArr3 != null ? bArr3 : null);
                         }
-                        String str6 = ((Long) dVar.a) == null ? " eventTimeMs" : "";
+                        String str6 = ((Long) dVar.a_r7) == null ? " eventTimeMs" : "";
                         if (((Long) dVar.d) == null) {
                             str6 = str6.concat(" eventUptimeMs");
                         }
@@ -341,32 +341,32 @@ public final class d {
                         if (!str6.isEmpty()) {
                             throw new IllegalStateException("Missing required properties:".concat(str6));
                         }
-                        arrayList4.add(new s(((Long) dVar.a).longValue(), (Integer) dVar.b, (o) dVar.c, ((Long) dVar.d).longValue(), (byte[]) dVar.e, (String) dVar.f, ((Long) dVar.g).longValue(), (v) dVar.h, (l11.p) dVar.i));
+                        arrayList4.add(new s(((Long) dVar.a_r7).longValue(), (Integer) dVar.b, (o) dVar.c, ((Long) dVar.d).longValue(), (byte[]) dVar.e, (String) dVar.f, ((Long) dVar.g).longValue(), (v) dVar.h, (l11.p) dVar.i));
                         bVar2 = bVar3;
                         j2 = j3;
-                        a = gVar2;
+                        a_r7 = gVar2;
                     }
                     arrayList3.add(new t(b, b2, nVar, num, str2, arrayList4));
                     bVar2 = bVar2;
                 }
                 bVar = bVar2;
                 j = j2;
-                gVar = a;
+                gVar = a_r7;
                 l11.m mVar2 = new l11.m(arrayList3);
                 URL url = cVar3.d;
                 if (bArr != null) {
                     try {
-                        k11.a a2 = k11.a.a(bArr);
+                        k11.a_r7 a2 = k11.a_r7.a_r7(bArr);
                         str = a2.b;
                         if (str == null) {
                             str = null;
                         }
-                        String str7 = a2.a;
+                        String str7 = a2.a_r7;
                         if (str7 != null) {
                             url = k11.c.b(str7);
                         }
                     } catch (IllegalArgumentException unused3) {
-                        aVar = new n11.a(3, -1L);
+                        aVar = new n11.a_r7(3, -1L);
                     }
                 } else {
                     str = null;
@@ -379,7 +379,7 @@ public final class d {
                         m = bVar4.m(sVar);
                         URL url2 = m.b;
                         if (url2 != null) {
-                            a.a.i(url2, "CctTransportBackend", "Following redirect to: %s");
+                            a_r7.a_r7.i(url2, "CctTransportBackend", "Following redirect to: %s");
                             sVar = new a5.s(url2, (l11.m) sVar.u, (String) sVar.s, 25);
                         } else {
                             sVar = null;
@@ -390,25 +390,25 @@ public final class d {
                             i7--;
                         }
                     } while (i7 >= 1);
-                    int i8 = m.a;
+                    int i8 = m.a_r7;
                     if (i8 == 200) {
-                        aVar2 = new n11.a(1, m.c);
+                        aVar2 = new n11.a_r7(1, m.c);
                     } else {
                         if (i8 >= 500 || i8 == 404) {
-                            aVar = new n11.a(2, -1L);
+                            aVar = new n11.a_r7(2, -1L);
                         } else if (i8 == 400) {
                             try {
-                                aVar = new n11.a(4, -1L);
+                                aVar = new n11.a_r7(4, -1L);
                             } catch (IOException unused4) {
                                 Log.isLoggable("TRuntime.".concat("CctTransportBackend"), 6);
                                 i2 = 2;
-                                aVar2 = new n11.a(2, -1L);
-                                i3 = aVar2.a;
+                                aVar2 = new n11.a_r7(2, -1L);
+                                i3 = aVar2.a_r7;
                                 if (i3 != i2) {
                                 }
                             }
                         } else {
-                            aVar = new n11.a(3, -1L);
+                            aVar = new n11.a_r7(3, -1L);
                         }
                         aVar2 = aVar;
                     }
@@ -416,7 +416,7 @@ public final class d {
                 }
             }
             i2 = 2;
-            i3 = aVar2.a;
+            i3 = aVar2.a_r7;
             if (i3 != i2) {
                 iVar.E(new q41.b(this, iterable, jVar, j));
                 ((l51.h) this.d).H(jVar, i + 1, true);
@@ -435,7 +435,7 @@ public final class d {
                 HashMap hashMap2 = new HashMap();
                 Iterator it2 = iterable.iterator();
                 while (it2.hasNext()) {
-                    String str8 = ((t11.b) it2.next()).c.a;
+                    String str8 = ((t11.b) it2.next()).c.a_r7;
                     if (hashMap2.containsKey(str8)) {
                         hashMap2.put(str8, Integer.valueOf(((Integer) hashMap2.get(str8)).intValue() + 1));
                     } else {
@@ -446,7 +446,7 @@ public final class d {
             }
             bArr2 = bArr;
             bVar2 = bVar;
-            a = gVar;
+            a_r7 = gVar;
         }
     }
 

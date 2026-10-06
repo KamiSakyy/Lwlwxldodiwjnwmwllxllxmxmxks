@@ -11,4 +11,5 @@ public interface b {
     public Object d = null;
     public Object e = null;
     public Object f = null;
+    public l7.b b = null;
 }

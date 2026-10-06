@@ -39,4 +39,5 @@ public final class b {
     public Object a = null;
     public Object w = null;
     public Object y = null;
+    public p9.b y = null;
 }

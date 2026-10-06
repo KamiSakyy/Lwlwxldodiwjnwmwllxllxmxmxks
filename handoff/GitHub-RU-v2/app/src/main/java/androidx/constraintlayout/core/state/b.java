@@ -5,4 +5,6 @@ package androidx.constraintlayout.core.state;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface b {
+    public androidx.constraintlayout.core.state.b i0 = null;
+    public androidx.constraintlayout.core.state.b z = null;
 }

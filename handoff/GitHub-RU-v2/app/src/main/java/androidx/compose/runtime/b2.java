@@ -69,4 +69,5 @@ public final class b2 {
         this.f1572b = z10 ? i | 32 : i & (-33);
     }
 
+    public androidx.compose.runtime.b2 d = null;
 }

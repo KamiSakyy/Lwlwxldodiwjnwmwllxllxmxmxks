@@ -49,4 +49,5 @@ public final class c0 {
     public Object f = null;
     public Object g = null;
     public Object h = null;
+    public e50.c0 e = null;
 }

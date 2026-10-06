@@ -54,18 +54,18 @@ public final class UiStateRecyclerView extends RecyclerView {
 
     public final void setFancyAppBarElevated(boolean z) {
         if (z) {
-            vf.a aVar = this.c1;
-            if (aVar != null) {
-                aVar.a.setElevation(aVar.c);
-                aVar.b = -1.0f;
+            vf.a aVar_r7 = this.c1;
+            if (aVar_r7 != null) {
+                aVar_r7.a.setElevation(aVar_r7.c);
+                aVar_r7.b = -1.0f;
                 return;
             }
             return;
         }
-        vf.a aVar2 = this.c1;
-        if (aVar2 != null) {
-            aVar2.a.setElevation(0.0f);
-            aVar2.b = -1.0f;
+        vf.a aVar2_r7 = this.c1;
+        if (aVar2_r7 != null) {
+            aVar2_r7.a.setElevation(0.0f);
+            aVar2_r7.b = -1.0f;
         }
     }
 
@@ -73,24 +73,24 @@ public final class UiStateRecyclerView extends RecyclerView {
         if (appBarLayout == null) {
             return;
         }
-        vf.a aVar = new vf.a(appBarLayout);
-        this.c1 = aVar;
+        vf.a aVar_r7 = new vf.a(appBarLayout);
+        this.c1 = aVar_r7;
         j(aVar);
     }
 
     public final void v0(List list, boolean z, boolean z2) {
         l7.c cVar;
         com.github.rudroid.views.listemptystate.e eVar = this.d1;
-        p81.a aVar = this.g1;
+        p81.a aVar_r7 = this.g1;
         if (z) {
             this.e1 = new i();
             if (z2) {
-                aVar = this.f1;
+                aVar_r7 = this.f1;
             }
-            cVar = new l7.c(aVar, x61.m.l0(x61.m.l0(d0.n(eVar), list), d0.n(this.e1)));
+            cVar = new l7.c(aVar_r7, x61.m.l0(x61.m.l0(d0.n(eVar), list), d0.n(this.e1)));
         } else {
             this.e1 = null;
-            cVar = new l7.c(aVar, x61.m.l0(d0.n(eVar), list));
+            cVar = new l7.c(aVar_r7, x61.m.l0(d0.n(eVar), list));
         }
         setConcatAdapter(cVar);
         setAdapter(getConcatAdapter());

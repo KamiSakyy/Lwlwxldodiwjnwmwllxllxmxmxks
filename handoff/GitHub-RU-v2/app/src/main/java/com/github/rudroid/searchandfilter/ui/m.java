@@ -159,13 +159,13 @@ public final /* synthetic */ class m implements j71.a {
                 String str12 = this.t;
                 k71.k.g(str12, "repositoryName");
                 k71.k.g(list5, "projects");
-                PropertyBarProjectsHostBottomSheetDialog propertyBarProjectsHostBottomSheetDialog = new PropertyBarProjectsHostBottomSheetDialog();
+                PropertyBarProjectsHostBottomSheetDialog propertyBarProjectsHostBottomSheetDialog_r7 = new PropertyBarProjectsHostBottomSheetDialog();
                 r71.e[] eVarArr = PropertyBarProjectsHostBottomSheetDialog.Z0;
-                propertyBarProjectsHostBottomSheetDialog.V0.b(propertyBarProjectsHostBottomSheetDialog, eVarArr[0], list5);
-                propertyBarProjectsHostBottomSheetDialog.W0.b(propertyBarProjectsHostBottomSheetDialog, eVarArr[1], str11);
-                propertyBarProjectsHostBottomSheetDialog.X0.b(propertyBarProjectsHostBottomSheetDialog, eVarArr[2], str12);
-                propertyBarProjectsHostBottomSheetDialog.Y0.b(propertyBarProjectsHostBottomSheetDialog, eVarArr[3], Boolean.valueOf(this.u));
-                propertyBarProjectsHostBottomSheetDialog.z4(this.v, (String) null);
+                propertyBarProjectsHostBottomSheetDialog_r7.V0.b(propertyBarProjectsHostBottomSheetDialog_r7, eVarArr[0], list5);
+                propertyBarProjectsHostBottomSheetDialog_r7.W0.b(propertyBarProjectsHostBottomSheetDialog_r7, eVarArr[1], str11);
+                propertyBarProjectsHostBottomSheetDialog_r7.X0.b(propertyBarProjectsHostBottomSheetDialog_r7, eVarArr[2], str12);
+                propertyBarProjectsHostBottomSheetDialog_r7.Y0.b(propertyBarProjectsHostBottomSheetDialog_r7, eVarArr[3], Boolean.valueOf(this.u));
+                propertyBarProjectsHostBottomSheetDialog_r7.z4(this.v, (String) null);
                 break;
             default:
                 DiscussionCategoryFilter discussionCategoryFilter = (DiscussionCategoryFilter) this.w;

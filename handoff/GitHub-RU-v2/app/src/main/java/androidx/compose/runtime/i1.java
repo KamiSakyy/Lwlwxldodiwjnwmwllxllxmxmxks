@@ -150,4 +150,6 @@ public final class i1 implements d, l3.p {
         this.f1675r = 0;
         this.f1676s = 0;
     }
+    public androidx.compose.runtime.i1 r = null;
+    public androidx.compose.runtime.i1 t = null;
 }

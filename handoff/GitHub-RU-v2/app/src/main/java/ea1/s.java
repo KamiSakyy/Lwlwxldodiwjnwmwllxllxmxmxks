@@ -165,7 +165,7 @@ public final class s implements AutoCloseable {
         t0Var.t();
         da1.a aVar = t0Var.r;
         char[] cArr = u;
-        Object eVar = aVar.x0(cArr) ? new e(8) : b0();
+        Object eVar_r7 = aVar.x0(cArr) ? new e(8) : b0();
         while (true) {
             char c = t0Var.t() ? ' ' : (char) 0;
             if (!aVar.x0(cArr)) {
@@ -180,22 +180,22 @@ public final class s implements AutoCloseable {
             }
             n b0 = b0();
             if (c == ' ') {
-                eVar = f(new t(eVar, 0), b0);
+                eVar_r7 = f(new t(eVar_r7, 0), b0);
             } else if (c == '+') {
-                eVar = f(new w(eVar), b0);
+                eVar_r7 = f(new w(eVar_r7), b0);
             } else if (c == '>') {
-                eVar = eVar instanceof v ? (v) eVar : new v(eVar);
-                eVar.c.add(b0);
-                eVar.d = b0.a() + eVar.d;
-                eVar.b |= b0.b();
+                eVar_r7 = eVar_r7 instanceof v ? (v) eVar_r7 : new v(eVar_r7);
+                eVar_r7.c.add(b0);
+                eVar_r7.d = b0.a() + eVar_r7.d;
+                eVar_r7.b |= b0.b();
             } else {
                 if (c != '~') {
                     throw new Selector$SelectorParseException("Unknown combinator '%s'", Character.valueOf(c));
                 }
-                eVar = f(new x(eVar), b0);
+                eVar_r7 = f(new x(eVar_r7), b0);
             }
         }
-        return eVar;
+        return eVar_r7;
     }
 
     public final n W() {
@@ -605,12 +605,12 @@ public final class s implements AutoCloseable {
                 case 19:
                     return t(true);
                 case 20:
-                    e eVar = new e(7);
+                    e eVar_r7 = new e(7);
                     if (!e.b) {
                         e.b = true;
                         System.err.println("WARNING: :matchText selector is deprecated and will be removed in a future version. Use Element#selectNodes(String, Class) with selector ::textnode and class TextNode instead.");
                     }
-                    return eVar;
+                    return eVar_r7;
                 case 21:
                     return new e(3);
                 case 22:

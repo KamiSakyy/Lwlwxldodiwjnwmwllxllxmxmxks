@@ -6,4 +6,6 @@ package androidx.viewpager.widget;
  */
 public interface k {
     public Object e() { return null; }
+    public androidx.viewpager.widget.k l0 = null;
+    public androidx.viewpager.widget.k n0 = null;
 }

@@ -19,9 +19,9 @@ public final /* synthetic */ class u implements j71.c {
         switch (this.f12711r) {
             case k5.f.J /* 0 */:
                 k71.k.g(bVar, "failure");
-                r0 r0Var = this.f12712s;
-                com.github.rudroid.utilities.w0.m(r0Var.B, bVar);
-                r0Var.f12690s.a(bVar);
+                r0 r0Var_r7 = this.f12712s;
+                com.github.rudroid.utilities.w0.m(r0Var_r7.B, bVar);
+                r0Var_r7.f12690s.a(bVar);
                 break;
             case 1:
                 k71.k.g(bVar, "executionError");

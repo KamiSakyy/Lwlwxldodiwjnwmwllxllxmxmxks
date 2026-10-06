@@ -31,4 +31,6 @@ public interface z1 {
     public Object k = null;
     public Object n = null;
     public Object s = null;
+    public d1.z1 n = null;
+    public d1.z1 s = null;
 }

@@ -26,26 +26,26 @@ public final class f implements p.j, w {
         this.s = new o.i(context);
         p.l lVar = new p.l(context);
         this.t = lVar;
-        p.v vVar = new p.v(context, lVar, view, false, 2130969649, 0);
-        this.u = vVar;
+        p.v vVar_r7 = new p.v(context, lVar, view, false, 2130969649, 0);
+        this.u = vVar_r7;
         lVar.e = this;
         lVar.x = true;
-        vVar.h = this;
-        p.t tVar = vVar.i;
+        vVar_r7.h = this;
+        p.t tVar = vVar_r7.i;
         if (tVar != null) {
             tVar.e(this);
         }
-        vVar.g = true;
-        p.t tVar2 = vVar.i;
+        vVar_r7.g = true;
+        p.t tVar2 = vVar_r7.i;
         if (tVar2 != null) {
             tVar2.o(true);
         }
     }
 
     public final void a() {
-        p.v vVar = this.u;
-        if (vVar.b()) {
-            vVar.i.dismiss();
+        p.v vVar_r7 = this.u;
+        if (vVar_r7.b()) {
+            vVar_r7.i.dismiss();
         }
     }
 
@@ -54,14 +54,14 @@ public final class f implements p.j, w {
     }
 
     public final void c() {
-        p.v vVar = this.u;
-        if (vVar.b()) {
+        p.v vVar_r7 = this.u;
+        if (vVar_r7.b()) {
             return;
         }
-        if (vVar.e == null) {
+        if (vVar_r7.e == null) {
             throw new IllegalStateException("MenuPopupHelper cannot be used without an anchor");
         }
-        vVar.d(0, 0, false, false);
+        vVar_r7.d(0, 0, false, false);
     }
 
     public final boolean e(p.l lVar, MenuItem menuItem) {

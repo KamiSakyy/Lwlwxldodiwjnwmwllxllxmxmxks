@@ -37,10 +37,10 @@ public final class a1 extends Handler {
                 }
             case 1:
                 if (message.what == 1) {
-                    PreferenceFragmentCompat preferenceFragmentCompat = (PreferenceFragmentCompat) this.b;
-                    PreferenceScreen preferenceScreen = (PreferenceScreen) preferenceFragmentCompat.u0.g;
+                    PreferenceFragmentCompat preferenceFragmentCompat_r7 = (PreferenceFragmentCompat) this.b;
+                    PreferenceScreen preferenceScreen = (PreferenceScreen) preferenceFragmentCompat_r7.u0.g;
                     if (preferenceScreen != null) {
-                        preferenceFragmentCompat.v0.setAdapter(new e7.r(preferenceScreen));
+                        preferenceFragmentCompat_r7.v0.setAdapter(new e7.r(preferenceScreen));
                         preferenceScreen.l();
                         break;
                     }

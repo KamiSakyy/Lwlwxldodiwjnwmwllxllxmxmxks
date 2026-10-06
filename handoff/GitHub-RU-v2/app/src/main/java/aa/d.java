@@ -109,4 +109,5 @@ public final class d implements l0 {
     public Object h = null;
     public Object j = null;
     public Object k = null;
+    public aa.d d = null;
 }

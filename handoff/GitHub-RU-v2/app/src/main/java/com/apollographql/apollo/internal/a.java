@@ -139,4 +139,6 @@ public final class a {
         this.f4291e = bool != null ? bool.booleanValue() : false;
         return linkedHashMap;
     }
+    public com.apollographql.apollo.internal.a e = null;
+    public com.apollographql.apollo.internal.a f = null;
 }

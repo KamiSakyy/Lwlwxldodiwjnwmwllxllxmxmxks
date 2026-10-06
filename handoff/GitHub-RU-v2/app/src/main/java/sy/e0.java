@@ -96,9 +96,9 @@ public abstract class e0 {
     public static final xn.h b(AiModelCapabilitiesResponse aiModelCapabilitiesResponse) {
         xn.i iVar;
         k71.k.g(aiModelCapabilitiesResponse, "<this>");
-        gz.b bVar = aiModelCapabilitiesResponse.a;
-        k71.k.g(bVar, "<this>");
-        int ordinal = bVar.ordinal();
+        gz.b bVar_r7 = aiModelCapabilitiesResponse.a;
+        k71.k.g(bVar_r7, "<this>");
+        int ordinal = bVar_r7.ordinal();
         if (ordinal == 0) {
             iVar = xn.i.r;
         } else {
@@ -393,7 +393,7 @@ public abstract class e0 {
     /*
         Code decompiled incorrectly, please refer to instructions dump.
     */
-    public static final void m(ViewStructure viewStructure, v2.g0 g0Var, AutofillId autofillId, String str, e3.b bVar) {
+    public static final void m(ViewStructure viewStructure, v2.g0 g0Var, AutofillId autofillId, String str, e3.b bVar_r7) {
         int i;
         long j;
         long j2;
@@ -666,7 +666,7 @@ public abstract class e0 {
                 if (nVar != null && (k2 = d0.k(nVar)) != null) {
                     viewStructure.setAutofillHints(k2);
                 }
-                bVar.a.s(g0Var.s, new x1.o(viewStructure));
+                bVar_r7.a.s(g0Var.s, new x1.o(viewStructure));
                 if (bool != null) {
                     viewStructure.setSelected(bool.booleanValue());
                 }
@@ -748,7 +748,7 @@ public abstract class e0 {
         if (nVar != null) {
             viewStructure.setAutofillHints(k2);
         }
-        bVar.a.s(g0Var.s, new x1.o(viewStructure));
+        bVar_r7.a.s(g0Var.s, new x1.o(viewStructure));
         if (bool != null) {
         }
         if (aVar == null) {

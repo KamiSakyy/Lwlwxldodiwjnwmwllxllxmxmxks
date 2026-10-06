@@ -454,16 +454,16 @@ public class TabLayout extends HorizontalScrollView {
     public final void i() {
         int currentItem;
         j();
-        a aVar = this.j0;
-        if (aVar != null) {
-            int c = aVar.c();
+        a aVar_r7 = this.j0;
+        if (aVar_r7 != null) {
+            int c = aVar_r7.c();
             for (int i = 0; i < c; i++) {
                 g h = h();
                 h.b(this.j0.d(i));
                 b(h, false);
             }
-            androidx.viewpager.widget.k kVar = this.i0;
-            if (kVar == null || c <= 0 || (currentItem = kVar.getCurrentItem()) == getSelectedTabPosition() || currentItem >= getTabCount()) {
+            androidx.viewpager.widget.k kVar_r7 = this.i0;
+            if (kVar_r7 == null || c <= 0 || (currentItem = kVar_r7.getCurrentItem()) == getSelectedTabPosition() || currentItem >= getTabCount()) {
                 return;
             }
             k(g(currentItem), true);
@@ -546,9 +546,9 @@ public class TabLayout extends HorizontalScrollView {
 
     public final void l(a aVar, boolean z) {
         h hVar;
-        a aVar2 = this.j0;
-        if (aVar2 != null && (hVar = this.k0) != null) {
-            aVar2.a.unregisterObserver(hVar);
+        a aVar2_r7 = this.j0;
+        if (aVar2_r7 != null && (hVar = this.k0) != null) {
+            aVar2_r7.a.unregisterObserver(hVar);
         }
         this.j0 = aVar;
         if (z && aVar != null) {
@@ -974,8 +974,8 @@ public class TabLayout extends HorizontalScrollView {
     }
 
     @Deprecated
-    public void setTabsFromPagerAdapter(a aVar) {
-        l(aVar, false);
+    public void setTabsFromPagerAdapter(a aVar_r7) {
+        l(aVar_r7, false);
     }
 
     public void setUnboundedRipple(boolean z) {
@@ -1003,8 +1003,8 @@ public class TabLayout extends HorizontalScrollView {
         setUnboundedRipple(getResources().getBoolean(i));
     }
 
-    public void setupWithViewPager(androidx.viewpager.widget.k kVar) {
-        n(kVar, false);
+    public void setupWithViewPager(androidx.viewpager.widget.k kVar_r7) {
+        n(kVar_r7, false);
     }
 
     @Override // android.widget.HorizontalScrollView, android.widget.FrameLayout, android.view.ViewGroup

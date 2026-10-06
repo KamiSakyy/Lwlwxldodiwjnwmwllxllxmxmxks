@@ -853,4 +853,6 @@ public class l implements Menu {
     }
     public Object e = null;
     public Object x = null;
+    public p.l e = null;
+    public p.l x = null;
 }

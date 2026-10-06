@@ -261,4 +261,6 @@ public final class z implements e {
     public Object R = null;
     public Object N() { return null; }
     public Object c(Object p1) { return null; }
+    public fa1.z L = null;
+    public fa1.z P = null;
 }

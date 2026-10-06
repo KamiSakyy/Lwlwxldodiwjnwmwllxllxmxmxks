@@ -17,4 +17,5 @@ public class y1 {
     public Object Q = null;
     public Object f30765t = null;
     public Object t = null;
+    public q.y1 H = null;
 }

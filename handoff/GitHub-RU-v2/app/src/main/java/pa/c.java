@@ -73,4 +73,5 @@ public final class c {
     }
     public Object b = null;
     public Object d = null;
+    public pa.c c = null;
 }

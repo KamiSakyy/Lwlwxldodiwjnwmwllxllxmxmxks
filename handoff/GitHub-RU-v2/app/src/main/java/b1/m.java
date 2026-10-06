@@ -39,4 +39,5 @@ public final class m {
     public Object z(Object p1) { return null; }
     public Object s = null;
     public Object t = null;
+    public b1.m s = null;
 }

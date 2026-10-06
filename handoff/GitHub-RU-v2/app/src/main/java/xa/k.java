@@ -5,4 +5,6 @@ package xa;
  * Оригинал потерян при декомпиляции APK.
  */
 public interface k {
+    public xa.k p = null;
+    public xa.k q = null;
 }

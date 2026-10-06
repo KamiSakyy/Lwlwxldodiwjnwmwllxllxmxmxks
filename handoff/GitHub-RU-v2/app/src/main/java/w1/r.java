@@ -32,4 +32,5 @@ public interface r {
     public Object b = null;
     public Object c = null;
     public Object d = null;
+    public w1.r d = null;
 }

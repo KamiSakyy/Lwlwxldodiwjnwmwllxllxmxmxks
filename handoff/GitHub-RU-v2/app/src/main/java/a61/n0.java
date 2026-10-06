@@ -431,12 +431,12 @@ public final class n0 extends c71.j implements j71.e {
                 return aVar6;
             case 5:
                 w61.a0Shadow a0Var = w61.a0.a;
-                androidx.lifecycle.m0 m0Var3 = (androidx.lifecycle.m0) this.x;
+                androidx.lifecycle.m0 m0Var3_r7 = (androidx.lifecycle.m0) this.x;
                 b71.a aVar7 = b71.a.r;
                 int i13 = this.w;
                 if (i13 == 0) {
                     sy.y.j(obj);
-                    androidx.lifecycle.h hVar = m0Var3.a;
+                    androidx.lifecycle.h hVar = m0Var3_r7.a;
                     this.w = 1;
                     hVar.m(this);
                     if (a0Var == aVar7) {
@@ -448,7 +448,7 @@ public final class n0 extends c71.j implements j71.e {
                     }
                     sy.y.j(obj);
                 }
-                m0Var3.a.j(this.y);
+                m0Var3_r7.a.j(this.y);
                 return a0Var;
             case 6:
                 b71.a aVar8 = b71.a.r;
@@ -690,11 +690,11 @@ public final class n0 extends c71.j implements j71.e {
                 k6.k kVar = (k6.k) this.x;
                 String m = k21.f.m(((b6.c) this.y).a);
                 this.w = 1;
-                b6.m mVar2 = (b6.m) kVar.a.remove(m);
-                if (mVar2 != null) {
-                    mVar2.d.e((Throwable) null);
-                    mVar2.b.set(false);
-                    mVar2.m.m((CancellationException) null);
+                b6.m mVar2_r7 = (b6.m) kVar.a.remove(m);
+                if (mVar2_r7 != null) {
+                    mVar2_r7.d.e((Throwable) null);
+                    mVar2_r7.b.set(false);
+                    mVar2_r7.m.m((CancellationException) null);
                 }
                 return a0Var2 == aVar11 ? aVar11 : a0Var2;
             case 11:

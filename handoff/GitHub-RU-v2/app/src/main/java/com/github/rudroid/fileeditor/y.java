@@ -34,26 +34,26 @@ public final /* synthetic */ class y implements j71.c {
             case 2:
                 fl.b bVar3 = (fl.b) obj;
                 k71.k.g(bVar3, "it");
-                b0 b0Var = this.f13000s;
-                y1 y1Var = b0Var.K;
+                b0 b0Var_r7 = this.f13000s;
+                y1 y1Var = b0Var_r7.K;
                 x xVar = (x) ((g1) y1Var.getValue()).getData();
                 if (xVar == null) {
                     xVar = new x(null, 255, null);
                 }
                 w0.p(y1Var, xVar);
-                b0Var.f12893s.a(bVar3);
+                b0Var_r7.f12893s.a(bVar3);
                 return w61.a0.a;
             case 3:
                 fl.b bVar4 = (fl.b) obj;
                 k71.k.g(bVar4, "it");
-                b0 b0Var2 = this.f13000s;
-                y1 y1Var2 = b0Var2.K;
+                b0 b0Var2_r7 = this.f13000s;
+                y1 y1Var2 = b0Var2_r7.K;
                 x xVar2 = (x) ((g1) y1Var2.getValue()).getData();
                 if (xVar2 == null) {
                     xVar2 = new x(null, 255, null);
                 }
                 w0.p(y1Var2, xVar2);
-                b0Var2.f12893s.a(bVar4);
+                b0Var2_r7.f12893s.a(bVar4);
                 return w61.a0.a;
             case 4:
                 fl.b bVar5 = (fl.b) obj;

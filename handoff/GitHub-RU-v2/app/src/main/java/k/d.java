@@ -90,4 +90,8 @@ public final class d {
     public Object t = null;
     public Object u = null;
     public Object v = null;
+    public k.d d = null;
+    public k.d g = null;
+    public k.d h = null;
+    public k.d j = null;
 }

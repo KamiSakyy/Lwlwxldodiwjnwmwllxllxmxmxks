@@ -32,18 +32,18 @@ public final class f extends i {
     public final void c(int i) {
         switch (this.f27286a) {
             case k5.f.J:
-                ViewPager2 viewPager2 = this.f27287b;
-                if (viewPager2.f3201u != i) {
-                    viewPager2.f3201u = i;
-                    viewPager2.K.T();
+                ViewPager2 viewPager2_r7 = this.f27287b;
+                if (viewPager2_r7.f3201u != i) {
+                    viewPager2_r7.f3201u = i;
+                    viewPager2_r7.K.T();
                     break;
                 }
                 break;
             default:
-                ViewPager2 viewPager22 = this.f27287b;
-                viewPager22.clearFocus();
-                if (viewPager22.hasFocus()) {
-                    viewPager22.A.requestFocus(2);
+                ViewPager2 viewPager22_r7 = this.f27287b;
+                viewPager22_r7.clearFocus();
+                if (viewPager22_r7.hasFocus()) {
+                    viewPager22_r7.A.requestFocus(2);
                     break;
                 }
                 break;

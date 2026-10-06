@@ -38,4 +38,7 @@ public final class s {
     public Object v(Object p1, Object p2) { return null; }
     public Object t = null;
     public Object u = null;
+    public a5.s s = null;
+    public a5.s t = null;
+    public a5.s u = null;
 }

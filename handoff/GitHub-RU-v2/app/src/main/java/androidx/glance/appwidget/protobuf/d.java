@@ -23,4 +23,8 @@ public final class d {
         sb2.append(i);
         return sb2.toString();
     }
+    public androidx.glance.appwidget.protobuf.d a = null;
+    public androidx.glance.appwidget.protobuf.d b = null;
+    public androidx.glance.appwidget.protobuf.d c = null;
+    public androidx.glance.appwidget.protobuf.d d = null;
 }

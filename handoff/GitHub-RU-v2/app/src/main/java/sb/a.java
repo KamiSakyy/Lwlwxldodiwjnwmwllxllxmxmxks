@@ -11,4 +11,5 @@ public interface a {
         public a() {
         }
     }
+    public sb.a w = null;
 }

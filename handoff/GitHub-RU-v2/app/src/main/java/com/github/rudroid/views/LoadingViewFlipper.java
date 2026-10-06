@@ -311,11 +311,11 @@ public final class LoadingViewFlipper extends ViewAnimator {
 
     public final void a(AppBarLayout appBarLayout) {
         if (appBarLayout != null) {
-            vf.a aVar = new vf.a(appBarLayout);
-            this.x = aVar;
+            vf.a aVar_r7 = new vf.a(appBarLayout);
+            this.x = aVar_r7;
             RecyclerView recyclerView = this.t;
             if (recyclerView != null) {
-                recyclerView.j(aVar);
+                recyclerView.j(aVar_r7);
             }
         }
     }
@@ -330,8 +330,8 @@ public final class LoadingViewFlipper extends ViewAnimator {
         }
     }
 
-    public final void d(j71.a aVar) {
-        n nVar = new n(0, aVar);
+    public final void d(j71.a aVar_r7) {
+        n nVar = new n(0, aVar_r7);
         this.w = nVar;
         SwipeRefreshLayout swipeRefreshLayout = this.u;
         if (swipeRefreshLayout != null) {
@@ -380,10 +380,10 @@ public final class LoadingViewFlipper extends ViewAnimator {
         } else {
             button.setVisibility(8);
         }
-        vf.a aVar = this.x;
-        if (aVar != null) {
-            aVar.a.setElevation(aVar.c);
-            aVar.b = -1.0f;
+        vf.a aVar_r7 = this.x;
+        if (aVar_r7 != null) {
+            aVar_r7.a.setElevation(aVar_r7.c);
+            aVar_r7.b = -1.0f;
         }
         SwipeRefreshLayout swipeRefreshLayout = this.u;
         if (swipeRefreshLayout != null && swipeRefreshLayout.isEnabled()) {
@@ -399,10 +399,10 @@ public final class LoadingViewFlipper extends ViewAnimator {
     }
 
     public final void g() {
-        vf.a aVar = this.x;
-        if (aVar != null) {
-            aVar.a.setElevation(aVar.c);
-            aVar.b = -1.0f;
+        vf.a aVar_r7 = this.x;
+        if (aVar_r7 != null) {
+            aVar_r7.a.setElevation(aVar_r7.c);
+            aVar_r7.b = -1.0f;
         }
         if (getDisplayedChild() != 0) {
             setDisplayedChild(0);
@@ -467,18 +467,18 @@ public final class LoadingViewFlipper extends ViewAnimator {
 
     public final void setFancyAppBarElevated(boolean z) {
         if (z) {
-            vf.a aVar = this.x;
-            if (aVar != null) {
-                aVar.a.setElevation(aVar.c);
-                aVar.b = -1.0f;
+            vf.a aVar_r7 = this.x;
+            if (aVar_r7 != null) {
+                aVar_r7.a.setElevation(aVar_r7.c);
+                aVar_r7.b = -1.0f;
                 return;
             }
             return;
         }
-        vf.a aVar2 = this.x;
-        if (aVar2 != null) {
-            aVar2.a.setElevation(0.0f);
-            aVar2.b = -1.0f;
+        vf.a aVar2_r7 = this.x;
+        if (aVar2_r7 != null) {
+            aVar2_r7.a.setElevation(0.0f);
+            aVar2_r7.b = -1.0f;
         }
     }
 
@@ -506,9 +506,9 @@ public final class LoadingViewFlipper extends ViewAnimator {
         public Integer c;
         public j71.a d;
 
-        public b(String str, String str2, Integer num, j71.a aVar) {
+        public b(String str, String str2, Integer num, j71.a aVar_r7) {
             k71.k.g(str, "title");
-            k71.k.g(aVar, "buttonAction");
+            k71.k.g(aVar_r7, "buttonAction");
             this.a = str;
             this.b = str2;
             this.c = num;
@@ -543,7 +543,7 @@ public final class LoadingViewFlipper extends ViewAnimator {
             return o.toString();
         }
 
-        public /* synthetic */ b(String str, String str2, j71.a aVar, int i) {
+        public /* synthetic */ b(String str, String str2, j71.a aVar_r7, int i) {
             this(str, (i & 2) != 0 ? null : str2, (i & 8) != 0 ? null : 2131953542, (i & 16) != 0 ? new com.github.rudroid.widget.p(15) : aVar);
         }
     }

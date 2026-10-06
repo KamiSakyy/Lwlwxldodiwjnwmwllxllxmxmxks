@@ -217,78 +217,78 @@ public class v implements b5.o {
         ContextThemeWrapper contextThemeWrapper2 = dVar.a;
         k.g gVar = new k.g(contextThemeWrapper, this.s);
         View view = dVar.e;
-        k.f fVar = gVar.x;
+        k.f fVar_r7 = gVar.x;
         if (view != null) {
-            fVar.w = view;
+            fVar_r7.w = view;
         } else {
             CharSequence charSequence = dVar.d;
             if (charSequence != null) {
-                fVar.d = charSequence;
-                TextView textView = fVar.u;
+                fVar_r7.d = charSequence;
+                TextView textView = fVar_r7.u;
                 if (textView != null) {
                     textView.setText(charSequence);
                 }
             }
             Drawable drawable = dVar.c;
             if (drawable != null) {
-                fVar.s = drawable;
-                ImageView imageView = fVar.t;
+                fVar_r7.s = drawable;
+                ImageView imageView = fVar_r7.t;
                 if (imageView != null) {
                     imageView.setVisibility(0);
-                    fVar.t.setImageDrawable(drawable);
+                    fVar_r7.t.setImageDrawable(drawable);
                 }
             }
         }
         CharSequence charSequence2 = dVar.f;
         if (charSequence2 != null) {
-            fVar.e = charSequence2;
-            TextView textView2 = fVar.v;
+            fVar_r7.e = charSequence2;
+            TextView textView2 = fVar_r7.v;
             if (textView2 != null) {
                 textView2.setText(charSequence2);
             }
         }
         CharSequence charSequence3 = dVar.g;
         if (charSequence3 != null) {
-            fVar.c(-1, charSequence3, dVar.h);
+            fVar_r7.c(-1, charSequence3, dVar.h);
         }
         CharSequence charSequence4 = dVar.i;
         if (charSequence4 != null) {
-            fVar.c(-2, charSequence4, dVar.j);
+            fVar_r7.c(-2, charSequence4, dVar.j);
         }
         CharSequence charSequence5 = dVar.k;
         if (charSequence5 != null) {
-            fVar.c(-3, charSequence5, dVar.l);
+            fVar_r7.c(-3, charSequence5, dVar.l);
         }
         if (dVar.n != null || dVar.o != null) {
-            AlertController.RecycleListView inflate = dVar.b.inflate(fVar.A, (ViewGroup) null);
+            AlertController.RecycleListView inflate = dVar.b.inflate(fVar_r7.A, (ViewGroup) null);
             if (dVar.s) {
-                r2 = new k.a(dVar, contextThemeWrapper2, fVar.B, dVar.n, inflate);
+                r2 = new k.a(dVar, contextThemeWrapper2, fVar_r7.B, dVar.n, inflate);
             } else {
-                int i = dVar.t ? fVar.C : fVar.D;
+                int i = dVar.t ? fVar_r7.C : fVar_r7.D;
                 Object obj = dVar.o;
                 r2 = obj;
                 if (obj == null) {
                     r2 = new k.e(contextThemeWrapper2, i, R.id.text1, dVar.n);
                 }
             }
-            fVar.x = r2;
-            fVar.y = dVar.u;
+            fVar_r7.x = r2;
+            fVar_r7.y = dVar.u;
             if (dVar.p != null) {
-                inflate.setOnItemClickListener(new k.b(dVar, fVar));
+                inflate.setOnItemClickListener(new k.b(dVar, fVar_r7));
             } else if (dVar.v != null) {
-                inflate.setOnItemClickListener(new k.c(dVar, inflate, fVar));
+                inflate.setOnItemClickListener(new k.c(dVar, inflate, fVar_r7));
             }
             if (dVar.t) {
                 inflate.setChoiceMode(1);
             } else if (dVar.s) {
                 inflate.setChoiceMode(2);
             }
-            fVar.f = inflate;
+            fVar_r7.f = inflate;
         }
         View view2 = dVar.q;
         if (view2 != null) {
-            fVar.g = view2;
-            fVar.h = false;
+            fVar_r7.g = view2;
+            fVar_r7.h = false;
         }
         gVar.setCancelable(true);
         gVar.setCanceledOnTouchOutside(true);
@@ -574,7 +574,7 @@ public class v implements b5.o {
         this.t = new LinkedHashMap();
     }
 
-    public v(g4.f fVar, int i) {
+    public v(g4.f fVar_r7, int i) {
         this.r = 5;
         this.t = fVar;
         this.r = 5;

@@ -71,12 +71,12 @@ public class i extends m0 implements l.a, GitHubWebView.e {
     }
 
     public final void G(int i, j71.c cVar) {
-        RecyclerView recyclerView = this.f;
-        if (recyclerView == null) {
+        RecyclerView recyclerView_r7 = this.f;
+        if (recyclerView_r7 == null) {
             k.m("attachedRecyclerView");
             throw null;
         }
-        n1 K = recyclerView.K(i);
+        n1 K = recyclerView_r7.K(i);
         GitHubWebView.g gVar = K instanceof GitHubWebView.g ? (GitHubWebView.g) K : null;
         if (gVar == null) {
             cVar.k("");

@@ -11,4 +11,5 @@ public interface c extends Closeable {
     void setWriteAheadLoggingEnabled(boolean z10);
     public Object s = null;
     public Object t = null;
+    public w7.c t = null;
 }

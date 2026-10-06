@@ -44,10 +44,10 @@ public final class e extends m0 {
     }
 
     public final void v(n1 n1Var, int i) {
-        com.github.rudroid.adapters.viewholders.e eVar = (com.github.rudroid.adapters.viewholders.e) n1Var;
+        com.github.rudroid.adapters.viewholders.e eVar_r7 = (com.github.rudroid.adapters.viewholders.e) n1Var;
         b bVar = (b) this.g.get(i);
         if (bVar instanceof b.c) {
-            final d dVar = eVar instanceof d ? (d) eVar : null;
+            final d dVar = eVar_r7 instanceof d ? (d) eVar_r7 : null;
             if (dVar != null) {
                 final b.c cVar = (b.c) bVar;
                 qe qeVar = ((com.github.rudroid.adapters.viewholders.e) dVar).u;
@@ -90,7 +90,7 @@ public final class e extends m0 {
         } else if (!(bVar instanceof b.C0008b)) {
             throw new NoWhenBranchMatchedException();
         }
-        eVar.u.F0();
+        eVar_r7.u.F0();
     }
 
     public final n1 w(ViewGroup viewGroup, int i) {

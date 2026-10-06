@@ -126,4 +126,6 @@ public class v {
     public Object g = null;
     public Object h = null;
     public Object i = null;
+    public p.v g = null;
+    public p.v h = null;
 }

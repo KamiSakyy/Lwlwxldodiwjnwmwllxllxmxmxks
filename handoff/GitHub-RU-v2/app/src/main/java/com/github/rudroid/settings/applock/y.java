@@ -43,14 +43,14 @@ final class y extends c71.j implements j71.e {
         int i = this.v;
         if (i == 0) {
             sy.y.j(obj);
-            androidx.fragment.app.a0 a0Var = this.x;
-            Context i4 = a0Var.i4();
+            androidx.fragment.app.a0 a0Var_r7 = this.x;
+            Context i4 = a0Var_r7.i4();
             Executor a = Build.VERSION.SDK_INT >= 28 ? o4.a.a(i4) : new fa1.a(new Handler(i4.getMainLooper()), 3);
             k71.k.f(a, "getMainExecutor(...)");
             w wVar = new w(tVar);
             n0 n0Var = new n0();
-            k.i w3 = a0Var.w3();
-            a1 x3 = a0Var.x3();
+            k.i w3 = a0Var_r7.w3();
+            a1 x3 = a0Var_r7.x3();
             if (w3 != null) {
                 t1 K0 = w3.K0();
                 o1 f0 = w3.f0();
@@ -67,14 +67,14 @@ final class y extends c71.j implements j71.e {
                 vVar = null;
             }
             if (vVar != null) {
-                a0Var.j0.h(new t.s(vVar));
+                a0Var_r7.j0.h(new t.s(vVar));
             }
             n0Var.s = x3;
             if (vVar != null) {
                 vVar.s = a;
                 vVar.t = wVar;
             }
-            n0Var.a(v.a(this.y, a0Var.i4(), this.z));
+            n0Var.a(v.a(this.y, a0Var_r7.i4(), this.z));
             x xVar = new x(0, tVar);
             this.w = null;
             this.v = 1;

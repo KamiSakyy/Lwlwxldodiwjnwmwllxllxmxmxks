@@ -11,4 +11,7 @@ public interface g {
     public Object f4143f = null;
     public Object f4144g = null;
     public Object f4145h = null;
+    public c7.g f = null;
+    public c7.g g = null;
+    public c7.g h = null;
 }

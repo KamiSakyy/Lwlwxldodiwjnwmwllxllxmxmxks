@@ -696,7 +696,7 @@ public final class q implements y71.j {
                 return b((int[]) obj, cVar);
             case 8:
                 ma.k kVar3 = (ma.k) this.v;
-                com.apollographql.apollo.internal.a aVar11 = (com.apollographql.apollo.internal.a) this.u;
+                com.apollographql.apollo.internal.a aVar11_r7 = (com.apollographql.apollo.internal.a) this.u;
                 aa.d dVar = (aa.d) this.t;
                 if (cVar instanceof ma.i) {
                     iVar2 = (ma.i) cVar;
@@ -715,16 +715,16 @@ public final class q implements y71.j {
                                 aa.w a2 = dVar.c.a(aa.w.d);
                                 k71.k.d(a2);
                                 aa.w wVar2 = a2;
-                                w61.k kVar4 = map.keySet().contains("hasNext") ? new w61.k(aVar11.b(map), aVar11.d) : new w61.k(map, null);
+                                w61.k kVar4 = map.keySet().contains("hasNext") ? new w61.k(aVar11_r7.b(map), aVar11_r7.d) : new w61.k(map, null);
                                 Map map2 = (Map) kVar4.r;
                                 Set set = (Set) kVar4.s;
                                 k71.k.g(map2, "<this>");
                                 c = y9.a.D(new ea.g(map2), dVar.a, dVar.b, wVar2, set);
-                                if (!aVar11.e) {
-                                    aVar11.a.clear();
-                                    aVar11.c.clear();
-                                    aVar11.e = true;
-                                    aVar11.f = false;
+                                if (!aVar11_r7.e) {
+                                    aVar11_r7.a.clear();
+                                    aVar11_r7.c.clear();
+                                    aVar11_r7.e = true;
+                                    aVar11_r7.f = false;
                                 }
                             } else if (jVar16 instanceof na.i) {
                                 c = ma.k.c(kVar3, dVar, new SubscriptionOperationException("Operation error ".concat(dVar.a.name()), null));

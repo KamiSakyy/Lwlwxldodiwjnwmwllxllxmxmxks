@@ -670,16 +670,16 @@ public abstract class i4 implements Decoder, j81.a {
             case 0:
                 String w = gVar.w(str);
                 androidx.constraintlayout.core.state.b b = w.equals("parent") ? pVar.b(0) : pVar.b(w);
-                bVar.p(b);
-                bVar.e(b);
+                bVar_r7.p(b);
+                bVar_r7.e(b);
                 return;
             case 1:
                 String w2 = gVar.w(str);
                 androidx.constraintlayout.core.state.b b2 = w2.equals("parent") ? pVar.b(0) : pVar.b(w2);
-                bVar.o(b2);
-                bVar.i(b2);
-                bVar.p(b2);
-                bVar.e(b2);
+                bVar_r7.o(b2);
+                bVar_r7.i(b2);
+                bVar_r7.p(b2);
+                bVar_r7.e(b2);
                 return;
             case 2:
                 c4.g u = gVar.u(str);
@@ -696,10 +696,10 @@ public abstract class i4 implements Decoder, j81.a {
                     c4.c n = gVar2.n(str2);
                     if (n instanceof c4.e) {
                         float d = n.d();
-                        if (bVar.i0 == null) {
-                            bVar.i0 = new HashMap();
+                        if (bVar_r7.i0 == null) {
+                            bVar_r7.i0 = new HashMap();
                         }
-                        bVar.i0.put(str2, Float.valueOf(d));
+                        bVar_r7.i0.put(str2, Float.valueOf(d));
                     } else if (n instanceof c4.h) {
                         String b3 = n.b();
                         if (b3.startsWith("#")) {
@@ -712,31 +712,31 @@ public abstract class i4 implements Decoder, j81.a {
                             j = -1;
                         }
                         if (j != -1) {
-                            bVar.h0.put(str2, Integer.valueOf((int) j));
+                            bVar_r7.h0.put(str2, Integer.valueOf((int) j));
                         }
                     }
                 }
                 return;
             case 3:
-                bVar.z = sVar.s(gVar.n(str));
+                bVar_r7.z = sVar.s(gVar.n(str));
                 return;
             case 4:
-                bVar.A = sVar.s(gVar.n(str));
+                bVar_r7.A = sVar.s(gVar.n(str));
                 return;
             case 5:
-                bVar.B = sVar.s(gVar.n(str));
+                bVar_r7.B = sVar.s(gVar.n(str));
                 return;
             case 6:
-                bVar.C = pVar.a.a(sVar.s(gVar.n(str)));
+                bVar_r7.C = pVar.a.a(sVar.s(gVar.n(str)));
                 return;
             case 7:
-                bVar.D = pVar.a.a(sVar.s(gVar.n(str)));
+                bVar_r7.D = pVar.a.a(sVar.s(gVar.n(str)));
                 return;
             case '\b':
-                bVar.E = pVar.a.a(sVar.s(gVar.n(str)));
+                bVar_r7.E = pVar.a.a(sVar.s(gVar.n(str)));
                 return;
             case '\t':
-                bVar.e0 = j0(gVar, str, pVar, pVar.a);
+                bVar_r7.e0 = j0(gVar, str, pVar, pVar.a);
                 return;
             case '\n':
                 c4.g n2 = gVar.n(str);
@@ -859,52 +859,52 @@ public abstract class i4 implements Decoder, j81.a {
                                 break;
                         }
                     }
-                    bVar.getClass();
+                    bVar_r7.getClass();
                     return;
                 }
                 return;
             case 11:
-                bVar.x = sVar.s(gVar.n(str));
+                bVar_r7.x = sVar.s(gVar.n(str));
                 return;
             case '\f':
-                bVar.y = sVar.s(gVar.n(str));
+                bVar_r7.y = sVar.s(gVar.n(str));
                 return;
             case '\r':
-                bVar.G = sVar.s(gVar.n(str));
+                bVar_r7.G = sVar.s(gVar.n(str));
                 return;
             case 14:
-                bVar.H = sVar.s(gVar.n(str));
+                bVar_r7.H = sVar.s(gVar.n(str));
                 return;
             case 15:
                 float s = sVar.s(gVar.n(str));
                 if (!pVar.b) {
                     s = 1.0f - s;
                 }
-                bVar.h = s;
+                bVar_r7.h = s;
                 return;
             case 16:
-                bVar.g = sVar.s(gVar.n(str));
+                bVar_r7.g = sVar.s(gVar.n(str));
                 return;
             case 17:
-                bVar.F = sVar.s(gVar.n(str));
+                bVar_r7.F = sVar.s(gVar.n(str));
                 return;
             case 18:
-                bVar.h = sVar.s(gVar.n(str));
+                bVar_r7.h = sVar.s(gVar.n(str));
                 return;
             case 19:
-                bVar.i = sVar.s(gVar.n(str));
+                bVar_r7.i = sVar.s(gVar.n(str));
                 return;
             case 20:
-                bVar.d0 = j0(gVar, str, pVar, pVar.a);
+                bVar_r7.d0 = j0(gVar, str, pVar, pVar.a);
                 return;
             case 21:
-                bVar.f = sVar.s(gVar.n(str));
+                bVar_r7.f = sVar.s(gVar.n(str));
                 return;
             case 22:
                 String w4 = gVar.w(str);
                 androidx.constraintlayout.core.state.b b4 = w4.equals("parent") ? pVar.b(0) : pVar.b(w4);
-                bVar.o(b4);
-                bVar.i(b4);
+                bVar_r7.o(b4);
+                bVar_r7.i(b4);
                 return;
             case 23:
                 String w5 = gVar.w(str);
@@ -937,20 +937,20 @@ public abstract class i4 implements Decoder, j81.a {
                 }
                 switch (c3) {
                     case 0:
-                        bVar.I = 4;
-                        bVar.F = 0.0f;
+                        bVar_r7.I = 4;
+                        bVar_r7.F = 0.0f;
                         return;
                     case 1:
-                        bVar.I = 8;
+                        bVar_r7.I = 8;
                         return;
                     case 2:
-                        bVar.I = 0;
+                        bVar_r7.I = 0;
                         return;
                     default:
                         return;
                 }
             default:
-                i0(sVar, bVar, gVar, str, pVar);
+                i0(sVar, bVar_r7, gVar, str, pVar);
                 return;
         }
     }
@@ -1090,7 +1090,7 @@ public abstract class i4 implements Decoder, j81.a {
         lt.a aVar;
         List list;
         lt.i iVar;
-        lt.b bVar;
+        lt.b bVar_r7;
         List list2;
         lt.h hVar;
         lt.c cVar;
@@ -1107,7 +1107,7 @@ public abstract class i4 implements Decoder, j81.a {
             }
             return arrayList2;
         }
-        if (jVar != null && (iVar = jVar.d) != null && (bVar = iVar.b) != null && (list2 = bVar.b) != null) {
+        if (jVar != null && (iVar = jVar.d) != null && (bVar_r7 = iVar.b) != null && (list2 = bVar_r7.b) != null) {
             ArrayList S2 = x61.m.S(list2);
             ArrayList arrayList3 = new ArrayList(x61.n.F(S2, 10));
             int size2 = S2.size();
@@ -1361,7 +1361,7 @@ public abstract class i4 implements Decoder, j81.a {
         k6.a aVar;
         int i;
         x71.v a2;
-        v1.e bVar;
+        v1.e bVar_r7;
         x71.c cVar2;
         AtomicBoolean atomicBoolean;
         boolean z;
@@ -1384,11 +1384,11 @@ public abstract class i4 implements Decoder, j81.a {
                                 v1.m.i = x61.m.m0(v1.m.i, dVar);
                             }
                             v1.m.a();
-                            bVar = new c5.b(24, dVar);
+                            bVar_r7 = new c5.b(24, dVar);
                             cVar2 = new x71.c(a2);
                             atomicBoolean = atomicBoolean2;
                             aVar.u = atomicBoolean;
-                            aVar.v = bVar;
+                            aVar.v = bVar_r7;
                             aVar.w = a2;
                             aVar.x = cVar2;
                             aVar.z = 1;
@@ -1403,7 +1403,7 @@ public abstract class i4 implements Decoder, j81.a {
                             }
                             cVar2 = aVar.x;
                             a2 = aVar.w;
-                            bVar = aVar.v;
+                            bVar_r7 = aVar.v;
                             atomicBoolean = aVar.u;
                             sy.y.j(obj);
                             if (((Boolean) obj).booleanValue()) {
@@ -1416,7 +1416,7 @@ public abstract class i4 implements Decoder, j81.a {
                                     v1.m.a();
                                 }
                                 aVar.u = atomicBoolean;
-                                aVar.v = bVar;
+                                aVar.v = bVar_r7;
                                 aVar.w = a2;
                                 aVar.x = cVar2;
                                 aVar.z = 1;
@@ -1426,7 +1426,7 @@ public abstract class i4 implements Decoder, j81.a {
                                 }
                                 if (((Boolean) obj).booleanValue()) {
                                     a2.m((CancellationException) null);
-                                    bVar.a();
+                                    bVar_r7.a();
                                     return w61.a0.a;
                                 }
                             }
@@ -1438,7 +1438,7 @@ public abstract class i4 implements Decoder, j81.a {
             } finally {
             }
         } catch (Throwable th) {
-            bVar.a();
+            bVar_r7.a();
             throw th;
         }
         aVar = new k6.a(cVar);
@@ -1610,7 +1610,7 @@ public abstract class i4 implements Decoder, j81.a {
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    public static void i0(a5.s sVar, androidx.constraintlayout.core.state.b bVar, c4.g gVar, String str, y3.p pVar) {
+    public static void i0(a5.s sVar, androidx.constraintlayout.core.state.b bVar_r7, c4.g gVar, String str, y3.p pVar) {
         androidx.constraintlayout.core.state.b b;
         char c;
         boolean z;
@@ -1627,35 +1627,35 @@ public abstract class i4 implements Decoder, j81.a {
                 str.getClass();
                 switch (str) {
                     case "baseline":
-                        pVar.a(bVar.a);
+                        pVar.a(bVar_r7.a);
                         pVar.a(b.a);
-                        bVar.j0 = 15;
-                        bVar.X = b;
+                        bVar_r7.j0 = 15;
+                        bVar_r7.X = b;
                         break;
                     case "bottom":
-                        bVar.e(b);
+                        bVar_r7.e(b);
                         break;
                     case "end":
                         if (!z4) {
-                            bVar.j0 = 1;
-                            bVar.J = b;
+                            bVar_r7.j0 = 1;
+                            bVar_r7.J = b;
                             break;
                         } else {
-                            bVar.j0 = 4;
-                            bVar.M = b;
+                            bVar_r7.j0 = 4;
+                            bVar_r7.M = b;
                             break;
                         }
                     case "top":
-                        bVar.p(b);
+                        bVar_r7.p(b);
                         break;
                     case "start":
                         if (!z4) {
-                            bVar.j0 = 4;
-                            bVar.M = b;
+                            bVar_r7.j0 = 4;
+                            bVar_r7.M = b;
                             break;
                         } else {
-                            bVar.j0 = 1;
-                            bVar.J = b;
+                            bVar_r7.j0 = 1;
+                            bVar_r7.J = b;
                             break;
                         }
                 }
@@ -1735,20 +1735,20 @@ public abstract class i4 implements Decoder, j81.a {
                 b2.getClass();
                 switch (b2) {
                     case "baseline":
-                        pVar.a(bVar.a);
+                        pVar.a(bVar_r7.a);
                         pVar.a(b3.a);
-                        bVar.j0 = 15;
-                        bVar.X = b3;
+                        bVar_r7.j0 = 15;
+                        bVar_r7.X = b3;
                         break;
                     case "bottom":
-                        pVar.a(bVar.a);
-                        bVar.j0 = 17;
-                        bVar.Z = b3;
+                        pVar.a(bVar_r7.a);
+                        bVar_r7.j0 = 17;
+                        bVar_r7.Z = b3;
                         break;
                     case "top":
-                        pVar.a(bVar.a);
-                        bVar.j0 = 16;
-                        bVar.Y = b3;
+                        pVar.a(bVar_r7.a);
+                        bVar_r7.j0 = 16;
+                        bVar_r7.Y = b3;
                         break;
                 }
                 z = false;
@@ -1757,10 +1757,10 @@ public abstract class i4 implements Decoder, j81.a {
             case 1:
                 float s2 = sVar.s(aVar.l(1));
                 float a4 = ((c4.b) aVar).v.size() > 2 ? pVar.a.a(sVar.s(aVar.s(2))) : 0.0f;
-                bVar.a0 = bVar.j(b3);
-                bVar.b0 = s2;
-                bVar.c0 = a4;
-                bVar.j0 = 20;
+                bVar_r7.a0 = bVar_r7.j(b3);
+                bVar_r7.b0 = s2;
+                bVar_r7.c0 = a4;
+                bVar_r7.j0 = 20;
                 z = false;
                 z2 = true;
                 break;
@@ -1769,15 +1769,15 @@ public abstract class i4 implements Decoder, j81.a {
                 switch (b2) {
                     case "baseline":
                         pVar.a(b3.a);
-                        bVar.j0 = 14;
-                        bVar.W = b3;
+                        bVar_r7.j0 = 14;
+                        bVar_r7.W = b3;
                         break;
                     case "bottom":
-                        bVar.e(b3);
+                        bVar_r7.e(b3);
                         break;
                     case "top":
-                        bVar.j0 = 12;
-                        bVar.U = b3;
+                        bVar_r7.j0 = 12;
+                        bVar_r7.U = b3;
                         break;
                 }
                 z = false;
@@ -1792,15 +1792,15 @@ public abstract class i4 implements Decoder, j81.a {
                 switch (b2) {
                     case "baseline":
                         pVar.a(b3.a);
-                        bVar.j0 = 11;
-                        bVar.T = b3;
+                        bVar_r7.j0 = 11;
+                        bVar_r7.T = b3;
                         break;
                     case "bottom":
-                        bVar.j0 = 10;
-                        bVar.S = b3;
+                        bVar_r7.j0 = 10;
+                        bVar_r7.S = b3;
                         break;
                     case "top":
-                        bVar.p(b3);
+                        bVar_r7.p(b3);
                         break;
                 }
                 z = false;
@@ -1867,15 +1867,15 @@ public abstract class i4 implements Decoder, j81.a {
             }
             if (z2) {
                 if (z3) {
-                    bVar.j0 = 1;
-                    bVar.J = b3;
+                    bVar_r7.j0 = 1;
+                    bVar_r7.J = b3;
                 } else {
-                    bVar.j0 = 2;
-                    bVar.K = b3;
+                    bVar_r7.j0 = 2;
+                    bVar_r7.K = b3;
                 }
             } else if (z3) {
-                bVar.j0 = 3;
-                bVar.L = b3;
+                bVar_r7.j0 = 3;
+                bVar_r7.L = b3;
             } else {
                 bVar.j0 = 4;
                 bVar.M = b3;
@@ -2461,7 +2461,7 @@ public abstract class i4 implements Decoder, j81.a {
 
     public static final yz0.w7 z0(ta0 ta0Var) {
         IssueOrPullRequestState issueOrPullRequestState;
-        yz0.s bVar;
+        yz0.s bVar_r7;
         ua0 ua0Var;
         ra0 ra0Var;
         ua0 ua0Var2;
@@ -2495,16 +2495,16 @@ public abstract class i4 implements Decoder, j81.a {
         yp0.c cVar = (wa0Var == null || (ua0Var2 = wa0Var.b) == null) ? null : ua0Var2.j;
         if (cVar == null) {
             yz0.s.Companion.getClass();
-            bVar = yz0.r.b;
+            bVar_r7 = yz0.r.b;
         } else {
             yp0.c a2 = yp0.c.a(cVar, wa0Var.b.e, null, 4031);
             ua0 ua0Var8 = wa0Var.b;
-            bVar = new kx0.b(a2, ua0Var8.c, new yz0.a0(ua0Var8.b));
+            bVar_r7 = new kx0.b(a2, ua0Var8.c, new yz0.a0(ua0Var8.b));
         }
         if (wa0Var != null && (ra0Var = wa0Var.a) != null) {
             str = ra0Var.b;
         }
-        return new yz0.w7(str2, issueOrPullRequestState, d, f, x61.r.r, f2, bVar, new com.github.service.models.response.a(str, (Avatar) null, (String) null, false, (String) null, 62), new ArrayList(), (wa0Var == null || (ua0Var = wa0Var.b) == null || !ua0Var.g) ? false : true);
+        return new yz0.w7(str2, issueOrPullRequestState, d, f, x61.r.r, f2, bVar_r7, new com.github.service.models.response.a(str, (Avatar) null, (String) null, false, (String) null, 62), new ArrayList(), (wa0Var == null || (ua0Var = wa0Var.b) == null || !ua0Var.g) ? false : true);
     }
 
     public Object A(SerialDescriptor serialDescriptor, int i, KSerializer kSerializer, Object obj) {
