@@ -30,34 +30,34 @@ jobs:
       - name: "Эксперименты"
         shell: bash
         run: |
-          exec > >(tee lab-report.txt) 2>&1
+          R=lab-report.txt; : > "$R"
           SRC="$PWD/handoff/GitHub-RU-v2/app/src/main/java"
           AJ="$AJ"
           [ -n "$AJ" ] || AJ=$(echo "$ANDROID_HOME")/platforms/android-36/android.jar
 
-          echo "===== ЭКСП 1: v1.java один (bootclasspath, без sourcepath) ====="
+          echo "===== ЭКСП 1: v1.java один (bootclasspath, без sourcepath) =====" | tee -a "$R"
           rm -rf /tmp/l1; mkdir -p /tmp/l1
-          javac -d /tmp/l1 -nowarn -proc:none -Xmaxerrs 50 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC/a0/v1.java" 2>&1 | head -15 || true
+          javac -d /tmp/l1 -nowarn -proc:none -Xmaxerrs 50 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC/a0/v1.java" 2>&1 | head -15 | tee -a "$R" || true
 
-          echo "===== ЭКСП 2: v1.java + u1.java ====="
+          echo "===== ЭКСП 2: v1.java + u1.java =====" | tee -a "$R"
           rm -rf /tmp/l2; mkdir -p /tmp/l2
-          javac -d /tmp/l2 -nowarn -proc:none -Xmaxerrs 50 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC/a0/v1.java" "$SRC/a0/u1.java" 2>&1 | head -15 || true
+          javac -d /tmp/l2 -nowarn -proc:none -Xmaxerrs 50 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC/a0/v1.java" "$SRC/a0/u1.java" 2>&1 | head -15 | tee -a "$R" || true
 
-          echo "===== ЭКСП 3: v1 + u1 + k71-стаб ====="
+          echo "===== ЭКСП 3: v1 + u1 + k71-стаб =====" | tee -a "$R"
           rm -rf /tmp/l3; mkdir -p /tmp/l3
           printf '%s\n' 'package k71;' 'public class k {' '    public static boolean b(Object a, Object b) { return a == b || (a != null && a.equals(b)); }' '    public static int b(Object a) { return a == null ? 0 : a.hashCode(); }' '}' > /tmp/l3src_k.java
-          javac -d /tmp/l3 -nowarn -proc:none -Xmaxerrs 50 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC/a0/v1.java" "$SRC/a0/u1.java" /tmp/l3src_k.java 2>&1 | head -15 || true
+          javac -d /tmp/l3 -nowarn -proc:none -Xmaxerrs 50 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC/a0/v1.java" "$SRC/a0/u1.java" /tmp/l3src_k.java 2>&1 | head -15 | tee -a "$R" || true
 
-          echo "===== ЭКСП 4: весь пакет a0 (44 файла) ====="
+          echo "===== ЭКСП 4: весь пакет a0 (44 файла) =====" | tee -a "$R"
           rm -rf /tmp/l4; mkdir -p /tmp/l4
-          javac -d /tmp/l4 -nowarn -proc:none -Xmaxerrs 50 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC"/a0/*.java 2>&1 | head -25 || true
+          javac -d /tmp/l4 -nowarn -proc:none -Xmaxerrs 50 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC"/a0/*.java 2>&1 | head -25 | tee -a "$R" || true
           echo "--- счётчик Object-ошибок в exp4:"
-          javac -d /tmp/l4b -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC"/a0/*.java 2>&1 | grep -c "symbol:   class Object$" || true
+          javac -d /tmp/l4b -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC"/a0/*.java 2>&1 | grep -c "symbol:   class Object$" | tee -a "$R" || true
 
-          echo "===== ЭКСП 5: весь пакет i80 ====="
+          echo "===== ЭКСП 5: весь пакет i80 =====" | tee -a "$R"
           rm -rf /tmp/l5; mkdir -p /tmp/l5
-          javac -d /tmp/l5 -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC"/i80/*.java 2>&1 | grep -cE "error:" || true
-          javac -d /tmp/l5b -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC"/i80/*.java 2>&1 | grep -c "symbol:   class Object$" || true
+          javac -d /tmp/l5 -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC"/i80/*.java 2>&1 | grep -cE "error:" | tee -a "$R" || true
+          javac -d /tmp/l5b -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC"/i80/*.java 2>&1 | grep -c "symbol:   class Object$" | tee -a "$R" || true
       - name: "Коммит отчёта лабы"
         if: always()
         run: |
