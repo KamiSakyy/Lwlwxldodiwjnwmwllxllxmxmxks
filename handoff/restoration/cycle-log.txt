@@ -1,4 +1,4 @@
-Цикл восстановления Tue Oct  6 00:02:58 UTC 2026
+Цикл восстановления Tue Oct  6 01:17:09 UTC 2026
 === ОПРЕДЕЛЕНИЕ ТИПОВ СТАБОВ ПО ДЕРЕВУ ===
 Стабов переведено в interface: 0; конфликтов (оба вида): 859
 Хозяев с каталог-дубликатами: 0; вложенных объявлений удалено: 0
@@ -37,10 +37,10 @@ public final class x3 implements a5.z, e31.b, i0.k, l3.p, w21.d, a5.k, fa1.n, w3
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
 100 errors
 only showing the first 100 errors, of 58948 total; use -Xmaxerrs if you would like to see more
-printing javac parameters to: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/javac.20261006_000336.args
+printing javac parameters to: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/javac.20261006_011741.args
 JAVAC_EXIT=4
-javac.20261006_000319.args
-javac.20261006_000336.args
+javac.20261006_011727.args
+javac.20261006_011741.args
 Раунд 1: ошибок 58948
 Индексация дерева...
 Парс лога...
@@ -49,6 +49,7 @@ javac.20261006_000336.args
 Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 17; интерфейсов очищено от конструкторов: 0
 Индексация...
 переименований методов: 0; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 0; values/valueOf: 0
+fix_stab_generics: дженерики возвращены 0 стабам (не найдено: 0; запрошено: 1)
 Файлов теперь: 44532
 =========== РАУНД 2 ===========
 Раунд 2: ошибок 58948
@@ -60,6 +61,7 @@ javac.20261006_000336.args
 Конвертировано в interface: 0; откат в class: 0; не тронуто (extends): 17; интерфейсов очищено от конструкторов: 0
 Индексация...
 переименований методов: 0; extends убрано: 0; модификаторов снято: 0; varargs-конструкторов: 0; values/valueOf: 0
+fix_stab_generics: дженерики возвращены 0 стабам (не найдено: 0; запрошено: 1)
 Файлов теперь: 44532
 =========== РАУНД 3 ===========
 Раунд 3: ошибок 58948
