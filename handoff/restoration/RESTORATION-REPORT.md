@@ -1,30 +1,71 @@
 # ОТЧЁТ О ВОССТАНОВЛЕНИИ ИСХОДНИКА (Этап 5 v3, итеративный цикл)
 
-_Сгенерировано: 2026-10-06T01:55:07.759279Z, проверка javac (JDK 17, bootclasspath android.jar API 36)._
+_Сгенерировано: 2026-10-06T02:11:35.813716Z, проверка javac (JDK 17, bootclasspath android.jar API 36)._
 
-**Осталось ошибок: 8** в 8 файлах.
+**Осталось ошибок: 58922** в 26557 файлах.
 
-- Стабов-заглушек в дереве: 1227
+- Стабов-заглушек в дереве: 1228
 
 ## Типы ошибок (топ-20)
-- 8 × `<identifier> expected`
+- 55525 × `cannot find symbol`
+- 1330 × `interface expected here`
+- 632 × `incompatible types`
+- 132 × `method valueOf in class Enum<E> cannot be applied to given t`
+- 105 × `int cannot be dereferenced`
+- 85 × `boolean cannot be dereferenced`
+- 76 × `no interface expected here`
+- 62 × `constructor a0 in class a0 cannot be applied to given types;`
+- 35 × `constructor e in class e cannot be applied to given types;`
+- 32 × `b is abstract; cannot be instantiated`
+- 29 × `non-static variable c cannot be referenced from a static con`
+- 28 × `a is abstract; cannot be instantiated`
+- 27 × `method does not override or implement a method from a supert`
+- 27 × `long cannot be dereferenced`
+- 25 × `e is abstract; cannot be instantiated`
+- 24 × `method unmodifiableList in class Collections cannot be appli`
+- 24 × `constructor a in class a cannot be applied to given types;`
+- 22 × `m is abstract; cannot be instantiated`
+- 20 × `method asList in class Arrays cannot be applied to given typ`
+- 19 × `cannot assign a value to final variable e`
 
 ## Файлы с ошибками (топ-30)
-- `androidx/window/extensions/core/util/function/Consumer.java` — 1
-- `androidx/window/extensions/core/util/function/Function.java` — 1
-- `androidx/window/extensions/core/util/function/Predicate.java` — 1
-- `com/github/rudroid/activities/d3.java` — 1
-- `com/github/rudroid/activities/z1.java` — 1
-- `com/github/rudroid/fragments/BindingFragment.java` — 1
-- `com/google/android/gms/internal/measurement/m5.java` — 1
-- `t/t.java` — 1
+- `com/github/rudroid/settings/codeoptions/g.java` — 533
+- `com/google/android/gms/internal/measurement/d5.java` — 417
+- `aa1/b.java` — 330
+- `com/google/android/gms/measurement/internal/o4.java` — 283
+- `com/google/android/gms/internal/measurement/z5.java` — 253
+- `w51/r.java` — 241
+- `com/github/rudroid/utilities/ui/emojipicker/d.java` — 222
+- `com/google/common/util/concurrent/a.java` — 203
+- `com/google/android/gms/measurement/internal/o.java` — 198
+- `l51/h.java` — 187
+- `com/google/android/gms/measurement/internal/p3.java` — 158
+- `a61/n0.java` — 156
+- `kk/a.java` — 152
+- `m11/h.java` — 149
+- `gi/b.java` — 142
+- `k41/b.java` — 135
+- `com/google/common/util/concurrent/b.java` — 132
+- `e51/a.java` — 131
+- `com/google/android/gms/measurement/internal/t2.java` — 129
+- `com/google/android/gms/internal/measurement/b4.java` — 120
+- `com/github/rudroid/twofactor/TwoFactorDialog.java` — 95
+- `com/google/android/gms/measurement/internal/i1.java` — 95
+- `b21/v.java` — 93
+- `k21/f.java` — 84
+- `v41/l.java` — 82
+- `com/google/android/gms/measurement/internal/t4.java` — 79
+- `w51/j.java` — 76
+- `x/q0.java` — 70
+- `y61/e.java` — 58
+- `a61/o.java` — 57
 
 ## Ход цикла (ошибок по раундам)
-- javac-round1.log: 8
+- javac-round1.log: 58952
 - javac-round10.log: 64533
-- javac-round2.log: 8
-- javac-round3.log: 8
-- javac-round4.log: 58948
+- javac-round2.log: 58922
+- javac-round3.log: 58922
+- javac-round4.log: 58922
 - javac-round5.log: 58948
 - javac-round6.log: 59181
 - javac-round7.log: 59178

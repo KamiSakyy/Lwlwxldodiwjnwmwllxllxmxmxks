@@ -10,7 +10,7 @@ import l4.e;
 import x21.a;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public class ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior<T> extends b {
+public class ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior extends b {
     public ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior() {
     }
 

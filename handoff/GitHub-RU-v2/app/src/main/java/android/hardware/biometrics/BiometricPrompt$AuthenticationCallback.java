@@ -1,10 +1,10 @@
-package com.github.rudroid.activities;
+package android.hardware.biometrics;
 
 /**
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public class d3<T1> {
-    public d3() {
+public class BiometricPrompt$AuthenticationCallback {
+    public BiometricPrompt$AuthenticationCallback() {
     }
 }
