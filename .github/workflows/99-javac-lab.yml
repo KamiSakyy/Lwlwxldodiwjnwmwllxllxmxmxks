@@ -83,6 +83,17 @@ jobs:
           echo "===== ЭКСП 10b: топ Object-шума ЭКСП 7 (пакеты) =====" | tee -a "$R"
           grep -B4 "symbol:   class Object$" /tmp/l7.log | grep -oE "java/[a-zA-Z0-9_/]+\.java" | cut -d/ -f1 | sort | uniq -c | sort -rn | head -5 | tee -a "$R"
 
+          echo "===== ЭКСП 11: k71/*.java изолированно =====" | tee -a "$R"
+          javac -J-Xmx2g -nowarn -proc:none -Xmaxerrs 30 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" -d /tmp/l11 "$SRC"/k71/*.java 2>&1 | head -20 | tee -a "$R" || true
+          echo "k71_errors=$(javac -J-Xmx2g -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" -d /tmp/l11b "$SRC"/k71/*.java 2>&1 | grep -c 'error:')" | tee -a "$R"
+          echo "===== ЭКСП 12: v1 + u1 + k71/*.java (настоящий) =====" | tee -a "$R"
+          javac -J-Xmx2g -nowarn -proc:none -Xmaxerrs 50 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" -d /tmp/l12 "$SRC/a0/v1.java" "$SRC/a0/u1.java" "$SRC"/k71/*.java > /tmp/l12.log 2>&1 || true
+          grep -c "error:" /tmp/l12.log | tee -a "$R"; grep "symbol:" /tmp/l12.log | sort | uniq -c | head -5 | tee -a "$R"
+          echo "===== ЭКСП 13: v1 + u1 + k71 + зависимости k71 =====" | tee -a "$R"
+          ls "$SRC"/k71/ | head -5 | tee -a "$R"
+          head -3 "$SRC/k71/k.java" | tee -a "$R"
+
+
       - name: "Коммит отчёта лабы"
         if: always()
         run: |
