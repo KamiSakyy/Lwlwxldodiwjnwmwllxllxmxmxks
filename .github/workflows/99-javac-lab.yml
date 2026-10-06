@@ -110,6 +110,11 @@ jobs:
           javac -J-Xmx6g -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" -d /tmp/l16 @/tmp/s_h2b.txt > /tmp/l16.log 2>&1 || true
           echo "errors=$(grep -c 'error:' /tmp/l16.log) Object=$(grep -c 'symbol:   class Object$' /tmp/l16.log)" | tee -a "$R"
 
+          echo "===== ЭКСП 17: FULL СО ВСЕМИ стабами, БЕЗ <T1,T2,T3,T4> у стабов =====" | tee -a "$R"
+          python3 tools/lab_no_generics.py "$SRC" /tmp/s_var /tmp/sources_all.txt /tmp/s_var.txt | tee -a "$R"
+          echo "errors=$(grep -c 'error:' /tmp/l17.log) Object=$(grep -c 'symbol:   class Object$' /tmp/l17.log)" | tee -a "$R"
+
+
 
 
       - name: "Коммит отчёта лабы"
