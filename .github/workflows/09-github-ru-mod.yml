@@ -129,7 +129,14 @@ jobs:
           echo "переименовано каталогов: $n"
           # 2) ссылки в smali и ресурсах
           grep -rl 'com/github/android' -r smali* 2>/dev/null | xargs -r sed -i 's|com/github/android|com/github/rudroid|g'
+          # oauth-редирект github://com.github.android/oauth должен ОСТАТЬСЯ прежним
+          # (серверная часть настроена на него) — защищаем эту строку от замены
+          PROT='@@OAUTH_HOST@@'
+          sed -i 's|android:host="com.github.android"|android:host="'"$PROT"'"|g' AndroidManifest.xml
           grep -rl 'com\.github\.android' AndroidManifest.xml res assets 2>/dev/null | xargs -r sed -i 's|com\.github\.android|com.github.rudroid|g' || true
+          sed -i 's|android:host="'"$PROT"'"|android:host="com.github.android"|g' AndroidManifest.xml
+          echo "oauth-хост сохранён: $(grep -c 'android:host="com.github.android"' AndroidManifest.xml)"
+          echo "package: $(grep -o 'package="[^"]*"' AndroidManifest.xml | head -1)"
           sed -i 's|com\.github\.android|com.github.rudroid|g' apktool.yml || true
           echo "--- остались упоминания:"
           grep -r 'com\.github\.android\|com/github/android' -l . 2>/dev/null | head -10 || echo "нет"
@@ -194,48 +201,32 @@ jobs:
           p.write_text(s)
           PY
 
-      - name: "Сборка: apktool → apktool+aapt2 → подмена dex (самый надёжный из доступных)"
+      - name: "Сборка: A apktool → B --use-aapt2 → C --copy-original"
         continue-on-error: true
         run: |
           set +e
           export PATH="$BT:$PATH"
-          echo "aapt2 из SDK: $(command -v aapt2)"
-          rm -f work/unsigned.apk
-          echo "=== Стратегия A: apktool build (встроенный aapt2)"
-          java -Xmx6g -jar tools/bin/apktool.jar b work/dec -o work/unsigned.apk > work/build.log 2>&1
-          A=$?
-          echo "exit A=$A"
-          echo "A=$A" > work/build-exit.txt
+          rm -f work/unsigned.apk work/build-*.log
+          echo "=== A: apktool build (встроенный aapt2)"
+          java -Xmx6g -jar tools/bin/apktool.jar b work/dec -o work/unsigned.apk > work/build-A.log 2>&1
+          echo "A exit=$?" | tee work/build-exit.txt
+          tail -25 work/build-A.log
           if [ ! -f work/unsigned.apk ]; then
-            echo "=== Стратегия B: apktool build --use-aapt2 (aapt2 из build-tools)"
-            java -Xmx6g -jar tools/bin/apktool.jar b work/dec -o work/unsigned.apk --use-aapt2 >> work/build.log 2>&1
-            B=$?
-            echo "exit B=$B"
-            echo "A=$A B=$B" > work/build-exit.txt
+            echo "=== B: apktool build --use-aapt2"
+            java -Xmx6g -jar tools/bin/apktool.jar b work/dec -o work/unsigned.apk --use-aapt2 > work/build-B.log 2>&1
+            echo "B exit=$?" | tee -a work/build-exit.txt
+            tail -25 work/build-B.log
           fi
           if [ ! -f work/unsigned.apk ]; then
-            echo "=== Стратегия C: собрать только smali и подменить dex в оригинальном APK"
-            echo "--- стратегия C" > work/build.log
-            i=0
-            good=1
-            for d in work/dec/smali work/dec/smali_classes*; do
-              [ -d "$d" ] || continue
-              if [ $i -eq 0 ]; then dex=classes.dex; else dex=classes$((i+1)).dex; fi
-              echo "--- $d -> $dex" >> work/build.log
-              java -Xmx6g -cp tools/bin/apktool.jar com.android.tools.smali.smali.Main assemble "$d" -a 35 -o "work/$dex" >> work/build.log 2>&1
-              rc=$?
-              echo "smali exit=$rc ($dex)" >> work/build.log
-              [ $rc -ne 0 ] && { good=0; break; }
-              i=$((i+1))
-            done
-            if [ $good -eq 1 ]; then
-              cp work/base.apk work/unsigned.apk
-              ( cd work && zip -q -X unsigned.apk classes*.dex && echo "dex подменены: $(ls classes*.dex | tr '\n' ' ')" )
-            else
-              echo "smali-сборка тоже упала" >> work/build.log
-            fi
+            echo "=== C: без пересборки ресурсов (--no-res + --copy-original)"
+            java -Xmx6g -jar tools/bin/apktool.jar d -f --no-res -o work/dec_nr work/base.apk > work/build-C.log 2>&1
+            echo "C-decode exit=$?" | tee -a work/build-exit.txt
+            java -Xmx6g -jar tools/bin/apktool.jar b work/dec_nr -o work/unsigned.apk --copy-original >> work/build-C.log 2>&1
+            echo "C-build exit=$?" | tee -a work/build-exit.txt
+            tail -20 work/build-C.log
           fi
           if [ -f work/unsigned.apk ]; then
+            echo "=== собрано: $(stat -c%s work/unsigned.apk) байт"
             "$BT/zipalign" -f -p 4 work/unsigned.apk work/aligned.apk
             "$BT/apksigner" sign --ks handoff/keys/github-ru.jks \
               --ks-pass pass:android --key-pass pass:android --ks-key-alias github-ru \
@@ -246,23 +237,26 @@ jobs:
             echo "APK не собран ни одной стратегией"
           fi
           exit 0
-      - name: "Ошибки сборки — в аннотации (чтобы было видно без логов)"
+
+      - name: "Ошибки сборки — в аннотации (видно без логов)"
         if: always()
         run: |
           set +e
-          echo "exit-коды: $(cat work/build-exit.txt 2>/dev/null)"
-          if [ -s work/build.log ]; then
-            MSG=$(grep -E "ERROR|error:|Exception|Could not|cannot |failed|FAILED" work/build.log | tail -8 | tr '\n' '|')
-            MSG=$(printf '%s' "$MSG" | cut -c1-900)
-            echo "::error title=apktool-build::${MSG}"
-            TAIL=$(tail -c 900 work/build.log | tr '\n' '§' | tr -d '\r')
-            echo "::warning title=build-tail::${TAIL}"
+          echo "exit-коды: $(cat work/build-exit.txt 2>/dev/null | tr '\n' ' ')"
+          for v in A B C; do
+            L=work/build-$v.log
+            [ -s "$L" ] || continue
+            MSG=$(grep -E "ERROR|error:|Exception|Could not|cannot |failed|FAILED" "$L" | tail -6 | tr '\n' '|' | cut -c1-800)
+            if [ -n "$MSG" ]; then
+              echo "::error title=build-$v::${MSG}"
+            fi
+            TAIL=$(tail -c 400 "$L" | tr '\n' '§' | tr -d '\r')
+            echo "::warning title=tail-$v::${TAIL}"
+          done
+          if [ -f work/signed.apk ]; then
+            echo "::notice title=apk::собран, $(stat -c%s work/signed.apk) байт"
           else
-            echo "::warning title=no-build-log::work/build.log пуст или отсутствует"
-          fi
-          if [ -s work/decode.log ]; then
-            DT=$(tail -c 500 work/decode.log | tr '\n' '§' | tr -d '\r')
-            echo "::notice title=decode-tail::${DT}"
+            echo "::notice title=apk::НЕ собран — см. аннотации build-A/B/C"
           fi
 
       - name: "Проверки и отчёт"
