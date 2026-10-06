@@ -77,8 +77,11 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         searchBar = findViewById(R.id.search_bar);
         searchInput = findViewById(R.id.search_input);
 
-        ((TextView) findViewById(R.id.main_title)).setText(R.string.chats_title);
-        ((TextView) findViewById(R.id.main_subtitle)).setText(Auth.account(this));
+        if (list == null || emptyView == null) return;
+        TextView headerTitle = findViewById(R.id.main_title);
+        if (headerTitle != null) headerTitle.setText(R.string.chats_title);
+        TextView headerSubtitle = findViewById(R.id.main_subtitle);
+        if (headerSubtitle != null) headerSubtitle.setText(Auth.account(this));
 
         adapter = new ChatListAdapter(new ChatListAdapter.Actions() {
             @Override
@@ -113,21 +116,25 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         list.setAdapter(adapter);
 
         Ui.safely(this, this::setUpFilters);
-        Anim.pressFeedback(findViewById(R.id.fab_new_chat));
-        Ui.liftAboveBars(findViewById(R.id.fab_new_chat));
-        findViewById(R.id.fab_new_chat).setOnClickListener(Ui.tap(v -> newChatDialog()));
-        findViewById(R.id.empty_action).setOnClickListener(Ui.tap(v -> newChatDialog()));
+        View fab = findViewById(R.id.fab_new_chat);
+        if (fab != null) {
+            Anim.pressFeedback(fab);
+            Ui.liftAboveBars(fab);
+            fab.setOnClickListener(Ui.tap(v -> newChatDialog()));
+        }
+        View emptyAction = findViewById(R.id.empty_action);
+        if (emptyAction != null) emptyAction.setOnClickListener(Ui.tap(v -> newChatDialog()));
         Ui.safely(this, this::setUpDrawer);
         Ui.safely(this, this::setUpBottomNav);
 
-        searchInput.addTextChangedListener(new TextWatcher() {
+        if (searchInput != null) searchInput.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                adapter.setFilter(s.toString());
+                if (adapter != null) adapter.setFilter(s.toString());
                 updateEmpty();
             }
 
@@ -144,6 +151,12 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         Ui.safely(this, this::refresh);
     }
 
+    /** Ставит слушатель только если вью реально есть в разметке (нет — тише едешь, дальше будешь). */
+    private void click(int viewId, View.OnClickListener listener) {
+        View v = findViewById(viewId);
+        if (v != null) v.setOnClickListener(Ui.tap(listener));
+    }
+
     /** Меню-панель слева — .drawer из старого мессенджера: 82% ширины, до 320dp. */
     private void setUpDrawer() {
         final View overlay = findViewById(R.id.drawer_overlay);
@@ -153,43 +166,46 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         android.view.ViewGroup.LayoutParams lp = panel.getLayoutParams();
         lp.width = Math.min(Ui.dp(this, 320), (int) (screen * 0.82f));
         panel.setLayoutParams(lp);
-        findViewById(R.id.main_menu_btn).setOnClickListener(Ui.tap(v -> toggleDrawer(true)));
-        findViewById(R.id.main_title_box).setOnClickListener(Ui.tap(v -> toggleDrawer(true)));
+        click(R.id.main_menu_btn, v -> toggleDrawer(true));
+        click(R.id.main_title_box, v -> toggleDrawer(true));
         overlay.setOnClickListener(Ui.tap(v -> toggleDrawer(false)));
         String account = Auth.account(this);
         String name = account == null || account.isEmpty() ? getString(R.string.me) : account;
         AvatarView drawerAvatar = findViewById(R.id.drawer_avatar);
         if (drawerAvatar != null) drawerAvatar.setName(name);
-        ((TextView) findViewById(R.id.drawer_name)).setText(name);
-        ((TextView) findViewById(R.id.drawer_online)).setText(R.string.online_now);
-        ((TextView) findViewById(R.id.drawer_status)).setText(R.string.app_name);
+        TextView drawerName = findViewById(R.id.drawer_name);
+        if (drawerName != null) drawerName.setText(name);
+        TextView drawerOnline = findViewById(R.id.drawer_online);
+        if (drawerOnline != null) drawerOnline.setText(R.string.online_now);
+        TextView drawerStatus = findViewById(R.id.drawer_status);
+        if (drawerStatus != null) drawerStatus.setText(R.string.app_name);
 
-        findViewById(R.id.drawer_item_stealth).setOnClickListener(Ui.tap(v -> {
+        click(R.id.drawer_item_stealth, v -> {
             boolean on = !Prefs.stealthRead(this);
             Prefs.setStealthRead(this, on);
             Ui.toast(this, getString(on ? R.string.stealth_on : R.string.stealth_off));
-        }));
-        findViewById(R.id.drawer_item_sound).setOnClickListener(Ui.tap(v -> {
+        });
+        click(R.id.drawer_item_sound, v -> {
             boolean on = !Prefs.notifications(this);
             Prefs.setNotifications(this, on);
             Ui.toast(this, getString(on ? R.string.sound_on : R.string.sound_off));
-        }));
+        });
         View.OnClickListener toSettings = v -> {
             toggleDrawer(false);
             openSettings();
         };
-        findViewById(R.id.drawer_item_encrypt).setOnClickListener(Ui.tap(toSettings));
-        findViewById(R.id.drawer_item_pin).setOnClickListener(Ui.tap(toSettings));
-        findViewById(R.id.drawer_item_settings).setOnClickListener(Ui.tap(toSettings));
-        findViewById(R.id.drawer_avatar_edit).setOnClickListener(Ui.tap(toSettings));
-        findViewById(R.id.drawer_status_row).setOnClickListener(Ui.tap(toSettings));
-        findViewById(R.id.main_encrypt_btn).setOnClickListener(Ui.tap(toSettings));
+        click(R.id.drawer_item_encrypt, toSettings);
+        click(R.id.drawer_item_pin, toSettings);
+        click(R.id.drawer_item_settings, toSettings);
+        click(R.id.drawer_avatar_edit, toSettings);
+        click(R.id.drawer_status_row, toSettings);
+        click(R.id.main_encrypt_btn, toSettings);
         Ui.padTopForBars(findViewById(R.id.drawer_header));
         Ui.padBottomForBars(findViewById(R.id.drawer_scroll));
-        findViewById(R.id.drawer_item_logout).setOnClickListener(Ui.tap(v -> {
+        click(R.id.drawer_item_logout, v -> {
             toggleDrawer(false);
             logoutDialog();
-        }));
+        });
     }
 
     private void openSettings() {
@@ -219,12 +235,15 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
 
     /** Нижняя навигация — .bottom-nav: «Чаты», «Профиль», «Выход». */
     private void setUpBottomNav() {
-        findViewById(R.id.nav_chats).setOnClickListener(Ui.tap(v -> {
-            list.smoothScrollToPosition(0);
+        View navChats = findViewById(R.id.nav_chats);
+        if (navChats != null) navChats.setOnClickListener(Ui.tap(v -> {
+            if (list != null) list.smoothScrollToPosition(0);
             refresh();
         }));
-        findViewById(R.id.nav_profile).setOnClickListener(Ui.tap(v -> toggleDrawer(true)));
-        findViewById(R.id.nav_logout).setOnClickListener(Ui.tap(v -> logoutDialog()));
+        View navProfile = findViewById(R.id.nav_profile);
+        if (navProfile != null) navProfile.setOnClickListener(Ui.tap(v -> toggleDrawer(true)));
+        View navLogout = findViewById(R.id.nav_logout);
+        if (navLogout != null) navLogout.setOnClickListener(Ui.tap(v -> logoutDialog()));
     }
 
     private void toggleDrawer(final boolean open) {
@@ -264,9 +283,14 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
 
     @Override
     public void onBackPressed() {
-        View panel = findViewById(R.id.drawer_panel);
-        if (panel != null && panel.getVisibility() == View.VISIBLE) {
-            toggleDrawer(false);
+        try {
+            View panel = findViewById(R.id.drawer_panel);
+            if (panel != null && panel.getVisibility() == View.VISIBLE) {
+                toggleDrawer(false);
+                return;
+            }
+        } catch (Throwable error) {
+            com.mailgram.app.util.CrashLog.record(this, error);
             return;
         }
         super.onBackPressed();
@@ -283,7 +307,7 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
             return true;
         }
         if (id == R.id.action_sync) {
-            syncBar.setVisibility(View.VISIBLE);
+            if (syncBar != null) syncBar.setVisibility(View.VISIBLE);
             SyncEngine.get(this).syncNow();
             return true;
         }
@@ -305,7 +329,14 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
     @Override
     protected void onResume() {
         super.onResume();
-        if (needsPin(this)) {
+        final boolean lock;
+        try {
+            lock = needsPin(this);
+        } catch (Throwable error) {
+            com.mailgram.app.util.CrashLog.record(this, error);
+            return;
+        }
+        if (lock) {
             startActivity(new Intent(this, LockActivity.class));
             return;
         }
@@ -339,25 +370,31 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
     }
 
     private void refresh() {
+        if (adapter == null) return;
         adapter.submit(Store.get(this).sortedChats());
         updateEmpty();
         int unread = Store.get(this).totalUnread();
-        ((TextView) findViewById(R.id.main_subtitle)).setText(unread > 0
-                ? Auth.account(this) + " · " + getString(R.string.unread, unread)
-                : Auth.account(this));
+        TextView subtitle = findViewById(R.id.main_subtitle);
+        if (subtitle != null) {
+            subtitle.setText(unread > 0
+                    ? Auth.account(this) + " · " + getString(R.string.unread, unread)
+                    : Auth.account(this));
+        }
     }
 
     private void updateEmpty() {
+        if (adapter == null || emptyView == null) return;
         boolean empty = adapter.isEmpty();
         boolean wasHidden = emptyView.getVisibility() != View.VISIBLE;
         emptyView.setVisibility(empty ? View.VISIBLE : View.GONE);
-        list.setVisibility(empty ? View.GONE : View.VISIBLE);
+        if (list != null) list.setVisibility(empty ? View.GONE : View.VISIBLE);
         if (!empty) return;
 
         final String query = searchInput == null ? "" : searchInput.getText().toString().trim();
         TextView title = findViewById(R.id.empty_title);
         TextView text = findViewById(R.id.empty_text);
         View action = findViewById(R.id.empty_action);
+        if (title == null || text == null) return;
         if (!query.isEmpty()) {
             title.setText(R.string.empty_search_title);
             text.setText(getString(R.string.empty_search_text, query));
@@ -376,7 +413,8 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
             action.setVisibility(View.VISIBLE);
         }
         if (wasHidden) {
-            Anim.springIn(findViewById(R.id.empty_icon), 0.88f, 14f);
+            View icon = findViewById(R.id.empty_icon);
+            if (icon != null) Anim.springIn(icon, 0.88f, 14f);
             Anim.staggeredIn(title, 0);
             Anim.staggeredIn(text, 1);
         }
@@ -397,6 +435,7 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
 
     private void bindFilter(int viewId, final String filter) {
         android.widget.TextView view = findViewById(viewId);
+        if (view == null) return;
         Anim.pressFeedback(view);
         view.setOnClickListener(Ui.tap(v -> {
             Anim.haptic(v, false);
@@ -412,6 +451,7 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
                 ChatListAdapter.FILTER_PINNED};
         for (int i = 0; i < ids.length; i++) {
             android.widget.TextView view = findViewById(ids[i]);
+            if (view == null) continue;
             boolean active = filters[i].equals(filter);
             view.setBackgroundResource(active ? R.drawable.bg_pill_accent : R.drawable.bg_glass_pill);
             view.setTextColor(active ? 0xFFFFFFFF
@@ -482,7 +522,8 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
 
     /** Долгое нажатие по чату: закрепить, без звука, переименовать, сведения, очистить, удалить. */
     private void showChatMenu(final Chat chat) {
-        android.widget.PopupMenu popup = new android.widget.PopupMenu(this, list);
+        View anchor = list != null ? list : findViewById(R.id.main_root);
+        android.widget.PopupMenu popup = new android.widget.PopupMenu(this, anchor);
         popup.getMenu().add(0, 1, 0, chat.pinned ? R.string.unpin_chat : R.string.pin_chat);
         popup.getMenu().add(0, 2, 1, chat.muted ? R.string.unmute_chat : R.string.mute_chat);
         popup.getMenu().add(0, 3, 2, R.string.chat_menu_rename);
@@ -613,9 +654,9 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
     @Override
     public void onSyncDone(final SyncEngine.Result result) {
         handler.post(() -> Ui.safely(this, () -> {
-            syncBar.setVisibility(View.GONE);
+            if (syncBar != null) syncBar.setVisibility(View.GONE);
             refresh();
-            if (result.ok) return;
+            if (result == null || result.ok) return;
             final com.mailgram.app.net.ApiError.Info info =
                     com.mailgram.app.net.ApiError.parse(result.cause != null
                             ? result.cause : new java.io.IOException(String.valueOf(result.error)));

@@ -19,8 +19,20 @@ iOS 26 / Telegram 12.4 (Liquid Glass, пружинные анимации, чё�
 ```
 
 **Живой APK:** https://github.com/KamiSakyy/Lwlwxldodiwjnwmwllxllxmxmxks/releases/tag/apk-latest → `app-release.apk`
-Последняя сборка (6 октября 2026, версия 3.0): **1.87 МБ** (лимит 15 МБ), внутри `lib/arm64-v8a/libmailgram.so`
-(C++ ядро с криптопримитивами), подпись SHA-1 `BA:CF:61:D8:5B:A6:51:0E:27:6B:3C:8D:B8:79:43:0A:51:83:47:32`.
+Последняя сборка (6 октября 2026, версия 3.4): готова после зелёного прогона Actions — там же и ссылка на `app-release.apk`.
+Внутри `lib/arm64-v8a/libmailgram.so` (C++ ядро с криптопримитивами).
+
+**Что исправлено в 3.4 (вылет на каждом нажатии):**
+`MessageAdapter` кастовал `FrameLayout.LayoutParams` на пузыре, у которого родитель — обычный
+`LinearLayout`: `ClassCastException` в `onBindViewHolder` RecyclerView не перехватывается никем и
+ронял процесс при каждом открытии чата; контекстное меню сообщения строило `PopupWindow`
+с `focusable=true` + `setOutsideTouchable(true)` (Android запрещает это сочетание и кидает
+`IllegalStateException` ровно в момент показа); все жестовые слушатели (свайпы, зум, удержание
+микрофона) стояли без обёртки; фоновые потоки синхронизации/отправки ловили только `Exception`,
+так что любая ошибка (в т.ч. `UnsatisfiedLinkError`) убивала приложение. Теперь: корректная
+раскладка пузыря, безопасное меню, обёртки `Ui.touch`/`Ui.safely` на жестах и отложенных `post`,
+`Throwable` вместо `Exception` в пулах, «чёрный ящик» больше не отдаёт ошибку дефолтному
+обработчику, а `Msg`/`Chat` не отдают `null` в `isEmpty()`/`equals()`.
 
 ---
 

@@ -58,7 +58,7 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
     /** Свайп по строке: вправо — закрепить, влево — выключить или включить звук. */
     private void attachSwipe(final View row, final Chat chat, final Actions actions) {
         final android.graphics.drawable.Drawable original = row.getBackground();
-        row.setOnTouchListener(new View.OnTouchListener() {
+        row.setOnTouchListener(Ui.touch(new View.OnTouchListener() {
             private float downX;
             private float downY;
             private boolean swiping;
@@ -125,7 +125,7 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
                         return false;
                 }
             }
-        });
+        }));
     }
 
     /** Нижние стеклянные фильтры: все / непрочитанные / закреплённые. */
@@ -169,13 +169,15 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
     @Override
     public void onBindViewHolder(@NonNull Holder h, int position) {
         final Chat chat = items.get(position);
-        h.avatar.setTag("avatar_" + chat.uid);
-        h.avatar.setTransitionName("avatar_" + chat.uid);
+        if (h.avatar != null) {
+            h.avatar.setTag("avatar_" + chat.uid);
+            h.avatar.setTransitionName("avatar_" + chat.uid);
+        }
         String name = chat.name != null && !chat.name.isEmpty()
                 ? chat.name
                 : Store.displayName(h.itemView.getContext(), chat.peer);
-        h.name.setText(name);
-        h.avatar.setName(name);
+        if (h.name != null) h.name.setText(name);
+        if (h.avatar != null) h.avatar.setName(name);
         h.time.setText(Ui.chatTime(chat.lastTs));
         h.preview.setText(chat.preview == null || chat.preview.isEmpty()
                 ? h.itemView.getContext().getString(R.string.no_chats_title) : chat.preview);

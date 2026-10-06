@@ -18,9 +18,9 @@ public final class Msg {
     public static final int STATE_SENT = 2;
     public static final int STATE_FAILED = 3;
 
-    public String mid;          // UUID сообщения из конверта
-    public String chat;         // идентификатор пары
-    public String peer;         // адрес собеседника
+    public String mid = "";     // UUID сообщения из конверта
+    public String chat = "";    // идентификатор пары
+    public String peer = "";    // адрес собеседника
     public String from;
     public String to;
     public long ts;
@@ -53,6 +53,26 @@ public final class Msg {
     public String gmailId = "";
     public String error = "";
     public boolean unread;
+
+    /** Гарантированно непустые указатели: лента сравнивает их напрямую. */
+    public void sanitize() {
+        if (mid == null) mid = "";
+        if (chat == null) chat = "";
+        if (peer == null) peer = "";
+        if (from == null) from = "";
+        if (to == null) to = "";
+        if (type == null) type = "text";
+        if (text == null) text = "";
+        if (mediaB64 == null) mediaB64 = "";
+        if (mediaMime == null) mediaMime = "";
+        if (fileName == null) fileName = "";
+        if (wave == null) wave = "";
+        if (replyMid == null) replyMid = "";
+        if (replyPreview == null) replyPreview = "";
+        if (myReaction == null) myReaction = "";
+        if (gmailId == null) gmailId = "";
+        if (error == null) error = "";
+    }
 
     public JSONObject toJson() {
         JSONObject o = new JSONObject();
@@ -135,6 +155,7 @@ public final class Msg {
         m.gmailId = o.optString("gmail", "");
         m.error = o.optString("err", "");
         m.unread = o.optBoolean("unread", false);
+        m.sanitize();
         return m;
     }
 
@@ -168,13 +189,14 @@ public final class Msg {
         if (deleted) return "Сообщение удалено";
         switch (type == null ? "" : type) {
             case "image":
-                return text == null || text.isEmpty() ? "🖼 Фото" : "🖼 " + text;
+                return (text == null || text.isEmpty()) ? "🖼 Фото" : "🖼 " + text;
             case "video":
-                return round ? "⏺ Видеосообщение" : (text == null || text.isEmpty() ? "🎬 Видео" : "🎬 " + text);
+                return round ? "⏺ Видеосообщение"
+                        : ((text == null || text.isEmpty()) ? "🎬 Видео" : "🎬 " + text);
             case "voice":
                 return "🎤 Голосовое сообщение";
             case "file":
-                return "📎 " + (fileName.isEmpty() ? "Файл" : fileName);
+                return "📎 " + (fileName == null || fileName.isEmpty() ? "Файл" : fileName);
             default:
                 return text == null ? "" : text;
         }

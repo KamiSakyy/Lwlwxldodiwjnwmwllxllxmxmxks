@@ -45,6 +45,7 @@ public final class Anim {
 
     /** Появление сообщения: масштаб + подъём с пружиной. */
     public static void springIn(View view, float fromScale, float fromTranslationDp) {
+        if (view == null) return;
         Context ctx = view.getContext();
         if (!enabled(ctx)) {
             view.setAlpha(1f);
@@ -90,6 +91,7 @@ public final class Anim {
 
     /** Появление элемента списка с задержкой по индексу (эффект «волны»). */
     public static void staggeredIn(View view, int index) {
+        if (view == null) return;
         if (!enabled(view.getContext())) {
             view.setAlpha(1f);
             view.setTranslationY(0f);
@@ -109,7 +111,7 @@ public final class Anim {
 
     /** Быстрый «поп» — реакции, чипсы, кнопки. */
     public static void pop(View view) {
-        if (!enabled(view.getContext())) return;
+        if (view == null || !enabled(view.getContext())) return;
         view.setScaleX(0.6f);
         view.setScaleY(0.6f);
         view.animate().scaleX(1f).scaleY(1f)
@@ -118,6 +120,7 @@ public final class Anim {
 
     /** Мягкое проявление (цвет/прозрачность — без перелёта). */
     public static void fadeIn(View view, long duration) {
+        if (view == null) return;
         if (!enabled(view.getContext())) {
             view.setAlpha(1f);
             return;
@@ -128,6 +131,7 @@ public final class Anim {
 
     /** Мягкое проявление со задержкой — для «каскада» панелей. */
     public static void fadeIn(View view, long duration, long delay) {
+        if (view == null) return;
         if (!enabled(view.getContext())) {
             view.setAlpha(1f);
             return;
@@ -139,6 +143,7 @@ public final class Anim {
 
     /** Плавное раскрытие/скрытие панели (эмодзи, ответ, запись). */
     public static void slidePanel(final View view, final boolean show) {
+        if (view == null) return;
         if (show) {
             view.setVisibility(View.VISIBLE);
             if (!enabled(view.getContext())) {
@@ -170,7 +175,7 @@ public final class Anim {
 
     /** Подсветка «стекла» под пальцем: лёгкое сжатие и возврат. */
     public static void pressFeedback(final View view) {
-        if (!enabled(view.getContext())) return;
+        if (view == null || !enabled(view.getContext())) return;
         view.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -199,7 +204,7 @@ public final class Anim {
     }
 
     public static void pulse(final View view, final long periodMs) {
-        if (!enabled(view.getContext())) return;
+        if (view == null || !enabled(view.getContext())) return;
         final ValueAnimator animator = ValueAnimator.ofFloat(0f, 1f);
         animator.setDuration(periodMs);
         animator.setRepeatCount(ValueAnimator.INFINITE);
@@ -215,9 +220,9 @@ public final class Anim {
     }
 
     /** Мягкий «дыхательный» вход для аватара и заголовка. */
-    public static void breathing(View view) {
-        if (!enabled(view.getContext())) return;
-        ValueAnimator animator = ValueAnimator.ofFloat(1f, 1.03f);
+    public static void breathing(final View view) {
+        if (view == null || !enabled(view.getContext())) return;
+        final ValueAnimator animator = ValueAnimator.ofFloat(1f, 1.03f);
         animator.setDuration(2400L);
         animator.setRepeatCount(ValueAnimator.INFINITE);
         animator.setRepeatMode(ValueAnimator.REVERSE);
@@ -241,7 +246,7 @@ public final class Anim {
 
     /** Покачивание при ошибке (неверный жест, отказ). */
     public static void shake(View view) {
-        if (!enabled(view.getContext())) return;
+        if (view == null || !enabled(view.getContext())) return;
         android.view.animation.TranslateAnimation shake =
                 new android.view.animation.TranslateAnimation(0, Ui.dp(view.getContext(), 6), 0, 0);
         shake.setDuration(60L);

@@ -197,7 +197,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             avatar.setTransitionName(sharedAvatar);
             androidx.core.view.ViewCompat.setTransitionName(avatar, sharedAvatar);
         }
-        findViewById(R.id.chat_back).setOnClickListener(Ui.tap(v -> finish()));
+        findViewById(R.id.chat_back).setOnClickListener(Ui.safeClick(this, v -> finish()));
         findViewById(R.id.chat_menu_btn).setOnClickListener(Ui.tap(v -> showSheet()));
         findViewById(R.id.chat_search_btn).setOnClickListener(Ui.tap(v -> toggleSearch()));
         findViewById(R.id.chat_call_btn).setOnClickListener(Ui.tap(v ->
@@ -302,7 +302,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         findViewById(R.id.sel_delete).setOnClickListener(Ui.tap(v -> deleteSelected()));
 
         input.setOnEditorActionListener((v, actionId, event) -> {
-            sendMessage();
+            Ui.safely(this, this::sendMessage);
             return true;
         });
         input.addTextChangedListener(new android.text.TextWatcher() {
@@ -474,16 +474,21 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
 
     @Override
     public void onBackPressed() {
-        if (selecting) {
-            exitSelection();
-            return;
-        }
-        if (replyBar != null && replyBar.getVisibility() == View.VISIBLE) {
-            setReplyTarget(null);
-            return;
-        }
-        if (emojiPanel != null && emojiPanel.getVisibility() == View.VISIBLE) {
-            toggleEmoji();
+        try {
+            if (selecting) {
+                exitSelection();
+                return;
+            }
+            if (replyBar != null && replyBar.getVisibility() == View.VISIBLE) {
+                setReplyTarget(null);
+                return;
+            }
+            if (emojiPanel != null && emojiPanel.getVisibility() == View.VISIBLE) {
+                toggleEmoji();
+                return;
+            }
+        } catch (Throwable error) {
+            com.mailgram.app.util.CrashLog.record(this, error);
             return;
         }
         super.onBackPressed();
@@ -761,16 +766,16 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         }
         String title = chat.name != null && !chat.name.isEmpty()
                 ? chat.name : Store.displayName(this, chat.peer);
-        titleView.setText(title);
-        avatar.setName(title);
+        if (titleView != null) titleView.setText(title);
+        if (avatar != null) avatar.setName(title);
         boolean hasKey = chat.peerPublic != null && !chat.peerPublic.isEmpty();
         boolean ratchet = com.mailgram.app.crypto.RatchetStore.hasSession(this, uid);
         subtitleView.setText(!hasKey
                 ? getString(R.string.peer_no_key_short)
                 : ratchet ? getString(R.string.ratchet_on) : "🔒 " + chat.peer);
 
-        banner.setVisibility(hasKey ? View.GONE : View.VISIBLE);
-        bannerText.setText(R.string.peer_no_key);
+        if (banner != null) banner.setVisibility(hasKey ? View.GONE : View.VISIBLE);
+        if (bannerText != null) bannerText.setText(R.string.peer_no_key);
 
         List<Msg> messages = Store.get(this).messages(uid);
         Msg pinned = null;
@@ -781,23 +786,21 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                 break;
             }
         }
-        if (pinned != null) {
-            pinnedRow.setVisibility(View.VISIBLE);
-            pinnedText.setText(pinned.previewText());
-        } else {
-            pinnedRow.setVisibility(View.GONE);
+        if (pinnedRow != null) {
+            pinnedRow.setVisibility(pinned != null ? View.VISIBLE : View.GONE);
         }
+        if (pinned != null && pinnedText != null) pinnedText.setText(pinned.previewText());
 
-        adapter.submit(messages, unreadAnchor(messages), this);
+        if (adapter != null) adapter.submit(messages, unreadAnchor(messages), this);
         String pending = getIntent().getStringExtra(EXTRA_JUMP_MID);
         if (pending != null && !pending.isEmpty()) {
             getIntent().removeExtra(EXTRA_JUMP_MID);
             final String mid = pending;
             handler.postDelayed(() -> jumpTo(mid), 420L);
         }
-        if (messages.size() != lastCount) {
+        if (messages.size() != lastCount && list != null) {
             lastCount = messages.size();
-            list.post(() -> scrollToBottom());
+            list.post(() -> Ui.safely(this, this::scrollToBottom));
         }
         updateScrollButton();
     }
@@ -809,6 +812,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
 
     /** Шапка уезжает вверх при листании вниз и возвращается при листании вверх — как в Telegram. */
     private void hideHeader(boolean hide) {
+        if (header == null) return;
         float target = hide ? -header.getHeight() : 0f;
         if (Math.abs(header.getTranslationY() - target) < 2f) return;
         header.animate().translationY(target)
@@ -816,16 +820,18 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     }
 
     private void scrollToBottom() {
-        if (adapter.getItemCount() == 0) return;
+        if (list == null || adapter == null || adapter.getItemCount() == 0) return;
         list.scrollToPosition(adapter.getItemCount() - 1);
     }
 
     private void updateScrollButton() {
-        LinearLayoutManager manager = (LinearLayoutManager) list.getLayoutManager();
+        if (list == null || adapter == null) return;
+        RecyclerView.LayoutManager lm = list.getLayoutManager();
+        LinearLayoutManager manager = lm instanceof LinearLayoutManager ? (LinearLayoutManager) lm : null;
         if (manager == null) return;
         boolean away = manager.findLastVisibleItemPosition() < adapter.getItemCount() - 3;
         View wrap = findViewById(R.id.scroll_down_wrap);
-        wrap.setVisibility(away ? View.VISIBLE : View.GONE);
+        if (wrap != null) wrap.setVisibility(away ? View.VISIBLE : View.GONE);
         if (away && scrollBadge != null) {
             int unread = 0;
             for (Msg m : Store.get(this).messages(uid)) {
@@ -859,7 +865,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         SyncEngine.get(this).sendText(chat, text, target, new SyncEngine.SendCallback() {
             @Override
             public void onSent(Msg message) {
-                handler.post(ChatActivity.this::refresh);
+                handler.post(() -> Ui.safely(ChatActivity.this, ChatActivity.this::refresh));
             }
 
             @Override
@@ -1018,7 +1024,8 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             new Thread(() -> {
                 try {
                     final byte[] jpeg = PhotoUtil.compressBytes(readFile(shot));
-                    handler.post(() -> sendMedia("image", jpeg, "image/jpeg", 0L, "", false, caption()));
+                    handler.post(() -> Ui.safely(ChatActivity.this,
+                            () -> sendMedia("image", jpeg, "image/jpeg", 0L, "", false, caption())));
                 } catch (final Exception e) {
                     handler.post(() -> Ui.toast(ChatActivity.this,
                             getString(R.string.error_generic, "снимок не удалось обработать")));
@@ -1034,7 +1041,8 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             new Thread(() -> {
                 try {
                     final byte[] jpeg = PhotoUtil.compressForMail(getApplicationContext(), uri);
-                    handler.post(() -> sendMedia("image", jpeg, "image/jpeg", 0L, "", false, caption()));
+                    handler.post(() -> Ui.safely(ChatActivity.this,
+                            () -> sendMedia("image", jpeg, "image/jpeg", 0L, "", false, caption())));
                 } catch (final Exception e) {
                     handler.post(() -> Ui.toast(ChatActivity.this,
                             getString(R.string.error_generic, String.valueOf(e.getMessage()))));
@@ -1068,7 +1076,8 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             final String fileName = name;
             final String fileMime = mime == null || mime.isEmpty() ? "video/mp4" : mime;
             final long ms = duration;
-            handler.post(() -> sendMedia("video", data, fileMime, ms, fileName, false, caption()));
+            handler.post(() -> Ui.safely(ChatActivity.this,
+                    () -> sendMedia("video", data, fileMime, ms, fileName, false, caption())));
         } catch (final Exception e) {
             handler.post(() -> Ui.toast(this, getString(R.string.error_generic, "видео не прочитано")));
         } finally {
@@ -1087,7 +1096,8 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             String name = MediaUtil.displayName(this, uri);
             String mime = MediaUtil.mimeOf(this, uri);
             final String fileMime = mime == null || mime.isEmpty() ? "application/octet-stream" : mime;
-            handler.post(() -> sendMedia("file", bytes, fileMime, 0L, name, false, caption()));
+            handler.post(() -> Ui.safely(ChatActivity.this,
+                    () -> sendMedia("file", bytes, fileMime, 0L, name, false, caption())));
         } catch (final Exception e) {
             handler.post(() -> Ui.toast(this, getString(R.string.error_generic, "файл не прочитан")));
         }
@@ -1125,7 +1135,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         SyncEngine.SendCallback callback = new SyncEngine.SendCallback() {
             @Override
             public void onSent(Msg message) {
-                handler.post(ChatActivity.this::refresh);
+                handler.post(() -> Ui.safely(ChatActivity.this, ChatActivity.this::refresh));
             }
 
             @Override
@@ -1162,7 +1172,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     // ---------------- голосовые ----------------
 
     private void setUpVoiceButton() {
-        micButton.setOnTouchListener((v, event) -> {
+        micButton.setOnTouchListener(Ui.touch((v, event) -> {
             switch (event.getActionMasked()) {
                 case MotionEvent.ACTION_DOWN:
                     downRawX = event.getRawX();
@@ -1195,7 +1205,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                 default:
                     return false;
             }
-        });
+        }));
     }
 
     private void startRecordingTouch() {
@@ -1268,7 +1278,7 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                 new SyncEngine.SendCallback() {
                     @Override
                     public void onSent(Msg message) {
-                        handler.post(ChatActivity.this::refresh);
+                        handler.post(() -> Ui.safely(ChatActivity.this, ChatActivity.this::refresh));
                     }
 
                     @Override
@@ -1416,19 +1426,33 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             }));
             menu.addView(row);
         }
+        // focusable=true вместе с setOutsideTouchable(true) запрещены — Android кидает
+        // IllegalStateException ровно в момент показа меню, то есть «на каждое нажатие».
         android.widget.PopupWindow popup = new android.widget.PopupWindow(menu,
-                Ui.dp(this, 220), ViewGroup.LayoutParams.WRAP_CONTENT, true);
+                Ui.dp(this, 220), ViewGroup.LayoutParams.WRAP_CONTENT);
         holder[0] = popup;
         popup.setBackgroundDrawable(new android.graphics.drawable.ColorDrawable(0x00000000));
         popup.setOutsideTouchable(true);
+        popup.setFocusable(false);
         popup.setElevation(Ui.dp(this, 12));
         popup.setAnimationStyle(R.style.Animation_MailGram_Popup);
-        if (anchor != null) {
-            popup.showAsDropDown(anchor, 0, -anchor.getHeight(), android.view.Gravity.NO_GRAVITY);
-        } else {
-            popup.showAtLocation(findViewById(R.id.chat_root), android.view.Gravity.CENTER, 0, 0);
+        try {
+            if (anchor != null && anchor.getWindowToken() != null) {
+                popup.showAsDropDown(anchor, 0, -anchor.getHeight(), android.view.Gravity.NO_GRAVITY);
+            } else {
+                View root = findViewById(R.id.chat_root);
+                if (root != null) {
+                    popup.showAtLocation(root, android.view.Gravity.CENTER, 0, 0);
+                }
+            }
+            Anim.haptic(menu, false);
+        } catch (Throwable error) {
+            com.mailgram.app.util.CrashLog.record(this, error);
+            try {
+                popup.dismiss();
+            } catch (Throwable ignored) {
+            }
         }
-        Anim.haptic(menu, false);
     }
 
     /** Действия из контекстного меню сообщения. */

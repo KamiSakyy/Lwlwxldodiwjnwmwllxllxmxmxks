@@ -49,8 +49,12 @@ public class CircleRecordActivity extends Activity implements SurfaceHolder.Call
         public void run() {
             if (recorder == null) return;
             long elapsed = System.currentTimeMillis() - startedAt;
-            timer.setText(com.mailgram.app.media.MediaUtil.humanDuration(elapsed));
-            mask.setProgress((float) elapsed / (float) MAX_MS);
+            try {
+                if (timer != null) timer.setText(com.mailgram.app.media.MediaUtil.humanDuration(elapsed));
+                if (mask != null) mask.setProgress((float) elapsed / (float) MAX_MS);
+            } catch (Throwable ignored) {
+                // интерфейс не должен ронять запись: кадписи пишутся дальше
+            }
             if (elapsed >= MAX_MS) {
                 finishRecording(true);
                 return;
@@ -86,8 +90,8 @@ public class CircleRecordActivity extends Activity implements SurfaceHolder.Call
         output = new File(dir, "circle-" + System.nanoTime() + ".mp4");
 
         preview.getHolder().addCallback(this);
-        stopButton.setOnClickListener(Ui.tap(v -> finishRecording(true)));
-        cancelButton.setOnClickListener(Ui.tap(v -> finishRecording(false)));
+        stopButton.setOnClickListener(Ui.tap(v -> Ui.safely(this, () -> finishRecording(true))));
+        cancelButton.setOnClickListener(Ui.tap(v -> Ui.safely(this, () -> finishRecording(false))));
     }
 
     @Override
@@ -236,6 +240,21 @@ public class CircleRecordActivity extends Activity implements SurfaceHolder.Call
     @Override
     protected void onPause() {
         super.onPause();
-        if (!finishing) finishRecording(true);
+        try {
+            if (!finishing) finishRecording(true);
+        } catch (Throwable error) {
+            com.mailgram.app.util.CrashLog.record(this, error);
+            finish();
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        try {
+            finishRecording(false);
+        } catch (Throwable error) {
+            com.mailgram.app.util.CrashLog.record(this, error);
+            finish();
+        }
     }
 }

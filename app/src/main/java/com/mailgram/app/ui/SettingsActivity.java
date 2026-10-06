@@ -52,7 +52,7 @@ public class SettingsActivity extends AppCompatActivity {
     /** Наполнение экрана настроек: строки, переключатели, разделы. */
     private void setUpRows() {
         MaterialToolbar toolbar = findViewById(R.id.settings_toolbar);
-        toolbar.setNavigationOnClickListener(v -> finish());
+        toolbar.setNavigationOnClickListener(Ui.safeClick(this, v -> finish()));
 
         TextView email = findViewById(R.id.settings_email);
         email.setText(Auth.account(this));
@@ -70,12 +70,12 @@ public class SettingsActivity extends AppCompatActivity {
         if (Prefs.THEME_LIGHT.equals(theme)) themeGroup.check(R.id.theme_light);
         else if (Prefs.THEME_DARK.equals(theme)) themeGroup.check(R.id.theme_dark);
         else themeGroup.check(R.id.theme_system);
-        themeGroup.setOnCheckedChangeListener((group, checkedId) -> {
+        themeGroup.setOnCheckedChangeListener((group, checkedId) -> Ui.safely(this, () -> {
             String value = checkedId == R.id.theme_light ? Prefs.THEME_LIGHT
                     : checkedId == R.id.theme_dark ? Prefs.THEME_DARK : Prefs.THEME_SYSTEM;
             Prefs.setTheme(this, value);
             com.mailgram.app.App.applyTheme(com.mailgram.app.App.themeMode(value));
-        });
+        }));
 
         // доставка
         final TextView pollValue = findViewById(R.id.settings_poll_value);
@@ -84,7 +84,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         MaterialSwitch background = findViewById(R.id.switch_background);
         background.setChecked(Prefs.backgroundSync(this));
-        background.setOnCheckedChangeListener((buttonView, isChecked) -> {
+        background.setOnCheckedChangeListener((buttonView, isChecked) -> Ui.safely(this, () -> {
             Prefs.setBackgroundSync(this, isChecked);
             if (isChecked) {
                 SyncService.start(this);
@@ -92,7 +92,7 @@ public class SettingsActivity extends AppCompatActivity {
                 SyncService.stop(this);
                 com.mailgram.app.sync.Alarms.cancel(this);
             }
-        });
+        }));
 
         final TextView fontValue = findViewById(R.id.settings_font_value);
         fontValue.setText(fontScaleLabel(Prefs.fontScale(this)));
@@ -104,7 +104,8 @@ public class SettingsActivity extends AppCompatActivity {
 
         MaterialSwitch animations = findViewById(R.id.switch_animations);
         animations.setChecked(Prefs.animations(this));
-        animations.setOnCheckedChangeListener((buttonView, isChecked) -> Prefs.setAnimations(this, isChecked));
+        animations.setOnCheckedChangeListener((buttonView, isChecked) -> Ui.safely(this,
+                () -> Prefs.setAnimations(this, isChecked)));
 
         final TextView wallpaperValue = findViewById(R.id.settings_wallpaper_value);
         wallpaperValue.setText(wallpaperLabel(Prefs.wallpaper(this)));
@@ -112,8 +113,8 @@ public class SettingsActivity extends AppCompatActivity {
 
         MaterialSwitch notifications = findViewById(R.id.switch_notifications);
         notifications.setChecked(Prefs.notifications(this));
-        notifications.setOnCheckedChangeListener((buttonView, isChecked) ->
-                Prefs.setNotifications(this, isChecked));
+        notifications.setOnCheckedChangeListener((buttonView, isChecked) -> Ui.safely(this,
+                () -> Prefs.setNotifications(this, isChecked)));
 
         // криптография
         TextView ratchetState = findViewById(R.id.settings_ratchet_state);
@@ -130,6 +131,8 @@ public class SettingsActivity extends AppCompatActivity {
 
         // безопасность
         selfTestResult = findViewById(R.id.settings_selftest_result);
+        // переключатель блокировки подключаем сразу: без него экран PIN'а не включается
+        Ui.safely(this, this::setUpAppLock);
         findViewById(R.id.row_selftest).setOnClickListener(Ui.tap(v -> runSelfTest()));
         findViewById(R.id.row_mykey).setOnClickListener(Ui.tap(v -> showMyKey()));
         findViewById(R.id.row_invite_link).setOnClickListener(Ui.tap(v -> editInviteLink()));
@@ -157,7 +160,10 @@ public class SettingsActivity extends AppCompatActivity {
         findViewById(R.id.btn_logout).setOnClickListener(Ui.tap(v -> logoutDialog()));
 
         // Секции появляются каскадом — как списки в iOS при открытии экрана
-        Anim.cascade((ViewGroup) findViewById(R.id.settings_content), 45L, 10f);
+        View content = findViewById(R.id.settings_content);
+        if (content instanceof ViewGroup) {
+            Anim.cascade((ViewGroup) content, 45L, 10f);
+        }
     }
 
     private String currentRedirect() {
@@ -325,14 +331,14 @@ public class SettingsActivity extends AppCompatActivity {
                 findViewById(R.id.switch_app_lock);
         if (lock == null) return;
         lock.setChecked(Prefs.pinHash(this).length() > 0);
-        lock.setOnCheckedChangeListener((buttonView, isChecked) -> {
+        lock.setOnCheckedChangeListener((buttonView, isChecked) -> Ui.safely(this, () -> {
             if (isChecked) {
                 askNewPin();
             } else {
                 Prefs.clearPin(this);
                 Ui.toast(this, getString(R.string.pin_remove));
             }
-        });
+        }));
     }
 
     private void askNewPin() {

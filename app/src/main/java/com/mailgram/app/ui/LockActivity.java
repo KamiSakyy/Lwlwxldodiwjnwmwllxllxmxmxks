@@ -107,6 +107,7 @@ public class LockActivity extends AppCompatActivity {
     }
 
     private void updateDots() {
+        if (dots == null) return;
         dots.removeAllViews();
         int size = Ui.dp(this, 12);
         for (int i = 0; i < pinLength; i++) {
@@ -125,6 +126,10 @@ public class LockActivity extends AppCompatActivity {
     }
 
     private void verify() {
+        Ui.safely(this, this::verifyInternal);
+    }
+
+    private void verifyInternal() {
         final String pin = entered.toString();
         if (Prefs.checkPin(this, pin)) {
             App.setUnlocked(true);

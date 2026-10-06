@@ -81,7 +81,7 @@ public class MediaViewerActivity extends AppCompatActivity {
         }
 
         MaterialToolbar toolbar = findViewById(R.id.viewer_toolbar);
-        toolbar.setNavigationOnClickListener(v -> finish());
+        toolbar.setNavigationOnClickListener(Ui.safeClick(this, v -> finish()));
         toolbar.setTitle(Store.displayName(this, msg.peer));
         toolbar.setSubtitle(subtitle());
         Anim.fadeIn(findViewById(R.id.viewer_toolbar), 260L, 0L);
@@ -165,7 +165,7 @@ public class MediaViewerActivity extends AppCompatActivity {
                         return true;
                     }
                 });
-        image.setOnTouchListener((v, event) -> {
+        image.setOnTouchListener(Ui.touch((v, event) -> {
             scaleDetector.onTouchEvent(event);
             gestureDetector.onTouchEvent(event);
             // Свайп вниз при отсутствии зума — закрыть просмотрщик (как в iOS и Telegram).
@@ -206,7 +206,7 @@ public class MediaViewerActivity extends AppCompatActivity {
                     break;
             }
             return true;
-        });
+        }));
     }
 
     /** Показать или спрятать панели — на весь экран остаётся только снимок. */
@@ -397,7 +397,12 @@ public class MediaViewerActivity extends AppCompatActivity {
             if (playButton != null) playButton.setImageResource(R.drawable.ic_play);
         }
         VideoView video = findViewById(R.id.viewer_video);
-        if (video != null && video.isPlaying()) video.pause();
+        if (video != null) {
+            try {
+                if (video.isPlaying()) video.pause();
+            } catch (Throwable ignored) {
+            }
+        }
     }
 
     @Override

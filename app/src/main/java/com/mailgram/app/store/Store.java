@@ -164,6 +164,7 @@ public final class Store {
         }
         if (peer != null && !peer.isEmpty()) c.peer = peer;
         if (peerPublicB64 != null && !peerPublicB64.isEmpty()) c.peerPublic = peerPublicB64;
+        c.sanitize();
         writeChatsLocked();
         return c;
     }
@@ -463,6 +464,8 @@ public final class Store {
 
     /** Добавляет сообщение или обновляет существующее (по mid). */
     public synchronized Msg put(String uid, Msg m) {
+        if (m == null) return null;
+        m.sanitize();
         LinkedHashMap<String, Msg> list = messages.get(uid);
         if (list == null) {
             list = new LinkedHashMap<>();

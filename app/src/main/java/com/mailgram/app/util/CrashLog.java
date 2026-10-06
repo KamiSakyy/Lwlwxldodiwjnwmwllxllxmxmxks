@@ -1,6 +1,7 @@
 package com.mailgram.app.util;
 
 import android.content.Context;
+import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -26,15 +27,22 @@ public final class CrashLog {
     private CrashLog() {
     }
 
-    /** Ставит перехват необработанных ошибок: пишем файл и продолжаем работу. */
+    /**
+     * Ставит перехват необработанных ошибок: записываем причину и НЕ даём процессу
+     * умереть. Фоновые потоки (синхронизация, отправка, расшифровка) раньше уносили
+     * с собой всё приложение — теперь сбой виден только в «чёрном ящике».
+     */
     public static void install(final Context context) {
         final Context app = context.getApplicationContext();
         final Thread.UncaughtExceptionHandler base = Thread.getDefaultUncaughtExceptionHandler();
         Thread.setDefaultUncaughtExceptionHandler((thread, error) -> {
-            write(app, error);
-            if (base != null) {
-                base.uncaughtException(thread, error);
+            record(app, error);
+            if (error instanceof VirtualMachineError) {
+                // после нехватки памяти или переполнения стека продолжать опасно
+                if (base != null) base.uncaughtException(thread, error);
+                return;
             }
+            Log.e("MailGram", "необработанная ошибка подавлена; поток: " + thread.getName(), error);
         });
     }
 

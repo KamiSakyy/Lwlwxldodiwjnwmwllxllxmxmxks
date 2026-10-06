@@ -69,6 +69,35 @@ public final class Ui {
     }
 
     /**
+     * Обработчик касаний, который не умеет ронять приложение: любой сбой внутри
+     * жеста (свайп, зум, удержание) записывается в «чёрный ящик», а экран живёт.
+     * Жести идут мимо Ui.tap — без этой обёртки ошибка в onTouch закрывала программу.
+     */
+    public static View.OnTouchListener touch(final View.OnTouchListener body) {
+        if (body == null) return (v, event) -> false;
+        return (v, event) -> {
+            try {
+                return body.onTouch(v, event);
+            } catch (Throwable error) {
+                com.mailgram.app.util.CrashLog.record(v.getContext(), error);
+                return false;
+            }
+        };
+    }
+
+    /** Безопасный OnClickListener для мест, где слушатель ставится напрямую (панели инструментов). */
+    public static View.OnClickListener safeClick(final Context context, final View.OnClickListener body) {
+        if (body == null) return v -> {
+        };
+        return v -> safely(context, () -> body.onClick(v));
+    }
+
+    /** Безопасный Runnable для post/postDelayed — ошибка в отложенном коде не убивает приложение. */
+    public static Runnable guard(final Context context, final Runnable body) {
+        return () -> safely(context, body);
+    }
+
+    /**
      * Настоящий edge-to-edge: контент рисуется под панелью состояния и под панелью
      * навигации (обе прозрачные, системные панели не меняем), а отступы внутрь
      * добавляются только элементам интерфейса — сверху шапке, снизу нижней панели.

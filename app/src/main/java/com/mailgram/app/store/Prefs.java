@@ -83,13 +83,15 @@ public final class Prefs {
     }
 
     public static void setFontScale(Context ctx, int scale) {
-        p(ctx).edit().putInt("font_scale", Math.max(0, Math.min(2, scale))).apply();
+        // 0..3: «огромный» тоже должен сохраняться, иначе подпись и реальная величина расходятся
+        p(ctx).edit().putInt("font_scale", Math.max(0, Math.min(3, scale))).apply();
     }
 
     public static float fontScaleFactor(Context ctx) {
         switch (fontScale(ctx)) {
             case 0: return 0.88f;
             case 2: return 1.18f;
+            case 3: return 1.34f;
             default: return 1.0f;
         }
     }

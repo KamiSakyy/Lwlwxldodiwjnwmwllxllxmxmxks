@@ -114,10 +114,13 @@ public class LoginActivity extends AppCompatActivity {
         status.setVisibility(View.VISIBLE);
         status.setTextColor(getResources().getColor(R.color.text_secondary));
         status.setText(R.string.login_check_running);
-        new Thread(() -> {
+        status.setOnClickListener(Ui.tap(v -> {
+            if (!probing.get()) startProbe(true);
+        }));
+        new Thread(() -> Ui.safely(this, () -> {
             final Auth.Probe result = Auth.probeNow(getApplicationContext());
             handler.post(() -> onProbe(result));
-        }, "mailgram-probe").start();
+        }), "mailgram-probe").start();
     }
 
     private void onProbe(final Auth.Probe result) {
@@ -156,6 +159,10 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void updateStatus() {
+        Ui.safely(this, this::updateStatusInternal);
+    }
+
+    private void updateStatusInternal() {
         if (probe != null && !probe.summary.isEmpty()) {
             status.setVisibility(View.VISIBLE);
             boolean ok = probe.androidOk || probe.loopbackOk;
@@ -244,7 +251,7 @@ public class LoginActivity extends AppCompatActivity {
             try {
                 Auth.completeAuth(getApplicationContext(), code, state);
                 handler.post(this::openMain);
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 Log.w(TAG, "вход не завершён: " + e);
                 handler.post(() -> {
                     progress.setVisibility(View.GONE);
@@ -257,7 +264,12 @@ public class LoginActivity extends AppCompatActivity {
     private void openMain() {
         awaitingAuth = false;
         handler.removeCallbacks(authWatchdog);
-        startActivity(new Intent(this, MainActivity.class));
+        try {
+            startActivity(new Intent(this, MainActivity.class));
+        } catch (Throwable error) {
+            com.mailgram.app.util.CrashLog.record(this, error);
+            return;
+        }
         finish();
     }
 }

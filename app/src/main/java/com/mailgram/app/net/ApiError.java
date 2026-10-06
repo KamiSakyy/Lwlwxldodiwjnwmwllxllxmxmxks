@@ -154,7 +154,14 @@ public final class ApiError {
 
     /** Короткая строка для списка/тоста (имя метода не может быть ключевым словом Java). */
     public static String shortText(Throwable throwable) {
-        Info info = parse(throwable);
-        return info.title + (info.googleMessage.isEmpty() ? "" : ": " + shorten(info.googleMessage));
+        try {
+            Info info = parse(throwable);
+            return info.title + (info.googleMessage.isEmpty() ? "" : ": " + shorten(info.googleMessage));
+        } catch (Throwable error) {
+            // разбор ошибки не должен становиться новой ошибкой (в т.ч. на пустом cause)
+            return throwable == null ? "неизвестная ошибка"
+                    : String.valueOf(throwable.getMessage() == null
+                            ? throwable.getClass().getSimpleName() : throwable.getMessage());
+        }
     }
 }

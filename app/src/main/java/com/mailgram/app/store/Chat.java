@@ -5,9 +5,9 @@ import org.json.JSONObject;
 /** Диалог: собеседник + последнее сообщение + счётчик непрочитанных. */
 public final class Chat {
 
-    public String uid;          // 8 hex — одинаков у обоих участников
-    public String peer;         // адрес собеседника
-    public String peerPublic;   // последний известный открытый ключ собеседника (base64url)
+    public String uid = "";         // 8 hex — одинаков у обоих участников
+    public String peer = "";        // адрес собеседника
+    public String peerPublic = "";  // последний известный открытый ключ собеседника (base64url)
     public String name = "";    // локальное имя контакта
     public long lastTs;
     public String preview = "";
@@ -40,6 +40,15 @@ public final class Chat {
         return o;
     }
 
+    /** Пустые строки вместо null: интерфейс читает эти поля без проверок. */
+    public void sanitize() {
+        if (uid == null) uid = "";
+        if (peer == null) peer = "";
+        if (peerPublic == null) peerPublic = "";
+        if (name == null) name = "";
+        if (preview == null) preview = "";
+    }
+
     public static Chat fromJson(JSONObject o) {
         Chat c = new Chat();
         c.uid = o.optString("uid", "");
@@ -55,6 +64,7 @@ public final class Chat {
         c.pinned = o.optBoolean("pinned", false);
         c.muted = o.optBoolean("muted", false);
         c.verified = o.optBoolean("verified", false);
+        c.sanitize();
         return c;
     }
 }

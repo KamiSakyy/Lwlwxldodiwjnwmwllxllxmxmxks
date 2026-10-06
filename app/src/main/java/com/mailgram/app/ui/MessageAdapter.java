@@ -281,9 +281,23 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     private void bindMessage(final MessageHolder h, final Msg m) {
         final Context ctx = h.itemView.getContext();
 
-        FrameLayout.LayoutParams lp = (FrameLayout.LayoutParams) h.container.getLayoutParams();
-        lp.gravity = m.outgoing ? Gravity.END : Gravity.START;
-        h.container.setLayoutParams(lp);
+        // Пузырь выравниваем по краю только когда родитель — FrameLayout (см. item_message.xml).
+        // Раньше здесь был безусловный каст к FrameLayout.LayoutParams, и при любой другой
+        // разметке onBind бросал ClassCastException — приложение падало на каждом открытии чата.
+        android.view.ViewGroup.LayoutParams raw = h.container.getLayoutParams();
+        if (raw != null) {
+            if (raw instanceof android.widget.FrameLayout.LayoutParams) {
+                android.widget.FrameLayout.LayoutParams lp = (android.widget.FrameLayout.LayoutParams) raw;
+                lp.gravity = m.outgoing ? Gravity.END : Gravity.START;
+                h.container.setLayoutParams(lp);
+            } else if (raw instanceof android.view.ViewGroup.MarginLayoutParams) {
+                android.view.ViewGroup.MarginLayoutParams lp = (android.view.ViewGroup.MarginLayoutParams) raw;
+                int side = Ui.dp(ctx, 96);
+                lp.leftMargin = m.outgoing ? side : Ui.dp(ctx, 8);
+                lp.rightMargin = m.outgoing ? Ui.dp(ctx, 8) : side;
+                h.container.setLayoutParams(lp);
+            }
+        }
         h.container.setBackgroundResource(m.outgoing ? R.drawable.bg_bubble_out : R.drawable.bg_bubble_in);
         int onBubble = m.outgoing
                 ? ctx.getResources().getColor(R.color.bubble_out_text_dark)
@@ -490,7 +504,7 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     private void attachSwipe(final MessageHolder h, final Msg m) {
         final Context ctx = h.itemView.getContext();
         final int trigger = Ui.dp(ctx, SWIPE_TRIGGER_DP);
-        h.container.setOnTouchListener(new View.OnTouchListener() {
+        h.container.setOnTouchListener(Ui.touch(new View.OnTouchListener() {
             float startX;
             float startY;
             boolean dragging;
@@ -555,7 +569,7 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                         return false;
                 }
             }
-        });
+        }));
     }
 
     private int resolveOnSurface(Context ctx) {

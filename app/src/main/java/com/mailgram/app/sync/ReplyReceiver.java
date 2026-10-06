@@ -18,6 +18,15 @@ public class ReplyReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
+        try {
+            handleReply(context, intent);
+        } catch (Throwable error) {
+            // Сбой в приёмнике уведомления закрывает всё приложение — не допускаем этого.
+            com.mailgram.app.util.CrashLog.record(context, error);
+        }
+    }
+
+    private void handleReply(Context context, Intent intent) {
         if (intent == null || !ACTION_REPLY.equals(intent.getAction())) return;
         Bundle results = RemoteInput.getResultsFromIntent(intent);
         CharSequence text = results == null ? null : results.getCharSequence(Notifier.KEY_REPLY_TEXT);

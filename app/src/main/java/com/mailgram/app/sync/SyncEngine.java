@@ -184,8 +184,10 @@ public final class SyncEngine {
                     synchronized (result) {
                         result.undecryptable++;
                     }
-                } catch (Exception e) {
+                } catch (Throwable e) {
+                    // и ошибки тоже: необработанная ошибка в потоке пула закрывала приложение
                     Log.w(TAG, "ошибка обработки письма " + messageId + ": " + e);
+                    com.mailgram.app.util.CrashLog.record(app, e);
                 }
             }));
         }
@@ -599,7 +601,7 @@ public final class SyncEngine {
                 GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(mime));
                 notifyDirty();
                 if (callback != null) callback.onSent(null);
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 Log.w(TAG, "служебное сообщение " + type + " не ушло: " + e);
                 if (callback != null) callback.onError(describe(e));
             }
@@ -662,7 +664,7 @@ public final class SyncEngine {
                 String gmailId = GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(mime));
                 store.updateState(chat.uid, local.mid, Msg.STATE_SENT, gmailId, null);
                 notifyDirty();
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 Log.w(TAG, "отправка не удалась: " + e);
                 store.updateState(chat.uid, local.mid, Msg.STATE_FAILED, null, describe(e));
                 if (callback != null) callback.onError(describe(e));
@@ -708,7 +710,7 @@ public final class SyncEngine {
                 store.updateState(chat.uid, msg.mid, Msg.STATE_SENT, gmailId, null);
                 if (callback != null) callback.onSent(msg);
                 notifyDirty();
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 store.updateState(chat.uid, msg.mid, Msg.STATE_FAILED, null, describe(e));
                 if (callback != null) callback.onError(describe(e));
                 notifyDirty();
@@ -795,7 +797,7 @@ public final class SyncEngine {
                 String gmailId = GmailApi.send(Auth.accessTokenFresh(app), Mime.toRaw(mime));
                 store.updateState(chatUid, mid, Msg.STATE_SENT, gmailId, null);
                 notifyDirty();
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 store.updateState(chatUid, mid, Msg.STATE_FAILED, null, describe(e));
                 if (callback != null) callback.onError(describe(e));
                 notifyDirty();
@@ -821,7 +823,7 @@ public final class SyncEngine {
                         GmailApi.markRead(token, m.gmailId);
                     }
                 }
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 Log.w(TAG, "не удалось снять метку непрочитанного: " + e);
             }
         });
