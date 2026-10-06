@@ -33,6 +33,16 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Кэш нативной сборки и Gradle (ускорение пересборки)
+        uses: actions/cache@v4
+        with:
+          path: |
+            app/.cxx
+            app/build
+            .gradle
+          key: mailgram-build-${{ runner.os }}-${{ hashFiles('app/src/main/cpp/**', 'app/build.gradle', 'gradle/libs.versions.toml') }}
+          restore-keys: mailgram-build-${{ runner.os }}-
+
       - uses: actions/setup-java@v6
         with:
           distribution: temurin
