@@ -6,13 +6,15 @@ on:
       - arena/3f6a741b-lwlwxldodiwjnwmwllxllxmxmxks
     paths:
       - .github/workflows/vk-apk-static-review.yml
+      - .gitattributes
       - handoff/analyze_decompiled.py
+      - handoff/analyze_package_size.py
       - handoff/prepare_apkpure_xapk.py
       - handoff/README.md
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   decompile-and-review:
@@ -25,16 +27,13 @@ jobs:
       JADX_DIRECTORY: vk-jadx
       APKPURE_XAPK_URL: 'https://d.apkpure.net/b/XAPK/com.vkontakte.android?version=latest'
       EXPECTED_SIGNER_SHA1: 48761eef50ee53afc4cc9c5f10e6bde7f8f5b82f
+      GIT_LFS_SKIP_SMUDGE: '1'
 
     steps:
-      - name: Checkout analyzer only
+      - name: Checkout repository
         uses: actions/checkout@v5
         with:
-          sparse-checkout: |
-            handoff/analyze_decompiled.py
-            handoff/prepare_apkpure_xapk.py
-          sparse-checkout-cone-mode: false
-          persist-credentials: false
+          persist-credentials: true
           fetch-depth: 1
 
       - name: Set up Java for JADX
@@ -140,6 +139,42 @@ jobs:
             exit 1
           fi
 
+      - name: Preserve APKPure source files in handoff through Git LFS
+        shell: bash
+        run: |
+          set -euo pipefail
+          expected_ref='refs/heads/arena/3f6a741b-lwlwxldodiwjnwmwllxllxmxmxks'
+          if [[ "$GITHUB_REF" != "$expected_ref" ]]; then
+            echo "::error::Refusing to persist APK outside the session branch $expected_ref"
+            exit 1
+          fi
+          if ! command -v git-lfs >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y git-lfs
+          fi
+          git lfs install --local
+          mkdir -p handoff
+          cp "$RUNNER_TEMP/$APK_ARCHIVE_NAME" handoff/vk-apkpure-latest.xapk
+          cp "$RUNNER_TEMP/$APK_NAME" handoff/vk-apkpure-latest-base.apk
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .gitattributes handoff/vk-apkpure-latest.xapk handoff/vk-apkpure-latest-base.apk
+          if git diff --cached --quiet; then
+            echo 'APKPure source files are already current in handoff.'
+          else
+            git commit -m 'Store APKPure VK source files in handoff [skip ci]'
+            git push origin "HEAD:$expected_ref"
+          fi
+          echo 'Original XAPK and extracted base APK are retained in handoff via Git LFS.'
+
+      - name: Audit APK/XAPK size composition
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 handoff/analyze_package_size.py \
+            "$RUNNER_TEMP/$APK_ARCHIVE_NAME" \
+            "$RUNNER_TEMP/$APK_NAME"
+
       - name: Download JADX
         shell: bash
         run: |
@@ -155,7 +190,7 @@ jobs:
       - name: Decompile to temporary runner storage
         shell: bash
         env:
-          JAVA_OPTS: -Xmx7g
+          JAVA_OPTS: -Xmx10g
         run: |
           set -euo pipefail
           APK_PATH="$RUNNER_TEMP/$APK_NAME"

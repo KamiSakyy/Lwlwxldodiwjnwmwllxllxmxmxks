@@ -1,21 +1,20 @@
-# VK APK static review
-
-This folder contains workflow support for the requested first-pass review of the VK Android package. It does not implement or build any modifications.
-
-## Download source
+# VK APK mod workspace
 
 The workflow uses the direct APKPure URL supplied by the user:
 
 `https://d.apkpure.net/b/XAPK/com.vkontakte.android?version=latest`
 
-That endpoint is an APKPure XAPK download route. The workflow downloads it only to the temporary GitHub Actions runner, selects the base APK without uploading the archive, checks the APK package/signature, and decompiles the base APK with JADX. The manifest version and code are reported from the resolved download because `version=latest` can change over time.
+## Retained source package
 
-In the successful Actions review run, `apksigner` verified the base APK and its signer matched the configured VK fingerprint: SHA-1 `48761eef50ee53afc4cc9c5f10e6bde7f8f5b82f` (SHA-256 `057d974412032066f1b5edb1fdb550f71854189815c806b27c4d486fb4f1ef32`). This confirms the APK matches the pinned certificate, but is not by itself independent proof of publisher identity.
+On the next workflow run, it will save both the downloaded APKPure XAPK and the extracted base APK in this folder:
 
-The `version=latest` URL resolved to VK 8.193, version code 57318, in Actions run [37512206885](https://github.com/KamiSakyy/Lwlwxldodiwjnwmwllxllxmxmxks/actions/runs/37512206885). JADX emitted 73,744 Java files but exited after heap/decoder errors; the metadata summary is therefore partial, not exhaustive.
+- `vk-apkpure-latest.xapk`
+- `vk-apkpure-latest-base.apk`
 
-## Handling and privacy
+They are tracked with Git LFS so the binary files remain in `handoff/` instead of being deleted at the end of the Actions job. The repository is currently public; anyone with repository access can download these binaries. Decompiled Java sources, signing keys, and credentials are not committed.
 
-The APK and decompiled tree stay in ephemeral runner storage and are deleted at the end of the job. No APK, XAPK, or decompiled source is uploaded as an artifact or committed. The workflow summary is metadata-only and intentionally omits source lines and string literal values.
+## Verification and review
 
-This repository is public, so Actions run names, logs, and summaries are public too. Do not put credentials, access tokens, APK files, decompiled source, or signing keys in the workflow or its outputs. No access token is used; any later VK login must continue to use the normal app login/session flow.
+The APKPure response is checked as a ZIP/XAPK, the base APK is selected safely, and `apksigner` verifies the APK and compares its signer SHA-1 with the previously observed VK fingerprint. The successful run `37512206885` resolved to VK 8.193, version code 57318; JADX emitted 73,744 Java files but hit heap/decoder errors, so that earlier analysis was partial. The workflow now uses a larger JADX heap and also produces a package-size breakdown to guide safe size optimization.
+
+No manual VK `access_token` is used. Any eventual login/session behavior must stay on the normal VK sign-in flow. The mod implementation remains limited to size optimization until specific behavior changes are defined.
