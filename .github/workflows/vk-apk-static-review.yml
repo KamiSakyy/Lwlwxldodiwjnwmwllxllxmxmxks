@@ -109,6 +109,20 @@ jobs:
             exit 1
           fi
           "$apksigner" verify --verbose --print-certs "$APK_PATH" > "$RUNNER_TEMP/apk-signature.txt" 2>&1
+          signer_format="$(python3 - "$RUNNER_TEMP/apk-signature.txt" <<'PY'
+          import re
+          import sys
+          path = sys.argv[1]
+          lines = []
+          with open(path, encoding='utf-8', errors='replace') as stream:
+              for raw in stream:
+                  if 'signer' in raw.lower() or 'certificate' in raw.lower():
+                      label = raw.strip().split(':', 1)[0]
+                      lines.append(re.sub(r'[^A-Za-z0-9 #_.-]', '?', label)[:120])
+          print(' | '.join(lines[:12]) or 'no signer/certificate labels')
+          PY
+          )"
+          echo "::notice title=APK signer output fields::$signer_format"
           signer_digests="$(python3 - "$RUNNER_TEMP/apk-signature.txt" <<'PY'
           import re
           import sys
