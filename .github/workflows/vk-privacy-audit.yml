@@ -1,0 +1,128 @@
+name: VK privacy footprint audit
+
+on:
+  push:
+    branches:
+      - arena/3f6a741b-lwlwxldodiwjnwmwllxllxmxmxks
+    paths:
+      - .github/workflows/vk-privacy-audit.yml
+      - handoff/audit_privacy_footprint.py
+      - handoff/prepare_apkpure_xapk.py
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    name: Audit known ad and tracking SDK signatures
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    env:
+      APK_ARCHIVE_NAME: vk-latest.xapk
+      APK_NAME: vk-base.apk
+      APKPURE_XAPK_URL: 'https://d.apkpure.net/b/XAPK/com.vkontakte.android?version=latest'
+      EXPECTED_SIGNER_SHA1: 48761eef50ee53afc4cc9c5f10e6bde7f8f5b82f
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+
+      - name: Set up Java for APK signature verification
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Download latest VK XAPK from APKPure
+        shell: bash
+        run: |
+          set -euo pipefail
+          ARCHIVE_PATH="$RUNNER_TEMP/$APK_ARCHIVE_NAME"
+          response="$(curl --silent --show-error --location --retry 3 --retry-delay 2 --max-time 1800 \
+            --user-agent 'Mozilla/5.0 (compatible; GitHubActions VK privacy audit)' \
+            --referer 'https://apkpure.net/' \
+            --header 'Accept: application/vnd.android.package-archive, application/octet-stream, */*' \
+            --write-out '%{http_code}|%{content_type}' \
+            --output "$ARCHIVE_PATH" "$APKPURE_XAPK_URL")"
+          http_status="${response%%|*}"
+          content_type="${response#*|}"
+          size_bytes="$(stat -c '%s' "$ARCHIVE_PATH")"
+          echo "APKPure response: HTTP $http_status, content-type=$content_type, bytes=$size_bytes"
+          if [[ "$http_status" != '200' ]]; then
+            echo "::error::APKPure returned HTTP $http_status"
+            exit 1
+          fi
+          if (( size_bytes < 50000000 || size_bytes > 1000000000 )); then
+            echo "::error::Unexpected download size: $size_bytes bytes"
+            exit 1
+          fi
+          python3 - "$ARCHIVE_PATH" <<'PY'
+          import sys
+          import zipfile
+          path = sys.argv[1]
+          if not zipfile.is_zipfile(path):
+              raise SystemExit('APKPure response is not a ZIP/XAPK archive')
+          with zipfile.ZipFile(path) as archive:
+              print(f'XAPK archive entries: {len(archive.namelist())}')
+          PY
+
+      - name: Extract base APK
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 handoff/prepare_apkpure_xapk.py \
+            "$RUNNER_TEMP/$APK_ARCHIVE_NAME" \
+            "$RUNNER_TEMP/$APK_NAME"
+          sha256sum "$RUNNER_TEMP/$APK_NAME"
+
+      - name: Verify the official VK signer fingerprint
+        shell: bash
+        run: |
+          set -euo pipefail
+          sdk_root="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-}}"
+          if [[ -z "$sdk_root" || ! -d "$sdk_root/build-tools" ]]; then
+            echo 'Android build-tools are unavailable; refusing to skip signature verification.' >&2
+            exit 1
+          fi
+          apksigner="$(find "$sdk_root/build-tools" -type f -name apksigner -print | sort -V | tail -n 1)"
+          if [[ -z "$apksigner" ]]; then
+            echo 'apksigner was not found in Android build-tools.' >&2
+            exit 1
+          fi
+          "$apksigner" verify --verbose --print-certs "$RUNNER_TEMP/$APK_NAME" > "$RUNNER_TEMP/apk-signature.txt" 2>&1
+          actual_sha1="$(python3 - "$RUNNER_TEMP/apk-signature.txt" <<'PY'
+          import re
+          import sys
+          found = set()
+          pattern = re.compile(
+              r'(?i)^\s*(?:Signer\s+#\d+\s+certificate|'
+              r'V\d+(?:\.\d+)?\s+Signer:\s+certificate)\s+'
+              r'SHA-1\s+digest:\s*([0-9a-f:]+)'
+          )
+          with open(sys.argv[1], encoding='utf-8', errors='replace') as stream:
+              for line in stream:
+                  match = pattern.search(line)
+                  if match:
+                      found.add(match.group(1).lower().replace(':', ''))
+          if len(found) != 1:
+              raise SystemExit(f'Expected exactly one signer SHA-1, found {len(found)}')
+          print(next(iter(found)))
+          PY
+          )"
+          echo "::notice title=APK signer::SHA-1=$actual_sha1"
+          if [[ "$actual_sha1" != "$EXPECTED_SIGNER_SHA1" ]]; then
+            echo "::error::VK signer mismatch: expected $EXPECTED_SIGNER_SHA1, received $actual_sha1"
+            exit 1
+          fi
+
+      - name: Audit ad and tracking SDK signatures
+        shell: bash
+        run: python3 handoff/audit_privacy_footprint.py "$RUNNER_TEMP/$APK_NAME"
+
+      - name: Remove downloaded APKs and signature metadata
+        if: always()
+        shell: bash
+        run: rm -f "$RUNNER_TEMP/$APK_ARCHIVE_NAME" "$RUNNER_TEMP/$APK_NAME" "$RUNNER_TEMP/apk-signature.txt"
