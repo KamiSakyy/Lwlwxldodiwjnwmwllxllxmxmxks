@@ -116,6 +116,10 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
 
     private boolean onMenu(MenuItem item) {
         int id = item.getItemId();
+        if (id == R.id.action_search_messages) {
+            searchMessagesDialog();
+            return true;
+        }
         if (id == R.id.action_settings) {
             startActivity(new Intent(this, SettingsActivity.class));
             return true;
@@ -239,6 +243,63 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
             if (active) Anim.pop(view);
         }
         updateEmpty();
+    }
+
+    /** Поиск по всем сообщениям: находка открывает чат сразу на нужном месте. */
+    private void searchMessagesDialog() {
+        final EditText query = new EditText(this);
+        query.setHint(R.string.search_messages_hint);
+        query.setSingleLine(true);
+        final android.widget.LinearLayout box = new android.widget.LinearLayout(this);
+        box.setOrientation(android.widget.LinearLayout.VERTICAL);
+        int pad = Ui.dp(this, 20);
+        box.setPadding(pad, Ui.dp(this, 8), pad, 0);
+        box.addView(query);
+        final TextView results = new TextView(this);
+        results.setTextSize(14f);
+        results.setPadding(0, Ui.dp(this, 12), 0, 0);
+        box.addView(results);
+
+        final MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this)
+                .setTitle(R.string.search_messages)
+                .setView(box)
+                .setNegativeButton(R.string.cancel, null);
+        final androidx.appcompat.app.AlertDialog dialog = builder.create();
+        query.addTextChangedListener(new android.text.TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                List<com.mailgram.app.store.Store.Hit> hits =
+                        Store.get(MainActivity.this).searchMessages(s.toString(), 40);
+                if (s.toString().trim().length() < 2) {
+                    results.setText("");
+                    return;
+                }
+                results.setText(hits.isEmpty() ? getString(R.string.nothing_here)
+                        : getString(R.string.found_count, hits.size()));
+                if (hits.isEmpty()) return;
+                final com.mailgram.app.store.Store.Hit first = hits.get(0);
+                results.setOnClickListener(v -> {
+                    dialog.dismiss();
+                    openChatAt(first.uid, first.msg.mid);
+                });
+            }
+
+            @Override
+            public void afterTextChanged(android.text.Editable s) {
+            }
+        });
+        dialog.show();
+    }
+
+    /** Открывает чат и подсвечивает найденное сообщение. */
+    private void openChatAt(String chatUid, String mid) {
+        startActivity(new Intent(this, ChatActivity.class)
+                .putExtra(ChatActivity.EXTRA_CHAT_UID, chatUid)
+                .putExtra(ChatActivity.EXTRA_JUMP_MID, mid));
     }
 
     /** Долгое нажатие по чату: закрепить, без звука, переименовать, сведения, очистить, удалить. */

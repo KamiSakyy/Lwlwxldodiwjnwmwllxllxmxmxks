@@ -54,6 +54,8 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     public static final String EXTRA_CHAT_UID = "chat_uid";
     /** Имя общего элемента (аватар) для плавного перехода из списка чатов. */
     public static final String EXTRA_SHARED_AVATAR = "shared_avatar";
+    /** Открыть чат сразу на нужном сообщении (переход из глобального поиска). */
+    public static final String EXTRA_JUMP_MID = "jump_mid";
 
     private static final int REQ_PICK_PHOTO = 3001;
     private static final int REQ_PICK_VIDEO = 3002;
@@ -695,6 +697,12 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         }
 
         adapter.submit(messages, unreadAnchor(messages), this);
+        String pending = getIntent().getStringExtra(EXTRA_JUMP_MID);
+        if (pending != null && !pending.isEmpty()) {
+            getIntent().removeExtra(EXTRA_JUMP_MID);
+            final String mid = pending;
+            handler.postDelayed(() -> jumpTo(mid), 420L);
+        }
         if (messages.size() != lastCount) {
             lastCount = messages.size();
             list.post(() -> scrollToBottom());

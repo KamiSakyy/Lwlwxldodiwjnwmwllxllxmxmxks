@@ -5,6 +5,8 @@
         android:title="@string/search" app:showAsAction="ifRoom" />
     <item android:id="@+id/action_sync" android:icon="@drawable/ic_sync"
         android:title="@string/sync_now" app:showAsAction="ifRoom" />
+    <item android:id="@+id/action_search_messages" android:title="@string/search_messages"
+        app:showAsAction="never" />
     <item android:id="@+id/action_settings" android:icon="@drawable/ic_settings"
         android:title="@string/settings" app:showAsAction="ifRoom" />
 </menu>

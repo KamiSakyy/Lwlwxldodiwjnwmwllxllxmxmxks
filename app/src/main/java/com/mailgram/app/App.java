@@ -32,7 +32,7 @@ public class App extends Application {
 
     /** Пора ли снова спрашивать PIN (по умолчанию — через 60 секунд в фоне). */
     public static boolean shouldLock() {
-        return !unlocked && backgroundedAt > 0L
+        return backgroundedAt > 0L
                 && System.currentTimeMillis() - backgroundedAt > 60_000L;
     }
 

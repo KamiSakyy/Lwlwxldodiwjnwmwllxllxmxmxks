@@ -388,6 +388,36 @@ public final class Store {
         return out;
     }
 
+    /** Найденное сообщение вместе с чатом, в котором оно лежит. */
+    public static final class Hit {
+        public final String uid;
+        public final Msg msg;
+
+        public Hit(String uid, Msg msg) {
+            this.uid = uid;
+            this.msg = msg;
+        }
+    }
+
+    /** Поиск по тексту сообщений во всех чатах: свежие находки первыми. */
+    public synchronized List<Hit> searchMessages(String query, int limit) {
+        List<Hit> hits = new ArrayList<>();
+        String needle = query == null ? "" : query.trim().toLowerCase(java.util.Locale.US);
+        if (needle.isEmpty()) return hits;
+        for (Map.Entry<String, LinkedHashMap<String, Msg>> entry : messages.entrySet()) {
+            for (Msg m : entry.getValue().values()) {
+                if (m.deleted || m.isControl()) continue;
+                String text = m.text == null ? "" : m.text;
+                if (text.toLowerCase(java.util.Locale.US).contains(needle)) {
+                    hits.add(new Hit(entry.getKey(), m));
+                }
+            }
+        }
+        Collections.sort(hits, (a, b) -> Long.compare(b.msg.ts, a.msg.ts));
+        if (hits.size() > limit) return new ArrayList<>(hits.subList(0, limit));
+        return hits;
+    }
+
     public synchronized int messageCount(String uid) {
         LinkedHashMap<String, Msg> list = messages.get(uid);
         return list == null ? 0 : list.size();

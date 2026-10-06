@@ -80,7 +80,21 @@ jobs:
             echo "MAILGRAM_KEY_ALIAS=${{ secrets.MAILGRAM_KEY_ALIAS }}" >> "$GITHUB_ENV"
           fi
           chmod +x gradlew
-          ./gradlew --no-daemon --console=plain :app:assembleRelease
+          set -o pipefail
+          ./gradlew --no-daemon --console=plain :app:assembleRelease 2>&1 | tee build.log
+
+      - name: Ошибки сборки в аннотации
+        if: failure()
+        run: |
+          # Логи раннера недоступны извне, поэтому строки ошибок печатаем как аннотации —
+          # они видны через check-runs API сразу после падения.
+          if [ -f build.log ]; then
+            grep -E "error:|e: |FAILED|What went wrong|Caused by|AAPT|aapt2|Execution failed" build.log \
+              | tail -40 | while IFS= read -r line; do
+                echo "::error title=Ошибка сборки::$line"
+              done
+          fi
+          exit 0
 
       - name: Размер APK (лимит 15 МБ)
         run: |

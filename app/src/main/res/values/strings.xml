@@ -248,4 +248,7 @@
     <string name="unpinned_toast">Откреплено сообщений: %1$d</string>
     <string name="delete_many_confirm">Удалить у обоих участников выбранные сообщения (%1$d)?</string>
     <string name="forwarded_count">Переслано сообщений: %1$d</string>
+    <string name="search_messages">Поиск в сообщениях</string>
+    <string name="search_messages_hint">Слово или фраза</string>
+    <string name="found_count">Найдено сообщений: %1$d — нажмите, чтобы открыть первое</string>
 </resources>
