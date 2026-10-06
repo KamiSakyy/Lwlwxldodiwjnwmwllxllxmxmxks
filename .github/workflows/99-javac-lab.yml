@@ -1,0 +1,59 @@
+name: "99: javac-лаборатория (репро Object-слепоты)"
+
+on:
+  push:
+    paths:
+      - ".github/workflows/99-javac-lab.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lab:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: "arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks"
+      - name: "JDK 17"
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - name: "android.jar"
+        run: |
+          SDK="${ANDROID_HOME:-$ANDROID_SDK_ROOT}"
+          "$SDK/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" | tail -1
+          echo "AJ=$SDK/platforms/android-36/android.jar" >> "$GITHUB_ENV"
+      - name: "Эксперименты"
+        shell: bash
+        run: |
+          SRC="$PWD/handoff/GitHub-RU-v2/app/src/main/java"
+          AJ="$AJ"
+          [ -n "$AJ" ] || AJ=$(echo "$ANDROID_HOME")/platforms/android-36/android.jar
+
+          echo "===== ЭКСП 1: v1.java один (bootclasspath, без sourcepath) ====="
+          rm -rf /tmp/l1; mkdir -p /tmp/l1
+          javac -d /tmp/l1 -nowarn -proc:none -Xmaxerrs 50 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC/a0/v1.java" 2>&1 | head -15 || true
+
+          echo "===== ЭКСП 2: v1.java + u1.java ====="
+          rm -rf /tmp/l2; mkdir -p /tmp/l2
+          javac -d /tmp/l2 -nowarn -proc:none -Xmaxerrs 50 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC/a0/v1.java" "$SRC/a0/u1.java" 2>&1 | head -15 || true
+
+          echo "===== ЭКСП 3: v1 + u1 + k71-стаб ====="
+          rm -rf /tmp/l3; mkdir -p /tmp/l3
+          printf '%s\n' 'package k71;' 'public class k {' '    public static boolean b(Object a, Object b) { return a == b || (a != null && a.equals(b)); }' '    public static int b(Object a) { return a == null ? 0 : a.hashCode(); }' '}' > /tmp/l3src_k.java
+          javac -d /tmp/l3 -nowarn -proc:none -Xmaxerrs 50 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC/a0/v1.java" "$SRC/a0/u1.java" /tmp/l3src_k.java 2>&1 | head -15 || true
+
+          echo "===== ЭКСП 4: весь пакет a0 (44 файла) ====="
+          rm -rf /tmp/l4; mkdir -p /tmp/l4
+          javac -d /tmp/l4 -nowarn -proc:none -Xmaxerrs 50 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC"/a0/*.java 2>&1 | head -25 || true
+          echo "--- счётчик Object-ошибок в exp4:"
+          javac -d /tmp/l4b -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC"/a0/*.java 2>&1 | grep -c "symbol:   class Object$" || true
+
+          echo "===== ЭКСП 5: весь пакет i80 ====="
+          rm -rf /tmp/l5; mkdir -p /tmp/l5
+          javac -d /tmp/l5 -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC"/i80/*.java 2>&1 | grep -cE "error:" || true
+          javac -d /tmp/l5b -nowarn -proc:none -Xmaxerrs 200000 -source 8 -target 8 -encoding UTF-8 -bootclasspath "$AJ" "$SRC"/i80/*.java 2>&1 | grep -c "symbol:   class Object$" || true
