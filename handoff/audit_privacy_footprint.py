@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import os
 import re
+import struct
 import sys
 import zipfile
 from collections import Counter
@@ -88,6 +89,65 @@ def dex_files(names: list[str]) -> list[str]:
     )
 
 
+def _length8(data: bytes, offset: int) -> tuple[int, int]:
+    first = data[offset]
+    if first & 0x80:
+        return (((first & 0x7F) << 8) | data[offset + 1], offset + 2)
+    return first, offset + 1
+
+
+def _length16(data: bytes, offset: int) -> tuple[int, int]:
+    first = struct.unpack_from("<H", data, offset)[0]
+    if first & 0x8000:
+        second = struct.unpack_from("<H", data, offset + 2)[0]
+        return (((first & 0x7FFF) << 16) | second, offset + 4)
+    return first, offset + 2
+
+
+def axml_strings(data: bytes) -> set[str]:
+    """Read the Android binary-XML string pool, accepting UTF-8 and UTF-16 pools."""
+    strings: set[str] = set()
+    if len(data) < 8:
+        return strings
+    chunk_type, _root_header, _root_size = struct.unpack_from("<HHI", data, 0)
+    if chunk_type != 0x0003:
+        return strings
+    offset = struct.unpack_from("<H", data, 2)[0]
+    while offset + 8 <= len(data):
+        chunk_type, header_size, chunk_size = struct.unpack_from("<HHI", data, offset)
+        if chunk_size < header_size or offset + chunk_size > len(data):
+            break
+        if chunk_type == 0x0001 and header_size >= 28:
+            string_count, _style_count, flags, strings_start, _styles_start = struct.unpack_from(
+                "<IIIII", data, offset + 8
+            )
+            offsets_start = offset + header_size
+            if string_count > 1_000_000 or offsets_start + string_count * 4 > offset + chunk_size:
+                return strings
+            is_utf8 = bool(flags & 0x100)
+            for index in range(string_count):
+                relative = struct.unpack_from("<I", data, offsets_start + index * 4)[0]
+                cursor = offset + strings_start + relative
+                if cursor < offset or cursor >= offset + chunk_size:
+                    continue
+                try:
+                    if is_utf8:
+                        _utf16_len, cursor = _length8(data, cursor)
+                        byte_len, cursor = _length8(data, cursor)
+                        value = data[cursor:cursor + byte_len].decode("utf-8", errors="replace")
+                    else:
+                        char_len, cursor = _length16(data, cursor)
+                        byte_len = char_len * 2
+                        value = data[cursor:cursor + byte_len].decode("utf-16le", errors="replace")
+                except (IndexError, struct.error):
+                    continue
+                if value:
+                    strings.add(value)
+            return strings
+        offset += chunk_size
+    return strings
+
+
 def audit(apk_path: Path) -> list[str]:
     with zipfile.ZipFile(apk_path, "r") as apk:
         names = apk.namelist()
@@ -117,12 +177,14 @@ def audit(apk_path: Path) -> list[str]:
             f"- {category.title()} SDK prefixes: "
             + (", ".join(f"{label} ({count})" for label, count in found) if found else "none of the known prefixes matched")
         )
-    present = [permission for permission in PERMISSIONS if permission.encode("ascii") in manifest]
+    manifest_strings = axml_strings(manifest)
+    if not manifest_strings:
+        manifest_strings = {
+            match.decode("ascii", errors="ignore")
+            for match in re.findall(rb"[A-Za-z0-9_.$/]{4,}", manifest)
+        }
+    present = [permission for permission in PERMISSIONS if permission in manifest_strings]
     result.append("- Privacy-sensitive manifest permissions: " + (", ".join(f"`{name}`" for name in present) if present else "none from the reviewed list"))
-    manifest_strings = {
-        match.decode("ascii", errors="ignore")
-        for match in re.findall(rb"[A-Za-z0-9_.$/]{4,}", manifest)
-    }
     sdk_names = sorted(
         value for value in manifest_strings
         if any(marker.decode("ascii") in value for marker in MANIFEST_SDK_MARKERS)

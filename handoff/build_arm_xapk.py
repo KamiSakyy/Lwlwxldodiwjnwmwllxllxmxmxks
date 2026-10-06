@@ -123,11 +123,14 @@ def build(
     store_password_file: Path,
     key_password_file: Path,
     keep_abis: set[str],
+    replacement_base_apk: Path | None = None,
 ) -> dict[str, object]:
     if not source_xapk.is_file():
         raise ValueError(f"source XAPK does not exist: {source_xapk}")
     if not keep_abis:
         raise ValueError("at least one target ABI must be specified")
+    if replacement_base_apk is not None and not replacement_base_apk.is_file():
+        raise ValueError(f"replacement base APK does not exist: {replacement_base_apk}")
     for tool_path, label in ((zipalign, "zipalign"), (apksigner, "apksigner")):
         if not tool_path.is_file() or not os.access(tool_path, os.X_OK):
             raise ValueError(f"{label} executable is unavailable: {tool_path}")
@@ -188,10 +191,30 @@ def build(
             metadata_by_member: dict[str, tuple[set[str], int]] = {}
             for index, info in enumerate(apk_infos):
                 staged = workdir / f"source-{index:03d}.apk"
-                with source.open(info, "r") as input_stream, staged.open("wb") as output_stream:
-                    shutil.copyfileobj(input_stream, output_stream, length=1024 * 1024)
+                if replacement_base_apk is not None and info.filename == base_member_name:
+                    original_base = workdir / "original-base.apk"
+                    with source.open(info, "r") as input_stream, original_base.open("wb") as output_stream:
+                        shutil.copyfileobj(input_stream, output_stream, length=1024 * 1024)
+                    original_abis, original_dex_count = apk_metadata(original_base)
+                    shutil.copyfile(replacement_base_apk, staged)
+                    abis, dex_count = apk_metadata(staged)
+                    if dex_count != original_dex_count:
+                        raise ValueError(
+                            f"replacement base changed the DEX split count "
+                            f"({original_dex_count} -> {dex_count})"
+                        )
+                    if abis != original_abis:
+                        raise ValueError(
+                            "replacement base changed native ABI contents "
+                            f"({', '.join(sorted(original_abis)) or 'none'} -> "
+                            f"{', '.join(sorted(abis)) or 'none'})"
+                        )
+                    original_base.unlink(missing_ok=True)
+                else:
+                    with source.open(info, "r") as input_stream, staged.open("wb") as output_stream:
+                        shutil.copyfileobj(input_stream, output_stream, length=1024 * 1024)
+                    abis, dex_count = apk_metadata(staged)
                 temp_name_by_member[info.filename] = staged
-                abis, dex_count = apk_metadata(staged)
                 file_abi = filename_abi(info.filename)
                 if file_abi:
                     if abis and file_abi not in abis:
@@ -346,6 +369,7 @@ def build(
         "dex_after": dex_after,
         "signer_sha256": signer_fingerprint,
         "manifest_updated": output_manifest is not None,
+        "base_apk_replaced": replacement_base_apk is not None,
         "apk_stats": apk_stats,
     }
 
@@ -361,6 +385,7 @@ def main() -> int:
     parser.add_argument("--store-password-file", type=Path, required=True)
     parser.add_argument("--key-password-file", type=Path, required=True)
     parser.add_argument("--keep-abi", action="append", default=[], dest="keep_abis")
+    parser.add_argument("--replacement-base-apk", type=Path)
     args = parser.parse_args()
 
     try:
@@ -374,6 +399,7 @@ def main() -> int:
             args.store_password_file,
             args.key_password_file,
             set(args.keep_abis),
+            args.replacement_base_apk,
         )
     except Exception as exc:
         message = f"ARM XAPK build failed: {type(exc).__name__}: {exc}"
@@ -395,6 +421,7 @@ def main() -> int:
         f"- ABI(s) present in source: {', '.join(result['available_abis']) or 'none'}",
         f"- Retained APK splits: {len(result['retained_apk_members'])}",
         f"- Excluded APK splits: {', '.join(result['dropped_apk_members']) or 'none'}",
+        f"- Replacement base APK supplied: {'yes' if result['base_apk_replaced'] else 'no'}",
         f"- XAPK size: {result['input_bytes']} -> {result['output_bytes']} bytes",
         f"- Reduction: {result['reduction_bytes']} bytes ({result['reduction_percent']:.2f}%)",
         f"- Base DEX ZIP bytes: {result['dex_before']} -> {result['dex_after']}",

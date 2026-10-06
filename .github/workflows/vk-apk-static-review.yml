@@ -8,13 +8,23 @@ on:
       - .github/workflows/vk-apk-static-review.yml
       - .gitattributes
       - handoff/analyze_decompiled.py
+      - handoff/audit_privacy_footprint.py
       - handoff/analyze_package_size.py
       - handoff/analyze_xapk_layout.py
+      - handoff/apply_privacy_manifest.py
       - handoff/build_arm_xapk.py
+      - handoff/patch_smali_sdk_calls.py
+      - handoff/prepare_privacy_base.py
       - handoff/optimize_abi_apk.py
       - handoff/prepare_apkpure_xapk.py
-      - handoff/README.md
+      - handoff/tests/**
   workflow_dispatch:
+    inputs:
+      full_decompile:
+        description: 'Run the longer JADX static review after build'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -28,6 +38,8 @@ jobs:
       APK_ARCHIVE_NAME: vk-latest.xapk
       APK_NAME: vk-base.apk
       MOD_XAPK_NAME: vk-mod-arm.xapk
+      APKTOOL_JAR_NAME: apktool_2.11.1.jar
+      PRIVACY_BASE_APK_NAME: vk-base-privacy.apk
       JADX_DIRECTORY: vk-jadx
       APKPURE_XAPK_URL: 'https://d.apkpure.net/b/XAPK/com.vkontakte.android?version=latest'
       EXPECTED_SIGNER_SHA1: 48761eef50ee53afc4cc9c5f10e6bde7f8f5b82f
@@ -40,7 +52,11 @@ jobs:
           persist-credentials: true
           fetch-depth: 1
 
-      - name: Set up Java for JADX
+      - name: Test privacy patch utilities
+        shell: bash
+        run: python3 -m unittest discover -s handoff/tests -v
+
+      - name: Set up Java for APK processing
         uses: actions/setup-java@v5
         with:
           distribution: temurin
@@ -185,7 +201,26 @@ jobs:
           set -euo pipefail
           python3 handoff/analyze_xapk_layout.py "$RUNNER_TEMP/$APK_ARCHIVE_NAME"
 
-      - name: Build ARM-focused size-optimized XAPK
+      - name: Rebuild base APK with ad and telemetry call-sites disabled
+        shell: bash
+        run: |
+          set -euo pipefail
+          apktool_jar="$RUNNER_TEMP/$APKTOOL_JAR_NAME"
+          patched_base="$RUNNER_TEMP/$PRIVACY_BASE_APK_NAME"
+          curl --fail --location --retry 3 --max-time 180 \
+            'https://github.com/iBotPeaches/Apktool/releases/download/v2.11.1/apktool_2.11.1.jar' \
+            --output "$apktool_jar"
+          java -jar "$apktool_jar" --version
+          python3 handoff/prepare_privacy_base.py \
+            "$RUNNER_TEMP/$APK_NAME" "$patched_base" \
+            --apktool-jar "$apktool_jar" --work-dir "$RUNNER_TEMP"
+          sha256sum "$patched_base"
+
+      - name: Audit patched base APK privacy footprint
+        shell: bash
+        run: python3 handoff/audit_privacy_footprint.py "$RUNNER_TEMP/$PRIVACY_BASE_APK_NAME"
+
+      - name: Build ARM-focused privacy-modified XAPK
         id: build_mod
         continue-on-error: true
         shell: bash
@@ -225,7 +260,7 @@ jobs:
             -keystore "$keystore" \
             -storepass:file "$store_password_file" \
             -keypass:file "$key_password_file" \
-            -dname 'CN=VK ARM size mod, O=Temporary build, C=DE'
+            -dname 'CN=VK ARM privacy mod, O=Temporary build, C=DE'
 
           python3 handoff/build_arm_xapk.py \
             "$RUNNER_TEMP/$APK_ARCHIVE_NAME" "$output_xapk" \
@@ -234,7 +269,8 @@ jobs:
             --keystore "$keystore" \
             --store-password-file "$store_password_file" \
             --key-password-file "$key_password_file" \
-            --keep-abi armeabi-v7a
+            --keep-abi armeabi-v7a \
+            --replacement-base-apk "$RUNNER_TEMP/$PRIVACY_BASE_APK_NAME"
 
       - name: Preserve optimized ARM XAPK in handoff through Git LFS
         if: steps.build_mod.outcome == 'success'
@@ -258,7 +294,7 @@ jobs:
           if git diff --cached --quiet; then
             echo 'The optimized ARM XAPK is already current in handoff.'
           else
-            git commit -m 'Store size-optimized VK ARM XAPK in handoff [skip ci]'
+            git commit -m 'Store privacy-modified VK ARM XAPK in handoff [skip ci]'
             git push origin "HEAD:$expected_ref"
           fi
           pointer_line="$(git show "HEAD:handoff/$MOD_XAPK_NAME" | sed -n '1p')"
@@ -277,7 +313,7 @@ jobs:
           python3 handoff/analyze_xapk_layout.py "$RUNNER_TEMP/$MOD_XAPK_NAME"
 
       - name: Download JADX
-        if: success() && steps.build_mod.outcome == 'success'
+        if: success() && steps.build_mod.outcome == 'success' && github.event_name == 'workflow_dispatch' && inputs.full_decompile
         shell: bash
         run: |
           set -euo pipefail
@@ -290,7 +326,7 @@ jobs:
           "$RUNNER_TEMP/jadx/bin/jadx" --version
 
       - name: Decompile to temporary runner storage
-        if: success() && steps.build_mod.outcome == 'success'
+        if: success() && steps.build_mod.outcome == 'success' && github.event_name == 'workflow_dispatch' && inputs.full_decompile
         shell: bash
         env:
           JAVA_OPTS: -Xmx10g
@@ -338,7 +374,7 @@ jobs:
           find "$JADX_OUT" -type f -name '*.java' | wc -l | awk '{print "Decompiled Java files: " $1}'
 
       - name: Generate metadata-only handoff summary
-        if: success() && steps.build_mod.outcome == 'success'
+        if: success() && steps.build_mod.outcome == 'success' && github.event_name == 'workflow_dispatch' && inputs.full_decompile
         shell: bash
         run: |
           set -euo pipefail
@@ -361,7 +397,8 @@ jobs:
         shell: bash
         run: |
           rm -rf "$RUNNER_TEMP/$APK_ARCHIVE_NAME" "$RUNNER_TEMP/$APK_NAME" \
-            "$RUNNER_TEMP/$MOD_XAPK_NAME" "$RUNNER_TEMP/vk-mod-temporary.p12" \
+            "$RUNNER_TEMP/$MOD_XAPK_NAME" "$RUNNER_TEMP/$PRIVACY_BASE_APK_NAME" \
+            "$RUNNER_TEMP/$APKTOOL_JAR_NAME" "$RUNNER_TEMP/vk-mod-temporary.p12" \
             "$RUNNER_TEMP/vk-mod-store.pass" "$RUNNER_TEMP/vk-mod-key.pass" \
             "$RUNNER_TEMP/$JADX_DIRECTORY" \
             "$RUNNER_TEMP/jadx" "$RUNNER_TEMP/jadx.zip" "$RUNNER_TEMP/jadx.log" \
