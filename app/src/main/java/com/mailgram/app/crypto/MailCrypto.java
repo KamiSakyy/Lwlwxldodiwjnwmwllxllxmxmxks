@@ -100,6 +100,16 @@ public final class MailCrypto {
      * @throws SecurityException если конверт есть, но расшифровать не удалось
      */
     public static Envelope open(Context ctx, String mailBody, String myEmail) throws Exception {
+        return open(ctx, mailBody, myEmail, null);
+    }
+
+    /**
+     * @param peerPublicForOwnMessages открытый ключ собеседника — нужен, чтобы прочитать
+     *        собственное отправленное письмо (ключ сессии симметричен: ECDH(мой прив., его публ.)
+     *        равно ECDH(его прив., мой публ.)).
+     */
+    public static Envelope open(Context ctx, String mailBody, String myEmail, byte[] peerPublicForOwnMessages)
+            throws Exception {
         String json = extractEnvelopeJson(mailBody);
         if (json == null) return null;
 
@@ -120,9 +130,16 @@ public final class MailCrypto {
             throw new SecurityException("некорректный открытый ключ отправителя");
         }
         boolean iAmSender = myEmail != null && myEmail.equalsIgnoreCase(out.from);
-        byte[] peerKey = iAmSender
-                ? Identity.publicKeyRaw(ctx) // не используется: себе писем не шлём
-                : out.senderPublicRaw;
+        byte[] peerKey;
+        if (iAmSender) {
+            if (peerPublicForOwnMessages == null || peerPublicForOwnMessages.length != 65) {
+                throw new SecurityException("это моё отправленное сообщение, "
+                        + "но ключ собеседника неизвестен — прочитать его можно только с устройства-отправителя");
+            }
+            peerKey = peerPublicForOwnMessages;
+        } else {
+            peerKey = out.senderPublicRaw;
+        }
 
         byte[] key = sessionKey(ctx, peerKey, out.chatUid);
         byte[] nonce = B64.bytes(env.getString("n"));

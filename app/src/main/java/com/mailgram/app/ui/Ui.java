@@ -54,6 +54,21 @@ public final class Ui {
         ViewCompat.requestApplyInsets(root);
     }
 
+    /** Поднимает элемент (например, кнопку) над панелью навигации. */
+    public static void liftAboveBars(final View view) {
+        if (!(view.getLayoutParams() instanceof android.view.ViewGroup.MarginLayoutParams)) return;
+        final int baseBottom = ((android.view.ViewGroup.MarginLayoutParams) view.getLayoutParams()).bottomMargin;
+        ViewCompat.setOnApplyWindowInsetsListener(view, (v, insets) -> {
+            Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            android.view.ViewGroup.MarginLayoutParams lp =
+                    (android.view.ViewGroup.MarginLayoutParams) v.getLayoutParams();
+            lp.bottomMargin = baseBottom + bars.bottom;
+            v.setLayoutParams(lp);
+            return insets;
+        });
+        ViewCompat.requestApplyInsets(view);
+    }
+
     public static int dp(Context ctx, float value) {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, value,
                 ctx.getResources().getDisplayMetrics());

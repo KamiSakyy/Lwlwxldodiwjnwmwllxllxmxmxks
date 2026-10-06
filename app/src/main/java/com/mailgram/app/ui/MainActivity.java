@@ -86,6 +86,7 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         list.setAdapter(adapter);
         list.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
 
+        Ui.liftAboveBars(findViewById(R.id.fab_new_chat));
         findViewById(R.id.fab_new_chat).setOnClickListener(v -> newChatDialog());
         findViewById(R.id.empty_action).setOnClickListener(v -> newChatDialog());
 

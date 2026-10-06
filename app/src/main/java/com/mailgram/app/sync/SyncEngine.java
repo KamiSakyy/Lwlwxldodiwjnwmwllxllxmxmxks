@@ -193,9 +193,25 @@ public final class SyncEngine {
         if (subject.startsWith(MailCrypto.SUBJECT_PREFIX)) {
             chatUid = subject.substring(MailCrypto.SUBJECT_PREFIX.length()).trim();
             chatUid = chatUid.split("\\s+")[0];
+            String fromHeader = Store.normalizeEmail(mail.from);
+            boolean headerOutgoing = (me != null && me.equalsIgnoreCase(fromHeader)) || fromHeader.isEmpty();
+            byte[] peerKeyForOwnMessage = null;
+            if (headerOutgoing) {
+                Chat known = store.chat(chatUid);
+                if (known != null && known.peerPublic != null && !known.peerPublic.isEmpty()) {
+                    byte[] candidate = B64.bytes(known.peerPublic);
+                    if (candidate.length == 65) peerKeyForOwnMessage = candidate;
+                }
+            }
             try {
-                env = MailCrypto.open(app, mail.body, me);
+                env = MailCrypto.open(app, mail.body, me, peerKeyForOwnMessage);
             } catch (SecurityException se) {
+                if (headerOutgoing) {
+                    // своё письмо, но ключа собеседника нет (например, отправлено с другого
+                    // устройства или чат очищен) — просто пропускаем, ничего не помечаем
+                    Log.i(TAG, "пропускаю собственное письмо без известного ключа: " + mail.id);
+                    return null;
+                }
                 // письмо с нашей темой, но не для нас / повреждено — отмечаем, но не падаем
                 String peer = Store.normalizeEmail(mail.from);
                 if (peer.isEmpty() || peer.equalsIgnoreCase(me)) peer = Store.normalizeEmail(mail.to);

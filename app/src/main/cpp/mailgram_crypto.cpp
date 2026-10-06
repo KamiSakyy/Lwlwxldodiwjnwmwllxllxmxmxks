@@ -11,7 +11,7 @@
 #if defined(__linux__) || defined(__ANDROID__)
 #include <fcntl.h>
 #include <unistd.h>
-#include <sys/random.h>
+#include <sys/syscall.h>
 #endif
 
 namespace {
@@ -492,27 +492,30 @@ int aead_decrypt_impl(const uint8_t key[32], const uint8_t nonce[12],
 
 // ============================ CSPRNG ============================
 
+// getrandom(2) объявлен в Bionic только с API 28, поэтому зовём syscall напрямую,
+// а если ядро старое — читаем /dev/urandom. Оба источника дают криптостойкую энтропию.
 int fill_random(uint8_t *buf, size_t len) {
     if (buf == NULL) return 0;
 #if defined(__linux__) || defined(__ANDROID__)
     size_t done = 0;
+#if defined(SYS_getrandom)
     while (done < len) {
-        ssize_t r = getrandom(buf + done, len - done, 0);
+        long r = syscall(SYS_getrandom, buf + done, len - done, 0u);
         if (r > 0) { done += (size_t)r; continue; }
-        if (r < 0 && (errno == EINTR)) continue;
-        break;
+        if (r < 0 && errno == EINTR) continue;
+        break; // ENOSYS / EAGAIN — уходим на /dev/urandom
     }
+#endif
     if (done == len) return 1;
     int fd = open("/dev/urandom", O_RDONLY | O_CLOEXEC);
     if (fd >= 0) {
-        size_t got = 0;
-        while (got < len) {
-            ssize_t r = read(fd, buf + got, len - got);
+        while (done < len) {
+            ssize_t r = read(fd, buf + done, len - done);
             if (r <= 0) break;
-            got += (size_t)r;
+            done += (size_t)r;
         }
         close(fd);
-        if (got == len) return 1;
+        if (done == len) return 1;
     }
     return 0;
 #else
