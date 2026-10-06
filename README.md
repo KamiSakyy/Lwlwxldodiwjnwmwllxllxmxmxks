@@ -19,7 +19,8 @@ iOS 26 / Telegram 12.4 (Liquid Glass, пружинные анимации, чё�
 ```
 
 **Живой APK:** https://github.com/KamiSakyy/Lwlwxldodiwjnwmwllxllxmxmxks/releases/tag/apk-latest → `app-release.apk`
-Последняя сборка (6 октября 2026, версия 3.4): готова после зелёного прогона Actions — там же и ссылка на `app-release.apk`.
+Последняя сборка (6 октября 2026, версия 3.4, versionCode 8): **1.72 МБ**, собрана Actions, лежит в релизе `apk-latest`
+(`app-release.apk`). Лимит 15 МБ — с запасом.
 Внутри `lib/arm64-v8a/libmailgram.so` (C++ ядро с криптопримитивами).
 
 **Что исправлено в 3.4 (вылет на каждом нажатии):**
