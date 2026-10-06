@@ -9,7 +9,7 @@ import androidx.appcompat.widget.Toolbar;
 import com.google.android.material.appbar.AppBarLayout;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public final class WebViewActivity extends t<ic.r0> {
+public final class WebViewActivity extends t {
     public static final a Companion = new a();
 
     /* renamed from: j0, reason: collision with root package name */

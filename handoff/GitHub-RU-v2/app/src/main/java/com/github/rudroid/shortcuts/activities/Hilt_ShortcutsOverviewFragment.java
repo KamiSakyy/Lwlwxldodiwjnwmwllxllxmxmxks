@@ -10,7 +10,7 @@ import com.google.android.gms.internal.measurement.i4;
 import k5.f;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class Hilt_ShortcutsOverviewFragment<T extends k5.f> extends BindingFragment<T> {
+public abstract class Hilt_ShortcutsOverviewFragment<T extends k5.f> extends BindingFragment {
     public m61.j B0;
     public boolean C0 = false;
     public boolean D0 = false;

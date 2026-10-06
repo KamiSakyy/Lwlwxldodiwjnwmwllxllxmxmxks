@@ -10,7 +10,7 @@ import ic.m1;
 import v71.q1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class SearchAndFilterBaseFragment<T> extends BindingFragment<m1> implements s<T> {
+public abstract class SearchAndFilterBaseFragment<T> extends BindingFragment implements s<T> {
     public final int B0 = 2131558759;
     public final w61.p C0 = sy.w.t(new j71.a() { // from class: com.github.rudroid.searchandfilter.complexfilter.z
         public final Object a() {

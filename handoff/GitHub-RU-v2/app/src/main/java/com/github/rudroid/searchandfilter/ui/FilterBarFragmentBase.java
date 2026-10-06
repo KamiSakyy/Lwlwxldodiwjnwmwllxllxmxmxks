@@ -13,7 +13,7 @@ import y71.n1;
 import y71.y1;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class FilterBarFragmentBase extends BindingFragment<w2> implements com.github.rudroid.fragments.util.f {
+public abstract class FilterBarFragmentBase extends BindingFragment implements com.github.rudroid.fragments.util.f {
     public com.github.rudroid.activities.util.c B0;
     public q1 D0;
     public q1 E0;

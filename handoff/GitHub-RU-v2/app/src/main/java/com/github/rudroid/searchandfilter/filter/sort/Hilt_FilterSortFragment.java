@@ -12,7 +12,7 @@ import m61.j;
 import wf.e;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class Hilt_FilterSortFragment<T extends f> extends BindingFragment<T> {
+public abstract class Hilt_FilterSortFragment<T extends f> extends BindingFragment {
     public j B0;
     public boolean C0 = false;
     public boolean D0 = false;

@@ -11,7 +11,7 @@ import com.github.rudroid.fragments.BindingFragment;
 import com.github.rudroid.views.ProgressActionView;
 
 /* loaded from: /home/user/work/p/classes.dex */
-public abstract class BaseEditTitleFragment extends BindingFragment<ic.s2> {
+public abstract class BaseEditTitleFragment extends BindingFragment {
     public ProgressActionView C0;
     public MenuItem D0;
     public final int B0 = 2131558794;

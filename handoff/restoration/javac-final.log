@@ -11948,33 +11948,6 @@ public class MultiSelectListPreferenceDialogFragmentCompat extends PreferenceDia
                                     ^
   symbol:   class Object
   location: class h
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/androidx/window/area/reflectionguard/WindowAreaComponentApi3Requirements.java:11: error: type Consumer does not take parameters
-    void addRearDisplayPresentationStatusListener(Consumer<ExtensionWindowAreaStatus> consumer);
-                                                          ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/androidx/window/area/reflectionguard/WindowAreaComponentApi3Requirements.java:13: error: type Consumer does not take parameters
-    void addRearDisplayStatusListener(Consumer<Integer> consumer);
-                                              ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/androidx/window/area/reflectionguard/WindowAreaComponentApi3Requirements.java:23: error: type Consumer does not take parameters
-    void removeRearDisplayPresentationStatusListener(Consumer<ExtensionWindowAreaStatus> consumer);
-                                                             ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/androidx/window/area/reflectionguard/WindowAreaComponentApi3Requirements.java:25: error: type Consumer does not take parameters
-    void removeRearDisplayStatusListener(Consumer<Integer> consumer);
-                                                 ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/androidx/window/area/reflectionguard/WindowAreaComponentApi3Requirements.java:27: error: type Consumer does not take parameters
-    void startRearDisplayPresentationSession(Activity activity, Consumer<Integer> consumer);
-                                                                        ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/androidx/window/area/reflectionguard/WindowAreaComponentApi3Requirements.java:29: error: type Consumer does not take parameters
-    void startRearDisplaySession(Activity activity, Consumer<Integer> consumer);
-                                                            ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/androidx/window/reflection/Consumer2.java:6: error: type Consumer does not take parameters
-public interface Consumer2<T> extends Consumer<T> {
-                                              ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/androidx/window/reflection/JFunction2.java:6: error: type Function does not take parameters
-public interface JFunction2<T, U> extends Function<T, U> {
-                                                  ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/androidx/window/reflection/Predicate2.java:6: error: type Predicate does not take parameters
-public interface Predicate2<T> extends Predicate<T> {
-                                                ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/ao/a.java:21: error: cannot find symbol
     public final Object c(i0 i0Var, String str) {
                  ^
@@ -27555,9 +27528,6 @@ import rh.c;
                  ^
   symbol:   class Object
   location: class v0
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/activities/BaseEditTitleFragment.java:14: error: type BindingFragment does not take parameters
-public abstract class BaseEditTitleFragment extends BindingFragment<ic.s2> {
-                                                                   ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/activities/EditIssueOrPullTitleFragment.java:12: error: cannot find symbol
         public final Object a() {
                      ^
@@ -27603,11 +27573,8 @@ public final class ShareImageActivity extends o1 {
                                               ^
   symbol: class o1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/activities/WebViewActivity.java:12: error: no interface expected here
-public final class WebViewActivity extends t<ic.r0> {
+public final class WebViewActivity extends t {
                                            ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/activities/WebViewActivity.java:12: error: type t does not take parameters
-public final class WebViewActivity extends t<ic.r0> {
-                                            ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/activities/a.java:8: error: interface expected here
 public final class a implements o.a {
                                  ^
@@ -44124,9 +44091,6 @@ import sb.a;
                  ^
   symbol:   class Object
   location: class b
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/searchandfilter/complexfilter/SearchAndFilterBaseFragment.java:13: error: type BindingFragment does not take parameters
-public abstract class SearchAndFilterBaseFragment<T> extends BindingFragment<m1> implements s<T> {
-                                                                            ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/searchandfilter/complexfilter/e0.java:8: error: no interface expected here
 public abstract class e0<T> extends m0 {
                                     ^
@@ -46744,9 +46708,6 @@ import com.github.rudroid.html.b;
                  ^
   symbol:   class Object
   location: class p
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/searchandfilter/complexfilter/project/Hilt_LegacyProjectsTabFragment.java:13: error: type BindingFragment does not take parameters
-public abstract class Hilt_LegacyProjectsTabFragment<T extends k5.f> extends BindingFragment<T> {
-                                                                                            ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/searchandfilter/complexfilter/project/LegacyProjectsTabFragment.java:62: error: cannot find symbol
             public final boolean equals(Object obj) {
                                         ^
@@ -48155,9 +48116,6 @@ import com.github.rudroid.agents.sessionevents.l;
                      ^
   symbol:   class Object
   location: class h
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/searchandfilter/filter/sort/Hilt_FilterSortFragment.java:15: error: type BindingFragment does not take parameters
-public abstract class Hilt_FilterSortFragment<T extends f> extends BindingFragment<T> {
-                                                                                  ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/wf/g.java:16: error: no interface expected here
 public abstract class g<T> extends m0 {
                                    ^
@@ -48194,9 +48152,6 @@ public abstract class g<T> extends m0 {
   location: interface s<T>
   where T is a type-variable:
     T extends Object declared in interface s
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/searchandfilter/filter/sort/Hilt_RepositoryFilterSortFragment.java:15: error: type BindingFragment does not take parameters
-public abstract class Hilt_RepositoryFilterSortFragment<T extends f> extends BindingFragment<T> {
-                                                                                            ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/searchandfilter/filter/sort/RepositoryFilterSortBottomSheetDialog.java:38: error: cannot find symbol
         public final Object a() {
                      ^
@@ -48966,9 +48921,6 @@ import com.github.rudroid.uitoolkit.menu.d;
                  ^
   symbol:   class Object
   location: class u0
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/searchandfilter/ui/FilterBarFragmentBase.java:16: error: type BindingFragment does not take parameters
-public abstract class FilterBarFragmentBase extends BindingFragment<w2> implements com.github.rudroid.fragments.util.f {
-                                                                   ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/searchandfilter/ui/FilterBarFragmentRepositoryScope.java:33: error: cannot find symbol
         public final Object a() {
                      ^
@@ -49360,11 +49312,8 @@ public abstract class FilterBarFragmentBase extends BindingFragment<w2> implemen
   symbol:   class Object
   location: class Hilt_SettingsNotificationsFragment
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/c.java:6: error: no interface expected here
-public abstract class c<T extends k5.f> extends com.github.rudroid.activities.z1<T> {
+public abstract class c<T extends k5.f> extends com.github.rudroid.activities.z1 {
                                                                              ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/c.java:6: error: type z1 does not take parameters
-public abstract class c<T extends k5.f> extends com.github.rudroid.activities.z1<T> {
-                                                                                ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/yz0/d5.java:13: error: cannot find symbol
     public final boolean equals(Object obj) {
                                 ^
@@ -49425,9 +49374,6 @@ public abstract class c<T extends k5.f> extends com.github.rudroid.activities.z1
                      ^
   symbol:   class Object
   location: class i
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/e.java:6: error: type d3 does not take parameters
-public abstract class e<T extends k5.f> extends com.github.rudroid.activities.d3<T> {
-                                                                                ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/SettingsNotificationSchedulesFragment.java:48: error: cannot find symbol
         public final /* synthetic */ Object t;
                                      ^
@@ -49509,11 +49455,8 @@ public abstract class e<T extends k5.f> extends com.github.rudroid.activities.d3
   symbol:   class Object
   location: class l
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/g.java:6: error: no interface expected here
-public abstract class g<T extends k5.f> extends com.github.rudroid.activities.z1<T> {
+public abstract class g<T extends k5.f> extends com.github.rudroid.activities.z1 {
                                                                              ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/g.java:6: error: type z1 does not take parameters
-public abstract class g<T extends k5.f> extends com.github.rudroid.activities.z1<T> {
-                                                                                ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/sm/e.java:30: error: cannot find symbol
     public final Object a(j jVar, a0 a0Var, c71.c cVar) {
                  ^
@@ -52544,9 +52487,6 @@ class f implements g.b {
                  ^
   symbol:   class Object
   location: class Hilt_SettingsFeaturePreviewFragment
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/featurepreview/e.java:7: error: type d3 does not take parameters
-public abstract class e<T extends k5.f> extends d3<T> {
-                                                  ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/featurepreview/b.java:5: error: cannot find symbol
     public final Object get() {
                  ^
@@ -53164,9 +53104,6 @@ public final class c extends m0 {
                  ^
   symbol:   class Object
   location: class Hilt_SettingsPrivacyAnalyticsFragment
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/privacy/b.java:7: error: type d3 does not take parameters
-public abstract class b<T extends k5.f> extends d3<T> {
-                                                  ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/privacy/SettingsPrivacyAnalyticsFragment.java:31: error: cannot find symbol
         public final Object a() {
                      ^
@@ -53901,12 +53838,6 @@ public final /* synthetic */ class r implements h.b, e7.k, androidx.fragment.app
                                               ^
   symbol:   class Object
   location: class a0
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/shortcuts/activities/f0.java:7: error: type d3 does not take parameters
-public abstract class f0<T extends k5.f> extends d3<T> {
-                                                   ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/shortcuts/activities/Hilt_ChooseShortcutRepositoryFragment.java:13: error: type BindingFragment does not take parameters
-public abstract class Hilt_ChooseShortcutRepositoryFragment<T extends k5.f> extends BindingFragment<T> {
-                                                                                                   ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/shortcuts/activities/ChooseShortcutRepositoryFragment.java:60: error: cannot find symbol
         public final Object a() {
                      ^
@@ -53947,9 +53878,6 @@ public abstract class Hilt_ChooseShortcutRepositoryFragment<T extends k5.f> exte
                      ^
   symbol:   class Object
   location: class f
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/shortcuts/activities/h0.java:7: error: type d3 does not take parameters
-public abstract class h0<T extends k5.f> extends d3<T> {
-                                                   ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/tm/m.java:22: error: cannot find symbol
     public final Object a(oa.j jVar, StoredShortcutModel storedShortcutModel, com.github.rudroid.repositories.repositoryownerrepositories.d dVar, c71.c cVar) {
                  ^
@@ -54005,15 +53933,6 @@ public abstract class h0<T extends k5.f> extends d3<T> {
                      ^
   symbol:   class Object
   location: class f
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/shortcuts/activities/Hilt_ShortcutViewFragment.java:13: error: type BindingFragment does not take parameters
-public abstract class Hilt_ShortcutViewFragment<T extends k5.f> extends BindingFragment<T> {
-                                                                                       ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/shortcuts/activities/Hilt_ShortcutsOverviewFragment.java:13: error: type BindingFragment does not take parameters
-public abstract class Hilt_ShortcutsOverviewFragment<T extends k5.f> extends BindingFragment<T> {
-                                                                                            ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/shortcuts/activities/j0.java:7: error: type d3 does not take parameters
-public abstract class j0<T extends k5.f> extends d3<T> {
-                                                   ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/shortcuts/activities/ShortcutViewFragment.java:33: error: cannot find symbol
     public k.g L0;
             ^
@@ -54109,9 +54028,6 @@ public abstract class j0<T extends k5.f> extends d3<T> {
                      ^
   symbol:   class Object
   location: class m
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/shortcuts/activities/l0.java:7: error: type d3 does not take parameters
-public abstract class l0<T extends k5.f> extends d3<T> {
-                                                   ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/shortcuts/d0.java:31: error: no interface expected here
 public final class d0 extends l7.m0 implements jf.c {
                                 ^
@@ -55259,9 +55175,6 @@ public final /* synthetic */ class m implements h.b, f1 {
                  ^
   symbol:   class Object
   location: class x
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/starredreposandlists/g.java:7: error: type d3 does not take parameters
-public abstract class g<T extends k5.f> extends d3<T> {
-                                                  ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/xz0/h.java:35: error: cannot find symbol
     public final boolean equals(Object obj) {
                                 ^
@@ -55829,9 +55742,6 @@ public final class b extends com.github.rudroid.activities.util.e<w61.a0, C0006b
                      ^
   symbol:   class Object
   location: class d
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/starredreposandlists/createoreditlist/d1.java:7: error: type d3 does not take parameters
-public abstract class d1<T extends k5.f> extends d3<T> {
-                                                   ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/starredreposandlists/createoreditlist/EditListFragment.java:24: error: cannot find symbol
         public final Object a() {
                      ^
@@ -56821,9 +56731,6 @@ class f implements g.b {
                                               ^
   symbol:   class Object
   location: class l0
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/starredreposandlists/listdetails/e.java:7: error: type d3 does not take parameters
-public abstract class e<T extends k5.f> extends d3<T> {
-                                                  ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/starredreposandlists/navigation/ListDetailRoute.java:31: error: cannot find symbol
     public final boolean equals(Object obj) {
                                 ^
@@ -57787,9 +57694,6 @@ import yz0.g1;
                  ^
   symbol:   class Object
   location: class z0
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/support/Hilt_SupportFragment.java:13: error: type BindingFragment does not take parameters
-public abstract class Hilt_SupportFragment<T extends k5.f> extends BindingFragment<T> {
-                                                                                  ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/support/SupportBottomSheetDialog.java:30: error: cannot find symbol
         public final Object a() {
                      ^
@@ -58128,9 +58032,6 @@ import com.github.rudroid.utilities.b;
                                               ^
   symbol:   class Object
   location: class z
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/templates/b.java:7: error: type d3 does not take parameters
-public abstract class b<T extends k5.f> extends d3<T> {
-                                                  ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/templates/g.java:20: error: no interface expected here
 public final class g extends m0 {
                              ^
@@ -58397,11 +58298,8 @@ class a implements g.b {
   symbol:   class Object
   location: class e
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/twofactor/d.java:6: error: no interface expected here
-public abstract class d<T extends k5.f> extends com.github.rudroid.activities.t<T> {
+public abstract class d<T extends k5.f> extends com.github.rudroid.activities.t {
                                                                              ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/twofactor/d.java:6: error: type t does not take parameters
-public abstract class d<T extends k5.f> extends com.github.rudroid.activities.t<T> {
-                                                                               ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/twofactor/b0.java:11: error: cannot find symbol
     public final Object c(Object obj, a71.c cVar) {
                           ^
@@ -62127,9 +62025,6 @@ class c implements g.b {
                  ^
   symbol:   class Object
   location: class z2
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/users/b.java:7: error: type d3 does not take parameters
-public abstract class b<T extends k5.f> extends d3<T> {
-                                                  ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/viewmodels/za.java:98: error: cannot find symbol
     public abstract Object P(gn.n nVar, String str, j71.c cVar, c71.j jVar);
                     ^
@@ -79668,13 +79563,6 @@ public final class g extends a5.b {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/material/datepicker/v.java:12: error: no interface expected here
 public final class v extends m0 {
                              ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/material/floatingactionbutton/FloatingActionButton$Behavior.java:7: error: cannot find symbol
-public class FloatingActionButton$Behavior extends FloatingActionButton$BaseBehavior<Object> {
-                                                                                     ^
-  symbol: class Object
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/material/floatingactionbutton/FloatingActionButton$Behavior.java:7: error: type FloatingActionButton$BaseBehavior does not take parameters
-public class FloatingActionButton$Behavior extends FloatingActionButton$BaseBehavior<Object> {
-                                                                                    ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/material/timepicker/ChipTextInputComboView.java:85: error: cannot find symbol
     public final void setTag(int i, Object obj) {
                                     ^
@@ -261629,12 +261517,12 @@ public class k implements Serializable, Comparable {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/w0.java:1083: error: incompatible types: Object cannot be converted to w2
                     for (com.google.android.gms.internal.measurement.w2 w2Var : T.p()) {
                                                                                    ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/w0.java:1096: error: type m5 does not take parameters
-                m5<com.google.android.gms.internal.measurement.s3> U1 = j3Var.U1();
-                  ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/w0.java:1112: error: type m5 does not take parameters
-                m5<com.google.android.gms.internal.measurement.t2> H = j3Var.H();
-                  ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/w0.java:1098: error: incompatible types: Object cannot be converted to s3
+                    for (com.google.android.gms.internal.measurement.s3 s3Var : U1) {
+                                                                                ^
+/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/w0.java:1114: error: incompatible types: Object cannot be converted to t2
+                    for (com.google.android.gms.internal.measurement.t2 t2Var : H) {
+                                                                                ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/gms/measurement/internal/w0.java:1166: error: cannot find symbol
         StringBuilder p = f1.e.p("\nproperty_filter {\n");
                             ^
@@ -293388,5 +293276,5 @@ Note: Recompile with -Xlint:deprecation for details.
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-58952 errors
-printing javac parameters to: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/javac.20261006_023213.args
+58915 errors
+printing javac parameters to: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/javac.20261006_024454.args

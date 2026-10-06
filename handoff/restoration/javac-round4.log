@@ -11948,15 +11948,6 @@ public class MultiSelectListPreferenceDialogFragmentCompat extends PreferenceDia
                                     ^
   symbol:   class Object
   location: class h
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/androidx/window/area/reflectionguard/WindowAreaComponentApi3Requirements.java:11: error: type Consumer does not take parameters
-    void addRearDisplayPresentationStatusListener(Consumer<ExtensionWindowAreaStatus> consumer);
-                                                          ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/androidx/window/area/reflectionguard/WindowAreaComponentApi3Requirements.java:13: error: type Consumer does not take parameters
-    void addRearDisplayStatusListener(Consumer<Integer> consumer);
-                                              ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/androidx/window/area/reflectionguard/WindowAreaComponentApi3Requirements.java:23: error: type Consumer does not take parameters
-    void removeRearDisplayPresentationStatusListener(Consumer<ExtensionWindowAreaStatus> consumer);
-                                                             ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/androidx/window/area/reflectionguard/WindowAreaComponentApi3Requirements.java:25: error: type Consumer does not take parameters
     void removeRearDisplayStatusListener(Consumer<Integer> consumer);
                                                  ^
@@ -27591,7 +27582,7 @@ public final class ShareImageActivity extends o1 {
                                               ^
   symbol: class o1
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/activities/WebViewActivity.java:12: error: no interface expected here
-public final class WebViewActivity extends t<ic.r0> {
+public final class WebViewActivity extends t {
                                            ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/activities/a.java:8: error: interface expected here
 public final class a implements o.a {
@@ -49330,7 +49321,7 @@ import com.github.rudroid.uitoolkit.menu.d;
   symbol:   class Object
   location: class Hilt_SettingsNotificationsFragment
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/c.java:6: error: no interface expected here
-public abstract class c<T extends k5.f> extends com.github.rudroid.activities.z1<T> {
+public abstract class c<T extends k5.f> extends com.github.rudroid.activities.z1 {
                                                                              ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/yz0/d5.java:13: error: cannot find symbol
     public final boolean equals(Object obj) {
@@ -49473,7 +49464,7 @@ public abstract class c<T extends k5.f> extends com.github.rudroid.activities.z1
   symbol:   class Object
   location: class l
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/settings/g.java:6: error: no interface expected here
-public abstract class g<T extends k5.f> extends com.github.rudroid.activities.z1<T> {
+public abstract class g<T extends k5.f> extends com.github.rudroid.activities.z1 {
                                                                              ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/sm/e.java:30: error: cannot find symbol
     public final Object a(j jVar, a0 a0Var, c71.c cVar) {
@@ -58316,7 +58307,7 @@ class a implements g.b {
   symbol:   class Object
   location: class e
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/twofactor/d.java:6: error: no interface expected here
-public abstract class d<T extends k5.f> extends com.github.rudroid.activities.t<T> {
+public abstract class d<T extends k5.f> extends com.github.rudroid.activities.t {
                                                                              ^
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/github/rudroid/twofactor/b0.java:11: error: cannot find symbol
     public final Object c(Object obj, a71.c cVar) {
@@ -79581,10 +79572,6 @@ public final class g extends a5.b {
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/material/datepicker/v.java:12: error: no interface expected here
 public final class v extends m0 {
                              ^
-/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/material/floatingactionbutton/FloatingActionButton$Behavior.java:7: error: cannot find symbol
-public class FloatingActionButton$Behavior extends FloatingActionButton$BaseBehavior<Object> {
-                                                                                     ^
-  symbol: class Object
 /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/app/src/main/java/com/google/android/material/timepicker/ChipTextInputComboView.java:85: error: cannot find symbol
     public final void setTag(int i, Object obj) {
                                     ^
@@ -293298,5 +293285,5 @@ Note: Recompile with -Xlint:deprecation for details.
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-58922 errors
-printing javac parameters to: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/javac.20261006_021134.args
+58918 errors
+printing javac parameters to: /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/javac.20261006_024347.args

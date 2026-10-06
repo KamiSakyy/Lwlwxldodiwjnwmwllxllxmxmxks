@@ -4,7 +4,7 @@ import com.github.rudroid.activities.d3;
 import k5.f;
 
 /* loaded from: /home/user/work/p/classes3.dex */
-public abstract class g<T extends k5.f> extends d3<T> {
+public abstract class g<T extends k5.f> extends d3 {
     public boolean u0;
 
     public final void Z() {

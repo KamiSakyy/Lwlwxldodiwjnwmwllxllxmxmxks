@@ -8,9 +8,9 @@ import androidx.window.extensions.core.util.function.Consumer;
 
 /* loaded from: /home/user/work/p/classes.dex */
 public interface WindowAreaComponentApi3Requirements {
-    void addRearDisplayPresentationStatusListener(Consumer<ExtensionWindowAreaStatus> consumer);
+    void addRearDisplayPresentationStatusListener(Consumer consumer);
 
-    void addRearDisplayStatusListener(Consumer<Integer> consumer);
+    void addRearDisplayStatusListener(Consumer consumer);
 
     void endRearDisplayPresentationSession();
 
@@ -20,13 +20,13 @@ public interface WindowAreaComponentApi3Requirements {
 
     ExtensionWindowAreaPresentation getRearDisplayPresentation();
 
-    void removeRearDisplayPresentationStatusListener(Consumer<ExtensionWindowAreaStatus> consumer);
+    void removeRearDisplayPresentationStatusListener(Consumer consumer);
 
-    void removeRearDisplayStatusListener(Consumer<Integer> consumer);
+    void removeRearDisplayStatusListener(Consumer consumer);
 
-    void startRearDisplayPresentationSession(Activity activity, Consumer<Integer> consumer);
+    void startRearDisplayPresentationSession(Activity activity, Consumer consumer);
 
-    void startRearDisplaySession(Activity activity, Consumer<Integer> consumer);
+    void startRearDisplaySession(Activity activity, Consumer consumer);
 
 
 

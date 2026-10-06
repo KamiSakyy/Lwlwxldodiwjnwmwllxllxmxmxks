@@ -1093,7 +1093,7 @@ public final class w0 extends i4 {
                     L(2, p);
                     p.append("}\n");
                 }
-                m5<com.google.android.gms.internal.measurement.s3> U1 = j3Var.U1();
+                m5 U1 = j3Var.U1();
                 if (U1 != null) {
                     for (com.google.android.gms.internal.measurement.s3 s3Var : U1) {
                         if (s3Var != null) {
@@ -1109,7 +1109,7 @@ public final class w0 extends i4 {
                         }
                     }
                 }
-                m5<com.google.android.gms.internal.measurement.t2> H = j3Var.H();
+                m5 H = j3Var.H();
                 if (H != null) {
                     for (com.google.android.gms.internal.measurement.t2 t2Var : H) {
                         if (t2Var != null) {

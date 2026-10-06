@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 
 /* loaded from: /home/user/work/p/classes4.dex */
-public class FloatingActionButton$Behavior extends FloatingActionButton$BaseBehavior<Object> {
+public class FloatingActionButton$Behavior extends FloatingActionButton$BaseBehavior {
     public FloatingActionButton$Behavior() {
     }
 
