@@ -274,6 +274,7 @@
     <string name="contacts_title">Контакты</string>
     <string name="chat_menu_export">Выгрузить переписку</string>
     <string name="online_now">в сети</string>
+    <string name="privacy_status">e2e-шифрование · без серверов</string>
     <string name="invite_share">Мой публичный ключ MailGram: %1$s</string>
     <string name="verified_short">Ключ отмечен как проверенный</string>
     <string name="unverified_short">Ключ ещё не проверен</string>

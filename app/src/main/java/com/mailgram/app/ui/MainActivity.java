@@ -164,7 +164,8 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         AvatarView drawerAvatar = findViewById(R.id.drawer_avatar);
         if (drawerAvatar != null) drawerAvatar.setName(name);
         ((TextView) findViewById(R.id.drawer_name)).setText(name);
-        ((TextView) findViewById(R.id.drawer_online)).setText(R.string.online_now);
+        // честный статус вместо фейковой «сети»: серверов нет, слежки нет
+        ((TextView) findViewById(R.id.drawer_online)).setText(R.string.privacy_status);
         ((TextView) findViewById(R.id.drawer_status)).setText(R.string.app_name);
 
         findViewById(R.id.drawer_item_stealth).setOnClickListener(Ui.tap(v -> {

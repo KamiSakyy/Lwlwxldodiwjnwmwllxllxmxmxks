@@ -23,7 +23,7 @@
         <FrameLayout
             android:layout_width="128dp"
             android:layout_height="128dp"
-            android:background="@drawable/bg_glass_panel">
+            android:background="@drawable/bg_logo_glow">
 
             <ImageView
                 android:id="@+id/login_logo"

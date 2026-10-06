@@ -65,9 +65,6 @@ public final class MailCrypto {
      */
     public static String seal(Context ctx, String from, String to, String chatUid,
                               String id, long ts, byte[] peerPublicRaw, String payloadJson) throws Exception {
-        if (!NativeCrypto.isLoaded()) {
-            throw new IllegalStateException("нативная библиотека не загружена: " + NativeCrypto.loadError());
-        }
         byte[] key = sessionKey(ctx, peerPublicRaw, chatUid);
         byte[] nonce = NativeCrypto.random(12);
         byte[] aad = aad(VERSION, id, ts, from, to, chatUid);
@@ -195,7 +192,6 @@ public final class MailCrypto {
     /** Готовы ли шифровать письмо крысиным шагом (нужен предключ собеседника). */
     public static boolean canRatchet(Context ctx, String chatUid, byte[] peerIdentityRaw) {
         if (peerIdentityRaw == null || peerIdentityRaw.length != 65) return false;
-        if (!NativeCrypto.isLoaded()) return false;
         return RatchetStore.peerPre(ctx, chatUid) != null;
     }
 
@@ -226,9 +222,6 @@ public final class MailCrypto {
     public static String sealRatchet(Context ctx, String from, String to, String chatUid,
                                      String id, long ts, byte[] peerIdentityRaw,
                                      String payloadJson) throws Exception {
-        if (!NativeCrypto.isLoaded()) {
-            throw new IllegalStateException("нативная библиотека не загружена: " + NativeCrypto.loadError());
-        }
         Ratchet.Sealed sealed;
         synchronized (RatchetStore.chatLock(chatUid)) {
             Ratchet r = RatchetStore.load(ctx, chatUid, true);
@@ -264,9 +257,6 @@ public final class MailCrypto {
 
     /** Разбирает конверт версии 2: при первом письме поднимает сессию, дальше — крысиный шаг. */
     private static Envelope openRatchet(Context ctx, JSONObject env, String myEmail) throws Exception {
-        if (!NativeCrypto.isLoaded()) {
-            throw new IllegalStateException("нативная библиотека не загружена: " + NativeCrypto.loadError());
-        }
         Envelope out = new Envelope();
         out.version = VERSION_RATCHET;
         out.id = env.getString("id");

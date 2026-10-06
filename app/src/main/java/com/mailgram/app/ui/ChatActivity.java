@@ -202,8 +202,6 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         findViewById(R.id.chat_back).setOnClickListener(Ui.tap(v -> finish()));
         findViewById(R.id.chat_menu_btn).setOnClickListener(Ui.tap(v -> showSheet()));
         findViewById(R.id.chat_search_btn).setOnClickListener(Ui.tap(v -> toggleSearch()));
-        findViewById(R.id.chat_call_btn).setOnClickListener(Ui.tap(v ->
-                Ui.toast(this, getString(R.string.call_soon))));
         findViewById(R.id.btn_circle).setOnClickListener(Ui.tap(v -> openCircle()));
         Anim.pressFeedback(avatar);
 

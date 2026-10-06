@@ -637,10 +637,6 @@ public final class SyncEngine {
      */
     private void sendPayload(final Chat chat, final Msg local, final String payloadJson,
                              final SendCallback callback) {
-        if (!NativeCrypto.isLoaded()) {
-            fail(callback, "нативная библиотека не загружена: " + NativeCrypto.loadError());
-            return;
-        }
         if (chat.peerPublic == null || chat.peerPublic.isEmpty()) {
             fail(callback, "нет открытого ключа собеседника — отправьте приглашение или дождитесь его письма");
             return;
