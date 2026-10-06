@@ -100,6 +100,7 @@ jobs:
             # --- конвейер: 5 частей по ~9k (javac слепнет на >20k классах) ---
             rm -rf /tmp/chunk_* /tmp/classes_*
             split -l 9000 -d /tmp/sources.txt /tmp/chunk_
+            echo "чанков создано: $(ls /tmp/chunk_* 2>/dev/null | wc -l)" | tee -a "$CYCLE"
             : > /tmp/javac-iter.log
             for CH in /tmp/chunk_*; do
               N="${CH##*chunk_}"
@@ -108,7 +109,9 @@ jobs:
               javac -J-Xmx6g -nowarn -proc:none -Xmaxerrs 200000 \
                 -source 8 -target 8 -encoding UTF-8 \
                 -bootclasspath "$ANDROID_JAR" -classpath "$CP" \
-                -d "/tmp/classes_$N" @"$CH" >> /tmp/javac-iter.log 2>&1 || true
+                -d "/tmp/classes_$N" @"$CH" > "/tmp/javac-chunk-$N.log" 2>&1 || true
+              echo "чанк $N: файлов $(wc -l < "$CH"), ошибок $(grep -c "error:" "/tmp/javac-chunk-$N.log" || echo 0), Object $(grep -c "symbol:   class Object$" "/tmp/javac-chunk-$N.log" || echo 0)" | tee -a "$CYCLE"
+              cat "/tmp/javac-chunk-$N.log" >> /tmp/javac-iter.log
             done
             ERRS=$(grep -c "error:" /tmp/javac-iter.log || echo 0)
             echo "Раунд $R: ошибок $ERRS" | tee -a "$CYCLE"
