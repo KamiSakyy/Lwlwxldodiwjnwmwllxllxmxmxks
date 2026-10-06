@@ -259,6 +259,30 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/msg_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:maxWidth="266dp"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/msg_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="266dp"
+            android:textColor="@color/accent"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
             android:id="@+id/msg_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

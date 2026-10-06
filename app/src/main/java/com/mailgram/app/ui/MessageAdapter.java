@@ -358,10 +358,13 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         } else if (m.isVideo() && m.round) {
             h.circleBox.setVisibility(View.VISIBLE);
             bindBitmap(h.circleThumb, m.mediaB64, 1);
+            // «кружок»: тап по кнопке-треугольнику — тот же просмотр, что и по пузырю
+            h.circlePlay.setOnClickListener(Ui.tap(v -> actions.onMessageClick(m)));
         } else if (m.isVideo()) {
             h.videoBox.setVisibility(View.VISIBLE);
             bindBitmap(h.videoThumb, m.mediaB64, 1);
             h.videoDuration.setText(MediaUtil.humanDuration(m.durationMs));
+            h.videoPlay.setOnClickListener(Ui.tap(v -> actions.onMessageClick(m)));
         } else if (m.isVoice()) {
             h.voiceBox.setVisibility(View.VISIBLE);
             h.voiceWave.setAmplitudes(waveOf(m));
@@ -383,6 +386,23 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             h.fileBox.setVisibility(View.VISIBLE);
             h.fileName.setText(m.fileName == null || m.fileName.isEmpty() ? "файл" : m.fileName);
             h.fileSize.setText(MediaUtil.humanSize(m.fileSize > 0 ? m.fileSize : MediaUtil.decode(m.mediaB64).length));
+        }
+        // ---- письмо из обычной почты: тема и отправитель показываются прямо в «пузыре» ----
+        String subj = m.subject == null ? "" : m.subject.trim();
+        if (m.mail && !subj.isEmpty()) {
+            h.subject.setVisibility(View.VISIBLE);
+            h.subject.setText(subj);
+            h.subject.setTextColor(onBubble);
+        } else {
+            h.subject.setVisibility(View.GONE);
+        }
+        String senderName = !m.mail || m.outgoing || m.from == null || m.from.isEmpty()
+                ? "" : Store.displayName(ctx, m.from);
+        if (senderName.isEmpty()) {
+            h.sender.setVisibility(View.GONE);
+        } else {
+            h.sender.setVisibility(View.VISIBLE);
+            h.sender.setText(senderName);
         }
 
         // ---- текст ----
@@ -664,13 +684,17 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         final TextView replyName;
         final TextView replyText;
         final TextView text;
+        final TextView subject;
+        final TextView sender;
         final TextView time;
         final TextView edited;
         final ImageView image;
         final FrameLayout videoBox;
+        final ImageView videoPlay;
         final ImageView videoThumb;
         final TextView videoDuration;
         final FrameLayout circleBox;
+        final ImageView circlePlay;
         final ImageView circleThumb;
         final LinearLayout voiceBox;
         final ImageView voicePlay;
@@ -694,13 +718,17 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             replyName = itemView.findViewById(R.id.msg_reply_name);
             replyText = itemView.findViewById(R.id.msg_reply_text);
             text = itemView.findViewById(R.id.msg_text);
+            subject = itemView.findViewById(R.id.msg_subject);
+            sender = itemView.findViewById(R.id.msg_sender);
             time = itemView.findViewById(R.id.msg_time);
             edited = itemView.findViewById(R.id.msg_edited);
             image = itemView.findViewById(R.id.msg_image);
             videoBox = itemView.findViewById(R.id.msg_video_box);
+            videoPlay = itemView.findViewById(R.id.msg_video_play);
             videoThumb = itemView.findViewById(R.id.msg_video_thumb);
             videoDuration = itemView.findViewById(R.id.msg_video_duration);
             circleBox = itemView.findViewById(R.id.msg_circle_box);
+            circlePlay = itemView.findViewById(R.id.msg_circle_play);
             circleThumb = itemView.findViewById(R.id.msg_circle_thumb);
             voiceBox = itemView.findViewById(R.id.msg_voice_box);
             voicePlay = itemView.findViewById(R.id.msg_voice_play);

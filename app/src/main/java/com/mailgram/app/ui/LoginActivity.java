@@ -163,6 +163,13 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void updateStatusInternal() {
+        // кнопки «настроить client ID» и «проверить вход» показываем тогда, когда они
+        // действительно нужны: без client ID войти нельзя, с ним — полезна диагностика
+        boolean needSetup = Auth.clientId(this).isEmpty();
+        View setup = findViewById(R.id.btn_setup);
+        View diag = findViewById(R.id.btn_diag);
+        if (setup != null) setup.setVisibility(needSetup ? View.VISIBLE : View.GONE);
+        if (diag != null) diag.setVisibility(View.VISIBLE);
         if (probe != null && !probe.summary.isEmpty()) {
             status.setVisibility(View.VISIBLE);
             boolean ok = probe.androidOk || probe.loopbackOk;

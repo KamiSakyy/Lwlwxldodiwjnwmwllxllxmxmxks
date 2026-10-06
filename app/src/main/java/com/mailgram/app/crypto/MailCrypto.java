@@ -108,6 +108,8 @@ public final class MailCrypto {
         /** Своё же отправленное письмо в режиме крысиного шага: прочитать его на этом
          *  устройстве нельзя (ключ цепочки уже ушёл вперёд), но и ошибкой это не является. */
         public boolean selfCopyOfRatchet;
+        /** Соль раунда крысиного шага (поле "srt") — идентификатор конкретной сессии. */
+        public byte[] ratchetSalt;
     }
 
     /**
@@ -253,8 +255,14 @@ public final class MailCrypto {
         env.put("from", from);
         env.put("to", to);
         env.put("pk", B64.str(Identity.publicKeyRaw(ctx)));
-        env.put("pre", ourPreKey(ctx));
-        env.put("dh", B64.str(sealed.dhPublic));
+        // В v2 поля "pre" и "dh" всегда одинаковы и берутся из сессии крысиного шага: так
+        // собеседник вычисляет DH3 ровно по тем же байтам, что и мы. Отдельный «живой» предключ
+        // для этого не используется — иначе рассинхрон был бы возможен после его ротации.
+        String myStep = sealed.dhPublic == null || sealed.dhPublic.length != 65
+                ? ourPreKey(ctx) : B64.str(sealed.dhPublic);
+        env.put("pre", myStep);
+        env.put("dh", myStep);
+        env.put("srt", sealed.salt == null ? "" : B64.str(sealed.salt));
         env.put("pn", sealed.pn);
         env.put("n", sealed.n);
         env.put("nc", B64.str(sealed.nonce));
@@ -282,6 +290,8 @@ public final class MailCrypto {
         byte[] ct = B64.bytes(env.getString("c"));
         String pre = env.optString("pre", "");
         out.senderPreKeyRaw = pre.isEmpty() ? null : B64.bytes(pre);
+        String saltStr = env.optString("srt", "");
+        out.ratchetSalt = saltStr.isEmpty() ? new byte[16] : B64.bytes(saltStr);
 
         boolean iAmSender = myEmail != null && myEmail.equalsIgnoreCase(out.from);
         if (iAmSender) {
@@ -299,25 +309,31 @@ public final class MailCrypto {
             Ratchet r = RatchetStore.load(ctx, out.chatUid, true);
             byte[] pt = null;
             Exception first = null;
-            if (r != null && r.ready) {
+            if (out.senderPreKeyRaw == null || out.senderPreKeyRaw.length != 65) {
+                // письмо от версии, которая не пересылала предключ: берём dh
+                out.senderPreKeyRaw = out.ratchetPublic;
+            }
+            boolean sameSession = r != null && r.ready && sameSalt(r.salt, out.ratchetSalt);
+            if (sameSession) {
                 try {
                     pt = r.decrypt(ctx, aad, out.ratchetPublic, out.pn, out.n, nonce, ct);
                     RatchetStore.save(ctx, out.chatUid, r);
                 } catch (Exception e) {
                     first = e;
-                    r = null;
                 }
             }
             if (pt == null) {
-                // первое письмо в сессии либо рассинхронизация после переустановки —
-                // поднимаем новую сессию в роли ответчика из заголовка письма
+                // либо первое письмо, либо собеседник поднял новую сессию (другая соль), либо
+                // сессия потеряна после переустановки — поднимаем её заново из заголовка письма
                 try {
                     Ratchet fresh = Ratchet.responder(ctx, out.chatUid, out.senderPublicRaw,
-                            out.ratchetPublic, out.senderPreKeyRaw,
+                            out.ratchetPublic, out.senderPreKeyRaw, out.ratchetSalt,
                             RatchetStore.myPreKeyPrivateForResponder(ctx),
                             RatchetStore.myPreKeyPublic(ctx));
                     pt = fresh.decrypt(ctx, aad, out.ratchetPublic, out.pn, out.n, nonce, ct);
-                    RatchetStore.save(ctx, out.chatUid, fresh);
+                    // сохранять можно только успешную сессию: иначе одно битое письмо затрёт
+                    // рабочую, и дальше перестанут читаться уже все письма диалога
+                    if (pt != null) RatchetStore.save(ctx, out.chatUid, fresh);
                 } catch (Exception e) {
                     if (first != null) {
                         throw new SecurityException("не удалось расшифровать в крысином шаге: "
@@ -329,6 +345,17 @@ public final class MailCrypto {
             out.payload = B64.fromUtf8(pt);
         }
         return out;
+    }
+
+    /** Совпадает ли соль письма с солью сохранённой сессии (null считается пустой). */
+    private static boolean sameSalt(byte[] a, byte[] b) {
+        byte[] x = a == null ? new byte[0] : a;
+        byte[] y = b == null ? new byte[0] : b;
+        if (x.length != y.length) {
+            // старая сессия могла быть сохранена без соли — тогда сверяем только непустые
+            return x.length == 0 || y.length == 0;
+        }
+        return java.util.Arrays.equals(x, y);
     }
 
     /** Достаёт JSON конверта из тела письма (base64 с переносами строк, возможен HTML). */

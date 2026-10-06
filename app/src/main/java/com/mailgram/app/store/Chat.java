@@ -18,6 +18,8 @@ public final class Chat {
     public boolean pinned;      // закреплён в списке
     public boolean muted;       // без звука
     public boolean verified;    // отпечаток безопасности сверен вручную
+    /** true — это «папка» обычной почты (переписка не через MailGram), шифрование не требуется. */
+    public boolean generic;
 
     public JSONObject toJson() {
         JSONObject o = new JSONObject();
@@ -35,6 +37,7 @@ public final class Chat {
             o.put("pinned", pinned);
             o.put("muted", muted);
             o.put("verified", verified);
+            if (generic) o.put("generic", true);
         } catch (Exception ignored) {
         }
         return o;
@@ -64,6 +67,7 @@ public final class Chat {
         c.pinned = o.optBoolean("pinned", false);
         c.muted = o.optBoolean("muted", false);
         c.verified = o.optBoolean("verified", false);
+        c.generic = o.optBoolean("generic", false);
         c.sanitize();
         return c;
     }

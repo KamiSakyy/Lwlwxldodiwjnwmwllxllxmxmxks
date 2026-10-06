@@ -176,9 +176,24 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
         TextView drawerName = findViewById(R.id.drawer_name);
         if (drawerName != null) drawerName.setText(name);
         TextView drawerOnline = findViewById(R.id.drawer_online);
-        if (drawerOnline != null) drawerOnline.setText(R.string.online_now);
+        if (drawerOnline != null) {
+            // «в сети» без сервера сказать нечего — поэтому показываем реальный факт:
+            // когда приложение последний раз заглянуло в почту
+            long last = com.mailgram.app.store.Prefs.lastSyncAt(this);
+            drawerOnline.setText(last > 0L
+                    ? getString(R.string.drawer_last_sync, Ui.chatTime(last))
+                    : getString(R.string.drawer_never_synced));
+        }
         TextView drawerStatus = findViewById(R.id.drawer_status);
-        if (drawerStatus != null) drawerStatus.setText(R.string.app_name);
+        if (drawerStatus != null) {
+            int pending = com.mailgram.app.store.Prefs.retryCount(this);
+            String base = getString(R.string.sync_drawer_status,
+                    com.mailgram.app.store.Prefs.syncScanned(this),
+                    com.mailgram.app.store.Prefs.syncAdded(this));
+            drawerStatus.setText(pending > 0
+                    ? base + " · " + getString(R.string.sync_pending_note, pending)
+                    : base);
+        }
 
         click(R.id.drawer_item_stealth, v -> {
             boolean on = !Prefs.stealthRead(this);

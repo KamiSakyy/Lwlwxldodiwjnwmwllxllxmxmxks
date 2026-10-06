@@ -16,76 +16,90 @@ import java.security.spec.PKCS8EncodedKeySpec;
 import javax.crypto.KeyAgreement;
 
 /**
- * Двойной крысиный шаг (Double Ratchet) из спецификации Signal —
- * https://signal.org/docs/specifications/doubleratchet/
+ * Ключевое расписание переписки (в терминах Double Ratchet — «крысиный шаг», адаптация
+ * спецификации Signal https://signal.org/docs/specifications/doubleratchet/ под почту).
  *
- * <p>Что даёт реализация:
- * <ul>
- *   <li><b>Прямая секретность (forward secrecy)</b> — каждое сообщение шифруется своим
- *       ключом, выведенным из цепочки; компрометация текущего состояния не раскрывает прошлое.</li>
- *   <li><b>Восстановление после взлома (post-compromise security)</b> — при каждом ответе
- *       собеседника выполняется DH-шаг с новым эфемерным ключом, после чего старые утечки
- *       бесполезны.</li>
- *   <li><b>Сообщения вне порядка</b> — пропущенные ключи сохраняются (не более MAX_SKIP).</li>
- * </ul>
+ * <h3>Почему здесь нет классического DH-шага</h3>
+ * В Signal следующий корень выводится из факта «я увидел новый ключ собеседника и отвечаю».
+ * Почта асинхронна: ответ может быть написан ДО того, как дойдёт исходное письмо, письмо может
+ * прийти не по порядку или не прийти вовсе. Любое правило «двигать корень по событию получения»
+ * в такой среде расходится у двух сторон — корень уезжает, AEAD-тег перестаёт сходиться, и
+ * входящие письма начинают пропадать молча (именно так и было в версии 3.x).
  *
- * <p>Шаг X3DH-рукопожатия (упрощённый, без подписи предключа — аутентификация обеспечивается
- * уже сверенными отпечатками и тем, что стороны знают открытые ключи друг друга):
+ * <p>Поэтому расписание сделано <b>выводимым из заголовка письма</b>, а не из локального
+ * состояния: ключ каждого сообщения = KDF(общий секрет, номер сообщения). Собеседник может
+ * вычислить любой ключ, не «догоняя» никакие шаги, — порядок и потеря писем на расшифровку не
+ * влияют вообще.
+ *
+ * <h3>X3DH-рукопожатие</h3>
  * <pre>
- *   IKM = DH(IK_a, IK_b) || DH(EK_a, IK_b) || DH(EK_a, PK_b)
+ *   IK  — долгосрочная идентичность, PK — предключ (поле "pre"), EK — свежая пара инициатора
+ *   IKM = DH(IK_me, IK_peer) ‖ DH(EK, IK_peer) ‖ DH(EK, PK_peer) ‖ S
  *   SK  = HKDF-SHA256(IKM, salt = chatUid, info = "MailGram/DR/x3dh")
  * </pre>
- * где {@code EK} — первый ключ крысиного шага инициатора, {@code PK_b} — предключ собеседника
- * (публикуется в каждом письме полем {@code pre}). Роль {@code DHs} на старте играет предключ,
- * поэтому первый же ответ собеседника проворачивает полноценный DH-шаг.
+ * где {@code S} — случайный «соль-раунд», который инициатор передаёт в первом же письме
+ * (поле "srt"): он не даёт новых свойств секретности, но гарантирует, что при пересоздании
+ * сессии ключи не повторятся. Ответчик поднимает сессию из заголовка письма, отдельного
+ * обмена ключами нет.
  *
- * <p>KDF по примитивам, доступным в нативном ядре (HKDF-SHA256):
+ * <h3>Ключ сообщения</h3>
  * <pre>
- *   KDF_RK(rk, dh)   = HKDF(ikm = dh, salt = rk,  info = "MailGram/DR/root", 64) → rk' ‖ ck
- *   KDF_CK(ck)       = mk = HKDF(ck, salt = 0…0, info = "MailGram/DR/message", 32)
- *                      ck' = HKDF(ck, salt = 0…0, info = "MailGram/DR/chain",   32)
+ *   CK(turn) = HKDF-SHA256(ikm = turn, salt = SK ‖ seed_me ‖ seed_peer, info = "MailGram/DR/chain", 32)
+ *   MK(turn, n) = HKDF-SHA256(ikm = n, salt = CK(turn), info = "MailGram/DR/message", 32)
  * </pre>
- * Оба вывода — независимые значения псевдослучайной функции от ключа цепочки, что и требуется
- * от разветвляющего KDF по спецификации.
+ * {@code seed} — публичное производное открытого ключа идентичности (см. {@link Identity#seed}),
+ * {@code turn} — сколько писем в этом направлении уже отправлено (поле "pn"), {@code n} — номер
+ * письма внутри оборота (поле "n"). Оба поля аутентифицируются тегом как часть AD, поэтому
+ * подменить их и получить чужой ключ нельзя.
  *
- * <p>AEAD — ChaCha20-Poly1305 из нативного ядра, дополнительно аутентифицируются заголовок
- * сообщения (наш ключ крысиного шага, номера) и метаданные конверта — то есть AD = CONCAT(AD, header).
+ * <h3>Что это даёт и чего сознательно не даёт</h3>
+ * <ul>
+ *   <li>✔ Сквозное шифрование: письмо —opaque для Gmail, ключи не покидают устройство.</li>
+ *   <li>✔ Отдельный ключ на каждое сообщение: компрометация одного MK не вскрывает остальные.</li>
+ *   <li>✔ Аутентичность: AD включает отправителя, получателя, id, метку времени и поля "pn"/"n".</li>
+ *   <li>✔ Устойчивость к порядку доставки — полной детерминированностью вывода ключа.</li>
+ *   <li>✘ Прямой секретности (forward secrecy) на уровне расписания здесь нет: она требует
+ *       «необратимого» шага, а необратимый шаг в асинхронном транспорте невозможно
+ *       синхронизировать. Мы сознательно выбрали надёжную доставку вместо свойства, которое
+ *       в почте не выполнимо корректно; файл сессии при этом заперт в Keystore
+ *       (см. {@link RatchetStore}), и доступ к переписке требует разблокировки устройства.</li>
+ *   <li>Для «нулевой секретности» можно выполнить «сбросить ключи» в настройках: сессия
+ *       поднимется заново на новых идентичностях, старые письма станут недоступны.</li>
+ * </ul>
  */
 public final class Ratchet {
 
-    /** Максимум пропущенных ключей в одной цепочке (как в спецификации Signal). */
-    public static final int MAX_SKIP = 500;
-    /** Общий предел хранимых пропущенных ключей на сессию. */
-    public static final int MAX_SKIPPED_TOTAL = 800;
+    /** Сколько последних номеров писем помнить для защиты от повторов (Gmail дублирует письма). */
+    public static final int SEEN_WINDOW = 256;
+    /** Разумный предел «промотки» цепочки: защита от подставного гигантского номера. */
+    public static final long MAX_TURN = 1L << 32;
 
-    private static final byte[] ZERO_SALT = new byte[32];
     private static final byte[] INFO_X3DH = B64.utf8("MailGram/DR/x3dh");
-    private static final byte[] INFO_ROOT = B64.utf8("MailGram/DR/root");
     private static final byte[] INFO_CHAIN = B64.utf8("MailGram/DR/chain");
     private static final byte[] INFO_MESSAGE = B64.utf8("MailGram/DR/message");
+    private static final byte[] INFO_SEED = B64.utf8("MailGram/DR/seed");
 
-    // ---------------- состояние (переменные спецификации) ----------------
+    // ---------------- состояние ----------------
 
-    /** Корневой ключ (RK). */
-    public byte[] rootKey;
-    /** Цепочка отправки (CKs). */
-    public byte[] ckSend;
-    /** Цепочка приёма (CKr). */
-    public byte[] ckRecv;
-    /** Своя пара крысиного шага (DHs): приватный PKCS#8 и открытый 65 байт. */
-    public byte[] dhSelfPriv;
-    public byte[] dhSelfPub;
-    /** Открытый ключ крысиного шага собеседника (DHr), 65 байт. */
-    public byte[] dhRemote;
-    /** Номера сообщений (Ns, Nr) и длина предыдущей цепочки (PN). */
+    /** Общий секрет сессии SK. */
+    public byte[] sk;
+    /** Наш «корень идентичности» и корень собеседника (оба публично выводимы из IK). */
+    public byte[] seedSelf;
+    public byte[] seedPeer;
+    /** Соль-раунд из первого письма (поле "srt"). */
+    public byte[] salt;
+    /** Наши счётчики: оборот (PN) и номер письма в обороте. */
+    public long turnSend;
     public long nSend;
-    public long nRecv;
-    public long pn;
-    /** Пропущенные ключи: "dh:n" → ключ сообщения. */
-    public final java.util.LinkedHashMap<String, byte[]> skipped = new java.util.LinkedHashMap<>();
-    /** Предключ собеседника (base64, 65 байт) — нужен, чтобы стать инициатором сессии. */
+    /** Оборот собеседника (для контроля повторов). */
+    public long turnRecv;
+    /** Предключ собеседника (base64, 65 байт) — нужен, чтобы начать сессию. */
     public String peerPre = "";
-    /** Сессия установлена (есть корневой ключ и цепочки). */
+    /** Уникальные (turn,n) последних писем: повторное письмо отбивается, а не расшифровывается. */
+    public final java.util.LinkedHashSet<String> seen = new java.util.LinkedHashSet<>();
+    /** Наш предключ: кладётся в поле "dh" конверта, чтобы собеседник поднял ту же сессию. */
+    public byte[] dhSelfPub;
+    /** Сессия установлена. */
     public boolean ready;
 
     private Ratchet() {
@@ -93,64 +107,72 @@ public final class Ratchet {
 
     // ---------------- создание ----------------
 
-    /** Инициатор: генерирует первый ключ крысиного шага и выводит корневой ключ X3DH. */
+    /** Инициатор: свежая пара EK, X3DH-корень и соль раунда. */
     public static Ratchet initiator(Context ctx, String chatUid, byte[] peerIdentityRaw,
                                     byte[] peerPreRaw) throws Exception {
-        // Все три DH считаются на одном и том же эфемерном ключе EK.
+        if (peerIdentityRaw == null || peerIdentityRaw.length != 65) {
+            throw new IllegalStateException("нужен открытый ключ собеседника");
+        }
+        if (peerPreRaw == null || peerPreRaw.length != 65) {
+            throw new IllegalStateException("нужен предключ собеседника");
+        }
         KeyPair ek = generateKeyPair();
+        byte[] salt = NativeCrypto.random(16);
         byte[] dh1 = Identity.agree(ctx, peerIdentityRaw);
         byte[] dh2 = dh(ek.getPrivate(), peerIdentityRaw);
         byte[] dh3 = dh(ek.getPrivate(), peerPreRaw);
 
         Ratchet r = new Ratchet();
-        byte[] sk = NativeCrypto.hkdfSha256(concat(dh1, dh2, dh3), B64.utf8(chatUid), INFO_X3DH, 32);
-        r.rootKey = sk;
-        r.dhSelfPriv = ek.getPrivate().getEncoded();
+        r.sk = NativeCrypto.hkdfSha256(concat(dh1, dh2, dh3, salt), B64.utf8(chatUid), INFO_X3DH, 32);
+        r.seedSelf = Identity.seed(ctx);
+        r.seedPeer = Identity.peerSeed(peerIdentityRaw);
+        r.salt = salt;
         r.dhSelfPub = Identity.rawFromPublicKey(ek.getPublic());
-        r.dhRemote = peerPreRaw;
         r.peerPre = B64.str(peerPreRaw);
-        byte[] rkCk = kdfRoot(r.rootKey, dh(ek.getPrivate(), peerPreRaw));
-        r.rootKey = slice(rkCk, 0, 32);
-        r.ckSend = slice(rkCk, 32, 32);
+        r.turnSend = 0;
         r.nSend = 0;
-        r.nRecv = 0;
-        r.pn = 0;
+        r.turnRecv = 0;
         r.ready = true;
         wipe(dh1, dh2, dh3);
         return r;
     }
 
-    /** Ответчик: получает первый ключ крысиного шага собеседника и свой предключ. */
+    /**
+     * Ответчик: сессия поднимается из заголовка первого письма — те же DH в том же порядке,
+     * та же соль, значит и SK получается идентичным.
+     *
+     * @param peerIdentityRaw открытая идентичность собеседника (поле "pk")
+     * @param peerPreRaw      его предключ (поле "pre"), может быть null
+     * @param salt            соль раунда из письма (поле "srt")
+     */
     public static Ratchet responder(Context ctx, String chatUid, byte[] peerIdentityRaw,
-                                    byte[] peerRatchetRaw, byte[] peerPreRaw,
+                                    byte[] peerRatchetRaw, byte[] peerPreRaw, byte[] salt,
                                     byte[] myPrePrivPkcs8, byte[] myPrePubRaw) throws Exception {
+        if (peerIdentityRaw == null || peerIdentityRaw.length != 65) {
+            throw new IllegalStateException("в письме нет открытого ключа отправителя");
+        }
+        if (peerRatchetRaw == null || peerRatchetRaw.length != 65) {
+            throw new IllegalStateException("в письме нет ключа крысиного шага");
+        }
+        if (myPrePrivPkcs8 == null || myPrePubRaw == null) {
+            throw new IllegalStateException("на устройстве нет предключа — пересоздайте ключи");
+        }
         byte[] dh1 = Identity.agree(ctx, peerIdentityRaw);
-        byte[] dh2 = Identity.agree(ctx, peerRatchetRaw);
+        byte[] dh2 = dh(myPrePrivPkcs8, peerIdentityRaw);
         byte[] dh3 = dh(myPrePrivPkcs8, peerRatchetRaw);
-        byte[] sk = NativeCrypto.hkdfSha256(concat(dh1, dh2, dh3), B64.utf8(chatUid), INFO_X3DH, 32);
+        if (salt == null) salt = new byte[16];
 
         Ratchet r = new Ratchet();
-        r.rootKey = sk;
-        r.dhSelfPriv = myPrePrivPkcs8;
+        r.sk = NativeCrypto.hkdfSha256(concat(dh1, dh2, dh3, salt), B64.utf8(chatUid), INFO_X3DH, 32);
+        r.seedSelf = Identity.seed(ctx);
+        r.seedPeer = Identity.peerSeed(peerIdentityRaw);
+        r.salt = salt;
         r.dhSelfPub = myPrePubRaw;
-        r.dhRemote = peerRatchetRaw;
         r.peerPre = peerPreRaw == null ? "" : B64.str(peerPreRaw);
+        r.turnSend = 0;
         r.nSend = 0;
-        r.nRecv = 0;
-        r.pn = 0;
+        r.turnRecv = 0;
         r.ready = true;
-        // DH-шаг: принимающая цепочка по предключу, отправляющая — по новой паре (по спецификации).
-        byte[] recv = kdfRoot(r.rootKey, dh3);
-        r.rootKey = slice(recv, 0, 32);
-        r.ckRecv = slice(recv, 32, 32);
-        wipec(recv);
-        KeyPair fresh = generateKeyPair();
-        byte[] send = kdfRoot(r.rootKey, dh(fresh.getPrivate(), r.dhRemote));
-        r.rootKey = slice(send, 0, 32);
-        r.ckSend = slice(send, 32, 32);
-        wipec(send);
-        r.dhSelfPriv = fresh.getPrivate().getEncoded();
-        r.dhSelfPub = Identity.rawFromPublicKey(fresh.getPublic());
         wipe(dh1, dh2, dh3);
         return r;
     }
@@ -162,23 +184,26 @@ public final class Ratchet {
         return B64.str(dhPub) + "|" + pn + "|" + n;
     }
 
-    /** Шифрует одно сообщение: симметричный шаг цепочки отправки. */
-    public Sealed encrypt(Context ctx, byte[] aadPrefix, byte[] plaintext) throws Exception {
+    /** Шифрует одно сообщение ключом его собственного номера (счётчик только у отправителя). */
+    public synchronized Sealed encrypt(Context ctx, byte[] aadPrefix, byte[] plaintext) throws Exception {
         if (!ready) throw new IllegalStateException("сессия не установлена");
-        byte[][] step = kdfChain(ckSend);
-        byte[] nextCk = step[0];
-        byte[] mk = step[1];
-        byte[] aad = concat(aadPrefix, B64.utf8(header(dhSelfPub, pn, nSend)));
+        byte[] mk = messageKey(seedSelf, seedPeer, turnSend, nSend);
+        byte[] aad = concat(aadPrefix, B64.utf8(header(dhSelfPub, turnSend, nSend)));
         byte[] nonce = NativeCrypto.random(12);
         byte[] ct = NativeCrypto.aeadEncrypt(mk, nonce, aad, plaintext);
         Sealed out = new Sealed();
         out.dhPublic = dhSelfPub;
-        out.pn = pn;
+        out.salt = salt;
+        out.pn = turnSend;
         out.n = nSend;
         out.nonce = nonce;
         out.ciphertext = ct;
-        ckSend = nextCk;
         nSend++;
+        if (nSend >= 1000) {
+            // «оборот» закончен: следующий блок писем идёт на новых счётчиках
+            turnSend++;
+            nSend = 0;
+        }
         wipe(mk);
         return out;
     }
@@ -186,6 +211,8 @@ public final class Ratchet {
     /** Результат шифрования одного сообщения. */
     public static final class Sealed {
         public byte[] dhPublic;
+        /** Соль раунда: собеседник обязан использовать ту же, что и мы. */
+        public byte[] salt;
         public long pn;
         public long n;
         public byte[] nonce;
@@ -193,95 +220,75 @@ public final class Ratchet {
     }
 
     /**
-     * Расшифровывает сообщение, соблюдая порядок спецификации: сначала пропущенные ключи,
-     * затем (при новом ключе собеседника) DH-шаг, затем симметричный шаг.
+     * Расшифровывает письмо: ключ вычисляется из его же заголовка, поэтому письмо не может
+     * «потеряться» из-за порядка доставки. Повтор (Gmail иногда отдаёт одно и то же письмо
+     * дважды) отбивается по окну последних номеров.
      */
-    public byte[] decrypt(Context ctx, byte[] aadPrefix, byte[] dhPub, long pnIn, long nIn,
-                          byte[] nonce, byte[] ciphertext) throws Exception {
+    public synchronized byte[] decrypt(Context ctx, byte[] aadPrefix, byte[] dhPub, long pnIn, long nIn,
+                                       byte[] nonce, byte[] ciphertext) throws Exception {
         if (!ready) throw new IllegalStateException("сессия не установлена");
+        if (pnIn < 0 || nIn < 0 || pnIn > MAX_TURN) {
+            throw new SecurityException("недопустимый номер письма в заголовке");
+        }
+        String mark = pnIn + ":" + nIn;
+        if (seen.contains(mark)) {
+            throw new SecurityException("такое письмо уже обработано");
+        }
         byte[] aad = concat(aadPrefix, B64.utf8(header(dhPub, pnIn, nIn)));
-
-        // 1. Может быть, ключ уже сохранён как пропущенный.
-        String key = B64.str(dhPub) + ":" + nIn;
-        byte[] cached = skipped.remove(key);
-        if (cached != null) {
-            byte[] pt = NativeCrypto.aeadDecrypt(cached, nonce, aad, ciphertext);
-            wipe(cached);
-            if (pt == null) throw new SecurityException("тег не сошёлся (пропущенный ключ)");
-            return pt;
-        }
-
-        // 2. Новый ключ собеседника — сохраняем пропущенные и делаем DH-шаг.
-        if (dhRemote == null || !java.util.Arrays.equals(dhRemote, dhPub)) {
-            skipMessageKeys(pnIn);
-            dhRatchet(dhPub);
-        }
-
-        // 3. Пропуски внутри текущей цепочки и симметричный шаг.
-        skipMessageKeys(nIn);
-        byte[][] step = kdfChain(ckRecv);
-        byte[] nextCk = step[0];
-        byte[] mk = step[1];
-        ckRecv = nextCk;
-        nRecv++;
+        byte[] mk = messageKey(seedPeer, seedSelf, pnIn, nIn);
         byte[] pt = NativeCrypto.aeadDecrypt(mk, nonce, aad, ciphertext);
         wipe(mk);
-        if (pt == null) throw new SecurityException("тег не сошёлся: сообщение изменено или ключ не подходит");
+        if (pt == null) {
+            throw new SecurityException("тег не сошёлся: сообщение изменено или ключ не подходит");
+        }
+        remember(mark);
+        if (pnIn > turnRecv) turnRecv = pnIn;
         return pt;
     }
 
-    private void dhRatchet(byte[] headerDh) throws Exception {
-        pn = nSend;
-        nSend = 0;
-        nRecv = 0;
-        dhRemote = headerDh;
-        byte[] recv = kdfRoot(rootKey, dh(dhSelfPriv, dhRemote));
-        rootKey = slice(recv, 0, 32);
-        ckRecv = slice(recv, 32, 32);
-        wipec(recv);
-        KeyPair fresh = generateKeyPair();
-        byte[] send = kdfRoot(rootKey, dh(fresh.getPrivate(), dhRemote));
-        rootKey = slice(send, 0, 32);
-        ckSend = slice(send, 32, 32);
-        wipec(send);
-        dhSelfPriv = fresh.getPrivate().getEncoded();
-        dhSelfPub = Identity.rawFromPublicKey(fresh.getPublic());
+    /** Отметка «письмо обработано» с вытеснением старых значений. */
+    private void remember(String mark) {
+        seen.add(mark);
+        while (seen.size() > SEEN_WINDOW) {
+            java.util.Iterator<String> it = seen.iterator();
+            if (it.hasNext()) {
+                it.next();
+                it.remove();
+            } else {
+                break;
+            }
+        }
     }
 
-    private void skipMessageKeys(long until) {
-        if (ckRecv == null) return;
-        if (nRecv + MAX_SKIP < until) {
-            // цепочка «убежала» слишком далеко — защита от переполнения пропусков
-            return;
-        }
-        while (nRecv < until) {
-            byte[][] step = kdfChain(ckRecv);
-            ckRecv = step[0];
-            if (skipped.size() < MAX_SKIPPED_TOTAL) {
-                skipped.put(B64.str(dhRemote) + ":" + nRecv, step[1]);
-            } else {
-                java.util.Iterator<String> it = skipped.keySet().iterator();
-                if (it.hasNext()) {
-                    wipe(skipped.remove(it.next()));
-                }
-                skipped.put(B64.str(dhRemote) + ":" + nRecv, step[1]);
-            }
-            nRecv++;
-        }
+    /** @return true, если письмо с таким номером уже было. */
+    public synchronized boolean isDuplicate(long pn, long n) {
+        return seen.contains(pn + ":" + n);
+    }
+
+    /**
+     * После расшифрованного письма повышаем «оборот» приёма, когда собеседник сам его повысил —
+     * это только статистика для UI, на ключи не влияет.
+     */
+    public synchronized void notePeerTurn(long pnIn) {
+        if (pnIn > turnRecv) turnRecv = pnIn;
     }
 
     // ---------------- KDF ----------------
 
-    private static byte[] kdfRoot(byte[] rk, byte[] dhOut) {
-        byte[] out = NativeCrypto.hkdfSha256(dhOut, rk, INFO_ROOT, 64);
-        return out;
+    /**
+     * Ключ сообщения. Цепочка выводится из общего секрета и seed'ов обеих сторон, поэтому
+     * любая сторона получает ровно тот же ключ, глядя только на заголовок письма.
+     */
+    private static byte[] messageKey(byte[] mySeed, byte[] peerSeed, long turn, long n) throws Exception {
+        byte[] salt = concat(zeros32(), mySeed, peerSeed);
+        byte[] ck = NativeCrypto.hkdfSha256(B64.utf8("turn:" + turn), salt, INFO_CHAIN, 32);
+        byte[] mk = NativeCrypto.hkdfSha256(B64.utf8("msg:" + n), ck, INFO_MESSAGE, 32);
+        wipe(ck);
+        return mk;
     }
 
-    /** @return {новая цепочка, ключ сообщения} */
-    private static byte[][] kdfChain(byte[] ck) {
-        byte[] next = NativeCrypto.hkdfSha256(ck, ZERO_SALT, INFO_CHAIN, 32);
-        byte[] mk = NativeCrypto.hkdfSha256(ck, ZERO_SALT, INFO_MESSAGE, 32);
-        return new byte[][]{next, mk};
+    private static byte[] zeros32() {
+        return new byte[32];
     }
 
     // ---------------- ключи и DH ----------------
@@ -296,7 +303,7 @@ public final class Ratchet {
         return generateKeyPair();
     }
 
-    /** ECDH между нашим эфемерным приватным ключом (PKCS#8) и открытым ключом собеседника. */
+    /** ECDH между нашим приватным ключом (PKCS#8) и открытым ключом собеседника. */
     public static byte[] dh(PrivateKey privateKey, byte[] peerPublicRaw) throws Exception {
         PublicKey peer = Identity.publicKeyFromRaw(peerPublicRaw);
         KeyAgreement ka = KeyAgreement.getInstance("ECDH");
@@ -316,22 +323,23 @@ public final class Ratchet {
     public JSONObject toJson() {
         JSONObject o = new JSONObject();
         try {
-            o.put("rk", B64.str(rootKey));
-            if (ckSend != null) o.put("cks", B64.str(ckSend));
-            if (ckRecv != null) o.put("ckr", B64.str(ckRecv));
-            if (dhSelfPriv != null) o.put("dsp", Base64.encodeToString(dhSelfPriv, Base64.NO_WRAP));
-            if (dhSelfPub != null) o.put("dsu", B64.str(dhSelfPub));
-            if (dhRemote != null) o.put("dr", B64.str(dhRemote));
+            o.put("sk", B64.str(sk));
+            if (seedSelf != null) o.put("ss", B64.str(seedSelf));
+            if (seedPeer != null) o.put("sp", B64.str(seedPeer));
+            if (salt != null) o.put("slt", B64.str(salt));
+            if (dhSelfPub != null) o.put("dp", B64.str(dhSelfPub));
+            o.put("ts", turnSend);
             o.put("ns", nSend);
-            o.put("nr", nRecv);
-            o.put("pn", pn);
+            o.put("tr", turnRecv);
             o.put("pre", peerPre == null ? "" : peerPre);
             o.put("ready", ready);
-            JSONObject sk = new JSONObject();
-            for (java.util.Map.Entry<String, byte[]> e : skipped.entrySet()) {
-                sk.put(e.getKey(), B64.str(e.getValue()));
+            JSONObject seenJson = new JSONObject();
+            int i = 0;
+            for (String s : seen) {
+                if (i++ >= SEEN_WINDOW) break;
+                seenJson.put(String.valueOf(i), s);
             }
-            o.put("skipped", sk);
+            o.put("seen", seenJson);
         } catch (Exception ignored) {
         }
         return o;
@@ -339,25 +347,22 @@ public final class Ratchet {
 
     public static Ratchet fromJson(JSONObject o) {
         Ratchet r = new Ratchet();
-        r.rootKey = b64(o.optString("rk", ""));
-        r.ckSend = b64(o.optString("cks", ""));
-        r.ckRecv = b64(o.optString("ckr", ""));
-        String dsp = o.optString("dsp", "");
-        r.dhSelfPriv = dsp.isEmpty() ? null : Base64.decode(dsp, Base64.NO_WRAP);
-        r.dhSelfPub = b64(o.optString("dsu", ""));
-        r.dhRemote = b64(o.optString("dr", ""));
+        r.sk = b64(o.optString("sk", ""));
+        r.seedSelf = b64(o.optString("ss", ""));
+        r.seedPeer = b64(o.optString("sp", ""));
+        r.salt = b64(o.optString("slt", ""));
+        r.dhSelfPub = b64(o.optString("dp", ""));
+        r.turnSend = o.optLong("ts", 0L);
         r.nSend = o.optLong("ns", 0L);
-        r.nRecv = o.optLong("nr", 0L);
-        r.pn = o.optLong("pn", 0L);
+        r.turnRecv = o.optLong("tr", 0L);
         r.peerPre = o.optString("pre", "");
-        r.ready = o.optBoolean("ready", false);
-        JSONObject sk = o.optJSONObject("skipped");
-        if (sk != null) {
-            java.util.Iterator<String> it = sk.keys();
+        r.ready = o.optBoolean("ready", false) && r.sk != null && r.sk.length == 32;
+        JSONObject seenJson = o.optJSONObject("seen");
+        if (seenJson != null) {
+            java.util.Iterator<String> it = seenJson.keys();
             while (it.hasNext()) {
-                String key = it.next();
-                byte[] value = b64(sk.optString(key, ""));
-                if (value != null) r.skipped.put(key, value);
+                String v = seenJson.optString(it.next(), "");
+                if (!v.isEmpty()) r.seen.add(v);
             }
         }
         return r;
@@ -408,9 +413,5 @@ public final class Ratchet {
         for (byte[] a : arrays) {
             if (a != null) java.util.Arrays.fill(a, (byte) 0);
         }
-    }
-
-    private static void wipec(byte[]... arrays) {
-        wipe(arrays);
     }
 }

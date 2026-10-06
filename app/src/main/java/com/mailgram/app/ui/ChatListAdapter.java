@@ -182,14 +182,31 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
         h.preview.setText(chat.preview == null || chat.preview.isEmpty()
                 ? h.itemView.getContext().getString(R.string.no_chats_title) : chat.preview);
 
+        if (h.onlineDot != null) {
+            // точка присутствия: горит, если от собеседника приходило письмо меньше 10 минут назад
+            boolean recent = !chat.generic && com.mailgram.app.store.Prefs.seenRecently(
+                    h.itemView.getContext(), chat.peer);
+            h.onlineDot.setVisibility(chat.generic ? View.GONE : View.VISIBLE);
+            h.onlineDot.setBackgroundResource(recent
+                    ? R.drawable.bg_online_dot : R.drawable.bg_online_dot_off);
+        }
         boolean hasKey = chat.peerPublic != null && !chat.peerPublic.isEmpty();
-        h.state.setVisibility(!chat.lastOutgoing && hasKey ? View.VISIBLE : View.GONE);
-        h.state.setImageResource(hasKey ? R.drawable.ic_lock : R.drawable.ic_lock_open);
-        h.state.setImageTintList(android.content.res.ColorStateList.valueOf(
-                hasKey ? h.itemView.getContext().getResources().getColor(R.color.lock_green)
-                        : h.itemView.getContext().getResources().getColor(R.color.text_tertiary)));
-        h.state.setContentDescription(h.itemView.getContext().getString(
-                hasKey ? R.string.encryption_on : R.string.encryption_waiting));
+        android.content.res.Resources res = h.itemView.getContext().getResources();
+        if (chat.generic) {
+            // письмо из обычной почты: значок почты вместо индикатора шифрования
+            h.state.setVisibility(View.VISIBLE);
+            h.state.setImageResource(R.drawable.ic_attach);
+            h.state.setImageTintList(android.content.res.ColorStateList.valueOf(
+                    res.getColor(R.color.text_tertiary)));
+            h.state.setContentDescription(h.itemView.getContext().getString(R.string.chat_kind_mail));
+        } else {
+            h.state.setVisibility(!chat.lastOutgoing && hasKey ? View.VISIBLE : View.GONE);
+            h.state.setImageResource(hasKey ? R.drawable.ic_lock : R.drawable.ic_lock_open);
+            h.state.setImageTintList(android.content.res.ColorStateList.valueOf(
+                    hasKey ? res.getColor(R.color.lock_green) : res.getColor(R.color.text_tertiary)));
+            h.state.setContentDescription(h.itemView.getContext().getString(
+                    hasKey ? R.string.encryption_on : R.string.encryption_waiting));
+        }
 
         if (chat.unread > 0) {
             h.badge.setVisibility(View.VISIBLE);
@@ -247,6 +264,7 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
         final TextView time;
         final TextView badge;
         final ImageView state;
+        final View onlineDot;
         final ImageView pin;
         final ImageView mute;
 
@@ -258,6 +276,7 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Holder
             time = itemView.findViewById(R.id.chat_time);
             badge = itemView.findViewById(R.id.chat_badge);
             state = itemView.findViewById(R.id.chat_state_icon);
+            onlineDot = itemView.findViewById(R.id.chat_online_dot);
             pin = itemView.findViewById(R.id.chat_pin_icon);
             mute = itemView.findViewById(R.id.chat_mute_icon);
         }

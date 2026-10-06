@@ -53,6 +53,31 @@ public final class Msg {
     public String gmailId = "";
     public String error = "";
     public boolean unread;
+    /** Тема письма: заполняется для обычных (не MailGram) писем, они тоже видны в ленте. */
+    public String subject = "";
+    /** true — это письмо из обычной почты, а не зашифрованный конверт MailGram. */
+    public boolean mail;
+
+    /** Гарантированно непустые указатели: лента сравнивает их напрямую. */
+    public void sanitize() {
+        if (mid == null) mid = "";
+        if (chat == null) chat = "";
+        if (peer == null) peer = "";
+        if (from == null) from = "";
+        if (to == null) to = "";
+        if (type == null) type = "text";
+        if (text == null) text = "";
+        if (mediaB64 == null) mediaB64 = "";
+        if (mediaMime == null) mediaMime = "";
+        if (fileName == null) fileName = "";
+        if (wave == null) wave = "";
+        if (replyMid == null) replyMid = "";
+        if (replyPreview == null) replyPreview = "";
+        if (myReaction == null) myReaction = "";
+        if (gmailId == null) gmailId = "";
+        if (error == null) error = "";
+        if (subject == null) subject = "";
+    }
 
     /** Гарантированно непустые указатели: лента сравнивает их напрямую. */
     public void sanitize() {
@@ -111,6 +136,8 @@ public final class Msg {
             o.put("gmail", gmailId);
             o.put("err", error);
             o.put("unread", unread);
+            if (subject != null && !subject.isEmpty()) o.put("subj", subject);
+            if (mail) o.put("mail", true);
         } catch (Exception ignored) {
         }
         return o;
@@ -155,6 +182,8 @@ public final class Msg {
         m.gmailId = o.optString("gmail", "");
         m.error = o.optString("err", "");
         m.unread = o.optBoolean("unread", false);
+        m.subject = o.optString("subj", "");
+        m.mail = o.optBoolean("mail", false);
         m.sanitize();
         return m;
     }

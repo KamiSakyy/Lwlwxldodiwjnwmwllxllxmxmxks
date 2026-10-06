@@ -39,8 +39,17 @@ import java.util.regex.Pattern;
 public final class SyncEngine {
 
     private static final String TAG = "MailGramSync";
-    private static final String QUERY = "subject:MailGram -in:draft newer_than:120d";
-    private static final int MAX_MESSAGES = 400;
+    /**
+     * Мы показываем ВЕСЬ почтовый ящик, а не только письма MailGram: тема не фильтруется,
+     * метки не фильтруются (спам и корзина тоже видны), черновики исключаются только потому,
+     * что у них нет содержимого для показа.
+     */
+    private static final String QUERY = "-in:draft newer_than:180d";
+    private static final int MAX_MESSAGES = 500;
+    /** Раздел, куда складываются обычные письма Gmail (см. {@code Store.GENERIC_UID}). */
+    private static final String GENERIC_UID = com.mailgram.app.store.Store.GENERIC_UID;
+    /** Сколько уведомлений максимум показываем за одну синхронизацию. */
+    private static final int NOTIFY_PER_SYNC = 6;
     public static final String SUBJECT_INVITE_MARKER = "X-MailGram-PublicKey:";
     public static final String PREKEY_MARKER = "X-MailGram-PreKey:";
     private static final Pattern KEY_LINE = Pattern.compile("X-MailGram-PublicKey:\\s*([A-Za-z0-9_\\-+/=]{80,140})");
@@ -64,7 +73,10 @@ public final class SyncEngine {
         public Throwable cause;
         public int scanned;
         public int added;
+        /** Писем, которые пришли, но не расшифровались: они видны в чате отдельной строкой. */
         public int undecryptable;
+        /** Писем, которые пока не удалось разобрать — они встанут в очередь повторных попыток. */
+        public int failed;
         public final List<Msg> incoming = new ArrayList<>();
         public long finishedAt;
     }
@@ -120,6 +132,7 @@ public final class SyncEngine {
             } finally {
                 r.finishedAt = System.currentTimeMillis();
                 Prefs.setLastSyncAt(app, r.finishedAt);
+                Prefs.recordSyncStats(app, r.scanned, r.added);
                 running.set(false);
                 for (Listener l : listeners) {
                     try {
@@ -129,10 +142,18 @@ public final class SyncEngine {
                     }
                 }
                 if (!r.incoming.isEmpty() && !App.isForeground()) {
+                    // Обычная почта (реклама, рассылки, спам) не должна осыпать уведомлениями:
+                    // звуковой сигнал получаем только на письма-переписку, максимум несколько.
+                    int notified = 0;
                     for (Msg m : r.incoming) {
+                        if (m.mail) continue;
+                        if (notified >= NOTIFY_PER_SYNC) break;
                         try {
                             Chat chat = Store.get(app).chat(m.chat);
-                            if (chat != null) Notifier.showMessage(app, chat, m);
+                            if (chat != null) {
+                                Notifier.showMessage(app, chat, m);
+                                notified++;
+                            }
                         } catch (Throwable ignored) {
                             com.mailgram.app.util.CrashLog.record(app, ignored);
                         }
@@ -154,12 +175,17 @@ public final class SyncEngine {
         }
 
         List<String> ids = GmailApi.listMessageIds(token, QUERY, MAX_MESSAGES);
-        List<String> unknown = new ArrayList<>();
+        // письма, которые в прошлый раз не удалось разобрать, пробуем ещё раз: «молча пропущено»
+        // у нас больше не бывает — либо сообщение появляется в ленте, либо оно ждёт повторной попытки
+        List<String> retry = Prefs.retryQueue(app);
+        java.util.LinkedHashSet<String> wanted = new java.util.LinkedHashSet<>();
         for (String id : ids) {
-            if (!store.hasGmailId(id)) unknown.add(id);
+            if (!store.hasGmailId(id)) wanted.add(id);
         }
+        wanted.addAll(retry);
+        List<String> unknown = new ArrayList<>(wanted);
         result.scanned = ids.size();
-        Log.i(TAG, "писем найдено: " + ids.size() + ", новых: " + unknown.size());
+        Log.i(TAG, "писем найдено: " + ids.size() + ", новых или отложенных: " + unknown.size());
         if (unknown.isEmpty()) return;
 
         List<Future<?>> futures = new ArrayList<>();
@@ -170,24 +196,39 @@ public final class SyncEngine {
                 try {
                     GmailApi.Mail mail = GmailApi.get(Auth.accessTokenFresh(app), messageId);
                     Msg parsed = parseMail(store, mail, myEmail);
-                    if (parsed == null) return;
-                    boolean isNew = store.byMid(parsed.chat, parsed.mid) == null;
-                    store.put(parsed.chat, parsed);
-                    if (isNew) {
-                        synchronized (result) {
-                            result.added++;
-                            if (!parsed.outgoing) result.incoming.add(parsed);
+                    if (parsed != null) {
+                        boolean isNew = store.byMid(parsed.chat, parsed.mid) == null;
+                        store.put(parsed.chat, parsed);
+                        if (isNew) {
+                            synchronized (result) {
+                                result.added++;
+                                if (!parsed.outgoing) result.incoming.add(parsed);
+                            }
                         }
                     }
+                    Prefs.removeRetry(app, messageId);
                 } catch (SecurityException se) {
                     Log.w(TAG, "не удалось расшифровать письмо " + messageId + ": " + se.getMessage());
                     synchronized (result) {
                         result.undecryptable++;
                     }
+                    // письмо не выбрасываем: показываем его в чате и оставляем в очереди —
+                    // после обновления ключей крысиного шага оно расшифруется само
+                    try {
+                        GmailApi.Mail mail = GmailApi.get(Auth.accessTokenFresh(app), messageId);
+                        addUndecryptable(store, mail, me);
+                    } catch (Throwable ignored) {
+                        com.mailgram.app.util.CrashLog.record(app, ignored);
+                    }
+                    Prefs.addRetry(app, messageId);
                 } catch (Throwable e) {
                     // и ошибки тоже: необработанная ошибка в потоке пула закрывала приложение
                     Log.w(TAG, "ошибка обработки письма " + messageId + ": " + e);
                     com.mailgram.app.util.CrashLog.record(app, e);
+                    synchronized (result) {
+                        result.failed++;
+                    }
+                    Prefs.addRetry(app, messageId);
                 }
             }));
         }
@@ -218,12 +259,19 @@ public final class SyncEngine {
         return body;
     }
 
+    /**
+     * Разбирает письмо. Порядок такой: сначала мы вообще не трогаем чужие письма (тема не наша —
+     * выход молча), а если тема «наша», то любое неудачное завершение ОБЯЗАНО оставить след —
+     * строку-заглушку или повторную попытку. Молчаливый возврат null здесь означал бы
+     * «собеседник пишет, а у нас тишина», поэтому такие места собраны в failedIncoming().
+     */
     private Msg parseMail(Store store, GmailApi.Mail mail, String me) throws Exception {
         String subject = mail.subject == null ? "" : mail.subject.trim();
         MailCrypto.Envelope env = null;
         String chatUid = null;
+        boolean fromSubject = subject.startsWith(MailCrypto.SUBJECT_PREFIX);
 
-        if (subject.startsWith(MailCrypto.SUBJECT_PREFIX)) {
+        if (fromSubject) {
             chatUid = subject.substring(MailCrypto.SUBJECT_PREFIX.length()).trim();
             chatUid = chatUid.split("\\s+")[0];
             String fromHeader = Store.normalizeEmail(mail.from);
@@ -253,7 +301,35 @@ public final class SyncEngine {
                 throw se;
             }
         } else {
-            return null;
+            // Тема «не наша» — но письмо всё равно разбираем: конверт мог прийти с Re:/Fwd:,
+            // а может это просто обычное письмо из ящика (его показываем как есть).
+            String json = MailCrypto.extractEnvelopeJson(mail.body);
+            if (json != null) {
+                try {
+                    chatUid = new org.json.JSONObject(json).optString("chat", "");
+                } catch (Exception ignored) {
+                    chatUid = null;
+                }
+            } else {
+                Matcher km = KEY_LINE.matcher(bodyWithDecoded(mail.body));
+                if (km.find()) {
+                    String from = Store.normalizeEmail(mail.from);
+                    String peer = me != null && me.equalsIgnoreCase(from) ? Store.normalizeEmail(mail.to) : from;
+                    if (!peer.isEmpty()) {
+                        Chat c = store.chatByPeer(peer);
+                        chatUid = c != null ? c.uid : NativeCrypto.chatUid(me == null ? "" : me, peer);
+                    }
+                }
+            }
+            if (chatUid == null || chatUid.isEmpty()) {
+                // обычное письмо из почты — оно всё равно показывается, см. genericMail()
+                return genericMail(store, mail, me);
+            }
+            try {
+                env = MailCrypto.open(app, mail.body, me, null);
+            } catch (SecurityException se) {
+                throw new SecurityException(se.getMessage() == null ? "не удалось расшифровать" : se.getMessage());
+            }
         }
 
         if (env == null) {
@@ -265,7 +341,7 @@ public final class SyncEngine {
                 byte[] key = B64.bytes(keyB64);
                 if (key.length != 65) return null;
                 String from = Store.normalizeEmail(mail.from);
-                boolean outgoing = me.equalsIgnoreCase(from);
+                boolean outgoing = me != null && me.equalsIgnoreCase(from);
                 String peer = outgoing ? Store.normalizeEmail(mail.to) : from;
                 Chat chat = store.ensureChat(chatUid, peer, outgoing ? null : keyB64);
                 // предключ собеседника из приглашения — сразу можно вести сессию с крысиным шагом
@@ -290,8 +366,8 @@ public final class SyncEngine {
                 invite.outgoing = outgoing;
                 invite.type = "invite";
                 invite.text = outgoing
-                        ? "Приглашение отправлено. Ключ собеседника появится после его ответа."
-                        : "Собеседник установил MailGram. Можно отвечать — сообщения будут зашифрованы.";
+                        ? app.getString(com.mailgram.app.R.string.invite_sent_note)
+                        : app.getString(com.mailgram.app.R.string.invite_received_note);
                 invite.gmailId = mail.id;
                 invite.state = Msg.STATE_SENT;
                 invite.unread = mail.unread && !outgoing;
@@ -319,6 +395,8 @@ public final class SyncEngine {
         if (!outgoing) {
             // открытый ключ собеседника обновляем из каждого его письма
             store.setPeerPublic(chat.uid, B64.str(env.senderPublicRaw));
+            // «в сети» — не выдумка, а время последнего его письма
+            Prefs.setLastSeen(app, peer, msgTsOf(mail, env));
         }
 
         Msg msg = new Msg();
@@ -803,6 +881,192 @@ public final class SyncEngine {
                 notifyDirty();
             }
         });
+    }
+
+    /**
+     * Обычное письмо из почты (не конверт MailGram) тоже становится сообщением: приложение
+     * показывает весь ящик, а не только переписку между двумя ключами. Темы-переписки
+     * группируются по threadId Gmail, текст — то, что реально прислал почтовый клиент.
+     */
+    private Msg genericMail(Store store, GmailApi.Mail mail, String me) {
+        String from = Store.normalizeEmail(mail.from);
+        String to = Store.normalizeEmail(mail.to);
+        boolean outgoing = me != null && me.equalsIgnoreCase(from);
+        String peer = outgoing ? to : from;
+        if (peer == null || peer.isEmpty()) peer = outgoing ? from : to;
+        if (peer.isEmpty()) peer = "неизвестный адрес";
+        // Все обычные письма собираются в один раздел «Вся почта»: ящик виден целиком, но
+        // список чатов не превращается в лабиринт из сотен переписок. Внутренняя группировка —
+        // по Gmail-цепочке (threadId), так что ветка переписки остаётся вместе.
+        String uid = GENERIC_UID;
+        Chat chat = store.ensureGenericChat(uid, peer);
+        if (chat.name == null || chat.name.isEmpty()) {
+            chat.name = str(com.mailgram.app.R.string.all_mail_title);
+            store.renameChat(chat.uid, chat.name);
+        }
+        String senderName = headerName(mail.from, from);
+        String body = plainBody(mail.body);
+        String subject = mail.subject == null ? "" : mail.subject.trim();
+
+        Msg m = new Msg();
+        m.mid = "mail:" + mail.id;
+        m.chat = chat.uid;
+        m.peer = peer;
+        m.from = from;
+        m.to = to;
+        m.ts = mail.internalDate > 0 ? mail.internalDate : System.currentTimeMillis();
+        m.outgoing = outgoing;
+        m.type = "text";
+        m.subject = subject.isEmpty() ? str(com.mailgram.app.R.string.mail_no_subject) : subject;
+        m.text = (outgoing ? "" : senderName + " — ") + (body.isEmpty() ? str(R.string.mail_empty_body) : body);
+        m.gmailId = mail.id;
+        m.state = Msg.STATE_SENT;
+        m.unread = mail.unread;
+        m.mail = true;
+        store.put(chat.uid, m);
+        return m;
+    }
+
+    private String str(int resId) {
+        try {
+            String v = app.getString(resId);
+            return v == null ? "" : v;
+        } catch (Exception e) {
+            return "";
+        }
+    }
+
+    private static String valueOf(String s) {
+        return s == null ? "" : s;
+    }
+
+    /** Имя отправителя из заголовка «Name <mail@box>» — показываем его, а не голый адрес. */
+    private static String headerName(String raw, String fallback) {
+        if (raw == null) return fallback;
+        int lt = raw.indexOf('<');
+        String name = (lt >= 0 ? raw.substring(0, lt) : raw).replace("\"", "").trim();
+        if (name.isEmpty()) return Store.displayName(fallback);
+        return name;
+    }
+
+    /** Из письма оставляем читаемый текст: HTML сворачиваем, переносы base64 — убираем. */
+    private static String plainBody(String body) {
+        if (body == null) return "";
+        String text = body;
+        if (text.contains("<") && text.contains(">")) {
+            text = text.replaceAll("(?is)<(script|style)[^>]*>.*?</\\1>", " ")
+                    .replaceAll("<br\\s*/?>", "\\n")
+                    .replaceAll("(?i)</(p|div|tr|li|h[1-6])>", "\\n")
+                    .replaceAll("<[^>]*>", " ");
+        }
+        text = text.replace("&nbsp;", " ").replace("&amp;", "&").replace("&quot;", "\"")
+                .replace("&#39;", "'").replace("&lt;", "<").replace("&gt;", ">");
+        text = text.replaceAll("\\r", "").replaceAll("[ \\t]+", " ").replaceAll("\\n{3,}", "\\n\\n");
+        text = text.trim();
+        if (text.length() > 4000) text = text.substring(0, 4000) + "…";
+        return text;
+    }
+
+    /**
+     * Строка для письма, которое мы не смогли расшифровать: пользователь обязан увидеть,
+     * что сообщение пришло. Повторные синхронизации обновляют ту же строку (mid привязан к id
+     * письма), а после того как ключи сойдутся, настоящее сообщение её перезапишет.
+     */
+    private void addUndecryptable(Store store, GmailApi.Mail mail, String me) {
+        if (mail == null || mail.id == null || mail.id.isEmpty()) return;
+        String from = Store.normalizeEmail(mail.from);
+        if (me != null && me.equalsIgnoreCase(from)) return;   // своё письмо — заглушка не нужна
+        String peer = from.isEmpty() ? Store.normalizeEmail(mail.to) : from;
+        if (peer.isEmpty()) return;
+        String subject = mail.subject == null ? "" : mail.subject.trim();
+        String uid = subject.startsWith(MailCrypto.SUBJECT_PREFIX)
+                ? subject.substring(MailCrypto.SUBJECT_PREFIX.length()).trim().split("\\s+")[0]
+                : null;
+        Chat chat = uid != null ? store.chat(uid) : null;
+        if (chat == null) chat = store.chatByPeer(peer);
+        if (chat == null) {
+            chat = store.ensureChat(NativeCrypto.chatUid(me == null ? "" : me, peer), peer, null);
+        }
+        Msg m = new Msg();
+        m.mid = "und:" + mail.id;
+        m.chat = chat.uid;
+        m.peer = peer;
+        m.from = from;
+        m.to = Store.normalizeEmail(mail.to);
+        m.ts = mail.internalDate > 0 ? mail.internalDate : System.currentTimeMillis();
+        m.outgoing = false;
+        m.type = "text";
+        m.text = "";
+        m.gmailId = mail.id;
+        m.state = Msg.STATE_SENT;
+        m.unread = true;
+        m.error = "не расшифровано";
+        store.put(chat.uid, m);
+        store.markDamaged(chat.uid);
+    }
+
+    /**
+     * Ответ обычным письмом (для чатов, которые пришли из почты). Шифрования здесь нет и
+     * быть не может — получатель не обязан пользоваться MailGram, поэтому письмо уходит
+     * открытым текстом ровно в том виде, в каком его пишут в почтовом клиенте.
+     */
+    public void sendPlainReply(final Chat chat, final Msg local, final String inReplyTo) {
+        final Store store = Store.get(app);
+        final String me = Auth.account(app);
+        local.chat = chat.uid;
+        local.peer = chat.peer;
+        local.from = me;
+        local.to = chat.peer;
+        local.outgoing = true;
+        local.mail = true;
+        local.state = Msg.STATE_SENDING;
+        store.put(chat.uid, local);
+        pool.execute(() -> {
+            try {
+                String token = Auth.accessTokenFresh(app);
+                StringBuilder body = new StringBuilder();
+                if (local.text != null && !local.text.isEmpty()) body.append(local.text);
+                if (local.replyMid != null && !local.replyMid.isEmpty()
+                        && local.replyPreview != null && !local.replyPreview.isEmpty()) {
+                    if (body.length() > 0) body.append("\r\n\r\n");
+                    String quote = local.replyPreview.replaceAll("\\R+", " ");
+                    if (quote.length() > 400) quote = quote.substring(0, 400) + "…";
+                    body.append("> ").append(quote);
+                }
+                if (local.subject != null && !local.subject.isEmpty()) {
+                    // тему оригинала держим в In-Reply-To-стиле: так письмо не «потеряется» в ветке
+                    if (body.length() > 0) body.append("\r\n\r\n");
+                    body.append("--\r\n").append("Ответ на письмо «").append(local.subject).append("»");
+                }
+                byte[] media = local.hasMedia()
+                        ? android.util.Base64.decode(local.mediaB64, android.util.Base64.NO_WRAP) : null;
+                if (media != null && media.length > 0) {
+                    if (body.length() > 0) body.append("\r\n\r\n");
+                    body.append("-- вложение: ").append(local.fileName == null || local.fileName.isEmpty()
+                            ? local.mediaMime : local.fileName).append(" --\r\n");
+                    body.append(android.util.Base64.encodeToString(media, android.util.Base64.NO_WRAP)
+                            .replaceAll("\\s+$", ""));
+                }
+                String subject = local.subject == null || local.subject.isEmpty()
+                        ? app.getString(com.mailgram.app.R.string.mail_reply_subject)
+                        : (local.subject.startsWith("Re:") || local.subject.startsWith("Fwd:")
+                                ? local.subject : "Re: " + local.subject);
+                String mime = Mime.build(me, chat.peer, subject, Mime.wrap(body.toString()),
+                        local.mid, inReplyTo);
+                String gmailId = GmailApi.send(token, Mime.toRaw(mime));
+                store.updateState(chat.uid, local.mid, Msg.STATE_SENT, gmailId, null);
+                notifyDirty();
+            } catch (Throwable e) {
+                store.updateState(chat.uid, local.mid, Msg.STATE_FAILED, null, describe(e));
+                notifyDirty();
+            }
+        });
+    }
+
+    /** Время письма: сначала конверт, потом Gmail. */
+    private static long msgTsOf(GmailApi.Mail mail, MailCrypto.Envelope env) {
+        if (env != null && env.ts > 0L) return env.ts;
+        return mail != null ? mail.internalDate : 0L;
     }
 
     /** Текст письма безопаснее унести в base64 (переносы по 76 символов). */

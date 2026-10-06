@@ -102,6 +102,8 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
     private VoiceWaveView liveWave;
     private View pinnedRow;
     private TextView pinnedText;
+    /** Сообщение, показанное в закреплённой строке (нужно для перехода и открепления). */
+    private Msg pinnedMsg;
     private View scrollDown;
     private TextView scrollBadge;
     private View selectionBar;
@@ -189,6 +191,10 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         liveWave = findViewById(R.id.voice_live_wave);
         pinnedRow = findViewById(R.id.chat_pinned);
         pinnedText = findViewById(R.id.chat_pinned_text);
+        View pinnedClose = findViewById(R.id.chat_pinned_close);
+        if (pinnedClose != null) {
+            pinnedClose.setOnClickListener(Ui.safeClick(this, v -> unpinCurrent()));
+        }
         scrollDown = findViewById(R.id.btn_scroll_down);
         scrollBadge = findViewById(R.id.scroll_unread_badge);
 
@@ -200,8 +206,6 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         findViewById(R.id.chat_back).setOnClickListener(Ui.safeClick(this, v -> finish()));
         findViewById(R.id.chat_menu_btn).setOnClickListener(Ui.tap(v -> showSheet()));
         findViewById(R.id.chat_search_btn).setOnClickListener(Ui.tap(v -> toggleSearch()));
-        findViewById(R.id.chat_call_btn).setOnClickListener(Ui.tap(v ->
-                Ui.toast(this, getString(R.string.call_soon))));
         findViewById(R.id.btn_circle).setOnClickListener(Ui.tap(v -> openCircle()));
         Anim.pressFeedback(avatar);
 
@@ -237,7 +241,12 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
 
             @Override
             public void onReactionTap(Msg msg, String emoji) {
-                SyncEngine.get(ChatActivity.this).sendReaction(chat, msg, emoji, null);
+                if (isGenericChat()) {
+                    Store.get(ChatActivity.this).applyReaction(uid, msg.mid, emoji,
+                            emoji.equals(msg.myReaction));
+                } else {
+                    SyncEngine.get(ChatActivity.this).sendReaction(chat, msg, emoji, null);
+                }
                 Anim.haptic(sendButton, false);
                 refresh();
             }
@@ -770,12 +779,21 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         if (avatar != null) avatar.setName(title);
         boolean hasKey = chat.peerPublic != null && !chat.peerPublic.isEmpty();
         boolean ratchet = com.mailgram.app.crypto.RatchetStore.hasSession(this, uid);
-        subtitleView.setText(!hasKey
-                ? getString(R.string.peer_no_key_short)
-                : ratchet ? getString(R.string.ratchet_on) : "🔒 " + chat.peer);
-
-        if (banner != null) banner.setVisibility(hasKey ? View.GONE : View.VISIBLE);
-        if (bannerText != null) bannerText.setText(R.string.peer_no_key);
+        if (chat.generic) {
+            // это переписка из обычной почты: шифрования тут нет, и предлагать приглашение бессмысленно
+            if (subtitleView != null) {
+                subtitleView.setText(getString(R.string.chat_kind_mail) + " · " + chat.peer);
+            }
+            if (banner != null) banner.setVisibility(View.GONE);
+        } else {
+            if (subtitleView != null) {
+                subtitleView.setText(!hasKey
+                        ? getString(R.string.peer_no_key_short)
+                        : ratchet ? getString(R.string.ratchet_on) : "🔒 " + chat.peer);
+            }
+            if (banner != null) banner.setVisibility(hasKey ? View.GONE : View.VISIBLE);
+            if (bannerText != null) bannerText.setText(R.string.peer_no_key);
+        }
 
         List<Msg> messages = Store.get(this).messages(uid);
         Msg pinned = null;
@@ -786,8 +804,14 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                 break;
             }
         }
+        pinnedMsg = pinned;
         if (pinnedRow != null) {
             pinnedRow.setVisibility(pinned != null ? View.VISIBLE : View.GONE);
+            if (pinned != null) {
+                // строка-закреп кликабельна: переходим к сообщению, как в мессенджерах
+                pinnedRow.setOnClickListener(Ui.safeClick(this,
+                        v -> jumpTo(pinned.mid)));
+            }
         }
         if (pinned != null && pinnedText != null) pinnedText.setText(pinned.previewText());
 
@@ -854,6 +878,10 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         if (text.isEmpty()) return;
         chat = Store.get(this).chat(uid);
         if (chat == null) return;
+        if (chat.generic) {
+            sendGenericText(text);
+            return;
+        }
         if (chat.peerPublic == null || chat.peerPublic.isEmpty()) {
             inviteDialog();
             return;
@@ -876,6 +904,58 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                 });
             }
         });
+        refresh();
+    }
+
+    /** Ответ обычным письмом: для чатов, пришедших из почты (там нет нашего шифрования). */
+    private void sendGenericText(String text) {
+        Msg local = new Msg();
+        local.chat = uid;
+        local.peer = chat.peer;
+        local.type = "text";
+        local.text = text;
+        local.ts = System.currentTimeMillis();
+        local.mail = true;
+        Msg target = replyTo;
+        if (target != null) {
+            local.replyMid = target.mid;
+            local.replyPreview = target.previewText();
+            local.subject = target.subject;
+            local.gmailId = target.gmailId;
+        }
+        input.setText("");
+        Store.get(this).setDraft(uid, "");
+        setReplyTarget(null);
+        SyncEngine.get(this).sendPlainReply(chat, local, local.gmailId);
+        refresh();
+    }
+
+    /** Вложение в обычное письмо: у почты нет наших лимитов, но размер всё равно ограничиваем. */
+    private void sendGenericMedia(String type, byte[] data, String mime, long durationMs,
+                                  String fileName, boolean round, String caption) {
+        if (data == null || data.length == 0) {
+            Ui.toast(this, getString(R.string.error_generic, "пустое вложение"));
+            return;
+        }
+        if (data.length > MediaUtil.MAX_FILE_BYTES) {
+            Ui.toast(this, getString(R.string.file_too_big));
+            return;
+        }
+        Msg local = new Msg();
+        local.chat = uid;
+        local.peer = chat.peer;
+        local.type = type;
+        local.text = caption == null ? "" : caption;
+        local.mediaB64 = android.util.Base64.encodeToString(data, android.util.Base64.NO_WRAP);
+        local.mediaMime = mime == null ? "" : mime;
+        local.durationMs = durationMs;
+        local.fileName = fileName == null ? "" : fileName;
+        local.fileSize = data.length;
+        local.round = round;
+        local.ts = System.currentTimeMillis();
+        local.mail = true;
+        local.subject = replyTo == null ? "" : replyTo.subject;
+        SyncEngine.get(this).sendPlainReply(chat, local, local.gmailId);
         refresh();
     }
 
@@ -911,6 +991,16 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         attachAction(view, R.id.attach_circle, this::openCircle, dialog);
         attachAction(view, R.id.attach_file, () -> pick(REQ_PICK_FILE, "*/*"), dialog);
         attachAction(view, R.id.attach_camera, this::openCamera, dialog);
+        // лимиты показываем настоящие — те же константы, которые проверяет MediaUtil
+        TextView limits = view.findViewById(R.id.attach_limits);
+        if (limits != null) {
+            limits.setText(getString(R.string.attach_limits_value,
+                    MediaUtil.humanSize(MediaUtil.MAX_PHOTO_BYTES),
+                    MediaUtil.humanSize(MediaUtil.MAX_VIDEO_BYTES),
+                    MediaUtil.humanSize(MediaUtil.MAX_VOICE_BYTES),
+                    MediaUtil.humanSize(MediaUtil.MAX_FILE_BYTES),
+                    (int) (MediaUtil.MAX_CIRCLE_MS / 1000L)));
+        }
         dialog.show();
 
         // Кружки появляются каскадом — как меню вложений в iOS
@@ -1114,6 +1204,10 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         chat = Store.get(this).chat(uid);
         if (chat == null) return;
         if (chat.peerPublic == null || chat.peerPublic.isEmpty()) {
+            if (chat.generic) {
+                sendGenericMedia(type, data, mime, durationMs, fileName, round, caption);
+                return;
+            }
             inviteDialog();
             return;
         }
@@ -1477,7 +1571,11 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
         } else if (id == 9) {
             forwardDialog(msg);
         } else if (id == 7) {
-            SyncEngine.get(this).sendDelete(chat, msg, null);
+            if (isGenericChat()) {
+                Store.get(this).applyDelete(uid, msg.mid);
+            } else {
+                SyncEngine.get(this).sendDelete(chat, msg, null);
+            }
             refresh();
         } else {
             Store.get(this).deleteMessage(uid, msg.mid);
@@ -1615,10 +1713,31 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
                 .setPositiveButton(R.string.save, (d, w) -> {
                     String text = edit.getText().toString().trim();
                     if (text.isEmpty() || text.equals(msg.text)) return;
-                    SyncEngine.get(this).sendEdit(chat, msg, text, null);
+                    if (isGenericChat()) {
+                        Store.get(this).applyEdit(uid, msg.mid, text);
+                    } else {
+                        SyncEngine.get(this).sendEdit(chat, msg, text, null);
+                    }
                     refresh();
                 })
                 .show();
+    }
+
+    /** Открепить сообщение, показанное в шапке чата. */
+    private void unpinCurrent() {
+        Msg pinned = pinnedMsg;
+        if (pinned == null) return;
+        if (pinned.outgoing || chat == null || !chat.generic) {
+            SyncEngine.get(this).sendPin(chat, pinned, false, null);
+        } else {
+            Store.get(this).setMsgPinned(uid, pinned.mid, false);
+        }
+        refresh();
+    }
+
+    /** Раздел обычной почты: реакции, правки и удаления остаются локальными. */
+    private boolean isGenericChat() {
+        return chat != null && chat.generic;
     }
 
     private void inviteDialog() {
@@ -1779,7 +1898,11 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(Ui.dp(this, 44), Ui.dp(this, 44));
             tv.setLayoutParams(lp);
             tv.setOnClickListener(Ui.tap(v -> {
-                SyncEngine.get(this).sendReaction(chat, msg, emoji, null);
+                if (isGenericChat()) {
+                    Store.get(this).applyReaction(uid, msg.mid, emoji, emoji.equals(msg.myReaction));
+                } else {
+                    SyncEngine.get(this).sendReaction(chat, msg, emoji, null);
+                }
                 dialog.dismiss();
                 refresh();
             }));

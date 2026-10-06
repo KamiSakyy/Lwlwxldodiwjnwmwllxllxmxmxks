@@ -37,8 +37,11 @@ public final class Mime {
             sb.append("Message-ID: <").append(messageId).append("@mailgram.app>\r\n");
         }
         if (inReplyTo != null && !inReplyTo.isEmpty()) {
-            sb.append("In-Reply-To: <").append(inReplyTo).append(">\r\n");
-            sb.append("References: <").append(inReplyTo).append(">\r\n");
+            // Gmail-идентификаторы пишутся без угловых скобок, наши — как usual Message-ID
+            boolean gmailId = inReplyTo.matches("[A-Za-z0-9_\\-]{16,64}");
+            String value = gmailId ? inReplyTo : "<" + inReplyTo + "@mailgram.app>";
+            sb.append("In-Reply-To: ").append(value).append("\r\n");
+            sb.append("References: ").append(value).append("\r\n");
         }
         sb.append("Date: ").append(rfc2822Date(System.currentTimeMillis())).append("\r\n");
         sb.append("\r\n");

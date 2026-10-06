@@ -28,6 +28,9 @@ import java.util.Set;
  */
 public final class Store {
 
+    /** Раздел, в который собираются все обычные письма Gmail (не конверты MailGram). */
+    public static final String GENERIC_UID = "mail";
+
     private static final String TAG = "MailGramStore";
     private static volatile Store instance;
 
@@ -151,6 +154,25 @@ public final class Store {
 
     public synchronized Chat chat(String uid) {
         return chats.get(uid);
+    }
+
+    /** Чат по адресу собеседника (для писем, у которых «съелась» тема). */
+    public synchronized Chat chatByPeer(String peer) {
+        if (peer == null || peer.isEmpty()) return null;
+        for (Chat c : chats.values()) {
+            if (peer.equalsIgnoreCase(c.peer)) return c;
+        }
+        return null;
+    }
+
+    /** Чат-«папка» для обычных писем Gmail: тема письма становится группой переписки. */
+    public synchronized Chat ensureGenericChat(String uid, String peer) {
+        Chat c = ensureChat(uid, peer, null);
+        if (!c.generic) {
+            c.generic = true;
+            writeChatsLocked();
+        }
+        return c;
     }
 
     public synchronized Chat ensureChat(String uid, String peer, String peerPublicB64) {

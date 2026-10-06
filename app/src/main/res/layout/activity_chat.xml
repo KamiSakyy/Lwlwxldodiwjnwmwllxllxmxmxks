@@ -76,17 +76,6 @@
                     android:textSize="12sp" />
             </LinearLayout>
 
-            <ImageView
-                android:id="@+id/chat_call_btn"
-                android:layout_width="38dp"
-                android:layout_height="38dp"
-                android:layout_marginEnd="6dp"
-                android:background="@drawable/bg_call_btn"
-                android:contentDescription="@string/call"
-                android:padding="10dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/ic_call"
-                app:tint="@color/success" />
 
             <ImageButton
                 android:id="@+id/chat_search_btn"
@@ -210,6 +199,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_pinned_bar"
+            android:clickable="true"
+            android:focusable="true"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:paddingStart="12dp"
@@ -230,24 +221,31 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="12dp"
-                    android:layout_height="12dp"
-                    android:layout_marginEnd="4dp"
-                    android:contentDescription="@string/pinned_title"
-                    android:src="@drawable/ic_pin"
-                    app:tint="@color/brand" />
-
-                <TextView
-                    android:id="@+id/chat_pinned_title"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ellipsize="end"
-                    android:maxLines="1"
-                    android:text="@string/pinned_title"
-                    android:textColor="@color/brand"
-                    android:textSize="11sp"
-                    android:textStyle="bold" />
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginEnd="4dp"
+                        android:contentDescription="@string/pinned_title"
+                        android:src="@drawable/ic_pin"
+                        app:tint="@color/brand" />
+
+                    <TextView
+                        android:id="@+id/chat_pinned_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/pinned_title"
+                        android:textColor="@color/brand"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/chat_pinned_text"

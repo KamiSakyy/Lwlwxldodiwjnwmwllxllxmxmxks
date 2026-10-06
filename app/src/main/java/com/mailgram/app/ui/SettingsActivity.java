@@ -136,6 +136,7 @@ public class SettingsActivity extends AppCompatActivity {
         findViewById(R.id.row_selftest).setOnClickListener(Ui.tap(v -> runSelfTest()));
         findViewById(R.id.row_mykey).setOnClickListener(Ui.tap(v -> showMyKey()));
         findViewById(R.id.row_invite_link).setOnClickListener(Ui.tap(v -> editInviteLink()));
+        refreshInviteLink();
 
         // подключение
         findViewById(R.id.row_setup).setOnClickListener(Ui.tap(v ->
@@ -295,6 +296,21 @@ public class SettingsActivity extends AppCompatActivity {
                 .show();
     }
 
+    /** Показываем ссылку, которая реально подставляется в приглашение. */
+    private void refreshInviteLink() {
+        TextView value = findViewById(R.id.settings_invite_link);
+        if (value == null) return;
+        String link = Prefs.inviteLink(this);
+        if (link == null || link.isEmpty()) {
+            value.setText(R.string.invite_link_empty);
+            value.setLongClickable(false);
+            return;
+        }
+        value.setText(link);
+        value.setLongClickable(true);
+        value.setOnClickListener(Ui.tap(v -> Ui.copy(this, getString(R.string.invite_contact), link)));
+    }
+
     private void editInviteLink() {
         final EditText edit = new EditText(this);
         edit.setText(Prefs.inviteLink(this));
@@ -306,6 +322,7 @@ public class SettingsActivity extends AppCompatActivity {
                 .setPositiveButton(R.string.save, (d, w) -> {
                     Prefs.setInviteLink(this, edit.getText().toString().trim());
                     Ui.toast(this, getString(R.string.setup_saved));
+                    refreshInviteLink();
                 })
                 .show();
     }
@@ -315,12 +332,11 @@ public class SettingsActivity extends AppCompatActivity {
         new MaterialAlertDialogBuilder(this)
                 .setTitle(R.string.settings_ratchet)
                 .setMessage(getString(R.string.settings_security_desc)
-                        + "\n\n• X3DH: DH(свой ключ, ключ собеседника) + эфемерный ключ + предключ\n"
-                        + "• Корневой ключ: HKDF-SHA256, соль — идентификатор пары\n"
-                        + "• Цепочки: KDF_CK выдаёт отдельный ключ на каждое сообщение\n"
-                        + "• DH-шаг: при каждом ответе собеседника — новый эфемерный ключ\n"
-                        + "• AEAD: ChaCha20-Poly1305, заголовок сообщения в AAD\n"
-                        + "• Пропущенные сообщения: до 500 ключей на цепочку\n"
+                        + "\n\n• X3DH: DH(идентичность, идентичность) + DH(предключ, идентичность) + DH(предключ, предключ)\n"
+                        + "• Общий секрет: HKDF-SHA256, соль — идентификатор пары и случайная соль раунда\n"
+                        + "• Ключ сообщения: HKDF-SHA256 от общего секрета и номера письма (PN, N)\n"
+                        + "• AEAD: ChaCha20-Poly1305, метаданные и заголовок — в AAD\n"
+                        + "• Повторы: последние " + com.mailgram.app.crypto.Ratchet.SEEN_WINDOW + " номеров письма отбиваются\n"
                         + "• Сессии хранятся запечатанными ключом Android Keystore")
                 .setPositiveButton(R.string.done, null)
                 .show();

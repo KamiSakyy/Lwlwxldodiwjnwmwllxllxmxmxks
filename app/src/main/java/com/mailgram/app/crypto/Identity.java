@@ -105,6 +105,49 @@ public final class Identity {
         return fixed;
     }
 
+
+
+
+    /**
+     * Детерминированный «корень» идентичности: 32 байта, из которых выводятся раундовые ключи
+     * крысиного шага. Для программного ключа это его PKCS#8, для аппаратного (его нельзя
+     * вынести из Keystore) — стабильное значение, производное от открытого ключа: обе стороны
+     * получают один и тот же результат, потому что считают его из открытых ключей.
+     */
+    public static byte[] seed(Context ctx) {
+        try {
+            SharedPreferences prefs = prefs(ctx);
+            String sealed = prefs.getString(PREF_SW_PRIV, null);
+            if (sealed != null) {
+                byte[] pkcs8 = KeystoreBox.open(ctx, sealed);
+                if (pkcs8 != null && pkcs8.length > 0) {
+                    return java.security.MessageDigest.getInstance("SHA-256").digest(pkcs8);
+                }
+            }
+        } catch (Throwable ignored) {
+        }
+        try {
+            return java.security.MessageDigest.getInstance("SHA-256")
+                    .digest(("MailGram/seed/1" + B64.str(publicKeyRaw(ctx)))
+                            .getBytes(java.nio.charset.StandardCharsets.UTF_8));
+        } catch (Exception e) {
+            return new byte[32];
+        }
+    }
+
+    /** Общий секрет с произвольным открытым ключом (65 байт). */
+    public static byte[] agreeWith(Context ctx, byte[] peerRaw) throws Exception {
+        return agree(ctx, peerRaw);
+    }
+
+
+    /** Публичное производное открытого ключа — «seed» стороны для расписания ключей. */
+    public static byte[] peerSeed(byte[] publicRaw) throws Exception {
+        return java.security.MessageDigest.getInstance("SHA-256")
+                .digest(("MailGram/seed/1" + B64.str(publicRaw))
+                        .getBytes(java.nio.charset.StandardCharsets.UTF_8));
+    }
+
     // ---------------- аппаратный ключ ----------------
 
     private static void ensureHardwareKey() throws Exception {

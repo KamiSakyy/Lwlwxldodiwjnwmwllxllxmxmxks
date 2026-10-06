@@ -6,6 +6,9 @@ import android.content.SharedPreferences;
 /** Настройки интерфейса и синхронизации. */
 public final class Prefs {
 
+    /** Сколько писем максимум держим в очереди повторных попыток. */
+    private static final int RETRY_QUEUE_LIMIT = 60;
+
     private static final String NAME = "mailgram_settings";
 
     public static final String THEME_SYSTEM = "system";
@@ -130,6 +133,25 @@ public final class Prefs {
         }
     }
 
+    /** Когда от собеседника приходило письмо — единственный честный источник «присутствия». */
+    public static long lastSeen(Context ctx, String peerEmail) {
+        if (peerEmail == null || peerEmail.isEmpty()) return 0L;
+        return p(ctx).getLong("seen:" + peerEmail.toLowerCase(java.util.Locale.US), 0L);
+    }
+
+    public static void setLastSeen(Context ctx, String peerEmail, long ts) {
+        if (peerEmail == null || peerEmail.isEmpty() || ts <= 0L) return;
+        long prev = lastSeen(ctx, peerEmail);
+        if (ts <= prev) return;
+        p(ctx).edit().putLong("seen:" + peerEmail.toLowerCase(java.util.Locale.US), ts).apply();
+    }
+
+    /** Считается «в сети», если письмо пришёл меньше 10 минут назад. */
+    public static boolean seenRecently(Context ctx, String peerEmail) {
+        long ts = lastSeen(ctx, peerEmail);
+        return ts > 0L && System.currentTimeMillis() - ts < 10 * 60_000L;
+    }
+
     /** Хеш PIN-кода (соль + SHA-256), пустая строка — блокировка выключена. */
     public static String pinHash(Context ctx) {
         return p(ctx).getString("pin_hash", "");
@@ -167,11 +189,62 @@ public final class Prefs {
         p(ctx).edit().remove("pin_hash").remove("pin_salt").apply();
     }
 
+    /** Итог последней синхронизации: сколько писем просмотрено и добавлено. */
+    public static void recordSyncStats(Context ctx, int scanned, int added) {
+        p(ctx).edit().putInt("sync_scanned", scanned).putInt("sync_added", added).apply();
+    }
+
+    public static int syncScanned(Context ctx) {
+        return p(ctx).getInt("sync_scanned", 0);
+    }
+
+    public static int syncAdded(Context ctx) {
+        return p(ctx).getInt("sync_added", 0);
+    }
+
     public static long lastSyncAt(Context ctx) {
         return p(ctx).getLong("last_sync", 0L);
     }
 
     public static void setLastSyncAt(Context ctx, long ts) {
         p(ctx).edit().putLong("last_sync", ts).apply();
+    }
+
+    // ---------------- очередь повторной обработки писем ----------------
+
+    /**
+     * Письма, которые не удалось разобрать. Мы не имеем права их забыть: приложение
+     * возвращается к ним на каждой синхронизации, пока не получит из них сообщение.
+     */
+    public static java.util.List<String> retryQueue(Context ctx) {
+        String raw = p(ctx).getString("retry_queue", "");
+        java.util.List<String> out = new java.util.ArrayList<>();
+        if (raw == null || raw.isEmpty()) return out;
+        for (String id : raw.split(",")) {
+            if (!id.isEmpty() && out.size() < RETRY_QUEUE_LIMIT) out.add(id);
+        }
+        return out;
+    }
+
+    public static synchronized void addRetry(Context ctx, String gmailId) {
+        if (gmailId == null || gmailId.isEmpty()) return;
+        java.util.LinkedHashSet<String> ids = new java.util.LinkedHashSet<>(retryQueue(ctx));
+        ids.add(gmailId);
+        while (ids.size() > RETRY_QUEUE_LIMIT) {
+            ids.remove(ids.iterator().next());
+        }
+        p(ctx).edit().putString("retry_queue", String.join(",", ids)).apply();
+    }
+
+    public static synchronized void removeRetry(Context ctx, String gmailId) {
+        if (gmailId == null || gmailId.isEmpty()) return;
+        java.util.LinkedHashSet<String> ids = new java.util.LinkedHashSet<>(retryQueue(ctx));
+        if (ids.remove(gmailId)) {
+            p(ctx).edit().putString("retry_queue", String.join(",", ids)).apply();
+        }
+    }
+
+    public static int retryCount(Context ctx) {
+        return retryQueue(ctx).size();
     }
 }
