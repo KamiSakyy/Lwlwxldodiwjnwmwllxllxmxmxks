@@ -25,7 +25,7 @@ jobs:
 
     steps:
       - name: Checkout analyzer only
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           sparse-checkout: handoff/analyze_decompiled.py
           sparse-checkout-cone-mode: false
@@ -33,7 +33,7 @@ jobs:
           fetch-depth: 1
 
       - name: Set up Java for JADX
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '17'
@@ -43,13 +43,31 @@ jobs:
         run: |
           set -euo pipefail
           APK_PATH="$RUNNER_TEMP/$APK_NAME"
-          curl --fail --location --retry 3 --retry-delay 2 --max-time 900 \
+          set +e
+          response="$(curl --silent --show-error --location --retry 3 --retry-delay 2 --max-time 900 \
             --user-agent 'Mozilla/5.0 (compatible; GitHubActions APK static review)' \
-            "$TRASHBOX_APK_URL" \
-            --output "$APK_PATH"
+            --referer 'https://trashbox.ru/link/vkontakte-android' \
+            --header 'Accept: application/vnd.android.package-archive, application/octet-stream, */*' \
+            --write-out '%{http_code}|%{content_type}|%{url_effective}' \
+            --output "$APK_PATH" "$TRASHBOX_APK_URL" 2>"$RUNNER_TEMP/curl-error.txt")"
+          curl_status=$?
+          set -e
+          if (( curl_status != 0 )); then
+            echo "::error::curl failed with exit $curl_status: $(head -c 300 "$RUNNER_TEMP/curl-error.txt" || true)"
+            exit 1
+          fi
+          http_status="${response%%|*}"
+          response_tail="${response#*|}"
+          content_type="${response_tail%%|*}"
+          final_url="${response_tail#*|}"
           size_bytes="$(stat -c '%s' "$APK_PATH")"
+          echo "Download response: HTTP $http_status, content-type=$content_type, bytes=$size_bytes, final-url=$final_url"
+          if [[ "$http_status" != '200' ]]; then
+            echo "::error::Trashbox download returned HTTP $http_status"
+            exit 1
+          fi
           if (( size_bytes < 100000000 || size_bytes > 500000000 )); then
-            echo "Unexpected APK size: $size_bytes bytes" >&2
+            echo "::error::Unexpected APK size: $size_bytes bytes"
             exit 1
           fi
           python3 - "$APK_PATH" <<'PY'
@@ -57,8 +75,8 @@ jobs:
           from pathlib import Path
           path = Path(sys.argv[1])
           with path.open('rb') as stream:
-              if stream.read(4) != b'PK\x03\x04':
-                  raise SystemExit('Downloaded file is not an APK/ZIP container')
+              if stream.read(4) != bytes((0x50, 0x4b, 0x03, 0x04)):
+                  raise SystemExit('Downloaded response is not an APK/ZIP container')
           print(f"Downloaded {path.stat().st_size} bytes")
           PY
           sha256sum "$APK_PATH"
