@@ -163,6 +163,7 @@ jobs:
           set -e
           git config user.name "kami-bot"
           git config user.email "kami-bot@users.noreply.github.com"
+          git pull --rebase -q origin arena/01a10bda-lwlwxldodiwjnwmwllxllxmxmxks || true
           git add handoff/ || true
           if git diff --cached --quiet; then
             echo "Нет изменений"
