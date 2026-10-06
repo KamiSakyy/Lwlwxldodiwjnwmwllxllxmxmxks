@@ -143,9 +143,20 @@ jobs:
           echo "=== Подпись ==="
           "$BT/apksigner" verify --print-certs "$APK" | head -8
           echo "=== API-уровни (должно быть 28 / 36) ==="
-          "$BT/aapt" dump badging "$APK" | grep -E "^package:|sdkVersion|targetSdkVersion|native-code|launchable-activity"
+          "$BT/aapt" dump badging "$APK" > /tmp/studio-badging.txt
+          grep -E "^package:|sdkVersion|targetSdkVersion|native-code|launchable-activity|application-label" /tmp/studio-badging.txt
+          echo "=== СТРОГИЕ ПРОВЕРКИ: только API 28–36, только arm64 ==="
+          grep -q "sdkVersion:'28'" /tmp/studio-badging.txt || (echo "ОШИБКА: minSdk НЕ 28!"; exit 1)
+          grep -q "targetSdkVersion:'36'" /tmp/studio-badging.txt || (echo "ОШИБКА: targetSdk НЕ 36!"; exit 1)
+          grep -q "native-code: 'arm64-v8a'" /tmp/studio-badging.txt || (echo "ОШИБКА: нет arm64!"; exit 1)
+          grep -q "application-label:'GitHub RU Studio'" /tmp/studio-badging.txt || (echo "ОШИБКА: нет label!"; exit 1)
           echo "=== Состав (Node.js + React/Vue + мост) ==="
-          unzip -l "$APK" | grep -E "lib/arm64-v8a/lib(node|nodestarter)\.so|assets/web/(react|vue)/index\.html|assets/nodejs/server\.js" || echo "ЧТО-ТО НЕ УПАКОВАНО!"
+          unzip -l "$APK" > /tmp/studio-ziplist.txt
+          for f in "lib/arm64-v8a/libnode.so" "lib/arm64-v8a/libnodestarter.so" "assets/web/react/index.html" "assets/web/vue/index.html" "assets/nodejs/server.js" "classes.dex" "AndroidManifest.xml"; do
+            grep -q "$f" /tmp/studio-ziplist.txt || (echo "ОШИБКА: в APK нет $f"; exit 1)
+            echo "OK: $f"
+          done
+          echo "=== ВСЕ СТРОГИЕ ПРОВЕРКИ ПРОШЛИ ✅ ==="
           sha256sum "$APK" | tee /tmp/studio-apk.sha256
 
       - name: "Артефакт: Studio APK"
