@@ -117,6 +117,10 @@ def main():
         members[(p, x)] = holder_members(open(os.path.join(pkgdir[p], x + ".java"), encoding="utf-8").read())
     inpkg = collections.defaultdict(list)
     for p, x, xs in jobs: inpkg[p].append((x, xs))
+    pairmap = {(p, x): xs for p, x, xs in jobs}
+    import_re = re.compile(r"\bimport\s+([\w.]+)\.(\w+)\s*;", re.M)
+    alt = "|".join("(%s)\.(%s)" % (re.escape(p), re.escape(x)) for p, x, _ in jobs)
+    qual_re = re.compile(r"\b(?:%s)\b" % alt)
     totals = collections.Counter()
     changed_files = 0
     for fp in files:
@@ -130,16 +134,14 @@ def main():
         for x, xs in inpkg.get(rel, ()):
             text, n = rewrite_pkg_file(text, x, xs, members[(rel, x)])
             totals["%s.%s" % (rel, x)] += n
-        if d not in pkgdir.values():
-            for p, x, xs in jobs:
-                if re.search(r"\bimport\s+%s\.%s\s*;" % (re.escape(p), re.escape(x)), text):
-                    text, n = rewrite_importer(text, x, xs)
-                    totals["%s.%s(import)" % (p, x)] += n
-        for p, x, xs in jobs:
-            pat = r"\b%s\.%s\b" % (re.escape(p), re.escape(x))
-            if re.search(pat, text):
-                text, n = re.subn(pat, "%s.%s" % (p, xs), text)
-                totals["%s.%s(qual)" % (p, x)] += n
+        if d not in pkgdir.values() and import_re.search(text):
+            for m in import_re.finditer(text):
+                key = (m.group(1), m.group(2))
+                if key in pairmap:
+                    text, n = rewrite_importer(text, m.group(2), pairmap[key])
+                    totals["%s.%s(import)" % key] += n
+        if qual_re.search(text):
+            text = qual_re.sub(lambda m: "%s.%s" % (m.group(1), pairmap[(m.group(1), m.group(2))]) if (m.group(1), m.group(2)) in pairmap else m.group(0), text)
         if text != orig and not a.dry:
             with open(fp, "w", encoding="utf-8") as f:
                 f.write(text)
