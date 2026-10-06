@@ -47,9 +47,20 @@ public final class Auth {
      * жёстко привязана именно к нему, поэтому подменить идентификатор из настроек нельзя.
      */
     public static String clientId(Context ctx) {
+        // В режиме локального порта используется клиент типа Desktop (резервный),
+        // в остальных случаях — Android-клиент, чья схема прописана в манифесте.
+        if (MODE_LOOPBACK.equals(authMode(ctx))) {
+            String alt = altClientId();
+            if (!alt.isEmpty()) return alt;
+        }
         if (clientIdFromBuild()) return BuildConfig.OAUTH_CLIENT_ID.trim();
         String stored = prefs(ctx).getString(K_CLIENT_ID, "");
         return stored == null ? "" : stored.trim();
+    }
+
+    /** client_secret отправляем только клиенту типа Desktop: Android-клиенту он не применим. */
+    public static String activeSecret(Context ctx) {
+        return MODE_LOOPBACK.equals(authMode(ctx)) ? clientSecret() : "";
     }
 
     public static String clientIdFromSettings(Context ctx) {
@@ -218,11 +229,12 @@ public final class Auth {
         String secret = clientSecret();
         String verifier = OAuth.randomVerifier();
 
-        // 1. Основной клиент (Android): схема, зашитая в манифест при сборке
-        String primaryScheme = OAuth.probeRedirect(clientId, secret, verifier,
+        // 1. Основной клиент (Android): схема, зашитая в манифест при сборке.
+        //    Android-клиенту client_secret не применим — не отправляем.
+        String primaryScheme = OAuth.probeRedirect(clientId, "", verifier,
                 OAuth.redirectForAndroidClient(clientId));
-        // 2. Он же через локальный порт — иногда пригождается
-        String primaryLoopback = OAuth.probeRedirect(clientId, secret, verifier,
+        // 2. Он же через локальный порт
+        String primaryLoopback = OAuth.probeRedirect(clientId, "", verifier,
                 LoopbackServer.redirectUri());
         p.androidError = primaryScheme;
         p.loopbackError = primaryLoopback;
@@ -346,7 +358,7 @@ public final class Auth {
         }
         String refresh = refreshToken(ctx);
         if (refresh.isEmpty()) throw new IllegalStateException("нужно войти в аккаунт Google");
-        OAuth.Tokens fresh = OAuth.refresh(clientId(ctx), clientSecret(), refresh);
+        OAuth.Tokens fresh = OAuth.refresh(clientId(ctx), activeSecret(ctx), refresh);
         saveTokens(ctx, fresh);
         return fresh.accessToken;
     }
@@ -374,7 +386,7 @@ public final class Auth {
         if (verifier == null || verifier.isEmpty()) {
             throw new IllegalStateException("нет code_verifier — начните вход заново");
         }
-        OAuth.Tokens tokens = OAuth.exchangeCode(clientId(ctx), clientSecret(), code, verifier,
+        OAuth.Tokens tokens = OAuth.exchangeCode(clientId(ctx), activeSecret(ctx), code, verifier,
                 redirectUri(ctx));
         saveTokens(ctx, tokens);
         String email = OAuth.userEmail(tokens.accessToken);

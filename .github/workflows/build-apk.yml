@@ -65,61 +65,67 @@ jobs:
     name: Проверка OAuth-клиентов (живой запрос к Google)
     runs-on: ubuntu-latest
     steps:
-      - name: Спросить у Google, какие redirect URI принимает каждый клиент
+      - name: Страница авторизации и token endpoint — все комбинации клиентов
         env:
+          ANDROID_ID: "520212121691-pjglb4uc35pk682uej869kr9o82j186f.apps.googleusercontent.com"
           DESKTOP_ID: "520212121691-evjpfvomb9k1j5lv9naskcsges4c9mn4.apps.googleusercontent.com"
-          ANDROID_ID: "520212121691-pjglb4uc35pk682uej869kr9o82j186f.apps.googleusercontent.com"
-        run: |
-          set -uo pipefail
-          VERIFIER=$(head -c 32 /dev/urandom | base64 | tr -dc 'A-Za-z0-9-._~' | head -c 50)
-          FAKE_CODE="4/0AVMBsJ$(head -c 24 /dev/urandom | base64 | tr -dc 'A-Za-z0-9' | head -c 32)"
-          probe () {
-            local label="$1" cid="$2" uri="$3"
-            local body
-            body=$(curl -s -X POST https://oauth2.googleapis.com/token \
-              -H 'Content-Type: application/x-www-form-urlencoded' \
-              --data-urlencode "client_id=$cid" \
-              --data-urlencode "code=$FAKE_CODE" \
-              --data-urlencode "code_verifier=$VERIFIER" \
-              --data-urlencode "grant_type=authorization_code" \
-              --data-urlencode "redirect_uri=$uri" | tr -d '\r\n')
-            local short="${body:0:400}"
-            echo "::notice title=OAuth-проба::[$label] $short"
-            echo "[$label] $body"
-          }
-          : > oauth-check.log
-          probe "A. Desktop-клиент + локальный порт" "$DESKTOP_ID" "http://127.0.0.1:7717/oauth2redirect" | tee -a oauth-check.log
-          probe "B. Desktop-клиент + схема Android" "$DESKTOP_ID" "com.googleusercontent.apps.520212121691-evjpfvomb9k1j5lv9naskcsges4c9mn4:/oauth2redirect" | tee -a oauth-check.log
-          probe "C. Android-клиент + схема" "$ANDROID_ID" "com.googleusercontent.apps.520212121691-pjglb4uc35pk682uej869kr9o82j186f:/oauth2redirect" | tee -a oauth-check.log
-          probe "D. Android-клиент + локальный порт" "$ANDROID_ID" "http://127.0.0.1:7717/oauth2redirect" | tee -a oauth-check.log
-
-      - name: Проверить саму страницу авторизации (тот же запрос, что делает приложение)
-        env:
-          ANDROID_ID: "520212121691-pjglb4uc35pk682uej869kr9o82j186f.apps.googleusercontent.com"
+          DESKTOP_SECRET: ${{ secrets.MAILGRAM_OAUTH_CLIENT_SECRET }}
         run: |
           set -uo pipefail
           VERIFIER=$(head -c 32 /dev/urandom | base64 | tr -dc 'A-Za-z0-9-._~' | head -c 50)
           CHALLENGE=$(printf '%s' "$VERIFIER" | sha256sum | cut -d' ' -f1 | xxd -r -p | base64 | tr '+/' '-_' | tr -d '=')
-          html=$(curl -s -G https://accounts.google.com/o/oauth2/v2/auth \
-            --data-urlencode "client_id=$ANDROID_ID" \
-            --data-urlencode "redirect_uri=com.googleusercontent.apps.520212121691-pjglb4uc35pk682uej869kr9o82j186f:/oauth2redirect" \
-            --data-urlencode "response_type=code" \
-            --data-urlencode "scope=openid email https://www.googleapis.com/auth/gmail.modify" \
-            --data-urlencode "code_challenge=$CHALLENGE" \
-            --data-urlencode "code_challenge_method=S256" \
-            --data-urlencode "state=mailgramprobe" \
-            --data-urlencode "access_type=offline" \
-            --data-urlencode "prompt=consent" \
-            --data-urlencode "hl=ru" | tr -d '\r\n')
-          marker=""
-          for m in invalid_request invalid_client redirect_uri_mismatch unauthorized_client access_denied "Custom URI scheme"; do
-            if printf '%s' "$html" | grep -qi "$m"; then marker="$marker | $m"; fi
-          done
-          if [ -n "$marker" ]; then
-            echo "::error title=Страница авторизации::Google отвечает ошибкой:$marker"
-          else
-            echo "::notice title=Страница авторизации::ошибок нет — Google готов показать выбор аккаунта (страница $(printf '%s' "$html" | wc -c) байт)"
+          FAKE_CODE="4/0AVMBsJ$(head -c 24 /dev/urandom | base64 | tr -dc 'A-Za-z0-9' | head -c 32)"
+
+          # --- 1. Страница авторизации: то, что реально видит пользователь в браузере ---
+          page () {
+            local label="$1" cid="$2" uri="$3"
+            local code text info loc
+            code=$(curl -s -D /tmp/hdr -o /tmp/pg.html -w '%{http_code}' -G \
+              https://accounts.google.com/o/oauth2/v2/auth \
+              --data-urlencode "client_id=$cid" \
+              --data-urlencode "redirect_uri=$uri" \
+              --data-urlencode "response_type=code" \
+              --data-urlencode "scope=openid email https://www.googleapis.com/auth/gmail.modify" \
+              --data-urlencode "code_challenge=$CHALLENGE" \
+              --data-urlencode "code_challenge_method=S256" \
+              --data-urlencode "state=mailgramprobe" \
+              --data-urlencode "access_type=offline" \
+              --data-urlencode "prompt=consent" \
+              --data-urlencode "include_granted_scopes=true" \
+              --data-urlencode "hl=ru") || code="000"
+            loc=$(grep -i '^location:' /tmp/hdr | tr -d '\r' | head -c 120 || true)
+            text=$(sed -e 's/<[^>]*>/ /g' /tmp/pg.html | tr -s ' \n\t' ' ' | tr -d '\r')
+            info=$(printf '%s' "$text" | grep -oiE 'invalid_request|redirect_uri_mismatch|invalid_client|unauthorized_client|access_denied|Custom URI scheme[^.]{0,70}|Доступ заблокирован|недопустимый запрос' | sort -u | head -6 | paste -sd'|' - || true)
+            echo "::notice title=Страница авторизации [$label]::HTTP $code | ${info:-принято} | ${loc} | текст: $(printf '%s' "$text" | head -c 150)"
+          }
+
+          # --- 2. Token endpoint: принимает ли клиент наш redirect_uri ---
+          token () {
+            local label="$1" cid="$2" secret="$3" uri="$4"
+            local body extra=()
+            [ -n "$secret" ] && extra=(--data-urlencode "client_secret=$secret")
+            body=$(curl -s -X POST https://oauth2.googleapis.com/token \
+              -H 'Content-Type: application/x-www-form-urlencoded' \
+              --data-urlencode "client_id=$cid" "${extra[@]}" \
+              --data-urlencode "code=$FAKE_CODE" \
+              --data-urlencode "code_verifier=$VERIFIER" \
+              --data-urlencode "grant_type=authorization_code" \
+              --data-urlencode "redirect_uri=$uri" | tr -d '\r\n')
+            echo "::notice title=Token endpoint [$label]::$(printf '%s' "$body" | head -c 220)"
+          }
+
+          page "A. Android-клиент + схема" "$ANDROID_ID" "com.googleusercontent.apps.520212121691-pjglb4uc35pk682uej869kr9o82j186f:/oauth2redirect"
+          page "B. Android-клиент + локальный порт" "$ANDROID_ID" "http://127.0.0.1:7717/oauth2redirect"
+          page "C. Desktop-клиент + локальный порт" "$DESKTOP_ID" "http://127.0.0.1:7717/oauth2redirect"
+          page "D. Desktop-клиент + схема" "$DESKTOP_ID" "com.googleusercontent.apps.520212121691-evjpfvomb9k1j5lv9naskcsges4c9mn4:/oauth2redirect"
+
+          if [ -z "$DESKTOP_SECRET" ]; then
+            echo "::notice title=Секрет Desktop-клиента::в репозитории не задан секрет MAILGRAM_OAUTH_CLIENT_SECRET — token-пробы Desktop ниже покажут «client_secret is missing» (для страницы авторизации секрет не нужен)"
           fi
+          token "A. Android-клиент + схема (без секрета)" "$ANDROID_ID" "" "com.googleusercontent.apps.520212121691-pjglb4uc35pk682uej869kr9o82j186f:/oauth2redirect"
+          token "C. Desktop-клиент + локальный порт" "$DESKTOP_ID" "$DESKTOP_SECRET" "http://127.0.0.1:7717/oauth2redirect"
+          token "D. Desktop-клиент + схема" "$DESKTOP_ID" "$DESKTOP_SECRET" "com.googleusercontent.apps.520212121691-evjpfvomb9k1j5lv9naskcsges4c9mn4:/oauth2redirect"
+          token "E. Android-клиент + локальный порт" "$ANDROID_ID" "" "http://127.0.0.1:7717/oauth2redirect"
 
   apk:
     name: Сборка APK (Java + C++)
