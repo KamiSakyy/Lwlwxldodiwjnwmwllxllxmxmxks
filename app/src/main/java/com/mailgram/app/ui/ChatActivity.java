@@ -819,8 +819,8 @@ public class ChatActivity extends AppCompatActivity implements SyncEngine.Listen
             pinnedRow.setVisibility(pinned != null ? View.VISIBLE : View.GONE);
             if (pinned != null) {
                 // строка-закреп кликабельна: переходим к сообщению, как в мессенджерах
-                pinnedRow.setOnClickListener(Ui.safeClick(this,
-                        v -> jumpTo(pinned.mid)));
+                final String pinnedMid = pinned.mid;
+                pinnedRow.setOnClickListener(Ui.safeClick(this, v -> jumpTo(pinnedMid)));
             }
         }
         if (pinned != null && pinnedText != null) pinnedText.setText(pinned.previewText());
