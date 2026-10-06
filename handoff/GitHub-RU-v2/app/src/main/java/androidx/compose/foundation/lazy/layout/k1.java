@@ -34,7 +34,7 @@ public final /* synthetic */ class k1 implements j71.a {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class m1<T1,T2,T3,T4> {
+    public static class m1 {
         public m1() {
         }
     }

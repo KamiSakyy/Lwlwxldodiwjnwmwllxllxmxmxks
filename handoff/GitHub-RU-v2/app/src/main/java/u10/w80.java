@@ -86,43 +86,43 @@ public final class w80 {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a2<T1,T2,T3,T4> {
+    public static class a2 {
         public a2() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class c1<T1,T2,T3,T4> {
+    public static class c1 {
         public c1() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class h<T1,T2,T3,T4> {
+    public static class h {
         public h() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class h0<T1,T2,T3,T4> {
+    public static class h0 {
         public h0() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class m3<T1,T2,T3,T4> {
+    public static class m3 {
         public m3() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class q3<T1,T2,T3,T4> {
+    public static class q3 {
         public q3() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class v3<T1,T2,T3,T4> {
+    public static class v3 {
         public v3() {
         }
     }

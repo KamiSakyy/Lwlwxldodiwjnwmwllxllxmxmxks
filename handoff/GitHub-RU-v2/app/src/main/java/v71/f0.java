@@ -24,13 +24,13 @@ public class f0 extends a implements e0 {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class c<T1,T2,T3,T4> {
+    public static class c {
         public c() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j<T1,T2,T3,T4> {
+    public static class j {
         public j() {
         }
     }

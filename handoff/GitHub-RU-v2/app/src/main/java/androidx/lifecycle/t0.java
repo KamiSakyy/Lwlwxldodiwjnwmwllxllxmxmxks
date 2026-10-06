@@ -90,7 +90,7 @@ public final class t0 extends l {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class u0<T1,T2,T3,T4> {
+    public static class u0 {
         public u0() {
         }
     }

@@ -38,7 +38,7 @@ public final class w0 extends com.github.rudroid.adapters.viewholders.e<k5.f> im
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class CheckLogFragment<T1,T2,T3,T4> {
+    public static class CheckLogFragment {
         public CheckLogFragment() {
         }
     }

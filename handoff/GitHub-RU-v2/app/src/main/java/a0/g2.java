@@ -55,7 +55,7 @@ public final class g2 implements z {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class u2<T1,T2,T3,T4> {
+    public static class u2 {
         public u2() {
         }
     }

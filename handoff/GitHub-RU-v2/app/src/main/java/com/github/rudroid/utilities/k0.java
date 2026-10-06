@@ -65,7 +65,7 @@ public final class k0 extends HorizontalScrollView {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class RecyclerView<T1,T2,T3,T4> {
+    public static class RecyclerView {
         public RecyclerView() {
         }
     }

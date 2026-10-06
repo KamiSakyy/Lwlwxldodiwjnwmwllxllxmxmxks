@@ -54,19 +54,19 @@ public final class k3 implements aa.h0 {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class s<T1,T2,T3,T4> {
+    public static class s {
         public s() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class u<T1,T2,T3,T4> {
+    public static class u {
         public u() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class x<T1,T2,T3,T4> {
+    public static class x {
         public x() {
         }
     }

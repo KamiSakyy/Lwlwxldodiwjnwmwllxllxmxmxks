@@ -151,7 +151,7 @@ public final class f1 extends h1 {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class Unsafe<T1,T2,T3,T4> {
+    public static class Unsafe {
         public Unsafe() {
         }
     }

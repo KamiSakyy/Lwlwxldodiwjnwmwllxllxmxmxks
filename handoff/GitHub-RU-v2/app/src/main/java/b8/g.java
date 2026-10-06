@@ -59,7 +59,7 @@ public final class g extends Animation {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class SwipeRefreshLayout<T1,T2,T3,T4> {
+    public static class SwipeRefreshLayout {
         public SwipeRefreshLayout() {
         }
     }

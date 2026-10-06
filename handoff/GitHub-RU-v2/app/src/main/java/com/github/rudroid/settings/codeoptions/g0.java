@@ -27,13 +27,13 @@ class g0 implements g.b {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class c<T1,T2,T3,T4> {
+    public static class c {
         public c() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class d<T1,T2,T3,T4> {
+    public static class d {
         public d() {
         }
     }

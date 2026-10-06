@@ -100,7 +100,7 @@ public abstract class a implements Collection, l71.a {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class E<T1,T2,T3,T4> {
+    public static class E {
         public E() {
         }
     }

@@ -4,7 +4,7 @@ package f1;
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public class c8<T1,T2,T3,T4> {
+public class c8 {
     public c8() {
     }
 }

@@ -178,121 +178,121 @@ public final class cq implements aa.v0 {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class b0<T1,T2,T3,T4> {
+    public static class b0 {
         public b0() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class b6<T1,T2,T3,T4> {
+    public static class b6 {
         public b6() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class d2<T1,T2,T3,T4> {
+    public static class d2 {
         public d2() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class d3<T1,T2,T3,T4> {
+    public static class d3 {
         public d3() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class g1<T1,T2,T3,T4> {
+    public static class g1 {
         public g1() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j1<T1,T2,T3,T4> {
+    public static class j1 {
         public j1() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j6<T1,T2,T3,T4> {
+    public static class j6 {
         public j6() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l5<T1,T2,T3,T4> {
+    public static class l5 {
         public l5() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l7<T1,T2,T3,T4> {
+    public static class l7 {
         public l7() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class m<T1,T2,T3,T4> {
+    public static class m {
         public m() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class n2<T1,T2,T3,T4> {
+    public static class n2 {
         public n2() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class o<T1,T2,T3,T4> {
+    public static class o {
         public o() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class q0<T1,T2,T3,T4> {
+    public static class q0 {
         public q0() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class r<T1,T2,T3,T4> {
+    public static class r {
         public r() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class r2<T1,T2,T3,T4> {
+    public static class r2 {
         public r2() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class t1<T1,T2,T3,T4> {
+    public static class t1 {
         public t1() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class u2<T1,T2,T3,T4> {
+    public static class u2 {
         public u2() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class v4<T1,T2,T3,T4> {
+    public static class v4 {
         public v4() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class x2<T1,T2,T3,T4> {
+    public static class x2 {
         public x2() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class z0<T1,T2,T3,T4> {
+    public static class z0 {
         public z0() {
         }
     }

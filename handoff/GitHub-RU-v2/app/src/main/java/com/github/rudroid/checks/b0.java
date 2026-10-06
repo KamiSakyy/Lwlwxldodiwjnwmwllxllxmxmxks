@@ -73,7 +73,7 @@ public final class b0 extends k1 implements v3, com.github.rudroid.utilities.vie
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a0<T1,T2,T3,T4> {
+    public static class a0 {
         public a0() {
         }
     }

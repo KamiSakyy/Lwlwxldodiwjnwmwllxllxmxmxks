@@ -4,7 +4,7 @@ package androidx.navigation.fragment;
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public class NavHostFragment<T1,T2,T3,T4> {
+public class NavHostFragment {
     public NavHostFragment() {
     }
 }

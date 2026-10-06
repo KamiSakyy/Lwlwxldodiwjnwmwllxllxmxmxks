@@ -82,13 +82,13 @@ public final class x {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class c<T1,T2,T3,T4> {
+    public static class c {
         public c() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class e<T1,T2,T3,T4> {
+    public static class e {
         public e() {
         }
     }

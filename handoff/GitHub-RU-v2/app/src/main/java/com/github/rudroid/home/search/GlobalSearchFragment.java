@@ -4,7 +4,7 @@ package com.github.rudroid.home.search;
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public class GlobalSearchFragment<T1,T2,T3,T4> {
+public class GlobalSearchFragment {
     public GlobalSearchFragment() {
     }
 }

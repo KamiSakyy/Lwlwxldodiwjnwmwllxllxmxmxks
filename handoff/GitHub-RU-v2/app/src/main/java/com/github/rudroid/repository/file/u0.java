@@ -96,7 +96,7 @@ public final class u0 extends androidx.lifecycle.a implements com.github.rudroid
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class c1<T1,T2,T3,T4> {
+    public static class c1 {
         public c1() {
         }
     }

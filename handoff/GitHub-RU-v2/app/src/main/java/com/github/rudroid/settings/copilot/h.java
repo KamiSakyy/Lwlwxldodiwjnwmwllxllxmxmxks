@@ -22,7 +22,7 @@ final /* synthetic */ class h extends k71.i implements j71.a {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class g<T1,T2,T3,T4> {
+    public static class g {
         public g() {
         }
     }

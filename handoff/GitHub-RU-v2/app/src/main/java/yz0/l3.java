@@ -79,7 +79,7 @@ public final class l3 {
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class IssueOrPullRequest$ReviewerReviewState<T1,T2,T3,T4> {
+    public static class IssueOrPullRequest$ReviewerReviewState {
         public IssueOrPullRequest$ReviewerReviewState() {
         }
     }

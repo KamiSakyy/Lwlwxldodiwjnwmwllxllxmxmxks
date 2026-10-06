@@ -42,19 +42,19 @@ public abstract class j0 {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class i<T1,T2,T3,T4> {
+    public static class i {
         public i() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j<T1,T2,T3,T4> {
+    public static class j {
         public j() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l<T1,T2,T3,T4> {
+    public static class l {
         public l() {
         }
     }

@@ -63,19 +63,19 @@ public final class w1 extends v2.x0 {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j<T1,T2,T3,T4> {
+    public static class j {
         public j() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class q<T1,T2,T3,T4> {
+    public static class q {
         public q() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class r<T1,T2,T3,T4> {
+    public static class r {
         public r() {
         }
     }

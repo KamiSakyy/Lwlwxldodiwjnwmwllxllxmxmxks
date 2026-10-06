@@ -55,19 +55,19 @@ public final class is {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a0<T1,T2,T3,T4> {
+    public static class a0 {
         public a0() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class p0<T1,T2,T3,T4> {
+    public static class p0 {
         public p0() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class r<T1,T2,T3,T4> {
+    public static class r {
         public r() {
         }
     }

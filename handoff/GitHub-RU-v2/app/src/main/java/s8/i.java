@@ -32,7 +32,7 @@ public abstract class i {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class SidecarInterface<T1,T2,T3,T4> {
+    public static class SidecarInterface {
         public SidecarInterface() {
         }
     }

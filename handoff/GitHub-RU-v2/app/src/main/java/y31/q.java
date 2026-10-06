@@ -74,7 +74,7 @@ public final class q extends ArrayAdapter {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class n<T1,T2,T3,T4> {
+    public static class n {
         public n() {
         }
     }

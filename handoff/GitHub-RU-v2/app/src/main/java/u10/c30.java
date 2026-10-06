@@ -46,19 +46,19 @@ public final class c30 {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class h<T1,T2,T3,T4> {
+    public static class h {
         public h() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j<T1,T2,T3,T4> {
+    public static class j {
         public j() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class y<T1,T2,T3,T4> {
+    public static class y {
         public y() {
         }
     }

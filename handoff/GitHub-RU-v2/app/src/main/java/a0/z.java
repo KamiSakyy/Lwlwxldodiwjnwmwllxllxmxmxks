@@ -13,7 +13,7 @@ public interface z extends d0 {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class v0<T1,T2,T3,T4> {
+    public static class v0 {
         public v0() {
         }
     }

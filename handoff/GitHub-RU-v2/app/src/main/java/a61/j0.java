@@ -62,37 +62,37 @@ public final class j0 extends c71.c {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class f<T1,T2,T3,T4> {
+    public static class f {
         public f() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class g<T1,T2,T3,T4> {
+    public static class g {
         public g() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class h<T1,T2,T3,T4> {
+    public static class h {
         public h() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class i<T1,T2,T3,T4> {
+    public static class i {
         public i() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class j<T1,T2,T3,T4> {
+    public static class j {
         public j() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class k<T1,T2,T3,T4> {
+    public static class k {
         public k() {
         }
     }

@@ -58,7 +58,7 @@ public final class f extends i {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class ViewPager2<T1,T2,T3,T4> {
+    public static class ViewPager2 {
         public ViewPager2() {
         }
     }

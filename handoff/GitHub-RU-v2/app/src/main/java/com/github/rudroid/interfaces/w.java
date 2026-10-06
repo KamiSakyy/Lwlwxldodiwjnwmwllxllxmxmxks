@@ -37,7 +37,7 @@ public interface w {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class a<T1,T2,T3,T4> {
+    public static class a {
         public a() {
         }
     }

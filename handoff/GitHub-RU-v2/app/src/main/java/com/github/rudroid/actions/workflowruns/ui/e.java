@@ -4,5 +4,5 @@ package com.github.rudroid.actions.workflowruns.ui;
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public interface e<T1,T2,T3,T4> {
+public interface e {
 }

@@ -42,25 +42,25 @@ public final /* synthetic */ class d1 implements Callable {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class c2<T1,T2,T3,T4> {
+    public static class c2 {
         public c2() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class k<T1,T2,T3,T4> {
+    public static class k {
         public k() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class y<T1,T2,T3,T4> {
+    public static class y {
         public y() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class z1<T1,T2,T3,T4> {
+    public static class z1 {
         public z1() {
         }
     }

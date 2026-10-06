@@ -56,7 +56,7 @@ public final /* synthetic */ class a implements j71.c {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class p<T1,T2,T3,T4> {
+    public static class p {
         public p() {
         }
     }

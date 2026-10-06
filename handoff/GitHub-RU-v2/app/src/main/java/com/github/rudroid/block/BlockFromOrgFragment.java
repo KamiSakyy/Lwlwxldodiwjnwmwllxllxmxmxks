@@ -4,7 +4,7 @@ package com.github.rudroid.block;
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public class BlockFromOrgFragment<T1,T2,T3,T4> {
+public class BlockFromOrgFragment {
     public BlockFromOrgFragment() {
     }
 }

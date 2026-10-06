@@ -4,7 +4,7 @@ package androidx.glance.appwidget.action;
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public class ActionCallbackBroadcastReceiver<T1,T2,T3,T4> {
+public class ActionCallbackBroadcastReceiver {
     public ActionCallbackBroadcastReceiver() {
     }
 }

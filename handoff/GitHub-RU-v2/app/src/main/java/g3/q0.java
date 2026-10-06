@@ -4,7 +4,7 @@ package g3;
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public class q0<T1,T2,T3,T4> {
+public class q0 {
     public q0() {
     }
 }

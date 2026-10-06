@@ -46,7 +46,7 @@ public final class cs {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class f<T1,T2,T3,T4> {
+    public static class f {
         public f() {
         }
     }

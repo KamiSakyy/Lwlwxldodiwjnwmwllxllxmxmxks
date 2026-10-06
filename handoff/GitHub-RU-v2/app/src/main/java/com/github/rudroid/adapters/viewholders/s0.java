@@ -4,7 +4,7 @@ package com.github.rudroid.adapters.viewholders;
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public class s0<T1,T2,T3,T4> {
+public class s0 {
     public s0() {
     }
 }

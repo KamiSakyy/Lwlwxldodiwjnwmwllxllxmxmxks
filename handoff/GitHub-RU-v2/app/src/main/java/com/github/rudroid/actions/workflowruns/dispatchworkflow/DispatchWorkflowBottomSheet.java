@@ -4,7 +4,7 @@ package com.github.rudroid.actions.workflowruns.dispatchworkflow;
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public class DispatchWorkflowBottomSheet<T1,T2,T3,T4> {
+public class DispatchWorkflowBottomSheet {
     public DispatchWorkflowBottomSheet() {
     }
 }

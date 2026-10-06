@@ -62,19 +62,19 @@ public final class p implements h, Serializable {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class e<T1,T2,T3,T4> {
+    public static class e {
         public e() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class f<T1,T2,T3,T4> {
+    public static class f {
         public f() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class l<T1,T2,T3,T4> {
+    public static class l {
         public l() {
         }
     }

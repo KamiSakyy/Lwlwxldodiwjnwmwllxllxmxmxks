@@ -6019,31 +6019,31 @@ public final class z5 implements g6 {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class Unsafe<T1,T2,T3,T4> {
+    public static class Unsafe {
         public Unsafe() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class b<T1,T2,T3,T4> {
+    public static class b {
         public b() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class h<T1,T2,T3,T4> {
+    public static class h {
         public h() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class k<T1,T2,T3,T4> {
+    public static class k {
         public k() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class n<T1,T2,T3,T4> {
+    public static class n {
         public n() {
         }
     }

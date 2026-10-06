@@ -104,7 +104,7 @@ public final class f1 extends l7.z1 {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class y3<T1,T2,T3,T4> {
+    public static class y3 {
         public y3() {
         }
     }

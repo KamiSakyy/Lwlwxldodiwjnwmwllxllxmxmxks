@@ -220,37 +220,37 @@ public final class k6 {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class d<T1,T2,T3,T4> {
+    public static class d {
         public d() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class p<T1,T2,T3,T4> {
+    public static class p {
         public p() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class q<T1,T2,T3,T4> {
+    public static class q {
         public q() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class s<T1,T2,T3,T4> {
+    public static class s {
         public s() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class u<T1,T2,T3,T4> {
+    public static class u {
         public u() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class v<T1,T2,T3,T4> {
+    public static class v {
         public v() {
         }
     }

@@ -66,7 +66,7 @@ public final class r6 extends s7 {
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class TimelineItem$LinkedItemConnectorType<T1,T2,T3,T4> {
+    public static class TimelineItem$LinkedItemConnectorType {
         public TimelineItem$LinkedItemConnectorType() {
         }
     }

@@ -34,7 +34,7 @@ public final class o implements ActionProvider.VisibilityListener {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class c<T1,T2,T3,T4> {
+    public static class c {
         public c() {
         }
     }

@@ -92,19 +92,19 @@ public final class d2 extends g5 {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class p<T1,T2,T3,T4> {
+    public static class p {
         public p() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class q<T1,T2,T3,T4> {
+    public static class q {
         public q() {
         }
     }
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class r0<T1,T2,T3,T4> {
+    public static class r0 {
         public r0() {
         }
     }

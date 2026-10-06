@@ -96,7 +96,7 @@ public final class b extends t0 {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class RecyclerView<T1,T2,T3,T4> {
+    public static class RecyclerView {
         public RecyclerView() {
         }
     }

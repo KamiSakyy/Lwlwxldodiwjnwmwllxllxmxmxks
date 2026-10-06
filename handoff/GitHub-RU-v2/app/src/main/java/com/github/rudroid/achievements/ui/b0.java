@@ -4,7 +4,7 @@ package com.github.rudroid.achievements.ui;
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public class b0<T1,T2,T3,T4> {
+public class b0 {
     public b0() {
     }
 }

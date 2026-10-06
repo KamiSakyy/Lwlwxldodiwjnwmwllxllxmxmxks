@@ -128,7 +128,7 @@ public final class n0 extends t1 {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class k0<T1,T2,T3,T4> {
+    public static class k0 {
         public k0() {
         }
     }

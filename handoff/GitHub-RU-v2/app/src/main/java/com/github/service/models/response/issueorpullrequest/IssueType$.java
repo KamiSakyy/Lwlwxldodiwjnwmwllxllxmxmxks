@@ -4,7 +4,7 @@ package com.github.service.models.response.issueorpullrequest;
  * СТАБ-CLASS: сгенерирован автоматически (tools/gen_stubs.py).
  * Оригинал потерян при декомпиляции APK.
  */
-public class IssueType$<T1,T2,T3,T4> {
+public class IssueType$ {
     public IssueType$() {
     }
 }

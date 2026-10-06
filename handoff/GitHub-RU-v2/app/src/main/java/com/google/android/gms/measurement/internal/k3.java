@@ -148,7 +148,7 @@ public final class k3 implements Runnable {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class y<T1,T2,T3,T4> {
+    public static class y {
         public y() {
         }
     }

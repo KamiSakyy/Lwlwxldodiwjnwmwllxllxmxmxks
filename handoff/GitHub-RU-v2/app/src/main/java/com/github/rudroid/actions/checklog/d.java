@@ -24,7 +24,7 @@ public final class d extends k71.l implements j71.a {
 
 
     // [restore] вложенный стаб: оригинал потерян при декомпиляции
-    public static class CheckLogFragment<T1,T2,T3,T4> {
+    public static class CheckLogFragment {
         public CheckLogFragment() {
         }
     }
