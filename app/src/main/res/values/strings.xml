@@ -147,7 +147,10 @@
 
     <string name="login_client_mismatch">Client ID не совпадает с тем, что «вшит» в этот APK (%1$s). Google отклонит вход: пересоберите APK в GitHub Actions с параметром oauth_client_id или вставьте тот ID, с которым собирали.</string>
     <string name="error_no_client_id">Сначала укажите OAuth client ID в настройке подключения</string>
-    <string name="error_network">Сеть недоступна: %1$s</string>
+    <string name="error_open_console">Открыть консоль Google</string>
+    <string name="error_reauth">Войти заново</string>
+    <string name="error_copy">Скопировать ответ Google</string>
+    <string name="error_network">Ошибка синхронизации: %1$s</string>
     <string name="error_auth">Ошибка входа: %1$s</string>
     <string name="error_generic">Ошибка: %1$s</string>
     <string name="login_success">Вход выполнен: %1$s</string>

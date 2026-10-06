@@ -279,15 +279,60 @@ public class MainActivity extends AppCompatActivity implements SyncEngine.Listen
                 .show();
     }
 
+    /** Последняя показанная ошибка Google — чтобы не открывать один и тот же диалог по кругу. */
+    private String lastErrorShown = "";
+
     @Override
     public void onSyncDone(final SyncEngine.Result result) {
         handler.post(() -> {
             syncBar.setVisibility(View.GONE);
             refresh();
-            if (!result.ok && result.error != null && !result.error.isEmpty()) {
-                Ui.toast(MainActivity.this, getString(R.string.error_network, result.error));
+            if (result.ok) return;
+            final com.mailgram.app.net.ApiError.Info info =
+                    com.mailgram.app.net.ApiError.parse(result.cause != null
+                            ? result.cause : new java.io.IOException(String.valueOf(result.error)));
+            if (!info.title.equals(lastErrorShown)) {
+                lastErrorShown = info.title;
+                showGoogleError(info);
             }
         });
+    }
+
+    /** Показывает, что именно ответил Google, и даёт кнопку для решения. */
+    private void showGoogleError(final com.mailgram.app.net.ApiError.Info info) {
+        androidx.appcompat.app.AlertDialog.Builder builder =
+                new androidx.appcompat.app.AlertDialog.Builder(this)
+                        .setTitle(info.title)
+                        .setMessage(info.text)
+                        .setNeutralButton(R.string.error_copy, (d, w) ->
+                                Ui.copy(this, "MailGram Google API error",
+                                        info.title + "\n\n" + info.text + "\n\n" + info.raw));
+        switch (info.action) {
+            case com.mailgram.app.net.ApiError.ACTION_ENABLE_GMAIL_API:
+                builder.setPositiveButton(R.string.error_open_console, (d, w) -> openUrl(info.url));
+                break;
+            case com.mailgram.app.net.ApiError.ACTION_REAUTH:
+                builder.setPositiveButton(R.string.error_reauth, (d, w) -> {
+                    Auth.signOut(this, false);
+                    startActivity(new Intent(this, LoginActivity.class)
+                            .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK));
+                    finish();
+                });
+                break;
+            default:
+                builder.setPositiveButton(R.string.done, null);
+                break;
+        }
+        builder.show();
+    }
+
+    private void openUrl(String url) {
+        if (url == null || url.isEmpty()) return;
+        try {
+            startActivity(new Intent(Intent.ACTION_VIEW, android.net.Uri.parse(url)));
+        } catch (Exception e) {
+            Ui.copy(this, "MailGram link", url);
+        }
     }
 
     private void askNotificationPermission() {

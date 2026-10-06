@@ -57,6 +57,8 @@ public final class SyncEngine {
     public static final class Result {
         public boolean ok = true;
         public String error = "";
+        /** Исходная ошибка — по ней приложение показывает точный ответ Google. */
+        public Throwable cause;
         public int scanned;
         public int added;
         public int undecryptable;
@@ -109,6 +111,7 @@ public final class SyncEngine {
                 Log.w(TAG, "синхронизация не удалась: " + e);
                 r.ok = false;
                 r.error = describe(e);
+                r.cause = e;
             } finally {
                 r.finishedAt = System.currentTimeMillis();
                 Prefs.setLastSyncAt(app, r.finishedAt);
@@ -523,8 +526,6 @@ public final class SyncEngine {
     }
 
     private static String describe(Exception e) {
-        String msg = e.getMessage();
-        if (msg == null || msg.isEmpty()) msg = e.getClass().getSimpleName();
-        return msg;
+        return com.mailgram.app.net.ApiError.short(e);
     }
 }
