@@ -1,3 +1,0 @@
-465a40ba253a930d7b6f1cfa761d29bb233e3f52bc1604c732ad8eb53bfecb6c  GitHub-RU-Studio-928-fast.apk
-adaaf04a0dcfbc3c3eb03295aa0cb2f80a21449c7b25145bdc520f2395b493be  GitHub-RU-Studio-928-full.apk
-aecc8788eeba2b61e040221de123ee21bad3b4f5a1043a0d8aa86bc71b4acdf1  GitHub-RU-Studio-928-lite.apk

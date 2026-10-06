@@ -203,7 +203,7 @@ jobs:
           tail -40 work/build.log
           if [ -f work/unsigned.apk ]; then
             "$BT/zipalign" -f -p 4 work/unsigned.apk work/aligned.apk || echo "zipalign упал"
-            "$BT/apksigner" sign --ks handoff/GitHub-RU-v2/app/github-ru.jks \
+            "$BT/apksigner" sign --ks handoff/keys/github-ru.jks \
               --ks-pass pass:android --key-pass pass:android --ks-key-alias github-ru \
               --v1-signing-enabled true --v2-signing-enabled true --v3-signing-enabled true \
               --out work/signed.apk work/aligned.apk 2>&1 | tail -5
@@ -301,16 +301,21 @@ jobs:
       - name: "Кладём APK в handoff/ и коммитим"
         if: always()
         run: |
-          set -e
+          set +e
+          set -x
           git config user.name "apk-mod-bot"
           git config user.email "actions@github.com"
           if [ -f work/signed.apk ]; then
             cp work/signed.apk "handoff/GitHub-RU-${TARGET_VERSION}-rudroid-mod.apk"
           fi
-          git add -A handoff/apkmod "handoff/GitHub-RU-${TARGET_VERSION}-rudroid-mod.apk" 2>/dev/null || true
-          git diff --cached --quiet && { echo "нечего коммитить"; exit 0; }
-          git commit -m "github-ru mod: сборка из официального ${TARGET_VERSION} → com.github.rudroid [skip ci]"
-          git push || true
+          git add -A handoff/apkmod "handoff/GitHub-RU-${TARGET_VERSION}-rudroid-mod.apk"
+          if git diff --cached --quiet; then
+            echo "нечего коммитить"
+          else
+            git commit -m "github-ru mod: сборка из официального ${TARGET_VERSION} → com.github.rudroid [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            git push origin "HEAD:${GITHUB_REF_NAME}" || git push --force-with-lease origin "HEAD:${GITHUB_REF_NAME}" || echo "PUSH FAILED"
+          fi
 
       - name: "Артефакт"
         if: always()

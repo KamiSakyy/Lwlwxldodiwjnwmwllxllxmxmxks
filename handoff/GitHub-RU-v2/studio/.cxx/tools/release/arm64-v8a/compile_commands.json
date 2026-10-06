@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/studio/.cxx/RelWithDebInfo/92a6w687/arm64-v8a",
-  "command": "/usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android28 --sysroot=/usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dnodestarter_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++17 -Oz -flto -fvisibility=hidden -ffunction-sections -fdata-sections -O2 -g -DNDEBUG -fPIC -Oz -ffunction-sections -fdata-sections -std=c++17 -o CMakeFiles/nodestarter.dir/nodestarter.cpp.o -c /home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/studio/src/main/cpp/nodestarter.cpp",
-  "file": "/home/runner/work/Lwlwxldodiwjnwmwllxllxmxmxks/Lwlwxldodiwjnwmwllxllxmxmxks/handoff/GitHub-RU-v2/studio/src/main/cpp/nodestarter.cpp"
-}
-]

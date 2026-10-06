@@ -1,8 +1,0 @@
-run=2
-job_status=success
-node=встроен
-react=собран vue=собран
-full_apk=22700782
-fast_apk=66382238
-lite_apk=198668
-node_so_before=87472464 node_so_after=65139832
