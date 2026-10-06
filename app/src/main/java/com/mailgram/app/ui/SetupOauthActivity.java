@@ -54,14 +54,11 @@ public class SetupOauthActivity extends AppCompatActivity {
         clientIdField.setText(Auth.clientId(this));
         boolean bakedIn = Auth.clientIdFromBuild();
         if (bakedIn) {
-            // Идентификатор уже внутри APK и совпадает со схемой редиректа в манифесте —
-            // менять его в настройках нельзя, только пересобрать с другим значением.
+            // Идентификатор уже внутри APK: Android-клиент — со схемой редиректа в манифесте,
+            // клиент Desktop — с локальным портом. Оба лежат в сборке, поэтому поле client ID
+            // менять нельзя, а режим выбрать можно: он определяет, какой из двух клиентов
+            // использовать и нужен ли для него client_secret.
             clientIdField.setEnabled(false);
-            modeGroup.check(R.id.setup_mode_android);
-            modeGroup.setEnabled(false);
-            for (int i = 0; i < modeGroup.getChildCount(); i++) {
-                modeGroup.getChildAt(i).setEnabled(false);
-            }
         }
         boolean loopback = !bakedIn && Auth.MODE_LOOPBACK.equals(Auth.authMode(this));
         modeGroup.check(loopback ? R.id.setup_mode_loopback : R.id.setup_mode_android);
@@ -97,6 +94,9 @@ public class SetupOauthActivity extends AppCompatActivity {
         if (isLoopbackSelected()) {
             redirect = LoopbackServer.redirectUri();
             modeNote.setText(getString(R.string.setup_loopback_note, redirect));
+            if (!Auth.hasDesktopSecret(this)) {
+                modeNote.setText(modeNote.getText() + "\n\n" + getString(R.string.setup_secret_needed));
+            }
         } else {
             redirect = clientId.isEmpty()
                     ? Auth.androidSchemeFromBuild() + OAuth.ANDROID_REDIRECT_SUFFIX
@@ -148,9 +148,10 @@ public class SetupOauthActivity extends AppCompatActivity {
             Ui.toast(this, getString(R.string.setup_secret_cleared));
         }
         if (Auth.clientIdFromBuild()) {
-            // Client ID вшит при сборке: держим режим и хранилище в согласованном состоянии.
+            // Client ID вшит при сборке — менять его не нужно, но выбранный режим сохраняем:
+            // он определяет, какой клиент использовать (схема Android или локальный порт Desktop).
             Auth.setClientId(this, "");
-            Auth.setAuthMode(this, Auth.MODE_ANDROID);
+            Auth.setAuthMode(this, isLoopbackSelected() ? Auth.MODE_LOOPBACK : Auth.MODE_ANDROID);
             Ui.toast(this, getString(R.string.setup_baked_saved));
             finish();
             return;

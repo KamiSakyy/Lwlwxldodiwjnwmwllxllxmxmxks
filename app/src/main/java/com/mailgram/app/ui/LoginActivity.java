@@ -119,10 +119,8 @@ public class LoginActivity extends AppCompatActivity {
                 .setTitle(R.string.login_fix_title)
                 .setMessage(R.string.login_fix_message)
                 .setPositiveButton(R.string.login_fix_open, (d, w) -> openConsole())
-                .setNeutralButton(R.string.login_fix_recheck, (d, w) -> {
-                    fixDialogShown = false;
-                    startProbe(true);
-                })
+                .setNeutralButton(R.string.login_fix_own, (d, w) ->
+                        startActivity(new Intent(this, SetupOauthActivity.class)))
                 .setNegativeButton(R.string.done, null)
                 .show();
     }

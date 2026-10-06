@@ -121,16 +121,13 @@
     <string name="login_check">Проверить подключение к Google</string>
     <string name="login_check_running">Проверяю настройки входа…</string>
     <string name="login_fix_title">Нужна одна настройка в Google Cloud</string>
-    <string name="login_fix_message">Приложение уже опросило Google по обоим вашим клиентам и выбрало тот, который Google принимает.
+    <string name="login_fix_message">Google проверяет каждый клиент отдельно, и приложение опросило оба, чтобы выбрать рабочий.
 
-Рабочий путь — клиент типа Desktop с редиректом на локальный порт (127.0.0.1). У Android-клиента Google отвечает «Custom URI scheme is not enabled for your Android client»: у таких клиентов схему нужно включать вручную — Console → ваш Android-клиент → Advanced Settings → Enable custom URI scheme → Save.
+Путь 1 (без пересборки, 1 клик): у Android-клиента включите схему — Console → ваш Android-клиент → Advanced Settings → «Enable custom URI scheme» → Save. Google выключает её у новых Android-клиентов по умолчанию, пока она выключена, страница входа отвечает «Error 400: invalid_request».
 
-Если вход всё равно не проходит, проверьте:
-1) ваш Gmail добавлен в Test users экрана согласия (иначе Google покажет «доступ заблокирован»);
-2) Gmail API включён (APIs &amp; Services → Library);
-3) письма MailGram не попали в «Спам».
+Путь 2 (тоже без пересборки): вставьте client_secret вашего Desktop-клиента в «Настройке подключения» — приложение уйдёт на локальный порт, который Google принимает без всяких переключателей.
 
-После любого изменения нажмите «Проверить снова» — приложение перепроверит оба клиента.</string>
+После изменения нажмите «Проверить снова».</string>
     <string name="login_fix_open">Открыть настройки клиента</string>
     <string name="login_fix_recheck">Проверить снова</string>
     <string name="setup_probe_hint">Для клиента типа «Android» обязательно включите «Advanced Settings → Enable custom URI scheme» — по умолчанию Google её выключает и возвращает ошибку 400 invalid_request.</string>
@@ -139,6 +136,8 @@
     <string name="setup_client_secret_help">Нужен, если входите через клиент типа Desktop (локальный порт): Google требует его вместе с PKCE. Хранится зашифрованным на устройстве, в исходниках не лежит.</string>
     <string name="setup_secret_saved">client_secret сохранён (зашифрован на устройстве)</string>
     <string name="setup_secret_cleared">client_secret удалён</string>
+    <string name="setup_secret_needed">Для этого режима Google требует client_secret — вставьте его в поле выше (он останется только на устройстве).</string>
+    <string name="login_fix_own">Ввести client_secret</string>
     <string name="setup_save">Сохранить</string>
     <string name="setup_saved">Сохранено</string>
     <string name="setup_loopback_note">В режиме «Desktop» добавьте в Google Cloud Console redirect URI:\n%1$s</string>
