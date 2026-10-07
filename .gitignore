@@ -7,8 +7,3 @@ local.properties
 .idea/
 *.iml
 .DS_Store
-
-# Never commit Android release-signing private material.
-HANDOFF/*.p12
-HANDOFF/*-key-password.txt
-HANDOFF/*-signing-secrets.txt

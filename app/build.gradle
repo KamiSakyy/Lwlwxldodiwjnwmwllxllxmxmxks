@@ -13,11 +13,13 @@ def turnUrl = (project.findProperty("turnUrl") ?: "").toString()
 def turnUsername = (project.findProperty("turnUsername") ?: "").toString()
 def turnCredential = (project.findProperty("turnCredential") ?: "").toString()
 def appVersionCode = (project.findProperty("appVersionCode") ?: "2").toString().toInteger()
-def appVersionName = (project.findProperty("appVersionName") ?: "1.0.1").toString()
+def appVersionName = (project.findProperty("appVersionName") ?: "1.0.2").toString()
 def releaseStorePath = System.getenv("RELEASE_KEYSTORE_PATH")
-def releaseStorePassword = System.getenv("RELEASE_STORE_PASSWORD")
-def releaseKeyAlias = System.getenv("RELEASE_KEY_ALIAS")
-def releaseKeyPassword = System.getenv("RELEASE_KEY_PASSWORD")
+def releasePasswordFile = file("HANDOFF/nox-release-key-password.txt")
+def localReleasePassword = releasePasswordFile.exists() ? releasePasswordFile.getText("UTF-8").trim() : ""
+def releaseStorePassword = System.getenv("RELEASE_STORE_PASSWORD") ?: localReleasePassword
+def releaseKeyAlias = System.getenv("RELEASE_KEY_ALIAS") ?: "nox-release"
+def releaseKeyPassword = System.getenv("RELEASE_KEY_PASSWORD") ?: releaseStorePassword
 
 android {
     namespace "com.kamisakyy.noxchat"

@@ -26,13 +26,11 @@ WebRTC DataChannel шифрует транспорт между peer-узлам�
 
 ## Release-сборка и постоянная подпись
 
-Workflow [`.github/workflows/android-apk.yml`](.github/workflows/android-apk.yml) собирает **minified release APK**, проверяет arm64 ABI и сертификат подписи. После добавления Actions secrets его запускают вручную через `Actions → Android ARM64 signed release (API 36) → Run workflow`. Номер версии растёт с номером запуска (`versionCode=N`, `versionName=1.0.N`); релизные файлы именуются по версии и старые сборки не удаляются.
+Workflow [`.github/workflows/android-apk.yml`](.github/workflows/android-apk.yml) собирает **minified release APK**, проверяет arm64 ABI и сертификат подписи. `versionCode` растёт с номером запуска (`versionCode=N`, `versionName=1.0.N`); релизные APK и source ZIP именуются по версии, старые файлы не удаляются.
 
-Для повторных обновлений используется один постоянный PKCS#12 release keystore с alias `nox-release`. Публичный сертификат и fingerprint в [`HANDOFF`](HANDOFF/RELEASE-SIGNING.md) можно хранить в исходниках; приватный keystore и пароли **не включаются в Git, source ZIP или APK**. Workflow получает их из Actions secrets. Это важно: публично раскрытый signing key позволяет кому угодно выпускать поддельные обновления.
+Постоянный PKCS#12 keystore с alias `nox-release` и пароль хранятся в `HANDOFF` и включаются в исходный ZIP, как запросил владелец; GitHub Actions secrets не нужны. Это крайне рискованно: любой человек с доступом к репозиторию/ZIP сможет подписать поддельное обновление. Храните репозиторий и архив приватно и сделайте офлайн-резервную копию. APK содержит подпись/публичный сертификат, а не приватный ключ.
 
-Нужно один раз добавить secrets `RELEASE_KEYSTORE_BASE64`, `RELEASE_STORE_PASSWORD` и `RELEASE_KEY_PASSWORD` в **Settings → Secrets and variables → Actions**. Инструкция и локальная резервная копия созданы в `HANDOFF/RELEASE-SIGNING.md`. У агента нет доступа к настройке этих secrets (GitHub вернул HTTP 403), поэтому до их добавления release APK не будет подписан и опубликован.
-
-Ранее выданный debug APK сохранён в `HANDOFF`, но его `.debug` package ID и debug-сертификат отличаются. Первую release-сборку нужно установить отдельно; последующие релизы с этим же ключом будут обновлениями.
+Ранее выданный debug APK сохранён в `HANDOFF`, но его `.debug` package ID и debug-сертификат отличаются. Первый release нужно установить отдельно; последующие release APK с тем же ключом будут обновлениями.
 
 ## Фоновые ограничения
 

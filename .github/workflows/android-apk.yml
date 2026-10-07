@@ -1,6 +1,11 @@
 name: Android ARM64 signed release (API 36)
 
 on:
+  push:
+    branches:
+      - arena/ade03820-lwlwxldodiwjnwmwllxllxmxmxks
+    paths-ignore:
+      - HANDOFF/**
   workflow_dispatch:
 
 permissions:
@@ -39,25 +44,15 @@ jobs:
         with:
           gradle-version: '8.13'
 
-      - name: Prepare permanent release signer
-        env:
-          RELEASE_KEYSTORE_BASE64: ${{ secrets.RELEASE_KEYSTORE_BASE64 }}
-          RELEASE_STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
-          RELEASE_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
+      - name: Validate permanent release signer in HANDOFF
         run: |
           set -euo pipefail
-          for secret_name in RELEASE_KEYSTORE_BASE64 RELEASE_STORE_PASSWORD RELEASE_KEY_PASSWORD; do
-            if [[ -z "${!secret_name}" ]]; then
-              echo "::error::Missing repository Actions secret: ${secret_name}"
-              exit 1
-            fi
-          done
-          key_path="$RUNNER_TEMP/nox-release-key.p12"
-          printf '%s' "$RELEASE_KEYSTORE_BASE64" | base64 --decode > "$key_path"
-          test -s "$key_path"
-          echo "RELEASE_KEYSTORE_PATH=$key_path" >> "$GITHUB_ENV"
-          echo "RELEASE_STORE_PASSWORD=$RELEASE_STORE_PASSWORD" >> "$GITHUB_ENV"
-          echo "RELEASE_KEY_PASSWORD=$RELEASE_KEY_PASSWORD" >> "$GITHUB_ENV"
+          test -s HANDOFF/nox-release-key.p12
+          test -s HANDOFF/nox-release-key-password.txt
+          test -s HANDOFF/nox-release-certificate.pem
+          openssl pkcs12 -in HANDOFF/nox-release-key.p12 -noout -info \
+            -passin file:HANDOFF/nox-release-key-password.txt >/dev/null 2>&1
+          echo "RELEASE_KEYSTORE_PATH=$GITHUB_WORKSPACE/HANDOFF/nox-release-key.p12" >> "$GITHUB_ENV"
           echo "RELEASE_KEY_ALIAS=nox-release" >> "$GITHUB_ENV"
           echo "APP_VERSION_NAME=1.0.$GITHUB_RUN_NUMBER" >> "$GITHUB_ENV"
 
@@ -96,6 +91,7 @@ jobs:
             database.rules.json README.md .github/workflows/android-apk.yml \
             HANDOFF/README.md HANDOFF/RELEASE-SIGNING.md \
             HANDOFF/nox-release-certificate.pem HANDOFF/nox-release-fingerprint.txt \
+            HANDOFF/nox-release-key.p12 HANDOFF/nox-release-key-password.txt \
             -x 'app/build/*' '*/.DS_Store'
           echo "Release APK: HANDOFF/$apk_name"
           echo "Source archive: HANDOFF/$source_name"
