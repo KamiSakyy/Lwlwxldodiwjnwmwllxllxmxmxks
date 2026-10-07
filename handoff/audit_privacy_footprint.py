@@ -31,6 +31,7 @@ SDK_PREFIXES = {
         "Amazon Ads": b"Lcom/amazon/device/ads/",
         "Pangle/ByteDance Ads": b"Lcom/bytedance/sdk/openadsdk/",
         "Start.io Ads": b"Lcom/startapp/",
+        "Yandex Mobile Ads": b"Lcom/yandex/mobile/ads/",
     },
     "analytics": {
         "Firebase Analytics": b"Lcom/google/firebase/analytics/",
@@ -75,8 +76,11 @@ MANIFEST_SDK_MARKERS = (
     b"com.ironsource",
     b"com.my.tracker",
     b"com.yandex",
+    b"com.yandex.mobile.ads",
     b"com.google.firebase",
 )
+
+
 def dex_files(names: list[str]) -> list[str]:
     return sorted(
         name for name in names
@@ -193,13 +197,15 @@ def audit(apk_path: Path) -> list[str]:
         "- SDK-related manifest component/class names: "
         + (", ".join(f"`{name}`" for name in sdk_names[:80]) if sdk_names else "none of the known SDK package names found")
     )
-    firebase_optouts = sorted(
+    sdk_optouts = sorted(
         value for value in manifest_strings
-        if value.startswith("firebase_") or value.startswith("google_analytics_")
+        if value.startswith("firebase_")
+        or value.startswith("google_analytics_")
+        or value.startswith("com.yandex.mobile.ads.")
     )
     result.append(
-        "- Firebase/Google Analytics opt-out keys already present: "
-        + (", ".join(f"`{name}`" for name in firebase_optouts) if firebase_optouts else "none")
+        "- Known analytics/ad SDK opt-out keys already present: "
+        + (", ".join(f"`{name}`" for name in sdk_optouts) if sdk_optouts else "none")
     )
     return result
 

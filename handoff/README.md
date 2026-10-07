@@ -21,6 +21,12 @@ The source XAPK contains an `armeabi-v7a` native split, with no `arm64-v8a` spli
 
 The official VK signing key is not available, so the mod uses a temporary key that is never committed. Android will not install it as an update over the official VK app; switching requires uninstalling the official app first, which deletes its local app data. Back up anything important before doing so. The VK login/session code is unchanged and uses the normal in-app sign-in flow; no manual `access_token` is embedded. Sign-in and runtime behavior have not been tested on a device.
 
+## Privacy-hardening build
+
+The privacy workflow starts from the APKPure source, rebuilds the base APK with Apktool, then packages the rebuilt base into the ARM-focused XAPK. It applies known Firebase/Google Analytics and Yandex Mobile Ads opt-out metadata, removes declared ad/tracker manifest components, and removes selected sensitive permission declarations when present (`AD_ID`, phone state/numbers, fine/coarse location, `GET_ACCOUNTS`, and `QUERY_ALL_PACKAGES`). The smali patch is intentionally narrow: it removes only direct void-returning calls from VK-owned code to recognized ad/analytics SDK owners. It does not delete SDK class files from DEX, patch unknown or reflective calls, or prove that VK/backend telemetry has stopped.
+
+Removing location permissions disables app features that require location sharing/access; removing phone/account permissions may affect phone-number autofill and system-account discovery. The normal VK sign-in flow is not intentionally edited and no manual `access_token` is embedded, but sign-in and runtime behavior remain untested on-device. Static audits are indicators, not a guarantee of complete privacy or functional compatibility.
+
 ## Verification and decompilation
 
 The APKPure response is checked as a ZIP/XAPK; the extracted base APK signature is verified against the previously observed VK signer fingerprint. Run `37512206885` resolved to VK 8.193, version code 57318, but its JADX pass emitted 73,744 Java files and hit heap/decoder errors. The current workflow uses a larger JADX heap, writes only a metadata summary to the Actions run, and keeps the full decompiled tree on ephemeral runner storage.

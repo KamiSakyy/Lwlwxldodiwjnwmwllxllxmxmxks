@@ -13,12 +13,12 @@ import zipfile
 from pathlib import Path
 
 try:
-    from .apply_privacy_manifest import ANALYTICS_OPTOUTS, patch_manifest
+    from .apply_privacy_manifest import ANALYTICS_OPTOUTS, SENSITIVE_PERMISSIONS, patch_manifest
     from .build_arm_xapk import apk_metadata
     from .patch_smali_sdk_calls import patch_tree
     from .audit_privacy_footprint import axml_strings
 except ImportError:
-    from apply_privacy_manifest import ANALYTICS_OPTOUTS, patch_manifest
+    from apply_privacy_manifest import ANALYTICS_OPTOUTS, SENSITIVE_PERMISSIONS, patch_manifest
     from build_arm_xapk import apk_metadata
     from patch_smali_sdk_calls import patch_tree
     from audit_privacy_footprint import axml_strings
@@ -54,6 +54,14 @@ def validate_manifest_xml(path: Path) -> None:
     root = ET.parse(path).getroot()
     if root.attrib.get("package") != "com.vkontakte.android":
         raise ValueError(f"decoded package ID changed: {root.attrib.get('package', '(missing)')}")
+    remaining_sensitive = sorted(
+        child.attrib.get(android + "name")
+        for child in root
+        if child.tag.rsplit("}", 1)[-1].startswith("uses-permission")
+        and child.attrib.get(android + "name") in SENSITIVE_PERMISSIONS
+    )
+    if remaining_sensitive:
+        raise ValueError("sensitive permissions remain after patch: " + ", ".join(remaining_sensitive))
     app = next((element for element in root if element.tag.rsplit("}", 1)[-1] == "application"), None)
     if app is None:
         raise ValueError("rebuilt manifest has no application element")
@@ -111,8 +119,9 @@ def prepare(source_apk: Path, output_apk: Path, apktool_jar: Path, work_parent: 
         missing_values = sorted(required_values - manifest_strings)
         if missing_values:
             raise ValueError("rebuilt binary manifest is missing required privacy/package strings: " + ", ".join(missing_values))
-        if "com.google.android.gms.permission.AD_ID" in manifest_strings:
-            raise ValueError("rebuilt binary manifest still declares the advertising ID permission")
+        remaining_sensitive = sorted(set(SENSITIVE_PERMISSIONS) & manifest_strings)
+        if remaining_sensitive:
+            raise ValueError("rebuilt binary manifest still contains sensitive permissions: " + ", ".join(remaining_sensitive))
         rebuilt_abis, rebuilt_dex_count = apk_metadata(unsigned)
         if rebuilt_dex_count != original_dex_count:
             raise ValueError(
@@ -152,10 +161,10 @@ def main() -> int:
     smali = result["smali"]
     print(f"Privacy-patched base APK: {result['input_bytes']} -> {result['output_bytes']} bytes")
     print(f"DEX split count retained: {result['dex_count']}")
-    print(f"Firebase/Google collection opt-outs enforced: {manifest['optout_metadata_count']}")
+    print(f"Known analytics/ad SDK opt-out metadata enforced: {manifest['optout_metadata_count']}")
     print(f"Ad manifest components removed: {len(manifest['removed_ad_components'])}")
     print(f"Analytics manifest components removed: {len(manifest['removed_tracking_components'])}")
-    print(f"Advertising ID permission removed: {'yes' if manifest['removed_ad_id_permission'] else 'not declared'}")
+    print(f"Sensitive permissions removed: {len(manifest['removed_sensitive_permissions'])}")
     print(f"Direct void ad/analytics SDK calls removed: {smali['total_patched']}")
     counts = ", ".join(f"{name}={count}" for name, count in smali["patched_by_sdk"].items()) or "none"
     print(f"SDK call counts: {counts}")
@@ -165,7 +174,7 @@ def main() -> int:
     if os.environ.get("GITHUB_ACTIONS") == "true":
         messages = [
             f"Privacy base APK bytes: {result['input_bytes']} -> {result['output_bytes']}",
-            f"Opt-outs: {manifest['optout_metadata_count']}; ad manifest components removed: {len(manifest['removed_ad_components'])}; tracker components removed: {len(manifest['removed_tracking_components'])}",
+            f"SDK opt-outs: {manifest['optout_metadata_count']}; sensitive permissions removed: {len(manifest['removed_sensitive_permissions'])}; ad manifest components removed: {len(manifest['removed_ad_components'])}; tracker components removed: {len(manifest['removed_tracking_components'])}",
             f"Direct void SDK calls removed: {smali['total_patched']} ({counts})",
             f"Non-void SDK calls retained: {retained}",
         ]

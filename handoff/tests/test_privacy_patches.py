@@ -7,7 +7,7 @@ import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
 
-from handoff.apply_privacy_manifest import ANALYTICS_OPTOUTS, ANDROID, patch_manifest
+from handoff.apply_privacy_manifest import ANALYTICS_OPTOUTS, ANDROID, SENSITIVE_PERMISSIONS, patch_manifest
 from handoff.audit_privacy_footprint import audit, axml_strings
 from handoff.patch_smali_sdk_calls import patch_tree
 
@@ -50,13 +50,22 @@ class PrivacyManifestTests(unittest.TestCase):
                 '<manifest xmlns:android="http://schemas.android.com/apk/res/android" '
                 'package="com.vkontakte.android">'
                 '<uses-permission android:name="com.google.android.gms.permission.AD_ID"/>'
+                '<uses-permission android:name="android.permission.READ_PHONE_STATE"/>'
+                '<uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>'
+                '<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>'
+                '<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>'
+                '<uses-permission android:name="android.permission.GET_ACCOUNTS"/>'
+                '<uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>'
                 '<application>'
                 '<activity android:name="com.unity3d.ads.AdActivity"/>'
+                '<activity android:name="com.yandex.mobile.ads.common.AdActivity"/>'
                 '<provider android:name="com.my.tracker.MyTrackerProvider"/>'
                 '<provider android:name="com.google.firebase.provider.FirebaseInitProvider"/>'
                 '<activity android:name="com.vkontakte.android.MainActivity"/>'
                 '<meta-data android:name="firebase_analytics_collection_enabled" android:value="true"/>'
                 '<meta-data android:name="firebase_analytics_collection_enabled" android:value="true"/>'
+                '<meta-data android:name="com.yandex.mobile.ads.AUTOMATIC_SDK_INITIALIZATION" android:value="true"/>'
+                '<meta-data android:name="com.yandex.mobile.ads.APPMETRICA_ANALYTICS_ENABLED" android:value="true"/>'
                 '</application></manifest>',
                 encoding="utf-8",
             )
@@ -80,8 +89,15 @@ class PrivacyManifestTests(unittest.TestCase):
                 if item.tag.endswith(("activity", "activity-alias", "service", "receiver", "provider"))
             ]
             self.assertNotIn("com.unity3d.ads.AdActivity", components)
+            self.assertNotIn("com.yandex.mobile.ads.common.AdActivity", components)
             self.assertNotIn("com.my.tracker.MyTrackerProvider", components)
             self.assertIn("com.google.firebase.provider.FirebaseInitProvider", components)
+            remaining_permissions = {
+                item.attrib.get(ANDROID + "name") for item in root
+                if item.tag.endswith("uses-permission")
+            }
+            self.assertFalse(set(SENSITIVE_PERMISSIONS) & remaining_permissions)
+            self.assertEqual(set(first["removed_sensitive_permissions"]), set(SENSITIVE_PERMISSIONS))
             self.assertIn("com.vkontakte.android.MainActivity", components)
             self.assertEqual(first["removed_duplicate_metadata"], 1)
             self.assertFalse(second["changed_metadata"])
@@ -107,6 +123,8 @@ class PrivacyManifestTests(unittest.TestCase):
                             "com.google.android.gms.permission.AD_ID",
                             "firebase_analytics_collection_enabled",
                             "com.unity3d.ads.AdActivity",
+                            "com.yandex.mobile.ads.AUTOMATIC_SDK_INITIALIZATION",
+                            "com.yandex.mobile.ads.common.AdActivity",
                         ],
                         True,
                     ),
@@ -114,13 +132,16 @@ class PrivacyManifestTests(unittest.TestCase):
                 apk.writestr(
                     "classes.dex",
                     b"Lcom/google/android/gms/ads/AdView;"
-                    b"Lcom/google/firebase/analytics/FirebaseAnalytics;",
+                    b"Lcom/google/firebase/analytics/FirebaseAnalytics;"
+                    b"Lcom/yandex/mobile/ads/common/AdActivity;",
                 )
             report = "\n".join(audit(apk_path))
             self.assertIn("Google Mobile Ads", report)
             self.assertIn("Firebase Analytics", report)
             self.assertIn("AD_ID", report)
             self.assertIn("com.unity3d.ads.AdActivity", report)
+            self.assertIn("Yandex Mobile Ads", report)
+            self.assertIn("com.yandex.mobile.ads.AUTOMATIC_SDK_INITIALIZATION", report)
             self.assertIn("firebase_analytics_collection_enabled", report)
 
 
@@ -137,6 +158,7 @@ class SmaliPatchTests(unittest.TestCase):
                 "    .locals 1\n"
                 "    invoke-static {v0}, Lcom/my/tracker/MyTracker;->trackEvent()V\n"
                 "    invoke-static {v0}, Lcom/google/android/gms/ads/MobileAds;->initialize(Landroid/content/Context;)V\n"
+                "    invoke-static {v0}, Lcom/yandex/mobile/ads/common/MobileAds;->initialize(Landroid/content/Context;)V\n"
                 "    invoke-static {v0}, Lcom/google/firebase/analytics/FirebaseAnalytics;->getInstance(Landroid/content/Context;)Lcom/google/firebase/analytics/FirebaseAnalytics;\n"
                 "    move-result-object v0\n"
                 "    return-void\n"
@@ -171,10 +193,12 @@ class SmaliPatchTests(unittest.TestCase):
             patched = app.read_text(encoding="utf-8")
             self.assertNotIn("->trackEvent()V", patched)
             self.assertNotIn("->initialize(Landroid/content/Context;)V", patched)
+            self.assertNotIn("Lcom/yandex/mobile/ads/common/MobileAds;->initialize", patched)
+            self.assertEqual(result["patched_by_sdk"]["Yandex Mobile Ads"], 1)
             self.assertIn("->getInstance(Landroid/content/Context;)", patched)
             self.assertIn("GoogleAuthUtil;->getToken", auth.read_text(encoding="utf-8"))
             self.assertIn(".method public static trackEvent()V", sdk.read_text(encoding="utf-8"))
-            self.assertEqual(result["total_patched"], 2)
+            self.assertEqual(result["total_patched"], 3)
             self.assertEqual(result["remaining_nonvoid_by_sdk"]["Firebase Analytics"], 1)
             self.assertIn("FirebaseAnalytics::getInstance", result["retained_call_names"]["Firebase Analytics"][0])
 

@@ -33,6 +33,7 @@ SDK_OWNER_PREFIXES = {
     "ironSource": ("Lcom/ironsource/",),
     "myTracker": ("Lcom/my/tracker/",),
     "Yandex Metrica": ("Lcom/yandex/metrica/",),
+    "Yandex Mobile Ads": ("Lcom/yandex/mobile/ads/",),
     "Firebase Analytics": (
         "Lcom/google/firebase/analytics/",
         "Lcom/google/android/gms/measurement/",

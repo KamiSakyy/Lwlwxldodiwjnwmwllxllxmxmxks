@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Disable known Firebase/Google collection and remove ad-only manifest entries.
+"""Disable known SDK collection and remove ad/tracking manifest entries and permissions.
 
 Run on Apktool's decoded AndroidManifest.xml before rebuilding the base APK. The
-script changes only manifest metadata/components; it never edits VK login flows.
+script changes manifest metadata, SDK components, and selected sensitive
+permissions; it never edits VK login flows.
 """
 
 from __future__ import annotations
@@ -26,6 +27,8 @@ ANALYTICS_OPTOUTS = {
     "firebase_performance_collection_deactivated": "true",
     "firebase_performance_collection_enabled": "false",
     "firebase_sessions_enabled": "false",
+    "com.yandex.mobile.ads.AUTOMATIC_SDK_INITIALIZATION": "false",
+    "com.yandex.mobile.ads.APPMETRICA_ANALYTICS_ENABLED": "false",
 }
 AD_SDK_PREFIXES = (
     "com.google.android.gms.ads.",
@@ -34,6 +37,7 @@ AD_SDK_PREFIXES = (
     "com.unity3d.",
     "com.vungle.",
     "com.ironsource.",
+    "com.yandex.mobile.ads.",
 )
 TRACKING_SDK_PREFIXES = (
     "com.my.tracker.",
@@ -44,7 +48,15 @@ TRACKING_SDK_PREFIXES = (
     "com.google.firebase.sessions.",
     "com.google.android.gms.measurement.",
 )
-AD_ID_PERMISSION = "com.google.android.gms.permission.AD_ID"
+SENSITIVE_PERMISSIONS = (
+    "com.google.android.gms.permission.AD_ID",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.READ_PHONE_NUMBERS",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.GET_ACCOUNTS",
+    "android.permission.QUERY_ALL_PACKAGES",
+)
 COMPONENT_TAGS = {"activity", "activity-alias", "service", "receiver", "provider"}
 
 
@@ -105,8 +117,9 @@ def patch_manifest(path: Path) -> dict[str, object]:
     removed_permissions: list[str] = []
     for child in list(root):
         tag = _local_name(child.tag)
-        if tag.startswith("uses-permission") and child.attrib.get(ANDROID + "name") == AD_ID_PERMISSION:
-            removed_permissions.append(AD_ID_PERMISSION)
+        permission = child.attrib.get(ANDROID + "name")
+        if tag.startswith("uses-permission") and permission in SENSITIVE_PERMISSIONS:
+            removed_permissions.append(permission)
             root.remove(child)
 
     tree.write(path, encoding="utf-8", xml_declaration=True)
@@ -114,7 +127,8 @@ def patch_manifest(path: Path) -> dict[str, object]:
         "changed_metadata": changed_metadata,
         "removed_ad_components": sorted(set(removed_ad_components)),
         "removed_tracking_components": sorted(set(removed_tracking_components)),
-        "removed_ad_id_permission": bool(removed_permissions),
+        "removed_sensitive_permissions": sorted(set(removed_permissions)),
+        "removed_ad_id_permission": "com.google.android.gms.permission.AD_ID" in removed_permissions,
         "removed_duplicate_metadata": removed_duplicate_metadata,
         "optout_metadata_count": len(ANALYTICS_OPTOUTS),
     }
@@ -129,13 +143,14 @@ def main() -> int:
     except (OSError, ValueError) as exc:
         print(f"privacy manifest patch failed: {type(exc).__name__}: {exc}", file=sys.stderr)
         return 1
-    print(f"Firebase/Google collection opt-outs enforced: {result['optout_metadata_count']}")
+    print(f"Known analytics/ad SDK opt-out metadata enforced: {result['optout_metadata_count']}")
     print("Changed metadata keys: " + (", ".join(result["changed_metadata"]) or "already correct"))
     ad_components = result["removed_ad_components"]
     tracking_components = result["removed_tracking_components"]
     print("Ad SDK manifest components removed: " + (", ".join(ad_components) or "none declared"))
     print("Analytics SDK manifest components removed: " + (", ".join(tracking_components) or "none declared"))
-    print("Advertising ID permission removed: " + ("yes" if result["removed_ad_id_permission"] else "not declared"))
+    removed_permissions = result["removed_sensitive_permissions"]
+    print("Sensitive permissions removed: " + (", ".join(removed_permissions) or "none declared"))
     print(f"Duplicate opt-out metadata entries removed: {result['removed_duplicate_metadata']}")
     return 0
 
