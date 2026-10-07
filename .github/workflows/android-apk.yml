@@ -114,6 +114,20 @@ jobs:
           test "$abis" = "arm64-v8a"
           non_android_native="$(unzip -Z1 "$apk" | grep -E '\.(so|dylib|dll)$' | grep -v '^lib/' || true)"
           test -z "$non_android_native" || { printf 'Unexpected non-Android native resources:\n%s\n' "$non_android_native"; exit 1; }
+          if unzip -Z1 "$apk" | grep -q 'libsignal_jni_testing\.so$'; then
+            echo "::error title=Unexpected Signal testing library::libsignal_jni_testing.so must not be packaged in the release APK."
+            exit 1
+          fi
+          signal_jni="$RUNNER_TEMP/libsignal_jni.so"
+          unzip -p "$apk" lib/arm64-v8a/libsignal_jni.so > "$signal_jni"
+          ndk_readelf="$ANDROID_HOME/ndk/27.2.12479018/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-readelf"
+          test -x "$ndk_readelf"
+          elf_sections="$("$ndk_readelf" --sections "$signal_jni")"
+          debug_sections="$(printf '%s\n' "$elf_sections" | grep -E '\.z?debug_[[:alnum:]_]+' || true)"
+          if [[ -n "$debug_sections" ]]; then
+            printf '::error title=Signal JNI debug sections were not stripped::%s\n' "$debug_sections"
+            exit 1
+          fi
 
       - name: Prepare versioned HANDOFF files
         run: |

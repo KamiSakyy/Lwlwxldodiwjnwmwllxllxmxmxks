@@ -32,7 +32,7 @@ WebRTC DataChannel дополнительно шифрует транспорт 
 
 ## Release-сборка и постоянная подпись
 
-Workflow [`.github/workflows/android-apk.yml`](.github/workflows/android-apk.yml) на JDK 21 запускает PQXDH/Double Ratchet round-trip unit test, затем собирает **minified release APK** и проверяет arm64 ABI, сертификат подписи и лимит source ZIP <1 MB. `versionCode` растёт с номером запуска (`versionCode=N`, `versionName=1.0.N`); релизные APK и source ZIP именуются по версии, старые файлы не удаляются. Unit-тест не заменяет проверку соединения и передачи файлов между двумя реальными Android-устройствами.
+Workflow [`.github/workflows/android-apk.yml`](.github/workflows/android-apk.yml) на JDK 21 запускает PQXDH/Double Ratchet round-trip unit test, затем собирает **minified release APK** и проверяет arm64 ABI, постоянную подпись, отсутствие Signal testing JNI и debug-секций в `libsignal_jni.so`, а также лимит source ZIP <1 MB. Следующий patch-номер вычисляется по наибольшей уже опубликованной версии APK в `HANDOFF` и увеличивается на 1 (`versionCode=N`, `versionName=1.0.N`); номер запуска GitHub Actions напрямую на версию не влияет. Релизные APK и source ZIP именуются по версии, старые файлы не удаляются. Unit-тест не заменяет проверку соединения и передачи файлов между двумя реальными Android-устройствами.
 
 Постоянный PKCS#12 keystore с alias `nox-release` и пароль хранятся в `HANDOFF` и включаются в исходный ZIP, как запросил владелец; GitHub Actions secrets не нужны. Это крайне рискованно: любой человек с доступом к репозиторию/ZIP сможет подписать поддельное обновление. Храните репозиторий и архив приватно и сделайте офлайн-резервную копию. APK содержит подпись/публичный сертификат, а не приватный ключ.
 
