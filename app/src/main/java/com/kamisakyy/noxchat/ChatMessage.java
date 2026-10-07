@@ -16,6 +16,7 @@ final class ChatMessage {
     static final int READY = 1;
     static final int SENDING = 2;
     static final int FAILED = 3;
+    static final int PAUSED = 4;
 
     String id;
     String text;

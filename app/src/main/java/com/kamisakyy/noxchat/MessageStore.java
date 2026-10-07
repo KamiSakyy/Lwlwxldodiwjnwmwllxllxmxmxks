@@ -64,7 +64,10 @@ final class MessageStore {
                 if (item != null) {
                     ChatMessage message = ChatMessage.fromJson(item);
                     if (message.status == ChatMessage.SENDING || message.status == ChatMessage.RECEIVING) {
-                        message.status = ChatMessage.FAILED;
+                        boolean resumableAttachment = message.isAttachment()
+                                && message.attachmentUri.startsWith("/")
+                                && new File(message.attachmentUri).isFile();
+                        message.status = resumableAttachment ? ChatMessage.PAUSED : ChatMessage.FAILED;
                     }
                     if (message.isAttachment() && message.status == ChatMessage.READY
                             && message.attachmentUri.startsWith("/")

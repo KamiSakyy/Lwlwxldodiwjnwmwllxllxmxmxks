@@ -788,11 +788,29 @@ public final class MainActivity extends ComponentActivity {
         details.addView(fileName);
         String sub = message.status == ChatMessage.RECEIVING ? "Получение…" :
                 message.status == ChatMessage.SENDING ? "Отправка…" :
-                        message.status == ChatMessage.FAILED ? "Передача не завершена" : sizeLabel(message.sizeBytes) + " · нажмите, чтобы открыть";
-        TextView state = text(sub, 10, message.status == ChatMessage.FAILED ? ERROR : MUTED, false);
+                        message.status == ChatMessage.PAUSED ? "Приостановлено · можно продолжить" :
+                                message.status == ChatMessage.FAILED ? "Передача не завершена" : sizeLabel(message.sizeBytes) + " · нажмите, чтобы открыть";
+        int stateColor = message.status == ChatMessage.FAILED ? ERROR :
+                message.status == ChatMessage.PAUSED ? ACCENT : MUTED;
+        TextView state = text(sub, 10, stateColor, false);
         LinearLayout.LayoutParams stateParams = new LinearLayout.LayoutParams(-1, -2);
         stateParams.topMargin = dp(3);
         details.addView(state, stateParams);
+        if (session != null && session.canControlTransfer(message)) {
+            TextView transferAction = button(message.status == ChatMessage.PAUSED ? "Продолжить передачу" : "Пауза",
+                    RAISED, ACCENT, true);
+            LinearLayout.LayoutParams actionParams = new LinearLayout.LayoutParams(-1, dp(34));
+            actionParams.topMargin = dp(7);
+            details.addView(transferAction, actionParams);
+            transferAction.setOnClickListener(v -> {
+                ChatSession current = session;
+                if (current == null) return;
+                if (message.status == ChatMessage.PAUSED) current.resumeTransfer(message.id);
+                else current.pauseTransfer(message.id);
+            });
+            transferAction.setContentDescription(message.status == ChatMessage.PAUSED
+                    ? "Продолжить передачу файла" : "Приостановить передачу файла");
+        }
         if (message.status == ChatMessage.READY && !message.attachmentUri.isEmpty()) {
             bubble.setOnClickListener(v -> openAttachment(message));
             bubble.setContentDescription(labelFor(message.kind) + ", " + message.fileName + ". Открыть");
@@ -860,6 +878,7 @@ public final class MainActivity extends ComponentActivity {
     private String statusFor(ChatMessage message) {
         if (message.status == ChatMessage.SENDING) return "Отправка";
         if (message.status == ChatMessage.RECEIVING) return "Получение";
+        if (message.status == ChatMessage.PAUSED) return "Пауза";
         if (message.status == ChatMessage.FAILED) return "Ошибка";
         return message.outgoing ? "Отправлено P2P" : "Получено";
     }

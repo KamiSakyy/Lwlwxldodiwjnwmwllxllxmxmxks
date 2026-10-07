@@ -33,8 +33,10 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 /**
  * One two-device room: Firebase REST/SSE signaling and a reliable WebRTC DataChannel.
@@ -69,6 +71,9 @@ final class ChatSession {
     private final CopyOnWriteArrayList<Listener> listeners = new CopyOnWriteArrayList<>();
     private final Map<String, Member> members = new HashMap<>();
     private final Map<String, IncomingTransfer> incomingTransfers = new ConcurrentHashMap<>();
+    private final Map<String, OutgoingTransfer> outgoingTransfers = new ConcurrentHashMap<>();
+    private final Map<String, ResumeRequest> resumeRequests = new ConcurrentHashMap<>();
+    private final Map<String, String> pendingTransferControls = new ConcurrentHashMap<>();
     private final ArrayList<IceCandidate> pendingRemoteCandidates = new ArrayList<>();
     private final Map<String, ArrayList<IceCandidate>> pendingRemoteByEpoch = new HashMap<>();
     private final ArrayList<IceCandidate> pendingLocalCandidates = new ArrayList<>();
@@ -84,10 +89,10 @@ final class ChatSession {
     private String remoteName = "";
     private String peerEpoch;
     private PeerConnection peerConnection;
-    private DataChannel dataChannel;
+    private volatile DataChannel dataChannel;
     private boolean localDescriptionPublished;
     private boolean remoteDescriptionSet;
-    private boolean closed;
+    private volatile boolean closed;
     private boolean connected;
     private boolean reconnectQueued;
     private int joinRetryCount;
@@ -170,13 +175,190 @@ final class ChatSession {
                 emitError("Сначала дождитесь подключения собеседника, затем отправьте файл.");
                 return;
             }
-            final DataChannel channel = dataChannel;
-            outgoingFiles.execute(() -> prepareAndSendFile(source, forcedKind, channel));
+            try {
+                outgoingFiles.execute(() -> prepareAndSendFile(source, forcedKind));
+            } catch (java.util.concurrent.RejectedExecutionException ignored) {
+                emitError("Комната уже отключена.");
+            }
         });
+    }
+
+    void pauseTransfer(String id) {
+        if (id == null || id.isEmpty()) return;
+        OutgoingTransfer outgoing = outgoingTransfers.get(id);
+        if (outgoing != null) {
+            synchronized (outgoing) {
+                outgoing.paused = true;
+                outgoing.notifyAll();
+            }
+            setTransferStatus(outgoing.message, ChatMessage.PAUSED);
+            sendTransferControl("pause", id);
+            return;
+        }
+        IncomingTransfer incoming = incomingTransfers.get(id);
+        if (incoming != null) {
+            incoming.message.status = ChatMessage.PAUSED;
+            messageStore.update(incoming.message);
+            emitMessage(incoming.message);
+            sendTransferControl("pause", id);
+        }
+    }
+
+    void resumeTransfer(String id) {
+        if (id == null || id.isEmpty()) return;
+        IncomingTransfer incoming = incomingTransfers.get(id);
+        if (incoming == null) incoming = restoreIncomingTransfer(id);
+        if (incoming != null) {
+            incoming.message.status = ChatMessage.RECEIVING;
+            messageStore.update(incoming.message);
+            emitMessage(incoming.message);
+            sendTransferControl("resume", id);
+            return;
+        }
+        OutgoingTransfer outgoing = outgoingTransfers.get(id);
+        if (outgoing == null) outgoing = restoreOutgoingTransfer(id);
+        if (outgoing != null) resumeOutgoingTransfer(outgoing);
+    }
+
+    boolean canControlTransfer(ChatMessage message) {
+        if (message == null || !message.isAttachment()) return false;
+        if (message.status == ChatMessage.PAUSED) return true;
+        if (message.outgoing) {
+            OutgoingTransfer transfer = outgoingTransfers.get(message.id);
+            return transfer != null && !transfer.completed;
+        }
+        return incomingTransfers.containsKey(message.id) && message.status == ChatMessage.RECEIVING;
     }
 
     void close(boolean removePresence) {
         actor.post(() -> closeOnActor(removePresence));
+    }
+
+    private OutgoingTransfer restoreOutgoingTransfer(String id) {
+        for (ChatMessage message : messageStore.all()) {
+            if (!id.equals(message.id) || !message.outgoing || !message.isAttachment()
+                    || (message.status != ChatMessage.PAUSED && message.status != ChatMessage.SENDING)) continue;
+            File file = new File(message.attachmentUri);
+            if (!file.isFile() || file.length() != message.sizeBytes) return null;
+            OutgoingTransfer restored = new OutgoingTransfer(file, message);
+            OutgoingTransfer existing = outgoingTransfers.putIfAbsent(id, restored);
+            return existing == null ? restored : existing;
+        }
+        return null;
+    }
+
+    private IncomingTransfer restoreIncomingTransfer(String id) {
+        IncomingTransfer existing = incomingTransfers.get(id);
+        if (existing != null) return existing;
+        for (ChatMessage message : messageStore.all()) {
+            if (!id.equals(message.id) || message.outgoing || !message.isAttachment()
+                    || (message.status != ChatMessage.PAUSED && message.status != ChatMessage.RECEIVING)) continue;
+            File file = new File(message.attachmentUri);
+            if (!file.isFile() || file.length() > message.sizeBytes) return null;
+            try {
+                long received = file.length();
+                BufferedOutputStream stream = new BufferedOutputStream(
+                        new FileOutputStream(file, true), CHUNK_BYTES);
+                IncomingTransfer restored = new IncomingTransfer(file, stream, message.sizeBytes, message);
+                restored.received = received;
+                restored.nextChunk = (int) ((received + CHUNK_BYTES - 1) / CHUNK_BYTES);
+                restored.message.status = ChatMessage.PAUSED;
+                messageStore.update(restored.message);
+                IncomingTransfer raced = incomingTransfers.putIfAbsent(id, restored);
+                if (raced != null) {
+                    try { stream.close(); } catch (Exception ignored) { }
+                    return raced;
+                }
+                return restored;
+            } catch (Exception ex) {
+                emitError("Не удалось восстановить файл: " + friendly(ex));
+                return null;
+            }
+        }
+        return null;
+    }
+
+    private void resumeOutgoingTransfer(OutgoingTransfer transfer) {
+        synchronized (transfer) {
+            transfer.paused = false;
+            transfer.notifyAll();
+            if (transfer.running) {
+                setTransferStatus(transfer.message, ChatMessage.SENDING);
+                return;
+            }
+            transfer.running = true;
+        }
+        setTransferStatus(transfer.message, ChatMessage.SENDING);
+        try {
+            outgoingFiles.execute(() -> transmitTransfer(transfer));
+        } catch (java.util.concurrent.RejectedExecutionException ex) {
+            synchronized (transfer) { transfer.running = false; transfer.paused = true; }
+            setTransferStatus(transfer.message, ChatMessage.PAUSED);
+        }
+    }
+
+    private void setTransferStatus(ChatMessage message, int status) {
+        message.status = status;
+        messageStore.update(message);
+        emitMessage(message);
+    }
+
+    private void sendTransferControl(String type, String id) {
+        actor.post(() -> {
+            if (!isChannelOpen()) {
+                pendingTransferControls.put(id, type);
+                return;
+            }
+            JSONObject packet = new JSONObject();
+            put(packet, "t", type);
+            put(packet, "id", id);
+            if (!sendPacket(dataChannel, packet)) pendingTransferControls.put(id, type);
+        });
+    }
+
+    private void flushPendingTransferControls() {
+        if (!isChannelOpen()) return;
+        for (Map.Entry<String, String> entry : pendingTransferControls.entrySet()) {
+            JSONObject packet = new JSONObject();
+            put(packet, "t", entry.getValue());
+            put(packet, "id", entry.getKey());
+            if (sendPacket(dataChannel, packet)) pendingTransferControls.remove(entry.getKey(), entry.getValue());
+        }
+    }
+
+    private void handleRemoteTransferControl(String type, String id) {
+        if (id == null || id.isEmpty()) return;
+        if ("pause".equals(type)) {
+            OutgoingTransfer transfer = outgoingTransfers.get(id);
+            if (transfer == null) transfer = restoreOutgoingTransfer(id);
+            if (transfer != null) {
+                synchronized (transfer) {
+                    transfer.paused = true;
+                    transfer.notifyAll();
+                }
+                setTransferStatus(transfer.message, ChatMessage.PAUSED);
+                return;
+            }
+            IncomingTransfer incoming = incomingTransfers.get(id);
+            if (incoming != null) {
+                incoming.message.status = ChatMessage.PAUSED;
+                messageStore.update(incoming.message);
+                emitMessage(incoming.message);
+            }
+        } else if ("resume".equals(type)) {
+            OutgoingTransfer transfer = outgoingTransfers.get(id);
+            if (transfer == null) transfer = restoreOutgoingTransfer(id);
+            if (transfer != null) {
+                resumeOutgoingTransfer(transfer);
+                return;
+            }
+            IncomingTransfer incoming = incomingTransfers.get(id);
+            if (incoming != null) {
+                incoming.message.status = ChatMessage.RECEIVING;
+                messageStore.update(incoming.message);
+                emitMessage(incoming.message);
+            }
+        }
     }
 
     private void signInAndJoin() {
@@ -670,6 +852,7 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
                         connected = true;
                         reconnectQueued = false;
                         notifyState("connected", "Зашифрованный P2P-канал активен");
+                        flushPendingTransferControls();
                     } else if (channel.state() == DataChannel.State.CLOSED) {
                         connected = false;
                         notifyState("reconnecting", "Канал закрыт · ожидаем восстановления");
@@ -680,6 +863,10 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
             @Override public void onMessage(DataChannel.Buffer buffer) {
                 if (buffer == null || buffer.data == null) return;
                 ByteBuffer bytes = buffer.data;
+                if (bytes.remaining() > CHUNK_BYTES * 2) {
+                    actor.post(() -> emitError("Получен чрезмерно большой пакет, он отброшен."));
+                    return;
+                }
                 byte[] copy = new byte[bytes.remaining()];
                 bytes.get(copy);
                 String packet = new String(copy, StandardCharsets.UTF_8);
@@ -693,6 +880,7 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
         if (channel.state() == DataChannel.State.OPEN) {
             connected = true;
             notifyState("connected", "Зашифрованный P2P-канал активен");
+            flushPendingTransferControls();
         }
     }
 
@@ -702,6 +890,16 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
             String type = packet.optString("t", "");
             if ("file".equals(type) || "chunk".equals(type) || "done".equals(type)) {
                 incomingFiles.execute(() -> receiveFilePacket(packet));
+            } else if ("resume_at".equals(type)) {
+                String id = packet.optString("id", "");
+                ResumeRequest request = resumeRequests.remove(id);
+                if (request != null) {
+                    request.nextChunk = Math.max(0, packet.optInt("i", 0));
+                    request.ready.countDown();
+                }
+            } else if ("pause".equals(type) || "resume".equals(type)) {
+                String id = packet.optString("id", "");
+                actor.post(() -> handleRemoteTransferControl(type, id));
             } else if ("text".equals(type)) {
                 actor.post(() -> {
                     String id = packet.optString("id", UUID.randomUUID().toString());
@@ -730,74 +928,129 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
         try {
             if ("file".equals(type)) {
                 long size = packet.optLong("size", -1L);
-                if (size < 0 || size > MAX_FILE_BYTES) {
+                if (size <= 0 || size > MAX_FILE_BYTES) {
                     actor.post(() -> emitError("Вложение отклонено: допустимый размер — до 150 МБ."));
                     return;
                 }
+                int totalChunks = (int) ((size + CHUNK_BYTES - 1) / CHUNK_BYTES);
+                for (ChatMessage saved : messageStore.all()) {
+                    if (id.equals(saved.id) && !saved.outgoing && saved.status == ChatMessage.READY) {
+                        sendResumeAt(id, totalChunks);
+                        return;
+                    }
+                }
+
+                IncomingTransfer transfer = incomingTransfers.get(id);
+                if (transfer == null) transfer = restoreIncomingTransfer(id);
+                if (transfer != null) {
+                    if (transfer.expectedBytes != size) {
+                        actor.post(() -> emitError("Повторная передача не совпадает с исходным файлом."));
+                        return;
+                    }
+                    transfer.message.status = ChatMessage.RECEIVING;
+                    messageStore.update(transfer.message);
+                    emitMessage(transfer.message);
+                    sendResumeAt(id, transfer.nextChunk);
+                    return;
+                }
+
                 File directory = new File(context.getFilesDir(), "media/received");
                 if (!directory.exists() && !directory.mkdirs()) throw new java.io.IOException("Не удалось создать папку вложений");
                 File file = new File(directory, UUID.randomUUID().toString() + ".bin");
-                BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(file));
+                BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(file), CHUNK_BYTES);
                 String name = safeFileName(packet.optString("name", "attachment"));
                 String mime = packet.optString("mime", "application/octet-stream");
+                if (mime.length() > 128) mime = "application/octet-stream";
                 String kind = packet.optString("kind", ChatMessage.FILE);
-                ChatMessage message = new ChatMessage(id, "", kind, name, mime, "", false,
-                        packet.optLong("time", System.currentTimeMillis()), size, ChatMessage.RECEIVING);
-                IncomingTransfer transfer = new IncomingTransfer(file, stream, size, message);
+                if (!isAttachmentKind(kind)) kind = ChatMessage.FILE;
+                ChatMessage message = new ChatMessage(id, "", kind, name, mime,
+                        file.getAbsolutePath(), false, packet.optLong("time", System.currentTimeMillis()),
+                        size, ChatMessage.RECEIVING);
+                transfer = new IncomingTransfer(file, stream, size, message);
                 incomingTransfers.put(id, transfer);
-                actor.post(() -> {
-                    if (closed) return;
-                    messageStore.add(message);
-                    emitMessage(message);
-                });
+                messageStore.add(message);
+                emitMessage(message);
+                sendResumeAt(id, 0);
             } else if ("chunk".equals(type)) {
                 IncomingTransfer transfer = incomingTransfers.get(id);
                 if (transfer == null || transfer.stream == null) return;
                 int index = packet.optInt("i", -1);
-                if (index != transfer.nextChunk) throw new java.io.IOException("Invalid chunk order");
-                byte[] bytes = Base64.decode(packet.optString("d", ""), Base64.NO_WRAP);
-                if (transfer.received + bytes.length > transfer.expectedBytes ||
+                if (index < transfer.nextChunk) return;
+                if (index > transfer.nextChunk) {
+                    sendResumeAt(id, transfer.nextChunk);
+                    return;
+                }
+                String encoded = packet.optString("d", "");
+                if (encoded.length() > ((CHUNK_BYTES + 2) / 3) * 4) {
+                    throw new java.io.IOException("Chunk exceeds the allowed size");
+                }
+                byte[] bytes = Base64.decode(encoded, Base64.NO_WRAP);
+                if (bytes.length == 0 || bytes.length > CHUNK_BYTES ||
+                        transfer.received + bytes.length > transfer.expectedBytes ||
                         transfer.received + bytes.length > MAX_FILE_BYTES) {
                     throw new java.io.IOException("Incoming file exceeded its declared size");
                 }
                 transfer.stream.write(bytes);
+                transfer.stream.flush();
                 transfer.received += bytes.length;
                 transfer.nextChunk++;
             } else if ("done".equals(type)) {
-                IncomingTransfer transfer = incomingTransfers.remove(id);
-                if (transfer == null) return;
-                transfer.stream.close();
-                if (transfer.received != transfer.expectedBytes) {
-                    transfer.file.delete();
-                    actor.post(() -> emitError("Передача файла прервалась: размер не совпал."));
+                IncomingTransfer transfer = incomingTransfers.get(id);
+                if (transfer == null) {
+                    sendAck(id);
                     return;
                 }
+                if (transfer.stream != null) {
+                    transfer.stream.flush();
+                    transfer.stream.close();
+                    transfer.stream = null;
+                }
+                if (transfer.received != transfer.expectedBytes) {
+                    transfer.message.status = ChatMessage.PAUSED;
+                    messageStore.update(transfer.message);
+                    incomingTransfers.remove(id, transfer);
+                    emitMessage(transfer.message);
+                    sendResumeAt(id, transfer.nextChunk);
+                    return;
+                }
+                incomingTransfers.remove(id, transfer);
                 transfer.message.attachmentUri = transfer.file.getAbsolutePath();
                 transfer.message.status = ChatMessage.READY;
-                actor.post(() -> {
-                    if (closed) return;
-                    messageStore.update(transfer.message);
-                    emitMessage(transfer.message);
-                    sendAck(id);
-                });
+                messageStore.update(transfer.message);
+                emitMessage(transfer.message);
+                sendAck(id);
             }
         } catch (Exception ex) {
             IncomingTransfer transfer = incomingTransfers.remove(id);
             if (transfer != null) {
                 try { if (transfer.stream != null) transfer.stream.close(); } catch (Exception ignored) { }
-                transfer.file.delete();
-                transfer.message.status = ChatMessage.FAILED;
-                actor.post(() -> {
-                    if (!closed) {
-                        messageStore.update(transfer.message);
-                        emitMessage(transfer.message);
-                    }
-                });
+                transfer.stream = null;
+                transfer.message.status = ChatMessage.PAUSED;
+                messageStore.update(transfer.message);
+                emitMessage(transfer.message);
             }
+            actor.post(() -> {
+                if (!closed) emitError("Передача файла приостановлена: " + friendly(ex));
+            });
         }
     }
 
-    private void prepareAndSendFile(Uri source, String forcedKind, DataChannel channel) {
+    private boolean isAttachmentKind(String kind) {
+        return ChatMessage.PHOTO.equals(kind) || ChatMessage.VIDEO.equals(kind)
+                || ChatMessage.CIRCLE.equals(kind) || ChatMessage.VOICE.equals(kind)
+                || ChatMessage.AUDIO.equals(kind) || ChatMessage.FILE.equals(kind);
+    }
+
+    private void sendResumeAt(String id, int nextChunk) {
+        if (!isChannelOpen()) return;
+        JSONObject response = new JSONObject();
+        put(response, "t", "resume_at");
+        put(response, "id", id);
+        put(response, "i", nextChunk);
+        sendPacket(dataChannel, response);
+    }
+
+    private void prepareAndSendFile(Uri source, String forcedKind) {
         String name = queryName(source);
         String mime;
         try { mime = context.getContentResolver().getType(source); }
@@ -805,7 +1058,6 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
         if (mime == null || mime.isEmpty()) mime = guessMime(name);
         String kind = chooseKind(forcedKind, mime);
         File copy = null;
-        ChatMessage message = null;
         try {
             File directory = new File(context.getFilesDir(), "media/sent");
             if (!directory.exists() && !directory.mkdirs()) throw new java.io.IOException("Не удалось создать папку отправки");
@@ -825,63 +1077,165 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
                 output.flush();
             }
             if (total == 0) throw new java.io.IOException("Выбран пустой файл");
+            if (closed) throw new java.io.IOException("Комната уже отключена");
             String id = UUID.randomUUID().toString();
-            message = new ChatMessage(id, "", kind, safeFileName(name), mime,
+            ChatMessage message = new ChatMessage(id, "", kind, safeFileName(name), mime,
                     copy.getAbsolutePath(), true, System.currentTimeMillis(), total, ChatMessage.SENDING);
-            ChatMessage outgoing = message;
-            actor.post(() -> {
-                if (closed) return;
-                messageStore.add(outgoing);
-                emitMessage(outgoing);
-            });
-
-            JSONObject start = new JSONObject();
-            start.put("t", "file");
-            start.put("id", id);
-            start.put("name", outgoing.fileName);
-            start.put("mime", mime);
-            start.put("kind", kind);
-            start.put("size", total);
-            start.put("time", outgoing.timeMs);
-            if (!sendPacket(channel, start)) throw new java.io.IOException("P2P data channel is closed");
-
-            try (InputStream input = new BufferedInputStream(new FileInputStream(copy))) {
-                byte[] buffer = new byte[CHUNK_BYTES];
-                int read;
-                int index = 0;
-                while ((read = input.read(buffer)) != -1) {
-                    if (closed || channel.state() != DataChannel.State.OPEN) throw new java.io.IOException("P2P-соединение потеряно");
-                    waitForCapacity(channel);
-                    byte[] chunk = new byte[read];
-                    System.arraycopy(buffer, 0, chunk, 0, read);
-                    JSONObject packet = new JSONObject();
-                    packet.put("t", "chunk");
-                    packet.put("id", id);
-                    packet.put("i", index++);
-                    packet.put("d", Base64.encodeToString(chunk, Base64.NO_WRAP));
-                    if (!sendPacket(channel, packet)) throw new java.io.IOException("Не удалось передать часть файла");
-                }
-            }
-            JSONObject end = new JSONObject();
-            end.put("t", "done");
-            end.put("id", id);
-            if (!sendPacket(channel, end)) throw new java.io.IOException("Не удалось завершить передачу файла");
-            // Keep the local bubble in "sending" state until the receiver confirms the file.
+            OutgoingTransfer transfer = new OutgoingTransfer(copy, message);
+            outgoingTransfers.put(id, transfer);
+            messageStore.add(message);
+            emitMessage(message);
+            resumeOutgoingTransfer(transfer);
         } catch (Exception ex) {
-            if (message != null) {
-                message.status = ChatMessage.FAILED;
-                ChatMessage failed = message;
-                actor.post(() -> {
-                    if (!closed) {
-                        messageStore.update(failed);
-                        emitMessage(failed);
+            if (copy != null && !outgoingTransfers.containsKey(findTransferId(copy))) copy.delete();
+            emitError("Файл не отправлен: " + friendly(ex));
+        }
+    }
+
+    private String findTransferId(File file) {
+        for (Map.Entry<String, OutgoingTransfer> entry : outgoingTransfers.entrySet()) {
+            if (entry.getValue().file.equals(file)) return entry.getKey();
+        }
+        return "";
+    }
+
+    private void transmitTransfer(OutgoingTransfer transfer) {
+        boolean completed = false;
+        try {
+            int totalChunks = (int) ((transfer.message.sizeBytes + CHUNK_BYTES - 1) / CHUNK_BYTES);
+            int noAckAttempts = 0;
+            while (!closed && !transfer.cancelled) {
+                waitUntilResumed(transfer);
+                DataChannel channel = awaitOpenChannel(transfer);
+                ResumeRequest request = new ResumeRequest();
+                resumeRequests.put(transfer.message.id, request);
+                JSONObject start = new JSONObject();
+                put(start, "t", "file");
+                put(start, "id", transfer.message.id);
+                put(start, "name", transfer.message.fileName);
+                put(start, "mime", transfer.message.mimeType);
+                put(start, "kind", transfer.message.kind);
+                put(start, "size", transfer.message.sizeBytes);
+                put(start, "time", transfer.message.timeMs);
+                if (!sendPacket(channel, start)) {
+                    resumeRequests.remove(transfer.message.id, request);
+                    continue;
+                }
+                boolean gotOffset;
+                try {
+                    gotOffset = request.ready.await(15, TimeUnit.SECONDS);
+                } finally {
+                    resumeRequests.remove(transfer.message.id, request);
+                }
+                if (!gotOffset) {
+                    if (++noAckAttempts >= 10) throw new java.io.IOException("Собеседник не подтвердил продолжение передачи");
+                    continue;
+                }
+                noAckAttempts = 0;
+                int nextChunk = Math.min(totalChunks, request.nextChunk);
+                transfer.nextChunk = nextChunk;
+                boolean reconnect = false;
+                try (InputStream input = new BufferedInputStream(new FileInputStream(transfer.file))) {
+                    skipFully(input, Math.min(transfer.message.sizeBytes, (long) nextChunk * CHUNK_BYTES));
+                    int index = nextChunk;
+                    byte[] buffer = new byte[CHUNK_BYTES];
+                    while (index < totalChunks) {
+                        waitUntilResumed(transfer);
+                        if (closed || transfer.cancelled) throw new java.io.IOException("Комната отключена");
+                        DataChannel active = awaitOpenChannel(transfer);
+                        if (active != channel) {
+                            reconnect = true;
+                            break;
+                        }
+                        try {
+                            waitForCapacity(channel);
+                        } catch (java.io.IOException ex) {
+                            if (channel.state() != DataChannel.State.OPEN && !closed) {
+                                reconnect = true;
+                                break;
+                            }
+                            throw ex;
+                        }
+                        waitUntilResumed(transfer);
+                        if (channel.state() != DataChannel.State.OPEN) {
+                            reconnect = true;
+                            break;
+                        }
+                        int read = input.read(buffer);
+                        if (read < 0) throw new java.io.IOException("Исходный файл неожиданно закончился");
+                        byte[] chunk = new byte[read];
+                        System.arraycopy(buffer, 0, chunk, 0, read);
+                        JSONObject packet = new JSONObject();
+                        put(packet, "t", "chunk");
+                        put(packet, "id", transfer.message.id);
+                        put(packet, "i", index);
+                        put(packet, "d", Base64.encodeToString(chunk, Base64.NO_WRAP));
+                        if (!sendPacket(channel, packet)) {
+                            reconnect = true;
+                            break;
+                        }
+                        transfer.nextChunk = ++index;
                     }
-                });
+                }
+                if (reconnect) continue;
+                waitUntilResumed(transfer);
+                DataChannel active = awaitOpenChannel(transfer);
+                if (active != channel) continue;
+                JSONObject end = new JSONObject();
+                put(end, "t", "done");
+                put(end, "id", transfer.message.id);
+                if (!sendPacket(channel, end)) continue;
+                completed = true;
+                transfer.completed = true;
+                messageStore.update(transfer.message);
+                emitMessage(transfer.message);
+                return;
             }
-            if (copy != null && (message == null || message.status == ChatMessage.FAILED)) copy.delete();
-            actor.post(() -> {
-                if (!closed) emitError("Файл не отправлен: " + friendly(ex));
-            });
+            throw new java.io.IOException("Комната отключена");
+        } catch (InterruptedException ex) {
+            Thread.currentThread().interrupt();
+        } catch (Exception ex) {
+            if (!closed) emitError("Передача приостановлена. Нажмите «Продолжить», чтобы возобновить её: " + friendly(ex));
+        } finally {
+            synchronized (transfer) {
+                transfer.running = false;
+                transfer.notifyAll();
+            }
+            if (!completed && transfer.message.status != ChatMessage.READY) {
+                setTransferStatus(transfer.message, ChatMessage.PAUSED);
+            }
+        }
+    }
+
+    private void waitUntilResumed(OutgoingTransfer transfer) throws InterruptedException, java.io.IOException {
+        synchronized (transfer) {
+            while (transfer.paused && !closed && !transfer.cancelled) transfer.wait(500L);
+        }
+        if (closed || transfer.cancelled) throw new java.io.IOException("Комната отключена");
+    }
+
+    private DataChannel awaitOpenChannel(OutgoingTransfer transfer) throws InterruptedException, java.io.IOException {
+        long deadline = System.currentTimeMillis() + 10L * 60L * 1000L;
+        while (!closed && !transfer.cancelled) {
+            waitUntilResumed(transfer);
+            DataChannel channel = dataChannel;
+            if (channel != null && channel.state() == DataChannel.State.OPEN) return channel;
+            if (System.currentTimeMillis() >= deadline) throw new java.io.IOException("Нет P2P-соединения более 10 минут");
+            Thread.sleep(200L);
+        }
+        throw new java.io.IOException("Комната отключена");
+    }
+
+    private void skipFully(InputStream input, long bytes) throws java.io.IOException {
+        long skipped = 0L;
+        while (skipped < bytes) {
+            long count = input.skip(bytes - skipped);
+            if (count > 0) {
+                skipped += count;
+            } else {
+                if (input.read() < 0) throw new java.io.IOException("Не удалось перейти к сохранённому фрагменту файла");
+                skipped++;
+            }
         }
     }
 
@@ -911,9 +1265,11 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
     private void markDelivered(String id) {
         if (id == null || id.isEmpty()) return;
         for (ChatMessage message : messageStore.all()) {
-            if (message.id.equals(id) && message.outgoing && message.status == ChatMessage.SENDING) {
+            if (message.id.equals(id) && message.outgoing &&
+                    (message.status == ChatMessage.SENDING || (message.isAttachment() && message.status == ChatMessage.PAUSED))) {
                 message.status = ChatMessage.READY;
                 messageStore.update(message);
+                outgoingTransfers.remove(id);
                 emitMessage(message);
                 return;
             }
@@ -984,11 +1340,22 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
         resetPeer();
         for (IncomingTransfer transfer : incomingTransfers.values()) {
             try { if (transfer.stream != null) transfer.stream.close(); } catch (Exception ignored) { }
-            transfer.file.delete();
-            transfer.message.status = ChatMessage.FAILED;
+            transfer.stream = null;
+            transfer.message.status = ChatMessage.PAUSED;
             messageStore.update(transfer.message);
+            emitMessage(transfer.message);
         }
         incomingTransfers.clear();
+        for (OutgoingTransfer transfer : outgoingTransfers.values()) {
+            synchronized (transfer) {
+                transfer.cancelled = true;
+                transfer.notifyAll();
+            }
+            if (!transfer.completed) setTransferStatus(transfer.message, ChatMessage.PAUSED);
+        }
+        for (ResumeRequest request : resumeRequests.values()) request.ready.countDown();
+        resumeRequests.clear();
+        pendingTransferControls.clear();
         if (removePresence && uid != null) {
             network.execute(() -> {
                 try { database.delete(roomPath("members/" + uid)); } catch (Exception ignored) { }
@@ -1158,16 +1525,35 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
 
     private static final class IncomingTransfer {
         final File file;
-        final BufferedOutputStream stream;
+        volatile BufferedOutputStream stream;
         final long expectedBytes;
         final ChatMessage message;
-        long received;
-        int nextChunk;
+        volatile long received;
+        volatile int nextChunk;
         IncomingTransfer(File file, BufferedOutputStream stream, long expectedBytes, ChatMessage message) {
             this.file = file;
             this.stream = stream;
             this.expectedBytes = expectedBytes;
             this.message = message;
         }
+    }
+
+    private static final class OutgoingTransfer {
+        final File file;
+        final ChatMessage message;
+        volatile int nextChunk;
+        volatile boolean paused;
+        volatile boolean running;
+        volatile boolean completed;
+        volatile boolean cancelled;
+        OutgoingTransfer(File file, ChatMessage message) {
+            this.file = file;
+            this.message = message;
+        }
+    }
+
+    private static final class ResumeRequest {
+        final CountDownLatch ready = new CountDownLatch(1);
+        volatile int nextChunk;
     }
 }
