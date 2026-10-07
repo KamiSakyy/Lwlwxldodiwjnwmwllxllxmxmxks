@@ -64,7 +64,7 @@ final class ChatSession {
     private final Handler main = new Handler(android.os.Looper.getMainLooper());
     private final HandlerThread actorThread = new HandlerThread("nox-room-actor");
     private final ExecutorService network = Executors.newSingleThreadExecutor(r -> new Thread(r, "nox-rtdb-rest"));
-    private final ExecutorService outgoingFiles = Executors.newSingleThreadExecutor(r -> new Thread(r, "nox-file-send"));
+    private final ExecutorService outgoingFiles = Executors.newFixedThreadPool(3, r -> new Thread(r, "nox-file-send"));
     private final ExecutorService incomingFiles = Executors.newSingleThreadExecutor(r -> new Thread(r, "nox-file-receive"));
     private final CopyOnWriteArrayList<Listener> listeners = new CopyOnWriteArrayList<>();
     private final Map<String, Member> members = new HashMap<>();

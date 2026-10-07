@@ -1,10 +1,7 @@
 # HANDOFF
 
-Здесь находятся результаты Android-сборки из GitHub Actions. Workflow `.github/workflows/android-apk.yml` собирает minified APK с Android SDK 36 и ABI `arm64-v8a`, создаёт архив исходников, загружает оба файла как Actions artifact и публикует их в этой папке.
+Здесь сохраняются APK и source ZIP по версиям; release workflow не удаляет предыдущие файлы. Сейчас сохранён предыдущий ARM64 debug APK. Новые сборки workflow — minified **release APK** с монотонно растущим `versionCode` и одной постоянной подписью.
 
-Ожидаемые имена:
+Для release-подписи владелец должен один раз добавить GitHub Actions secrets. См. [`RELEASE-SIGNING.md`](RELEASE-SIGNING.md). Публичный сертификат и SHA-256 fingerprint находятся рядом. Приватный `.p12` и пароль остаются локальными ignored-файлами и не попадают в Git/source ZIP/APK.
 
-- `Nox-P2P-ARM64-API36-debug.apk` — устанавливаемый debug APK только для arm64;
-- `Nox-P2P-Android-sources.zip` — исходники Android-проекта.
-
-APK не собирается в Arena и не подменяется заглушкой. Он появляется после успешного GitHub Actions run.
+Первый release APK появится после добавления трёх secrets и успешного запуска workflow. Старый debug APK сохранён, но не может быть обновлён release APK из-за другого application ID и ключа подписи.

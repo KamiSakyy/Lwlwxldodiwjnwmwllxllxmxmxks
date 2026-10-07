@@ -9,6 +9,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.GradientDrawable;
@@ -28,6 +30,7 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 import android.widget.ScrollView;
@@ -51,6 +54,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /** Black-theme Android chat UI and media capture/picker. */
 public final class MainActivity extends ComponentActivity {
@@ -86,6 +91,7 @@ public final class MainActivity extends ComponentActivity {
     private ChatConnectionService service;
     private ChatSession session;
     private final Handler uiHandler = new Handler(Looper.getMainLooper());
+    private final ExecutorService thumbnailWorker = Executors.newFixedThreadPool(2);
     private boolean bound;
     private String roomCode = "";
     private String peerName = "";
@@ -159,11 +165,22 @@ public final class MainActivity extends ComponentActivity {
 
         documentPicker = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
             if (result.getResultCode() == RESULT_OK && result.getData() != null) {
-                Uri uri = result.getData().getData();
-                if (uri != null) {
-                    try { getContentResolver().takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION); }
-                    catch (Exception ignored) { }
-                    sendMedia(uri, pendingMediaKind);
+                Intent data = result.getData();
+                ClipData clips = data.getClipData();
+                if (clips != null && clips.getItemCount() > 0) {
+                    for (int i = 0; i < clips.getItemCount(); i++) {
+                        Uri uri = clips.getItemAt(i).getUri();
+                        if (uri != null) {
+                            persistReadPermission(uri);
+                            sendMedia(uri, pendingMediaKind);
+                        }
+                    }
+                } else {
+                    Uri uri = data.getData();
+                    if (uri != null) {
+                        persistReadPermission(uri);
+                        sendMedia(uri, pendingMediaKind);
+                    }
                 }
             }
             pendingMediaKind = null;
@@ -223,6 +240,7 @@ public final class MainActivity extends ComponentActivity {
 
     @Override protected void onDestroy() {
         stopVoiceRecording(false);
+        thumbnailWorker.shutdownNow();
         uiHandler.removeCallbacksAndMessages(null);
         if (session != null) session.removeListener(chatListener);
         if (bound) {
@@ -559,6 +577,7 @@ public final class MainActivity extends ComponentActivity {
         Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         intent.addCategory(Intent.CATEGORY_OPENABLE);
         intent.setType(mimeType);
+        intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION);
         documentPicker.launch(intent);
     }
@@ -572,6 +591,11 @@ public final class MainActivity extends ComponentActivity {
         } catch (Exception ex) {
             toast("На устройстве нет доступной камеры для записи видео.");
         }
+    }
+
+    private void persistReadPermission(Uri uri) {
+        try { getContentResolver().takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION); }
+        catch (Exception ignored) { }
     }
 
     private void sendMedia(Uri uri, String kind) {
@@ -735,6 +759,10 @@ public final class MainActivity extends ComponentActivity {
     }
 
     private void addAttachmentContent(LinearLayout bubble, ChatMessage message) {
+        if (ChatMessage.PHOTO.equals(message.kind) && message.status == ChatMessage.READY &&
+                message.attachmentUri != null && message.attachmentUri.startsWith("/")) {
+            addImagePreview(bubble, message);
+        }
         LinearLayout fileRow = new LinearLayout(this);
         fileRow.setGravity(Gravity.CENTER_VERTICAL);
         bubble.addView(fileRow, new LinearLayout.LayoutParams(-1, -2));
@@ -763,6 +791,46 @@ public final class MainActivity extends ComponentActivity {
         if (message.status == ChatMessage.READY && !message.attachmentUri.isEmpty()) {
             bubble.setOnClickListener(v -> openAttachment(message));
             bubble.setContentDescription(labelFor(message.kind) + ", " + message.fileName + ". Открыть");
+        }
+    }
+
+    private void addImagePreview(LinearLayout bubble, ChatMessage message) {
+        ImageView preview = new ImageView(this);
+        preview.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        preview.setBackground(rounded(RAISED, dp(14)));
+        preview.setClipToOutline(true);
+        preview.setContentDescription("Предпросмотр изображения " + message.fileName);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(dp(232), dp(176));
+        params.bottomMargin = dp(8);
+        bubble.addView(preview, 0, params);
+        String tag = message.id + "|" + message.attachmentUri;
+        preview.setTag(tag);
+        try {
+            thumbnailWorker.execute(() -> {
+                Bitmap bitmap = decodeThumbnail(message.attachmentUri);
+                if (bitmap == null) return;
+                preview.post(() -> {
+                    if (tag.equals(preview.getTag())) preview.setImageBitmap(bitmap);
+                    else bitmap.recycle();
+                });
+            });
+        } catch (java.util.concurrent.RejectedExecutionException ignored) { }
+    }
+
+    private Bitmap decodeThumbnail(String path) {
+        try {
+            BitmapFactory.Options bounds = new BitmapFactory.Options();
+            bounds.inJustDecodeBounds = true;
+            BitmapFactory.decodeFile(path, bounds);
+            if (bounds.outWidth <= 0 || bounds.outHeight <= 0) return null;
+            int sample = 1;
+            while (bounds.outWidth / sample > 900 || bounds.outHeight / sample > 900) sample *= 2;
+            BitmapFactory.Options options = new BitmapFactory.Options();
+            options.inSampleSize = sample;
+            options.inPreferredConfig = Bitmap.Config.RGB_565;
+            return BitmapFactory.decodeFile(path, options);
+        } catch (OutOfMemoryError | RuntimeException ignored) {
+            return null;
         }
     }
 

@@ -1,18 +1,13 @@
-name: Android ARM64 APK (API 36)
+name: Android ARM64 signed release (API 36)
 
 on:
-  push:
-    branches:
-      - arena/ade03820-lwlwxldodiwjnwmwllxllxmxmxks
-    paths-ignore:
-      - HANDOFF/**
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: nox-android-${{ github.ref }}
+  group: nox-android-release-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -44,52 +39,85 @@ jobs:
         with:
           gradle-version: '8.13'
 
-      - name: Build debug APK
+      - name: Prepare permanent release signer
         env:
-          TURN_URL: ${{ secrets.TURN_URL }}
-          TURN_USERNAME: ${{ secrets.TURN_USERNAME }}
-          TURN_CREDENTIAL: ${{ secrets.TURN_CREDENTIAL }}
+          RELEASE_KEYSTORE_BASE64: ${{ secrets.RELEASE_KEYSTORE_BASE64 }}
+          RELEASE_STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
+          RELEASE_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
+        run: |
+          set -euo pipefail
+          for secret_name in RELEASE_KEYSTORE_BASE64 RELEASE_STORE_PASSWORD RELEASE_KEY_PASSWORD; do
+            if [[ -z "${!secret_name}" ]]; then
+              echo "::error::Missing repository Actions secret: ${secret_name}"
+              exit 1
+            fi
+          done
+          key_path="$RUNNER_TEMP/nox-release-key.p12"
+          printf '%s' "$RELEASE_KEYSTORE_BASE64" | base64 --decode > "$key_path"
+          test -s "$key_path"
+          echo "RELEASE_KEYSTORE_PATH=$key_path" >> "$GITHUB_ENV"
+          echo "RELEASE_STORE_PASSWORD=$RELEASE_STORE_PASSWORD" >> "$GITHUB_ENV"
+          echo "RELEASE_KEY_PASSWORD=$RELEASE_KEY_PASSWORD" >> "$GITHUB_ENV"
+          echo "RELEASE_KEY_ALIAS=nox-release" >> "$GITHUB_ENV"
+          echo "APP_VERSION_NAME=1.0.$GITHUB_RUN_NUMBER" >> "$GITHUB_ENV"
+
+      - name: Build signed, minified release APK
         run: >-
-          gradle --no-daemon clean assembleDebug
-          -PturnUrl="${TURN_URL}"
-          -PturnUsername="${TURN_USERNAME}"
-          -PturnCredential="${TURN_CREDENTIAL}"
+          gradle --no-daemon clean assembleRelease
+          -PappVersionCode="$GITHUB_RUN_NUMBER"
+          -PappVersionName="$APP_VERSION_NAME"
 
-      - name: Verify ARM64-only APK
+      - name: Verify signer and ARM64-only APK
         run: |
-          abis="$(unzip -Z1 app/build/outputs/apk/debug/app-debug.apk | awk -F/ '$1 == "lib" {print $2}' | sort -u)"
+          set -euo pipefail
+          apk="app/build/outputs/apk/release/app-release.apk"
+          apksigner="$ANDROID_HOME/build-tools/36.0.0/apksigner"
+          "$apksigner" verify --verbose --print-certs "$apk" > "$RUNNER_TEMP/apk-signature.txt"
+          actual_fingerprint="$(awk -F': ' '/Signer #1 certificate SHA-256 digest:/ {print $2; exit}' "$RUNNER_TEMP/apk-signature.txt" | tr -d ':' | tr '[:lower:]' '[:upper:]')"
+          expected_fingerprint="$(openssl x509 -in HANDOFF/nox-release-certificate.pem -noout -fingerprint -sha256 | cut -d= -f2 | tr -d ':' | tr '[:lower:]' '[:upper:]')"
+          test -n "$actual_fingerprint"
+          test "$actual_fingerprint" = "$expected_fingerprint"
+          abis="$(unzip -Z1 "$apk" | awk -F/ '$1 == "lib" {print $2}' | sort -u)"
           echo "APK native ABIs: ${abis}"
-          test "${abis}" = "arm64-v8a"
+          test "$abis" = "arm64-v8a"
 
-      - name: Prepare HANDOFF files
+      - name: Prepare versioned HANDOFF files
         run: |
+          set -euo pipefail
+          version="$APP_VERSION_NAME"
+          apk_name="Nox-P2P-ARM64-API36-v${version}-release.apk"
+          source_name="Nox-P2P-Android-sources-v${version}.zip"
           mkdir -p HANDOFF
-          cp app/build/outputs/apk/debug/app-debug.apk HANDOFF/Nox-P2P-ARM64-API36-debug.apk
-          rm -f HANDOFF/Nox-P2P-API36-debug.apk HANDOFF/Nox-P2P-Android-sources.zip
-          zip -r HANDOFF/Nox-P2P-Android-sources.zip \
+          test ! -e "HANDOFF/$apk_name" || { echo "Version already published: $apk_name"; exit 1; }
+          cp app/build/outputs/apk/release/app-release.apk "HANDOFF/$apk_name"
+          zip -r "HANDOFF/$source_name" \
             app/src app/build.gradle app/proguard-rules.pro \
             settings.gradle build.gradle gradle.properties .gitignore \
             database.rules.json README.md .github/workflows/android-apk.yml \
+            HANDOFF/README.md HANDOFF/RELEASE-SIGNING.md \
+            HANDOFF/nox-release-certificate.pem HANDOFF/nox-release-fingerprint.txt \
             -x 'app/build/*' '*/.DS_Store'
+          echo "Release APK: HANDOFF/$apk_name"
+          echo "Source archive: HANDOFF/$source_name"
 
-      - name: Upload APK and source archive
+      - name: Upload signed release and source archive
         uses: actions/upload-artifact@v4
         with:
-          name: Nox-P2P-ARM64-API36-HANDOFF
+          name: Nox-P2P-ARM64-API36-v1.0.${{ github.run_number }}-release
           path: |
-            HANDOFF/Nox-P2P-ARM64-API36-debug.apk
-            HANDOFF/Nox-P2P-Android-sources.zip
+            HANDOFF/Nox-P2P-ARM64-API36-v1.0.${{ github.run_number }}-release.apk
+            HANDOFF/Nox-P2P-Android-sources-v1.0.${{ github.run_number }}.zip
           if-no-files-found: error
-          retention-days: 30
+          retention-days: 90
 
-      - name: Publish generated handoff files on the session branch
+      - name: Publish versioned release files without removing older releases
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A HANDOFF
           if git diff --cached --quiet; then
-            echo "HANDOFF files already match this build."
+            echo "HANDOFF already contains this release."
             exit 0
           fi
-          git commit -m "build: publish API 36 Android handoff [skip ci]"
+          git commit -m "build: publish signed Android release v${APP_VERSION_NAME} [skip ci]"
           git push origin HEAD:arena/ade03820-lwlwxldodiwjnwmwllxllxmxmxks
