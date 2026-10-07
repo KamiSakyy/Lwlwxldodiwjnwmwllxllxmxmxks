@@ -384,6 +384,10 @@ public final class MainActivity extends ComponentActivity {
         TextView statusDot = text("●", 10, ACCENT, true);
         statusBar.addView(statusDot);
         stateView = text("Синхронизируем комнату…", 12, TEXT, true);
+        stateView.setClickable(true);
+        stateView.setFocusable(true);
+        stateView.setContentDescription("Проверить ключи сквозного шифрования");
+        stateView.setOnClickListener(v -> showSecurityDetails());
         LinearLayout.LayoutParams stateParams = new LinearLayout.LayoutParams(0, -2, 1);
         stateParams.leftMargin = dp(8);
         statusBar.addView(stateView, stateParams);
@@ -547,6 +551,10 @@ public final class MainActivity extends ComponentActivity {
         if (value.trim().isEmpty()) return;
         if (session == null) {
             toast("Подключаем комнату, подождите секунду.");
+            return;
+        }
+        if (!session.canSendUserContent()) {
+            toast("Сначала дождитесь Signal-сеанса и подтвердите сверку отпечатков в строке состояния.");
             return;
         }
         session.sendText(value);
@@ -917,6 +925,36 @@ public final class MainActivity extends ComponentActivity {
         if ("connected".equals(state)) stateView.setTextColor(ACCENT);
         else if ("error".equals(state)) stateView.setTextColor(ERROR);
         else stateView.setTextColor(TEXT);
+    }
+
+    private void showSecurityDetails() {
+        ChatSession current = session;
+        if (current == null) {
+            toast("Signal-сеанс ещё не создан.");
+            return;
+        }
+        new AlertDialog.Builder(this)
+                .setTitle("Сквозное шифрование · Signal")
+                .setMessage(current.securitySummary())
+                .setPositiveButton("Копировать объявленный ключ", (dialog, which) -> {
+                    String fingerprint = current.remoteFingerprintForVerification();
+                    if (fingerprint.isEmpty()) {
+                        toast("Ключ собеседника пока не получен.");
+                        return;
+                    }
+                    ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+                    if (clipboard != null) clipboard.setPrimaryClip(ClipData.newPlainText("Signal identity fingerprint", fingerprint));
+                    toast("Отпечаток скопирован. Сверьте его с собеседником отдельно.");
+                })
+                .setNeutralButton("Я сверил отпечатки", (dialog, which) -> {
+                    if (!current.markRemoteFingerprintVerified()) {
+                        toast("Пока нельзя подтвердить: дождитесь Signal-сеанса и убедитесь, что ключ не изменился.");
+                        return;
+                    }
+                    toast("Ваша сверка сохранена. Контент станет доступен после подтверждения собеседника.");
+                })
+                .setNegativeButton("Закрыть", null)
+                .show();
     }
 
     private void hideKeyboard() {

@@ -54,7 +54,8 @@ android {
 
     packaging {
         resources {
-            excludes += ["META-INF/DEPENDENCIES", "META-INF/LICENSE*", "META-INF/NOTICE*"]
+            excludes += ["META-INF/DEPENDENCIES", "META-INF/LICENSE*", "META-INF/NOTICE*",
+                         "libsignal_jni*.dylib", "signal_jni*.dll", "libsignal_jni_testing.so"]
         }
     }
 
@@ -90,4 +91,7 @@ dependencies {
     implementation "androidx.core:core:1.16.0"
     implementation "com.squareup.okhttp3:okhttp:4.12.0"
     implementation "io.github.webrtc-sdk:android:125.6422.07"
+    implementation "org.signal:libsignal-android:0.105.0"
+    implementation "org.signal:libsignal-client:0.105.0"
+    testImplementation "junit:junit:4.13.2"
 }

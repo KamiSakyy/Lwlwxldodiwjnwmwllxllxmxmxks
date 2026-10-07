@@ -27,11 +27,11 @@ jobs:
           ref: arena/ade03820-lwlwxldodiwjnwmwllxllxmxmxks
           fetch-depth: 0
 
-      - name: Set up Java 17
+      - name: Set up Java 21 (libsignal toolchain)
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '17'
+          java-version: '21'
 
       - name: Install Android SDK 36
         uses: android-actions/setup-android@v4
@@ -52,14 +52,25 @@ jobs:
           test -s HANDOFF/nox-release-certificate.pem
           openssl pkcs12 -in HANDOFF/nox-release-key.p12 -noout -info \
             -passin file:HANDOFF/nox-release-key-password.txt >/dev/null 2>&1
+          latest_patch=0
+          for apk in HANDOFF/Nox-P2P-ARM64-API36-v1.0.*-release.apk; do
+            [[ -f "$apk" ]] || continue
+            patch="${apk##*-v1.0.}"
+            patch="${patch%-release.apk}"
+            [[ "$patch" =~ ^[0-9]+$ ]] || continue
+            (( patch > latest_patch )) && latest_patch="$patch"
+          done
+          next_patch=$((latest_patch + 1))
+          if (( GITHUB_RUN_NUMBER > next_patch )); then next_patch="$GITHUB_RUN_NUMBER"; fi
           echo "RELEASE_KEYSTORE_PATH=$GITHUB_WORKSPACE/HANDOFF/nox-release-key.p12" >> "$GITHUB_ENV"
           echo "RELEASE_KEY_ALIAS=nox-release" >> "$GITHUB_ENV"
-          echo "APP_VERSION_NAME=1.0.$GITHUB_RUN_NUMBER" >> "$GITHUB_ENV"
+          echo "APP_VERSION_CODE=$next_patch" >> "$GITHUB_ENV"
+          echo "APP_VERSION_NAME=1.0.$next_patch" >> "$GITHUB_ENV"
 
       - name: Build signed, minified release APK
         run: >-
-          gradle --no-daemon --stacktrace clean assembleRelease
-          -PappVersionCode="$GITHUB_RUN_NUMBER"
+          gradle --no-daemon --stacktrace clean testDebugUnitTest assembleRelease
+          -PappVersionCode="$APP_VERSION_CODE"
           -PappVersionName="$APP_VERSION_NAME"
 
       - name: Verify signer and ARM64-only APK
@@ -93,16 +104,19 @@ jobs:
             HANDOFF/nox-release-certificate.pem HANDOFF/nox-release-fingerprint.txt \
             HANDOFF/nox-release-key.p12 HANDOFF/nox-release-key-password.txt \
             -x 'app/build/*' '*/.DS_Store'
+          source_bytes="$(stat -c %s "HANDOFF/$source_name")"
+          echo "Source archive size: ${source_bytes} bytes"
+          test "$source_bytes" -lt 1048576
           echo "Release APK: HANDOFF/$apk_name"
           echo "Source archive: HANDOFF/$source_name"
 
       - name: Upload signed release and source archive
         uses: actions/upload-artifact@v4
         with:
-          name: Nox-P2P-ARM64-API36-v1.0.${{ github.run_number }}-release
+          name: Nox-P2P-ARM64-API36-v${{ env.APP_VERSION_NAME }}-release
           path: |
-            HANDOFF/Nox-P2P-ARM64-API36-v1.0.${{ github.run_number }}-release.apk
-            HANDOFF/Nox-P2P-Android-sources-v1.0.${{ github.run_number }}.zip
+            HANDOFF/Nox-P2P-ARM64-API36-v${{ env.APP_VERSION_NAME }}-release.apk
+            HANDOFF/Nox-P2P-Android-sources-v${{ env.APP_VERSION_NAME }}.zip
           if-no-files-found: error
           retention-days: 90
 

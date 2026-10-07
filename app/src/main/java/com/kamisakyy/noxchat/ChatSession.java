@@ -26,6 +26,7 @@ import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -69,7 +70,7 @@ final class ChatSession {
     private final ExecutorService outgoingFiles = Executors.newFixedThreadPool(3, r -> new Thread(r, "nox-file-send"));
     private final ExecutorService incomingFiles = Executors.newSingleThreadExecutor(r -> new Thread(r, "nox-file-receive"));
     private final CopyOnWriteArrayList<Listener> listeners = new CopyOnWriteArrayList<>();
-    private final Map<String, Member> members = new HashMap<>();
+    private final Map<String, Member> members = new ConcurrentHashMap<>();
     private final Map<String, IncomingTransfer> incomingTransfers = new ConcurrentHashMap<>();
     private final Map<String, OutgoingTransfer> outgoingTransfers = new ConcurrentHashMap<>();
     private final Map<String, ResumeRequest> resumeRequests = new ConcurrentHashMap<>();
@@ -78,14 +79,15 @@ final class ChatSession {
     private final Map<String, ArrayList<IceCandidate>> pendingRemoteByEpoch = new HashMap<>();
     private final ArrayList<IceCandidate> pendingLocalCandidates = new ArrayList<>();
     private final MessageStore messageStore;
+    private final SignalCrypto signalCrypto;
     private final FirebaseAuthClient auth;
     private final FirebaseRealtimeDatabase database;
 
     private Handler actor;
     private FirebaseRestStream memberStream;
     private FirebaseRestStream signalStream;
-    private String uid;
-    private String remoteUid;
+    private volatile String uid;
+    private volatile String remoteUid;
     private String remoteName = "";
     private String peerEpoch;
     private PeerConnection peerConnection;
@@ -93,6 +95,8 @@ final class ChatSession {
     private boolean localDescriptionPublished;
     private boolean remoteDescriptionSet;
     private volatile boolean closed;
+    private volatile boolean signalSessionReady;
+    private boolean signalHandshakeSent;
     private boolean connected;
     private boolean reconnectQueued;
     private int joinRetryCount;
@@ -112,8 +116,16 @@ final class ChatSession {
         this.auth = new FirebaseAuthClient(this.context);
         this.database = new FirebaseRealtimeDatabase(auth);
         this.messageStore = new MessageStore(this.context, roomCode);
+        SignalCrypto crypto = null;
+        try { crypto = new SignalCrypto(this.context); }
+        catch (RuntimeException ex) { emitError("Не удалось безопасно инициализировать Signal Protocol: " + friendly(ex)); }
+        this.signalCrypto = crypto;
         actorThread.start();
         actor = new Handler(actorThread.getLooper());
+        if (signalCrypto == null) {
+            notifyState("error", "Signal Protocol недоступен · безопасное соединение не установлено");
+            return;
+        }
         initializeFactory(this.context);
         notifyState("signing_in", "Подключаемся к Firebase…");
         actor.post(this::signInAndJoin);
@@ -148,6 +160,14 @@ final class ChatSession {
                 emitError("Собеседник ещё не подключён. Сообщение не отправлено.");
                 return;
             }
+            if (!signalSessionReady) {
+                emitError("Проверяем Signal-шифрование собеседника. Попробуйте отправить сообщение через секунду.");
+                return;
+            }
+            if (!isSecureConversationVerified()) {
+                emitError("Сначала сверьте отпечаток в строке состояния и дождитесь подтверждения собеседника.");
+                return;
+            }
             String id = UUID.randomUUID().toString();
             long now = System.currentTimeMillis();
             JSONObject packet = new JSONObject();
@@ -173,6 +193,14 @@ final class ChatSession {
         actor.post(() -> {
             if (!isChannelOpen()) {
                 emitError("Сначала дождитесь подключения собеседника, затем отправьте файл.");
+                return;
+            }
+            if (!signalSessionReady) {
+                emitError("Проверяем Signal-шифрование собеседника. Попробуйте отправить файл через секунду.");
+                return;
+            }
+            if (!isSecureConversationVerified()) {
+                emitError("Перед отправкой файла сверите отпечатки в строке состояния и дождитесь подтверждения собеседника.");
                 return;
             }
             try {
@@ -220,6 +248,10 @@ final class ChatSession {
         if (outgoing != null) resumeOutgoingTransfer(outgoing);
     }
 
+    boolean canSendUserContent() {
+        return !closed && isChannelOpen() && isSecureConversationVerified();
+    }
+
     boolean canControlTransfer(ChatMessage message) {
         if (message == null || !message.isAttachment()) return false;
         if (message.status == ChatMessage.PAUSED) return true;
@@ -239,8 +271,9 @@ final class ChatSession {
             if (!id.equals(message.id) || !message.outgoing || !message.isAttachment()
                     || (message.status != ChatMessage.PAUSED && message.status != ChatMessage.SENDING)) continue;
             File file = new File(message.attachmentUri);
-            if (!file.isFile() || file.length() != message.sizeBytes) return null;
-            OutgoingTransfer restored = new OutgoingTransfer(file, message);
+            byte[] fileKey = signalCrypto.loadTransferKey(id);
+            if (!file.isFile() || file.length() != message.sizeBytes || fileKey == null) return null;
+            OutgoingTransfer restored = new OutgoingTransfer(file, message, fileKey);
             OutgoingTransfer existing = outgoingTransfers.putIfAbsent(id, restored);
             return existing == null ? restored : existing;
         }
@@ -254,14 +287,29 @@ final class ChatSession {
             if (!id.equals(message.id) || message.outgoing || !message.isAttachment()
                     || (message.status != ChatMessage.PAUSED && message.status != ChatMessage.RECEIVING)) continue;
             File file = new File(message.attachmentUri);
-            if (!file.isFile() || file.length() > message.sizeBytes) return null;
+            byte[] fileKey = signalCrypto.loadTransferKey(id);
+            if (!file.isFile() || file.length() > message.sizeBytes || fileKey == null) return null;
             try {
-                long received = file.length();
+                long onDisk = file.length();
+                int nextChunk;
+                long received;
+                if (onDisk == message.sizeBytes) {
+                    received = onDisk;
+                    nextChunk = (int) ((received + CHUNK_BYTES - 1) / CHUNK_BYTES);
+                } else {
+                    nextChunk = (int) (onDisk / CHUNK_BYTES);
+                    received = (long) nextChunk * CHUNK_BYTES;
+                    if (received != onDisk) {
+                        try (java.io.RandomAccessFile partial = new java.io.RandomAccessFile(file, "rw")) {
+                            partial.setLength(received);
+                        }
+                    }
+                }
                 BufferedOutputStream stream = new BufferedOutputStream(
                         new FileOutputStream(file, true), CHUNK_BYTES);
-                IncomingTransfer restored = new IncomingTransfer(file, stream, message.sizeBytes, message);
+                IncomingTransfer restored = new IncomingTransfer(file, stream, message.sizeBytes, message, fileKey);
                 restored.received = received;
-                restored.nextChunk = (int) ((received + CHUNK_BYTES - 1) / CHUNK_BYTES);
+                restored.nextChunk = nextChunk;
                 restored.message.status = ChatMessage.PAUSED;
                 messageStore.update(restored.message);
                 IncomingTransfer raced = incomingTransfers.putIfAbsent(id, restored);
@@ -435,6 +483,7 @@ final class ChatSession {
             serverTimestamp.put(".sv", "timestamp");
             value.put("name", displayName);
             value.put("lastSeen", serverTimestamp);
+            value.put("signal", signalCrypto.publicBundle());
         } catch (Exception ignored) { }
         return value;
     }
@@ -487,7 +536,8 @@ final class ChatSession {
 
     private Member parseMember(JSONObject object) {
         if (object == null) return null;
-        return new Member(object.optString("name", "Собеседник"), object.optLong("lastSeen", 0L));
+        return new Member(object.optString("name", "Собеседник"), object.optLong("lastSeen", 0L),
+                object.optJSONObject("signal"));
     }
 
     private long asLong(Object value) {
@@ -538,6 +588,7 @@ final class ChatSession {
         } else if (!connected) {
             notifyState("connecting", "Собеседник найден · устанавливаем P2P-связь");
         }
+        if (isChannelOpen()) startSignalHandshake();
     }
 
     private int lastActiveCount;
@@ -851,7 +902,8 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
                     if (channel.state() == DataChannel.State.OPEN) {
                         connected = true;
                         reconnectQueued = false;
-                        notifyState("connected", "Зашифрованный P2P-канал активен");
+                        notifyState("connecting", "P2P-канал активен · проверяем сквозное Signal-шифрование");
+                        startSignalHandshake();
                         flushPendingTransferControls();
                     } else if (channel.state() == DataChannel.State.CLOSED) {
                         connected = false;
@@ -863,7 +915,7 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
             @Override public void onMessage(DataChannel.Buffer buffer) {
                 if (buffer == null || buffer.data == null) return;
                 ByteBuffer bytes = buffer.data;
-                if (bytes.remaining() > CHUNK_BYTES * 2) {
+                if (bytes.remaining() > CHUNK_BYTES * 4) {
                     actor.post(() -> emitError("Получен чрезмерно большой пакет, он отброшен."));
                     return;
                 }
@@ -879,16 +931,193 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
         });
         if (channel.state() == DataChannel.State.OPEN) {
             connected = true;
-            notifyState("connected", "Зашифрованный P2P-канал активен");
+            notifyState("connecting", "P2P-канал активен · проверяем сквозное Signal-шифрование");
+            startSignalHandshake();
             flushPendingTransferControls();
         }
     }
 
+    private void startSignalHandshake() {
+        if (closed || signalCrypto == null || !isChannelOpen() || uid == null || remoteUid == null
+                || signalHandshakeSent || uid.compareTo(remoteUid) > 0) return;
+        Member peer = members.get(remoteUid);
+        if (peer == null || peer.signalBundle == null) {
+            notifyState("error", "У собеседника нет Signal Protocol · обновите приложение на обоих устройствах");
+            return;
+        }
+        try {
+            signalCrypto.establishOutbound(uid, remoteUid, peer.signalBundle);
+            JSONObject hello = new JSONObject();
+            put(hello, "t", "secure_hello");
+            put(hello, "protocol", "libsignal-pqxdh-v1");
+            put(hello, "nonce", UUID.randomUUID().toString());
+            if (!sendPacket(dataChannel, hello)) {
+                notifyState("error", "Не удалось начать Signal-шифрование · проверьте подключение");
+                return;
+            }
+            signalHandshakeSent = true;
+            notifyState("connecting", "Signal PQXDH · ждём подтверждения собеседника");
+        } catch (Exception ex) {
+            signalSessionReady = false;
+            notifyState("error", "Signal-шифрование не установлено · соединение заблокировано");
+            emitError("Не удалось установить Signal Protocol: " + friendly(ex));
+        }
+    }
+
+    String remoteFingerprintForVerification() {
+        if (signalCrypto == null || remoteUid == null) return "";
+        Member peer = members.get(remoteUid);
+        String advertised = peer == null ? "" : signalCrypto.advertisedFingerprint(peer.signalBundle);
+        if (!advertised.isEmpty()) return advertised;
+        return signalCrypto.trustedRemoteFingerprint(uid, remoteUid);
+    }
+
+    boolean markRemoteFingerprintVerified() {
+        if (signalCrypto == null || !signalSessionReady || uid == null || remoteUid == null) return false;
+        Member peer = members.get(remoteUid);
+        String advertised = peer == null ? "" : signalCrypto.advertisedFingerprint(peer.signalBundle);
+        String trusted = signalCrypto.trustedRemoteFingerprint(uid, remoteUid);
+        if (advertised.isEmpty() || !advertised.equals(trusted)
+                || !signalCrypto.markRemoteFingerprintVerified(uid, remoteUid, advertised)) return false;
+        actor.post(() -> {
+            if (closed) return;
+            sendVerificationProof();
+            updateVerificationState();
+            if (isSecureConversationVerified()) flushPendingTransferControls();
+        });
+        return true;
+    }
+
+    private boolean isSecureConversationVerified() {
+        return signalSessionReady && signalCrypto != null && uid != null && remoteUid != null
+                && signalCrypto.isRemoteFingerprintVerified(uid, remoteUid)
+                && signalCrypto.hasRemoteVerifiedLocalFingerprint(uid, remoteUid);
+    }
+
+    private void sendVerificationProof() {
+        if (!signalSessionReady || signalCrypto == null || uid == null || remoteUid == null
+                || !signalCrypto.isRemoteFingerprintVerified(uid, remoteUid)) return;
+        JSONObject proof = new JSONObject();
+        put(proof, "t", "verify");
+        put(proof, "fingerprint", signalCrypto.trustedRemoteFingerprint(uid, remoteUid));
+        sendPacket(dataChannel, proof);
+    }
+
+    private void updateVerificationState() {
+        if (!signalSessionReady || signalCrypto == null || uid == null || remoteUid == null) return;
+        if (isSecureConversationVerified()) {
+            notifyState("connected", "Signal E2EE · отпечатки сверены обоими устройствами");
+        } else if (!signalCrypto.isRemoteFingerprintVerified(uid, remoteUid)) {
+            notifyState("waiting", "Signal активен · сверяйте отпечатки в строке состояния");
+        } else {
+            notifyState("waiting", "Вы сверили ключ · ожидаем подтверждения собеседника");
+        }
+    }
+
+    String securitySummary() {
+        String local = signalCrypto == null ? "недоступен" : signalCrypto.localFingerprint();
+        String advertised = "нет ключа собеседника";
+        String trusted = "";
+        boolean changed = false;
+        if (signalCrypto != null && remoteUid != null) {
+            Member peer = members.get(remoteUid);
+            if (peer != null) advertised = signalCrypto.advertisedFingerprint(peer.signalBundle);
+            trusted = signalCrypto.trustedRemoteFingerprint(uid, remoteUid);
+            changed = !trusted.isEmpty() && !advertised.isEmpty() && !trusted.equals(advertised);
+        }
+        String remote = trusted.isEmpty() ? advertised : trusted;
+        String verificationStatus;
+        if (!signalSessionReady) verificationStatus = "Signal-сеанс ещё не установлен";
+        else if (isSecureConversationVerified()) verificationStatus = "оба отпечатка вручную сверены; обмен открыт";
+        else if (signalCrypto != null && uid != null && remoteUid != null
+                && signalCrypto.isRemoteFingerprintVerified(uid, remoteUid)) {
+            verificationStatus = "вы сверили ключ; ожидаем подтверждения собеседника";
+        } else verificationStatus = "шифрование установлено, но отпечаток собеседника не сверён";
+        return "Протокол: Signal PQXDH + Double Ratchet\n"
+                + "Состояние: " + verificationStatus + "\n\n"
+                + "Ваш ключ:\n" + local + "\n\n"
+                + (changed ? "ВНИМАНИЕ: объявленный ключ изменился! Сообщения блокируются.\n"
+                        + "Ранее принятый ключ:\n" + trusted + "\n\n"
+                        + "Новый объявленный ключ:\n" + advertised + "\n\n"
+                        : "Ключ собеседника:\n" + remote + "\n\n")
+                + "Сверьте отпечатки с собеседником лично или по независимому каналу. Проверка через тот же Firebase сама по себе не защищает первый контакт от подмены. После сверки оба участника должны нажать «Я сверил отпечатки»; отправка контента заблокирована до обоих подтверждений.";
+    }
+
     private void receivePacket(String raw) {
+        try {
+            JSONObject envelope = new JSONObject(raw);
+            String type = envelope.optString("t", "");
+            if ("e2ee".equals(type)) {
+                if (signalCrypto == null || uid == null || remoteUid == null) return;
+                int messageType = envelope.optInt("k", -1);
+                byte[] ciphertext = Base64.decode(envelope.optString("d", ""), Base64.NO_WRAP);
+                byte[] plaintext = signalCrypto.decrypt(uid, remoteUid, messageType, ciphertext);
+                String authenticated = new String(plaintext, StandardCharsets.UTF_8);
+                actor.post(() -> {
+                    if (!closed) receiveAuthenticatedPacket(authenticated);
+                });
+            } else if ("chunk_secure".equals(type)) {
+                if (!isSecureConversationVerified()) return;
+                incomingFiles.execute(() -> receiveSecureChunk(envelope));
+            } else {
+                actor.post(() -> {
+                    signalSessionReady = false;
+                    notifyState("error", "Отклонён незашифрованный пакет · обновите приложение на обоих устройствах");
+                    emitError("Сообщение без Signal-шифрования заблокировано.");
+                });
+            }
+        } catch (Exception ex) {
+            actor.post(() -> {
+                signalSessionReady = false;
+                notifyState("error", "Не удалось проверить Signal-сообщение · данные заблокированы");
+                emitError("Сообщение не прошло проверку Signal Protocol: " + friendly(ex));
+            });
+        }
+    }
+
+    private void receiveAuthenticatedPacket(String raw) {
         try {
             JSONObject packet = new JSONObject(raw);
             String type = packet.optString("t", "");
-            if ("file".equals(type) || "chunk".equals(type) || "done".equals(type)) {
+            if ("secure_hello".equals(type)) {
+                if (!"libsignal-pqxdh-v1".equals(packet.optString("protocol", ""))) {
+                    notifyState("error", "Несовместимая версия Signal Protocol");
+                    return;
+                }
+                if (!trustedRemoteMatchesAnnouncement()) return;
+                signalSessionReady = true;
+                updateVerificationState();
+                JSONObject ready = new JSONObject();
+                put(ready, "t", "secure_ready");
+                put(ready, "protocol", "libsignal-pqxdh-v1");
+                if (!sendPacket(dataChannel, ready)) {
+                    signalSessionReady = false;
+                    notifyState("error", "Не удалось подтвердить Signal-шифрование");
+                    return;
+                }
+                sendVerificationProof();
+                updateVerificationState();
+                if (isSecureConversationVerified()) flushPendingTransferControls();
+            } else if ("secure_ready".equals(type)) {
+                if (!"libsignal-pqxdh-v1".equals(packet.optString("protocol", ""))
+                        || !trustedRemoteMatchesAnnouncement()) return;
+                signalSessionReady = true;
+                sendVerificationProof();
+                updateVerificationState();
+                if (isSecureConversationVerified()) flushPendingTransferControls();
+            } else if ("verify".equals(type)) {
+                String fingerprint = packet.optString("fingerprint", "");
+                if (!signalCrypto.recordRemoteFingerprintVerification(uid, remoteUid, fingerprint)) {
+                    notifyState("error", "Не удалось проверить подтверждение отпечатка собеседника");
+                    return;
+                }
+                updateVerificationState();
+                if (isSecureConversationVerified()) flushPendingTransferControls();
+            } else if (!signalSessionReady) {
+                notifyState("error", "Получено защищённое сообщение до завершения Signal-handshake");
+            } else if (!isSecureConversationVerified()) {
+                updateVerificationState();
+            } else if ("file".equals(type) || "chunk".equals(type) || "done".equals(type)) {
                 incomingFiles.execute(() -> receiveFilePacket(packet));
             } else if ("resume_at".equals(type)) {
                 String id = packet.optString("id", "");
@@ -916,8 +1145,57 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
                 String id = packet.optString("id", "");
                 actor.post(() -> markDelivered(id));
             }
-        } catch (Exception ignored) {
-            actor.post(() -> emitError("Не удалось прочитать пакет чата."));
+        } catch (Exception ex) {
+            actor.post(() -> emitError("Не удалось разобрать зашифрованный пакет чата."));
+        }
+    }
+
+    private boolean trustedRemoteMatchesAnnouncement() {
+        if (signalCrypto == null || uid == null || remoteUid == null) return false;
+        Member peer = members.get(remoteUid);
+        if (peer == null || peer.signalBundle == null) {
+            signalSessionReady = false;
+            notifyState("error", "В Firebase отсутствует Signal-ключ собеседника · соединение заблокировано");
+            return false;
+        }
+        String advertised = signalCrypto.advertisedFingerprint(peer.signalBundle);
+        String trusted = signalCrypto.trustedRemoteFingerprint(uid, remoteUid);
+        if (!advertised.isEmpty() && !trusted.isEmpty() && !advertised.equals(trusted)) {
+            signalSessionReady = false;
+            notifyState("error", "Ключ Signal собеседника изменился · соединение заблокировано");
+            emitError("Объявленный ключ не совпадает с ключом в Signal-сеансе. Сверьте отпечаток лично.");
+            return false;
+        }
+        return true;
+    }
+
+    private void receiveSecureChunk(JSONObject packet) {
+        String id = packet.optString("id", "");
+        if (id.isEmpty()) return;
+        IncomingTransfer transfer = incomingTransfers.get(id);
+        if (transfer == null) transfer = restoreIncomingTransfer(id);
+        try {
+            if (transfer == null || transfer.fileKey == null) throw new java.io.IOException("Нет ключа для зашифрованного фрагмента");
+            int index = packet.optInt("i", -1);
+            byte[] nonce = Base64.decode(packet.optString("n", ""), Base64.NO_WRAP);
+            byte[] ciphertext = Base64.decode(packet.optString("d", ""), Base64.NO_WRAP);
+            byte[] plaintext = signalCrypto.decryptFileChunk(transfer.fileKey, id, index, nonce, ciphertext);
+            JSONObject chunk = new JSONObject();
+            put(chunk, "t", "chunk");
+            put(chunk, "id", id);
+            put(chunk, "i", index);
+            put(chunk, "d", Base64.encodeToString(plaintext, Base64.NO_WRAP));
+            receiveFilePacket(chunk);
+        } catch (Exception ex) {
+            if (transfer != null) {
+                incomingTransfers.remove(id, transfer);
+                try { if (transfer.stream != null) transfer.stream.close(); } catch (Exception ignored) { }
+                transfer.stream = null;
+                transfer.message.status = ChatMessage.PAUSED;
+                messageStore.update(transfer.message);
+                emitMessage(transfer.message);
+            }
+            actor.post(() -> emitError("Зашифрованный фрагмент файла не прошёл проверку: " + friendly(ex)));
         }
     }
 
@@ -940,11 +1218,13 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
                     }
                 }
 
+                byte[] fileKey = Base64.decode(packet.optString("key", ""), Base64.NO_WRAP);
+                if (fileKey.length != 32) throw new java.io.IOException("Invalid encrypted file key");
                 IncomingTransfer transfer = incomingTransfers.get(id);
                 if (transfer == null) transfer = restoreIncomingTransfer(id);
                 if (transfer != null) {
-                    if (transfer.expectedBytes != size) {
-                        actor.post(() -> emitError("Повторная передача не совпадает с исходным файлом."));
+                    if (transfer.expectedBytes != size || !Arrays.equals(transfer.fileKey, fileKey)) {
+                        actor.post(() -> emitError("Повторная передача не совпадает с исходным зашифрованным файлом."));
                         return;
                     }
                     transfer.message.status = ChatMessage.RECEIVING;
@@ -954,6 +1234,7 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
                     return;
                 }
 
+                signalCrypto.storeTransferKey(id, fileKey);
                 File directory = new File(context.getFilesDir(), "media/received");
                 if (!directory.exists() && !directory.mkdirs()) throw new java.io.IOException("Не удалось создать папку вложений");
                 File file = new File(directory, UUID.randomUUID().toString() + ".bin");
@@ -966,7 +1247,7 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
                 ChatMessage message = new ChatMessage(id, "", kind, name, mime,
                         file.getAbsolutePath(), false, packet.optLong("time", System.currentTimeMillis()),
                         size, ChatMessage.RECEIVING);
-                transfer = new IncomingTransfer(file, stream, size, message);
+                transfer = new IncomingTransfer(file, stream, size, message, fileKey);
                 incomingTransfers.put(id, transfer);
                 messageStore.add(message);
                 emitMessage(message);
@@ -1017,6 +1298,7 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
                 transfer.message.attachmentUri = transfer.file.getAbsolutePath();
                 transfer.message.status = ChatMessage.READY;
                 messageStore.update(transfer.message);
+                signalCrypto.removeTransferKey(id);
                 emitMessage(transfer.message);
                 sendAck(id);
             }
@@ -1081,7 +1363,8 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
             String id = UUID.randomUUID().toString();
             ChatMessage message = new ChatMessage(id, "", kind, safeFileName(name), mime,
                     copy.getAbsolutePath(), true, System.currentTimeMillis(), total, ChatMessage.SENDING);
-            OutgoingTransfer transfer = new OutgoingTransfer(copy, message);
+            byte[] fileKey = signalCrypto.newTransferKey(id);
+            OutgoingTransfer transfer = new OutgoingTransfer(copy, message, fileKey);
             outgoingTransfers.put(id, transfer);
             messageStore.add(message);
             emitMessage(message);
@@ -1117,6 +1400,7 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
                 put(start, "kind", transfer.message.kind);
                 put(start, "size", transfer.message.sizeBytes);
                 put(start, "time", transfer.message.timeMs);
+                put(start, "key", Base64.encodeToString(transfer.fileKey, Base64.NO_WRAP));
                 if (!sendPacket(channel, start)) {
                     resumeRequests.remove(transfer.message.id, request);
                     continue;
@@ -1219,7 +1503,7 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
         while (!closed && !transfer.cancelled) {
             waitUntilResumed(transfer);
             DataChannel channel = dataChannel;
-            if (channel != null && channel.state() == DataChannel.State.OPEN) return channel;
+            if (channel != null && channel.state() == DataChannel.State.OPEN && signalSessionReady) return channel;
             if (System.currentTimeMillis() >= deadline) throw new java.io.IOException("Нет P2P-соединения более 10 минут");
             Thread.sleep(200L);
         }
@@ -1249,6 +1533,51 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
     }
 
     private boolean sendPacket(DataChannel channel, JSONObject packet) {
+        if (channel == null || channel.state() != DataChannel.State.OPEN || signalCrypto == null
+                || uid == null || remoteUid == null) return false;
+        String innerType = packet.optString("t", "");
+        boolean handshakePacket = "secure_hello".equals(innerType) || "secure_ready".equals(innerType);
+        if (!signalSessionReady && !handshakePacket) return false;
+        if ("verify".equals(innerType)) {
+            if (!signalCrypto.isRemoteFingerprintVerified(uid, remoteUid)) return false;
+        } else if (!handshakePacket && !isSecureConversationVerified()) {
+            return false;
+        }
+        try {
+            if ("chunk".equals(innerType)) {
+                String id = packet.optString("id", "");
+                int index = packet.optInt("i", -1);
+                OutgoingTransfer transfer = outgoingTransfers.get(id);
+                if (transfer == null || transfer.fileKey == null || index < 0) return false;
+                byte[] plaintext = Base64.decode(packet.optString("d", ""), Base64.NO_WRAP);
+                SignalCrypto.ChunkCiphertext chunk = signalCrypto.encryptFileChunk(transfer.fileKey, id, index, plaintext);
+                JSONObject envelope = new JSONObject();
+                put(envelope, "t", "chunk_secure");
+                put(envelope, "id", id);
+                put(envelope, "i", index);
+                put(envelope, "n", Base64.encodeToString(chunk.nonce, Base64.NO_WRAP));
+                put(envelope, "d", Base64.encodeToString(chunk.data, Base64.NO_WRAP));
+                return sendRawPacket(channel, envelope);
+            }
+            byte[] plaintext = packet.toString().getBytes(StandardCharsets.UTF_8);
+            SignalCrypto.SealedMessage sealed = signalCrypto.encrypt(uid, remoteUid, plaintext);
+            JSONObject envelope = new JSONObject();
+            put(envelope, "t", "e2ee");
+            put(envelope, "k", sealed.type);
+            put(envelope, "d", Base64.encodeToString(sealed.data, Base64.NO_WRAP));
+            return sendRawPacket(channel, envelope);
+        } catch (Exception ex) {
+            actor.post(() -> {
+                if (!closed) {
+                    notifyState("error", "Не удалось зашифровать Signal-сообщение · передача заблокирована");
+                    emitError("Signal Protocol отклонил пакет: " + friendly(ex));
+                }
+            });
+            return false;
+        }
+    }
+
+    private boolean sendRawPacket(DataChannel channel, JSONObject packet) {
         if (channel == null || channel.state() != DataChannel.State.OPEN) return false;
         byte[] bytes = packet.toString().getBytes(StandardCharsets.UTF_8);
         return channel.send(new DataChannel.Buffer(ByteBuffer.wrap(bytes), false));
@@ -1270,6 +1599,7 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
                 message.status = ChatMessage.READY;
                 messageStore.update(message);
                 outgoingTransfers.remove(id);
+                if (message.isAttachment()) signalCrypto.removeTransferKey(id);
                 emitMessage(message);
                 return;
             }
@@ -1305,6 +1635,8 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
 
     private void resetPeer() {
         connected = false;
+        signalSessionReady = false;
+        signalHandshakeSent = false;
         remoteDescriptionSet = false;
         localDescriptionPublished = false;
         pendingRemoteCandidates.clear();
@@ -1474,7 +1806,11 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
                 if (state == PeerConnection.IceConnectionState.CONNECTED || state == PeerConnection.IceConnectionState.COMPLETED) {
                     if (isChannelOpen()) {
                         connected = true;
-                        notifyState("connected", "Зашифрованный P2P-канал активен");
+                        if (signalSessionReady) notifyState("connected", "Signal PQXDH + Double Ratchet · E2EE активно");
+                        else {
+                            notifyState("connecting", "P2P активен · устанавливаем Signal E2EE");
+                            startSignalHandshake();
+                        }
                     }
                 } else if (state == PeerConnection.IceConnectionState.DISCONNECTED) {
                     connected = false;
@@ -1520,7 +1856,12 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
     private static final class Member {
         String name;
         long lastSeen;
-        Member(String name, long lastSeen) { this.name = name; this.lastSeen = lastSeen; }
+        volatile JSONObject signalBundle;
+        Member(String name, long lastSeen, JSONObject signalBundle) {
+            this.name = name;
+            this.lastSeen = lastSeen;
+            this.signalBundle = signalBundle;
+        }
     }
 
     private static final class IncomingTransfer {
@@ -1528,27 +1869,31 @@ JSONObject value = signalWith("candidate", epoch, "mid", candidate.sdpMid);
         volatile BufferedOutputStream stream;
         final long expectedBytes;
         final ChatMessage message;
+        final byte[] fileKey;
         volatile long received;
         volatile int nextChunk;
-        IncomingTransfer(File file, BufferedOutputStream stream, long expectedBytes, ChatMessage message) {
+        IncomingTransfer(File file, BufferedOutputStream stream, long expectedBytes, ChatMessage message, byte[] fileKey) {
             this.file = file;
             this.stream = stream;
             this.expectedBytes = expectedBytes;
             this.message = message;
+            this.fileKey = fileKey;
         }
     }
 
     private static final class OutgoingTransfer {
         final File file;
         final ChatMessage message;
+        final byte[] fileKey;
         volatile int nextChunk;
         volatile boolean paused;
         volatile boolean running;
         volatile boolean completed;
         volatile boolean cancelled;
-        OutgoingTransfer(File file, ChatMessage message) {
+        OutgoingTransfer(File file, ChatMessage message, byte[] fileKey) {
             this.file = file;
             this.message = message;
+            this.fileKey = fileKey;
         }
     }
 
