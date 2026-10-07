@@ -22,9 +22,10 @@ final class IceServerConfig {
     };
 
     /*
-     * Open Relay's public static-auth service supports 80/443 and UDP/TCP/TLS.
-     * The public shared secret is used only to mint short-lived TURN credentials;
-     * it is not a private app secret and the provider can rate-limit the free relay.
+     * Metered publishes this shared secret for its static-auth endpoint (documented
+     * for Nextcloud). This client uses the standard time-limited HMAC credential
+     * format, but that direct Android flow has not been verified against a live
+     * Open Relay session. Treat these public relay entries as best-effort only.
      */
     private static final String OPEN_RELAY_HOST = "staticauth.openrelay.metered.ca";
     private static final String OPEN_RELAY_PUBLIC_SECRET = "openrelayprojectsecret";
