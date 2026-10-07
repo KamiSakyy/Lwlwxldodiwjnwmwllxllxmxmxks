@@ -24,6 +24,7 @@ def releaseKeyPassword = System.getenv("RELEASE_KEY_PASSWORD") ?: releaseStorePa
 android {
     namespace "com.kamisakyy.noxchat"
     compileSdk 36
+    ndkVersion "27.2.12479018"
 
     defaultConfig {
         applicationId "com.kamisakyy.noxchat"
