@@ -56,7 +56,8 @@ android {
     packaging {
         resources {
             excludes += ["META-INF/DEPENDENCIES", "META-INF/LICENSE*", "META-INF/NOTICE*",
-                         "libsignal_jni*.dylib", "signal_jni*.dll", "libsignal_jni_testing.so"]
+                         "libsignal_jni*.dylib", "signal_jni*.dll", "libsignal_jni_testing.so",
+                         "**/*.so", "**/*.so.*"]
         }
     }
 

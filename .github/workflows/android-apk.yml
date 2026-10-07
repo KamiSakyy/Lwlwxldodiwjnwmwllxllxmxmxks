@@ -90,6 +90,12 @@ jobs:
         run: |
           set -euo pipefail
           apk="app/build/outputs/apk/release/app-release.apk"
+          apk_bytes="$(stat -c %s "$apk")"
+          echo "Release APK size: ${apk_bytes} bytes"
+          if (( apk_bytes >= 100000000 )); then
+            echo "::error title=Release APK exceeds GitHub file limit::APK size ${apk_bytes} bytes is too large."
+            exit 1
+          fi
           apksigner="$ANDROID_HOME/build-tools/36.0.0/apksigner"
           "$apksigner" verify --verbose --print-certs "$apk" > "$RUNNER_TEMP/apk-signature.txt"
           actual_fingerprint="$(awk -F': ' '/Signer #1 certificate SHA-256 digest:/ {print $2; exit}' "$RUNNER_TEMP/apk-signature.txt" | tr -d ':' | tr '[:lower:]' '[:upper:]')"
@@ -99,6 +105,8 @@ jobs:
           abis="$(unzip -Z1 "$apk" | awk -F/ '$1 == "lib" {print $2}' | sort -u)"
           echo "APK native ABIs: ${abis}"
           test "$abis" = "arm64-v8a"
+          non_android_native="$(unzip -Z1 "$apk" | grep -E '\.(so|dylib|dll)$' | grep -v '^lib/' || true)"
+          test -z "$non_android_native" || { printf 'Unexpected non-Android native resources:\n%s\n' "$non_android_native"; exit 1; }
 
       - name: Prepare versioned HANDOFF files
         run: |
