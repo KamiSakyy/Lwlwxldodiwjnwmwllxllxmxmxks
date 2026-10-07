@@ -61,17 +61,30 @@ jobs:
             (( patch > latest_patch )) && latest_patch="$patch"
           done
           next_patch=$((latest_patch + 1))
-          if (( GITHUB_RUN_NUMBER > next_patch )); then next_patch="$GITHUB_RUN_NUMBER"; fi
           echo "RELEASE_KEYSTORE_PATH=$GITHUB_WORKSPACE/HANDOFF/nox-release-key.p12" >> "$GITHUB_ENV"
           echo "RELEASE_KEY_ALIAS=nox-release" >> "$GITHUB_ENV"
           echo "APP_VERSION_CODE=$next_patch" >> "$GITHUB_ENV"
           echo "APP_VERSION_NAME=1.0.$next_patch" >> "$GITHUB_ENV"
 
       - name: Build signed, minified release APK
-        run: >-
-          gradle --no-daemon --stacktrace clean testDebugUnitTest assembleRelease
-          -PappVersionCode="$APP_VERSION_CODE"
-          -PappVersionName="$APP_VERSION_NAME"
+        run: |
+          set -o pipefail
+          gradle --no-daemon --stacktrace clean testDebugUnitTest assembleRelease \
+            -PappVersionCode="$APP_VERSION_CODE" \
+            -PappVersionName="$APP_VERSION_NAME" 2>&1 | tee "$RUNNER_TEMP/gradle-build.log"
+
+      - name: Report Gradle failure details
+        if: failure()
+        run: |
+          if test -s "$RUNNER_TEMP/gradle-build.log"; then
+            python3 - "$RUNNER_TEMP/gradle-build.log" <<'PY'
+          import pathlib, sys
+          lines = pathlib.Path(sys.argv[1]).read_text(errors="replace").splitlines()
+          excerpt = "\\n".join(lines[-50:])
+          excerpt = excerpt.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+          print(f"::error title=Gradle build diagnostics::{excerpt}")
+          PY
+          fi
 
       - name: Verify signer and ARM64-only APK
         run: |
