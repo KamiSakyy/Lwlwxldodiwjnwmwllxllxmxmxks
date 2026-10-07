@@ -728,6 +728,11 @@ public final class MainActivity extends ComponentActivity {
         row.setGravity(message.outgoing ? Gravity.RIGHT : Gravity.LEFT);
         row.setPadding(0, dp(4), 0, dp(4));
         messagesColumn.addView(row, new LinearLayout.LayoutParams(-1, -2));
+        if (scroll) {
+            row.setAlpha(0f);
+            row.setTranslationY(dp(8));
+            row.animate().alpha(1f).translationY(0f).setDuration(180L).start();
+        }
 
         LinearLayout bubble = new LinearLayout(this);
         bubble.setOrientation(LinearLayout.VERTICAL);

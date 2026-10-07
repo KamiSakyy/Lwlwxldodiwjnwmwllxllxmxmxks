@@ -10,17 +10,23 @@ import android.content.SharedPreferences;
 import android.content.pm.ServiceInfo;
 import android.os.Binder;
 import android.os.Build;
+import android.os.Bundle;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.text.TextUtils;
 
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
+import androidx.core.app.RemoteInput;
+
+import java.util.ArrayDeque;
 
 /** Foreground owner of the Firebase presence and WebRTC room while a chat is active. */
 public final class ChatConnectionService extends Service {
     public static final String ACTION_CONNECT = "com.kamisakyy.noxchat.CONNECT";
     public static final String ACTION_LEAVE = "com.kamisakyy.noxchat.LEAVE";
+    public static final String ACTION_REPLY = "com.kamisakyy.noxchat.REPLY";
+    private static final String EXTRA_REPLY_TEXT = "reply_text";
     public static final String EXTRA_ROOM = "room";
     public static final String EXTRA_NAME = "name";
     private static final String PREFS = "nox_connection";
@@ -31,17 +37,21 @@ public final class ChatConnectionService extends Service {
     private static final String CHANNEL_MESSAGES = "nox_messages";
 
     private final LocalBinder binder = new LocalBinder();
+    private final ArrayDeque<String> pendingReplies = new ArrayDeque<>();
     private SharedPreferences preferences;
     private ChatSession session;
     private PowerManager.WakeLock wakeLock;
     private boolean uiVisible;
+    private boolean sessionConnected;
     private String roomCode = "";
     private String displayName = "Гость";
     private String stateText = "Синхронизируем комнату…";
 
     private final ChatSession.Listener serviceListener = new ChatSession.Listener() {
         @Override public void onState(String state, String detail) {
+            sessionConnected = "connected".equals(state);
             stateText = detail == null || detail.isEmpty() ? "Чат активен" : detail;
+            if (sessionConnected) flushPendingReplies();
             updateSessionNotification();
         }
 
@@ -68,6 +78,25 @@ public final class ChatConnectionService extends Service {
         String requestedName = intent == null ? null : intent.getStringExtra(EXTRA_NAME);
         if (TextUtils.isEmpty(requestedRoom)) requestedRoom = preferences.getString(KEY_ROOM, null);
         if (TextUtils.isEmpty(requestedName)) requestedName = preferences.getString(KEY_NAME, "Гость");
+        if (ACTION_REPLY.equals(action)) {
+            Bundle remoteInput = intent == null ? null : RemoteInput.getResultsFromIntent(intent);
+            CharSequence replyValue = remoteInput == null ? null : remoteInput.getCharSequence(EXTRA_REPLY_TEXT);
+            String reply = replyValue == null ? "" : replyValue.toString().trim();
+            if (!reply.isEmpty() && !TextUtils.isEmpty(requestedRoom)) {
+                roomCode = requestedRoom;
+                displayName = requestedName == null ? "Гость" : requestedName;
+                preferences.edit().putString(KEY_ROOM, roomCode).putString(KEY_NAME, displayName).apply();
+                pendingReplies.addLast(reply);
+                if (session == null || !roomCode.equals(session.roomCode())) {
+                    startSessionForeground();
+                    replaceSession(roomCode, displayName);
+                } else {
+                    flushPendingReplies();
+                }
+                return START_STICKY;
+            }
+            return START_NOT_STICKY;
+        }
         if (TextUtils.isEmpty(requestedRoom)) {
             stopSelf(startId);
             return START_NOT_STICKY;
@@ -111,6 +140,8 @@ public final class ChatConnectionService extends Service {
     }
 
     public void leaveRoom() {
+        sessionConnected = false;
+        pendingReplies.clear();
         releaseWakeLock();
         if (session != null) {
             session.removeListener(serviceListener);
@@ -131,12 +162,21 @@ public final class ChatConnectionService extends Service {
     }
 
     private void replaceSession(String room, String name) {
+        sessionConnected = false;
         if (session != null) {
             session.removeListener(serviceListener);
             session.close(true);
         }
         session = new ChatSession(this, room, name);
         session.addListener(serviceListener);
+    }
+
+    private void flushPendingReplies() {
+        if (!sessionConnected || session == null) return;
+        while (!pendingReplies.isEmpty()) {
+            String reply = pendingReplies.removeFirst();
+            session.sendText(reply);
+        }
     }
 
     private void startSessionForeground() {
@@ -215,6 +255,21 @@ public final class ChatConnectionService extends Service {
                 .putExtra(EXTRA_ROOM, roomCode);
         PendingIntent pending = PendingIntent.getActivity(this, 12, open,
                 PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+        Intent replyIntent = new Intent(this, ChatConnectionService.class)
+                .setAction(ACTION_REPLY)
+                .putExtra(EXTRA_ROOM, roomCode)
+                .putExtra(EXTRA_NAME, displayName);
+        int replyFlags = PendingIntent.FLAG_UPDATE_CURRENT;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) replyFlags |= PendingIntent.FLAG_MUTABLE;
+        PendingIntent replyPending = PendingIntent.getService(this,
+                (int) (message.id.hashCode() & 0x7fffffff), replyIntent, replyFlags);
+        RemoteInput remoteInput = new RemoteInput.Builder(EXTRA_REPLY_TEXT)
+                .setLabel("Ответить…")
+                .build();
+        NotificationCompat.Action replyAction = new NotificationCompat.Action.Builder(0, "Ответить", replyPending)
+                .addRemoteInput(remoteInput)
+                .setAllowGeneratedReplies(true)
+                .build();
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_MESSAGES)
                 .setSmallIcon(R.drawable.ic_stat_nox)
                 .setContentTitle(title)
@@ -224,6 +279,7 @@ public final class ChatConnectionService extends Service {
                 .setAutoCancel(true)
                 .setCategory(NotificationCompat.CATEGORY_MESSAGE)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .addAction(replyAction)
                 .build();
         try {
             NotificationManagerCompat.from(this).notify((int) (message.id.hashCode() & 0x7fffffff), notification);
