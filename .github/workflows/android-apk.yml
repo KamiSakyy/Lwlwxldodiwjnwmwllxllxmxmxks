@@ -93,7 +93,14 @@ jobs:
           apk_bytes="$(stat -c %s "$apk")"
           echo "Release APK size: ${apk_bytes} bytes"
           if (( apk_bytes >= 100000000 )); then
-            echo "::error title=Release APK exceeds GitHub file limit::APK size ${apk_bytes} bytes is too large."
+            python3 - "$apk" "$apk_bytes" <<'PY'
+          import sys, zipfile
+          apk, size = sys.argv[1], sys.argv[2]
+          with zipfile.ZipFile(apk) as archive:
+              entries = sorted(archive.infolist(), key=lambda item: item.file_size, reverse=True)[:20]
+          detail = "; ".join(f"{item.filename}={item.file_size}" for item in entries)
+          print(f"::error title=Release APK exceeds GitHub file limit::{size} bytes; largest entries: {detail}")
+          PY
             exit 1
           fi
           apksigner="$ANDROID_HOME/build-tools/36.0.0/apksigner"
