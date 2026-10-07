@@ -58,7 +58,7 @@ jobs:
 
       - name: Build signed, minified release APK
         run: >-
-          gradle --no-daemon clean assembleRelease
+          gradle --no-daemon --stacktrace clean assembleRelease
           -PappVersionCode="$GITHUB_RUN_NUMBER"
           -PappVersionName="$APP_VERSION_NAME"
 
