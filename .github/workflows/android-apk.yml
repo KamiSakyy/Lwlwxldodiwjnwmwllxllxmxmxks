@@ -1,4 +1,4 @@
-name: Android APK (API 36)
+name: Android ARM64 APK (API 36)
 
 on:
   push:
@@ -55,11 +55,17 @@ jobs:
           -PturnUsername="${TURN_USERNAME}"
           -PturnCredential="${TURN_CREDENTIAL}"
 
+      - name: Verify ARM64-only APK
+        run: |
+          abis="$(unzip -Z1 app/build/outputs/apk/debug/app-debug.apk | awk -F/ '$1 == "lib" {print $2}' | sort -u)"
+          echo "APK native ABIs: ${abis}"
+          test "${abis}" = "arm64-v8a"
+
       - name: Prepare HANDOFF files
         run: |
           mkdir -p HANDOFF
-          cp app/build/outputs/apk/debug/app-debug.apk HANDOFF/Nox-P2P-API36-debug.apk
-          rm -f HANDOFF/Nox-P2P-Android-sources.zip
+          cp app/build/outputs/apk/debug/app-debug.apk HANDOFF/Nox-P2P-ARM64-API36-debug.apk
+          rm -f HANDOFF/Nox-P2P-API36-debug.apk HANDOFF/Nox-P2P-Android-sources.zip
           zip -r HANDOFF/Nox-P2P-Android-sources.zip \
             app/src app/build.gradle app/proguard-rules.pro \
             settings.gradle build.gradle gradle.properties .gitignore \
@@ -69,9 +75,9 @@ jobs:
       - name: Upload APK and source archive
         uses: actions/upload-artifact@v4
         with:
-          name: Nox-P2P-API36-HANDOFF
+          name: Nox-P2P-ARM64-API36-HANDOFF
           path: |
-            HANDOFF/Nox-P2P-API36-debug.apk
+            HANDOFF/Nox-P2P-ARM64-API36-debug.apk
             HANDOFF/Nox-P2P-Android-sources.zip
           if-no-files-found: error
           retention-days: 30
@@ -80,7 +86,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add HANDOFF/Nox-P2P-API36-debug.apk HANDOFF/Nox-P2P-Android-sources.zip
+          git add -A HANDOFF
           if git diff --cached --quiet; then
             echo "HANDOFF files already match this build."
             exit 0

@@ -547,16 +547,8 @@ final class ChatSession {
         localDescriptionPublished = false;
         remoteDescriptionSet = false;
         pendingLocalCandidates.clear();
-        ArrayList<PeerConnection.IceServer> iceServers = new ArrayList<>();
-        iceServers.add(PeerConnection.IceServer.builder("stun:stun.l.google.com:19302").createIceServer());
-        iceServers.add(PeerConnection.IceServer.builder("stun:stun1.l.google.com:19302").createIceServer());
-        if (!BuildConfig.TURN_URL.isEmpty()) {
-            iceServers.add(PeerConnection.IceServer.builder(BuildConfig.TURN_URL)
-                    .setUsername(BuildConfig.TURN_USERNAME)
-                    .setPassword(BuildConfig.TURN_CREDENTIAL)
-                    .createIceServer());
-        }
-        PeerConnection.RTCConfiguration configuration = new PeerConnection.RTCConfiguration(iceServers);
+        PeerConnection.RTCConfiguration configuration =
+                new PeerConnection.RTCConfiguration(IceServerConfig.create());
         configuration.sdpSemantics = PeerConnection.SdpSemantics.UNIFIED_PLAN;
         configuration.bundlePolicy = PeerConnection.BundlePolicy.MAXBUNDLE;
         configuration.iceTransportsType = PeerConnection.IceTransportsType.ALL;
