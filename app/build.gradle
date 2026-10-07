@@ -54,6 +54,10 @@ android {
     }
 
     packaging {
+        jniLibs {
+            excludes += ["**/libsignal_jni_testing.so"]
+            useLegacyPackaging true
+        }
         resources {
             excludes += ["META-INF/DEPENDENCIES", "META-INF/LICENSE*", "META-INF/NOTICE*",
                          "libsignal_jni*.dylib", "signal_jni*.dll", "libsignal_jni_testing.so",
