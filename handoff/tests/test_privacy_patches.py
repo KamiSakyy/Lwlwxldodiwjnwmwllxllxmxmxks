@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import io
 import struct
 import tempfile
 import unittest
@@ -8,8 +9,9 @@ import zipfile
 from pathlib import Path
 
 from handoff.apply_privacy_manifest import ANALYTICS_OPTOUTS, ANDROID, SENSITIVE_PERMISSIONS, patch_manifest
-from handoff.audit_privacy_footprint import audit, axml_strings
+from handoff.audit_privacy_footprint import audit, axml_declared_permissions, axml_strings
 from handoff.patch_smali_sdk_calls import patch_tree
+from handoff.prepare_privacy_base import merge_abi_split
 
 
 def _length8(value: int) -> bytes:
@@ -42,13 +44,39 @@ def _string_pool(strings: list[str], utf8: bool) -> bytes:
     return struct.pack("<HHI", 0x0003, 8, 8 + len(pool)) + pool
 
 
+def _binary_manifest(strings: list[str], permissions: list[str], utf8: bool = True) -> bytes:
+    android_ns = "http://schemas.android.com/apk/res/android"
+    values = list(dict.fromkeys([*strings, "manifest", "uses-permission", "name", android_ns, *permissions]))
+    indices = {value: index for index, value in enumerate(values)}
+    data = bytearray(_string_pool(values, utf8))
+
+    def start_element(name: str, attrs: list[tuple[str, str, str]]) -> bytes:
+        attribute_size = 20
+        chunk_size = 16 + 20 + attribute_size * len(attrs)
+        chunk = bytearray(struct.pack("<HHIII", 0x0102, 16, chunk_size, 1, 0xFFFFFFFF))
+        chunk.extend(struct.pack("<IIHHHHHH", 0xFFFFFFFF, indices[name], 20, attribute_size, len(attrs), 0, 0, 0))
+        for namespace, attr_name, value in attrs:
+            namespace_index = indices[namespace] if namespace else 0xFFFFFFFF
+            value_index = indices[value]
+            chunk.extend(struct.pack("<IIIHBBI", namespace_index, indices[attr_name], value_index, 8, 0, 0x03, value_index))
+        return bytes(chunk)
+
+    data.extend(start_element("manifest", []))
+    for permission in permissions:
+        data.extend(start_element("uses-permission", [(android_ns, "name", permission)]))
+    struct.pack_into("<I", data, 4, len(data))
+    return bytes(data)
+
+
 class PrivacyManifestTests(unittest.TestCase):
     def test_manifest_optouts_are_idempotent_and_preserve_core_components(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             manifest = Path(temp) / "AndroidManifest.xml"
             manifest.write_text(
                 '<manifest xmlns:android="http://schemas.android.com/apk/res/android" '
-                'package="com.vkontakte.android">'
+                'package="com.vkontakte.android" split="config.en" android:splitTypes="lang" '
+                'android:requiredSplitTypes="lang" >'
+                '<uses-split android:name="config.en"/>'
                 '<uses-permission android:name="com.google.android.gms.permission.AD_ID"/>'
                 '<uses-permission android:name="android.permission.READ_PHONE_STATE"/>'
                 '<uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>'
@@ -56,7 +84,8 @@ class PrivacyManifestTests(unittest.TestCase):
                 '<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>'
                 '<uses-permission android:name="android.permission.GET_ACCOUNTS"/>'
                 '<uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>'
-                '<application>'
+                '<application android:isSplitRequired="true">'
+                '<meta-data android:name="com.android.vending.splits.required" android:value="true"/>'
                 '<activity android:name="com.unity3d.ads.AdActivity"/>'
                 '<activity android:name="com.yandex.mobile.ads.common.AdActivity"/>'
                 '<provider android:name="com.my.tracker.MyTrackerProvider"/>'
@@ -79,6 +108,12 @@ class PrivacyManifestTests(unittest.TestCase):
                 for item in app if item.tag.endswith("meta-data")
             }
             self.assertTrue(set(ANALYTICS_OPTOUTS.items()) <= set(metadata.items()))
+            self.assertNotIn("split", root.attrib)
+            self.assertNotIn(ANDROID + "splitTypes", root.attrib)
+            self.assertNotIn(ANDROID + "requiredSplitTypes", root.attrib)
+            self.assertNotIn(ANDROID + "isSplitRequired", app.attrib)
+            self.assertFalse(any(item.tag.endswith("uses-split") for item in root))
+            self.assertFalse(any(item.attrib.get(ANDROID + "name", "").startswith("com.android.vending.splits") for item in app))
             self.assertEqual(
                 sum(item.attrib.get(ANDROID + "name") == "firebase_analytics_collection_enabled"
                     for item in app if item.tag.endswith("meta-data")),
@@ -100,7 +135,9 @@ class PrivacyManifestTests(unittest.TestCase):
             self.assertEqual(set(first["removed_sensitive_permissions"]), set(SENSITIVE_PERMISSIONS))
             self.assertIn("com.vkontakte.android.MainActivity", components)
             self.assertEqual(first["removed_duplicate_metadata"], 1)
+            self.assertGreater(first["removed_split_markers"], 0)
             self.assertFalse(second["changed_metadata"])
+            self.assertEqual(second["removed_split_markers"], 0)
 
     def test_binary_manifest_string_pool_utf8_and_utf16(self) -> None:
         values = [
@@ -112,13 +149,20 @@ class PrivacyManifestTests(unittest.TestCase):
             with self.subTest(utf8=use_utf8):
                 self.assertEqual(axml_strings(_string_pool(values, use_utf8)), set(values))
 
+    def test_binary_manifest_permissions_are_parsed_from_elements_not_unused_pool_entries(self) -> None:
+        ad_id = "com.google.android.gms.permission.AD_ID"
+        removed_permission_pool_entry = "android.permission.READ_PHONE_STATE"
+        manifest = _binary_manifest([removed_permission_pool_entry], [ad_id])
+        self.assertIn(removed_permission_pool_entry, axml_strings(manifest))
+        self.assertEqual(axml_declared_permissions(manifest), {ad_id})
+
     def test_privacy_audit_reports_known_sdk_and_manifest_signatures(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             apk_path = Path(temp) / "base.apk"
             with zipfile.ZipFile(apk_path, "w") as apk:
                 apk.writestr(
                     "AndroidManifest.xml",
-                    _string_pool(
+                    _binary_manifest(
                         [
                             "com.google.android.gms.permission.AD_ID",
                             "firebase_analytics_collection_enabled",
@@ -126,6 +170,7 @@ class PrivacyManifestTests(unittest.TestCase):
                             "com.yandex.mobile.ads.AUTOMATIC_SDK_INITIALIZATION",
                             "com.yandex.mobile.ads.common.AdActivity",
                         ],
+                        ["com.google.android.gms.permission.AD_ID"],
                         True,
                     ),
                 )
@@ -143,6 +188,34 @@ class PrivacyManifestTests(unittest.TestCase):
             self.assertIn("Yandex Mobile Ads", report)
             self.assertIn("com.yandex.mobile.ads.AUTOMATIC_SDK_INITIALIZATION", report)
             self.assertIn("firebase_analytics_collection_enabled", report)
+
+
+class StandaloneApkTests(unittest.TestCase):
+    def test_matching_abi_libraries_are_merged_from_xapk(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            base_buffer = io.BytesIO()
+            with zipfile.ZipFile(base_buffer, "w") as base:
+                base.writestr("AndroidManifest.xml", b"manifest")
+                base.writestr("classes.dex", b"dex")
+            split_buffer = io.BytesIO()
+            with zipfile.ZipFile(split_buffer, "w") as split:
+                split.writestr("lib/armeabi-v7a/libsample.so", b"native-lib")
+                split.writestr("lib/x86/libignored.so", b"other-abi")
+            xapk = root / "source.xapk"
+            with zipfile.ZipFile(xapk, "w") as bundle:
+                bundle.writestr("com.vkontakte.android.apk", base_buffer.getvalue())
+                bundle.writestr("config.armeabi_v7a.apk", split_buffer.getvalue())
+            base_apk = root / "base.apk"
+            base_apk.write_bytes(base_buffer.getvalue())
+            decoded = root / "decoded"
+            decoded.mkdir()
+
+            result = merge_abi_split(xapk, base_apk, decoded, "armeabi-v7a")
+            self.assertEqual(result["native_libraries"], 1)
+            self.assertEqual(result["native_library_bytes"], len(b"native-lib"))
+            self.assertEqual((decoded / "lib/armeabi-v7a/libsample.so").read_bytes(), b"native-lib")
+            self.assertFalse((decoded / "lib/x86/libignored.so").exists())
 
 
 class SmaliPatchTests(unittest.TestCase):

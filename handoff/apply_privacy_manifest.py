@@ -57,6 +57,7 @@ SENSITIVE_PERMISSIONS = (
     "android.permission.GET_ACCOUNTS",
     "android.permission.QUERY_ALL_PACKAGES",
 )
+SPLIT_METADATA_PREFIX = "com.android.vending.splits"
 COMPONENT_TAGS = {"activity", "activity-alias", "service", "receiver", "provider"}
 
 
@@ -78,6 +79,25 @@ def patch_manifest(path: Path) -> dict[str, object]:
     application = next((child for child in root if _local_name(child.tag) == "application"), None)
     if application is None:
         raise ValueError("manifest has no application element")
+
+    removed_split_markers = 0
+    for attribute in ("split", ANDROID + "splitTypes", ANDROID + "requiredSplitTypes"):
+        if attribute in root.attrib:
+            del root.attrib[attribute]
+            removed_split_markers += 1
+    for attribute in (ANDROID + "isSplitRequired", ANDROID + "splitName", ANDROID + "isolatedSplits"):
+        if attribute in application.attrib:
+            del application.attrib[attribute]
+            removed_split_markers += 1
+    for child in list(root):
+        if _local_name(child.tag) == "uses-split":
+            root.remove(child)
+            removed_split_markers += 1
+    for child in list(application):
+        name = child.attrib.get(ANDROID + "name", "")
+        if _local_name(child.tag) == "meta-data" and name.startswith(SPLIT_METADATA_PREFIX):
+            application.remove(child)
+            removed_split_markers += 1
 
     metadata_by_name: dict[str, ET.Element] = {}
     removed_duplicate_metadata = 0
@@ -130,6 +150,7 @@ def patch_manifest(path: Path) -> dict[str, object]:
         "removed_sensitive_permissions": sorted(set(removed_permissions)),
         "removed_ad_id_permission": "com.google.android.gms.permission.AD_ID" in removed_permissions,
         "removed_duplicate_metadata": removed_duplicate_metadata,
+        "removed_split_markers": removed_split_markers,
         "optout_metadata_count": len(ANALYTICS_OPTOUTS),
     }
 

@@ -108,31 +108,32 @@ def _length16(data: bytes, offset: int) -> tuple[int, int]:
     return first, offset + 2
 
 
-def axml_strings(data: bytes) -> set[str]:
-    """Read the Android binary-XML string pool, accepting UTF-8 and UTF-16 pools."""
-    strings: set[str] = set()
+def _axml_string_pool(data: bytes) -> list[str] | None:
+    """Return the indexed AXML string pool, accepting UTF-8 and UTF-16 pools."""
     if len(data) < 8:
-        return strings
-    chunk_type, _root_header, _root_size = struct.unpack_from("<HHI", data, 0)
-    if chunk_type != 0x0003:
-        return strings
-    offset = struct.unpack_from("<H", data, 2)[0]
-    while offset + 8 <= len(data):
+        return None
+    root_type, root_header, root_size = struct.unpack_from("<HHI", data, 0)
+    if root_type != 0x0003 or root_header < 8 or root_size > len(data):
+        return None
+    offset = root_header
+    while offset + 8 <= root_size:
         chunk_type, header_size, chunk_size = struct.unpack_from("<HHI", data, offset)
-        if chunk_size < header_size or offset + chunk_size > len(data):
-            break
+        if chunk_size < header_size or offset + chunk_size > root_size:
+            return None
         if chunk_type == 0x0001 and header_size >= 28:
             string_count, _style_count, flags, strings_start, _styles_start = struct.unpack_from(
                 "<IIIII", data, offset + 8
             )
             offsets_start = offset + header_size
             if string_count > 1_000_000 or offsets_start + string_count * 4 > offset + chunk_size:
-                return strings
+                return None
             is_utf8 = bool(flags & 0x100)
+            strings: list[str] = []
             for index in range(string_count):
                 relative = struct.unpack_from("<I", data, offsets_start + index * 4)[0]
                 cursor = offset + strings_start + relative
                 if cursor < offset or cursor >= offset + chunk_size:
+                    strings.append("")
                     continue
                 try:
                     if is_utf8:
@@ -144,12 +145,67 @@ def axml_strings(data: bytes) -> set[str]:
                         byte_len = char_len * 2
                         value = data[cursor:cursor + byte_len].decode("utf-16le", errors="replace")
                 except (IndexError, struct.error):
+                    strings.append("")
                     continue
-                if value:
-                    strings.add(value)
+                strings.append(value)
             return strings
         offset += chunk_size
-    return strings
+    return None
+
+
+def axml_strings(data: bytes) -> set[str]:
+    """Return the Android binary-XML string pool as a set of values."""
+    return {value for value in (_axml_string_pool(data) or []) if value}
+
+
+def axml_declared_permissions(data: bytes) -> set[str] | None:
+    """Parse uses-permission name attributes; None means AXML structure was unavailable."""
+    strings = _axml_string_pool(data)
+    if strings is None or len(data) < 8:
+        return None
+    _root_type, root_header, root_size = struct.unpack_from("<HHI", data, 0)
+    offset = root_header
+    saw_start_element = False
+    permissions: set[str] = set()
+    android_ns = "http://schemas.android.com/apk/res/android"
+
+    def pool_value(index: int) -> str:
+        return strings[index] if 0 <= index < len(strings) else ""
+
+    while offset + 8 <= root_size:
+        chunk_type, header_size, chunk_size = struct.unpack_from("<HHI", data, offset)
+        if chunk_size < header_size or offset + chunk_size > root_size:
+            return None
+        if chunk_type == 0x0102 and header_size >= 16:
+            saw_start_element = True
+            ext = offset + header_size
+            if ext + 20 > offset + chunk_size:
+                return None
+            _namespace_index, element_name_index = struct.unpack_from("<II", data, ext)
+            element_name = pool_value(element_name_index)
+            attr_start, attr_size, attr_count = struct.unpack_from("<HHH", data, ext + 8)
+            if attr_size < 20 or attr_count > 65535:
+                return None
+            attrs = ext + attr_start
+            if attrs + attr_count * attr_size > offset + chunk_size:
+                return None
+            if element_name.startswith("uses-permission"):
+                for index in range(attr_count):
+                    attr_offset = attrs + index * attr_size
+                    ns_index, name_index, raw_value_index = struct.unpack_from("<III", data, attr_offset)
+                    if pool_value(ns_index) != android_ns or pool_value(name_index) != "name":
+                        continue
+                    value = pool_value(raw_value_index)
+                    if not value:
+                        value_size = struct.unpack_from("<H", data, attr_offset + 12)[0]
+                        value_type = data[attr_offset + 15]
+                        value_data = struct.unpack_from("<I", data, attr_offset + 16)[0]
+                        if value_size >= 8 and value_type == 0x03:
+                            value = pool_value(value_data)
+                    if value:
+                        permissions.add(value)
+        offset += chunk_size
+    return permissions if saw_start_element else None
 
 
 def audit(apk_path: Path) -> list[str]:
@@ -187,8 +243,17 @@ def audit(apk_path: Path) -> list[str]:
             match.decode("ascii", errors="ignore")
             for match in re.findall(rb"[A-Za-z0-9_.$/]{4,}", manifest)
         }
-    present = [permission for permission in PERMISSIONS if permission in manifest_strings]
-    result.append("- Privacy-sensitive manifest permissions: " + (", ".join(f"`{name}`" for name in present) if present else "none from the reviewed list"))
+    declared_permissions = axml_declared_permissions(manifest)
+    if declared_permissions is None:
+        present = [permission for permission in PERMISSIONS if permission in manifest_strings]
+        permission_note = " (string-pool matches; structured AXML parse unavailable)"
+    else:
+        present = [permission for permission in PERMISSIONS if permission in declared_permissions]
+        permission_note = ""
+    result.append(
+        "- Privacy-sensitive manifest permissions" + permission_note + ": "
+        + (", ".join(f"`{name}`" for name in present) if present else "none from the reviewed list")
+    )
     sdk_names = sorted(
         value for value in manifest_strings
         if any(marker.decode("ascii") in value for marker in MANIFEST_SDK_MARKERS)
